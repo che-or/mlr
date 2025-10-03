@@ -31,7 +31,7 @@ import numpy as np
 def load_all_seasons():
     """Loads all seasons' data, adding a 'GameType' column to distinguish regular vs. playoff games."""
     season_data = {}
-    with open('../gamelogs.txt', 'r') as f:
+    with open('../data/gamelogs.txt', 'r') as f:
         gamelogs = f.readlines()
 
     for log in gamelogs:
