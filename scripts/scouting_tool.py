@@ -537,7 +537,7 @@ def main():
     # Load regular season game counts from gamelogs.txt
     try:
         # The script is in a subfolder, so we go up one level to find gamelogs.txt
-        with open('../gamelogs.txt', 'r') as f:
+        with open('../data/gamelogs.txt', 'r') as f:
             gamelogs_content = f.read()
         season_games_map = {}
         for line in gamelogs_content.splitlines():
