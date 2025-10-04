@@ -1,8 +1,37 @@
-from functools import reduce
 from data_loader import load_all_seasons
 from game_processing import get_pitching_decisions
 import pandas as pd
-import sys
+
+# --- Global Helper Functions ---
+def calculate_ops_plus_for_row(row, league_stats_by_season):
+    """Calculates OPS+ for a given player row, handling different season data structures."""
+    if row['PA'] == 0:
+        return pd.NA
+
+    # Determine season from the row's data structure. One call site passes a DF row (which has a 'Season' column),
+    # the other passes a Series from a different structure where the season is the name.
+    if 'Season' in row.index:
+        season_name = row['Season']
+    else:
+        season_name = f"S{row.name}"
+
+    season_stats = league_stats_by_season.get(season_name)
+    if not season_stats or season_stats['lg_nOBP'] == 0 or season_stats['lg_nSLG'] == 0:
+        return 100
+
+    player_nobp = row['nOBP']
+    player_nslg = row['nSLG']
+
+    if pd.isna(player_nobp) or pd.isna(player_nslg):
+        return 100
+
+    ops_plus = 100 * ((player_nobp / season_stats['lg_nOBP']) + (player_nslg / season_stats['lg_nSLG']) - 1)
+
+    if pd.isna(ops_plus):
+        return 100
+
+    return int(round(ops_plus))
+
 
 # --- Formatting and Stat Calculation Functions ---
 def format_ip(ip_float):
@@ -75,6 +104,62 @@ def calculate_hitting_stats(df, season=None):
     runs_scored = df['Run'].sum()
     rbi = df['RBI'].sum()
 
+    # --- Neutral OBP/SLG Calculation (for OPS+) ---
+    nOBP = (num_hits + num_walks) / pa if pa > 0 else 0
+    nSLG = (num_singles + num_doubles * 2 + num_triples * 3 + num_hr * 4) / ab if ab > 0 else 0
+
+    if 'Result at Neutral' in df.columns and not df['Result at Neutral'].isnull().all():
+        if season == 'S3': # S3 uses old results format
+            n_hits_def = {'1B', '2B', '3B', 'HR'}
+            n_walks_def = {'BB', 'IBB', 'Auto BB'}
+            n_pa_events_def = n_hits_def | n_walks_def | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'DP', 'TP', 'Sac', 'Bunt'}
+            
+            n_pa_df = df[df['Result at Neutral'].isin(n_pa_events_def)]
+            n_pa = len(n_pa_df)
+            n_walks = n_pa_df[n_pa_df['Result at Neutral'].isin(n_walks_def)].shape[0]
+            n_sacrifices = n_pa_df[n_pa_df['Result at Neutral'] == 'Sac'].shape[0]
+            n_ab = n_pa - n_walks - n_sacrifices
+            n_hits = n_pa_df[n_pa_df['Result at Neutral'].isin(n_hits_def)].shape[0]
+            n_doubles = n_pa_df[n_pa_df['Result at Neutral'] == '2B'].shape[0]
+            n_triples = n_pa_df[n_pa_df['Result at Neutral'] == '3B'].shape[0]
+            n_hr = n_pa_df[n_pa_df['Result at Neutral'] == 'HR'].shape[0]
+            n_singles = n_pa_df[n_pa_df['Result at Neutral'] == '1B'].shape[0]
+
+            if n_ab > 0:
+                nSLG = (n_singles + n_doubles * 2 + n_triples * 3 + n_hr * 4) / n_ab
+            else:
+                nSLG = 0
+            if n_pa > 0:
+                nOBP = (n_hits + n_walks) / n_pa
+            else:
+                nOBP = 0
+
+        elif season not in ['S2', 'S3']: # S4+ uses new results format
+            n_hits_def = {'1B', '2B', '3B', 'HR', 'BUNT 1B'}
+            n_walks_def = {'BB', 'IBB', 'Auto BB', 'AUTO BB'}
+            n_pa_events_def = n_hits_def | n_walks_def | {'K', 'Auto K', 'Bunt K', 'AUTO K', 'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'BUNT GO', 'BUNT Sac', 'Bunt Sac'}
+
+            n_pa_df = df[df['Result at Neutral'].isin(n_pa_events_def)]
+            n_pa = len(n_pa_df)
+            n_walks = n_pa_df[n_pa_df['Result at Neutral'].isin(n_walks_def)].shape[0]
+            # Use 'Old Result' for sacrifices as it is more reliable across versions
+            n_sacrifices = df[df['Old Result'] == 'Sac'].shape[0]
+            n_ab = n_pa - n_walks - n_sacrifices
+            n_hits = n_pa_df[n_pa_df['Result at Neutral'].isin(n_hits_def)].shape[0]
+            n_doubles = n_pa_df[n_pa_df['Result at Neutral'] == '2B'].shape[0]
+            n_triples = n_pa_df[n_pa_df['Result at Neutral'] == '3B'].shape[0]
+            n_hr = n_pa_df[n_pa_df['Result at Neutral'] == 'HR'].shape[0]
+            n_singles = n_pa_df[n_pa_df['Result at Neutral'] == '1B'].shape[0] + n_pa_df[n_pa_df['Result at Neutral'] == 'BUNT 1B'].shape[0]
+
+            if n_ab > 0:
+                nSLG = (n_singles + n_doubles * 2 + n_triples * 3 + n_hr * 4) / n_ab
+            else:
+                nSLG = 0
+            if n_pa > 0:
+                nOBP = (n_hits + n_walks) / n_pa
+            else:
+                nOBP = 0
+
     return pd.Series({
         'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'RBI': rbi,
         'BB': num_walks, 'K': num_strikeouts, 'SB': num_sb, 'CS': num_cs,
@@ -82,7 +167,9 @@ def calculate_hitting_stats(df, season=None):
         'OBP': (num_hits + num_walks) / pa if pa > 0 else 0,
         'SLG': (num_singles + num_doubles * 2 + num_triples * 3 + num_hr * 4) / ab if ab > 0 else 0,
         'OPS': ((num_hits + num_walks) / pa if pa > 0 else 0) + ((num_singles + num_doubles * 2 + num_triples * 3 + num_hr * 4) / ab if ab > 0 else 0),
-        'Avg Diff': avg_diff
+        'Avg Diff': avg_diff,
+        'nOBP': nOBP,
+        'nSLG': nSLG
     })
 
 def calculate_pitching_stats(df, season=None):
@@ -217,6 +304,8 @@ def display_leaderboard(series, title, player_id_map, stat_name=None):
         formatters['Value'] = lambda x: f"{x:.3f}".replace('0.', '.')
     elif stat_name in ['ERA', 'WHIP', 'Avg Diff']:
         formatters['Value'] = '{:.2f}'.format
+    elif stat_name == 'OPS+':
+        formatters['Value'] = '{:.0f}'.format
     else: # Counting stats
         formatters['Value'] = '{:.0f}'.format
 
@@ -226,7 +315,7 @@ def process_leaderboard(stat, combined_df, all_hitting_stats, all_pitching_stats
     print(f"\n--- Leaderboards for: {stat.upper()} ---")
 
     # Define stat categories
-    hitting_rate_stats = ['AVG', 'OBP', 'SLG', 'OPS', 'Avg Diff']
+    hitting_rate_stats = ['AVG', 'OBP', 'SLG', 'OPS', 'OPS+', 'Avg Diff']
     hitting_counting_stats = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'BB', 'K', 'SB', 'CS']
     pitching_rate_stats = ['ERA', 'WHIP', 'Avg Diff']
     pitching_counting_stats = ['G', 'IP', 'H', 'R', 'BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD']
@@ -256,12 +345,33 @@ def process_leaderboard(stat, combined_df, all_hitting_stats, all_pitching_stats
                 qualified_season = season_df
                 title = f"Season {season.replace('S','')}"
             
-            season_top_10 = qualified_season.set_index('Hitter ID')[stat_upper].nsmallest(10) if lower_is_better else qualified_season.set_index('Hitter ID')[stat_upper].nlargest(10)
+            leaderboard_series = qualified_season.set_index('Hitter ID')[stat_upper]
+            if leaderboard_series.dtype == 'object':
+                leaderboard_series = pd.to_numeric(leaderboard_series, errors='coerce')
+
+            season_top_10 = leaderboard_series.nsmallest(10) if lower_is_better else leaderboard_series.nlargest(10)
             display_leaderboard(season_top_10, title, player_id_map, stat_name=stat_upper)
 
         # All-Time
         career_hitting_stats = all_hitting_stats.groupby('Hitter ID').sum(numeric_only=True)
         
+        if stat_upper == 'OPS+':
+            # Calculate the weighted average for career OPS+, don't just sum it.
+            ops_plus_df = all_hitting_stats.copy()
+            # Filter out any rows that might cause issues in calculation
+            ops_plus_df = ops_plus_df[ops_plus_df['PA'] > 0].dropna(subset=['OPS+', 'PA'])
+            ops_plus_df['OPS+'] = pd.to_numeric(ops_plus_df['OPS+'], errors='coerce')
+            ops_plus_df['WeightedOPS+'] = ops_plus_df['OPS+'] * ops_plus_df['PA']
+            
+            career_ops_plus_agg = ops_plus_df.groupby('Hitter ID').sum(numeric_only=True)
+            
+            # Calculate the final weighted average and handle potential division by zero
+            valid_career_pa = career_ops_plus_agg[career_ops_plus_agg['PA'] > 0]
+            career_ops_plus_agg['OPS+'] = valid_career_pa['WeightedOPS+'] / valid_career_pa['PA']
+            
+            # Update the main career stats dataframe using .loc to avoid chained assignment issues
+            career_hitting_stats.loc[:, 'OPS+'] = career_ops_plus_agg['OPS+']
+
         if stat_upper == 'Avg Diff':
             career_avg_diff = combined_df.groupby('Hitter ID')['Diff'].apply(lambda x: pd.to_numeric(x, errors='coerce').mean())
             career_hitting_stats['Avg Diff'] = career_avg_diff
@@ -272,14 +382,20 @@ def process_leaderboard(stat, combined_df, all_hitting_stats, all_pitching_stats
             career_hitting_stats['OBP'] = (career_hitting_stats['H'] + career_hitting_stats['BB']) / career_hitting_stats['PA']
             career_hitting_stats['SLG'] = (career_hitting_stats['H'] - career_hitting_stats['2B'] - career_hitting_stats['3B'] - career_hitting_stats['HR'] + career_hitting_stats['2B']*2 + career_hitting_stats['3B']*3 + career_hitting_stats['HR']*4) / career_hitting_stats['AB']
             career_hitting_stats['OPS'] = career_hitting_stats['OBP'] + career_hitting_stats['SLG']
-            career_hitting_stats.replace([pd.NA, pd.NaT, float('inf'), float('-inf')], 0, inplace=True)
+            # Fill NaNs for calculated rate stats, but leave OPS+ alone as it's handled separately
+            for col in ['AVG', 'OBP', 'SLG', 'OPS']:
+                career_hitting_stats[col] = career_hitting_stats[col].fillna(0)
             qualified = career_hitting_stats[career_hitting_stats['PA'] >= 100]
             title = "All-Time (min. 100 PA)"
         else:
             qualified = career_hitting_stats
             title = "All-Time"
         
-        all_time_top_10 = qualified[stat_upper].nsmallest(10) if lower_is_better else qualified[stat_upper].nlargest(10)
+        leaderboard_series = qualified[stat_upper]
+        if leaderboard_series.dtype == 'object':
+            leaderboard_series = pd.to_numeric(leaderboard_series, errors='coerce')
+
+        all_time_top_10 = leaderboard_series.nsmallest(10) if lower_is_better else leaderboard_series.nlargest(10)
         display_leaderboard(all_time_top_10, title, player_id_map, stat_name=stat_upper)
 
     # --- Pitching Leaderboard ---
@@ -369,14 +485,14 @@ def display_stats_table(stats_df, is_pitching=False):
 
     for col in int_cols:
         if col in stats_df.columns:
-            stats_df[col] = stats_df[col].astype(int)
+            stats_df[col] = stats_df[col].fillna(0).astype(int)
     
     if is_pitching:
         col_order = ['Team', 'G', 'W', 'L', 'SV', 'HLD', 'IP', 'H', 'R', 'BB', 'K', 'HR', 'ERA', 'WHIP', 'Avg Diff']
         if 'IP' in stats_df.columns: stats_df['IP'] = stats_df['IP'].apply(format_ip)
         formatters = {'ERA': '{:.2f}'.format, 'WHIP': '{:.2f}'.format, 'Avg Diff': '{:.2f}'.format}
     else:
-        col_order = ['Team', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'BB', 'K', 'SB', 'CS', 'AVG', 'OBP', 'SLG', 'OPS', 'Avg Diff']
+        col_order = ['Team', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'BB', 'K', 'SB', 'CS', 'AVG', 'OBP', 'SLG', 'OPS', 'OPS+', 'Avg Diff']
         formatters = {
             'AVG': lambda x: f"{x:.3f}".replace('0.', '.'), 'OBP': lambda x: f"{x:.3f}".replace('0.', '.'),
             'SLG': lambda x: f"{x:.3f}".replace('0.', '.'), 'OPS': lambda x: f"{x:.3f}".replace('0.', '.'),
@@ -385,6 +501,11 @@ def display_stats_table(stats_df, is_pitching=False):
     
     # Use a copy to avoid SettingWithCopyWarning
     stats_df_copy = stats_df.copy()
+
+    # Manually format OPS+ to handle NA values correctly before printing
+    if 'OPS+' in stats_df_copy.columns:
+        stats_df_copy['OPS+'] = stats_df_copy['OPS+'].apply(lambda x: '' if pd.isna(x) else f'{x:.0f}')
+
     if 'Team' not in stats_df_copy:
         stats_df_copy['Team'] = ''
     else:
@@ -394,9 +515,9 @@ def display_stats_table(stats_df, is_pitching=False):
             stats_df_copy.loc['Career', 'Team'] = ''
 
     stats_df_copy = stats_df_copy.reindex(columns=col_order)
-    print(stats_df_copy.to_string(formatters=formatters))
+    print(stats_df_copy.to_string(formatters=formatters, na_rep=''))
 
-def display_stat_block(df, is_pitching, title, pitcher_stats_agg=None):
+def display_stat_block(df, is_pitching, title, pitcher_stats_agg=None, league_stats_by_season=None):
     """Calculates and displays a block of stats (e.g., regular season hitting)."""
     if df.empty:
         return
@@ -443,6 +564,10 @@ def display_stat_block(df, is_pitching, title, pitcher_stats_agg=None):
                 if not season_stats.empty:
                     season_stats.index = season_stats.index.str.replace('S', '').astype(int)
 
+    # --- OPS+ Calculation for Hitting ---
+    if not is_pitching and league_stats_by_season is not None:
+        season_stats['OPS+'] = season_stats.apply(calculate_ops_plus_for_row, axis=1, league_stats_by_season=league_stats_by_season)
+
     career_stats = season_stats.sum(numeric_only=True)
     
     if is_pitching:
@@ -463,6 +588,9 @@ def display_stat_block(df, is_pitching, title, pitcher_stats_agg=None):
             career_stats['AVG'], career_stats['SLG'] = 0, 0
         if career_stats['PA'] > 0:
             career_stats['OBP'] = (career_stats['H'] + career_stats['BB']) / career_stats['PA']
+            # Weighted Career OPS+
+            if 'OPS+' in season_stats.columns and season_stats['PA'].sum() > 0:
+                career_stats['OPS+'] = (season_stats['OPS+'] * season_stats['PA']).sum() / season_stats['PA'].sum()
         else:
             career_stats['OBP'] = 0
         career_stats['OPS'] = career_stats['OBP'] + career_stats['SLG']
@@ -471,7 +599,7 @@ def display_stat_block(df, is_pitching, title, pitcher_stats_agg=None):
         career_stats_df.index = ['Career']
         display_stats_table(pd.concat([season_stats, career_stats_df]), is_pitching=False)
 
-def process_player_stats(player_id, combined_df, player_id_map, season_games_map, regular_pitcher_stats_agg, playoff_pitcher_stats_agg):
+def process_player_stats(player_id, combined_df, player_id_map, season_games_map, regular_pitcher_stats_agg, playoff_pitcher_stats_agg, league_stats_by_season):
     if player_id not in player_id_map:
         print("Player not found.")
         return
@@ -492,15 +620,15 @@ def process_player_stats(player_id, combined_df, player_id_map, season_games_map
 
     # Create regular season and playoff dataframes
     regular_hitter_df = hitter_df[is_regular_season.loc[hitter_df.index]]
-    playoff_hitter_df = hitter_df[~is_regular_season.loc[hitter_df.index]]
+    # playoff_hitter_df = hitter_df[~is_regular_season.loc[hitter_df.index]]
     regular_pitcher_df = pitcher_df[is_regular_season.loc[pitcher_df.index]]
-    playoff_pitcher_df = pitcher_df[~is_regular_season.loc[pitcher_df.index]]
+    # playoff_pitcher_df = pitcher_df[~is_regular_season.loc[pitcher_df.index]]
 
     # Display all stat blocks
-    display_stat_block(regular_hitter_df, is_pitching=False, title="\n--- Hitting Stats (Regular Season) ---")
-    display_stat_block(playoff_hitter_df, is_pitching=False, title="\n--- Hitting Stats (Playoffs) ---")
-    display_stat_block(regular_pitcher_df, is_pitching=True, title="\n--- Pitching Stats (Regular Season) ---", pitcher_stats_agg=regular_pitcher_stats_agg)
-    display_stat_block(playoff_pitcher_df, is_pitching=True, title="\n--- Pitching Stats (Playoffs) ---", pitcher_stats_agg=playoff_pitcher_stats_agg)
+    display_stat_block(regular_hitter_df, is_pitching=False, title="\n--- Hitting Stats ---", league_stats_by_season=league_stats_by_season)
+    # display_stat_block(playoff_hitter_df, is_pitching=False, title="\n--- Hitting Stats (Playoffs) ---", league_stats_by_season=league_stats_by_season)
+    display_stat_block(regular_pitcher_df, is_pitching=True, title="\n--- Pitching Stats ---", pitcher_stats_agg=regular_pitcher_stats_agg)
+    # display_stat_block(playoff_pitcher_df, is_pitching=True, title="\n--- Pitching Stats (Playoffs) ---", pitcher_stats_agg=playoff_pitcher_stats_agg)
 
 # --- Main Application Logic ---
 def main():
@@ -568,6 +696,22 @@ def main():
             stats_series['Hitter ID'] = hitter_id
             hitter_records.append(stats_series)
     all_hitting_stats = pd.DataFrame(hitter_records)
+
+    # --- Calculate league-wide neutral stats for OPS+ ---
+    league_stats_by_season = {}
+    for season in leaderboard_df['Season'].unique():
+        season_df = leaderboard_df[leaderboard_df['Season'] == season]
+        if not season_df.empty:
+            league_totals = calculate_hitting_stats(season_df, season=season)
+            league_stats_by_season[season] = {
+                'lg_nOBP': league_totals['nOBP'],
+                'lg_nSLG': league_totals['nSLG']
+            }
+
+    # --- Calculate OPS+ for all players ---
+    if not all_hitting_stats.empty:
+        all_hitting_stats['OPS+'] = all_hitting_stats.apply(calculate_ops_plus_for_row, axis=1, league_stats_by_season=league_stats_by_season)
+
 
     pitcher_records = []
     for (season, pitcher_id), group_df in leaderboard_df.groupby(['Season', 'Pitcher ID']):
@@ -671,7 +815,7 @@ def main():
             
             if player_id:
                 if command == 'stats':
-                    process_player_stats(player_id, combined_df, player_id_map, season_games_map, regular_pitcher_stats_agg, playoff_pitcher_stats_agg)
+                    process_player_stats(player_id, combined_df, player_id_map, season_games_map, regular_pitcher_stats_agg, playoff_pitcher_stats_agg, league_stats_by_season)
                 elif command == 'scout':
                     generate_scouting_report(player_id, combined_df, player_id_map)
             else:
