@@ -246,7 +246,51 @@ def calculate_pitching_stats(df, season=None):
     })
 
 # --- New Scouting Report Function ---
-def generate_scouting_report(player_id, combined_df, player_id_map):
+def _display_pitch_histogram(pitch_series, bin_size, title):
+    """Helper to calculate and display a pitch histogram."""
+    print(f"\n--- {title} (Bin Size: {bin_size}) ---")
+    
+    # Drop non-numeric pitches before processing and convert to int
+    pitch_series = pitch_series.dropna().astype(int)
+
+    if pitch_series.empty:
+        print("No pitches to display.")
+        return
+
+    # Handle 1000 -> 0 for binning
+    pitches = pitch_series.apply(lambda p: 0 if p == 1000 else p)
+    bin_ids = pitches // bin_size
+    histogram_data = bin_ids.value_counts()
+
+    # Create all possible bin IDs to show empty bins
+    max_pitch = 1000
+    # Ensure we handle cases where bin_size isn't a perfect divisor
+    num_bins = (max_pitch + bin_size - 1) // bin_size
+    all_bin_ids = range(num_bins)
+
+    # Reindex the histogram data to include all possible bins, filling missing ones with 0
+    histogram_data = histogram_data.reindex(all_bin_ids, fill_value=0)
+    histogram_data.sort_index(inplace=True)
+
+    if histogram_data.sum() > 0:
+        max_count = histogram_data.max()
+        scale = 50 / max_count if max_count > 0 else 0
+        
+        if scale > 0:
+            # Represent how many pitches each '#' stands for
+            print(f"Each '#' represents up to {1/scale:.1f} pitches.")
+
+        for bin_id, count in histogram_data.items():
+            lower_bound = bin_id * bin_size
+            upper_bound = lower_bound + bin_size - 1
+            if lower_bound == 0: lower_bound = 1
+            label = f"{lower_bound}-{upper_bound}"
+            bar = '#' * int(count * scale)
+            print(f"{label.rjust(9)} | {bar} ({count})")
+    else:
+        print("No pitches available to generate a histogram.")
+
+def generate_scouting_report(player_id, combined_df, player_id_map, bin_size=100):
     if player_id not in player_id_map:
         print("Player not found.")
         return
@@ -258,18 +302,96 @@ def generate_scouting_report(player_id, combined_df, player_id_map):
     if pitcher_df.empty:
         print("No pitching data found for this player.")
         return
+        
+    # Ensure 'Pitch' column is numeric, coercing invalid values to NaN
+    pitcher_df['Pitch'] = pd.to_numeric(pitcher_df['Pitch'], errors='coerce')
+    
+    # Sort dataframe to easily find first pitches
+    pitcher_df.sort_values(by=['Season', 'Session', 'Inning'], inplace=True)
 
     print("\n--- Top 5 Most Common Pitches ---")
-    top_5_pitches = pitcher_df['Pitch'].value_counts().nlargest(5)
+    # Drop NaN values for this calculation and ensure index is integer for display
+    valid_pitches = pitcher_df['Pitch'].dropna()
+    top_5_pitches = valid_pitches.value_counts().nlargest(5)
+    if not top_5_pitches.empty:
+        top_5_pitches.index = top_5_pitches.index.astype(int)
     print(top_5_pitches.to_string())
 
-    pitcher_df.sort_values(by=['Season', 'Session', 'Inning'], inplace=True)
+    # --- Histograms ---
+    _display_pitch_histogram(pitcher_df['Pitch'], bin_size, "Overall Pitch Distribution")
+    
+    # First pitch of game
+    first_pitches_game = pitcher_df.groupby(['Season', 'Game ID']).first()['Pitch']
+    _display_pitch_histogram(first_pitches_game, bin_size, "First Pitch of Game Distribution")
+
+    # First pitch of inning
+    first_pitches_inning = pitcher_df.groupby(['Season', 'Game ID', 'Inning']).first()['Pitch']
+    _display_pitch_histogram(first_pitches_inning, bin_size, "First Pitch of Inning Distribution")
+
+    # Pitches with runners in scoring position (RISP)
+    risp_df = pitcher_df[pd.to_numeric(pitcher_df['OBC'], errors='coerce').fillna(0) > 1]
+    _display_pitch_histogram(risp_df['Pitch'], bin_size, "Pitches with RISP Distribution")
+
+    # Pitches after a pitch in the same "hundred" as the most recent pitch
+    if len(pitcher_df) > 1:
+        last_pitch = pitcher_df['Pitch'].iloc[-1]
+        
+        # Determine the bin of the last pitch
+        last_pitch_for_binning = 0 if last_pitch == 1000 else last_pitch
+        bin_id = last_pitch_for_binning // bin_size
+        
+        # Get all pitches as a numpy array for efficient processing
+        all_pitches = pitcher_df['Pitch'].to_numpy()
+        
+        # Create a version for binning (1000 -> 0)
+        all_pitches_for_binning = all_pitches.copy()
+        all_pitches_for_binning[all_pitches_for_binning == 1000] = 0
+        
+        # Find indices of pitches that are in the same bin as the last pitch
+        is_in_block = (all_pitches_for_binning // bin_size) == bin_id
+        
+        # Get the pitches that immediately follow those pitches
+        pitches_after = pd.Series(all_pitches[1:][is_in_block[:-1]])
+        
+        # Format the title for the histogram
+        lower_bound = bin_id * bin_size
+        upper_bound = lower_bound + bin_size - 1
+        if lower_bound == 0: lower_bound = 1
+        title = f"Pitches After a {lower_bound}-{upper_bound} Pitch"
+        
+        _display_pitch_histogram(pitches_after, bin_size, title)
+
+    # --- Pitch Tendencies ---
     pitches = pitcher_df['Pitch'].to_numpy()
     repeat_count = (pitches[:-1] == pitches[1:]).sum()
     total_opportunities = len(pitches) - 1
     repeat_percentage = (repeat_count / total_opportunities) * 100 if total_opportunities > 0 else 0
     print("\n--- Pitch Tendencies ---")
     print(f"Uses same number twice in a row: {repeat_percentage:.2f}%")
+
+    # Check for triple-ups (same pitch 3 times in a row)
+    if len(pitches) > 2:
+        has_tripled_up = ((pitches[:-2] == pitches[1:-1]) & (pitches[1:-1] == pitches[2:])).any()
+    else:
+        has_tripled_up = False
+    print(f"Has ever thrown same number three times in a row: {'Yes' if has_tripled_up else 'No'}")
+
+    # Calculate tendencies based on previous batter's actions
+    if not pitcher_df.empty:
+        # Ensure columns are numeric for comparison, coercing errors
+        swing = pd.to_numeric(pitcher_df['Swing'], errors='coerce')
+        diff = pd.to_numeric(pitcher_df['Diff'], errors='coerce')
+        
+        # Get previous event's values using shift()
+        prev_swing = swing.shift(1)
+        prev_diff = diff.shift(1)
+        
+        # Calculate match rates using the mean of the boolean comparison
+        swing_match_rate = (pitcher_df['Pitch'] == prev_swing).mean() * 100
+        diff_match_rate = (pitcher_df['Pitch'] == prev_diff).mean() * 100
+        
+        print(f"Uses previous swing as number: {swing_match_rate:.2f}%")
+        print(f"Uses previous diff as number: {diff_match_rate:.2f}%")
 
     meme_numbers = {69, 420, 666, 327, 880}
     meme_count = pitcher_df['Pitch'].isin(meme_numbers).sum()
