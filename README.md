@@ -1,6 +1,6 @@
 # MLR Scouting and Records
 
-This repository contains a suite of Python scripts designed for analyzing and viewing statistics from the MLR (Majestic League of Reddit). It allows users to load game data from Google Sheets, process it, and generate detailed player statistics, scouting reports, and leaderboards.
+This repository contains a suite of Python scripts designed for analyzing and viewing statistics from the MLR (Major League Redditball). It allows users to load game data from Google Sheets, process it, and generate detailed player statistics, scouting reports, and leaderboards.
 
 ## Getting Started
 
