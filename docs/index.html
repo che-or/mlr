@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLR Scouting Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="loader"></div>
+        <p>Loading All MLR Data...</p>
+    </div>
+
+    <div id="app" style="display: none;">
+        <header>
+            <h1>MLR Scouting Tool</h1>
+            <p>Select a player or a leaderboard to get started.</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="player-search">Search Player:</label>
+                    <input type="text" id="player-search" placeholder="Enter player name...">
+                    <div id="player-suggestions"></div>
+                </div>
+                <div class="control-group">
+                    <label for="leaderboard-stat-select">View Leaderboard:</label>
+                    <select id="leaderboard-stat-select">
+                        <option value="">-- Select Stat --</option>
+                    </select>
+                    <select id="leaderboard-season-select">
+                        <option value="All-Time">All-Time</option>
+                    </select>
+                    <button id="leaderboard-button">View</button>
+                </div>
+            </div>
+
+            <div id="content-display">
+                <!-- Player stats, leaderboards, and scouting reports will be rendered here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
