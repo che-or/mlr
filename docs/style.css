@@ -1,20 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Noto+Sans:wght@400;700&display=swap');
+
 :root {
-    --bg-color: #1a1a1a;
-    --primary-color: #2a2a2a;
-    --secondary-color: #3a3a3a;
-    --text-color: #e0e0e0;
-    --header-color: #ffffff;
-    --accent-color: #00aaff;
-    --border-color: #444;
+    --bg-color: #0e1113;
+    --primary-color: #1C1D21;
+    --secondary-color: #2B2D31;
+    --text-color: #D7DADC;
+    --header-color: #FFFFFF;
+    --accent-color: #FF4500;
+    --border-color: #343536;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 20px;
     font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, .section-title {
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 header {
@@ -78,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: #0088cc;
+    background-color: #E53E00;
 }
 
 #player-suggestions {
@@ -112,11 +118,12 @@ button:hover {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    font-size: 0.8em;
 }
 
 .stats-table th, .stats-table td {
-    padding: 10px 12px;
-    text-align: left;
+    padding: 8px 5px;
+    text-align: right;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -191,7 +198,6 @@ button:hover {
 .histogram-bar-inner {
     background-color: var(--accent-color);
     height: 18px;
-    line-height: 18px;
     color: #fff;
     padding-left: 5px;
     white-space: nowrap;
@@ -212,3 +218,8 @@ button:hover {
 
 .tendency-item .label { font-weight: bold; }
 .tendency-item .value { font-size: 1.2em; color: var(--accent-color); }
+
+.career-row {
+    font-weight: bold;
+    border-top: 2px solid var(--accent-color);
+}
