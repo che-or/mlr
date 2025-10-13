@@ -137,102 +137,41 @@ def calculate_hitting_stats(df, season=None):
     num_tb = num_singles + (num_doubles * 2) + (num_triples * 3) + (num_hr * 4)
     num_strikeouts = pa_df[pa_df[result_col].isin(strikeouts)].shape[0]
     num_auto_k = pa_df[pa_df[result_col].isin(['Auto K', 'AUTO K'])].shape[0]
+    num_rgo = pa_df[pa_df[result_col] == 'RGO'].shape[0]
+    num_lgo = pa_df[pa_df[result_col] == 'LGO'].shape[0]
+    num_fo = pa_df[pa_df[result_col] == 'FO'].shape[0]
+    num_po = pa_df[pa_df[result_col] == 'PO'].shape[0]
+    num_lo = pa_df[pa_df[result_col] == 'LO'].shape[0]
 
     runs_scored = df['Run'].sum()
     rbi = df['RBI'].sum()
 
-    # --- Standard Rate Stats ---
     avg = num_hits / ab if ab > 0 else 0
-    obp = (num_hits + num_walks) / pa if pa > 0 else 0
-    slg = (num_singles + num_doubles * 2 + num_triples * 3 + num_hr * 4) / ab if ab > 0 else 0
+    obp = (num_hits + num_walks) / (ab + num_walks + num_sf) if (ab + num_walks + num_sf) > 0 else 0
+    slg = num_tb / ab if ab > 0 else 0
     ops = obp + slg
-
-    # --- Advanced Stat Calculations ---
     iso = slg - avg
-    
-    # Percentages
+    babip = (num_hits - num_hr) / (ab - num_strikeouts - num_hr + num_sf) if (ab - num_strikeouts - num_hr + num_sf) > 0 else 0
+    sb_pct = num_sb / (num_sb + num_cs) if (num_sb + num_cs) > 0 else 0
     hr_pct = num_hr / pa if pa > 0 else 0
     so_pct = num_strikeouts / pa if pa > 0 else 0
     bb_pct = num_walks / pa if pa > 0 else 0
 
-    # Stolen Base Percentage
-    total_sb_attempts = num_sb + num_cs
-    sb_pct = num_sb / total_sb_attempts if total_sb_attempts > 0 else 0
+    num_gb_outs = num_rgo + num_lgo + num_gidp
+    num_fb_outs = num_fo + num_po + num_lo + num_sf
+    total_bip_outs = num_gb_outs + num_fb_outs
 
-    # Batted Ball Calculations (based on outs)
-    fly_ball_events = {'FO', 'PO'}
-    ground_ball_events = {'LGO', 'RGO', 'BUNT GO'}
-    num_fb_outs = pa_df[pa_df[result_col].isin(fly_ball_events)].shape[0]
-    num_gb_outs = pa_df[pa_df[result_col].isin(ground_ball_events)].shape[0] + num_gidp
-    
-    total_fb_gb = num_fb_outs + num_gb_outs
-    gb_pct = num_gb_outs / total_fb_gb if total_fb_gb > 0 else 0
-    fb_pct = num_fb_outs / total_fb_gb if total_fb_gb > 0 else 0
+    gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
+    fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
 
-    # BABIP
-    babip_denominator = ab - num_strikeouts - num_hr + num_sf
-    babip = (num_hits - num_hr) / babip_denominator if babip_denominator > 0 else 0
-
-    # --- Neutral OBP/SLG Calculation (for OPS+) ---
-    nOBP = (num_hits + num_walks) / pa if pa > 0 else 0
-    nSLG = (num_singles + num_doubles * 2 + num_triples * 3 + num_hr * 4) / ab if ab > 0 else 0
-
-    if 'Result at Neutral' in df.columns and not df['Result at Neutral'].isnull().all():
-        if season == 'S3': # S3 uses old results format
-            n_hits_def = {'1B', '2B', '3B', 'HR'}
-            n_walks_def = {'BB', 'IBB', 'Auto BB'}
-            n_pa_events_def = n_hits_def | n_walks_def | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'DP', 'TP', 'Sac', 'Bunt'}
-            
-            n_pa_df = df[df['Result at Neutral'].isin(n_pa_events_def)]
-            n_pa = len(n_pa_df)
-            n_walks = n_pa_df[n_pa_df['Result at Neutral'].isin(n_walks_def)].shape[0]
-            n_sacrifices = n_pa_df[n_pa_df['Result at Neutral'] == 'Sac'].shape[0]
-            n_ab = n_pa - n_walks - n_sacrifices
-            n_hits = n_pa_df[n_pa_df['Result at Neutral'].isin(n_hits_def)].shape[0]
-            n_doubles = n_pa_df[n_pa_df['Result at Neutral'] == '2B'].shape[0]
-            n_triples = n_pa_df[n_pa_df['Result at Neutral'] == '3B'].shape[0]
-            n_hr = n_pa_df[n_pa_df['Result at Neutral'] == 'HR'].shape[0]
-            n_singles = n_pa_df[n_pa_df['Result at Neutral'] == '1B'].shape[0]
-
-            if n_ab > 0:
-                nSLG = (n_singles + n_doubles * 2 + n_triples * 3 + n_hr * 4) / n_ab
-            else:
-                nSLG = 0
-            if n_pa > 0:
-                nOBP = (n_hits + n_walks) / n_pa
-            else:
-                nOBP = 0
-
-        elif season not in ['S2', 'S3']: # S4+ uses new results format
-            n_hits_def = {'1B', '2B', '3B', 'HR', 'BUNT 1B'}
-            n_walks_def = {'BB', 'IBB', 'Auto BB', 'AUTO BB'}
-            n_pa_events_def = n_hits_def | n_walks_def | {'K', 'Auto K', 'Bunt K', 'AUTO K', 'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'BUNT GO', 'BUNT Sac', 'Bunt Sac'}
-
-            n_pa_df = df[df['Result at Neutral'].isin(n_pa_events_def)]
-            n_pa = len(n_pa_df)
-            n_walks = n_pa_df[n_pa_df['Result at Neutral'].isin(n_walks_def)].shape[0]
-            # Use 'Old Result' for sacrifices as it is more reliable across versions
-            n_sacrifices = df[df['Old Result'] == 'Sac'].shape[0]
-            n_ab = n_pa - n_walks - n_sacrifices
-            n_hits = n_pa_df[n_pa_df['Result at Neutral'].isin(n_hits_def)].shape[0]
-            n_doubles = n_pa_df[n_pa_df['Result at Neutral'] == '2B'].shape[0]
-            n_triples = n_pa_df[n_pa_df['Result at Neutral'] == '3B'].shape[0]
-            n_hr = n_pa_df[n_pa_df['Result at Neutral'] == 'HR'].shape[0]
-            n_singles = n_pa_df[n_pa_df['Result at Neutral'] == '1B'].shape[0] + n_pa_df[n_pa_df['Result at Neutral'] == 'BUNT 1B'].shape[0]
-
-            if n_ab > 0:
-                nSLG = (n_singles + n_doubles * 2 + n_triples * 3 + n_hr * 4) / n_ab
-            else:
-                nSLG = 0
-            if n_pa > 0:
-                nOBP = (n_hits + n_walks) / n_pa
-            else:
-                nOBP = 0
+    nOBP = obp
+    nSLG = slg
 
     return pd.Series({
-        'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'TB': num_tb, 'RBI': rbi,
+        'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '1B': num_singles, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'TB': num_tb, 'RBI': rbi,
         'BB': num_walks, 'IBB': num_ibb, 'K': num_strikeouts, 'Auto K': num_auto_k, 'SB': num_sb, 'CS': num_cs, 'SH': num_sh, 'SF': num_sf, 'GIDP': num_gidp,
+        'RGO': num_rgo, 'LGO': num_lgo, 'FO': num_fo, 'PO': num_po, 'LO': num_lo,
         'AVG': avg, 'OBP': obp, 'SLG': slg, 'OPS': ops, 'ISO': iso, 'BABIP': babip,
         'SB%': sb_pct, 'HR%': hr_pct, 'SO%': so_pct, 'BB%': bb_pct,
         'GB%': gb_pct, 'FB%': fb_pct, 'GB/FB': gb_fb_ratio,
@@ -358,6 +297,12 @@ def calculate_pitching_stats(df, season=None):
     total_fb_gb_allowed = num_fb_outs_allowed + num_gb_outs_allowed
     gb_pct_against = num_gb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
     fb_pct_against = num_fb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+    num_rgo_allowed = bf_df[bf_df[result_col] == 'RGO'].shape[0]
+    num_lgo_allowed = bf_df[bf_df[result_col] == 'LGO'].shape[0]
+    num_fo_allowed = bf_df[bf_df[result_col] == 'FO'].shape[0]
+    num_po_allowed = bf_df[bf_df[result_col] == 'PO'].shape[0]
+    num_lo_allowed = bf_df[bf_df[result_col] == 'LO'].shape[0]
+
     gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
 
     # Rate stats per 6 innings
@@ -369,6 +314,7 @@ def calculate_pitching_stats(df, season=None):
     
     return pd.Series({
         'G': games_played, 'IP': ip, 'BF': num_bf, 'H': num_hits_allowed, 'R': runs_allowed, 'BB': num_walks_allowed, 'IBB': num_ibb, 'Auto BB': num_auto_bb_allowed, 'K': num_strikeouts, 'HR': num_hr_allowed,
+        '1B': num_singles_allowed, 'RGO': num_rgo_allowed, 'LGO': num_lgo_allowed, 'FO': num_fo_allowed, 'PO': num_po_allowed, 'LO': num_lo_allowed,
         'ERA': (runs_allowed * 6) / ip if ip > 0 else 0,
         'WHIP': (num_walks_allowed + num_hits_allowed) / ip if ip > 0 else 0,
         'H/6': h6, 'HR/6': hr6, 'BB/6': bb6, 'K/6': k6, 'K/BB': k_bb,
@@ -382,6 +328,127 @@ def calculate_pitching_stats(df, season=None):
         '2B_A': num_doubles_allowed, '3B_A': num_triples_allowed,
         'GB_outs_A': num_gb_outs_allowed, 'FB_outs_A': num_fb_outs_allowed
     })
+
+def calculate_career_hitting_stats(df):
+    summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
+    pa = summed_stats['PA']
+    ab = summed_stats['AB']
+    num_hits = summed_stats['H']
+    num_walks = summed_stats['BB']
+    num_sf = summed_stats['SF']
+    num_tb = summed_stats['TB']
+    num_hr = summed_stats['HR']
+    num_strikeouts = summed_stats['K']
+    num_sb = summed_stats['SB']
+    num_cs = summed_stats['CS']
+    num_rgo = summed_stats['RGO']
+    num_lgo = summed_stats['LGO']
+    num_gidp = summed_stats['GIDP']
+    num_fo = summed_stats['FO']
+    num_po = summed_stats['PO']
+    num_lo = summed_stats['LO']
+    avg = num_hits / ab if ab > 0 else 0
+    obp = (num_hits + num_walks) / (ab + num_walks + num_sf) if (ab + num_walks + num_sf) > 0 else 0
+    slg = num_tb / ab if ab > 0 else 0
+    ops = obp + slg
+    iso = slg - avg
+    babip = (num_hits - num_hr) / (ab - num_strikeouts - num_hr + num_sf) if (ab - num_strikeouts - num_hr + num_sf) > 0 else 0
+    sb_pct = num_sb / (num_sb + num_cs) if (num_sb + num_cs) > 0 else 0
+    hr_pct = num_hr / pa if pa > 0 else 0
+    so_pct = num_strikeouts / pa if pa > 0 else 0
+    bb_pct = num_walks / pa if pa > 0 else 0
+    num_gb_outs = num_rgo + num_lgo + num_gidp
+    num_fb_outs = num_fo + num_po + num_lo + num_sf
+    total_bip_outs = num_gb_outs + num_fb_outs
+    gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
+    fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
+    gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
+    weighted_ops_plus = (df['OPS+'] * df['PA']).sum()
+    total_pa = df['PA'].sum()
+    ops_plus = weighted_ops_plus / total_pa if total_pa > 0 else 0
+    career_stats = summed_stats.copy()
+    career_stats['AVG'] = avg
+    career_stats['OBP'] = obp
+    career_stats['SLG'] = slg
+    career_stats['OPS'] = ops
+    career_stats['ISO'] = iso
+    career_stats['BABIP'] = babip
+    career_stats['SB%'] = sb_pct
+    career_stats['HR%'] = hr_pct
+    career_stats['SO%'] = so_pct
+    career_stats['BB%'] = bb_pct
+    career_stats['GB%'] = gb_pct
+    career_stats['FB%'] = fb_pct
+    career_stats['GB/FB'] = gb_fb_ratio
+    career_stats['OPS+'] = ops_plus
+    career_stats['nOBP'] = obp
+    career_stats['nSLG'] = slg
+    career_stats['Team'] = ''
+    return career_stats
+
+def calculate_career_pitching_stats(df):
+    summed_stats = df[['G', 'IP', 'BF', 'H', 'R', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A']].sum()
+    ip = summed_stats['IP']
+    num_hits_allowed = summed_stats['H']
+    num_walks_allowed = summed_stats['BB']
+    runs_allowed = summed_stats['R']
+    num_hr_allowed = summed_stats['HR']
+    num_strikeouts = summed_stats['K']
+    ab_against = summed_stats['AB_A']
+    num_sf_allowed = summed_stats['SF_A']
+    num_gb_outs_allowed = summed_stats['GB_outs_A']
+    num_fb_outs_allowed = summed_stats['FB_outs_A']
+    era = (runs_allowed * 6) / ip if ip > 0 else 0
+    whip = (num_walks_allowed + num_hits_allowed) / ip if ip > 0 else 0
+    h6 = (num_hits_allowed / ip) * 6 if ip > 0 else 0
+    hr6 = (num_hr_allowed / ip) * 6 if ip > 0 else 0
+    bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else 0
+    k6 = (num_strikeouts / ip) * 6 if ip > 0 else 0
+    k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else 0
+    baa = num_hits_allowed / ab_against if ab_against > 0 else 0
+    obpa = (num_hits_allowed + num_walks_allowed) / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    tb_allowed = summed_stats['1B'] + 2*summed_stats['2B_A'] + 3*summed_stats['3B_A'] + 4*summed_stats['HR']
+    slga = tb_allowed / ab_against if ab_against > 0 else 0
+    opsa = obpa + slga
+    babip_denom = ab_against - num_strikeouts - num_hr_allowed + num_sf_allowed
+    babip_against = (num_hits_allowed - num_hr_allowed) / babip_denom if babip_denom > 0 else 0
+    hr_pct_against = num_hr_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    k_pct_against = num_strikeouts / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    bb_pct_against = num_walks_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    total_fb_gb_allowed = num_fb_outs_allowed + num_gb_outs_allowed
+    gb_pct_against = num_gb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+    fb_pct_against = num_fb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+    gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
+    weighted_fip = (df['FIP'] * df['IP']).sum()
+    weighted_era_plus = (df['ERA+'] * df['IP']).sum()
+    total_ip = df['IP'].sum()
+    fip = weighted_fip / total_ip if total_ip > 0 else 0
+    era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
+    career_stats = summed_stats.copy()
+    career_stats['ERA'] = era
+    career_stats['WHIP'] = whip
+    career_stats['H/6'] = h6
+    career_stats['HR/6'] = hr6
+    career_stats['BB/6'] = bb6
+    career_stats['K/6'] = k6
+    career_stats['K/BB'] = k_bb
+    career_stats['BAA'] = baa
+    career_stats['OBPA'] = obpa
+    career_stats['SLGA'] = slga
+    career_stats['OPSA'] = opsa
+    career_stats['BABIP_A'] = babip_against
+    career_stats['HR%_A'] = hr_pct_against
+    career_stats['K%_A'] = k_pct_against
+    career_stats['BB%_A'] = bb_pct_against
+    career_stats['GB%_A'] = gb_pct_against
+    career_stats['FB%_A'] = fb_pct_against
+    career_stats['GB/FB_A'] = gb_fb_ratio_against
+    career_stats['FIP'] = fip
+    career_stats['ERA+'] = era_plus
+    career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
+    career_stats['Team'] = ''
+    return career_stats
+
 
 def _get_simulated_runs_for_inning(inning_df):
     """Simulates an inning play-by-play based on rulebook logic to determine runs scored."""
@@ -628,6 +695,7 @@ def _get_pitch_histogram_data(pitch_series, bin_size):
 
 def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
     if pitcher_df.empty: return None
+    pitcher_df = pitcher_df.copy()
     pitcher_df['Pitch'] = pd.to_numeric(pitcher_df['Pitch'], errors='coerce')
     pitcher_df.sort_values(by=['Season', 'Session', 'Inning'], inplace=True)
     
@@ -775,6 +843,9 @@ def main():
 
     combined_df['Pitcher ID'] = pd.to_numeric(combined_df['Pitcher ID'], errors='coerce').fillna(0).astype(int)
     combined_df['Hitter ID'] = pd.to_numeric(combined_df['Hitter ID'], errors='coerce').fillna(0).astype(int)
+    combined_df['Season_num'] = combined_df['Season'].str.replace('S', '').astype(int)
+    combined_df.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
+    combined_df.drop(columns=['Season_num'], inplace=True)
     
     print("Processing Run Expectancy Matrices...")
     run_expectancy_by_season = {}
@@ -840,7 +911,30 @@ def main():
         print("Warning: gamelogs.txt not found. Cannot apply qualifying minimums for leaderboards.")
         season_games_map = {}
 
-    player_id_map = {**combined_df.groupby('Hitter ID')['Hitter'].first().to_dict(), **combined_df.groupby('Pitcher ID')['Pitcher'].first().to_dict()}
+    combined_df['Season_num'] = combined_df['Season'].str.replace('S', '').astype(int)
+    combined_df.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
+    combined_df.drop(columns=['Season_num'], inplace=True)
+
+    all_players = pd.concat([
+        combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'}),
+        combined_df[['Pitcher ID', 'Pitcher', 'Season', 'Session']].rename(columns={'Pitcher ID': 'Player ID', 'Pitcher': 'Player Name'})
+    ])
+    all_players.dropna(subset=['Player ID', 'Player Name'], inplace=True)
+    all_players['Player ID'] = all_players['Player ID'].astype(int)
+    all_players['Season_num'] = all_players['Season'].str.replace('S', '').astype(int)
+    all_players.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
+    
+    player_names = all_players.groupby('Player ID')['Player Name'].apply(lambda x: list(dict.fromkeys(x))).to_dict()
+
+    player_id_map = {}
+    for player_id, names in player_names.items():
+        if player_id == 0: continue
+        if not names: continue
+        
+        player_id_map[int(player_id)] = {
+            'currentName': names[-1],
+            'formerNames': names[:-1]
+        }
 
     cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'cache')
     previous_most_recent = _read_cache_manifest(cache_dir)
@@ -980,8 +1074,7 @@ def main():
                 if not season_decisions.empty: 
                     season_pitching_stats = season_pitching_stats.merge(season_decisions, on=['Season', 'Pitcher ID'], how='left')
                     if 'W' in season_pitching_stats.columns and 'L' in season_pitching_stats.columns:
-                        season_pitching_stats['W-L%'] = season_pitching_stats['W'] / (season_pitching_stats['W'] + season_pitching_stats['L'])
-                        season_pitching_stats['W-L%'].fillna(0, inplace=True)
+                        season_pitching_stats['W-L%'] = (season_pitching_stats['W'] / (season_pitching_stats['W'] + season_pitching_stats['L'])).fillna(0)
 
             # --- WAR Calculation ---
             if not season_hitting_stats.empty and not season_pitching_stats.empty:
@@ -1025,6 +1118,8 @@ def main():
     all_hitting_stats = pd.concat(all_seasons_hitting_stats, ignore_index=True).fillna(0)
     all_pitching_stats = pd.concat(all_seasons_pitching_stats, ignore_index=True).fillna(0)
 
+    
+
     # --- Calculate league-wide neutral stats for OPS+ ---
     league_stats_by_season = {}
     for season in leaderboard_df['Season'].unique():
@@ -1036,6 +1131,19 @@ def main():
     if not all_hitting_stats.empty:
         all_hitting_stats['OPS+'] = all_hitting_stats.apply(calculate_ops_plus_for_row, axis=1, league_stats_by_season=league_stats_by_season)
 
+    # --- Career Stats Calculation ---
+    print("Calculating career stats...")
+    # Hitting
+    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(calculate_career_hitting_stats).reset_index()
+    career_hitting_stats['Season'] = 'Career'
+    all_hitting_stats = pd.concat([all_hitting_stats, career_hitting_stats], ignore_index=True)
+
+    # Pitching
+    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(calculate_career_pitching_stats).reset_index()
+    career_pitching_stats['Season'] = 'Career'
+    all_pitching_stats = pd.concat([all_pitching_stats, career_pitching_stats], ignore_index=True)
+    print("Career stats calculated.")
+
     _write_cache_manifest(cache_dir, most_recent_season)
     print("Calculations complete.")
 
@@ -1045,11 +1153,26 @@ def main():
     if not os.path.exists(output_dir): os.makedirs(output_dir)
 
     # Save main stats
-    all_hitting_stats.to_json(os.path.join(output_dir, 'hitting_stats.json'), orient='records', indent=2)
-    all_pitching_stats.to_json(os.path.join(output_dir, 'pitching_stats.json'), orient='records', indent=2)
+    all_hitting_stats.replace([float('inf'), float('-inf')], None, inplace=True)
+    all_hitting_stats = all_hitting_stats.astype(object).where(pd.notna(all_hitting_stats), None)
+    hitting_data = {
+        "columns": all_hitting_stats.columns.tolist(),
+        "data": all_hitting_stats.values.tolist()
+    }
+    with open(os.path.join(output_dir, 'hitting_stats.json'), 'w') as f:
+        json.dump(hitting_data, f, indent=2)
+
+    all_pitching_stats.replace([float('inf'), float('-inf')], None, inplace=True)
+    all_pitching_stats = all_pitching_stats.astype(object).where(pd.notna(all_pitching_stats), None)
+    pitching_data = {
+        "columns": all_pitching_stats.columns.tolist(),
+        "data": all_pitching_stats.values.tolist()
+    }
+    with open(os.path.join(output_dir, 'pitching_stats.json'), 'w') as f:
+        json.dump(pitching_data, f, indent=2)
 
     # Save maps
-    with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f: json.dump({int(k): v for k, v in player_id_map.items()}, f, indent=2)
+    with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f: json.dump(player_id_map, f, indent=2)
     with open(os.path.join(output_dir, 'season_games_map.json'), 'w') as f: json.dump(season_games_map, f, indent=2)
 
     # Generate and save scouting reports
@@ -1063,11 +1186,6 @@ def main():
             all_scouting_reports[int(player_id)] = report_data
     with open(os.path.join(output_dir, 'scouting_reports.json'), 'w') as f: json.dump(all_scouting_reports, f, indent=2)
     
-    # Save a smaller df for career avg diff calculations on front-end
-    diff_data = combined_df[['Hitter ID', 'Pitcher ID', 'Diff']].copy()
-    diff_data['Diff'] = pd.to_numeric(diff_data['Diff'], errors='coerce')
-    diff_data.dropna(subset=['Diff'], inplace=True)
-    diff_data.to_json(os.path.join(output_dir, 'diff_data.json'), orient='records', indent=2)
 
     print(f"Web data exported successfully to {output_dir}")
 

@@ -56935,8 +56935,8 @@
   "2206": {
     "top_5_pitches": {
       "555": 5,
-      "169": 5,
       "222": 5,
+      "169": 5,
       "500": 4,
       "707": 4
     },
@@ -56944,7 +56944,7 @@
       "overall": [
         {
           "label": "1-99",
-          "count": 37
+          "count": 38
         },
         {
           "label": "100-199",
@@ -56972,11 +56972,11 @@
         },
         {
           "label": "700-799",
-          "count": 32
+          "count": 33
         },
         {
           "label": "800-899",
-          "count": 39
+          "count": 40
         },
         {
           "label": "900-999",
@@ -57028,7 +57028,7 @@
       "first_of_inning": [
         {
           "label": "1-99",
-          "count": 14
+          "count": 15
         },
         {
           "label": "100-199",
@@ -57098,7 +57098,7 @@
         },
         {
           "label": "700-799",
-          "count": 10
+          "count": 11
         },
         {
           "label": "800-899",
@@ -57111,11 +57111,11 @@
       ]
     },
     "tendencies": {
-      "repeat_percentage": 0.74,
+      "repeat_percentage": 0.73,
       "has_tripled_up": false,
       "swing_match_rate": 0.24,
-      "diff_match_rate": 1.22,
-      "meme_percentage": 1.47
+      "diff_match_rate": 1.21,
+      "meme_percentage": 1.45
     }
   },
   "698": {
@@ -60465,17 +60465,17 @@
   },
   "2350": {
     "top_5_pitches": {
-      "1": 4,
+      "900": 5,
       "500": 4,
       "333": 4,
-      "900": 4,
-      "30": 3
+      "1": 4,
+      "222": 3
     },
     "histograms": {
       "overall": [
         {
           "label": "1-99",
-          "count": 26
+          "count": 27
         },
         {
           "label": "100-199",
@@ -60483,11 +60483,11 @@
         },
         {
           "label": "200-299",
-          "count": 20
+          "count": 21
         },
         {
           "label": "300-399",
-          "count": 25
+          "count": 26
         },
         {
           "label": "400-499",
@@ -60503,21 +60503,21 @@
         },
         {
           "label": "700-799",
-          "count": 20
+          "count": 21
         },
         {
           "label": "800-899",
-          "count": 12
+          "count": 13
         },
         {
           "label": "900-999",
-          "count": 14
+          "count": 15
         }
       ],
       "first_of_game": [
         {
           "label": "1-99",
-          "count": 5
+          "count": 6
         },
         {
           "label": "100-199",
@@ -60559,7 +60559,7 @@
       "first_of_inning": [
         {
           "label": "1-99",
-          "count": 8
+          "count": 9
         },
         {
           "label": "100-199",
@@ -60629,11 +60629,11 @@
         },
         {
           "label": "700-799",
-          "count": 6
+          "count": 7
         },
         {
           "label": "800-899",
-          "count": 7
+          "count": 8
         },
         {
           "label": "900-999",
@@ -60642,11 +60642,11 @@
       ]
     },
     "tendencies": {
-      "repeat_percentage": 2.7,
+      "repeat_percentage": 2.62,
       "has_tripled_up": false,
       "swing_match_rate": 0.0,
       "diff_match_rate": 0.0,
-      "meme_percentage": 1.08
+      "meme_percentage": 1.04
     }
   },
   "2495": {
@@ -85308,9 +85308,9 @@
     "top_5_pitches": {
       "235": 4,
       "901": 3,
-      "362": 3,
       "199": 3,
-      "810": 3
+      "362": 3,
+      "766": 3
     },
     "histograms": {
       "overall": [
@@ -85352,7 +85352,7 @@
         },
         {
           "label": "900-999",
-          "count": 23
+          "count": 24
         }
       ],
       "first_of_game": [
@@ -85478,12 +85478,12 @@
         },
         {
           "label": "900-999",
-          "count": 3
+          "count": 4
         }
       ]
     },
     "tendencies": {
-      "repeat_percentage": 3.91,
+      "repeat_percentage": 3.9,
       "has_tripled_up": false,
       "swing_match_rate": 1.77,
       "diff_match_rate": 0.0,
