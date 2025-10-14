@@ -15,35 +15,50 @@
     <div id="app" style="display: none;">
         <header>
             <h1>MLR Scouting Tool</h1>
-            <p>Select a player or a leaderboard to get started.</p>
+            <nav>
+                <a href="#/stats" class="nav-tab" id="stats-tab">Player Stats</a>
+                <a href="#/leaderboards" class="nav-tab" id="leaderboards-tab">Leaderboards</a>
+            </nav>
         </header>
 
         <main>
-            <div class="controls">
-                <div class="control-group">
-                    <label for="player-search">Search Player:</label>
-                    <input type="text" id="player-search" placeholder="Enter player name...">
-                    <div id="player-suggestions"></div>
+            <div id="stats-view" class="view">
+                <div class="controls" id="stats-controls">
+                    <div class="control-group">
+                        <label for="player-search">Search Player:</label>
+                        <input type="text" id="player-search" placeholder="Enter player name...">
+                        <div id="player-suggestions"></div>
+                    </div>
                 </div>
-                <div class="control-group">
-                    <label for="leaderboard-type-select">Select Leaderboard:</label>
+                <div id="stats-content-display">
+                    <!-- Player stats and scouting reports will be rendered here -->
+                </div>
+            </div>
+
+            <div id="leaderboards-view" class="view" style="display: none;">
+                <div class="controls">
+                    <label for="leaderboard-type-select">Leaderboard:</label>
                     <select id="leaderboard-type-select">
                         <option value="batting">Batting</option>
                         <option value="pitching">Pitching</option>
                     </select>
+                    <label for="leaderboard-stat-select" style="margin-left: 10px;">Stat:</label>
                     <select id="leaderboard-stat-select">
                         <option value="">-- Select Stat --</option>
                     </select>
-
-
-                    <button id="leaderboard-button">View</button>
+                    <label for="leaderboard-team-filter" style="margin-left: 10px;">Team:</label>
+                    <select id="leaderboard-team-filter">
+                        <option value="">All Teams</option>
+                    </select>
                     <label for="leaderboard-length" style="margin-left: 10px;">Top:</label>
                     <input type="number" id="leaderboard-length" value="10" min="1" max="100" style="width: 60px;">
+                    <label for="reverse-sort" style="margin-left: 10px;">Reverse:</label>
+                    <input type="checkbox" id="reverse-sort">
+                    <button id="leaderboard-button" style="margin-left: 10px;">View</button>
                 </div>
-            </div>
-
-            <div id="content-display">
-                <!-- Player stats, leaderboards, and scouting reports will be rendered here -->
+                <div id="leaderboards-content-display">
+                    <!-- Leaderboards will be rendered here -->
+                </div>
             </div>
         </main>
     </div>
