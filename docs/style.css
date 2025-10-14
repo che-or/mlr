@@ -305,3 +305,19 @@ nav {
     vertical-align: middle;
     margin-right: 10px;
 }
+
+.sub-row {
+
+    opacity: 0.5; /* Even duller */
+
+    font-size: 0.8em; /* Slightly smaller */
+
+    font-style: italic; /* Add italic for more distinction */
+
+}
+
+.sub-row td:first-child {
+
+    padding-left: 25px !important;
+
+}

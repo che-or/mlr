@@ -860,7 +860,17 @@ document.addEventListener('DOMContentLoaded', () => {
             hittingStats.sort((a, b) => {
                 if (a.Season === 'Career') return 1;
                 if (b.Season === 'Career') return -1;
-                return parseInt(a.Season.slice(1)) - parseInt(b.Season.slice(1));
+                
+                const seasonA = parseInt(a.Season.slice(1));
+                const seasonB = parseInt(b.Season.slice(1));
+                if (seasonA !== seasonB) {
+                    return seasonA - seasonB;
+                }
+
+                // For same season, main row (is_sub_row=false) comes first
+                const subRowA = a.is_sub_row ? 1 : 0;
+                const subRowB = b.is_sub_row ? 1 : 0;
+                return subRowA - subRowB;
             });
             elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
         }
@@ -869,7 +879,17 @@ document.addEventListener('DOMContentLoaded', () => {
             pitchingStats.sort((a, b) => {
                 if (a.Season === 'Career') return 1;
                 if (b.Season === 'Career') return -1;
-                return parseInt(a.Season.slice(1)) - parseInt(b.Season.slice(1));
+                
+                const seasonA = parseInt(a.Season.slice(1));
+                const seasonB = parseInt(b.Season.slice(1));
+                if (seasonA !== seasonB) {
+                    return seasonA - seasonB;
+                }
+
+                // For same season, main row (is_sub_row=false) comes first
+                const subRowA = a.is_sub_row ? 1 : 0;
+                const subRowB = b.is_sub_row ? 1 : 0;
+                return subRowA - subRowB;
             });
             elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
         }
@@ -894,7 +914,10 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '<tbody>';
             const data = bySeason ? stats : [stats];
             data.forEach(s => {
-                const rowClass = (bySeason && s.Season === 'Career') ? 'career-row' : '';
+                let rowClass = (bySeason && s.Season === 'Career') ? 'career-row' : '';
+                if (s.is_sub_row) {
+                    rowClass += ' sub-row';
+                }
                 html += `<tr class="${rowClass}">`;
                 groupStats.forEach(stat => {
                     let statKey = stat;
