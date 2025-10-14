@@ -56934,9 +56934,9 @@
   },
   "2206": {
     "top_5_pitches": {
+      "169": 5,
       "555": 5,
       "222": 5,
-      "169": 5,
       "500": 4,
       "707": 4
     },
@@ -56960,7 +56960,7 @@
         },
         {
           "label": "400-499",
-          "count": 35
+          "count": 37
         },
         {
           "label": "500-599",
@@ -57086,7 +57086,7 @@
         },
         {
           "label": "400-499",
-          "count": 14
+          "count": 16
         },
         {
           "label": "500-599",
@@ -57111,10 +57111,10 @@
       ]
     },
     "tendencies": {
-      "repeat_percentage": 0.73,
+      "repeat_percentage": 0.72,
       "has_tripled_up": false,
       "swing_match_rate": 0.24,
-      "diff_match_rate": 1.21,
+      "diff_match_rate": 1.2,
       "meme_percentage": 1.45
     }
   },
@@ -88471,8 +88471,8 @@
       "771": 5,
       "2": 4,
       "117": 2,
-      "17": 2,
-      "632": 2
+      "427": 2,
+      "276": 2
     },
     "histograms": {
       "overall": [
@@ -88486,7 +88486,7 @@
         },
         {
           "label": "200-299",
-          "count": 13
+          "count": 14
         },
         {
           "label": "300-399",
@@ -88498,7 +88498,7 @@
         },
         {
           "label": "500-599",
-          "count": 9
+          "count": 11
         },
         {
           "label": "600-699",
@@ -88582,7 +88582,7 @@
         },
         {
           "label": "500-599",
-          "count": 1
+          "count": 2
         },
         {
           "label": "600-699",
@@ -88647,9 +88647,9 @@
     "tendencies": {
       "repeat_percentage": 0.0,
       "has_tripled_up": false,
-      "swing_match_rate": 2.44,
-      "diff_match_rate": 0.81,
-      "meme_percentage": 0.81
+      "swing_match_rate": 2.38,
+      "diff_match_rate": 0.79,
+      "meme_percentage": 0.79
     }
   },
   "3075": {

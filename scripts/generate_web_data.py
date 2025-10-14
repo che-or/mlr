@@ -330,6 +330,8 @@ def calculate_pitching_stats(df, season=None):
     })
 
 def calculate_career_hitting_stats(df):
+    if 'is_sub_row' in df.columns:
+        df = df[df['is_sub_row'] == False]
     summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
@@ -387,6 +389,8 @@ def calculate_career_hitting_stats(df):
     return career_stats
 
 def calculate_career_pitching_stats(df):
+    if 'is_sub_row' in df.columns:
+        df = df[df['is_sub_row'] == False]
     summed_stats = df[['G', 'IP', 'BF', 'H', 'R', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A']].sum()
     ip = summed_stats['IP']
     num_hits_allowed = summed_stats['H']
@@ -1041,25 +1045,56 @@ def main():
             # --- Hitting Stats Calculation ---
             hitter_records = []
             for (hitter_id), group_df in season_leaderboard_df.groupby('Hitter ID'):
+                teams = group_df['Batter Team'].unique()
+                
+                # Calculate combined stats for the season
                 stats_series = calculate_hitting_stats(group_df, season=season)
                 if stats_series is not None:
                     stats_series['Season'] = season
                     stats_series['Hitter ID'] = hitter_id
-                    teams = group_df['Batter Team'].unique()
-                    stats_series['Team'] = '/'.join(sorted(teams))
+                    stats_series['Team'] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
+                    stats_series['is_sub_row'] = False
                     hitter_records.append(stats_series)
+
+                    # If traded, calculate stats for each team
+                    if len(teams) > 1:
+                        for team in sorted(teams):
+                            team_df = group_df[group_df['Batter Team'] == team]
+                            team_stats_series = calculate_hitting_stats(team_df, season=season)
+                            if team_stats_series is not None:
+                                team_stats_series['Season'] = season
+                                team_stats_series['Hitter ID'] = hitter_id
+                                team_stats_series['Team'] = team
+                                team_stats_series['is_sub_row'] = True
+                                hitter_records.append(team_stats_series)
+
             season_hitting_stats = pd.DataFrame(hitter_records)
 
             # --- Pitching Stats Calculation ---
             pitcher_records = []
             for (pitcher_id), group_df in season_leaderboard_df.groupby('Pitcher ID'):
+                teams = group_df['Pitcher Team'].unique()
+
+                # Calculate combined stats for the season
                 stats_series = calculate_pitching_stats(group_df, season=season)
                 if stats_series is not None:
                     stats_series['Season'] = season
                     stats_series['Pitcher ID'] = pitcher_id
-                    teams = group_df['Pitcher Team'].unique()
-                    stats_series['Team'] = '/'.join(sorted(teams))
+                    stats_series['Team'] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
+                    stats_series['is_sub_row'] = False
                     pitcher_records.append(stats_series)
+
+                    # If traded, calculate stats for each team
+                    if len(teams) > 1:
+                        for team in sorted(teams):
+                            team_df = group_df[group_df['Pitcher Team'] == team]
+                            team_stats_series = calculate_pitching_stats(team_df, season=season)
+                            if team_stats_series is not None:
+                                team_stats_series['Season'] = season
+                                team_stats_series['Pitcher ID'] = pitcher_id
+                                team_stats_series['Team'] = team
+                                team_stats_series['is_sub_row'] = True
+                                pitcher_records.append(team_stats_series)
             season_pitching_stats = pd.DataFrame(pitcher_records)
 
             # --- Merge additional pitching stats ---
