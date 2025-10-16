@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         players: './data/player_id_map.json',
         seasons: './data/season_games_map.json',
         scouting: './data/scouting_reports.json',
+        glossary: './data/glossary.json'
     };
 
     const state = {
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         players: {},
         seasons: {},
         scoutingReports: {},
+        glossaryData: {},
         playerMap: new Map()
     };
 
@@ -22,9 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         statsView: document.getElementById('stats-view'),
         leaderboardsView: document.getElementById('leaderboards-view'),
+        glossaryView: document.getElementById('glossary-view'),
         
         statsTab: document.getElementById('stats-tab'),
         leaderboardsTab: document.getElementById('leaderboards-tab'),
+        glossaryTab: document.getElementById('glossary-tab'),
 
         playerSearch: document.getElementById('player-search'),
         playerSuggestions: document.getElementById('player-suggestions'),
@@ -132,12 +136,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
                 fetch(API.seasons).then(res => res.json()),
-                fetch(API.scouting).then(res => res.json())
+                fetch(API.scouting).then(res => res.json()),
+                fetch(API.glossary).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -145,6 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.players = players;
             state.seasons = seasons;
             state.scoutingReports = scouting;
+            state.glossaryData = glossary;
 
             for (const id in players) {
                 const player = players[id];
@@ -168,23 +174,93 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateView = () => {
         const path = window.location.hash || '#/stats';
         
-        if (path !== '#/stats' && path !== '#/leaderboards') {
+        if (path !== '#/stats' && path !== '#/leaderboards' && path !== '#/glossary') {
             window.location.hash = '#/stats';
             return;
         }
 
         const isStats = path === '#/stats';
         const isLeaderboards = path === '#/leaderboards';
+        const isGlossary = path === '#/glossary';
 
         elements.statsView.style.display = isStats ? 'block' : 'none';
         elements.leaderboardsView.style.display = isLeaderboards ? 'block' : 'none';
+        elements.glossaryView.style.display = isGlossary ? 'flex' : 'none';
 
         elements.statsTab.classList.toggle('active', isStats);
         elements.leaderboardsTab.classList.toggle('active', isLeaderboards);
+        elements.glossaryTab.classList.toggle('active', isGlossary);
 
         if (isLeaderboards && elements.leaderboardStatSelect.options.length <= 1) {
             populateLeaderboardStatSelect();
         }
+        if (isGlossary) {
+            renderGlossary();
+        }
+    };
+
+    const renderGlossary = () => {
+        const sidebar = document.getElementById('glossary-sidebar');
+        const content = document.getElementById('glossary-content');
+        
+        sidebar.innerHTML = '';
+        content.innerHTML = '';
+
+        const statList = document.createElement('ul');
+        statList.className = 'glossary-stat-list';
+
+        const stats = Object.keys(state.glossaryData);
+
+        stats.forEach(stat => {
+            const statItem = document.createElement('li');
+            statItem.textContent = `${state.glossaryData[stat].name} (${stat})`;
+            statItem.dataset.stat = stat;
+            statItem.addEventListener('click', () => {
+                displayGlossaryEntry(stat);
+                // Active class handling
+                document.querySelectorAll('.glossary-stat-list li').forEach(item => item.classList.remove('active'));
+                statItem.classList.add('active');
+            });
+            statList.appendChild(statItem);
+        });
+
+        sidebar.appendChild(statList);
+
+        // Display the first stat by default
+        if (stats.length > 0) {
+            displayGlossaryEntry(stats[0]);
+            sidebar.querySelector('li').classList.add('active');
+        }
+    };
+
+    const displayGlossaryEntry = (stat) => {
+        const content = document.getElementById('glossary-content');
+        const entry = state.glossaryData[stat];
+        if (!entry) {
+            content.innerHTML = '<p>Select a stat from the sidebar.</p>';
+            return;
+        }
+
+        let entryHTML = `<h2 class="section-title">${entry.name} (${stat})</h2>`;
+        entryHTML += `<p>${entry.definition}</p>`;
+
+        if (entry.conditional_rules) {
+            entryHTML += '<h4>Conditional Rules:</h4>';
+            entryHTML += '<ul>';
+            entry.conditional_rules.forEach(rule => {
+                entryHTML += `<li>${rule}</li>`;
+            });
+            entryHTML += '</ul>';
+        }
+
+        if (entry.sections) {
+            entry.sections.forEach(section => {
+                entryHTML += `<h4>${section.title}</h4>`;
+                entryHTML += section.content;
+            });
+        }
+        
+        content.innerHTML = entryHTML;
     };
 
     const initializeApp = () => {

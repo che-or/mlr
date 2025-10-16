@@ -321,3 +321,74 @@ nav {
     padding-left: 25px !important;
 
 }
+
+
+#glossary-view {
+    display: flex;
+    gap: 20px;
+    background-color: transparent;
+    padding: 0;
+}
+
+#glossary-sidebar {
+    width: 250px;
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.glossary-stat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.glossary-stat-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.glossary-stat-list li:hover {
+    background-color: var(--secondary-color);
+}
+
+.glossary-stat-list li.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+#glossary-content {
+    flex: 1;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#glossary-content h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#glossary-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+#glossary-content li {
+    margin-bottom: 10px;
+}
+
+.equation {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1em;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
