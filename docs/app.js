@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pitching_tables: {
             'Pitching Stats': ['Season', 'Team', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA+'],
             'Advanced Pitching': ['Season', 'Team', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'SO6', 'SO/BB', 'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'Avg Diff'],
-            'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP']
+            'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP', 'SB', 'CS', 'SB%']
         }
     };
 
@@ -297,6 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             else if (stat === 'K%') statKey = 'K%_A';
 
                             else if (stat === 'BB%') statKey = 'BB%_A';
+                            else if (stat === 'SB') statKey = 'SB_A';
+                            else if (stat === 'CS') statKey = 'CS_A';
+                            else if (stat === 'SB%') statKey = 'SB%_A';
 
                         }
 
@@ -369,9 +372,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-
-                                singleSeasonData = singleSeasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                            } else {
+                                singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
 
                             const min_decisions_season = 3;
@@ -405,9 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-
-                                    seasonData = seasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                } else {
+                                    seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
 
                                 let leaderboardData = seasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
@@ -505,9 +508,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-
-                                singleSeasonData = singleSeasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                            } else {
+                                singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
 
                             let singleSeasonLeaderboard;
@@ -563,9 +566,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-
-                                    seasonData = seasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                } else {
+                                    seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
 
                                 let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => (p[min_qual_key] || 0) >= min_qual);
@@ -837,11 +840,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (allStats.length > 0) {
             const lastSeasonStats = allStats
-                .filter(s => s.Season && s.Season !== 'Career')
+                .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
                 .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
             
             if (lastSeasonStats) {
-                mostRecentTeam = lastSeasonStats.Team.split('/')[0];
+                mostRecentTeam = lastSeasonStats['Last Team'];
             }
         }
 
@@ -940,6 +943,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         else if (stat === 'HR%') statKey = 'HR%_A';
                         else if (stat === 'K%') statKey = 'K%_A';
                         else if (stat === 'BB%') statKey = 'BB%_A';
+                        else if (stat === 'SB') statKey = 'SB_A';
+                        else if (stat === 'CS') statKey = 'CS_A';
+                        else if (stat === 'SB%') statKey = 'SB%_A';
                     } else {
                         if (stat === 'SO') statKey = 'K';
                         else if (stat === 'BA') statKey = 'AVG';
