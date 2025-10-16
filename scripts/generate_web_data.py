@@ -373,6 +373,12 @@ def calculate_career_hitting_stats(df):
     weighted_ops_plus = (df['OPS+'] * df['PA']).sum()
     total_pa = df['PA'].sum()
     ops_plus = weighted_ops_plus / total_pa if total_pa > 0 else 0
+
+    df['weight'] = df['PA'] + df['SB'] + df['CS']
+    weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
+    total_weight = df['weight'].sum()
+    avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
+
     career_stats = summed_stats.copy()
     career_stats['AVG'] = avg
     career_stats['OBP'] = obp
@@ -388,6 +394,7 @@ def calculate_career_hitting_stats(df):
     career_stats['FB%'] = fb_pct
     career_stats['GB/FB'] = gb_fb_ratio
     career_stats['OPS+'] = ops_plus
+    career_stats['Avg Diff'] = avg_diff
     career_stats['nOBP'] = obp
     career_stats['nSLG'] = slg
     career_stats['Team'] = ''
@@ -438,6 +445,12 @@ def calculate_career_pitching_stats(df):
     total_ip = df['IP'].sum()
     fip = weighted_fip / total_ip if total_ip > 0 else 0
     era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
+
+    df['weight'] = df['BF'] + df['SB_A'] + df['CS_A']
+    weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
+    total_weight = df['weight'].sum()
+    avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
+
     career_stats = summed_stats.copy()
     career_stats['ERA'] = era
     career_stats['WHIP'] = whip
@@ -458,6 +471,7 @@ def calculate_career_pitching_stats(df):
     career_stats['FB%_A'] = fb_pct_against
     career_stats['GB/FB_A'] = gb_fb_ratio_against
     career_stats['SB%_A'] = sb_pct_against
+    career_stats['Avg Diff'] = avg_diff
     career_stats['FIP'] = fip
     career_stats['ERA+'] = era_plus
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
@@ -1228,12 +1242,12 @@ def main():
     # --- Career Stats Calculation ---
     print("Calculating career stats...")
     # Hitting
-    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(calculate_career_hitting_stats).reset_index()
+    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(calculate_career_hitting_stats, include_groups=False).reset_index()
     career_hitting_stats['Season'] = 'Career'
     all_hitting_stats = pd.concat([all_hitting_stats, career_hitting_stats], ignore_index=True)
 
     # Pitching
-    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(calculate_career_pitching_stats).reset_index()
+    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(calculate_career_pitching_stats, include_groups=False).reset_index()
     career_pitching_stats['Season'] = 'Career'
     all_pitching_stats = pd.concat([all_pitching_stats, career_pitching_stats], ignore_index=True)
     print("Career stats calculated.")
