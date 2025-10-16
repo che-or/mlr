@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pitching_tables: {
             'Pitching Stats': ['Season', 'Team', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA+'],
             'Advanced Pitching': ['Season', 'Team', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'SO6', 'SO/BB', 'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'Avg Diff'],
-            'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP']
+            'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP', 'SB', 'CS', 'SB%']
         }
     };
 
@@ -297,6 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             else if (stat === 'K%') statKey = 'K%_A';
 
                             else if (stat === 'BB%') statKey = 'BB%_A';
+                            else if (stat === 'SB') statKey = 'SB_A';
+                            else if (stat === 'CS') statKey = 'CS_A';
+                            else if (stat === 'SB%') statKey = 'SB%_A';
 
                         }
 
@@ -940,6 +943,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         else if (stat === 'HR%') statKey = 'HR%_A';
                         else if (stat === 'K%') statKey = 'K%_A';
                         else if (stat === 'BB%') statKey = 'BB%_A';
+                        else if (stat === 'SB') statKey = 'SB_A';
+                        else if (stat === 'CS') statKey = 'CS_A';
+                        else if (stat === 'SB%') statKey = 'SB%_A';
                     } else {
                         if (stat === 'SO') statKey = 'K';
                         else if (stat === 'BA') statKey = 'AVG';
