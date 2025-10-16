@@ -1,0 +1,223 @@
+{
+    "W": {
+        "name": "Wins",
+        "definition": "A single pitcher on the winning team is awarded a win.",
+        "conditional_rules": [
+            "<strong>Case 1: Starting Pitcher Earns the Win</strong><br>The starting pitcher must pitch at least <strong>3 and 1/3 innings</strong>.<br>Their team must have the lead when the pitcher leaves the game.<br>That lead must never be given up for the rest of the game.",
+            "<strong>Case 2: Relief Pitcher Earns the Win (Starter Doesn't Qualify)</strong><br>The starting pitcher pitches <strong>less than 3 and 1/3 innings</strong>.<br>The team has the lead when the starter leaves, and they never give it up.<br>The win is awarded to the <strong>first relief pitcher to record at least one out</strong>.",
+            "<strong>Case 3: Relief Pitcher Earns the Win (Lead Change)</strong><br>The game is tied or the pitcher's team is behind when they are in the game.<br>While that pitcher is still the pitcher of record, their team takes the lead.<br>The team never gives up that lead."
+        ]
+    },
+    "L": {
+        "name": "Loss",
+        "definition": "A single pitcher on the losing team is awarded a loss.",
+        "conditional_rules": [
+            "<strong>Case 1: Pitcher Allows the Go-Ahead Run</strong><br>A pitcher allows one or more runs to score, which gives the opposing team a lead.<br>The opposing team never gives up that lead for the rest of the game.<br>This pitcher is charged with the loss.",
+            "<strong>Case 2: Pitcher Leaves Runners on Base</strong><br>A pitcher leaves the game with one or more runners on base.<br>Those runners later score, and one of them is the run that gives the opposing team a lead they never give up.<br>The pitcher who allowed those runners to get on base is charged with the loss."
+        ]
+    },
+    "SV": {
+        "name": "Save",
+        "definition": "A single relief pitcher on the winning team can be awarded a save. The pitcher who gets the save cannot also get the win.",
+        "conditional_rules": [
+            "<strong>Case 1: The \"Standard\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They enter the game with a lead of <strong>3 runs or less</strong>.<br>They pitch for at least <strong>1 full inning</strong>.",
+            "<strong>Case 2: The \"Tying Run\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They enter the game with the potential tying run already on base, at bat, or on the on-deck circle.",
+            "<strong>Case 3: The \"Long Relief\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They pitch for at least <strong>3 innings</strong> to finish the game."
+        ]
+    },
+    "HLD": {
+        "name": "Hold",
+        "definition": "One or more relief pitchers can be awarded a hold in a game. A pitcher cannot get a win or a save in the same game as a hold.",
+        "conditional_rules": [
+            "<strong>Case 1: The \"Bridge\"</strong><br>A relief pitcher enters the game in a \"save situation\" (see the save rules above).<br>They record at least one out.<br>They leave the game with their team still in the lead."
+        ]
+    },
+    "WAR": {
+        "name": "Wins Above Replacement",
+        "definition": "Wins Above Replacement (WAR) is a comprehensive statistic that attempts to consolidate a player's total contribution into a single number. It represents how many more wins a player is worth than a \"replacement-level\" player—a hypothetical, readily available player (e.g., a minor leaguer) who could be substituted at minimal cost.</p><p>In this tool, WAR is built upon the foundation of RE24, providing a holistic view of a player's value in the context of the league's run-scoring environment.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>WAR provides a convenient way to compare the total value of all players, regardless of whether they are a hitter or a pitcher.</p><ul><li><strong>0.0 WAR:</strong> A replacement-level player.</li><li><strong>1.0 WAR:</strong> A solid, everyday player.</li><li><strong>3.0+ WAR:</strong> An All-Star caliber player.</li><li><strong>5.0+ WAR:</strong> An MVP candidate.</li></ul><p>Since this is a counting stat, these values are benchmarks for a full season. A player's WAR accumulates over time."
+            },
+            {
+                "title": "Calculation in MLR",
+                "content": "<p>The WAR model in this tool is designed to be balanced and context-neutral, based on your league's specific rules and outcomes.</p><p><div class=\"equation\">WAR = (Runs Above Replacement) / (Runs Per Win)</div></p><p>Here is the step-by-step process for a given season:</p><ol><li><strong>Total WAR Pool:</strong> The total amount of WAR available for all players in the league for a season is defined as <strong>(Number of Regular Season Games) * 6.17</strong>. This creates a consistent, scaled environment similar to other baseball leagues.</li><li><strong>Hitter/Pitcher Split:</strong> To ensure fair comparison, this total WAR pool is split evenly, with 50% allocated to all hitters and 50% to all pitchers.</li><li><strong>Runs Per Win (RPW):</strong> A standard value of <strong>10 Runs Per Win</strong> is used. This means for every 10 runs a player creates above a replacement player, they are credited with 1 WAR.</li><li><strong>Runs Above Replacement (RAR):</strong> This is the core of the calculation.<ul><li>First, a player's <strong>Runs Above Average (RAA)</strong> is their `RE24` for the season.</li><li>Next, a \"replacement-level\" run value is calculated based on the total WAR pool and total playing time (Plate Appearances and Batters Faced) in the league.</li><li>A player's RAR is their `RAA` plus the replacement-level value scaled by their specific playing time.</li><li><div class=\"equation\">RAR = RE24 + (Replacement Value per PA/BF * Player's PA/BF)</div></li></ul></li><li><strong>Final Value:</strong> The player's total RAR is divided by 10 (the RPW value) to arrive at their final WAR for the season.</li></ol>"
+            },
+            {
+                "title": "Why Use WAR?",
+                "content": "<p>WAR is one of the most powerful tools for player analysis because it combines multiple facets of performance into a single, easy-to-understand number that is tied directly to wins.</p><ul><li><strong>Universal Comparison:</strong> It provides a unified scale to measure the value of hitters and pitchers against each other.</li><li><strong>Context Included:</strong> By being based on RE24, it inherently includes the context of every play.</li><li><strong>Value over Volume:</strong> While it rewards players for playing more, it is fundamentally a measure of <em>value</em>. A player with a high WAR in limited playing time is recognized as being highly effective.</li></ul>"
+            }
+        ]
+    },
+    "RE24": {
+        "name": "Run Expectancy Over 24 Base-Out States",
+        "definition": "RE24 is an advanced statistic that measures the total impact a player has on their team's run-scoring potential. It calculates the change in run expectancy from the beginning of a plate appearance to the end, crediting or debiting the player for the outcome.</p><p>Unlike stats that only measure hits or outs, RE24 captures the full context of a play. For example, a solo home run is good, but a bases-clearing double that doesn't score the batter might be even more valuable in a given situation. RE24 quantifies this value.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>RE24 is a counting stat, not a rate stat. It accumulates over a season.</p><ul><li><strong>For Hitters:</strong> A <strong>higher</strong> RE24 is better. It means the player consistently creates situations that lead to more runs. A positive value indicates they have been more productive than an average player would have been in the same situations.</li><li><strong>For Pitchers:</strong> A <strong>lower</strong> RE24 is better. It means the pitcher consistently reduces the opponent's chances of scoring. A negative value indicates the pitcher has been more effective at suppressing run-scoring opportunities than an average pitcher.</li></ul><p>A value of <strong>0</strong> represents a league-average performance."
+            },
+            {
+                "title": "Calculation in MLR",
+                "content": "<p>The formula for a single play is:</p><p><div class=\"equation\">RE24 = (Run Expectancy After Play) - (Run Expectancy Before Play) + (Runs Scored on Play)</div></p><p>The calculation process in this tool is as follows:</p><ol><li><strong>Run Expectancy (RE) Matrix:</strong> First, the tool calculates a Run Expectancy Matrix for each season. This matrix contains the average number of runs that will be scored from every possible base-out state (e.g., \"runner on 1st, 0 outs\") until the end of the inning. There are 24 possible states (8 base states x 3 out states).</li><li><strong>Before and After States:</strong> For every single plate appearance in the season, the tool looks at the base-out state <em>before</em> the play and the state <em>after</em> the play.</li><li><strong>Applying the Formula:</strong> The tool retrieves the RE values for the before and after states from the matrix and applies the formula above. Any runs that score directly on the play are also added.</li><li><strong>Aggregation:</strong> A player's seasonal RE24 is the sum of the RE24 values from all of their plate appearances.</li></ol>"
+            },
+            {
+                "title": "Why Use RE24?",
+                "content": "<p>RE24 provides a more complete picture of a player's offensive contribution (or run prevention skill) than traditional stats.</p><ul><li><strong>Context Matters:</strong> It properly credits a hitter for a walk with the bases loaded or a sacrifice fly that scores a run, plays that are often undervalued by stats like batting average.</li><li><strong>Situational Value:</strong> It correctly penalizes a pitcher for a walk that loads the bases, even if no runs score immediately, because the run expectancy has increased significantly.</li><li><strong>Comprehensive Value:</strong> It moves beyond just outcomes (hit, out, walk) and measures a player's direct impact on the one thing that wins games: scoring runs.</li></ul>"
+            }
+        ]
+    },
+    "OPS+": {
+        "name": "On-base Plus Slugging Plus",
+        "definition": "OPS+ is an advanced statistic that measures a hitter's total offensive value, adjusted for the overall offensive context of the league in a given season. It normalizes a player's On-base Plus Slugging (OPS) so that 100 is always the league average.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<ul><li><strong>100:</strong> Exactly league average.</li><li><strong>150:</strong> 50% better than the league average hitter.</li><li><strong>75:</strong> 25% worse than the league average hitter.</li></ul><p>OPS+ is a great way to compare players across different seasons and ballparks, as it accounts for variations in both league-wide offensive performance and park effects.</p>"
+            },
+            {
+                "title": "Calculation in MLR",
+                "content": "<p>The formula used for OPS+ in this tool is:</p><p><div class=\"equation\">OPS+ = 100 * ( (Player's Park-Neutral OBP / League's Park-Neutral OBP) + (Player's Park-Neutral SLG / League's Park-Neutral SLG) - 1 )</div></p><p>To achieve a park-neutral statistic, the calculation uses the <strong>'Result at Neutral'</strong> column for seasons where it is available (S3 and later). This column shows what the outcome of the play would have been in a perfectly average ballpark.</p><p>For older seasons (S2), where this data is not available, the standard results are used as a baseline.</p><p>This approach ensures that OPS+ correctly compares players by adjusting for both league-wide offensive trends and ballpark effects.</p>"
+            },
+            {
+                "title": "Why Use OPS+?",
+                "content": "<p>A player with a .900 OPS in a high-offense season might be less valuable than a player with an .850 OPS in a low-offense (pitcher-dominated) season. Similarly, a player in an extreme hitter's park will have inflated raw stats. OPS+ cuts through this noise by showing how much better each player was compared to their peers in a normalized environment. It answers the question: \"How good was this hitter relative to the league average, once external factors are stripped away?\"</p>"
+            }
+        ]
+    },
+    "FIP": {
+        "name": "Fielding Independent Pitching",
+        "definition": "Fielding Independent Pitching (FIP) is an advanced pitching metric that estimates a pitcher's performance based only on outcomes that do not involve the defense: home runs, walks, and strikeouts. It operates on the same scale as ERA, making it easy to compare.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>Because FIP is on the same scale as ERA, you can read it in the same way. A FIP of 3.50 is roughly equivalent to a 3.50 ERA. The key difference is that FIP measures what a pitcher's ERA <em>should have been</em>, given their performance on events they can control.</p><ul><li><strong>If FIP < ERA:</strong> The pitcher may have been unlucky or had poor defensive support.</li><li><strong>If FIP > ERA:</strong> The pitcher may have been lucky or had excellent defensive support.</li></ul>"
+            },
+            {
+                "title": "Calculation in MLR",
+                "content": "<p>The formula used for FIP in this tool is:</p><p><div class=\"equation\">FIP = ((13 * HR) + (3 * BB) - (2 * K)) / IP + FIP Constant</div></p><ul><li><strong>HR:</strong> Home Runs Allowed</li><li><strong>BB:</strong> Walks Allowed (does not include Hit By Pitch, as HBP is not tracked)</li><li><strong>K:</strong> Strikeouts</li><li><strong>IP:</strong> Innings Pitched</li></ul><p>To ensure FIP is on the same scale as ERA, a <strong>FIP Constant</strong> is calculated for each season and added. This constant is derived from the league's overall performance in a given season:</p><p><div class=\"equation\">FIP Constant = League ERA - ((13 * League HR) + (3 * League BB) - (2 * League K)) / League IP</div></p><p>This adjustment ensures that a league-average FIP will equal the league-average ERA for that season, making for a fair comparison.</p>"
+            },
+            {
+                "title": "Why Use FIP?",
+                "content": "<p>A pitcher has no control over what happens once a ball is put in play. A bloop single and a line drive directly at a fielder can have vastly different outcomes based on luck and the quality of the defense behind the pitcher.</p><p>FIP strips away that randomness and focuses only on the three true outcomes a pitcher can largely control: preventing home runs, preventing walks, and getting strikeouts. This makes it a valuable tool for evaluating a pitcher's underlying skill and predicting their future performance more accurately than ERA alone.</p>"
+            }
+        ]
+    },
+    "ERA+": {
+        "name": "Earned Run Average Plus",
+        "definition": "ERA+ is an advanced statistic that measures a pitcher's performance, adjusted for the overall offensive context of the league and park in a given season. It normalizes a pitcher's Earned Run Average (ERA) so that 100 is always the league average, but unlike traditional ERA, a higher number is better.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<ul><li><strong>100:</strong> Exactly league average.</li><li><strong>150:</strong> 50% better than the league average pitcher.</li><li><strong>75:</strong> 25% worse than the league average pitcher.</li></ul><p>ERA+ is the pitching equivalent of OPS+ and is one of the best ways to compare pitchers across different eras, seasons, and ballparks.</p>"
+            },
+            {
+                "title": "Calculation in MLR",
+                "content": "<p>The formula used for ERA+ in this tool is:</p><p><div class=\"equation\">ERA+ = 100 * (League's Park-Neutral ERA / Player's Park-Neutral ERA)</div></p><p>Calculating a pitcher's Park-Neutral ERA (`nERA`) is a complex process that goes beyond their standard ERA:</p><ol><li><strong>Neutral Simulation:</strong> Each inning a pitcher has thrown is re-simulated play-by-play using the <strong>'Result at Neutral'</strong> column. This determines what the outcome of each play would have been in a perfectly average ballpark.</li><li><strong>Rulebook Logic:</strong> The simulation uses the official MLR Rulebook (Section 3.3) to determine how runners advance and how many runs score on each of these neutral plays.</li><li><strong>Run Expectancy Matrix:</strong> A key challenge is handling innings that end in reality but would have continued in the neutral simulation. To solve this, the tool uses a <strong>Run Expectancy Matrix</strong>. This matrix, calculated for each season, determines the average number of additional runs that are likely to score from any given base-out situation (e.g., \"runners on 1st and 3rd, 1 out\"). These expected runs are added to the pitcher's `nERA` total.</p></li></ol><p>This comprehensive simulation produces a pitcher's `nERA`, which reflects their performance independent of park effects. This `nERA` is then compared against the league-average `nERA` to produce the final ERA+.</p>"
+            },
+            {
+                "title": "Why Use ERA+?",
+                "content": "<p>A pitcher with a 3.50 ERA in a high-offense season is far more valuable than a pitcher with a 3.50 ERA in a dead-ball, pitcher-dominated season. ERA+ makes this comparison easy. By normalizing for external factors like park effects and the league's run-scoring environment, it provides a single, context-adjusted number to measure a pitcher's true performance relative to their peers.</p>"
+            }
+        ]
+    },
+    "BA": {
+        "name": "Batting Average",
+        "definition": "The most common measure of a hitter's performance. It represents the percentage of a batter's at-bats that result in a hit.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>A higher batting average indicates a greater likelihood of a player getting a hit. A .300 average is considered excellent.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">BA = Hits / At Bats</div>"
+            }
+        ]
+    },
+    "OBP": {
+        "name": "On-Base Percentage",
+        "definition": "Measures how frequently a batter reaches base. It is a more inclusive measure than batting average, as it includes walks and hit-by-pitches.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>A higher OBP means the player is more effective at avoiding outs and getting on base. An OBP of .400 is considered excellent.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\"> (Hits + Walks) / (At Bats + Walks + Sacrifice Flies)</div><p>Note: Hit By Pitch (HBP) is not included in this calculation as it is not tracked.</p>"
+            }
+        ]
+    },
+    "SLG": {
+        "name": "Slugging Percentage",
+        "definition": "Measures a hitter's power by weighting hits based on the number of bases. A double is worth twice as much as a single, a triple three times, and a home run four times.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>A higher SLG indicates more power. It shows the average number of bases a player records per at-bat. A SLG of .500 is considered very good.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">SLG = Total Bases / At Bats</div>"
+            }
+        ]
+    },
+    "OPS": {
+        "name": "On-Base Plus Slugging",
+        "definition": "A combination of On-Base Percentage (OBP) and Slugging Percentage (SLG). It is intended to combine a hitter's ability to get on base with their ability to hit for power into a single metric.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>OPS is a good measure of a player's overall offensive ability. An OPS of .900 or higher is considered excellent.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">OPS = On-Base Percentage + Slugging Percentage</div>"
+            }
+        ]
+    },
+    "BABIP": {
+        "name": "Batting Average on Balls In Play",
+        "definition": "Measures a player's batting average exclusively on balls they hit into the field of play, excluding home runs and strikeouts.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>The league average for BABIP is typically around .300. A player with a significantly higher or lower BABIP may be experiencing good or bad luck, respectively. It can also be influenced by a player's speed or tendency to hit hard line drives. Pitchers can also have a BABIP, which measures the batting average of opponents on balls in play against them.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">BABIP = (Hits - Home Runs) / (At Bats - Strikeouts - Home Runs + Sacrifice Flies)</div>"
+            }
+        ]
+    },
+    "ISO": {
+        "name": "Isolated Power",
+        "definition": "Measures a hitter's raw power by calculating their extra bases per at-bat. It is the difference between Slugging Percentage and Batting Average.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>A higher ISO indicates that a larger percentage of a player's hits are for extra bases. An ISO of .200 is considered very good.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">ISO = Slugging Percentage - Batting Average</div>"
+            }
+        ]
+    },
+    "WHIP": {
+        "name": "Walks and Hits per Inning Pitched",
+        "definition": "A common pitching statistic that measures how many baserunners a pitcher allows per inning pitched.",
+        "sections": [
+            {
+                "title": "Interpretation",
+                "content": "<p>A lower WHIP indicates better performance from a pitcher. A WHIP of 1.00 is considered excellent, meaning the pitcher allows, on average, only one baserunner per inning.</p>"
+            },
+            {
+                "title": "Calculation",
+                "content": "<p>The formula is:</p><div class=\"equation\">WHIP = (Walks + Hits) / Innings Pitched</div>"
+            }
+        ]
+    }
+}

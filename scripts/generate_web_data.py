@@ -119,11 +119,15 @@ def calculate_hitting_stats(df, season=None):
     num_gidp = pa_df[(pa_df['Old Result'].isin(['DP', 'TP'])) | (pa_df['Exact Result'] == 'BUNT DP')].shape[0]
 
     # Sacrifices (SH and SF)
-    sac_events_df = pa_df[pa_df['Old Result'] == 'Sac']
-    # An SF is a sac event that results in an RBI
-    num_sf = sac_events_df[pd.to_numeric(sac_events_df['RBI'], errors='coerce').fillna(0) > 0].shape[0]
-    num_sh = len(sac_events_df) - num_sf
-    num_sacrifices = len(sac_events_df)
+    if use_old_results: # S2, S3
+        num_sh = pa_df[pa_df['Old Result'] == 'Bunt'].shape[0]
+        num_sf = pa_df[pa_df['Old Result'] == 'Sac'].shape[0]
+    else: # S4+
+        num_sh = pa_df[pa_df['Exact Result'].isin(['BUNT Sac', 'Bunt Sac'])].shape[0]
+        # A sac fly is a fly out that scores a run.
+        num_sf = pa_df[(pa_df['Exact Result'] == 'FO') & (pd.to_numeric(pa_df['RBI'], errors='coerce').fillna(0) > 0)].shape[0]
+
+    num_sacrifices = num_sh + num_sf
     
     ab = pa - num_walks - num_sacrifices
     num_hits = pa_df[pa_df[result_col].isin(hits)].shape[0]
