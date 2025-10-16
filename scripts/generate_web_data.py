@@ -374,6 +374,7 @@ def calculate_career_hitting_stats(df):
     total_pa = df['PA'].sum()
     ops_plus = weighted_ops_plus / total_pa if total_pa > 0 else 0
 
+    df = df.copy()
     df['weight'] = df['PA'] + df['SB'] + df['CS']
     weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
     total_weight = df['weight'].sum()
@@ -446,6 +447,7 @@ def calculate_career_pitching_stats(df):
     fip = weighted_fip / total_ip if total_ip > 0 else 0
     era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
 
+    df = df.copy()
     df['weight'] = df['BF'] + df['SB_A'] + df['CS_A']
     weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
     total_weight = df['weight'].sum()
@@ -1109,11 +1111,12 @@ def main():
                     stats_series['Hitter ID'] = hitter_id
                     stats_series['Team'] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
                     stats_series['is_sub_row'] = False
+                    stats_series['Last Team'] = group_df.sort_values('Session').iloc[-1]['Batter Team']
                     hitter_records.append(stats_series)
 
                     # If traded, calculate stats for each team
                     if len(teams) > 1:
-                        for team in sorted(teams):
+                        for team in teams:
                             team_df = group_df[group_df['Batter Team'] == team]
                             team_stats_series = calculate_hitting_stats(team_df, season=season)
                             if team_stats_series is not None:
@@ -1121,6 +1124,7 @@ def main():
                                 team_stats_series['Hitter ID'] = hitter_id
                                 team_stats_series['Team'] = team
                                 team_stats_series['is_sub_row'] = True
+                                team_stats_series['Last Team'] = team
                                 hitter_records.append(team_stats_series)
 
             season_hitting_stats = pd.DataFrame(hitter_records)
@@ -1137,11 +1141,12 @@ def main():
                     stats_series['Pitcher ID'] = pitcher_id
                     stats_series['Team'] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
                     stats_series['is_sub_row'] = False
+                    stats_series['Last Team'] = group_df.sort_values('Session').iloc[-1]['Pitcher Team']
                     pitcher_records.append(stats_series)
 
                     # If traded, calculate stats for each team
                     if len(teams) > 1:
-                        for team in sorted(teams):
+                        for team in teams:
                             team_df = group_df[group_df['Pitcher Team'] == team]
                             team_stats_series = calculate_pitching_stats(team_df, season=season)
                             if team_stats_series is not None:
@@ -1149,6 +1154,7 @@ def main():
                                 team_stats_series['Pitcher ID'] = pitcher_id
                                 team_stats_series['Team'] = team
                                 team_stats_series['is_sub_row'] = True
+                                team_stats_series['Last Team'] = team
                                 pitcher_records.append(team_stats_series)
             season_pitching_stats = pd.DataFrame(pitcher_records)
 

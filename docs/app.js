@@ -372,9 +372,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-
-                                singleSeasonData = singleSeasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                            } else {
+                                singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
 
                             const min_decisions_season = 3;
@@ -408,9 +408,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-
-                                    seasonData = seasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                } else {
+                                    seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
 
                                 let leaderboardData = seasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
@@ -508,9 +508,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-
-                                singleSeasonData = singleSeasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                            } else {
+                                singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
 
                             let singleSeasonLeaderboard;
@@ -566,9 +566,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-
-                                    seasonData = seasonData.filter(p => p.Team && p.Team.includes(selectedTeam));
-
+                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                } else {
+                                    seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
 
                                 let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => (p[min_qual_key] || 0) >= min_qual);
@@ -840,11 +840,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (allStats.length > 0) {
             const lastSeasonStats = allStats
-                .filter(s => s.Season && s.Season !== 'Career')
+                .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
                 .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
             
             if (lastSeasonStats) {
-                mostRecentTeam = lastSeasonStats.Team.split('/')[0];
+                mostRecentTeam = lastSeasonStats['Last Team'];
             }
         }
 
