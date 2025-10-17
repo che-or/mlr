@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
         seasons: {},
         scoutingReports: {},
         glossaryData: {},
-        playerMap: new Map()
+        playerMap: new Map(),
+        currentPlayerId: null
     };
 
     const elements = {
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         statsTab: document.getElementById('stats-tab'),
         leaderboardsTab: document.getElementById('leaderboards-tab'),
+        scoutingTab: document.getElementById('scouting-tab'),
         glossaryTab: document.getElementById('glossary-tab'),
 
         playerSearch: document.getElementById('player-search'),
@@ -174,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateView = () => {
         const path = window.location.hash || '#/stats';
         
-        if (path !== '#/stats' && path !== '#/leaderboards' && path !== '#/glossary') {
+        if (path !== '#/stats' && path !== '#/leaderboards' && path !== '#/glossary' && path !== '#/scouting') {
             window.location.hash = '#/stats';
             return;
         }
@@ -182,14 +184,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const isStats = path === '#/stats';
         const isLeaderboards = path === '#/leaderboards';
         const isGlossary = path === '#/glossary';
+        const isScouting = path === '#/scouting';
 
-        elements.statsView.style.display = isStats ? 'block' : 'none';
+        elements.statsView.style.display = (isStats || isScouting) ? 'block' : 'none';
         elements.leaderboardsView.style.display = isLeaderboards ? 'block' : 'none';
         elements.glossaryView.style.display = isGlossary ? 'flex' : 'none';
 
         elements.statsTab.classList.toggle('active', isStats);
         elements.leaderboardsTab.classList.toggle('active', isLeaderboards);
+        elements.scoutingTab.classList.toggle('active', isScouting);
         elements.glossaryTab.classList.toggle('active', isGlossary);
+
+        if (isStats || isScouting) {
+            if (state.currentPlayerId) {
+                displayPlayerPage(state.currentPlayerId);
+            } else {
+                elements.statsContentDisplay.innerHTML = '<p>Search for a player to see their stats.</p>';
+            }
+        }
 
         if (isLeaderboards && elements.leaderboardStatSelect.options.length <= 1) {
             populateLeaderboardStatSelect();
@@ -903,9 +915,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const displayPlayerPage = (playerId) => {
+        state.currentPlayerId = playerId;
         elements.statsContentDisplay.innerHTML = '';
         const player = state.players[playerId];
         if (!player) return;
+
+        const path = window.location.hash || '#/stats';
+        const isScouting = path === '#/scouting';
+        const isStats = path === '#/stats';
 
         const playerName = player.currentName;
 
@@ -936,45 +953,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         elements.statsContentDisplay.innerHTML = titleHTML;
 
-        if (hittingStats.length > 0) {
-            hittingStats.sort((a, b) => {
-                if (a.Season === 'Career') return 1;
-                if (b.Season === 'Career') return -1;
-                
-                const seasonA = parseInt(a.Season.slice(1));
-                const seasonB = parseInt(b.Season.slice(1));
-                if (seasonA !== seasonB) {
-                    return seasonA - seasonB;
-                }
+        if (isStats) {
+            if (hittingStats.length > 0) {
+                hittingStats.sort((a, b) => {
+                    if (a.Season === 'Career') return 1;
+                    if (b.Season === 'Career') return -1;
+                    
+                    const seasonA = parseInt(a.Season.slice(1));
+                    const seasonB = parseInt(b.Season.slice(1));
+                    if (seasonA !== seasonB) {
+                        return seasonA - seasonB;
+                    }
 
-                // For same season, main row (is_sub_row=false) comes first
-                const subRowA = a.is_sub_row ? 1 : 0;
-                const subRowB = b.is_sub_row ? 1 : 0;
-                return subRowA - subRowB;
-            });
-            elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                    // For same season, main row (is_sub_row=false) comes first
+                    const subRowA = a.is_sub_row ? 1 : 0;
+                    const subRowB = b.is_sub_row ? 1 : 0;
+                    return subRowA - subRowB;
+                });
+                elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+            }
+
+            if (pitchingStats.length > 0) {
+                pitchingStats.sort((a, b) => {
+                    if (a.Season === 'Career') return 1;
+                    if (b.Season === 'Career') return -1;
+                    
+                    const seasonA = parseInt(a.Season.slice(1));
+                    const seasonB = parseInt(b.Season.slice(1));
+                    if (seasonA !== seasonB) {
+                        return seasonA - seasonB;
+                    }
+
+                    // For same season, main row (is_sub_row=false) comes first
+                    const subRowA = a.is_sub_row ? 1 : 0;
+                    const subRowB = b.is_sub_row ? 1 : 0;
+                    return subRowA - subRowB;
+                });
+                elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+            }
         }
 
-        if (pitchingStats.length > 0) {
-            pitchingStats.sort((a, b) => {
-                if (a.Season === 'Career') return 1;
-                if (b.Season === 'Career') return -1;
-                
-                const seasonA = parseInt(a.Season.slice(1));
-                const seasonB = parseInt(b.Season.slice(1));
-                if (seasonA !== seasonB) {
-                    return seasonA - seasonB;
-                }
-
-                // For same season, main row (is_sub_row=false) comes first
-                const subRowA = a.is_sub_row ? 1 : 0;
-                const subRowB = b.is_sub_row ? 1 : 0;
-                return subRowA - subRowB;
-            });
-            elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+        if (isScouting) {
+            displayScoutingReport(playerId);
         }
-
-        displayScoutingReport(playerId);
     };
 
     const createStatsTable = (title, stats, statDefinitions, isPitching, bySeason = false) => {
