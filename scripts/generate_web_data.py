@@ -852,6 +852,17 @@ def main():
     if not all_season_data: return
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
 
+    # Initialize global temporary ID management
+    global_temp_id_counter = -1
+    player_name_to_temp_id = {} # Maps player name to a consistent negative ID
+
+    def get_or_assign_temp_id(player_name):
+        nonlocal global_temp_id_counter
+        if player_name not in player_name_to_temp_id:
+            player_name_to_temp_id[player_name] = global_temp_id_counter
+            global_temp_id_counter -= 1
+        return player_name_to_temp_id[player_name]
+
     # Disambiguate Line Outs (LO) from Left Ground Outs (LGO) in modern seasons.
     is_modern_season = ~combined_df['Season'].isin(['S2', 'S3'])
     lo_mask = (combined_df['Exact Result'] == 'LGO') & (combined_df['Old Result'] == 'LO')
@@ -866,15 +877,13 @@ def main():
         combined_df['Pitcher WPA'] = pd.to_numeric(combined_df['Pitcher WPA'].astype(str).str.strip('%'), errors='coerce').fillna(0) / 100
     no_id_mask = combined_df['Pitcher ID'].isna()
     if no_id_mask.any():
-        unique_names = combined_df.loc[no_id_mask, 'Pitcher'].unique()
-        name_to_id_map = {name: -i for i, name in enumerate(unique_names, 1)}
-        combined_df.loc[no_id_mask, 'Pitcher ID'] = combined_df.loc[no_id_mask, 'Pitcher'].map(name_to_id_map)
+        # Apply consistent temporary IDs for pitchers
+        combined_df.loc[no_id_mask, 'Pitcher ID'] = combined_df.loc[no_id_mask, 'Pitcher'].apply(get_or_assign_temp_id)
 
     no_id_mask_hitter = combined_df['Hitter ID'].isna()
     if no_id_mask_hitter.any():
-        unique_names = combined_df.loc[no_id_mask_hitter, 'Hitter'].unique()
-        name_to_id_map = {name: -i for i, name in enumerate(unique_names, 1)}
-        combined_df.loc[no_id_mask_hitter, 'Hitter ID'] = combined_df.loc[no_id_mask_hitter, 'Hitter'].map(name_to_id_map)
+        # Apply consistent temporary IDs for hitters
+        combined_df.loc[no_id_mask_hitter, 'Hitter ID'] = combined_df.loc[no_id_mask_hitter, 'Hitter'].apply(get_or_assign_temp_id)
 
     combined_df['Pitcher ID'] = pd.to_numeric(combined_df['Pitcher ID'], errors='coerce').fillna(0).astype(int)
     combined_df['Hitter ID'] = pd.to_numeric(combined_df['Hitter ID'], errors='coerce').fillna(0).astype(int)

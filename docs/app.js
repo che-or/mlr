@@ -898,6 +898,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'TBR': './img/logos/TBR.svg',
         'TEX': './img/logos/TEX.svg',
         'TOR': './img/logos/TOR.svg',
+        'WAS': './img/logos/WAS.svg',
         'WSH': './img/logos/WSH.svg'
     };
 
