@@ -136,6 +136,42 @@ document.addEventListener('DOMContentLoaded', () => {
         pitching: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO']
     };
 
+    const teamFranchises = {
+        "ANA": [{ abbr: "CLE", start: 4, end: 5 }, { abbr: "LAA", start: 6, end: 8 }, {abbr: "ANA", start: 9, end: Infinity }],
+        "ARI": [{ abbr: "ARI", start: 1, end: Infinity }],
+        "ATL": [{ abbr: "ATL", start: 1, end: 1 }, { abbr: "MTL", start: 2, end: 3 }, { abbr: "ATL", start: 4, end: Infinity }],
+        "BAL": [{ abbr: "BAL", start: 4, end: Infinity }],
+        "BOS": [{ abbr: "BOS", start: 2, end: Infinity }],
+        "CHC": [{ abbr: "CHC", start: 3, end: Infinity }],
+        "CIN": [{ abbr: "CLE", start: 2, end: 3 }, { abbr: "CIN", start: 4, end: Infinity }],
+        "CLE": [{ abbr: "TEX", start: 2, end: 5 }, { abbr: "CLE", start: 6, end: Infinity }],
+        "COL": [{ abbr: "COL", start: 2, end: Infinity }],
+        "CWS": [{ abbr: "CWS", start: 4, end: Infinity }],
+        "DET": [{ abbr: "DET", start: 1, end: Infinity }],
+        "FLA": [{ abbr: "MIA", start: 3, end: 10 }, { abbr: "FLA", start: 11, end: Infinity }],
+        "HOU": [{ abbr: "HOU", start: 1, end: Infinity }],
+        "KCR": [{ abbr: "KCR", start: 3, end: Infinity }],
+        "LAD": [{ abbr: "LAD", start: 2, end: Infinity }],
+        "MIL": [{ abbr: "NYM", start: 1, end: 1 }, { abbr: "MIL", start: 2, end: Infinity }],
+        "MIN": [{ abbr: "MIN", start: 4, end: Infinity }],
+        "MIN (S1-2)": [{ abbr: "MIN", start: 1, end: 2}],
+        "MTL": [{ abbr: "MTL", start: 4, end: Infinity }],
+        "NYM": [{ abbr: "NYM", start: 3, end: Infinity }],
+        "NYY": [{ abbr: "NYY", start: 3, end: Infinity }],
+        "OAK": [{ abbr: "OAK", start: 1, end: Infinity }],
+        "PHI": [{ abbr: "PHI", start: 1, end: Infinity }],
+        "PIT": [{ abbr: "PIT", start: 1, end: Infinity }],
+        "SDP": [{ abbr: "SDP", start: 2, end: Infinity }],
+        "SEA": [{ abbr: "SEA", start: 4, end: Infinity }],
+        "SEA (S2)": [{ abbr: "SEA", start: 2, end: 2}],
+        "SFG": [{ abbr: "SFG", start: 2, end: Infinity }],
+        "STL": [{ abbr: "STL", start: 2, end: Infinity }],
+        "TBR": [{ abbr: "TBD", start: 2, end: 2 }, { abbr: "TBR", start: 3, end: Infinity }],
+        "TEX": [{ abbr: "BAL", start: 1, end: 2 }, { abbr: "LAA", start: 3, end: 5 }, { abbr: "TEX", start: 6, end: Infinity }],
+        "TOR": [{ abbr: "TOR", start: 1, end: Infinity }],
+        "WSH (S1-2)": [{ abbr: "WAS", start: 1, end: 1 }, { abbr: "WSH", start: 2, end: 2 }]
+    };
+
     const loadData = async () => {
         try {
             const [hitting, pitching, players, seasons, scouting, glossary] = await Promise.all([
@@ -460,7 +496,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                const franchise = teamFranchises[selectedTeam];
+                                if (franchise) {
+                                    singleSeasonData = singleSeasonData.filter(p => {
+                                        const seasonNum = parseInt(p.Season.slice(1));
+                                        if (isNaN(seasonNum)) return false;
+                                        return franchise.some(f => p.Team === f.abbr && seasonNum >= f.start && seasonNum <= f.end);
+                                    });
+                                } else {
+                                    singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                }
                             } else {
                                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
@@ -496,7 +541,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    const franchise = teamFranchises[selectedTeam];
+                                    if (franchise) {
+                                        const seasonNum = parseInt(season.slice(1));
+                                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                                        if (correctAbbr) {
+                                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                                        } else {
+                                            seasonData = []; // This franchise didn't exist this season.
+                                        }
+                                    } else {
+                                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    }
                                 } else {
                                     seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
@@ -596,7 +652,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                const franchise = teamFranchises[selectedTeam];
+                                if (franchise) {
+                                    singleSeasonData = singleSeasonData.filter(p => {
+                                        const seasonNum = parseInt(p.Season.slice(1));
+                                        if (isNaN(seasonNum)) return false;
+                                        return franchise.some(f => p.Team === f.abbr && seasonNum >= f.start && seasonNum <= f.end);
+                                    });
+                                } else {
+                                    singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                }
                             } else {
                                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
@@ -654,7 +719,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    const franchise = teamFranchises[selectedTeam];
+                                    if (franchise) {
+                                        const seasonNum = parseInt(season.slice(1));
+                                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                                        if (correctAbbr) {
+                                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                                        } else {
+                                            seasonData = []; // This franchise didn't exist this season.
+                                        }
+                                    } else {
+                                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    }
                                 } else {
                                     seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
@@ -1119,7 +1195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateTeamFilter = () => {
         const teamFilter = elements.leaderboardTeamFilter;
         if (!teamFilter) return;
-        const teams = Object.keys(teamLogos).sort();
+        const teams = Object.keys(teamFranchises).sort();
         teams.forEach(team => {
             const option = document.createElement('option');
             option.value = team;
