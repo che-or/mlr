@@ -883,16 +883,64 @@ document.addEventListener('DOMContentLoaded', () => {
             leftColumn.appendChild(section);
         }
 
+        // --- Recent Game Line Graph ---
+        if (report.recent_game_info && report.recent_game_info.pitches && report.recent_game_info.pitches.length > 0) {
+            const section = document.createElement('div');
+            section.className = 'scouting-section';
+            
+            const game_info = report.recent_game_info;
+            const titleText = `${game_info.pitcher_team} ${game_info.season}.${game_info.session} vs. ${game_info.opponent}`;
+            
+            const title = document.createElement('h3');
+            title.textContent = titleText;
+            section.appendChild(title);
+
+            const canvas = document.createElement('canvas');
+            section.appendChild(canvas);
+
+            new Chart(canvas, {
+                type: 'line',
+                data: {
+                    labels: Array.from({ length: game_info.pitches.length }, (_, i) => i + 1),
+                    datasets: [{
+                        label: 'Pitch Number',
+                        data: game_info.pitches,
+                        borderColor: '#FF4500',
+                        backgroundColor: 'rgba(255, 69, 0, 0.2)',
+                        fill: true,
+                        tension: 0.1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { ticks: { color: '#D7DADC' }, grid: { color: '#343536' } },
+                        x: { ticks: { color: '#D7DADC' }, grid: { color: '#343536' }, title: { display: true, text: 'Pitch in Sequence' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+            
+            leftColumn.appendChild(section);
+        }
+
         // --- Histograms ---
         if (report.histograms) {
             const section = document.createElement('div');
             section.className = 'scouting-section';
+
             const sectionHeader = document.createElement('div');
             sectionHeader.className = 'scouting-section-header';
 
             const title = document.createElement('h3');
             title.textContent = 'Pitch Histograms';
             sectionHeader.appendChild(title);
+
+            const controlsWrapper = document.createElement('div');
+            controlsWrapper.className = 'histogram-header-controls';
+
+            const nValueSpan = document.createElement('span');
+            nValueSpan.className = 'histogram-n-value';
+            controlsWrapper.appendChild(nValueSpan);
             
             const titleMap = {
                 'overall': 'All Pitches',
@@ -903,14 +951,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const select = document.createElement('select');
             select.className = 'histogram-select';
+
+            const situationalGroup = document.createElement('optgroup');
+            situationalGroup.label = 'Situational';
             for (const key in report.histograms) {
                 const option = document.createElement('option');
                 option.value = key;
                 option.textContent = titleMap[key] || key.replace(/_/g, ' ');
-                select.appendChild(option);
+                situationalGroup.appendChild(option);
             }
-            sectionHeader.appendChild(select);
+            select.appendChild(situationalGroup);
 
+            if (report.conditional_histograms) {
+                const conditionalGroup = document.createElement('optgroup');
+                conditionalGroup.label = 'Conditional (After...)';
+                const sortedKeys = Object.keys(report.conditional_histograms).sort((a, b) => {
+                    return parseInt(a.split('_')[1]) - parseInt(b.split('_')[1]);
+                });
+                for (const key of sortedKeys) {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    let friendlyName = `After ${key.split('_')[1]}`;
+                    if (key === 'after_000s') {
+                        friendlyName = 'After 0s';
+                    }
+                    option.textContent = friendlyName;
+                    conditionalGroup.appendChild(option);
+                }
+                select.appendChild(conditionalGroup);
+            }
+
+            if (report.season_histograms) {
+                const seasonGroup = document.createElement('optgroup');
+                seasonGroup.label = 'By Season';
+                const sortedSeasons = Object.keys(report.season_histograms).sort((a, b) => {
+                    return parseInt(a.slice(1)) - parseInt(b.slice(1));
+                });
+                for (const season of sortedSeasons) {
+                    const option = document.createElement('option');
+                    option.value = season;
+                    option.textContent = `Season ${season.slice(1)}`;
+                    seasonGroup.appendChild(option);
+                }
+                select.appendChild(seasonGroup);
+            }
+            
+            controlsWrapper.appendChild(select);
+            sectionHeader.appendChild(controlsWrapper);
             section.appendChild(sectionHeader);
 
             const chartWrapper = document.createElement('div');
@@ -919,27 +1006,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const renderChart = (key) => {
                 chartWrapper.innerHTML = '';
-                const data = report.histograms[key];
-                if (!data) return;
+                
+                let data;
+                if (key.startsWith('after_')) {
+                    data = report.conditional_histograms[key];
+                } else if (key.startsWith('S')) {
+                    data = report.season_histograms[key];
+                } else {
+                    data = report.histograms[key];
+                }
+
+                if (!data) {
+                    nValueSpan.textContent = '';
+                    return;
+                }
+
+                const totalN = data.reduce((sum, bin) => sum + bin.count, 0);
+                nValueSpan.textContent = `N = ${totalN}`;
 
                 const chartContainer = document.createElement('div');
                 chartContainer.className = 'chart-container';
 
-                const groupedData = {};
-                for (const bin of data) {
-                    const pitchType = parseInt(bin.label, 10);
-                    if (isNaN(pitchType)) continue;
-                    const group = Math.floor(pitchType / 100);
-                    const groupLabel = `${group * 100}s`;
-                    if (!groupedData[groupLabel]) {
-                        groupedData[groupLabel] = 0;
-                    }
-                    groupedData[groupLabel] += bin.count;
-                }
-
-                const sortedLabels = Object.keys(groupedData).sort((a, b) => parseInt(a) - parseInt(b));
-                const chartLabels = sortedLabels;
-                const chartCounts = sortedLabels.map(label => groupedData[label]);
+                const chartLabels = data.map(bin => {
+                    const lower_bound = parseInt(bin.label.split('-')[0], 10);
+                    if (lower_bound === 1) return '0s';
+                    return `${Math.floor(lower_bound / 100) * 100}s`;
+                });
+                const chartCounts = data.map(bin => bin.count);
 
                 const canvas = document.createElement('canvas');
                 chartContainer.appendChild(canvas);
