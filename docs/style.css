@@ -207,9 +207,21 @@ nav {
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 
 /* Scouting Report */
-.scouting-report {
+.scouting-report-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 900px) {
+    .scouting-report-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.scouting-report-left {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -219,8 +231,37 @@ nav {
     border-radius: 6px;
 }
 
+.scouting-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
 .scouting-section h3 {
-    margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 8px;
+    margin: 0;
+}
+
+/* Info Items (used for Favorite Pitches and Tendencies) */
+.horizontal-items-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    text-align: center;
+}
+
+.info-item-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.info-item-label {
+    font-size: 0.9em;
+    color: var(--text-color);
 }
 
 .histogram-bar {
@@ -245,20 +286,7 @@ nav {
     border-radius: 0 3px 3px 0;
 }
 
-.tendency-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
 
-.tendency-item {
-    background-color: var(--primary-color);
-    padding: 10px;
-    border-radius: 4px;
-}
-
-.tendency-item .label { font-weight: bold; }
-.tendency-item .value { font-size: 1.2em; color: var(--accent-color); }
 
 .career-row {
     font-weight: bold;
@@ -391,4 +419,12 @@ nav {
     font-size: 1.1em;
     text-align: center;
     border: 1px solid var(--border-color);
+}
+
+.chart-container {
+    margin-bottom: 20px;
+}
+
+.histogram-select {
+    background-color: var(--primary-color);
 }
