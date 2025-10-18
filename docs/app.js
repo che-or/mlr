@@ -131,9 +131,51 @@ document.addEventListener('DOMContentLoaded', () => {
         'K%': 'Strikeout Percentage',
     };
 
+    const GLOSSARY_GROUPS = {
+        "General": ["WAR", "WPA", "RE24"],
+        "Batting": ["OPS+", "BA", "OBP", "SLG", "OPS", "ISO", "BABIP"],
+        "Pitching": ["ERA+", "FIP", "WHIP", "ERA", "W", "L", "SV", "HLD"]
+    };
+
     const LEADERBOARD_ONLY_STATS = {
         hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO'],
         pitching: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO']
+    };
+
+    const teamFranchises = {
+        "ANA": [{ abbr: "CLE", start: 4, end: 5 }, { abbr: "LAA", start: 6, end: 8 }, {abbr: "ANA", start: 9, end: Infinity }],
+        "ARI": [{ abbr: "ARI", start: 1, end: Infinity }],
+        "ATL": [{ abbr: "ATL", start: 1, end: 1 }, { abbr: "MTL", start: 2, end: 3 }, { abbr: "ATL", start: 4, end: Infinity }],
+        "BAL": [{ abbr: "BAL", start: 4, end: Infinity }],
+        "BOS": [{ abbr: "BOS", start: 2, end: Infinity }],
+        "CHC": [{ abbr: "CHC", start: 3, end: Infinity }],
+        "CIN": [{ abbr: "CLE", start: 2, end: 3 }, { abbr: "CIN", start: 4, end: Infinity }],
+        "CLE": [{ abbr: "TEX", start: 2, end: 5 }, { abbr: "CLE", start: 6, end: Infinity }],
+        "COL": [{ abbr: "COL", start: 2, end: Infinity }],
+        "CWS": [{ abbr: "CWS", start: 4, end: Infinity }],
+        "DET": [{ abbr: "DET", start: 1, end: Infinity }],
+        "FLA": [{ abbr: "MIA", start: 3, end: 10 }, { abbr: "FLA", start: 11, end: Infinity }],
+        "HOU": [{ abbr: "HOU", start: 1, end: Infinity }],
+        "KCR": [{ abbr: "KCR", start: 3, end: Infinity }],
+        "LAD": [{ abbr: "LAD", start: 2, end: Infinity }],
+        "MIL": [{ abbr: "NYM", start: 1, end: 1 }, { abbr: "MIL", start: 2, end: Infinity }],
+        "MIN": [{ abbr: "MIN", start: 4, end: Infinity }],
+        "MIN (S1-2)": [{ abbr: "MIN", start: 1, end: 2}],
+        "MTL": [{ abbr: "MTL", start: 4, end: Infinity }],
+        "NYM": [{ abbr: "NYM", start: 3, end: Infinity }],
+        "NYY": [{ abbr: "NYY", start: 3, end: Infinity }],
+        "OAK": [{ abbr: "OAK", start: 1, end: Infinity }],
+        "PHI": [{ abbr: "PHI", start: 1, end: Infinity }],
+        "PIT": [{ abbr: "PIT", start: 1, end: Infinity }],
+        "SDP": [{ abbr: "SDP", start: 2, end: Infinity }],
+        "SEA": [{ abbr: "SEA", start: 4, end: Infinity }],
+        "SEA (S2)": [{ abbr: "SEA", start: 2, end: 2}],
+        "SFG": [{ abbr: "SFG", start: 2, end: Infinity }],
+        "STL": [{ abbr: "STL", start: 2, end: Infinity }],
+        "TBR": [{ abbr: "TBD", start: 2, end: 2 }, { abbr: "TBR", start: 3, end: Infinity }],
+        "TEX": [{ abbr: "BAL", start: 1, end: 2 }, { abbr: "LAA", start: 3, end: 5 }, { abbr: "TEX", start: 6, end: Infinity }],
+        "TOR": [{ abbr: "TOR", start: 1, end: Infinity }],
+        "WSH (S1-2)": [{ abbr: "WAS", start: 1, end: 1 }, { abbr: "WSH", start: 2, end: 2 }]
     };
 
     const loadData = async () => {
@@ -216,32 +258,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const content = document.getElementById('glossary-content');
         
         sidebar.innerHTML = '';
-        content.innerHTML = '';
+        content.innerHTML = '<p>Select a stat from the sidebar to view its definition.</p>';
 
-        const statList = document.createElement('ul');
-        statList.className = 'glossary-stat-list';
+        for (const groupName in GLOSSARY_GROUPS) {
+            const groupHeader = document.createElement('h4');
+            groupHeader.className = 'glossary-group-header';
+            groupHeader.innerHTML = `<span class="arrow">&#9658;</span> ${groupName}`;
+            sidebar.appendChild(groupHeader);
+    
+            const statList = document.createElement('ul');
+            statList.className = 'glossary-stat-list collapsed';
 
-        const stats = Object.keys(state.glossaryData);
-
-        stats.forEach(stat => {
-            const statItem = document.createElement('li');
-            statItem.textContent = `${state.glossaryData[stat].name} (${stat})`;
-            statItem.dataset.stat = stat;
-            statItem.addEventListener('click', () => {
-                displayGlossaryEntry(stat);
-                // Active class handling
-                document.querySelectorAll('.glossary-stat-list li').forEach(item => item.classList.remove('active'));
-                statItem.classList.add('active');
+            groupHeader.addEventListener('click', () => {
+                groupHeader.classList.toggle('expanded');
+                statList.classList.toggle('collapsed');
             });
-            statList.appendChild(statItem);
-        });
-
-        sidebar.appendChild(statList);
-
-        // Display the first stat by default
-        if (stats.length > 0) {
-            displayGlossaryEntry(stats[0]);
-            sidebar.querySelector('li').classList.add('active');
+    
+            const statsInGroup = GLOSSARY_GROUPS[groupName];
+            statsInGroup.forEach(stat => {
+                if (state.glossaryData[stat]) {
+                    const statItem = document.createElement('li');
+                    statItem.textContent = `${stat} - ${state.glossaryData[stat].name}`;
+                    statItem.dataset.stat = stat;
+                    statItem.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent group from collapsing when item is clicked
+                        displayGlossaryEntry(stat);
+                        document.querySelectorAll('#glossary-sidebar li').forEach(item => item.classList.remove('active'));
+                        statItem.classList.add('active');
+                    });
+                    statList.appendChild(statItem);
+                }
+            });
+            sidebar.appendChild(statList);
         }
     };
 
@@ -253,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let entryHTML = `<h2 class="section-title">${entry.name} (${stat})</h2>`;
+        let entryHTML = `<h2 class="section-title">${stat} - ${entry.name}</h2>`;
         entryHTML += `<p>${entry.definition}</p>`;
 
         if (entry.conditional_rules) {
@@ -460,7 +508,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                const franchise = teamFranchises[selectedTeam];
+                                if (franchise) {
+                                    singleSeasonData = singleSeasonData.filter(p => {
+                                        const seasonNum = parseInt(p.Season.slice(1));
+                                        if (isNaN(seasonNum)) return false;
+                                        return franchise.some(f => p.Team === f.abbr && seasonNum >= f.start && seasonNum <= f.end);
+                                    });
+                                } else {
+                                    singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                }
                             } else {
                                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
@@ -496,7 +553,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    const franchise = teamFranchises[selectedTeam];
+                                    if (franchise) {
+                                        const seasonNum = parseInt(season.slice(1));
+                                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                                        if (correctAbbr) {
+                                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                                        } else {
+                                            seasonData = []; // This franchise didn't exist this season.
+                                        }
+                                    } else {
+                                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    }
                                 } else {
                                     seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
@@ -596,7 +664,16 @@ document.addEventListener('DOMContentLoaded', () => {
                             let singleSeasonData = data.filter(d => d.Season !== 'Career');
 
                             if (selectedTeam) {
-                                singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                const franchise = teamFranchises[selectedTeam];
+                                if (franchise) {
+                                    singleSeasonData = singleSeasonData.filter(p => {
+                                        const seasonNum = parseInt(p.Season.slice(1));
+                                        if (isNaN(seasonNum)) return false;
+                                        return franchise.some(f => p.Team === f.abbr && seasonNum >= f.start && seasonNum <= f.end);
+                                    });
+                                } else {
+                                    singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                                }
                             } else {
                                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
                             }
@@ -654,7 +731,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                 let seasonData = data.filter(d => d.Season === season);
 
                                 if (selectedTeam) {
-                                    seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    const franchise = teamFranchises[selectedTeam];
+                                    if (franchise) {
+                                        const seasonNum = parseInt(season.slice(1));
+                                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                                        if (correctAbbr) {
+                                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                                        } else {
+                                            seasonData = []; // This franchise didn't exist this season.
+                                        }
+                                    } else {
+                                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                    }
                                 } else {
                                     seasonData = seasonData.filter(p => !p.is_sub_row);
                                 }
@@ -1119,7 +1207,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateTeamFilter = () => {
         const teamFilter = elements.leaderboardTeamFilter;
         if (!teamFilter) return;
-        const teams = Object.keys(teamLogos).sort();
+        const teams = Object.keys(teamFranchises).sort();
         teams.forEach(team => {
             const option = document.createElement('option');
             option.value = team;
@@ -1206,42 +1294,94 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.statsContentDisplay.innerHTML = titleHTML;
 
         if (isStats) {
-            if (hittingStats.length > 0) {
-                hittingStats.sort((a, b) => {
-                    if (a.Season === 'Career') return 1;
-                    if (b.Season === 'Career') return -1;
-                    
-                    const seasonA = parseInt(a.Season.slice(1));
-                    const seasonB = parseInt(b.Season.slice(1));
-                    if (seasonA !== seasonB) {
-                        return seasonA - seasonB;
+            const lastSeasonNum = Math.max(
+                -1, // handle case where there are no non-career stats
+                ...hittingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1))),
+                ...pitchingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1)))
+            );
+    
+            let primaryRole = 'hitter';
+    
+            if (lastSeasonNum > 0) {
+                const lastSeason = `S${lastSeasonNum}`;
+                const recentHitting = hittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentPitching = pitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+    
+                if (recentPitching && !recentHitting) {
+                    primaryRole = 'pitcher';
+                } else if (recentPitching && recentHitting) {
+                    if (recentPitching.G > recentHitting.G) {
+                        primaryRole = 'pitcher';
+                    } else if (recentPitching.G === recentHitting.G) {
+                        const bf = recentPitching.BF || 0;
+                        const pa = recentHitting.PA || 0;
+                        if (bf > pa) {
+                            primaryRole = 'pitcher';
+                        }
                     }
-
-                    // For same season, main row (is_sub_row=false) comes first
-                    const subRowA = a.is_sub_row ? 1 : 0;
-                    const subRowB = b.is_sub_row ? 1 : 0;
-                    return subRowA - subRowB;
-                });
-                elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                }
+            } else {
+                const careerHitting = hittingStats.find(s => s.Season === 'Career');
+                const careerPitching = pitchingStats.find(s => s.Season === 'Career');
+                if (careerPitching && !careerHitting) {
+                    primaryRole = 'pitcher';
+                } else if (careerPitching && careerHitting) {
+                    if (careerPitching.G > careerHitting.G) {
+                        primaryRole = 'pitcher';
+                    } else if (careerPitching.G === careerHitting.G) {
+                        if ((careerPitching.BF || 0) > (careerHitting.PA || 0)) {
+                            primaryRole = 'pitcher';
+                        }
+                    }
+                }
             }
-
-            if (pitchingStats.length > 0) {
-                pitchingStats.sort((a, b) => {
-                    if (a.Season === 'Career') return 1;
-                    if (b.Season === 'Career') return -1;
-                    
-                    const seasonA = parseInt(a.Season.slice(1));
-                    const seasonB = parseInt(b.Season.slice(1));
-                    if (seasonA !== seasonB) {
-                        return seasonA - seasonB;
-                    }
-
-                    // For same season, main row (is_sub_row=false) comes first
-                    const subRowA = a.is_sub_row ? 1 : 0;
-                    const subRowB = b.is_sub_row ? 1 : 0;
-                    return subRowA - subRowB;
-                });
-                elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+    
+            const renderHitting = () => {
+                if (hittingStats.length > 0) {
+                    hittingStats.sort((a, b) => {
+                        if (a.Season === 'Career') return 1;
+                        if (b.Season === 'Career') return -1;
+                        
+                        const seasonA = parseInt(a.Season.slice(1));
+                        const seasonB = parseInt(b.Season.slice(1));
+                        if (seasonA !== seasonB) {
+                            return seasonA - seasonB;
+                        }
+    
+                        const subRowA = a.is_sub_row ? 1 : 0;
+                        const subRowB = b.is_sub_row ? 1 : 0;
+                        return subRowA - subRowB;
+                    });
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                }
+            };
+    
+            const renderPitching = () => {
+                if (pitchingStats.length > 0) {
+                    pitchingStats.sort((a, b) => {
+                        if (a.Season === 'Career') return 1;
+                        if (b.Season === 'Career') return -1;
+                        
+                        const seasonA = parseInt(a.Season.slice(1));
+                        const seasonB = parseInt(b.Season.slice(1));
+                        if (seasonA !== seasonB) {
+                            return seasonA - seasonB;
+                        }
+    
+                        const subRowA = a.is_sub_row ? 1 : 0;
+                        const subRowB = b.is_sub_row ? 1 : 0;
+                        return subRowA - subRowB;
+                    });
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+                }
+            };
+    
+            if (primaryRole === 'pitcher') {
+                renderPitching();
+                renderHitting();
+            } else {
+                renderHitting();
+                renderPitching();
             }
         }
 
