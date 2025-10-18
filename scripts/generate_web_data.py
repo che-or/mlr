@@ -338,9 +338,9 @@ def calculate_pitching_stats(df, season=None):
         'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against
     })
 
-def calculate_career_hitting_stats(df):
+def calculate_career_hitting_stats(df, league_stats_by_season):
     if 'is_sub_row' in df.columns:
-        df = df[df['is_sub_row'] == False]
+        df = df[df['is_sub_row'] == False].copy()
     summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
@@ -374,9 +374,26 @@ def calculate_career_hitting_stats(df):
     gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
     fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
-    weighted_ops_plus = (df['OPS+'] * df['PA']).sum()
+    
+    # Career OPS+ Calculation
+    lg_obp_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nOBP'))
+    lg_slg_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nSLG'))
+    
+    lg_obp_series = lg_obp_series.fillna(lg_obp_series.mean())
+    lg_slg_series = lg_slg_series.fillna(lg_slg_series.mean())
+
+    weighted_lg_obp = (lg_obp_series * df['PA']).sum()
+    weighted_lg_slg = (lg_slg_series * df['PA']).sum()
     total_pa = df['PA'].sum()
-    ops_plus = weighted_ops_plus / total_pa if total_pa > 0 else 0
+
+    career_lg_obp = weighted_lg_obp / total_pa if total_pa > 0 else 0
+    career_lg_slg = weighted_lg_slg / total_pa if total_pa > 0 else 0
+
+    if career_lg_obp > 0 and career_lg_slg > 0:
+        ops_plus = 100 * ((obp / career_lg_obp) + (slg / career_lg_slg) - 1)
+    else:
+        ops_plus = 100
+    ops_plus = round(ops_plus)
 
     df = df.copy()
     df['weight'] = df['PA'] + df['SB'] + df['CS']
@@ -405,84 +422,410 @@ def calculate_career_hitting_stats(df):
     career_stats['Team'] = ''
     return career_stats
 
-def calculate_career_pitching_stats(df):
+def calculate_career_pitching_stats(df, league_n_era_by_season):
+
     if 'is_sub_row' in df.columns:
-        df = df[df['is_sub_row'] == False]
+
+        df = df[df['is_sub_row'] == False].copy()
+
     summed_stats = df[['G', 'IP', 'BF', 'H', 'R', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A', 'SB_A', 'CS_A']].sum()
+
     ip = summed_stats['IP']
+
     num_hits_allowed = summed_stats['H']
+
     num_walks_allowed = summed_stats['BB']
+
     runs_allowed = summed_stats['R']
+
     num_hr_allowed = summed_stats['HR']
+
     num_strikeouts = summed_stats['K']
+
     ab_against = summed_stats['AB_A']
+
     num_sf_allowed = summed_stats['SF_A']
+
     num_gb_outs_allowed = summed_stats['GB_outs_A']
+
     num_fb_outs_allowed = summed_stats['FB_outs_A']
+
     era = (runs_allowed * 6) / ip if ip > 0 else 0
+
     whip = (num_walks_allowed + num_hits_allowed) / ip if ip > 0 else 0
+
     h6 = (num_hits_allowed / ip) * 6 if ip > 0 else 0
+
     hr6 = (num_hr_allowed / ip) * 6 if ip > 0 else 0
+
     bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else 0
+
     k6 = (num_strikeouts / ip) * 6 if ip > 0 else 0
+
     k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else 0
+
     baa = num_hits_allowed / ab_against if ab_against > 0 else 0
+
     obpa = (num_hits_allowed + num_walks_allowed) / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+
     tb_allowed = summed_stats['1B'] + 2*summed_stats['2B_A'] + 3*summed_stats['3B_A'] + 4*summed_stats['HR']
+
     slga = tb_allowed / ab_against if ab_against > 0 else 0
+
     opsa = obpa + slga
+
     babip_denom = ab_against - num_strikeouts - num_hr_allowed + num_sf_allowed
+
     babip_against = (num_hits_allowed - num_hr_allowed) / babip_denom if babip_denom > 0 else 0
+
     hr_pct_against = num_hr_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+
     k_pct_against = num_strikeouts / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+
     bb_pct_against = num_walks_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+
     total_fb_gb_allowed = num_fb_outs_allowed + num_gb_outs_allowed
+
     gb_pct_against = num_gb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+
     fb_pct_against = num_fb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+
     gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
+
     
+
     num_sb_allowed = summed_stats['SB_A']
+
     num_cs_against = summed_stats['CS_A']
+
     sb_pct_against = num_sb_allowed / (num_sb_allowed + num_cs_against) if (num_sb_allowed + num_cs_against) > 0 else 0
 
+
+
     weighted_fip = (df['FIP'] * df['IP']).sum()
-    weighted_era_plus = (df['ERA+'] * df['IP']).sum()
+
     total_ip = df['IP'].sum()
+
     fip = weighted_fip / total_ip if total_ip > 0 else 0
-    era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
+
+
+
+    # New ERA+ calculation
+
+    df['lg_n_era'] = df['Season'].map(league_n_era_by_season)
+
+    df['lg_n_era'] = df['lg_n_era'].fillna(df['lg_n_era'].mean())
+
+    
+
+    if 'nIP' in df.columns and 'nRuns' in df.columns:
+
+        weighted_lg_n_era = (df['lg_n_era'] * df['nIP']).sum()
+
+        total_n_ip = df['nIP'].sum()
+
+        career_lg_n_era = weighted_lg_n_era / total_n_ip if total_n_ip > 0 else 0
+
+
+
+        total_n_runs = df['nRuns'].sum()
+
+        career_player_n_era = (total_n_runs * 6) / total_n_ip if total_n_ip > 0 else 0
+
+
+
+        if career_player_n_era > 0:
+
+            era_plus = round(100 * (career_lg_n_era / career_player_n_era))
+
+        elif career_lg_n_era > 0:
+
+            era_plus = float('inf')
+
+        else:
+
+            era_plus = 100
+
+    else: # Fallback for older cached data that might not have nIP/nRuns
+
+        weighted_era_plus = (df['ERA+'] * df['IP']).sum()
+
+        era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
+
+
 
     df = df.copy()
+
     df['weight'] = df['BF'] + df['SB_A'] + df['CS_A']
+
     weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
+
     total_weight = df['weight'].sum()
+
     avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
 
+
+
     career_stats = summed_stats.copy()
+
     career_stats['ERA'] = era
+
     career_stats['WHIP'] = whip
+
     career_stats['H/6'] = h6
+
     career_stats['HR/6'] = hr6
+
     career_stats['BB/6'] = bb6
+
     career_stats['K/6'] = k6
+
     career_stats['K/BB'] = k_bb
+
     career_stats['BAA'] = baa
+
     career_stats['OBPA'] = obpa
+
     career_stats['SLGA'] = slga
+
     career_stats['OPSA'] = opsa
+
     career_stats['BABIP_A'] = babip_against
+
     career_stats['HR%_A'] = hr_pct_against
+
     career_stats['K%_A'] = k_pct_against
+
     career_stats['BB%_A'] = bb_pct_against
+
     career_stats['GB%_A'] = gb_pct_against
+
     career_stats['FB%_A'] = fb_pct_against
+
     career_stats['GB/FB_A'] = gb_fb_ratio_against
+
     career_stats['SB%_A'] = sb_pct_against
+
     career_stats['Avg Diff'] = avg_diff
+
     career_stats['FIP'] = fip
+
     career_stats['ERA+'] = era_plus
+
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
+
     career_stats['Team'] = ''
+
     return career_stats
+
+
+
+def get_base_state_svg(obc):
+
+
+
+    """Generates a 2x2 diamond SVG for a given On-Base Code (OBC)."""
+
+
+
+    bases = {
+
+
+
+        'first': bool(obc & 1),
+
+
+
+        'second': bool(obc & 2),
+
+
+
+        'third': bool(obc & 4)
+
+
+
+    }
+
+
+
+    
+
+
+
+    def diamond(filled, points):
+
+
+
+        color = '#D7DADC' if filled else 'none'
+
+
+
+        return f'<polygon points="{points}" fill="{color}" stroke="#D7DADC" stroke-width="1.5"/>'
+
+
+
+
+
+
+
+    svg_parts = [
+
+
+
+        '<svg width="24" height="24" viewbox="0 0 24 24">',
+
+
+
+        diamond(bases['second'], "12,2 17,7 12,12 7,7"),   # 2nd base
+
+
+
+        diamond(bases['third'], "5,9 10,14 5,19 0,14"),    # 3rd base
+
+
+
+        diamond(bases['first'], "19,9 24,14 19,19 14,14"), # 1st base
+
+
+
+        '</svg>'
+
+
+
+    ]
+
+
+
+    return "".join(svg_parts)
+
+
+
+
+
+
+
+def generate_re_matrix_html(season_num):
+
+
+
+    """Generates an HTML table for the RE matrix of a given season."""
+
+
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+
+    cache_path = os.path.join(script_dir, '..', 'data', 'cache', f're_matrix_S{season_num}.csv')
+
+
+
+    
+
+
+
+    if not os.path.exists(cache_path):
+
+
+
+        return None
+
+
+
+
+
+
+
+    re_df = pd.read_csv(cache_path)
+
+
+
+    
+
+
+
+    matrix = {}
+
+
+
+    for _, row in re_df.iterrows():
+
+
+
+        matrix[(int(row['OBC']), int(row['Outs']))] = float(row['RunExpectancy'])
+
+
+
+
+
+
+
+    html = "<table class='stats-table re-matrix'><thead><tr><th>Outs</th>"
+
+
+
+    for obc in range(8):
+
+
+
+        html += f"<th>{get_base_state_svg(obc)}</th>"
+
+
+
+    html += "</tr></thead><tbody>"
+
+
+
+
+
+
+
+    for outs in range(3):
+
+
+
+        html += f"<tr><td><strong>{outs}</strong></td>"
+
+
+
+        for obc in range(8):
+
+
+
+            html += f"<td>{matrix.get((obc, outs), 0.0):.3f}</td>"
+
+
+
+        html += "</tr>"
+
+
+
+    html += "</tbody></table>"
+
+
+
+    
+
+
+
+    return {
+
+
+
+        "title": f"Run Expectancy Matrix (S{season_num})",
+
+
+
+        "content": html
+
+
+
+    }
+
+
+
+
+
 
 
 def _get_simulated_runs_for_inning(inning_df):
@@ -1053,6 +1396,7 @@ def main():
         fip_constants_by_season = league_pitching_totals.set_index('Season')['FIP_Constant'].to_dict()
 
     print("Calculating Neutral ERA and ERA+...")
+    league_n_era_by_season = {}
     neutral_pitching_stats = []
     for season in sorted_seasons:
         season_df = leaderboard_df[leaderboard_df['Season'] == season]
@@ -1061,14 +1405,22 @@ def main():
         lg_neutral_stats = calculate_neutral_pitching_stats(season_df, re_matrix)
         lg_n_ip = lg_neutral_stats['nOuts'] / 3
         lg_n_era = (lg_neutral_stats['nRuns'] * 6) / lg_n_ip if lg_n_ip > 0 else 0
+        league_n_era_by_season[season] = lg_n_era
         
         # Calculate per-team ERA+
         for (pitcher_id, team), player_team_df in season_df.groupby(['Pitcher ID', 'Pitcher Team']):
             player_neutral_stats = calculate_neutral_pitching_stats(player_team_df, re_matrix)
             player_n_ip = player_neutral_stats['nOuts'] / 3
-            player_n_era = (player_neutral_stats['nRuns'] * 6) / player_n_ip if player_n_ip > 0 else 0
-            era_plus = round(100 * (lg_n_era / player_n_era)) if player_n_era > 0 else 0
-            neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': team, 'nIP': player_n_ip, 'ERA+': era_plus})
+            player_n_runs = player_neutral_stats['nRuns']
+            player_n_era = (player_n_runs * 6) / player_n_ip if player_n_ip > 0 else 0
+            
+            if player_n_era > 0:
+                era_plus = round(100 * (lg_n_era / player_n_era))
+            elif lg_n_era > 0:
+                era_plus = float('inf')
+            else:
+                era_plus = 100
+            neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': team, 'nIP': player_n_ip, 'ERA+': era_plus, 'nRuns': player_n_runs})
 
         # Calculate season-total ERA+ for all players who were traded
         for pitcher_id, player_df in season_df.groupby('Pitcher ID'):
@@ -1076,9 +1428,16 @@ def main():
             if len(teams) > 1:
                 player_neutral_stats = calculate_neutral_pitching_stats(player_df, re_matrix)
                 player_n_ip = player_neutral_stats['nOuts'] / 3
-                player_n_era = (player_neutral_stats['nRuns'] * 6) / player_n_ip if player_n_ip > 0 else 0
-                era_plus = round(100 * (lg_n_era / player_n_era)) if player_n_era > 0 else 0
-                neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': f"{len(teams)}TM", 'nIP': player_n_ip, 'ERA+': era_plus})
+                player_n_runs = player_neutral_stats['nRuns']
+                player_n_era = (player_n_runs * 6) / player_n_ip if player_n_ip > 0 else 0
+                
+                if player_n_era > 0:
+                    era_plus = round(100 * (lg_n_era / player_n_era))
+                elif lg_n_era > 0:
+                    era_plus = float('inf')
+                else:
+                    era_plus = 100
+                neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': f"{len(teams)}TM", 'nIP': player_n_ip, 'ERA+': era_plus, 'nRuns': player_n_runs})
 
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
 
@@ -1311,15 +1670,41 @@ def main():
     # --- Career Stats Calculation ---
     print("Calculating career stats...")
     # Hitting
-    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(calculate_career_hitting_stats, include_groups=False).reset_index()
+    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(lambda df: calculate_career_hitting_stats(df, league_stats_by_season), include_groups=False).reset_index()
     career_hitting_stats['Season'] = 'Career'
     all_hitting_stats = pd.concat([all_hitting_stats, career_hitting_stats], ignore_index=True)
 
     # Pitching
-    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(calculate_career_pitching_stats, include_groups=False).reset_index()
+    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(lambda df: calculate_career_pitching_stats(df, league_n_era_by_season), include_groups=False).reset_index()
     career_pitching_stats['Season'] = 'Career'
     all_pitching_stats = pd.concat([all_pitching_stats, career_pitching_stats], ignore_index=True)
     print("Career stats calculated.")
+
+    # --- Update Glossary with RE Matrix ---
+    print("Updating glossary with RE Matrix...")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data')
+    glossary_path = os.path.join(output_dir, 'glossary.json')
+    try:
+        with open(glossary_path, 'r') as f:
+            glossary_data = json.load(f)
+
+        if most_recent_season:
+            season_num = int(most_recent_season.replace('S', ''))
+            re_matrix_section = generate_re_matrix_html(season_num)
+            
+            if re_matrix_section and 'RE24' in glossary_data:
+                # Remove old matrix if it exists to prevent duplicates
+                glossary_data['RE24']['sections'] = [s for s in glossary_data['RE24']['sections'] if "Run Expectancy Matrix" not in s['title']]
+                # Add the new one
+                glossary_data['RE24']['sections'].append(re_matrix_section)
+                
+                with open(glossary_path, 'w') as f:
+                    json.dump(glossary_data, f, indent=4)
+                print("Glossary updated successfully.")
+
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Warning: Could not update glossary.json. Error: {e}")
+
 
     _write_cache_manifest(cache_dir, most_recent_season)
     print("Calculations complete.")

@@ -131,6 +131,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'K%': 'Strikeout Percentage',
     };
 
+    const GLOSSARY_GROUPS = {
+        "General": ["WAR", "WPA", "RE24"],
+        "Batting": ["OPS+", "BA", "OBP", "SLG", "OPS", "ISO", "BABIP"],
+        "Pitching": ["ERA+", "FIP", "WHIP", "ERA", "W", "L", "SV", "HLD"]
+    };
+
     const LEADERBOARD_ONLY_STATS = {
         hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO'],
         pitching: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO']
@@ -252,32 +258,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const content = document.getElementById('glossary-content');
         
         sidebar.innerHTML = '';
-        content.innerHTML = '';
+        content.innerHTML = '<p>Select a stat from the sidebar to view its definition.</p>';
 
-        const statList = document.createElement('ul');
-        statList.className = 'glossary-stat-list';
+        for (const groupName in GLOSSARY_GROUPS) {
+            const groupHeader = document.createElement('h4');
+            groupHeader.className = 'glossary-group-header';
+            groupHeader.innerHTML = `<span class="arrow">&#9658;</span> ${groupName}`;
+            sidebar.appendChild(groupHeader);
+    
+            const statList = document.createElement('ul');
+            statList.className = 'glossary-stat-list collapsed';
 
-        const stats = Object.keys(state.glossaryData);
-
-        stats.forEach(stat => {
-            const statItem = document.createElement('li');
-            statItem.textContent = `${state.glossaryData[stat].name} (${stat})`;
-            statItem.dataset.stat = stat;
-            statItem.addEventListener('click', () => {
-                displayGlossaryEntry(stat);
-                // Active class handling
-                document.querySelectorAll('.glossary-stat-list li').forEach(item => item.classList.remove('active'));
-                statItem.classList.add('active');
+            groupHeader.addEventListener('click', () => {
+                groupHeader.classList.toggle('expanded');
+                statList.classList.toggle('collapsed');
             });
-            statList.appendChild(statItem);
-        });
-
-        sidebar.appendChild(statList);
-
-        // Display the first stat by default
-        if (stats.length > 0) {
-            displayGlossaryEntry(stats[0]);
-            sidebar.querySelector('li').classList.add('active');
+    
+            const statsInGroup = GLOSSARY_GROUPS[groupName];
+            statsInGroup.forEach(stat => {
+                if (state.glossaryData[stat]) {
+                    const statItem = document.createElement('li');
+                    statItem.textContent = `${stat} - ${state.glossaryData[stat].name}`;
+                    statItem.dataset.stat = stat;
+                    statItem.addEventListener('click', (e) => {
+                        e.stopPropagation(); // Prevent group from collapsing when item is clicked
+                        displayGlossaryEntry(stat);
+                        document.querySelectorAll('#glossary-sidebar li').forEach(item => item.classList.remove('active'));
+                        statItem.classList.add('active');
+                    });
+                    statList.appendChild(statItem);
+                }
+            });
+            sidebar.appendChild(statList);
         }
     };
 
@@ -289,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let entryHTML = `<h2 class="section-title">${entry.name} (${stat})</h2>`;
+        let entryHTML = `<h2 class="section-title">${stat} - ${entry.name}</h2>`;
         entryHTML += `<p>${entry.definition}</p>`;
 
         if (entry.conditional_rules) {
@@ -1282,42 +1294,94 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.statsContentDisplay.innerHTML = titleHTML;
 
         if (isStats) {
-            if (hittingStats.length > 0) {
-                hittingStats.sort((a, b) => {
-                    if (a.Season === 'Career') return 1;
-                    if (b.Season === 'Career') return -1;
-                    
-                    const seasonA = parseInt(a.Season.slice(1));
-                    const seasonB = parseInt(b.Season.slice(1));
-                    if (seasonA !== seasonB) {
-                        return seasonA - seasonB;
+            const lastSeasonNum = Math.max(
+                -1, // handle case where there are no non-career stats
+                ...hittingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1))),
+                ...pitchingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1)))
+            );
+    
+            let primaryRole = 'hitter';
+    
+            if (lastSeasonNum > 0) {
+                const lastSeason = `S${lastSeasonNum}`;
+                const recentHitting = hittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentPitching = pitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+    
+                if (recentPitching && !recentHitting) {
+                    primaryRole = 'pitcher';
+                } else if (recentPitching && recentHitting) {
+                    if (recentPitching.G > recentHitting.G) {
+                        primaryRole = 'pitcher';
+                    } else if (recentPitching.G === recentHitting.G) {
+                        const bf = recentPitching.BF || 0;
+                        const pa = recentHitting.PA || 0;
+                        if (bf > pa) {
+                            primaryRole = 'pitcher';
+                        }
                     }
-
-                    // For same season, main row (is_sub_row=false) comes first
-                    const subRowA = a.is_sub_row ? 1 : 0;
-                    const subRowB = b.is_sub_row ? 1 : 0;
-                    return subRowA - subRowB;
-                });
-                elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                }
+            } else {
+                const careerHitting = hittingStats.find(s => s.Season === 'Career');
+                const careerPitching = pitchingStats.find(s => s.Season === 'Career');
+                if (careerPitching && !careerHitting) {
+                    primaryRole = 'pitcher';
+                } else if (careerPitching && careerHitting) {
+                    if (careerPitching.G > careerHitting.G) {
+                        primaryRole = 'pitcher';
+                    } else if (careerPitching.G === careerHitting.G) {
+                        if ((careerPitching.BF || 0) > (careerHitting.PA || 0)) {
+                            primaryRole = 'pitcher';
+                        }
+                    }
+                }
             }
-
-            if (pitchingStats.length > 0) {
-                pitchingStats.sort((a, b) => {
-                    if (a.Season === 'Career') return 1;
-                    if (b.Season === 'Career') return -1;
-                    
-                    const seasonA = parseInt(a.Season.slice(1));
-                    const seasonB = parseInt(b.Season.slice(1));
-                    if (seasonA !== seasonB) {
-                        return seasonA - seasonB;
-                    }
-
-                    // For same season, main row (is_sub_row=false) comes first
-                    const subRowA = a.is_sub_row ? 1 : 0;
-                    const subRowB = b.is_sub_row ? 1 : 0;
-                    return subRowA - subRowB;
-                });
-                elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+    
+            const renderHitting = () => {
+                if (hittingStats.length > 0) {
+                    hittingStats.sort((a, b) => {
+                        if (a.Season === 'Career') return 1;
+                        if (b.Season === 'Career') return -1;
+                        
+                        const seasonA = parseInt(a.Season.slice(1));
+                        const seasonB = parseInt(b.Season.slice(1));
+                        if (seasonA !== seasonB) {
+                            return seasonA - seasonB;
+                        }
+    
+                        const subRowA = a.is_sub_row ? 1 : 0;
+                        const subRowB = b.is_sub_row ? 1 : 0;
+                        return subRowA - subRowB;
+                    });
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Hitting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                }
+            };
+    
+            const renderPitching = () => {
+                if (pitchingStats.length > 0) {
+                    pitchingStats.sort((a, b) => {
+                        if (a.Season === 'Career') return 1;
+                        if (b.Season === 'Career') return -1;
+                        
+                        const seasonA = parseInt(a.Season.slice(1));
+                        const seasonB = parseInt(b.Season.slice(1));
+                        if (seasonA !== seasonB) {
+                            return seasonA - seasonB;
+                        }
+    
+                        const subRowA = a.is_sub_row ? 1 : 0;
+                        const subRowB = b.is_sub_row ? 1 : 0;
+                        return subRowA - subRowB;
+                    });
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+                }
+            };
+    
+            if (primaryRole === 'pitcher') {
+                renderPitching();
+                renderHitting();
+            } else {
+                renderHitting();
+                renderPitching();
             }
         }
 

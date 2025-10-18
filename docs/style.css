@@ -418,3 +418,28 @@ nav {
 .histogram-select {
     background-color: var(--primary-color);
 }
+
+/* Glossary Sidebar Groups */
+.glossary-group-header {
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.1em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.glossary-group-header .arrow {
+    display: inline-block;
+    margin-right: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.glossary-group-header.expanded .arrow {
+    transform: rotate(90deg);
+}
+
+.glossary-stat-list.collapsed {
+    display: none;
+}
