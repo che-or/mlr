@@ -732,7 +732,8 @@ def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
     if pitcher_df.empty: return None
     pitcher_df = pitcher_df.copy()
     pitcher_df['Pitch'] = pd.to_numeric(pitcher_df['Pitch'], errors='coerce')
-    pitcher_df.sort_values(by=['Season', 'Session', 'Inning'], inplace=True)
+    pitcher_df['Season_num'] = pitcher_df['Season'].str.replace('S', '').astype(int)
+    pitcher_df.sort_values(by=['Season_num', 'Session', 'Inning'], inplace=True)
     
     valid_pitches = pitcher_df['Pitch'].dropna()
     top_5_pitches = valid_pitches.value_counts().nlargest(5)
@@ -758,6 +759,52 @@ def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
         "risp": _get_pitch_histogram_data(pitcher_df[pd.to_numeric(pitcher_df['OBC'], errors='coerce').fillna(0) > 1]['Pitch'], bin_size)
     }
 
+    # Conditional Histograms
+    pitcher_df['pitch_norm'] = pitcher_df['Pitch'].apply(lambda x: 0 if x == 1000 else x)
+    pitcher_df['previous_pitch'] = pitcher_df.groupby(['Season', 'Game ID'])['pitch_norm'].shift(1)
+    
+    conditional_histograms = {}
+    for i in range(10):
+        lower_bound = i * 100
+        upper_bound = (i + 1) * 100
+        
+        filtered_df = pitcher_df[(pitcher_df['previous_pitch'] >= lower_bound) & (pitcher_df['previous_pitch'] < upper_bound)]
+        
+        if not filtered_df.empty:
+            hist_data = _get_pitch_histogram_data(filtered_df['Pitch'], bin_size)
+            key = f'after_{i}00s'
+            if hist_data:
+                conditional_histograms[key] = hist_data
+
+    # By Season Histograms
+    season_histograms = {}
+    for season, season_df in pitcher_df.groupby('Season'):
+        hist_data = _get_pitch_histogram_data(season_df['Pitch'], bin_size)
+        if hist_data:
+            season_histograms[season] = hist_data
+
+    # Recent Game Info
+    recent_game_info = {}
+    if not pitcher_df.empty:
+        last_game_row = pitcher_df.iloc[-1]
+        last_game_season = last_game_row['Season']
+        last_game_id = last_game_row['Game ID']
+        
+        last_game_df = pitcher_df[(pitcher_df['Season'] == last_game_season) & (pitcher_df['Game ID'] == last_game_id)]
+        
+        if not last_game_df.empty:
+            last_game_details = last_game_df.iloc[0]
+            opposing_teams = last_game_df['Batter Team'].unique()
+            opposing_team = opposing_teams[0] if len(opposing_teams) > 0 else ''
+
+            recent_game_info = {
+                'pitcher_team': last_game_details['Pitcher Team'],
+                'season': last_game_details['Season'],
+                'session': int(last_game_details['Session']),
+                'opponent': opposing_team,
+                'pitches': last_game_df['Pitch'].dropna().astype(int).tolist()
+            }
+
     return {
         "top_5_pitches": {int(k): int(v) for k, v in top_5_pitches.to_dict().items()},
         "histograms": histograms,
@@ -767,7 +814,10 @@ def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
             "swing_match_rate": round(swing_match_rate, 2),
             "diff_match_rate": round(diff_match_rate, 2),
             "meme_percentage": round(meme_percentage, 2)
-        }
+        },
+        "conditional_histograms": conditional_histograms,
+        "season_histograms": season_histograms,
+        "recent_game_info": recent_game_info
     }
 
 def calculate_game_achievements(df):
