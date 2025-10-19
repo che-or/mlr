@@ -232,13 +232,15 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.scoutingTab.classList.remove('active');
         elements.glossaryTab.classList.remove('active');
 
-        if (path.startsWith('#/team-stats/')) {
-            const [, , season, team] = path.split('/');
-            if (season && team) {
+        if (path.startsWith('#/team-stats')) {
+            const url = new URL('http://dummy.com/' + path.substring(1)); // Dummy base URL for URLSearchParams
+            const seasonParam = url.searchParams.get('season');
+
+            if (path.startsWith('#/team-stats/')) {
+                const [, , season, team] = path.split('/');
                 displayTeamStatsPage(decodeURIComponent(team), season);
             } else {
-                // If hash is just #/team-stats, show default message
-                    elements.teamStatsView.innerHTML = '<p>Click on a team in a player&apos;s stats to see team stats for that season.</p>';
+                displayTeamList(seasonParam);
             }
             elements.teamStatsView.style.display = 'block';
             elements.teamStatsTab.classList.add('active');
@@ -1351,7 +1353,59 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const displayTeamStatsPage = (team, season) => {
+    const displayTeamList = (selectedSeason = null) => {
+        elements.teamStatsView.innerHTML = ''; // Clear previous content
+
+        const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
+        const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
+
+        let content = `<h2 class="section-title">Teams</h2>`;
+        content += `<div class="season-selector-container">
+                        <label for="team-season-select">Select Season:</label>
+                        <select id="team-season-select">`;
+        allSeasons.forEach(season => {
+            const isSelected = season === currentSeason ? 'selected' : '';
+            content += `<option value="${season}" ${isSelected}>Season ${season.slice(1)}</option>`;
+        });
+        content += `        </select>
+                    </div>`;
+
+        content += `<div class="team-list-grid">`;
+
+        const sortedTeams = Object.keys(teamFranchises).sort();
+
+        sortedTeams.forEach(teamKey => {
+            const franchiseEntries = teamFranchises[teamKey];
+            const seasonNum = parseInt(currentSeason.slice(1));
+
+            // Check if the team was active in the selected season
+            const isActiveInSeason = franchiseEntries.some(entry => {
+                return seasonNum >= entry.start && seasonNum <= entry.end;
+            });
+
+            if (isActiveInSeason) {
+                const entry = franchiseEntries.find(e => seasonNum >= e.start && (e.end === Infinity || seasonNum <= e.end));
+                const actualTeamAbbr = entry ? entry.abbr : teamKey; // Use actualTeamAbbr for logo and name
+                const teamLogoSrc = teamLogos[actualTeamAbbr] || '';
+                content += `
+                    <div class="team-list-item team-link" data-team="${encodeURIComponent(teamKey)}" data-season="${currentSeason}">
+                        ${teamLogoSrc ? `<img src="${teamLogoSrc}" alt="${actualTeamAbbr} logo" class="team-list-logo">` : ''}
+                        <span class="team-list-name">${actualTeamAbbr}</span>
+                    </div>
+                `;
+            }
+        });
+        content += `</div>`;
+        elements.teamStatsView.innerHTML = content;
+
+        // Add event listener for the season select dropdown
+        document.getElementById('team-season-select').addEventListener('change', (event) => {
+            const newSeason = event.target.value;
+            window.location.hash = `#/team-stats?season=${newSeason}`;
+        });
+    };
+
+    const displayTeamStatsPage = (teamKey, season) => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
         // More robust defensive check
@@ -1361,10 +1415,33 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const seasonHittingStats = state.hittingStats.filter(s => s.Season === season && s.Team === team);
-        const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season && s.Team === team);
+        const seasonNum = parseInt(season.slice(1));
+        const franchiseEntries = teamFranchises[teamKey];
+        let actualTeamAbbr = teamKey; // Default to the provided teamKey
 
-        let content = `<h2 class="section-title">${team} - ${season.replace('S','Season ')}</h2>`;
+        console.log('Debugging displayTeamStatsPage:');
+        console.log('teamKey:', teamKey);
+        console.log('season:', season);
+        console.log('seasonNum:', seasonNum);
+        console.log('franchiseEntries:', franchiseEntries);
+
+        if (franchiseEntries) {
+            const entry = franchiseEntries.find(e => seasonNum >= e.start && (e.end === Infinity || seasonNum <= e.end));
+            console.log('Found entry:', entry);
+            if (entry) {
+                actualTeamAbbr = entry.abbr;
+            }
+        }
+        console.log('Final actualTeamAbbr:', actualTeamAbbr);
+
+        const seasonHittingStats = state.hittingStats.filter(s => s.Season === season && s.Team === actualTeamAbbr);
+        const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season && s.Team === actualTeamAbbr);
+
+        let content = `<h2 class="section-title">`;
+        if (teamLogos[actualTeamAbbr]) {
+            content += `<img src="${teamLogos[actualTeamAbbr]}" class="player-team-logo"> `;
+        }
+        content += `${actualTeamAbbr} - ${season.replace('S','Season ')}</h2>`;
 
         if (seasonHittingStats.length > 0) {
             content += createTeamStatsTable('Batting Stats', seasonHittingStats, false);
