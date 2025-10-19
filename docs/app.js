@@ -1383,11 +1383,106 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderHitting();
                 renderPitching();
             }
+
+            elements.statsContentDisplay.querySelectorAll('.stats-table').forEach(makeTableSortable);
         }
 
         if (isScouting) {
             displayScoutingReport(playerId);
         }
+    };
+
+    const makeTableSortable = (table) => {
+        const headers = table.querySelectorAll('thead th');
+        const groupName = table.previousElementSibling?.textContent;
+        const isOpponentStats = groupName === 'Opponent Stats';
+        const isHittingTable = groupName?.includes('Hitting');
+
+        headers.forEach((header, index) => {
+            const statName = header.textContent.trim();
+            if (['Team'].includes(statName)) return;
+
+            header.style.cursor = 'pointer';
+
+            header.addEventListener('click', () => {
+                const tbody = table.querySelector('tbody');
+                if (!tbody) return;
+
+                const lowerIsBetterHitting = ['Avg Diff'];
+                const lowerIsBetterPitching = ['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'RE24', 'HR%', 'BB%'];
+                const opponentStatsHighIsBetter = ['SB', 'CS'];
+
+                let isLowerBetter = false;
+                if (isOpponentStats) {
+                    if (opponentStatsHighIsBetter.includes(statName)) {
+                        isLowerBetter = false;
+                    } else {
+                        isLowerBetter = true;
+                    }
+                } else if (isHittingTable) {
+                    isLowerBetter = lowerIsBetterHitting.includes(statName);
+                } else { // Pitching
+                    isLowerBetter = lowerIsBetterPitching.includes(statName);
+                }
+
+                const currentSortDir = header.dataset.sortDir;
+                let sortDir;
+                if (currentSortDir) {
+                    sortDir = currentSortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                    sortDir = isLowerBetter ? 'asc' : 'desc';
+                }
+
+                const rows = Array.from(tbody.querySelectorAll('tr'));
+                const careerRow = rows.find(row => row.classList.contains('career-row'));
+                const dataRows = rows.filter(row => !row.classList.contains('career-row'));
+
+                headers.forEach(h => {
+                    delete h.dataset.sortDir;
+                    const arrow = h.querySelector('.sort-arrow');
+                    if (arrow) arrow.remove();
+                });
+
+                header.dataset.sortDir = sortDir;
+                const arrow = document.createElement('span');
+                arrow.className = 'sort-arrow';
+                arrow.innerHTML = sortDir === 'asc' ? ' &uarr;' : ' &darr;';
+                header.appendChild(arrow);
+
+                const isIP = statName === 'IP';
+
+                dataRows.sort((a, b) => {
+                    const aText = a.cells[index].textContent;
+                    const bText = b.cells[index].textContent;
+
+                    let aVal, bVal;
+
+                    if (isIP) {
+                        const parseIP = (ip) => {
+                            if (ip === '-') return -1;
+                            const parts = ip.split('.');
+                            return parseFloat(parts[0]) + (parseFloat(parts[1] || 0) / 3);
+                        };
+                        aVal = parseIP(aText);
+                        bVal = parseIP(bText);
+                    } else {
+                        aVal = aText === '-' ? -Infinity : parseFloat(aText);
+                        bVal = bText === '-' ? -Infinity : parseFloat(bText);
+                    }
+
+                    if (isNaN(aVal)) aVal = -Infinity;
+                    if (isNaN(bVal)) bVal = -Infinity;
+
+                    return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
+                });
+
+                tbody.innerHTML = '';
+                dataRows.forEach(row => tbody.appendChild(row));
+                if (careerRow) {
+                    tbody.appendChild(careerRow);
+                }
+            });
+        });
     };
 
     const createStatsTable = (title, stats, statDefinitions, isPitching, bySeason = false) => {
