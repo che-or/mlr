@@ -4,10 +4,10 @@
     "NL": ["ARI", "ATL", "NYM", "PHI", "PIT", "WAS"]
   },
   "S2": {
-    "AL West": ["DET", "HOU", "OAK", "SEA", "TEX"],
+    "AL West": ["DET", "HOU", "MIN", "OAK", "SEA", "TEX"],
     "AL East": ["BAL", "BOS", "CLE", "TB", "TOR"],
     "NL West": ["ARI", "COL", "LAD", "SDP", "SFG"],
-    "NL East": ["MIL", "MTL", "PHI", "PIT", "STL"]
+    "NL East": ["MIL", "MTL", "PHI", "PIT", "STL", "WSH"]
   },
   "S3": {
     "AL West": ["ARI", "LAA", "OAK", "TEX"],
