@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         players: './data/player_id_map.json',
         seasons: './data/season_games_map.json',
         scouting: './data/scouting_reports.json',
-        glossary: './data/glossary.json'
+        glossary: './data/glossary.json',
+        divisions: './data/divisions.json' // Added
     };
 
     const state = {
@@ -15,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
         seasons: {},
         scoutingReports: {},
         glossaryData: {},
+        divisions: {}, // Added,
         playerMap: new Map(),
-        currentPlayerId: null
+        currentPlayerId: null,
+        lastTeamStatsUrl: '#/team-stats'
     };
 
     const elements = {
@@ -174,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "SEA (S2)": [{ abbr: "SEA", start: 2, end: 2}],
         "SFG": [{ abbr: "SFG", start: 2, end: Infinity }],
         "STL": [{ abbr: "STL", start: 2, end: Infinity }],
-        "TBR": [{ abbr: "TBD", start: 2, end: 2 }, { abbr: "TBR", start: 3, end: Infinity }],
+        "TBR": [{ abbr: "TB", start: 2, end: 2 }, { abbr: "TBD", start: 3, end: 3 }, { abbr: "TBR", start: 4, end: Infinity }],
         "TEX": [{ abbr: "BAL", start: 1, end: 2 }, { abbr: "LAA", start: 3, end: 5 }, { abbr: "TEX", start: 6, end: Infinity }],
         "TOR": [{ abbr: "TOR", start: 1, end: Infinity }],
         "WSH (S1-2)": [{ abbr: "WAS", start: 1, end: 1 }, { abbr: "WSH", start: 2, end: 2 }]
@@ -182,13 +185,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
                 fetch(API.seasons).then(res => res.json()),
                 fetch(API.scouting).then(res => res.json()),
-                fetch(API.glossary).then(res => res.json())
+                fetch(API.glossary).then(res => res.json()),
+                fetch(API.divisions).then(res => res.json()) // Added
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -197,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.seasons = seasons;
             state.scoutingReports = scouting;
             state.glossaryData = glossary;
+            state.divisions = divisions; // Added
 
             for (const id in players) {
                 const player = players[id];
@@ -218,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateView = () => {
+        window.scrollTo(0, 0);
         const path = window.location.hash || '#/stats';
 
         // Reset all views and tabs
@@ -232,16 +238,25 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.scoutingTab.classList.remove('active');
         elements.glossaryTab.classList.remove('active');
 
-        if (path.startsWith('#/team-stats')) {
-            const url = new URL('http://dummy.com/' + path.substring(1)); // Dummy base URL for URLSearchParams
-            const seasonParam = url.searchParams.get('season');
+        // Parse URL parameters once if it's a team stats path
+        let isTeamStatsPath = path.startsWith('#/team-stats');
+        let seasonParam = null;
+        let teamParam = null;
 
-            if (path.startsWith('#/team-stats/')) {
-                const [, , season, team] = path.split('/');
-                displayTeamStatsPage(decodeURIComponent(team), season);
-            } else {
-                displayTeamList(seasonParam);
-            }
+        if (isTeamStatsPath) {
+            const url = new URL('http://dummy.com/' + path.substring(1));
+            seasonParam = url.searchParams.get('season');
+            teamParam = url.searchParams.get('team');
+        }
+
+        if (isTeamStatsPath && teamParam) { // Specific team page (has 'team' parameter)
+            // This branch handles #/team-stats?season=S11&team=ATL
+            displayTeamStatsPage(decodeURIComponent(teamParam), seasonParam);
+            elements.teamStatsView.style.display = 'block';
+            elements.teamStatsTab.classList.add('active');
+        } else if (isTeamStatsPath) { // Team list page (might have 'season' but no 'team')
+            // This branch handles #/team-stats or #/team-stats?season=S10
+            displayTeamList(seasonParam);
             elements.teamStatsView.style.display = 'block';
             elements.teamStatsTab.classList.add('active');
         } else if (path === '#/stats' || path === '#/scouting') {
@@ -333,10 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (entry.sections) {
             entryHTML += '<h4>Sections:</h4>'; // Added title for sections
-            entry.sections.forEach(section => {
-                entryHTML += `<h4>${section.title}</h4>`;
-                entryHTML += section.content;
-            });
+            entryHTML += entry.sections.map(section => `<h4>${section.title}</h4>${section.content}`).join('');
         }
         
         content.innerHTML = entryHTML;
@@ -363,7 +375,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const team = teamLink.dataset.team;
                 const season = teamLink.dataset.season;
                 if (team && season) {
-                    window.location.hash = `#/team-stats/${season}/${team}`;
+                    const hashPath = `#/team-stats?season=${season}&team=${team}`;
+                    state.lastTeamStatsUrl = hashPath; // Update state for immediate use
+                    window.location.hash = hashPath; // Still update hash for immediate view change
                 }
             }
 
@@ -1114,6 +1128,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'SFG': './img/logos/SFG.svg',
         'SEA': './img/logos/SEA.svg',
         'STL': './img/logos/STL.svg',
+        'TB': '/img/logos/TB.svg',
         'TBD': './img/logos/TBD.svg',
         'TBR': './img/logos/TBR.svg',
         'TEX': './img/logos/TEX.svg',
@@ -1359,7 +1374,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
         const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
 
-        let content = `<h2 class="section-title">Teams</h2>`;
+        let content = `<h2 class="section-title">Standings</h2>`;
         content += `<div class="season-selector-container">
                         <label for="team-season-select">Select Season:</label>
                         <select id="team-season-select">`;
@@ -1370,32 +1385,43 @@ document.addEventListener('DOMContentLoaded', () => {
         content += `        </select>
                     </div>`;
 
-        content += `<div class="team-list-grid">`;
+        // Calculate records and standings
+        const teamRecords = calculateTeamRecords(currentSeason);
+        const standings = getStandings(currentSeason, teamRecords);
 
-        const sortedTeams = Object.keys(teamFranchises).sort();
-
-        sortedTeams.forEach(teamKey => {
-            const franchiseEntries = teamFranchises[teamKey];
-            const seasonNum = parseInt(currentSeason.slice(1));
-
-            // Check if the team was active in the selected season
-            const isActiveInSeason = franchiseEntries.some(entry => {
-                return seasonNum >= entry.start && seasonNum <= entry.end;
-            });
-
-            if (isActiveInSeason) {
-                const entry = franchiseEntries.find(e => seasonNum >= e.start && (e.end === Infinity || seasonNum <= e.end));
-                const actualTeamAbbr = entry ? entry.abbr : teamKey; // Use actualTeamAbbr for logo and name
-                const teamLogoSrc = teamLogos[actualTeamAbbr] || '';
-                content += `
-                    <div class="team-list-item team-link" data-team="${encodeURIComponent(teamKey)}" data-season="${currentSeason}">
-                        ${teamLogoSrc ? `<img src="${teamLogoSrc}" alt="${actualTeamAbbr} logo" class="team-list-logo">` : ''}
-                        <span class="team-list-name">${actualTeamAbbr}</span>
-                    </div>
-                `;
+        if (Object.keys(standings).length === 0) {
+            content += `<p>No standings data available for Season ${currentSeason.slice(1)}.</p>`;
+        } else {
+            // New container for columns
+            content += `<div class="standings-columns">`; // Added
+            for (const divisionName in standings) {
+                content += `<div class="division-standings-container">`; // Added
+                content += `<h3 class="division-title">${divisionName} Division</h3>`;
+                content += `<table class="stats-table standings-table">`;
+                content += `<thead><tr><th>Team</th><th>W</th><th>L</th><th>T</th><th>PCT</th></tr></thead>`;
+                content += `<tbody>`;
+                standings[divisionName].forEach(team => {
+                    const teamLogoSrc = teamLogos[team.teamAbbr] || '';
+                    const franchiseKey = getFranchiseKeyFromAbbr(team.teamAbbr, currentSeason); // Get franchise key
+                    content += `<tr>`;
+                    content += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${currentSeason}">`; // Use franchiseKey
+                    if (teamLogoSrc) {
+                        content += `<img src="${teamLogoSrc}" alt="${team.teamAbbr} logo" class="team-list-logo standings-logo"> `;
+                    }
+                    content += `${team.teamAbbr}</span></td>`;
+                    content += `<td>${team.W}</td>`;
+                    content += `<td>${team.L}</td>`;
+                    content += `<td>${team.T}</td>`;
+                    content += `<td>${team.PCT.toFixed(3).substring(1)}</td>`; // Format PCT
+                    content += `</tr>`;
+                });
+                content += `</tbody>`;
+                content += `</table>`;
+                content += `</div>`; // Added
             }
-        });
-        content += `</div>`;
+            content += `</div>`; // Added
+        }
+
         elements.teamStatsView.innerHTML = content;
 
         // Add event listener for the season select dropdown
@@ -1419,29 +1445,64 @@ document.addEventListener('DOMContentLoaded', () => {
         const franchiseEntries = teamFranchises[teamKey];
         let actualTeamAbbr = teamKey; // Default to the provided teamKey
 
-        console.log('Debugging displayTeamStatsPage:');
-        console.log('teamKey:', teamKey);
-        console.log('season:', season);
-        console.log('seasonNum:', seasonNum);
-        console.log('franchiseEntries:', franchiseEntries);
-
         if (franchiseEntries) {
             const entry = franchiseEntries.find(e => seasonNum >= e.start && (e.end === Infinity || seasonNum <= e.end));
-            console.log('Found entry:', entry);
             if (entry) {
                 actualTeamAbbr = entry.abbr;
             }
         }
-        console.log('Final actualTeamAbbr:', actualTeamAbbr);
 
         const seasonHittingStats = state.hittingStats.filter(s => s.Season === season && s.Team === actualTeamAbbr);
         const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season && s.Team === actualTeamAbbr);
 
-        let content = `<h2 class="section-title">`;
-        if (teamLogos[actualTeamAbbr]) {
-            content += `<img src="${teamLogos[actualTeamAbbr]}" class="player-team-logo"> `;
+        // Find previous and next seasons for navigation
+        const allSeasons = Object.keys(state.seasons).map(s => parseInt(s.slice(1))).sort((a, b) => a - b);
+        const currentSeasonIndex = allSeasons.indexOf(seasonNum);
+
+        let prevSeasonNum = null;
+        if (franchiseEntries && currentSeasonIndex > 0) {
+            for (let i = currentSeasonIndex - 1; i >= 0; i--) {
+                const sNum = allSeasons[i];
+                if (franchiseEntries.some(e => sNum >= e.start && sNum <= e.end)) {
+                    prevSeasonNum = sNum;
+                    break;
+                }
+            }
         }
-        content += `${actualTeamAbbr} - ${season.replace('S','Season ')}</h2>`;
+
+        let nextSeasonNum = null;
+        if (franchiseEntries && currentSeasonIndex < allSeasons.length - 1) {
+            for (let i = currentSeasonIndex + 1; i < allSeasons.length; i++) {
+                const sNum = allSeasons[i];
+                if (franchiseEntries.some(e => sNum >= e.start && sNum <= e.end)) {
+                    nextSeasonNum = sNum;
+                    break;
+                }
+            }
+        }
+
+        let headerContent = `<div class="team-stats-header">`;
+        
+        let titleHTML = `<h2 class="section-title">`;
+        if (teamLogos[actualTeamAbbr]) {
+            titleHTML += `<img src="${teamLogos[actualTeamAbbr]}" class="player-team-logo"> `;
+        }
+        titleHTML += `${actualTeamAbbr} - ${season.replace('S','Season ')}</h2>`;
+        headerContent += titleHTML;
+
+        let navButtonsHTML = `<div class="season-nav-buttons">`;
+        if (prevSeasonNum) {
+            navButtonsHTML += `<a href="#/team-stats?season=S${prevSeasonNum}&team=${teamKey}" class="season-nav-button">&lt; Prev Season</a>`;
+        }
+        if (nextSeasonNum) {
+            navButtonsHTML += `<a href="#/team-stats?season=S${nextSeasonNum}&team=${teamKey}" class="season-nav-button">Next Season &gt;</a>`;
+        }
+        navButtonsHTML += `</div>`;
+        
+        headerContent += navButtonsHTML;
+        headerContent += `</div>`;
+
+        let content = headerContent;
 
         if (seasonHittingStats.length > 0) {
             content += createTeamStatsTable('Batting Stats', seasonHittingStats, false);
@@ -1601,7 +1662,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (stat === 'Team') {
                         value = s.Team || '';
                         if (s.Season !== 'Career' && value) { // Only make season-specific teams clickable
-                            html += `<td><span class="team-link" data-team="${encodeURIComponent(value)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
+                            const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
+                            html += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
                             html += `<td>${formatStat(stat, value)}</td>`;
                         }
@@ -1650,6 +1712,93 @@ document.addEventListener('DOMContentLoaded', () => {
             return Math.round(value);
         }
         return value;
+    };
+
+    const calculateTeamRecords = (season) => {
+        const teamRecords = {};
+        const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season);
+        const totalGamesInSeason = state.seasons[season] || 0; // This is now confirmed as totalGamesPlayedByTeam
+
+        // Initialize records for all teams that played in this season
+        const teamsInSeason = [...new Set(seasonPitchingStats.map(s => s.Team))];
+        teamsInSeason.forEach(teamAbbr => {
+            teamRecords[teamAbbr] = { W: 0, L: 0, T: 0, PCT: 0 };
+        });
+
+        seasonPitchingStats.forEach(stat => {
+            const teamAbbr = stat.Team;
+            if (teamRecords[teamAbbr]) {
+                const wins = stat.W || 0;
+                const losses = stat.L || 0;
+                teamRecords[teamAbbr].W += wins;
+                teamRecords[teamAbbr].L += losses;
+            }
+        });
+
+        // Calculate Ties and PCT
+        for (const teamAbbr in teamRecords) {
+            const record = teamRecords[teamAbbr];
+            const gamesPlayedByTeam = record.W + record.L; // Sum of pitcher W+L
+            record.T = totalGamesInSeason - gamesPlayedByTeam; // Ties calculation
+            if (record.T < 0) record.T = 0; // Ensure ties are not negative
+
+            if (record.W + record.L > 0) {
+                record.PCT = record.W / (record.W + record.L);
+            } else {
+                record.PCT = 0;
+            }
+        }
+        return teamRecords;
+    };
+
+    const getStandings = (season, teamRecords) => {
+        const standings = {};
+        const divisionsForSeason = getDivisionsForSeason(season); // Use helper
+
+        if (!divisionsForSeason) {
+            console.warn(`No division data found for season ${season}`);
+            return {};
+        }
+
+        for (const divisionName in divisionsForSeason) {
+            const teamsInDivision = divisionsForSeason[divisionName];
+            const divisionStandings = [];
+
+            teamsInDivision.forEach(teamAbbr => {
+                const record = teamRecords[teamAbbr];
+                if (record) {
+                    divisionStandings.push({ teamAbbr, ...record });
+                } else {
+                    // Team exists in division but no record found for season (e.g., new team)
+                    divisionStandings.push({ teamAbbr, W: 0, L: 0, T: 0, PCT: 0 });
+                }
+            });
+
+            // Sort teams within the division: highest PCT first
+            divisionStandings.sort((a, b) => b.PCT - a.PCT);
+            standings[divisionName] = divisionStandings;
+        }
+        return standings;
+    };
+
+    const getDivisionsForSeason = (season) => {
+        let divisions = state.divisions[season];
+        // If the value is a string, it's a reference to another season
+        if (typeof divisions === 'string') {
+            return state.divisions[divisions]; // Resolve the reference
+        }
+        return divisions;
+    };
+
+    const getFranchiseKeyFromAbbr = (abbr, season) => {
+        const seasonNum = parseInt(season.slice(1));
+        for (const franchiseKey in teamFranchises) {
+            const entries = teamFranchises[franchiseKey];
+            if (entries.some(entry => entry.abbr === abbr && seasonNum >= entry.start && (entry.end === Infinity || seasonNum <= entry.end))) {
+                return franchiseKey;
+            }
+        }
+        return abbr; // Fallback if not found, assume abbr is the franchise key
     };
                     
     loadData();
