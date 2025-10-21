@@ -84,12 +84,12 @@ def calculate_hitting_stats(df, season=None):
         pa_events = hits | walks | strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'DP', 'TP', 'Sac', 'Bunt'}
     else:
         result_col = 'Exact Result'
-        hits = {'1B', '2B', '3B', 'HR', 'BUNT 1B'}
+        hits = {'1B', '2B', '3B', 'HR', 'BUNT 1B', 'Bunt 1B'}
         walks = {'BB', 'IBB', 'Auto BB', 'AUTO BB'}
-        strikeouts = {'K', 'Auto K', 'Bunt K', 'AUTO K'}
-        stolen_bases = {'STEAL 2B', 'STEAL 3B', 'Steal 2B', 'Steal 3B'}
-        caught_stealing = {'CS 2B', 'CS 3B', 'CS Home'}
-        pa_events = hits | walks | strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'BUNT GO', 'BUNT Sac', 'Bunt Sac'}
+        strikeouts = {'K', 'Auto K', 'Bunt K', 'AUTO K', 'BUNT K'}
+        stolen_bases = {'STEAL 2B', 'STEAL 3B', 'Steal 2B', 'Steal 3B', 'MSTEAL 3B', 'MSteal 3B'}
+        caught_stealing = {'CS 2B', 'CS 3B', 'CS Home', 'CMS 3B', 'CMS Home'}
+        pa_events = hits | walks | strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'Bunt DP', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
 
     # Filter for events that have a diff and calculate the average
     diff_events = pa_events | stolen_bases | caught_stealing
@@ -204,14 +204,14 @@ def calculate_pitching_stats(df, season=None):
         stolen_bases = {'SB'}
     else:
         result_col = 'Exact Result'
-        hits_allowed = {'1B', '2B', '3B', 'HR', 'BUNT 1B'}
+        hits_allowed = {'1B', '2B', '3B', 'HR', 'BUNT 1B', 'Bunt 1B'}
         walks_allowed = {'BB', 'IBB', 'Auto BB', 'AUTO BB'}
         ibb_events = {'IBB'}
-        strikeouts = {'K', 'Auto K', 'Bunt K', 'AUTO K'}
+        strikeouts = {'K', 'Auto K', 'Bunt K', 'AUTO K', 'BUNT K'}
         hr_allowed = {'HR'}
         single_out_bip = {'FO', 'LGO', 'PO', 'RGO', 'LO', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
-        caught_stealing = {'CS 2B', 'CS 3B', 'CS Home'}
-        stolen_bases = {'STEAL 2B', 'STEAL 3B', 'Steal 2B', 'Steal 3B'}
+        caught_stealing = {'CS 2B', 'CS 3B', 'CS Home', 'CMS 3B', 'CMS Home'}
+        stolen_bases = {'STEAL 2B', 'STEAL 3B', 'Steal 2B', 'Steal 3B', 'MSTEAL 3B', 'MSteal 3B'}
 
     num_sb_allowed = df[df[result_col].isin(stolen_bases)].shape[0]
     num_cs_against = df[df[result_col].isin(caught_stealing)].shape[0]
@@ -868,40 +868,63 @@ def _get_simulated_runs_for_inning(inning_df):
             if runners[2]: runs_this_play += 1 # Runner from 3rd scores
             if runners[1]: runs_this_play += 1 # Runner from 2nd scores
             runners = [0, 1, 1] if runners[0] else [0, 1, 0]
-        elif result in ['1B', 'BUNT 1B']:
+        elif result in ['1B', 'BUNT 1B', 'Bunt 1B']:
+            new_runners = [0,0,0]
             if runners[2]: runs_this_play += 1
-            if runners[1]: runners = [runners[0], 0, 1] # R2 to 3B
-            if runners[0]: runners = [0, 1, runners[2] or runners[1]] # R1 to 2B, handle if R2 was there
-            runners[0] = 1 # Batter to 1B
+            if runners[1]: new_runners[2] = 1
+            if runners[0]: new_runners[1] = 1
+            new_runners[0] = 1
+            runners = new_runners
             # Apply 2-out bonus
             if advancement_bonus > 0:
-                if runners[2]: runs_this_play += 1 # R3 scores (already counted)
-                if runners[1]: runs_this_play += 1; runners[1] = 0 # R2 scores
-                if runners[0] and runners[1]==0: runners[1]=1; runners[0]=0 # R1 to 2B
+                if runners[2]: runs_this_play += 1; runners[2] = 0
+                if runners[1]: runs_this_play += 1; runners[1] = 0
+                if runners[0]: runners[2] = 1; runners[0] = 0
 
         elif result in ['BB', 'IBB', 'Auto BB', 'AUTO BB']:
             if runners[0] and runners[1] and runners[2]: runs_this_play += 1
             if runners[0] and runners[1]: runners[2] = 1
             if runners[0]: runners[1] = 1
             runners[0] = 1
-        elif result == 'FO':
+        elif result in ['FO', 'Sac']:
             outs += 1
             if outs <= 2 and runners[2]: # Sac Fly
                 runs_this_play += 1
                 runners[2] = 0
-        elif result in ['K', 'Auto K', 'Bunt K', 'AUTO K', 'PO']:
+        elif result in ['BUNT Sac', 'Bunt Sac', 'Bunt']:
             outs += 1
-        elif result in ['LGO', 'RGO', 'BUNT GO']:
+            if outs <= 2:
+                # Runner on 2nd advances if 3rd is not occupied
+                if runners[1] and not runners[2]:
+                    runners[2] = 1
+                    runners[1] = 0
+                # Runner on 1st advances if 2nd is not occupied
+                if runners[0] and not runners[1]:
+                    runners[1] = 1
+                    runners[0] = 0
+        elif result in ['K', 'Auto K', 'Bunt K', 'AUTO K', 'PO', 'BUNT K']:
             outs += 1
-            if outs <= 2 and runners[0]: # DP
+        elif result == 'LO':
+            outs += 1
+            num_runners = sum(runners)
+            if outs <= 2 and num_runners > 0:
+                outs += 1 # Double Play
+                # Trailing runner is out
+                if runners[0]: runners[0] = 0
+                elif runners[1]: runners[1] = 0
+                else: runners[2] = 0
+        elif result in ['LGO', 'RGO', 'BUNT GO', 'Bunt GO']:
+            outs += 1
+            is_lgo = result == 'LGO'
+            # Double Play
+            if outs <= 2 and runners[0]:
                 outs += 1
                 runners[0] = 0
             # Runner advancement on non-DP groundouts
             if outs <= 2:
                 if runners[2]: runs_this_play += 1; runners[2] = 0
-                if runners[1]: runners[2] = 1; runners[1] = 0
-        elif result == 'DP':
-            outs += 2
+                if runners[1] and not (is_lgo and not runners[0]): runners[2] = 1; runners[1] = 0
+        elif result in ['DP', 'BUNT DP', 'Bunt DP']:
         elif result == 'TP':
             outs = 3
             runs_this_play = 0 # No runs on TP
@@ -1013,14 +1036,24 @@ def _simulate_neutral_inning(inning_df, re_matrix):
             if runners[0] and runners[1]: runners[2] = 1
             if runners[0]: runners[1] = 1
             runners[0] = 1
-        elif result == 'FO':
+        elif result in ['FO', 'Sac']:
             outs += 1
             if outs < 3 and runners[2]:
                 runs_on_play += 1
                 runners[2] = 0
+        elif result in ['Bunt', 'BUNT Sac']:
+            outs += 1
+            if outs < 3:
+                if runners[1] and not runners[2]:
+                    runners[2] = 1
+                    runners[1] = 0
+                if runners[0] and not runners[1]:
+                    runners[1] = 1
+                    runners[0] = 0
         elif result in ['K', 'Auto K', 'Bunt K', 'AUTO K', 'PO']:
             outs += 1
         elif result in ['LGO', 'RGO', 'BUNT GO', 'Sac']:
+            is_lgo = result == 'LGO'
             if outs < 2 and runners[0]:
                 outs += 2
                 runners[0] = 0
@@ -1028,7 +1061,7 @@ def _simulate_neutral_inning(inning_df, re_matrix):
                 outs += 1
             if outs < 3:
                 if runners[2]: runs_on_play += 1; runners[2] = 0
-                if runners[1]: runners[2] = 1; runners[1] = 0
+                if runners[1] and not (is_lgo and not runners[0]): runners[2] = 1; runners[1] = 0
         elif result == 'DP':
             outs += 2
         elif result == 'TP':
