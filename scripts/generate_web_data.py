@@ -1521,9 +1521,17 @@ def main():
         if player_id == 0: continue
         if not names: continue
         
+        current_name = names[-1]
+        former_names = names[:-1]
+
+        # If the most recent name is "IMPORT ERROR", try to use the second most recent name
+        if current_name == "IMPORT ERROR" and len(former_names) > 0:
+            current_name = former_names[-1]
+            former_names = former_names[:-1] # Remove the now-current name from former names
+        
         player_id_map[int(player_id)] = {
-            'currentName': names[-1],
-            'formerNames': names[:-1]
+            'currentName': current_name,
+            'formerNames': former_names
         }
     
     player_id_to_name_map = {k: v['currentName'] for k, v in player_id_map.items()}
