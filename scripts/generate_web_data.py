@@ -9,11 +9,12 @@ from collections import defaultdict
 
 def _simulate_play_for_tracking(play, current_runners, outs):
     runs_scored = []
-    runners = {k: v.copy() if v else None for k, v in current_runners.items()}
+    runners = {k: v.copy() if v else None for k, v in current_runners.items()} # Deep copy
     batter = {'id': play['Hitter ID'], 'is_manfred': False}
     result = play['Exact Result'] if pd.notna(play['Exact Result']) else play['Old Result']
     advancement_bonus = 1 if outs == 2 and result in ['1B', '2B'] else 0
 
+    # --- SIMULATE PLAY OUTCOME ---
     if result == 'HR':
         if runners[3]: runs_scored.append(runners[3])
         if runners[2]: runs_scored.append(runners[2])
@@ -50,7 +51,8 @@ def _simulate_play_for_tracking(play, current_runners, outs):
         if runners[1]: new_runners[2] = runners[1]
         new_runners[1] = batter
         runners = new_runners
-    
+    # Add other out results here...
+
     return runs_scored, runners
 
 def _read_cache_manifest(cache_dir):
@@ -771,7 +773,6 @@ def generate_re_matrix_html(season_num):
 
     }
 
-
 def _simulate_play_for_tracking(play, current_runners, outs):
     runs_scored = []
     runners = {k: v.copy() if v else None for k, v in current_runners.items()} # Deep copy
@@ -998,7 +999,6 @@ def get_run_expectancy_matrix(season, season_df, is_most_recent_season=False):
         re_matrix[(row['OBC'], row['Outs'])] = row['RunExpectancy']
         
     return re_matrix
-
 
 
 def _simulate_neutral_inning(inning_df, re_matrix):
@@ -1365,6 +1365,43 @@ def preprocess_gamelogs_for_stat_corrections(df, player_id_to_name_map):
     
     return df
 
+def aggregate_decisions(df, games_df):
+    if df.empty: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'W', 'L', 'SV', 'HLD'])
+
+    base_df = games_df[['Season', 'Pitcher ID', 'Pitcher Team']].drop_duplicates().rename(columns={'Pitcher Team': 'Team'})
+    pitcher_teams_in_game = games_df[['Season', 'Game ID', 'Pitcher ID', 'Pitcher Team']].drop_duplicates().rename(columns={'Pitcher Team': 'Team'})
+
+    def get_agg_stat(decision_col, stat_name):
+        stat_df = df[df[decision_col].notna()][['Season', 'Game ID', decision_col]].rename(columns={decision_col: 'Pitcher ID'})
+        stat_with_teams = stat_df.merge(pitcher_teams_in_game, on=['Season', 'Game ID', 'Pitcher ID'], how='left')
+        return stat_with_teams.groupby(['Season', 'Pitcher ID', 'Team']).size().reset_index(name=stat_name)
+
+    wins_agg = get_agg_stat('win', 'W')
+    losses_agg = get_agg_stat('loss', 'L')
+    saves_agg = get_agg_stat('save', 'SV')
+
+    if 'holds' in df.columns and not df.explode('holds').dropna(subset=['holds']).empty:
+        holds_exploded = df.explode('holds').dropna(subset=['holds'])
+        holds_df = holds_exploded[['Season', 'Game ID', 'holds']].rename(columns={'holds': 'Pitcher ID'})
+        holds_with_teams = holds_df.merge(pitcher_teams_in_game, on=['Season', 'Game ID', 'Pitcher ID'], how='left')
+        holds_agg = holds_with_teams.groupby(['Season', 'Pitcher ID', 'Team']).size().reset_index(name='HLD')
+    else:
+        holds_agg = pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'HLD'])
+
+    agg_df = base_df
+    for stat_df in [wins_agg, losses_agg, saves_agg, holds_agg]:
+        if not stat_df.empty:
+            stat_df['Pitcher ID'] = pd.to_numeric(stat_df['Pitcher ID'], errors='coerce').dropna().astype(int)
+            agg_df = agg_df.merge(stat_df, on=['Season', 'Pitcher ID', 'Team'], how='left')
+
+    agg_df = agg_df.fillna(0)
+    for col in ['W', 'L', 'SV', 'HLD']:
+        if col not in agg_df.columns:
+            agg_df[col] = 0
+        agg_df[col] = agg_df[col].astype(int)
+        
+    return agg_df
+
 def main():
     print("Loading all season data... (this may take a moment)")
     all_season_data, most_recent_season = load_all_seasons()
@@ -1387,6 +1424,26 @@ def main():
 
     # Create the PA of Inning column needed for sorting
     combined_df['PA of Inning'] = combined_df.groupby(['Season', 'Game ID', 'Inning']).cumcount()
+
+    # Calculate pitching decisions on the raw data
+    print("Calculating pitching decisions (W, L, SV, HLD)...")
+    pitching_decisions = []
+    game_groups = list(combined_df.groupby(['Season', 'Game ID']))
+    num_games = len(game_groups)
+    print(f"  Processing {num_games} games...")
+    for i, ((season, game_id), game_df) in enumerate(game_groups):
+        if (i + 1) % 100 == 0:
+            print(f"  ... {i + 1} / {num_games} games processed")
+        decisions = get_pitching_decisions(game_df)
+        if decisions:
+            decisions['Season'] = season
+            decisions['Game ID'] = game_id
+            pitching_decisions.append(decisions)
+    pitching_decisions_df = pd.DataFrame(pitching_decisions)
+    game_types = combined_df[['Season', 'Game ID', 'GameType']].drop_duplicates()
+    pitching_decisions_df = pitching_decisions_df.merge(game_types, on=['Season', 'Game ID'], how='left')
+    regular_season_decisions = pitching_decisions_df[pitching_decisions_df['GameType'] == 'Regular']
+    regular_pitcher_stats_agg = aggregate_decisions(regular_season_decisions, combined_df)
 
     # Flag unearned runs from Manfred runners
     # combined_df = flag_unearned_runs(combined_df)
@@ -1520,28 +1577,6 @@ def main():
     combined_df.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
     combined_df.drop(columns=['Season_num'], inplace=True)
 
-    all_players = pd.concat([
-        combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
-        ,
-        combined_df[['Pitcher ID', 'Pitcher', 'Season', 'Session']].rename(columns={'Pitcher ID': 'Player ID', 'Pitcher': 'Player Name'})
-    ])
-    all_players.dropna(subset=['Player ID', 'Player Name'], inplace=True)
-    all_players['Player ID'] = all_players['Player ID'].astype(int)
-    all_players['Season_num'] = all_players['Season'].str.replace('S', '').astype(int)
-    all_players.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
-    
-    player_names = all_players.groupby('Player ID')['Player Name'].apply(lambda x: list(dict.fromkeys(x))).to_dict()
-
-    player_id_map = {}
-    for player_id, names in player_names.items():
-        if player_id == 0: continue
-        if not names: continue
-        
-        player_id_map[int(player_id)] = {
-            'currentName': names[-1],
-            'formerNames': names[:-1]
-        }
-
     cache_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data', 'cache')
     previous_most_recent = _read_cache_manifest(cache_dir)
     seasons_to_recalc = []
@@ -1608,62 +1643,6 @@ def main():
                 neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': f"{len(teams)}TM", 'nIP': player_n_ip, 'ERA+': era_plus, 'nRuns': player_n_runs})
 
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
-
-    print("Calculating pitching decisions (W, L, SV, HLD)...")
-    pitching_decisions = []
-    game_groups = list(combined_df.groupby(['Season', 'Game ID']))
-    num_games = len(game_groups)
-    print(f"  Processing {num_games} games...")
-    for i, ((season, game_id), game_df) in enumerate(game_groups):
-        if (i + 1) % 100 == 0:
-            print(f"  ... {i + 1} / {num_games} games processed")
-        decisions = get_pitching_decisions(game_df)
-        if decisions:
-            decisions['Season'] = season
-            decisions['Game ID'] = game_id
-            pitching_decisions.append(decisions)
-    pitching_decisions_df = pd.DataFrame(pitching_decisions)
-    game_types = combined_df[['Season', 'Game ID', 'GameType']].drop_duplicates()
-    pitching_decisions_df = pitching_decisions_df.merge(game_types, on=['Season', 'Game ID'], how='left')
-    regular_season_decisions = pitching_decisions_df[pitching_decisions_df['GameType'] == 'Regular']
-
-    def aggregate_decisions(df, games_df):
-        if df.empty: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'W', 'L', 'SV', 'HLD'])
-    
-        base_df = games_df[['Season', 'Pitcher ID', 'Pitcher Team']].drop_duplicates().rename(columns={'Pitcher Team': 'Team'})
-        pitcher_teams_in_game = games_df[['Season', 'Game ID', 'Pitcher ID', 'Pitcher Team']].drop_duplicates().rename(columns={'Pitcher Team': 'Team'})
-    
-        def get_agg_stat(decision_col, stat_name):
-            stat_df = df[df[decision_col].notna()][['Season', 'Game ID', decision_col]].rename(columns={decision_col: 'Pitcher ID'})
-            stat_with_teams = stat_df.merge(pitcher_teams_in_game, on=['Season', 'Game ID', 'Pitcher ID'], how='left')
-            return stat_with_teams.groupby(['Season', 'Pitcher ID', 'Team']).size().reset_index(name=stat_name)
-    
-        wins_agg = get_agg_stat('win', 'W')
-        losses_agg = get_agg_stat('loss', 'L')
-        saves_agg = get_agg_stat('save', 'SV')
-    
-        if 'holds' in df.columns and not df.explode('holds').dropna(subset=['holds']).empty:
-            holds_exploded = df.explode('holds').dropna(subset=['holds'])
-            holds_df = holds_exploded[['Season', 'Game ID', 'holds']].rename(columns={'holds': 'Pitcher ID'})
-            holds_with_teams = holds_df.merge(pitcher_teams_in_game, on=['Season', 'Game ID', 'Pitcher ID'], how='left')
-            holds_agg = holds_with_teams.groupby(['Season', 'Pitcher ID', 'Team']).size().reset_index(name='HLD')
-        else:
-            holds_agg = pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'HLD'])
-    
-        agg_df = base_df
-        for stat_df in [wins_agg, losses_agg, saves_agg, holds_agg]:
-            if not stat_df.empty:
-                stat_df['Pitcher ID'] = pd.to_numeric(stat_df['Pitcher ID'], errors='coerce').dropna().astype(int)
-                agg_df = agg_df.merge(stat_df, on=['Season', 'Pitcher ID', 'Team'], how='left')
-    
-        agg_df = agg_df.fillna(0)
-        for col in ['W', 'L', 'SV', 'HLD']:
-            if col not in agg_df.columns:
-                agg_df[col] = 0
-            agg_df[col] = agg_df[col].astype(int)
-            
-        return agg_df
-    regular_pitcher_stats_agg = aggregate_decisions(regular_season_decisions, leaderboard_df)
 
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
     game_achievements_df = calculate_game_achievements(leaderboard_df)
