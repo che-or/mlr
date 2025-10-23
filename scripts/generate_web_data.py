@@ -1408,6 +1408,27 @@ def main():
     if not all_season_data: return
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
 
+    # Initialize global temporary ID management
+    global_temp_id_counter = -1
+    player_name_to_temp_id = {} # Maps player name to a consistent negative ID
+
+    def get_or_assign_temp_id(player_name):
+        nonlocal global_temp_id_counter
+        if player_name not in player_name_to_temp_id:
+            player_name_to_temp_id[player_name] = global_temp_id_counter
+            global_temp_id_counter -= 1
+        return player_name_to_temp_id[player_name]
+
+    no_id_mask = combined_df['Pitcher ID'].isna()
+    if no_id_mask.any():
+        # Apply consistent temporary IDs for pitchers
+        combined_df.loc[no_id_mask, 'Pitcher ID'] = combined_df.loc[no_id_mask, 'Pitcher'].apply(get_or_assign_temp_id)
+
+    no_id_mask_hitter = combined_df['Hitter ID'].isna()
+    if no_id_mask_hitter.any():
+        # Apply consistent temporary IDs for hitters
+        combined_df.loc[no_id_mask_hitter, 'Hitter ID'] = combined_df.loc[no_id_mask_hitter, 'Hitter'].apply(get_or_assign_temp_id)
+
     try:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         gamelogs_path = os.path.join(script_dir, '..', 'data', 'gamelogs.txt')
@@ -1447,17 +1468,6 @@ def main():
 
     # Flag unearned runs from Manfred runners
     # combined_df = flag_unearned_runs(combined_df)
-
-    # Initialize global temporary ID management
-    global_temp_id_counter = -1
-    player_name_to_temp_id = {} # Maps player name to a consistent negative ID
-
-    def get_or_assign_temp_id(player_name):
-        nonlocal global_temp_id_counter
-        if player_name not in player_name_to_temp_id:
-            player_name_to_temp_id[player_name] = global_temp_id_counter
-            global_temp_id_counter -= 1
-        return player_name_to_temp_id[player_name]
 
     all_players = pd.concat([
         combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
@@ -1500,15 +1510,6 @@ def main():
         combined_df['Batter WPA'] = pd.to_numeric(combined_df['Batter WPA'].astype(str).str.strip('%'), errors='coerce').fillna(0) / 100
     if 'Pitcher WPA' in combined_df.columns:
         combined_df['Pitcher WPA'] = pd.to_numeric(combined_df['Pitcher WPA'].astype(str).str.strip('%'), errors='coerce').fillna(0) / 100
-    no_id_mask = combined_df['Pitcher ID'].isna()
-    if no_id_mask.any():
-        # Apply consistent temporary IDs for pitchers
-        combined_df.loc[no_id_mask, 'Pitcher ID'] = combined_df.loc[no_id_mask, 'Pitcher'].apply(get_or_assign_temp_id)
-
-    no_id_mask_hitter = combined_df['Hitter ID'].isna()
-    if no_id_mask_hitter.any():
-        # Apply consistent temporary IDs for hitters
-        combined_df.loc[no_id_mask_hitter, 'Hitter ID'] = combined_df.loc[no_id_mask_hitter, 'Hitter'].apply(get_or_assign_temp_id)
 
     combined_df['Pitcher ID'] = pd.to_numeric(combined_df['Pitcher ID'], errors='coerce').fillna(0).astype(int)
     combined_df['Hitter ID'] = pd.to_numeric(combined_df['Hitter ID'], errors='coerce').fillna(0).astype(int)
