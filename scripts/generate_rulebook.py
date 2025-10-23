@@ -16,7 +16,7 @@ def generate_play_outcome_markdown():
         'BB', 'IBB', 'Auto BB', 'AUTO BB',
         'STEAL 2B', 'STEAL 3B', 'STEAL HOME', 'MSTEAL 3B', 'MSTEAL HOME',
         'FO', 'Sac', 'BUNT Sac', 'Bunt Sac', 'Bunt',
-        'LO', 'LGO (normal diff)', 'LGO (high diff) S9+', 'LGO (high diff) S1-8', 'RGO', 'BUNT GO', 'Bunt GO',
+        'LO', 'LGO (normal diff)', 'LGO (high diff) S9+', 'LGO (high diff) S1-8', 'RGO', 'BUNT GO', 'Bunt GO', 'RGO/LGO (Infield In)',
         'DP', 'TP', # Note: These are now mostly handled by LGO/RGO logic
         'K', 'Auto K', 'Bunt K', 'AUTO K', 'PO',
         'CS 2B', 'CS 3B', 'CS Home', 'CS', 'SB', 'CMS 3B', 'CMS Home', 'Bunt DP'
@@ -34,6 +34,7 @@ def generate_play_outcome_markdown():
         'LGO (high diff) S9+': "A special high-diff result for Season 9+. Can become a lineout (1 out), lineout double play (2 outs), or triple play (3 outs) depending on base state and outs, as per the table.",
         'LGO (high diff) S1-8': "A special high-diff result for Seasons 1-8. Can become a triple play (3 outs) if runners are on 1st and 2nd or bases loaded, otherwise it behaves like a normal LGO.",
         'RGO': "Groundout. With a runner on 1st, this becomes a 2-out double play.",
+        'RGO/LGO (Infield In)': "Special logic for seasons 7+ when the infield is playing in. Applies to both RGO and LGO. The batter is out, and runners advance based on a specific set of rules designed to reflect the infield-in strategy.",
         'DP': "Generic Double Play. Primarily used in seasons before S4. In modern seasons, DPs are typically derived from LGO/RGO results.",
         'TP': "Generic Triple Play. In modern seasons, TPs are typically derived from LGO results with high diff.",
         'SB': "Generic Stolen Base. Only occurs in seasons 2 and 3. Runner successfully advances to the next base.",
@@ -77,6 +78,7 @@ def generate_play_outcome_markdown():
         
         season = 9 # Default for most plays
         diff = 0
+        pa_type = 0
         sim_result = result
 
         if result == 'LGO (normal diff)':
@@ -89,6 +91,10 @@ def generate_play_outcome_markdown():
             sim_result = 'LGO'
             diff = 496
             season = 1
+        elif result == 'RGO/LGO (Infield In)':
+            sim_result = 'RGO'
+            season = 7
+            pa_type = 2
         elif result in ['DP', 'TP', 'CS', 'SB']:
             season = 3
 
@@ -130,7 +136,7 @@ def generate_play_outcome_markdown():
                         continue
 
                 new_runners, runs_scored, outs_this_play = game_instance._simulate_play(
-                    initial_runners, initial_outs, sim_result, sim_result, diff, season
+                    initial_runners, initial_outs, sim_result, sim_result, diff, season, pa_type
                 )
                 
                 resulting_outs = initial_outs + outs_this_play
