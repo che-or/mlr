@@ -1408,7 +1408,43 @@ def main():
     if not all_season_data: return
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
 
-    # Initialize global temporary ID management
+    # --- Player ID Reconciliation ---
+    print("Reconciling player IDs across seasons...")
+
+    # Create a map of player names to their IDs and seasons from the data
+    hitters_with_ids = combined_df[combined_df['Hitter ID'].notna()][['Hitter ID', 'Hitter', 'Season']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
+    pitchers_with_ids = combined_df[combined_df['Pitcher ID'].notna()][['Pitcher ID', 'Pitcher', 'Season']].rename(columns={'Pitcher ID': 'Player ID', 'Pitcher': 'Player Name'})
+    players_with_ids = pd.concat([hitters_with_ids, pitchers_with_ids]).drop_duplicates()
+    players_with_ids['Player ID'] = players_with_ids['Player ID'].astype(int)
+    
+    name_to_id_season_map = defaultdict(lambda: defaultdict(set))
+    for _, row in players_with_ids.iterrows():
+        name_to_id_season_map[row['Player Name']][row['Player ID']].add(row['Season'])
+
+    # Function to find a matching ID from an adjacent season
+    def find_adjacent_id(player_name, season_str):
+        if player_name in name_to_id_season_map:
+            season_num = int(season_str.replace('S', ''))
+            # Check S, S+1, S-1 for a valid ID
+            for s_offset in [0, 1, -1]:
+                adj_season_num = season_num + s_offset
+                for pid, seasons in name_to_id_season_map[player_name].items():
+                    if f"S{adj_season_num}" in seasons:
+                        return pid
+        return None
+
+    # Apply the logic to fill missing IDs
+    for role in ['Hitter', 'Pitcher']:
+        id_col, name_col = f'{role} ID', role
+        missing_mask = combined_df[id_col].isna()
+        if missing_mask.any():
+            inferred_ids = combined_df[missing_mask].apply(
+                lambda row: find_adjacent_id(row[name_col], row['Season']), axis=1
+            )
+            if not inferred_ids.empty:
+                combined_df.loc[inferred_ids.index, id_col] = inferred_ids
+
+    # Initialize global temporary ID management for any remaining missing IDs
     global_temp_id_counter = -1
     player_name_to_temp_id = {} # Maps player name to a consistent negative ID
 
@@ -1419,14 +1455,13 @@ def main():
             global_temp_id_counter -= 1
         return player_name_to_temp_id[player_name]
 
+    # Apply temporary IDs for any players still missing one
     no_id_mask = combined_df['Pitcher ID'].isna()
     if no_id_mask.any():
-        # Apply consistent temporary IDs for pitchers
         combined_df.loc[no_id_mask, 'Pitcher ID'] = combined_df.loc[no_id_mask, 'Pitcher'].apply(get_or_assign_temp_id)
 
     no_id_mask_hitter = combined_df['Hitter ID'].isna()
     if no_id_mask_hitter.any():
-        # Apply consistent temporary IDs for hitters
         combined_df.loc[no_id_mask_hitter, 'Hitter ID'] = combined_df.loc[no_id_mask_hitter, 'Hitter'].apply(get_or_assign_temp_id)
 
     try:
