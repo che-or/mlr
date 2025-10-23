@@ -45,10 +45,29 @@ class Game:
         self.pitching_log = []
         self.runners_on_base = [False, False, False]
 
-    def _simulate_play(self, runners_before_play, current_outs, result, old_result, diff, season):
+    def _simulate_play(self, runners_before_play, current_outs, result, old_result, diff, season, pa_type):
         runs_this_play = 0
         new_runners = list(runners_before_play)
         outs_for_play = _get_outs_from_result(result, old_result)
+
+        # Infield-in logic for S7+
+        if season >= 7 and pa_type == 2 and result in ['RGO', 'LGO']:
+            gamestate_tuple = tuple(runners_before_play)
+            infield_in_outcomes = {
+                # gamestate: (new_runners, runs, outs)
+                (False, False, False): ([False, False, False], 0, 1), # 000 -> 000, 1 out
+                (True, False, False):  ([False, True, False], 0, 1),  # 100 -> 010, 1 out
+                (False, True, False):  ([False, False, True], 0, 1),  # 010 -> 001, 1 out
+                (False, False, True):  ([False, False, True], 0, 1),  # 001 -> 001, 1 out
+                (True, True, False):   ([False, True, True], 0, 1),   # 110 -> 011, 1 out
+                (True, False, True):   ([False, True, True], 0, 1),   # 101 -> 011, 1 out
+                (False, True, True):   ([False, True, True], 0, 1),   # 011 -> 011, 1 out
+                (True, True, True):    ([True, True, True], 0, 1),    # 111 -> 111, 1 out (out at home)
+            }
+            outcome = infield_in_outcomes.get(gamestate_tuple)
+            if outcome:
+                new_runners, runs_this_play, outs_for_play = outcome
+                return new_runners, runs_this_play, outs_for_play
 
         # --- ERA-BASED LOGIC ---
         # Handle LGO (high diff) first, as it's a special case
@@ -392,7 +411,17 @@ class Game:
             season_str = play.get('Season', 'S0')
             season = int(season_str.replace('S', ''))
 
-            new_runners_on_base, runs_this_play, outs_for_play = self._simulate_play(runners_before_play, current_outs, result, old_result, diff, season)
+            pa_type_val = play.get('PA Type')
+            if pd.isna(pa_type_val):
+                pa_type = 0
+            else:
+                numeric_pa_type = pd.to_numeric(pa_type_val, errors='coerce')
+                if pd.isna(numeric_pa_type):
+                    pa_type = 0
+                else:
+                    pa_type = int(numeric_pa_type)
+
+            new_runners_on_base, runs_this_play, outs_for_play = self._simulate_play(runners_before_play, current_outs, result, old_result, diff, season, pa_type)
             self.runners_on_base = new_runners_on_base
 
             if is_top:

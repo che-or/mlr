@@ -495,6 +495,37 @@ This document details the logic for various baseball play outcomes as implemente
 | 2 | 011 | 011 | 0 | 3 |
 | 2 | 111 | 011 | 0 | 3 |
 
+## Outcomes: RGO/LGO (Infield In)
+
+**Logic:** Special logic for seasons 7+ when the infield is playing in. Applies to both RGO and LGO. The batter is out, and runners advance based on a specific set of rules designed to reflect the infield-in strategy.
+
+| Initial Outs | Initial Bases | Resulting Bases | Runs Scored | Resulting Outs |
+|---|---|---|---|---|
+| 0 | 000 | 000 | 0 | 1 |
+| 0 | 100 | 010 | 0 | 1 |
+| 0 | 010 | 001 | 0 | 1 |
+| 0 | 001 | 001 | 0 | 1 |
+| 0 | 110 | 011 | 0 | 1 |
+| 0 | 101 | 011 | 0 | 1 |
+| 0 | 011 | 011 | 0 | 1 |
+| 0 | 111 | 111 | 0 | 1 |
+| 1 | 000 | 000 | 0 | 2 |
+| 1 | 100 | 010 | 0 | 2 |
+| 1 | 010 | 001 | 0 | 2 |
+| 1 | 001 | 001 | 0 | 2 |
+| 1 | 110 | 011 | 0 | 2 |
+| 1 | 101 | 011 | 0 | 2 |
+| 1 | 011 | 011 | 0 | 2 |
+| 1 | 111 | 111 | 0 | 2 |
+| 2 | 000 | 000 | 0 | 3 |
+| 2 | 100 | 010 | 0 | 3 |
+| 2 | 010 | 001 | 0 | 3 |
+| 2 | 001 | 001 | 0 | 3 |
+| 2 | 110 | 011 | 0 | 3 |
+| 2 | 101 | 011 | 0 | 3 |
+| 2 | 011 | 011 | 0 | 3 |
+| 2 | 111 | 111 | 0 | 3 |
+
 ## Outcomes: DP
 
 **Logic:** Generic Double Play. Primarily used in seasons before S4. In modern seasons, DPs are typically derived from LGO/RGO results.

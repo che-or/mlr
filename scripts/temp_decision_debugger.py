@@ -129,8 +129,18 @@ def debug_game_decisions(season_name, game_id_to_debug):
         season_str = play.get('Season', 'S0')
         season = int(season_str.replace('S', ''))
 
+        pa_type_val = play.get('PA Type')
+        if pd.isna(pa_type_val):
+            pa_type = 0
+        else:
+            numeric_pa_type = pd.to_numeric(pa_type_val, errors='coerce')
+            if pd.isna(numeric_pa_type):
+                pa_type = 0
+            else:
+                pa_type = int(numeric_pa_type)
+
         new_runners, runs_this_play, outs_this_play = game._simulate_play(
-            runners_before_play, current_outs, result, play['Old Result'], diff, season
+            runners_before_play, current_outs, result, play['Old Result'], diff, season, pa_type
         )
 
         game.runners_on_base = new_runners

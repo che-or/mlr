@@ -7,54 +7,6 @@ import os
 import re
 from collections import defaultdict
 
-# def flag_unearned_runs(df):
-#     df['is_unearned'] = False
-#     # Group by game and process chronologically
-#     for game_id, game_df in df.groupby(['Season', 'Game ID'], sort=False):
-#         game_df = game_df.sort_values(by=['Inning', 'PA of Inning']).copy()
-
-#         # Game State Variables
-#         runners = {1: None, 2: None, 3: None} # base -> {'id': player_id, 'is_manfred': bool}
-#         outs = 0
-#         current_inning = 0
-
-#         for index, play in game_df.iterrows():
-#             inning_num = play['Inning']
-#             if inning_num != current_inning:
-#                 outs = 0
-#                 current_inning = inning_num
-#                 runners = {1: None, 2: None, 3: None}
-#                 # Manfred Runner Logic: Check if the inning starts with runners on base
-#                 if play['OBC'] > 0:
-#                     team_at_bat = play['Batter Team']
-#                     prev_inning_df = df[(df['Game ID'] == game_id[1]) & (df['Batter Team'] == team_at_bat) & (df['Inning'] < inning_num)]
-#                     if not prev_inning_df.empty:
-#                         last_offensive_inning = prev_inning_df['Inning'].max()
-#                         last_inning_plays = prev_inning_df[prev_inning_df['Inning'] == last_offensive_inning]
-#                         out_plays = last_inning_plays[last_inning_plays['Outs After'] > last_inning_plays['Outs']].sort_values(by='PA of Inning', ascending=False)
-#                         last_outs_ids = out_plays['Hitter ID'].unique().tolist()
-                        
-#                         if inning_num >= 7 and len(last_outs_ids) >= 1:
-#                             runners[2] = {'id': last_outs_ids[0], 'is_manfred': True}
-#                         if inning_num > 7 and len(last_outs_ids) >= 2:
-#                             runners[1] = {'id': last_outs_ids[1], 'is_manfred': True}
-
-#             # Simulate this play to track runners and see who scores
-#             runs_scored_this_play, next_runners = _simulate_play_for_tracking(play, runners, outs)
-            
-#             # Check if any scoring runner was a Manfred runner
-#             if runs_scored_this_play:
-#                 for run in runs_scored_this_play:
-#                     if run['is_manfred']:
-#                         df.loc[index, 'is_unearned'] = True
-#                         # This flags the whole play, which is sufficient for stat aggregation
-#                         break
-            
-#             # Update state for next play
-#             runners = next_runners
-#             outs += (play['Outs After'] - play['Outs'])
-#     return df
-
 def _simulate_play_for_tracking(play, current_runners, outs):
     runs_scored = []
     runners = {k: v.copy() if v else None for k, v in current_runners.items()}
@@ -101,7 +53,6 @@ def _simulate_play_for_tracking(play, current_runners, outs):
     
     return runs_scored, runners
 
-# --- Cache Manifest Functions ---
 def _read_cache_manifest(cache_dir):
     manifest_path = os.path.join(cache_dir, 'cache_info.json')
     if not os.path.exists(manifest_path):
@@ -121,15 +72,10 @@ def _write_cache_manifest(cache_dir, most_recent_season):
     except IOError:
         print("Warning: Could not write to cache manifest file.")
 
-
-# --- Global Helper Functions ---
 def calculate_ops_plus_for_row(row, league_stats_by_season):
-    """Calculates OPS+ for a given player row, handling different season data structures."""
     if row['PA'] == 0:
         return pd.NA
 
-    # Determine season from the row's data structure. One call site passes a DF row (which has a 'Season' column),
-    # the other passes a Series from a different structure where the season is the name.
     if 'Season' in row.index:
         season_name = row['Season']
     else:
@@ -152,8 +98,6 @@ def calculate_ops_plus_for_row(row, league_stats_by_season):
 
     return int(round(ops_plus))
 
-
-# --- Formatting and Stat Calculation Functions ---
 def format_ip(ip_float):
     whole_innings = int(ip_float)
     outs = round((ip_float - whole_innings) * 3)
@@ -166,13 +110,12 @@ def calculate_hitting_stats(df, season=None):
     if df.empty: return None
 
     if season is None:
-        season = df.name # Get season from group name
+        season = df.name
     use_old_results = season in ['S2', 'S3']
 
-    # Define result sets based on season
     if use_old_results:
         result_col = 'Old Result'
-        hits = {'1B', '2B', '3B', 'HR'} # 'Bunt' is ambiguous, treated as non-hit
+        hits = {'1B', '2B', '3B', 'HR'}
         walks = {'BB', 'IBB', 'Auto BB'}
         strikeouts = {'K', 'Auto K'}
         stolen_bases = {'SB'}
@@ -187,17 +130,14 @@ def calculate_hitting_stats(df, season=None):
         caught_stealing = {'CS 2B', 'CS 3B', 'CS Home', 'CMS 3B', 'CMS Home'}
         pa_events = hits | walks | strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'Bunt DP', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
 
-    # Filter for events that have a diff and calculate the average
     diff_events = pa_events | stolen_bases | caught_stealing
     diff_df = df[df[result_col].isin(diff_events)]
     numeric_diff = pd.to_numeric(diff_df['Diff'], errors='coerce')
     avg_diff = numeric_diff.mean()
 
-    # First, calculate non-PA stats like SB and CS from the original dataframe
     num_sb = df[df[result_col].isin(stolen_bases)].shape[0]
     num_cs = df[df[result_col].isin(caught_stealing)].shape[0]
 
-    # Now, filter for actual plate appearance events
     pa_df = df[df[result_col].isin(pa_events)]
     pa = len(pa_df)
 
@@ -211,16 +151,13 @@ def calculate_hitting_stats(df, season=None):
     num_walks = pa_df[pa_df[result_col].isin(walks)].shape[0]
     num_ibb = pa_df[pa_df[result_col] == 'IBB'].shape[0]
     
-    # Ground into Double/Triple Plays
     num_gidp = pa_df[(pa_df['Old Result'].isin(['DP', 'TP'])) | (pa_df['Exact Result'] == 'BUNT DP')].shape[0]
 
-    # Sacrifices (SH and SF)
-    if use_old_results: # S2, S3
+    if use_old_results:
         num_sh = pa_df[pa_df['Old Result'] == 'Bunt'].shape[0]
         num_sf = pa_df[pa_df['Old Result'] == 'Sac'].shape[0]
-    else: # S4+
+    else:
         num_sh = pa_df[pa_df['Exact Result'].isin(['BUNT Sac', 'Bunt Sac'])].shape[0]
-        # A sac fly is a fly out that scores a run.
         num_sf = pa_df[(pa_df['Exact Result'] == 'FO') & (pd.to_numeric(pa_df['RBI'], errors='coerce').fillna(0) > 0)].shape[0]
 
     num_sacrifices = num_sh + num_sf
@@ -281,11 +218,10 @@ def calculate_hitting_stats(df, season=None):
     })
 
 def calculate_pitching_stats(df, season=None):
-    """Calculates pitching stats for a given dataframe and returns them as a pandas Series."""
     if df.empty: return None
 
     if season is None:
-        season = df.name # Get season from group name
+        season = df.name
     use_old_results = season in ['S2', 'S3']
 
     if use_old_results:
@@ -295,7 +231,7 @@ def calculate_pitching_stats(df, season=None):
         ibb_events = {'IBB'}
         strikeouts = {'K', 'Auto K'}
         hr_allowed = {'HR'}
-        single_out_bip = {'FO', 'LGO', 'PO', 'RGO', 'Bunt', 'LO'} # 'Bunt' is an out
+        single_out_bip = {'FO', 'LGO', 'PO', 'RGO', 'Bunt', 'LO'}
         caught_stealing = {'CS'}
         stolen_bases = {'SB'}
     else:
@@ -313,13 +249,11 @@ def calculate_pitching_stats(df, season=None):
     num_cs_against = df[df[result_col].isin(caught_stealing)].shape[0]
     sb_pct_against = num_sb_allowed / (num_sb_allowed + num_cs_against) if (num_sb_allowed + num_cs_against) > 0 else 0
 
-    # Filter for events that have a diff and calculate the average
     if use_old_results:
         pitching_pa_events = hits_allowed | walks_allowed | strikeouts | single_out_bip | {'DP', 'TP', 'Sac'}
         diff_events = pitching_pa_events | stolen_bases | caught_stealing
         diff_df = df[df[result_col].isin(diff_events)]
     else:
-        # For new seasons, PA outcomes are split between Exact and Old results
         pa_events_exact = hits_allowed | walks_allowed | strikeouts | single_out_bip | {'BUNT DP'}
         diff_events_exact = pa_events_exact | stolen_bases | caught_stealing
         
@@ -331,7 +265,6 @@ def calculate_pitching_stats(df, season=None):
     numeric_diff = pd.to_numeric(diff_df['Diff'], errors='coerce')
     avg_diff = numeric_diff.mean()
 
-    # Calculate Batters Faced (BF)
     if use_old_results:
         pitching_pa_events = hits_allowed | walks_allowed | strikeouts | single_out_bip | {'DP', 'TP', 'Sac'}
         bf_df = df[df[result_col].isin(pitching_pa_events)]
@@ -354,11 +287,9 @@ def calculate_pitching_stats(df, season=None):
     num_strikeouts = bf_df[bf_df[result_col].isin(strikeouts)].shape[0]
     num_hr_allowed = bf_df[bf_df[result_col].isin(hr_allowed)].shape[0]
 
-    # Use 'Old Result' for DPs and TPs as it's more reliable for them
     dp_outs = df[df['Old Result'] == 'DP'].shape[0] * 2
     tp_outs = df[df['Old Result'] == 'TP'].shape[0] * 3
 
-    # For single outs, use the result_col but exclude plays already counted as DPs/TPs
     non_dp_tp_df = df[~df['Old Result'].isin(['DP', 'TP'])]
     k_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(strikeouts)].shape[0]
     other_single_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(single_out_bip)].shape[0]
@@ -371,7 +302,6 @@ def calculate_pitching_stats(df, season=None):
     unearned_runs = df['is_unearned'].sum() if 'is_unearned' in df.columns else 0
     earned_runs = runs_allowed - unearned_runs
 
-    # --- Opponent Stats Calculations ---
     sac_events_df = bf_df[bf_df['Old Result'] == 'Sac']
     num_sf_allowed = sac_events_df[pd.to_numeric(sac_events_df['RBI'], errors='coerce').fillna(0) > 0].shape[0]
     num_sh_allowed = len(sac_events_df) - num_sf_allowed
@@ -411,7 +341,6 @@ def calculate_pitching_stats(df, season=None):
 
     gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
 
-    # Rate stats per 6 innings
     h6 = (num_hits_allowed / ip) * 6 if ip > 0 else 0
     hr6 = (num_hr_allowed / ip) * 6 if ip > 0 else 0
     bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else 0
@@ -473,7 +402,6 @@ def calculate_career_hitting_stats(df, league_stats_by_season):
     fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
     
-    # Career OPS+ Calculation
     lg_obp_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nOBP'))
     lg_slg_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nSLG'))
     
@@ -716,8 +644,6 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
 
     return career_stats
 
-
-
 def get_base_state_svg(obc):
 
 
@@ -748,47 +674,25 @@ def get_base_state_svg(obc):
 
     
 
-
-
     def diamond(filled, points):
 
-
-
         color = '#D7DADC' if filled else 'none'
-
-
 
         return f'<polygon points="{points}" fill="{color}" stroke="#D7DADC" stroke-width="1.5"/>'
 
 
 
-
-
-
-
     svg_parts = [
-
-
 
         '<svg width="24" height="24" viewbox="0 0 24 24">',
 
-
-
         diamond(bases['second'], "12,2 17,7 12,12 7,7"),   # 2nd base
-
-
 
         diamond(bases['third'], "5,9 10,14 5,19 0,14"),    # 3rd base
 
-
-
         diamond(bases['first'], "19,9 24,14 19,19 14,14"), # 1st base
 
-
-
         '</svg>'
-
-
 
     ]
 
@@ -797,28 +701,15 @@ def get_base_state_svg(obc):
     return "".join(svg_parts)
 
 
-
-
-
-
-
 def generate_re_matrix_html(season_num):
 
-
-
     """Generates an HTML table for the RE matrix of a given season."""
-
-
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 
     cache_path = os.path.join(script_dir, '..', 'data', 'cache', f're_matrix_S{season_num}.csv')
-
-
-
-    
 
 
 
@@ -830,81 +721,41 @@ def generate_re_matrix_html(season_num):
 
 
 
-
-
-
-
     re_df = pd.read_csv(cache_path)
-
-
-
-    
 
 
 
     matrix = {}
 
-
-
     for _, row in re_df.iterrows():
-
-
 
         matrix[(int(row['OBC']), int(row['Outs']))] = float(row['RunExpectancy'])
 
 
 
-
-
-
-
     html = "<table class='stats-table re-matrix'><thead><tr><th>Outs</th>"
-
-
 
     for obc in range(8):
 
-
-
         html += f"<th>{get_base_state_svg(obc)}</th>"
-
-
 
     html += "</tr></thead><tbody>"
 
 
 
-
-
-
-
     for outs in range(3):
-
-
 
         html += f"<tr><td><strong>{outs}</strong></td>"
 
-
-
         for obc in range(8):
-
-
 
             html += f"<td>{matrix.get((obc, outs), 0.0):.3f}</td>"
 
-
-
         html += "</tr>"
-
-
 
     html += "</tbody></table>"
 
-
-
     
-
-
 
     return {
 
@@ -919,11 +770,6 @@ def generate_re_matrix_html(season_num):
 
 
     }
-
-
-
-
-
 
 
 def _simulate_play_for_tracking(play, current_runners, outs):
@@ -1361,79 +1207,61 @@ def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
     }
 
 def calculate_game_achievements(df):
-    """Calculates game-level pitching achievements like CG, SHO, GF, and GS."""
     achievements = []
     game_groups = list(df.groupby(['Season', 'Game ID']))
     num_games = len(game_groups)
     print(f"Calculating achievements for {num_games} games...")
 
-    # Group by each individual game
     for i, ((season, game_id), game_df) in enumerate(game_groups):
         if (i + 1) % 100 == 0:
             print(f"  ... processed {i + 1} / {num_games} games for achievements")
         
-        # Find the two teams in the game from the data
         teams_in_game = game_df['Batter Team'].unique()
         if len(teams_in_game) != 2:
-            continue # Skip if it's not a standard 2-team game
+            continue
 
         team_A, team_B = teams_in_game[0], teams_in_game[1]
 
-        # Calculate total runs for each team
         runs_A = game_df[game_df['Batter Team'] == team_A]['Run'].sum()
         runs_B = game_df[game_df['Batter Team'] == team_B]['Run'].sum()
 
-        # Get all unique pitchers for each team
         pitchers_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].unique().tolist()
         pitchers_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].unique().tolist()
 
-        # --- Team A Pitchers ---
         if pitchers_A:
-            # Game Started: First pitcher to appear for the team
             starter_id_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].iloc[0]
             achievements.append({'Season': season, 'Pitcher ID': starter_id_A, 'Stat': 'GS', 'Team': team_A})
 
-            # Game Finished: Last pitcher to appear for the team
             finisher_id_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].iloc[-1]
             achievements.append({'Season': season, 'Pitcher ID': finisher_id_A, 'Stat': 'GF', 'Team': team_A})
 
-            # Complete Game
             if len(pitchers_A) == 1:
                 pitcher_id = pitchers_A[0]
                 achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'CG', 'Team': team_A})
                 
-                # Shutout: CG and opponent (Team B) scored 0 runs
                 if runs_B == 0:
                     achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'SHO', 'Team': team_A})
 
-        # --- Team B Pitchers ---
         if pitchers_B:
-            # Game Started
             starter_id_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].iloc[0]
             achievements.append({'Season': season, 'Pitcher ID': starter_id_B, 'Stat': 'GS', 'Team': team_B})
 
-            # Game Finished
             finisher_id_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].iloc[-1]
             achievements.append({'Season': season, 'Pitcher ID': finisher_id_B, 'Stat': 'GF', 'Team': team_B})
 
-            # Complete Game
             if len(pitchers_B) == 1:
                 pitcher_id = pitchers_B[0]
                 achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'CG', 'Team': team_B})
 
-                # Shutout: CG and opponent (Team A) scored 0 runs
                 if runs_A == 0:
                     achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'SHO', 'Team': team_B})
 
     if not achievements: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'GS', 'GF', 'CG', 'SHO'])
 
-    # Convert list of dicts to DataFrame and aggregate
     achievements_df = pd.DataFrame(achievements)
     
-    # Pivot and sum the stats
     agg_df = achievements_df.groupby(['Season', 'Pitcher ID', 'Team', 'Stat']).size().unstack(fill_value=0).reset_index()
 
-    # Ensure all columns exist in case none of a certain type occurred
     for col in ['GS', 'GF', 'CG', 'SHO']:
         if col not in agg_df.columns:
             agg_df[col] = 0
@@ -1441,24 +1269,19 @@ def calculate_game_achievements(df):
     return agg_df[['Season', 'Pitcher ID', 'Team', 'GS', 'GF', 'CG', 'SHO']]
 
 
-from collections import defaultdict
-
-def preprocess_gamelogs_for_stat_corrections(df):
+def preprocess_gamelogs_for_stat_corrections(df, player_id_to_name_map):
     """
     Processes a DataFrame of all gamelogs to correct stat attribution for pinch runners
     and multi-steal events. This is a major pre-processing step.
     """
     
-    # Define steal/cs events to identify pinch runners and multi-steals
     steal_events = {'STEAL 2B', 'STEAL 3B', 'Steal 2B', 'Steal 3B', 'MSTEAL 3B', 'MSteal 3B', 'CS 2B', 'CS 3B', 'CS Home', 'CMS 3B', 'CMS Home'}
     multi_steal_events = {'MSTEAL 3B', 'MSteal 3B', 'CMS 3B', 'CMS Home'}
     
     corrected_rows = []
     
-    # Group by game and process chronologically
     for game_id, game_df in df.groupby(['Season', 'Game ID']):
         
-        # Sort plays within the game
         game_df = game_df.sort_values(by=['Inning', 'PA of Inning']).copy()
         
         runners = {1: None, 2: None, 3: None} # base -> player_id
@@ -1469,7 +1292,6 @@ def preprocess_gamelogs_for_stat_corrections(df):
         for index, play in game_df.iterrows():
             current_runners = runners.copy()
             
-            # --- Pinch Runner Identification & Substitution ---
             player_id = play['Hitter ID']
             result = play['Exact Result']
             
@@ -1509,6 +1331,7 @@ def preprocess_gamelogs_for_stat_corrections(df):
                         # This is a successful trailing runner. Award SB.
                         new_row = play.copy()
                         new_row['Hitter ID'] = runner_id
+                        new_row['Hitter'] = player_id_to_name_map.get(runner_id, 'Unknown Player')
                         # Determine the type of steal based on the base they are advancing to
                         new_row['Exact Result'] = f'STEAL {base + 1}B' if base < 3 else 'STEAL Home'
                         new_rows_for_game.append(new_row)
@@ -1541,137 +1364,6 @@ def preprocess_gamelogs_for_stat_corrections(df):
         return pd.concat([df, pd.DataFrame(corrected_rows)], ignore_index=True)
     
     return df
-
-def preprocess_and_calculate_stats(df):
-    """
-    The main data processing engine. Iterates through all games chronologically to handle
-    stat corrections and aggregations for pinch runners, multi-steals, and Manfred runners.
-    """
-    
-    # Master dictionary to hold all stats for all players
-    # Structure: player_stats[player_id][season_num][team_abbr][stat] = value
-    player_stats = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int))))
-
-    # --- Chronological Game Processing ---
-    for (season, game_id), game_df in df.groupby(['Season', 'Game ID'], sort=False):
-        game_df = game_df.sort_values(by=['Inning', 'PA of Inning']).copy()
-        season_num = int(season.replace('S', ''))
-
-        # Game State Variables
-        runners = {1: None, 2: None, 3: None} # base -> player_id
-        outs = 0
-        current_inning = 0
-        
-        for index, play in game_df.iterrows():
-            # --- State Setup for the Play ---
-            inning_num = play['Inning']
-            if inning_num != current_inning:
-                outs = 0
-                current_inning = inning_num
-                # Manfred Runner Logic
-                if inning_num > 6:
-                    # Find previous offensive inning for this team
-                    team_at_bat = play['Batter Team']
-                    prev_inning_df = game_df[(game_df['Batter Team'] == team_at_bat) & (game_df['Inning'] < inning_num)]
-                    if not prev_inning_df.empty:
-                        last_offensive_inning = prev_inning_df['Inning'].max()
-                        last_inning_plays = prev_inning_df[prev_inning_df['Inning'] == last_offensive_inning]
-                        
-                        # Find the last outs
-                        out_plays = last_inning_plays[last_inning_plays['Outs After'] > last_inning_plays['Outs']].sort_values(by='PA of Inning', ascending=False)
-                        last_outs_ids = out_plays['Hitter ID'].tolist()
-
-                        # Place runners
-                        if inning_num == 7 and len(last_outs_ids) >= 1: # S7: Runner on 2nd
-                            runners[2] = {'id': last_outs_ids[0], 'is_manfred': True}
-                        elif inning_num > 7 and len(last_outs_ids) >= 2: # S8+: Runners on 1st & 2nd
-                            runners[1] = {'id': last_outs_ids[1], 'is_manfred': True}
-                            runners[2] = {'id': last_outs_ids[0], 'is_manfred': True}
-
-            # Load current runners from OBC before the play
-            # This is a fallback/check; the tracked `runners` dict is the source of truth
-
-            # --- Pinch Runner & Steal Logic ---
-            player_id = play['Hitter ID']
-            team = play['Batter Team']
-            result = play['Exact Result'] if pd.notna(play['Exact Result']) else play['Old Result']
-            
-            # This is simplified: a full implementation would be much more complex
-            # For now, we focus on getting the main stats right via aggregation
-
-            # --- Aggregate Stats for this Play ---
-            single_play_df = pd.DataFrame([play])
-            hitter_id = int(play['Hitter ID'])
-            pitcher_id = int(play['Pitcher ID'])
-            pitcher_team = play['Pitcher Team']
-
-            # Hitting Stats
-            h_stats = calculate_hitting_stats(single_play_df, season)
-            if h_stats is not None:
-                for stat, value in h_stats.items():
-                    player_stats[hitter_id][season_num][team][stat] += value
-
-            # Pitching Stats
-            p_stats = calculate_pitching_stats(single_play_df, season)
-            if p_stats is not None:
-                for stat, value in p_stats.items():
-                    player_stats[pitcher_id][season_num][pitcher_team][stat] += value
-
-    # --- Post-Process into Final DataFrame ---
-    final_hitting_stats = []
-    final_pitching_stats = []
-    # This part needs to be built to unroll the massive dictionary into DataFrames
-    # This is a placeholder for the complex unrolling logic
-
-    return pd.DataFrame(), pd.DataFrame() # Placeholder return
-
-# def flag_unearned_runs(df):
-#     df['is_unearned'] = False
-#     game_groups = list(df.groupby(['Season', 'Game ID'], sort=False))
-#     num_games = len(game_groups)
-#     print(f"Flagging unearned runs for {num_games} games...")
-#     for i, ((season, game_id), game_df) in enumerate(game_groups):
-#         if (i + 1) % 100 == 0:
-#             print(f"  ... flagged {i + 1} / {num_games} games")
-#         game_df = game_df.sort_values(by=['Inning', 'PA of Inning']).copy()
-
-#         runners = {1: None, 2: None, 3: None}
-#         outs = 0
-#         current_inning = 0
-
-#         for index, play in game_df.iterrows():
-#             inning_str = str(play['Inning'])
-#             inning_num = int(re.search(r'\d+', inning_str).group()) if re.search(r'\d+', inning_str) else 0
-
-#             if inning_num != current_inning:
-#                     team_at_bat = play['Batter Team']
-#                     # Correctly filter for the specific game being processed
-#                     prev_inning_df = game_df[(game_df['Batter Team'] == team_at_bat) & (game_df['Inning'].astype(str).str.extract(r'(\d+)').astype(int) < inning_num)]
-#                     if not prev_inning_df.empty:
-#                         last_offensive_inning = prev_inning_df['Inning'].max()
-#                         last_inning_plays = prev_inning_df[prev_inning_df['Inning'] == last_offensive_inning]
-#                         if 'Outs After' in last_inning_plays.columns and 'Outs' in last_inning_plays.columns:
-#                             out_plays = last_inning_plays[last_inning_plays['Outs After'] > last_inning_plays['Outs']].sort_values(by='PA of Inning', ascending=False)
-#                             last_outs_ids = out_plays['Hitter ID'].unique().tolist()
-#                         else:
-#                             last_outs_ids = []
-                        
-#                         if inning_num >= 7 and len(last_outs_ids) >= 1:
-#                             runners[2] = {'id': last_outs_ids[0], 'is_manfred': True}
-#                         if inning_num > 7 and len(last_outs_ids) >= 2:
-#                             runners[1] = {'id': last_outs_ids[1], 'is_manfred': True}
-            
-#             runs_scored_this_play, next_runners = _simulate_play_for_tracking(play, runners, outs)
-            
-#             if runs_scored_this_play:
-#                 is_unearned = any(run.get('is_manfred', False) for run in runs_scored_this_play)
-#                 if is_unearned:
-#                     df.loc[index, 'is_unearned'] = True
-            
-#             runners = next_runners
-#             if 'Outs After' in play:
-#                 outs = play['Outs After']
-#     return df
 
 def main():
     print("Loading all season data... (this may take a moment)")
@@ -1710,9 +1402,33 @@ def main():
             global_temp_id_counter -= 1
         return player_name_to_temp_id[player_name]
 
+    all_players = pd.concat([
+        combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
+        ,
+        combined_df[['Pitcher ID', 'Pitcher', 'Season', 'Session']].rename(columns={'Pitcher ID': 'Player ID', 'Pitcher': 'Player Name'})
+    ])
+    all_players.dropna(subset=['Player ID', 'Player Name'], inplace=True)
+    all_players['Player ID'] = all_players['Player ID'].astype(int)
+    all_players['Season_num'] = all_players['Season'].str.replace('S', '').astype(int)
+    all_players.sort_values(by=['Season_num', 'Session'], ascending=[True, True], inplace=True)
+    
+    player_names = all_players.groupby('Player ID')['Player Name'].apply(lambda x: list(dict.fromkeys(x))).to_dict()
+
+    player_id_map = {}
+    for player_id, names in player_names.items():
+        if player_id == 0: continue
+        if not names: continue
+        
+        player_id_map[int(player_id)] = {
+            'currentName': names[-1],
+            'formerNames': names[:-1]
+        }
+    
+    player_id_to_name_map = {k: v['currentName'] for k, v in player_id_map.items()}
+
     # Apply corrections for pinch runners and multi-steals
     print("Pre-processing gamelogs for stat corrections...")
-    combined_df = preprocess_gamelogs_for_stat_corrections(combined_df)
+    combined_df = preprocess_gamelogs_for_stat_corrections(combined_df, player_id_to_name_map)
     print("Pre-processing complete.")
 
     # Disambiguate Line Outs (LO) from Left Ground Outs (LGO) in modern seasons.
@@ -1805,7 +1521,8 @@ def main():
     combined_df.drop(columns=['Season_num'], inplace=True)
 
     all_players = pd.concat([
-        combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'}),
+        combined_df[['Hitter ID', 'Hitter', 'Season', 'Session']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
+        ,
         combined_df[['Pitcher ID', 'Pitcher', 'Season', 'Session']].rename(columns={'Pitcher ID': 'Player ID', 'Pitcher': 'Player Name'})
     ])
     all_players.dropna(subset=['Player ID', 'Player Name'], inplace=True)
@@ -1951,7 +1668,6 @@ def main():
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
     game_achievements_df = calculate_game_achievements(leaderboard_df)
 
-    # --- Main Processing Loop ---
     all_seasons_hitting_stats = []
     all_seasons_pitching_stats = []
     for season in sorted_seasons:
@@ -1961,17 +1677,15 @@ def main():
         hitting_cache_path = os.path.join(cache_dir, f'hitting_stats_{season}.csv')
         pitching_cache_path = os.path.join(cache_dir, f'pitching_stats_{season}.csv')
 
-        # Determine if we can use cache for both, including checking for WAR column
         can_use_cache = False
         if os.path.exists(hitting_cache_path) and os.path.exists(pitching_cache_path) and not force_recalc:
-            # Check if WAR is in the cached files
             try:
                 hitting_cols = pd.read_csv(hitting_cache_path, nrows=0).columns
                 pitching_cols = pd.read_csv(pitching_cache_path, nrows=0).columns
                 if 'WPA' in hitting_cols and 'BAA' in pitching_cols:
                     can_use_cache = True
             except Exception:
-                can_use_cache = False # File might be empty or corrupt
+                can_use_cache = False
 
         if can_use_cache:
             season_hitting_stats = pd.read_csv(hitting_cache_path)
