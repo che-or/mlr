@@ -1282,9 +1282,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const renderHitting = () => {
                 if (hittingStats.length > 0) {
                     hittingStats.sort((a, b) => {
-                        if (a.Season === 'Career') return 1;
-                        if (b.Season === 'Career') return -1;
-                        
+                        const getScore = (season) => {
+                            if (season === 'Franchise') return 3;
+                            if (season === 'Career') return 2;
+                            return 0;
+                        }
+                        const scoreA = getScore(a.Season);
+                        const scoreB = getScore(b.Season);
+                        if (scoreA !== scoreB) {
+                            return scoreA - scoreB;
+                        }
+
+                        if (a.Season === 'Franchise') {
+                            return a.Team.localeCompare(b.Team);
+                        }
+
+                        if (a.Season === 'Career') {
+                            return 0; // Should be only one
+                        }
+
+                        // Season rows
                         const seasonA = parseInt(a.Season.slice(1));
                         const seasonB = parseInt(b.Season.slice(1));
                         if (seasonA !== seasonB) {
@@ -1302,9 +1319,26 @@ document.addEventListener('DOMContentLoaded', () => {
             const renderPitching = () => {
                 if (pitchingStats.length > 0) {
                     pitchingStats.sort((a, b) => {
-                        if (a.Season === 'Career') return 1;
-                        if (b.Season === 'Career') return -1;
-                        
+                        const getScore = (season) => {
+                            if (season === 'Franchise') return 3;
+                            if (season === 'Career') return 2;
+                            return 0;
+                        }
+                        const scoreA = getScore(a.Season);
+                        const scoreB = getScore(b.Season);
+                        if (scoreA !== scoreB) {
+                            return scoreA - scoreB;
+                        }
+
+                        if (a.Season === 'Franchise') {
+                            return a.Team.localeCompare(b.Team);
+                        }
+
+                        if (a.Season === 'Career') {
+                            return 0; // Should be only one
+                        }
+
+                        // Season rows
                         const seasonA = parseInt(a.Season.slice(1));
                         const seasonB = parseInt(b.Season.slice(1));
                         if (seasonA !== seasonB) {
@@ -1369,16 +1403,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 const currentSortDir = header.dataset.sortDir;
-                let sortDir;
-                if (currentSortDir) {
-                    sortDir = currentSortDir === 'asc' ? 'desc' : 'asc';
+                let nextSortDir;
+                const primarySort = isLowerBetter ? 'asc' : 'desc';
+                const secondarySort = isLowerBetter ? 'desc' : 'asc';
+
+                if (!currentSortDir) {
+                    nextSortDir = primarySort;
+                } else if (currentSortDir === primarySort) {
+                    nextSortDir = secondarySort;
                 } else {
-                    sortDir = isLowerBetter ? 'asc' : 'desc';
+                    nextSortDir = 'default';
                 }
 
                 const rows = Array.from(tbody.querySelectorAll('tr'));
-                const careerRow = rows.find(row => row.classList.contains('career-row'));
-                const dataRows = rows.filter(row => !row.classList.contains('career-row'));
+                const staticRows = rows.filter(row => row.classList.contains('career-row') || row.classList.contains('franchise-row'));
+                const dataRows = rows.filter(row => !row.classList.contains('career-row') && !row.classList.contains('franchise-row'));
 
                 headers.forEach(h => {
                     delete h.dataset.sortDir;
@@ -1386,44 +1425,53 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (arrow) arrow.remove();
                 });
 
-                header.dataset.sortDir = sortDir;
-                const arrow = document.createElement('span');
-                arrow.className = 'sort-arrow';
-                arrow.innerHTML = sortDir === 'asc' ? ' &uarr;' : ' &darr;';
-                header.appendChild(arrow);
+                if (nextSortDir === 'default') {
+                    // Sort by Season (index 0) ascending to restore default order
+                    dataRows.sort((a, b) => {
+                        const aText = a.cells[0].textContent;
+                        const bText = b.cells[0].textContent;
+                        const seasonA = aText ? parseInt(aText.slice(1)) : 0;
+                        const seasonB = bText ? parseInt(bText.slice(1)) : 0;
+                        return seasonA - seasonB;
+                    });
+                } else {
+                    header.dataset.sortDir = nextSortDir;
+                    const arrow = document.createElement('span');
+                    arrow.className = 'sort-arrow';
+                    arrow.innerHTML = nextSortDir === 'asc' ? ' &uarr;' : ' &darr;';
+                    header.appendChild(arrow);
 
-                const isIP = statName === 'IP';
+                    const isIP = statName === 'IP';
 
-                dataRows.sort((a, b) => {
-                    const aText = a.cells[index].textContent;
-                    const bText = b.cells[index].textContent;
+                    dataRows.sort((a, b) => {
+                        const aText = a.cells[index].textContent;
+                        const bText = b.cells[index].textContent;
 
-                    let aVal, bVal;
+                        let aVal, bVal;
 
-                    if (isIP) {
-                        const parseIP = (ip) => {
-                            if (ip === '-') return -1;
-                            const parts = ip.split('.');
-                            return parseFloat(parts[0]) + (parseFloat(parts[1] || 0) / 3);
-                        };
-                        aVal = parseIP(aText);
-                        bVal = parseIP(bText);
-                    } else {
-                        aVal = aText === '-' ? -Infinity : parseFloat(aText);
-                        bVal = bText === '-' ? -Infinity : parseFloat(bText);
-                    }
+                        if (isIP) {
+                            const parseIP = (ip) => {
+                                if (ip === '-') return -1;
+                                const parts = ip.split('.');
+                                return parseFloat(parts[0]) + (parseFloat(parts[1] || 0) / 3);
+                            };
+                            aVal = parseIP(aText);
+                            bVal = parseIP(bText);
+                        } else {
+                            aVal = aText === '-' ? -Infinity : parseFloat(aText);
+                            bVal = bText === '-' ? -Infinity : parseFloat(bText);
+                        }
 
-                    if (isNaN(aVal)) aVal = -Infinity;
-                    if (isNaN(bVal)) bVal = -Infinity;
+                        if (isNaN(aVal)) aVal = -Infinity;
+                        if (isNaN(bVal)) bVal = -Infinity;
 
-                    return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
-                });
+                        return nextSortDir === 'asc' ? aVal - bVal : bVal - aVal;
+                    });
+                }
 
                 tbody.innerHTML = '';
                 dataRows.forEach(row => tbody.appendChild(row));
-                if (careerRow) {
-                    tbody.appendChild(careerRow);
-                }
+                staticRows.forEach(row => tbody.appendChild(row));
             });
         });
     };
@@ -1686,7 +1734,13 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '<tbody>';
             const data = bySeason ? stats : [stats];
             data.forEach(s => {
-                let rowClass = (bySeason && s.Season === 'Career') ? 'career-row' : '';
+                let rowClass = '';
+                if (bySeason && s.Season === 'Career') {
+                    rowClass = 'career-row';
+                } else if (bySeason && s.Season === 'Franchise') {
+                    rowClass = 'franchise-row sub-row';
+                }
+
                 if (s.is_sub_row) {
                     rowClass += ' sub-row';
                 }
@@ -1722,10 +1776,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     let value; // Declare 'value' here
 
-                    if (stat === 'Team') {
+                    if (stat === 'Season' && s.Season === 'Franchise') {
+                        html += `<td></td>`;
+                    } else if (stat === 'Team') {
                         value = s.Team || '';
                         const isMultiTeam = /^\d+TM$/.test(value);
-                        if (s.Season !== 'Career' && value && !isMultiTeam) { // Only make season-specific teams clickable
+                        if (s.Season !== 'Career' && s.Season !== 'Franchise' && value && !isMultiTeam) { // Only make season-specific teams clickable
                             const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
                             html += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
