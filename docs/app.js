@@ -1087,6 +1087,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const pitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId);
 
         let mostRecentTeam = null;
+        let mostRecentSeason = null;
         const allStats = [...hittingStats, ...pitchingStats];
 
         if (allStats.length > 0) {
@@ -1095,13 +1096,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
             
             if (lastSeasonStats) {
-                mostRecentTeam = lastSeasonStats['Last Team'];
+                mostRecentTeam = lastSeasonStats['Team'];
+                mostRecentSeason = lastSeasonStats['Season'];
             }
         }
 
         let titleHTML = `<h2 class="section-title">${playerName}</h2>`;
-        if (mostRecentTeam && teamLogos[mostRecentTeam]) {
-            titleHTML = `<h2 class="section-title"><img src="${teamLogos[mostRecentTeam]}" class="player-team-logo"> ${playerName}</h2>`;
+        if (mostRecentTeam && mostRecentSeason) {
+            const franchiseKey = getFranchiseKeyFromAbbr(mostRecentTeam, mostRecentSeason);
+            const logoUrl = getTeamLogoBySeason(franchiseKey, mostRecentSeason);
+            if (logoUrl) {
+                titleHTML = `<h2 class="section-title"><img src="${logoUrl}" class="player-team-logo"> ${playerName}</h2>`;
+            }
         }
 
         titleHTML += `<p class="player-id-display">Player ID: ${playerId}</p>`;
