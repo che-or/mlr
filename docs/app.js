@@ -1281,6 +1281,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const renderHitting = () => {
                 if (hittingStats.length > 0) {
+                    const franchiseFirstSeason = new Map();
+                    const allPlayerSeasonStats = hittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+
+                    for (const stat of allPlayerSeasonStats) {
+                        const seasonNum = parseInt(stat.Season.slice(1));
+                        const teamAbbr = stat.Team;
+                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, stat.Season);
+
+                        if (franchiseKey) {
+                            if (!franchiseFirstSeason.has(franchiseKey) || seasonNum < franchiseFirstSeason.get(franchiseKey)) {
+                                franchiseFirstSeason.set(franchiseKey, seasonNum);
+                            }
+                        }
+                    }
+                    console.log('Hitting Franchise Map:', franchiseFirstSeason);
+
                     hittingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
@@ -1294,6 +1310,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         if (a.Season === 'Franchise') {
+                            const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
+                            const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
+                            console.log('Hitting Sort Compare:', a.Team, b.Team, '-> Seasons:', firstSeasonA, firstSeasonB);
+                            if (firstSeasonA !== firstSeasonB) {
+                                return firstSeasonA - firstSeasonB;
+                            }
                             return a.Team.localeCompare(b.Team);
                         }
 
@@ -1318,6 +1340,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const renderPitching = () => {
                 if (pitchingStats.length > 0) {
+                    const franchiseFirstSeason = new Map();
+                    const allPlayerSeasonStats = pitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+
+                    for (const stat of allPlayerSeasonStats) {
+                        const seasonNum = parseInt(stat.Season.slice(1));
+                        const teamAbbr = stat.Team;
+                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, stat.Season);
+
+                        if (franchiseKey) {
+                            if (!franchiseFirstSeason.has(franchiseKey) || seasonNum < franchiseFirstSeason.get(franchiseKey)) {
+                                franchiseFirstSeason.set(franchiseKey, seasonNum);
+                            }
+                        }
+                    }
+                    console.log('Pitching Franchise Map:', franchiseFirstSeason);
+
                     pitchingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
@@ -1331,6 +1369,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         if (a.Season === 'Franchise') {
+                            const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
+                            const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
+                            console.log('Pitching Sort Compare:', a.Team, b.Team, '-> Seasons:', firstSeasonA, firstSeasonB);
+                            if (firstSeasonA !== firstSeasonB) {
+                                return firstSeasonA - firstSeasonB;
+                            }
                             return a.Team.localeCompare(b.Team);
                         }
 
