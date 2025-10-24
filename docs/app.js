@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'BAA', 'OBPA', 'SLGA', 'OPSA', 'BABIP_A',
                 'H6', 'HR6', 'BB6',
                 'BA', 'OBP', 'SLG', 'OPS', 'BABIP',
-                'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB'
+                'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'SB%'
             ];
         }
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
@@ -454,11 +454,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (stat === 'W-L%') {
             const data = state.pitchingStats;
 
+            const sortFn = (a, b) => {
+                const diff = (b['W-L%'] || 0) - (a['W-L%'] || 0);
+                if (diff !== 0) return sortModifier * diff;
+                const a_decisions = (a.W || 0) + (a.L || 0);
+                const b_decisions = (b.W || 0) + (b.L || 0);
+                return sortModifier * (b_decisions - a_decisions);
+            };
+
             // All-Time
             const careerData = data.filter(p => p.Season === 'Career');
             const min_decisions_career = 10;
             let allTimeLeaderboard = careerData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_career);
-            allTimeLeaderboard.sort((a, b) => sortModifier * ((b['W-L%'] || 0) - (a['W-L%'] || 0)));
+            allTimeLeaderboard.sort(sortFn);
             leaderboards['All-Time'] = {
                 type: 'all-time',
                 data: allTimeLeaderboard,
@@ -485,7 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const min_decisions_season = 3;
             let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
-            singleSeasonLeaderboard.sort((a, b) => sortModifier * ((b['W-L%'] || 0) - (a['W-L%'] || 0)));
+            singleSeasonLeaderboard.sort(sortFn);
             leaderboards['Single Season'] = {
                 type: 'single-season',
                 data: singleSeasonLeaderboard,
@@ -515,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     seasonData = seasonData.filter(p => !p.is_sub_row);
                 }
                 let leaderboardData = seasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
-                leaderboardData.sort((a, b) => sortModifier * ((b['W-L%'] || 0) - (a['W-L%'] || 0)));
+                leaderboardData.sort(sortFn);
                 leaderboards[season] = {
                     type: 'season',
                     data: leaderboardData,
@@ -524,8 +532,93 @@ document.addEventListener('DOMContentLoaded', () => {
                     min_qual_key: 'Decisions'
                 };
             }
+        } else if (stat === 'SB%') {
+            const data = isHitting ? state.hittingStats : state.pitchingStats;
+            const sbKey = isHitting ? 'SB' : 'SB_A';
+            const csKey = isHitting ? 'CS' : 'CS_A';
+
+            const sortFn = (a, b) => {
+                const diff = lowerIsBetter
+                    ? (a[statKey] || 0) - (b[statKey] || 0)
+                    : (b[statKey] || 0) - (a[statKey] || 0);
+                if (diff !== 0) return sortModifier * diff;
+                const a_attempts = (parseFloat(a[sbKey]) || 0) + (parseFloat(a[csKey]) || 0);
+                const b_attempts = (parseFloat(b[sbKey]) || 0) + (parseFloat(b[csKey]) || 0);
+                return sortModifier * (b_attempts - a_attempts);
+            };
+
+            // All-Time
+            const careerData = data.filter(p => p.Season === 'Career');
+            const min_attempts_career = 10;
+            let allTimeLeaderboard = careerData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_career);
+            allTimeLeaderboard.sort(sortFn);
+            leaderboards['All-Time'] = {
+                type: 'all-time',
+                data: allTimeLeaderboard,
+                isCountingStat: false,
+                min_qual: min_attempts_career,
+                min_qual_key: 'Attempts'
+            };
+
+            // Single Season
+            let singleSeasonData = data.filter(p => p.Season !== 'Career');
+            if (selectedTeam) {
+                const franchise = state.teamHistory[selectedTeam];
+                if (franchise) {
+                    singleSeasonData = singleSeasonData.filter(p => {
+                        const seasonNum = parseInt(p.Season.slice(1));
+                        if (isNaN(seasonNum)) return false;
+                        return franchise.some(f => p.Team === f.abbr && seasonNum >= f.start && seasonNum <= f.end);
+                    });
+                } else {
+                    singleSeasonData = singleSeasonData.filter(p => p.Team === selectedTeam);
+                }
+            } else {
+                singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
+            }
+            const min_attempts_season = 3;
+            let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_season);
+            singleSeasonLeaderboard.sort(sortFn);
+            leaderboards['Single Season'] = {
+                type: 'single-season',
+                data: singleSeasonLeaderboard,
+                isCountingStat: false,
+                min_qual: min_attempts_season,
+                min_qual_key: 'Attempts'
+            };
+
+            // Individual Seasons
+            const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
+            for (const season of allSeasons) {
+                let seasonData = data.filter(p => p.Season === season);
+                if (selectedTeam) {
+                    const franchise = state.teamHistory[selectedTeam];
+                    if (franchise) {
+                        const seasonNum = parseInt(season.slice(1));
+                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                        if (correctAbbr) {
+                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                        } else { // This franchise didn't exist this season.
+                            seasonData = []; 
+                        }
+                    } else {
+                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                    }
+                } else {
+                    seasonData = seasonData.filter(p => !p.is_sub_row);
+                }
+                let leaderboardData = seasonData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_season);
+                leaderboardData.sort(sortFn);
+                leaderboards[season] = {
+                    type: 'season',
+                    data: leaderboardData,
+                    isCountingStat: false,
+                    min_qual: min_attempts_season,
+                    min_qual_key: 'Attempts'
+                };
+            }
         } else {
-            const countingStats = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO'];
+            const countingStats = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
             const isCountingStat = countingStats.includes(stat);
             
             let data, min_qual_key;
@@ -543,11 +636,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             
+            const statsThatCanBeNegative = ['WAR', 'WPA', 'RE24'];
+
             // All-Time
             const careerData = data.filter(p => p.Season === 'Career');
             const min_qual_career = isHitting ? 100 : 50;
             let allTimeLeaderboard = isCountingStat ? careerData : careerData.filter(p => (p[min_qual_key] || 0) >= min_qual_career);
-            if (isCountingStat) {
+            if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
                 allTimeLeaderboard = allTimeLeaderboard.filter(p => p[statKey] > 0);
             }
             allTimeLeaderboard.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
@@ -585,7 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return (p[min_qual_key] || 0) >= season_min_qual;
                 });
             }
-            if (isCountingStat) {
+            if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
                 singleSeasonLeaderboard = singleSeasonLeaderboard.filter(p => p[statKey] > 0);
             }
             singleSeasonLeaderboard.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
@@ -618,7 +713,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     seasonData = seasonData.filter(p => !p.is_sub_row);
                 }
                 let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => (p[min_qual_key] || 0) >= min_qual);
-                if (isCountingStat) {
+                if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
                     leaderboardData = leaderboardData.filter(p => p[statKey] > 0);
                 }
                 leaderboardData.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
@@ -648,19 +743,45 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!leaderboardInfo) continue;
             
             const fullLeaderboard = leaderboardInfo.data;
+
+            const arePlayersTied = (p1, p2) => {
+                if (!p1 || !p2) return false;
+                if (p1[statKey] !== p2[statKey]) return false;
+                if (stat === 'W-L%') {
+                    const p1_dec = (p1.W || 0) + (p1.L || 0);
+                    const p2_dec = (p2.W || 0) + (p2.L || 0);
+                    return p1_dec === p2_dec;
+                }
+                if (stat === 'SB%') {
+                    const sbKey = isHitting ? 'SB' : 'SB_A';
+                    const csKey = isHitting ? 'CS' : 'CS_A';
+                    const p1_att = (p1[sbKey] || 0) + (p1[csKey] || 0);
+                    const p2_att = (p2[sbKey] || 0) + (p2[csKey] || 0);
+                    return p1_att === p2_att;
+                }
+                return true; // Tied on primary stat, no tie-breaker
+            };
+
             let leaderboard = fullLeaderboard.slice(0, leaderboardSize);
             let tieInfo = null;
 
-            if (fullLeaderboard.length > leaderboardSize && fullLeaderboard[leaderboardSize-1][statKey] === fullLeaderboard[leaderboardSize][statKey]) {
-                const tieValue = fullLeaderboard[leaderboardSize-1][statKey];
-                if (tieValue !== 0 && tieValue !== null && tieValue !== undefined) {
-                    let firstTieIndex = leaderboardSize - 1;
-                    while (firstTieIndex > 0 && fullLeaderboard[firstTieIndex - 1][statKey] === tieValue) {
-                        firstTieIndex--;
+            if (fullLeaderboard.length > leaderboardSize) {
+                const lastPlayerInSlice = fullLeaderboard[leaderboardSize - 1];
+                const firstPlayerOutOfSlice = fullLeaderboard[leaderboardSize];
+
+                if (arePlayersTied(lastPlayerInSlice, firstPlayerOutOfSlice)) {
+                    const tieValue = lastPlayerInSlice[statKey];
+                    if (tieValue !== null && tieValue !== undefined) {
+                        let firstTieIndex = leaderboardSize - 1;
+                        while (firstTieIndex > 0 && arePlayersTied(fullLeaderboard[firstTieIndex - 1], lastPlayerInSlice)) {
+                            firstTieIndex--;
+                        }
+
+                        const tieCount = fullLeaderboard.filter(p => arePlayersTied(p, lastPlayerInSlice)).length;
+                        
+                        leaderboard = fullLeaderboard.slice(0, firstTieIndex);
+                        tieInfo = { count: tieCount, value: tieValue };
                     }
-                    const tieCount = fullLeaderboard.filter(p => p[statKey] === tieValue).length;
-                    leaderboard = fullLeaderboard.slice(0, firstTieIndex);
-                    tieInfo = { count: tieCount, value: tieValue };
                 }
             }
 
@@ -692,14 +813,13 @@ document.addEventListener('DOMContentLoaded', () => {
             thead.innerHTML = headerRow;
             
             const tbody = table.createTBody();
-            let lastValue = null;
+            let lastPlayer = null;
             let lastRank = 0;
             leaderboard.forEach((p, i) => {
                 const rank = i + 1;
-                const currentValue = p[statKey];
 
                 let displayRank;
-                if (i > 0 && currentValue === lastValue) {
+                if (i > 0 && arePlayersTied(p, lastPlayer)) {
                     displayRank = lastRank;
                 } else {
                     displayRank = rank;
@@ -713,7 +833,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 row += `<td>${formatStat(stat, p[statKey])}</td></tr>`;
                 tbody.innerHTML += row;
 
-                lastValue = currentValue;
+                lastPlayer = p;
                 lastRank = displayRank;
             });
 
