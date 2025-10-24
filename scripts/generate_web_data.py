@@ -368,8 +368,6 @@ def calculate_pitching_stats(df, season=None):
     })
 
 def calculate_career_hitting_stats(df, league_stats_by_season):
-    if 'is_sub_row' in df.columns:
-        df = df[df['is_sub_row'] == False].copy()
     summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
@@ -447,15 +445,9 @@ def calculate_career_hitting_stats(df, league_stats_by_season):
     career_stats['Avg Diff'] = avg_diff
     career_stats['nOBP'] = obp
     career_stats['nSLG'] = slg
-    career_stats['Team'] = ''
     return career_stats
 
 def calculate_career_pitching_stats(df, league_n_era_by_season):
-
-    if 'is_sub_row' in df.columns:
-
-        df = df[df['is_sub_row'] == False].copy()
-
     summed_stats = df[['G', 'IP', 'BF', 'H', 'R', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A', 'SB_A', 'CS_A']].sum()
 
     ip = summed_stats['IP']
@@ -635,15 +627,9 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     career_stats['SB%_A'] = sb_pct_against
 
     career_stats['Avg Diff'] = avg_diff
-
     career_stats['FIP'] = fip
-
     career_stats['ERA+'] = era_plus
-
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
-
-    career_stats['Team'] = ''
-
     return career_stats
 
 def get_base_state_svg(obc):
@@ -1863,15 +1849,79 @@ def main():
     # --- Career Stats Calculation ---
     print("Calculating career stats...")
     # Hitting
-    career_hitting_stats = all_hitting_stats.groupby('Hitter ID').apply(lambda df: calculate_career_hitting_stats(df, league_stats_by_season), include_groups=False).reset_index()
+    career_hitting_stats = all_hitting_stats[all_hitting_stats['is_sub_row'] == False].groupby('Hitter ID').apply(lambda df: calculate_career_hitting_stats(df, league_stats_by_season), include_groups=False).reset_index()
     career_hitting_stats['Season'] = 'Career'
     all_hitting_stats = pd.concat([all_hitting_stats, career_hitting_stats], ignore_index=True)
 
     # Pitching
-    career_pitching_stats = all_pitching_stats.groupby('Pitcher ID').apply(lambda df: calculate_career_pitching_stats(df, league_n_era_by_season), include_groups=False).reset_index()
+    career_pitching_stats = all_pitching_stats[all_pitching_stats['is_sub_row'] == False].groupby('Pitcher ID').apply(lambda df: calculate_career_pitching_stats(df, league_n_era_by_season), include_groups=False).reset_index()
     career_pitching_stats['Season'] = 'Career'
     all_pitching_stats = pd.concat([all_pitching_stats, career_pitching_stats], ignore_index=True)
     print("Career stats calculated.")
+
+    # --- Franchise Totals Calculation ---
+    print("Calculating franchise totals...")
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data')
+    team_history_path = os.path.join(output_dir, 'team_history.json')
+    try:
+        with open(team_history_path, 'r') as f:
+            team_history = json.load(f)
+    except FileNotFoundError:
+        print("Warning: team_history.json not found. Cannot calculate franchise totals.")
+        team_history = {}
+
+    abbr_to_franchise = {}
+    if team_history:
+        for franchise_key, entries in team_history.items():
+            for entry in entries:
+                end_season = 9999 if entry['end'] == 'current' or entry['end'] == float('inf') else entry['end']
+                for season_num in range(entry['start'], end_season + 1):
+                    abbr_to_franchise[(entry['abbr'], season_num)] = franchise_key
+    
+    # Hitting
+    if not all_hitting_stats.empty and abbr_to_franchise:
+        franchise_source_hitting = all_hitting_stats[
+            (all_hitting_stats['Season'] != 'Career') &
+            ((all_hitting_stats['is_sub_row'] == True) | (~all_hitting_stats['Team'].str.contains("TM", na=False)))
+        ].copy()
+
+        franchise_source_hitting['franchise'] = franchise_source_hitting.apply(
+            lambda row: abbr_to_franchise.get((row['Team'], int(row['Season'].replace('S','')))),
+            axis=1
+        )
+
+        franchise_hitting_stats = franchise_source_hitting.dropna(subset=['franchise']).groupby(['Hitter ID', 'franchise']).apply(
+            lambda df: calculate_career_hitting_stats(df, league_stats_by_season), include_groups=False
+        ).reset_index()
+
+        if not franchise_hitting_stats.empty:
+            franchise_hitting_stats.rename(columns={'franchise': 'Team'}, inplace=True)
+            franchise_hitting_stats['Season'] = 'Franchise'
+            all_hitting_stats = pd.concat([all_hitting_stats, franchise_hitting_stats], ignore_index=True)
+
+    # Pitching
+    if not all_pitching_stats.empty and abbr_to_franchise:
+        franchise_source_pitching = all_pitching_stats[
+            (all_pitching_stats['Season'] != 'Career') &
+            ((all_pitching_stats['is_sub_row'] == True) | (~all_pitching_stats['Team'].str.contains("TM", na=False)))
+        ].copy()
+
+        franchise_source_pitching['franchise'] = franchise_source_pitching.apply(
+            lambda row: abbr_to_franchise.get((row['Team'], int(row['Season'].replace('S','')))),
+            axis=1
+        )
+
+        franchise_pitching_stats = franchise_source_pitching.dropna(subset=['franchise']).groupby(['Pitcher ID', 'franchise']).apply(
+            lambda df: calculate_career_pitching_stats(df, league_n_era_by_season), include_groups=False
+        ).reset_index()
+
+        if not franchise_pitching_stats.empty:
+            franchise_pitching_stats.rename(columns={'franchise': 'Team'}, inplace=True)
+            franchise_pitching_stats['Season'] = 'Franchise'
+            all_pitching_stats = pd.concat([all_pitching_stats, franchise_pitching_stats], ignore_index=True)
+    
+    print("Franchise totals calculated.")
+
 
     # --- Update Glossary with RE Matrix ---
     print("Updating glossary with RE Matrix...")
