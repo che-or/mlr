@@ -399,8 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const handleLeaderboardView = () => {
+        console.log('handleLeaderboardView called');
         const stat = elements.leaderboardStatSelect.value;
         if (!stat) return;
+        console.log('Selected stat:', stat);
 
         const type = elements.leaderboardTypeSelect.value;
         const selectedTeam = elements.leaderboardTeamFilter.value;
@@ -463,9 +465,14 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // All-Time
-            const careerData = data.filter(p => p.Season === 'Career');
+            let allTimeLeaderboardData;
+            if (selectedTeam) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
+            } else {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
+            }
             const min_decisions_career = 10;
-            let allTimeLeaderboard = careerData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_career);
+            let allTimeLeaderboard = allTimeLeaderboardData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_career);
             allTimeLeaderboard.sort(sortFn);
             leaderboards['All-Time'] = {
                 type: 'all-time',
@@ -476,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -548,9 +555,14 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // All-Time
-            const careerData = data.filter(p => p.Season === 'Career');
+            let allTimeLeaderboardData;
+            if (selectedTeam) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
+            } else {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
+            }
             const min_attempts_career = 10;
-            let allTimeLeaderboard = careerData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_career);
+            let allTimeLeaderboard = allTimeLeaderboardData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_career);
             allTimeLeaderboard.sort(sortFn);
             leaderboards['All-Time'] = {
                 type: 'all-time',
@@ -561,7 +573,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -639,9 +651,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const statsThatCanBeNegative = ['WAR', 'WPA', 'RE24'];
 
             // All-Time
-            const careerData = data.filter(p => p.Season === 'Career');
+            let allTimeLeaderboardData;
+            if (selectedTeam) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
+            } else {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
+            }
+            
             const min_qual_career = isHitting ? 100 : 50;
-            let allTimeLeaderboard = isCountingStat ? careerData : careerData.filter(p => (p[min_qual_key] || 0) >= min_qual_career);
+            let allTimeLeaderboard = isCountingStat ? allTimeLeaderboardData : allTimeLeaderboardData.filter(p => (p[min_qual_key] || 0) >= min_qual_career);
             if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
                 allTimeLeaderboard = allTimeLeaderboard.filter(p => p[statKey] > 0);
             }
@@ -653,9 +671,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 min_qual: min_qual_career,
                 min_qual_key: min_qual_key
             };
-
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -730,6 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderLeaderboardGrid = (leaderboards, stat, statKey, isHitting) => {
+        console.log('renderLeaderboardGrid called with leaderboards:', JSON.stringify(leaderboards, null, 2));
         const leaderboardSize = parseInt(elements.leaderboardLength.value) || 10;
         elements.leaderboardsContentDisplay.innerHTML = `<h2 class="section-title">${stat} Leaderboards</h2>`;
 
@@ -1295,7 +1313,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
                     }
-                    console.log('Hitting Franchise Map:', franchiseFirstSeason);
 
                     hittingStats.sort((a, b) => {
                         const getScore = (season) => {
@@ -1310,9 +1327,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         if (a.Season === 'Franchise') {
+                            const paA = a.PA || 0;
+                            const paB = b.PA || 0;
+                            if (paB !== paA) {
+                                return paB - paA;
+                            }
                             const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
                             const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
-                            console.log('Hitting Sort Compare:', a.Team, b.Team, '-> Seasons:', firstSeasonA, firstSeasonB);
                             if (firstSeasonA !== firstSeasonB) {
                                 return firstSeasonA - firstSeasonB;
                             }
@@ -1354,7 +1375,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
                     }
-                    console.log('Pitching Franchise Map:', franchiseFirstSeason);
 
                     pitchingStats.sort((a, b) => {
                         const getScore = (season) => {
@@ -1369,9 +1389,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         if (a.Season === 'Franchise') {
+                            const ipA = a.IP || 0;
+                            const ipB = b.IP || 0;
+                            if (ipB !== ipA) {
+                                return ipB - ipA;
+                            }
                             const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
                             const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
-                            console.log('Pitching Sort Compare:', a.Team, b.Team, '-> Seasons:', firstSeasonA, firstSeasonB);
                             if (firstSeasonA !== firstSeasonB) {
                                 return firstSeasonA - firstSeasonB;
                             }
@@ -1470,13 +1494,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (nextSortDir === 'default') {
-                    // Sort by Season (index 0) ascending to restore default order
+                    // Sort by Season (index 0) ascending, then by sub-row status, then by original index
                     dataRows.sort((a, b) => {
                         const aText = a.cells[0].textContent;
                         const bText = b.cells[0].textContent;
                         const seasonA = aText ? parseInt(aText.slice(1)) : 0;
                         const seasonB = bText ? parseInt(bText.slice(1)) : 0;
-                        return seasonA - seasonB;
+                        
+                        if (seasonA !== seasonB) {
+                            return seasonA - seasonB;
+                        }
+
+                        // If seasons are the same, main row (not a sub-row) comes first
+                        const subRowA = a.classList.contains('sub-row') ? 1 : 0;
+                        const subRowB = b.classList.contains('sub-row') ? 1 : 0;
+                        if (subRowA !== subRowB) {
+                            return subRowA - subRowB;
+                        }
+
+                        // If seasons and sub-row status are the same, use original index as tie-breaker
+                        const originalIndexA = parseInt(a.dataset.originalIndex || '0');
+                        const originalIndexB = parseInt(b.dataset.originalIndex || '0');
+                        return originalIndexA - originalIndexB;
                     });
                 } else {
                     header.dataset.sortDir = nextSortDir;
@@ -1777,7 +1816,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '</tr></thead>';
             html += '<tbody>';
             const data = bySeason ? stats : [stats];
-            data.forEach(s => {
+            data.forEach((s, index) => {
                 let rowClass = '';
                 if (bySeason && s.Season === 'Career') {
                     rowClass = 'career-row';
@@ -1788,7 +1827,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (s.is_sub_row) {
                     rowClass += ' sub-row';
                 }
-                html += `<tr class="${rowClass}">`;
+                html += `<tr class="${rowClass}" data-original-index="${index}">`;
                 groupStats.forEach(stat => {
                     let statKey = stat;
                     if (isPitching) {
