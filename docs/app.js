@@ -1096,8 +1096,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
             
             if (lastSeasonStats) {
-                mostRecentTeam = lastSeasonStats['Team'];
-                mostRecentSeason = lastSeasonStats['Season'];
+                mostRecentTeam = lastSeasonStats['Last Team'] || lastSeasonStats['Team'];
+                mostRecentSeason = lastSeasonStats.Season;
             }
         }
 
@@ -1604,7 +1604,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     if (stat === 'Team') {
                         value = s.Team || '';
-                        if (s.Season !== 'Career' && value) { // Only make season-specific teams clickable
+                        const isMultiTeam = /^\d+TM$/.test(value);
+                        if (s.Season !== 'Career' && value && !isMultiTeam) { // Only make season-specific teams clickable
                             const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
                             html += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
