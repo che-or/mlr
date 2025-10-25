@@ -1564,17 +1564,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
         const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
-
-        let content = `<h2 class="section-title">Standings</h2>`;
-        content += `<div class="season-selector-container">
-                        <label for="team-season-select">Select Season:</label>
-                        <select id="team-season-select">`;
-        allSeasons.forEach(season => {
-            const isSelected = season === currentSeason ? 'selected' : '';
-            content += `<option value="${season}" ${isSelected}>Season ${season.slice(1)}</option>`;
-        });
-        content += `        </select>
-                    </div>`;
+                const currentSeasonIndex = allSeasons.indexOf(currentSeason);
+        
+                const prevSeason = currentSeasonIndex > 0 ? allSeasons[currentSeasonIndex - 1] : null;
+                const nextSeason = currentSeasonIndex < allSeasons.length - 1 ? allSeasons[currentSeasonIndex + 1] : null;
+        
+                let content = `<div class="team-stats-header">
+                                <h2 class="section-title">Standings - 
+                                    <select id="team-season-select" class="title-season-select">`;
+                allSeasons.forEach(season => {
+                    const isSelected = season === currentSeason ? 'selected' : '';
+                    content += `<option value="${season}" ${isSelected}>Season ${season.slice(1)}</option>`;
+                });
+                content += `        </select>
+                                </h2>
+                                <div class="season-nav-buttons">`;
+                if (prevSeason) {
+                    content += `<a href="#/team-stats?season=${prevSeason}" class="season-nav-button">&lt; Prev Season</a>`;
+                }
+                if (nextSeason) {
+                    content += `<a href="#/team-stats?season=${nextSeason}" class="season-nav-button">Next Season &gt;</a>`;
+                }
+                content += `    </div>
+                            </div>`;
 
         // Calculate records and standings
         const teamRecords = calculateTeamRecords(currentSeason);

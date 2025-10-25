@@ -573,3 +573,11 @@ nav {
 .team-link:hover {
     color: var(--accent-color);
 }
+
+/* Make season selector dropdown in title smaller */
+.title-season-select {
+    font-size: 14px;
+    font-weight: normal;
+    vertical-align: middle;
+    margin-left: 10px;
+}
