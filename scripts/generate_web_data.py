@@ -1307,6 +1307,22 @@ def preprocess_gamelogs_for_stat_corrections(df, player_id_to_name_map):
                     if original_runner_id: runners[3] = player_id
 
                 if original_runner_id:
+                    # If the original runner was credited with a run, move it to the pinch runner.
+                    on_base_events = {'1B', '2B', '3B', 'HR', 'BB', 'IBB', 'BUNT 1B', 'Bunt 1B'}
+                    original_runner_pa_mask = (
+                        (df['Game ID'] == game_id[1]) &
+                        (df.index < index) &
+                        (df['Hitter ID'] == original_runner_id) &
+                        (df['Old Result'].isin(on_base_events) | df['Exact Result'].isin(on_base_events))
+                    )
+                    original_runner_pa_rows = df[original_runner_pa_mask]
+
+                    if not original_runner_pa_rows.empty:
+                        original_pa_row_index = original_runner_pa_rows.index[-1]
+                        if df.loc[original_pa_row_index, 'Run'] == 1:
+                            df.loc[original_pa_row_index, 'Run'] = 0
+                            df.loc[index, 'Run'] = 1
+
                     # Update the map for future lookups
                     if original_runner_id in player_on_base_map:
                         base = player_on_base_map.pop(original_runner_id)
