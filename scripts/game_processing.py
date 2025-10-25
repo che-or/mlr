@@ -30,8 +30,9 @@ def _get_outs_from_result(result, old_result):
     return 0
 
 class Game:
-    def __init__(self, game_df):
+    def __init__(self, game_df, season_name):
         self.df = game_df
+        self.season = int(season_name.replace('S', ''))
         self.home_team = None
         self.away_team = None
         self.home_score = 0
@@ -173,23 +174,27 @@ class Game:
 
         # Original logic for other seasons
         elif 2 <= season <= 3:
-            if result == 'DP':
+            if str(result).strip() == 'DP':
+                outs_for_play = 2
                 if runners_before_play[0]:
-                    outs_for_play = 2
                     new_runners = [False, False, False]
                     if (current_outs + outs_for_play) < 3:
                         if runners_before_play[2]: runs_this_play += 1
                         if runners_before_play[1]: new_runners[2] = True
                 else:
-                    outs_for_play = 1
-                return new_runners, runs_this_play, outs_for_play
-            if result == 'TP':
-                if runners_before_play[0] and runners_before_play[1]:
-                    outs_for_play = 3
-                    new_runners = [False, False, False]
+                    # This is a non-force DP. Assume a flyout and a runner is doubled-off.
+                    # No runners advance. The most advanced runner is out.
+                    new_runners = list(runners_before_play)
+                    if new_runners[2]:
+                        new_runners[2] = False
+                    elif new_runners[1]:
+                        new_runners[1] = False
                     runs_this_play = 0
-                else:
-                    outs_for_play = 1
+                return new_runners, runs_this_play, outs_for_play
+            if str(result).strip() == 'TP':
+                outs_for_play = 3
+                new_runners = [False, False, False]
+                runs_this_play = 0
                 return new_runners, runs_this_play, outs_for_play
 
         # --- DEFAULT LOGIC ---
@@ -443,8 +448,7 @@ class Game:
                     diff = 0
                 else:
                     diff = int(numeric_diff)
-            season_str = play.get('Season', 'S0')
-            season = int(season_str.replace('S', ''))
+            season = self.season
 
             pa_type_val = play.get('PA Type')
             if pd.isna(pa_type_val):
@@ -473,14 +477,14 @@ class Game:
                 self.lead_changes.append({'inning': self.inning, 'top_of_inning': self.top_of_inning, 'home_score': self.home_score, 'away_score': self.away_score, 'home_pitcher': self.home_pitcher, 'away_pitcher': self.away_pitcher})
 
 
-def get_pitching_decisions(game_df):
+def get_pitching_decisions(game_df, season_name):
     """
     Determines wins, losses, saves, and holds for a single game.
     """
     if game_df.empty:
         return {}
 
-    game = Game(game_df)
+    game = Game(game_df, season_name)
     game.process_game()
 
     # Determine winner and loser

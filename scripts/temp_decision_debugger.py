@@ -6,6 +6,7 @@ from collections import defaultdict
 # Assuming game_processing.py and data_loader.py are in the same directory
 from game_processing import Game, get_pitching_decisions, _get_outs_from_result
 from data_loader import load_all_seasons
+from gamelog_corrections import apply_gamelog_corrections
 
 def debug_game_decisions(season_name, game_id_to_debug):
     print(f"Loading all season data for debugging {season_name} Game {game_id_to_debug}...")
@@ -25,9 +26,12 @@ def debug_game_decisions(season_name, game_id_to_debug):
         print(f"Game {game_id_to_debug} in {season_name} not found.")
         return
 
+    group_name = (season_name, game_id_to_debug)
+    game_df = apply_gamelog_corrections(game_df, group_name)
+
     print(f"\nDebugging {season_name} Game {game_id_to_debug} play-by-play:")
 
-    game = Game(game_df)
+    game = Game(game_df, season_name)
     
     # Manually process the game play-by-play to print intermediate states
     game.df = game.df.reset_index()
@@ -71,6 +75,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
         4: [True, True, False], 5: [True, False, True], 6: [False, True, True], 7: [True, True, True]
     }
     runners_to_obc = {tuple(v): k for k, v in obc_to_runners.items()}
+    game_season = int(season_name.replace('S', ''))
 
     for idx, play in game.df.iterrows():
         inning_num, is_top = play['inning_num'], play['is_top']
@@ -117,7 +122,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
             else:
                 diff = int(numeric_diff)
         
-        season = int(play.get('Season', 'S0').replace('S', ''))
+        season = game_season
 
         pa_type_val = play.get('PA Type')
         if pd.isna(pa_type_val):
@@ -157,7 +162,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
         if (score_before[0] - score_before[1]) * (game.home_score - game.away_score) <= 0 and (game.home_score != game.away_score):
             game.lead_changes.append({'inning': game.inning, 'top_of_inning': game.top_of_inning, 'home_score': game.home_score, 'away_score': game.away_score, 'home_pitcher': game.home_pitcher, 'away_pitcher': game.away_pitcher})
 
-    final_decisions = get_pitching_decisions(game_df)
+    final_decisions = get_pitching_decisions(game_df, season_name)
     print("\n--- Final Pitching Decisions ---")
     if not final_decisions or final_decisions.get('win') is None or final_decisions.get('loss') is None:
         print("DECISIONS ARE MISSING OR INCOMPLETE")

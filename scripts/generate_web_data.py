@@ -1,11 +1,15 @@
 from data_loader import load_all_seasons
 from game_processing import get_pitching_decisions
+from gamelog_corrections import apply_gamelog_corrections
 import pandas as pd
 import sys
 import json
 import os
 import re
 from collections import defaultdict
+
+
+
 
 def _simulate_play_for_tracking(play, current_runners, outs):
     runs_scored = []
@@ -1492,6 +1496,14 @@ def main():
     # Create the PA of Inning column needed for sorting
     combined_df['PA of Inning'] = combined_df.groupby(['Season', 'Game ID', 'Inning']).cumcount()
 
+    print("Applying manual gamelog corrections...")
+    # The lambda function calls our correction function for each group (game)
+    # and passes the group's name (a tuple of season and game_id) as an argument.
+    combined_df = combined_df.groupby(['Season', 'Game ID']).apply(
+        lambda g: apply_gamelog_corrections(g, g.name), include_groups=False
+    ).reset_index()
+    print("Gamelog corrections applied.")
+
     # Calculate pitching decisions on the raw data
     print("Calculating pitching decisions (W, L, SV, HLD)...")
     pitching_decisions = []
@@ -1501,7 +1513,7 @@ def main():
     for i, ((season, game_id), game_df) in enumerate(game_groups):
         if (i + 1) % 100 == 0:
             print(f"  ... {i + 1} / {num_games} games processed")
-        decisions = get_pitching_decisions(game_df)
+        decisions = get_pitching_decisions(game_df, season)
         if decisions:
             decisions['Season'] = season
             decisions['Game ID'] = game_id
