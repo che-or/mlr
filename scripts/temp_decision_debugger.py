@@ -14,25 +14,28 @@ def debug_game_decisions(season_name, game_id_to_debug):
         print("No data found.")
         return
 
-    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
+    season_df = all_season_data.get(season_name)
+    if season_df is None:
+        print(f"Season {season_name} not found.")
+        return
 
-    # Filter for the specific game
-    game_df = combined_df[(combined_df['Season'] == season_name) & (combined_df['Game ID'] == game_id_to_debug)].copy()
+    game_df = season_df[season_df['Game ID'] == game_id_to_debug].copy()
 
     if game_df.empty:
         print(f"Game {game_id_to_debug} in {season_name} not found.")
         return
 
-    print(f"Debugging {season_name} Game {game_id_to_debug} play-by-play:")
+    print(f"\nDebugging {season_name} Game {game_id_to_debug} play-by-play:")
 
-    # Create a Game instance and process the game
     game = Game(game_df)
     
     # Manually process the game play-by-play to print intermediate states
     game.df = game.df.reset_index()
-    game.df['original_order'] = game.df.index
     game.df['inning_num'], game.df['is_top'] = zip(*game.df['Inning'].apply(game._parse_inning))
-    game.df = game.df.sort_values(by=['inning_num', 'is_top', 'original_order'], ascending=[True, False, True])
+    game.df = game.df.sort_values(by=['inning_num', 'is_top', 'index'], ascending=[True, False, True])
+
+    # Pre-calculate the OBC_after for determining ambiguous plays
+    game.df['OBC_after'] = game.df.groupby(['inning_num', 'is_top'])['OBC'].shift(-1).fillna(0).astype(int)
 
     # Determine home and away teams
     if 'B' in str(game.df['Inning'].iloc[0]):
@@ -52,7 +55,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
         'home_score_entered': game.home_score,
         'away_score_entered': game.away_score,
         'inning_entered': 1,
-        'top_of_inning_entered': True # Assuming home pitcher starts in top of 1st
+        'top_of_inning_entered': True
     })
     game.pitching_log.append({
         'pitcher_id': game.away_pitcher,
@@ -60,18 +63,12 @@ def debug_game_decisions(season_name, game_id_to_debug):
         'home_score_entered': game.home_score,
         'away_score_entered': game.away_score,
         'inning_entered': 1,
-        'top_of_inning_entered': False # Assuming away pitcher starts in bottom of 1st
+        'top_of_inning_entered': False
     })
 
     obc_to_runners = {
-        0: [False, False, False],
-        1: [True, False, False],
-        2: [False, True, False],
-        3: [False, False, True],  # Runner on 3rd
-        4: [True, True, False],   # Runners on 1st and 2nd
-        5: [True, False, True],
-        6: [False, True, True],
-        7: [True, True, True]
+        0: [False, False, False], 1: [True, False, False], 2: [False, True, False], 3: [False, False, True],
+        4: [True, True, False], 5: [True, False, True], 6: [False, True, True], 7: [True, True, True]
     }
     runners_to_obc = {tuple(v): k for k, v in obc_to_runners.items()}
 
@@ -80,7 +77,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
 
         if game.inning != inning_num or game.top_of_inning != is_top:
             game.outs = 0
-            print(f"--- Start of Inning {inning_num} {'Top' if is_top else 'Bottom'} ---")
+            print(f"\n--- Start of Inning {inning_num} {'Top' if is_top else 'Bottom'} ---")
 
         game.inning = inning_num
         game.top_of_inning = is_top
@@ -92,23 +89,15 @@ def debug_game_decisions(season_name, game_id_to_debug):
         if current_pitcher_team == game.home_team and current_pitcher_id != game.home_pitcher:
             game.home_pitcher = current_pitcher_id
             game.pitching_log.append({
-                'pitcher_id': game.home_pitcher,
-                'team': game.home_team,
-                'home_score_entered': game.home_score,
-                'away_score_entered': game.away_score,
-                'inning_entered': game.inning,
-                'top_of_inning_entered': game.top_of_inning
+                'pitcher_id': game.home_pitcher, 'team': game.home_team, 'home_score_entered': game.home_score,
+                'away_score_entered': game.away_score, 'inning_entered': game.inning, 'top_of_inning_entered': game.top_of_inning
             })
             print(f"  Pitcher Change (Home): {game.home_pitcher} entered.")
         elif current_pitcher_team == game.away_team and current_pitcher_id != game.away_pitcher:
             game.away_pitcher = current_pitcher_id
             game.pitching_log.append({
-                'pitcher_id': game.away_pitcher,
-                'team': game.away_team,
-                'home_score_entered': game.home_score,
-                'away_score_entered': game.away_score,
-                'inning_entered': game.inning,
-                'top_of_inning_entered': game.top_of_inning
+                'pitcher_id': game.away_pitcher, 'team': game.away_team, 'home_score_entered': game.home_score,
+                'away_score_entered': game.away_score, 'inning_entered': game.inning, 'top_of_inning_entered': game.top_of_inning
             })
             print(f"  Pitcher Change (Away): {game.away_pitcher} entered.")
 
@@ -116,6 +105,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
         
         runners_before_play = obc_to_runners.get(play['OBC'], [False, False, False])
         current_outs = game.outs
+        obc_after = play['OBC_after']
         result = play['Exact Result'] if pd.notna(play['Exact Result']) else play['Old Result']
         diff_val = play.get('Diff')
         if pd.isna(diff_val):
@@ -126,8 +116,8 @@ def debug_game_decisions(season_name, game_id_to_debug):
                 diff = 0
             else:
                 diff = int(numeric_diff)
-        season_str = play.get('Season', 'S0')
-        season = int(season_str.replace('S', ''))
+        
+        season = int(play.get('Season', 'S0').replace('S', ''))
 
         pa_type_val = play.get('PA Type')
         if pd.isna(pa_type_val):
@@ -140,7 +130,7 @@ def debug_game_decisions(season_name, game_id_to_debug):
                 pa_type = int(numeric_pa_type)
 
         new_runners, runs_this_play, outs_this_play = game._simulate_play(
-            runners_before_play, current_outs, result, play['Old Result'], diff, season, pa_type
+            obc_after, runners_before_play, current_outs, result, play['Old Result'], diff, season, pa_type
         )
 
         game.runners_on_base = new_runners
@@ -150,44 +140,39 @@ def debug_game_decisions(season_name, game_id_to_debug):
             game.home_score += runs_this_play
         game.outs += outs_this_play
 
+        print(f"  Play: {play['Hitter']} - {result}")
+        print(f"    Before -> Runners: {runners_before_play}, Outs: {current_outs}")
+        print(f"    After  -> Runners: {game.runners_on_base}, Outs: {game.outs}, Runs: {runs_this_play}")
+        print(f"    Score: Home {game.home_score}, Away {game.away_score}")
+        
+        simulated_obc = runners_to_obc.get(tuple(game.runners_on_base), -1)
+        gamelog_obc_after = play['OBC_after']
+        
+        if game.outs < 3 and simulated_obc != gamelog_obc_after:
+            print(f"    !!! WARNING: Simulated OBC ({simulated_obc}) does NOT match gamelog OBC for next play ({gamelog_obc_after}) !!!")
+        
         if game.outs >= 3:
             game.runners_on_base = [False, False, False]
-
-        print(f"  Play: {play['Exact Result']} (Result: {result})")
-        print(f"    Runs this play: {runs_this_play}")
-        print(f"    Score: Home {game.home_score}, Away {game.away_score}")
-        print(f"    Outs: {game.outs}")
-        print(f"    Runners after: {game.runners_on_base}")
-        
-        # Compare simulated runners with next play's OBC
-        if idx + 1 < len(game.df):
-            simulated_obc = runners_to_obc.get(tuple(game.runners_on_base), -1) # -1 if not found, though it should be
-            next_play_obc = game.df.iloc[idx + 1]['OBC']
-            
-            print(f"    Simulated OBC for next play: {simulated_obc}")
-            print(f"    Gamelog OBC for next play: {next_play_obc}")
-            
-            if simulated_obc != next_play_obc:
-                print("    WARNING: Simulated runners do NOT match gamelog OBC for the next play!")
-        
-        print("-" * 30)
 
         if (score_before[0] - score_before[1]) * (game.home_score - game.away_score) <= 0 and (game.home_score != game.away_score):
             game.lead_changes.append({'inning': game.inning, 'top_of_inning': game.top_of_inning, 'home_score': game.home_score, 'away_score': game.away_score, 'home_pitcher': game.home_pitcher, 'away_pitcher': game.away_pitcher})
 
     final_decisions = get_pitching_decisions(game_df)
+    print("\n--- Final Pitching Decisions ---")
+    if not final_decisions or final_decisions.get('win') is None or final_decisions.get('loss') is None:
+        print("DECISIONS ARE MISSING OR INCOMPLETE")
+    
     if final_decisions:
-        print("\n--- Final Pitching Decisions ---")
         for key, value in final_decisions.items():
-            print(f"{key.replace('_', ' ').title()}: {value}")
+            print(f"  - {key.replace('_', ' ').title()}: {value}")
     else:
-        print("No final pitching decisions found for this game.")
+        print("  - No decisions dictionary was returned.")
 
 if __name__ == "__main__":
     import sys
     # Default values
-    season_name = 'S9'
-    game_id_to_debug = 3
+    season_name = 'S2'
+    game_id_to_debug = 23
 
     # Check if arguments are provided
     if len(sys.argv) > 1:
