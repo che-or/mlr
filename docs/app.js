@@ -1939,9 +1939,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             const sb = s.SB || 0;
                             const cs = s.CS || 0;
 
-                            if ((stat === 'BA' || stat === 'ISO') && ab === 0) {
+                            if ((['BA', 'ISO', 'BABIP', 'OPS+', 'SLG', 'OPS'].includes(stat)) && ab === 0) {
                                 value = '-';
-                            } else if ((['OBP', 'SLG', 'OPS', 'BABIP', 'HR%', 'SO%', 'BB%', 'GB%', 'FB%', 'GB/FB'].includes(stat)) && pa === 0) {
+                            } else if ((['OBP', 'HR%', 'SO%', 'BB%', 'GB%', 'FB%', 'GB/FB'].includes(stat)) && pa === 0) {
                                 value = '-';
                             } else if (stat === 'SB%' && (sb + cs) === 0) {
                                 value = '-';

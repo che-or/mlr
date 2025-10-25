@@ -53,11 +53,11 @@
     "SFG": [{"name": "San Francisco Giants", "abbr": "SFG", "start": 2, "end": 9999, "logo": "./img/logos/SFG.svg"}],
     "STL": [{"name": "St. Louis Cardinals", "abbr": "STL", "start": 2, "end": 9999, "logo": "./img/logos/STL.svg"}],
     "TBR": [
-        {"name": "Tampa Bay Devil Rays", "abbr": "TB", "start": 2, "end": 2, "logo": "./img/logos/TB.svg"},
+        {"name": "Tampa Bay Devil Rays", "abbr": "TB", "start": 2, "end": 2, "logo": "./img/logos/TBD.svg"},
         {"name": "Tampa Bay Devil Rays", "abbr": "TBD", "start": 3, "end": 3, "logo": "./img/logos/TBD.svg"},
-        {"name": "Tampa Bay Devil Rays", "abbr": "TBR", "start": 4, "end": 4, "logo": "./img/logos/TBR.svg"},
+        {"name": "Tampa Bay Devil Rays", "abbr": "TBR", "start": 4, "end": 4, "logo": "./img/logos/TBD.svg"},
         {"name": "Tampa Bay Rays", "abbr": "TBR", "start": 4, "end": 10, "logo": "./img/logos/TBR.svg"},
-        {"name": "Tampa Bay Devil Rays", "abbr": "TBR", "start": 11, "end": 9999, "logo": "./img/logos/TBR.svg"}
+        {"name": "Tampa Bay Devil Rays", "abbr": "TBR", "start": 11, "end": 9999, "logo": "./img/logos/TBD.svg"}
     ],
     "TEX": [
         {"name": "Baltimore Orioles", "abbr": "BAL", "start": 1, "end": 2, "logo": "./img/logos/BAL.svg"},
@@ -66,7 +66,7 @@
     ],
     "TOR": [{"name": "Toronto Blue Jays", "abbr": "TOR", "start": 1, "end": 9999, "logo": "./img/logos/TOR.svg"}],
     "WSH (S1-2)": [
-        {"name": "Washington Nationals", "abbr": "WAS", "start": 1, "end": 1, "logo": "./img/logos/WAS.svg"},
+        {"name": "Washington Nationals", "abbr": "WAS", "start": 1, "end": 1, "logo": "./img/logos/WSH.svg"},
         {"name": "Washington Nationals", "abbr": "WSH", "start": 2, "end": 2, "logo": "./img/logos/WSH.svg"}
     ]
 }
