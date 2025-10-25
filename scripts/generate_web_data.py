@@ -1601,8 +1601,9 @@ def main():
     print("Run Expectancy Matrices are ready.")
 
     print("Calculating RE24 for all plays...")
+    from game_processing import Game
+
     re24_values = []
-    # Use sorted_seasons to ensure order
     for season in sorted_seasons:
         season_df = combined_df[combined_df['Season'] == season].copy()
         re_matrix = run_expectancy_by_season.get(season, {})
@@ -1610,24 +1611,65 @@ def main():
             re24_values.append(pd.Series(0, index=season_df.index))
             continue
 
+        game_simulator = Game(pd.DataFrame(), season)
+
         season_df['OBC'] = pd.to_numeric(season_df['OBC'], errors='coerce').fillna(0).astype(int)
         season_df['Outs'] = pd.to_numeric(season_df['Outs'], errors='coerce').fillna(0).astype(int)
-
         re_before = season_df.apply(lambda row: re_matrix.get((row['OBC'], row['Outs']), 0), axis=1)
 
         inning_groups = season_df.groupby('Inning ID')
-        obc_after = inning_groups['OBC'].shift(-1)
-        outs_after = inning_groups['Outs'].shift(-1)
+        obc_after_raw = inning_groups['OBC'].shift(-1)
+        outs_after_raw = inning_groups['Outs'].shift(-1)
+        obc_after_raw_for_sim = inning_groups['OBC'].shift(-1).fillna(0).astype(int)
 
-        obc_after.fillna(0, inplace=True)
-        outs_after.fillna(3, inplace=True)
+        last_play_of_game_mask = ~season_df.duplicated(subset='Game ID', keep='last')
         
-        after_df = pd.DataFrame({'OBC': obc_after.astype(int), 'Outs': outs_after.astype(int)})
-        re_after = after_df.apply(lambda row: re_matrix.get((row['OBC'], row['Outs']), 0), axis=1)
+        runners_map = {0:[False,False,False], 1:[True,False,False], 2:[False,True,False], 3:[False,False,True], 4:[True,True,False], 5:[True,False,True], 6:[False,True,True], 7:[True,True,True]}
+        
+        def get_re24_components(row):
+            is_last_play_of_inning = pd.isna(row['obc_after_raw'])
+            
+            if not is_last_play_of_inning:
+                re_after = re_matrix.get((int(row['obc_after_raw']), int(row['outs_after_raw'])), 0)
+                runs_on_play = row['Run']
+                return pd.Series([re_after, runs_on_play])
+
+            runners_before = runners_map.get(row['OBC'], [False, False, False])
+            result = row['Exact Result'] if pd.notna(row['Exact Result']) else row['Old Result']
+            diff_val = pd.to_numeric(row.get('Diff'), errors='coerce')
+            diff = int(diff_val if pd.notna(diff_val) else 0)
+            pa_type_val = pd.to_numeric(row.get('PA Type'), errors='coerce')
+            pa_type = int(pa_type_val if pd.notna(pa_type_val) else 0)
+            
+            new_runners, runs_on_play, outs_for_play = game_simulator._simulate_play(
+                row['obc_after_for_sim'], runners_before, row['Outs'], result, row['Old Result'],
+                diff, int(row['Season'].replace('S','')), pa_type
+            )
+            
+            outs_after = row['Outs'] + outs_for_play
+            
+            if outs_after >= 3 or not row['is_last_play_of_game']:
+                re_after = 0
+            else: # Walk-off logic
+                obc_after = game_simulator._runners_to_obc(tuple(new_runners))
+                re_after = re_matrix.get((obc_after, outs_after), 0)
+                
+            return pd.Series([re_after, runs_on_play])
+
+        temp_df = season_df.copy()
+        temp_df['obc_after_raw'] = obc_after_raw
+        temp_df['outs_after_raw'] = outs_after_raw
+        temp_df['obc_after_for_sim'] = obc_after_raw_for_sim
+        temp_df['is_last_play_of_game'] = last_play_of_game_mask
+        
+        re24_components = temp_df.apply(get_re24_components, axis=1)
+        re24_components.columns = ['re_after', 'runs_on_play']
+        
+        re_after = re24_components['re_after']
+        runs_on_play = re24_components['runs_on_play']
         
         re_after.index = season_df.index
-
-        runs_on_play = pd.to_numeric(season_df['Run'], errors='coerce').fillna(0)
+        runs_on_play.index = season_df.index
 
         season_re24 = re_after - re_before + runs_on_play
         re24_values.append(season_re24)
