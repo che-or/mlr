@@ -1791,6 +1791,28 @@ document.addEventListener('DOMContentLoaded', () => {
                     else if (stat === 'BA') statKey = 'AVG';
                 }
                 let value = s[statKey];
+
+                if (isPitching) {
+                    const ip = s.IP || 0;
+                    const w = s.W || 0;
+                    const l = s.L || 0;
+
+                    if (stat === 'ERA' && ip === 0) {
+                        value = '-';
+                    } else if (stat === 'W-L%' && (w + l) === 0) {
+                        value = '-';
+                    }
+                } else { // Hitting
+                    const ab = s.AB || 0;
+                    const pa = s.PA || 0;
+
+                    if (stat === 'BA' && ab === 0) {
+                        value = '-';
+                    } else if ((['OBP', 'SLG', 'OPS'].includes(stat)) && pa === 0) {
+                        value = '-';
+                    }
+                }
+
                 html += `<td>${formatStat(stat, value)}</td>`;
             });
             html += '</tr>';
@@ -1872,6 +1894,48 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     } else {
                         value = s[statKey]; // Assign 'value' here for non-Team stats
+
+                        if (isPitching) {
+                            const ip = s.IP || 0;
+                            const bb = s.BB || 0;
+                            const w = s.W || 0;
+                            const l = s.L || 0;
+                            const bf = s.BF || 0;
+                            const sb_a = s.SB_A || 0;
+                            const cs_a = s.CS_A || 0;
+
+                            if (groupName === 'Opponent Stats') {
+                                if ((['BA', 'OBP', 'SLG', 'OPS', 'BABIP'].includes(stat)) && bf === 0) {
+                                    value = '-';
+                                } else if (stat === 'SB%' && (sb_a + cs_a) === 0) {
+                                    value = '-';
+                                }
+                            } else {
+                                if ((['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'SO6'].includes(stat)) && ip === 0) {
+                                    value = '-';
+                                } else if (stat === 'SO/BB' && bb === 0) {
+                                    value = '-';
+                                } else if (stat === 'W-L%' && (w + l) === 0) {
+                                    value = '-';
+                                } else if ((['HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB'].includes(stat)) && bf === 0) {
+                                    value = '-';
+                                }
+                            }
+                        } else { // Hitting
+                            const ab = s.AB || 0;
+                            const pa = s.PA || 0;
+                            const sb = s.SB || 0;
+                            const cs = s.CS || 0;
+
+                            if ((stat === 'BA' || stat === 'ISO') && ab === 0) {
+                                value = '-';
+                            } else if ((['OBP', 'SLG', 'OPS', 'BABIP', 'HR%', 'SO%', 'BB%', 'GB%', 'FB%', 'GB/FB'].includes(stat)) && pa === 0) {
+                                value = '-';
+                            } else if (stat === 'SB%' && (sb + cs) === 0) {
+                                value = '-';
+                            }
+                        }
+
                         html += `<td>${formatStat(stat, value)}</td>`;
                     }
                 });
