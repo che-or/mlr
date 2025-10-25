@@ -30,8 +30,9 @@ def _get_outs_from_result(result, old_result):
     return 0
 
 class Game:
-    def __init__(self, game_df):
+    def __init__(self, game_df, season_name):
         self.df = game_df
+        self.season = int(season_name.replace('S', ''))
         self.home_team = None
         self.away_team = None
         self.home_score = 0
@@ -44,8 +45,50 @@ class Game:
         self.lead_changes = []
         self.pitching_log = []
         self.runners_on_base = [False, False, False]
+        self.obc_to_runners = {
+            0: [False, False, False],
+            1: [True, False, False],
+            2: [False, True, False],
+            3: [False, False, True],
+            4: [True, True, False],
+            5: [True, False, True],
+            6: [False, True, True],
+            7: [True, True, True]
+        }
+        self.runners_to_obc = {tuple(v): k for k, v in self.obc_to_runners.items()}
 
-    def _simulate_play(self, runners_before_play, current_outs, result, old_result, diff, season, pa_type):
+    def _runners_to_obc(self, runners):
+        return self.runners_to_obc.get(tuple(runners))
+
+    def _simulate_play(self, obc_after, runners_before_play, current_outs, result, old_result, diff, season, pa_type):
+        # Pre-S7 infield-in deduction logic
+        if season < 7 and result in ['RGO', 'LGO'] and runners_before_play[2] and current_outs < 2:
+            # This is an ambiguous groundout in an early season. We must decide if it was "infield in" (no run)
+            # or "infield back" (run scores). We do this by simulating the "infield in" outcome and comparing
+            # the resulting base state to the actual base state from the gamelog (obc_after).
+
+            # Simulate Outcome B: Infield in, run holds (using original S7+ logic)
+            gamestate_tuple_B = tuple(runners_before_play)
+            infield_in_outcomes_B = {
+                (False, False, True):  ([False, False, True], 0, 1),
+                (True, False, True):   ([False, True, True], 0, 1),
+                (False, True, True):   ([False, True, True], 0, 1),
+                (True, True, True):    ([True, True, True], 0, 1), # Force out at home
+            }
+            outcome_B = infield_in_outcomes_B.get(gamestate_tuple_B)
+
+            if outcome_B:
+                new_runners_B, runs_B, outs_B = outcome_B
+                obc_B = self._runners_to_obc(new_runners_B)
+
+                # If the simulated "infield in" state matches the actual result, then use it.
+                if obc_B == obc_after:
+                    return new_runners_B, runs_B, outs_B
+            
+            # If we are here, the "infield in" simulation did NOT match the ground truth.
+            # Therefore, the play must have been "infield back". We now do nothing and allow the function
+            # to proceed to the default ground ball and double play logic below, which correctly models this.
+
         runs_this_play = 0
         new_runners = list(runners_before_play)
         outs_for_play = _get_outs_from_result(result, old_result)
@@ -131,23 +174,27 @@ class Game:
 
         # Original logic for other seasons
         elif 2 <= season <= 3:
-            if result == 'DP':
+            if str(result).strip() == 'DP':
+                outs_for_play = 2
                 if runners_before_play[0]:
-                    outs_for_play = 2
                     new_runners = [False, False, False]
                     if (current_outs + outs_for_play) < 3:
                         if runners_before_play[2]: runs_this_play += 1
                         if runners_before_play[1]: new_runners[2] = True
                 else:
-                    outs_for_play = 1
-                return new_runners, runs_this_play, outs_for_play
-            if result == 'TP':
-                if runners_before_play[0] and runners_before_play[1]:
-                    outs_for_play = 3
-                    new_runners = [False, False, False]
+                    # This is a non-force DP. Assume a flyout and a runner is doubled-off.
+                    # No runners advance. The most advanced runner is out.
+                    new_runners = list(runners_before_play)
+                    if new_runners[2]:
+                        new_runners[2] = False
+                    elif new_runners[1]:
+                        new_runners[1] = False
                     runs_this_play = 0
-                else:
-                    outs_for_play = 1
+                return new_runners, runs_this_play, outs_for_play
+            if str(result).strip() == 'TP':
+                outs_for_play = 3
+                new_runners = [False, False, False]
+                runs_this_play = 0
                 return new_runners, runs_this_play, outs_for_play
 
         # --- DEFAULT LOGIC ---
@@ -327,6 +374,9 @@ class Game:
         self.df['inning_num'], self.df['is_top'] = zip(*self.df['Inning'].apply(self._parse_inning))
         self.df = self.df.sort_values(by=['inning_num', 'is_top', 'index'], ascending=[True, False, True])
 
+        # Pre-calculate the OBC_after for determining ambiguous plays
+        self.df['OBC_after'] = self.df.groupby(['inning_num', 'is_top'])['OBC'].shift(-1).fillna(0).astype(int)
+
         self.home_pitcher = self.df[self.df['Pitcher Team'] == self.home_team]['Pitcher ID'].iloc[0]
         self.away_pitcher = self.df[self.df['Pitcher Team'] == self.away_team]['Pitcher ID'].iloc[0]
 
@@ -346,17 +396,6 @@ class Game:
             'inning_entered': 1,
             'top_of_inning_entered': False
         })
-
-        obc_to_runners = {
-            0: [False, False, False],
-            1: [True, False, False],
-            2: [False, True, False],
-            3: [False, False, True],
-            4: [True, True, False],
-            5: [True, False, True],
-            6: [False, True, True],
-            7: [True, True, True]
-        }
 
         for index, play in self.df.iterrows():
             inning_num, is_top = play['inning_num'], play['is_top']
@@ -394,7 +433,8 @@ class Game:
             score_before = (self.home_score, self.away_score)
             
             current_outs = self.outs
-            runners_before_play = obc_to_runners.get(play['OBC'], [False, False, False])
+            runners_before_play = self.obc_to_runners.get(play['OBC'], [False, False, False])
+            obc_after = play['OBC_after']
             
             result = play['Exact Result'] if pd.notna(play['Exact Result']) else play['Old Result']
             old_result = play['Old Result']
@@ -408,8 +448,7 @@ class Game:
                     diff = 0
                 else:
                     diff = int(numeric_diff)
-            season_str = play.get('Season', 'S0')
-            season = int(season_str.replace('S', ''))
+            season = self.season
 
             pa_type_val = play.get('PA Type')
             if pd.isna(pa_type_val):
@@ -421,7 +460,7 @@ class Game:
                 else:
                     pa_type = int(numeric_pa_type)
 
-            new_runners_on_base, runs_this_play, outs_for_play = self._simulate_play(runners_before_play, current_outs, result, old_result, diff, season, pa_type)
+            new_runners_on_base, runs_this_play, outs_for_play = self._simulate_play(obc_after, runners_before_play, current_outs, result, old_result, diff, season, pa_type)
             self.runners_on_base = new_runners_on_base
 
             if is_top:
@@ -438,14 +477,14 @@ class Game:
                 self.lead_changes.append({'inning': self.inning, 'top_of_inning': self.top_of_inning, 'home_score': self.home_score, 'away_score': self.away_score, 'home_pitcher': self.home_pitcher, 'away_pitcher': self.away_pitcher})
 
 
-def get_pitching_decisions(game_df):
+def get_pitching_decisions(game_df, season_name):
     """
     Determines wins, losses, saves, and holds for a single game.
     """
     if game_df.empty:
         return {}
 
-    game = Game(game_df)
+    game = Game(game_df, season_name)
     game.process_game()
 
     # Determine winner and loser
