@@ -1,6 +1,7 @@
 from data_loader import load_all_seasons
 from game_processing import get_pitching_decisions
 from gamelog_corrections import apply_gamelog_corrections
+from player_data_corrections import apply_postprocessing_corrections
 import pandas as pd
 import sys
 import json
@@ -1911,6 +1912,9 @@ def main():
     # --- Final Assembly ---
     all_hitting_stats = pd.concat(all_seasons_hitting_stats, ignore_index=True)
     all_pitching_stats = pd.concat(all_seasons_pitching_stats, ignore_index=True)
+
+    print("Applying post-processing corrections...")
+    all_pitching_stats = apply_postprocessing_corrections(all_pitching_stats)
 
     
 

@@ -42,6 +42,18 @@ def apply_gamelog_corrections(df, group_name):
         )
         df.loc[correction_mask, 'OBC'] = 6
 
+    # S2, Game 122: Flipped batter/pitcher teams
+    elif season == 'S2' and game_id == 122:
+        team_map = {'SFG': 'TB', 'TB': 'SFG'}
+        df['Batter Team'] = df['Batter Team'].replace(team_map)
+        df['Pitcher Team'] = df['Pitcher Team'].replace(team_map)
+
+    # S2, Game 13: Flipped batter/pitcher teams
+    elif season == 'S2' and game_id == 13:
+        team_map = {'TEX': 'HOU', 'HOU': 'TEX'}
+        df['Batter Team'] = df['Batter Team'].replace(team_map)
+        df['Pitcher Team'] = df['Pitcher Team'].replace(team_map)
+
     # S5, Game 228: Add missing final play and correct a run
     elif season == 'S5' and game_id == 228:
         # Hitter 1733's 3B should have resulted in a run

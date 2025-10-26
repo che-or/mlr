@@ -40,7 +40,7 @@ def find_missing_pitcher_decisions():
         if (i + 1) % 100 == 0:
             print(f"  ... processed {i + 1} / {num_games} games")
 
-        decisions = get_pitching_decisions(game_df)
+        decisions = get_pitching_decisions(game_df, season)
 
         # Check if decisions are missing
         if not decisions or decisions.get('win') is None or decisions.get('loss') is None:
