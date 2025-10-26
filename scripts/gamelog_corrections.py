@@ -94,5 +94,14 @@ def apply_gamelog_corrections(df, group_name):
         }
         new_play_df = pd.DataFrame([new_play_data])
         df = pd.concat([df, new_play_df], ignore_index=True)
+
+    # S6, Game 145: Remove replayed Auto BB
+    elif season == 'S6' and game_id == 145:
+        removal_mask = (
+            (df['Pitcher ID'] == 1834) &
+            (df['Inning'] == 'T4') &
+            (df['Old Result'] == 'Auto BB')
+        )
+        df = df[~removal_mask]
         
     return df
