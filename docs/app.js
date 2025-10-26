@@ -1601,24 +1601,36 @@ document.addEventListener('DOMContentLoaded', () => {
                 content += `<div class="division-standings-container">`; // Added
                 content += `<h3 class="division-title">${divisionName} Division</h3>`;
                 content += `<table class="stats-table standings-table">`;
-                content += `<thead><tr><th>Team</th><th>W</th><th>L</th><th>T</th><th>PCT</th></tr></thead>`;
+                content += `<thead><tr><th>Team</th><th>W</th><th>L</th><th>PCT</th><th>GB</th></tr></thead>`;
                 content += `<tbody>`;
-                standings[divisionName].forEach(team => {
-                    const franchiseKey = getFranchiseKeyFromAbbr(team.teamAbbr, currentSeason); // Get franchise key
-                    const teamLogoSrc = getTeamLogoBySeason(franchiseKey, currentSeason);
-                    content += `<tr>`;
-                    const teamName = getTeamNameBySeason(franchiseKey, currentSeason);
-                    content += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${currentSeason}">`; // Use franchiseKey
-                    if (teamLogoSrc) {
-                        content += `<img src="${teamLogoSrc}" alt="${team.teamAbbr} logo" class="team-list-logo standings-logo"> `;
-                    }
-                    content += `${teamName}</span></td>`;
-                    content += `<td>${team.W}</td>`;
-                    content += `<td>${team.L}</td>`;
-                    content += `<td>${team.T}</td>`;
-                    content += `<td>${team.PCT.toFixed(3).substring(1)}</td>`; // Format PCT
-                    content += `</tr>`;
-                });
+                const divisionTeams = standings[divisionName];
+                if (divisionTeams.length > 0) {
+                    const leader = divisionTeams[0];
+                    divisionTeams.forEach(team => {
+                        let gbDisplay;
+                        if (team.W === leader.W && team.L === leader.L) {
+                            gbDisplay = '-';
+                        } else {
+                            const gamesBack = ((leader.W - team.W) + (team.L - leader.L)) / 2;
+                            gbDisplay = String(gamesBack);
+                        }
+
+                        const franchiseKey = getFranchiseKeyFromAbbr(team.teamAbbr, currentSeason); // Get franchise key
+                        const teamLogoSrc = getTeamLogoBySeason(franchiseKey, currentSeason);
+                        content += `<tr>`;
+                        const teamName = getTeamNameBySeason(franchiseKey, currentSeason);
+                        content += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${currentSeason}">`; // Use franchiseKey
+                        if (teamLogoSrc) {
+                            content += `<img src="${teamLogoSrc}" alt="${team.teamAbbr} logo" class="team-list-logo standings-logo"> `;
+                        }
+                        content += `${teamName}</span></td>`;
+                        content += `<td>${team.W}</td>`;
+                        content += `<td>${team.L}</td>`;
+                        content += `<td>${team.PCT.toFixed(3).substring(1)}</td>`; // Format PCT
+                        content += `<td>${gbDisplay}</td>`;
+                        content += `</tr>`;
+                    });
+                }
                 content += `</tbody>`;
                 content += `</table>`;
                 content += `</div>`; // Added
