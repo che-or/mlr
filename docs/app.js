@@ -28,15 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
         loader: document.getElementById('loader'),
         app: document.getElementById('app'),
         
+        homeView: document.getElementById('home-view'),
         statsView: document.getElementById('stats-view'),
         leaderboardsView: document.getElementById('leaderboards-view'),
         glossaryView: document.getElementById('glossary-view'),
         teamStatsView: document.getElementById('team-stats-view'),
         
+        homeTab: document.getElementById('home-tab'),
         statsTab: document.getElementById('stats-tab'),
         teamStatsTab: document.getElementById('team-stats-tab'),
         leaderboardsTab: document.getElementById('leaderboards-tab'),
-        scoutingTab: document.getElementById('scouting-tab'),
         glossaryTab: document.getElementById('glossary-tab'),
 
         playerSearch: document.getElementById('player-search'),
@@ -193,20 +194,182 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const getFeaturedEntities = () => {
+        const today = new Date().toDateString();
+        let featuredPlayerId1 = localStorage.getItem('featuredPlayerId1'); // Player 1
+        let featuredPlayerSeasonRange1 = localStorage.getItem('featuredPlayerSeasonRange1');
+        let featuredPlayerMostRecentTeamKey1 = localStorage.getItem('featuredPlayerMostRecentTeamKey1');
+        let featuredPlayerMostRecentSeason1 = localStorage.getItem('featuredPlayerMostRecentSeason1');
+
+        let featuredPlayerId2 = localStorage.getItem('featuredPlayerId2'); // Player 2
+        let featuredPlayerSeasonRange2 = localStorage.getItem('featuredPlayerSeasonRange2');
+        let featuredPlayerMostRecentTeamKey2 = localStorage.getItem('featuredPlayerMostRecentTeamKey2');
+        let featuredPlayerMostRecentSeason2 = localStorage.getItem('featuredPlayerMostRecentSeason2');
+
+        let featuredTeamKey = localStorage.getItem('featuredTeamKey');
+        let featuredTeamSeason = localStorage.getItem('featuredTeamSeason');
+        let featuredDate = localStorage.getItem('featuredDate');
+
+        if (!featuredPlayerId1 || !featuredPlayerId2 || !featuredTeamKey || !featuredTeamSeason || featuredDate !== today) {
+            const playerIds = Object.keys(state.players);
+            
+            // Select two distinct random players
+            let randomIndex1 = Math.floor(Math.random() * playerIds.length);
+            let randomIndex2 = Math.floor(Math.random() * playerIds.length);
+            while (randomIndex1 === randomIndex2) { // Ensure distinct players
+                randomIndex2 = Math.floor(Math.random() * playerIds.length);
+            }
+            featuredPlayerId1 = playerIds[randomIndex1];
+            featuredPlayerId2 = playerIds[randomIndex2];
+
+            // --- Process Player 1 ---
+            const playerHittingStats1 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId1));
+            const playerPitchingStats1 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId1));
+            const allPlayerStats1 = [...playerHittingStats1, ...playerPitchingStats1];
+
+            let firstSeason1 = Infinity;
+            let lastSeason1 = -Infinity;
+            let mostRecentTeamAbbr1 = '';
+            let mostRecentSeasonForPlayer1 = '';
+
+            if (allPlayerStats1.length > 0) {
+                for (const stat of allPlayerStats1) {
+                    if (stat.Season && stat.Season.startsWith('S')) {
+                        const seasonNum = parseInt(stat.Season.slice(1));
+                        if (!isNaN(seasonNum)) {
+                            firstSeason1 = Math.min(firstSeason1, seasonNum);
+                            lastSeason1 = Math.max(lastSeason1, seasonNum);
+                        }
+                    }
+                }
+                const lastSeasonStats1 = allPlayerStats1
+                    .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                    .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
+                
+                if (lastSeasonStats1) {
+                    mostRecentTeamAbbr1 = lastSeasonStats1['Last Team'] || lastSeasonStats1['Team'];
+                    mostRecentSeasonForPlayer1 = lastSeasonStats1.Season;
+                }
+            }
+            featuredPlayerSeasonRange1 = (firstSeason1 === Infinity || lastSeason1 === -Infinity) ? 'N/A' : `S${firstSeason1}-S${lastSeason1}`;
+            featuredPlayerMostRecentTeamKey1 = mostRecentTeamAbbr1 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr1, mostRecentSeasonForPlayer1) : '';
+            featuredPlayerMostRecentSeason1 = mostRecentSeasonForPlayer1;
+
+            // --- Process Player 2 ---
+            const playerHittingStats2 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId2));
+            const playerPitchingStats2 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId2));
+            const allPlayerStats2 = [...playerHittingStats2, ...playerPitchingStats2];
+
+            let firstSeason2 = Infinity;
+            let lastSeason2 = -Infinity;
+            let mostRecentTeamAbbr2 = '';
+            let mostRecentSeasonForPlayer2 = '';
+
+            if (allPlayerStats2.length > 0) {
+                for (const stat of allPlayerStats2) {
+                    if (stat.Season && stat.Season.startsWith('S')) {
+                        const seasonNum = parseInt(stat.Season.slice(1));
+                        if (!isNaN(seasonNum)) {
+                            firstSeason2 = Math.min(firstSeason2, seasonNum);
+                            lastSeason2 = Math.max(lastSeason2, seasonNum);
+                        }
+                    }
+                }
+                const lastSeasonStats2 = allPlayerStats2
+                    .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                    .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
+                
+                if (lastSeasonStats2) {
+                    mostRecentTeamAbbr2 = lastSeasonStats2['Last Team'] || lastSeasonStats2['Team'];
+                    mostRecentSeasonForPlayer2 = lastSeasonStats2.Season;
+                }
+            }
+            featuredPlayerSeasonRange2 = (firstSeason2 === Infinity || lastSeason2 === -Infinity) ? 'N/A' : `S${firstSeason2}-S${lastSeason2}`;
+            featuredPlayerMostRecentTeamKey2 = mostRecentTeamAbbr2 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr2, mostRecentSeasonForPlayer2) : '';
+            featuredPlayerMostRecentSeason2 = mostRecentSeasonForPlayer2;
+
+
+            // --- Select a random team franchise and a valid season for it ---
+            const teamKeys = Object.keys(state.teamHistory);
+            featuredTeamKey = teamKeys[Math.floor(Math.random() * teamKeys.length)];
+            const franchiseEntries = state.teamHistory[featuredTeamKey];
+
+            if (franchiseEntries && franchiseEntries.length > 0) {
+                const possibleSeasons = [];
+                for (const entry of franchiseEntries) {
+                    for (let s = entry.start; s <= (entry.end === 9999 ? parseInt(Object.keys(state.seasons).sort((a,b)=>parseInt(b.slice(1))-parseInt(a.slice(1)))[0].slice(1)) : entry.end); s++) {
+                        possibleSeasons.push(`S${s}`);
+                    }
+                }
+                if (possibleSeasons.length > 0) {
+                    featuredTeamSeason = possibleSeasons[Math.floor(Math.random() * possibleSeasons.length)];
+                } else {
+                    featuredTeamSeason = 'S1';
+                }
+            } else {
+                featuredTeamSeason = 'S1';
+            }
+
+            localStorage.setItem('featuredPlayerId1', featuredPlayerId1);
+            localStorage.setItem('featuredPlayerSeasonRange1', featuredPlayerSeasonRange1);
+            localStorage.setItem('featuredPlayerMostRecentTeamKey1', featuredPlayerMostRecentTeamKey1);
+            localStorage.setItem('featuredPlayerMostRecentSeason1', featuredPlayerMostRecentSeason1);
+
+            localStorage.setItem('featuredPlayerId2', featuredPlayerId2);
+            localStorage.setItem('featuredPlayerSeasonRange2', featuredPlayerSeasonRange2);
+            localStorage.setItem('featuredPlayerMostRecentTeamKey2', featuredPlayerMostRecentTeamKey2);
+            localStorage.setItem('featuredPlayerMostRecentSeason2', featuredPlayerMostRecentSeason2);
+
+            localStorage.setItem('featuredTeamKey', featuredTeamKey);
+            localStorage.setItem('featuredTeamSeason', featuredTeamSeason);
+            localStorage.setItem('featuredDate', today);
+        } else {
+            // If already set for today, retrieve additional player info
+            featuredPlayerId1 = localStorage.getItem('featuredPlayerId1');
+            featuredPlayerSeasonRange1 = localStorage.getItem('featuredPlayerSeasonRange1');
+            featuredPlayerMostRecentTeamKey1 = localStorage.getItem('featuredPlayerMostRecentTeamKey1');
+            featuredPlayerMostRecentSeason1 = localStorage.getItem('featuredPlayerMostRecentSeason1');
+
+            featuredPlayerId2 = localStorage.getItem('featuredPlayerId2');
+            featuredPlayerSeasonRange2 = localStorage.getItem('featuredPlayerSeasonRange2');
+            featuredPlayerMostRecentTeamKey2 = localStorage.getItem('featuredPlayerMostRecentTeamKey2');
+            featuredPlayerMostRecentSeason2 = localStorage.getItem('featuredPlayerMostRecentSeason2');
+
+            featuredTeamKey = localStorage.getItem('featuredTeamKey');
+            featuredTeamSeason = localStorage.getItem('featuredTeamSeason');
+        }
+
+        return {
+            featuredPlayerId1: parseInt(featuredPlayerId1),
+            featuredPlayerSeasonRange1: featuredPlayerSeasonRange1,
+            featuredPlayerMostRecentTeamKey1: featuredPlayerMostRecentTeamKey1,
+            featuredPlayerMostRecentSeason1: featuredPlayerMostRecentSeason1,
+
+            featuredPlayerId2: parseInt(featuredPlayerId2),
+            featuredPlayerSeasonRange2: featuredPlayerSeasonRange2,
+            featuredPlayerMostRecentTeamKey2: featuredPlayerMostRecentTeamKey2,
+            featuredPlayerMostRecentSeason2: featuredPlayerMostRecentSeason2,
+
+            featuredTeamKey: featuredTeamKey,
+            featuredTeamSeason: featuredTeamSeason
+        };
+    };
+
     const updateView = () => {
         window.scrollTo(0, 0);
-        const path = window.location.hash || '#/stats';
+        const path = window.location.hash || '#/home';
 
         // Reset all views and tabs
+        elements.homeView.style.display = 'none';
         elements.statsView.style.display = 'none';
         elements.leaderboardsView.style.display = 'none';
         elements.glossaryView.style.display = 'none';
         elements.teamStatsView.style.display = 'none';
 
+        elements.homeTab.classList.remove('active');
         elements.statsTab.classList.remove('active');
         elements.teamStatsTab.classList.remove('active');
         elements.leaderboardsTab.classList.remove('active');
-        elements.scoutingTab.classList.remove('active');
         elements.glossaryTab.classList.remove('active');
 
         // Parse URL parameters once if it's a team stats path
@@ -220,7 +383,11 @@ document.addEventListener('DOMContentLoaded', () => {
             teamParam = url.searchParams.get('team');
         }
 
-        if (isTeamStatsPath && teamParam) { // Specific team page (has 'team' parameter)
+        if (path === '#/home') {
+            elements.homeView.style.display = 'block';
+            elements.homeTab.classList.add('active');
+            renderHome();
+        } else if (isTeamStatsPath && teamParam) { // Specific team page (has 'team' parameter)
             // This branch handles #/team-stats?season=S11&team=ATL
             displayTeamStatsPage(decodeURIComponent(teamParam), seasonParam);
             elements.teamStatsView.style.display = 'block';
@@ -235,7 +402,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const isScouting = path === '#/scouting';
             elements.statsView.style.display = 'block';
             elements.statsTab.classList.toggle('active', isStats);
-            elements.scoutingTab.classList.toggle('active', isScouting);
             if (state.currentPlayerId) {
                 displayPlayerPage(state.currentPlayerId);
             } else {
@@ -252,9 +418,96 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.glossaryTab.classList.add('active');
             renderGlossary();
         } else {
-            // Default to player stats if hash is invalid or empty
-            window.location.hash = '#/stats';
+            // Default to home page if hash is invalid or empty
+            window.location.hash = '#/home';
         }
+    };
+
+    const renderHome = () => {
+        const { 
+            featuredPlayerId1, featuredPlayerSeasonRange1, featuredPlayerMostRecentTeamKey1, featuredPlayerMostRecentSeason1,
+            featuredPlayerId2, featuredPlayerSeasonRange2, featuredPlayerMostRecentTeamKey2, featuredPlayerMostRecentSeason2,
+            featuredTeamKey, featuredTeamSeason 
+        } = getFeaturedEntities();
+
+        const featuredPlayer1 = state.players[featuredPlayerId1];
+        const featuredPlayer2 = state.players[featuredPlayerId2];
+
+        const featuredTeamName = getTeamNameBySeason(featuredTeamKey, featuredTeamSeason);
+        const featuredTeamLogo = getTeamLogoBySeason(featuredTeamKey, featuredTeamSeason);
+
+        const playerMostRecentTeamLogo1 = getTeamLogoBySeason(featuredPlayerMostRecentTeamKey1, featuredPlayerMostRecentSeason1);
+        const playerMostRecentTeamLogo2 = getTeamLogoBySeason(featuredPlayerMostRecentTeamKey2, featuredPlayerMostRecentSeason2);
+
+        elements.homeView.innerHTML = `
+            <div class="welcome-container">
+                <h2 class="section-title">Welcome to MLR Reference!</h2>
+                <p>MLR Reference is your (unofficial) guide to all regular season stats for Major League Redditball (MLR).</p>
+                <p>Here you can find:</p>
+                <ul>
+                    <li><a href="#/stats"><strong>Player Stats:</strong></a> Detailed batting and pitching statistics for every player in MLR history. Players can be searched by name (including former names) or player ID.</li>
+                    <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
+                    <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
+                    <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
+                    <li><a href="https://forms.gle/your-feedback-form" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
+                </ul>
+                <br>
+                <p>Potential future features:</p>
+                <ul>
+                    <li> Box scores for each game.</li>
+                    <li> Postseason stats.</li>
+                    <li> Awards (including All-Star appearances, MVP, etc.).</li>
+                    <li> Player comparison.</li>
+                    <li> Outcome calculator.</li>
+                    <li> Type+, a stat similar to OPS+ and ERA+ but only comparing to players with the same batting/pitching type.</li>
+                </ul>
+
+                <h3 class="section-title">Today's Features</h3>
+                <div class="featured-section">
+                    <div class="featured-item">
+                        <h4>Featured Player:</h4>
+                        <a href="#/stats" class="player-link" data-player-id="${featuredPlayerId1}">
+                            ${playerMostRecentTeamLogo1 ? `<img src="${playerMostRecentTeamLogo1}" alt="${featuredPlayer1.currentName} team logo" class="team-list-logo">` : ''}
+                            <p>${featuredPlayer1 ? featuredPlayer1.currentName : 'N/A'}</p>
+                            <p class="featured-player-season-range">${featuredPlayerSeasonRange1}</p>
+                        </a>
+                    </div>
+                    <div class="featured-item">
+                        <h4>Featured Player:</h4>
+                        <a href="#/stats" class="player-link" data-player-id="${featuredPlayerId2}">
+                            ${playerMostRecentTeamLogo2 ? `<img src="${playerMostRecentTeamLogo2}" alt="${featuredPlayer2.currentName} team logo" class="team-list-logo">` : ''}
+                            <p>${featuredPlayer2 ? featuredPlayer2.currentName : 'N/A'}</p>
+                            <p class="featured-player-season-range">${featuredPlayerSeasonRange2}</p>
+                        </a>
+                    </div>
+                    <div class="featured-item">
+                        <h4>Featured Team:</h4>
+                        <a href="#/team-stats?season=${featuredTeamSeason}&team=${featuredTeamKey}">
+                            ${featuredTeamLogo ? `<img src="${featuredTeamLogo}" alt="${featuredTeamName} logo" class="team-list-logo">` : ''}
+                            <p>${featuredTeamSeason} ${featuredTeamName || 'N/A'}</p>
+                        </a>
+                    </div>
+                    <div class="featured-item action-item">
+                        <h4>Discover More!</h4>
+                        <button id="random-player-button" class="action-button">Random Player</button>
+                    </div>
+                </div>
+                <br>
+
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <p>Why is my W-L record different than it appears in the roster sheet?</p>
+                <p><i>The roster sheet requires starting pitchers to complete at least 3 innings (1/2 game) to qualify for the Win. MLR Reference requires starting pitchers to complete at least 3 1/3 innings (5/9 game, the same ratio as MLB) to qualify for the Win.</i></p>
+                <br>
+                <p>Why is my WAR different than it appears in the roster sheet?</p>
+                <p><i>Like any good baseball statistics site, MLR Reference has its own WAR formula. MLR Reference WAR (also known as "cheWAR") is calculated using RE24. More information about WAR calculation can be found in the glossary.</i></p>
+                <br>
+                <p>Why do my franchise total stat lines include teams I've never played for?</p>
+                <p><i>The franchise total stat lines use the abbreviations that are currently used by the franchise. For example, S2-S5 Texas Rangers has been Cleveland Guardians since S6, so even players who only played during the TEX era will have CLE in their franchise totals.</i></p>
+                <br>
+                <p>Why does S2 San Diego Padres have a different W-L record than the roster sheet?</p>
+                <p><i>The roster sheet is wrong.</i></p>
+            </div>
+        `;
     };
 
     const renderGlossary = () => {
@@ -334,11 +587,14 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardTypeSelect.addEventListener('change', populateLeaderboardStatSelect);
         populateTeamFilter();
 
+        elements.homeTab.addEventListener('click', () => { window.location.hash = '#/home'; });
         elements.statsTab.addEventListener('click', () => { window.location.hash = '#/stats'; });
         elements.teamStatsTab.addEventListener('click', () => { window.location.hash = '#/team-stats'; });
         elements.leaderboardsTab.addEventListener('click', () => { window.location.hash = '#/leaderboards'; });
-        elements.scoutingTab.addEventListener('click', () => { window.location.hash = '#/scouting'; });
         elements.glossaryTab.addEventListener('click', () => { window.location.hash = '#/glossary'; });
+
+        // Event listener for the new random player button
+        document.getElementById('random-player-button').addEventListener('click', goToRandomPlayerPage);
 
         elements.app.addEventListener('click', (event) => {
             const teamLink = event.target.closest('.team-link');
@@ -375,6 +631,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     elements.playerSuggestions.innerHTML = '';
                     displayPlayerPage(playerId);
                 }
+            }
+
+            // Handle random player button click via delegation
+            const randomPlayerButton = event.target.closest('#random-player-button');
+            if (randomPlayerButton) {
+                goToRandomPlayerPage();
             }
         });
     };
@@ -1154,6 +1416,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
+
+    const goToRandomPlayerPage = () => {
+        const playerIds = Object.keys(state.players);
+        const randomPlayerId = playerIds[Math.floor(Math.random() * playerIds.length)];
+        const randomPlayerName = state.players[randomPlayerId].currentName;
+
+        window.location.hash = '#/stats'; // Navigate to player stats view
+        elements.playerSearch.value = randomPlayerName;
+        elements.playerSuggestions.innerHTML = ''; // Clear any suggestions
+        displayPlayerPage(parseInt(randomPlayerId));
+    };
 
     const handlePlayerSearch = (event) => {
         const query = event.target.value.toLowerCase();
