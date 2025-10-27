@@ -194,149 +194,114 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const seededRandom = (seed) => {
+        let s = seed % 2147483647;
+        if (s <= 0) s += 2147483646;
+        return () => {
+            s = (s * 16807) % 2147483647;
+            return (s - 1) / 2147483646;
+        };
+    };
+
     const getFeaturedEntities = () => {
-        const today = new Date().toDateString();
-        let featuredPlayerId1 = localStorage.getItem('featuredPlayerId1'); // Player 1
-        let featuredPlayerSeasonRange1 = localStorage.getItem('featuredPlayerSeasonRange1');
-        let featuredPlayerMostRecentTeamKey1 = localStorage.getItem('featuredPlayerMostRecentTeamKey1');
-        let featuredPlayerMostRecentSeason1 = localStorage.getItem('featuredPlayerMostRecentSeason1');
+        const today = new Date();
+        const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
+        const random = seededRandom(seed);
 
-        let featuredPlayerId2 = localStorage.getItem('featuredPlayerId2'); // Player 2
-        let featuredPlayerSeasonRange2 = localStorage.getItem('featuredPlayerSeasonRange2');
-        let featuredPlayerMostRecentTeamKey2 = localStorage.getItem('featuredPlayerMostRecentTeamKey2');
-        let featuredPlayerMostRecentSeason2 = localStorage.getItem('featuredPlayerMostRecentSeason2');
+        const playerIds = Object.keys(state.players);
+        
+        // Select two distinct random players
+        let randomIndex1 = Math.floor(random() * playerIds.length);
+        let randomIndex2 = Math.floor(random() * playerIds.length);
+        while (randomIndex1 === randomIndex2) { // Ensure distinct players
+            randomIndex2 = Math.floor(random() * playerIds.length);
+        }
+        let featuredPlayerId1 = playerIds[randomIndex1];
+        let featuredPlayerId2 = playerIds[randomIndex2];
 
-        let featuredTeamKey = localStorage.getItem('featuredTeamKey');
-        let featuredTeamSeason = localStorage.getItem('featuredTeamSeason');
-        let featuredDate = localStorage.getItem('featuredDate');
+        // --- Process Player 1 ---
+        const playerHittingStats1 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId1));
+        const playerPitchingStats1 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId1));
+        const allPlayerStats1 = [...playerHittingStats1, ...playerPitchingStats1];
 
-        if (!featuredPlayerId1 || !featuredPlayerId2 || !featuredTeamKey || !featuredTeamSeason || featuredDate !== today) {
-            const playerIds = Object.keys(state.players);
+        let firstSeason1 = Infinity;
+        let lastSeason1 = -Infinity;
+        let mostRecentTeamAbbr1 = '';
+        let mostRecentSeasonForPlayer1 = '';
+
+        if (allPlayerStats1.length > 0) {
+            for (const stat of allPlayerStats1) {
+                if (stat.Season && stat.Season.startsWith('S')) {
+                    const seasonNum = parseInt(stat.Season.slice(1));
+                    if (!isNaN(seasonNum)) {
+                        firstSeason1 = Math.min(firstSeason1, seasonNum);
+                        lastSeason1 = Math.max(lastSeason1, seasonNum);
+                    }
+                }
+            }
+            const lastSeasonStats1 = allPlayerStats1
+                .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
             
-            // Select two distinct random players
-            let randomIndex1 = Math.floor(Math.random() * playerIds.length);
-            let randomIndex2 = Math.floor(Math.random() * playerIds.length);
-            while (randomIndex1 === randomIndex2) { // Ensure distinct players
-                randomIndex2 = Math.floor(Math.random() * playerIds.length);
+            if (lastSeasonStats1) {
+                mostRecentTeamAbbr1 = lastSeasonStats1['Last Team'] || lastSeasonStats1['Team'];
+                mostRecentSeasonForPlayer1 = lastSeasonStats1.Season;
             }
-            featuredPlayerId1 = playerIds[randomIndex1];
-            featuredPlayerId2 = playerIds[randomIndex2];
+        }
+        const featuredPlayerSeasonRange1 = (firstSeason1 === Infinity || lastSeason1 === -Infinity) ? 'N/A' : `S${firstSeason1}-S${lastSeason1}`;
+        const featuredPlayerMostRecentTeamKey1 = mostRecentTeamAbbr1 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr1, mostRecentSeasonForPlayer1) : '';
+        const featuredPlayerMostRecentSeason1 = mostRecentSeasonForPlayer1;
 
-            // --- Process Player 1 ---
-            const playerHittingStats1 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId1));
-            const playerPitchingStats1 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId1));
-            const allPlayerStats1 = [...playerHittingStats1, ...playerPitchingStats1];
+        // --- Process Player 2 ---
+        const playerHittingStats2 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId2));
+        const playerPitchingStats2 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId2));
+        const allPlayerStats2 = [...playerHittingStats2, ...playerPitchingStats2];
 
-            let firstSeason1 = Infinity;
-            let lastSeason1 = -Infinity;
-            let mostRecentTeamAbbr1 = '';
-            let mostRecentSeasonForPlayer1 = '';
+        let firstSeason2 = Infinity;
+        let lastSeason2 = -Infinity;
+        let mostRecentTeamAbbr2 = '';
+        let mostRecentSeasonForPlayer2 = '';
 
-            if (allPlayerStats1.length > 0) {
-                for (const stat of allPlayerStats1) {
-                    if (stat.Season && stat.Season.startsWith('S')) {
-                        const seasonNum = parseInt(stat.Season.slice(1));
-                        if (!isNaN(seasonNum)) {
-                            firstSeason1 = Math.min(firstSeason1, seasonNum);
-                            lastSeason1 = Math.max(lastSeason1, seasonNum);
-                        }
+        if (allPlayerStats2.length > 0) {
+            for (const stat of allPlayerStats2) {
+                if (stat.Season && stat.Season.startsWith('S')) {
+                    const seasonNum = parseInt(stat.Season.slice(1));
+                    if (!isNaN(seasonNum)) {
+                        firstSeason2 = Math.min(firstSeason2, seasonNum);
+                        lastSeason2 = Math.max(lastSeason2, seasonNum);
                     }
                 }
-                const lastSeasonStats1 = allPlayerStats1
-                    .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
-                    .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
-                
-                if (lastSeasonStats1) {
-                    mostRecentTeamAbbr1 = lastSeasonStats1['Last Team'] || lastSeasonStats1['Team'];
-                    mostRecentSeasonForPlayer1 = lastSeasonStats1.Season;
+            }
+            const lastSeasonStats2 = allPlayerStats2
+                .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
+            
+            if (lastSeasonStats2) {
+                mostRecentTeamAbbr2 = lastSeasonStats2['Last Team'] || lastSeasonStats2['Team'];
+                mostRecentSeasonForPlayer2 = lastSeasonStats2.Season;
+            }
+        }
+        const featuredPlayerSeasonRange2 = (firstSeason2 === Infinity || lastSeason2 === -Infinity) ? 'N/A' : `S${firstSeason2}-S${lastSeason2}`;
+        const featuredPlayerMostRecentTeamKey2 = mostRecentTeamAbbr2 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr2, mostRecentSeasonForPlayer2) : '';
+        const featuredPlayerMostRecentSeason2 = mostRecentSeasonForPlayer2;
+
+
+        // --- Select a random team franchise and a valid season for it ---
+        const teamKeys = Object.keys(state.teamHistory);
+        const featuredTeamKey = teamKeys[Math.floor(random() * teamKeys.length)];
+        const franchiseEntries = state.teamHistory[featuredTeamKey];
+        let featuredTeamSeason = 'S1';
+
+        if (franchiseEntries && franchiseEntries.length > 0) {
+            const possibleSeasons = [];
+            for (const entry of franchiseEntries) {
+                for (let s = entry.start; s <= (entry.end === 9999 ? parseInt(Object.keys(state.seasons).sort((a,b)=>parseInt(b.slice(1))-parseInt(a.slice(1)))[0].slice(1)) : entry.end); s++) {
+                    possibleSeasons.push(`S${s}`);
                 }
             }
-            featuredPlayerSeasonRange1 = (firstSeason1 === Infinity || lastSeason1 === -Infinity) ? 'N/A' : `S${firstSeason1}-S${lastSeason1}`;
-            featuredPlayerMostRecentTeamKey1 = mostRecentTeamAbbr1 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr1, mostRecentSeasonForPlayer1) : '';
-            featuredPlayerMostRecentSeason1 = mostRecentSeasonForPlayer1;
-
-            // --- Process Player 2 ---
-            const playerHittingStats2 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId2));
-            const playerPitchingStats2 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId2));
-            const allPlayerStats2 = [...playerHittingStats2, ...playerPitchingStats2];
-
-            let firstSeason2 = Infinity;
-            let lastSeason2 = -Infinity;
-            let mostRecentTeamAbbr2 = '';
-            let mostRecentSeasonForPlayer2 = '';
-
-            if (allPlayerStats2.length > 0) {
-                for (const stat of allPlayerStats2) {
-                    if (stat.Season && stat.Season.startsWith('S')) {
-                        const seasonNum = parseInt(stat.Season.slice(1));
-                        if (!isNaN(seasonNum)) {
-                            firstSeason2 = Math.min(firstSeason2, seasonNum);
-                            lastSeason2 = Math.max(lastSeason2, seasonNum);
-                        }
-                    }
-                }
-                const lastSeasonStats2 = allPlayerStats2
-                    .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
-                    .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
-                
-                if (lastSeasonStats2) {
-                    mostRecentTeamAbbr2 = lastSeasonStats2['Last Team'] || lastSeasonStats2['Team'];
-                    mostRecentSeasonForPlayer2 = lastSeasonStats2.Season;
-                }
+            if (possibleSeasons.length > 0) {
+                featuredTeamSeason = possibleSeasons[Math.floor(random() * possibleSeasons.length)];
             }
-            featuredPlayerSeasonRange2 = (firstSeason2 === Infinity || lastSeason2 === -Infinity) ? 'N/A' : `S${firstSeason2}-S${lastSeason2}`;
-            featuredPlayerMostRecentTeamKey2 = mostRecentTeamAbbr2 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr2, mostRecentSeasonForPlayer2) : '';
-            featuredPlayerMostRecentSeason2 = mostRecentSeasonForPlayer2;
-
-
-            // --- Select a random team franchise and a valid season for it ---
-            const teamKeys = Object.keys(state.teamHistory);
-            featuredTeamKey = teamKeys[Math.floor(Math.random() * teamKeys.length)];
-            const franchiseEntries = state.teamHistory[featuredTeamKey];
-
-            if (franchiseEntries && franchiseEntries.length > 0) {
-                const possibleSeasons = [];
-                for (const entry of franchiseEntries) {
-                    for (let s = entry.start; s <= (entry.end === 9999 ? parseInt(Object.keys(state.seasons).sort((a,b)=>parseInt(b.slice(1))-parseInt(a.slice(1)))[0].slice(1)) : entry.end); s++) {
-                        possibleSeasons.push(`S${s}`);
-                    }
-                }
-                if (possibleSeasons.length > 0) {
-                    featuredTeamSeason = possibleSeasons[Math.floor(Math.random() * possibleSeasons.length)];
-                } else {
-                    featuredTeamSeason = 'S1';
-                }
-            } else {
-                featuredTeamSeason = 'S1';
-            }
-
-            localStorage.setItem('featuredPlayerId1', featuredPlayerId1);
-            localStorage.setItem('featuredPlayerSeasonRange1', featuredPlayerSeasonRange1);
-            localStorage.setItem('featuredPlayerMostRecentTeamKey1', featuredPlayerMostRecentTeamKey1);
-            localStorage.setItem('featuredPlayerMostRecentSeason1', featuredPlayerMostRecentSeason1);
-
-            localStorage.setItem('featuredPlayerId2', featuredPlayerId2);
-            localStorage.setItem('featuredPlayerSeasonRange2', featuredPlayerSeasonRange2);
-            localStorage.setItem('featuredPlayerMostRecentTeamKey2', featuredPlayerMostRecentTeamKey2);
-            localStorage.setItem('featuredPlayerMostRecentSeason2', featuredPlayerMostRecentSeason2);
-
-            localStorage.setItem('featuredTeamKey', featuredTeamKey);
-            localStorage.setItem('featuredTeamSeason', featuredTeamSeason);
-            localStorage.setItem('featuredDate', today);
-        } else {
-            // If already set for today, retrieve additional player info
-            featuredPlayerId1 = localStorage.getItem('featuredPlayerId1');
-            featuredPlayerSeasonRange1 = localStorage.getItem('featuredPlayerSeasonRange1');
-            featuredPlayerMostRecentTeamKey1 = localStorage.getItem('featuredPlayerMostRecentTeamKey1');
-            featuredPlayerMostRecentSeason1 = localStorage.getItem('featuredPlayerMostRecentSeason1');
-
-            featuredPlayerId2 = localStorage.getItem('featuredPlayerId2');
-            featuredPlayerSeasonRange2 = localStorage.getItem('featuredPlayerSeasonRange2');
-            featuredPlayerMostRecentTeamKey2 = localStorage.getItem('featuredPlayerMostRecentTeamKey2');
-            featuredPlayerMostRecentSeason2 = localStorage.getItem('featuredPlayerMostRecentSeason2');
-
-            featuredTeamKey = localStorage.getItem('featuredTeamKey');
-            featuredTeamSeason = localStorage.getItem('featuredTeamSeason');
         }
 
         return {
