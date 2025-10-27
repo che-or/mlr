@@ -674,3 +674,7 @@ a:hover {
     max-height: 80px;
     margin-bottom: 10px;
 }
+
+.welcome-container ul li a {
+    text-decoration: underline;
+}

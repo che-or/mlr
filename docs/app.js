@@ -445,13 +445,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>MLR Reference is your (unofficial) guide to all regular season stats for Major League Redditball (MLR).</p>
                 <p>Here you can find:</p>
                 <ul>
-                    <li><a href="#/stats"><strong>Player Stats:</strong></a> Detailed batting and pitching statistics for every player in MLR history.</li>
+                    <li><a href="#/stats"><strong>Player Stats:</strong></a> Detailed batting and pitching statistics for every player in MLR history. Players can be searched by name (including former names) or player ID.</li>
                     <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
                     <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
                     <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
+                    <li><a href="https://forms.gle/your-feedback-form" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
+                </ul>
+                <br>
+                <p>Potential future features:</p>
+                <ul>
+                    <li> Box scores for each game.</li>
+                    <li> Postseason stats.</li>
+                    <li> Awards (including All-Star appearances, MVP, etc.).</li>
+                    <li> Player comparison.</li>
+                    <li> Outcome calculator.</li>
+                    <li> Type+, a stat similar to OPS+ and ERA+ but only comparing to players with the same batting/pitching type.</li>
                 </ul>
 
-                <h3 class="section-title">Featured Today</h3>
+                <h3 class="section-title">Today's Features</h3>
                 <div class="featured-section">
                     <div class="featured-item">
                         <h4>Featured Player:</h4>
@@ -473,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h4>Featured Team:</h4>
                         <a href="#/team-stats?season=${featuredTeamSeason}&team=${featuredTeamKey}">
                             ${featuredTeamLogo ? `<img src="${featuredTeamLogo}" alt="${featuredTeamName} logo" class="team-list-logo">` : ''}
-                            <p>${featuredTeamName || 'N/A'} (${featuredTeamSeason.replace('S', 'Season ')})</p>
+                            <p>${featuredTeamSeason} ${featuredTeamName || 'N/A'}</p>
                         </a>
                     </div>
                     <div class="featured-item action-item">
@@ -481,6 +492,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button id="random-player-button" class="action-button">Random Player</button>
                     </div>
                 </div>
+                <br>
+
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <p>Why is my W-L record different than it appears in the roster sheet?</p>
+                <p><i>The roster sheet requires starting pitchers to complete at least 3 innings (1/2 game) to qualify for the Win. MLR Reference requires starting pitchers to complete at least 3 1/3 innings (5/9 game, the same ratio as MLB) to qualify for the Win.</i></p>
+                <br>
+                <p>Why is my WAR different than it appears in the roster sheet?</p>
+                <p><i>Like any good baseball statistics site, MLR Reference has its own WAR formula. MLR Reference WAR (also known as "cheWAR") is calculated using RE24. More information about WAR calculation can be found in the glossary.</i></p>
+                <br>
+                <p>Why do my franchise total stat lines include teams I've never played for?</p>
+                <p><i>The franchise total stat lines use the abbreviations that are currently used by the franchise. For example, S2-S5 Texas Rangers has been Cleveland Guardians since S6, so even players who only played during the TEX era will have CLE in their franchise totals.</i></p>
+                <br>
+                <p>Why does S2 San Diego Padres have a different W-L record than the roster sheet?</p>
+                <p><i>The roster sheet is wrong.</i></p>
             </div>
         `;
     };
