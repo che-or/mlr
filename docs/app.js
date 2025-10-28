@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mostRecentSeasonForPlayer1 = lastSeasonStats1.Season;
             }
         }
-        const featuredPlayerSeasonRange1 = (firstSeason1 === Infinity || lastSeason1 === -Infinity) ? 'N/A' : `S${firstSeason1}-S${lastSeason1}`;
+        const featuredPlayerSeasonRange1 = (firstSeason1 === Infinity || lastSeason1 === -Infinity) ? 'N/A' : (firstSeason1 === lastSeason1 ? `S${firstSeason1}` : `S${firstSeason1}-S${lastSeason1}`);
         const featuredPlayerMostRecentTeamKey1 = mostRecentTeamAbbr1 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr1, mostRecentSeasonForPlayer1) : '';
         const featuredPlayerMostRecentSeason1 = mostRecentSeasonForPlayer1;
 
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mostRecentSeasonForPlayer2 = lastSeasonStats2.Season;
             }
         }
-        const featuredPlayerSeasonRange2 = (firstSeason2 === Infinity || lastSeason2 === -Infinity) ? 'N/A' : `S${firstSeason2}-S${lastSeason2}`;
+        const featuredPlayerSeasonRange2 = (firstSeason2 === Infinity || lastSeason2 === -Infinity) ? 'N/A' : (firstSeason2 === lastSeason2 ? `S${firstSeason2}` : `S${firstSeason2}-S${lastSeason2}`);
         const featuredPlayerMostRecentTeamKey2 = mostRecentTeamAbbr2 ? getFranchiseKeyFromAbbr(mostRecentTeamAbbr2, mostRecentSeasonForPlayer2) : '';
         const featuredPlayerMostRecentSeason2 = mostRecentSeasonForPlayer2;
 
