@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const GLOSSARY_GROUPS = {
         "General": ["WAR", "WPA", "RE24"],
-        "Batting": ["OPS+", "BA", "OBP", "SLG", "OPS", "ISO", "BABIP"],
-        "Pitching": ["ERA+", "FIP", "WHIP", "ERA", "W", "L", "SV", "HLD"]
+        "Batting": ["BA", "OBP", "SLG", "OPS", "ISO", "BABIP", "OPS+"],
+        "Pitching": ["W", "L", "SV", "HLD", "ERA", "WHIP", "FIP", "ERA+"]
     };
 
     const LEADERBOARD_ONLY_STATS = {
