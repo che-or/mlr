@@ -1002,15 +1002,24 @@ def get_run_expectancy_matrix(season, season_df, is_most_recent_season=False):
 
 
 def _simulate_neutral_inning(inning_df, re_matrix):
-    """Simulates a single inning based on 'Result at Neutral' to find neutral runs and outs."""
-    obc_to_runners = {
-        0: [0, 0, 0], 1: [1, 0, 0], 2: [0, 1, 0], 3: [0, 0, 1],
-        4: [1, 1, 0], 5: [1, 0, 1], 6: [0, 1, 1], 7: [1, 1, 1]
+    """Simulates a single inning based on 'Result at Neutral' to find neutral runs and outs,
+    correctly attributing runs to pitchers and not charging for inherited runners."""
+    obc_to_runners_map = {
+        0: {1: None, 2: None, 3: None}, 1: {1: 'i', 2: None, 3: None},
+        2: {1: None, 2: 'i', 3: None}, 3: {1: None, 2: None, 3: 'i'},
+        4: {1: 'i', 2: 'i', 3: None}, 5: {1: 'i', 2: None, 3: 'i'},
+        6: {1: None, 2: 'i', 3: 'i'}, 7: {1: 'i', 2: 'i', 3: 'i'}
     }
-    runners_to_obc = {tuple(v): k for k, v in obc_to_runners.items()}
 
-    # Get initial state from the first play of the actual inning
-    runners = obc_to_runners.get(inning_df['OBC'].iloc[0], [0, 0, 0])
+    def runners_to_obc(runners_dict, inherited_only=False):
+        obc = 0
+        if runners_dict.get(1) and (not inherited_only or runners_dict[1] == 'i'): obc |= 1
+        if runners_dict.get(2) and (not inherited_only or runners_dict[2] == 'i'): obc |= 2
+        if runners_dict.get(3) and (not inherited_only or runners_dict[3] == 'i'): obc |= 4
+        return obc
+
+    initial_obc = inning_df['OBC'].iloc[0]
+    runners = obc_to_runners_map.get(initial_obc, {1: None, 2: None, 3: None}).copy()
     outs = inning_df['Outs'].iloc[0]
     total_n_runs = 0
 
@@ -1018,71 +1027,89 @@ def _simulate_neutral_inning(inning_df, re_matrix):
         if outs >= 3:
             break
 
-        runs_on_play = 0
         result = play['Result at Neutral']
-        
         if pd.isna(result):
             result = play['Old Result']
+        
+        batter = 'p'
 
-        # --- SIMULATE PLAY OUTCOME ---
         if result == 'HR':
-            runs_on_play = sum(runners) + 1
-            runners = [0, 0, 0]
+            if runners.get(3) == 'p': total_n_runs += 1
+            if runners.get(2) == 'p': total_n_runs += 1
+            if runners.get(1) == 'p': total_n_runs += 1
+            total_n_runs += 1
+            runners = {1: None, 2: None, 3: None}
         elif result == '3B':
-            runs_on_play = sum(runners)
-            runners = [0, 0, 1]
+            if runners.get(3) == 'p': total_n_runs += 1
+            if runners.get(2) == 'p': total_n_runs += 1
+            if runners.get(1) == 'p': total_n_runs += 1
+            runners = {1: None, 2: None, 3: batter}
         elif result == '2B':
-            runs_on_play += runners[2] + runners[1]
-            runners = [0, 1, 1] if runners[0] else [0, 1, 0]
+            if runners.get(3) == 'p': total_n_runs += 1
+            if runners.get(2) == 'p': total_n_runs += 1
+            new_runners = {1: None, 2: batter, 3: None}
+            if runners.get(1): new_runners[3] = runners[1]
+            runners = new_runners
         elif result in ['1B', 'BUNT 1B']:
-            if runners[2]: runs_on_play += 1
-            new_runners = [0,0,0]
-            if runners[1]: new_runners[2] = 1
-            if runners[0]: new_runners[1] = 1
-            new_runners[0] = 1
+            if runners.get(3) == 'p': total_n_runs += 1
+            new_runners = {1: batter, 2: None, 3: None}
+            if runners.get(2): new_runners[3] = runners[2]
+            if runners.get(1): new_runners[2] = runners[1]
             runners = new_runners
         elif result in ['BB', 'IBB', 'Auto BB', 'AUTO BB']:
-            if runners[0] and runners[1] and runners[2]: runs_on_play += 1
-            if runners[0] and runners[1]: runners[2] = 1
-            if runners[0]: runners[1] = 1
-            runners[0] = 1
+            if runners.get(1) and runners.get(2) and runners.get(3):
+                if runners[3] == 'p': total_n_runs += 1
+            new_runners = runners.copy()
+            if runners.get(1) and runners.get(2): new_runners[3] = runners[2]
+            if runners.get(1): new_runners[2] = runners[1]
+            new_runners[1] = batter
+            runners = new_runners
         elif result in ['FO', 'Sac']:
             outs += 1
-            if outs < 3 and runners[2]:
-                runs_on_play += 1
-                runners[2] = 0
+            if outs < 3 and runners.get(3):
+                if runners[3] == 'p': total_n_runs += 1
+                runners[3] = None
         elif result in ['Bunt', 'BUNT Sac']:
             outs += 1
             if outs < 3:
-                if runners[1] and not runners[2]:
-                    runners[2] = 1
-                    runners[1] = 0
-                if runners[0] and not runners[1]:
-                    runners[1] = 1
-                    runners[0] = 0
+                if runners.get(2) and not runners.get(3):
+                    runners[3] = runners[2]
+                    runners[2] = None
+                if runners.get(1) and not runners.get(2):
+                    runners[2] = runners[1]
+                    runners[1] = None
         elif result in ['K', 'Auto K', 'Bunt K', 'AUTO K', 'PO']:
             outs += 1
         elif result in ['LGO', 'RGO', 'BUNT GO', 'Sac']:
-            is_lgo = result == 'LGO'
-            if outs < 2 and runners[0]:
+            if outs < 2 and runners.get(1):
                 outs += 2
-                runners[0] = 0
+                runners[1] = None
+                if outs < 3:
+                    if runners.get(3) == 'p': total_n_runs += 1
+                    runners[3] = runners.get(2)
+                    runners[2] = None
             else:
                 outs += 1
-            if outs < 3:
-                if runners[2]: runs_on_play += 1; runners[2] = 0
-                if runners[1] and not (is_lgo and not runners[0]): runners[2] = 1; runners[1] = 0
+                if outs < 3:
+                    if runners.get(3) == 'p': total_n_runs += 1
+                    runners[3] = runners.get(2)
+                    runners[2] = runners.get(1)
+                    runners[1] = None
         elif result == 'DP':
             outs += 2
         elif result == 'TP':
             outs = 3
 
-        total_n_runs += runs_on_play
-
     if outs < 3:
-        final_obc = runners_to_obc.get(tuple(runners), 0)
-        final_state = (final_obc, outs)
-        total_n_runs += re_matrix.get(final_state, 0)
+        final_obc = runners_to_obc(runners)
+        inherited_final_obc = runners_to_obc(runners, inherited_only=True)
+        
+        re_total = re_matrix.get((final_obc, outs), 0)
+        re_inherited = re_matrix.get((inherited_final_obc, outs), 0)
+        
+        re_pitcher_responsibility = re_total - re_inherited
+        if re_pitcher_responsibility > 0:
+            total_n_runs += re_pitcher_responsibility
 
     return pd.Series({'nRuns': total_n_runs, 'nOuts': outs if outs <= 3 else 3})
 
@@ -1422,7 +1449,7 @@ def main():
     print("Loading all season data... (this may take a moment)")
     all_season_data, most_recent_season = load_all_seasons()
     if not all_season_data: return
-    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
+    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
     # --- Player ID Reconciliation ---
     print("Reconciling player IDs across seasons...")
@@ -1873,9 +1900,12 @@ def main():
 
             # --- WAR Calculation ---
             if not season_hitting_stats.empty and not season_pitching_stats.empty:
-                num_games = season_games_map.get(season, 0)
-                if num_games > 0:
-                    total_war_season = num_games * 6.17
+                # WAR is based on the total number of games played in a season.
+                num_total_games = season_leaderboard_df['Game ID'].nunique()
+
+                if num_total_games > 0:
+                    # The league generates 0.41 WAR per game, so we use that as our constant.
+                    total_war_season = num_total_games * 0.41
                     runs_per_win = 10
                     total_rar_season = total_war_season * runs_per_win
 

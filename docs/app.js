@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
                     <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
                     <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
-                    <li><a href="https://forms.gle/your-feedback-form" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
+                    <li><a href="https://forms.gle/nmLNL5PbF6bXrXpo9" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
                 </ul>
                 <br>
                 <p>Potential future features:</p>
