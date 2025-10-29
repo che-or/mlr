@@ -1422,7 +1422,7 @@ def main():
     print("Loading all season data... (this may take a moment)")
     all_season_data, most_recent_season = load_all_seasons()
     if not all_season_data: return
-    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items()], ignore_index=True)
+    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
     # --- Player ID Reconciliation ---
     print("Reconciling player IDs across seasons...")
@@ -1873,9 +1873,12 @@ def main():
 
             # --- WAR Calculation ---
             if not season_hitting_stats.empty and not season_pitching_stats.empty:
-                num_games = season_games_map.get(season, 0)
-                if num_games > 0:
-                    total_war_season = num_games * 6.17
+                # WAR is based on the total number of games played in a season.
+                num_total_games = season_leaderboard_df['Game ID'].nunique()
+
+                if num_total_games > 0:
+                    # The league generates 0.41 WAR per game, so we use that as our constant.
+                    total_war_season = num_total_games * 0.41
                     runs_per_win = 10
                     total_rar_season = total_war_season * runs_per_win
 

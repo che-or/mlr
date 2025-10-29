@@ -375,7 +375,7 @@ class Game:
         self.df = self.df.sort_values(by=['inning_num', 'is_top', 'index'], ascending=[True, False, True])
 
         # Pre-calculate the OBC_after for determining ambiguous plays
-        self.df['OBC_after'] = self.df.groupby(['inning_num', 'is_top'])['OBC'].shift(-1).fillna(0).astype(int)
+        self.df['OBC_after'] = pd.to_numeric(self.df.groupby(['inning_num', 'is_top'])['OBC'].shift(-1), errors='coerce').fillna(0).astype(int)
 
         self.home_pitcher = self.df[self.df['Pitcher Team'] == self.home_team]['Pitcher ID'].iloc[0]
         self.away_pitcher = self.df[self.df['Pitcher Team'] == self.away_team]['Pitcher ID'].iloc[0]
