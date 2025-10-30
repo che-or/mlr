@@ -96,12 +96,12 @@ def calculate_ops_plus_for_row(row, league_stats_by_season):
     player_nslg = row['nSLG']
 
     if pd.isna(player_nobp) or pd.isna(player_nslg):
-        return 100
+        return pd.NA
 
     ops_plus = 100 * ((player_nobp / season_stats['lg_nOBP']) + (player_nslg / season_stats['lg_nSLG']) - 1)
 
     if pd.isna(ops_plus):
-        return 100
+        return pd.NA
 
     return int(round(ops_plus))
 
@@ -2281,7 +2281,6 @@ def main():
 
     if not all_team_hitting_stats.empty:
         all_team_hitting_stats_for_json = all_team_hitting_stats.copy()
-        all_team_hitting_stats_for_json.rename(columns={'K': 'SO', 'AVG': 'BA'}, inplace=True)
         for col in all_team_hitting_stats_for_json.columns:
             if all_team_hitting_stats_for_json[col].dtype == 'float64':
                 all_team_hitting_stats_for_json[col] = all_team_hitting_stats_for_json[col].round(3)
@@ -2289,7 +2288,6 @@ def main():
 
     if not all_team_pitching_stats.empty:
         all_team_pitching_stats_for_json = all_team_pitching_stats.copy()
-        all_team_pitching_stats_for_json.rename(columns={'K': 'SO', 'BAA': 'BA'}, inplace=True)
         if 'IP' in all_team_pitching_stats_for_json.columns:
             all_team_pitching_stats_for_json['IP'] = all_team_pitching_stats_for_json['IP'].apply(format_ip)
         for col in all_team_pitching_stats_for_json.columns:

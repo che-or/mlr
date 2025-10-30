@@ -2096,7 +2096,34 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '<tfoot><tr class="career-row">';
             html += '<td><strong>Team Total</strong></td>';
             headers.slice(1).forEach(key => {
-                html += `<td><strong>${formatStat(key, teamTotals[key])}</strong></td>`;
+                let statKey = key;
+                if (isPitching) {
+                    if (key === 'SO') statKey = 'K';
+                    else if (key === 'ER') statKey = 'R';
+                    else if (key === 'H6') statKey = 'H/6';
+                    else if (key === 'HR6') statKey = 'HR/6';
+                    else if (key === 'BB6') statKey = 'BB/6';
+                    else if (key === 'SO6') statKey = 'K/6';
+                    else if (key === 'SO/BB') statKey = 'K/BB';
+                    else if (key === 'GB%') statKey = 'GB%_A';
+                    else if (key === 'FB%') statKey = 'FB%_A';
+                    else if (key === 'GB/FB') statKey = 'GB/FB_A';
+                    else if (key === 'BA') statKey = 'BAA';
+                    else if (key === 'OBP') statKey = 'OBPA';
+                    else if (key === 'SLG') statKey = 'SLGA';
+                    else if (key === 'OPS') statKey = 'OPSA';
+                    else if (key === 'BABIP') statKey = 'BABIP_A';
+                    else if (key === 'HR%') statKey = 'HR%_A';
+                    else if (key === 'K%') statKey = 'K%_A';
+                    else if (key === 'BB%') statKey = 'BB%_A';
+                    else if (key === 'SB') statKey = 'SB_A';
+                    else if (key === 'CS') statKey = 'CS_A';
+                    else if (key === 'SB%') statKey = 'SB%_A';
+                } else { // Hitting
+                    if (key === 'SO') statKey = 'K';
+                    else if (key === 'BA') statKey = 'AVG';
+                }
+                html += `<td><strong>${formatStat(key, teamTotals[statKey])}</strong></td>`;
             });
             html += '</tr></tfoot>';
         }
