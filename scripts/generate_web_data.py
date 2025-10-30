@@ -381,6 +381,154 @@ def calculate_pitching_stats(df, season=None):
         'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against
     })
 
+def calculate_team_hitting_stats(df, league_stats_for_season):
+    summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
+    pa = summed_stats['PA']
+    ab = summed_stats['AB']
+    num_hits = summed_stats['H']
+    num_walks = summed_stats['BB']
+    num_sf = summed_stats['SF']
+    num_tb = summed_stats['TB']
+    num_hr = summed_stats['HR']
+    num_strikeouts = summed_stats['K']
+    num_sb = summed_stats['SB']
+    num_cs = summed_stats['CS']
+    num_rgo = summed_stats['RGO']
+    num_lgo = summed_stats['LGO']
+    num_gidp = summed_stats['GIDP']
+    num_fo = summed_stats['FO']
+    num_po = summed_stats['PO']
+    num_lo = summed_stats['LO']
+    avg = num_hits / ab if ab > 0 else 0
+    obp = (num_hits + num_walks) / (ab + num_walks + num_sf) if (ab + num_walks + num_sf) > 0 else 0
+    slg = num_tb / ab if ab > 0 else 0
+    ops = obp + slg
+    iso = slg - avg
+    babip = (num_hits - num_hr) / (ab - num_strikeouts - num_hr + num_sf) if (ab - num_strikeouts - num_hr + num_sf) > 0 else 0
+    sb_pct = num_sb / (num_sb + num_cs) if (num_sb + num_cs) > 0 else 0
+    hr_pct = num_hr / pa if pa > 0 else 0
+    so_pct = num_strikeouts / pa if pa > 0 else 0
+    bb_pct = num_walks / pa if pa > 0 else 0
+    num_gb_outs = num_rgo + num_lgo + num_gidp
+    num_fb_outs = num_fo + num_po + num_lo + num_sf
+    total_bip_outs = num_gb_outs + num_fb_outs
+    gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
+    fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
+    gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
+    
+    if league_stats_for_season and league_stats_for_season.get('lg_nOBP', 0) > 0 and league_stats_for_season.get('lg_nSLG', 0) > 0:
+        ops_plus = 100 * ((obp / league_stats_for_season['lg_nOBP']) + (slg / league_stats_for_season['lg_nSLG']) - 1)
+    else:
+        ops_plus = 100
+    ops_plus = round(ops_plus)
+
+    df = df.copy()
+    df['weight'] = df['PA'] + df['SB'] + df['CS']
+    weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
+    total_weight = df['weight'].sum()
+    avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
+
+    team_stats = summed_stats.copy()
+    team_stats['AVG'] = avg
+    team_stats['OBP'] = obp
+    team_stats['SLG'] = slg
+    team_stats['OPS'] = ops
+    team_stats['ISO'] = iso
+    team_stats['BABIP'] = babip
+    team_stats['SB%'] = sb_pct
+    team_stats['HR%'] = hr_pct
+    team_stats['SO%'] = so_pct
+    team_stats['BB%'] = bb_pct
+    team_stats['GB%'] = gb_pct
+    team_stats['FB%'] = fb_pct
+    team_stats['GB/FB'] = gb_fb_ratio
+    team_stats['OPS+'] = ops_plus
+    team_stats['Avg Diff'] = avg_diff
+    team_stats['nOBP'] = obp
+    team_stats['nSLG'] = slg
+    return team_stats
+
+def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_constant):
+    summed_stats = df[['IP', 'BF', 'H', 'R', 'ER', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A', 'SB_A', 'CS_A']].sum()
+    summed_stats['G'] = df['GS'].sum()
+
+    ip = summed_stats['IP']
+    num_hits_allowed = summed_stats['H']
+    num_walks_allowed = summed_stats['BB']
+    earned_runs = summed_stats['ER']
+    num_hr_allowed = summed_stats['HR']
+    num_strikeouts = summed_stats['K']
+    ab_against = summed_stats['AB_A']
+    num_sf_allowed = summed_stats['SF_A']
+    num_gb_outs_allowed = summed_stats['GB_outs_A']
+    num_fb_outs_allowed = summed_stats['FB_outs_A']
+    num_sb_allowed = summed_stats['SB_A']
+    num_cs_against = summed_stats['CS_A']
+
+    era = (earned_runs * 6) / ip if ip > 0 else 0
+    whip = (num_walks_allowed + num_hits_allowed) / ip if ip > 0 else 0
+    h6 = (num_hits_allowed / ip) * 6 if ip > 0 else 0
+    hr6 = (num_hr_allowed / ip) * 6 if ip > 0 else 0
+    bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else 0
+    k6 = (num_strikeouts / ip) * 6 if ip > 0 else 0
+    k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else 0
+    baa = num_hits_allowed / ab_against if ab_against > 0 else 0
+    obpa = (num_hits_allowed + num_walks_allowed) / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    tb_allowed = summed_stats['1B'] + 2*summed_stats['2B_A'] + 3*summed_stats['3B_A'] + 4*summed_stats['HR']
+    slga = tb_allowed / ab_against if ab_against > 0 else 0
+    opsa = obpa + slga
+    babip_denom = ab_against - num_strikeouts - num_hr_allowed + num_sf_allowed
+    babip_against = (num_hits_allowed - num_hr_allowed) / babip_denom if babip_denom > 0 else 0
+    hr_pct_against = num_hr_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    k_pct_against = num_strikeouts / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    bb_pct_against = num_walks_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+    total_fb_gb_allowed = num_fb_outs_allowed + num_gb_outs_allowed
+    gb_pct_against = num_gb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+    fb_pct_against = num_fb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+    gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
+    sb_pct_against = num_sb_allowed / (num_sb_allowed + num_cs_against) if (num_sb_allowed + num_cs_against) > 0 else 0
+    
+    fip = ((13 * summed_stats['HR']) + (3 * summed_stats['BB']) - (2 * summed_stats['K'])) / ip + fip_constant if ip > 0 else 0
+
+    if team_n_era > 0:
+        era_plus = round(100 * (league_n_era_for_season / team_n_era))
+    elif league_n_era_for_season > 0:
+        era_plus = float('inf')
+    else:
+        era_plus = 100
+
+    df = df.copy()
+    df['weight'] = df['BF'] + df['SB_A'] + df['CS_A']
+    weighted_avg_diff = (df['Avg Diff'] * df['weight']).sum()
+    total_weight = df['weight'].sum()
+    avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
+
+    team_stats = summed_stats.copy()
+    team_stats['ERA'] = era
+    team_stats['WHIP'] = whip
+    team_stats['H/6'] = h6
+    team_stats['HR/6'] = hr6
+    team_stats['BB/6'] = bb6
+    team_stats['K/6'] = k6
+    team_stats['K/BB'] = k_bb
+    team_stats['BAA'] = baa
+    team_stats['OBPA'] = obpa
+    team_stats['SLGA'] = slga
+    team_stats['OPSA'] = opsa
+    team_stats['BABIP_A'] = babip_against
+    team_stats['HR%_A'] = hr_pct_against
+    team_stats['K%_A'] = k_pct_against
+    team_stats['BB%_A'] = bb_pct_against
+    team_stats['GB%_A'] = gb_pct_against
+    team_stats['FB%_A'] = fb_pct_against
+    team_stats['GB/FB_A'] = gb_fb_ratio_against
+    team_stats['SB%_A'] = sb_pct_against
+    team_stats['Avg Diff'] = avg_diff
+    team_stats['FIP'] = fip
+    team_stats['ERA+'] = era_plus
+    team_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
+    return team_stats
+
 def calculate_career_hitting_stats(df, league_stats_by_season):
     summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
     pa = summed_stats['PA']
@@ -1784,14 +1932,26 @@ def main():
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
     game_achievements_df = calculate_game_achievements(leaderboard_df)
 
+    print("Calculating league-wide stats for OPS+...")
+    league_stats_by_season = {}
+    for season in leaderboard_df['Season'].unique():
+        season_df = leaderboard_df[leaderboard_df['Season'] == season]
+        if not season_df.empty:
+            league_totals = calculate_hitting_stats(season_df, season=season)
+            league_stats_by_season[season] = {'lg_nOBP': league_totals['nOBP'], 'lg_nSLG': league_totals['nSLG']}
+
     all_seasons_hitting_stats = []
     all_seasons_pitching_stats = []
+    all_seasons_team_hitting_stats = []
+    all_seasons_team_pitching_stats = []
     for season in sorted_seasons:
         force_recalc = (season == most_recent_season) or (season in seasons_to_recalc)
         season_leaderboard_df = leaderboard_df[leaderboard_df['Season'] == season]
 
         hitting_cache_path = os.path.join(cache_dir, f'hitting_stats_{season}.csv')
         pitching_cache_path = os.path.join(cache_dir, f'pitching_stats_{season}.csv')
+        team_hitting_cache_path = os.path.join(cache_dir, f'team_hitting_stats_{season}.csv')
+        team_pitching_cache_path = os.path.join(cache_dir, f'team_pitching_stats_{season}.csv')
 
         can_use_cache = False
         if os.path.exists(hitting_cache_path) and os.path.exists(pitching_cache_path) and not force_recalc:
@@ -1936,8 +2096,52 @@ def main():
             if not season_pitching_stats.empty:
                 season_pitching_stats.to_csv(pitching_cache_path, index=False)
 
+            # --- Team Hitting Stats Calculation ---
+            team_hitting_records = []
+            if not season_hitting_stats.empty:
+                source_hitting_df = season_hitting_stats[~season_hitting_stats['Team'].str.contains("TM")].copy()
+                league_stats_for_season = league_stats_by_season.get(season)
+                for team, team_df in source_hitting_df.groupby('Team'):
+                    team_stats_series = calculate_team_hitting_stats(team_df, league_stats_for_season)
+                    team_stats_series['Season'] = season
+                    team_stats_series['Team'] = team
+                    team_hitting_records.append(team_stats_series)
+            season_team_hitting_stats = pd.DataFrame(team_hitting_records)
+
+            # --- Team Pitching Stats Calculation ---
+            team_pitching_records = []
+            if not season_pitching_stats.empty:
+                source_pitching_df = season_pitching_stats[~season_pitching_stats['Team'].str.contains("TM")].copy()
+                league_n_era_for_season = league_n_era_by_season.get(season, 0)
+                fip_constant_for_season = fip_constants_by_season.get(season, 3.10)
+
+                season_team_neutral_pitching_stats = {}
+                re_matrix = run_expectancy_by_season.get(season, {})
+                if re_matrix:
+                    for team, team_df in season_leaderboard_df.groupby('Pitcher Team'):
+                        neutral_stats = calculate_neutral_pitching_stats(team_df, re_matrix)
+                        n_ip = neutral_stats['nOuts'] / 3
+                        n_era = (neutral_stats['nRuns'] * 6) / n_ip if n_ip > 0 else 0
+                        season_team_neutral_pitching_stats[team] = n_era
+                
+                for team, team_df in source_pitching_df.groupby('Team'):
+                    team_n_era = season_team_neutral_pitching_stats.get(team, 0)
+                    team_stats_series = calculate_team_pitching_stats(team_df, league_n_era_for_season, team_n_era, fip_constant_for_season)
+                    team_stats_series['Season'] = season
+                    team_stats_series['Team'] = team
+                    team_pitching_records.append(team_stats_series)
+            season_team_pitching_stats = pd.DataFrame(team_pitching_records)
+
+            # --- Cache Team Stats ---
+            if not season_team_hitting_stats.empty:
+                season_team_hitting_stats.to_csv(team_hitting_cache_path, index=False)
+            if not season_team_pitching_stats.empty:
+                season_team_pitching_stats.to_csv(team_pitching_cache_path, index=False)
+
         all_seasons_hitting_stats.append(season_hitting_stats)
         all_seasons_pitching_stats.append(season_pitching_stats)
+        all_seasons_team_hitting_stats.append(season_team_hitting_stats)
+        all_seasons_team_pitching_stats.append(season_team_pitching_stats)
 
     # --- Final Assembly ---
     all_hitting_stats = pd.concat(all_seasons_hitting_stats, ignore_index=True)
@@ -1946,15 +2150,8 @@ def main():
     print("Applying post-processing corrections...")
     all_pitching_stats = apply_postprocessing_corrections(all_pitching_stats)
 
-    
-
-    # --- Calculate league-wide neutral stats for OPS+ ---
-    league_stats_by_season = {}
-    for season in leaderboard_df['Season'].unique():
-        season_df = leaderboard_df[leaderboard_df['Season'] == season]
-        if not season_df.empty:
-            league_totals = calculate_hitting_stats(season_df, season=season)
-            league_stats_by_season[season] = {'lg_nOBP': league_totals['nOBP'], 'lg_nSLG': league_totals['nSLG']}
+    all_team_hitting_stats = pd.concat(all_seasons_team_hitting_stats, ignore_index=True)
+    all_team_pitching_stats = pd.concat(all_seasons_team_pitching_stats, ignore_index=True)
 
     if not all_hitting_stats.empty:
         all_hitting_stats['OPS+'] = all_hitting_stats.apply(calculate_ops_plus_for_row, axis=1, league_stats_by_season=league_stats_by_season)
@@ -2080,32 +2277,27 @@ def main():
     with open(os.path.join(output_dir, 'hitting_stats.json'), 'w') as f:
         json.dump(hitting_data, f, indent=2)
 
-    all_pitching_stats.replace([float('inf'), float('-inf')], None, inplace=True)
-    all_pitching_stats = all_pitching_stats.astype(object).where(pd.notna(all_pitching_stats), None)
-    pitching_data = {
-        "columns": all_pitching_stats.columns.tolist(),
-        "data": all_pitching_stats.values.tolist()
-    }
-    with open(os.path.join(output_dir, 'pitching_stats.json'), 'w') as f:
-        json.dump(pitching_data, f, indent=2)
+    all_pitching_stats.to_json(os.path.join(output_dir, 'pitching_stats.json'), orient='split', index=False)
 
-    # Save maps
-    with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f: json.dump(player_id_map, f, indent=2)
-    with open(os.path.join(output_dir, 'season_games_map.json'), 'w') as f: json.dump(season_games_map, f, indent=2)
+    if not all_team_hitting_stats.empty:
+        all_team_hitting_stats_for_json = all_team_hitting_stats.copy()
+        all_team_hitting_stats_for_json.rename(columns={'K': 'SO', 'AVG': 'BA'}, inplace=True)
+        for col in all_team_hitting_stats_for_json.columns:
+            if all_team_hitting_stats_for_json[col].dtype == 'float64':
+                all_team_hitting_stats_for_json[col] = all_team_hitting_stats_for_json[col].round(3)
+        all_team_hitting_stats_for_json.to_json(os.path.join(output_dir, 'team_hitting_stats.json'), orient='split', index=False)
 
-    # Generate and save scouting reports
-    print("Generating and exporting scouting reports...")
-    all_scouting_reports = {}
-    pitcher_ids = leaderboard_df['Pitcher ID'].unique()
-    for player_id in pitcher_ids:
-        pitcher_df = combined_df[combined_df['Pitcher ID'] == player_id]
-        report_data = get_scouting_report_data(player_id, pitcher_df)
-        if report_data:
-            all_scouting_reports[int(player_id)] = report_data
-    with open(os.path.join(output_dir, 'scouting_reports.json'), 'w') as f: json.dump(all_scouting_reports, f, indent=2)
-    
+    if not all_team_pitching_stats.empty:
+        all_team_pitching_stats_for_json = all_team_pitching_stats.copy()
+        all_team_pitching_stats_for_json.rename(columns={'K': 'SO', 'BAA': 'BA'}, inplace=True)
+        if 'IP' in all_team_pitching_stats_for_json.columns:
+            all_team_pitching_stats_for_json['IP'] = all_team_pitching_stats_for_json['IP'].apply(format_ip)
+        for col in all_team_pitching_stats_for_json.columns:
+            if all_team_pitching_stats_for_json[col].dtype == 'float64':
+                all_team_pitching_stats_for_json[col] = all_team_pitching_stats_for_json[col].round(3)
+        all_team_pitching_stats_for_json.to_json(os.path.join(output_dir, 'team_pitching_stats.json'), orient='split', index=False)
 
-    print(f"Web data exported successfully to {output_dir}")
+    print("Done!")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
