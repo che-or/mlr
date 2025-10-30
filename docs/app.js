@@ -7,12 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
         scouting: './data/scouting_reports.json',
         glossary: './data/glossary.json',
         divisions: './data/divisions.json', // Added
-        teamHistory: './data/team_history.json'
+        teamHistory: './data/team_history.json',
+        teamHitting: './data/team_hitting_stats.json',
+        teamPitching: './data/team_pitching_stats.json'
     };
 
     const state = {
         hittingStats: [],
         pitchingStats: [],
+        teamHittingStats: [],
+        teamPitchingStats: [],
         players: {},
         seasons: {},
         scoutingReports: {},
@@ -155,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -163,11 +167,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.scouting).then(res => res.json()),
                 fetch(API.glossary).then(res => res.json()),
                 fetch(API.divisions).then(res => res.json()), // Added
-                fetch(API.teamHistory).then(res => res.json())
+                fetch(API.teamHistory).then(res => res.json()),
+                fetch(API.teamHitting).then(res => res.json()),
+                fetch(API.teamPitching).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
             state.pitchingStats = parseCompactData(pitching);
+            state.teamHittingStats = parseCompactData(teamHitting);
+            state.teamPitchingStats = parseCompactData(teamPitching);
             state.players = players;
             state.seasons = seasons;
             state.scoutingReports = scouting;
@@ -1961,10 +1969,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let content = headerContent;
 
         if (seasonHittingStats.length > 0) {
-            content += createTeamStatsTable('Batting Stats', seasonHittingStats, false);
+            const teamHittingTotals = state.teamHittingStats.find(s => s.Season === season && s.Team === actualTeamAbbr);
+            content += createTeamStatsTable('Batting Stats', seasonHittingStats, false, teamHittingTotals);
         }
         if (seasonPitchingStats.length > 0) {
-            content += createTeamStatsTable('Pitching Stats', seasonPitchingStats, true);
+            const teamPitchingTotals = state.teamPitchingStats.find(s => s.Season === season && s.Team === actualTeamAbbr);
+            content += createTeamStatsTable('Pitching Stats', seasonPitchingStats, true, teamPitchingTotals);
         }
 
         elements.teamStatsView.innerHTML = content;
@@ -1994,7 +2004,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const createTeamStatsTable = (title, stats, isPitching) => {
+    const createTeamStatsTable = (title, stats, isPitching, teamTotals) => {
         let html = `<h3>${title}</h3>`;
         const statKeys = isPitching 
             ? STAT_DEFINITIONS.pitching_tables['Pitching Stats']
@@ -2080,7 +2090,45 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '</tr>';
         });
 
-        html += '</tbody></table>';
+        html += '</tbody>';
+
+        if (teamTotals) {
+            html += '<tfoot><tr class="career-row">';
+            html += '<td><strong>Team Total</strong></td>';
+            headers.slice(1).forEach(key => {
+                let statKey = key;
+                if (isPitching) {
+                    if (key === 'SO') statKey = 'K';
+                    else if (key === 'ER') statKey = 'R';
+                    else if (key === 'H6') statKey = 'H/6';
+                    else if (key === 'HR6') statKey = 'HR/6';
+                    else if (key === 'BB6') statKey = 'BB/6';
+                    else if (key === 'SO6') statKey = 'K/6';
+                    else if (key === 'SO/BB') statKey = 'K/BB';
+                    else if (key === 'GB%') statKey = 'GB%_A';
+                    else if (key === 'FB%') statKey = 'FB%_A';
+                    else if (key === 'GB/FB') statKey = 'GB/FB_A';
+                    else if (key === 'BA') statKey = 'BAA';
+                    else if (key === 'OBP') statKey = 'OBPA';
+                    else if (key === 'SLG') statKey = 'SLGA';
+                    else if (key === 'OPS') statKey = 'OPSA';
+                    else if (key === 'BABIP') statKey = 'BABIP_A';
+                    else if (key === 'HR%') statKey = 'HR%_A';
+                    else if (key === 'K%') statKey = 'K%_A';
+                    else if (key === 'BB%') statKey = 'BB%_A';
+                    else if (key === 'SB') statKey = 'SB_A';
+                    else if (key === 'CS') statKey = 'CS_A';
+                    else if (key === 'SB%') statKey = 'SB%_A';
+                } else { // Hitting
+                    if (key === 'SO') statKey = 'K';
+                    else if (key === 'BA') statKey = 'AVG';
+                }
+                html += `<td><strong>${formatStat(key, teamTotals[statKey])}</strong></td>`;
+            });
+            html += '</tr></tfoot>';
+        }
+
+        html += '</table>';
         return html;
     };
 
