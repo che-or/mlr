@@ -137,15 +137,26 @@ def calculate_hitting_stats(df, season=None):
         caught_stealing = {'CS 2B', 'CS 3B', 'CS Home', 'CMS 3B', 'CMS Home'}
         pa_events = hits | walks | strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'BUNT DP', 'Bunt DP', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
 
-    diff_events = pa_events | stolen_bases | caught_stealing
-    diff_df = df[df[result_col].isin(diff_events)]
+    if use_old_results:
+        diff_events = pa_events | stolen_bases | caught_stealing
+        diff_df = df[df[result_col].isin(diff_events)]
+        pa_df = df[df[result_col].isin(pa_events)]
+    else:
+        diff_events_exact = pa_events | stolen_bases | caught_stealing
+        exact_diff_df = df[df['Exact Result'].isin(diff_events_exact)]
+        old_diff_df = df[df['Old Result'].isin(['DP', 'TP'])]
+        diff_df = pd.concat([exact_diff_df, old_diff_df]).drop_duplicates()
+
+        exact_pa_df = df[df['Exact Result'].isin(pa_events)]
+        old_pa_df = df[df['Old Result'].isin(['DP', 'TP'])]
+        pa_df = pd.concat([exact_pa_df, old_pa_df]).drop_duplicates()
+
     numeric_diff = pd.to_numeric(diff_df['Diff'], errors='coerce')
     avg_diff = numeric_diff.mean()
 
     num_sb = df[df[result_col].isin(stolen_bases)].shape[0]
     num_cs = df[df[result_col].isin(caught_stealing)].shape[0]
 
-    pa_df = df[df[result_col].isin(pa_events)]
     pa = len(pa_df)
 
     re24_events = pa_events | stolen_bases | caught_stealing
