@@ -1965,7 +1965,11 @@ def main():
         team_pitching_cache_path = os.path.join(cache_dir, f'team_pitching_stats_{season}.csv')
 
         can_use_cache = False
-        if os.path.exists(hitting_cache_path) and os.path.exists(pitching_cache_path) and not force_recalc:
+        if (os.path.exists(hitting_cache_path) and
+                os.path.exists(pitching_cache_path) and
+                os.path.exists(team_hitting_cache_path) and
+                os.path.exists(team_pitching_cache_path) and
+                not force_recalc):
             try:
                 hitting_cols = pd.read_csv(hitting_cache_path, nrows=0).columns
                 pitching_cols = pd.read_csv(pitching_cache_path, nrows=0).columns
@@ -1977,6 +1981,8 @@ def main():
         if can_use_cache:
             season_hitting_stats = pd.read_csv(hitting_cache_path)
             season_pitching_stats = pd.read_csv(pitching_cache_path)
+            season_team_hitting_stats = pd.read_csv(team_hitting_cache_path)
+            season_team_pitching_stats = pd.read_csv(team_pitching_cache_path)
         else:
             # --- Hitting Stats Calculation ---
             hitter_records = []
