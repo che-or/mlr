@@ -1511,31 +1511,40 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.statsContentDisplay.innerHTML = titleHTML;
 
         if (isStats) {
-            const lastSeasonNum = Math.max(
-                -1, // handle case where there are no non-career stats
-                ...hittingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1))),
-                ...pitchingStats.filter(s => s.Season !== 'Career').map(s => parseInt(s.Season.slice(1)))
+            const lastHittingSeasonNum = Math.max(
+                -1,
+                ...hittingStats
+                    .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
+                    .map(s => parseInt(s.Season.slice(1)))
+            );
+            const lastPitchingSeasonNum = Math.max(
+                -1,
+                ...pitchingStats
+                    .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
+                    .map(s => parseInt(s.Season.slice(1)))
             );
     
             let primaryRole = 'hitter';
     
-            if (lastSeasonNum > 0) {
-                const lastSeason = `S${lastSeasonNum}`;
+            if (lastPitchingSeasonNum > lastHittingSeasonNum) {
+                primaryRole = 'pitcher';
+            } else if (lastHittingSeasonNum > lastPitchingSeasonNum) {
+                primaryRole = 'hitter';
+            } else if (lastHittingSeasonNum > 0) { // They are equal and positive, so they played both in the same most recent season.
+                const lastSeason = `S${lastHittingSeasonNum}`;
                 const recentHitting = hittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
                 const recentPitching = pitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
     
-                if (recentPitching && !recentHitting) {
-                    primaryRole = 'pitcher';
-                } else if (recentPitching && recentHitting) {
+                if (recentPitching && recentHitting) {
                     if (recentPitching.G > recentHitting.G) {
                         primaryRole = 'pitcher';
                     } else if (recentPitching.G === recentHitting.G) {
-                        const bf = recentPitching.BF || 0;
-                        const pa = recentHitting.PA || 0;
-                        if (bf > pa) {
+                        if ((recentPitching.BF || 0) > (recentHitting.PA || 0)) {
                             primaryRole = 'pitcher';
                         }
                     }
+                } else if (recentPitching) { // Only pitching in the last season
+                    primaryRole = 'pitcher';
                 }
             } else { // No recent season data, check career data
                 const careerHitting = hittingStats.find(s => s.Season === 'Career');
@@ -1545,7 +1554,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (careerPitching && careerHitting) {
                     if (careerPitching.G > careerHitting.G) {
                         primaryRole = 'pitcher';
-                    } else if (careerPitching.G === careerHitting.G) { // BUG: Should be careerHitting.G
+                    } else if (careerPitching.G === careerHitting.G) {
                         if ((careerPitching.BF || 0) > (careerHitting.PA || 0)) {
                             primaryRole = 'pitcher';
                         }
