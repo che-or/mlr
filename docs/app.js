@@ -579,9 +579,6 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardsTab.addEventListener('click', () => { window.location.hash = '#/leaderboards'; });
         elements.glossaryTab.addEventListener('click', () => { window.location.hash = '#/glossary'; });
 
-        // Event listener for the new random player button
-        document.getElementById('random-player-button').addEventListener('click', goToRandomPlayerPage);
-
         elements.app.addEventListener('click', (event) => {
             const teamLink = event.target.closest('.team-link');
             if (teamLink) {
