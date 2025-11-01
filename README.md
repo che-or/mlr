@@ -1,17 +1,24 @@
 # MLR Reference
 
-This repository contains a suite of Python scripts designed for analyzing and viewing statistics from the MLR (Major League Redditball). It allows users to load game data from Google Sheets, process it, and generate detailed player statistics, scouting reports, leaderboards, team stats, and a glossary of terms.
+This repository contains a suite of Python scripts designed for analyzing and viewing statistics from the MLR (Major League Redditball). It allows users to load game data from Google Sheets, process it, and generate detailed player statistics, leaderboards, team stats, and a glossary of terms.
 
 ## Web Application Interface
 
-This project now includes a web-based interface to view all player stats, leaderboards, team statistics, scouting reports, and a glossary in a user-friendly format.
+This project now includes a web-based interface to view all player stats, leaderboards, team statistics, and a glossary in a user-friendly format.
 
 ### Features:
 - **Player Stats:** Comprehensive hitting and pitching statistics for individual players, including career and seasonal breakdowns.
 - **Team Stats:** View team standings and individual player statistics per team for each season.
 - **Leaderboards:** Dynamic leaderboards for various batting and pitching statistics, with filters for season and team.
-- **Scouting Reports:** Detailed pitching scouting reports including pitch usage histograms, situational tendencies, and recent game pitch sequences.
 - **Glossary:** Definitions and explanations for various baseball statistics and terms, including run expectancy matrices.
+
+### Application Pages
+The web application provides several pages to explore the data:
+- **Home (`#/home`):** A landing page that welcomes users and showcases featured players and teams.
+- **Player Stats (`#/stats`):** A searchable page for individual player statistics, showing detailed batting and pitching data.
+- **Team Stats (`#/team-stats`):** Displays season-by-season standings and allows drilling down into team-specific stats.
+- **Leaderboards (`#/leaderboards`):** Provides all-time and single-season leaderboards for a wide variety of statistical categories.
+- **Glossary (`#/glossary`):** A reference for advanced stats and terminology used in the application.
 
 ### Running the Web App
 
@@ -43,4 +50,4 @@ Since the web application is built with static files (HTML, CSS, JS), it can be 
 
 - **`scripts/data_loader.py`**: Handles the loading of season data from Google Sheets URLs listed in `data/gamelogs.txt`.
 - **`scripts/game_processing.py`**: Contains the core logic for simulating game play-by-play, determining pitching decisions (Win, Loss, Save, Hold), and calculating advanced metrics.
-- **`scripts/generate_web_data.py`**: The primary script for processing all raw game data, calculating comprehensive player and team statistics (including OPS+, ERA+, FIP, WAR, RE24), generating scouting reports, and exporting all necessary data into JSON files for the web application. This script also handles player ID reconciliation, stat corrections for pinch runners and multi-steals, and generates run expectancy matrices.
+- **`scripts/generate_web_data.py`**: The primary script for processing all raw game data, calculating comprehensive player and team statistics (including OPS+, ERA+, FIP, WAR, RE24), and exporting all necessary data into JSON files for the web application. This script also handles player ID reconciliation, stat corrections for pinch runners and multi-steals, and generates run expectancy matrices.

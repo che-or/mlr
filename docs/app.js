@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         teamHistory: {},
         playerMap: new Map(),
         currentPlayerId: null,
-        lastTeamStatsUrl: '#/team-stats'
+        lastTeamStatsUrl: '#/team-stats',
+        seasonsWithStats: []
     };
 
     const elements = {
@@ -182,6 +183,19 @@ document.addEventListener('DOMContentLoaded', () => {
             state.glossaryData = glossary;
             state.divisions = divisions; // Added
             state.teamHistory = teamHistory;
+
+            const seasonsWithStats = new Set();
+            state.hittingStats.forEach(s => {
+                if (s.Season && s.Season.startsWith('S') && !s.is_sub_row) {
+                    seasonsWithStats.add(s.Season);
+                }
+            });
+            state.pitchingStats.forEach(s => {
+                if (s.Season && s.Season.startsWith('S') && !s.is_sub_row) {
+                    seasonsWithStats.add(s.Season);
+                }
+            });
+            state.seasonsWithStats = Array.from(seasonsWithStats).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
 
             for (const id in players) {
                 const player = players[id];
@@ -544,7 +558,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (entry.sections) {
-            entryHTML += '<h4>Sections:</h4>'; // Added title for sections
             entryHTML += entry.sections.map(section => `<h4>${section.title}</h4>${section.content}`).join('');
         }
         
@@ -1808,7 +1821,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayTeamList = (selectedSeason = null) => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
-        const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
+        const allSeasons = state.seasonsWithStats;
         const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
                 const currentSeasonIndex = allSeasons.indexOf(currentSeason);
         
