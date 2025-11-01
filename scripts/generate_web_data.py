@@ -501,12 +501,10 @@ def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_c
     
     fip = ((13 * summed_stats['HR']) + (3 * summed_stats['BB']) - (2 * summed_stats['K'])) / ip + fip_constant if ip > 0 else 0
 
-    if team_n_era > 0:
-        era_plus = round(100 * (league_n_era_for_season / team_n_era))
-    elif league_n_era_for_season > 0:
-        era_plus = float('inf')
+    if league_n_era_for_season > 0:
+        era_minus = round(100 * (team_n_era / league_n_era_for_season))
     else:
-        era_plus = 100
+        era_minus = 100
 
     df = df.copy()
     df['weight'] = df['BF'] + df['SB_A'] + df['CS_A']
@@ -536,7 +534,7 @@ def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_c
     team_stats['SB%_A'] = sb_pct_against
     team_stats['Avg Diff'] = avg_diff
     team_stats['FIP'] = fip
-    team_stats['ERA+'] = era_plus
+    team_stats['ERA-'] = era_minus
     team_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
     return team_stats
 
@@ -703,7 +701,7 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
 
 
 
-    # New ERA+ calculation
+    # New ERA- calculation
 
     df['lg_n_era'] = df['Season'].map(league_n_era_by_season)
 
@@ -727,23 +725,19 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
 
 
 
-        if career_player_n_era > 0:
+        if career_lg_n_era > 0:
 
-            era_plus = round(100 * (career_lg_n_era / career_player_n_era))
-
-        elif career_lg_n_era > 0:
-
-            era_plus = float('inf')
+            era_minus = round(100 * (career_player_n_era / career_lg_n_era))
 
         else:
 
-            era_plus = 100
+            era_minus = 100
 
     else: # Fallback for older cached data that might not have nIP/nRuns
 
-        weighted_era_plus = (df['ERA+'] * df['IP']).sum()
+        weighted_era_minus = (df['ERA-'] * df['IP']).sum()
 
-        era_plus = weighted_era_plus / total_ip if total_ip > 0 else 0
+        era_minus = weighted_era_minus / total_ip if total_ip > 0 else 0
 
 
 
@@ -778,7 +772,6 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     career_stats['BAA'] = baa
 
     career_stats['OBPA'] = obpa
-
     career_stats['SLGA'] = slga
 
     career_stats['OPSA'] = opsa
@@ -801,7 +794,7 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
 
     career_stats['Avg Diff'] = avg_diff
     career_stats['FIP'] = fip
-    career_stats['ERA+'] = era_plus
+    career_stats['ERA-'] = era_minus
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
     return career_stats
 
@@ -1894,7 +1887,7 @@ def main():
         league_pitching_totals['FIP_Constant'] = league_pitching_totals['lg_ERA'] - league_pitching_totals['lg_FIP_unscaled']
         fip_constants_by_season = league_pitching_totals.set_index('Season')['FIP_Constant'].to_dict()
 
-    print("Calculating Neutral ERA and ERA+...")
+    print("Calculating Neutral ERA and ERA-...")
     league_n_era_by_season = {}
     neutral_pitching_stats = []
     for season in sorted_seasons:
@@ -1906,22 +1899,20 @@ def main():
         lg_n_era = (lg_neutral_stats['nRuns'] * 6) / lg_n_ip if lg_n_ip > 0 else 0
         league_n_era_by_season[season] = lg_n_era
         
-        # Calculate per-team ERA+
+        # Calculate per-team ERA-
         for (pitcher_id, team), player_team_df in season_df.groupby(['Pitcher ID', 'Pitcher Team']):
             player_neutral_stats = calculate_neutral_pitching_stats(player_team_df, re_matrix)
             player_n_ip = player_neutral_stats['nOuts'] / 3
             player_n_runs = player_neutral_stats['nRuns']
             player_n_era = (player_n_runs * 6) / player_n_ip if player_n_ip > 0 else 0
             
-            if player_n_era > 0:
-                era_plus = round(100 * (lg_n_era / player_n_era))
-            elif lg_n_era > 0:
-                era_plus = float('inf')
+            if lg_n_era > 0:
+                era_minus = round(100 * (player_n_era / lg_n_era))
             else:
-                era_plus = 100
-            neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': team, 'nIP': player_n_ip, 'ERA+': era_plus, 'nRuns': player_n_runs})
+                era_minus = 100
+            neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': team, 'nIP': player_n_ip, 'ERA-': era_minus, 'nRuns': player_n_runs})
 
-        # Calculate season-total ERA+ for all players who were traded
+        # Calculate season-total ERA- for all players who were traded
         for pitcher_id, player_df in season_df.groupby('Pitcher ID'):
             teams = player_df['Pitcher Team'].unique()
             if len(teams) > 1:
@@ -1930,13 +1921,11 @@ def main():
                 player_n_runs = player_neutral_stats['nRuns']
                 player_n_era = (player_n_runs * 6) / player_n_ip if player_n_ip > 0 else 0
                 
-                if player_n_era > 0:
-                    era_plus = round(100 * (lg_n_era / player_n_era))
-                elif lg_n_era > 0:
-                    era_plus = float('inf')
+                if lg_n_era > 0:
+                    era_minus = round(100 * (player_n_era / lg_n_era))
                 else:
-                    era_plus = 100
-                neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': f"{len(teams)}TM", 'nIP': player_n_ip, 'ERA+': era_plus, 'nRuns': player_n_runs})
+                    era_minus = 100
+                neutral_pitching_stats.append({'Season': season, 'Pitcher ID': pitcher_id, 'Team': f"{len(teams)}TM", 'nIP': player_n_ip, 'ERA-': era_minus, 'nRuns': player_n_runs})
 
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
 

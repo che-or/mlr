@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Advanced Batting': ['Season', 'Team', 'TB', 'GIDP', 'SH', 'SF', 'BABIP', 'ISO', 'HR%', 'SO%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'SB%', 'Avg Diff']
         },
         pitching_tables: {
-            'Pitching Stats': ['Season', 'Team', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA+'],
+            'Pitching Stats': ['Season', 'Team', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA-'],
             'Advanced Pitching': ['Season', 'Team', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'SO6', 'SO/BB', 'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'Avg Diff'],
             'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP', 'SB', 'CS', 'SB%']
         }
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'ER': 'Earned Runs',
         'Auto BB': 'Automatic Walks',
         'BF': 'Batters Faced',
-        'ERA+': 'ERA adjusted for park and league',
+        'ERA-': 'ERA Minus - ERA adjusted for park and league, where 100 is average and lower is better',
         'FIP': 'Fielding Independent Pitching',
         'WHIP': 'Walks + Hits per Inning Pitched',
         'H6': 'Hits per 6 Innings',
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const GLOSSARY_GROUPS = {
         "General": ["WAR", "WPA", "RE24"],
         "Batting": ["BA", "OBP", "SLG", "OPS", "ISO", "BABIP", "OPS+"],
-        "Pitching": ["W", "L", "SV", "HLD", "ERA", "WHIP", "FIP", "ERA+"]
+        "Pitching": ["W", "L", "SV", "HLD", "ERA", "WHIP", "FIP", "ERA-"]
     };
 
     const LEADERBOARD_ONLY_STATS = {
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (franchiseEntries && franchiseEntries.length > 0) {
             const possibleSeasons = [];
             for (const entry of franchiseEntries) {
-                for (let s = entry.start; s <= (entry.end === 9999 ? parseInt(Object.keys(state.seasons).sort((a,b)=>parseInt(b.slice(1))-parseInt(a.slice(1)))[0].slice(1)) : entry.end); s++) {
+                for (let s = entry.start; s <= (entry.end === 9999 ? parseInt([...state.seasonsWithStats].sort((a,b)=>parseInt(b.slice(1))-parseInt(a.slice(1)))[0].slice(1)) : entry.end); s++) {
                     possibleSeasons.push(`S${s}`);
                 }
             }
@@ -446,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li> Awards (including All-Star appearances, MVP, etc.).</li>
                     <li> Player comparison.</li>
                     <li> Outcome calculator.</li>
-                    <li> Type+, a stat similar to OPS+ and ERA+ but only comparing to players with the same batting/pitching type.</li>
+                    <li> Type+, a stat similar to OPS+ and ERA- but only comparing to players with the same batting/pitching type.</li>
                 </ul>
 
                 <h3 class="section-title">Today's Features</h3>
@@ -696,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'BAA', 'OBPA', 'SLGA', 'OPSA', 'BABIP_A',
                 'H6', 'HR6', 'BB6',
                 'BA', 'OBP', 'SLG', 'OPS', 'BABIP',
-                'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'SB%'
+                'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'SB%', 'ERA-'
             ];
         }
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Individual Seasons
-            const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
+            const allSeasons = [...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
             for (const season of allSeasons) {
                 let seasonData = data.filter(p => p.Season === season);
                 if (selectedTeam) {
@@ -848,7 +848,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Individual Seasons
-            const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
+            const allSeasons = [...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
             for (const season of allSeasons) {
                 let seasonData = data.filter(p => p.Season === season);
                 if (selectedTeam) {
@@ -957,7 +957,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Individual Seasons
-            const allSeasons = Object.keys(state.seasons).sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
+            const allSeasons = [...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
             for (const season of allSeasons) {
                 const min_qual = isHitting ? (state.seasons[season] || 0) * 2 : (state.seasons[season] || 0) * 1;
                 let seasonData = data.filter(p => p.Season === season);
@@ -1002,7 +1002,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const gridContainer = document.createElement('div');
         gridContainer.className = 'leaderboard-grid';
 
-        const gridOrder = ['All-Time', 'Single Season', ...Object.keys(state.seasons).sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)))];
+        const gridOrder = ['All-Time', 'Single Season', ...[...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)))];
 
         for (const key of gridOrder) {
             const leaderboardInfo = leaderboards[key];
@@ -1713,7 +1713,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!tbody) return;
 
                 const lowerIsBetterHitting = ['Avg Diff'];
-                const lowerIsBetterPitching = ['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'RE24', 'HR%', 'BB%'];
+                const lowerIsBetterPitching = ['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'RE24', 'HR%', 'BB%', 'ERA-'];
                 const opponentStatsHighIsBetter = ['SB', 'CS'];
 
                 let isLowerBetter = false;
@@ -1931,7 +1931,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season && s.Team === actualTeamAbbr);
 
         // Find previous and next seasons for navigation
-        const allSeasons = Object.keys(state.seasons).map(s => parseInt(s.slice(1))).sort((a, b) => a - b);
+        const allSeasons = state.seasonsWithStats.map(s => parseInt(s.slice(1))).sort((a, b) => a - b);
         const currentSeasonIndex = allSeasons.indexOf(seasonNum);
 
         let prevSeasonNum = null;
