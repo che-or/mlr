@@ -2124,6 +2124,9 @@ def main():
                     team_stats_series['Team'] = team
                     team_hitting_records.append(team_stats_series)
             season_team_hitting_stats = pd.DataFrame(team_hitting_records)
+            if not season_team_hitting_stats.empty:
+                team_games = season_leaderboard_df.groupby('Batter Team')['Session'].nunique()
+                season_team_hitting_stats['G'] = season_team_hitting_stats['Team'].map(team_games)
 
             # --- Team Pitching Stats Calculation ---
             team_pitching_records = []
