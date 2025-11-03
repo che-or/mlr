@@ -71,13 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const parseIP = (ip) => {
-        if (ip === null || ip === undefined) return 0;
-        const innings = Math.floor(ip);
-        const outs = Math.round((ip - innings) * 10);
-        return innings + (outs / 3);
-    };
-
     const STAT_DEFINITIONS = {
         batting_tables: {
             'Batting Stats': ['Season', 'Team', 'WAR', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'BA', 'OBP', 'SLG', 'OPS', 'OPS+'],
@@ -998,9 +991,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         const season_min_qual = gamesInSeason * qualMultiplier;
                         return (p[min_qual_key] || 0) >= season_min_qual;
                     } else { // isPitching
-                        const season_min_qual_decimal = gamesInSeason * qualMultiplier;
-                        const player_ip_decimal = parseIP(p[min_qual_key] || 0);
-                        return player_ip_decimal >= season_min_qual_decimal;
+                        const season_min_qual = gamesInSeason * qualMultiplier;
+                        return (p[min_qual_key] || 0) >= season_min_qual;
                     }
                 });
             }
@@ -1044,9 +1036,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                                             const season_min_qual = gamesInSeason * qualMultiplier;
                                                             return (p[min_qual_key] || 0) >= season_min_qual;
                                                         } else { // isPitching
-                                                            const season_min_qual_decimal = gamesInSeason * qualMultiplier;
-                                                            const player_ip_decimal = parseIP(p[min_qual_key] || 0);
-                                                            return player_ip_decimal >= season_min_qual_decimal;
+                                                            const season_min_qual = gamesInSeason * qualMultiplier;
+                                                            return (p[min_qual_key] || 0) >= season_min_qual;
                                                         }
                                                     });
                                     
