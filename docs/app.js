@@ -71,6 +71,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const parseIP = (ip) => {
+        if (ip === null || ip === undefined) return 0;
+        const innings = Math.floor(ip);
+        const outs = Math.round((ip - innings) * 10);
+        return innings + (outs / 3);
+    };
+
     const STAT_DEFINITIONS = {
         batting_tables: {
             'Batting Stats': ['Season', 'Team', 'WAR', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'BA', 'OBP', 'SLG', 'OPS', 'OPS+'],
@@ -154,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const LEADERBOARD_ONLY_STATS = {
         hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO'],
-        pitching: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO']
+        pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO']
     };
 
 
@@ -596,6 +603,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         
+        const leaderboardLengthInput = elements.leaderboardLength;
+        
+
         updateView(); // Initial view
         
         elements.playerSearch.addEventListener('input', handlePlayerSearch);
@@ -657,6 +667,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateLeaderboardStatSelect = () => {
         const type = elements.leaderboardTypeSelect.value;
         const statSelect = elements.leaderboardStatSelect;
+        const previouslySelectedStat = statSelect.value;
+
+        // The adjustable minimum box has been removed.
+
         statSelect.innerHTML = '<option value="">-- Select Stat --</option>'; // Clear existing options
 
         const stats = (type === 'batting') 
@@ -664,13 +678,21 @@ document.addEventListener('DOMContentLoaded', () => {
             : Object.values(STAT_DEFINITIONS.pitching_tables).flat().concat(LEADERBOARD_ONLY_STATS.pitching);
 
         const uniqueStats = [...new Set(stats)].sort();
+        let newOptionsExist = false;
         uniqueStats.forEach(stat => {
             if (stat === 'Season' || stat === 'Team') return;
             const option = document.createElement('option');
             option.value = stat;
             option.textContent = stat;
             statSelect.appendChild(option);
+            if (stat === previouslySelectedStat) {
+                newOptionsExist = true;
+            }
         });
+
+        if (newOptionsExist) {
+            statSelect.value = previouslySelectedStat;
+        }
     };
 
     const handleLeaderboardView = () => {
@@ -684,6 +706,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const isHitting = type === 'batting';
         const reverseSort = elements.reverseSort.checked;
         const sortModifier = reverseSort ? -1 : 1;
+
+        const qualMultiplier = isHitting ? 2.0 : 1.0;
         
         let statKey = stat;
         if (isHitting) {
@@ -711,6 +735,8 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (stat === 'SB') statKey = 'SB_A';
             else if (stat === 'CS') statKey = 'CS_A';
             else if (stat === 'SB%') statKey = 'SB%_A';
+            else if (stat === '2B') statKey = '2B_A';
+            else if (stat === '3B') statKey = '3B_A';
         }
         
         const leaderboards = {};
@@ -723,7 +749,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'BAA', 'OBPA', 'SLGA', 'OPSA', 'BABIP_A',
                 'H6', 'HR6', 'BB6',
                 'BA', 'OBP', 'SLG', 'OPS', 'BABIP',
-                'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'SB%', 'ERA-'
+                'HR%', 'BB%', 'SB%', 'ERA-'
             ];
         }
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
@@ -968,8 +994,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 singleSeasonLeaderboard = singleSeasonData.filter(p => {
                     const gamesInSeason = state.seasons[p.Season] || 0;
-                    const season_min_qual = isHitting ? gamesInSeason * 2 : gamesInSeason * 1;
-                    return (p[min_qual_key] || 0) >= season_min_qual;
+                    if (isHitting) {
+                        const season_min_qual = gamesInSeason * qualMultiplier;
+                        return (p[min_qual_key] || 0) >= season_min_qual;
+                    } else { // isPitching
+                        const season_min_qual_decimal = gamesInSeason * qualMultiplier;
+                        const player_ip_decimal = parseIP(p[min_qual_key] || 0);
+                        return player_ip_decimal >= season_min_qual_decimal;
+                    }
                 });
             }
             if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
@@ -985,38 +1017,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Individual Seasons
             const allSeasons = [...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
-            for (const season of allSeasons) {
-                const min_qual = isHitting ? (state.seasons[season] || 0) * 2 : (state.seasons[season] || 0) * 1;
-                let seasonData = data.filter(p => p.Season === season);
-                if (selectedTeam) {
-                    const franchise = state.teamHistory[selectedTeam];
-                    if (franchise) {
-                        const seasonNum = parseInt(season.slice(1));
-                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
-                        if (correctAbbr) {
-                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
-                        } else { // This franchise didn't exist this season.
-                            seasonData = []; 
-                        }
-                    } else {
-                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
-                    }
-                } else {
-                    seasonData = seasonData.filter(p => !p.is_sub_row);
-                }
-                let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => (p[min_qual_key] || 0) >= min_qual);
-                if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
-                    leaderboardData = leaderboardData.filter(p => p[statKey] > 0);
-                }
-                leaderboardData.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
-                leaderboards[season] = {
-                    type: 'season',
-                    data: leaderboardData,
-                    isCountingStat: isCountingStat,
-                    min_qual: min_qual,
-                    min_qual_key: min_qual_key
-                };
-            }
+                                                for (const season of allSeasons) {
+                                                    let seasonData = data.filter(p => p.Season === season);
+                                                    if (selectedTeam) {
+                                                        const franchise = state.teamHistory[selectedTeam];
+                                                        if (franchise) {
+                                                            const seasonNum = parseInt(season.slice(1));
+                                                            const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                                                            if (correctAbbr) {
+                                                                seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                                                            } else { // This franchise didn't exist this season.
+                                                                seasonData = []; 
+                                                            }
+                                                        } else {
+                                                            seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                                                        }
+                                                    } else {
+                                                        seasonData = seasonData.filter(p => !p.is_sub_row);
+                                                    }
+                                    
+                                                    const min_qual = (state.seasons[season] || 0) * qualMultiplier;
+                                    
+                                                    let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => {
+                                                        const gamesInSeason = state.seasons[season] || 0;
+                                                        if (isHitting) {
+                                                            const season_min_qual = gamesInSeason * qualMultiplier;
+                                                            return (p[min_qual_key] || 0) >= season_min_qual;
+                                                        } else { // isPitching
+                                                            const season_min_qual_decimal = gamesInSeason * qualMultiplier;
+                                                            const player_ip_decimal = parseIP(p[min_qual_key] || 0);
+                                                            return player_ip_decimal >= season_min_qual_decimal;
+                                                        }
+                                                    });
+                                    
+                                                    if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
+                                                        leaderboardData = leaderboardData.filter(p => p[statKey] > 0);
+                                                    }
+                                                    leaderboardData.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
+                                                    leaderboards[season] = {
+                                                        type: 'season',
+                                                        data: leaderboardData,
+                                                        isCountingStat: isCountingStat,
+                                                        min_qual: min_qual,
+                                                        min_qual_key: min_qual_key
+                                                    };
+                                                }
         }
         renderLeaderboardGrid(leaderboards, stat, statKey, isHitting);
     };
@@ -1091,7 +1136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!leaderboardInfo.isCountingStat && leaderboardInfo.type !== 'single-season') {
-                const qual_text = `${leaderboardInfo.min_qual} ${leaderboardInfo.min_qual_key}`;
+                const qual_text = `${formatStat(leaderboardInfo.min_qual_key, leaderboardInfo.min_qual)} ${leaderboardInfo.min_qual_key}`;
                 title += `<p class="qualifier">(${qual_text} min)</p>`;
             }
             seasonCard.innerHTML = title;
