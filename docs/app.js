@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         divisions: './data/divisions.json', // Added
         teamHistory: './data/team_history.json',
         teamHitting: './data/team_hitting_stats.json',
-        teamPitching: './data/team_pitching_stats.json'
+        teamPitching: './data/team_pitching_stats.json',
+        gamelogErrors: './data/gamelog-errors.json'
     };
 
     const state = {
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         glossaryData: {},
         divisions: {}, // Added,
         teamHistory: {},
+        gamelogErrors: [],
         playerMap: new Map(),
         currentPlayerId: null,
         lastTeamStatsUrl: '#/team-stats',
@@ -160,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -170,7 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.divisions).then(res => res.json()), // Added
                 fetch(API.teamHistory).then(res => res.json()),
                 fetch(API.teamHitting).then(res => res.json()),
-                fetch(API.teamPitching).then(res => res.json())
+                fetch(API.teamPitching).then(res => res.json()),
+                fetch(API.gamelogErrors).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -183,6 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.glossaryData = glossary;
             state.divisions = divisions; // Added
             state.teamHistory = teamHistory;
+            state.gamelogErrors = gamelogErrors;
 
             const seasonsWithStats = new Set();
             state.hittingStats.forEach(s => {
@@ -374,6 +378,9 @@ document.addEventListener('DOMContentLoaded', () => {
             elements.homeView.style.display = 'block';
             elements.homeTab.classList.add('active');
             renderHome();
+        } else if (path === '#/gamelog-errors') {
+            elements.homeView.style.display = 'block';
+            renderGamelogErrors();
         } else if (isTeamStatsPath && teamParam) { // Specific team page (has 'team' parameter)
             // This branch handles #/team-stats?season=S11&team=ATL
             displayTeamStatsPage(decodeURIComponent(teamParam), seasonParam);
@@ -436,6 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
                     <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
                     <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
+                    <li><a href="#/gamelog-errors"><strong>Known Gamelog Errors:</strong></a> A list of known errors in the gamelogs. All these errors have been corrected for this app.</li>
                     <li><a href="https://forms.gle/nmLNL5PbF6bXrXpo9" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
                 </ul>
                 <br>
@@ -446,13 +454,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li> Awards (including All-Star appearances, MVP, etc.).</li>
                     <li> Player comparison.</li>
                     <li> Outcome calculator.</li>
-                    <li> Type+, a stat similar to OPS+ and ERA- but only comparing to players with the same batting/pitching type.</li>
                 </ul>
 
                 <h3 class="section-title">Today's Features</h3>
                 <div class="featured-section">
                     <div class="featured-item">
-                        <h4>Featured Player:</h4>
+                        <h4>Featured Player</h4>
                         <a href="#/stats" class="player-link" data-player-id="${featuredPlayerId1}">
                             ${playerMostRecentTeamLogo1 ? `<img src="${playerMostRecentTeamLogo1}" alt="${featuredPlayer1.currentName} team logo" class="team-list-logo">` : ''}
                             <p>${featuredPlayer1 ? featuredPlayer1.currentName : 'N/A'}</p>
@@ -460,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </a>
                     </div>
                     <div class="featured-item">
-                        <h4>Featured Player:</h4>
+                        <h4>Featured Player</h4>
                         <a href="#/stats" class="player-link" data-player-id="${featuredPlayerId2}">
                             ${playerMostRecentTeamLogo2 ? `<img src="${playerMostRecentTeamLogo2}" alt="${featuredPlayer2.currentName} team logo" class="team-list-logo">` : ''}
                             <p>${featuredPlayer2 ? featuredPlayer2.currentName : 'N/A'}</p>
@@ -468,7 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </a>
                     </div>
                     <div class="featured-item">
-                        <h4>Featured Team:</h4>
+                        <h4>Featured Team</h4>
                         <a href="#/team-stats?season=${featuredTeamSeason}&team=${featuredTeamKey}">
                             ${featuredTeamLogo ? `<img src="${featuredTeamLogo}" alt="${featuredTeamName} logo" class="team-list-logo">` : ''}
                             <p>${featuredTeamSeason} ${featuredTeamName || 'N/A'}</p>
@@ -564,8 +571,31 @@ document.addEventListener('DOMContentLoaded', () => {
         content.innerHTML = entryHTML;
     };
 
+    const renderGamelogErrors = () => {
+        let content = '<div class="welcome-container">';
+        content += '<h2 class="section-title">Known Gamelog Errors</h2>';
+
+        if (state.gamelogErrors && state.gamelogErrors.length > 0) {
+            state.gamelogErrors.forEach(error => {
+                const header = `${error.season}.${error.session} (Game ${error.game}), ${error.away_team} @ ${error.home_team}`;
+                content += `<div class="gamelog-error-item">`;
+                content += `<h4>${header.replace(/null/g, 'N/A')}</h4>`;
+                content += `<p>${error.description || 'No description provided.'}</p>`;
+                content += `</div>`;
+            });
+        } else {
+            content += '<p>No known gamelog errors.</p>';
+        }
+
+        content += '</div>';
+        elements.homeView.innerHTML = content;
+    };
+
     const initializeApp = () => {
         window.addEventListener('hashchange', updateView);
+
+
+        
         updateView(); // Initial view
         
         elements.playerSearch.addEventListener('input', handlePlayerSearch);
