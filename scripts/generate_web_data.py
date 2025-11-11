@@ -1807,13 +1807,6 @@ def main():
         runners_map = {0:[False,False,False], 1:[True,False,False], 2:[False,True,False], 3:[False,False,True], 4:[True,True,False], 5:[True,False,True], 6:[False,True,True], 7:[True,True,True]}
         
         def get_re24_components(row):
-            is_last_play_of_inning = pd.isna(row['obc_after_raw'])
-            
-            if not is_last_play_of_inning:
-                re_after = re_matrix.get((int(row['obc_after_raw']), int(row['outs_after_raw'])), 0)
-                runs_on_play = row['Run']
-                return pd.Series([re_after, runs_on_play])
-
             runners_before = runners_map.get(row['OBC'], [False, False, False])
             result = row['Exact Result'] if pd.notna(row['Exact Result']) else row['Old Result']
             diff_val = pd.to_numeric(row.get('Diff'), errors='coerce')
@@ -1828,9 +1821,11 @@ def main():
             
             outs_after = row['Outs'] + outs_for_play
             
-            if outs_after >= 3 or not row['is_last_play_of_game']:
+            is_last_play_of_inning = pd.isna(row['obc_after_raw'])
+
+            if outs_after >= 3 or is_last_play_of_inning:
                 re_after = 0
-            else: # Walk-off logic
+            else:
                 obc_after = game_simulator._runners_to_obc(tuple(new_runners))
                 re_after = re_matrix.get((obc_after, outs_after), 0)
                 
