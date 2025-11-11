@@ -51,3 +51,12 @@ Since the web application is built with static files (HTML, CSS, JS), it can be 
 - **`scripts/data_loader.py`**: Handles the loading of season data from Google Sheets URLs listed in `data/gamelogs.txt`.
 - **`scripts/game_processing.py`**: Contains the core logic for simulating game play-by-play, determining pitching decisions (Win, Loss, Save, Hold), and calculating advanced metrics.
 - **`scripts/generate_web_data.py`**: The primary script for processing all raw game data, calculating comprehensive player and team statistics (including OPS+, ERA+, FIP, WAR, RE24), and exporting all necessary data into JSON files for the web application. This script also handles player ID reconciliation, stat corrections for pinch runners and multi-steals, and generates run expectancy matrices.
+
+## Maintenance Information
+
+The site requires maintenance at the beginning of seasons.
+
+- **`data/gamelogs.txt`** needs to be updated to include the new season. A new row with the format {season}*tab*{number_of_sessions}*tab*{gamelog_url} should be added to the file.
+- **`docs/data/divisions.json`** needs to be updated if division realignment occurs.
+- **`docs/data/team_history.json`** needs to be updated if a franchise changes its name, abbreviation, or logo. This will also need to be updated if teams are added or removed from the league.
+- **`scripts/game_processing.py`** needs to be updated if a logical change has been made to the game rules. The `_simulate_play` function tracks the resulting base-out state of outcomes. This is a fairly complex change. Logical changes are made infrequently, the most recent being the addition of lineouts. Changes that don't affect logic (e.g. changes to player types) can be ignored. This file only needs to be updated if a new rule redefines how runners move in a certain situation.
