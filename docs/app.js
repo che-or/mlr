@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
         teamHistory: './data/team_history.json',
         teamHitting: './data/team_hitting_stats.json',
         teamPitching: './data/team_pitching_stats.json',
-        gamelogErrors: './data/gamelog-errors.json'
+        gamelogErrors: './data/gamelog-errors.json',
+        typeDefinitions: './data/type_definitions.json',
+        playerInfo: './data/player_info.json'
     };
 
     const state = {
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
         divisions: {}, // Added,
         teamHistory: {},
         gamelogErrors: [],
+        typeDefinitions: {},
+        playerInfo: {},
         playerMap: new Map(),
         currentPlayerId: null,
         lastTeamStatsUrl: '#/team-stats',
@@ -73,11 +77,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const STAT_DEFINITIONS = {
         batting_tables: {
-            'Batting Stats': ['Season', 'Team', 'Type', 'WAR', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'BA', 'OBP', 'SLG', 'OPS', 'OPS+'],
+            'Standard Batting': ['Season', 'Team', 'Type', 'WAR', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'BA', 'OBP', 'SLG', 'OPS', 'OPS+'],
             'Advanced Batting': ['Season', 'Team', 'TB', 'GIDP', 'SH', 'SF', 'BABIP', 'ISO', 'HR%', 'SO%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'SB%', 'Avg Diff']
         },
         pitching_tables: {
-            'Pitching Stats': ['Season', 'Team', 'Type', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA-'],
+            'Standard Pitching': ['Season', 'Team', 'Type', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA-'],
             'Advanced Pitching': ['Season', 'Team', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'SO6', 'SO/BB', 'HR%', 'K%', 'BB%', 'GB%', 'FB%', 'GB/FB', 'WPA', 'RE24', 'Avg Diff'],
             'Opponent Stats': ['Season', 'Team', 'BA', 'OBP', 'SLG', 'OPS', 'BABIP', 'SB', 'CS', 'SB%']
         }
@@ -162,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -173,7 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.teamHistory).then(res => res.json()),
                 fetch(API.teamHitting).then(res => res.json()),
                 fetch(API.teamPitching).then(res => res.json()),
-                fetch(API.gamelogErrors).then(res => res.json())
+                fetch(API.gamelogErrors).then(res => res.json()),
+                fetch(API.typeDefinitions).then(res => res.json()),
+                fetch(API.playerInfo).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -187,6 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
             state.divisions = divisions; // Added
             state.teamHistory = teamHistory;
             state.gamelogErrors = gamelogErrors;
+            state.typeDefinitions = typeDefinitions;
+            state.playerInfo = playerInfo;
 
             const seasonsWithStats = new Set();
             state.hittingStats.forEach(s => {
@@ -673,7 +681,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const uniqueStats = [...new Set(stats)].sort();
         let newOptionsExist = false;
         uniqueStats.forEach(stat => {
-            if (stat === 'Season' || stat === 'Team') return;
+            if (stat === 'Season' || stat === 'Team' || stat === 'Type') return;
             const option = document.createElement('option');
             option.value = stat;
             option.textContent = stat;
@@ -1572,6 +1580,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
         titleHTML += `<p class="player-id-display">Player ID: ${playerId}</p>`;
 
+        const playerInfo = state.playerInfo[playerId];
+        if (playerInfo) {
+            let info = [];
+            if (playerInfo.primary_position && state.typeDefinitions.position && state.typeDefinitions.position[playerInfo.primary_position]) {
+                info.push(`Position: ${state.typeDefinitions.position[playerInfo.primary_position]}`);
+            }
+            if (playerInfo.handedness && state.typeDefinitions.handedness && state.typeDefinitions.handedness[playerInfo.handedness]) {
+                info.push(`Handedness: ${state.typeDefinitions.handedness[playerInfo.handedness]}`);
+            }
+            if (playerInfo.batting_type && state.typeDefinitions.batting && state.typeDefinitions.batting[playerInfo.batting_type]) {
+                info.push(`Batting: ${state.typeDefinitions.batting[playerInfo.batting_type]}`);
+            }
+            if (playerInfo.pitching_type && state.typeDefinitions.pitching && state.typeDefinitions.pitching[playerInfo.pitching_type]) {
+                info.push(`Pitching: ${state.typeDefinitions.pitching[playerInfo.pitching_type]}`);
+            }
+            if (info.length > 0) {
+                titleHTML += `<div class="player-info">`;
+                if (playerInfo.primary_position && state.typeDefinitions.position && state.typeDefinitions.position[playerInfo.primary_position]) {
+                    titleHTML += `<p><strong>Position:</strong> ${state.typeDefinitions.position[playerInfo.primary_position]}</p>`;
+                }
+                if (playerInfo.handedness && state.typeDefinitions.handedness && state.typeDefinitions.handedness[playerInfo.handedness]) {
+                    titleHTML += `<p><strong>Handedness:</strong> ${state.typeDefinitions.handedness[playerInfo.handedness]}</p>`;
+                }
+                if (playerInfo.batting_type && state.typeDefinitions.batting && state.typeDefinitions.batting[playerInfo.batting_type]) {
+                    titleHTML += `<p><strong>Batting:</strong> ${state.typeDefinitions.batting[playerInfo.batting_type]}</p>`;
+                }
+                if (playerInfo.pitching_type && state.typeDefinitions.pitching && state.typeDefinitions.pitching[playerInfo.pitching_type]) {
+                    titleHTML += `<p><strong>Pitching:</strong> ${state.typeDefinitions.pitching[playerInfo.pitching_type]}</p>`;
+                }
+                titleHTML += `</div>`;
+            }
+        }
+
         if (player.formerNames && player.formerNames.length > 0) {
             titleHTML += `<p class="former-names">Formerly known as: ${player.formerNames.join(', ')}</p>`;
         }
@@ -2332,7 +2373,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
 
-                        html += `<td>${formatStat(stat, value)}</td>`;
+                        let cellHTML = `<td>${formatStat(stat, value)}</td>`;
+                        if (stat === 'Type' && value) {
+                            const typeCategory = isPitching ? 'pitching' : 'batting';
+                            if (state.typeDefinitions[typeCategory] && state.typeDefinitions[typeCategory][value]) {
+                                cellHTML = `<td title="${state.typeDefinitions[typeCategory][value]}">${formatStat(stat, value)}</td>`;
+                            }
+                        }
+                        html += cellHTML;
                     }
                 });
                 html += '</tr>';

@@ -181,6 +181,19 @@ def load_player_types(force_seasons=None):
                 continue
         
         if df is not None:
+            if 'Batting Type' in df.columns:
+                df['Batting Type'] = df['Batting Type'].str.upper()
+            if 'Pitching Type' in df.columns:
+                df['Pitching Type'] = df['Pitching Type'].str.upper()
+                df['Pitching Type'] = df['Pitching Type'].replace({'FB': 'FP', 'NTH': 'NT'})
+            
+            if 'Pitching Bonus' in df.columns and 'Pitching Type' in df.columns:
+                df['Pitching Bonus'] = df['Pitching Bonus'].str.upper()
+                # Combine Pitching Type and Pitching Bonus
+                df['Pitching Type'] = df.apply(
+                    lambda row: f"{row['Pitching Type']}-{row['Pitching Bonus']}" if pd.notna(row['Pitching Bonus']) and row['Pitching Bonus'] != '' else row['Pitching Type'],
+                    axis=1
+                )
             player_type_data[season] = df
 
     return player_type_data

@@ -622,6 +622,15 @@ def calculate_career_hitting_stats(df, league_stats_by_season):
     career_stats['Avg Diff'] = avg_diff
     career_stats['nOBP'] = obp
     career_stats['nSLG'] = slg
+
+    season_stats = df[df['Season'].str.startswith('S')]
+    player_type = None
+    if not season_stats.empty:
+        unique_types = season_stats['Type'].dropna().unique()
+        if len(unique_types) == 1:
+            player_type = unique_types[0]
+    career_stats['Type'] = player_type
+
     return career_stats
 
 def calculate_career_pitching_stats(df, league_n_era_by_season):
@@ -802,6 +811,15 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     career_stats['FIP'] = fip
     career_stats['ERA-'] = era_minus
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
+
+    season_stats = df[df['Season'].str.startswith('S')]
+    player_type = None
+    if not season_stats.empty:
+        unique_types = season_stats['Type'].dropna().unique()
+        if len(unique_types) == 1:
+            player_type = unique_types[0]
+    career_stats['Type'] = player_type
+
     return career_stats
 
 def get_base_state_svg(obc):
@@ -1612,8 +1630,66 @@ def main():
     player_type_data = load_player_types(force_seasons=force_recalc_seasons)
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
-    # --- Player ID Reconciliation ---
+    print("Processing player info data...")
+    player_info = {}
+    if player_type_data:
+        # Sort by season number to ensure correctness
+        sorted_seasons = sorted(player_type_data.keys(), key=lambda s: int(s.replace('S', '')))
+        for season in sorted_seasons:
+            df = player_type_data[season]
+            
+            # Ensure all required columns exist, fill with None if not
+            required_cols = ['Player ID', 'Primary Position', 'Batting Type', 'Pitching Type', 'Handedness']
+            for col in required_cols:
+                if col not in df.columns:
+                    df[col] = None
+
+            df = df[required_cols].copy()
+            df.rename(columns={'Player ID': 'player_id', 'Primary Position': 'primary_position', 'Batting Type': 'batting_type', 'Pitching Type': 'pitching_type', 'Handedness': 'handedness'}, inplace=True)
+            df['player_id'] = pd.to_numeric(df['player_id'], errors='coerce')
+            df.dropna(subset=['player_id'], inplace=True)
+            df['player_id'] = df['player_id'].astype(int)
+            df.set_index('player_id', inplace=True)
+            df = df.where(pd.notnull(df), None)
+            
+            # Convert to dict and update player_info, ensuring we don't overwrite with None
+            new_data = df.to_dict('index')
+            for pid, data in new_data.items():
+                if pid not in player_info:
+                    player_info[pid] = {}
+                for key, value in data.items():
+                    if value is not None:
+                        player_info[pid][key] = value
+
+    # Save the combined player info to a JSON file
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'player_info.json')
+    with open(output_path, 'w') as f:
+        json.dump(player_info, f)
+    print(f"Player info data saved to {output_path}")
+
+    # The following code block is commented out because the user wants to manually edit the type_definitions.json file.
+    # To regenerate the file, uncomment this block.
+    # all_batting_types = set()
+    # all_pitching_types = set()
+    # if player_type_data:
+    #     for season in player_type_data:
+    #         df = player_type_data[season]
+    #         all_batting_types.update(df['Batting Type'].dropna().unique())
+    #         all_pitching_types.update(df['Pitching Type'].dropna().unique())
+    #
+    # type_definitions = {
+    #     'batting': {t: f"Description for {t}" for t in sorted(list(all_batting_types))},
+    #     'pitching': {t: f"Description for {t}" for t in sorted(list(all_pitching_types))}
+    # }
+    #
+    # output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'type_definitions.json')
+    # with open(output_path, 'w') as f:
+    #     json.dump(type_definitions, f, indent=4)
+    # print(f"Type definitions saved to {output_path}")
+
     print("Reconciling player IDs across seasons...")
+    # Reconcile player IDs
+    # This is a bit of a mess, but it works.
 
     # Create a map of player names to their IDs and seasons from the data
     hitters_with_ids = combined_df[combined_df['Hitter ID'].notna()][['Hitter ID', 'Hitter', 'Season']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
@@ -1944,7 +2020,7 @@ def main():
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
 
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
-    game_achievements_df = calculate_game_achievements(leaderboard_df)
+    game_achievements_df = calculate_game_achievements(decision_games_df)
 
     print("Calculating league-wide stats for OPS+...")
     league_stats_by_season = {}
