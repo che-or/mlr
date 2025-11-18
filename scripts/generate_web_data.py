@@ -2408,6 +2408,21 @@ def main():
                 all_team_pitching_stats_for_json[col] = all_team_pitching_stats_for_json[col].round(3)
         all_team_pitching_stats_for_json.to_json(os.path.join(output_dir, 'team_pitching_stats.json'), orient='split', index=False)
 
+    # --- Scouting Reports ---
+    print("Generating scouting reports...")
+    scouting_reports = {}
+    all_pitcher_ids = combined_df['Pitcher ID'].unique()
+    for pitcher_id in all_pitcher_ids:
+        if pitcher_id <= 0: continue
+        pitcher_df = combined_df[combined_df['Pitcher ID'] == pitcher_id]
+        report = get_scouting_report_data(pitcher_id, pitcher_df)
+        if report:
+            scouting_reports[int(pitcher_id)] = report
+    
+    output_path = os.path.join(output_dir, 'scouting_reports.json')
+    with open(output_path, 'w') as f:
+        json.dump(scouting_reports, f)
+
     print("Done!")
 
 if __name__ == "__main__":
