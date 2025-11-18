@@ -2134,8 +2134,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const createTeamStatsTable = (title, stats, isPitching, teamTotals) => {
         let html = `<h3>${title}</h3>`;
         const statKeys = isPitching 
-            ? STAT_DEFINITIONS.pitching_tables['Pitching Stats']
-            : STAT_DEFINITIONS.batting_tables['Batting Stats'];
+            ? STAT_DEFINITIONS.pitching_tables['Standard Pitching']
+            : STAT_DEFINITIONS.batting_tables['Standard Batting'];
         
         const headers = ['Player', ...statKeys.filter(s => s !== 'Season' && s !== 'Team')];
 

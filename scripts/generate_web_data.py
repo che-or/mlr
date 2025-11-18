@@ -1665,7 +1665,6 @@ def main():
     output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'player_info.json')
     with open(output_path, 'w') as f:
         json.dump(player_info, f)
-    print(f"Player info data saved to {output_path}")
 
     # The following code block is commented out because the user wants to manually edit the type_definitions.json file.
     # To regenerate the file, uncomment this block.
@@ -2376,6 +2375,10 @@ def main():
     print("Exporting data for web app...")
     output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data')
     if not os.path.exists(output_dir): os.makedirs(output_dir)
+
+    # Save player ID map
+    with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f:
+        json.dump(player_id_map, f, indent=4)
 
     # Save main stats
     all_hitting_stats.replace([float('inf'), float('-inf')], None, inplace=True)
