@@ -1,4 +1,4 @@
-from data_loader import load_all_seasons
+from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
 from gamelog_corrections import apply_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
@@ -227,6 +227,8 @@ def calculate_hitting_stats(df, season=None):
     nOBP = obp
     nSLG = slg
 
+    batting_type = df['Hitter Batting Type'].iloc[0] if 'Hitter Batting Type' in df.columns and not df['Hitter Batting Type'].dropna().empty else None
+
     return pd.Series({
         'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '1B': num_singles, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'TB': num_tb, 'RBI': rbi,
         'BB': num_walks, 'IBB': num_ibb, 'K': num_strikeouts, 'Auto K': num_auto_k, 'SB': num_sb, 'CS': num_cs, 'SH': num_sh, 'SF': num_sf, 'GIDP': num_gidp,
@@ -236,7 +238,8 @@ def calculate_hitting_stats(df, season=None):
         'GB%': gb_pct, 'FB%': fb_pct, 'GB/FB': gb_fb_ratio,
         'Avg Diff': avg_diff,
         'nOBP': nOBP, 'nSLG': nSLG, 'RE24': re24, 'WPA': wpa,
-        'GB_outs': num_gb_outs, 'FB_outs': num_fb_outs
+        'GB_outs': num_gb_outs, 'FB_outs': num_fb_outs,
+        'Type': batting_type
     })
 
 def calculate_pitching_stats(df, season=None):
@@ -373,6 +376,8 @@ def calculate_pitching_stats(df, season=None):
     bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else pd.NA
     k6 = (num_strikeouts / ip) * 6 if ip > 0 else pd.NA
     k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else pd.NA
+
+    pitching_type = df['Pitcher Pitching Type'].iloc[0] if 'Pitcher Pitching Type' in df.columns and not df['Pitcher Pitching Type'].dropna().empty else None
     
     return pd.Series({
         'G': games_played, 'IP': ip, 'BF': num_bf, 'H': num_hits_allowed, 'R': runs_allowed, 'ER': earned_runs, 'BB': num_walks_allowed, 'IBB': num_ibb, 'Auto BB': num_auto_bb_allowed, 'K': num_strikeouts, 'HR': num_hr_allowed,
@@ -389,7 +394,8 @@ def calculate_pitching_stats(df, season=None):
         'AB_A': ab_against, 'SF_A': num_sf_allowed, 'SH_A': num_sh_allowed,
         '2B_A': num_doubles_allowed, '3B_A': num_triples_allowed,
         'GB_outs_A': num_gb_outs_allowed, 'FB_outs_A': num_fb_outs_allowed,
-        'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against
+        'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against,
+        'Type': pitching_type
     })
 
 def calculate_team_hitting_stats(df, league_stats_for_season):
@@ -1599,8 +1605,11 @@ def aggregate_decisions(df, games_df):
 
 def main():
     print("Loading all season data... (this may take a moment)")
-    all_season_data, most_recent_season = load_all_seasons()
+    all_season_data, most_recent_season, force_recalc_seasons = load_all_seasons()
     if not all_season_data: return
+
+    print("Loading player type data...")
+    player_type_data = load_player_types(force_seasons=force_recalc_seasons)
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
     # --- Player ID Reconciliation ---
@@ -1684,12 +1693,22 @@ def main():
     ).reset_index()
     print("Gamelog corrections applied.")
 
-    # Calculate pitching decisions on the raw data
+    # Exclude in-progress games from the most recent season for pitching decisions
+    decision_games_df = combined_df.copy()
+    if most_recent_season:
+        most_recent_season_df = combined_df[combined_df['Season'] == most_recent_season]
+        if not most_recent_season_df.empty:
+            max_session = most_recent_season_df['Session'].max()
+            print(f"Excluding games from session {max_session} of {most_recent_season} from pitching decision calculations.")
+            decision_games_mask = ~((combined_df['Season'] == most_recent_season) & (combined_df['Session'] == max_session))
+            decision_games_df = combined_df[decision_games_mask]
+
+    # Calculate pitching decisions on the filtered data
     print("Calculating pitching decisions (W, L, SV, HLD)...")
     pitching_decisions = []
-    game_groups = list(combined_df.groupby(['Season', 'Game ID']))
+    game_groups = list(decision_games_df.groupby(['Season', 'Game ID']))
     num_games = len(game_groups)
-    print(f"  Processing {num_games} games...")
+    print(f"  Processing {num_games} games for decisions...")
     for i, ((season, game_id), game_df) in enumerate(game_groups):
         if (i + 1) % 100 == 0:
             print(f"  ... {i + 1} / {num_games} games processed")
@@ -1942,6 +1961,17 @@ def main():
     for season in sorted_seasons:
         force_recalc = (season == most_recent_season) or (season in seasons_to_recalc)
         season_leaderboard_df = leaderboard_df[leaderboard_df['Season'] == season]
+
+        if player_type_data and season in player_type_data:
+            player_types_df = player_type_data[season][['Player ID', 'Batting Type', 'Pitching Type']]
+            
+            # Merge for hitters
+            hitter_types_df = player_types_df.rename(columns={'Player ID': 'Hitter ID', 'Batting Type': 'Hitter Batting Type', 'Pitching Type': 'Hitter Pitching Type'})
+            season_leaderboard_df = pd.merge(season_leaderboard_df, hitter_types_df, on='Hitter ID', how='left')
+            
+            # Merge for pitchers
+            pitcher_types_df = player_types_df.rename(columns={'Player ID': 'Pitcher ID', 'Batting Type': 'Pitcher Batting Type', 'Pitching Type': 'Pitcher Pitching Type'})
+            season_leaderboard_df = pd.merge(season_leaderboard_df, pitcher_types_df, on='Pitcher ID', how='left')
 
         hitting_cache_path = os.path.join(cache_dir, f'hitting_stats_{season}.csv')
         pitching_cache_path = os.path.join(cache_dir, f'pitching_stats_{season}.csv')
