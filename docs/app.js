@@ -1580,6 +1580,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         titleHTML += `<p class="player-id-display">Player ID: ${playerId}</p>`;
 
+        if (player.formerNames && player.formerNames.length > 0) {
+            titleHTML += `<p class="former-names">Formerly known as: ${player.formerNames.join(', ')}</p>`;
+        }
+
         const playerInfo = state.playerInfo[playerId];
         if (playerInfo) {
             let info = [];
@@ -1611,10 +1615,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 titleHTML += `</div>`;
             }
-        }
-
-        if (player.formerNames && player.formerNames.length > 0) {
-            titleHTML += `<p class="former-names">Formerly known as: ${player.formerNames.join(', ')}</p>`;
         }
         elements.statsContentDisplay.innerHTML = titleHTML;
 

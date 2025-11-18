@@ -25,7 +25,7 @@
         "BF-B": "Basic Finesse, Balanced",
         "BF-H": "Basic Finesse, Anti-Homer",
         "BF-S": "Basic Finesse, Anti-Single",
-        "BS-B": "Basic Strikeout, Balnced",
+        "BS-B": "Basic Strikeout, Balanced",
         "BS-H": "Basic Strikeout, Anti-Homer",
         "BS-S": "Basic Strikeout, Anti-Single",
         "EG-B": "Extreme Groundballer, Balanced",
@@ -69,7 +69,8 @@
         "1B": "First Baseman",
         "LF": "Left Fielder",
         "RF": "Right Fielder",
-        "DH": "Designated Hitter"
+        "DH": "Designated Hitter",
+        "PH": "Pinch Hitter"
     },
     "handedness": {
         "Right": "Right",
