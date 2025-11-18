@@ -127,7 +127,76 @@ def load_all_seasons():
                 print(f"Warning: Invalid number of games for season '{season}'.")
 
     _write_cache_manifest(cache_dir, most_recent_season)
-    return season_data, most_recent_season
+    return season_data, most_recent_season, [most_recent_season] + seasons_to_recalc if most_recent_season else seasons_to_recalc
+
+def load_player_types(force_seasons=None):
+    """Loads all player type data from the sheets specified in player_types.txt."""
+    player_type_data = {}
+    
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    player_types_path = os.path.join(script_dir, '..', 'data', 'player_types.txt')
+    cache_dir = os.path.join(script_dir, '..', 'data', 'cache', 'raw_player_types')
+    if not os.path.exists(cache_dir):
+        os.makedirs(cache_dir)
+
+    try:
+        with open(player_types_path, 'r') as f:
+            player_type_sheets = f.readlines()
+    except FileNotFoundError:
+        print(f"Info: Could not find player_types.txt at {player_types_path}. Skipping player type loading.")
+        return {}
+
+    force_seasons = force_seasons or []
+
+    for line in player_type_sheets:
+        parts = line.strip().split('\t')
+        if len(parts) != 2:
+            continue
+
+        season, url = parts
+        force_recalc = season in force_seasons
+        raw_cache_path = os.path.join(cache_dir, f'raw_player_types_{season}.csv')
+
+        df = None
+        if os.path.exists(raw_cache_path) and not force_recalc:
+            try:
+                df = pd.read_csv(raw_cache_path)
+                print(f"Loaded {season} player types from local cache.")
+            except Exception as e:
+                print(f"Error loading {season} player types from cache: {e}. Re-downloading...")
+                df = None
+
+        if df is None:
+            export_url = get_export_url(url)
+            if export_url:
+                try:
+                    print(f"Downloading player types for {season}...")
+                    df = pd.read_csv(export_url)
+                    df.to_csv(raw_cache_path, index=False)
+                except Exception as e:
+                    print(f"Error loading player types for {season} from URL: {e}")
+                    continue
+            else:
+                print(f"Could not generate export URL for {url}")
+                continue
+        
+        if df is not None:
+            if 'Batting Type' in df.columns:
+                df['Batting Type'] = df['Batting Type'].str.upper()
+            if 'Pitching Type' in df.columns:
+                df['Pitching Type'] = df['Pitching Type'].str.upper()
+                df['Pitching Type'] = df['Pitching Type'].replace({'FB': 'FP', 'NTH': 'NT'})
+            
+            if 'Pitching Bonus' in df.columns and 'Pitching Type' in df.columns:
+                df['Pitching Bonus'] = df['Pitching Bonus'].str.upper()
+                # Combine Pitching Type and Pitching Bonus
+                df['Pitching Type'] = df.apply(
+                    lambda row: f"{row['Pitching Type']}-{row['Pitching Bonus']}" if pd.notna(row['Pitching Bonus']) and row['Pitching Bonus'] != '' else row['Pitching Type'],
+                    axis=1
+                )
+            player_type_data[season] = df
+
+    return player_type_data
 
 if __name__ == '__main__':
     # Example usage:
@@ -137,7 +206,7 @@ if __name__ == '__main__':
         print("The 'pandas' library is not installed. Please install it using 'pip install pandas'")
         sys.exit(1)
     else:
-        all_data, _ = load_all_seasons()
+        all_data, _, _ = load_all_seasons()
         if all_data:
             print(f"\nSuccessfully loaded data for {len(all_data)} seasons.")
             # For example, print the first 5 rows of Season 5's data

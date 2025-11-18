@@ -1,4 +1,4 @@
-from data_loader import load_all_seasons
+from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
 from gamelog_corrections import apply_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
@@ -227,6 +227,8 @@ def calculate_hitting_stats(df, season=None):
     nOBP = obp
     nSLG = slg
 
+    batting_type = df['Hitter Batting Type'].iloc[0] if 'Hitter Batting Type' in df.columns and not df['Hitter Batting Type'].dropna().empty else None
+
     return pd.Series({
         'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '1B': num_singles, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'TB': num_tb, 'RBI': rbi,
         'BB': num_walks, 'IBB': num_ibb, 'K': num_strikeouts, 'Auto K': num_auto_k, 'SB': num_sb, 'CS': num_cs, 'SH': num_sh, 'SF': num_sf, 'GIDP': num_gidp,
@@ -236,7 +238,8 @@ def calculate_hitting_stats(df, season=None):
         'GB%': gb_pct, 'FB%': fb_pct, 'GB/FB': gb_fb_ratio,
         'Avg Diff': avg_diff,
         'nOBP': nOBP, 'nSLG': nSLG, 'RE24': re24, 'WPA': wpa,
-        'GB_outs': num_gb_outs, 'FB_outs': num_fb_outs
+        'GB_outs': num_gb_outs, 'FB_outs': num_fb_outs,
+        'Type': batting_type
     })
 
 def calculate_pitching_stats(df, season=None):
@@ -373,6 +376,8 @@ def calculate_pitching_stats(df, season=None):
     bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else pd.NA
     k6 = (num_strikeouts / ip) * 6 if ip > 0 else pd.NA
     k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else pd.NA
+
+    pitching_type = df['Pitcher Pitching Type'].iloc[0] if 'Pitcher Pitching Type' in df.columns and not df['Pitcher Pitching Type'].dropna().empty else None
     
     return pd.Series({
         'G': games_played, 'IP': ip, 'BF': num_bf, 'H': num_hits_allowed, 'R': runs_allowed, 'ER': earned_runs, 'BB': num_walks_allowed, 'IBB': num_ibb, 'Auto BB': num_auto_bb_allowed, 'K': num_strikeouts, 'HR': num_hr_allowed,
@@ -389,7 +394,8 @@ def calculate_pitching_stats(df, season=None):
         'AB_A': ab_against, 'SF_A': num_sf_allowed, 'SH_A': num_sh_allowed,
         '2B_A': num_doubles_allowed, '3B_A': num_triples_allowed,
         'GB_outs_A': num_gb_outs_allowed, 'FB_outs_A': num_fb_outs_allowed,
-        'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against
+        'SB_A': num_sb_allowed, 'CS_A': num_cs_against, 'SB%_A': sb_pct_against,
+        'Type': pitching_type
     })
 
 def calculate_team_hitting_stats(df, league_stats_for_season):
@@ -616,6 +622,15 @@ def calculate_career_hitting_stats(df, league_stats_by_season):
     career_stats['Avg Diff'] = avg_diff
     career_stats['nOBP'] = obp
     career_stats['nSLG'] = slg
+
+    season_stats = df[df['Season'].str.startswith('S')]
+    player_type = None
+    if not season_stats.empty:
+        unique_types = season_stats['Type'].dropna().unique()
+        if len(unique_types) == 1:
+            player_type = unique_types[0]
+    career_stats['Type'] = player_type
+
     return career_stats
 
 def calculate_career_pitching_stats(df, league_n_era_by_season):
@@ -796,6 +811,15 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     career_stats['FIP'] = fip
     career_stats['ERA-'] = era_minus
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
+
+    season_stats = df[df['Season'].str.startswith('S')]
+    player_type = None
+    if not season_stats.empty:
+        unique_types = season_stats['Type'].dropna().unique()
+        if len(unique_types) == 1:
+            player_type = unique_types[0]
+    career_stats['Type'] = player_type
+
     return career_stats
 
 def get_base_state_svg(obc):
@@ -1599,12 +1623,72 @@ def aggregate_decisions(df, games_df):
 
 def main():
     print("Loading all season data... (this may take a moment)")
-    all_season_data, most_recent_season = load_all_seasons()
+    all_season_data, most_recent_season, force_recalc_seasons = load_all_seasons()
     if not all_season_data: return
+
+    print("Loading player type data...")
+    player_type_data = load_player_types(force_seasons=force_recalc_seasons)
     combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
-    # --- Player ID Reconciliation ---
+    print("Processing player info data...")
+    player_info = {}
+    if player_type_data:
+        # Sort by season number to ensure correctness
+        sorted_seasons = sorted(player_type_data.keys(), key=lambda s: int(s.replace('S', '')))
+        for season in sorted_seasons:
+            df = player_type_data[season]
+            
+            # Ensure all required columns exist, fill with None if not
+            required_cols = ['Player ID', 'Primary Position', 'Batting Type', 'Pitching Type', 'Handedness']
+            for col in required_cols:
+                if col not in df.columns:
+                    df[col] = None
+
+            df = df[required_cols].copy()
+            df.rename(columns={'Player ID': 'player_id', 'Primary Position': 'primary_position', 'Batting Type': 'batting_type', 'Pitching Type': 'pitching_type', 'Handedness': 'handedness'}, inplace=True)
+            df['player_id'] = pd.to_numeric(df['player_id'], errors='coerce')
+            df.dropna(subset=['player_id'], inplace=True)
+            df['player_id'] = df['player_id'].astype(int)
+            df.set_index('player_id', inplace=True)
+            df = df.where(pd.notnull(df), None)
+            
+            # Convert to dict and update player_info, ensuring we don't overwrite with None
+            new_data = df.to_dict('index')
+            for pid, data in new_data.items():
+                if pid not in player_info:
+                    player_info[pid] = {}
+                for key, value in data.items():
+                    if value is not None:
+                        player_info[pid][key] = value
+
+    # Save the combined player info to a JSON file
+    output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'player_info.json')
+    with open(output_path, 'w') as f:
+        json.dump(player_info, f)
+
+    # The following code block is commented out because the user wants to manually edit the type_definitions.json file.
+    # To regenerate the file, uncomment this block.
+    # all_batting_types = set()
+    # all_pitching_types = set()
+    # if player_type_data:
+    #     for season in player_type_data:
+    #         df = player_type_data[season]
+    #         all_batting_types.update(df['Batting Type'].dropna().unique())
+    #         all_pitching_types.update(df['Pitching Type'].dropna().unique())
+    #
+    # type_definitions = {
+    #     'batting': {t: f"Description for {t}" for t in sorted(list(all_batting_types))},
+    #     'pitching': {t: f"Description for {t}" for t in sorted(list(all_pitching_types))}
+    # }
+    #
+    # output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'type_definitions.json')
+    # with open(output_path, 'w') as f:
+    #     json.dump(type_definitions, f, indent=4)
+    # print(f"Type definitions saved to {output_path}")
+
     print("Reconciling player IDs across seasons...")
+    # Reconcile player IDs
+    # This is a bit of a mess, but it works.
 
     # Create a map of player names to their IDs and seasons from the data
     hitters_with_ids = combined_df[combined_df['Hitter ID'].notna()][['Hitter ID', 'Hitter', 'Season']].rename(columns={'Hitter ID': 'Player ID', 'Hitter': 'Player Name'})
@@ -1684,12 +1768,22 @@ def main():
     ).reset_index()
     print("Gamelog corrections applied.")
 
-    # Calculate pitching decisions on the raw data
+    # Exclude in-progress games from the most recent season for pitching decisions
+    decision_games_df = combined_df.copy()
+    if most_recent_season:
+        most_recent_season_df = combined_df[combined_df['Season'] == most_recent_season]
+        if not most_recent_season_df.empty:
+            max_session = most_recent_season_df['Session'].max()
+            print(f"Excluding games from session {max_session} of {most_recent_season} from pitching decision calculations.")
+            decision_games_mask = ~((combined_df['Season'] == most_recent_season) & (combined_df['Session'] == max_session))
+            decision_games_df = combined_df[decision_games_mask]
+
+    # Calculate pitching decisions on the filtered data
     print("Calculating pitching decisions (W, L, SV, HLD)...")
     pitching_decisions = []
-    game_groups = list(combined_df.groupby(['Season', 'Game ID']))
+    game_groups = list(decision_games_df.groupby(['Season', 'Game ID']))
     num_games = len(game_groups)
-    print(f"  Processing {num_games} games...")
+    print(f"  Processing {num_games} games for decisions...")
     for i, ((season, game_id), game_df) in enumerate(game_groups):
         if (i + 1) % 100 == 0:
             print(f"  ... {i + 1} / {num_games} games processed")
@@ -1925,7 +2019,7 @@ def main():
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
 
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
-    game_achievements_df = calculate_game_achievements(leaderboard_df)
+    game_achievements_df = calculate_game_achievements(decision_games_df)
 
     print("Calculating league-wide stats for OPS+...")
     league_stats_by_season = {}
@@ -1942,6 +2036,17 @@ def main():
     for season in sorted_seasons:
         force_recalc = (season == most_recent_season) or (season in seasons_to_recalc)
         season_leaderboard_df = leaderboard_df[leaderboard_df['Season'] == season]
+
+        if player_type_data and season in player_type_data:
+            player_types_df = player_type_data[season][['Player ID', 'Batting Type', 'Pitching Type']]
+            
+            # Merge for hitters
+            hitter_types_df = player_types_df.rename(columns={'Player ID': 'Hitter ID', 'Batting Type': 'Hitter Batting Type', 'Pitching Type': 'Hitter Pitching Type'})
+            season_leaderboard_df = pd.merge(season_leaderboard_df, hitter_types_df, on='Hitter ID', how='left')
+            
+            # Merge for pitchers
+            pitcher_types_df = player_types_df.rename(columns={'Player ID': 'Pitcher ID', 'Batting Type': 'Pitcher Batting Type', 'Pitching Type': 'Pitcher Pitching Type'})
+            season_leaderboard_df = pd.merge(season_leaderboard_df, pitcher_types_df, on='Pitcher ID', how='left')
 
         hitting_cache_path = os.path.join(cache_dir, f'hitting_stats_{season}.csv')
         pitching_cache_path = os.path.join(cache_dir, f'pitching_stats_{season}.csv')
@@ -2271,6 +2376,10 @@ def main():
     output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data')
     if not os.path.exists(output_dir): os.makedirs(output_dir)
 
+    # Save player ID map
+    with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f:
+        json.dump(player_id_map, f, indent=4)
+
     # Save main stats
     all_hitting_stats.replace([float('inf'), float('-inf')], None, inplace=True)
     all_hitting_stats = all_hitting_stats.astype(object).where(pd.notna(all_hitting_stats), None)
@@ -2298,6 +2407,21 @@ def main():
             if all_team_pitching_stats_for_json[col].dtype == 'float64':
                 all_team_pitching_stats_for_json[col] = all_team_pitching_stats_for_json[col].round(3)
         all_team_pitching_stats_for_json.to_json(os.path.join(output_dir, 'team_pitching_stats.json'), orient='split', index=False)
+
+    # --- Scouting Reports ---
+    print("Generating scouting reports...")
+    scouting_reports = {}
+    all_pitcher_ids = combined_df['Pitcher ID'].unique()
+    for pitcher_id in all_pitcher_ids:
+        if pitcher_id <= 0: continue
+        pitcher_df = combined_df[combined_df['Pitcher ID'] == pitcher_id]
+        report = get_scouting_report_data(pitcher_id, pitcher_df)
+        if report:
+            scouting_reports[int(pitcher_id)] = report
+    
+    output_path = os.path.join(output_dir, 'scouting_reports.json')
+    with open(output_path, 'w') as f:
+        json.dump(scouting_reports, f)
 
     print("Done!")
 

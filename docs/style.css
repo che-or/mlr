@@ -678,3 +678,11 @@ a:hover {
 .welcome-container ul li a {
     text-decoration: underline;
 }
+
+.player-info p {
+    margin: 2px 0; /* Adjust as needed */
+}
+
+.player-info {
+    margin-bottom: 10px; /* Adjust as needed */
+}
