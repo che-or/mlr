@@ -44,11 +44,17 @@ main {
     padding: 20px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
+}
+
+.control-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .control-group {
@@ -85,6 +91,9 @@ button {
 
 button:hover {
     background-color: #E53E00;
+}
+
+#leaderboard-button {
 }
 
 #player-suggestions {

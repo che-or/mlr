@@ -544,7 +544,7 @@ def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_c
     team_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
     return team_stats
 
-def calculate_career_hitting_stats(df, league_stats_by_season):
+def calculate_career_hitting_stats(df, league_stats_by_season, include_type_column=True):
     summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
@@ -623,136 +623,261 @@ def calculate_career_hitting_stats(df, league_stats_by_season):
     career_stats['nOBP'] = obp
     career_stats['nSLG'] = slg
 
-    season_stats = df[df['Season'].str.startswith('S')]
-    player_type = None
-    if not season_stats.empty:
-        unique_types = season_stats['Type'].dropna().unique()
-        if len(unique_types) == 1:
-            player_type = unique_types[0]
-    career_stats['Type'] = player_type
+    if include_type_column:
+        season_stats = df[df['Season'].str.startswith('S')]
+        player_type = None
+        if not season_stats.empty:
+            if 'Type' in season_stats.columns:
+                unique_types = season_stats['Type'].dropna().unique()
+                if len(unique_types) == 1:
+                    player_type = unique_types[0]
+        career_stats['Type'] = player_type
 
     return career_stats
 
-def calculate_career_pitching_stats(df, league_n_era_by_season):
+def calculate_career_pitching_stats(df, league_n_era_by_season, include_type_column=True):
+
     summed_stats = df[['G', 'IP', 'BF', 'H', 'R', 'BB', 'IBB', 'Auto BB', 'K', 'HR', 'W', 'L', 'SV', 'HLD', 'GS', 'GF', 'CG', 'SHO', 'RE24', 'WPA', 'WAR', 'AB_A', 'SF_A', 'SH_A', '1B', '2B_A', '3B_A', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'GB_outs_A', 'FB_outs_A', 'SB_A', 'CS_A']].sum()
+
+
 
     ip = summed_stats['IP']
 
+
+
     num_hits_allowed = summed_stats['H']
+
+
 
     num_walks_allowed = summed_stats['BB']
 
+
+
     runs_allowed = summed_stats['R']
+
+
 
     num_hr_allowed = summed_stats['HR']
 
+
+
     num_strikeouts = summed_stats['K']
+
+
 
     ab_against = summed_stats['AB_A']
 
+
+
     num_sf_allowed = summed_stats['SF_A']
+
+
 
     num_gb_outs_allowed = summed_stats['GB_outs_A']
 
+
+
     num_fb_outs_allowed = summed_stats['FB_outs_A']
+
+
 
     era = (runs_allowed * 6) / ip if ip > 0 else 0
 
+
+
     whip = (num_walks_allowed + num_hits_allowed) / ip if ip > 0 else 0
+
+
 
     h6 = (num_hits_allowed / ip) * 6 if ip > 0 else 0
 
+
+
     hr6 = (num_hr_allowed / ip) * 6 if ip > 0 else 0
+
+
 
     bb6 = (num_walks_allowed / ip) * 6 if ip > 0 else 0
 
+
+
     k6 = (num_strikeouts / ip) * 6 if ip > 0 else 0
+
+
 
     k_bb = num_strikeouts / num_walks_allowed if num_walks_allowed > 0 else 0
 
+
+
     baa = num_hits_allowed / ab_against if ab_against > 0 else 0
+
+
 
     obpa = (num_hits_allowed + num_walks_allowed) / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
 
+
+
     tb_allowed = summed_stats['1B'] + 2*summed_stats['2B_A'] + 3*summed_stats['3B_A'] + 4*summed_stats['HR']
+
+
 
     slga = tb_allowed / ab_against if ab_against > 0 else 0
 
+
+
     opsa = obpa + slga
+
+
 
     babip_denom = ab_against - num_strikeouts - num_hr_allowed + num_sf_allowed
 
+
+
     babip_against = (num_hits_allowed - num_hr_allowed) / babip_denom if babip_denom > 0 else 0
+
+
 
     hr_pct_against = num_hr_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
 
+
+
     k_pct_against = num_strikeouts / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
+
+
 
     bb_pct_against = num_walks_allowed / summed_stats['BF'] if summed_stats['BF'] > 0 else 0
 
+
+
     total_fb_gb_allowed = num_fb_outs_allowed + num_gb_outs_allowed
+
+
 
     gb_pct_against = num_gb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
 
+
+
     fb_pct_against = num_fb_outs_allowed / total_fb_gb_allowed if total_fb_gb_allowed > 0 else 0
+
+
 
     gb_fb_ratio_against = num_gb_outs_allowed / num_fb_outs_allowed if num_fb_outs_allowed > 0 else 0
 
+
+
     
+
+
 
     num_sb_allowed = summed_stats['SB_A']
 
+
+
     num_cs_against = summed_stats['CS_A']
+
+
 
     sb_pct_against = num_sb_allowed / (num_sb_allowed + num_cs_against) if (num_sb_allowed + num_cs_against) > 0 else 0
 
 
 
+
+
+
+
     weighted_fip = (df['FIP'] * df['IP']).sum()
 
+
+
     total_ip = df['IP'].sum()
+
+
 
     fip = weighted_fip / total_ip if total_ip > 0 else 0
 
 
 
+
+
+
+
     # New ERA- calculation
+
+
 
     df['lg_n_era'] = df['Season'].map(league_n_era_by_season)
 
+
+
     df['lg_n_era'] = df['lg_n_era'].fillna(df['lg_n_era'].mean())
+
+
 
     
 
+
+
     if 'nIP' in df.columns and 'nRuns' in df.columns:
+
+
 
         weighted_lg_n_era = (df['lg_n_era'] * df['nIP']).sum()
 
+
+
         total_n_ip = df['nIP'].sum()
+
+
 
         career_lg_n_era = weighted_lg_n_era / total_n_ip if total_n_ip > 0 else 0
 
 
 
+
+
+
+
         total_n_runs = df['nRuns'].sum()
+
+
 
         career_player_n_era = (total_n_runs * 6) / total_n_ip if total_n_ip > 0 else 0
 
 
 
+
+
+
+
         if career_lg_n_era > 0:
+
+
 
             era_minus = round(100 * (career_player_n_era / career_lg_n_era))
 
+
+
         else:
+
+
 
             era_minus = 100
 
+
+
     else: # Fallback for older cached data that might not have nIP/nRuns
+
+
 
         weighted_era_minus = (df['ERA-'] * df['IP']).sum()
 
+
+
         era_minus = weighted_era_minus / total_ip if total_ip > 0 else 0
+
+
+
+
 
 
 
@@ -765,6 +890,10 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     total_weight = df['weight'].sum()
 
     avg_diff = weighted_avg_diff / total_weight if total_weight > 0 else 0
+
+
+
+
 
 
 
@@ -787,38 +916,76 @@ def calculate_career_pitching_stats(df, league_n_era_by_season):
     career_stats['BAA'] = baa
 
     career_stats['OBPA'] = obpa
+
     career_stats['SLGA'] = slga
+
+
 
     career_stats['OPSA'] = opsa
 
+
+
     career_stats['BABIP_A'] = babip_against
+
+
 
     career_stats['HR%_A'] = hr_pct_against
 
+
+
     career_stats['K%_A'] = k_pct_against
+
+
 
     career_stats['BB%_A'] = bb_pct_against
 
+
+
     career_stats['GB%_A'] = gb_pct_against
+
+
 
     career_stats['FB%_A'] = fb_pct_against
 
+
+
     career_stats['GB/FB_A'] = gb_fb_ratio_against
+
+
 
     career_stats['SB%_A'] = sb_pct_against
 
+
+
     career_stats['Avg Diff'] = avg_diff
+
     career_stats['FIP'] = fip
+
     career_stats['ERA-'] = era_minus
+
     career_stats['W-L%'] = summed_stats['W'] / (summed_stats['W'] + summed_stats['L']) if (summed_stats['W'] + summed_stats['L']) > 0 else 0
 
-    season_stats = df[df['Season'].str.startswith('S')]
-    player_type = None
-    if not season_stats.empty:
-        unique_types = season_stats['Type'].dropna().unique()
-        if len(unique_types) == 1:
-            player_type = unique_types[0]
-    career_stats['Type'] = player_type
+
+
+    if include_type_column:
+
+        season_stats = df[df['Season'].str.startswith('S')]
+
+        player_type = None
+
+        if not season_stats.empty:
+
+            if 'Type' in season_stats.columns:
+
+                unique_types = season_stats['Type'].dropna().unique()
+
+                if len(unique_types) == 1:
+
+                    player_type = unique_types[0]
+
+        career_stats['Type'] = player_type
+
+
 
     return career_stats
 
@@ -2340,6 +2507,46 @@ def main():
             all_pitching_stats = pd.concat([all_pitching_stats, franchise_pitching_stats], ignore_index=True)
     
     print("Franchise totals calculated.")
+
+    # --- Type Totals Calculation ---
+    print("Calculating type totals...")
+    # Hitting
+    if not all_hitting_stats.empty:
+        type_source_hitting = all_hitting_stats[
+            (all_hitting_stats['Season'].str.startswith('S')) &
+            (all_hitting_stats['is_sub_row'] == False)
+        ].copy()
+
+        type_source_hitting.dropna(subset=['Type'], inplace=True)
+
+        type_hitting_stats = type_source_hitting.groupby(['Hitter ID', 'Type']).apply(
+            lambda df: calculate_career_hitting_stats(df, league_stats_by_season, include_type_column=False), include_groups=False
+        ).reset_index()
+
+        if not type_hitting_stats.empty:
+            type_hitting_stats['Season'] = 'Type'
+            all_hitting_stats = pd.concat([all_hitting_stats, type_hitting_stats], ignore_index=True)
+
+    # Pitching
+    if not all_pitching_stats.empty:
+        type_source_pitching = all_pitching_stats[
+            (all_pitching_stats['Season'].str.startswith('S')) &
+            (all_pitching_stats['is_sub_row'] == False)
+        ].copy()
+
+        type_source_pitching.dropna(subset=['Type'], inplace=True)
+        type_source_pitching['Main Type'] = type_source_pitching['Type'].str.split('-').str[0]
+
+        type_pitching_stats = type_source_pitching.groupby(['Pitcher ID', 'Main Type']).apply(
+            lambda df: calculate_career_pitching_stats(df, league_n_era_by_season, include_type_column=False), include_groups=False
+        ).reset_index()
+
+        if not type_pitching_stats.empty:
+            type_pitching_stats.rename(columns={'Main Type': 'Type'}, inplace=True)
+            type_pitching_stats['Season'] = 'Type'
+            all_pitching_stats = pd.concat([all_pitching_stats, type_pitching_stats], ignore_index=True)
+    
+    print("Type totals calculated.")
 
 
     # --- Update Glossary with RE Matrix ---

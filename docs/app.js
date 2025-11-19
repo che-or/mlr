@@ -846,7 +846,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -863,7 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -942,7 +944,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -959,7 +963,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -1045,7 +1049,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -1065,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 min_qual_key: min_qual_key
             };
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
 
             // Exclude current season from Single Season leaderboards if it's not halfway through
             const currentSeason = state.currentSeasonInfo.season;
@@ -1694,9 +1700,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const hittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId);
         const pitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId);
 
+        // Filter out 'Type' rows from player stat tables
+        const filteredHittingStats = hittingStats.filter(s => s.Season !== 'Type');
+        const filteredPitchingStats = pitchingStats.filter(s => s.Season !== 'Type');
+
         let mostRecentTeam = null;
         let mostRecentSeason = null;
-        const allStats = [...hittingStats, ...pitchingStats];
+        const allStats = [...filteredHittingStats, ...filteredPitchingStats];
 
         if (allStats.length > 0) {
             const lastSeasonStats = allStats
@@ -1761,13 +1771,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isStats) {
             const lastHittingSeasonNum = Math.max(
                 -1,
-                ...hittingStats
+                ...filteredHittingStats
                     .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
                     .map(s => parseInt(s.Season.slice(1)))
             );
             const lastPitchingSeasonNum = Math.max(
                 -1,
-                ...pitchingStats
+                ...filteredPitchingStats
                     .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
                     .map(s => parseInt(s.Season.slice(1)))
             );
@@ -1780,8 +1790,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 primaryRole = 'hitter';
             } else if (lastHittingSeasonNum > 0) { // They are equal and positive, so they played both in the same most recent season.
                 const lastSeason = `S${lastHittingSeasonNum}`;
-                const recentHitting = hittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
-                const recentPitching = pitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentHitting = filteredHittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentPitching = filteredPitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
     
                 if (recentPitching && recentHitting) {
                     if (recentPitching.G > recentHitting.G) {
@@ -1795,8 +1805,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     primaryRole = 'pitcher';
                 }
             } else { // No recent season data, check career data
-                const careerHitting = hittingStats.find(s => s.Season === 'Career');
-                const careerPitching = pitchingStats.find(s => s.Season === 'Career');
+                const careerHitting = filteredHittingStats.find(s => s.Season === 'Career');
+                const careerPitching = filteredPitchingStats.find(s => s.Season === 'Career');
                 if (careerPitching && !careerHitting) {
                     primaryRole = 'pitcher';
                 } else if (careerPitching && careerHitting) {
@@ -1811,9 +1821,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             const renderHitting = () => {
-                if (hittingStats.length > 0) {
+                if (filteredHittingStats.length > 0) {
                     const franchiseFirstSeason = new Map();
-                    const allPlayerSeasonStats = hittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                    const allPlayerSeasonStats = filteredHittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
 
                     for (const stat of allPlayerSeasonStats) {
                         const seasonNum = parseInt(stat.Season.slice(1));
@@ -1827,7 +1837,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
 
-                    hittingStats.sort((a, b) => {
+                    filteredHittingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
                             if (season === 'Career') return 2;
@@ -1868,14 +1878,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', filteredHittingStats, STAT_DEFINITIONS, false, true);
                 }
             };
     
             const renderPitching = () => {
-                if (pitchingStats.length > 0) {
+                if (filteredPitchingStats.length > 0) {
                     const franchiseFirstSeason = new Map();
-                    const allPlayerSeasonStats = pitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                    const allPlayerSeasonStats = filteredPitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
 
                     for (const stat of allPlayerSeasonStats) {
                         const seasonNum = parseInt(stat.Season.slice(1));
@@ -1889,7 +1899,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
 
-                    pitchingStats.sort((a, b) => {
+                    filteredPitchingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
                             if (season === 'Career') return 2;
@@ -1930,7 +1940,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', filteredPitchingStats, STAT_DEFINITIONS, true, true);
                 }
             };
     
