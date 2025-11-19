@@ -41,24 +41,50 @@
 
             <div id="leaderboards-view" class="view" style="display: none;">
                 <div class="controls">
-                    <label for="leaderboard-type-select">Leaderboard:</label>
-                    <select id="leaderboard-type-select">
-                        <option value="batting">Batting</option>
-                        <option value="pitching">Pitching</option>
-                    </select>
-                    <label for="leaderboard-stat-select" style="margin-left: 10px;">Stat:</label>
-                    <select id="leaderboard-stat-select">
-                        <option value="">-- Select Stat --</option>
-                    </select>
-                    <label for="leaderboard-team-filter" style="margin-left: 10px;">Team:</label>
-                    <select id="leaderboard-team-filter">
-                        <option value="">All Teams</option>
-                    </select>
-                    <label for="leaderboard-length" style="margin-left: 10px;">Top:</label>
-                    <input type="number" id="leaderboard-length" value="10" min="1" max="100" style="width: 60px;">
-                    <label for="reverse-sort" style="margin-left: 10px;">Reverse:</label>
-                    <input type="checkbox" id="reverse-sort">
-                    <button id="leaderboard-button" style="margin-left: 10px;">View</button>
+                    <span class="control-item">
+                        <label for="leaderboard-type-select">Leaderboard:</label>
+                        <select id="leaderboard-type-select">
+                            <option value="batting">Batting</option>
+                            <option value="pitching">Pitching</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-stat-select">Stat:</label>
+                        <select id="leaderboard-stat-select">
+                            <option value="">-- Select Stat --</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-team-filter">Team:</label>
+                        <select id="leaderboard-team-filter">
+                            <option value="">All Teams</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-type-filter">Type:</label>
+                        <select id="leaderboard-type-filter">
+                            <option value="">All Types</option>
+                        </select>
+                    </span>
+                    <div id="batting-minimum-controls" class="control-item" style="display: inline-block;">
+                        <label for="min-pa">Min PA/Session:</label>
+                        <input type="number" id="min-pa" step="0.1" style="width: 60px;">
+                    </div>
+                    <div id="pitching-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-outs">Min Outs/Session:</label>
+                        <input type="number" id="min-outs" step="1" style="width: 60px;">
+                    </div>
+                    <span class="control-item">
+                        <label for="leaderboard-length">Top:</label>
+                        <input type="number" id="leaderboard-length" value="10" min="1" max="100" style="width: 60px;">
+                    </span>
+                    <span class="control-item">
+                        <label for="reverse-sort">Reverse:</label>
+                        <input type="checkbox" id="reverse-sort">
+                    </span>
+                    <span class="control-item">
+                        <button id="leaderboard-button">View</button>
+                    </span>
                 </div>
                 <div id="leaderboards-content-display">
                     <!-- Leaderboards will be rendered here -->

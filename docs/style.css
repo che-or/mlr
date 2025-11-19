@@ -44,11 +44,17 @@ main {
     padding: 20px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
+}
+
+.control-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .control-group {
@@ -85,6 +91,9 @@ button {
 
 button:hover {
     background-color: #E53E00;
+}
+
+#leaderboard-button {
 }
 
 #player-suggestions {
@@ -685,4 +694,15 @@ a:hover {
 
 .player-info {
     margin-bottom: 10px; /* Adjust as needed */
+}
+
+.disabled-input {
+    color: #888; /* Gray text */
+    cursor: not-allowed;
+}
+
+input:disabled {
+    color: #888; /* Apply to input value */
+    -webkit-text-fill-color: #888; /* For some browsers like Safari */
+    opacity: 1; /* Prevent default browser opacity change */
 }

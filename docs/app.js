@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         teamPitching: './data/team_pitching_stats.json',
         gamelogErrors: './data/gamelog-errors.json',
         typeDefinitions: './data/type_definitions.json',
-        playerInfo: './data/player_info.json'
+        playerInfo: './data/player_info.json',
+        currentSeasonInfo: './data/current_season_info.json'
     };
 
     const state = {
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gamelogErrors: [],
         typeDefinitions: {},
         playerInfo: {},
+        currentSeasonInfo: {},
         playerMap: new Map(),
         currentPlayerId: null,
         lastTeamStatsUrl: '#/team-stats',
@@ -60,8 +62,37 @@ document.addEventListener('DOMContentLoaded', () => {
         leaderboardButton: document.getElementById('leaderboard-button'),
         leaderboardLength: document.getElementById('leaderboard-length'),
         leaderboardTeamFilter: document.getElementById('leaderboard-team-filter'),
+        leaderboardTypeFilter: document.getElementById('leaderboard-type-filter'),
         reverseSort: document.getElementById('reverse-sort'),
-        leaderboardsContentDisplay: document.getElementById('leaderboards-content-display')
+        leaderboardsContentDisplay: document.getElementById('leaderboards-content-display'),
+        minPa: document.getElementById('min-pa'),
+        minOuts: document.getElementById('min-outs'),
+        battingMinimumControls: document.getElementById('batting-minimum-controls'),
+        pitchingMinimumControls: document.getElementById('pitching-minimum-controls'),
+        minPaLabel: document.querySelector('label[for="min-pa"]'),
+        minOutsLabel: document.querySelector('label[for="min-outs"]')
+    };
+
+    const COUNTING_STATS = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
+
+    const handleStatSelectChange = () => {
+        const stat = elements.leaderboardStatSelect.value;
+        const isCounting = COUNTING_STATS.includes(stat);
+
+        elements.minPa.disabled = isCounting;
+        elements.minOuts.disabled = isCounting;
+
+        if (isCounting) {
+            elements.minPa.classList.add('disabled-input');
+            elements.minPaLabel.classList.add('disabled-input');
+            elements.minOuts.classList.add('disabled-input');
+            elements.minOutsLabel.classList.add('disabled-input');
+        } else {
+            elements.minPa.classList.remove('disabled-input');
+            elements.minPaLabel.classList.remove('disabled-input');
+            elements.minOuts.classList.remove('disabled-input');
+            elements.minOutsLabel.classList.remove('disabled-input');
+        }
     };
 
     const parseCompactData = (response) => {
@@ -166,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo, currentSeasonInfo] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -179,7 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.teamPitching).then(res => res.json()),
                 fetch(API.gamelogErrors).then(res => res.json()),
                 fetch(API.typeDefinitions).then(res => res.json()),
-                fetch(API.playerInfo).then(res => res.json())
+                fetch(API.playerInfo).then(res => res.json()),
+                fetch(API.currentSeasonInfo).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -195,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.gamelogErrors = gamelogErrors;
             state.typeDefinitions = typeDefinitions;
             state.playerInfo = playerInfo;
+            state.currentSeasonInfo = currentSeasonInfo;
 
             const seasonsWithStats = new Set();
             state.hittingStats.forEach(s => {
@@ -606,12 +639,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const leaderboardLengthInput = elements.leaderboardLength;
         
+        // Set default minimums for leaderboards
+        elements.minPa.value = (2.0).toFixed(1);
+        elements.minOuts.value = 3;
 
         updateView(); // Initial view
         
         elements.playerSearch.addEventListener('input', handlePlayerSearch);
         elements.leaderboardButton.addEventListener('click', handleLeaderboardView);
         elements.leaderboardTypeSelect.addEventListener('change', populateLeaderboardStatSelect);
+        elements.leaderboardStatSelect.addEventListener('change', handleStatSelectChange);
         populateTeamFilter();
 
         elements.homeTab.addEventListener('click', () => { window.location.hash = '#/home'; });
@@ -669,8 +706,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const type = elements.leaderboardTypeSelect.value;
         const statSelect = elements.leaderboardStatSelect;
         const previouslySelectedStat = statSelect.value;
+        const typeFilter = elements.leaderboardTypeFilter;
+        const previouslySelectedType = typeFilter.value;
 
-        // The adjustable minimum box has been removed.
+        if (type === 'batting') {
+            elements.battingMinimumControls.style.display = 'inline-block';
+            elements.pitchingMinimumControls.style.display = 'none';
+        } else {
+            elements.battingMinimumControls.style.display = 'none';
+            elements.pitchingMinimumControls.style.display = 'inline-block';
+        }
 
         statSelect.innerHTML = '<option value="">-- Select Stat --</option>'; // Clear existing options
 
@@ -693,6 +738,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (newOptionsExist) {
             statSelect.value = previouslySelectedStat;
+        }
+
+        // --- New logic to populate type filter ---
+        typeFilter.innerHTML = '<option value="">All Types</option>';
+        const playerTypesMap = (type === 'batting') ? state.typeDefinitions.batting : state.typeDefinitions.pitching;
+        
+        if (playerTypesMap) {
+            const mainTypes = new Set();
+            if (type === 'batting') {
+                for (const typeKey in playerTypesMap) {
+                    mainTypes.add(typeKey);
+                }
+            } else { // pitching
+                for (const typeKey in playerTypesMap) {
+                    const mainType = typeKey.split('-')[0];
+                    mainTypes.add(mainType);
+                }
+            }
+            const sortedMainTypes = Array.from(mainTypes).sort();
+
+            sortedMainTypes.forEach(mainType => {
+                const option = document.createElement('option');
+                option.value = mainType;
+                option.textContent = mainType;
+                typeFilter.appendChild(option);
+            });
+        }
+        if (previouslySelectedType && typeFilter.querySelector(`option[value="${previouslySelectedType}"]`)) {
+            typeFilter.value = previouslySelectedType;
         }
     };
 
@@ -756,7 +830,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
         if (stat === 'W-L%') {
-            const data = state.pitchingStats;
+            let data = state.pitchingStats;
+            const selectedType = elements.leaderboardTypeFilter.value;
+            if (selectedType) {
+                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+            }
 
             const sortFn = (a, b) => {
                 const diff = (b['W-L%'] || 0) - (a['W-L%'] || 0);
@@ -768,7 +846,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -785,7 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -842,7 +922,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else if (stat === 'SB%') {
-            const data = isHitting ? state.hittingStats : state.pitchingStats;
+            if (selectedType) {
+                if (isHitting) {
+                    data = data.filter(p => p.Type === selectedType);
+                } else { // isPitching
+                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
+            }
             const sbKey = isHitting ? 'SB' : 'SB_A';
             const csKey = isHitting ? 'CS' : 'CS_A';
 
@@ -858,7 +944,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -875,7 +963,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -932,8 +1020,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else {
-            const countingStats = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
-            const isCountingStat = countingStats.includes(stat);
+            const isCountingStat = COUNTING_STATS.includes(stat);
             
             let data, min_qual_key;
             if (isHitting) {
@@ -949,12 +1036,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
                 }
             }
+            const selectedType = elements.leaderboardTypeFilter.value;
+            if (selectedType) {
+                if (isHitting) {
+                    data = data.filter(p => p.Type === selectedType);
+                } else { // isPitching
+                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
+            }
             
             const statsThatCanBeNegative = ['WAR', 'WPA', 'RE24'];
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedTeam) {
+            if (selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
+            } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
             } else {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Career');
@@ -974,7 +1071,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 min_qual_key: min_qual_key
             };
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
+
+            // Exclude current season from Single Season leaderboards if it's not halfway through
+            const currentSeason = state.currentSeasonInfo.season;
+            if (currentSeason) {
+                const totalSessions = state.seasons[currentSeason] || 0;
+                const sessionsSoFar = state.currentSeasonInfo.session || 0;
+                if (totalSessions > 0 && sessionsSoFar <= totalSessions / 2) {
+                    singleSeasonData = singleSeasonData.filter(p => p.Season !== currentSeason);
+                }
+            }
+
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -994,13 +1102,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 singleSeasonLeaderboard = singleSeasonData;
             } else {
                 singleSeasonLeaderboard = singleSeasonData.filter(p => {
-                    const gamesInSeason = state.seasons[p.Season] || 0;
+                    const season = p.Season;
+                    const gamesInSeason = state.seasons[season] || 0;
+                    if (gamesInSeason === 0) return false;
+                    
+                    let sessionsToUse = gamesInSeason;
+                    // For the most recent season, use sessions so far.
+                    if (season === state.currentSeasonInfo.season) {
+                        sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
+                    }
+            
                     if (isHitting) {
-                        const season_min_qual = gamesInSeason * qualMultiplier;
-                        return (p[min_qual_key] || 0) >= season_min_qual;
+                        const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
+                        const min_pa = pa_per_session * sessionsToUse;
+                        return (p.PA || 0) >= min_pa;
                     } else { // isPitching
-                        const season_min_qual = gamesInSeason * qualMultiplier;
-                        return (p[min_qual_key] || 0) >= season_min_qual;
+                        const outs_per_session = parseInt(elements.minOuts.value) || 3;
+                        const min_outs = outs_per_session * sessionsToUse;
+                        const player_ip = p.IP || 0;
+                        const player_outs = Math.round(player_ip * 3);
+                        return player_outs >= min_outs;
                     }
                 });
             }
@@ -1036,16 +1157,32 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         seasonData = seasonData.filter(p => !p.is_sub_row);
                                                     }
                                     
-                                                    const min_qual = (state.seasons[season] || 0) * qualMultiplier;
+                                                    const gamesInSeason = state.seasons[season] || 0;
+                                                    let sessionsToUse = gamesInSeason;
+
+                                                    // For the most recent season, use sessions so far.
+                                                    if (season === state.currentSeasonInfo.season) {
+                                                        sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
+                                                    }
+
+                                                    let min_qual;
+                                                    const min_qual_display_key = isHitting ? 'PA' : 'Outs';
+
+                                                    if (isHitting) {
+                                                        const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
+                                                        min_qual = pa_per_session * sessionsToUse;
+                                                    } else {
+                                                        const outs_per_session = parseInt(elements.minOuts.value) || 3;
+                                                        min_qual = outs_per_session * sessionsToUse;
+                                                    }
                                     
                                                     let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => {
-                                                        const gamesInSeason = state.seasons[season] || 0;
                                                         if (isHitting) {
-                                                            const season_min_qual = gamesInSeason * qualMultiplier;
-                                                            return (p[min_qual_key] || 0) >= season_min_qual;
+                                                            return (p[min_qual_key] || 0) >= min_qual;
                                                         } else { // isPitching
-                                                            const season_min_qual = gamesInSeason * qualMultiplier;
-                                                            return (p[min_qual_key] || 0) >= season_min_qual;
+                                                            const player_ip = p.IP || 0;
+                                                            const player_outs = Math.round(player_ip * 3);
+                                                            return player_outs >= min_qual;
                                                         }
                                                     });
                                     
@@ -1058,7 +1195,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         data: leaderboardData,
                                                         isCountingStat: isCountingStat,
                                                         min_qual: min_qual,
-                                                        min_qual_key: min_qual_key
+                                                        min_qual_key: min_qual_display_key
                                                     };
                                                 }
         }
@@ -1135,7 +1272,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!leaderboardInfo.isCountingStat && leaderboardInfo.type !== 'single-season') {
-                const qual_text = `${formatStat(leaderboardInfo.min_qual_key, leaderboardInfo.min_qual)} ${leaderboardInfo.min_qual_key}`;
+                let display_min_qual = leaderboardInfo.min_qual;
+                let display_min_qual_key = leaderboardInfo.min_qual_key;
+
+                if (leaderboardInfo.min_qual_key === 'Outs') {
+                    display_min_qual = leaderboardInfo.min_qual / 3; // Convert outs to IP float
+                    display_min_qual_key = 'IP';
+                } else if (leaderboardInfo.min_qual_key === 'PA') {
+                    display_min_qual = Math.ceil(leaderboardInfo.min_qual);
+                }
+                const qual_text = `${formatStat(display_min_qual_key, display_min_qual)} ${display_min_qual_key}`;
                 title += `<p class="qualifier">(${qual_text} min)</p>`;
             }
             seasonCard.innerHTML = title;
@@ -1554,9 +1700,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const hittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId);
         const pitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId);
 
+        // Filter out 'Type' rows from player stat tables
+        const filteredHittingStats = hittingStats.filter(s => s.Season !== 'Type');
+        const filteredPitchingStats = pitchingStats.filter(s => s.Season !== 'Type');
+
         let mostRecentTeam = null;
         let mostRecentSeason = null;
-        const allStats = [...hittingStats, ...pitchingStats];
+        const allStats = [...filteredHittingStats, ...filteredPitchingStats];
 
         if (allStats.length > 0) {
             const lastSeasonStats = allStats
@@ -1621,13 +1771,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isStats) {
             const lastHittingSeasonNum = Math.max(
                 -1,
-                ...hittingStats
+                ...filteredHittingStats
                     .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
                     .map(s => parseInt(s.Season.slice(1)))
             );
             const lastPitchingSeasonNum = Math.max(
                 -1,
-                ...pitchingStats
+                ...filteredPitchingStats
                     .filter(s => s.Season && !s.Season.startsWith('C') && !s.Season.startsWith('F'))
                     .map(s => parseInt(s.Season.slice(1)))
             );
@@ -1640,8 +1790,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 primaryRole = 'hitter';
             } else if (lastHittingSeasonNum > 0) { // They are equal and positive, so they played both in the same most recent season.
                 const lastSeason = `S${lastHittingSeasonNum}`;
-                const recentHitting = hittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
-                const recentPitching = pitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentHitting = filteredHittingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
+                const recentPitching = filteredPitchingStats.find(s => s.Season === lastSeason && !s.is_sub_row);
     
                 if (recentPitching && recentHitting) {
                     if (recentPitching.G > recentHitting.G) {
@@ -1655,8 +1805,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     primaryRole = 'pitcher';
                 }
             } else { // No recent season data, check career data
-                const careerHitting = hittingStats.find(s => s.Season === 'Career');
-                const careerPitching = pitchingStats.find(s => s.Season === 'Career');
+                const careerHitting = filteredHittingStats.find(s => s.Season === 'Career');
+                const careerPitching = filteredPitchingStats.find(s => s.Season === 'Career');
                 if (careerPitching && !careerHitting) {
                     primaryRole = 'pitcher';
                 } else if (careerPitching && careerHitting) {
@@ -1671,9 +1821,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
     
             const renderHitting = () => {
-                if (hittingStats.length > 0) {
+                if (filteredHittingStats.length > 0) {
                     const franchiseFirstSeason = new Map();
-                    const allPlayerSeasonStats = hittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                    const allPlayerSeasonStats = filteredHittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
 
                     for (const stat of allPlayerSeasonStats) {
                         const seasonNum = parseInt(stat.Season.slice(1));
@@ -1687,7 +1837,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
 
-                    hittingStats.sort((a, b) => {
+                    filteredHittingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
                             if (season === 'Career') return 2;
@@ -1728,14 +1878,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', hittingStats, STAT_DEFINITIONS, false, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', filteredHittingStats, STAT_DEFINITIONS, false, true);
                 }
             };
     
             const renderPitching = () => {
-                if (pitchingStats.length > 0) {
+                if (filteredPitchingStats.length > 0) {
                     const franchiseFirstSeason = new Map();
-                    const allPlayerSeasonStats = pitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                    const allPlayerSeasonStats = filteredPitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
 
                     for (const stat of allPlayerSeasonStats) {
                         const seasonNum = parseInt(stat.Season.slice(1));
@@ -1749,7 +1899,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     }
 
-                    pitchingStats.sort((a, b) => {
+                    filteredPitchingStats.sort((a, b) => {
                         const getScore = (season) => {
                             if (season === 'Franchise') return 3;
                             if (season === 'Career') return 2;
@@ -1790,7 +1940,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', pitchingStats, STAT_DEFINITIONS, true, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', filteredPitchingStats, STAT_DEFINITIONS, true, true);
                 }
             };
     
