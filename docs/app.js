@@ -1736,34 +1736,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const playerInfo = state.playerInfo[playerId];
         if (playerInfo) {
-            let info = [];
+            let playerInfoHTML = '';
             if (playerInfo.primary_position && state.typeDefinitions.position && state.typeDefinitions.position[playerInfo.primary_position]) {
-                info.push(`Position: ${state.typeDefinitions.position[playerInfo.primary_position]}`);
+                playerInfoHTML += `<p><strong>Position:</strong> ${state.typeDefinitions.position[playerInfo.primary_position]}</p>`;
             }
             if (playerInfo.handedness && state.typeDefinitions.handedness && state.typeDefinitions.handedness[playerInfo.handedness]) {
-                info.push(`Handedness: ${state.typeDefinitions.handedness[playerInfo.handedness]}`);
+                playerInfoHTML += `<p><strong>Handedness:</strong> ${state.typeDefinitions.handedness[playerInfo.handedness]}</p>`;
             }
-            if (playerInfo.batting_type && state.typeDefinitions.batting && state.typeDefinitions.batting[playerInfo.batting_type]) {
-                info.push(`Batting: ${state.typeDefinitions.batting[playerInfo.batting_type]}`);
+
+            const primaryPosition = playerInfo.primary_position;
+
+            // Batting type should show for any position other than 'P'
+            if (primaryPosition !== 'P' && playerInfo.batting_type && state.typeDefinitions.batting && state.typeDefinitions.batting[playerInfo.batting_type]) {
+                playerInfoHTML += `<p><strong>Batting:</strong> ${state.typeDefinitions.batting[playerInfo.batting_type]}</p>`;
             }
-            if (playerInfo.pitching_type && state.typeDefinitions.pitching && state.typeDefinitions.pitching[playerInfo.pitching_type]) {
-                info.push(`Pitching: ${state.typeDefinitions.pitching[playerInfo.pitching_type]}`);
+
+            // Pitching type should only show for 'P' and 'PH'
+            if ((primaryPosition === 'P' || primaryPosition === 'PH') && playerInfo.pitching_type && state.typeDefinitions.pitching && state.typeDefinitions.pitching[playerInfo.pitching_type]) {
+                playerInfoHTML += `<p><strong>Pitching:</strong> ${state.typeDefinitions.pitching[playerInfo.pitching_type]}</p>`;
             }
-            if (info.length > 0) {
-                titleHTML += `<div class="player-info">`;
-                if (playerInfo.primary_position && state.typeDefinitions.position && state.typeDefinitions.position[playerInfo.primary_position]) {
-                    titleHTML += `<p><strong>Position:</strong> ${state.typeDefinitions.position[playerInfo.primary_position]}</p>`;
-                }
-                if (playerInfo.handedness && state.typeDefinitions.handedness && state.typeDefinitions.handedness[playerInfo.handedness]) {
-                    titleHTML += `<p><strong>Handedness:</strong> ${state.typeDefinitions.handedness[playerInfo.handedness]}</p>`;
-                }
-                if (playerInfo.batting_type && state.typeDefinitions.batting && state.typeDefinitions.batting[playerInfo.batting_type]) {
-                    titleHTML += `<p><strong>Batting:</strong> ${state.typeDefinitions.batting[playerInfo.batting_type]}</p>`;
-                }
-                if (playerInfo.pitching_type && state.typeDefinitions.pitching && state.typeDefinitions.pitching[playerInfo.pitching_type]) {
-                    titleHTML += `<p><strong>Pitching:</strong> ${state.typeDefinitions.pitching[playerInfo.pitching_type]}</p>`;
-                }
-                titleHTML += `</div>`;
+            
+            if (playerInfoHTML) {
+                titleHTML += `<div class="player-info">${playerInfoHTML}</div>`;
             }
         }
         elements.statsContentDisplay.innerHTML = titleHTML;
