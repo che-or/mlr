@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         leaderboardButton: document.getElementById('leaderboard-button'),
         leaderboardLength: document.getElementById('leaderboard-length'),
         leaderboardTeamFilter: document.getElementById('leaderboard-team-filter'),
+        leaderboardTypeFilter: document.getElementById('leaderboard-type-filter'),
         reverseSort: document.getElementById('reverse-sort'),
         leaderboardsContentDisplay: document.getElementById('leaderboards-content-display'),
         minPa: document.getElementById('min-pa'),
@@ -705,6 +706,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const type = elements.leaderboardTypeSelect.value;
         const statSelect = elements.leaderboardStatSelect;
         const previouslySelectedStat = statSelect.value;
+        const typeFilter = elements.leaderboardTypeFilter;
+        const previouslySelectedType = typeFilter.value;
 
         if (type === 'batting') {
             elements.battingMinimumControls.style.display = 'inline-block';
@@ -735,6 +738,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (newOptionsExist) {
             statSelect.value = previouslySelectedStat;
+        }
+
+        // --- New logic to populate type filter ---
+        typeFilter.innerHTML = '<option value="">All Types</option>';
+        const playerTypesMap = (type === 'batting') ? state.typeDefinitions.batting : state.typeDefinitions.pitching;
+        
+        if (playerTypesMap) {
+            const mainTypes = new Set();
+            if (type === 'batting') {
+                for (const typeKey in playerTypesMap) {
+                    mainTypes.add(typeKey);
+                }
+            } else { // pitching
+                for (const typeKey in playerTypesMap) {
+                    const mainType = typeKey.split('-')[0];
+                    mainTypes.add(mainType);
+                }
+            }
+            const sortedMainTypes = Array.from(mainTypes).sort();
+
+            sortedMainTypes.forEach(mainType => {
+                const option = document.createElement('option');
+                option.value = mainType;
+                option.textContent = mainType;
+                typeFilter.appendChild(option);
+            });
+        }
+        if (previouslySelectedType && typeFilter.querySelector(`option[value="${previouslySelectedType}"]`)) {
+            typeFilter.value = previouslySelectedType;
         }
     };
 
@@ -798,7 +830,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
         if (stat === 'W-L%') {
-            const data = state.pitchingStats;
+            let data = state.pitchingStats;
+            const selectedType = elements.leaderboardTypeFilter.value;
+            if (selectedType) {
+                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+            }
 
             const sortFn = (a, b) => {
                 const diff = (b['W-L%'] || 0) - (a['W-L%'] || 0);
@@ -884,7 +920,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else if (stat === 'SB%') {
-            const data = isHitting ? state.hittingStats : state.pitchingStats;
+            if (selectedType) {
+                if (isHitting) {
+                    data = data.filter(p => p.Type === selectedType);
+                } else { // isPitching
+                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
+            }
             const sbKey = isHitting ? 'SB' : 'SB_A';
             const csKey = isHitting ? 'CS' : 'CS_A';
 
@@ -990,6 +1032,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
                 }
             }
+            const selectedType = elements.leaderboardTypeFilter.value;
+            if (selectedType) {
+                if (isHitting) {
+                    data = data.filter(p => p.Type === selectedType);
+                } else { // isPitching
+                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
+            }
             
             const statsThatCanBeNegative = ['WAR', 'WPA', 'RE24'];
 
@@ -1016,6 +1066,17 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             // Single Season
             let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise');
+
+            // Exclude current season from Single Season leaderboards if it's not halfway through
+            const currentSeason = state.currentSeasonInfo.season;
+            if (currentSeason) {
+                const totalSessions = state.seasons[currentSeason] || 0;
+                const sessionsSoFar = state.currentSeasonInfo.session || 0;
+                if (totalSessions > 0 && sessionsSoFar <= totalSessions / 2) {
+                    singleSeasonData = singleSeasonData.filter(p => p.Season !== currentSeason);
+                }
+            }
+
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
