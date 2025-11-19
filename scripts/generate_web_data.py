@@ -2376,6 +2376,19 @@ def main():
     output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data')
     if not os.path.exists(output_dir): os.makedirs(output_dir)
 
+    # Save current season info
+    max_session = 0
+    if most_recent_season:
+        most_recent_season_df = combined_df[combined_df['Season'] == most_recent_season]
+        if not most_recent_season_df.empty:
+            max_session = most_recent_season_df['Session'].max()
+    current_season_info = {
+        'season': most_recent_season if most_recent_season else None,
+        'session': int(max_session) if max_session > 0 else 1
+    }
+    with open(os.path.join(output_dir, 'current_season_info.json'), 'w') as f:
+        json.dump(current_season_info, f, indent=2)
+
     # Save player ID map
     with open(os.path.join(output_dir, 'player_id_map.json'), 'w') as f:
         json.dump(player_id_map, f, indent=4)

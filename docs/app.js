@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         teamPitching: './data/team_pitching_stats.json',
         gamelogErrors: './data/gamelog-errors.json',
         typeDefinitions: './data/type_definitions.json',
-        playerInfo: './data/player_info.json'
+        playerInfo: './data/player_info.json',
+        currentSeasonInfo: './data/current_season_info.json'
     };
 
     const state = {
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gamelogErrors: [],
         typeDefinitions: {},
         playerInfo: {},
+        currentSeasonInfo: {},
         playerMap: new Map(),
         currentPlayerId: null,
         lastTeamStatsUrl: '#/team-stats',
@@ -61,7 +63,35 @@ document.addEventListener('DOMContentLoaded', () => {
         leaderboardLength: document.getElementById('leaderboard-length'),
         leaderboardTeamFilter: document.getElementById('leaderboard-team-filter'),
         reverseSort: document.getElementById('reverse-sort'),
-        leaderboardsContentDisplay: document.getElementById('leaderboards-content-display')
+        leaderboardsContentDisplay: document.getElementById('leaderboards-content-display'),
+        minPa: document.getElementById('min-pa'),
+        minOuts: document.getElementById('min-outs'),
+        battingMinimumControls: document.getElementById('batting-minimum-controls'),
+        pitchingMinimumControls: document.getElementById('pitching-minimum-controls'),
+        minPaLabel: document.querySelector('label[for="min-pa"]'),
+        minOutsLabel: document.querySelector('label[for="min-outs"]')
+    };
+
+    const COUNTING_STATS = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
+
+    const handleStatSelectChange = () => {
+        const stat = elements.leaderboardStatSelect.value;
+        const isCounting = COUNTING_STATS.includes(stat);
+
+        elements.minPa.disabled = isCounting;
+        elements.minOuts.disabled = isCounting;
+
+        if (isCounting) {
+            elements.minPa.classList.add('disabled-input');
+            elements.minPaLabel.classList.add('disabled-input');
+            elements.minOuts.classList.add('disabled-input');
+            elements.minOutsLabel.classList.add('disabled-input');
+        } else {
+            elements.minPa.classList.remove('disabled-input');
+            elements.minPaLabel.classList.remove('disabled-input');
+            elements.minOuts.classList.remove('disabled-input');
+            elements.minOutsLabel.classList.remove('disabled-input');
+        }
     };
 
     const parseCompactData = (response) => {
@@ -166,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo] = await Promise.all([
+            const [hitting, pitching, players, seasons, scouting, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo, currentSeasonInfo] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -179,7 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.teamPitching).then(res => res.json()),
                 fetch(API.gamelogErrors).then(res => res.json()),
                 fetch(API.typeDefinitions).then(res => res.json()),
-                fetch(API.playerInfo).then(res => res.json())
+                fetch(API.playerInfo).then(res => res.json()),
+                fetch(API.currentSeasonInfo).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -195,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.gamelogErrors = gamelogErrors;
             state.typeDefinitions = typeDefinitions;
             state.playerInfo = playerInfo;
+            state.currentSeasonInfo = currentSeasonInfo;
 
             const seasonsWithStats = new Set();
             state.hittingStats.forEach(s => {
@@ -606,12 +638,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const leaderboardLengthInput = elements.leaderboardLength;
         
+        // Set default minimums for leaderboards
+        elements.minPa.value = (2.0).toFixed(1);
+        elements.minOuts.value = 3;
 
         updateView(); // Initial view
         
         elements.playerSearch.addEventListener('input', handlePlayerSearch);
         elements.leaderboardButton.addEventListener('click', handleLeaderboardView);
         elements.leaderboardTypeSelect.addEventListener('change', populateLeaderboardStatSelect);
+        elements.leaderboardStatSelect.addEventListener('change', handleStatSelectChange);
         populateTeamFilter();
 
         elements.homeTab.addEventListener('click', () => { window.location.hash = '#/home'; });
@@ -670,7 +706,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const statSelect = elements.leaderboardStatSelect;
         const previouslySelectedStat = statSelect.value;
 
-        // The adjustable minimum box has been removed.
+        if (type === 'batting') {
+            elements.battingMinimumControls.style.display = 'inline-block';
+            elements.pitchingMinimumControls.style.display = 'none';
+        } else {
+            elements.battingMinimumControls.style.display = 'none';
+            elements.pitchingMinimumControls.style.display = 'inline-block';
+        }
 
         statSelect.innerHTML = '<option value="">-- Select Stat --</option>'; // Clear existing options
 
@@ -932,8 +974,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else {
-            const countingStats = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
-            const isCountingStat = countingStats.includes(stat);
+            const isCountingStat = COUNTING_STATS.includes(stat);
             
             let data, min_qual_key;
             if (isHitting) {
@@ -994,13 +1035,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 singleSeasonLeaderboard = singleSeasonData;
             } else {
                 singleSeasonLeaderboard = singleSeasonData.filter(p => {
-                    const gamesInSeason = state.seasons[p.Season] || 0;
+                    const season = p.Season;
+                    const gamesInSeason = state.seasons[season] || 0;
+                    if (gamesInSeason === 0) return false;
+                    
+                    let sessionsToUse = gamesInSeason;
+                    // For the most recent season, use sessions so far.
+                    if (season === state.currentSeasonInfo.season) {
+                        sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
+                    }
+            
                     if (isHitting) {
-                        const season_min_qual = gamesInSeason * qualMultiplier;
-                        return (p[min_qual_key] || 0) >= season_min_qual;
+                        const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
+                        const min_pa = pa_per_session * sessionsToUse;
+                        return (p.PA || 0) >= min_pa;
                     } else { // isPitching
-                        const season_min_qual = gamesInSeason * qualMultiplier;
-                        return (p[min_qual_key] || 0) >= season_min_qual;
+                        const outs_per_session = parseInt(elements.minOuts.value) || 3;
+                        const min_outs = outs_per_session * sessionsToUse;
+                        const player_ip = p.IP || 0;
+                        const player_outs = Math.round(player_ip * 3);
+                        return player_outs >= min_outs;
                     }
                 });
             }
@@ -1036,16 +1090,32 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         seasonData = seasonData.filter(p => !p.is_sub_row);
                                                     }
                                     
-                                                    const min_qual = (state.seasons[season] || 0) * qualMultiplier;
+                                                    const gamesInSeason = state.seasons[season] || 0;
+                                                    let sessionsToUse = gamesInSeason;
+
+                                                    // For the most recent season, use sessions so far.
+                                                    if (season === state.currentSeasonInfo.season) {
+                                                        sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
+                                                    }
+
+                                                    let min_qual;
+                                                    const min_qual_display_key = isHitting ? 'PA' : 'Outs';
+
+                                                    if (isHitting) {
+                                                        const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
+                                                        min_qual = pa_per_session * sessionsToUse;
+                                                    } else {
+                                                        const outs_per_session = parseInt(elements.minOuts.value) || 3;
+                                                        min_qual = outs_per_session * sessionsToUse;
+                                                    }
                                     
                                                     let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => {
-                                                        const gamesInSeason = state.seasons[season] || 0;
                                                         if (isHitting) {
-                                                            const season_min_qual = gamesInSeason * qualMultiplier;
-                                                            return (p[min_qual_key] || 0) >= season_min_qual;
+                                                            return (p[min_qual_key] || 0) >= min_qual;
                                                         } else { // isPitching
-                                                            const season_min_qual = gamesInSeason * qualMultiplier;
-                                                            return (p[min_qual_key] || 0) >= season_min_qual;
+                                                            const player_ip = p.IP || 0;
+                                                            const player_outs = Math.round(player_ip * 3);
+                                                            return player_outs >= min_qual;
                                                         }
                                                     });
                                     
@@ -1058,7 +1128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                         data: leaderboardData,
                                                         isCountingStat: isCountingStat,
                                                         min_qual: min_qual,
-                                                        min_qual_key: min_qual_key
+                                                        min_qual_key: min_qual_display_key
                                                     };
                                                 }
         }
@@ -1135,7 +1205,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!leaderboardInfo.isCountingStat && leaderboardInfo.type !== 'single-season') {
-                const qual_text = `${formatStat(leaderboardInfo.min_qual_key, leaderboardInfo.min_qual)} ${leaderboardInfo.min_qual_key}`;
+                let display_min_qual = leaderboardInfo.min_qual;
+                let display_min_qual_key = leaderboardInfo.min_qual_key;
+
+                if (leaderboardInfo.min_qual_key === 'Outs') {
+                    display_min_qual = leaderboardInfo.min_qual / 3; // Convert outs to IP float
+                    display_min_qual_key = 'IP';
+                } else if (leaderboardInfo.min_qual_key === 'PA') {
+                    display_min_qual = Math.ceil(leaderboardInfo.min_qual);
+                }
+                const qual_text = `${formatStat(display_min_qual_key, display_min_qual)} ${display_min_qual_key}`;
                 title += `<p class="qualifier">(${qual_text} min)</p>`;
             }
             seasonCard.innerHTML = title;

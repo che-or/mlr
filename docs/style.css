@@ -686,3 +686,14 @@ a:hover {
 .player-info {
     margin-bottom: 10px; /* Adjust as needed */
 }
+
+.disabled-input {
+    color: #888; /* Gray text */
+    cursor: not-allowed;
+}
+
+input:disabled {
+    color: #888; /* Apply to input value */
+    -webkit-text-fill-color: #888; /* For some browsers like Safari */
+    opacity: 1; /* Prevent default browser opacity change */
+}
