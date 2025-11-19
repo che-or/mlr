@@ -1804,12 +1804,17 @@ def main():
         sorted_seasons = sorted(player_type_data.keys(), key=lambda s: int(s.replace('S', '')))
         for season in sorted_seasons:
             df = player_type_data[season]
+            season_num = int(season.replace('S', ''))
             
             # Ensure all required columns exist, fill with None if not
             required_cols = ['Player ID', 'Primary Position', 'Batting Type', 'Pitching Type', 'Handedness']
             for col in required_cols:
                 if col not in df.columns:
                     df[col] = None
+
+            if 'Primary Position' in df.columns and season_num >= 6:
+                df.loc[df['Primary Position'] == 'P', 'Batting Type'] = 'P'
+                df.loc[~df['Primary Position'].isin(['P', 'PH']), 'Pitching Type'] = 'POS'
 
             df = df[required_cols].copy()
             df.rename(columns={'Player ID': 'player_id', 'Primary Position': 'primary_position', 'Batting Type': 'batting_type', 'Pitching Type': 'pitching_type', 'Handedness': 'handedness'}, inplace=True)
