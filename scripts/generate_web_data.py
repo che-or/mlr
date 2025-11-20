@@ -1812,15 +1812,23 @@ def main():
                 if col not in df.columns:
                     df[col] = None
 
-            if 'Primary Position' in df.columns and season_num >= 6:
-                df.loc[df['Primary Position'] == 'P', 'Batting Type'] = 'P'
+            if 'Primary Position' in df.columns:
+                # This rule applies to all seasons
                 df.loc[~df['Primary Position'].isin(['P', 'PH']), 'Pitching Type'] = 'POS'
+                
+                # This rule only applies to S6 and later
+                if season_num >= 6:
+                    df.loc[df['Primary Position'] == 'P', 'Batting Type'] = 'P'
 
             df = df[required_cols].copy()
             df.rename(columns={'Player ID': 'player_id', 'Primary Position': 'primary_position', 'Batting Type': 'batting_type', 'Pitching Type': 'pitching_type', 'Handedness': 'handedness'}, inplace=True)
             df['player_id'] = pd.to_numeric(df['player_id'], errors='coerce')
             df.dropna(subset=['player_id'], inplace=True)
             df['player_id'] = df['player_id'].astype(int)
+            
+            # Drop duplicates, keeping the first occurrence
+            df.drop_duplicates(subset=['player_id'], keep='first', inplace=True)
+            
             df.set_index('player_id', inplace=True)
             df = df.where(pd.notnull(df), None)
             

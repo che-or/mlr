@@ -785,6 +785,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const qualMultiplier = isHitting ? 2.0 : 1.0;
         
         let statKey = stat;
+        let data = isHitting ? state.hittingStats : state.pitchingStats;
+        const selectedType = elements.leaderboardTypeFilter.value;
+        if (selectedType) {
+            if (isHitting) {
+                data = data.filter(p => p.Type === selectedType);
+            } else { // isPitching
+                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+            }
+        }
+        
         if (isHitting) {
             if (stat === 'SO') statKey = 'K';
             else if (stat === 'BA') statKey = 'AVG';
@@ -830,12 +840,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
         if (stat === 'W-L%') {
-            let data = state.pitchingStats;
-            const selectedType = elements.leaderboardTypeFilter.value;
-            if (selectedType) {
-                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
-            }
-
             const sortFn = (a, b) => {
                 const diff = (b['W-L%'] || 0) - (a['W-L%'] || 0);
                 if (diff !== 0) return sortModifier * diff;
@@ -922,13 +926,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else if (stat === 'SB%') {
-            if (selectedType) {
-                if (isHitting) {
-                    data = data.filter(p => p.Type === selectedType);
-                } else { // isPitching
-                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
-                }
-            }
             const sbKey = isHitting ? 'SB' : 'SB_A';
             const csKey = isHitting ? 'CS' : 'CS_A';
 
@@ -1022,26 +1019,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             const isCountingStat = COUNTING_STATS.includes(stat);
             
-            let data, min_qual_key;
+            let min_qual_key;
             if (isHitting) {
-                data = state.hittingStats;
                 min_qual_key = 'PA';
                 if (stat === 'GO') {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
                 }
             } else { // isPitching
-                data = state.pitchingStats;
                 min_qual_key = 'IP';
                 if (stat === 'GO') {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
-                }
-            }
-            const selectedType = elements.leaderboardTypeFilter.value;
-            if (selectedType) {
-                if (isHitting) {
-                    data = data.filter(p => p.Type === selectedType);
-                } else { // isPitching
-                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
                 }
             }
             

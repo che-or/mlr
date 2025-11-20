@@ -129,6 +129,28 @@ def load_all_seasons():
     _write_cache_manifest(cache_dir, most_recent_season)
     return season_data, most_recent_season, [most_recent_season] + seasons_to_recalc if most_recent_season else seasons_to_recalc
 
+def load_player_id_map():
+    """Loads player ID mapping from player_id_map.json."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    player_id_map_path = os.path.join(script_dir, '..', 'docs', 'data', 'player_id_map.json')
+    
+    if not os.path.exists(player_id_map_path):
+        print(f"Error: player_id_map.json not found at {player_id_map_path}")
+        return {}
+
+    with open(player_id_map_path, 'r') as f:
+        player_id_map_raw = json.load(f)
+
+    name_to_id_map = {}
+    for player_id, player_info in player_id_map_raw.items():
+        # Ensure player_id is treated as an integer for consistency later
+        player_id_int = int(player_id)
+        current_name = player_info['currentName'].lower()
+        name_to_id_map[current_name] = player_id_int
+        for former_name in player_info['formerNames']:
+            name_to_id_map[former_name.lower()] = player_id_int
+    return name_to_id_map
+
 def load_player_types(force_seasons=None):
     """Loads all player type data from the sheets specified in player_types.txt."""
     player_type_data = {}
@@ -136,51 +158,97 @@ def load_player_types(force_seasons=None):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     player_types_path = os.path.join(script_dir, '..', 'data', 'player_types.txt')
     cache_dir = os.path.join(script_dir, '..', 'data', 'cache', 'raw_player_types')
+    static_player_types_dir = os.path.join(script_dir, '..', 'data', 'static_player_types')
     if not os.path.exists(cache_dir):
         os.makedirs(cache_dir)
 
+    name_to_id_map = load_player_id_map() # Load the player ID map
+
+    seasons_to_process = []
+    # Load seasons from player_types.txt (S4 onwards)
     try:
         with open(player_types_path, 'r') as f:
             player_type_sheets = f.readlines()
+            for line in player_type_sheets:
+                parts = line.strip().split('\t')
+                if len(parts) == 2:
+                    seasons_to_process.append({'season': parts[0], 'url': parts[1], 'source': 'url'})
     except FileNotFoundError:
-        print(f"Info: Could not find player_types.txt at {player_types_path}. Skipping player type loading.")
-        return {}
+        print(f"Info: Could not find player_types.txt at {player_types_path}. Skipping remote player types.")
+
+    # Add S1, S2, S3 from static CSV files
+    for s_num in [1, 2, 3]:
+        season_str = f'S{s_num}'
+        static_csv_path = os.path.join(static_player_types_dir, f'raw_player_types_{season_str}.csv')
+        if os.path.exists(static_csv_path):
+            seasons_to_process.append({'season': season_str, 'path': static_csv_path, 'source': 'static_csv'})
+        else:
+             print(f"Info: Static player type file not found for {season_str} at {static_csv_path}. Skipping.")
 
     force_seasons = force_seasons or []
 
-    for line in player_type_sheets:
-        parts = line.strip().split('\t')
-        if len(parts) != 2:
-            continue
-
-        season, url = parts
+    for item in seasons_to_process:
+        season = item['season']
         force_recalc = season in force_seasons
         raw_cache_path = os.path.join(cache_dir, f'raw_player_types_{season}.csv')
 
         df = None
+        # Attempt to load from cache
         if os.path.exists(raw_cache_path) and not force_recalc:
             try:
-                df = pd.read_csv(raw_cache_path)
+                df = pd.read_csv(raw_cache_path, dtype={'Player ID': str}) # Read Player ID as string
                 print(f"Loaded {season} player types from local cache.")
             except Exception as e:
-                print(f"Error loading {season} player types from cache: {e}. Re-downloading...")
+                print(f"Error loading {season} player types from cache: {e}. Re-loading...")
                 df = None
 
+        # If not in cache or forced, load from source
         if df is None:
-            export_url = get_export_url(url)
-            if export_url:
+            if item['source'] == 'url':
+                url = item['url']
+                export_url = get_export_url(url)
+                if export_url:
+                    try:
+                        print(f"Downloading player types for {season}...")
+                        df = pd.read_csv(export_url)
+                        df.to_csv(raw_cache_path, index=False)
+                    except Exception as e:
+                        print(f"Error loading player types for {season} from URL: {e}")
+                        continue
+                else:
+                    print(f"Could not generate export URL for {url}")
+                    continue
+            elif item['source'] == 'static_csv':
+                csv_path = item['path']
                 try:
-                    print(f"Downloading player types for {season}...")
-                    df = pd.read_csv(export_url)
+                    print(f"Loading player types for {season} from static CSV '{csv_path}'...")
+                    df = pd.read_csv(csv_path)
+                    
+                    # Convert 'Player ID' to numeric, coercing errors to NaN
+                    df['Player ID'] = pd.to_numeric(df['Player ID'], errors='coerce')
+
+                    # Only map names to IDs for rows where 'Player ID' is currently NaN
+                    missing_id_mask = df['Player ID'].isna()
+                    if missing_id_mask.any():
+                        df.loc[missing_id_mask, 'Player ID'] = df.loc[missing_id_mask, 'Name'].str.lower().map(name_to_id_map)
+
+                    unmatched_names = df[df['Player ID'].isna()]['Name'].unique()
+                    if len(unmatched_names) > 0:
+                        print(f"Warning: Unmatched player names in {season} from CSV: {unmatched_names}")
                     df.to_csv(raw_cache_path, index=False)
                 except Exception as e:
-                    print(f"Error loading player types for {season} from URL: {e}")
+                    print(f"Error loading player types for {season} from static CSV: {e}")
                     continue
-            else:
-                print(f"Could not generate export URL for {url}")
-                continue
         
         if df is not None:
+            # Ensure 'Player ID' is integer type for consistency
+            if 'Player ID' in df.columns:
+                df['Player ID'] = pd.to_numeric(df['Player ID'], errors='coerce').astype('Int64')
+
+            # Ensure 'Player Name' is string type
+            if 'Name' in df.columns:
+                df['Player Name'] = df['Name']
+
             if 'Batting Type' in df.columns:
                 df['Batting Type'] = df['Batting Type'].str.upper()
             if 'Pitching Type' in df.columns:
@@ -188,10 +256,10 @@ def load_player_types(force_seasons=None):
                 df['Pitching Type'] = df['Pitching Type'].replace({'FB': 'FP', 'NTH': 'NT'})
             
             if 'Pitching Bonus' in df.columns and 'Pitching Type' in df.columns:
-                df['Pitching Bonus'] = df['Pitching Bonus'].str.upper()
+                df['Pitching Bonus'] = df['Pitching Bonus'].astype(str).str.upper()
                 # Combine Pitching Type and Pitching Bonus
                 df['Pitching Type'] = df.apply(
-                    lambda row: f"{row['Pitching Type']}-{row['Pitching Bonus']}" if pd.notna(row['Pitching Bonus']) and row['Pitching Bonus'] != '' else row['Pitching Type'],
+                    lambda row: f"{row['Pitching Type']}-{row['Pitching Bonus']}" if pd.notna(row['Pitching Bonus']) and row['Pitching Bonus'] != '' and row['Pitching Bonus'] != 'NAN' else row['Pitching Type'],
                     axis=1
                 )
             player_type_data[season] = df
