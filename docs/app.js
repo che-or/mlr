@@ -69,8 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
         minOuts: document.getElementById('min-outs'),
         battingMinimumControls: document.getElementById('batting-minimum-controls'),
         pitchingMinimumControls: document.getElementById('pitching-minimum-controls'),
+        attemptsMinimumControls: document.getElementById('attempts-minimum-controls'),
+        decisionsMinimumControls: document.getElementById('decisions-minimum-controls'),
         minPaLabel: document.querySelector('label[for="min-pa"]'),
-        minOutsLabel: document.querySelector('label[for="min-outs"]')
+        minOutsLabel: document.querySelector('label[for="min-outs"]'),
+        minAttempts: document.getElementById('min-attempts'),
+        minDecisions: document.getElementById('min-decisions')
     };
 
     const COUNTING_STATS = ['G', 'PA', 'AB', 'R', 'H', '2B', '3B', 'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'TB', 'GIDP', 'SH', 'SF', 'W', 'L', 'GS', 'GF', 'CG', 'SHO', 'SV', 'HLD', 'IP', 'ER', 'Auto BB', 'AUTO BB', 'BF', '1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'WAR', 'WPA', 'RE24'];
@@ -79,19 +83,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const stat = elements.leaderboardStatSelect.value;
         const isCounting = COUNTING_STATS.includes(stat);
 
-        elements.minPa.disabled = isCounting;
-        elements.minOuts.disabled = isCounting;
+        // Hide all minimum controls by default
+        elements.battingMinimumControls.style.display = 'none';
+        elements.pitchingMinimumControls.style.display = 'none';
+        elements.attemptsMinimumControls.style.display = 'none';
+        elements.decisionsMinimumControls.style.display = 'none';
+        
+        elements.minPa.classList.add('disabled-input');
+        elements.minPaLabel.classList.add('disabled-input');
+        elements.minOuts.classList.add('disabled-input');
+        elements.minOutsLabel.classList.add('disabled-input');
 
-        if (isCounting) {
-            elements.minPa.classList.add('disabled-input');
-            elements.minPaLabel.classList.add('disabled-input');
-            elements.minOuts.classList.add('disabled-input');
-            elements.minOutsLabel.classList.add('disabled-input');
-        } else {
-            elements.minPa.classList.remove('disabled-input');
-            elements.minPaLabel.classList.remove('disabled-input');
-            elements.minOuts.classList.remove('disabled-input');
-            elements.minOutsLabel.classList.remove('disabled-input');
+        if (stat === 'SB%') {
+            elements.attemptsMinimumControls.style.display = 'inline-block';
+        } else if (stat === 'W-L%') {
+            elements.decisionsMinimumControls.style.display = 'inline-block';
+        } else if (!isCounting) {
+            const type = elements.leaderboardTypeSelect.value;
+            if (type === 'batting') {
+                elements.battingMinimumControls.style.display = 'inline-block';
+                elements.minPa.classList.remove('disabled-input');
+                elements.minPaLabel.classList.remove('disabled-input');
+            } else {
+                elements.pitchingMinimumControls.style.display = 'inline-block';
+                elements.minOuts.classList.remove('disabled-input');
+                elements.minOutsLabel.classList.remove('disabled-input');
+            }
         }
     };
 
@@ -642,6 +659,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Set default minimums for leaderboards
         elements.minPa.value = (2.0).toFixed(1);
         elements.minOuts.value = 3;
+        elements.minAttempts.value = 3;
+        elements.minDecisions.value = 3;
 
         updateView(); // Initial view
         
@@ -785,6 +804,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const qualMultiplier = isHitting ? 2.0 : 1.0;
         
         let statKey = stat;
+        let data = isHitting ? state.hittingStats : state.pitchingStats;
+        const selectedType = elements.leaderboardTypeFilter.value;
+        if (selectedType) {
+            if (isHitting) {
+                data = data.filter(p => p.Type === selectedType);
+            } else { // isPitching
+                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
+            }
+        }
+        
         if (isHitting) {
             if (stat === 'SO') statKey = 'K';
             else if (stat === 'BA') statKey = 'AVG';
@@ -830,12 +859,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
         if (stat === 'W-L%') {
-            let data = state.pitchingStats;
-            const selectedType = elements.leaderboardTypeFilter.value;
-            if (selectedType) {
-                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
-            }
-
             const sortFn = (a, b) => {
                 const diff = (b['W-L%'] || 0) - (a['W-L%'] || 0);
                 if (diff !== 0) return sortModifier * diff;
@@ -880,7 +903,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
             }
-            const min_decisions_season = 3;
+            const min_decisions_season = parseInt(elements.minDecisions.value) || 3;
             let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
             singleSeasonLeaderboard.sort(sortFn);
             leaderboards['Single Season'] = {
@@ -922,13 +945,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         } else if (stat === 'SB%') {
-            if (selectedType) {
-                if (isHitting) {
-                    data = data.filter(p => p.Type === selectedType);
-                } else { // isPitching
-                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
-                }
-            }
             const sbKey = isHitting ? 'SB' : 'SB_A';
             const csKey = isHitting ? 'CS' : 'CS_A';
 
@@ -978,7 +994,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
             }
-            const min_attempts_season = 3;
+            const min_attempts_season = parseInt(elements.minAttempts.value) || 3;
             let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_season);
             singleSeasonLeaderboard.sort(sortFn);
             leaderboards['Single Season'] = {
@@ -1022,26 +1038,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             const isCountingStat = COUNTING_STATS.includes(stat);
             
-            let data, min_qual_key;
+            let min_qual_key;
             if (isHitting) {
-                data = state.hittingStats;
                 min_qual_key = 'PA';
                 if (stat === 'GO') {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
                 }
             } else { // isPitching
-                data = state.pitchingStats;
                 min_qual_key = 'IP';
                 if (stat === 'GO') {
                     data.forEach(p => { p.GO = (p.LGO || 0) + (p.RGO || 0); });
-                }
-            }
-            const selectedType = elements.leaderboardTypeFilter.value;
-            if (selectedType) {
-                if (isHitting) {
-                    data = data.filter(p => p.Type === selectedType);
-                } else { // isPitching
-                    data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
                 }
             }
             
