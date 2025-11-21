@@ -2554,10 +2554,11 @@
         "formerNames": []
     },
     "355": {
-        "currentName": "Alvin and the Chipmunks The Squeakquel",
+        "currentName": "Alvin and the Chipmunks Chipwrecked",
         "formerNames": [
             "Chuck Tingle",
-            "Catboy Frank"
+            "Catboy Frank",
+            "Alvin and the Chipmunks The Squeakquel"
         ]
     },
     "356": {
@@ -6206,9 +6207,10 @@
         "formerNames": []
     },
     "2826": {
-        "currentName": "Friday Phd",
+        "currentName": "Friday",
         "formerNames": [
-            "fridayphd"
+            "fridayphd",
+            "Friday Phd"
         ]
     },
     "2827": {
@@ -6322,8 +6324,10 @@
         "formerNames": []
     },
     "2864": {
-        "currentName": "Scoreson McCorkle",
-        "formerNames": []
+        "currentName": "Scorkle McCorkle",
+        "formerNames": [
+            "Scoreson McCorkle"
+        ]
     },
     "2866": {
         "currentName": "Stupido Einsteiny",
@@ -6797,9 +6801,10 @@
         "formerNames": []
     },
     "3029": {
-        "currentName": "Dan Von DOOM",
+        "currentName": "DV DOOM",
         "formerNames": [
-            "Dan Van Damme"
+            "Dan Van Damme",
+            "Dan Von DOOM"
         ]
     },
     "3030": {
@@ -7340,6 +7345,10 @@
     },
     "3243": {
         "currentName": "Jaime Villafuerte",
+        "formerNames": []
+    },
+    "3244": {
+        "currentName": "LeeLoo Dallas Multi-Guess",
         "formerNames": []
     },
     "3246": {
