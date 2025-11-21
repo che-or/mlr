@@ -227,6 +227,48 @@ def calculate_hitting_stats(df, season=None):
     nOBP = obp
     nSLG = slg
 
+    use_neutral_results = season not in ['S1', 'S2']
+    if use_neutral_results:
+        neutral_result_col = 'Result at Neutral'
+        neutral_df = df[df[neutral_result_col].notna()]
+        
+        if not neutral_df.empty:
+            # Define event sets for neutral results, combining old and new possibilities
+            n_hits = {'1B', '2B', '3B', 'HR', 'BUNT 1B', 'Bunt 1B'}
+            n_walks = {'BB', 'IBB', 'Auto BB', 'AUTO BB'}
+            n_strikeouts = {'K', 'Auto K', 'Bunt K', 'AUTO K', 'BUNT K'}
+            n_pa_events = n_hits | n_walks | n_strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'DP', 'TP', 'Sac', 'Bunt', 'BUNT DP', 'Bunt DP', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
+
+            n_pa_df = neutral_df[neutral_df[neutral_result_col].isin(n_pa_events)]
+            n_pa = len(n_pa_df)
+
+            if n_pa > 0:
+                n_num_walks = n_pa_df[n_pa_df[neutral_result_col].isin(n_walks)].shape[0]
+                n_num_hits = n_pa_df[n_pa_df[neutral_result_col].isin(n_hits)].shape[0]
+
+                # Assumption: 'Sac' in 'Result at Neutral' is SF, 'Bunt' or 'BUNT Sac' is SH
+                n_num_sf = n_pa_df[n_pa_df[neutral_result_col] == 'Sac'].shape[0]
+                n_num_sh = n_pa_df[n_pa_df[neutral_result_col].isin(['Bunt', 'BUNT Sac', 'Bunt Sac'])].shape[0]
+                n_num_sacrifices = n_num_sh + n_num_sf
+                
+                n_ab = n_pa - n_num_walks - n_num_sacrifices
+
+                if (n_ab + n_num_walks + n_num_sf) > 0:
+                    calculated_nOBP = (n_num_hits + n_num_walks) / (n_ab + n_num_walks + n_num_sf)
+                    if not pd.isna(calculated_nOBP):
+                        nOBP = calculated_nOBP
+                
+                if n_ab > 0:
+                    n_num_doubles = n_pa_df[n_pa_df[neutral_result_col] == '2B'].shape[0]
+                    n_num_triples = n_pa_df[n_pa_df[neutral_result_col] == '3B'].shape[0]
+                    n_num_hr = n_pa_df[n_pa_df[neutral_result_col] == 'HR'].shape[0]
+                    n_num_singles = n_pa_df[n_pa_df[neutral_result_col].isin(['1B', 'BUNT 1B', 'Bunt 1B'])].shape[0]
+                    n_num_tb = n_num_singles + (n_num_doubles * 2) + (n_num_triples * 3) + (n_num_hr * 4)
+                    
+                    calculated_nSLG = n_num_tb / n_ab
+                    if not pd.isna(calculated_nSLG):
+                        nSLG = calculated_nSLG
+
     batting_type = df['Hitter Batting Type'].iloc[0] if 'Hitter Batting Type' in df.columns and not df['Hitter Batting Type'].dropna().empty else None
 
     return pd.Series({
