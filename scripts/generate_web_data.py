@@ -224,6 +224,15 @@ def calculate_hitting_stats(df, season=None):
     fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else pd.NA
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else pd.NA
 
+    # Initialize all neutral component variables to pd.NA
+    n_pa_val = pd.NA
+    n_ab_val = pd.NA
+    n_num_hits_val = pd.NA
+    n_num_walks_val = pd.NA
+    n_num_sf_val = pd.NA
+    n_num_sh_val = pd.NA
+    n_num_tb_val = pd.NA
+
     nOBP = obp
     nSLG = slg
 
@@ -240,38 +249,45 @@ def calculate_hitting_stats(df, season=None):
             n_pa_events = n_hits | n_walks | n_strikeouts | {'FO', 'PO', 'LGO', 'RGO', 'LO', 'DP', 'TP', 'Sac', 'Bunt', 'BUNT DP', 'Bunt DP', 'BUNT GO', 'Bunt GO', 'BUNT Sac', 'Bunt Sac'}
 
             n_pa_df = neutral_df[neutral_df[neutral_result_col].isin(n_pa_events)]
-            n_pa = len(n_pa_df)
+            n_pa_current = len(n_pa_df)
+            n_pa_val = n_pa_current
 
-            if n_pa > 0:
-                n_num_walks = n_pa_df[n_pa_df[neutral_result_col].isin(n_walks)].shape[0]
-                n_num_hits = n_pa_df[n_pa_df[neutral_result_col].isin(n_hits)].shape[0]
+            if n_pa_current > 0:
+                n_num_walks_current = n_pa_df[n_pa_df[neutral_result_col].isin(n_walks)].shape[0]
+                n_num_hits_current = n_pa_df[n_pa_df[neutral_result_col].isin(n_hits)].shape[0]
 
-                # Assumption: 'Sac' in 'Result at Neutral' is SF, 'Bunt' or 'BUNT Sac' is SH
-                n_num_sf = n_pa_df[n_pa_df[neutral_result_col] == 'Sac'].shape[0]
-                n_num_sh = n_pa_df[n_pa_df[neutral_result_col].isin(['Bunt', 'BUNT Sac', 'Bunt Sac'])].shape[0]
-                n_num_sacrifices = n_num_sh + n_num_sf
+                n_num_sf_current = n_pa_df[n_pa_df[neutral_result_col] == 'Sac'].shape[0]
+                n_num_sh_current = n_pa_df[n_pa_df[neutral_result_col].isin(['Bunt', 'BUNT Sac', 'Bunt Sac'])].shape[0]
+                n_num_sacrifices_current = n_num_sh_current + n_num_sf_current
                 
-                n_ab = n_pa - n_num_walks - n_num_sacrifices
+                n_ab_current = n_pa_current - n_num_walks_current - n_num_sacrifices_current
+                
+                n_ab_val = n_ab_current
+                n_num_hits_val = n_num_hits_current
+                n_num_walks_val = n_num_walks_current
+                n_num_sf_val = n_num_sf_current
+                n_num_sh_val = n_num_sh_current
 
-                if (n_ab + n_num_walks + n_num_sf) > 0:
-                    calculated_nOBP = (n_num_hits + n_num_walks) / (n_ab + n_num_walks + n_num_sf)
+                if (n_ab_current + n_num_walks_current + n_num_sf_current) > 0:
+                    calculated_nOBP = (n_num_hits_current + n_num_walks_current) / (n_ab_current + n_num_walks_current + n_num_sf_current)
                     if not pd.isna(calculated_nOBP):
                         nOBP = calculated_nOBP
                 
-                if n_ab > 0:
+                if n_ab_current > 0:
                     n_num_doubles = n_pa_df[n_pa_df[neutral_result_col] == '2B'].shape[0]
                     n_num_triples = n_pa_df[n_pa_df[neutral_result_col] == '3B'].shape[0]
                     n_num_hr = n_pa_df[n_pa_df[neutral_result_col] == 'HR'].shape[0]
                     n_num_singles = n_pa_df[n_pa_df[neutral_result_col].isin(['1B', 'BUNT 1B', 'Bunt 1B'])].shape[0]
-                    n_num_tb = n_num_singles + (n_num_doubles * 2) + (n_num_triples * 3) + (n_num_hr * 4)
+                    n_num_tb_current = n_num_singles + (n_num_doubles * 2) + (n_num_triples * 3) + (n_num_hr * 4)
+                    n_num_tb_val = n_num_tb_current
                     
-                    calculated_nSLG = n_num_tb / n_ab
+                    calculated_nSLG = n_num_tb_current / n_ab_current
                     if not pd.isna(calculated_nSLG):
                         nSLG = calculated_nSLG
 
     batting_type = df['Hitter Batting Type'].iloc[0] if 'Hitter Batting Type' in df.columns and not df['Hitter Batting Type'].dropna().empty else None
 
-    return pd.Series({
+    series_data = {
         'G': games_played, 'PA': pa, 'AB': ab, 'H': num_hits, 'R': runs_scored, '1B': num_singles, '2B': num_doubles, '3B': num_triples, 'HR': num_hr, 'TB': num_tb, 'RBI': rbi,
         'BB': num_walks, 'IBB': num_ibb, 'K': num_strikeouts, 'Auto K': num_auto_k, 'SB': num_sb, 'CS': num_cs, 'SH': num_sh, 'SF': num_sf, 'GIDP': num_gidp,
         'RGO': num_rgo, 'LGO': num_lgo, 'FO': num_fo, 'PO': num_po, 'LO': num_lo,
@@ -282,7 +298,20 @@ def calculate_hitting_stats(df, season=None):
         'nOBP': nOBP, 'nSLG': nSLG, 'RE24': re24, 'WPA': wpa,
         'GB_outs': num_gb_outs, 'FB_outs': num_fb_outs,
         'Type': batting_type
-    })
+    }
+
+    if pd.notna(n_pa_val): # Only update if neutral stats were actually calculated
+        series_data.update({
+            'nPA': n_pa_val,
+            'nAB': n_ab_val,
+            'nH': n_num_hits_val,
+            'nTB': n_num_tb_val,
+            'nBB': n_num_walks_val,
+            'nSF': n_num_sf_val,
+            'nSH': n_num_sh_val,
+        })
+
+    return pd.Series(series_data)
 
 def calculate_pitching_stats(df, season=None):
     if df.empty: return None
@@ -441,7 +470,18 @@ def calculate_pitching_stats(df, season=None):
     })
 
 def calculate_team_hitting_stats(df, league_stats_for_season):
-    summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
+    sum_cols = ['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']
+    neutral_cols = ['nPA', 'nAB', 'nH', 'nTB', 'nBB', 'nSF', 'nSH']
+    
+    # Ensure neutral columns exist and are numeric before summing
+    for col in neutral_cols:
+        if col not in df.columns:
+            df[col] = 0
+        else:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+    df[neutral_cols] = df[neutral_cols].fillna(0)
+    
+    summed_stats = df[sum_cols + neutral_cols].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
     num_hits = summed_stats['H']
@@ -474,9 +514,25 @@ def calculate_team_hitting_stats(df, league_stats_for_season):
     gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
     fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
+
+    # --- NEW: Calculate team nOBP and nSLG from summed neutral components ---
+    team_nOBP = obp
+    team_nSLG = slg
+
+    if summed_stats['nPA'] > 0:
+        n_ab = summed_stats['nAB']
+        n_bb = summed_stats['nBB']
+        n_sf = summed_stats['nSF']
+        n_h = summed_stats['nH']
+        n_tb = summed_stats['nTB']
+
+        if (n_ab + n_bb + n_sf) > 0:
+            team_nOBP = (n_h + n_bb) / (n_ab + n_bb + n_sf)
+        if n_ab > 0:
+            team_nSLG = n_tb / n_ab
     
     if league_stats_for_season and league_stats_for_season.get('lg_nOBP', 0) > 0 and league_stats_for_season.get('lg_nSLG', 0) > 0:
-        ops_plus = 100 * ((obp / league_stats_for_season['lg_nOBP']) + (slg / league_stats_for_season['lg_nSLG']) - 1)
+        ops_plus = 100 * ((team_nOBP / league_stats_for_season['lg_nOBP']) + (team_nSLG / league_stats_for_season['lg_nSLG']) - 1)
     else:
         ops_plus = 100
     ops_plus = round(ops_plus)
@@ -503,8 +559,8 @@ def calculate_team_hitting_stats(df, league_stats_for_season):
     team_stats['GB/FB'] = gb_fb_ratio
     team_stats['OPS+'] = ops_plus
     team_stats['Avg Diff'] = avg_diff
-    team_stats['nOBP'] = obp
-    team_stats['nSLG'] = slg
+    team_stats['nOBP'] = team_nOBP
+    team_stats['nSLG'] = team_nSLG
     return team_stats
 
 def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_constant):
@@ -587,7 +643,18 @@ def calculate_team_pitching_stats(df, league_n_era_for_season, team_n_era, fip_c
     return team_stats
 
 def calculate_career_hitting_stats(df, league_stats_by_season, include_type_column=True):
-    summed_stats = df[['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']].sum()
+    sum_cols = ['G', 'PA', 'AB', 'H', 'R', '1B', '2B', '3B', 'HR', 'TB', 'RBI', 'BB', 'IBB', 'K', 'Auto K', 'SB', 'CS', 'SH', 'SF', 'GIDP', 'RGO', 'LGO', 'FO', 'PO', 'LO', 'RE24', 'WPA', 'WAR', 'GB_outs', 'FB_outs']
+    neutral_cols = ['nPA', 'nAB', 'nH', 'nTB', 'nBB', 'nSF', 'nSH']
+    
+    # Ensure neutral columns exist and are numeric before summing
+    for col in neutral_cols:
+        if col not in df.columns:
+            df[col] = 0
+        else:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+    df[neutral_cols] = df[neutral_cols].fillna(0) # MODIFIED LINE
+
+    summed_stats = df[sum_cols + neutral_cols].sum()
     pa = summed_stats['PA']
     ab = summed_stats['AB']
     num_hits = summed_stats['H']
@@ -620,6 +687,22 @@ def calculate_career_hitting_stats(df, league_stats_by_season, include_type_colu
     gb_pct = num_gb_outs / total_bip_outs if total_bip_outs > 0 else 0
     fb_pct = num_fb_outs / total_bip_outs if total_bip_outs > 0 else 0
     gb_fb_ratio = num_gb_outs / num_fb_outs if num_fb_outs > 0 else 0
+
+    # --- NEW: Calculate career nOBP and nSLG from summed neutral components ---
+    career_nOBP = obp # Default to actual OBP
+    career_nSLG = slg # Default to actual SLG
+
+    if summed_stats['nPA'] > 0:
+        n_ab = summed_stats['nAB']
+        n_bb = summed_stats['nBB']
+        n_sf = summed_stats['nSF']
+        n_h = summed_stats['nH']
+        n_tb = summed_stats['nTB']
+
+        if (n_ab + n_bb + n_sf) > 0:
+            career_nOBP = (n_h + n_bb) / (n_ab + n_bb + n_sf)
+        if n_ab > 0:
+            career_nSLG = n_tb / n_ab
     
     lg_obp_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nOBP'))
     lg_slg_series = df['Season'].map(lambda s: league_stats_by_season.get(s, {}).get('lg_nSLG'))
@@ -635,7 +718,7 @@ def calculate_career_hitting_stats(df, league_stats_by_season, include_type_colu
     career_lg_slg = weighted_lg_slg / total_pa if total_pa > 0 else 0
 
     if career_lg_obp > 0 and career_lg_slg > 0:
-        ops_plus = 100 * ((obp / career_lg_obp) + (slg / career_lg_slg) - 1)
+        ops_plus = 100 * ((career_nOBP / career_lg_obp) + (career_nSLG / career_lg_slg) - 1)
     else:
         ops_plus = 100
     ops_plus = round(ops_plus)
@@ -662,8 +745,8 @@ def calculate_career_hitting_stats(df, league_stats_by_season, include_type_colu
     career_stats['GB/FB'] = gb_fb_ratio
     career_stats['OPS+'] = ops_plus
     career_stats['Avg Diff'] = avg_diff
-    career_stats['nOBP'] = obp
-    career_stats['nSLG'] = slg
+    career_stats['nOBP'] = career_nOBP
+    career_stats['nSLG'] = career_nSLG
 
     if include_type_column:
         season_stats = df[df['Season'].str.startswith('S')]
