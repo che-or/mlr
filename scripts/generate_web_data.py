@@ -1701,6 +1701,43 @@ def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
         "recent_game_info": recent_game_info
     }
 
+def calculate_games_started(df):
+    achievements = []
+    game_groups = list(df.groupby(['Season', 'Game ID']))
+    num_games = len(game_groups)
+    print(f"Calculating games started for {num_games} games...")
+
+    for i, ((season, game_id), game_df) in enumerate(game_groups):
+        if (i + 1) % 100 == 0:
+            print(f"  ... processed {i + 1} / {num_games} games for GS")
+
+        teams_in_game = game_df['Batter Team'].unique()
+        if len(teams_in_game) != 2:
+            continue
+        
+        team_A, team_B = teams_in_game[0], teams_in_game[1]
+
+        pitchers_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].unique().tolist()
+        pitchers_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].unique().tolist()
+
+        if pitchers_A:
+            starter_id_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].iloc[0]
+            achievements.append({'Season': season, 'Pitcher ID': starter_id_A, 'Stat': 'GS', 'Team': team_A})
+
+        if pitchers_B:
+            starter_id_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].iloc[0]
+            achievements.append({'Season': season, 'Pitcher ID': starter_id_B, 'Stat': 'GS', 'Team': team_B})
+    
+    if not achievements: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'GS'])
+
+    achievements_df = pd.DataFrame(achievements)
+    agg_df = achievements_df.groupby(['Season', 'Pitcher ID', 'Team', 'Stat']).size().unstack(fill_value=0).reset_index()
+
+    if 'GS' not in agg_df.columns:
+        agg_df['GS'] = 0
+
+    return agg_df[['Season', 'Pitcher ID', 'Team', 'GS']]
+
 def calculate_game_achievements(df):
     achievements = []
     game_groups = list(df.groupby(['Season', 'Game ID']))
@@ -1724,9 +1761,6 @@ def calculate_game_achievements(df):
         pitchers_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].unique().tolist()
 
         if pitchers_A:
-            starter_id_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].iloc[0]
-            achievements.append({'Season': season, 'Pitcher ID': starter_id_A, 'Stat': 'GS', 'Team': team_A})
-
             finisher_id_A = game_df[game_df['Pitcher Team'] == team_A]['Pitcher ID'].iloc[-1]
             achievements.append({'Season': season, 'Pitcher ID': finisher_id_A, 'Stat': 'GF', 'Team': team_A})
 
@@ -1738,9 +1772,6 @@ def calculate_game_achievements(df):
                     achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'SHO', 'Team': team_A})
 
         if pitchers_B:
-            starter_id_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].iloc[0]
-            achievements.append({'Season': season, 'Pitcher ID': starter_id_B, 'Stat': 'GS', 'Team': team_B})
-
             finisher_id_B = game_df[game_df['Pitcher Team'] == team_B]['Pitcher ID'].iloc[-1]
             achievements.append({'Season': season, 'Pitcher ID': finisher_id_B, 'Stat': 'GF', 'Team': team_B})
 
@@ -1751,17 +1782,17 @@ def calculate_game_achievements(df):
                 if runs_A == 0:
                     achievements.append({'Season': season, 'Pitcher ID': pitcher_id, 'Stat': 'SHO', 'Team': team_B})
 
-    if not achievements: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'GS', 'GF', 'CG', 'SHO'])
+    if not achievements: return pd.DataFrame(columns=['Season', 'Pitcher ID', 'Team', 'GF', 'CG', 'SHO'])
 
     achievements_df = pd.DataFrame(achievements)
     
     agg_df = achievements_df.groupby(['Season', 'Pitcher ID', 'Team', 'Stat']).size().unstack(fill_value=0).reset_index()
 
-    for col in ['GS', 'GF', 'CG', 'SHO']:
+    for col in ['GF', 'CG', 'SHO']:
         if col not in agg_df.columns:
             agg_df[col] = 0
             
-    return agg_df[['Season', 'Pitcher ID', 'Team', 'GS', 'GF', 'CG', 'SHO']]
+    return agg_df[['Season', 'Pitcher ID', 'Team', 'GF', 'CG', 'SHO']]
 
 
 def preprocess_gamelogs_for_stat_corrections(df, player_id_to_name_map):
@@ -2324,7 +2355,12 @@ def main():
     neutral_stats_df = pd.DataFrame(neutral_pitching_stats) if neutral_pitching_stats else pd.DataFrame()
 
     print("Calculating pitching achievements (GS, CG, SHO, GF)...")
+    games_started_df = calculate_games_started(combined_df)
     game_achievements_df = calculate_game_achievements(decision_games_df)
+    if not game_achievements_df.empty:
+        game_achievements_df = pd.merge(games_started_df, game_achievements_df, on=['Season', 'Pitcher ID', 'Team'], how='outer')
+    else:
+        game_achievements_df = games_started_df
 
     print("Calculating league-wide stats for OPS+...")
     league_stats_by_season = {}
