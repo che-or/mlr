@@ -2601,7 +2601,48 @@ def main():
     all_pitching_stats = apply_postprocessing_corrections(all_pitching_stats)
 
     all_team_hitting_stats = pd.concat(all_seasons_team_hitting_stats, ignore_index=True)
-    all_team_pitching_stats = pd.concat(all_seasons_team_pitching_stats, ignore_index=True)
+
+    print("Recalculating team pitching stats with corrected data...")
+    team_pitching_records = []
+    # Use the seasons from the original sorted list to maintain order and completeness
+    for season in sorted_seasons:
+        season_pitching_stats = all_pitching_stats[all_pitching_stats['Season'] == season]
+        if season_pitching_stats.empty:
+            continue
+
+        # Dependencies for calculate_team_pitching_stats
+        league_n_era_for_season = league_n_era_by_season.get(season, 0)
+        fip_constant_for_season = fip_constants_by_season.get(season, 3.10)
+        
+        # Recalculate team neutral ERA for the season
+        season_leaderboard_df = leaderboard_df[leaderboard_df['Season'] == season]
+        season_team_neutral_pitching_stats = {}
+        re_matrix = run_expectancy_by_season.get(season, {})
+        if re_matrix:
+            # Check if 'Pitcher Team' exists and is not empty to avoid errors on empty df
+            if 'Pitcher Team' in season_leaderboard_df.columns and not season_leaderboard_df['Pitcher Team'].dropna().empty:
+                for team, team_df in season_leaderboard_df.groupby('Pitcher Team'):
+                    neutral_stats = calculate_neutral_pitching_stats(team_df, re_matrix)
+                    n_ip = neutral_stats['nOuts'] / 3
+                    n_era = (neutral_stats['nRuns'] * 6) / n_ip if n_ip > 0 else 0
+                    season_team_neutral_pitching_stats[team] = n_era
+        
+        # Get the source data for team aggregation
+        source_pitching_df = season_pitching_stats[~season_pitching_stats['Team'].str.contains("TM")].copy()
+        
+        if not source_pitching_df.empty:
+            for team, team_df in source_pitching_df.groupby('Team'):
+                team_n_era = season_team_neutral_pitching_stats.get(team, 0)
+                team_stats_series = calculate_team_pitching_stats(team_df, league_n_era_for_season, team_n_era, fip_constant_for_season)
+                team_stats_series['Season'] = season
+                team_stats_series['Team'] = team
+                team_pitching_records.append(team_stats_series)
+            
+    if team_pitching_records:
+        all_team_pitching_stats = pd.DataFrame(team_pitching_records)
+    else:
+        # Fallback to the old (uncorrected) data if something went wrong
+        all_team_pitching_stats = pd.concat(all_seasons_team_pitching_stats, ignore_index=True)
 
     if not all_hitting_stats.empty:
         all_hitting_stats['OPS+'] = all_hitting_stats.apply(calculate_ops_plus_for_row, axis=1, league_stats_by_season=league_stats_by_season)
