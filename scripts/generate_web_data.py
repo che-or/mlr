@@ -1613,117 +1613,6 @@ def calculate_neutral_pitching_stats(df, re_matrix):
     inning_stats = df.groupby('Inning ID').apply(lambda x: _simulate_neutral_inning(x, re_matrix), include_groups=False)
     return inning_stats.sum()
 
-def _get_pitch_histogram_data(pitch_series, bin_size):
-    pitch_series = pitch_series.dropna().astype(int)
-    if pitch_series.empty: return []
-    pitches = pitch_series.apply(lambda p: 0 if p == 1000 else p)
-    bin_ids = pitches // bin_size
-    histogram_data = bin_ids.value_counts()
-    num_bins = (1000 + bin_size - 1) // bin_size
-    all_bin_ids = range(num_bins)
-    histogram_data = histogram_data.reindex(all_bin_ids, fill_value=0).sort_index()
-    
-    output = []
-    for bin_id, count in histogram_data.items():
-        lower_bound = bin_id * bin_size
-        upper_bound = lower_bound + bin_size - 1
-        if lower_bound == 0: lower_bound = 1
-        label = f"{lower_bound}-{upper_bound}"
-        output.append({'label': label, 'count': int(count)})
-    return output
-
-def get_scouting_report_data(player_id, pitcher_df, bin_size=100):
-    if pitcher_df.empty: return None
-    pitcher_df = pitcher_df.copy()
-    pitcher_df['Pitch'] = pd.to_numeric(pitcher_df['Pitch'], errors='coerce')
-    pitcher_df['Season_num'] = pitcher_df['Season'].str.replace('S', '').astype(int)
-    pitcher_df.sort_values(by=['Season_num', 'Session', 'Inning'], inplace=True)
-    
-    valid_pitches = pitcher_df['Pitch'].dropna()
-    top_5_pitches = valid_pitches.value_counts().nlargest(5)
-    
-    # Tendencies
-    pitches = pitcher_df['Pitch'].to_numpy()
-    repeat_count = (pitches[:-1] == pitches[1:]).sum()
-    total_opportunities = len(pitches) - 1
-    repeat_percentage = (repeat_count / total_opportunities) * 100 if total_opportunities > 0 else 0
-    has_tripled_up = ((pitches[:-2] == pitches[1:-1]) & (pitches[1:-1] == pitches[2:])).any() if len(pitches) > 2 else False
-    swing = pd.to_numeric(pitcher_df['Swing'], errors='coerce')
-    diff = pd.to_numeric(pitcher_df['Diff'], errors='coerce')
-    swing_match_rate = (pitcher_df['Pitch'] == swing.shift(1)).mean() * 100
-    diff_match_rate = (pitcher_df['Pitch'] == diff.shift(1)).mean() * 100
-    meme_numbers = {69, 420, 666, 327, 880}
-    meme_percentage = pitcher_df['Pitch'].isin(meme_numbers).sum() / len(pitcher_df) * 100 if len(pitcher_df) > 0 else 0
-
-    # Histograms
-    histograms = {
-        "overall": _get_pitch_histogram_data(pitcher_df['Pitch'], bin_size),
-        "first_of_game": _get_pitch_histogram_data(pitcher_df.groupby(['Season', 'Game ID']).first()['Pitch'], bin_size),
-        "first_of_inning": _get_pitch_histogram_data(pitcher_df.groupby(['Season', 'Game ID', 'Inning']).first()['Pitch'], bin_size),
-        "risp": _get_pitch_histogram_data(pitcher_df[pd.to_numeric(pitcher_df['OBC'], errors='coerce').fillna(0) > 1]['Pitch'], bin_size)
-    }
-
-    # Conditional Histograms
-    pitcher_df['pitch_norm'] = pitcher_df['Pitch'].apply(lambda x: 0 if x == 1000 else x)
-    pitcher_df['previous_pitch'] = pitcher_df.groupby(['Season', 'Game ID'])['pitch_norm'].shift(1)
-    
-    conditional_histograms = {}
-    for i in range(10):
-        lower_bound = i * 100
-        upper_bound = (i + 1) * 100
-        
-        filtered_df = pitcher_df[(pitcher_df['previous_pitch'] >= lower_bound) & (pitcher_df['previous_pitch'] < upper_bound)]
-        
-        if not filtered_df.empty:
-            hist_data = _get_pitch_histogram_data(filtered_df['Pitch'], bin_size)
-            key = f'after_{i}00s'
-            if hist_data:
-                conditional_histograms[key] = hist_data
-
-    # By Season Histograms
-    season_histograms = {}
-    for season, season_df in pitcher_df.groupby('Season'):
-        hist_data = _get_pitch_histogram_data(season_df['Pitch'], bin_size)
-        if hist_data:
-            season_histograms[season] = hist_data
-
-    # Recent Game Info
-    recent_game_info = {}
-    if not pitcher_df.empty:
-        last_game_row = pitcher_df.iloc[-1]
-        last_game_season = last_game_row['Season']
-        last_game_id = last_game_row['Game ID']
-        
-        last_game_df = pitcher_df[(pitcher_df['Season'] == last_game_season) & (pitcher_df['Game ID'] == last_game_id)]
-        
-        if not last_game_df.empty:
-            last_game_details = last_game_df.iloc[0]
-            opposing_teams = last_game_df['Batter Team'].unique()
-            opposing_team = opposing_teams[0] if len(opposing_teams) > 0 else ''
-
-            recent_game_info = {
-                'pitcher_team': last_game_details['Pitcher Team'],
-                'season': last_game_details['Season'],
-                'session': int(last_game_details['Session']),
-                'opponent': opposing_team,
-                'pitches': last_game_df['Pitch'].dropna().astype(int).tolist()
-            }
-
-    return {
-        "top_5_pitches": {int(k): int(v) for k, v in top_5_pitches.to_dict().items()},
-        "histograms": histograms,
-        "tendencies": {
-            "repeat_percentage": round(repeat_percentage, 2),
-            "has_tripled_up": bool(has_tripled_up),
-            "swing_match_rate": round(swing_match_rate, 2),
-            "diff_match_rate": round(diff_match_rate, 2),
-            "meme_percentage": round(meme_percentage, 2)
-        },
-        "conditional_histograms": conditional_histograms,
-        "season_histograms": season_histograms,
-        "recent_game_info": recent_game_info
-    }
-
 def calculate_games_started(df):
     achievements = []
     game_groups = list(df.groupby(['Season', 'Game ID']))
@@ -2876,21 +2765,6 @@ def main():
             if all_team_pitching_stats_for_json[col].dtype == 'float64':
                 all_team_pitching_stats_for_json[col] = all_team_pitching_stats_for_json[col].round(3)
         all_team_pitching_stats_for_json.to_json(os.path.join(output_dir, 'team_pitching_stats.json'), orient='split', index=False)
-
-    # --- Scouting Reports ---
-    print("Generating scouting reports...")
-    scouting_reports = {}
-    all_pitcher_ids = combined_df['Pitcher ID'].unique()
-    for pitcher_id in all_pitcher_ids:
-        if pitcher_id <= 0: continue
-        pitcher_df = combined_df[combined_df['Pitcher ID'] == pitcher_id]
-        report = get_scouting_report_data(pitcher_id, pitcher_df)
-        if report:
-            scouting_reports[int(pitcher_id)] = report
-    
-    output_path = os.path.join(output_dir, 'scouting_reports.json')
-    with open(output_path, 'w') as f:
-        json.dump(scouting_reports, f)
 
     print("Done!")
 
