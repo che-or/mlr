@@ -117,13 +117,13 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 485,Cal Q. Lon,MIN,TT,EG,S,Right,P,,,/u/theFrownTownClown,frowntownclown,33,1,2,,
 488,Juni ''XOXO'' Panda RX-78-69,CIN,HK,TT,H,Left,2B,SS,1B,/u/juniped,juniped,53,1,6,,
 490,Zelk Antilles,CIN,WC,FP,H,Right,2B,SS,C,/u/CaptainSolo96,captainjacensolo,13,1,6,,
-492,Wallace Grommet,NYM,BC,EG,S,Right,2B,1B,LF,/u/klittle6,kaylittle6,53,1,6,1.0,
+492,Wallace Grommet,NYM,BC,EG,S,Right,2B,1B,LF,/u/klittle6,kaylittle6,53,1,6,1.0,SAL
 516,Brick Bruiser,MIL,TT,WC,H,Right,C,3B,1B,/u/TheDuckyNinja,busterducks,33,1,4,,
 517,Ryan Tyburn,CLE,1B,NH,H,Right,P,,,/u/thelordstrum,,53,1,2,1.0,DDD
 518,Arthur Vandelay,MIN,SF,FP,S,Left,C,1B,2B,/u/Dahdscear,8_art_8,23,1,4,,
 522,Good Doggo,CHC,TT,EG,S,Right,2B,RF,C,/u/FlamboDoggo,JRequis#7202,53,1,6,,
 525,Cam'ron Simmons,SDP,1B,TD,H,Right,2B,SS,,/u/DPZ1156,dpz1156,53,1,6,,
-529,Wheeler,,SF,BS,H,Left,2B,SS,,/u/Not_Really_Jon_Snow,turtles_allthe_waydown,53,1,6,,
+529,Wheeler,ANA,BC,BS,H,Right,2B,RF,,/u/Not_Really_Jon_Snow,turtles_allthe_waydown,53,1,6,,
 530,Ping Pong,MIN,MH,,,Left,1B,LF,SS,/u/Bearmay33,,53,1,5,,
 534,Bill Billiamson,,1B,EN,B,Right,CF,RF,,/u/Grhlk,,53,1,10,,
 549,Paddy O'Connor,MIL,1B,TT,H,Left,LF,RF,CF,/u/Apom52,apom52,53,1,9,,
@@ -397,6 +397,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2950,Anthony Esposito III,FLA,BC,,,Right,RF,CF,LF,/u/Wiley_1909,BigFern99#0114,53,1,11,,
 2951,Brandon Rice III,CLE,BN,WC,S,Left,SS,2B,1B,/u/RetroRice316,CoachRice#5642,53,1,8,,
 2959,Kries Von Kriestalhauser,OAK,BN,FP,H,Right,CF,LF,RF,/u/oneforceone,kriestinaf,53,1,10,1.0,SAL
+2960,Penguino,,WC,EG,H,Left,PH,,,/u/penguinothepenguin,penguinothepenguin101,53,5,1,1.0,SEF
 2962,Carlos Narvaez Jr.,DET,S,TT,S,Left,P,,,/u/AmokSpain,m_ksp__n_,53,1,2,1.0,CCS
 2963,Vartan Ichabod Cassidy,BAL,BP,,,Right,C,3B,RF,/u/Blackcobra29,Vic8713,53,1,4,,
 2965,Randall Peppers,MTL,TT,EN,S,Left,3B,LF,1B,/u/hnard,Hnard,23,1,7,1.0,SEF
@@ -582,7 +583,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3270,OilCanFloydTheBarber,ARI,XB,,,Right,SS,3B,,/u/j0nfr33m4n,j0nfr33m4n,53,1,8,1.0,SDV
 3271,Reece Vardy,,XB,BS,,Right,LF,1B,,/u/Plat1numPath0s,PlatinumPathos,53,1,9,,
 3272,Ben McBain,,MH,,,Right,CF,LF,,/u/GreenBay89387,greenbay_89387,53,1,10,,
-3273,Cher Noble,MIL,HK,,,Left,1B,LF,,/u/MLR_NoReddit_User,Captainplate,53,1,5,1.0,MMN
+3273,Cher Noble,MIL,HK,SF,H,Left,1B,LF,,/u/MLR_NoReddit_User,Captainplate,53,1,5,1.0,MMN
 3274,Curly Hanlon,,XB,EG,H,Left,2B,RF,,/u/MLR_NoReddit_User,Tommy! ,53,1,6,,
 3297,Damon Razor,ARI,P,FP,H,Left,P,,,/u/MLR_NoReddit_User,.ikonic,53,1,2,1.0,
 3298,Delly Schmidt,,WC,,,Right,CF,LF,,/u/jaleclaney,jale28711,53,1,10,,
@@ -591,3 +592,4 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3301,London Bridges,CWS,XB,,,Right,LF,RF,,/u/ADMsmith43,admsmith,53,1,9,1.0,MMN
 3302,Tomoharu Kanazaki,,P,NH,S,Right,P,,,/u/MLR_NoReddit_User,skrublord69420,53,1,2,1.0,MMN
 3303,Barry Sosa,BOS,BN,BB,H,Right,SS,3B,,/u/Extreme_Panda_3488,deezus_rich,53,1,8,,
+3304,Mikey Thomas,,MH,,,Right,SS,CF,,/u/Willthegod1,wilfthegod1,53,1,8,,
