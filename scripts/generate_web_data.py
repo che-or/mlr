@@ -2,6 +2,7 @@ from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
 from gamelog_corrections import apply_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
+from neutral_result_correction import correct_neutral_results
 import pandas as pd
 import sys
 import json
@@ -1863,7 +1864,6 @@ def main():
 
     print("Loading player type data...")
     player_type_data = load_player_types(force_seasons=force_recalc_seasons)
-    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
 
     print("Processing player info data...")
     player_info = {}
@@ -1913,6 +1913,10 @@ def main():
     output_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'player_info.json')
     with open(output_path, 'w') as f:
         json.dump(player_info, f)
+
+    combined_df = pd.concat([df.assign(Season=season) for season, df in all_season_data.items() if not df.empty], ignore_index=True)
+
+    combined_df = correct_neutral_results(combined_df, player_info)
 
     # The following code block is commented out because the user wants to manually edit the type_definitions.json file.
     # To regenerate the file, uncomment this block.
