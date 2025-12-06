@@ -2690,6 +2690,35 @@ def main():
     
     print("Type totals calculated.")
 
+    # --- Franchise-Type Totals Calculation ---
+    print("Calculating franchise-type totals...")
+    # Hitting
+    if 'franchise' in franchise_source_hitting.columns and not franchise_source_hitting.empty:
+        franchise_type_source_hitting = franchise_source_hitting.dropna(subset=['franchise', 'Type'])
+        franchise_type_hitting_stats = franchise_type_source_hitting.groupby(['Hitter ID', 'franchise', 'Type']).apply(
+            lambda df: calculate_career_hitting_stats(df, league_stats_by_season, include_type_column=False), include_groups=False
+        ).reset_index()
+
+        if not franchise_type_hitting_stats.empty:
+            franchise_type_hitting_stats.rename(columns={'franchise': 'Team'}, inplace=True)
+            franchise_type_hitting_stats['Season'] = 'Franchise-Type'
+            all_hitting_stats = pd.concat([all_hitting_stats, franchise_type_hitting_stats], ignore_index=True)
+
+    # Pitching
+    if 'franchise' in franchise_source_pitching.columns and not franchise_source_pitching.empty:
+        franchise_source_pitching['Main Type'] = franchise_source_pitching['Type'].str.split('-').str[0]
+        franchise_type_source_pitching = franchise_source_pitching.dropna(subset=['franchise', 'Main Type'])
+        franchise_type_pitching_stats = franchise_type_source_pitching.groupby(['Pitcher ID', 'franchise', 'Main Type']).apply(
+            lambda df: calculate_career_pitching_stats(df, league_n_era_by_season, include_type_column=False), include_groups=False
+        ).reset_index()
+        
+        if not franchise_type_pitching_stats.empty:
+            franchise_type_pitching_stats.rename(columns={'franchise': 'Team', 'Main Type': 'Type'}, inplace=True)
+            franchise_type_pitching_stats['Season'] = 'Franchise-Type'
+            all_pitching_stats = pd.concat([all_pitching_stats, franchise_type_pitching_stats], ignore_index=True)
+    
+    print("Franchise-type totals calculated.")
+
 
     # --- Update Glossary with RE Matrix ---
     print("Updating glossary with RE Matrix...")
