@@ -823,29 +823,18 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const handleLeaderboardView = () => {
-        console.log('handleLeaderboardView called');
         const stat = elements.leaderboardStatSelect.value;
         if (!stat) return;
-        console.log('Selected stat:', stat);
 
         const type = elements.leaderboardTypeSelect.value;
         const selectedTeam = elements.leaderboardTeamFilter.value;
+        const selectedType = elements.leaderboardTypeFilter.value;
         const isHitting = type === 'batting';
         const reverseSort = elements.reverseSort.checked;
         const sortModifier = reverseSort ? -1 : 1;
-
-        const qualMultiplier = isHitting ? 2.0 : 1.0;
         
         let statKey = stat;
         let data = isHitting ? state.hittingStats : state.pitchingStats;
-        const selectedType = elements.leaderboardTypeFilter.value;
-        if (selectedType) {
-            if (isHitting) {
-                data = data.filter(p => p.Type === selectedType);
-            } else { // isPitching
-                data = data.filter(p => p.Type && p.Type.startsWith(selectedType));
-            }
-        }
         
         if (isHitting) {
             if (stat === 'SO') statKey = 'K';
@@ -902,7 +891,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedType) {
+            if (selectedTeam && selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise-Type' && p.Team === selectedTeam && p.Type === selectedType);
+            } else if (selectedType) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
             } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
@@ -921,7 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
+            let singleSeasonData = data.filter(p => p.Season.startsWith('S'));
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -935,6 +926,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
+            }
+            if (selectedType) {
+                singleSeasonData = singleSeasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
             }
             const min_decisions_season = parseInt(elements.minDecisions.value) || 3;
             let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
@@ -967,6 +961,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     seasonData = seasonData.filter(p => !p.is_sub_row);
                 }
+                if (selectedType) {
+                    seasonData = seasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
                 let leaderboardData = seasonData.filter(p => ((p.W || 0) + (p.L || 0)) >= min_decisions_season);
                 leaderboardData.sort(sortFn);
                 leaderboards[season] = {
@@ -993,7 +990,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedType) {
+            if (selectedTeam && selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise-Type' && p.Team === selectedTeam && p.Type === selectedType);
+            } else if (selectedType) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
             } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
@@ -1012,7 +1011,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
+            let singleSeasonData = data.filter(p => p.Season.startsWith('S'));
             if (selectedTeam) {
                 const franchise = state.teamHistory[selectedTeam];
                 if (franchise) {
@@ -1026,6 +1025,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } else {
                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
+            }
+            if (selectedType) {
+                if (isHitting) {
+                    singleSeasonData = singleSeasonData.filter(p => p.Type === selectedType);
+                } else {
+                    singleSeasonData = singleSeasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
             }
             const min_attempts_season = parseInt(elements.minAttempts.value) || 3;
             let singleSeasonLeaderboard = singleSeasonData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_season);
@@ -1058,6 +1064,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     seasonData = seasonData.filter(p => !p.is_sub_row);
                 }
+                if (selectedType) {
+                    if (isHitting) {
+                        seasonData = seasonData.filter(p => p.Type === selectedType);
+                    } else {
+                        seasonData = seasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
+                    }
+                }
                 let leaderboardData = seasonData.filter(p => ((p[sbKey] || 0) + (p[csKey] || 0)) >= min_attempts_season);
                 leaderboardData.sort(sortFn);
                 leaderboards[season] = {
@@ -1088,7 +1101,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // All-Time
             let allTimeLeaderboardData;
-            if (selectedType) {
+            if (selectedTeam && selectedType) {
+                allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise-Type' && p.Team === selectedTeam && p.Type === selectedType);
+            } else if (selectedType) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Type' && p.Type === selectedType);
             } else if (selectedTeam) {
                 allTimeLeaderboardData = data.filter(p => p.Season === 'Franchise' && p.Team === selectedTeam);
@@ -1109,8 +1124,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 min_qual: min_qual_career,
                 min_qual_key: min_qual_key
             };
+
             // Single Season
-            let singleSeasonData = data.filter(p => p.Season !== 'Career' && p.Season !== 'Franchise' && p.Season !== 'Type');
+            let singleSeasonData = data.filter(p => p.Season.startsWith('S'));
 
             // Exclude current season from Single Season leaderboards if it's not halfway through
             const currentSeason = state.currentSeasonInfo.season;
@@ -1136,6 +1152,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 singleSeasonData = singleSeasonData.filter(p => !p.is_sub_row);
             }
+            if (selectedType) {
+                if (isHitting) {
+                    singleSeasonData = singleSeasonData.filter(p => p.Type === selectedType);
+                } else {
+                    singleSeasonData = singleSeasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
+                }
+            }
+
             let singleSeasonLeaderboard;
             if (isCountingStat) {
                 singleSeasonLeaderboard = singleSeasonData;
@@ -1177,66 +1201,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Individual Seasons
             const allSeasons = [...state.seasonsWithStats].sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
-                                                for (const season of allSeasons) {
-                                                    let seasonData = data.filter(p => p.Season === season);
-                                                    if (selectedTeam) {
-                                                        const franchise = state.teamHistory[selectedTeam];
-                                                        if (franchise) {
-                                                            const seasonNum = parseInt(season.slice(1));
-                                                            const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
-                                                            if (correctAbbr) {
-                                                                seasonData = seasonData.filter(p => p.Team === correctAbbr);
-                                                            } else { // This franchise didn't exist this season.
-                                                                seasonData = []; 
-                                                            }
-                                                        } else {
-                                                            seasonData = seasonData.filter(p => p.Team === selectedTeam);
-                                                        }
-                                                    } else {
-                                                        seasonData = seasonData.filter(p => !p.is_sub_row);
-                                                    }
-                                    
-                                                    const gamesInSeason = state.seasons[season] || 0;
-                                                    let sessionsToUse = gamesInSeason;
+            for (const season of allSeasons) {
+                let seasonData = data.filter(p => p.Season === season);
+                if (selectedTeam) {
+                    const franchise = state.teamHistory[selectedTeam];
+                    if (franchise) {
+                        const seasonNum = parseInt(season.slice(1));
+                        const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
+                        if (correctAbbr) {
+                            seasonData = seasonData.filter(p => p.Team === correctAbbr);
+                        } else { // This franchise didn't exist this season.
+                            seasonData = []; 
+                        }
+                    } else {
+                        seasonData = seasonData.filter(p => p.Team === selectedTeam);
+                    }
+                } else {
+                    seasonData = seasonData.filter(p => !p.is_sub_row);
+                }
+                if (selectedType) {
+                    if (isHitting) {
+                        seasonData = seasonData.filter(p => p.Type === selectedType);
+                    } else {
+                        seasonData = seasonData.filter(p => p.Type && p.Type.startsWith(selectedType));
+                    }
+                }
 
-                                                    // For the most recent season, use sessions so far.
-                                                    if (season === state.currentSeasonInfo.season) {
-                                                        sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
-                                                    }
+                const gamesInSeason = state.seasons[season] || 0;
+                let sessionsToUse = gamesInSeason;
 
-                                                    let min_qual;
-                                                    const min_qual_display_key = isHitting ? 'PA' : 'Outs';
+                // For the most recent season, use sessions so far.
+                if (season === state.currentSeasonInfo.season) {
+                    sessionsToUse = state.currentSeasonInfo.session || gamesInSeason;
+                }
 
-                                                    if (isHitting) {
-                                                        const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
-                                                        min_qual = pa_per_session * sessionsToUse;
-                                                    } else {
-                                                        const outs_per_session = parseInt(elements.minOuts.value) || 3;
-                                                        min_qual = outs_per_session * sessionsToUse;
-                                                    }
-                                    
-                                                    let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => {
-                                                        if (isHitting) {
-                                                            return (p[min_qual_key] || 0) >= min_qual;
-                                                        } else { // isPitching
-                                                            const player_ip = p.IP || 0;
-                                                            const player_outs = Math.round(player_ip * 3);
-                                                            return player_outs >= min_qual;
-                                                        }
-                                                    });
-                                    
-                                                    if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
-                                                        leaderboardData = leaderboardData.filter(p => p[statKey] > 0);
-                                                    }
-                                                    leaderboardData.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
-                                                    leaderboards[season] = {
-                                                        type: 'season',
-                                                        data: leaderboardData,
-                                                        isCountingStat: isCountingStat,
-                                                        min_qual: min_qual,
-                                                        min_qual_key: min_qual_display_key
-                                                    };
-                                                }
+                let min_qual;
+                const min_qual_display_key = isHitting ? 'PA' : 'Outs';
+
+                if (isHitting) {
+                    const pa_per_session = parseFloat(elements.minPa.value) || 2.0;
+                    min_qual = pa_per_session * sessionsToUse;
+                } else {
+                    const outs_per_session = parseInt(elements.minOuts.value) || 3;
+                    min_qual = outs_per_session * sessionsToUse;
+                }
+
+                let leaderboardData = isCountingStat ? seasonData : seasonData.filter(p => {
+                    if (isHitting) {
+                        return (p[min_qual_key] || 0) >= min_qual;
+                    } else { // isPitching
+                        const player_ip = p.IP || 0;
+                        const player_outs = Math.round(player_ip * 3);
+                        return player_outs >= min_qual;
+                    }
+                });
+
+                if (isCountingStat && !statsThatCanBeNegative.includes(stat)) {
+                    leaderboardData = leaderboardData.filter(p => p[statKey] > 0);
+                }
+                leaderboardData.sort((a, b) => sortModifier * (lowerIsBetter ? (a[statKey] || 0) - (b[statKey] || 0) : (b[statKey] || 0) - (a[statKey] || 0)));
+                leaderboards[season] = {
+                    type: 'season',
+                    data: leaderboardData,
+                    isCountingStat: isCountingStat,
+                    min_qual: min_qual,
+                    min_qual_key: min_qual_display_key
+                };
+            }
         }
         renderLeaderboardGrid(leaderboards, stat, statKey, isHitting);
     };
@@ -1479,8 +1510,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const pitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId);
 
         // Filter out 'Type' rows from player stat tables
-        const filteredHittingStats = hittingStats.filter(s => s.Season !== 'Type');
-        const filteredPitchingStats = pitchingStats.filter(s => s.Season !== 'Type');
+        const filteredHittingStats = hittingStats.filter(s => s.Season !== 'Type' && s.Season !== 'Franchise-Type');
+        const filteredPitchingStats = pitchingStats.filter(s => s.Season !== 'Type' && s.Season !== 'Franchise-Type');
 
         let mostRecentTeam = null;
         let mostRecentSeason = null;
