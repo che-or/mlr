@@ -521,7 +521,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <ul>
                     <li> Box scores for each game.</li>
                     <li> Postseason stats.</li>
-                    <li> Awards (including All-Star appearances, MVP, etc.).</li>
                     <li> Player comparison.</li>
                     <li> Outcome calculator.</li>
                 </ul>
