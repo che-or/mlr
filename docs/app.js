@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gamelogErrors: './data/gamelog-errors.json',
         typeDefinitions: './data/type_definitions.json',
         playerInfo: './data/player_info.json',
+        awards: './data/awards.json',
         currentSeasonInfo: './data/current_season_info.json'
     };
 
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gamelogErrors: [],
         typeDefinitions: {},
         playerInfo: {},
+        awards: {},
         currentSeasonInfo: {},
         playerMap: new Map(),
         currentPlayerId: null,
@@ -213,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo, currentSeasonInfo] = await Promise.all([
+            const [hitting, pitching, players, seasons, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo, awards, currentSeasonInfo] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
@@ -226,6 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.gamelogErrors).then(res => res.json()),
                 fetch(API.typeDefinitions).then(res => res.json()),
                 fetch(API.playerInfo).then(res => res.json()),
+                fetch(API.awards).then(res => res.json()),
                 fetch(API.currentSeasonInfo).then(res => res.json())
             ]);
 
@@ -241,6 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.gamelogErrors = gamelogErrors;
             state.typeDefinitions = typeDefinitions;
             state.playerInfo = playerInfo;
+            state.awards = awards;
             state.currentSeasonInfo = currentSeasonInfo;
 
             const seasonsWithStats = new Set();
@@ -1495,6 +1499,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    const getPlayerAwards = (playerId) => {
+        const awards = {}; // Key: awardId, Value: array of seasons
+        const awardsData = state.awards;
+        if (!awardsData) return [];
+
+        const metadata = awardsData._metadata || {};
+
+        // Helper to add an award
+        const addAward = (awardId, season) => {
+            if (!awards[awardId]) {
+                awards[awardId] = [];
+            }
+            if (season) {
+                awards[awardId].push(season);
+            }
+        };
+
+        // HOF
+        if (awardsData.HOF && awardsData.HOF.includes(playerId)) {
+            awards['HOF'] = []; // No seasons for HOF
+        }
+
+        // Season awards
+        for (const seasonKey in awardsData) {
+            if (!seasonKey.startsWith('S')) continue;
+            
+            const seasonData = awardsData[seasonKey];
+            
+            if (seasonData.PCMVP && seasonData.PCMVP.includes(playerId)) {
+                addAward('PCMVP', seasonKey);
+            }
+
+            ['AL', 'NL'].forEach(league => {
+                if (seasonData[league]) {
+                    for (const awardKey in seasonData[league]) {
+                        const winners = seasonData[league][awardKey];
+                        if (Array.isArray(winners) && winners.includes(playerId)) {
+                            addAward(awardKey, seasonKey);
+                        }
+                    }
+                }
+            });
+        }
+        
+        const displayList = [];
+        const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP'];
+
+        for (const awardId of order) {
+            if (awards[awardId]) {
+                const count = awards[awardId].length;
+                const name = metadata[awardId] || awardId;
+
+                if (awardId === 'HOF') {
+                    displayList.push({ text: name, class: 'award-hof', seasons: [] });
+                } else if (count > 0) {
+                    const awardText = count > 1 ? `${count}x ${name}` : name;
+                    displayList.push({ 
+                        text: awardText, 
+                        class: `award-${awardId.toLowerCase()}`, 
+                        seasons: awards[awardId].sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) 
+                    });
+                }
+            }
+        }
+        return displayList;
+    };
+
     const displayPlayerPage = (playerId) => {
         state.currentPlayerId = playerId;
         elements.statsContentDisplay.innerHTML = '';
@@ -1541,6 +1612,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (player.formerNames && player.formerNames.length > 0) {
             titleHTML += `<p class="former-names">Formerly known as: ${player.formerNames.join(', ')}</p>`;
+        }
+
+        const awards = getPlayerAwards(playerId);
+        if (awards.length > 0) {
+            let awardsHTML = '<div class="awards-container">';
+            awards.forEach(award => {
+                const seasonTitle = award.seasons && award.seasons.length > 0 
+                    ? ` title="${award.seasons.join(', ')}"` 
+                    : '';
+                awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
+            });
+            awardsHTML += '</div>';
+            titleHTML += awardsHTML;
         }
 
         const playerInfo = state.playerInfo[playerId];
