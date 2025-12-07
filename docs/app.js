@@ -1544,7 +1544,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const displayList = [];
-        const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'GMOTY', 'PCMVP'];
+        const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP'];
 
         for (const awardId of order) {
             if (awards[awardId]) {
@@ -1552,11 +1552,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 const name = metadata[awardId] || awardId;
 
                 if (awardId === 'HOF') {
-                    displayList.push({ text: name, class: 'award-hof' });
-                } else if (count > 1) {
-                    displayList.push({ text: `${count}x ${name}`, class: `award-${awardId.toLowerCase()}` });
-                } else if (count === 1) {
-                    displayList.push({ text: name, class: `award-${awardId.toLowerCase()}` });
+                    displayList.push({ text: name, class: 'award-hof', seasons: [] });
+                } else if (count > 0) {
+                    const awardText = count > 1 ? `${count}x ${name}` : name;
+                    displayList.push({ 
+                        text: awardText, 
+                        class: `award-${awardId.toLowerCase()}`, 
+                        seasons: awards[awardId].sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) 
+                    });
                 }
             }
         }
@@ -1615,7 +1618,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (awards.length > 0) {
             let awardsHTML = '<div class="awards-container">';
             awards.forEach(award => {
-                awardsHTML += `<div class="award-box ${award.class}">${award.text}</div>`;
+                const seasonTitle = award.seasons && award.seasons.length > 0 
+                    ? ` title="${award.seasons.join(', ')}"` 
+                    : '';
+                awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
             });
             awardsHTML += '</div>';
             titleHTML += awardsHTML;
