@@ -592,7 +592,7 @@ a:hover {
 
 /* Make season selector dropdown in title smaller */
 .title-season-select {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: normal;
     vertical-align: middle;
     margin-left: 10px;
@@ -798,4 +798,121 @@ input:checked + .slider:before {
     background-color: var(--accent-color);
     color: #fff;
     border-color: #E53E00;
+}
+
+/* Awards Page */
+.awards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.awards-header .section-title {
+    border-bottom: none;
+}
+
+.award-team-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#awards-view .awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.leagues-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.league-column {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.league-title {
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--header-color);
+    margin-bottom: 15px;
+}
+
+.award-category {
+    margin-bottom: 20px;
+}
+
+.award-category h4 {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.award-winners-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.award-winner-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.awards-section {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.awards-section-title {
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--header-color);
+    margin-bottom: 15px;
+}
+
+.award-winners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.awards-major-section {
+    margin-bottom: 20px;
+}
+
+.awards-major-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.award-category h5 {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.awards-major-row .award-category {
+    text-align: center;
+}
+
+.awards-major-row .award-winner-item {
+    justify-content: center;
+}
+
+.all-star-winners-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
 }

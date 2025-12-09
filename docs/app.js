@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         leaderboardsView: document.getElementById('leaderboards-view'),
         glossaryView: document.getElementById('glossary-view'),
         teamStatsView: document.getElementById('team-stats-view'),
+        awardsView: document.getElementById('awards-view'),
         
         homeTab: document.getElementById('home-tab'),
         statsTab: document.getElementById('stats-tab'),
@@ -427,6 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardsView.style.display = 'none';
         elements.glossaryView.style.display = 'none';
         elements.teamStatsView.style.display = 'none';
+        elements.awardsView.style.display = 'none';
 
         elements.homeTab.classList.remove('active');
         elements.statsTab.classList.remove('active');
@@ -477,6 +479,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (elements.leaderboardStatSelect.options.length <= 1) {
                 populateLeaderboardStatSelect();
             }
+        } else if (path.startsWith('#/awards')) {
+            elements.awardsView.style.display = 'block';
+            renderAwards();
         } else if (path === '#/glossary') {
             elements.glossaryView.style.display = 'flex';
             elements.glossaryTab.classList.add('active');
@@ -484,6 +489,250 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Default to home page if hash is invalid or empty
             window.location.hash = '#/home';
+        }
+    };
+
+    const hasAwards = (seasonAwards) => {
+        if (!seasonAwards) return false;
+        if (seasonAwards.PCMVP && seasonAwards.PCMVP.length > 0) return true;
+        for (const league of ['AL', 'NL']) {
+            if (seasonAwards[league]) {
+                for (const award in seasonAwards[league]) {
+                    if (seasonAwards[league][award] && seasonAwards[league][award].length > 0) return true;
+                }
+            }
+        }
+        return false;
+    };
+
+    const renderAwards = () => {
+        const awardsView = elements.awardsView;
+        const seasonsWithAwards = Object.keys(state.awards).filter(key => key.startsWith('S') && hasAwards(state.awards[key]));
+        const seasons = seasonsWithAwards.sort((a, b) => parseInt(b.slice(1)) - parseInt(a.slice(1)));
+
+        const awardsData = state.awards;
+        const metadata = awardsData._metadata || {};
+
+        let selectedSeason = seasons.length > 0 ? seasons[0] : null;
+        const urlParams = new URLSearchParams(window.location.hash.split('?')[1]);
+        if (urlParams.has('season') && seasons.includes(urlParams.get('season'))) {
+            selectedSeason = urlParams.get('season');
+        }
+
+        const currentSeasonIndex = seasons.indexOf(selectedSeason);
+        const nextSeason = currentSeasonIndex > 0 ? seasons[currentSeasonIndex - 1] : null;
+        const prevSeason = currentSeasonIndex < seasons.length - 1 ? seasons[currentSeasonIndex + 1] : null;
+
+        let content = `<div class="awards-header team-stats-header">
+                        <h2 class="section-title">Awards - `;
+        if (seasons.length > 0) {
+            content += `<select id="awards-season-select" class="title-season-select">`;
+            seasons.forEach(season => {
+                content += `<option value="${season}" ${season === selectedSeason ? 'selected' : ''}>${season.replace('S', 'Season ')}</option>`;
+            });
+            content += `</select>`;
+        }
+        content += `</h2>
+                    <div class="season-nav-buttons">`;
+        if (prevSeason) {
+            content += `<a href="#/awards?season=${prevSeason}" class="season-nav-button">&lt; Prev Season</a>`;
+        }
+        if (nextSeason) {
+            content += `<a href="#/awards?season=${nextSeason}" class="season-nav-button">Next Season &gt;</a>`;
+        }
+        content += `</div></div>`;
+
+        if (!selectedSeason) {
+            content += '<p>No awards data available for any season.</p>';
+            awardsView.innerHTML = content;
+            return;
+        }
+
+        const seasonAwards = awardsData[selectedSeason];
+        if (!hasAwards(seasonAwards)) {
+            content += '<p>No awards data available for this season.</p>';
+        } else {
+            content += '<div class="awards-container">';
+        
+            // Hall of Fame - Special case, shown only on the first season
+            if (selectedSeason === 'S1' && awardsData.HOF && awardsData.HOF.length > 0) {
+                content += '<div class="awards-section">';
+                content += `<h3 class="awards-section-title">${metadata['HOF'] || 'Hall of Fame'}</h3>`;
+                content += '<div class="award-winners-grid">';
+                awardsData.HOF.forEach(playerId => {
+                    const player = state.players[playerId];
+                    if (player) {
+                        content += `<div class="award-winner-item">${player.currentName}</div>`;
+                    }
+                });
+                content += '</div></div>';
+            }
+
+            // Paper Cup MVP - Spans both leagues
+            if (seasonAwards.PCMVP && seasonAwards.PCMVP.length > 0) {
+                content += '<div class="awards-section">';
+                content += `<h3 class="awards-section-title">${metadata['PCMVP'] || 'Paper Cup MVP'}</h3>`;
+                content += '<div class="award-winners-grid">';
+                seasonAwards.PCMVP.forEach(playerId => {
+                    const player = state.players[playerId];
+                    if (player) {
+                        const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                        const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                        const allStats = [...playerHittingStats, ...playerPitchingStats];
+                        let teamAbbr = '';
+                        if (allStats.length > 0) {
+                            teamAbbr = allStats[0].Team;
+                        }
+                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                        const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+
+                        content += `<div class="award-winner-item">
+                                        ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                        <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                    </div>`;
+                    }
+                });
+                content += '</div></div>';
+            }
+
+
+            content += '<div class="leagues-wrapper">';
+            ['AL', 'NL'].forEach(league => {
+                content += `<div class="league-column">`;
+                content += `<h3 class="league-title">${league === 'AL' ? 'American League' : 'National League'}</h3>`;
+                const leagueAwards = seasonAwards[league];
+
+                if (leagueAwards) {
+                    const majorAwards = [
+                        ['MVP', 'CYA'],
+                        ['ROTY', 'RPOTY'],
+                        ['BT', 'ERAT'],
+                        ['GMOTY']
+                    ];
+                    const silverSluggers = 'SS';
+                    const allStars = 'AS';
+
+                    content += '<div class="awards-major-section">';
+                    content += `<h4>Major Awards</h4>`;
+                    majorAwards.forEach(row => {
+                        content += '<div class="awards-major-row">';
+                        row.forEach(awardKey => {
+                            if (leagueAwards[awardKey] && leagueAwards[awardKey].length > 0) {
+                                content += `<div class="award-category">
+                                                <h5>${metadata[awardKey] || awardKey}</h5>
+                                                <div class="award-winners-list">`;
+                                if (awardKey === 'GMOTY' && leagueAwards[awardKey].length > 1) {
+                                    const playerIds = leagueAwards[awardKey];
+                                    const firstPlayerId = playerIds[0];
+                                    const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === firstPlayerId && s.Season === selectedSeason && !s.is_sub_row);
+                                    const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === firstPlayerId && s.Season === selectedSeason && !s.is_sub_row);
+                                    const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                    let teamAbbr = '';
+                                    if (allStats.length > 0) {
+                                        teamAbbr = allStats[0].Team;
+                                    }
+                                    const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                    const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                    
+                                    const playerLinks = playerIds.map(id => {
+                                        const player = state.players[id];
+                                        return `<a href="#/stats" class="player-link" data-player-id="${id}">${player.currentName}</a>`;
+                                    });
+
+                                    content += `<div class="award-winner-item">
+                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                    ${playerLinks.join(' & ')}
+                                                </div>`;
+                                } else {
+                                    leagueAwards[awardKey].forEach(playerId => {
+                                        const player = state.players[playerId];
+                                        if (player) {
+                                            const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                            const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                            const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                            let teamAbbr = '';
+                                            if (allStats.length > 0) {
+                                                teamAbbr = allStats[0].Team;
+                                            }
+                                            const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                            const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                            content += `<div class="award-winner-item">
+                                                            ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                            <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                        </div>`;
+                                        }
+                                    });
+                                }
+                                content += `</div></div>`;
+                            }
+                        });
+                        content += '</div>';
+                    });
+                    content += '</div>';
+
+                    if (leagueAwards[silverSluggers] && leagueAwards[silverSluggers].length > 0) {
+                        content += `<div class="award-category">
+                                        <h4>${metadata[silverSluggers] || silverSluggers}</h4>
+                                        <div class="award-winners-list">`;
+                        leagueAwards[silverSluggers].forEach(playerId => {
+                            const player = state.players[playerId];
+                            if (player) {
+                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                let teamAbbr = '';
+                                if (allStats.length > 0) {
+                                    teamAbbr = allStats[0].Team;
+                                }
+                                const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                content += `<div class="award-winner-item">
+                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                            </div>`;
+                            }
+                        });
+                        content += `</div></div>`;
+                    }
+
+                    if (leagueAwards[allStars] && leagueAwards[allStars].length > 0) {
+                        content += `<div class="award-category">
+                                        <h4>${metadata[allStars] || allStars}</h4>
+                                        <div class="award-winners-list all-star-winners-list">`;
+                        leagueAwards[allStars].forEach(playerId => {
+                            const player = state.players[playerId];
+                            if (player) {
+                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                let teamAbbr = '';
+                                if (allStats.length > 0) {
+                                    teamAbbr = allStats[0].Team;
+                                }
+                                const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                content += `<div class="award-winner-item">
+                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                            </div>`;
+                            }
+                        });
+                        content += `</div></div>`;
+                    }
+                }
+                content += `</div>`; // end league-column
+            });
+            content += '</div>'; // end leagues-wrapper
+            content += '</div>'; // end awards-container
+        }
+
+        awardsView.innerHTML = content;
+
+        if (seasons.length > 0) {
+            document.getElementById('awards-season-select').addEventListener('change', (event) => {
+                const newSeason = event.target.value;
+                window.location.hash = `#/awards?season=${newSeason}`;
+            });
         }
     };
 
@@ -503,6 +752,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const playerMostRecentTeamLogo1 = getTeamLogoBySeason(featuredPlayerMostRecentTeamKey1, featuredPlayerMostRecentSeason1);
         const playerMostRecentTeamLogo2 = getTeamLogoBySeason(featuredPlayerMostRecentTeamKey2, featuredPlayerMostRecentSeason2);
 
+        let awardsLink = '';
+        if (Object.keys(state.awards).some(key => key.startsWith('S') && hasAwards(state.awards[key]))) {
+            awardsLink = `<li><a href="#/awards"><strong>Awards:</strong></a> Season-by-season award winners.</li>`;
+        }
+
         elements.homeView.innerHTML = `
             <div class="welcome-container">
                 <h2 class="section-title">Welcome to MLR Reference!</h2>
@@ -512,6 +766,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><a href="#/stats"><strong>Player Stats:</strong></a> Detailed batting and pitching statistics for every player in MLR history. Players can be searched by name (including former names) or player ID.</li>
                     <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
                     <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
+                    ${awardsLink}
                     <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
                     <li><a href="#/gamelog-errors"><strong>Known Gamelog Errors:</strong></a> A list of known errors in the gamelogs. All these errors have been corrected for this app.</li>
                     <li><a href="https://forms.gle/nmLNL5PbF6bXrXpo9" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
