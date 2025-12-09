@@ -568,33 +568,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 content += '</div></div>';
             }
 
-            // Paper Cup MVP - Spans both leagues
-            if (seasonAwards.PCMVP && seasonAwards.PCMVP.length > 0) {
-                content += '<div class="awards-section">';
-                content += `<h3 class="awards-section-title">${metadata['PCMVP'] || 'Paper Cup MVP'}</h3>`;
-                content += '<div class="award-winners-grid">';
-                seasonAwards.PCMVP.forEach(playerId => {
-                    const player = state.players[playerId];
-                    if (player) {
-                        const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                        const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                        const allStats = [...playerHittingStats, ...playerPitchingStats];
-                        let teamAbbr = '';
-                        if (allStats.length > 0) {
-                            teamAbbr = allStats[0].Team;
-                        }
-                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
-                        const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
-
-                        content += `<div class="award-winner-item">
-                                        ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
-                                        <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                    </div>`;
-                    }
-                });
-                content += '</div></div>';
-            }
-
 
             content += '<div class="leagues-wrapper">';
             ['AL', 'NL'].forEach(league => {
@@ -670,53 +643,241 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                     content += '</div>';
 
-                    if (leagueAwards[silverSluggers] && leagueAwards[silverSluggers].length > 0) {
+                    if (leagueAwards[silverSluggers] && typeof leagueAwards[silverSluggers] === 'object' && Object.keys(leagueAwards[silverSluggers]).length > 0) {
                         content += `<div class="award-category">
-                                        <h4>${metadata[silverSluggers] || silverSluggers}</h4>
+                                        <h4>${metadata[silverSluggers] || 'Silver Slugger'}</h4>
                                         <div class="award-winners-list">`;
-                        leagueAwards[silverSluggers].forEach(playerId => {
-                            const player = state.players[playerId];
-                            if (player) {
-                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                                const allStats = [...playerHittingStats, ...playerPitchingStats];
-                                let teamAbbr = '';
-                                if (allStats.length > 0) {
-                                    teamAbbr = allStats[0].Team;
-                                }
-                                const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
-                                const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
-                                content += `<div class="award-winner-item">
+                        
+                        const ssAwards = leagueAwards[silverSluggers];
+                        const positionOrder = ['C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'OF', 'DH', 'P'];
+
+                        positionOrder.forEach(position => {
+                            if (ssAwards[position]) {
+                                const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
+                                
+                                content += `<div class="award-winner-item-pos">
+                                                <span class="award-position-label">${position}</span>
+                                                <div class="award-player-info-pos">`;
+
+                                playerIds.forEach((playerId, index) => {
+                                    const player = state.players[playerId];
+                                    if (player) {
+                                        const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                        const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                        const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                        let teamAbbr = '';
+                                        if (allStats.length > 0) {
+                                            teamAbbr = allStats[0].Team;
+                                        }
+                                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                        const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+
+                                        content += `
+                                            <div class="award-player-item-pos">
                                                 ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
                                                 <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                            </div>`;
+                                            </div>
+                                        `;
+                                    }
+                                });
+                                content += `</div></div>`;
                             }
                         });
                         content += `</div></div>`;
                     }
 
-                    if (leagueAwards[allStars] && leagueAwards[allStars].length > 0) {
+                    if (leagueAwards[allStars] && typeof leagueAwards[allStars] === 'object' && Object.keys(leagueAwards[allStars]).length > 0) {
                         content += `<div class="award-category">
-                                        <h4>${metadata[allStars] || allStars}</h4>
-                                        <div class="award-winners-list all-star-winners-list">`;
-                        leagueAwards[allStars].forEach(playerId => {
-                            const player = state.players[playerId];
-                            if (player) {
-                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                                const allStats = [...playerHittingStats, ...playerPitchingStats];
-                                let teamAbbr = '';
-                                if (allStats.length > 0) {
-                                    teamAbbr = allStats[0].Team;
+                                        <h4>${metadata[allStars] || 'All-Stars'}</h4>
+                                        <div class="all-star-team">`;
+
+                        const asAwards = leagueAwards[allStars];
+                        const startersOrder = ['C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'DH'];
+
+                        // GMs
+                        if (asAwards.GM && asAwards.GM.length > 0) {
+                            content += `<div class="as-section as-gms">
+                                            <h5>General Manager</h5>
+                                            <div class="as-gm-list">`;
+                            if (asAwards.GM.length > 1) {
+                                // Multiple GMs
+                                const playerIds = asAwards.GM;
+
+                                const playerInfos = playerIds.map(id => {
+                                    const player = state.players[id];
+                                    if (!player) return null;
+
+                                    const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === id && s.Season === selectedSeason && !s.is_sub_row);
+                                    const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === id && s.Season === selectedSeason && !s.is_sub_row);
+                                    const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                    let teamAbbr = '';
+                                    if (allStats.length > 0) { teamAbbr = allStats[0].Team; }
+                                    const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                    const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                    
+                                    return {
+                                        id: id,
+                                        name: player.currentName,
+                                        logo: logo
+                                    };
+                                }).filter(Boolean);
+
+                                const firstLogo = playerInfos.length > 0 ? playerInfos[0].logo : null;
+                                const allLogosSame = playerInfos.every(p => p.logo === firstLogo);
+
+                                if (allLogosSame) {
+                                    const playerLinks = playerInfos.map(p => `<a href="#/stats" class="player-link" data-player-id="${p.id}">${p.name}</a>`);
+                                    content += `<div class="award-winner-item">
+                                                    ${firstLogo ? `<img src="${firstLogo}" class="award-team-logo">` : ''}
+                                                    ${playerLinks.join(' & ')}
+                                                </div>`;
+                                } else {
+                                    const joinedPlayerHtml = playerInfos.map(p => 
+                                        `<span class="award-winner-item" style="display: inline-flex;">${p.logo ? `<img src="${p.logo}" class="award-team-logo">` : ''}<a href="#/stats" class="player-link" data-player-id="${p.id}">${p.name}</a></span>`
+                                    ).join(' & ');
+
+                                    content += `<div class="award-winner-item">${joinedPlayerHtml}</div>`;
                                 }
-                                const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
-                                const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
-                                content += `<div class="award-winner-item">
-                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
-                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                            </div>`;
+                            } else {
+                                // Single GM
+                                const playerId = asAwards.GM[0];
+                                const player = state.players[playerId];
+                                if (player) {
+                                    const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                    const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                    const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                    let teamAbbr = '';
+                                    if (allStats.length > 0) { teamAbbr = allStats[0].Team; }
+                                    const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                    const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                    content += `<div class="award-winner-item">
+                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                    <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                </div>`;
+                                }
+                            }
+                            content += `</div></div>`;
+                        }
+
+                        // Starters and Pitchers
+                        content += `<div class="as-main-roster">`;
+
+                        // Starters (left column)
+                        content += `<div class="as-section as-starters">
+                                        <h5>Starting Lineup</h5>
+                                        <div class="as-player-list">`;
+                        startersOrder.forEach(position => {
+                            if (asAwards[position]) {
+                                const playerIds = Array.isArray(asAwards[position]) ? asAwards[position] : [asAwards[position]];
+                                playerIds.forEach(playerId => {
+                                    const player = state.players[playerId];
+                                    if (player) {
+                                        const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                        const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                        const allStats = [...playerHittingStats, ...playerPitchingStats];
+                                        let teamAbbr = '';
+                                        if (allStats.length > 0) { teamAbbr = allStats[0].Team; }
+                                        const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                        const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                        content += `<div class="award-winner-item">
+                                                        <span class="award-position-label">${position}</span>
+                                                        ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                        <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                    </div>`;
+                                    }
+                                });
                             }
                         });
+                        content += `</div></div>`;
+                        
+                        // Pitchers (right column)
+                        if (asAwards.P && asAwards.P.length > 0) {
+                            content += `<div class="as-section as-pitchers">
+                                            <h5>Pitchers</h5>
+                                            <div class="as-player-list">`;
+                            asAwards.P.forEach(playerId => {
+                                const player = state.players[playerId];
+                                if (player) {
+                                    const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                    let teamAbbr = '';
+                                    if (playerPitchingStats.length > 0) { teamAbbr = playerPitchingStats[0].Team; }
+                                    const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                    const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+                                    content += `<div class="award-winner-item">
+                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                    <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                </div>`;
+                                }
+                            });
+                            content += `</div></div>`;
+                        }
+
+                        content += `</div>`; // end as-main-roster
+
+                        // Reserves
+                        if (asAwards.R && asAwards.R.length > 0) {
+                            content += `<div class="as-section as-reserves">
+                                            <h5>Reserves</h5>`;
+                            
+                            const reservesData = asAwards.R.map(playerId => {
+                                const player = state.players[playerId];
+                                if (!player) return null;
+
+                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const allPlayerSeasonStats = [...playerHittingStats, ...playerPitchingStats];
+                                
+                                let teamAbbr = '';
+                                if (allPlayerSeasonStats.length > 0) {
+                                    teamAbbr = allPlayerSeasonStats[0]['Last Team'] || allPlayerSeasonStats[0].Team;
+                                }
+
+                                const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, selectedSeason);
+                                const logo = getTeamLogoBySeason(franchiseKey, selectedSeason);
+
+                                return {
+                                    playerId: playerId,
+                                    playerName: player.currentName,
+                                    teamAbbr: teamAbbr,
+                                    logo: logo
+                                };
+                            }).filter(Boolean);
+
+                            reservesData.sort((a, b) => {
+                                if (a.teamAbbr < b.teamAbbr) return -1;
+                                if (a.teamAbbr > b.teamAbbr) return 1;
+                                if (a.playerName < b.playerName) return -1;
+                                if (a.playerName > b.playerName) return 1;
+                                return 0;
+                            });
+
+                            const midpoint = Math.ceil(reservesData.length / 2);
+                            const col1 = reservesData.slice(0, midpoint);
+                            const col2 = reservesData.slice(midpoint);
+
+                            content += `<div class="as-reserves-list">`;
+                            content += `<div class="as-reserves-col">`;
+                            col1.forEach(reserve => {
+                                content += `<div class="award-winner-item">
+                                                ${reserve.logo ? `<img src="${reserve.logo}" class="award-team-logo">` : ''}
+                                                <a href="#/stats" class="player-link" data-player-id="${reserve.playerId}">${reserve.playerName}</a>
+                                            </div>`;
+                            });
+                            content += `</div>`; // end col1
+
+                            if (col2.length > 0) {
+                                content += `<div class="as-reserves-col">`;
+                                col2.forEach(reserve => {
+                                    content += `<div class="award-winner-item">
+                                                    ${reserve.logo ? `<img src="${reserve.logo}" class="award-team-logo">` : ''}
+                                                    <a href="#/stats" class="player-link" data-player-id="${reserve.playerId}">${reserve.playerName}</a>
+                                                </div>`;
+                                });
+                                content += `</div>`; // end col2
+                            }
+                            content += `</div></div>`;
+                        }
+
                         content += `</div></div>`;
                     }
                 }
@@ -1765,14 +1926,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!awards[awardId]) {
                 awards[awardId] = [];
             }
-            if (season) {
+            if (season && !awards[awardId].includes(season)) {
                 awards[awardId].push(season);
+            } else if (!season) { // For non-season awards like HOF
+                awards[awardId] = [];
             }
         };
 
         // HOF
         if (awardsData.HOF && awardsData.HOF.includes(playerId)) {
-            awards['HOF'] = []; // No seasons for HOF
+            addAward('HOF', null);
         }
 
         // Season awards
@@ -1788,9 +1951,29 @@ document.addEventListener('DOMContentLoaded', () => {
             ['AL', 'NL'].forEach(league => {
                 if (seasonData[league]) {
                     for (const awardKey in seasonData[league]) {
-                        const winners = seasonData[league][awardKey];
-                        if (Array.isArray(winners) && winners.includes(playerId)) {
-                            addAward(awardKey, seasonKey);
+                        const awardData = seasonData[league][awardKey];
+                        
+                        if (awardKey === 'SS' || awardKey === 'AS') {
+                            if (typeof awardData === 'object' && awardData !== null && !Array.isArray(awardData)) {
+                                for (const position in awardData) {
+                                    const positionWinners = awardData[position];
+                                    if (Array.isArray(positionWinners)) {
+                                        if (positionWinners.includes(playerId)) {
+                                            addAward(awardKey, seasonKey);
+                                            break; // Found player, no need to check other positions for this award
+                                        }
+                                    } else {
+                                        if (positionWinners === playerId) {
+                                            addAward(awardKey, seasonKey);
+                                            break; // Found player, no need to check other positions for this award
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            if (Array.isArray(awardData) && awardData.includes(playerId)) {
+                                addAward(awardKey, seasonKey);
+                            }
                         }
                     }
                 }

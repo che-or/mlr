@@ -816,7 +816,6 @@ input:checked + .slider:before {
 .award-team-logo {
     width: 24px;
     height: 24px;
-    margin-right: 8px;
 }
 
 #awards-view .awards-container {
@@ -864,7 +863,7 @@ input:checked + .slider:before {
 .award-winner-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .awards-section {
@@ -914,5 +913,95 @@ input:checked + .slider:before {
 .all-star-winners-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+/* New styles for Silver Slugger awards */
+.award-winner-item-pos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.award-position-label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--header-color);
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.award-player-info-pos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.award-player-item-pos {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* All-Star Team Layout */
+.all-star-team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.as-section h5 {
+    margin: 0 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.2em;
+}
+
+.as-gms {
+    text-align: left;
+}
+
+.as-gm-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.as-main-roster {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .as-main-roster {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.as-player-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.as-starters .award-winner-item .award-position-label {
+    width: 30px;
+    flex-shrink: 0;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+.as-reserves-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.as-reserves-col {
+    display: flex;
+    flex-direction: column;
     gap: 8px;
 }
