@@ -832,9 +832,8 @@ input:checked + .slider:before {
 }
 
 .league-column {
-    background-color: var(--primary-color);
-    padding: 15px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .league-title {
@@ -844,8 +843,16 @@ input:checked + .slider:before {
     margin-bottom: 15px;
 }
 
+.awards-sub-title {
+    font-size: 1.2em; /* Smaller than league-title, larger than inner h5/h4 */
+    text-align: center;
+    color: var(--header-color);
+    margin-top: 20px; /* Space above the sub-title */
+    margin-bottom: 15px; /* Space below the sub-title before the box */
+}
+
 .award-category {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .award-category h4 {
@@ -886,7 +893,7 @@ input:checked + .slider:before {
 }
 
 .awards-major-section {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .awards-major-row {
@@ -1004,4 +1011,10 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.awards-sub-section {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 8px;
 }
