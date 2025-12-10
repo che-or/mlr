@@ -2731,7 +2731,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Apply default sorting
         elements.teamStatsView.querySelectorAll('.stats-table').forEach(table => {
-            const titleElement = table.previousElementSibling; // This is the h3 element
+            const titleElement = table.parentElement.previousElementSibling; // This is the h3 element
             if (titleElement) {
                 const title = titleElement.textContent;
                 let defaultStat = '';
