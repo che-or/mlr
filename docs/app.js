@@ -677,24 +677,44 @@ document.addEventListener('DOMContentLoaded', () => {
                                 if (ssAwards[position]) {
                                     const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
                                     
-                                    colContent += `<div class="award-winner-item-pos">
-                                                    <span class="award-position-label">${position}</span>
-                                                    <div class="award-player-info-pos">`;
+                                    if (position === 'OF' && playerIds.length > 1) {
+                                        playerIds.forEach(playerId => {
+                                            const player = state.players[playerId];
+                                            if (player) {
+                                                const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
+                                                colContent += `
+                                                    <div class="award-winner-item-pos">
+                                                        <span class="award-position-label">${position}</span>
+                                                        <div class="award-player-info-pos">
+                                                            <div class="award-player-item-pos">
+                                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                `;
+                                            }
+                                        });
+                                    } else {
+                                        colContent += `<div class="award-winner-item-pos">
+                                                        <span class="award-position-label">${position}</span>
+                                                        <div class="award-player-info-pos">`;
 
-                                    playerIds.forEach((playerId, index) => {
-                                        const player = state.players[playerId];
-                                        if (player) {
-                                            const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
+                                        playerIds.forEach((playerId, index) => {
+                                            const player = state.players[playerId];
+                                            if (player) {
+                                                const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
 
-                                            colContent += `
-                                                <div class="award-player-item-pos">
-                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
-                                                    <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                                </div>
-                                            `;
-                                        }
-                                    });
-                                    colContent += `</div></div>`;
+                                                colContent += `
+                                                    <div class="award-player-item-pos">
+                                                        ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                        <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                    </div>
+                                                `;
+                                            }
+                                        });
+                                        colContent += `</div></div>`;
+                                    }
                                 }
                             });
                             return colContent;
