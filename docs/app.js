@@ -201,6 +201,29 @@ document.addEventListener('DOMContentLoaded', () => {
         'K%': 'Strikeout Percentage',
     };
 
+    const setStickyColumnOffsets = () => {
+        // Only run if on mobile view for tables
+        if (window.innerWidth > 900) {
+            const secondColumnCells = document.querySelectorAll('#stats-content-display .col-1');
+            secondColumnCells.forEach(cell => {
+                cell.style.left = '';
+            });
+            return;
+        }
+
+        const tables = document.querySelectorAll('#stats-content-display .stats-table');
+        tables.forEach(table => {
+            const firstHeaderCell = table.querySelector('th.col-0');
+            if (firstHeaderCell) {
+                const width = firstHeaderCell.offsetWidth;
+                const secondColumnCells = table.querySelectorAll('.col-1');
+                secondColumnCells.forEach(cell => {
+                    cell.style.left = `${width}px`;
+                });
+            }
+        });
+    };
+
     const GLOSSARY_GROUPS = {
         "General": ["WAR", "WPA", "RE24"],
         "Batting": ["BA", "OBP", "SLG", "OPS", "ISO", "BABIP", "OPS+"],
@@ -1212,6 +1235,16 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardTypeSelect.addEventListener('change', populateLeaderboardStatSelect);
         elements.leaderboardStatSelect.addEventListener('change', handleStatSelectChange);
         populateTeamFilter();
+
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                if (window.location.hash === '#/stats') {
+                    setStickyColumnOffsets();
+                }
+            }, 100);
+        });
 
         elements.homeTab.addEventListener('click', () => { window.location.hash = '#/home'; });
         elements.statsTab.addEventListener('click', () => { window.location.hash = '#/stats'; });
@@ -2395,6 +2428,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             elements.statsContentDisplay.querySelectorAll('.stats-table').forEach(makeTableSortable);
+            setStickyColumnOffsets();
         }
     };
 
@@ -2854,11 +2888,16 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const groupName in statGroups) {
             const groupStats = statGroups[groupName];
             html += `<h4>${groupName}</h4>`;
+            html += '<div class="stats-table-container">';
             html += '<table class="stats-table">';
             html += '<thead><tr>';
-            groupStats.forEach(stat => {
+            groupStats.forEach((stat, colIndex) => {
                 const description = STAT_DESCRIPTIONS[stat] || '';
-                html += `<th title="${description}">${stat}</th>`;
+                let th_class = '';
+                if (colIndex < 2) {
+                    th_class = ` class="sticky-col col-${colIndex}"`;
+                }
+                html += `<th${th_class} title="${description}">${stat}</th>`;
             });
             html += '</tr></thead>';
             html += '<tbody>';
@@ -2875,7 +2914,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     rowClass += ' sub-row';
                 }
                 html += `<tr class="${rowClass}" data-original-index="${index}">`;
-                groupStats.forEach(stat => {
+                groupStats.forEach((stat, colIndex) => {
+                    let td_class = '';
+                    if (colIndex < 2) {
+                        td_class = ` class="sticky-col col-${colIndex}"`;
+                    }
                     let statKey = stat;
                     if (isPitching) {
                         if (stat === 'SO') statKey = 'K';
@@ -2907,15 +2950,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     let value; // Declare 'value' here
 
                     if (stat === 'Season' && s.Season === 'Franchise') {
-                        html += `<td></td>`;
+                        html += `<td${td_class}></td>`;
                     } else if (stat === 'Team') {
                         value = s.Team || '';
                         const isMultiTeam = /^\d+TM$/.test(value);
                         if (s.Season !== 'Career' && s.Season !== 'Franchise' && value && !isMultiTeam) { // Only make season-specific teams clickable
                             const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
-                            html += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
+                            html += `<td${td_class}><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
-                            html += `<td>${formatStat(stat, value)}</td>`;
+                            html += `<td${td_class}>${formatStat(stat, value)}</td>`;
                         }
                     } else {
                         value = s[statKey]; // Assign 'value' here for non-Team stats
@@ -2961,11 +3004,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
 
-                        let cellHTML = `<td>${formatStat(stat, value)}</td>`;
+                        let cellHTML = `<td${td_class}>${formatStat(stat, value)}</td>`;
                         if (stat === 'Type' && value) {
                             const typeCategory = isPitching ? 'pitching' : 'batting';
                             if (state.typeDefinitions[typeCategory] && state.typeDefinitions[typeCategory][value]) {
-                                cellHTML = `<td title="${state.typeDefinitions[typeCategory][value]}">${formatStat(stat, value)}</td>`;
+                                cellHTML = `<td${td_class} title="${state.typeDefinitions[typeCategory][value]}">${formatStat(stat, value)}</td>`;
                             }
                         }
                         html += cellHTML;
@@ -2973,7 +3016,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 html += '</tr>';
             });
-            html += '</tbody></table>';
+            html += '</tbody></table></div>';
         }
         return html;
     };
