@@ -575,10 +575,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             content += '<div class="awards-container">';
         
+            content += `<div class="league-toggle-buttons">
+                            <button class="league-toggle-button active" data-league="al">American League</button>
+                            <button class="league-toggle-button" data-league="nl">National League</button>
+                        </div>`;
             content += '<div class="leagues-wrapper">';
             ['AL', 'NL'].forEach(league => {
                 const leagueName = league === 'AL' ? 'American League' : 'National League';
-                content += `<div class="league-column">`;
+                content += `<div class="league-column league-${league.toLowerCase()}">`;
                 content += `<h3 class="league-title">${leagueName} Awards</h3>`;
                 const leagueAwards = seasonAwards[league];
 
@@ -869,6 +873,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         awardsView.innerHTML = content;
+
+        const wrapper = awardsView.querySelector('.leagues-wrapper');
+        const toggleButtons = awardsView.querySelector('.league-toggle-buttons');
+
+        const setLeagueView = (league) => {
+            if (wrapper) {
+                wrapper.classList.remove('show-al', 'show-nl');
+                wrapper.classList.add(`show-${league}`);
+            }
+            if (toggleButtons) {
+                const currentActive = toggleButtons.querySelector('.active');
+                if (currentActive) currentActive.classList.remove('active');
+                const newActive = toggleButtons.querySelector(`[data-league=${league}]`);
+                if (newActive) newActive.classList.add('active');
+            }
+        };
+
+        const urlLeague = new URLSearchParams(window.location.hash.split('?')[1]).get('league');
+        if (urlLeague && ['al', 'nl'].includes(urlLeague)) {
+            setLeagueView(urlLeague);
+        } else {
+            setLeagueView('al'); // Default to AL
+        }
+
+        if (toggleButtons) {
+            toggleButtons.addEventListener('click', (event) => {
+                const button = event.target.closest('.league-toggle-button');
+                if (!button) return;
+
+                const league = button.dataset.league;
+                if (!league) return;
+                
+                setLeagueView(league);
+            });
+        }
 
         if (seasons.length > 0) {
             document.getElementById('awards-season-select').addEventListener('change', (event) => {
@@ -1969,27 +2008,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const getPlayerAwards = (playerId) => {
-        const awards = {}; // Key: awardId, Value: array of seasons
+        const awards = {}; // Key: awardId, Value: array of {season, league}
         const awardsData = state.awards;
         if (!awardsData) return [];
 
         const metadata = awardsData._metadata || {};
 
         // Helper to add an award
-        const addAward = (awardId, season) => {
+        const addAward = (awardId, season, league) => {
             if (!awards[awardId]) {
                 awards[awardId] = [];
             }
-            if (season && !awards[awardId].includes(season)) {
-                awards[awardId].push(season);
-            } else if (!season) { // For non-season awards like HOF
+            if (season) {
+                if (!awards[awardId].some(a => a.season === season && a.league === league)) {
+                    awards[awardId].push({ season: season, league: league });
+                }
+            } else if (awardId === 'HOF') {
                 awards[awardId] = [];
             }
         };
 
         // HOF
         if (awardsData.HOF && awardsData.HOF.includes(playerId)) {
-            addAward('HOF', null);
+            addAward('HOF', null, null);
         }
 
         // Season awards
@@ -1999,7 +2040,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const seasonData = awardsData[seasonKey];
             
             if (seasonData.PCMVP && seasonData.PCMVP.includes(playerId)) {
-                addAward('PCMVP', seasonKey);
+                addAward('PCMVP', seasonKey, null); // No league for PCMVP
             }
 
             ['AL', 'NL'].forEach(league => {
@@ -2011,25 +2052,25 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (typeof awardData === 'object' && awardData !== null && !Array.isArray(awardData)) {
                                 for (const position in awardData) {
                                     if (awardKey === 'AS' && position === 'GM') {
-                                        continue; // Skip GM All-Star awards for player pages
+                                        continue;
                                     }
                                     const positionWinners = awardData[position];
                                     if (Array.isArray(positionWinners)) {
                                         if (positionWinners.includes(playerId)) {
-                                            addAward(awardKey, seasonKey);
-                                            break; // Found player, no need to check other positions for this award
+                                            addAward(awardKey, seasonKey, league);
+                                            break;
                                         }
                                     } else {
                                         if (positionWinners === playerId) {
-                                            addAward(awardKey, seasonKey);
-                                            break; // Found player, no need to check other positions for this award
+                                            addAward(awardKey, seasonKey, league);
+                                            break;
                                         }
                                     }
                                 }
                             }
                         } else {
                             if (Array.isArray(awardData) && awardData.includes(playerId)) {
-                                addAward(awardKey, seasonKey);
+                                addAward(awardKey, seasonKey, league);
                             }
                         }
                     }
@@ -2042,17 +2083,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (const awardId of order) {
             if (awards[awardId]) {
-                const count = awards[awardId].length;
+                const wins = awards[awardId];
+                const count = wins.length;
                 const name = metadata[awardId] || awardId;
 
                 if (awardId === 'HOF') {
                     displayList.push({ text: name, class: 'award-hof', seasons: [] });
                 } else if (count > 0) {
                     const awardText = count > 1 ? `${count}x ${name}` : name;
+                    wins.sort((a, b) => parseInt(a.season.slice(1)) - parseInt(b.season.slice(1)));
+                    
+                    const seasons = wins.map(w => w.season);
+                    const lastWin = wins[wins.length - 1];
+
                     displayList.push({ 
                         text: awardText, 
                         class: `award-${awardId.toLowerCase()}`, 
-                        seasons: awards[awardId].sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) 
+                        seasons: seasons,
+                        lastWin: lastWin 
                     });
                 }
             }
@@ -2119,8 +2167,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (award.class === 'award-hof') {
                     awardsHTML += `<a href="#/hof"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
                 } else if (award.seasons && award.seasons.length > 0) {
-                    const lastSeason = award.seasons[award.seasons.length - 1];
-                    awardsHTML += `<a href="#/awards?season=${lastSeason}"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
+                    const lastSeason = award.lastWin.season;
+                    const league = award.lastWin.league;
+                    let href = `#/awards?season=${lastSeason}`;
+                    if (league) {
+                        href += `&league=${league.toLowerCase()}`;
+                    }
+                    awardsHTML += `<a href="${href}"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
                 } else {
                     awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
                 }

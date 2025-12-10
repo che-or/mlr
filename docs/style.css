@@ -825,10 +825,47 @@ input:checked + .slider:before {
     margin-bottom: 0;
 }
 
+.league-toggle-buttons {
+    display: none;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.league-toggle-button {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.league-toggle-button.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
 .leagues-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .leagues-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .league-toggle-buttons {
+        display: flex;
+    }
+    .leagues-wrapper.show-al .league-column.league-nl {
+        display: none;
+    }
+    .leagues-wrapper.show-nl .league-column.league-al {
+        display: none;
+    }
 }
 
 .league-column {
