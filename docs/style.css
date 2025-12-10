@@ -825,10 +825,47 @@ input:checked + .slider:before {
     margin-bottom: 0;
 }
 
+.league-toggle-buttons {
+    display: none;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.league-toggle-button {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.league-toggle-button.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+}
+
 .leagues-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .leagues-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .league-toggle-buttons {
+        display: flex;
+    }
+    .leagues-wrapper.show-al .league-column.league-nl {
+        display: none;
+    }
+    .leagues-wrapper.show-nl .league-column.league-al {
+        display: none;
+    }
 }
 
 .league-column {
@@ -924,6 +961,33 @@ input:checked + .slider:before {
 }
 
 /* New styles for Silver Slugger awards */
+.ss-winners-list {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .ss-winners-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.ss-winners-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ss-winners-col + .ss-winners-col {
+    margin-top: 8px;
+}
+@media (min-width: 768px) {
+    .ss-winners-col + .ss-winners-col {
+        margin-top: 0;
+    }
+}
+
 .award-winner-item-pos {
     display: flex;
     align-items: center;
@@ -1002,15 +1066,30 @@ input:checked + .slider:before {
 }
 
 .as-reserves-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .as-reserves-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 .as-reserves-col {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.as-reserves-col + .as-reserves-col {
+    margin-top: 8px;
+}
+@media (min-width: 768px) {
+    .as-reserves-col + .as-reserves-col {
+        margin-top: 0;
+    }
 }
 
 .awards-sub-section {
@@ -1033,6 +1112,7 @@ input:checked + .slider:before {
     padding: 20px;
     text-align: center;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hof-player-card:hover {
@@ -1090,4 +1170,63 @@ input:checked + .slider:before {
     color: var(--subtle-text-color);
     margin-top: -10px;
     margin-bottom: 20px;
+}
+
+/* Responsive tables with sticky columns */
+@media (max-width: 900px) {
+    .stats-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .stats-table {
+        white-space: nowrap;
+    }
+    .stats-table th,
+    .stats-table td {
+        padding: 8px 12px;
+    }
+
+    .sticky-col {
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 1;
+    }
+    .stats-table th.sticky-col {
+        background-color: var(--secondary-color);
+        z-index: 2;
+    }
+    .stats-table td.sticky-col {
+        background-color: var(--primary-color);
+    }
+    .stats-table tr:hover .sticky-col {
+        background-color: var(--secondary-color);
+    }
+
+    .col-0 { left: 0; }
+    /* .col-1 left offset is set by JS */
+}
+
+/* Custom Scrollbar for dark mode */
+.stats-table-container::-webkit-scrollbar {
+    height: 8px; /* height of horizontal scrollbar */
+}
+
+.stats-table-container::-webkit-scrollbar-track {
+    background: var(--primary-color); /* background of the scrollbar track */
+    border-radius: 10px;
+}
+
+.stats-table-container::-webkit-scrollbar-thumb {
+    background: var(--border-color); /* color of the scroll thumb */
+    border-radius: 10px;
+}
+
+.stats-table-container::-webkit-scrollbar-thumb:hover {
+    background: var(--subtle-text-color); /* color of the scroll thumb on hover */
+}
+
+/* Firefox scrollbar styles */
+.stats-table-container {
+    scrollbar-color: var(--border-color) var(--primary-color);
+    scrollbar-width: thin;
 }

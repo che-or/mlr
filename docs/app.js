@@ -201,6 +201,29 @@ document.addEventListener('DOMContentLoaded', () => {
         'K%': 'Strikeout Percentage',
     };
 
+    const setStickyColumnOffsets = () => {
+        // Only run if on mobile view for tables
+        if (window.innerWidth > 900) {
+            const secondColumnCells = document.querySelectorAll('#stats-content-display .col-1');
+            secondColumnCells.forEach(cell => {
+                cell.style.left = '';
+            });
+            return;
+        }
+
+        const tables = document.querySelectorAll('#stats-content-display .stats-table');
+        tables.forEach(table => {
+            const firstHeaderCell = table.querySelector('th.col-0');
+            if (firstHeaderCell) {
+                const width = firstHeaderCell.offsetWidth;
+                const secondColumnCells = table.querySelectorAll('.col-1');
+                secondColumnCells.forEach(cell => {
+                    cell.style.left = `${width}px`;
+                });
+            }
+        });
+    };
+
     const GLOSSARY_GROUPS = {
         "General": ["WAR", "WPA", "RE24"],
         "Batting": ["BA", "OBP", "SLG", "OPS", "ISO", "BABIP", "OPS+"],
@@ -575,10 +598,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             content += '<div class="awards-container">';
         
+            content += `<div class="league-toggle-buttons">
+                            <button class="league-toggle-button active" data-league="al">American League</button>
+                            <button class="league-toggle-button" data-league="nl">National League</button>
+                        </div>`;
             content += '<div class="leagues-wrapper">';
             ['AL', 'NL'].forEach(league => {
                 const leagueName = league === 'AL' ? 'American League' : 'National League';
-                content += `<div class="league-column">`;
+                content += `<div class="league-column league-${league.toLowerCase()}">`;
                 content += `<h3 class="league-title">${leagueName} Awards</h3>`;
                 const leagueAwards = seasonAwards[league];
 
@@ -638,38 +665,54 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (leagueAwards[silverSluggers] && typeof leagueAwards[silverSluggers] === 'object' && Object.keys(leagueAwards[silverSluggers]).length > 0) {
                         content += `<h4 class="awards-sub-title">${leagueName} Silver Sluggers</h4>`;
                         content += '<div class="awards-sub-section">';
-                        content += `<div class="award-category">
-                                        <div class="award-winners-list">`;
-                        
+                        content += `<div class="award-category">`;
+
                         const ssAwards = leagueAwards[silverSluggers];
-                        const positionOrder = ['C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'OF', 'DH', 'P'];
+                        const col1_positions = ['C', '1B', '2B', '3B', 'DH'];
+                        const col2_positions = ['SS', 'LF', 'CF', 'RF', 'OF', 'P'];
 
-                        positionOrder.forEach(position => {
-                            if (ssAwards[position]) {
-                                const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
-                                
-                                content += `<div class="award-winner-item-pos">
-                                                <span class="award-position-label">${position}</span>
-                                                <div class="award-player-info-pos">`;
+                        const renderColumn = (positions) => {
+                            let colContent = '';
+                            positions.forEach(position => {
+                                if (ssAwards[position]) {
+                                    const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
+                                    
+                                    colContent += `<div class="award-winner-item-pos">
+                                                    <span class="award-position-label">${position}</span>
+                                                    <div class="award-player-info-pos">`;
 
-                                playerIds.forEach((playerId, index) => {
-                                    const player = state.players[playerId];
-                                    if (player) {
-                                        const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
+                                    playerIds.forEach((playerId, index) => {
+                                        const player = state.players[playerId];
+                                        if (player) {
+                                            const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
 
-                                        content += `
-                                            <div class="award-player-item-pos">
-                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
-                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                            </div>
-                                        `;
-                                    }
-                                });
-                                content += `</div></div>`;
-                            }
-                        });
+                                            colContent += `
+                                                <div class="award-player-item-pos">
+                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                    <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                </div>
+                                            `;
+                                        }
+                                    });
+                                    colContent += `</div></div>`;
+                                }
+                            });
+                            return colContent;
+                        }
+                        
+                        const col1_content = renderColumn(col1_positions);
+                        const col2_content = renderColumn(col2_positions);
+
+                        content += `<div class="ss-winners-list">`;
+                        if (col1_content) {
+                            content += `<div class="ss-winners-col">${col1_content}</div>`;
+                        }
+                        if (col2_content) {
+                            content += `<div class="ss-winners-col">${col2_content}</div>`;
+                        }
+                        content += `</div>`; // end ss-winners-list
+
                         content += `</div></div>`;
-                        content += `</div>`;
                     }
 
                     if (leagueAwards[allStars] && typeof leagueAwards[allStars] === 'object' && Object.keys(leagueAwards[allStars]).length > 0) {
@@ -853,6 +896,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         awardsView.innerHTML = content;
+
+        const wrapper = awardsView.querySelector('.leagues-wrapper');
+        const toggleButtons = awardsView.querySelector('.league-toggle-buttons');
+
+        const setLeagueView = (league) => {
+            if (wrapper) {
+                wrapper.classList.remove('show-al', 'show-nl');
+                wrapper.classList.add(`show-${league}`);
+            }
+            if (toggleButtons) {
+                const currentActive = toggleButtons.querySelector('.active');
+                if (currentActive) currentActive.classList.remove('active');
+                const newActive = toggleButtons.querySelector(`[data-league=${league}]`);
+                if (newActive) newActive.classList.add('active');
+            }
+        };
+
+        const urlLeague = new URLSearchParams(window.location.hash.split('?')[1]).get('league');
+        if (urlLeague && ['al', 'nl'].includes(urlLeague)) {
+            setLeagueView(urlLeague);
+        } else {
+            setLeagueView('al'); // Default to AL
+        }
+
+        if (toggleButtons) {
+            toggleButtons.addEventListener('click', (event) => {
+                const button = event.target.closest('.league-toggle-button');
+                if (!button) return;
+
+                const league = button.dataset.league;
+                if (!league) return;
+                
+                setLeagueView(league);
+            });
+        }
 
         if (seasons.length > 0) {
             document.getElementById('awards-season-select').addEventListener('change', (event) => {
@@ -1157,6 +1235,16 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardTypeSelect.addEventListener('change', populateLeaderboardStatSelect);
         elements.leaderboardStatSelect.addEventListener('change', handleStatSelectChange);
         populateTeamFilter();
+
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                if (window.location.hash === '#/stats') {
+                    setStickyColumnOffsets();
+                }
+            }, 100);
+        });
 
         elements.homeTab.addEventListener('click', () => { window.location.hash = '#/home'; });
         elements.statsTab.addEventListener('click', () => { window.location.hash = '#/stats'; });
@@ -1953,27 +2041,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const getPlayerAwards = (playerId) => {
-        const awards = {}; // Key: awardId, Value: array of seasons
+        const awards = {}; // Key: awardId, Value: array of {season, league}
         const awardsData = state.awards;
         if (!awardsData) return [];
 
         const metadata = awardsData._metadata || {};
 
         // Helper to add an award
-        const addAward = (awardId, season) => {
+        const addAward = (awardId, season, league) => {
             if (!awards[awardId]) {
                 awards[awardId] = [];
             }
-            if (season && !awards[awardId].includes(season)) {
-                awards[awardId].push(season);
-            } else if (!season) { // For non-season awards like HOF
+            if (season) {
+                if (!awards[awardId].some(a => a.season === season && a.league === league)) {
+                    awards[awardId].push({ season: season, league: league });
+                }
+            } else if (awardId === 'HOF') {
                 awards[awardId] = [];
             }
         };
 
         // HOF
         if (awardsData.HOF && awardsData.HOF.includes(playerId)) {
-            addAward('HOF', null);
+            addAward('HOF', null, null);
         }
 
         // Season awards
@@ -1983,7 +2073,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const seasonData = awardsData[seasonKey];
             
             if (seasonData.PCMVP && seasonData.PCMVP.includes(playerId)) {
-                addAward('PCMVP', seasonKey);
+                addAward('PCMVP', seasonKey, null); // No league for PCMVP
             }
 
             ['AL', 'NL'].forEach(league => {
@@ -1995,25 +2085,25 @@ document.addEventListener('DOMContentLoaded', () => {
                             if (typeof awardData === 'object' && awardData !== null && !Array.isArray(awardData)) {
                                 for (const position in awardData) {
                                     if (awardKey === 'AS' && position === 'GM') {
-                                        continue; // Skip GM All-Star awards for player pages
+                                        continue;
                                     }
                                     const positionWinners = awardData[position];
                                     if (Array.isArray(positionWinners)) {
                                         if (positionWinners.includes(playerId)) {
-                                            addAward(awardKey, seasonKey);
-                                            break; // Found player, no need to check other positions for this award
+                                            addAward(awardKey, seasonKey, league);
+                                            break;
                                         }
                                     } else {
                                         if (positionWinners === playerId) {
-                                            addAward(awardKey, seasonKey);
-                                            break; // Found player, no need to check other positions for this award
+                                            addAward(awardKey, seasonKey, league);
+                                            break;
                                         }
                                     }
                                 }
                             }
                         } else {
                             if (Array.isArray(awardData) && awardData.includes(playerId)) {
-                                addAward(awardKey, seasonKey);
+                                addAward(awardKey, seasonKey, league);
                             }
                         }
                     }
@@ -2026,17 +2116,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         for (const awardId of order) {
             if (awards[awardId]) {
-                const count = awards[awardId].length;
+                const wins = awards[awardId];
+                const count = wins.length;
                 const name = metadata[awardId] || awardId;
 
                 if (awardId === 'HOF') {
                     displayList.push({ text: name, class: 'award-hof', seasons: [] });
                 } else if (count > 0) {
                     const awardText = count > 1 ? `${count}x ${name}` : name;
+                    wins.sort((a, b) => parseInt(a.season.slice(1)) - parseInt(b.season.slice(1)));
+                    
+                    const seasons = wins.map(w => w.season);
+                    const lastWin = wins[wins.length - 1];
+
                     displayList.push({ 
                         text: awardText, 
                         class: `award-${awardId.toLowerCase()}`, 
-                        seasons: awards[awardId].sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) 
+                        seasons: seasons,
+                        lastWin: lastWin 
                     });
                 }
             }
@@ -2096,10 +2193,23 @@ document.addEventListener('DOMContentLoaded', () => {
         if (awards.length > 0) {
             let awardsHTML = '<div class="awards-container">';
             awards.forEach(award => {
-                const seasonTitle = award.seasons && award.seasons.length > 0 
-                    ? ` title="${award.seasons.join(', ')}"` 
+                const seasonTitle = award.seasons && award.seasons.length > 0
+                    ? ` title="${award.seasons.join(', ')}"`
                     : '';
-                awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
+
+                if (award.class === 'award-hof') {
+                    awardsHTML += `<a href="#/hof"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
+                } else if (award.seasons && award.seasons.length > 0) {
+                    const lastSeason = award.lastWin.season;
+                    const league = award.lastWin.league;
+                    let href = `#/awards?season=${lastSeason}`;
+                    if (league) {
+                        href += `&league=${league.toLowerCase()}`;
+                    }
+                    awardsHTML += `<a href="${href}"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
+                } else {
+                    awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
+                }
             });
             awardsHTML += '</div>';
             titleHTML += awardsHTML;
@@ -2318,6 +2428,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             elements.statsContentDisplay.querySelectorAll('.stats-table').forEach(makeTableSortable);
+            setStickyColumnOffsets();
         }
     };
 
@@ -2650,11 +2761,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const headers = ['Player', ...statKeys.filter(s => s !== 'Season' && s !== 'Team')];
 
+        html += '<div class="stats-table-container">';
         html += '<table class="stats-table">';
         html += '<thead><tr>';
-        headers.forEach(stat => {
+        headers.forEach((stat, colIndex) => {
             const description = STAT_DESCRIPTIONS[stat] || '';
-            html += `<th title="${description}">${stat}</th>`;
+            let th_class = '';
+            if (colIndex === 0) {
+                th_class = ` class="sticky-col col-0"`;
+            }
+            html += `<th${th_class} title="${description}">${stat}</th>`;
         });
         html += '</tr></thead>';
         html += '<tbody>';
@@ -2670,7 +2786,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const playerName = state.players[playerId]?.currentName || 'Unknown';
             
             html += '<tr>';
-            html += `<td><span class="player-link" data-player-id="${playerId}" style="cursor: pointer; text-decoration: underline;">${playerName}</span></td>`;
+            html += `<td class="sticky-col col-0"><span class="player-link" data-player-id="${playerId}" style="cursor: pointer; text-decoration: underline;">${playerName}</span></td>`;
             
             headers.slice(1).forEach(stat => {
                 let statKey = stat;
@@ -2732,7 +2848,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (teamTotals) {
             html += '<tfoot><tr class="career-row">';
-            html += '<td><strong>Team Total</strong></td>';
+            html += '<td class="sticky-col col-0"><strong>Team Total</strong></td>';
             headers.slice(1).forEach(key => {
                 let statKey = key;
                 if (isPitching) {
@@ -2766,7 +2882,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '</tr></tfoot>';
         }
 
-        html += '</table>';
+        html += '</table></div>';
         return html;
     };
 
@@ -2777,11 +2893,16 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const groupName in statGroups) {
             const groupStats = statGroups[groupName];
             html += `<h4>${groupName}</h4>`;
+            html += '<div class="stats-table-container">';
             html += '<table class="stats-table">';
             html += '<thead><tr>';
-            groupStats.forEach(stat => {
+            groupStats.forEach((stat, colIndex) => {
                 const description = STAT_DESCRIPTIONS[stat] || '';
-                html += `<th title="${description}">${stat}</th>`;
+                let th_class = '';
+                if (colIndex < 2) {
+                    th_class = ` class="sticky-col col-${colIndex}"`;
+                }
+                html += `<th${th_class} title="${description}">${stat}</th>`;
             });
             html += '</tr></thead>';
             html += '<tbody>';
@@ -2798,7 +2919,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     rowClass += ' sub-row';
                 }
                 html += `<tr class="${rowClass}" data-original-index="${index}">`;
-                groupStats.forEach(stat => {
+                groupStats.forEach((stat, colIndex) => {
+                    let td_class = '';
+                    if (colIndex < 2) {
+                        td_class = ` class="sticky-col col-${colIndex}"`;
+                    }
                     let statKey = stat;
                     if (isPitching) {
                         if (stat === 'SO') statKey = 'K';
@@ -2830,15 +2955,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     let value; // Declare 'value' here
 
                     if (stat === 'Season' && s.Season === 'Franchise') {
-                        html += `<td></td>`;
+                        html += `<td${td_class}></td>`;
                     } else if (stat === 'Team') {
                         value = s.Team || '';
                         const isMultiTeam = /^\d+TM$/.test(value);
                         if (s.Season !== 'Career' && s.Season !== 'Franchise' && value && !isMultiTeam) { // Only make season-specific teams clickable
                             const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
-                            html += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
+                            html += `<td${td_class}><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
-                            html += `<td>${formatStat(stat, value)}</td>`;
+                            html += `<td${td_class}>${formatStat(stat, value)}</td>`;
                         }
                     } else {
                         value = s[statKey]; // Assign 'value' here for non-Team stats
@@ -2884,11 +3009,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         }
 
-                        let cellHTML = `<td>${formatStat(stat, value)}</td>`;
+                        let cellHTML = `<td${td_class}>${formatStat(stat, value)}</td>`;
                         if (stat === 'Type' && value) {
                             const typeCategory = isPitching ? 'pitching' : 'batting';
                             if (state.typeDefinitions[typeCategory] && state.typeDefinitions[typeCategory][value]) {
-                                cellHTML = `<td title="${state.typeDefinitions[typeCategory][value]}">${formatStat(stat, value)}</td>`;
+                                cellHTML = `<td${td_class} title="${state.typeDefinitions[typeCategory][value]}">${formatStat(stat, value)}</td>`;
                             }
                         }
                         html += cellHTML;
@@ -2896,7 +3021,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 html += '</tr>';
             });
-            html += '</tbody></table>';
+            html += '</tbody></table></div>';
         }
         return html;
     };
