@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         glossaryView: document.getElementById('glossary-view'),
         teamStatsView: document.getElementById('team-stats-view'),
         awardsView: document.getElementById('awards-view'),
+        hofView: document.getElementById('hof-view'),
         
         homeTab: document.getElementById('home-tab'),
         statsTab: document.getElementById('stats-tab'),
@@ -429,6 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.glossaryView.style.display = 'none';
         elements.teamStatsView.style.display = 'none';
         elements.awardsView.style.display = 'none';
+        elements.hofView.style.display = 'none';
 
         elements.homeTab.classList.remove('active');
         elements.statsTab.classList.remove('active');
@@ -482,6 +484,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (path.startsWith('#/awards')) {
             elements.awardsView.style.display = 'block';
             renderAwards();
+        } else if (path === '#/hof') {
+            elements.hofView.style.display = 'block';
+            renderHofPage();
         } else if (path === '#/glossary') {
             elements.glossaryView.style.display = 'flex';
             elements.glossaryTab.classList.add('active');
@@ -570,21 +575,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             content += '<div class="awards-container">';
         
-            // Hall of Fame - Special case, shown only on the first season
-            if (selectedSeason === 'S1' && awardsData.HOF && awardsData.HOF.length > 0) {
-                content += '<div class="awards-section">';
-                content += `<h3 class="awards-section-title">${metadata['HOF'] || 'Hall of Fame'}</h3>`;
-                content += '<div class="award-winners-grid">';
-                awardsData.HOF.forEach(playerId => {
-                    const player = state.players[playerId];
-                    if (player) {
-                        content += `<div class="award-winner-item">${player.currentName}</div>`;
-                    }
-                });
-                content += '</div></div>';
-            }
-
-
             content += '<div class="leagues-wrapper">';
             ['AL', 'NL'].forEach(league => {
                 const leagueName = league === 'AL' ? 'American League' : 'National League';
@@ -872,6 +862,74 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const renderHofPage = () => {
+        const hofView = elements.hofView;
+        const awardsData = state.awards;
+    
+        let content = `<div class="hof-page-container">
+                        <h2 class="section-title">Hall of Fame</h2>
+                        <p class="hof-note"><em>* denotes active player</em></p>`;
+    
+        if (!awardsData.HOF || awardsData.HOF.length === 0) {
+            content += '<p>No players have been inducted into the Hall of Fame.</p>';
+            content += '</div>';
+            hofView.innerHTML = content;
+            return;
+        }
+    
+        const hofPlayers = awardsData.HOF.map(playerId => {
+            return { id: playerId, data: state.players[playerId] };
+        }).filter(p => p.data);
+    
+        hofPlayers.sort((a, b) => a.data.currentName.localeCompare(b.data.currentName));
+        
+        content += '<div class="hof-grid">';
+    
+        const currentSeason = state.currentSeasonInfo.season;
+        const currentSession = state.currentSeasonInfo.session;
+        const prevSeason = 'S' + (parseInt(currentSeason.slice(1)) - 1);
+        const isActiveThreshold = 5;
+    
+        hofPlayers.forEach(p => {
+            const playerId = p.id;
+            const player = p.data;
+            
+            const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
+            const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
+            const allStats = [...playerHittingStats, ...playerPitchingStats];
+            
+            let isActive = allStats.some(s => s.Season === currentSeason);
+            if (!isActive && currentSession < isActiveThreshold) {
+                isActive = allStats.some(s => s.Season === prevSeason);
+            }
+
+            const latestStats = allStats.sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)));
+
+            let logo = '';
+            if (latestStats.length > 0) {
+                const mostRecentStat = latestStats[0];
+                const mostRecentSeason = mostRecentStat.Season;
+                const mostRecentTeam = mostRecentStat['Last Team'] || mostRecentStat.Team;
+                
+                const franchiseKey = getFranchiseKeyFromAbbr(mostRecentTeam, mostRecentSeason);
+                logo = getTeamLogoBySeason(franchiseKey, mostRecentSeason);
+            }
+            
+            content += `<div class="hof-player-card">
+                            <a href="#/stats" class="player-link" data-player-id="${playerId}">
+                                <div class="hof-player-logo-container">
+                                    ${logo ? `<img src="${logo}" alt="${player.currentName} team logo">` : '<div class="hof-placeholder-logo"></div>'}
+                                </div>
+                                <p>${player.currentName}${isActive ? '*' : ''}</p>
+                            </a>
+                        </div>`;
+        });
+    
+        content += '</div></div>';
+    
+        hofView.innerHTML = content;
+    };
+
     const renderHome = () => {
         const { 
             featuredPlayerId1, featuredPlayerSeasonRange1, featuredPlayerMostRecentTeamKey1, featuredPlayerMostRecentSeason1,
@@ -892,6 +950,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Object.keys(state.awards).some(key => key.startsWith('S') && hasAwards(state.awards[key]))) {
             awardsLink = `<li><a href="#/awards"><strong>Awards:</strong></a> Season-by-season award winners.</li>`;
         }
+        let hofLink = '';
+        if (state.awards.HOF && state.awards.HOF.length > 0) {
+            hofLink = `<li><a href="#/hof"><strong>Hall of Fame:</strong></a> View the members of the Hall of Fame.</li>`;
+        }
 
         elements.homeView.innerHTML = `
             <div class="welcome-container">
@@ -903,6 +965,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <li><a href="#/team-stats"><strong>Team Stats:</strong></a> Season-by-season standings and team statistics.</li>
                     <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
                     ${awardsLink}
+                    ${hofLink}
                     <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
                     <li><a href="#/gamelog-errors"><strong>Known Gamelog Errors:</strong></a> A list of known errors in the gamelogs. All these errors have been corrected for this app.</li>
                     <li><a href="https://forms.gle/nmLNL5PbF6bXrXpo9" target="_blank"><strong>Feedback:</strong></a> Have a suggestion or found a bug? Let me know!</li>
@@ -1931,6 +1994,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (awardKey === 'SS' || awardKey === 'AS') {
                             if (typeof awardData === 'object' && awardData !== null && !Array.isArray(awardData)) {
                                 for (const position in awardData) {
+                                    if (awardKey === 'AS' && position === 'GM') {
+                                        continue; // Skip GM All-Star awards for player pages
+                                    }
                                     const positionWinners = awardData[position];
                                     if (Array.isArray(positionWinners)) {
                                         if (positionWinners.includes(playerId)) {
