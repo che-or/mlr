@@ -2761,11 +2761,16 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const headers = ['Player', ...statKeys.filter(s => s !== 'Season' && s !== 'Team')];
 
+        html += '<div class="stats-table-container">';
         html += '<table class="stats-table">';
         html += '<thead><tr>';
-        headers.forEach(stat => {
+        headers.forEach((stat, colIndex) => {
             const description = STAT_DESCRIPTIONS[stat] || '';
-            html += `<th title="${description}">${stat}</th>`;
+            let th_class = '';
+            if (colIndex === 0) {
+                th_class = ` class="sticky-col col-0"`;
+            }
+            html += `<th${th_class} title="${description}">${stat}</th>`;
         });
         html += '</tr></thead>';
         html += '<tbody>';
@@ -2781,7 +2786,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const playerName = state.players[playerId]?.currentName || 'Unknown';
             
             html += '<tr>';
-            html += `<td><span class="player-link" data-player-id="${playerId}" style="cursor: pointer; text-decoration: underline;">${playerName}</span></td>`;
+            html += `<td class="sticky-col col-0"><span class="player-link" data-player-id="${playerId}" style="cursor: pointer; text-decoration: underline;">${playerName}</span></td>`;
             
             headers.slice(1).forEach(stat => {
                 let statKey = stat;
@@ -2843,7 +2848,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (teamTotals) {
             html += '<tfoot><tr class="career-row">';
-            html += '<td><strong>Team Total</strong></td>';
+            html += '<td class="sticky-col col-0"><strong>Team Total</strong></td>';
             headers.slice(1).forEach(key => {
                 let statKey = key;
                 if (isPitching) {
@@ -2877,7 +2882,7 @@ document.addEventListener('DOMContentLoaded', () => {
             html += '</tr></tfoot>';
         }
 
-        html += '</table>';
+        html += '</table></div>';
         return html;
     };
 
