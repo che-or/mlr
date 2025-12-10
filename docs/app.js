@@ -638,38 +638,54 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (leagueAwards[silverSluggers] && typeof leagueAwards[silverSluggers] === 'object' && Object.keys(leagueAwards[silverSluggers]).length > 0) {
                         content += `<h4 class="awards-sub-title">${leagueName} Silver Sluggers</h4>`;
                         content += '<div class="awards-sub-section">';
-                        content += `<div class="award-category">
-                                        <div class="award-winners-list">`;
-                        
+                        content += `<div class="award-category">`;
+
                         const ssAwards = leagueAwards[silverSluggers];
-                        const positionOrder = ['C', '1B', '2B', '3B', 'SS', 'LF', 'CF', 'RF', 'OF', 'DH', 'P'];
+                        const col1_positions = ['C', '1B', '2B', '3B', 'DH'];
+                        const col2_positions = ['SS', 'LF', 'CF', 'RF', 'OF', 'P'];
 
-                        positionOrder.forEach(position => {
-                            if (ssAwards[position]) {
-                                const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
-                                
-                                content += `<div class="award-winner-item-pos">
-                                                <span class="award-position-label">${position}</span>
-                                                <div class="award-player-info-pos">`;
+                        const renderColumn = (positions) => {
+                            let colContent = '';
+                            positions.forEach(position => {
+                                if (ssAwards[position]) {
+                                    const playerIds = Array.isArray(ssAwards[position]) ? ssAwards[position] : [ssAwards[position]];
+                                    
+                                    colContent += `<div class="award-winner-item-pos">
+                                                    <span class="award-position-label">${position}</span>
+                                                    <div class="award-player-info-pos">`;
 
-                                playerIds.forEach((playerId, index) => {
-                                    const player = state.players[playerId];
-                                    if (player) {
-                                        const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
+                                    playerIds.forEach((playerId, index) => {
+                                        const player = state.players[playerId];
+                                        if (player) {
+                                            const { logo } = getPlayerTeamInfoForSeason(playerId, selectedSeason);
 
-                                        content += `
-                                            <div class="award-player-item-pos">
-                                                ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
-                                                <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
-                                            </div>
-                                        `;
-                                    }
-                                });
-                                content += `</div></div>`;
-                            }
-                        });
+                                            colContent += `
+                                                <div class="award-player-item-pos">
+                                                    ${logo ? `<img src="${logo}" class="award-team-logo">` : ''}
+                                                    <a href="#/stats" class="player-link" data-player-id="${playerId}">${player.currentName}</a>
+                                                </div>
+                                            `;
+                                        }
+                                    });
+                                    colContent += `</div></div>`;
+                                }
+                            });
+                            return colContent;
+                        }
+                        
+                        const col1_content = renderColumn(col1_positions);
+                        const col2_content = renderColumn(col2_positions);
+
+                        content += `<div class="ss-winners-list">`;
+                        if (col1_content) {
+                            content += `<div class="ss-winners-col">${col1_content}</div>`;
+                        }
+                        if (col2_content) {
+                            content += `<div class="ss-winners-col">${col2_content}</div>`;
+                        }
+                        content += `</div>`; // end ss-winners-list
+
                         content += `</div></div>`;
-                        content += `</div>`;
                     }
 
                     if (leagueAwards[allStars] && typeof leagueAwards[allStars] === 'object' && Object.keys(leagueAwards[allStars]).length > 0) {
@@ -2096,10 +2112,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (awards.length > 0) {
             let awardsHTML = '<div class="awards-container">';
             awards.forEach(award => {
-                const seasonTitle = award.seasons && award.seasons.length > 0 
-                    ? ` title="${award.seasons.join(', ')}"` 
+                const seasonTitle = award.seasons && award.seasons.length > 0
+                    ? ` title="${award.seasons.join(', ')}"`
                     : '';
-                awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
+
+                if (award.class === 'award-hof') {
+                    awardsHTML += `<a href="#/hof"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
+                } else if (award.seasons && award.seasons.length > 0) {
+                    const lastSeason = award.seasons[award.seasons.length - 1];
+                    awardsHTML += `<a href="#/awards?season=${lastSeason}"><div class="award-box ${award.class}"${seasonTitle}>${award.text}</div></a>`;
+                } else {
+                    awardsHTML += `<div class="award-box ${award.class}"${seasonTitle}>${award.text}</div>`;
+                }
             });
             awardsHTML += '</div>';
             titleHTML += awardsHTML;

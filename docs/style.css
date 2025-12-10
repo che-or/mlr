@@ -924,6 +924,33 @@ input:checked + .slider:before {
 }
 
 /* New styles for Silver Slugger awards */
+.ss-winners-list {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .ss-winners-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.ss-winners-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ss-winners-col + .ss-winners-col {
+    margin-top: 8px;
+}
+@media (min-width: 768px) {
+    .ss-winners-col + .ss-winners-col {
+        margin-top: 0;
+    }
+}
+
 .award-winner-item-pos {
     display: flex;
     align-items: center;
@@ -1002,15 +1029,30 @@ input:checked + .slider:before {
 }
 
 .as-reserves-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .as-reserves-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 .as-reserves-col {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.as-reserves-col + .as-reserves-col {
+    margin-top: 8px;
+}
+@media (min-width: 768px) {
+    .as-reserves-col + .as-reserves-col {
+        margin-top: 0;
+    }
 }
 
 .awards-sub-section {
