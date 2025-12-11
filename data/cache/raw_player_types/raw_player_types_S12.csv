@@ -67,7 +67,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 238,Ben Bramly,NYM,SF,EN,B,Right,C,3B,RF,/u/bzb113,bennys,53,1,4,,
 241,Jay Money,ARI,HK,WC,H,Right,1B,LF,2B,/u/iJayMoney,TFiiC#0879,53,1,5,,
 255,S. Jay Cutler,BAL,EN,WC,B,Left,C,1B,CF,/u/Mellam0,mellam0,53,1,4,,
-258,Ty Palmatier,BOS,BP,BS,B,Right,P,,,/u/Jagsfootball51,jags,53,1,2,,
+258,Ty Palmatier,ATL,BP,BS,B,Right,P,,,/u/Jagsfootball51,jags,53,1,2,,
 259,Mr Peggable,NYY,WC,EG,S,Right,2B,SS,3B,/u/Twilight_Ike_Galaxy,big_botto_m,23,1,6,1.0,KEG
 262,Dirtbag Darrell,FLA,SM,EG,S,Left,PH,,,/u/bearded_wildcard,wildcard09,13,1,1,1.0,SCR
 264,Skye McDowell,TBR,WC,WC,S,Right,2B,RF,SS,/u/nayseloid,starryyskye,53,1,6,,
@@ -156,9 +156,9 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 734,Gryffith Lindley,BOS,S,,,Left,3B,2B,C,/u/yellowcat5,thunderwolf53,53,1,7,,
 771,Lee Allen Ripley,,BP,FP,H,Left,P,,,/u/SubcheckForum,subcheckforum,53,1,2,,
 772,Mike Fruitstand,SDP,BC,EG,S,Right,3B,LF,CF,/u/ItsJustFruity,itsjustfruity,33,1,7,,
-776,Sierra Hightower,OAK,HK,TD,S,Right,LF,RF,C,/u/Deathwing_Dragonlord,theymightbereno,53,2,9,2.0,DDD
+776,Sierra Hightower,OAK,HK,TD,S,Right,LF,RF,C,/u/Deathwing_Dragonlord,theymightbereno,53,1,9,1.0,DDD
 778,Tyler Pylon,ARI,1B,FP,S,Left,CF,LF,3B,/u/NSAPHI,hannahg32,53,1,10,,
-780,Matt Taylor,BOS,BC,,,Right,CF,RF,LF,/u/matt__17,Matt17#9726,53,1,10,,
+780,Matt Taylor,,BC,,,Right,CF,RF,LF,/u/matt__17,Matt17#9726,53,1,10,,
 783,Kenny Kawaguchi,,BN,WC,S,Right,P,,,/u/therealslimcampbell,kennyk10,53,2,2,,
 786,Mason Troy Adams,MIL,S,FP,H,Left,P,,,/u/Hunter-327,turts.com,43,1,2,1.0,KEG
 788,Jericho Styles,HOU,SM,WC,S,Right,P,,,/u/Jzkitty21,jzkitty,33,1,2,,
@@ -246,7 +246,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2509,Big Cheech,STL,S,TD,B,Right,1B,3B,RF,/u/TheAjCalvillo,TheAjCalvillo#0420,53,1,5,1.0,MMN
 2518,Sammy Scully,DET,S,WC,S,Left,2B,RF,C,/u/halsnobordrgrl,halsno,53,1,6,1.0,
 2523,Martin Ducksworth,MTL,TT,TT,S,Left,PH,,,/u/IReviewDiscord,yannykai,12,1,1,,
-2524,WoodCutter Jones,CHC,TT,TD,H,Left,3B,SS,LF,/u/woodcutterjones,incutt,23,1,7,,
+2524,WoodCutter Jones,CHC,TT,TD,H,Left,3B,SS,LF,/u/woodcutterjones,incutt,33,1,7,,
 2532,Herb Bumbleflower,PIT,S,,,Right,CF,LF,2B,/u/TylerGlasass20,caity#0566,53,1,10,1.0,
 2542,Ovaltine,TBR,BC,TD,S,Left,RF,CF,LF,/u/ohToaster,ohtoaster,33,1,11,1.0,SAL
 2543,Numbers Spector,HOU,1B,,,Right,3B,2B,,/u/TimelyConcern,jablair3483,53,1,7,,
@@ -260,7 +260,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2594,Hunter West,ANA,TT,WC,S,Right,PH,,,/u/Jbwest31,Hunter West RF/1B#4945,13,1,1,,
 2597,Rod Kimball,TOR,BC,NH,B,Right,RF,CF,SS,/u/PinkSnuggie,pinksnuggie,43,1,11,,
 2598,Mattie Christewson,KCR,S,,,Left,2B,SS,C,/u/AcuPriest,acupriest,53,1,6,,
-2606,peaches,CWS,BC,TD,B,Right,PH,,,/u/PeachyKeeeeeen,peachesurf,13,1,1,,
+2606,peaches,,BC,TD,B,Right,PH,,,/u/PeachyKeeeeeen,peachesurf,53,4,1,,
 2611,CJ Ayer,MIL,SM,EG,H,Right,PH,,,/u/BaseballCJ22,Zeltrox#0126,13,1,1,,
 2616,Peter Hadley,NYY,XB,WC,H,Right,C,3B,LF,/u/anatabolica,anatabolica,53,1,4,,
 2621,Mike Truk,NYY,BC,EG,S,Right,P,,,/u/Explosion2,explosion2,53,1,2,,
@@ -289,7 +289,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2691,Francesco Hardgust,ANA,BC,EG,S,Left,SS,2B,C,/u/cheddarbating,Steamboat#4248,33,1,8,,
 2692,Bryce Parker,SEA,1B,WC,S,Right,SS,3B,C,/u/_BryceParker,Packermage,53,1,8,,
 2696,Captain Trash,FLA,BN,TT,H,Left,RF,1B,C,/u/KingIsMe123,seanyewest#2006,23,1,11,1.0,DDD
-2702,Evan LOMgoria,CWS,HK,TD,S,Right,2B,RF,CF,/u/TRTAEDITG,pota_tomas,23,1,6,,
+2702,Evan LOMgoria,CWS,HK,TD,S,Right,2B,RF,CF,/u/TRTAEDITG,pota_tomas,13,1,6,,
 2706,Cameron Trinidad,MTL,WC,,,Right,1B,LF,2B,/u/MyAmazingNam,Hawk#3373,53,1,5,,
 2708,Saul Pewald,CLE,SM,EG,B,Right,PH,,,/u/mnomz,,23,1,1,1.0,WWC
 2710,Sterling Turlington,OAK,HK,EG,B,Right,2B,1B,C,/u/sethurax,Veritable Quandary#2187,53,1,6,1.0,WWC
@@ -311,7 +311,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2768,Spencer Hart,STL,BP,NH,S,Left,1B,3B,LF,/u/Skotch33,SpencerF#2020,53,1,5,,
 2772,Creatør Slander,BOS,XB,,,Right,3B,LF,,/u/creatxrcreator,Creatør#3519,53,1,7,,
 2773,Toky Oto,ARI,BN,NT,B,Right,LF,RF,CF,/u/Innerstander,Gold3nSTW#9736,53,1,9,1.0,WWC
-2774,Bill Aural Jr. III,ATL,BC,,,Left,LF,RF,1B,/u/degmeister,Deg#2745,53,1,9,,
+2774,Bill Aural Jr. III,BOS,BC,,,Left,LF,RF,1B,/u/degmeister,Deg#2745,53,1,9,,
 2782,Eijun Sawamura,MIN,TT,BS,H,Left,P,,,/u/Silveryo9717,Silveryo#9717,53,1,2,1.0,MMN
 2785,Basil,STL,BP,TD,H,Left,C,1B,3B,/u/Baxlor12,basilthespice,53,1,4,,
 2787,Buster Worthington,SEA,BC,,,Right,C,3B,CF,/u/lawnicus18,lawnicus18#8150,53,1,4,,
@@ -335,7 +335,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2833,Dayman Nightman,SEA,BN,EG,S,Right,SS,2B,LF,/u/mycatsananalasshole,fiercepenguin#9774,33,1,8,,
 2834,Mack Quackerson,TEX,BC,BB,B,Right,C,1B,CF,/u/frathoss,Frathoss#5398,33,1,4,1.0,CCS
 2835,Salsa Steve,OAK,BC,FP,S,Right,CF,RF,LF,/u/icnatspel,icnatspel#5217,53,1,10,1.0,WWC
-2838,Ringo Swingo,BOS,BC,,,Right,CF,LF,2B,/u/pnssc,Ringo #8652,53,1,10,,
+2838,Ringo Swingo,,BC,,,Right,CF,LF,2B,/u/pnssc,Ringo #8652,53,1,10,,
 2840,Wheezy Whifflesworth,NYM,SM,TT,S,Right,C,3B,SS,/u/kazayn,Kazayn#2664,53,1,4,,
 2842,Moon Malarkey,ARI,SF,,,Right,SS,CF,C,/u/LuckeCharmsx,McKinnon#5585,53,1,8,,
 2844,Tony Pizza,BOS,1B,BB,B,Right,C,1B,,/u/celticsoldier566,TonyPizza#9043,53,1,4,1.0,
@@ -385,7 +385,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2922,Randy Mann,BAL,WC,,,Left,2B,SS,1B,/u/Zytabyte,zyta,53,1,6,,
 2931,Jeff Newman,BOS,S,BS,H,Left,P,,,/u/Luminosityfan,Lumosityfan#9019,53,1,2,1.0,
 2932,Seth Kablamo,CIN,HK,,,Right,CF,RF,LF,/u/catfishhugo,Hugorm#2424,33,1,10,,
-2933,Boomer Fisher,BOS,BC,,,Left,3B,SS,2B,/u/longjumpinglime,Therane#3187,53,1,7,,
+2933,Boomer Fisher,,BC,,,Left,3B,SS,2B,/u/longjumpinglime,Therane#3187,53,1,7,,
 2942,Tleyber Alfredo Cruz Fernandez III,ATL,SF,EG,H,Left,SS,CF,3B,/u/spiderrrpigg,tonyeatworld,33,1,8,,
 2943,Mo Bonzalez,DET,BN,,,Right,2B,SS,,/u/irishfan117,irishfan117#0066,53,1,6,,
 2944,Bobert Hideyoshi,SEA,XB,BS,H,Left,C,3B,LF,/u/TorchedPineapple,torchedpineapple,53,1,4,,
@@ -469,7 +469,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3105,Jacob Thomas,MIL,WC,BS,S,Right,C,1B,LF,/u/JdogMcBuckets,jdogii,53,1,4,1.0,WWC
 3106,Tomothy Toledo,LAD,SM,,,Left,3B,LF,,/u/botfinder69,Killlman4,53,1,7,,
 3107,Elijah Walker,TEX,SM,BS,H,Left,PH,,,/u/firebirdix,cobaltdm,23,1,1,1.0,PQD
-3108,Cormac Karona,CHC,TT,EG,H,Right,CF,RF,LF,/u/Stixvim,Stixvim,33,1,10,1.0,SDV
+3108,Cormac Karona,CHC,TT,EG,H,Right,CF,RF,LF,/u/Stixvim,Stixvim,23,1,10,1.0,SDV
 3109,Jersey Wooders,BOS,BP,,,Left,1B,LF,,/u/Direct-Caterpillar77,Direct-Caterpillar77,53,1,5,1.0,SDV
 3110,Katelyn 'River' Hoshino,PHI,HK,TD,H,Left,2B,SS,RF,/u/MasterJTZH,masterjtzh,53,1,6,1.0,WWC
 3111,Deacon Bowles,ANA,WC,,,Right,C,3B,2B,/u/Ajathag,Ajathag,53,1,4,,
@@ -507,7 +507,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3166,Martin Van Nostrand,BAL,SM,,,Left,2B,RF,,/u/JaysFan26,AVandelayy,53,1,6,,
 3167,Kordz Sonata,ARI,BC,FP,B,Left,P,,,/u/JKookie69,Jcbeats,53,1,2,1.0,KEG
 3168,Ethan Stooks,CHC,SM,BF,H,Right,P,,,/u/Top_Statistician_186,Nol15736,53,1,2,1.0,SDV
-3172,Ahab,CWS,XB,BS,S,Left,CF,RF,LF,/u/Polnareff0,.charls.,33,1,10,1.0,PQD
+3172,Ahab,CWS,XB,BS,S,Left,CF,RF,LF,/u/Polnareff0,.charls.,23,1,10,1.0,PQD
 3174,Snape Tooth,CHC,BC,EG,H,Left,P,,,/u/rundbold,knnthl,53,1,2,1.0,SDV
 3175,Gellybelly,ANA,,NH,H,Left,P,,,/u/Gellybelly93,Gellybelly93,53,1,2,,
 3176,Frankie Tommy,SEA,S,,,Right,1B,3B,,/u/Leading_Effect_4693,timmy_turner4423,53,1,5,1.0,KEG
@@ -568,7 +568,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3251,Erik Hamilton,CWS,XB,,,Left,1B,LF,,/u/newmoneycrewhls,Erikh_40641,53,1,5,,
 3253,Captain Hate,TOR,WC,TD,B,Right,2B,SS,,/u/h8_hate,ceoofh8,53,1,6,,
 3254,Weehaddababy Itzaboi,ATL,BC,TD,S,Left,2B,SS,,/u/The_War_In_Me,Eric_in_a_box,53,1,6,1.0,SAL
-3255,Alph Overdale,BAL,XB,NH,S,Left,1B,LF,,/u/Fast-Use-235,Zeddzor.,53,1,5,1.0,WWC
+3255,Alph Overdale,BAL,XB,NH,S,Left,1B,LF,,/u/Fast-Use-235,Zeddzor.,33,1,5,1.0,WWC
 3256,Angry Lizard,BOS,EN,BS,S,Left,CF,LF,,/u/MLR_NoReddit_User,McGriddy10,33,1,10,1.0,SCR
 3257,Joseph Randome,TBR,1B,EN,S,Left,2B,RF,,/u/Fr3shman43v3r,nickwise,53,1,6,,
 3258,Soy Okey,MIN,WC,TD,H,Right,C,1B,,/u/YoSoyOkey,soyokey,53,1,4,,
@@ -592,4 +592,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3301,London Bridges,CWS,XB,,,Right,LF,RF,,/u/ADMsmith43,admsmith,53,1,9,1.0,MMN
 3302,Tomoharu Kanazaki,,P,NH,S,Right,P,,,/u/MLR_NoReddit_User,skrublord69420,53,1,2,1.0,MMN
 3303,Barry Sosa,BOS,BN,BB,H,Right,SS,3B,,/u/Extreme_Panda_3488,deezus_rich,53,1,8,,
-3304,Mikey Thomas,,MH,,,Right,SS,CF,,/u/Willthegod1,wilfthegod1,53,1,8,,
+3304,Mikey Thomas,FLA,MH,,,Right,SS,CF,,/u/Willthegod1,wilfthegod1,53,1,8,,
+3305,Steven Sinclair,BOS,SM,,,Right,SS,2B,,/u/MLR_NoReddit_User,ToastCharger,53,1,8,,
+3306,T.J. Oatman,BOS,BP,,,Right,C,3B,,/u/TravisLeBick,travislebick,53,1,4,,
+3307,Joey Tacoma,BOS,BC,,,Right,C,1B,,/u/Thel_Odan,thelodan,53,1,4,,

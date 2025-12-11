@@ -1,68 +1,121 @@
+# -*- coding: utf-8 -*-
+"""Loads MLR gamelog and player data from Google Sheets and local files.
+
+This script provides functions to download, cache, and process data related to
+Major League Redditball (MLR). It handles loading gamelogs from multiple
+seasons, mapping player names to IDs, and loading player archetype data.
+
+The script is designed to be used as a module by other scripts in the project,
+but it can also be run directly to test data loading functionality.
+"""
+
+import json
+import os
 import re
-import pandas as pd
 import sys
+import numpy as np
+import pandas as pd
+
 
 def get_export_url(url):
-    """Converts a Google Sheet URL to a CSV export URL, correctly handling the gid."""
+    """Converts a Google Sheet URL to a CSV export URL.
+
+    This function correctly handles both old and new Google Sheet URL formats
+    to extract the document ID and sheet GID, constructing a URL that allows
+    for CSV export of the sheet's data.
+
+    Args:
+        url (str): The URL of the Google Sheet.
+
+    Returns:
+        str: The CSV export URL, or None if the document ID cannot be found.
+    """
     # The gid is often at the end of the URL after #gid=
-    match_gid = re.search(r'#gid=(\d+)', url)
+    match_gid = re.search(r"#gid=(\d+)", url)
     if not match_gid:
         # If not found after #, try to find it as a query parameter
-        match_gid = re.search(r'[?&]gid=(\d+)', url)
+        match_gid = re.search(r"[?&]gid=(\d+)", url)
 
     gid = match_gid.group(1) if match_gid else None
 
     # The document ID is between /d/ and /
-    match_doc_id = re.search(r'/d/([^/]+)/', url)
+    match_doc_id = re.search(r"/d/([^/]+)/", url)
     if not match_doc_id:
-        return None # Cannot proceed without a document ID
-    
+        return None  # Cannot proceed without a document ID
+
     doc_id = match_doc_id.group(1)
 
     if gid:
-        return f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}'
+        return f"https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}"
     else:
         # If no GID is found, it will export the first/default sheet.
         print(f"Warning: No GID found for URL {url}. Exporting the default sheet.")
-        return f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv'
+        return f"https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv"
 
-import numpy as np
-import os
-import json
 
-# --- Caching Helper Functions ---
 def _read_cache_manifest(cache_dir):
-    manifest_path = os.path.join(cache_dir, 'cache_info.json')
+    """Reads the last known most recent season from the cache manifest.
+
+    Args:
+        cache_dir (str): The path to the cache directory.
+
+    Returns:
+        str: The name of the most recent season from the last run, or None.
+    """
+    manifest_path = os.path.join(cache_dir, "cache_info.json")
     if not os.path.exists(manifest_path):
         return None
     try:
-        with open(manifest_path, 'r') as f:
+        with open(manifest_path, "r") as f:
             data = json.load(f)
-            return data.get('last_run_most_recent')
+            return data.get("last_run_most_recent")
     except (json.JSONDecodeError, IOError):
         return None
 
+
 def _write_cache_manifest(cache_dir, most_recent_season):
-    manifest_path = os.path.join(cache_dir, 'cache_info.json')
+    """Writes the current most recent season to the cache manifest.
+
+    Args:
+        cache_dir (str): The path to the cache directory.
+        most_recent_season (str): The name of the most recent season.
+    """
+    manifest_path = os.path.join(cache_dir, "cache_info.json")
     try:
-        with open(manifest_path, 'w') as f:
-            json.dump({'last_run_most_recent': most_recent_season}, f)
+        with open(manifest_path, "w") as f:
+            json.dump({"last_run_most_recent": most_recent_season}, f)
     except IOError:
         print("Warning: Could not write to cache manifest file.")
 
+
 def load_all_seasons():
-    """Loads all seasons' data, adding a 'GameType' column and caching raw downloads."""
+    """Loads all seasons' gamelog data.
+
+    This function reads the `gamelogs.txt` file to find the Google Sheets URLs
+    for each season's gamelogs. It then downloads, caches, and processes
+    the data, adding a 'GameType' column to distinguish regular season from
+    playoff games. It also handles cache invalidation when a new season is
+    detected.
+
+    Returns:
+        tuple: A tuple containing:
+            - dict: A dictionary where keys are season names (e.g., 'S1') and
+              values are pandas DataFrames of that season's gamelogs.
+            - str: The name of the most recent season found.
+            - list: A list of seasons that were re-calculated due to cache
+              invalidation or being the most recent season.
+    """
     season_data = {}
-    
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    gamelogs_path = os.path.join(script_dir, '..', 'data', 'gamelogs.txt')
-    cache_dir = os.path.join(script_dir, '..', 'data', 'cache')
-    raw_data_cache_dir = os.path.join(cache_dir, 'raw_gamelogs')
+    gamelogs_path = os.path.join(script_dir, "..", "data", "gamelogs.txt")
+    cache_dir = os.path.join(script_dir, "..", "data", "cache")
+    raw_data_cache_dir = os.path.join(cache_dir, "raw_gamelogs")
     if not os.path.exists(raw_data_cache_dir):
         os.makedirs(raw_data_cache_dir)
 
     try:
-        with open(gamelogs_path, 'r') as f:
+        with open(gamelogs_path, "r") as f:
             gamelogs = f.readlines()
     except FileNotFoundError:
         print(f"Error: Could not find gamelogs.txt at {gamelogs_path}")
@@ -70,27 +123,31 @@ def load_all_seasons():
 
     # Determine season transition for cache invalidation
     previous_most_recent = _read_cache_manifest(cache_dir)
-    season_lines = [line.strip().split('\t') for line in gamelogs if line.strip()]
+    season_lines = [line.strip().split("\t") for line in gamelogs if line.strip()]
     all_season_names = [parts[0] for parts in season_lines if len(parts) > 0]
     if all_season_names:
-        most_recent_season_num = max([int(s.replace('S', '')) for s in all_season_names])
+        most_recent_season_num = max(
+            [int(s.replace("S", "")) for s in all_season_names]
+        )
         most_recent_season = f"S{most_recent_season_num}"
     else:
         most_recent_season = ""
 
     seasons_to_recalc = []
     if most_recent_season != previous_most_recent and previous_most_recent is not None:
-        print(f"New season detected. Invalidating raw data cache for {previous_most_recent}...")
+        print(
+            f"New season detected. Invalidating raw data cache for {previous_most_recent}..."
+        )
         seasons_to_recalc.append(previous_most_recent)
 
     for log in gamelogs:
-        parts = log.strip().split('\t')
+        parts = log.strip().split("\t")
         if len(parts) != 3:
             continue
 
         season, num_games_str, url = parts
         force_recalc = (season == most_recent_season) or (season in seasons_to_recalc)
-        raw_cache_path = os.path.join(raw_data_cache_dir, f'raw_gamelog_{season}.csv')
+        raw_cache_path = os.path.join(raw_data_cache_dir, f"raw_gamelog_{season}.csv")
 
         df = None
         if os.path.exists(raw_cache_path) and not force_recalc:
@@ -114,12 +171,14 @@ def load_all_seasons():
             else:
                 print(f"Could not generate export URL for {url}")
                 continue
-        
+
         if df is not None:
             try:
                 num_games = int(num_games_str)
-                if 'Session' in df.columns:
-                    df['GameType'] = np.where(df['Session'] <= num_games, 'Regular', 'Playoff')
+                if "Session" in df.columns:
+                    df["GameType"] = np.where(
+                        df["Session"] <= num_games, "Regular", "Playoff"
+                    )
                     season_data[season] = df
                 else:
                     print(f"Warning: 'Session' column not found for {season}.")
@@ -127,85 +186,138 @@ def load_all_seasons():
                 print(f"Warning: Invalid number of games for season '{season}'.")
 
     _write_cache_manifest(cache_dir, most_recent_season)
-    return season_data, most_recent_season, [most_recent_season] + seasons_to_recalc if most_recent_season else seasons_to_recalc
+    return (
+        season_data,
+        most_recent_season,
+        (
+            [most_recent_season] + seasons_to_recalc
+            if most_recent_season
+            else seasons_to_recalc
+        ),
+    )
+
 
 def load_player_id_map():
-    """Loads player ID mapping from player_id_map.json."""
+    """Loads the player name to ID mapping.
+
+    Reads the `player_id_map.json` file and creates a dictionary that maps
+    all known current and former player names (case-insensitively) to their
+    unique integer player ID.
+
+    Returns:
+        dict: A dictionary mapping lowercase player names to integer player IDs.
+    """
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    player_id_map_path = os.path.join(script_dir, '..', 'docs', 'data', 'player_id_map.json')
-    
+    player_id_map_path = os.path.join(
+        script_dir, "..", "docs", "data", "player_id_map.json"
+    )
+
     if not os.path.exists(player_id_map_path):
         print(f"Error: player_id_map.json not found at {player_id_map_path}")
         return {}
 
-    with open(player_id_map_path, 'r') as f:
+    with open(player_id_map_path, "r") as f:
         player_id_map_raw = json.load(f)
 
     name_to_id_map = {}
     for player_id, player_info in player_id_map_raw.items():
         # Ensure player_id is treated as an integer for consistency later
         player_id_int = int(player_id)
-        current_name = player_info['currentName'].lower()
+        current_name = player_info["currentName"].lower()
         name_to_id_map[current_name] = player_id_int
-        for former_name in player_info['formerNames']:
+        for former_name in player_info["formerNames"]:
             name_to_id_map[former_name.lower()] = player_id_int
     return name_to_id_map
 
+
 def load_player_types(force_seasons=None):
-    """Loads all player type data from the sheets specified in player_types.txt."""
+    """Loads player archetype data for all seasons.
+
+    This function loads player type (archetype) data from a combination of
+    sources:
+    - Static CSV files for early seasons (S1-S3).
+    - Google Sheets for later seasons (S4+), defined in `player_types.txt`.
+
+    It caches the downloaded data and uses a player ID map to ensure
+    consistency. It also standardizes batting and pitching type names.
+
+    Args:
+        force_seasons (list, optional): A list of season names to force a
+            re-download for, ignoring the cache. Defaults to None.
+
+    Returns:
+        dict: A dictionary where keys are season names (e.g., 'S1') and
+            values are pandas DataFrames of that season's player type data.
+    """
     player_type_data = {}
-    
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    player_types_path = os.path.join(script_dir, '..', 'data', 'player_types.txt')
-    cache_dir = os.path.join(script_dir, '..', 'data', 'cache', 'raw_player_types')
-    static_player_types_dir = os.path.join(script_dir, '..', 'data', 'static_player_types')
+    player_types_path = os.path.join(script_dir, "..", "data", "player_types.txt")
+    cache_dir = os.path.join(script_dir, "..", "data", "cache", "raw_player_types")
+    static_player_types_dir = os.path.join(
+        script_dir, "..", "data", "static_player_types"
+    )
     if not os.path.exists(cache_dir):
         os.makedirs(cache_dir)
 
-    name_to_id_map = load_player_id_map() # Load the player ID map
+    name_to_id_map = load_player_id_map()  # Load the player ID map
 
     seasons_to_process = []
     # Load seasons from player_types.txt (S4 onwards)
     try:
-        with open(player_types_path, 'r') as f:
+        with open(player_types_path, "r") as f:
             player_type_sheets = f.readlines()
             for line in player_type_sheets:
-                parts = line.strip().split('\t')
+                parts = line.strip().split("\t")
                 if len(parts) == 2:
-                    seasons_to_process.append({'season': parts[0], 'url': parts[1], 'source': 'url'})
+                    seasons_to_process.append(
+                        {"season": parts[0], "url": parts[1], "source": "url"}
+                    )
     except FileNotFoundError:
-        print(f"Info: Could not find player_types.txt at {player_types_path}. Skipping remote player types.")
+        print(
+            f"Info: Could not find player_types.txt at {player_types_path}. Skipping remote player types."
+        )
 
     # Add S1, S2, S3 from static CSV files
     for s_num in [1, 2, 3]:
-        season_str = f'S{s_num}'
-        static_csv_path = os.path.join(static_player_types_dir, f'raw_player_types_{season_str}.csv')
+        season_str = f"S{s_num}"
+        static_csv_path = os.path.join(
+            static_player_types_dir, f"raw_player_types_{season_str}.csv"
+        )
         if os.path.exists(static_csv_path):
-            seasons_to_process.append({'season': season_str, 'path': static_csv_path, 'source': 'static_csv'})
+            seasons_to_process.append(
+                {"season": season_str, "path": static_csv_path, "source": "static_csv"}
+            )
         else:
-             print(f"Info: Static player type file not found for {season_str} at {static_csv_path}. Skipping.")
+            print(
+                f"Info: Static player type file not found for {season_str} at {static_csv_path}. Skipping."
+            )
 
     force_seasons = force_seasons or []
 
     for item in seasons_to_process:
-        season = item['season']
+        season = item["season"]
         force_recalc = season in force_seasons
-        raw_cache_path = os.path.join(cache_dir, f'raw_player_types_{season}.csv')
+        raw_cache_path = os.path.join(cache_dir, f"raw_player_types_{season}.csv")
 
         df = None
         # Attempt to load from cache
         if os.path.exists(raw_cache_path) and not force_recalc:
             try:
-                df = pd.read_csv(raw_cache_path, dtype={'Player ID': str}) # Read Player ID as string
+                df = pd.read_csv(
+                    raw_cache_path, dtype={"Player ID": str}
+                )  # Read Player ID as string
                 print(f"Loaded {season} player types from local cache.")
             except Exception as e:
-                print(f"Error loading {season} player types from cache: {e}. Re-loading...")
+                print(
+                    f"Error loading {season} player types from cache: {e}. Re-loading..."
+                )
                 df = None
 
         # If not in cache or forced, load from source
         if df is None:
-            if item['source'] == 'url':
-                url = item['url']
+            if item["source"] == "url":
+                url = item["url"]
                 export_url = get_export_url(url)
                 if export_url:
                     try:
@@ -218,66 +330,89 @@ def load_player_types(force_seasons=None):
                 else:
                     print(f"Could not generate export URL for {url}")
                     continue
-            elif item['source'] == 'static_csv':
-                csv_path = item['path']
+            elif item["source"] == "static_csv":
+                csv_path = item["path"]
                 try:
-                    print(f"Loading player types for {season} from static CSV '{csv_path}'...")
+                    print(
+                        f"Loading player types for {season} from static CSV '{csv_path}'..."
+                    )
                     df = pd.read_csv(csv_path)
-                    
+
                     # Convert 'Player ID' to numeric, coercing errors to NaN
-                    df['Player ID'] = pd.to_numeric(df['Player ID'], errors='coerce')
+                    df["Player ID"] = pd.to_numeric(df["Player ID"], errors="coerce")
 
                     # Only map names to IDs for rows where 'Player ID' is currently NaN
-                    missing_id_mask = df['Player ID'].isna()
+                    missing_id_mask = df["Player ID"].isna()
                     if missing_id_mask.any():
-                        df.loc[missing_id_mask, 'Player ID'] = df.loc[missing_id_mask, 'Name'].str.lower().map(name_to_id_map)
+                        df.loc[missing_id_mask, "Player ID"] = (
+                            df.loc[missing_id_mask, "Name"]
+                            .str.lower()
+                            .map(name_to_id_map)
+                        )
 
-                    unmatched_names = df[df['Player ID'].isna()]['Name'].unique()
+                    unmatched_names = df[df["Player ID"].isna()]["Name"].unique()
                     if len(unmatched_names) > 0:
-                        print(f"Warning: Unmatched player names in {season} from CSV: {unmatched_names}")
+                        print(
+                            f"Warning: Unmatched player names in {season} from CSV: {unmatched_names}"
+                        )
                     df.to_csv(raw_cache_path, index=False)
                 except Exception as e:
-                    print(f"Error loading player types for {season} from static CSV: {e}")
+                    print(
+                        f"Error loading player types for {season} from static CSV: {e}"
+                    )
                     continue
-        
+
         if df is not None:
             # Ensure 'Player ID' is integer type for consistency
-            if 'Player ID' in df.columns:
-                df['Player ID'] = pd.to_numeric(df['Player ID'], errors='coerce').astype('Int64')
+            if "Player ID" in df.columns:
+                df["Player ID"] = pd.to_numeric(
+                    df["Player ID"], errors="coerce"
+                ).astype("Int64")
 
             # Ensure 'Player Name' is string type
-            if 'Name' in df.columns:
-                df['Player Name'] = df['Name']
+            if "Name" in df.columns:
+                df["Player Name"] = df["Name"]
 
-            if 'Batting Type' in df.columns:
-                df['Batting Type'] = df['Batting Type'].str.upper()
-            if 'Pitching Type' in df.columns:
-                df['Pitching Type'] = df['Pitching Type'].str.upper()
-                df['Pitching Type'] = df['Pitching Type'].replace({'FB': 'FP', 'NTH': 'NT'})
-            
-            if 'Pitching Bonus' in df.columns and 'Pitching Type' in df.columns:
-                df['Pitching Bonus'] = df['Pitching Bonus'].astype(str).str.upper()
+            if "Batting Type" in df.columns:
+                df["Batting Type"] = df["Batting Type"].str.upper()
+            if "Pitching Type" in df.columns:
+                df["Pitching Type"] = df["Pitching Type"].str.upper()
+                df["Pitching Type"] = df["Pitching Type"].replace(
+                    {"FB": "FP", "NTH": "NT"}
+                )
+
+            if "Pitching Bonus" in df.columns and "Pitching Type" in df.columns:
+                df["Pitching Bonus"] = df["Pitching Bonus"].astype(str).str.upper()
                 # Combine Pitching Type and Pitching Bonus
-                df['Pitching Type'] = df.apply(
-                    lambda row: f"{row['Pitching Type']}-{row['Pitching Bonus']}" if pd.notna(row['Pitching Bonus']) and row['Pitching Bonus'] != '' and row['Pitching Bonus'] != 'NAN' else row['Pitching Type'],
-                    axis=1
+                df["Pitching Type"] = df.apply(
+                    lambda row: (
+                        f"{row['Pitching Type']}-{row['Pitching Bonus']}"
+                        if pd.notna(row["Pitching Bonus"])
+                        and row["Pitching Bonus"] != ""
+                        and row["Pitching Bonus"] != "NAN"
+                        else row["Pitching Type"]
+                    ),
+                    axis=1,
                 )
             player_type_data[season] = df
 
     return player_type_data
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # Example usage:
     try:
         import pandas
     except ImportError:
-        print("The 'pandas' library is not installed. Please install it using 'pip install pandas'")
+        print(
+            "The 'pandas' library is not installed. Please install it using 'pip install pandas'"
+        )
         sys.exit(1)
     else:
         all_data, _, _ = load_all_seasons()
         if all_data:
             print(f"\nSuccessfully loaded data for {len(all_data)} seasons.")
             # For example, print the first 5 rows of Season 5's data
-            if 'S5' in all_data:
+            if "S5" in all_data:
                 print("\nFirst 5 rows of Season 5 data:")
-                print(all_data['S5'].head())
+                print(all_data["S5"].head())

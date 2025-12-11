@@ -2641,7 +2641,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         content += `${teamName}</span></td>`;
                         content += `<td>${team.W}</td>`;
                         content += `<td>${team.L}</td>`;
-                        content += `<td>${team.PCT.toFixed(3).substring(1)}</td>`; // Format PCT
+                        content += `<td>${formatStat('W-L%', team.PCT)}</td>`; // Format PCT
                         content += `<td>${gbDisplay}</td>`;
                         content += `</tr>`;
                     });
@@ -3083,38 +3083,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const calculateTeamRecords = (season) => {
         const teamRecords = {};
-        const seasonPitchingStats = state.pitchingStats.filter(s => s.Season === season);
-        const totalGamesInSeason = state.seasons[season] || 0; // This is now confirmed as totalGamesPlayedByTeam
+        const seasonTeamPitchingStats = state.teamPitchingStats.filter(s => s.Season === season);
+        const totalGamesInSeason = state.seasons[season] || 0;
 
-        // Initialize records for all teams that played in this season
-        const teamsInSeason = [...new Set(seasonPitchingStats.map(s => s.Team))];
-        teamsInSeason.forEach(teamAbbr => {
-            teamRecords[teamAbbr] = { W: 0, L: 0, T: 0, PCT: 0 };
-        });
+        seasonTeamPitchingStats.forEach(teamStat => {
+            const teamAbbr = teamStat.Team;
+            if (teamAbbr) {
+                const wins = teamStat.W || 0;
+                const losses = teamStat.L || 0;
+                const gamesPlayed = wins + losses;
+                const ties = Math.max(0, totalGamesInSeason - gamesPlayed);
 
-        seasonPitchingStats.forEach(stat => {
-            const teamAbbr = stat.Team;
-            if (teamRecords[teamAbbr]) {
-                const wins = stat.W || 0;
-                const losses = stat.L || 0;
-                teamRecords[teamAbbr].W += wins;
-                teamRecords[teamAbbr].L += losses;
+                teamRecords[teamAbbr] = {
+                    W: wins,
+                    L: losses,
+                    T: ties,
+                    PCT: teamStat['W-L%'] || 0
+                };
             }
         });
-
-        // Calculate Ties and PCT
-        for (const teamAbbr in teamRecords) {
-            const record = teamRecords[teamAbbr];
-            const gamesPlayedByTeam = record.W + record.L; // Sum of pitcher W+L
-            record.T = totalGamesInSeason - gamesPlayedByTeam; // Ties calculation
-            if (record.T < 0) record.T = 0; // Ensure ties are not negative
-
-            if (record.W + record.L > 0) {
-                record.PCT = record.W / (record.W + record.L);
-            } else {
-                record.PCT = 0;
-            }
-        }
         return teamRecords;
     };
 
