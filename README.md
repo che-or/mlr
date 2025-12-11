@@ -18,7 +18,10 @@ The web application provides several pages to explore the data:
 - **Player Stats (`#/stats`):** A searchable page for individual player statistics, showing detailed batting and pitching data.
 - **Team Stats (`#/team-stats`):** Displays season-by-season standings and allows drilling down into team-specific stats.
 - **Leaderboards (`#/leaderboards`):** Provides all-time and single-season leaderboards for a wide variety of statistical categories.
+- **Awards (`#/awards`):** A page to view season-by-season award winners.
+- **Hall of Fame (`#/hof`):** View the members of the Hall of Fame.
 - **Glossary (`#/glossary`):** A reference for advanced stats and terminology used in the application.
+- **Known Gamelog Errors (`#/gamelog-errors`):** A list of known errors in the gamelogs.
 
 ### Running the Web App
 
@@ -60,3 +63,4 @@ The site requires maintenance at the beginning of seasons.
 - **`docs/data/divisions.json`** needs to be updated to include the new season.
 - **`docs/data/team_history.json`** needs to be updated if a franchise changes its name, abbreviation, or logo. This will also need to be updated if teams are added or removed from the league.
 - **`scripts/game_processing.py`** needs to be updated if a logical change has been made to the game rules. The `_simulate_play` function tracks the resulting base-out state of outcomes. This is a fairly complex change. Logical changes are made infrequently, the most recent being the addition of lineouts. Changes that don't affect logic (e.g. changes to player types) can be ignored. This file only needs to be updated if a new rule redefines how runners move in a certain situation.
+- **`docs/data/awards.json`** needs to be updated to include the previous season's awards and All-Star teams.
