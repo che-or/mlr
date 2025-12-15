@@ -2573,8 +2573,9 @@
         ]
     },
     "583": {
-        "currentName": "NOT Paulie Wag",
+        "currentName": "Derek Bon Giovanni",
         "formerNames": [
+            "NOT Paulie Wag",
             "Paulie Wag",
             "Help Im Being Repressed",
             "Berek Dongiovanni",
@@ -7207,6 +7208,10 @@
         "currentName": "Pike Trout",
         "formerNames": []
     },
+    "3217": {
+        "currentName": "jorjor wel",
+        "formerNames": []
+    },
     "3220": {
         "currentName": "Tomba",
         "formerNames": []
@@ -7255,6 +7260,10 @@
         "currentName": "Greggy Gabagool",
         "formerNames": []
     },
+    "3238": {
+        "currentName": "Okie",
+        "formerNames": []
+    },
     "3239": {
         "currentName": "Justin Carlson",
         "formerNames": []
@@ -7291,6 +7300,10 @@
         "currentName": "Captain Hate",
         "formerNames": []
     },
+    "3254": {
+        "currentName": "Weehaddababy Itzaboi",
+        "formerNames": []
+    },
     "3255": {
         "currentName": "Alph Overdale",
         "formerNames": []
@@ -7305,6 +7318,10 @@
     },
     "3258": {
         "currentName": "Soy Okey",
+        "formerNames": []
+    },
+    "3261": {
+        "currentName": "Chilidog Clayton",
         "formerNames": []
     },
     "3263": {
@@ -7331,6 +7348,10 @@
         "currentName": "Dusty Rhodes",
         "formerNames": []
     },
+    "3300": {
+        "currentName": "Wick Warrick",
+        "formerNames": []
+    },
     "3301": {
         "currentName": "London Bridges",
         "formerNames": []
@@ -7341,6 +7362,14 @@
     },
     "3304": {
         "currentName": "Mikey Thomas",
+        "formerNames": []
+    },
+    "3305": {
+        "currentName": "Steven Sinclair",
+        "formerNames": []
+    },
+    "3307": {
+        "currentName": "Joey Tacoma",
         "formerNames": []
     }
 }

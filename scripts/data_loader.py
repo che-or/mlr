@@ -88,7 +88,7 @@ def _write_cache_manifest(cache_dir, most_recent_season):
         print("Warning: Could not write to cache manifest file.")
 
 
-def load_all_seasons():
+def load_all_seasons(gamelog_file_path="data/gamelogs.txt", cache_prefix=""):
     """Loads all seasons' gamelog data.
 
     This function reads the `gamelogs.txt` file to find the Google Sheets URLs
@@ -108,7 +108,7 @@ def load_all_seasons():
     season_data = {}
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    gamelogs_path = os.path.join(script_dir, "..", "data", "gamelogs.txt")
+    gamelogs_path = os.path.join(script_dir, "..", gamelog_file_path)
     cache_dir = os.path.join(script_dir, "..", "data", "cache")
     raw_data_cache_dir = os.path.join(cache_dir, "raw_gamelogs")
     if not os.path.exists(raw_data_cache_dir):
@@ -147,7 +147,7 @@ def load_all_seasons():
 
         season, num_games_str, url = parts
         force_recalc = (season == most_recent_season) or (season in seasons_to_recalc)
-        raw_cache_path = os.path.join(raw_data_cache_dir, f"raw_gamelog_{season}.csv")
+        raw_cache_path = os.path.join(raw_data_cache_dir, f"{cache_prefix}raw_gamelog_{season}.csv")
 
         df = None
         if os.path.exists(raw_cache_path) and not force_recalc:
@@ -164,6 +164,11 @@ def load_all_seasons():
                 try:
                     print(f"Downloading data for {season}...")
                     df = pd.read_csv(export_url)
+                    team_cols = ["Batter Team", "Pitcher Team"]
+                    for col in team_cols:
+                        if col in df.columns:
+                            df[col] = df[col].fillna("NUL")
+                            df[col] = df[col].replace("N/A", "NUL")
                     df.to_csv(raw_cache_path, index=False)
                 except Exception as e:
                     print(f"Error loading data for {season} from URL: {e}")
@@ -230,7 +235,7 @@ def load_player_id_map():
     return name_to_id_map
 
 
-def load_player_types(force_seasons=None):
+def load_player_types(player_types_file_path="data/player_types.txt", force_seasons=None, cache_prefix=""):
     """Loads player archetype data for all seasons.
 
     This function loads player type (archetype) data from a combination of
@@ -252,7 +257,7 @@ def load_player_types(force_seasons=None):
     player_type_data = {}
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    player_types_path = os.path.join(script_dir, "..", "data", "player_types.txt")
+    player_types_path = os.path.join(script_dir, "..", player_types_file_path)
     cache_dir = os.path.join(script_dir, "..", "data", "cache", "raw_player_types")
     static_player_types_dir = os.path.join(
         script_dir, "..", "data", "static_player_types"
@@ -298,7 +303,7 @@ def load_player_types(force_seasons=None):
     for item in seasons_to_process:
         season = item["season"]
         force_recalc = season in force_seasons
-        raw_cache_path = os.path.join(cache_dir, f"raw_player_types_{season}.csv")
+        raw_cache_path = os.path.join(cache_dir, f"{cache_prefix}raw_player_types_{season}.csv")
 
         df = None
         # Attempt to load from cache

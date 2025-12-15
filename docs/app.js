@@ -2,11 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const API = {
         hitting: './data/hitting_stats.json',
         pitching: './data/pitching_stats.json',
+        milrHitting: './data/milr_hitting_stats.json',
+        milrPitching: './data/milr_pitching_stats.json',
         players: './data/player_id_map.json',
         seasons: './data/season_games_map.json',
         glossary: './data/glossary.json',
-        divisions: './data/divisions.json', // Added
+        divisions: './data/divisions.json',
+        milrDivisions: './data/milr_divisions.json',
         teamHistory: './data/team_history.json',
+        milrTeamHistory: './data/milr_team_history.json',
         teamHitting: './data/team_hitting_stats.json',
         teamPitching: './data/team_pitching_stats.json',
         gamelogErrors: './data/gamelog-errors.json',
@@ -19,13 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const state = {
         hittingStats: [],
         pitchingStats: [],
+        milrHittingStats: [],
+        milrPitchingStats: [],
         teamHittingStats: [],
         teamPitchingStats: [],
         players: {},
         seasons: {},
         glossaryData: {},
-        divisions: {}, // Added,
+        divisions: {},
+        milrDivisions: {},
         teamHistory: {},
+        milrTeamHistory: {},
         gamelogErrors: [],
         typeDefinitions: {},
         playerInfo: {},
@@ -240,13 +248,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const loadData = async () => {
         try {
-            const [hitting, pitching, players, seasons, glossary, divisions, teamHistory, teamHitting, teamPitching, gamelogErrors, typeDefinitions, playerInfo, awards, currentSeasonInfo] = await Promise.all([
+            const [
+                hitting, pitching, players, seasons, glossary, divisions, teamHistory, 
+                teamHitting, teamPitching, gamelogErrors, typeDefinitions, 
+                playerInfo, awards, currentSeasonInfo,
+                milrHitting, milrPitching, milrDivisions, milrTeamHistory
+            ] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
                 fetch(API.players).then(res => res.json()),
                 fetch(API.seasons).then(res => res.json()),
                 fetch(API.glossary).then(res => res.json()),
-                fetch(API.divisions).then(res => res.json()), // Added
+                fetch(API.divisions).then(res => res.json()),
                 fetch(API.teamHistory).then(res => res.json()),
                 fetch(API.teamHitting).then(res => res.json()),
                 fetch(API.teamPitching).then(res => res.json()),
@@ -254,7 +267,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.typeDefinitions).then(res => res.json()),
                 fetch(API.playerInfo).then(res => res.json()),
                 fetch(API.awards).then(res => res.json()),
-                fetch(API.currentSeasonInfo).then(res => res.json())
+                fetch(API.currentSeasonInfo).then(res => res.json()),
+                fetch(API.milrHitting).then(res => res.json()),
+                fetch(API.milrPitching).then(res => res.json()),
+                fetch(API.milrDivisions).then(res => res.json()),
+                fetch(API.milrTeamHistory).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
@@ -264,13 +281,17 @@ document.addEventListener('DOMContentLoaded', () => {
             state.players = players;
             state.seasons = seasons;
             state.glossaryData = glossary;
-            state.divisions = divisions; // Added
+            state.divisions = divisions;
             state.teamHistory = teamHistory;
             state.gamelogErrors = gamelogErrors;
             state.typeDefinitions = typeDefinitions;
             state.playerInfo = playerInfo;
             state.awards = awards;
             state.currentSeasonInfo = currentSeasonInfo;
+            state.milrHittingStats = parseCompactData(milrHitting);
+            state.milrPitchingStats = parseCompactData(milrPitching);
+            state.milrDivisions = milrDivisions;
+            state.milrTeamHistory = milrTeamHistory;
 
             const seasonsWithStats = new Set();
             state.hittingStats.forEach(s => {
@@ -2161,7 +2182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return displayList;
     };
 
-    const displayPlayerPage = (playerId) => {
+        const displayPlayerPage = (playerId) => {
         state.currentPlayerId = playerId;
         elements.statsContentDisplay.innerHTML = '';
         const player = state.players[playerId];
@@ -2445,6 +2466,142 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 renderHitting();
                 renderPitching();
+            }
+
+            const milrHittingStats = state.milrHittingStats.filter(s => s['Hitter ID'] === playerId);
+            const milrPitchingStats = state.milrPitchingStats.filter(s => s['Pitcher ID'] === playerId);
+
+            if (milrHittingStats.length > 0 || milrPitchingStats.length > 0) {
+                const toggleButton = document.createElement('button');
+                toggleButton.id = 'toggle-milr-stats';
+                toggleButton.textContent = '[Show Minors]';
+                // Remove action-button class and apply link-like styles
+                toggleButton.style.background = 'none';
+                toggleButton.style.border = 'none';
+                toggleButton.style.color = 'var(--text-color)'; // Or var(--accent-color) if more prominent link is desired
+                toggleButton.style.textDecoration = 'underline';
+                toggleButton.style.fontWeight = 'normal';
+                toggleButton.style.padding = '0';
+                toggleButton.style.marginTop = '20px'; 
+                toggleButton.style.cursor = 'pointer';
+                toggleButton.style.display = 'block';
+
+                const milrContainer = document.createElement('div');
+                milrContainer.id = 'milr-stats-container';
+                milrContainer.style.display = 'none';
+
+                const originalTeamHistory = state.teamHistory;
+                state.teamHistory = state.milrTeamHistory;
+
+                const renderMilrHitting = () => {
+                    if (milrHittingStats.length > 0) {
+                        const franchiseFirstSeason = new Map();
+                        const allPlayerSeasonStats = milrHittingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                        for (const stat of allPlayerSeasonStats) {
+                            const seasonNum = parseInt(stat.Season.slice(1));
+                            const teamAbbr = stat.Team;
+                            const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, stat.Season);
+                            if (franchiseKey) {
+                                if (!franchiseFirstSeason.has(franchiseKey) || seasonNum < franchiseFirstSeason.get(franchiseKey)) {
+                                    franchiseFirstSeason.set(franchiseKey, seasonNum);
+                                }
+                            }
+                        }
+                        milrHittingStats.sort((a, b) => {
+                            const getScore = (season) => {
+                                if (season === 'Franchise') return 3;
+                                if (season === 'Career') return 2;
+                                return 0;
+                            }
+                            const scoreA = getScore(a.Season);
+                            const scoreB = getScore(b.Season);
+                            if (scoreA !== scoreB) { return scoreA - scoreB; }
+                            if (a.Season === 'Franchise') {
+                                const paA = a.PA || 0;
+                                const paB = b.PA || 0;
+                                if (paB !== paA) { return paB - paA; }
+                                const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
+                                const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
+                                if (firstSeasonA !== firstSeasonB) { return firstSeasonA - firstSeasonB; }
+                                return a.Team.localeCompare(b.Team);
+                            }
+                            if (a.Season === 'Career') { return 0; }
+                            const seasonA = parseInt(a.Season.slice(1));
+                            const seasonB = parseInt(b.Season.slice(1));
+                            if (seasonA !== seasonB) { return seasonA - seasonB; }
+                            const subRowA = a.is_sub_row ? 1 : 0;
+                            const subRowB = b.is_sub_row ? 1 : 0;
+                            return subRowA - subRowB;
+                        });
+                        milrContainer.innerHTML += createStatsTable('MiLR Batting Stats', milrHittingStats, STAT_DEFINITIONS, false, true);
+                    }
+                };
+
+                const renderMilrPitching = () => {
+                    if (milrPitchingStats.length > 0) {
+                        const franchiseFirstSeason = new Map();
+                        const allPlayerSeasonStats = milrPitchingStats.filter(s => s.Season.startsWith('S') && (s.is_sub_row || !s.Team.includes('TM')));
+                        for (const stat of allPlayerSeasonStats) {
+                            const seasonNum = parseInt(stat.Season.slice(1));
+                            const teamAbbr = stat.Team;
+                            const franchiseKey = getFranchiseKeyFromAbbr(teamAbbr, stat.Season);
+                            if (franchiseKey) {
+                                if (!franchiseFirstSeason.has(franchiseKey) || seasonNum < franchiseFirstSeason.get(franchiseKey)) {
+                                    franchiseFirstSeason.set(franchiseKey, seasonNum);
+                                }
+                            }
+                        }
+                        milrPitchingStats.sort((a, b) => {
+                            const getScore = (season) => {
+                                if (season === 'Franchise') return 3;
+                                if (season === 'Career') return 2;
+                                return 0;
+                            }
+                            const scoreA = getScore(a.Season);
+                            const scoreB = getScore(b.Season);
+                            if (scoreA !== scoreB) { return scoreA - scoreB; }
+                            if (a.Season === 'Franchise') {
+                                const ipA = a.IP || 0;
+                                const ipB = b.IP || 0;
+                                if (ipB !== ipA) { return ipB - ipA; }
+                                const firstSeasonA = franchiseFirstSeason.get(a.Team) || Infinity;
+                                const firstSeasonB = franchiseFirstSeason.get(b.Team) || Infinity;
+                                if (firstSeasonA !== firstSeasonB) { return firstSeasonA - firstSeasonB; }
+                                return a.Team.localeCompare(b.Team);
+                            }
+                            if (a.Season === 'Career') { return 0; }
+                            const seasonA = parseInt(a.Season.slice(1));
+                            const seasonB = parseInt(b.Season.slice(1));
+                            if (seasonA !== seasonB) { return seasonA - seasonB; }
+                            const subRowA = a.is_sub_row ? 1 : 0;
+                            const subRowB = b.is_sub_row ? 1 : 0;
+                            return subRowA - subRowB;
+                        });
+                        milrContainer.innerHTML += createStatsTable('MiLR Pitching Stats', milrPitchingStats, STAT_DEFINITIONS, true, true);
+                    }
+                };
+                
+                if (primaryRole === 'pitcher') {
+                    renderMilrPitching();
+                    renderMilrHitting();
+                } else {
+                    renderMilrHitting();
+                    renderMilrPitching();
+                }
+                
+                state.teamHistory = originalTeamHistory;
+                
+                elements.statsContentDisplay.appendChild(toggleButton);
+                elements.statsContentDisplay.appendChild(milrContainer);
+
+                toggleButton.addEventListener('click', () => {
+                    const isHidden = milrContainer.style.display === 'none';
+                    milrContainer.style.display = isHidden ? 'block' : 'none';
+                    toggleButton.textContent = isHidden ? '[Hide Minors]' : '[Show Minors]';
+                    if (isHidden) {
+                        setStickyColumnOffsets();
+                    }
+                });
             }
 
             elements.statsContentDisplay.querySelectorAll('.stats-table').forEach(makeTableSortable);
@@ -3148,7 +3305,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const seasonNum = parseInt(season.slice(1));
         for (const franchiseKey in state.teamHistory) {
             const entries = state.teamHistory[franchiseKey];
-            if (entries.some(entry => entry.abbr === abbr && seasonNum >= entry.start && (entry.end === 9999 || seasonNum <= entry.end))) {
+            if (Array.isArray(entries) && entries.some(entry => entry.abbr === abbr && seasonNum >= entry.start && (entry.end === 9999 || seasonNum <= entry.end))) {
                 return franchiseKey;
             }
         }
