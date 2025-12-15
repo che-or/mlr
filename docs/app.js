@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
         milrHitting: './data/milr_hitting_stats.json',
         milrPitching: './data/milr_pitching_stats.json',
         players: './data/player_id_map.json',
+        milrPlayerIdMap: './data/milr_player_id_map.json',
         seasons: './data/season_games_map.json',
         glossary: './data/glossary.json',
         divisions: './data/divisions.json',
@@ -252,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 hitting, pitching, players, seasons, glossary, divisions, teamHistory, 
                 teamHitting, teamPitching, gamelogErrors, typeDefinitions, 
                 playerInfo, awards, currentSeasonInfo,
-                milrHitting, milrPitching, milrDivisions, milrTeamHistory
+                milrHitting, milrPitching, milrDivisions, milrTeamHistory, milrPlayerIdMap
             ] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
@@ -271,14 +272,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.milrHitting).then(res => res.json()),
                 fetch(API.milrPitching).then(res => res.json()),
                 fetch(API.milrDivisions).then(res => res.json()),
-                fetch(API.milrTeamHistory).then(res => res.json())
+                fetch(API.milrTeamHistory).then(res => res.json()),
+                fetch(API.milrPlayerIdMap).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
             state.pitchingStats = parseCompactData(pitching);
             state.teamHittingStats = parseCompactData(teamHitting);
             state.teamPitchingStats = parseCompactData(teamPitching);
-            state.players = players;
+            state.players = players; // Start with major league players
+
+            // Merge MiLR players
+            for (const playerId in milrPlayerIdMap) {
+                const milrPlayer = milrPlayerIdMap[playerId];
+                if (state.players[playerId]) {
+                    // Player exists in both MLR and MiLR
+                    const mlrPlayer = state.players[playerId];
+
+                    // Ensure formerNames exists for MLR player
+                    if (!mlrPlayer.formerNames) {
+                        mlrPlayer.formerNames = [];
+                    }
+
+                    // Add MiLR currentName to MLR formerNames if different and not already there
+                    if (milrPlayer.currentName !== mlrPlayer.currentName &&
+                        !mlrPlayer.formerNames.includes(milrPlayer.currentName)) {
+                        mlrPlayer.formerNames.push(milrPlayer.currentName);
+                    }
+                    
+                    // Merge formerNames from MiLR into MLR's formerNames
+                    if (milrPlayer.formerNames) {
+                        for (const formerName of milrPlayer.formerNames) {
+                            if (!mlrPlayer.formerNames.includes(formerName) && 
+                                formerName !== mlrPlayer.currentName && 
+                                formerName !== milrPlayer.currentName) { // Check against both current names
+                                mlrPlayer.formerNames.push(formerName);
+                            }
+                        }
+                    }
+                } else {
+                    // Player only exists in MiLR, add them as-is
+                    state.players[playerId] = milrPlayer;
+                }
+            }
+
             state.seasons = seasons;
             state.glossaryData = glossary;
             state.divisions = divisions;
@@ -307,8 +344,8 @@ document.addEventListener('DOMContentLoaded', () => {
             state.seasonsWithStats = Array.from(seasonsWithStats).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1)));
 
             state.playerMap = new Map();
-            for (const id in players) {
-                const player = players[id];
+            for (const id in state.players) {
+                const player = state.players[id];
                 const playerId = parseInt(id);
 
                 const addNameToMap = (name) => {
