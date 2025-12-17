@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         milrTeamHistory: './data/milr_team_history.json',
         teamHitting: './data/team_hitting_stats.json',
         teamPitching: './data/team_pitching_stats.json',
+        milrTeamHitting: './data/milr_team_hitting_stats.json',
+        milrTeamPitching: './data/milr_team_pitching_stats.json',
         gamelogErrors: './data/gamelog-errors.json',
         typeDefinitions: './data/type_definitions.json',
         playerInfo: './data/player_info.json',
@@ -28,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         milrPitchingStats: [],
         teamHittingStats: [],
         teamPitchingStats: [],
+        milrTeamHittingStats: [],
+        milrTeamPitchingStats: [],
         players: {},
         seasons: {},
         glossaryData: {},
@@ -253,7 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 hitting, pitching, players, seasons, glossary, divisions, teamHistory, 
                 teamHitting, teamPitching, gamelogErrors, typeDefinitions, 
                 playerInfo, awards, currentSeasonInfo,
-                milrHitting, milrPitching, milrDivisions, milrTeamHistory, milrPlayerIdMap
+                milrHitting, milrPitching, milrDivisions, milrTeamHistory, milrPlayerIdMap,
+                milrTeamHitting, milrTeamPitching
             ] = await Promise.all([
                 fetch(API.hitting).then(res => res.json()),
                 fetch(API.pitching).then(res => res.json()),
@@ -273,13 +278,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.milrPitching).then(res => res.json()),
                 fetch(API.milrDivisions).then(res => res.json()),
                 fetch(API.milrTeamHistory).then(res => res.json()),
-                fetch(API.milrPlayerIdMap).then(res => res.json())
+                fetch(API.milrPlayerIdMap).then(res => res.json()),
+                fetch(API.milrTeamHitting).then(res => res.json()),
+                fetch(API.milrTeamPitching).then(res => res.json())
             ]);
 
             state.hittingStats = parseCompactData(hitting);
             state.pitchingStats = parseCompactData(pitching);
             state.teamHittingStats = parseCompactData(teamHitting);
             state.teamPitchingStats = parseCompactData(teamPitching);
+            state.milrTeamHittingStats = parseCompactData(milrTeamHitting);
+            state.milrTeamPitchingStats = parseCompactData(milrTeamPitching);
             state.players = players; // Start with major league players
 
             // Merge MiLR players
@@ -2884,8 +2893,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const isMiLR = state.milrTeamHistory[season] && state.milrTeamHistory[season][teamKey];
         const hittingStatsToUse = isMiLR ? state.milrHittingStats : state.hittingStats;
         const pitchingStatsToUse = isMiLR ? state.milrPitchingStats : state.pitchingStats;
-        const teamHittingStatsToUse = isMiLR ? null : state.teamHittingStats;
-        const teamPitchingStatsToUse = isMiLR ? null : state.teamPitchingStats;
+        const teamHittingStatsToUse = isMiLR ? state.milrTeamHittingStats : state.teamHittingStats;
+        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : state.teamPitchingStats;
 
         const seasonNum = parseInt(season.slice(1));
         let actualTeamAbbr = teamKey; // Default to the provided teamKey

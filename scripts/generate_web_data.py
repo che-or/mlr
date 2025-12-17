@@ -14,6 +14,7 @@ It performs the following key functions:
 from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
 from gamelog_corrections import apply_gamelog_corrections
+from milr_gamelog_corrections import apply_milr_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
 from neutral_result_correction import correct_neutral_results
 import pandas as pd
@@ -2524,6 +2525,10 @@ def generate_league_data(
         player_types_file_path=player_types_source, force_seasons=force_recalc_seasons, cache_prefix=output_prefix
     )
 
+    if is_milr:
+        if player_type_data and 'S8' in player_type_data and 'S-8' not in player_type_data:
+            player_type_data['S-8'] = player_type_data['S8']
+
     print("Processing player info data...")
     player_info = {}
     if player_type_data:
@@ -2705,6 +2710,14 @@ def generate_league_data(
         )
         print("Gamelog corrections applied.")
 
+    if is_milr:
+        print("Applying MiLR manual gamelog corrections...")
+        combined_df = (
+            combined_df.groupby(["Season", "Game ID"])
+            .apply(lambda g: apply_milr_gamelog_corrections(g, g.name), include_groups=False)
+            .reset_index()
+        )
+        print("MiLR gamelog corrections applied.")
     decision_games_df = combined_df.copy()
     if most_recent_season:
         most_recent_season_df = combined_df[combined_df["Season"] == most_recent_season]
@@ -3326,6 +3339,7 @@ def generate_league_data(
 
 
 def main():
+    """
     # Generate MLR data
     generate_league_data(
         gamelog_source="data/gamelogs.txt",
@@ -3333,7 +3347,7 @@ def main():
         output_prefix="",
         is_milr=False
     )
-    
+    """
     # Generate MiLR data
     generate_league_data(
         gamelog_source="data/milr_gamelogs.txt",

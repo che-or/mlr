@@ -38,7 +38,7 @@ def correct_neutral_results(df, player_info):
         print("Skipping neutral result correction.")
         return df
 
-    seasons_to_correct = ["S8", "S9", "S10", "S11"]
+    seasons_to_correct = ["S-8", "S8", "S9", "S10", "S11"]
 
     # --- BEFORE ---
     season_mask = df["Season"].isin(seasons_to_correct)
