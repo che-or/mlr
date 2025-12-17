@@ -237,6 +237,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    const getSeasonForSort = (season) => {
+        if (season === 'S-8') return 8.1;
+        if (season === 'S8') return 8.2;
+        return parseInt(season.slice(1));
+    };
+
+    const formatSeasonName = (season, isMiLR) => {
+        if (isMiLR) {
+            if (season === 'S-8') return 'S8A';
+            if (season === 'S8') return 'S8B';
+        }
+        return season;
+    };
+
     const GLOSSARY_GROUPS = {
         "General": ["WAR", "WPA", "RE24"],
         "Batting": ["BA", "OBP", "SLG", "OPS", "ISO", "BABIP", "OPS+"],
@@ -2435,8 +2449,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         // Season rows
-                        const seasonA = parseInt(a.Season.slice(1));
-                        const seasonB = parseInt(b.Season.slice(1));
+                        const seasonA = getSeasonForSort(a.Season);
+                        const seasonB = getSeasonForSort(b.Season);
                         if (seasonA !== seasonB) {
                             return seasonA - seasonB;
                         }
@@ -2445,7 +2459,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', filteredHittingStats, STAT_DEFINITIONS, false, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Batting Stats', filteredHittingStats, STAT_DEFINITIONS, false, true, false);
                 }
             };
     
@@ -2497,8 +2511,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         // Season rows
-                        const seasonA = parseInt(a.Season.slice(1));
-                        const seasonB = parseInt(b.Season.slice(1));
+                        const seasonA = getSeasonForSort(a.Season);
+                        const seasonB = getSeasonForSort(b.Season);
                         if (seasonA !== seasonB) {
                             return seasonA - seasonB;
                         }
@@ -2507,7 +2521,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         const subRowB = b.is_sub_row ? 1 : 0;
                         return subRowA - subRowB;
                     });
-                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', filteredPitchingStats, STAT_DEFINITIONS, true, true);
+                    elements.statsContentDisplay.innerHTML += createStatsTable('Pitching Stats', filteredPitchingStats, STAT_DEFINITIONS, true, true, false);
                 }
             };
     
@@ -2577,14 +2591,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                 return a.Team.localeCompare(b.Team);
                             }
                             if (a.Season === 'Career') { return 0; }
-                            const seasonA = parseInt(a.Season.slice(1));
-                            const seasonB = parseInt(b.Season.slice(1));
+                            const seasonA = getSeasonForSort(a.Season);
+                            const seasonB = getSeasonForSort(b.Season);
                             if (seasonA !== seasonB) { return seasonA - seasonB; }
                             const subRowA = a.is_sub_row ? 1 : 0;
                             const subRowB = b.is_sub_row ? 1 : 0;
                             return subRowA - subRowB;
                         });
-                        milrContainer.innerHTML += createStatsTable('MiLR Batting Stats', milrHittingStats, STAT_DEFINITIONS, false, true);
+                        milrContainer.innerHTML += createStatsTable('MiLR Batting Stats', milrHittingStats, STAT_DEFINITIONS, false, true, true);
                     }
                 };
 
@@ -2621,14 +2635,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                 return a.Team.localeCompare(b.Team);
                             }
                             if (a.Season === 'Career') { return 0; }
-                            const seasonA = parseInt(a.Season.slice(1));
-                            const seasonB = parseInt(b.Season.slice(1));
+                            const seasonA = getSeasonForSort(a.Season);
+                            const seasonB = getSeasonForSort(b.Season);
                             if (seasonA !== seasonB) { return seasonA - seasonB; }
                             const subRowA = a.is_sub_row ? 1 : 0;
                             const subRowB = b.is_sub_row ? 1 : 0;
                             return subRowA - subRowB;
                         });
-                        milrContainer.innerHTML += createStatsTable('MiLR Pitching Stats', milrPitchingStats, STAT_DEFINITIONS, true, true);
+                        milrContainer.innerHTML += createStatsTable('MiLR Pitching Stats', milrPitchingStats, STAT_DEFINITIONS, true, true, true);
                     }
                 };
                 
@@ -2807,7 +2821,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <select id="team-season-select" class="title-season-select">`;
                 allSeasons.forEach(season => {
                     const isSelected = season === currentSeason ? 'selected' : '';
-                    content += `<option value="${season}" ${isSelected}>Season ${season.slice(1)}</option>`;
+                    content += `<option value="${season}" ${isSelected}>Season ${formatSeasonName(season)}</option>`;
                 });
                 content += `        </select>
                                 </h2>
@@ -2966,7 +2980,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (teamLogoSrc) {
             titleHTML += `<img src="${teamLogoSrc}" class="player-team-logo"> `;
         }
-        titleHTML += `${teamName} - ${season.replace('S','Season ')}</h2>`;
+        titleHTML += `${teamName} - ${formatSeasonName(season, isMiLR).replace('S','Season ')}</h2>`;
         headerContent += titleHTML;
 
         let navButtonsHTML = `<div class="season-nav-buttons">`;
@@ -2985,11 +2999,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (seasonHittingStats.length > 0) {
             const teamHittingTotals = teamHittingStatsToUse ? teamHittingStatsToUse.find(s => s.Season === season && s.Team === actualTeamAbbr) : null;
-            content += createTeamStatsTable('Batting Stats', seasonHittingStats, false, teamHittingTotals);
+            content += createTeamStatsTable('Batting Stats', seasonHittingStats, false, teamHittingTotals, true, isMiLR);
         }
         if (seasonPitchingStats.length > 0) {
             const teamPitchingTotals = teamPitchingStatsToUse ? teamPitchingStatsToUse.find(s => s.Season === season && s.Team === actualTeamAbbr) : null;
-            content += createTeamStatsTable('Pitching Stats', seasonPitchingStats, true, teamPitchingTotals);
+            content += createTeamStatsTable('Pitching Stats', seasonPitchingStats, true, teamPitchingTotals, true, isMiLR);
         }
 
         elements.teamStatsView.innerHTML = content;
@@ -3154,7 +3168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return html;
     };
 
-    const createStatsTable = (title, stats, statDefinitions, isPitching, bySeason = false) => {
+    const createStatsTable = (title, stats, statDefinitions, isPitching, bySeason = false, isMiLR = false) => {
         let html = `<h3 class="section-title">${title}</h3>`;
         const statGroups = isPitching ? statDefinitions.pitching_tables : statDefinitions.batting_tables;
 
@@ -3235,6 +3249,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     } else {
                         value = s[statKey]; // Assign 'value' here for non-Team stats
+
+                        if (stat === 'Season') {
+                            value = formatSeasonName(value, isMiLR);
+                        }
 
                         if (isPitching) {
                             const ip = s.IP || 0;
