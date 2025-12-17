@@ -3339,7 +3339,6 @@ def generate_league_data(
 
 
 def main():
-    """
     # Generate MLR data
     generate_league_data(
         gamelog_source="data/gamelogs.txt",
@@ -3347,7 +3346,7 @@ def main():
         output_prefix="",
         is_milr=False
     )
-    """
+
     # Generate MiLR data
     generate_league_data(
         gamelog_source="data/milr_gamelogs.txt",
