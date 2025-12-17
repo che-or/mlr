@@ -605,6 +605,7 @@ class Game:
                 if pd.notna(play["Exact Result"])
                 else play["Old Result"]
             )
+            result = str(result)
             old_result = play["Old Result"]
             diff_val = play.get("Diff")
             if pd.isna(diff_val):

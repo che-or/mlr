@@ -1,0 +1,186 @@
+{
+    "S5": {
+        "Pacific Coast League": {
+            "Dynasty Division": [
+                "CHI",
+                "KRB",
+                "RKT",
+                "WSH"
+            ],
+            "Dominion Division": [
+                "PPP",
+                "TSA",
+                "WWC",
+                "YUM"
+            ],
+            "Empire Division": [
+                "GBC",
+                "GTY",
+                "ISO",
+                "SPR"
+            ]
+        },
+        "International League": {
+            "Supreme Division": [
+                "LMN",
+                "PHB",
+                "TAI",
+                "TRA"
+            ],
+            "Champion Division": [
+                "DAD",
+                "JUP",
+                "N/A",
+                "TAC"
+            ],
+            "Victory Division": [
+                "KTY",
+                "MVM",
+                "POR",
+                "SAR"
+            ]
+        }
+    },
+    "S6": {
+        "Pacific Coast League": [
+            "AAL",
+            "BAC",
+            "CBC",
+            "CWJ",
+            "JEF",
+            "LID",
+            "LMN",
+            "MPD",
+            "PUK",
+            "RBD",
+            "SAR",
+            "SAS",
+            "SGP",
+            "WWC"
+        ],
+        "International League": [
+            "BBB",
+            "CIM",
+            "FRG",
+            "HEL",
+            "LIM",
+            "MBT",
+            "MVS",
+            "PBA",
+            "PHB",
+            "POR",
+            "SLT",
+            "SUP",
+            "TAK",
+            "TTT"
+        ]
+    },
+    "S7": {
+        "Pacific Coast League": {
+            "Independence Division": [
+                "BAC",
+                "BBC",
+                "RRR",
+                "TBL"
+            ],
+            "Diamond Division": [
+                "SCG",
+                "SSC",
+                "STK",
+                "TRI"
+            ]
+        },
+        "International League": {
+            "Twisted Division": [
+                "BBB",
+                "KNX",
+                "PBA",
+                "SSJ"
+            ],
+            "Wildflower Division": [
+                "CPR",
+                "FAP",
+                "MMA",
+                "WSW"
+            ]
+        }
+    },
+    "S8B": {
+        "Pacific Coast League": [
+            "ESP",
+            "MOB",
+            "SBD",
+            "SCU"
+        ],
+        "International League": [
+            "CC",
+            "NUT",
+            "QQ",
+            "TXR"
+        ]
+    },
+    "S9": {
+        "Pacific Coast League": [
+            "FLB",
+            "GOP",
+            "KGB",
+            "POS"
+        ],
+        "International League": [
+            "AND",
+            "ARR",
+            "BIR",
+            "NNL"
+        ]
+    },
+    "S10": {
+        "Pacific Coast League": [
+            "CRN",
+            "GOB",
+            "KIR",
+            "KRK",
+            "ZAH"
+        ],
+        "International League": [
+            "ACK",
+            "BEE",
+            "GRS",
+            "SEO",
+            "SSS"
+        ]
+    },
+    "S11": {
+        "Pacific Coast League": [
+            "IDR",
+            "LAX",
+            "OKT",
+            "POS",
+            "ROY",
+            "WRM"
+        ],
+        "International League": [
+            "ARA",
+            "DOG",
+            "HOT",
+            "LOB",
+            "PRP",
+            "SHH"
+        ]
+    },
+    "S12": {
+        "Pacific Coast League": [
+            "CCS",
+            "MMN",
+            "SAL",
+            "SCR",
+            "SEF"
+        ],
+        "International League": [
+            "DDD",
+            "KEG",
+            "PQD",
+            "SDV",
+            "WWC"
+        ]
+    }
+}
