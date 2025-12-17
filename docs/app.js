@@ -989,11 +989,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const newActive = toggleButtons.querySelector(`[data-league=${league}]`);
                 if (newActive) newActive.classList.add('active');
             }
+            localStorage.setItem('awardsSelectedLeague', league);
         };
 
+        const savedLeague = localStorage.getItem('awardsSelectedLeague');
         const urlLeague = new URLSearchParams(window.location.hash.split('?')[1]).get('league');
+
         if (urlLeague && ['al', 'nl'].includes(urlLeague)) {
             setLeagueView(urlLeague);
+        } else if (savedLeague && ['al', 'nl'].includes(savedLeague)) {
+            setLeagueView(savedLeague);
         } else {
             setLeagueView('al'); // Default to AL
         }
@@ -2631,10 +2636,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 elements.statsContentDisplay.appendChild(toggleButton);
                 elements.statsContentDisplay.appendChild(milrContainer);
 
+                // Check localStorage for saved preference
+                if (localStorage.getItem('milrStatsVisible') === 'true') {
+                    milrContainer.style.display = 'block';
+                    toggleButton.textContent = '[Hide Minors]';
+                }
+
                 toggleButton.addEventListener('click', () => {
                     const isHidden = milrContainer.style.display === 'none';
                     milrContainer.style.display = isHidden ? 'block' : 'none';
                     toggleButton.textContent = isHidden ? '[Hide Minors]' : '[Show Minors]';
+                    
+                    // Save the new state to localStorage
+                    localStorage.setItem('milrStatsVisible', isHidden);
+
                     if (isHidden) {
                         setStickyColumnOffsets();
                     }
