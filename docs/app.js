@@ -1545,7 +1545,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
-        const seasons = isMiLR ? Object.keys(state.milrDivisions) : state.seasonsWithStats;
+        const seasons = isMiLR ? Object.keys(state.milrTeamHistory) : state.seasonsWithStats;
 
         // The rest of the function logic remains the same, but it will now use the correct data and seasons
         // based on the selected league. I am replacing the entire function to ensure all parts are consistent.
@@ -2747,7 +2747,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <select id="team-season-select" class="title-season-select">`;
                 allSeasons.forEach(season => {
                     const isSelected = season === currentSeason ? 'selected' : '';
-                    content += `<option value="${season}" ${isSelected}>Season ${formatSeasonName(season)}</option>`;
+                    const isMiLRSeason = !!state.milrTeamHistory[season];
+                    content += `<option value="${season}" ${isSelected}>Season ${formatSeasonName(season, isMiLRSeason).slice(1)}</option>`;
                 });
                 content += `        </select>
                                 </h2>
