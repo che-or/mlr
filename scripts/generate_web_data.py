@@ -3060,6 +3060,7 @@ def generate_league_data(
                     stats_series["Season"], stats_series["Hitter ID"], stats_series["is_sub_row"] = season, hitter_id, False
                     stats_series["Team"] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
                     stats_series["Last Team"] = group_df.sort_values("Session").iloc[-1]["Batter Team"]
+                    stats_series["Last Session"] = group_df["Session"].max()
                     hitter_records.append(stats_series)
                     if len(teams) > 1:
                         for team in teams:
@@ -3067,6 +3068,7 @@ def generate_league_data(
                             team_stats_series = calculate_hitting_stats(team_df, season=season)
                             if team_stats_series is not None:
                                 team_stats_series["Season"], team_stats_series["Hitter ID"], team_stats_series["Team"], team_stats_series["is_sub_row"], team_stats_series["Last Team"] = season, hitter_id, team, True, team
+                                team_stats_series["Last Session"] = team_df["Session"].max()
                                 hitter_records.append(team_stats_series)
             season_hitting_stats = pd.DataFrame(hitter_records)
 
@@ -3078,6 +3080,7 @@ def generate_league_data(
                     stats_series["Season"], stats_series["Pitcher ID"], stats_series["is_sub_row"] = season, pitcher_id, False
                     stats_series["Team"] = f"{len(teams)}TM" if len(teams) > 1 else teams[0]
                     stats_series["Last Team"] = group_df.sort_values("Session").iloc[-1]["Pitcher Team"]
+                    stats_series["Last Session"] = group_df["Session"].max()
                     pitcher_records.append(stats_series)
                     if len(teams) > 1:
                         for team in teams:
@@ -3085,6 +3088,7 @@ def generate_league_data(
                             team_stats_series = calculate_pitching_stats(team_df, season=season)
                             if team_stats_series is not None:
                                 team_stats_series["Season"], team_stats_series["Pitcher ID"], team_stats_series["Team"], team_stats_series["is_sub_row"], team_stats_series["Last Team"] = season, pitcher_id, team, True, team
+                                team_stats_series["Last Session"] = team_df["Session"].max()
                                 pitcher_records.append(team_stats_series)
             season_pitching_stats = pd.DataFrame(pitcher_records)
 
