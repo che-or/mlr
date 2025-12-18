@@ -1,186 +1,53 @@
 {
+    "S3": {
+        "MiLR": ["BAY", "BER", "CCF", "CIN", "FTP", "LAN", "SCB", "TZS"]
+    },
+    "S4": {
+        "Group A": ["CEL", "DBV", "DDD", "HON", "N69", "PDB", "PGA", "PGS"],
+        "Group B": ["CCS", "DCL", "EEE", "FWG", "LDN", "LMN", "MBX", "VFQ"]
+    },
     "S5": {
-        "Pacific Coast League": {
-            "Dynasty Division": [
-                "CHI",
-                "KRB",
-                "RKT",
-                "WSH"
-            ],
-            "Dominion Division": [
-                "PPP",
-                "TSA",
-                "WWC",
-                "YUM"
-            ],
-            "Empire Division": [
-                "GBC",
-                "GTY",
-                "ISO",
-                "SPR"
-            ]
-        },
-        "International League": {
-            "Supreme Division": [
-                "LMN",
-                "PHB",
-                "TAI",
-                "TRA"
-            ],
-            "Champion Division": [
-                "DAD",
-                "JUP",
-                "N/A",
-                "TAC"
-            ],
-            "Victory Division": [
-                "KTY",
-                "MVM",
-                "POR",
-                "SAR"
-            ]
-        }
+        "PCL Dynasty": ["CHI", "KRB", "RKT", "WSH"],
+        "PCL Dominion": ["PPP", "TSA", "WWC", "YUM"],
+        "PCL Empire": ["GBC", "GTY", "ISO", "SPR"],
+        "IL Supreme": ["LMN", "PHB", "TAI", "TRA"],
+        "IL Champion": ["DAD", "JUP", "NUL", "TAC"],
+        "IL Victory": ["KTY", "MVM", "POR", "SAR"]
     },
     "S6": {
-        "Pacific Coast League": [
-            "AAL",
-            "BAC",
-            "CBC",
-            "CWJ",
-            "JEF",
-            "LID",
-            "LMN",
-            "MPD",
-            "PUK",
-            "RBD",
-            "SAR",
-            "SAS",
-            "SGP",
-            "WWC"
-        ],
-        "International League": [
-            "BBB",
-            "CIM",
-            "FRG",
-            "HEL",
-            "LIM",
-            "MBT",
-            "MVS",
-            "PBA",
-            "PHB",
-            "POR",
-            "SLT",
-            "SUP",
-            "TAK",
-            "TTT"
-        ]
+        "PCL": ["AAL", "BAC", "CBC", "CWJ", "JEF", "LID", "LMN", 
+            "MPD", "PUK", "RBD", "SAR", "SAS", "SGP", "WWC"],
+        "IL": ["BBB", "CIM", "FRG", "HEL", "LIM", "MBT", "MVS",
+            "PBA", "PHB", "POR", "SLT", "SUP", "TAK", "TTT"]
     },
     "S7": {
-        "Pacific Coast League": {
-            "Independence Division": [
-                "BAC",
-                "BBC",
-                "RRR",
-                "TBL"
-            ],
-            "Diamond Division": [
-                "SCG",
-                "SSC",
-                "STK",
-                "TRI"
-            ]
-        },
-        "International League": {
-            "Twisted Division": [
-                "BBB",
-                "KNX",
-                "PBA",
-                "SSJ"
-            ],
-            "Wildflower Division": [
-                "CPR",
-                "FAP",
-                "MMA",
-                "WSW"
-            ]
-        }
+        "PCL Independence": ["BAC", "BBC", "RRR", "TBL"],
+        "PCL Diamond": ["SCG", "SSC", "STK", "TRI"],
+        "IL Twisted": ["BBB", "KNX", "PBA", "SSJ"],
+        "IL Wildflower": ["CPR", "FAP", "MMA", "WSW"]
     },
-    "S8B": {
-        "Pacific Coast League": [
-            "ESP",
-            "MOB",
-            "SBD",
-            "SCU"
-        ],
-        "International League": [
-            "CC",
-            "NUT",
-            "QQ",
-            "TXR"
-        ]
+    "S-8": {
+        "MiLR": ["BAG", "BIS", "BLO", "CCD", "CDT", "GND",
+            "LAC", "MKW", "MMM", "NXS", "PPM", "SCU"]
+    },
+    "S8": {
+        "PCL": ["ESP", "MOB", "SBD", "SCU"],
+        "IL": ["CC", "NUT", "QQ", "TXR"]
     },
     "S9": {
-        "Pacific Coast League": [
-            "FLB",
-            "GOP",
-            "KGB",
-            "POS"
-        ],
-        "International League": [
-            "AND",
-            "ARR",
-            "BIR",
-            "NNL"
-        ]
+        "PCL": ["FLB", "GOP", "KGB", "POS"],
+        "IL": ["AND", "ARR", "BIR", "NNL"]
     },
     "S10": {
-        "Pacific Coast League": [
-            "CRN",
-            "GOB",
-            "KIR",
-            "KRK",
-            "ZAH"
-        ],
-        "International League": [
-            "ACK",
-            "BEE",
-            "GRS",
-            "SEO",
-            "SSS"
-        ]
+        "PCL": ["CRN", "GOB", "KIR", "KRK", "ZAH"],
+        "IL": ["ACK", "BEE", "GRS", "SEO", "SSS"]
     },
     "S11": {
-        "Pacific Coast League": [
-            "IDR",
-            "LAX",
-            "OKT",
-            "POS",
-            "ROY",
-            "WRM"
-        ],
-        "International League": [
-            "ARA",
-            "DOG",
-            "HOT",
-            "LOB",
-            "PRP",
-            "SHH"
-        ]
+        "PCL": ["IDR", "LAX", "OKT", "POS", "ROY", "WRM"],
+        "IL": ["ARA", "DOG", "HOT", "LOB", "PRP", "SHH"]
     },
     "S12": {
-        "Pacific Coast League": [
-            "CCS",
-            "MMN",
-            "SAL",
-            "SCR",
-            "SEF"
-        ],
-        "International League": [
-            "DDD",
-            "KEG",
-            "PQD",
-            "SDV",
-            "WWC"
-        ]
+        "PCL": ["CCS", "MMN", "SAL", "SCR", "SEF"],
+        "IL": ["DDD", "KEG", "PQD", "SDV", "WWC"]
     }
 }
