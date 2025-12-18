@@ -9,6 +9,7 @@
     "BT": "Batting Title",
     "ERAT": "ERA Title",
     "PCMVP": "Paper Cup MVP",
+    "HRD": "HR Derby Champion",
     "AS": "All-Star",
     "SS": "Silver Slugger"
   },
@@ -208,6 +209,7 @@
   },
   "S4": {
     "PCMVP": [173],
+    "HRD": [651],
     "AL": {
       "MVP": [700],
       "CYA": [227],

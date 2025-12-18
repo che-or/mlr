@@ -304,6 +304,8 @@ document.addEventListener('DOMContentLoaded', () => {
             state.teamPitchingStats = parseCompactData(teamPitching);
             state.milrTeamHittingStats = parseCompactData(milrTeamHitting);
             state.milrTeamPitchingStats = parseCompactData(milrTeamPitching);
+            state.milrHittingStats = parseCompactData(milrHitting);
+            state.milrPitchingStats = parseCompactData(milrPitching);
             state.players = players; // Start with major league players
 
             // Merge MiLR players
@@ -313,23 +315,63 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Player exists in both MLR and MiLR
                     const mlrPlayer = state.players[playerId];
 
-                    // Ensure formerNames exists for MLR player
+                    const getMostRecentRecord = (stats, playerId) => {
+                        const hittingStats = stats.hitting.filter(s => s['Hitter ID'] == parseInt(playerId) && s.Season.startsWith('S'));
+                        const pitchingStats = stats.pitching.filter(s => s['Pitcher ID'] == parseInt(playerId) && s.Season.startsWith('S'));
+                        const allStats = [...hittingStats, ...pitchingStats];
+
+                        if (allStats.length === 0) {
+                            return null;
+                        }
+
+                        allStats.sort((a, b) => {
+                            const seasonA = getSeasonForSort(a.Season);
+                            const seasonB = getSeasonForSort(b.Season);
+                            if (seasonB !== seasonA) return seasonB - seasonA;
+                            return (b['Last Session'] || 0) - (a['Last Session'] || 0);
+                        });
+
+                        return allStats[0];
+                    };
+
+                    const lastMlrRecord = getMostRecentRecord({ hitting: state.hittingStats, pitching: state.pitchingStats }, playerId);
+                    const lastMilrRecord = getMostRecentRecord({ hitting: state.milrHittingStats, pitching: state.milrPitchingStats }, playerId);
+
                     if (!mlrPlayer.formerNames) {
                         mlrPlayer.formerNames = [];
                     }
 
-                    // Add MiLR currentName to MLR formerNames if different and not already there
-                    if (milrPlayer.currentName !== mlrPlayer.currentName &&
-                        !mlrPlayer.formerNames.includes(milrPlayer.currentName)) {
-                        mlrPlayer.formerNames.push(milrPlayer.currentName);
+                    const lastMlrSeason = lastMlrRecord ? getSeasonForSort(lastMlrRecord.Season) : -1;
+                    const lastMlrSession = lastMlrRecord ? (lastMlrRecord['Last Session'] || 0) : -1;
+                    const lastMilrSeason = lastMilrRecord ? getSeasonForSort(lastMilrRecord.Season) : -1;
+                    const lastMilrSession = lastMilrRecord ? (lastMilrRecord['Last Session'] || 0) : -1;
+
+
+
+                    // MiLR is more recent if its season is greater, or if seasons are same and session is greater.
+                    // Tie goes to MLR.
+                    if (lastMilrSeason > lastMlrSeason || (lastMilrSeason === lastMlrSeason && lastMilrSession > lastMlrSession)) {
+                        if (milrPlayer.currentName !== mlrPlayer.currentName) {
+                            // MiLR is more recent and name is different, so swap them
+                            const oldMlrName = mlrPlayer.currentName;
+                            mlrPlayer.currentName = milrPlayer.currentName;
+                            if (!mlrPlayer.formerNames.includes(oldMlrName)) {
+                                mlrPlayer.formerNames.push(oldMlrName);
+                            }
+                        }
+                    } else {
+                        // MLR is more recent, or it's a tie, so MLR name is kept. Add MiLR name to former names if different.
+                        if (milrPlayer.currentName !== mlrPlayer.currentName) {
+                            if (!mlrPlayer.formerNames.includes(milrPlayer.currentName)) {
+                                mlrPlayer.formerNames.push(milrPlayer.currentName);
+                            }
+                        }
                     }
-                    
-                    // Merge formerNames from MiLR into MLR's formerNames
+
+                    // Merge formerNames from MiLR
                     if (milrPlayer.formerNames) {
                         for (const formerName of milrPlayer.formerNames) {
-                            if (!mlrPlayer.formerNames.includes(formerName) && 
-                                formerName !== mlrPlayer.currentName && 
-                                formerName !== milrPlayer.currentName) { // Check against both current names
+                            if (formerName !== mlrPlayer.currentName && !mlrPlayer.formerNames.includes(formerName)) {
                                 mlrPlayer.formerNames.push(formerName);
                             }
                         }
@@ -349,8 +391,6 @@ document.addEventListener('DOMContentLoaded', () => {
             state.playerInfo = playerInfo;
             state.awards = awards;
             state.currentSeasonInfo = currentSeasonInfo;
-            state.milrHittingStats = parseCompactData(milrHitting);
-            state.milrPitchingStats = parseCompactData(milrPitching);
             state.milrDivisions = milrDivisions;
             state.milrTeamHistory = milrTeamHistory;
 
@@ -547,11 +587,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let isTeamStatsPath = path.startsWith('#/team-stats');
         let seasonParam = null;
         let teamParam = null;
+        let leagueParam = null;
 
         if (isTeamStatsPath) {
             const url = new URL('http://dummy.com/' + path.substring(1));
             seasonParam = url.searchParams.get('season');
             teamParam = url.searchParams.get('team');
+            leagueParam = url.searchParams.get('league');
         }
 
         if (path === '#/home') {
@@ -563,12 +605,12 @@ document.addEventListener('DOMContentLoaded', () => {
             renderGamelogErrors();
         } else if (isTeamStatsPath && teamParam) { // Specific team page (has 'team' parameter)
             // This branch handles #/team-stats?season=S11&team=ATL
-            displayTeamStatsPage(decodeURIComponent(teamParam), seasonParam);
+            displayTeamStatsPage(decodeURIComponent(teamParam), seasonParam, leagueParam === 'milr');
             elements.teamStatsView.style.display = 'block';
             elements.teamStatsTab.classList.add('active');
         } else if (isTeamStatsPath) { // Team list page (might have 'season' but no 'team')
             // This branch handles #/team-stats or #/team-stats?season=S10
-            displayTeamList(seasonParam);
+            displayTeamList(seasonParam, leagueParam === 'milr');
             elements.teamStatsView.style.display = 'block';
             elements.teamStatsTab.classList.add('active');
         } else if (path === '#/stats') {
@@ -1374,8 +1416,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (teamLink) {
                 const team = teamLink.dataset.team;
                 const season = teamLink.dataset.season;
+                const isMiLR = teamLink.dataset.milr === 'true';
                 if (team && season) {
-                    const hashPath = `#/team-stats?season=${season}&team=${team}`;
+                    let hashPath = `#/team-stats?season=${season}&team=${team}`;
+                    if (isMiLR) {
+                        hashPath += '&league=milr';
+                    }
                     state.lastTeamStatsUrl = hashPath; // Update state for immediate use
                     window.location.hash = hashPath; // Still update hash for immediate view change
                 }
@@ -2107,6 +2153,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (seasonData.PCMVP && seasonData.PCMVP.includes(playerId)) {
                 addAward('PCMVP', seasonKey, null); // No league for PCMVP
             }
+            if (seasonData.HRD && seasonData.HRD.includes(playerId)) {
+                addAward('HRD', seasonKey, null); // No league for HRD
+            }
 
             ['AL', 'NL'].forEach(league => {
                 if (seasonData[league]) {
@@ -2144,7 +2193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         const displayList = [];
-        const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP'];
+        const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP', 'HRD'];
 
         for (const awardId of order) {
             if (awards[awardId]) {
@@ -2465,7 +2514,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (milrHittingStats.length > 0 || milrPitchingStats.length > 0) {
                 const toggleButton = document.createElement('button');
                 toggleButton.id = 'toggle-milr-stats';
-                toggleButton.textContent = '[Show Minors]';
+                toggleButton.textContent = '[Show MiLR]';
                 // Remove action-button class and apply link-like styles
                 toggleButton.style.background = 'none';
                 toggleButton.style.border = 'none';
@@ -2588,13 +2637,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Check localStorage for saved preference
                 if (localStorage.getItem('milrStatsVisible') === 'true') {
                     milrContainer.style.display = 'block';
-                    toggleButton.textContent = '[Hide Minors]';
+                    toggleButton.textContent = '[Hide MiLR]';
                 }
 
                 toggleButton.addEventListener('click', () => {
                     const isHidden = milrContainer.style.display === 'none';
                     milrContainer.style.display = isHidden ? 'block' : 'none';
-                    toggleButton.textContent = isHidden ? '[Hide Minors]' : '[Show Minors]';
+                    toggleButton.textContent = isHidden ? '[Hide MiLR]' : '[Show MiLR]';
                     
                     // Save the new state to localStorage
                     localStorage.setItem('milrStatsVisible', isHidden);
@@ -2732,39 +2781,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    const displayTeamList = (selectedSeason = null) => {
+    const displayTeamList = (selectedSeason = null, isMiLR = false) => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
-        const allSeasons = state.seasonsWithStats;
+        const allSeasons = isMiLR ? Object.keys(state.milrDivisions).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) : state.seasonsWithStats;
         const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
-                const currentSeasonIndex = allSeasons.indexOf(currentSeason);
+        const currentSeasonIndex = allSeasons.indexOf(currentSeason);
         
-                const prevSeason = currentSeasonIndex > 0 ? allSeasons[currentSeasonIndex - 1] : null;
-                const nextSeason = currentSeasonIndex < allSeasons.length - 1 ? allSeasons[currentSeasonIndex + 1] : null;
+        const prevSeason = currentSeasonIndex > 0 ? allSeasons[currentSeasonIndex - 1] : null;
+        const nextSeason = currentSeasonIndex < allSeasons.length - 1 ? allSeasons[currentSeasonIndex + 1] : null;
+
+        let leagueParam = isMiLR ? '&league=milr' : '';
         
-                let content = `<div class="team-stats-header">
-                                <h2 class="section-title">Standings - 
-                                    <select id="team-season-select" class="title-season-select">`;
-                allSeasons.forEach(season => {
-                    const isSelected = season === currentSeason ? 'selected' : '';
-                    const isMiLRSeason = !!state.milrTeamHistory[season];
-                    content += `<option value="${season}" ${isSelected}>Season ${formatSeasonName(season, isMiLRSeason).slice(1)}</option>`;
-                });
-                content += `        </select>
-                                </h2>
-                                <div class="season-nav-buttons">`;
-                if (prevSeason) {
-                    content += `<a href="#/team-stats?season=${prevSeason}" class="season-nav-button">&lt; Prev Season</a>`;
-                }
-                if (nextSeason) {
-                    content += `<a href="#/team-stats?season=${nextSeason}" class="season-nav-button">Next Season &gt;</a>`;
-                }
-                content += `    </div>
-                            </div>`;
+        let content = `<div class="team-stats-header">
+                        <h2 class="section-title">Standings - 
+                            <select id="team-season-select" class="title-season-select">`;
+        allSeasons.forEach(season => {
+            const isSelected = season === currentSeason ? 'selected' : '';
+            content += `<option value="${season}" ${isSelected}>Season ${formatSeasonName(season, isMiLR).slice(1)}</option>`;
+        });
+        content += `        </select>
+                        </h2>
+                        <div class="season-nav-buttons">`;
+        if (prevSeason) {
+            content += `<a href="#/team-stats?season=${prevSeason}${leagueParam}" class="season-nav-button">&lt; Prev Season</a>`;
+        }
+        if (nextSeason) {
+            content += `<a href="#/team-stats?season=${nextSeason}${leagueParam}" class="season-nav-button">Next Season &gt;</a>`;
+        }
+        content += `    </div>
+                    </div>`;
 
         // Calculate records and standings
-        const teamRecords = calculateTeamRecords(currentSeason);
-        const standings = getStandings(currentSeason, teamRecords);
+        const teamRecords = calculateTeamRecords(currentSeason, isMiLR);
+        const standings = getStandings(currentSeason, teamRecords, isMiLR);
 
         if (Object.keys(standings).length === 0) {
             content += `<p>No standings data available for Season ${currentSeason.slice(1)}.</p>`;
@@ -2789,11 +2839,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             gbDisplay = String(gamesBack);
                         }
 
-                        const franchiseKey = getFranchiseKeyFromAbbr(team.teamAbbr, currentSeason); // Get franchise key
-                        const teamLogoSrc = getTeamLogoBySeason(franchiseKey, currentSeason);
+                        const franchiseKey = getFranchiseKeyFromAbbr(team.teamAbbr, currentSeason, isMiLR); // Get franchise key
+                        const teamLogoSrc = getTeamLogoBySeason(franchiseKey, currentSeason, isMiLR);
                         content += `<tr>`;
-                        const teamName = getTeamNameBySeason(franchiseKey, currentSeason);
-                        content += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${currentSeason}">`; // Use franchiseKey
+                        const teamName = getTeamNameBySeason(franchiseKey, currentSeason, isMiLR);
+                        content += `<td><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${currentSeason}" data-milr="${isMiLR}">`; // Use franchiseKey
                         if (teamLogoSrc) {
                             content += `<img src="${teamLogoSrc}" alt="${team.teamAbbr} logo" class="team-list-logo standings-logo"> `;
                         }
@@ -2817,11 +2867,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add event listener for the season select dropdown
         document.getElementById('team-season-select').addEventListener('change', (event) => {
             const newSeason = event.target.value;
-            window.location.hash = `#/team-stats?season=${newSeason}`;
+            window.location.hash = `#/team-stats?season=${newSeason}${leagueParam}`;
         });
     };
 
-    const displayTeamStatsPage = (teamKey, season) => {
+    const displayTeamStatsPage = (teamKey, season, isMiLR = false) => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
         // More robust defensive check
@@ -2831,7 +2881,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const isMiLR = state.milrTeamHistory[season] && state.milrTeamHistory[season][teamKey];
         const hittingStatsToUse = isMiLR ? state.milrHittingStats : state.hittingStats;
         const pitchingStatsToUse = isMiLR ? state.milrPitchingStats : state.pitchingStats;
         const teamHittingStatsToUse = isMiLR ? state.milrTeamHittingStats : state.teamHittingStats;
@@ -2901,8 +2950,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let headerContent = `<div class="team-stats-header">`;
         
-        const teamName = getTeamNameBySeason(teamKey, season);
-        const teamLogoSrc = getTeamLogoBySeason(teamKey, season);
+        const teamName = getTeamNameBySeason(teamKey, season, isMiLR);
+        const teamLogoSrc = getTeamLogoBySeason(teamKey, season, isMiLR);
         let titleHTML = `<h2 class="section-title">`;
         if (teamLogoSrc) {
             titleHTML += `<img src="${teamLogoSrc}" class="player-team-logo"> `;
@@ -2910,12 +2959,13 @@ document.addEventListener('DOMContentLoaded', () => {
         titleHTML += `${teamName} - ${formatSeasonName(season, isMiLR).replace('S','Season ')}</h2>`;
         headerContent += titleHTML;
 
+        const leagueParam = isMiLR ? '&league=milr' : '';
         let navButtonsHTML = `<div class="season-nav-buttons">`;
         if (prevSeasonNum) {
-            navButtonsHTML += `<a href="#/team-stats?season=S${prevSeasonNum}&team=${teamKey}" class="season-nav-button">&lt; Prev Season</a>`;
+            navButtonsHTML += `<a href="#/team-stats?season=S${prevSeasonNum}&team=${teamKey}${leagueParam}" class="season-nav-button">&lt; Prev Season</a>`;
         }
         if (nextSeasonNum) {
-            navButtonsHTML += `<a href="#/team-stats?season=S${nextSeasonNum}&team=${teamKey}" class="season-nav-button">Next Season &gt;</a>`;
+            navButtonsHTML += `<a href="#/team-stats?season=S${nextSeasonNum}&team=${teamKey}${leagueParam}" class="season-nav-button">Next Season &gt;</a>`;
         }
         navButtonsHTML += `</div>`;
         
@@ -3169,8 +3219,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         value = s.Team || '';
                         const isMultiTeam = /^\d+TM$/.test(value);
                         if (s.Season !== 'Career' && s.Season !== 'Franchise' && value && !isMultiTeam) { // Only make season-specific teams clickable
-                            const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season);
-                            html += `<td${td_class}><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
+                            const franchiseKey = getFranchiseKeyFromAbbr(value, s.Season, isMiLR);
+                            html += `<td${td_class}><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${s.Season}" data-milr="${isMiLR}" style="cursor: pointer; text-decoration: underline;">${value}</span></td>`;
                         } else {
                             html += `<td${td_class}>${formatStat(stat, value)}</td>`;
                         }
@@ -3274,9 +3324,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return value;
     };
 
-    const calculateTeamRecords = (season) => {
+    const calculateTeamRecords = (season, isMiLR = false) => {
         const teamRecords = {};
-        const seasonTeamPitchingStats = state.teamPitchingStats.filter(s => s.Season === season);
+        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : state.teamPitchingStats;
+        const seasonTeamPitchingStats = teamPitchingStatsToUse.filter(s => s.Season === season);
         const totalGamesInSeason = state.seasons[season] || 0;
 
         seasonTeamPitchingStats.forEach(teamStat => {
@@ -3298,9 +3349,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return teamRecords;
     };
 
-    const getStandings = (season, teamRecords) => {
+    const getStandings = (season, teamRecords, isMiLR = false) => {
         const standings = {};
-        const divisionsForSeason = getDivisionsForSeason(season); // Use helper
+        const divisionsForSeason = getDivisionsForSeason(season, isMiLR); // Use helper
 
         if (!divisionsForSeason) {
             console.warn(`No division data found for season ${season}`);
@@ -3328,26 +3379,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return standings;
     };
 
-    const getDivisionsForSeason = (season) => {
-        let divisions = state.divisions[season];
+    const getDivisionsForSeason = (season, isMiLR = false) => {
+        const divisionsToUse = isMiLR ? state.milrDivisions : state.divisions;
+        let divisions = divisionsToUse[season];
         // If the value is a string, it's a reference to another season
         if (typeof divisions === 'string') {
-            return state.divisions[divisions]; // Resolve the reference
+            return divisionsToUse[divisions]; // Resolve the reference
         }
         return divisions;
     };
 
-    const getFranchiseKeyFromAbbr = (abbr, season) => {
+    const getFranchiseKeyFromAbbr = (abbr, season, isMiLR = false) => {
         const seasonNum = parseInt(season.slice(1));
-
-        const isMiLR = state.teamHistory[season] && typeof state.teamHistory[season] === 'object' && !Array.isArray(state.teamHistory[season]);
+        const teamHistoryToUse = isMiLR ? state.milrTeamHistory : state.teamHistory;
 
         if (isMiLR) {
+            for (const franchiseKey in teamHistoryToUse) {
+                const teamName = teamHistoryToUse[franchiseKey];
+                if (teamName === abbr) {
+                    return franchiseKey;
+                }
+            }
             return abbr;
         }
 
-        for (const franchiseKey in state.teamHistory) {
-            const entries = state.teamHistory[franchiseKey];
+        for (const franchiseKey in teamHistoryToUse) {
+            const entries = teamHistoryToUse[franchiseKey];
             if (Array.isArray(entries) && entries.some(entry => entry.abbr === abbr && seasonNum >= entry.start && (entry.end === 9999 || seasonNum <= entry.end))) {
                 return franchiseKey;
             }
@@ -3355,15 +3412,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return abbr; // Fallback if not found, assume abbr is the franchise key
     };
 
-    const getTeamNameBySeason = (franchiseKey, season) => {
+    const getTeamNameBySeason = (franchiseKey, season, isMiLR = false) => {
         const seasonNum = parseInt(season.slice(1));
         if (isNaN(seasonNum)) return franchiseKey;
 
-        const historyToUse = (state.teamHistory[season] && typeof state.teamHistory[season] === 'object' && !Array.isArray(state.teamHistory[season]))
-            ? state.teamHistory
-            : state.teamHistory;
-
-        const isMiLR = historyToUse[season] && typeof historyToUse[season] === 'object' && !Array.isArray(historyToUse[season]);
+        const historyToUse = isMiLR ? state.milrTeamHistory : state.teamHistory;
 
         if (isMiLR) {
             if (historyToUse[season] && historyToUse[season][franchiseKey]) {
@@ -3387,12 +3440,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return franchiseKey;
     };
 
-const getTeamLogoBySeason = (franchiseKey, season) => {
+const getTeamLogoBySeason = (franchiseKey, season, isMiLR = false) => {
     if (!franchiseKey || !season) return null;
     const seasonNum = parseInt(season.slice(1));
     if (isNaN(seasonNum)) return null;
 
-    const isMiLR = state.teamHistory[season] && typeof state.teamHistory[season] === 'object' && !Array.isArray(state.teamHistory[season]);
     if (isMiLR) {
         return null;
     }
