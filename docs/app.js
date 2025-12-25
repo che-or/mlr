@@ -1431,6 +1431,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const initializeApp = () => {
+        const fcbOption = document.createElement('option');
+        fcbOption.value = 'fcb';
+        fcbOption.textContent = 'FCB';
+        elements.leaderboardLeagueSelect.appendChild(fcbOption);
+
         window.addEventListener('hashchange', updateView);
 
         const themeSwitch = elements.themeSwitch;
@@ -1479,7 +1484,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.leaderboardLeagueSelect.addEventListener('change', () => {
             const selectedLeague = elements.leaderboardLeagueSelect.value;
             const mlrFilters = document.querySelectorAll('.mlr-filter');
-            if (selectedLeague === 'milr') {
+            if (selectedLeague === 'milr' || selectedLeague === 'fcb') {
                 mlrFilters.forEach(filter => filter.style.display = 'none');
             } else {
                 mlrFilters.forEach(filter => filter.style.display = 'inline-block');
@@ -1634,16 +1639,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const selectedLeague = elements.leaderboardLeagueSelect.value;
         const isMiLR = selectedLeague === 'milr';
+        const isFcb = selectedLeague === 'fcb';
 
         const type = elements.leaderboardTypeSelect.value;
-        const selectedTeam = isMiLR ? '' : elements.leaderboardTeamFilter.value;
-        const selectedType = isMiLR ? '' : elements.leaderboardTypeFilter.value;
+        const selectedTeam = (isMiLR || isFcb) ? '' : elements.leaderboardTeamFilter.value;
+        const selectedType = (isMiLR || isFcb) ? '' : elements.leaderboardTypeFilter.value;
         const isHitting = type === 'batting';
         const reverseSort = elements.reverseSort.checked;
         const sortModifier = reverseSort ? -1 : 1;
         
         let statKey = stat;
-        let data = isHitting ? (isMiLR ? state.milrHittingStats : state.hittingStats) : (isMiLR ? state.milrPitchingStats : state.pitchingStats);
+        let data = isHitting ? (isMiLR ? state.milrHittingStats : (isFcb ? state.fcbHittingStats : state.hittingStats)) : (isMiLR ? state.milrPitchingStats : (isFcb ? state.fcbPitchingStats : state.pitchingStats));
         
         if (isHitting) {
             if (stat === 'SO') statKey = 'K';
@@ -1689,7 +1695,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const lowerIsBetter = lowerIsBetterStats.includes(stat);
         
-        const seasons = isMiLR ? Object.keys(state.milrTeamHistory) : state.seasonsWithStats;
+        const seasons = isMiLR ? Object.keys(state.milrTeamHistory) : (isFcb ? Object.keys(state.fcbTeamHistory) : state.seasonsWithStats);
 
         // The rest of the function logic remains the same, but it will now use the correct data and seasons
         // based on the selected league. I am replacing the entire function to ensure all parts are consistent.
@@ -1851,7 +1857,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            if (!isMiLR) {
+            if (!isMiLR && !isFcb) {
                 if (selectedTeam) {
                     const franchise = state.teamHistory[selectedTeam];
                     if (franchise) {
@@ -1920,7 +1926,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const allSeasons = [...seasons].sort((a, b) => getSeasonForSort(b) - getSeasonForSort(a));
             for (const season of allSeasons) {
                 let seasonData = data.filter(p => p.Season === season);
-                if (!isMiLR) {
+                if (!isMiLR && !isFcb) {
                     if (selectedTeam) {
                         const franchise = state.teamHistory[selectedTeam];
                         if (franchise) {
@@ -1990,10 +1996,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
             }
         }
-        renderLeaderboardGrid(leaderboards, stat, statKey, isHitting, isMiLR, seasons);
+        renderLeaderboardGrid(leaderboards, stat, statKey, isHitting, isMiLR, isFcb, seasons);
     };
 
-    const renderLeaderboardGrid = (leaderboards, stat, statKey, isHitting, isMiLR, seasons) => {
+    const renderLeaderboardGrid = (leaderboards, stat, statKey, isHitting, isMiLR, isFcb, seasons) => {
         console.log('renderLeaderboardGrid called with leaderboards:', JSON.stringify(leaderboards, null, 2));
         const leaderboardSize = parseInt(elements.leaderboardLength.value) || 10;
         elements.leaderboardsContentDisplay.innerHTML = `<h2 class="section-title">${stat} Leaderboards</h2>`;
@@ -2059,7 +2065,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (leaderboardInfo.type === 'single-season') {
                 title = `<h4>Single Season</h4>`;
             } else {
-                title = `<h4>Season ${formatSeasonName(key, isMiLR).slice(1)}</h4>`;
+                title = `<h4>Season ${formatSeasonName(key, isMiLR, isFcb).slice(1)}</h4>`;
             }
 
             if (!leaderboardInfo.isCountingStat && leaderboardInfo.type !== 'single-season') {
@@ -2103,7 +2109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const playerName = state.players[id] ? state.players[id].currentName : 'Unknown';
                 let row = `<tr><td>${displayRank}</td><td class="player-name-cell" data-player-id="${id}" style="cursor: pointer; text-decoration: underline;">${playerName}</td>`;
                 if (leaderboardInfo.type === 'season') row += `<td>${p.Team || ''}</td>`;
-                if (leaderboardInfo.type === 'single-season') row += `<td>${formatSeasonName(p.Season, isMiLR).slice(1)}</td>`;
+                if (leaderboardInfo.type === 'single-season') row += `<td>${formatSeasonName(p.Season, isMiLR, isFcb).slice(1)}</td>`;
                 row += `<td>${formatStat(stat, p[statKey])}</td></tr>`;
                 tbody.innerHTML += row;
 
