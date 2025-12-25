@@ -2863,7 +2863,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const displayTeamList = (selectedSeason = null, isMiLR = false, isFcb = false) => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
-        const allSeasons = isMiLR ? Object.keys(state.milrDivisions).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) : state.seasonsWithStats;
+        const allSeasons = isMiLR ? Object.keys(state.milrDivisions).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) : (isFcb ? Object.keys(state.fcbDivisions).sort((a, b) => parseInt(a.slice(1)) - parseInt(b.slice(1))) : state.seasonsWithStats);
         const currentSeason = selectedSeason || allSeasons[allSeasons.length - 1]; // Default to latest season
         const currentSeasonIndex = allSeasons.indexOf(currentSeason);
         
@@ -2892,8 +2892,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>`;
 
         // Calculate records and standings
-        const teamRecords = calculateTeamRecords(currentSeason, isMiLR);
-        const standings = getStandings(currentSeason, teamRecords, isMiLR);
+        const teamRecords = calculateTeamRecords(currentSeason, isMiLR, isFcb);
+        const standings = getStandings(currentSeason, teamRecords, isMiLR, isFcb);
 
         if (Object.keys(standings).length === 0) {
             content += `<p>No standings data available for Season ${currentSeason.slice(1)}.</p>`;
@@ -3413,9 +3413,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return value;
     };
 
-    const calculateTeamRecords = (season, isMiLR = false) => {
+    const calculateTeamRecords = (season, isMiLR = false, isFcb = false) => {
         const teamRecords = {};
-        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : state.teamPitchingStats;
+        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : (isFcb ? state.fcbTeamPitchingStats : state.teamPitchingStats);
         const seasonTeamPitchingStats = teamPitchingStatsToUse.filter(s => s.Season === season);
         const totalGamesInSeason = state.seasons[season] || 0;
 
@@ -3438,9 +3438,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return teamRecords;
     };
 
-    const getStandings = (season, teamRecords, isMiLR = false) => {
+    const getStandings = (season, teamRecords, isMiLR = false, isFcb = false) => {
         const standings = {};
-        const divisionsForSeason = getDivisionsForSeason(season, isMiLR); // Use helper
+        const divisionsForSeason = getDivisionsForSeason(season, isMiLR, isFcb); // Use helper
 
         if (!divisionsForSeason) {
             console.warn(`No division data found for season ${season}`);
@@ -3468,8 +3468,8 @@ document.addEventListener('DOMContentLoaded', () => {
         return standings;
     };
 
-    const getDivisionsForSeason = (season, isMiLR = false) => {
-        const divisionsToUse = isMiLR ? state.milrDivisions : state.divisions;
+    const getDivisionsForSeason = (season, isMiLR = false, isFcb = false) => {
+        const divisionsToUse = isMiLR ? state.milrDivisions : (isFcb ? state.fcbDivisions : state.divisions);
         let divisions = divisionsToUse[season];
         // If the value is a string, it's a reference to another season
         if (typeof divisions === 'string') {
