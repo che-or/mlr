@@ -1,0 +1,94 @@
+{
+    "S3":{
+        "CSUF": "California State University, Fullerton Titans",
+        "HOF": "Hofstra University Pride",
+        "IND": "Indiana University Hoosiers",
+        "NEB": "University of Nebraska Cornhuskers",
+        "RIC": "Rice University Owls",
+        "TCU": "Texas Christian Univeristy Horned Frogs",
+        "TOL": "University of Toledo Rockets",
+        "UOM": "University of Miami Hurricanes",
+        "VT": "Virginia Tech Hokies",
+        "WSU": "Wichita State University Shockers"
+    },
+    "S4": {
+        "CLM": "Clemson University Tigers",
+        "GT": "Georgia Tech Yellow Jackets",
+        "MIC": "University of Michigan Wolverines",
+        "NU": "University of Nebraska Cornhuskers",
+        "SBU": "Stony Brook University Seawolves",
+        "ULA": "University of California, Los Angeles Bruins",
+        "UNC": "University of North Carolina Tar Heels",
+        "UWO": "University of Western Ontario Mustangs",
+        "VAN": "Vanderbilt University Commodores",
+        "VT": "Virginia Tech Hokies",
+        "WSU": "Wichita State University Shockers",
+        "WWU": "Walla Walla University Wolves"
+    },
+    "S5": {
+        "CCU": "Coastal Carolina University Chanticleers",
+        "GT": "Georgia Tech Yellow Jackets",
+        "LOU": "University of Louisville Cardinals",
+        "NCS": "North Carolina State University Wolfpack",
+        "NEB": "University of Nebraska Cornhuskers",
+        "SLC": "Sarah Lawrence College Gryphons",
+        "UNC": "University of North Carolina Tar Heels",
+        "WSU": "Wichita State University Shockers"
+    },
+    "S6": {
+        "GEO": "Georgetown University Hoyas",
+        "GT": "Georgia Tech Yellow Jackets",
+        "NEB": "University of Nebraska Cornhuskers",
+        "OSU": "Oklahoma State University Cowboys"
+    },
+    "S7": {
+        "LBS": "California State University, Long Beach Dirtbags",
+        "MICH": "University of Michigan Wolverines",
+        "RU": "Rutgers University Scarlet Knights",
+        "UCLA": "University of California, Los Angeles Bruins",
+        "USF": "University of South Florida Bulls",
+        "UVA": "University of Virginia Cavaliers"
+    },
+    "S8": {
+        "HRW": "University of Hawaii Rainbow Warriors",
+        "MCH": "University of Michigan Wolverines",
+        "MSU": "Michigan State University Spartans",
+        "ORD": "University of Oregon Ducks",
+        "PAN": "University of Pittsburgh Panthers",
+        "PUR": "Purdue University Boilermakers",
+        "TEN": "University of Tennessee Volunteers",
+        "UCL": "University of California, Los Angeles Bruins"
+    },
+    "S9": {
+        "HVD": "Harvard University Crimson",
+        "TEN": "University of Tennessee Volunteers",
+        "TOL": "University of Toledo Rockets",
+        "UCC": "University College Cork Rebels",
+        "UGA": "University of Georgia Bulldogs",
+        "WSU": "Wichita State University Shockers"
+    },
+    "S10": {
+        "BSU": "Boise State University Broncos",
+        "FOK": "Delta State University Fighting Okra",
+        "NWU": "Northwestern University Wildcats",
+        "TOL": "University of Toledo Rockets",
+        "TXS": "Texas State University Bobcats",
+        "UNA": "University of North Alabama Lions"
+    },
+    "S11": {
+        "BDE": "Dartmouth College Big Green",
+        "BSU": "Ball State University Cardinals",
+        "CSU": "Cleveland State University Vikings",
+        "KSU": "Kent State University Golden Flashes",
+        "UWU": "University of Washington Huskies",
+        "ZOO": "University of Massachusetts Minutemen"
+    },
+    "S12": {
+        "FUR": "Friends University Falcons",
+        "LSU": "Louisiana State University Tigers",
+        "OWL": "Florida Atlantic University Owls",
+        "SYR": "Syracuse University Orange",
+        "UOM": "University of Miami Hurricanes",
+        "WKU": "Western Kentucky University Hilltoppers"
+    }
+}

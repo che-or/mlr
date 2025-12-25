@@ -1,0 +1,33 @@
+{
+    "S3": {
+        "FCB": ["CSUF", "HOF", "IND", "NEB", "RIC", "TCU", "TOL", "UOM", "VT", "WSU"]
+    },
+    "S4": {
+        "FCB": ["CLM", "GT", "MIC", "NU", "SBU", "ULA", "UNC", "UWO", "VAN", "VT", "WSU", "WWU"]
+    },
+    "S5": {
+        "FCB": ["CCU", "GT", "LOU", "NCS", "NEB", "SLC", "UNC", "WSU"]
+    },
+    "S6": {
+        "FCB": ["GEO", "GT", "NEB", "OSU"]
+    },
+    "S7": {
+        "FCB": ["LBS", "MICH", "RU", "UCLA", "USF", "UVA"]
+    },
+    "S8": {
+        "FCB West": ["HRW", "ORD", "PUR", "UCL"],
+        "FCB East": ["MCH", "MSU", "PAN", "TEN"]
+    },
+    "S9": {
+        "FCB": ["HVD", "TEN", "TOL", "UCC", "UGA", "WSU"]
+    },
+    "S10": {
+        "FCB": ["BSU", "FOK", "NWU", "TOL", "TXS", "UNA"]
+    },
+    "S11": {
+        "FCB": ["BDE", "BSU", "CSU", "KSU", "UWU", "ZOO"]
+    },
+    "S12": {
+        "FCB": ["FUR", "LSU", "OWL", "SYR", "UOM", "WKU"]
+    }
+}
