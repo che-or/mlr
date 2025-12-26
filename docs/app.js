@@ -2346,26 +2346,88 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let mostRecentTeam = null;
         let mostRecentSeason = null;
-        const allStats = [...filteredHittingStats, ...filteredPitchingStats];
+        let mostRecentIsMiLR = false;
+        let mostRecentIsFcb = false;
 
-        if (allStats.length > 0) {
-            const lastSeasonStats = allStats
+        // Collect all stats with league context
+        const allMlrStats = [...filteredHittingStats, ...filteredPitchingStats].map(s => ({...s, isMiLR: false, isFcb: false}));
+        const milrHittingStats = state.milrHittingStats.filter(s => s['Hitter ID'] === playerId);
+        const milrPitchingStats = state.milrPitchingStats.filter(s => s['Pitcher ID'] === playerId);
+        const fcbHittingStats = state.fcbHittingStats.filter(s => s['Hitter ID'] === playerId);
+        const fcbPitchingStats = state.fcbPitchingStats.filter(s => s['Pitcher ID'] === playerId);
+        const allMilrStats = [...milrHittingStats, ...milrPitchingStats].map(s => ({...s, isMiLR: true, isFcb: false}));
+        const allFcbStats = [...fcbHittingStats, ...fcbPitchingStats].map(s => ({...s, isMiLR: false, isFcb: true}));
+
+        const allStats = [...allMlrStats, ...allMilrStats, ...allFcbStats];
+
+        // Determine if player ever played MLR
+        const hasPlayedMlr = allMlrStats.length > 0;
+
+        let logoUrl = null;
+        let logoFranchiseKey = null;
+        let logoSeason = null;
+        let logoIsMiLR = false;
+        let logoIsFcb = false;
+
+        // Priority 1: MLR logo if player played MLR
+        if (hasPlayedMlr) {
+            const lastMlrStatsWithLogo = allMlrStats
                 .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
-                .sort((a, b) => parseInt(b.Season.slice(1)) - parseInt(a.Season.slice(1)))[0];
+                .sort((a, b) => getSeasonForSort(b.Season) - getSeasonForSort(a.Season) || (b['Last Session'] || 0) - (a['Last Session'] || 0))[0];
             
-            if (lastSeasonStats) {
-                mostRecentTeam = lastSeasonStats['Last Team'] || lastSeasonStats['Team'];
-                mostRecentSeason = lastSeasonStats.Season;
+            if (lastMlrStatsWithLogo) {
+                const teamAbbr = lastMlrStatsWithLogo['Last Team'] || lastMlrStatsWithLogo['Team'];
+                logoFranchiseKey = getFranchiseKeyFromAbbr(teamAbbr, lastMlrStatsWithLogo.Season, false, false);
+                logoSeason = lastMlrStatsWithLogo.Season;
+                logoUrl = getTeamLogoBySeason(logoFranchiseKey, logoSeason, false, false); // Always try to get MLR logo
+            }
+        } 
+        
+        // Priority 2: FCB logo if no MLR logo and player never played MLR
+        if (!logoUrl && !hasPlayedMlr) {
+            const allPlayerFcbStats = [...fcbHittingStats, ...fcbPitchingStats]; // Use original fcb filtered stats
+            if (allPlayerFcbStats.length > 0) {
+                const lastFcbStatsWithLogo = allPlayerFcbStats
+                    .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                    .sort((a, b) => getSeasonForSort(b.Season) - getSeasonForSort(a.Season) || (b['Last Session'] || 0) - (a['Last Session'] || 0))[0];
+                
+                if (lastFcbStatsWithLogo) {
+                    const teamAbbr = lastFcbStatsWithLogo['Last Team'] || lastFcbStatsWithLogo['Team'];
+                    logoFranchiseKey = getFranchiseKeyFromAbbr(teamAbbr, lastFcbStatsWithLogo.Season, false, true);
+                    logoSeason = lastFcbStatsWithLogo.Season;
+                    logoUrl = getTeamLogoBySeason(logoFranchiseKey, logoSeason, false, true); // Get FCB logo
+                    logoIsFcb = true; // Set context for potential team name display
+                }
             }
         }
-
-        let titleHTML = `<h2 class="section-title">${playerName}</h2>`;
-        if (mostRecentTeam && mostRecentSeason) {
-            const franchiseKey = getFranchiseKeyFromAbbr(mostRecentTeam, mostRecentSeason);
-            const logoUrl = getTeamLogoBySeason(franchiseKey, mostRecentSeason);
-            if (logoUrl) {
-                titleHTML = `<h2 class="section-title"><img src="${logoUrl}" class="player-team-logo"> ${playerName}</h2>`;
+        
+        // After logo determination, set mostRecentTeam/Season for general display if no logo found
+        if (!logoFranchiseKey && allStats.length > 0) { // allStats includes MLR, MiLR, FCB
+            const lastOverallStats = allStats
+                .filter(s => s.Season && s.Season.startsWith('S') && !s.is_sub_row)
+                .sort((a, b) => getSeasonForSort(b.Season) - getSeasonForSort(a.Season) || (b['Last Session'] || 0) - (a['Last Session'] || 0))[0];
+            if (lastOverallStats) {
+                mostRecentTeam = lastOverallStats['Last Team'] || lastOverallStats['Team'];
+                mostRecentSeason = lastOverallStats.Season;
+                mostRecentIsMiLR = lastOverallStats.isMiLR;
+                mostRecentIsFcb = lastOverallStats.isFcb;
             }
+        } else if (logoFranchiseKey) { // If a logo was found, use its context for mostRecentTeam/Season
+            mostRecentTeam = logoFranchiseKey;
+            mostRecentSeason = logoSeason;
+            mostRecentIsFcb = logoIsFcb;
+            // mostRecentIsMiLR is not needed if logoUrl is present as MiLR has no logos
+        }
+        
+        // Now construct titleHTML
+        let titleHTML = `<h2 class="section-title">${playerName}</h2>`;
+        if (logoUrl) {
+            titleHTML = `<h2 class="section-title"><img src="${logoUrl}" class="player-team-logo"> ${playerName}</h2>`;
+        } else if (mostRecentTeam && mostRecentSeason) {
+             // If no logo, but we have a most recent team/season, still show team name
+            const displayTeamName = getTeamNameBySeason(mostRecentTeam, mostRecentSeason, mostRecentIsMiLR, mostRecentIsFcb);
+            // titleHTML would already be just the player name, so no change needed here directly unless we want to show team name in parentheses, e.g. "Player Name (Team Name)"
+            // For now, keep it simple and just show player name if no logo
         }
 
         titleHTML += `<p class="player-id-display">Player ID: ${playerId}</p>`;
@@ -3501,56 +3563,126 @@ document.addEventListener('DOMContentLoaded', () => {
         return abbr; // Fallback if not found, assume abbr is the franchise key
     };
 
-    const getTeamNameBySeason = (franchiseKey, season, isMiLR = false, isFcb = false) => {
-        const seasonNum = parseInt(season.slice(1));
-        if (isNaN(seasonNum)) return franchiseKey;
+            const getTeamNameBySeason = (franchiseKey, season, isMiLR = false, isFcb = false) => {
 
-        const historyToUse = isMiLR ? state.milrTeamHistory : (isFcb ? state.fcbTeamHistory : state.teamHistory);
+                const seasonNum = parseInt(season.slice(1));
 
-        if (isMiLR || isFcb) {
-            if (historyToUse[season] && historyToUse[season][franchiseKey]) {
-                return historyToUse[season][franchiseKey];
-            }
-        } else {
-            const teamNameEntries = historyToUse[franchiseKey];
-            if (teamNameEntries) {
-                const entry = teamNameEntries.find(e => seasonNum >= e.start && (e.end === 9999 || seasonNum <= e.end));
-                if (entry) {
-                    return entry.name;
+                if (isNaN(seasonNum)) return franchiseKey;
+
+        
+
+                if (isMiLR) {
+
+                    const milrHistory = state.milrTeamHistory;
+
+                    if (milrHistory[season] && milrHistory[season][franchiseKey]) {
+
+                        return milrHistory[season][franchiseKey];
+
+                    }
+
+                } else if (isFcb) {
+
+                    const fcbHistory = state.fcbTeamHistory;
+
+                    if (fcbHistory[season] && fcbHistory[season][franchiseKey] && fcbHistory[season][franchiseKey].name) {
+
+                        return fcbHistory[season][franchiseKey].name;
+
+                    }
+
+                } else { // MLR
+
+                    const franchise = state.teamHistory[franchiseKey];
+
+                    if (franchise) {
+
+                        const entry = franchise.find(e => seasonNum >= e.start && (e.end === 9999 || seasonNum <= e.end));
+
+                        if (entry) {
+
+                            return entry.name;
+
+                        }
+
+                    }
+
                 }
-            }
-        }
-        // Fallback for when player is on a team that doesn't exist that season
-        const milrHistory = state.milrTeamHistory;
-        if (milrHistory[season] && milrHistory[season][franchiseKey]) {
-            return milrHistory[season][franchiseKey];
-        }
 
-        const fcbHistory = state.fcbTeamHistory;
-        if (fcbHistory[season] && fcbHistory[season][franchiseKey]) {
-            return fcbHistory[season][franchiseKey];
-        }
+        
 
-        return franchiseKey;
-    };
+                return franchiseKey; // Fallback to key if no name found
+
+            };
 
 const getTeamLogoBySeason = (franchiseKey, season, isMiLR = false, isFcb = false) => {
+
     if (!franchiseKey || !season) return null;
+
     const seasonNum = parseInt(season.slice(1));
+
     if (isNaN(seasonNum)) return null;
 
-    if (isMiLR || isFcb) {
-        return null;
-    }
 
-    const franchise = state.teamHistory[franchiseKey];
-    if (!franchise) return null;
-
-    const teamInfo = franchise.find(t => seasonNum >= t.start && seasonNum <= t.end);
-    if (!teamInfo) return null;
 
     const isLightMode = document.documentElement.classList.contains('light-mode');
-    return isLightMode ? teamInfo.logo_light : teamInfo.logo_dark;
+
+
+
+    if (isMiLR) {
+
+        return null;
+
+    }
+
+
+
+    if (isFcb) {
+
+        const fcbSeasonData = state.fcbTeamHistory[season];
+
+        if (fcbSeasonData && fcbSeasonData[franchiseKey]) {
+
+            const teamInfo = fcbSeasonData[franchiseKey];
+
+            if (teamInfo.logo_light && teamInfo.logo_dark) {
+
+                return isLightMode ? teamInfo.logo_light : teamInfo.logo_dark;
+
+            }
+
+        }
+
+        return null;
+
+    }
+
+
+
+    // MLR logo logic
+
+    const franchise = state.teamHistory[franchiseKey];
+
+    let teamInfo = null;
+
+    if (franchise) {
+
+        teamInfo = franchise.find(t => seasonNum >= t.start && seasonNum <= t.end);
+
+    }
+
+    
+
+    if (teamInfo && teamInfo.logo_light && teamInfo.logo_dark) {
+
+        return isLightMode ? teamInfo.logo_light : teamInfo.logo_dark;
+
+    }
+
+
+
+    return null;
+
 };
                     
     loadData();
