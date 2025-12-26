@@ -547,7 +547,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
         const random = seededRandom(seed);
 
-        const playerIds = Object.keys(state.players);
+        const mlrPlayerIds = new Set();
+        state.hittingStats.forEach(s => {
+            if(s['Hitter ID']) mlrPlayerIds.add(String(s['Hitter ID'])); // Ensure IDs are strings
+        });
+        state.pitchingStats.forEach(s => {
+            if(s['Pitcher ID']) mlrPlayerIds.add(String(s['Pitcher ID'])); // Ensure IDs are strings
+        });
+        const playerIds = Array.from(mlrPlayerIds);
         
         // Select two distinct random players
         let randomIndex1 = Math.floor(random() * playerIds.length);
