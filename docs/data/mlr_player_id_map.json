@@ -2228,10 +2228,6 @@
         "currentName": "Oral Nanny",
         "formerNames": []
     },
-    "496": {
-        "currentName": "Mike Hunt",
-        "formerNames": []
-    },
     "497": {
         "currentName": "Theodora DiBiaserunner",
         "formerNames": [
@@ -3748,6 +3744,10 @@
     },
     "1968": {
         "currentName": "Ludd Van Shark",
+        "formerNames": []
+    },
+    "1971": {
+        "currentName": "Mike Hunt",
         "formerNames": []
     },
     "1972": {
@@ -7172,6 +7172,10 @@
         "currentName": "Booby Cancun",
         "formerNames": []
     },
+    "3234": {
+        "currentName": "Joan Andreu Ros\u00e0",
+        "formerNames": []
+    },
     "3235": {
         "currentName": "Gary Appalachia",
         "formerNames": []
@@ -7198,6 +7202,10 @@
     },
     "3244": {
         "currentName": "LeeLoo Dallas Multi-Guess",
+        "formerNames": []
+    },
+    "3246": {
+        "currentName": "Arthur Bullpendragon",
         "formerNames": []
     },
     "3247": {
@@ -7258,6 +7266,10 @@
     },
     "3268": {
         "currentName": "Dave Bartholomew",
+        "formerNames": []
+    },
+    "3269": {
+        "currentName": "Buck Futter",
         "formerNames": []
     },
     "3270": {
@@ -7348,6 +7360,10 @@
         "currentName": "Matt Carver",
         "formerNames": []
     },
+    "3297": {
+        "currentName": "Damon Razor",
+        "formerNames": []
+    },
     "3299": {
         "currentName": "Dusty Rhodes",
         "formerNames": []
@@ -7358,6 +7374,10 @@
     },
     "3301": {
         "currentName": "London Bridges",
+        "formerNames": []
+    },
+    "3302": {
+        "currentName": "Tomoharu Kanazaki",
         "formerNames": []
     },
     "3303": {
@@ -7372,8 +7392,20 @@
         "currentName": "Steven Sinclair",
         "formerNames": []
     },
+    "3306": {
+        "currentName": "T.J. Oatman",
+        "formerNames": []
+    },
     "3307": {
         "currentName": "Joey Tacoma",
+        "formerNames": []
+    },
+    "3308": {
+        "currentName": "Vivi Bluesky",
+        "formerNames": []
+    },
+    "3310": {
+        "currentName": "Tasane Keto",
         "formerNames": []
     }
 }

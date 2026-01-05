@@ -3357,12 +3357,11 @@ def generate_league_data(
 
 
 def main():
-    """
     # Generate MLR data
     generate_league_data(
         gamelog_source="data/gamelogs.txt",
         player_types_source="data/player_types.txt",
-        output_prefix="",
+        output_prefix="mlr_",
         is_milr=False,
         is_fcb=False
     )
@@ -3375,8 +3374,8 @@ def main():
         is_milr=True,
         is_fcb=False
     )
-    """
     
+    """
     # Generate FCB data
     generate_league_data(
         gamelog_source="data/fcb_gamelogs.txt",
@@ -3385,7 +3384,7 @@ def main():
         is_milr=False,
         is_fcb=True
     )
-
+    """
 
 if __name__ == "__main__":
     main()

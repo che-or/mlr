@@ -5272,6 +5272,10 @@
         "currentName": "Jacob Thomas",
         "formerNames": []
     },
+    "3106": {
+        "currentName": "Tomothy Toledo",
+        "formerNames": []
+    },
     "3107": {
         "currentName": "Elijah Walker",
         "formerNames": []
@@ -5528,12 +5532,20 @@
         "currentName": "Jiggs Kingman",
         "formerNames": []
     },
+    "3254": {
+        "currentName": "Weehaddababy Itzaboi",
+        "formerNames": []
+    },
     "3255": {
         "currentName": "Alph Overdale",
         "formerNames": []
     },
     "3256": {
         "currentName": "Angry Lizard",
+        "formerNames": []
+    },
+    "3260": {
+        "currentName": "Ruby McCade",
         "formerNames": []
     },
     "3261": {
@@ -5566,6 +5578,10 @@
     },
     "3302": {
         "currentName": "Tomoharu Kanazaki",
+        "formerNames": []
+    },
+    "3309": {
+        "currentName": "Roxy Hurricane",
         "formerNames": []
     }
 }

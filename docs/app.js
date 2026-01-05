@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     const API = {
-        hitting: './data/hitting_stats.json',
-        pitching: './data/pitching_stats.json',
+        mlrHitting: './data/mlr_hitting_stats.json',
+        mlrPitching: './data/mlr_pitching_stats.json',
         milrHitting: './data/milr_hitting_stats.json',
         milrPitching: './data/milr_pitching_stats.json',
         fcbHitting: './data/fcb_hitting_stats.json',
         fcbPitching: './data/fcb_pitching_stats.json',
-        players: './data/player_id_map.json',
+        mlrPlayerIDMap: './data/mlr_player_id_map.json',
         milrPlayerIdMap: './data/milr_player_id_map.json',
         fcbPlayerIdMap: './data/fcb_player_id_map.json',
         seasons: './data/season_games_map.json',
         glossary: './data/glossary.json',
-        divisions: './data/divisions.json',
+        mlrDivisions: './data/mlr_divisions.json',
         milrDivisions: './data/milr_divisions.json',
         fcbDivisions: './data/fcb_divisions.json',
-        teamHistory: './data/team_history.json',
+        mlrTeamHistory: './data/mlr_team_history.json',
         milrTeamHistory: './data/milr_team_history.json',
         fcbTeamHistory: './data/fcb_team_history.json',
-        teamHitting: './data/team_hitting_stats.json',
-        teamPitching: './data/team_pitching_stats.json',
+        mlrTeamHitting: './data/mlr_team_hitting_stats.json',
+        mlrTeamPitching: './data/mlr_team_pitching_stats.json',
         milrTeamHitting: './data/milr_team_hitting_stats.json',
         milrTeamPitching: './data/milr_team_pitching_stats.json',
         fcbTeamHitting: './data/fcb_team_hitting_stats.json',
@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const state = {
-        hittingStats: [],
-        pitchingStats: [],
+        mlrHittingStats: [],
+        mlrPitchingStats: [],
         milrHittingStats: [],
         milrPitchingStats: [],
         fcbHittingStats: [],
         fcbPitchingStats: [],
-        teamHittingStats: [],
-        teamPitchingStats: [],
+        mlrTeamHittingStats: [],
+        mlrTeamPitchingStats: [],
         milrTeamHittingStats: [],
         milrTeamPitchingStats: [],
         fcbTeamHittingStats: [],
@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         players: {},
         seasons: {},
         glossaryData: {},
-        divisions: {},
+        mlrDivisions: {},
         milrDivisions: {},
         fcbDivisions: {},
-        teamHistory: {},
+        mlrTeamHistory: {},
         milrTeamHistory: {},
         fcbTeamHistory: {},
         gamelogErrors: [],
@@ -282,23 +282,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadData = async () => {
         try {
             const [
-                hitting, pitching, players, seasons, glossary, divisions, teamHistory, 
-                teamHitting, teamPitching, gamelogErrors, typeDefinitions, 
+                mlrHitting, mlrPitching, mlrPlayerIDMap, seasons, glossary, mlrDivisions, mlrTeamHistory, 
+                mlrTeamHitting, mlrTeamPitching, gamelogErrors, typeDefinitions, 
                 playerInfo, awards, currentSeasonInfo,
                 milrHitting, milrPitching, milrDivisions, milrTeamHistory, milrPlayerIdMap,
                 milrTeamHitting, milrTeamPitching,
                 fcbHitting, fcbPitching, fcbDivisions, fcbTeamHistory, fcbPlayerIdMap,
                 fcbTeamHitting, fcbTeamPitching
             ] = await Promise.all([
-                fetch(API.hitting).then(res => res.json()),
-                fetch(API.pitching).then(res => res.json()),
-                fetch(API.players).then(res => res.json()),
+                fetch(API.mlrHitting).then(res => res.json()),
+                fetch(API.mlrPitching).then(res => res.json()),
+                fetch(API.mlrPlayerIDMap).then(res => res.json()),
                 fetch(API.seasons).then(res => res.json()),
                 fetch(API.glossary).then(res => res.json()),
-                fetch(API.divisions).then(res => res.json()),
-                fetch(API.teamHistory).then(res => res.json()),
-                fetch(API.teamHitting).then(res => res.json()),
-                fetch(API.teamPitching).then(res => res.json()),
+                fetch(API.mlrDivisions).then(res => res.json()),
+                fetch(API.mlrTeamHistory).then(res => res.json()),
+                fetch(API.mlrTeamHitting).then(res => res.json()),
+                fetch(API.mlrTeamPitching).then(res => res.json()),
                 fetch(API.gamelogErrors).then(res => res.json()),
                 fetch(API.typeDefinitions).then(res => res.json()),
                 fetch(API.playerInfo).then(res => res.json()),
@@ -320,10 +320,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch(API.fcbTeamPitching).then(res => res.json())
             ]);
 
-            state.hittingStats = parseCompactData(hitting);
-            state.pitchingStats = parseCompactData(pitching);
-            state.teamHittingStats = parseCompactData(teamHitting);
-            state.teamPitchingStats = parseCompactData(teamPitching);
+            state.mlrHittingStats = parseCompactData(mlrHitting);
+            state.mlrPitchingStats = parseCompactData(mlrPitching);
+            state.mlrTeamHittingStats = parseCompactData(mlrTeamHitting);
+            state.mlrTeamPitchingStats = parseCompactData(mlrTeamPitching);
             state.milrTeamHittingStats = parseCompactData(milrTeamHitting);
             state.milrTeamPitchingStats = parseCompactData(milrTeamPitching);
             state.milrHittingStats = parseCompactData(milrHitting);
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
             state.fcbPitchingStats = parseCompactData(fcbPitching);
             state.fcbTeamHittingStats = parseCompactData(fcbTeamHitting);
             state.fcbTeamPitchingStats = parseCompactData(fcbTeamPitching);
-            state.players = players; // Start with major league players
+            state.players = mlrPlayerIDMap; // Start with major league players
 
             // Merge MiLR players
             for (const playerId in milrPlayerIdMap) {
@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         return allStats[0];
                     };
 
-                    const lastMlrRecord = getMostRecentRecord({ hitting: state.hittingStats, pitching: state.pitchingStats }, playerId);
+                    const lastMlrRecord = getMostRecentRecord({ hitting: state.mlrHittingStats, pitching: state.mlrPitchingStats }, playerId);
                     const lastMilrRecord = getMostRecentRecord({ hitting: state.milrHittingStats, pitching: state.milrPitchingStats }, playerId);
 
                     if (!mlrPlayer.formerNames) {
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         return allStats[0];
                     };
 
-                    const lastExistingRecord = getMostRecentRecord({ hitting: [...state.hittingStats, ...state.milrHittingStats], pitching: [...state.pitchingStats, ...state.milrPitchingStats] }, playerId);
+                    const lastExistingRecord = getMostRecentRecord({ hitting: [...state.mlrHittingStats, ...state.milrHittingStats], pitching: [...state.mlrPitchingStats, ...state.milrPitchingStats] }, playerId);
                     const lastFcbRecord = getMostRecentRecord({ hitting: state.fcbHittingStats, pitching: state.fcbPitchingStats }, playerId);
 
                     if (!existingPlayer.formerNames) {
@@ -477,8 +477,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             state.seasons = seasons;
             state.glossaryData = glossary;
-            state.divisions = divisions;
-            state.teamHistory = teamHistory;
+            state.mlrDivisions = mlrDivisions;
+            state.mlrTeamHistory = mlrTeamHistory;
             state.gamelogErrors = gamelogErrors;
             state.typeDefinitions = typeDefinitions;
             state.playerInfo = playerInfo;
@@ -490,12 +490,12 @@ document.addEventListener('DOMContentLoaded', () => {
             state.fcbTeamHistory = fcbTeamHistory;
 
             const seasonsWithStats = new Set();
-            state.hittingStats.forEach(s => {
+            state.mlrHittingStats.forEach(s => {
                 if (s.Season && s.Season.startsWith('S') && !s.is_sub_row) {
                     seasonsWithStats.add(s.Season);
                 }
             });
-            state.pitchingStats.forEach(s => {
+            state.mlrPitchingStats.forEach(s => {
                 if (s.Season && s.Season.startsWith('S') && !s.is_sub_row) {
                     seasonsWithStats.add(s.Season);
                 }
@@ -548,10 +548,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const random = seededRandom(seed);
 
         const mlrPlayerIds = new Set();
-        state.hittingStats.forEach(s => {
+        state.mlrHittingStats.forEach(s => {
             if(s['Hitter ID']) mlrPlayerIds.add(String(s['Hitter ID'])); // Ensure IDs are strings
         });
-        state.pitchingStats.forEach(s => {
+        state.mlrPitchingStats.forEach(s => {
             if(s['Pitcher ID']) mlrPlayerIds.add(String(s['Pitcher ID'])); // Ensure IDs are strings
         });
         const playerIds = Array.from(mlrPlayerIds);
@@ -566,8 +566,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let featuredPlayerId2 = playerIds[randomIndex2];
 
         // --- Process Player 1 ---
-        const playerHittingStats1 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId1));
-        const playerPitchingStats1 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId1));
+        const playerHittingStats1 = state.mlrHittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId1));
+        const playerPitchingStats1 = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId1));
         const allPlayerStats1 = [...playerHittingStats1, ...playerPitchingStats1];
 
         let firstSeason1 = Infinity;
@@ -599,8 +599,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const featuredPlayerMostRecentSeason1 = mostRecentSeasonForPlayer1;
 
         // --- Process Player 2 ---
-        const playerHittingStats2 = state.hittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId2));
-        const playerPitchingStats2 = state.pitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId2));
+        const playerHittingStats2 = state.mlrHittingStats.filter(s => s['Hitter ID'] === parseInt(featuredPlayerId2));
+        const playerPitchingStats2 = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === parseInt(featuredPlayerId2));
         const allPlayerStats2 = [...playerHittingStats2, ...playerPitchingStats2];
 
         let firstSeason2 = Infinity;
@@ -633,9 +633,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         // --- Select a random team franchise and a valid season for it ---
-        const teamKeys = Object.keys(state.teamHistory);
+        const teamKeys = Object.keys(state.mlrTeamHistory);
         const featuredTeamKey = teamKeys[Math.floor(random() * teamKeys.length)];
-        const franchiseEntries = state.teamHistory[featuredTeamKey];
+        const franchiseEntries = state.mlrTeamHistory[featuredTeamKey];
         let featuredTeamSeason = 'S1';
 
         if (franchiseEntries && franchiseEntries.length > 0) {
@@ -760,8 +760,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const getPlayerTeamInfoForSeason = (playerId, season) => {
-        const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === season && !s.is_sub_row);
-        const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === season && !s.is_sub_row);
+        const playerHittingStats = state.mlrHittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === season && !s.is_sub_row);
+        const playerPitchingStats = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === season && !s.is_sub_row);
         const allStats = [...playerHittingStats, ...playerPitchingStats];
         
         let teamAbbr = '';
@@ -1076,8 +1076,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const player = state.players[playerId];
                                 if (!player) return null;
 
-                                const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
-                                const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const playerHittingStats = state.mlrHittingStats.filter(s => s['Hitter ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
+                                const playerPitchingStats = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season === selectedSeason && !s.is_sub_row);
                                 const allPlayerSeasonStats = [...playerHittingStats, ...playerPitchingStats];
                                 
                                 let teamAbbr = '';
@@ -1223,8 +1223,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const playerId = p.id;
             const player = p.data;
             
-            const playerHittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
-            const playerPitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
+            const playerHittingStats = state.mlrHittingStats.filter(s => s['Hitter ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
+            const playerPitchingStats = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === playerId && s.Season.startsWith('S') && !s.is_sub_row);
             const allStats = [...playerHittingStats, ...playerPitchingStats];
             
             let isActive = allStats.some(s => s.Season === currentSeason);
@@ -1656,7 +1656,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sortModifier = reverseSort ? -1 : 1;
         
         let statKey = stat;
-        let data = isHitting ? (isMiLR ? state.milrHittingStats : (isFcb ? state.fcbHittingStats : state.hittingStats)) : (isMiLR ? state.milrPitchingStats : (isFcb ? state.fcbPitchingStats : state.pitchingStats));
+        let data = isHitting ? (isMiLR ? state.milrHittingStats : (isFcb ? state.fcbHittingStats : state.mlrHittingStats)) : (isMiLR ? state.milrPitchingStats : (isFcb ? state.fcbPitchingStats : state.mlrPitchingStats));
         
         if (isHitting) {
             if (stat === 'SO') statKey = 'K';
@@ -1743,7 +1743,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Single Season
             let singleSeasonData = data.filter(p => p.Season.startsWith('S'));
             if (selectedTeam) {
-                const franchise = state.teamHistory[selectedTeam];
+                const franchise = state.mlrTeamHistory[selectedTeam];
                 if (franchise) {
                     singleSeasonData = singleSeasonData.filter(p => {
                         const seasonNum = parseInt(p.Season.slice(1));
@@ -1775,7 +1775,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (const season of allSeasons) {
                 let seasonData = data.filter(p => p.Season === season);
                 if (selectedTeam) {
-                    const franchise = state.teamHistory[selectedTeam];
+                    const franchise = state.mlrTeamHistory[selectedTeam];
                     if (franchise) {
                         const seasonNum = parseInt(season.slice(1));
                         const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
@@ -1866,7 +1866,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!isMiLR && !isFcb) {
                 if (selectedTeam) {
-                    const franchise = state.teamHistory[selectedTeam];
+                    const franchise = state.mlrTeamHistory[selectedTeam];
                     if (franchise) {
                         singleSeasonData = singleSeasonData.filter(p => {
                             const seasonNum = parseInt(p.Season.slice(1));
@@ -1935,7 +1935,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let seasonData = data.filter(p => p.Season === season);
                 if (!isMiLR && !isFcb) {
                     if (selectedTeam) {
-                        const franchise = state.teamHistory[selectedTeam];
+                        const franchise = state.mlrTeamHistory[selectedTeam];
                         if (franchise) {
                             const seasonNum = parseInt(season.slice(1));
                             const correctAbbr = franchise.find(f => seasonNum >= f.start && seasonNum <= f.end)?.abbr;
@@ -2218,7 +2218,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const populateTeamFilter = () => {
         const teamFilter = elements.leaderboardTeamFilter;
         if (!teamFilter) return;
-        const teams = Object.keys(state.teamHistory).sort();
+        const teams = Object.keys(state.mlrTeamHistory).sort();
         teams.forEach(team => {
             const option = document.createElement('option');
             option.value = team;
@@ -2344,8 +2344,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const playerName = player.currentName;
 
-        const hittingStats = state.hittingStats.filter(s => s['Hitter ID'] === playerId);
-        const pitchingStats = state.pitchingStats.filter(s => s['Pitcher ID'] === playerId);
+        const hittingStats = state.mlrHittingStats.filter(s => s['Hitter ID'] === playerId);
+        const pitchingStats = state.mlrPitchingStats.filter(s => s['Pitcher ID'] === playerId);
 
         // Filter out 'Type' rows from player stat tables
         const filteredHittingStats = hittingStats.filter(s => s.Season !== 'Type' && s.Season !== 'Franchise-Type');
@@ -2712,8 +2712,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     milrContainer.id = 'milr-stats-container';
                     milrContainer.style.display = 'none';
 
-                    const originalTeamHistory = state.teamHistory;
-                    state.teamHistory = state.milrTeamHistory;
+                    const originalTeamHistory = state.mlrTeamHistory;
+                    state.mlrTeamHistory = state.milrTeamHistory;
 
                     const renderMilrHitting = () => {
                         if (milrHittingStats.length > 0) {
@@ -2728,7 +2728,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     };
                     if (primaryRole === 'pitcher') { renderMilrPitching(); renderMilrHitting(); } else { renderMilrHitting(); renderMilrPitching(); }
-                    state.teamHistory = originalTeamHistory;
+                    state.mlrTeamHistory = originalTeamHistory;
                     
                     minorLeagueContainers.appendChild(milrContainer);
 
@@ -2763,8 +2763,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     fcbContainer.id = 'fcb-stats-container';
                     fcbContainer.style.display = 'none';
 
-                    const originalTeamHistory = state.teamHistory;
-                    state.teamHistory = state.fcbTeamHistory;
+                    const originalTeamHistory = state.mlrTeamHistory;
+                    state.mlrTeamHistory = state.fcbTeamHistory;
 
                     const renderFcbHitting = () => {
                         if (fcbHittingStats.length > 0) {
@@ -2780,7 +2780,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     };
 
                     if (primaryRole === 'pitcher') { renderFcbPitching(); renderFcbHitting(); } else { renderFcbHitting(); renderFcbPitching(); }
-                    state.teamHistory = originalTeamHistory;
+                    state.mlrTeamHistory = originalTeamHistory;
 
                     minorLeagueContainers.appendChild(fcbContainer);
 
@@ -3023,25 +3023,25 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.teamStatsView.innerHTML = ''; // Clear previous content
 
         // More robust defensive check
-        if (!state || !state.hittingStats || !state.pitchingStats) {
+        if (!state || !state.mlrHittingStats || !state.mlrPitchingStats) {
             console.error("State or data not fully loaded when trying to display team stats.");
             elements.teamStatsView.innerHTML = "<p>Data is still loading or failed to load. Please try again in a moment.</p>";
             return;
         }
 
-        const hittingStatsToUse = isMiLR ? state.milrHittingStats : (isFcb ? state.fcbHittingStats : state.hittingStats);
-        const pitchingStatsToUse = isMiLR ? state.milrPitchingStats : (isFcb ? state.fcbPitchingStats : state.pitchingStats);
-        const teamHittingStatsToUse = isMiLR ? state.milrTeamHittingStats : (isFcb ? state.fcbTeamHittingStats : state.teamHittingStats);
-        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : (isFcb ? state.fcbTeamPitchingStats : state.teamPitchingStats);
+        const hittingStatsToUse = isMiLR ? state.milrHittingStats : (isFcb ? state.fcbHittingStats : state.mlrHittingStats);
+        const pitchingStatsToUse = isMiLR ? state.milrPitchingStats : (isFcb ? state.fcbPitchingStats : state.mlrPitchingStats);
+        const teamHittingStatsToUse = isMiLR ? state.milrTeamHittingStats : (isFcb ? state.fcbTeamHittingStats : state.mlrTeamHittingStats);
+        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : (isFcb ? state.fcbTeamPitchingStats : state.mlrTeamPitchingStats);
 
         const seasonNum = parseInt(season.slice(1));
         let actualTeamAbbr = teamKey; // Default to the provided teamKey
 
-        const originalTeamHistory = state.teamHistory;
-        state.teamHistory = isMiLR ? state.milrTeamHistory : (isFcb ? state.fcbTeamHistory : state.teamHistory);
+        const originalTeamHistory = state.mlrTeamHistory;
+        state.mlrTeamHistory = isMiLR ? state.milrTeamHistory : (isFcb ? state.fcbTeamHistory : state.mlrTeamHistory);
 
         if (!isMiLR && !isFcb) {
-            const franchiseEntries = state.teamHistory[teamKey];
+            const franchiseEntries = state.mlrTeamHistory[teamKey];
             if (franchiseEntries) {
                 const entry = franchiseEntries.find(e => seasonNum >= e.start && (e.end === Infinity || seasonNum <= e.end));
                 if (entry) {
@@ -3075,7 +3075,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     }
                 } else {
-                    if (state.teamHistory[teamKey] && state.teamHistory[teamKey].some(e => sNum >= e.start && sNum <= e.end)) {
+                    if (state.mlrTeamHistory[teamKey] && state.mlrTeamHistory[teamKey].some(e => sNum >= e.start && sNum <= e.end)) {
                         prevSeasonNum = sNum;
                         break;
                     }
@@ -3098,7 +3098,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         break;
                     }
                 } else {
-                    if (state.teamHistory[teamKey] && state.teamHistory[teamKey].some(e => sNum >= e.start && sNum <= e.end)) {
+                    if (state.mlrTeamHistory[teamKey] && state.mlrTeamHistory[teamKey].some(e => sNum >= e.start && sNum <= e.end)) {
                         nextSeasonNum = sNum;
                         break;
                     }
@@ -3144,7 +3144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.teamStatsView.innerHTML = content;
         elements.teamStatsView.querySelectorAll('.stats-table').forEach(makeTableSortable);
 
-        state.teamHistory = originalTeamHistory;
+        state.mlrTeamHistory = originalTeamHistory;
 
         // Apply default sorting
         elements.teamStatsView.querySelectorAll('.stats-table').forEach(table => {
@@ -3484,7 +3484,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const calculateTeamRecords = (season, isMiLR = false, isFcb = false) => {
         const teamRecords = {};
-        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : (isFcb ? state.fcbTeamPitchingStats : state.teamPitchingStats);
+        const teamPitchingStatsToUse = isMiLR ? state.milrTeamPitchingStats : (isFcb ? state.fcbTeamPitchingStats : state.mlrTeamPitchingStats);
         const seasonTeamPitchingStats = teamPitchingStatsToUse.filter(s => s.Season === season);
         const totalGamesInSeason = state.seasons[season] || 0;
 
@@ -3538,7 +3538,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const getDivisionsForSeason = (season, isMiLR = false, isFcb = false) => {
-        const divisionsToUse = isMiLR ? state.milrDivisions : (isFcb ? state.fcbDivisions : state.divisions);
+        const divisionsToUse = isMiLR ? state.milrDivisions : (isFcb ? state.fcbDivisions : state.mlrDivisions);
         let divisions = divisionsToUse[season];
         // If the value is a string, it's a reference to another season
         if (typeof divisions === 'string') {
@@ -3549,7 +3549,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getFranchiseKeyFromAbbr = (abbr, season, isMiLR = false, isFcb = false) => {
         const seasonNum = parseInt(season.slice(1));
-        const teamHistoryToUse = isMiLR ? state.milrTeamHistory : (isFcb ? state.fcbTeamHistory : state.teamHistory);
+        const teamHistoryToUse = isMiLR ? state.milrTeamHistory : (isFcb ? state.fcbTeamHistory : state.mlrTeamHistory);
 
         if (isMiLR || isFcb) {
             for (const franchiseKey in teamHistoryToUse) {
@@ -3600,7 +3600,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 } else { // MLR
 
-                    const franchise = state.teamHistory[franchiseKey];
+                    const franchise = state.mlrTeamHistory[franchiseKey];
 
                     if (franchise) {
 
@@ -3668,7 +3668,7 @@ const getTeamLogoBySeason = (franchiseKey, season, isMiLR = false, isFcb = false
 
     // MLR logo logic
 
-    const franchise = state.teamHistory[franchiseKey];
+    const franchise = state.mlrTeamHistory[franchiseKey];
 
     let teamInfo = null;
 
