@@ -14,10 +14,12 @@ def apply_milr_gamelog_corrections(df, group_name):
 
     season, game_id = group_name
 
+    """
     if season == "S6":
         if 'Batter Team' in df.columns:
             df['Batter Team'] = df['Batter Team'].replace('LEM', 'LMN')
         if 'Pitcher Team' in df.columns:
             df['Pitcher Team'] = df['Pitcher Team'].replace('LEM', 'LMN')
+    """
             
     return df

@@ -13,7 +13,7 @@ It performs the following key functions:
 
 from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
-from gamelog_corrections import apply_gamelog_corrections
+from mlr_gamelog_corrections import apply_gamelog_corrections
 from milr_gamelog_corrections import apply_milr_gamelog_corrections
 #from fcb_gamelog_corrections import apply_fcb_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
@@ -2524,7 +2524,7 @@ def generate_league_data(
 
     print("Loading player type data...")
     player_type_data = load_player_types(
-        player_types_file_path=player_types_source, force_seasons=force_recalc_seasons, cache_prefix=output_prefix
+        player_types_file_path=player_types_source, force_seasons=force_recalc_seasons, cache_prefix=output_prefix, league_prefix=output_prefix
     )
 
     if is_milr:
@@ -2703,6 +2703,7 @@ def generate_league_data(
         ["Season", "Game ID", "Inning"]
     ).cumcount()
 
+    """
     if not is_milr and not is_fcb:
         print("Applying manual gamelog corrections...")
         combined_df = (
@@ -2721,7 +2722,6 @@ def generate_league_data(
         )
         print("MiLR gamelog corrections applied.")
 
-    """
     if is_fcb:
         print("Applying FCB manual gamelog corrections...")
         combined_df = (
@@ -3359,8 +3359,8 @@ def generate_league_data(
 def main():
     # Generate MLR data
     generate_league_data(
-        gamelog_source="data/gamelogs.txt",
-        player_types_source="data/player_types.txt",
+        gamelog_source="data/mlr_gamelogs.txt",
+        player_types_source="data/mlr_player_types.txt",
         output_prefix="mlr_",
         is_milr=False,
         is_fcb=False

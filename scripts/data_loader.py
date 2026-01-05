@@ -202,19 +202,23 @@ def load_all_seasons(gamelog_file_path="data/gamelogs.txt", cache_prefix=""):
     )
 
 
-def load_player_id_map():
+def load_player_id_map(league_prefix=""):
     """Loads the player name to ID mapping.
 
     Reads the `player_id_map.json` file and creates a dictionary that maps
     all known current and former player names (case-insensitively) to their
     unique integer player ID.
 
+    Args:
+        league_prefix (str, optional): The prefix for the league's player ID map file (e.g., "mlr_"). Defaults to "".
+
     Returns:
         dict: A dictionary mapping lowercase player names to integer player IDs.
     """
     script_dir = os.path.dirname(os.path.abspath(__file__))
+    player_id_map_filename = f"{league_prefix}player_id_map.json"
     player_id_map_path = os.path.join(
-        script_dir, "..", "docs", "data", "player_id_map.json"
+        script_dir, "..", "docs", "data", player_id_map_filename
     )
 
     if not os.path.exists(player_id_map_path):
@@ -235,7 +239,7 @@ def load_player_id_map():
     return name_to_id_map
 
 
-def load_player_types(player_types_file_path="data/player_types.txt", force_seasons=None, cache_prefix=""):
+def load_player_types(player_types_file_path="data/player_types.txt", force_seasons=None, cache_prefix="", league_prefix=""):
     """Loads player archetype data for all seasons.
 
     This function loads player type (archetype) data from a combination of
@@ -249,6 +253,8 @@ def load_player_types(player_types_file_path="data/player_types.txt", force_seas
     Args:
         force_seasons (list, optional): A list of season names to force a
             re-download for, ignoring the cache. Defaults to None.
+        cache_prefix (str, optional): A prefix for the cache file names.
+        league_prefix (str, optional): The prefix for the league's player ID map file (e.g., "mlr_"). Defaults to "".
 
     Returns:
         dict: A dictionary where keys are season names (e.g., 'S1') and
@@ -265,7 +271,7 @@ def load_player_types(player_types_file_path="data/player_types.txt", force_seas
     if not os.path.exists(cache_dir):
         os.makedirs(cache_dir)
 
-    name_to_id_map = load_player_id_map()  # Load the player ID map
+    name_to_id_map = load_player_id_map(league_prefix=league_prefix)  # Load the player ID map
 
     seasons_to_process = []
     # Load seasons from player_types.txt (S4 onwards)

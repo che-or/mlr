@@ -1,10 +1,6 @@
 {
-    "-5": {
-        "currentName": "Eric Tsai",
-        "formerNames": []
-    },
     "-4": {
-        "currentName": "King Amazing",
+        "currentName": "Eric Tsai",
         "formerNames": []
     },
     "-3": {
@@ -2681,7 +2677,9 @@
     },
     "706": {
         "currentName": "Charles Martel",
-        "formerNames": []
+        "formerNames": [
+            "King Amazing"
+        ]
     },
     "707": {
         "currentName": "Kyle Corbett",
@@ -4397,7 +4395,7 @@
         "formerNames": []
     },
     "2619": {
-        "currentName": "Barry Mays ",
+        "currentName": "Barry Mays",
         "formerNames": []
     },
     "2621": {
@@ -4733,7 +4731,6 @@
     "2785": {
         "currentName": "Basil",
         "formerNames": [
-            "Basil ",
             "Kai Johnson"
         ]
     },
@@ -4868,7 +4865,7 @@
         "formerNames": []
     },
     "2875": {
-        "currentName": "Velma Dingkerly ",
+        "currentName": "Velma Dingkerly",
         "formerNames": [
             "Leo Pollersbeck"
         ]

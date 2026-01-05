@@ -15,6 +15,7 @@ def apply_gamelog_corrections(df, group_name):
 
     season, game_id = group_name
 
+    """
     # S2, Game 164: Hitter 382 HR in T1
     if season == "S2" and game_id == 164:
         correction_mask = (
@@ -104,5 +105,6 @@ def apply_gamelog_corrections(df, group_name):
             & (df["Old Result"] == "Auto BB")
         )
         df = df[~removal_mask]
+    """
 
     return df
