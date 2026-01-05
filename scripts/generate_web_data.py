@@ -3375,7 +3375,6 @@ def main():
         is_fcb=False
     )
     
-    """
     # Generate FCB data
     generate_league_data(
         gamelog_source="data/fcb_gamelogs.txt",
@@ -3384,7 +3383,6 @@ def main():
         is_milr=False,
         is_fcb=True
     )
-    """
 
 if __name__ == "__main__":
     main()

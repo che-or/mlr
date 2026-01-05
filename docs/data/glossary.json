@@ -131,8 +131,8 @@
         "definition": "A single relief pitcher on the winning team can be awarded a Save. The pitcher who gets the Save cannot also get the Win.",
         "conditional_rules": [
             "<strong>Case 1: The \"Standard\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They enter the game with a lead of <strong>3 runs or less</strong>.<br>They pitch for at least <strong>1 full inning</strong>.",
-            "<strong>Case 2: The \"Tying Run\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They enter the game with the potential tying run already on base, at bat, or on the on-deck circle.",
-            "<strong>Case 3: The \"Long Relief\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They pitch for at least <strong>3 innings</strong> to finish the game. Due to MLR only having 6 inning games, this type of save is exceptionally rare."
+            "<strong>Case 2: The \"Tying Run\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They enter the game with the potential tying run already on base, at bat, or in the on-deck circle.",
+            "<strong>Case 3: The \"Long Relief\" Save</strong><br>The pitcher is the <em>final</em> pitcher for the winning team.<br>They pitch for at least <strong>2 innings</strong> to finish the game. The is proportional to the 3 inning long-relief save in MLB."
         ]
     },
     "HLD": {
