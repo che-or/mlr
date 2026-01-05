@@ -547,7 +547,7 @@ def calculate_pitching_stats(df, season=None):
         ibb_events = {"IBB"}
         strikeouts = {"K", "Auto K"}
         hr_allowed = {"HR"}
-        single_out_bip = {"FO", "LGO", "PO", "RGO", "Bunt", "LO"}
+        single_out_bip = {"FO", "LGO", "PO", "RGO", "Bunt"}
         caught_stealing = {"CS"}
         stolen_bases = {"SB"}
     else:
@@ -562,7 +562,6 @@ def calculate_pitching_stats(df, season=None):
             "LGO",
             "PO",
             "RGO",
-            "LO",
             "BUNT GO",
             "Bunt GO",
             "BUNT Sac",
@@ -650,12 +649,16 @@ def calculate_pitching_stats(df, season=None):
 
     non_dp_tp_df = df[~df["Old Result"].isin(["DP", "TP"])]
     k_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(strikeouts)].shape[0]
+    
+    # Count LO as 2 outs on the non-DP/TP dataframe
+    lo_dp_outs = non_dp_tp_df[non_dp_tp_df[result_col] == "LO"].shape[0] * 2
+
     other_single_outs = non_dp_tp_df[
         non_dp_tp_df[result_col].isin(single_out_bip)
     ].shape[0]
     cs_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(caught_stealing)].shape[0]
 
-    total_outs = dp_outs + tp_outs + k_outs + other_single_outs + cs_outs
+    total_outs = dp_outs + tp_outs + k_outs + lo_dp_outs + other_single_outs + cs_outs
     ip = total_outs / 3
 
     runs_allowed = df["Run"].sum()
