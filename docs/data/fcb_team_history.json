@@ -1,0 +1,94 @@
+{
+    "S3":{
+        "CSUF": {"name": "California State University, Fullerton Titans", "logo_dark": "img/fcb_logos/CSUFullerton.svg", "logo_light": "img/fcb_logos/CSUFullerton.svg"},
+        "HOF": {"name": "Hofstra University Pride"},
+        "IND": {"name": "Indiana University Hoosiers", "logo_dark": "img/fcb_logos/Indiana.svg", "logo_light": "img/fcb_logos/Indiana.svg"},
+        "NEB": {"name": "University of Nebraska Cornhuskers", "logo_dark": "img/fcb_logos/Nebraska.svg", "logo_light": "img/fcb_logos/Nebraska.svg"},
+        "RIC": {"name": "Rice University Owls", "logo_dark": "img/fcb_logos/Rice.svg", "logo_light": "img/fcb_logos/Rice.svg"},
+        "TCU": {"name": "Texas Christian Univeristy Horned Frogs", "logo_dark": "img/fcb_logos/TCU.svg", "logo_light": "img/fcb_logos/TCU.svg"},
+        "TOL": {"name": "University of Toledo Rockets", "logo_dark": "img/fcb_logos/Toledo.svg", "logo_light": "img/fcb_logos/Toledo.svg"},
+        "UOM": {"name": "University of Miami Hurricanes", "logo_dark": "img/fcb_logos/Miami.svg", "logo_light": "img/fcb_logos/Miami.svg"},
+        "VT": {"name": "Virginia Tech Hokies", "logo_dark": "img/fcb_logos/VirginiaTech.svg", "logo_light": "img/fcb_logos/VirginiaTech.svg"},
+        "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
+    },
+    "S4": {
+        "CLM": {"name": "Clemson University Tigers", "logo_dark": "img/fcb_logos/Clemson.svg", "logo_light": "img/fcb_logos/Clemson.svg"},
+        "GT": {"name": "Georgia Tech Yellow Jackets", "logo_dark": "img/fcb_logos/GeorgiaTech.svg", "logo_light": "img/fcb_logos/GeorgiaTech.svg"},
+        "MIC": {"name": "University of Michigan Wolverines", "logo_dark": "img/fcb_logos/Michigan.svg", "logo_light": "img/fcb_logos/Michigan.svg"},
+        "NU": {"name": "University of Nebraska Cornhuskers", "logo_dark": "img/fcb_logos/Nebraska.svg", "logo_light": "img/fcb_logos/Nebraska.svg"},
+        "SBU": {"name": "Stony Brook University Seawolves", "logo_dark": "img/fcb_logos/StonyBrook.svg", "logo_light": "img/fcb_logos/StonyBrook.svg"},
+        "ULA": {"name": "University of California, Los Angeles Bruins", "logo_dark": "img/fcb_logos/UCLA.svg", "logo_light": "img/fcb_logos/UCLA.svg"},
+        "UNC": {"name": "University of North Carolina Tar Heels", "logo_dark": "img/fcb_logos/UNC.svg", "logo_light": "img/fcb_logos/UNC.svg"},
+        "UWO": {"name": "University of Western Ontario Mustangs"},
+        "VAN": {"name": "Vanderbilt University Commodores", "logo_dark": "img/fcb_logos/Vanderbilt.svg", "logo_light": "img/fcb_logos/Vanderbilt.svg"},
+        "VT": {"name": "Virginia Tech Hokies", "logo_dark": "img/fcb_logos/VirginiaTech.svg", "logo_light": "img/fcb_logos/VirginiaTech.svg"},
+        "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"},
+        "WWU": {"name": "Walla Walla University Wolves"}
+    },
+    "S5": {
+        "CCU": {"name": "Coastal Carolina University Chanticleers", "logo_dark": "img/fcb_logos/CoastalCarolina.svg", "logo_light": "img/fcb_logos/CoastalCarolina.svg"},
+        "GT": {"name": "Georgia Tech Yellow Jackets", "logo_dark": "img/fcb_logos/GeorgiaTech.svg", "logo_light": "img/fcb_logos/GeorgiaTech.svg"},
+        "LOU": {"name": "University of Louisville Cardinals", "logo_dark": "img/fcb_logos/Louisville.svg", "logo_light": "img/fcb_logos/Louisville.svg"},
+        "NCS": {"name": "North Carolina State University Wolfpack", "logo_dark": "img/fcb_logos/NCState.svg", "logo_light": "img/fcb_logos/NCState.svg"},
+        "NEB": {"name": "University of Nebraska Cornhuskers", "logo_dark": "img/fcb_logos/Nebraska.svg", "logo_light": "img/fcb_logos/Nebraska.svg"},
+        "SLC": {"name": "Sarah Lawrence College Gryphons"},
+        "UNC": {"name": "University of North Carolina Tar Heels", "logo_dark": "img/fcb_logos/UNC.svg", "logo_light": "img/fcb_logos/UNC.svg"},
+        "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
+    },
+    "S6": {
+        "GEO": {"name": "Georgetown University Hoyas", "logo_dark": "img/fcb_logos/Georgetown.svg", "logo_light": "img/fcb_logos/Georgetown.svg"},
+        "GT": {"name": "Georgia Tech Yellow Jackets", "logo_dark": "img/fcb_logos/GeorgiaTech.svg", "logo_light": "img/fcb_logos/GeorgiaTech.svg"},
+        "NEB": {"name": "University of Nebraska Cornhuskers", "logo_dark": "img/fcb_logos/Nebraska.svg", "logo_light": "img/fcb_logos/Nebraska.svg"},
+        "OSU": {"name": "Oklahoma State University Cowboys", "logo_dark": "img/fcb_logos/OSU.svg", "logo_light": "img/fcb_logos/OSU.svg"}
+    },
+    "S7": {
+        "LBS": {"name": "California State University, Long Beach Dirtbags", "logo_dark": "img/fcb_logos/LongBeachSt.svg", "logo_light": "img/fcb_logos/LongBeachSt.svg"},
+        "MICH": {"name": "University of Michigan Wolverines", "logo_dark": "img/fcb_logos/Michigan.svg", "logo_light": "img/fcb_logos/Michigan.svg"},
+        "RU": {"name": "Rutgers University Scarlet Knights", "logo_dark": "img/fcb_logos/Rutgers.svg", "logo_light": "img/fcb_logos/Rutgers.svg"},
+        "UCLA": {"name": "University of California, Los Angeles Bruins", "logo_dark": "img/fcb_logos/UCLA.svg", "logo_light": "img/fcb_logos/UCLA.svg"},
+        "USF": {"name": "University of South Florida Bulls"},
+        "UVA": {"name": "University of Virginia Cavaliers", "logo_dark": "img/fcb_logos/Virginia.svg", "logo_light": "img/fcb_logos/Virginia.svg"}
+    },
+    "S8": {
+        "HRW": {"name": "University of Hawaii Rainbow Warriors", "logo_dark": "img/fcb_logos/Hawaii.svg", "logo_light": "img/fcb_logos/Hawaii.svg"},
+        "MCH": {"name": "University of Michigan Wolverines", "logo_dark": "img/fcb_logos/Michigan.svg", "logo_light": "img/fcb_logos/Michigan.svg"},
+        "MSU": {"name": "Michigan State University Spartans", "logo_dark": "img/fcb_logos/MichiganSt.svg", "logo_light": "img/fcb_logos/MichiganSt.svg"},
+        "ORD": {"name": "University of Oregon Ducks", "logo_dark": "img/fcb_logos/Oregon.svg", "logo_light": "img/fcb_logos/Oregon.svg"},
+        "PAN": {"name": "University of Pittsburgh Panthers", "logo_dark": "img/fcb_logos/Pitt.svg", "logo_light": "img/fcb_logos/Pitt.svg"},
+        "PUR": {"name": "Purdue University Boilermakers", "logo_dark": "img/fcb_logos/Purdue.svg", "logo_light": "img/fcb_logos/Purdue.svg"},
+        "TEN": {"name": "University of Tennessee Volunteers", "logo_dark": "img/fcb_logos/Tennessee.svg", "logo_light": "img/fcb_logos/Tennessee.svg"},
+        "UCL": {"name": "University of California, Los Angeles Bruins", "logo_dark": "img/fcb_logos/UCLA.svg", "logo_light": "img/fcb_logos/UCLA.svg"}
+    },
+    "S9": {
+        "HVD": {"name": "Harvard University Crimson", "logo_dark": "img/fcb_logos/Harvard.svg", "logo_light": "img/fcb_logos/Harvard.svg"},
+        "TEN": {"name": "University of Tennessee Volunteers", "logo_dark": "img/fcb_logos/Tennessee.svg", "logo_light": "img/fcb_logos/Tennessee.svg"},
+        "TOL": {"name": "University of Toledo Rockets", "logo_dark": "img/fcb_logos/Toledo.svg", "logo_light": "img/fcb_logos/Toledo.svg"},
+        "UCC": {"name": "UCC Rebels"},
+        "UGA": {"name": "University of Georgia Bulldogs", "logo_dark": "img/fcb_logos/Georgia.svg", "logo_light": "img/fcb_logos/Georgia.svg"},
+        "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
+    },
+    "S10": {
+        "BSU": {"name": "Boise State University Broncos", "logo_dark": "img/fcb_logos/BoiseSt.svg", "logo_light": "img/fcb_logos/BoiseSt.svg"},
+        "FOK": {"name": "Delta State University Fighting Okra", "logo_dark": "img/fcb_logos/DeltaSt.svg", "logo_light": "img/fcb_logos/DeltaSt.svg"},
+        "NWU": {"name": "Northwestern University Wildcats", "logo_dark": "img/fcb_logos/Northwestern.svg", "logo_light": "img/fcb_logos/Northwestern.svg"},
+        "TOL": {"name": "University of Toledo Rockets", "logo_dark": "img/fcb_logos/Toledo.svg", "logo_light": "img/fcb_logos/Toledo.svg"},
+        "TXS": {"name": "Texas State University Bobcats", "logo_dark": "img/fcb_logos/TexasSt.svg", "logo_light": "img/fcb_logos/TexasSt.svg"},
+        "UNA": {"name": "University of North Alabama Lions", "logo_dark": "img/fcb_logos/NAlabama.svg", "logo_light": "img/fcb_logos/NAlabama.svg"}
+    },
+    "S11": {
+        "BDE": {"name": "Dartmouth College Big Green", "logo_dark": "img/fcb_logos/Dartmouth.svg", "logo_light": "img/fcb_logos/Dartmouth.svg"},
+        "BSU": {"name": "Ball State University Cardinals", "logo_dark": "img/fcb_logos/BallSt.svg", "logo_light": "img/fcb_logos/BallSt.svg"},
+        "CSU": {"name": "Cleveland State University Vikings", "logo_dark": "img/fcb_logos/ClevelandSt.svg", "logo_light": "img/fcb_logos/ClevelandSt.svg"},
+        "KSU": {"name": "Kent State University Golden Flashes", "logo_dark": "img/fcb_logos/KentSt.svg", "logo_light": "img/fcb_logos/KentSt.svg"},
+        "UWU": {"name": "University of Washington Huskies", "logo_dark": "img/fcb_logos/Washington.svg", "logo_light": "img/fcb_logos/Washington.svg"},
+        "ZOO": {"name": "University of Massachusetts Minutemen", "logo_dark": "img/fcb_logos/UMass.svg", "logo_light": "img/fcb_logos/UMass.svg"}
+    },
+    "S12": {
+        "FUR": {"name": "Friends University Falcons"},
+        "LSU": {"name": "Louisiana State University Tigers", "logo_dark": "img/fcb_logos/LSU.svg", "logo_light": "img/fcb_logos/LSU.svg"},
+        "OWL": {"name": "Florida Atlantic University Owls", "logo_dark": "img/fcb_logos/FAU.svg", "logo_light": "img/fcb_logos/FAU.svg"},
+        "SYR": {"name": "Syracuse University Orange", "logo_dark": "img/fcb_logos/Syracuse.svg", "logo_light": "img/fcb_logos/Syracuse.svg"},
+        "UOM": {"name": "University of Miami Hurricanes", "logo_dark": "img/fcb_logos/Miami.svg", "logo_light": "img/fcb_logos/Miami.svg"},
+        "WKU": {"name": "Western Kentucky University Hilltoppers", "logo_dark": "img/fcb_logos/WKentucky.svg", "logo_light": "img/fcb_logos/WKentucky.svg"}
+    }
+}

@@ -13,8 +13,9 @@ It performs the following key functions:
 
 from data_loader import load_all_seasons, load_player_types
 from game_processing import get_pitching_decisions
-from gamelog_corrections import apply_gamelog_corrections
+from mlr_gamelog_corrections import apply_gamelog_corrections
 from milr_gamelog_corrections import apply_milr_gamelog_corrections
+#from fcb_gamelog_corrections import apply_fcb_gamelog_corrections
 from player_data_corrections import apply_postprocessing_corrections
 from neutral_result_correction import correct_neutral_results
 import pandas as pd
@@ -546,7 +547,7 @@ def calculate_pitching_stats(df, season=None):
         ibb_events = {"IBB"}
         strikeouts = {"K", "Auto K"}
         hr_allowed = {"HR"}
-        single_out_bip = {"FO", "LGO", "PO", "RGO", "Bunt", "LO"}
+        single_out_bip = {"FO", "LGO", "PO", "RGO", "Bunt"}
         caught_stealing = {"CS"}
         stolen_bases = {"SB"}
     else:
@@ -561,7 +562,6 @@ def calculate_pitching_stats(df, season=None):
             "LGO",
             "PO",
             "RGO",
-            "LO",
             "BUNT GO",
             "Bunt GO",
             "BUNT Sac",
@@ -649,12 +649,16 @@ def calculate_pitching_stats(df, season=None):
 
     non_dp_tp_df = df[~df["Old Result"].isin(["DP", "TP"])]
     k_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(strikeouts)].shape[0]
+    
+    # Count LO as 2 outs on the non-DP/TP dataframe
+    lo_dp_outs = non_dp_tp_df[non_dp_tp_df[result_col] == "LO"].shape[0] * 2
+
     other_single_outs = non_dp_tp_df[
         non_dp_tp_df[result_col].isin(single_out_bip)
     ].shape[0]
     cs_outs = non_dp_tp_df[non_dp_tp_df[result_col].isin(caught_stealing)].shape[0]
 
-    total_outs = dp_outs + tp_outs + k_outs + other_single_outs + cs_outs
+    total_outs = dp_outs + tp_outs + k_outs + lo_dp_outs + other_single_outs + cs_outs
     ip = total_outs / 3
 
     runs_allowed = df["Run"].sum()
@@ -2507,11 +2511,12 @@ def generate_league_data(
     player_types_source,
     output_prefix="",
     is_milr=False,
+    is_fcb=False
 ):
     """
     This is a generalized function to process league data.
     """
-    print(f"--- Generating data for {'MiLR' if is_milr else 'MLR'} ---")
+    print(f"--- Generating data for {'FCB' if is_fcb else 'MiLR' if is_milr else 'MLR'} ---")
     print("Loading all season data... (this may take a moment)")
     all_season_data, most_recent_season, force_recalc_seasons = load_all_seasons(
         gamelog_file_path=gamelog_source, cache_prefix=output_prefix
@@ -2522,7 +2527,7 @@ def generate_league_data(
 
     print("Loading player type data...")
     player_type_data = load_player_types(
-        player_types_file_path=player_types_source, force_seasons=force_recalc_seasons, cache_prefix=output_prefix
+        player_types_file_path=player_types_source, force_seasons=force_recalc_seasons, cache_prefix=output_prefix, league_prefix=output_prefix
     )
 
     if is_milr:
@@ -2592,7 +2597,7 @@ def generate_league_data(
                     if value is not None:
                         player_info[pid][key] = value
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
       # Save the combined player info to a JSON file
       output_path = os.path.join(
           os.path.dirname(os.path.abspath(__file__)),
@@ -2701,7 +2706,8 @@ def generate_league_data(
         ["Season", "Game ID", "Inning"]
     ).cumcount()
 
-    if not is_milr:
+    """
+    if not is_milr and not is_fcb:
         print("Applying manual gamelog corrections...")
         combined_df = (
             combined_df.groupby(["Season", "Game ID"])
@@ -2718,10 +2724,21 @@ def generate_league_data(
             .reset_index()
         )
         print("MiLR gamelog corrections applied.")
+
+    if is_fcb:
+        print("Applying FCB manual gamelog corrections...")
+        combined_df = (
+            combined_df.groupby(["Season", "Game ID"])
+            .apply(lambda g: apply_fcb_gamelog_corrections(g, g.name), include_groups=False)
+            .reset_index()
+        )
+        print("FCB gamelog corrections applied.")
+    """
+        
     decision_games_df = combined_df.copy()
     if most_recent_season:
         most_recent_season_df = combined_df[combined_df["Season"] == most_recent_season]
-        if not most_recent_season_df.empty:
+        if not most_recent_season_df.empty and not is_fcb:
             max_session = most_recent_season_df["Session"].max()
             print(
                 f"Excluding games from session {max_session} of {most_recent_season} from pitching decision calculations."
@@ -2805,7 +2822,7 @@ def generate_league_data(
 
     player_id_to_name_map = {k: v["currentName"] for k, v in player_id_map.items()}
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
         print("Pre-processing gamelogs for stat corrections...")
         combined_df = preprocess_gamelogs_for_stat_corrections(
             combined_df, player_id_to_name_map
@@ -3168,7 +3185,7 @@ def generate_league_data(
     all_hitting_stats = pd.concat(all_seasons_hitting_stats, ignore_index=True)
     all_pitching_stats = pd.concat(all_seasons_pitching_stats, ignore_index=True)
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
         print("Applying post-processing corrections...")
         all_pitching_stats = apply_postprocessing_corrections(all_pitching_stats)
 
@@ -3214,7 +3231,7 @@ def generate_league_data(
     all_pitching_stats = pd.concat([all_pitching_stats, career_pitching_stats], ignore_index=True)
     print("Career stats calculated.")
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
         print("Calculating franchise totals...")
         output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs", "data")
         team_history_path = os.path.join(output_dir, f"{output_prefix}team_history.json")
@@ -3290,7 +3307,7 @@ def generate_league_data(
                 all_pitching_stats = pd.concat([all_pitching_stats, franchise_type_pitching_stats], ignore_index=True)
         print("Franchise-type totals calculated.")
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
         print("Updating glossary with RE Matrix...")
         glossary_path = os.path.join(output_dir, "glossary.json")
         try:
@@ -3313,7 +3330,7 @@ def generate_league_data(
     output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs", "data")
     if not os.path.exists(output_dir): os.makedirs(output_dir)
 
-    if not is_milr:
+    if not is_milr and not is_fcb:
         max_session = 0
         if most_recent_season:
             most_recent_season_df = combined_df[combined_df["Season"] == most_recent_season]
@@ -3339,16 +3356,17 @@ def generate_league_data(
             if all_team_pitching_stats_for_json[col].dtype == "float64": all_team_pitching_stats_for_json[col] = all_team_pitching_stats_for_json[col].round(3)
         all_team_pitching_stats_for_json.to_json(os.path.join(output_dir, f"{output_prefix}team_pitching_stats.json"), orient="split", index=False)
 
-    print(f"--- {'MiLR' if is_milr else 'MLR'} data generation complete! ---")
+    print(f"--- {'FCB' if is_fcb else 'MiLR' if is_milr else 'MLR'} data generation complete! ---")
 
 
 def main():
     # Generate MLR data
     generate_league_data(
-        gamelog_source="data/gamelogs.txt",
-        player_types_source="data/player_types.txt",
-        output_prefix="",
-        is_milr=False
+        gamelog_source="data/mlr_gamelogs.txt",
+        player_types_source="data/mlr_player_types.txt",
+        output_prefix="mlr_",
+        is_milr=False,
+        is_fcb=False
     )
 
     # Generate MiLR data
@@ -3356,9 +3374,18 @@ def main():
         gamelog_source="data/milr_gamelogs.txt",
         player_types_source="data/milr_player_types.txt",
         output_prefix="milr_",
-        is_milr=True
+        is_milr=True,
+        is_fcb=False
     )
-
+    
+    # Generate FCB data
+    generate_league_data(
+        gamelog_source="data/fcb_gamelogs.txt",
+        player_types_source="data/fcb_player_types.txt",
+        output_prefix="fcb_",
+        is_milr=False,
+        is_fcb=True
+    )
 
 if __name__ == "__main__":
     main()

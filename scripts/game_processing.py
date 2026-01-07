@@ -504,6 +504,7 @@ class Game:
             self.away_team = self.df.iloc[0]["Batter Team"]
 
         self.df = self.df.reset_index()
+        self.df["calculated_outs"] = 0
         self.df["inning_num"], self.df["is_top"] = zip(
             *self.df["Inning"].apply(self._parse_inning)
         )
@@ -536,6 +537,8 @@ class Game:
                 "away_score_entered": self.away_score,
                 "inning_entered": 1,
                 "top_of_inning_entered": True,
+                "outs_entered": 0,
+                "runners_entered": [False, False, False],
             }
         )
         self.pitching_log.append(
@@ -546,6 +549,8 @@ class Game:
                 "away_score_entered": self.away_score,
                 "inning_entered": 1,
                 "top_of_inning_entered": False,
+                "outs_entered": 0,
+                "runners_entered": [False, False, False],
             }
         )
 
@@ -566,14 +571,17 @@ class Game:
                 and current_pitcher_id != self.home_pitcher
             ):
                 self.home_pitcher = current_pitcher_id
+                runners_entered = self.obc_to_runners.get(play["OBC"], [False, False, False])
                 self.pitching_log.append(
                     {
                         "pitcher_id": self.home_pitcher,
                         "team": self.home_team,
-                        "home_score_entered": self.home_score,
-                        "away_score_entered": self.away_score,
+                        "home_score_entered": play["Home Score"],
+                        "away_score_entered": play["Away Score"],
                         "inning_entered": self.inning,
                         "top_of_inning_entered": self.top_of_inning,
+                        "outs_entered": play["Outs"],
+                        "runners_entered": runners_entered,
                     }
                 )
             elif (
@@ -581,14 +589,17 @@ class Game:
                 and current_pitcher_id != self.away_pitcher
             ):
                 self.away_pitcher = current_pitcher_id
+                runners_entered = self.obc_to_runners.get(play["OBC"], [False, False, False])
                 self.pitching_log.append(
                     {
                         "pitcher_id": self.away_pitcher,
                         "team": self.away_team,
-                        "home_score_entered": self.home_score,
-                        "away_score_entered": self.away_score,
+                        "home_score_entered": play["Home Score"],
+                        "away_score_entered": play["Away Score"],
                         "inning_entered": self.inning,
                         "top_of_inning_entered": self.top_of_inning,
+                        "outs_entered": play["Outs"],
+                        "runners_entered": runners_entered,
                     }
                 )
 
@@ -639,6 +650,7 @@ class Game:
                 season,
                 pa_type,
             )
+            self.df.loc[index, "calculated_outs"] = outs_for_play
             self.runners_on_base = new_runners_on_base
 
             if is_top:
@@ -700,13 +712,7 @@ def get_pitching_decisions(game_df, season_name):
             break
 
     # Calculate innings pitched for each pitcher
-    outs_per_pitcher = game.df.groupby("Pitcher ID").apply(
-        lambda x: x.apply(
-            lambda row: _get_outs_from_result(row["Exact Result"], row["Old Result"]),
-            axis=1,
-        ).sum(),
-        include_groups=False,
-    )
+    outs_per_pitcher = game.df.groupby("Pitcher ID")["calculated_outs"].sum()
     ip = outs_per_pitcher / 3.0
 
     starting_pitcher_home = game.df[game.df["Pitcher Team"] == game.home_team][
@@ -781,47 +787,77 @@ def get_pitching_decisions(game_df, season_name):
         "Pitcher ID"
     ].unique()
 
+    # Create a dictionary for quick lookup of pitcher entry data
+    pitcher_entries = {
+        p_id: next((p for p in game.pitching_log if p["pitcher_id"] == p_id), None)
+        for p_id in game.df["Pitcher ID"].unique()
+    }
+
     if len(winning_team_pitchers) > 1:  # Must have at least one reliever
         last_pitcher = winning_team_pitchers[-1]
+
+        # Save Logic
         if last_pitcher != winning_pitcher:
-            # Find when the last pitcher entered the game
-            last_pitcher_entry = next(
-                (
-                    p
-                    for p in reversed(game.pitching_log)
-                    if p["pitcher_id"] == last_pitcher
-                ),
-                None,
-            )
+            entry = pitcher_entries.get(last_pitcher)
+            if entry:
+                # Determine lead at time of entry
+                if winning_team == game.home_team:
+                    lead = entry["home_score_entered"] - entry["away_score_entered"]
+                else:
+                    lead = entry["away_score_entered"] - entry["home_score_entered"]
 
-            if last_pitcher_entry:
-                lead = abs(
-                    last_pitcher_entry["home_score_entered"]
-                    - last_pitcher_entry["away_score_entered"]
-                )
-                # Condition 1: Entered with lead of 3 or less and pitched 1+ inning
-                if lead <= 3 and ip.get(last_pitcher, 0) >= 1:
-                    save_pitcher = last_pitcher
-                # Condition 3: Pitched 3+ innings
-                elif ip.get(last_pitcher, 0) >= 3:
+                runners_on_entry = sum(1 for r in entry["runners_entered"] if r)
+                innings_pitched = ip.get(last_pitcher, 0)
+
+                # Case 1: The "Standard" Save
+                cond1 = lead <= 3 and innings_pitched >= 1.0
+                # Case 2: The "Tying Run" Save
+                cond2 = lead <= runners_on_entry + 2
+                # Case 3: The "Long Relief" Save
+                cond3 = innings_pitched >= 2.0
+
+                if cond1 or cond2 or cond3:
                     save_pitcher = last_pitcher
 
-        # Holds
+        # Hold Logic
+        # Iterate through relievers who are not the first or last pitcher
         for i in range(1, len(winning_team_pitchers) - 1):
             pitcher = winning_team_pitchers[i]
-            pitcher_entry = next(
-                (p for p in reversed(game.pitching_log) if p["pitcher_id"] == pitcher),
-                None,
-            )
-            if pitcher_entry:
-                lead = abs(
-                    pitcher_entry["home_score_entered"]
-                    - pitcher_entry["away_score_entered"]
+            entry = pitcher_entries.get(pitcher)
+
+            if not entry or ip.get(pitcher, 0) == 0:
+                continue
+
+            # Check for save situation on entry
+            if winning_team == game.home_team:
+                lead_entered = (
+                    entry["home_score_entered"] - entry["away_score_entered"]
                 )
-                if lead <= 3 and ip.get(pitcher, 0) > 0:
-                    # Check if they left with the lead intact
-                    # This is simplified: we assume if they are not the losing pitcher, they left with the lead
-                    if pitcher != losing_pitcher:
+            else:
+                lead_entered = (
+                    entry["away_score_entered"] - entry["home_score_entered"]
+                )
+            runners_on_entry = sum(1 for r in entry["runners_entered"] if r)
+
+            is_save_sit = lead_entered <= 3 or lead_entered <= runners_on_entry + 2
+
+            if is_save_sit:
+                # Find when the pitcher left and check if lead was intact
+                next_pitcher_id = winning_team_pitchers[i + 1]
+                exit_info = pitcher_entries.get(next_pitcher_id)
+                if exit_info:
+                    if winning_team == game.home_team:
+                        lead_left = (
+                            exit_info["home_score_entered"]
+                            - exit_info["away_score_entered"]
+                        )
+                    else:
+                        lead_left = (
+                            exit_info["away_score_entered"]
+                            - exit_info["home_score_entered"]
+                        )
+
+                    if lead_left > 0:
                         holds.append(pitcher)
 
     # Ensure no pitcher receives multiple decisions
