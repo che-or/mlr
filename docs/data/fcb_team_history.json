@@ -63,7 +63,7 @@
         "HVD": {"name": "Harvard University Crimson", "logo_dark": "img/fcb_logos/Harvard.svg", "logo_light": "img/fcb_logos/Harvard.svg"},
         "TEN": {"name": "University of Tennessee Volunteers", "logo_dark": "img/fcb_logos/Tennessee.svg", "logo_light": "img/fcb_logos/Tennessee.svg"},
         "TOL": {"name": "University of Toledo Rockets", "logo_dark": "img/fcb_logos/Toledo.svg", "logo_light": "img/fcb_logos/Toledo.svg"},
-        "UCC": {"name": "University College Cork Rebels"},
+        "UCC": {"name": "UCC Rebels"},
         "UGA": {"name": "University of Georgia Bulldogs", "logo_dark": "img/fcb_logos/Georgia.svg", "logo_light": "img/fcb_logos/Georgia.svg"},
         "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
     },
