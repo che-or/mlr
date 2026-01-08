@@ -3,37 +3,30 @@ import pandas as pd
 import re
 
 
-def _get_outs_from_result(result, old_result):
-    # Ensure result and old_result are strings for comparison
+def _get_outs_from_result(result):
+    # Ensure result is a string for comparison
     result = str(result) if pd.notna(result) else ""
-    old_result = str(old_result) if pd.notna(old_result) else ""
     # Using the sets from scouting_tool.py
-    single_out_bip_old = {"FO", "LGO", "PO", "RGO", "Bunt", "LO"}
-    strikeouts_old = {"K", "Auto K"}
-
-    single_out_bip_new = {
+    single_out_bip = {
         "FO",
         "LGO",
         "PO",
         "RGO",
         "LO",
-        "BUNT GO",
-        "Bunt GO",
         "BUNT Sac",
         "Bunt Sac",
         "Sac",
     }
-    strikeouts_new = {"K", "Auto K", "Bunt K", "AUTO K"}
+    strikeouts = {"K", "Auto K", "Bunt K", "AUTO K"}
 
-    if result in single_out_bip_new or old_result in single_out_bip_old:
+    if result in single_out_bip:
         return 1
-    if result in strikeouts_new or old_result in strikeouts_old:
+    if result in strikeouts:
         return 1
 
     # Caught stealing is also an out
-    caught_stealing_old = {"CS"}
-    caught_stealing_new = {"CS 2B", "CS 3B", "CS Home", "CMS 3B", "CMS Home"}
-    if result in caught_stealing_new or old_result in caught_stealing_old:
+    caught_stealing = {"CS 2B", "CS 3B", "CS Home", "CMS 3B", "CMS Home"}
+    if result in caught_stealing:
         return 1
 
     if result.upper() in ["BUNT GO", "BUNT DP"]:
@@ -84,45 +77,12 @@ class Game:
         season,
         pa_type,
     ):
-        # Pre-S7 infield-in deduction logic
-        if (
-            season < 7
-            and result in ["RGO", "LGO"]
-            and runners_before_play[2]
-            and current_outs < 2
-        ):
-            # This is an ambiguous groundout in an early season. We must decide if it was "infield in" (no run)
-            # or "infield back" (run scores). We do this by simulating the "infield in" outcome and comparing
-            # the resulting base state to the actual base state from the gamelog (obc_after).
-
-            # Simulate Outcome B: Infield in, run holds (using original S7+ logic)
-            gamestate_tuple_B = tuple(runners_before_play)
-            infield_in_outcomes_B = {
-                (False, False, True): ([False, False, True], 0, 1),
-                (True, False, True): ([False, True, True], 0, 1),
-                (False, True, True): ([False, True, True], 0, 1),
-                (True, True, True): ([True, True, True], 0, 1),  # Force out at home
-            }
-            outcome_B = infield_in_outcomes_B.get(gamestate_tuple_B)
-
-            if outcome_B:
-                new_runners_B, runs_B, outs_B = outcome_B
-                obc_B = self._runners_to_obc(new_runners_B)
-
-                # If the simulated "infield in" state matches the actual result, then use it.
-                if obc_B == obc_after:
-                    return new_runners_B, runs_B, outs_B
-
-            # If we are here, the "infield in" simulation did NOT match the ground truth.
-            # Therefore, the play must have been "infield back". We now do nothing and allow the function
-            # to proceed to the default ground ball and double play logic below, which correctly models this.
-
         runs_this_play = 0
         new_runners = list(runners_before_play)
-        outs_for_play = _get_outs_from_result(result, old_result)
+        outs_for_play = _get_outs_from_result(result)
 
         # Infield-in logic for S7+
-        if season >= 7 and pa_type == 2 and result in ["RGO", "LGO"]:
+        if pa_type == 2 and result in ["RGO", "LGO"]:
             gamestate_tuple = tuple(runners_before_play)
             infield_in_outcomes = {
                 # gamestate: (new_runners, runs, outs)
@@ -273,31 +233,30 @@ class Game:
             return new_runners, runs_this_play, outs_for_play
 
         # Original logic for other seasons
-        elif 2 <= season <= 3:
-            if str(result).strip() == "DP":
-                outs_for_play = 2
-                if runners_before_play[0]:
-                    new_runners = [False, False, False]
-                    if (current_outs + outs_for_play) < 3:
-                        if runners_before_play[2]:
-                            runs_this_play += 1
-                        if runners_before_play[1]:
-                            new_runners[2] = True
-                else:
-                    # This is a non-force DP. Assume a flyout and a runner is doubled-off.
-                    # No runners advance. The most advanced runner is out.
-                    new_runners = list(runners_before_play)
-                    if new_runners[2]:
-                        new_runners[2] = False
-                    elif new_runners[1]:
-                        new_runners[1] = False
-                    runs_this_play = 0
-                return new_runners, runs_this_play, outs_for_play
-            if str(result).strip() == "TP":
-                outs_for_play = 3
+        if str(result).strip() == "DP":
+            outs_for_play = 2
+            if runners_before_play[0]:
                 new_runners = [False, False, False]
+                if (current_outs + outs_for_play) < 3:
+                    if runners_before_play[2]:
+                        runs_this_play += 1
+                    if runners_before_play[1]:
+                        new_runners[2] = True
+            else:
+                # This is a non-force DP. Assume a flyout and a runner is doubled-off.
+                # No runners advance. The most advanced runner is out.
+                new_runners = list(runners_before_play)
+                if new_runners[2]:
+                    new_runners[2] = False
+                elif new_runners[1]:
+                    new_runners[1] = False
                 runs_this_play = 0
-                return new_runners, runs_this_play, outs_for_play
+            return new_runners, runs_this_play, outs_for_play
+        if str(result).strip() == "TP":
+            outs_for_play = 3
+            new_runners = [False, False, False]
+            runs_this_play = 0
+            return new_runners, runs_this_play, outs_for_play
 
         # --- DEFAULT LOGIC ---
         if result == "HR":
@@ -366,19 +325,6 @@ class Game:
             if runners_before_play[2]:
                 new_runners[2] = False
                 runs_this_play += 1
-        elif result.upper() == "SB":
-            # Check for runner on 1st stealing 2nd (if 2nd is open)
-            if new_runners[0] and not new_runners[1]:
-                new_runners[0] = False
-                new_runners[1] = True
-            # Check for runner on 2nd stealing 3rd (if 3rd is open)
-            elif new_runners[1] and not new_runners[2]:
-                new_runners[1] = False
-                new_runners[2] = True
-            # Check for runner on 3rd stealing home
-            elif new_runners[2]:
-                new_runners[2] = False
-                runs_this_play += 1
         elif result.upper() == "MSTEAL 3B":
             new_runners[2] = runners_before_play[1] or runners_before_play[2]
             new_runners[1] = runners_before_play[0]
@@ -398,13 +344,6 @@ class Game:
         elif result.upper() == "CS HOME":
             if runners_before_play[2]:
                 new_runners[2] = False
-        elif result.upper() == "CS":
-            if runners_before_play[0] and not runners_before_play[1]:
-                new_runners[0] = False
-            elif runners_before_play[1] and not runners_before_play[2]:
-                new_runners[1] = False
-            elif runners_before_play[2]:
-                new_runners[2] = False
         elif result.upper() == "CMS 3B":
             if runners_before_play[1]:
                 new_runners[2] = runners_before_play[2]
@@ -419,7 +358,7 @@ class Game:
             if current_outs < 2 and runners_before_play[2]:
                 runs_this_play += 1
                 new_runners[2] = False
-        elif result in ["BUNT Sac", "Bunt Sac", "Bunt"]:
+        elif result in ["BUNT Sac", "Bunt Sac"]:
             if current_outs < 2:
                 if runners_before_play == [False, True, True]:
                     pass
@@ -611,13 +550,13 @@ class Game:
             )
             obc_after = play["OBC_after"]
 
-            result = (
-                play["Exact Result"]
-                if pd.notna(play["Exact Result"])
-                else play["Old Result"]
-            )
-            result = str(result)
             old_result = play["Old Result"]
+            if old_result in ["DP", "TP", "Sac"]:
+                result = old_result
+            else:
+                result = play["Exact Result"]
+
+            result = str(result)
             diff_val = play.get("Diff")
             if pd.isna(diff_val):
                 diff = 0
