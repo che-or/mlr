@@ -5093,8 +5093,10 @@
         "formerNames": []
     },
     "3004": {
-        "currentName": "Baberaham Lincoln",
-        "formerNames": []
+        "currentName": "Otto von Pitchmark",
+        "formerNames": [
+            "Baberaham Lincoln"
+        ]
     },
     "3006": {
         "currentName": "Not Gaca",
