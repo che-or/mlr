@@ -2,7 +2,7 @@ Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,
 Mr. Irresistible,431.0,348.0,Dylan Green,305.0,420.0,1B,72,T1,0,0,,,,,0,1,1,1,1,BER,BAY,1B,,,1
 Niko Banks,430.0,69.0,Dylan Green,305.0,900.0,BB,169,T1,0,1,,,,,0,0,1,1,1,BER,BAY,BB,,,1
 Grigury Polinko,452.0,12.0,Dylan Green,305.0,115.0,1B,103,T1,0,4,,,,,0,0,1,1,1,BER,BAY,1B,,,1
-Mac Aves,154.0,949.0,Giminy Schlimjim,188.0,501.0,DP,448,T1,0,7,,,,,1,0,1,1,1,BER,BAY,DP,,,1
+Mac Aves,154.0,949.0,Giminy Schlimjim,188.0,501.0,DP,448,T1,0,7,,,,,1,0,1,1,1,BER,BAY,LGO,,,1
 Pickle Rick,150.0,69.0,Giminy Schlimjim,188.0,696.0,RGO,373,T1,2,3,,,,,0,0,1,1,1,BER,BAY,RGO,,,1
 Alex Peters,187.0,,Silver Shore,,,Auto BB,,B1,0,0,,,,,0,0,2,1,1,BAY,BER,Auto BB,,,10
 Javier Tootblan,192.0,555.0,Angel Leon,234.0,343.0,FO,212,B1,0,1,,,,,0,0,2,1,1,BAY,BER,FO,,,1
@@ -29,7 +29,7 @@ Giminy Schlimjim,188.0,949.0,Angel Leon,234.0,181.0,FO,232,B3,2,1,,,,,0,0,6,1,1,
 Ronald Eagle Sr.,167.0,420.0,Karl Jernigan,439.0,123.0,FO,297,T1,0,0,,,,,0,0,7,2,1,CCF,SCB,FO,,,1
 Nicholas Verducci,70.0,211.0,Karl Jernigan,439.0,123.0,1B,88,T1,1,0,,,,,0,0,7,2,1,CCF,SCB,1B,,,1
 Doob Tuber,240.0,745.0,Karl Jernigan,439.0,878.0,1B,133,T1,1,1,,,,,0,0,7,2,1,CCF,SCB,1B,,,1
-Geno Scaramucci,165.0,567.0,Karl Jernigan,439.0,14.0,DP,447,T1,1,4,,,,,0,0,7,2,1,CCF,SCB,DP,,,1
+Geno Scaramucci,165.0,567.0,Karl Jernigan,439.0,14.0,DP,447,T1,1,4,,,,,0,0,7,2,1,CCF,SCB,LGO,,,1
 Tony McGooch,7.0,16.0,Ronald Eagle Sr.,167.0,69.0,2B,53,B1,0,0,,,,,0,0,8,2,1,SCB,CCF,2B,,,1
 J.J. Guemes,207.0,420.0,Ronald Eagle Sr.,167.0,123.0,K,297,B1,0,2,,,,,0,0,8,2,1,SCB,CCF,K,,,1
 Quint Kimbrel,20.0,666.0,Ronald Eagle Sr.,167.0,1000.0,K,334,B1,1,2,,,,,0,0,8,2,1,SCB,CCF,K,,,1
@@ -47,19 +47,19 @@ Ronald Eagle Sr.,167.0,69.0,Karl Jernigan,439.0,786.0,FO,283,T3,0,0,,,,,0,0,11,2
 Nicholas Verducci,70.0,311.0,Karl Jernigan,439.0,187.0,1B,124,T3,1,0,,,,,0,0,11,2,1,CCF,SCB,1B,,,1
 Doob Tuber,240.0,642.0,Karl Jernigan,439.0,538.0,1B,104,T3,1,1,,,,,0,0,11,2,1,CCF,SCB,1B,,,1
 Geno Scaramucci,165.0,536.0,Karl Jernigan,439.0,666.0,1B,130,T3,1,4,,,,,0,0,11,2,1,CCF,SCB,1B,,,1
-Whorpus Whiff,61.0,69.0,Karl Jernigan,439.0,666.0,DP,403,T3,1,7,,,,,0,0,11,2,1,CCF,SCB,DP,,,1
+Whorpus Whiff,61.0,69.0,Karl Jernigan,439.0,666.0,DP,403,T3,1,7,,,,,0,0,11,2,1,CCF,SCB,RGO,,,1
 Karl Jernigan,439.0,1.0,Ronald Eagle Sr.,167.0,112.0,BB,111,B3,0,0,,,,,0,0,12,2,1,SCB,CCF,BB,,,1
-Tony McGooch,7.0,345.0,Ronald Eagle Sr.,167.0,949.0,DP,396,B3,0,1,,,,,0,0,12,2,1,SCB,CCF,DP,,,1
+Tony McGooch,7.0,345.0,Ronald Eagle Sr.,167.0,949.0,DP,396,B3,0,1,,,,,0,0,12,2,1,SCB,CCF,RGO,,,1
 J.J. Guemes,207.0,,Whorpus Whiff,61.0,,Auto K,,B3,2,0,,,,,0,0,12,2,1,SCB,CCF,Auto K,,,9
 Chad Berry,172.0,215.0,Karl Jernigan,439.0,333.0,1B,118,T4,0,0,,,,,0,0,13,2,1,CCF,SCB,1B,,,1
-Trey Rangers,224.0,579.0,Karl Jernigan,439.0,999.0,DP,420,T4,0,1,,,,,0,0,13,2,1,CCF,SCB,DP,,,1
+Trey Rangers,224.0,579.0,Karl Jernigan,439.0,999.0,DP,420,T4,0,1,,,,,0,0,13,2,1,CCF,SCB,RGO,,,1
 Michael Ikenberry,63.0,666.0,Karl Jernigan,439.0,999.0,K,333,T4,2,0,,,,,0,0,13,2,1,CCF,SCB,K,,,1
 Quint Kimbrel,20.0,101.0,Whorpus Whiff,61.0,792.0,K,309,B4,0,0,,,,,0,0,14,2,1,SCB,CCF,K,,,1
 John Bumbus,85.0,873.0,Whorpus Whiff,61.0,692.0,FO,181,B4,1,0,,,,,0,0,14,2,1,SCB,CCF,FO,,,1
 Gianni,209.0,537.0,Whorpus Whiff,61.0,813.0,K,276,B4,2,0,,,,,0,0,14,2,1,SCB,CCF,K,,,1
 Sadler Oriole,231.0,200.0,Karl Jernigan,439.0,576.0,PO,376,T5,0,0,,,,,0,0,15,2,1,CCF,SCB,PO,,,1
 Ronald Eagle Sr.,167.0,76.0,Karl Jernigan,439.0,883.0,BB,193,T5,1,0,,,,,0,0,15,2,1,CCF,SCB,BB,,,1
-Nicholas Verducci,70.0,274.0,Karl Jernigan,439.0,725.0,DP,451,T5,1,1,,,,,0,0,15,2,1,CCF,SCB,DP,,,1
+Nicholas Verducci,70.0,274.0,Karl Jernigan,439.0,725.0,DP,451,T5,1,1,,,,,0,0,15,2,1,CCF,SCB,LGO,,,1
 Les Dee-Ache,83.0,634.0,Whorpus Whiff,61.0,400.0,K,234,B5,0,0,,,,,0,0,16,2,1,SCB,CCF,K,,,1
 Coco Watanabe,204.0,106.0,Whorpus Whiff,61.0,420.0,K,314,B5,1,0,,,,,0,0,16,2,1,SCB,CCF,K,,,1
 Kimberly Jongun,44.0,710.0,Whorpus Whiff,61.0,960.0,K,250,B5,2,0,,,,,0,0,16,2,1,SCB,CCF,K,,,1
@@ -131,7 +131,7 @@ Marcus Hammond,366.0,,S.A.R. Dinka,395.0,,Auto K,,B3,2,0,,,,,0,0,31,4,1,FTP,TZS,
 Heinrich Frosch,343.0,578.0,Jeffrey LaVert,189.0,733.0,BB,155,T1,0,0,,,,,0,0,32,5,2,BAY,TZS,BB,,,1
 Emma Twatson,344.0,891.0,Jeffrey LaVert,189.0,983.0,1B,92,T1,0,1,,,,,0,0,32,5,2,BAY,TZS,1B,,,1
 Javier Tootblan,192.0,900.0,Jeffrey LaVert,189.0,203.0,K,303,T1,0,4,,,,,0,0,32,5,2,BAY,TZS,K,,,1
-Two Fingers Fernhaus,447.0,900.0,Jeffrey LaVert,189.0,393.0,DP,493,T1,1,4,,,,,0,0,32,5,2,BAY,TZS,DP,,,1
+Two Fingers Fernhaus,447.0,900.0,Jeffrey LaVert,189.0,393.0,DP,493,T1,1,4,,,,,0,0,32,5,2,BAY,TZS,LGO,,,1
 Jimjon Jonjim,272.0,432.0,Garitek,307.0,411.0,3B,21,B1,0,0,,,,,0,1,33,5,2,TZS,BAY,3B,,,1
 Teo Jones,137.0,312.0,Garitek,307.0,702.0,PO,390,B1,0,3,,,,,0,0,33,5,2,TZS,BAY,PO,,,1
 Pete Jones,216.0,8.0,Garitek,307.0,33.0,3B,25,B1,1,3,,,,,1,0,33,5,2,TZS,BAY,3B,,,1
@@ -199,7 +199,7 @@ Zachary Benz,225.0,290.0,Master Cashier,93.0,777.0,LGO,487,B2,1,0,,,,,0,0,46,6,2
 Clifton Outlaw,178.0,405.0,Master Cashier,93.0,333.0,2B,72,B2,2,0,,,,,0,0,46,6,2,CCF,LAN,2B,,,1
 Todd Bonzalez,60.0,870.0,Master Cashier,93.0,547.0,K,323,B2,2,2,,,,,0,0,46,6,2,CCF,LAN,K,,,1
 Master Cashier,93.0,15.0,Todd Bonzalez,60.0,111.0,1B,96,T3,0,0,,,,,0,0,47,6,2,LAN,CCF,1B,,,1
-John Johnson Jr.,91.0,786.0,Todd Bonzalez,60.0,351.0,DP,435,T3,0,1,,,,,0,0,47,6,2,LAN,CCF,DP,,,1
+John Johnson Jr.,91.0,786.0,Todd Bonzalez,60.0,351.0,DP,435,T3,0,1,,,,,0,0,47,6,2,LAN,CCF,RGO,,,1
 Morris Deratt,104.0,203.0,Todd Bonzalez,60.0,290.0,2B,87,T3,2,0,,,,,0,1,47,6,2,LAN,CCF,2B,,,1
 Babatunde Oladotun,386.0,769.0,Todd Bonzalez,60.0,645.0,1B,124,T3,2,2,,,,,1,0,47,6,2,LAN,CCF,1B,,,1
 Peter Peckershine,389.0,410.0,Todd Bonzalez,60.0,783.0,RGO,373,T3,2,5,,,,,0,0,47,6,2,LAN,CCF,RGO,,,1
@@ -209,12 +209,12 @@ Phil Coulson,226.0,933.0,Master Cashier,93.0,101.0,BB,168,B3,2,0,,,,,0,0,48,6,2,
 Rickey Tucker,163.0,486.0,Master Cashier,93.0,101.0,PO,385,B3,2,1,,,,,0,0,48,6,2,CCF,LAN,PO,,,1
 A.Z. Chapman,14.0,931.0,Todd Bonzalez,60.0,19.0,1B,88,T4,0,0,,,,,0,0,49,6,2,LAN,CCF,1B,,,1
 Thomas Nova,1.0,1.0,Todd Bonzalez,60.0,377.0,K,376,T4,0,1,,,,,0,0,49,6,2,LAN,CCF,K,,,1
-Kid Notcher,429.0,4.0,Todd Bonzalez,60.0,400.0,DP,396,T4,1,1,,,,,0,0,49,6,2,LAN,CCF,DP,,,1
+Kid Notcher,429.0,4.0,Todd Bonzalez,60.0,400.0,DP,396,T4,1,1,,,,,0,0,49,6,2,LAN,CCF,RGO,,,1
 Maxo Caluow,441.0,811.0,Master Cashier,93.0,1.0,BB,190,B4,0,0,,,,,0,0,50,6,2,CCF,LAN,BB,,,1
 Matt Verdin,230.0,231.0,Master Cashier,93.0,567.0,K,336,B4,0,1,,,,,0,0,50,6,2,CCF,LAN,K,,,1
-Zachary Benz,225.0,809.0,Master Cashier,93.0,376.0,DP,433,B4,1,1,,,,,0,0,50,6,2,CCF,LAN,DP,,,1
+Zachary Benz,225.0,809.0,Master Cashier,93.0,376.0,DP,433,B4,1,1,,,,,0,0,50,6,2,CCF,LAN,RGO,,,1
 Conor Sexton,289.0,632.0,Todd Bonzalez,60.0,466.0,1B,166,T5,0,0,,,,,0,0,51,6,2,LAN,CCF,1B,,,1
-Master Cashier,93.0,701.0,Todd Bonzalez,60.0,209.0,DP,492,T5,0,1,,,,,0,0,51,6,2,LAN,CCF,DP,,,1
+Master Cashier,93.0,701.0,Todd Bonzalez,60.0,209.0,DP,492,T5,0,1,,,,,0,0,51,6,2,LAN,CCF,LGO,,,1
 John Johnson Jr.,91.0,420.0,Todd Bonzalez,60.0,799.0,K,379,T5,2,0,,,,,0,0,51,6,2,LAN,CCF,K,,,1
 Clifton Outlaw,178.0,901.0,Master Cashier,93.0,449.0,LGO,452,B5,0,0,,,,,0,0,52,6,2,CCF,LAN,LGO,,,1
 Todd Bonzalez,60.0,978.0,Master Cashier,93.0,714.0,FO,264,B5,1,0,,,,,0,0,52,6,2,CCF,LAN,FO,,,1
@@ -235,7 +235,7 @@ Kris Jaxon,152.0,650.0,Caleb Athen,325.0,896.0,FO,246,B1,1,1,,,,,0,0,56,7,2,BER,
 Robert Callahan,465.0,,Caleb Athen,325.0,,Auto K,,B1,2,1,,,,,0,0,56,7,2,BER,SCB,Auto K,,,9
 Hank Murphy,76.0,121.0,Angel Leon,234.0,982.0,1B,139,T2,0,0,,,,,0,0,57,7,2,SCB,BER,1B,,,1
 Gil Metz,206.0,905.0,Angel Leon,234.0,67.0,1B,162,T2,0,1,,,,,0,0,57,7,2,SCB,BER,1B,,,1
-Autumn Halladay,297.0,200.0,Angel Leon,234.0,621.0,DP,421,T2,0,4,,,,,0,0,57,7,2,SCB,BER,DP,,,1
+Autumn Halladay,297.0,200.0,Angel Leon,234.0,621.0,DP,421,T2,0,4,,,,,0,0,57,7,2,SCB,BER,RGO,,,1
 Jay Embee,2069.0,,Angel Leon,234.0,,Auto K,,T2,2,3,,,,,0,0,57,7,2,SCB,BER,Auto K,,,9
 Barney Turbo,28.0,399.0,Caleb Athen,325.0,165.0,FO,234,B2,0,0,,,,,0,0,58,7,2,BER,SCB,FO,,,1
 Meerkat Timmons,147.0,555.0,Caleb Athen,325.0,165.0,RGO,390,B2,1,0,,,,,0,0,58,7,2,BER,SCB,RGO,,,1
@@ -286,7 +286,7 @@ Filet-Mignon Jackson,320.0,117.0,Artanis Jones,37.0,725.0,K,392,T3,1,0,,,,,0,0,6
 Marcus Hammond,366.0,,Artanis Jones,37.0,,Auto K,,T3,2,0,,,,,0,0,68,8,2,FTP,CIN,Auto K,,,9
 Dallas Houston,416.0,467.0,Filib Al'Anhar JR.,352.0,98.0,K,369,B3,0,0,,,,,0,0,69,8,2,CIN,FTP,K,,,1
 Jered Bentley,420.0,420.0,Filib Al'Anhar JR.,352.0,277.0,1B,143,B3,1,0,,,,,0,0,69,8,2,CIN,FTP,1B,,,1
-Takahiro Hirasawa,419.0,511.0,Filib Al'Anhar JR.,352.0,980.0,DP,469,B3,1,1,,,,,0,0,69,8,2,CIN,FTP,DP,,,1
+Takahiro Hirasawa,419.0,511.0,Filib Al'Anhar JR.,352.0,980.0,DP,469,B3,1,1,,,,,0,0,69,8,2,CIN,FTP,LGO,,,1
 Tommy Brown,142.0,761.0,Artanis Jones,37.0,506.0,FO,255,T4,0,0,,,,,0,0,70,8,2,FTP,CIN,FO,,,1
 Solf J. Kimblee,335.0,975.0,Artanis Jones,37.0,3.0,3B,28,T4,1,0,,,,,0,1,70,8,2,FTP,CIN,3B,,,1
 Niklas Sheely,214.0,,Artanis Jones,37.0,,Auto K,,T4,1,3,,,,,0,0,70,8,2,FTP,CIN,Auto K,,,9
@@ -333,7 +333,7 @@ Gottlieb Giannopolous,89.0,74.0,Einhorn,74.0,607.0,LGO,467,T2,1,0,,,,,0,0,79,10,
 Tommy Testudo,208.0,475.0,Einhorn,74.0,645.0,BB,170,T2,2,0,,,,,0,0,79,10,3,SCB,LAN,BB,,,1
 Joe Watson,194.0,831.0,Einhorn,74.0,545.0,K,286,T2,2,1,,,,,0,0,79,10,3,SCB,LAN,K,,,1
 Xander MacAnder,424.0,444.0,Hans Ali,197.0,312.0,1B,132,B2,0,0,,,,,0,0,80,10,3,LAN,SCB,1B,,,1
-Doug Quail,388.0,975.0,Hans Ali,197.0,312.0,DP,337,B2,0,1,,,,,0,0,80,10,3,LAN,SCB,DP,,,1
+Doug Quail,388.0,975.0,Hans Ali,197.0,312.0,DP,337,B2,0,1,,,,,0,0,80,10,3,LAN,SCB,RGO,,,1
 Thomas Nova,1.0,812.0,Hans Ali,197.0,312.0,LGO,500,B2,2,0,,,,,0,0,80,10,3,LAN,SCB,LGO,,,1
 Hans Ali,197.0,465.0,Einhorn,74.0,135.0,K,330,T3,0,0,,,,,0,0,81,10,3,SCB,LAN,K,,,1
 Tony McGooch,7.0,666.0,Einhorn,74.0,843.0,BB,177,T3,1,0,,,,,0,0,81,10,3,SCB,LAN,BB,,,1
@@ -343,7 +343,7 @@ Caleb Athen,325.0,,Einhorn,74.0,,Auto K,,T3,2,4,,,,,0,0,81,10,3,SCB,LAN,Auto K,,
 Javier Abiscal,364.0,713.0,Hans Ali,197.0,467.0,BB,246,B3,0,0,,,,,0,0,82,10,3,LAN,SCB,BB,,,1
 Einhorn,74.0,187.0,Hans Ali,197.0,321.0,1B,134,B3,0,1,,,,,0,0,82,10,3,LAN,SCB,1B,,,1
 Anatoli Smorin,387.0,945.0,Hans Ali,197.0,321.0,K,376,B3,0,4,,,,,0,0,82,10,3,LAN,SCB,K,,,1
-John Johnson Jr.,91.0,844.0,Hans Ali,197.0,321.0,DP,477,B3,1,4,,,,,0,0,82,10,3,LAN,SCB,DP,,,1
+John Johnson Jr.,91.0,844.0,Hans Ali,197.0,321.0,DP,477,B3,1,4,,,,,0,0,82,10,3,LAN,SCB,LGO,,,1
 Trontavious Saddlebags,276.0,441.0,Einhorn,74.0,81.0,K,360,T4,0,0,,,,,0,0,83,10,3,SCB,LAN,K,,,1
 Gottlieb Giannopolous,89.0,741.0,Einhorn,74.0,195.0,RGO,454,T4,1,0,,,,,0,0,83,10,3,SCB,LAN,RGO,,,1
 Tommy Testudo,208.0,255.0,Einhorn,74.0,45.0,FO,210,T4,2,0,,,,,0,0,83,10,3,SCB,LAN,FO,,,1
@@ -379,7 +379,7 @@ Splash Nelson,312.0,449.0,Rich Mahogany,265.0,921.0,LGO,472,B1,1,0,,,,,0,0,90,11
 Joey Bagpipes,318.0,111.0,Rich Mahogany,265.0,472.0,RGO,361,B1,2,0,,,,,0,0,90,11,3,BAY,CIN,RGO,,,1
 Jered Bentley,420.0,420.0,Giminy Schlimjim,188.0,995.0,RGO,425,T2,0,0,,,,,0,0,91,11,3,CIN,BAY,RGO,,,1
 Lightning Balls,350.0,913.0,Giminy Schlimjim,188.0,994.0,1B,81,T2,1,0,,,,,0,0,91,11,3,CIN,BAY,1B,,,1
-Duke McCracken,417.0,69.0,Giminy Schlimjim,188.0,510.0,DP,441,T2,1,1,,,,,0,0,91,11,3,CIN,BAY,DP,,,1
+Duke McCracken,417.0,69.0,Giminy Schlimjim,188.0,510.0,DP,441,T2,1,1,,,,,0,0,91,11,3,CIN,BAY,LGO,,,1
 Emma Twatson,344.0,69.0,Rich Mahogany,265.0,722.0,RGO,347,B2,0,0,,,,,0,0,92,11,3,BAY,CIN,RGO,,,1
 Chunky Dongmeister,348.0,800.0,Rich Mahogany,265.0,1.0,FO,301,B2,1,0,,,,,0,0,92,11,3,BAY,CIN,FO,,,1
 Ty Johnson,345.0,777.0,Rich Mahogany,265.0,106.0,K,329,B2,2,0,,,,,0,0,92,11,3,BAY,CIN,K,,,1
@@ -387,7 +387,7 @@ Joe Random,415.0,661.0,Giminy Schlimjim,188.0,171.0,LGO,490,T3,0,0,,,,,0,0,93,11
 Rich Mahogany,265.0,788.0,Giminy Schlimjim,188.0,490.0,K,298,T3,1,0,,,,,0,0,93,11,3,CIN,BAY,K,,,1
 Hingle McCringleberry,257.0,,Giminy Schlimjim,188.0,,Auto K,,T3,2,0,,,,,0,0,93,11,3,CIN,BAY,Auto K,,,9
 Lane Drew,190.0,468.0,Rich Mahogany,265.0,224.0,BB,244,B3,0,0,,,,,0,0,94,11,3,BAY,CIN,BB,,,1
-Tara Dactyl,252.0,589.0,Rich Mahogany,265.0,66.0,DP,477,B3,0,1,,,,,0,0,94,11,3,BAY,CIN,DP,,,1
+Tara Dactyl,252.0,589.0,Rich Mahogany,265.0,66.0,DP,477,B3,0,1,,,,,0,0,94,11,3,BAY,CIN,LGO,,,1
 Jerry Jingles,146.0,800.0,Rich Mahogany,265.0,401.0,RGO,399,B3,2,0,,,,,0,0,94,11,3,BAY,CIN,RGO,,,1
 Ovaltine Jenkins,404.0,762.0,Giminy Schlimjim,188.0,306.0,LGO,456,T4,0,0,,,,,0,0,95,11,3,CIN,BAY,LGO,,,1
 Dirtbag Darrell,262.0,99.0,Giminy Schlimjim,188.0,180.0,2B,81,T4,1,0,,,,,0,1,95,11,3,CIN,BAY,2B,,,1
@@ -474,7 +474,7 @@ Hayden McCloud,129.0,777.0,Jackson Sanchez,46.0,772.0,HR,5,T1,2,1,,,,,2,1,111,13
 Becky McBadbat,277.0,345.0,Jackson Sanchez,46.0,691.0,FO,346,T1,2,0,,,,,0,0,111,13,4,TZS,CIN,FO,,,1
 Ovaltine Jenkins,404.0,308.0,Dominus Nominus,278.0,501.0,BB,193,B1,0,0,,,,,0,0,112,13,4,CIN,TZS,BB,,,1
 Rich Mahogany,265.0,196.0,Dominus Nominus,278.0,501.0,K,305,B1,0,1,,,,,0,0,112,13,4,CIN,TZS,K,,,1
-Rapid Eagle,263.0,501.0,Dominus Nominus,278.0,15.0,DP,486,B1,1,1,,,,,0,0,112,13,4,CIN,TZS,DP,,,1
+Rapid Eagle,263.0,501.0,Dominus Nominus,278.0,15.0,DP,486,B1,1,1,,,,,0,0,112,13,4,CIN,TZS,LGO,,,1
 Carlos Brownson,132.0,222.0,Jackson Sanchez,46.0,820.0,PO,402,T2,0,0,,,,,0,0,113,13,4,TZS,CIN,PO,,,1
 Dart Ragusa,134.0,900.0,Jackson Sanchez,46.0,420.0,LGO,480,T2,1,0,,,,,0,0,113,13,4,TZS,CIN,LGO,,,1
 Tyler Gordon,136.0,666.0,Jackson Sanchez,46.0,267.0,K,399,T2,2,0,,,,,0,0,113,13,4,TZS,CIN,K,,,1
@@ -486,7 +486,7 @@ Jimjon Jonjim,272.0,849.0,Jackson Sanchez,46.0,895.0,2B,46,T3,0,0,,,,,0,1,115,13
 Lloyd Gross,135.0,169.0,Jackson Sanchez,46.0,27.0,1B,142,T3,0,2,,,,,0,0,115,13,4,TZS,CIN,1B,,,1
 Slapshot Brady,141.0,367.0,Jackson Sanchez,46.0,27.0,K,340,T3,0,5,,,,,0,0,115,13,4,TZS,CIN,K,,,1
 Jeffrey LaVert,189.0,125.0,Jackson Sanchez,46.0,27.0,1B,98,T3,1,5,,,,,1,0,115,13,4,TZS,CIN,1B,,,1
-Hayden McCloud,129.0,908.0,Jackson Sanchez,46.0,420.0,DP,488,T3,1,4,,,,,0,0,115,13,4,TZS,CIN,DP,,,1
+Hayden McCloud,129.0,908.0,Jackson Sanchez,46.0,420.0,DP,488,T3,1,4,,,,,0,0,115,13,4,TZS,CIN,LGO,,,1
 Takahiro Hirasawa,419.0,857.0,Dominus Nominus,278.0,69.0,BB,212,B3,0,0,,,,,0,1,116,13,4,CIN,TZS,BB,,,1
 Jackson Sanchez,46.0,420.0,Dominus Nominus,278.0,555.0,1B,135,B3,0,1,,,,,0,1,116,13,4,CIN,TZS,1B,,,1
 Ovaltine Jenkins,404.0,806.0,Dominus Nominus,278.0,999.0,BB,193,B3,0,4,,,,,0,1,116,13,4,CIN,TZS,BB,,,1
@@ -526,10 +526,10 @@ Morris Deratt,104.0,649.0,Moe Lester,19.0,420.0,FO,229,T1,0,0,,,,,0,0,122,14,4,L
 A.Z. Chapman,14.0,675.0,Moe Lester,19.0,666.0,HR,9,T1,1,0,,,,,1,1,122,14,4,LAN,BER,HR,,,1
 Babatunde Oladotun,386.0,69.0,Moe Lester,19.0,926.0,1B,143,T1,1,0,,,,,0,0,122,14,4,LAN,BER,1B,,,1
 John Johnson Jr.,91.0,212.0,Moe Lester,19.0,69.0,1B,143,T1,1,1,,,,,0,0,122,14,4,LAN,BER,1B,,,1
-Doug Quail,388.0,420.0,Moe Lester,19.0,837.0,DP,417,T1,1,4,,,,,0,0,122,14,4,LAN,BER,DP,,,1
+Doug Quail,388.0,420.0,Moe Lester,19.0,837.0,DP,417,T1,1,4,,,,,0,0,122,14,4,LAN,BER,RGO,,,1
 Sam Wood,108.0,300.0,Master Cashier,93.0,917.0,PO,417,B1,0,0,,,,,0,0,123,14,4,BER,LAN,PO,,,1
 Niko Banks,430.0,300.0,Master Cashier,93.0,193.0,1B,107,B1,1,0,,,,,0,0,123,14,4,BER,LAN,1B,,,1
-Rex Kidobi,126.0,267.0,Master Cashier,93.0,805.0,DP,462,B1,1,1,,,,,0,0,123,14,4,BER,LAN,DP,,,1
+Rex Kidobi,126.0,267.0,Master Cashier,93.0,805.0,DP,462,B1,1,1,,,,,0,0,123,14,4,BER,LAN,LGO,,,1
 Conor Sexton,289.0,29.0,Moe Lester,19.0,272.0,K,243,T2,0,0,,,,,0,0,124,14,4,LAN,BER,K,,,1
 Thomas Nova,1.0,79.0,Moe Lester,19.0,737.0,K,342,T2,1,0,,,,,0,0,124,14,4,LAN,BER,K,,,1
 Rub A. Chikin,2.0,511.0,Moe Lester,19.0,584.0,1B,73,T2,2,0,,,,,0,0,124,14,4,LAN,BER,1B,,,1
@@ -552,7 +552,7 @@ Rex Kidobi,126.0,435.0,Master Cashier,93.0,777.0,FO,342,B3,2,0,,,,,0,0,127,14,4,
 Conor Sexton,289.0,352.0,Moe Lester,19.0,357.0,HR,5,T4,0,0,,,,,1,1,128,14,4,LAN,BER,HR,,,1
 Thomas Nova,1.0,77.0,Moe Lester,19.0,746.0,K,331,T4,0,0,,,,,0,0,128,14,4,LAN,BER,K,,,1
 Rub A. Chikin,2.0,201.0,Moe Lester,19.0,381.0,BB,180,T4,1,0,,,,,0,0,128,14,4,LAN,BER,BB,,,1
-Master Cashier,93.0,404.0,Moe Lester,19.0,926.0,DP,478,T4,1,1,,,,,0,0,128,14,4,LAN,BER,DP,,,1
+Master Cashier,93.0,404.0,Moe Lester,19.0,926.0,DP,478,T4,1,1,,,,,0,0,128,14,4,LAN,BER,LGO,,,1
 Robert Callahan,465.0,111.0,Master Cashier,93.0,404.0,K,293,B4,0,0,,,,,0,0,129,14,4,BER,LAN,K,,,1
 Jay Money,241.0,210.0,Master Cashier,93.0,736.0,LGO,474,B4,1,0,,,,,0,0,129,14,4,BER,LAN,LGO,,,1
 Michael Voorhees,23.0,78.0,Master Cashier,93.0,142.0,2B,64,B4,2,0,,,,,0,0,129,14,4,BER,LAN,2B,,,1
@@ -563,14 +563,14 @@ Babatunde Oladotun,386.0,1.0,Moe Lester,19.0,784.0,FO,217,T5,1,1,,,,,0,0,130,14,
 John Johnson Jr.,91.0,,Moe Lester,19.0,,Auto BB,,T5,2,1,,,,,0,0,130,14,4,LAN,BER,Auto BB,,,10
 Doug Quail,388.0,123.0,Pickle Rick,150.0,613.0,LGO,490,T5,2,4,,,,,0,0,130,14,4,LAN,BER,LGO,,,1
 Nikolas Romero,157.0,999.0,Master Cashier,93.0,101.0,1B,102,B5,0,0,,,,,0,0,131,14,4,BER,LAN,1B,,,1
-Sam Smith,158.0,276.0,Master Cashier,93.0,752.0,DP,476,B5,0,1,,,,,0,0,131,14,4,BER,LAN,DP,,,1
+Sam Smith,158.0,276.0,Master Cashier,93.0,752.0,DP,476,B5,0,1,,,,,0,0,131,14,4,BER,LAN,LGO,,,1
 Sam Wood,108.0,612.0,Master Cashier,93.0,554.0,2B,58,B5,2,0,,,,,0,0,131,14,4,BER,LAN,2B,,,1
 Niko Banks,430.0,343.0,Master Cashier,93.0,7.0,K,336,B5,2,2,,,,,0,0,131,14,4,BER,LAN,K,,,1
 Niklas Sheely,214.0,,Ethyn Williams,229.0,,Auto K,,T1,0,0,,,,,0,0,132,15,4,FTP,SCB,Auto K,,,9
 Supreme Asslord,363.0,222.0,Ethyn Williams,229.0,723.0,LGO,499,T1,1,0,,,,,0,0,132,15,4,FTP,SCB,LGO,,,1
 Jeff Dingerhitter,298.0,645.0,Ethyn Williams,229.0,111.0,LGO,466,T1,2,0,,,,,0,0,132,15,4,FTP,SCB,LGO,,,1
 Ethyn Williams,229.0,,Filib Al'Anhar JR.,352.0,,Auto BB,,B1,0,0,,,,,0,0,133,15,4,SCB,FTP,Auto BB,,,10
-Cue Anon,381.0,17.0,Filib Al'Anhar JR.,352.0,497.0,DP,480,B1,0,1,,,,,0,0,133,15,4,SCB,FTP,DP,,,1
+Cue Anon,381.0,17.0,Filib Al'Anhar JR.,352.0,497.0,DP,480,B1,0,1,,,,,0,0,133,15,4,SCB,FTP,LGO,,,1
 Caleb Athen,325.0,720.0,Filib Al'Anhar JR.,352.0,896.0,FO,176,B1,2,0,,,,,0,0,133,15,4,SCB,FTP,FO,,,1
 Chuck McCluster,296.0,5.0,Ethyn Williams,229.0,658.0,K,347,T2,0,0,,,,,0,0,134,15,4,FTP,SCB,K,,,1
 Dwayne Stevenson,334.0,,Ethyn Williams,229.0,,Auto K,,T2,1,0,,,,,0,0,134,15,4,FTP,SCB,Auto K,,,9
@@ -616,9 +616,9 @@ Niklas Sheely,214.0,52.0,Ethyn Williams,229.0,621.0,RGO,431,T6,2,2,,,,,0,0,142,1
 Cue Anon,381.0,850.0,Filib Al'Anhar JR.,352.0,994.0,BB,144,B6,0,0,,,,,0,0,143,15,4,SCB,FTP,BB,,,1
 Caleb Athen,325.0,256.0,Filib Al'Anhar JR.,352.0,424.0,FO,168,B6,0,1,,,,,0,0,143,15,4,SCB,FTP,FO,,,1
 Hank Murphy,76.0,566.0,Filib Al'Anhar JR.,352.0,458.0,1B,108,B6,1,1,,,,,0,0,143,15,4,SCB,FTP,1B,,,1
-Kevin Arianna,113.0,69.0,Filib Al'Anhar JR.,352.0,563.0,DP,464,B6,1,4,,,,,0,0,143,15,4,SCB,FTP,DP,,,1
+Kevin Arianna,113.0,69.0,Filib Al'Anhar JR.,352.0,563.0,DP,464,B6,1,4,,,,,0,0,143,15,4,SCB,FTP,LGO,,,1
 Lane Drew,190.0,20.0,Whorpus Whiff,61.0,220.0,BB,200,T1,0,0,,,,,0,0,144,16,4,BAY,CCF,BB,,,1
-Alexander Hamilton,347.0,495.0,Whorpus Whiff,61.0,940.0,DP,445,T1,0,1,,,,,0,0,144,16,4,BAY,CCF,DP,,,1
+Alexander Hamilton,347.0,495.0,Whorpus Whiff,61.0,940.0,DP,445,T1,0,1,,,,,0,0,144,16,4,BAY,CCF,LGO,,,1
 Hes Nahstee,443.0,345.0,Whorpus Whiff,61.0,550.0,FO,205,T1,2,0,,,,,0,0,144,16,4,BAY,CCF,FO,,,1
 Chad Berry,172.0,453.0,Demetrios Ooga,180.0,731.0,FO,278,B1,0,0,,,,,0,0,145,16,4,CCF,BAY,FO,,,1
 Chris Orosz,219.0,316.0,Demetrios Ooga,180.0,695.0,PO,379,B1,1,0,,,,,0,0,145,16,4,CCF,BAY,PO,,,1
@@ -632,7 +632,7 @@ Demetrios Ooga,180.0,,Whorpus Whiff,61.0,,Auto BB,,T2,2,4,,,,,0,0,146,16,4,BAY,C
 Lane Drew,190.0,600.0,Whorpus Whiff,61.0,220.0,K,380,T2,2,7,,,,,0,0,146,16,4,BAY,CCF,K,,,1
 BB Bambino Jr.,115.0,538.0,Demetrios Ooga,180.0,128.0,PO,410,B2,0,0,,,,,0,0,147,16,4,CCF,BAY,PO,,,1
 Aych Imtiyaz,170.0,659.0,Demetrios Ooga,180.0,767.0,1B,108,B2,1,0,,,,,0,0,147,16,4,CCF,BAY,1B,,,1
-Bear Thomas,57.0,347.0,Demetrios Ooga,180.0,946.0,DP,401,B2,1,1,,,,,0,0,147,16,4,CCF,BAY,DP,,,1
+Bear Thomas,57.0,347.0,Demetrios Ooga,180.0,946.0,DP,401,B2,1,1,,,,,0,0,147,16,4,CCF,BAY,RGO,,,1
 Alexander Hamilton,347.0,44.0,Whorpus Whiff,61.0,980.0,3B,64,T3,0,0,,,,,0,1,148,16,4,BAY,CCF,3B,,,1
 Hes Nahstee,443.0,666.0,Whorpus Whiff,61.0,890.0,K,224,T3,0,3,,,,,0,0,148,16,4,BAY,CCF,K,,,1
 Sunshine Pardue,315.0,437.0,Whorpus Whiff,61.0,220.0,Sac,217,T3,1,3,,,,,1,0,148,16,4,BAY,CCF,FO,,,1
@@ -640,7 +640,7 @@ Goldie Jones,360.0,671.0,Whorpus Whiff,61.0,75.0,K,404,T3,2,0,,,,,0,0,148,16,4,B
 Sadler Oriole,231.0,9.0,Demetrios Ooga,180.0,143.0,1B,134,B3,0,0,,,,,0,1,149,16,4,CCF,BAY,1B,,,1
 Todd Bonzalez II,169.0,721.0,Demetrios Ooga,180.0,792.0,2B,71,B3,0,1,,,,,0,1,149,16,4,CCF,BAY,2B,,,1
 Forrest Saathoff,62.0,722.0,Demetrios Ooga,180.0,863.0,BB,141,B3,0,6,,,,,0,0,149,16,4,CCF,BAY,BB,,,1
-Chad Berry,172.0,870.0,Demetrios Ooga,180.0,418.0,DP,452,B3,0,7,,,,,1,0,149,16,4,CCF,BAY,DP,,,1
+Chad Berry,172.0,870.0,Demetrios Ooga,180.0,418.0,DP,452,B3,0,7,,,,,1,0,149,16,4,CCF,BAY,LGO,,,1
 Chris Orosz,219.0,380.0,Demetrios Ooga,180.0,341.0,3B,39,B3,2,3,,,,,1,0,149,16,4,CCF,BAY,3B,,,1
 Pike Miazza,221.0,167.0,Demetrios Ooga,180.0,546.0,K,379,B3,2,3,,,,,0,0,149,16,4,CCF,BAY,K,,,1
 Picov Andropov,340.0,2.0,Whorpus Whiff,61.0,400.0,PO,398,T4,0,0,,,,,0,0,150,16,4,BAY,CCF,PO,,,1
@@ -705,7 +705,7 @@ Rich Mahogany,265.0,814.0,Mac Aves,154.0,225.0,PO,411,B5,1,0,,,,,0,0,161,17,5,CI
 S. Jay Cutler,255.0,875.0,Mac Aves,154.0,550.0,K,325,B5,2,0,,,,,0,0,161,17,5,CIN,BER,K,,,1
 Rusty Shackleford,25.0,123.0,LaPrince Frye,45.0,877.0,FO,246,T6,0,0,,,,,0,0,162,17,5,BER,CIN,FO,,,1
 Grigury Polinko,452.0,561.0,LaPrince Frye,45.0,798.0,BB,237,T6,1,0,,,,,0,0,162,17,5,BER,CIN,BB,,,1
-Jordan Peppers,18.0,69.0,LaPrince Frye,45.0,602.0,DP,467,T6,1,1,,,,,0,0,162,17,5,BER,CIN,DP,,,1
+Jordan Peppers,18.0,69.0,LaPrince Frye,45.0,602.0,DP,467,T6,1,1,,,,,0,0,162,17,5,BER,CIN,LGO,,,1
 Ovaltine Jenkins,404.0,284.0,Mac Aves,154.0,347.0,1B,63,B6,0,0,,,,,0,1,163,17,5,CIN,BER,1B,,,1
 Dallas Houston,416.0,115.0,Mac Aves,154.0,119.0,HR,4,B6,0,1,,,,,2,1,163,17,5,CIN,BER,HR,,,1
 Pete Jones,216.0,711.0,S.A.R. Dinka,395.0,953.0,FO,242,T1,0,0,,,,,0,0,164,18,5,CCF,TZS,FO,,,1
@@ -714,7 +714,7 @@ Dean Wesrey,67.0,501.0,S.A.R. Dinka,395.0,200.0,K,301,T1,2,0,,,,,0,0,164,18,5,CC
 Jeffrey LaVert,189.0,200.0,Rickey Tucker,163.0,1.0,BB,199,B1,0,0,,,,,0,0,165,18,5,TZS,CCF,BB,,,1
 Tommy Oldman,143.0,270.0,Rickey Tucker,163.0,599.0,K,329,B1,0,1,,,,,0,0,165,18,5,TZS,CCF,K,,,1
 Thomas Berry,446.0,600.0,Rickey Tucker,163.0,467.0,1B,133,B1,1,1,,,,,0,0,165,18,5,TZS,CCF,1B,,,1
-Dart Ragusa,134.0,750.0,Rickey Tucker,163.0,222.0,DP,472,B1,1,4,,,,,0,0,165,18,5,TZS,CCF,DP,,,1
+Dart Ragusa,134.0,750.0,Rickey Tucker,163.0,222.0,DP,472,B1,1,4,,,,,0,0,165,18,5,TZS,CCF,LGO,,,1
 Chaz McDunnough,121.0,225.0,S.A.R. Dinka,395.0,542.0,K,317,T2,0,0,,,,,0,0,166,18,5,CCF,TZS,K,,,1
 Aych Imtiyaz,170.0,428.0,S.A.R. Dinka,395.0,864.0,RGO,436,T2,1,0,,,,,0,0,166,18,5,CCF,TZS,RGO,,,1
 Phil Coulson,226.0,628.0,S.A.R. Dinka,395.0,750.0,1B,122,T2,2,0,,,,,0,0,166,18,5,CCF,TZS,1B,,,1
@@ -738,7 +738,7 @@ Dart Ragusa,134.0,250.0,Rickey Tucker,163.0,12.0,K,238,B3,1,1,,,,,0,0,169,18,5,T
 Stephen Seconds,123.0,9.0,Rickey Tucker,163.0,250.0,FO,241,B3,2,1,,,,,0,0,169,18,5,TZS,CCF,FO,,,1
 Aych Imtiyaz,170.0,620.0,S.A.R. Dinka,395.0,168.0,RGO,452,T4,0,0,,,,,0,0,170,18,5,CCF,TZS,RGO,,,1
 Phil Coulson,226.0,235.0,S.A.R. Dinka,395.0,326.0,1B,91,T4,1,0,,,,,0,0,170,18,5,CCF,TZS,1B,,,1
-Atlas Quin,58.0,26.0,S.A.R. Dinka,395.0,412.0,DP,386,T4,1,1,,,,,0,0,170,18,5,CCF,TZS,DP,,,1
+Atlas Quin,58.0,26.0,S.A.R. Dinka,395.0,412.0,DP,386,T4,1,1,,,,,0,0,170,18,5,CCF,TZS,RGO,,,1
 Carlos Brownson,132.0,675.0,Rickey Tucker,163.0,412.0,FO,263,B4,0,0,,,,,0,0,171,18,5,TZS,CCF,FO,,,1
 Slapshot Brady,141.0,912.0,Rickey Tucker,163.0,121.0,FO,209,B4,1,0,,,,,0,0,171,18,5,TZS,CCF,FO,,,1
 Forrest Gleeson,51.0,25.0,Rickey Tucker,163.0,121.0,1B,96,B4,2,0,,,,,0,0,171,18,5,TZS,CCF,1B,,,1
@@ -749,7 +749,7 @@ Bear Thomas,57.0,750.0,S.A.R. Dinka,395.0,108.0,CS,358,T5,1,1,,,,,0,0,172,18,5,C
 Pete Jones,216.0,420.0,S.A.R. Dinka,395.0,822.0,PO,402,T5,2,0,,,,,0,0,172,18,5,CCF,TZS,PO,,,1
 Jeffrey LaVert,189.0,275.0,Rickey Tucker,163.0,385.0,1B,110,B5,0,0,,,,,0,0,173,18,5,TZS,CCF,1B,,,1
 Tommy Oldman,143.0,299.0,Rickey Tucker,163.0,888.0,PO,411,B5,0,1,,,,,0,0,173,18,5,TZS,CCF,PO,,,1
-Thomas Berry,446.0,510.0,Rickey Tucker,163.0,1.0,DP,491,B5,1,1,,,,,0,0,173,18,5,TZS,CCF,DP,,,1
+Thomas Berry,446.0,510.0,Rickey Tucker,163.0,1.0,DP,491,B5,1,1,,,,,0,0,173,18,5,TZS,CCF,LGO,,,1
 Geno Scaramucci,165.0,613.0,S.A.R. Dinka,395.0,777.0,1B,164,T6,0,0,,,,,0,0,174,18,5,CCF,TZS,1B,,,1
 Geno Scaramucci,165.0,309.0,S.A.R. Dinka,395.0,452.0,SB,143,T6,0,1,,,,,0,0,174,18,5,CCF,TZS,Steal 2B,,,4
 Geno Scaramucci,165.0,500.0,S.A.R. Dinka,395.0,713.0,CS,213,T6,0,2,,,,,0,0,174,18,5,CCF,TZS,CS 3B,,,4
@@ -784,7 +784,7 @@ Caleb Athen,325.0,438.0,Benjamin Abenduct,217.0,161.0,K,277,T3,0,0,,,,,0,0,180,1
 Dick McScrotington IV,81.0,711.0,Benjamin Abenduct,217.0,503.0,BB,208,T3,1,0,,,,,0,0,180,19,5,SCB,BAY,BB,,,1
 Tony McGooch,7.0,786.0,Benjamin Abenduct,217.0,901.0,1B,115,T3,1,1,,,,,0,0,180,19,5,SCB,BAY,1B,,,1
 Cue Anon,381.0,456.0,Benjamin Abenduct,217.0,677.0,BB,221,T3,1,4,,,,,0,0,180,19,5,SCB,BAY,BB,,,1
-Trontavious Saddlebags,276.0,623.0,Benjamin Abenduct,217.0,44.0,DP,421,T3,1,7,,,,,0,0,180,19,5,SCB,BAY,DP,,,1
+Trontavious Saddlebags,276.0,623.0,Benjamin Abenduct,217.0,44.0,DP,421,T3,1,7,,,,,0,0,180,19,5,SCB,BAY,RGO,,,1
 Giminy Schlimjim,188.0,666.0,Dick McScrotington IV,81.0,503.0,1B,163,B3,0,0,,,,,0,1,181,19,5,BAY,SCB,1B,,,1
 Valeria Lisova,183.0,569.0,Dick McScrotington IV,81.0,666.0,2B,97,B3,0,1,,,,,0,1,181,19,5,BAY,SCB,2B,,,1
 Eric Cowan,338.0,90.0,Dick McScrotington IV,81.0,97.0,HR,7,B3,0,6,,,,,3,1,181,19,5,BAY,SCB,HR,,,1
@@ -816,7 +816,7 @@ Emer Bock,309.0,333.0,Dick McScrotington IV,81.0,444.0,2B,111,B5,1,2,,,,,1,0,185
 Sunshine Pardue,315.0,269.0,Dick McScrotington IV,81.0,1.0,FO,268,B5,1,2,,,,,0,0,185,19,5,BAY,SCB,FO,,,1
 Giminy Schlimjim,188.0,501.0,Dick McScrotington IV,81.0,222.0,FO,279,B5,2,2,,,,,0,0,185,19,5,BAY,SCB,FO,,,1
 Cannibal Johnson,248.0,412.0,Benjamin Abenduct,217.0,266.0,BB,146,T6,0,0,,,,,0,0,186,19,5,SCB,BAY,BB,,,1
-Gil Metz,206.0,907.0,Benjamin Abenduct,217.0,473.0,DP,433,T6,0,1,,,,,0,0,186,19,5,SCB,BAY,DP,,,1
+Gil Metz,206.0,907.0,Benjamin Abenduct,217.0,473.0,DP,433,T6,0,1,,,,,0,0,186,19,5,SCB,BAY,RGO,,,1
 J.J. Guemes,207.0,737.0,Benjamin Abenduct,217.0,114.0,RGO,377,T6,2,0,,,,,0,0,186,19,5,SCB,BAY,RGO,,,1
 Thomas Nova,1.0,331.0,Sylvester Cinnamon,322.0,310.0,HR,21,T1,0,0,,,,,1,1,187,20,5,LAN,FTP,HR,,,1
 Aaron IceCream,358.0,126.0,Sylvester Cinnamon,322.0,89.0,HR,37,T1,0,0,,,,,1,1,187,20,5,LAN,FTP,HR,,,1
@@ -963,19 +963,19 @@ Jake Blee,232.0,347.0,Ethan Franklin,128.0,482.0,BB,135,B1,2,0,,,,,0,0,214,23,6,
 Charles Lindberg,242.0,743.0,Ethan Franklin,128.0,304.0,RGO,439,B1,2,1,,,,,0,0,214,23,6,CCF,CIN,RGO,,,1
 Dallas Houston,416.0,295.0,Cal Tiberius Jr.,199.0,292.0,HR,3,T2,0,0,,,,,1,1,215,23,6,CIN,CCF,HR,,,1
 Takahiro Hirasawa,419.0,160.0,Cal Tiberius Jr.,199.0,352.0,BB,192,T2,0,0,,,,,0,0,215,23,6,CIN,CCF,BB,,,1
-Jered Bentley,420.0,420.0,Cal Tiberius Jr.,199.0,952.0,DP,468,T2,0,1,,,,,0,0,215,23,6,CIN,CCF,DP,,,1
+Jered Bentley,420.0,420.0,Cal Tiberius Jr.,199.0,952.0,DP,468,T2,0,1,,,,,0,0,215,23,6,CIN,CCF,LGO,,,1
 Joe Random,415.0,114.0,Cal Tiberius Jr.,199.0,144.0,HR,30,T2,2,0,,,,,1,1,215,23,6,CIN,CCF,HR,,,1
 Jericho Caulfield,36.0,,Pete Jones,216.0,,Auto BB,,T2,2,0,,,,,0,0,215,23,6,CIN,CCF,Auto BB,,,10
 Dirtbag Darrell,262.0,333.0,Pete Jones,216.0,862.0,LGO,471,T2,2,1,,,,,0,0,215,23,6,CIN,CCF,LGO,,,1
 Geno Scaramucci,165.0,69.0,Ethan Franklin,128.0,472.0,RGO,403,B2,0,0,,,,,0,0,216,23,6,CCF,CIN,RGO,,,1
 Pike Miazza,221.0,555.0,Ethan Franklin,128.0,427.0,1B,128,B2,1,0,,,,,0,0,216,23,6,CCF,CIN,1B,,,1
-Forrest Saathoff,62.0,599.0,Ethan Franklin,128.0,72.0,DP,473,B2,1,1,,,,,0,0,216,23,6,CCF,CIN,DP,,,1
+Forrest Saathoff,62.0,599.0,Ethan Franklin,128.0,72.0,DP,473,B2,1,1,,,,,0,0,216,23,6,CCF,CIN,LGO,,,1
 Biff Studd,254.0,631.0,Pete Jones,216.0,311.0,K,320,T3,0,0,,,,,0,0,217,23,6,CIN,CCF,K,,,1
 walnuts labonte,261.0,631.0,Pete Jones,216.0,543.0,2B,88,T3,1,0,,,,,0,1,217,23,6,CIN,CCF,2B,,,1
 Richard Humongous,275.0,777.0,Pete Jones,216.0,763.0,HR,14,T3,1,2,,,,,2,1,217,23,6,CIN,CCF,HR,,,1
 Dallas Houston,416.0,154.0,Pete Jones,216.0,21.0,1B,133,T3,1,0,,,,,0,0,217,23,6,CIN,CCF,1B,,,1
 Takahiro Hirasawa,419.0,222.0,Pete Jones,216.0,397.0,1B,175,T3,1,1,,,,,0,0,217,23,6,CIN,CCF,1B,,,1
-Jered Bentley,420.0,420.0,Pete Jones,216.0,38.0,DP,382,T3,1,4,,,,,0,0,217,23,6,CIN,CCF,DP,,,1
+Jered Bentley,420.0,420.0,Pete Jones,216.0,38.0,DP,382,T3,1,4,,,,,0,0,217,23,6,CIN,CCF,RGO,,,1
 Bear Thomas,57.0,,Ethan Franklin,128.0,,Auto K,,B3,0,0,,,,,0,0,218,23,6,CCF,CIN,Auto K,,,9
 Aych Imtiyaz,170.0,350.0,Ethan Franklin,128.0,602.0,FO,252,B3,1,0,,,,,0,0,218,23,6,CCF,CIN,FO,,,1
 Chaz McDunnough,121.0,835.0,Ethan Franklin,128.0,1.0,BB,166,B3,2,0,,,,,0,0,218,23,6,CCF,CIN,BB,,,1
@@ -986,13 +986,13 @@ Charles Moore,434.0,,Kevin Arianna,113.0,,Auto K,,T1,1,1,,,,,0,0,219,24,6,TZS,SC
 Tom Crean,407.0,440.0,Kevin Arianna,113.0,69.0,K,371,T1,2,1,,,,,0,0,219,24,6,TZS,SCB,K,,,1
 Caleb Athen,325.0,,Ryan Gastings,394.0,,Auto K,,B1,0,0,,,,,0,0,220,24,6,SCB,TZS,Auto K,,,9
 Autumn Halladay,297.0,290.0,Ryan Gastings,394.0,378.0,1B,88,B1,1,0,,,,,0,0,220,24,6,SCB,TZS,1B,,,1
-Hank Murphy,76.0,622.0,Ryan Gastings,394.0,32.0,DP,410,B1,1,1,,,,,0,0,220,24,6,SCB,TZS,DP,,,1
+Hank Murphy,76.0,622.0,Ryan Gastings,394.0,32.0,DP,410,B1,1,1,,,,,0,0,220,24,6,SCB,TZS,RGO,,,1
 Ziggy Cedar,56.0,3.0,Kevin Arianna,113.0,69.0,2B,66,T2,0,0,,,,,0,1,221,24,6,TZS,SCB,2B,,,1
 Julio Cesar,53.0,582.0,Kevin Arianna,113.0,699.0,1B,117,T2,0,2,,,,,0,0,221,24,6,TZS,SCB,1B,,,1
 Tommy Oldman,143.0,122.0,Kevin Arianna,113.0,999.0,1B,123,T2,0,5,,,,,1,0,221,24,6,TZS,SCB,1B,,,1
 Carlos Brownson,132.0,420.0,Kevin Arianna,113.0,666.0,FO,246,T2,0,4,,,,,0,0,221,24,6,TZS,SCB,FO,,,1
 Thomas Berry,446.0,789.0,Kevin Arianna,113.0,699.0,1B,90,T2,1,4,,,,,0,0,221,24,6,TZS,SCB,1B,,,1
-Donnie Draper,138.0,69.0,Kevin Arianna,113.0,569.0,DP,500,T2,1,7,,,,,0,0,221,24,6,TZS,SCB,DP,,,1
+Donnie Draper,138.0,69.0,Kevin Arianna,113.0,569.0,DP,500,T2,1,7,,,,,0,0,221,24,6,TZS,SCB,LGO,,,1
 Cannibal Johnson,248.0,88.0,Ryan Gastings,394.0,643.0,LGO,445,B2,0,0,,,,,0,0,222,24,6,SCB,TZS,LGO,,,1
 Tommy Testudo,208.0,472.0,Ryan Gastings,394.0,659.0,BB,187,B2,1,0,,,,,0,1,222,24,6,SCB,TZS,BB,,,1
 Patrick Doyle,205.0,,Ryan Gastings,394.0,,Auto K,,B2,1,1,,,,,0,0,222,24,6,SCB,TZS,Auto K,,,9
@@ -1018,7 +1018,7 @@ Tom Crean,407.0,,Kevin Arianna,113.0,,Auto K,,T4,1,7,,,,,0,0,225,24,6,TZS,SCB,Au
 Ziggy Cedar,56.0,17.0,Kevin Arianna,113.0,569.0,PO,448,T4,2,0,,,,,0,0,225,24,6,SCB,TZS,PO,,,1
 Tommy Testudo,208.0,901.0,Zack Andersen,127.0,92.0,BB,191,B4,0,0,,,,,0,0,226,24,6,SCB,TZS,BB,,,1
 Hans Ali,197.0,561.0,Zack Andersen,127.0,661.0,1B,100,B4,0,1,,,,,0,0,226,24,6,SCB,TZS,1B,,,1
-Charles Magnus,220.0,780.0,Zack Andersen,127.0,317.0,DP,463,B4,0,4,,,,,0,0,226,24,6,SCB,TZS,DP,,,1
+Charles Magnus,220.0,780.0,Zack Andersen,127.0,317.0,DP,463,B4,0,4,,,,,0,0,226,24,6,SCB,TZS,LGO,,,1
 Amir Valerie Hurwitz,52.0,572.0,Zack Andersen,127.0,317.0,FO,255,B4,2,3,,,,,0,0,226,24,6,SCB,TZS,FO,,,1
 Grigury Polinko,452.0,420.0,Nicholas Verducci,70.0,741.0,K,321,T1,0,0,,,,,0,0,227,25,7,BER,CCF,K,,,1
 Jordan Peppers,18.0,420.0,Nicholas Verducci,70.0,723.0,FO,303,T1,1,0,,,,,0,0,227,25,7,BER,CCF,FO,,,1
@@ -1043,7 +1043,7 @@ Maxo Caluow,441.0,900.0,Kris Jaxon,152.0,16.0,1B,116,B3,2,0,,,,,0,0,232,25,7,CCF
 Sadler Oriole,231.0,690.0,Kris Jaxon,152.0,855.0,1B,165,B3,2,1,,,,,0,0,232,25,7,CCF,BER,1B,,,1
 Forrest Saathoff,62.0,911.0,Kris Jaxon,152.0,396.0,LGO,485,B3,2,4,,,,,0,0,232,25,7,CCF,BER,LGO,,,1
 Jordan Peppers,18.0,569.0,Nicholas Verducci,70.0,376.0,BB,193,T4,0,0,,,,,0,0,233,25,7,BER,CCF,BB,,,1
-Meerkat Timmons,147.0,666.0,Nicholas Verducci,70.0,121.0,DP,455,T4,0,1,,,,,0,0,233,25,7,BER,CCF,DP,,,1
+Meerkat Timmons,147.0,666.0,Nicholas Verducci,70.0,121.0,DP,455,T4,0,1,,,,,0,0,233,25,7,BER,CCF,LGO,,,1
 Whit Merto,162.0,707.0,Nicholas Verducci,70.0,14.0,FO,307,T4,2,0,,,,,0,0,233,25,7,BER,CCF,FO,,,1
 Todd Bonzalez II,169.0,625.0,Kris Jaxon,152.0,387.0,FO,238,B4,0,0,,,,,0,0,234,25,7,CCF,BER,FO,,,1
 Chaz McDunnough,121.0,612.0,Kris Jaxon,152.0,783.0,1B,171,B4,1,0,,,,,0,0,234,25,7,CCF,BER,1B,,,1
@@ -1064,7 +1064,7 @@ Grigury Polinko,452.0,697.0,Nicholas Verducci,70.0,246.0,RGO,451,T6,1,2,,,,,0,0,
 Jordan Peppers,18.0,893.0,Nicholas Verducci,70.0,710.0,BB,183,T6,2,3,,,,,0,0,237,25,7,BER,CCF,BB,,,1
 Meerkat Timmons,147.0,69.0,Nicholas Verducci,70.0,623.0,RGO,446,T6,2,5,,,,,0,0,237,25,7,BER,CCF,RGO,,,1
 Yolanda Martinez,233.0,69.0,Brohei Brohtani,425.0,210.0,1B,141,T1,0,0,,,,,0,0,238,26,7,SCB,CIN,1B,,,1
-Yolanda Martinez,233.0,555.0,Brohei Brohtani,425.0,869.0,CS,314,T1,0,1,,,,,0,0,238,26,7,SCB,CIN,CS SB,,,4
+Yolanda Martinez,233.0,555.0,Brohei Brohtani,425.0,869.0,CS,314,T1,0,1,,,,,0,0,238,26,7,SCB,CIN,CS 2B,,,4
 Gil Metz,206.0,835.0,Brohei Brohtani,425.0,201.0,RGO,366,T1,1,0,,,,,0,0,238,26,7,SCB,CIN,RGO,,,1
 Patrick Doyle,205.0,,Brohei Brohtani,425.0,,Auto K,,T1,2,0,,,,,0,0,238,26,7,SCB,CIN,Auto K,,,9
 Jericho Caulfield,36.0,69.0,Henrik Omega,84.0,725.0,K,344,B1,0,0,,,,,0,0,239,26,7,CIN,SCB,K,,,1
@@ -1129,7 +1129,7 @@ Demetrios Ooga,180.0,420.0,Charlie Bae Jr.,293.0,12.0,PO,408,B2,1,0,,,,,0,0,252,
 Eric Cowan,338.0,312.0,Charlie Bae Jr.,293.0,401.0,2B,89,B2,2,0,,,,,0,0,252,27,7,BAY,FTP,2B,,,1
 Buckeye Logan II,311.0,820.0,Charlie Bae Jr.,293.0,555.0,FO,265,B2,2,2,,,,,0,0,252,27,7,BAY,FTP,FO,,,1
 Stan Mann,357.0,974.0,Henry Crowell,184.0,897.0,1B,77,T3,0,0,,,,,0,0,253,27,7,FTP,BAY,1B,,,1
-Dwendle Van Hammersmith,294.0,747.0,Henry Crowell,184.0,299.0,DP,448,T3,0,1,,,,,0,0,253,27,7,FTP,BAY,DP,,,1
+Dwendle Van Hammersmith,294.0,747.0,Henry Crowell,184.0,299.0,DP,448,T3,0,1,,,,,0,0,253,27,7,FTP,BAY,LGO,,,1
 Dwayne Stevenson,334.0,416.0,Henry Crowell,184.0,902.0,LGO,486,T3,2,0,,,,,0,0,253,27,7,FTP,BAY,LGO,,,1
 Goldie Jones,360.0,321.0,Charlie Bae Jr.,293.0,201.0,1B,120,B3,0,0,,,,,0,0,254,27,7,BAY,FTP,1B,,,1
 River Ride,342.0,706.0,Charlie Bae Jr.,293.0,85.0,PO,379,B3,0,1,,,,,0,0,254,27,7,BAY,FTP,PO,,,1
@@ -1160,7 +1160,7 @@ Smitty Werbenjagermanjensen,223.0,69.0,Hudson Hildebrandt,284.0,404.0,K,335,B5,1
 Cal Lidous,227.0,664.0,Hudson Hildebrandt,284.0,366.0,K,298,B5,2,4,,,,,0,0,258,27,7,BAY,FTP,K,,,1
 Buzz Schwinghammer,367.0,721.0,Henry Crowell,184.0,999.0,K,278,T6,0,0,,,,,0,0,259,27,7,FTP,BAY,K,,,1
 Chuck Tingle,355.0,371.0,Henry Crowell,184.0,233.0,1B,138,T6,1,0,,,,,0,0,259,27,7,FTP,BAY,1B,,,1
-A.J. Preller,319.0,768.0,Henry Crowell,184.0,223.0,DP,455,T6,1,1,,,,,0,0,259,27,7,FTP,BAY,DP,,,1
+A.J. Preller,319.0,768.0,Henry Crowell,184.0,223.0,DP,455,T6,1,1,,,,,0,0,259,27,7,FTP,BAY,LGO,,,1
 Demetrios Ooga,180.0,767.0,Hudson Hildebrandt,284.0,1.0,FO,234,B6,0,0,,,,,0,0,260,27,7,BAY,FTP,FO,,,1
 Eric Cowan,338.0,420.0,Hudson Hildebrandt,284.0,666.0,FO,246,B6,1,0,,,,,0,0,260,27,7,BAY,FTP,FO,,,1
 Buckeye Logan II,311.0,222.0,Hudson Hildebrandt,284.0,901.0,K,321,B6,2,0,,,,,0,0,260,27,7,BAY,FTP,K,,,1
@@ -1235,7 +1235,7 @@ Tyler Palmatier,258.0,420.0,Dick Woolridge,92.0,546.0,1B,126,B1,1,2,,,,,0,1,272,
 Jericho Caulfield,36.0,507.0,Dick Woolridge,92.0,523.0,HR,16,B1,1,5,,,,,3,1,272,29,8,CIN,LAN,HR,,,1
 Forrest Gleeson,51.0,999.0,Dick Woolridge,92.0,13.0,HR,14,B1,1,0,,,,,1,1,272,29,8,CIN,LAN,HR,,,1
 Viking Fishbird,42.0,767.0,Dick Woolridge,92.0,837.0,1B,70,B1,1,0,,,,,0,0,272,29,8,CIN,LAN,1B,,,1
-Dallas Houston,416.0,777.0,Dick Woolridge,92.0,206.0,DP,429,B1,1,1,,,,,0,0,272,29,8,CIN,LAN,DP,,,1
+Dallas Houston,416.0,777.0,Dick Woolridge,92.0,206.0,DP,429,B1,1,1,,,,,0,0,272,29,8,CIN,LAN,RGO,,,1
 Tyler Phoenix,99.0,987.0,Ethan Franklin,128.0,1.0,HR,14,T2,0,0,,,,,1,1,273,29,8,LAN,CIN,HR,,,1
 James Garfield,11.0,109.0,Ethan Franklin,128.0,739.0,K,370,T2,0,0,,,,,0,0,273,29,8,LAN,CIN,K,,,1
 Thomas Nova,1.0,750.0,Ethan Franklin,128.0,740.0,HR,10,T2,1,0,,,,,1,1,273,29,8,LAN,CIN,HR,,,1
@@ -1329,7 +1329,7 @@ iato yalf,463.0,627.0,Steel Pipe Simpson,80.0,942.0,K,315,B4,1,0,,,,,0,0,290,30,
 Forrest Saathoff,62.0,777.0,Steel Pipe Simpson,80.0,133.0,K,356,B4,2,0,,,,,0,0,290,30,8,CCF,SCB,K,,,1
 Michael Deemer,243.0,212.0,Lefty Louis,166.0,215.0,HR,3,T5,0,0,,,,,1,1,291,30,8,SCB,CCF,HR,,,1
 Hank Murphy,76.0,675.0,Lefty Louis,166.0,521.0,1B,154,T5,0,0,,,,,0,0,291,30,8,SCB,CCF,1B,,,1
-Steel Pipe Simpson,80.0,954.0,Lefty Louis,166.0,521.0,DP,433,T5,0,1,,,,,0,0,291,30,8,SCB,CCF,DP,,,1
+Steel Pipe Simpson,80.0,954.0,Lefty Louis,166.0,521.0,DP,433,T5,0,1,,,,,0,0,291,30,8,SCB,CCF,RGO,,,1
 Buttfart McPoopus,77.0,999.0,Lefty Louis,166.0,125.0,1B,126,T5,2,0,,,,,0,0,291,30,8,SCB,CCF,1B,,,1
 Trontavious Saddlebags,276.0,300.0,Lefty Louis,166.0,888.0,PO,412,T5,2,1,,,,,0,0,291,30,8,SCB,CCF,PO,,,1
 Bear Thomas,57.0,377.0,Steel Pipe Simpson,80.0,753.0,K,376,B5,0,0,,,,,0,0,292,30,8,CCF,SCB,K,,,1
@@ -1348,7 +1348,7 @@ C.J. Yantzi,323.0,890.0,Jeffrey LaVert,189.0,744.0,1B,146,T1,0,1,,,,,0,1,295,31,
 Charlie Bae Jr.,293.0,750.0,Jeffrey LaVert,189.0,525.0,BB,225,T1,0,4,,,,,0,0,295,31,8,FTP,TZS,BB,,,1
 Jeff Dingerhitter,298.0,700.0,Jeffrey LaVert,189.0,831.0,2B,131,T1,0,7,,,,,2,0,295,31,8,FTP,TZS,2B,,,1
 Donked McToad,330.0,873.0,Jeffrey LaVert,189.0,620.0,K,253,T1,0,6,,,,,0,0,295,31,8,FTP,TZS,K,,,1
-Jocko Jones,295.0,238.0,Jeffrey LaVert,189.0,710.0,DP,472,T1,1,6,,,,,0,0,295,31,8,FTP,TZS,DP,,,1
+Jocko Jones,295.0,238.0,Jeffrey LaVert,189.0,710.0,DP,472,T1,1,6,,,,,0,0,295,31,8,FTP,TZS,LGO,,,1
 Teo Jones,137.0,222.0,Tim Spooneybarger,4.0,69.0,1B,153,B1,0,0,,,,,0,0,296,31,8,TZS,FTP,1B,,,1
 Jimjon Jonjim,272.0,490.0,Tim Spooneybarger,4.0,569.0,1B,79,B1,0,1,,,,,0,0,296,31,8,TZS,FTP,1B,,,1
 Julio Cesar,53.0,391.0,Tim Spooneybarger,4.0,69.0,FO,322,B1,0,4,,,,,0,0,296,31,8,TZS,FTP,FO,,,1
@@ -1439,7 +1439,7 @@ Moose McCracken,308.0,978.0,Kris Jaxon,152.0,587.0,K,391,T5,2,1,,,,,0,0,315,32,8
 Jordan Peppers,18.0,807.0,Cal Lidous,227.0,636.0,BB,171,B5,0,0,,,,,0,0,316,32,8,BER,BAY,BB,,,1
 Owen Thirlwell,156.0,989.0,Cal Lidous,227.0,152.0,BB,163,B5,0,1,,,,,0,0,316,32,8,BER,BAY,BB,,,1
 Triston Uzumaki,125.0,748.0,Cal Lidous,227.0,575.0,FO,173,B5,0,4,,,,,0,0,316,32,8,BER,BAY,FO,,,1
-Meerkat Timmons,147.0,135.0,Cal Lidous,227.0,682.0,DP,453,B5,1,4,,,,,0,0,316,32,8,BER,BAY,DP,,,1
+Meerkat Timmons,147.0,135.0,Cal Lidous,227.0,682.0,DP,453,B5,1,4,,,,,0,0,316,32,8,BER,BAY,LGO,,,1
 Lane Drew,190.0,,Kris Jaxon,152.0,,Auto K,,T6,0,0,,,,,0,0,317,32,8,BAY,BER,Auto K,,,9
 Heinrich Frosch,343.0,750.0,Kris Jaxon,152.0,318.0,RGO,432,T6,1,0,,,,,0,0,317,32,8,BAY,BER,RGO,,,1
 Sunshine Pardue,315.0,893.0,Kris Jaxon,152.0,337.0,PO,444,T6,2,0,,,,,0,0,317,32,8,BAY,BER,PO,,,1
@@ -1457,13 +1457,13 @@ Trey Rangers,224.0,964.0,Tim Spooneybarger,4.0,707.0,FO,257,T1,1,4,,,,,0,0,319,3
 Chad Berry,172.0,330.0,Tim Spooneybarger,4.0,699.0,K,369,T1,2,4,,,,,0,0,319,33,9,CCF,LAN,K,,,1
 Thomas Nova,1.0,1.0,Nick Tit,59.0,420.0,RGO,419,B1,0,0,,,,,0,0,320,33,9,LAN,CCF,RGO,,,1
 Odin Luka,9.0,899.0,Nick Tit,59.0,787.0,BB,112,B1,1,0,,,,,0,0,320,33,9,LAN,CCF,BB,,,1
-Doug Quail,388.0,333.0,Nick Tit,59.0,700.0,DP,367,B1,1,1,,,,,0,0,320,33,9,LAN,CCF,DP,,,1
+Doug Quail,388.0,333.0,Nick Tit,59.0,700.0,DP,367,B1,1,1,,,,,0,0,320,33,9,LAN,CCF,RGO,,,1
 Bear Thomas,57.0,900.0,Tim Spooneybarger,4.0,158.0,FO,258,T2,0,0,,,,,0,0,321,33,9,CCF,LAN,FO,,,1
 Aych Imtiyaz,170.0,12.0,Tim Spooneybarger,4.0,258.0,FO,246,T2,1,0,,,,,0,0,321,33,9,CCF,LAN,FO,,,1
 Federal Credit Union Boi,173.0,611.0,Tim Spooneybarger,4.0,701.0,2B,90,T2,2,0,,,,,0,0,321,33,9,CCF,LAN,2B,,,1
 Erin Pickles,68.0,775.0,Tim Spooneybarger,4.0,500.0,FO,275,T2,2,2,,,,,0,0,321,33,9,CCF,LAN,FO,,,1
 Master Cashier,93.0,1000.0,Nick Tit,59.0,111.0,1B,111,B2,0,0,,,,,0,0,322,33,9,LAN,CCF,1B,,,1
-Emmett Michael,10.0,321.0,Nick Tit,59.0,777.0,DP,456,B2,0,1,,,,,0,0,322,33,9,LAN,CCF,DP,,,1
+Emmett Michael,10.0,321.0,Nick Tit,59.0,777.0,DP,456,B2,0,1,,,,,0,0,322,33,9,LAN,CCF,LGO,,,1
 Mason Spurs,103.0,500.0,Nick Tit,59.0,950.0,LGO,450,B2,2,0,,,,,0,0,322,33,9,LAN,CCF,LGO,,,1
 Doob Tuber,240.0,536.0,Tim Spooneybarger,4.0,1.0,LGO,465,T3,0,0,,,,,0,0,323,33,9,CCF,LAN,LGO,,,1
 Pike Miazza,221.0,275.0,Tim Spooneybarger,4.0,707.0,RGO,432,T3,1,0,,,,,0,0,323,33,9,CCF,LAN,RGO,,,1
@@ -1552,7 +1552,7 @@ Vigolashi Dongeroso,159.0,211.0,Jordon Canning,353.0,644.0,PO,433,T5,2,0,,,,,0,0
 Pretzels Poffenberger,86.0,483.0,Sam Wood,108.0,111.0,K,372,B5,0,0,,,,,0,0,340,34,9,SCB,BER,K,,,1
 Hank Murphy,76.0,444.0,Duke Nukem,124.0,669.0,BB,225,B5,1,0,,,,,0,0,340,34,9,SCB,BER,BB,,,1
 Crimson Chin,78.0,113.0,Duke Nukem,124.0,1000.0,1B,113,B5,1,1,,,,,0,0,340,34,9,SCB,BER,1B,,,1
-Jay Money,241.0,401.0,Duke Nukem,124.0,1000.0,DP,401,B5,1,4,,,,,0,0,340,34,9,SCB,BER,DP,,,1
+Jay Money,241.0,401.0,Duke Nukem,124.0,1000.0,DP,401,B5,1,4,,,,,0,0,340,34,9,SCB,BER,RGO,,,1
 Triston Uzumaki,125.0,142.0,Jordon Canning,353.0,920.0,FO,222,T6,0,0,,,,,0,0,341,34,9,BER,SCB,FO,,,1
 Daniel Collins,149.0,722.0,Jordon Canning,353.0,869.0,1B,147,T6,1,0,,,,,0,0,341,34,9,BER,SCB,1B,,,1
 Larry Longshot,32.0,197.0,Jordon Canning,353.0,905.0,FO,292,T6,1,1,,,,,0,0,341,34,9,BER,SCB,FO,,,1
@@ -1609,7 +1609,7 @@ Hingle McCringleberry,257.0,869.0,Jayson Burdwell,282.0,244.0,PO,375,T5,2,7,,,,,
 C.J. Yantzi,323.0,29.0,Tyrone Jennings lll,256.0,69.0,3B,40,B5,0,0,,,,,0,1,351,35,9,FTP,CIN,3B,,,1
 Jeff Dingerhitter,298.0,,Tyrone Jennings lll,256.0,,Auto BB,,B5,0,3,,,,,0,0,351,35,9,FTP,CIN,Auto BB,,,10
 Miguel Snow,290.0,907.0,Tyrone Jennings lll,256.0,134.0,Sac,227,B5,0,5,,,,,1,0,351,35,9,FTP,CIN,FO,,,1
-Donked McToad,330.0,200.0,Tyrone Jennings lll,256.0,852.0,DP,348,B5,1,1,,,,,0,0,351,35,9,FTP,CIN,DP,,,1
+Donked McToad,330.0,200.0,Tyrone Jennings lll,256.0,852.0,DP,348,B5,1,1,,,,,0,0,351,35,9,FTP,CIN,RGO,,,1
 Jimjon Jonjim,272.0,600.0,Demetrios Ooga,180.0,861.0,FO,261,T1,0,0,,,,,0,0,352,36,9,TZS,BAY,FO,,,1
 Tommy Oldman,143.0,721.0,Demetrios Ooga,180.0,69.0,K,348,T1,1,0,,,,,0,0,352,36,9,TZS,BAY,K,,,1
 Lloyd Gross,135.0,666.0,Demetrios Ooga,180.0,207.0,RGO,459,T1,2,0,,,,,0,0,352,36,9,TZS,BAY,RGO,,,1
@@ -1660,9 +1660,9 @@ Buckeye Logan II,311.0,735.0,Joey McCarty,390.0,6.0,FO,271,B6,0,0,,,,,0,0,363,36
 Henry Crowell,184.0,678.0,Joey McCarty,390.0,776.0,1B,98,B6,1,0,,,,,0,1,363,36,9,BAY,TZS,1B,,,1
 Ian Brandon Owen Bust,186.0,308.0,Joey McCarty,390.0,338.0,2B,30,B6,1,1,,,,,0,0,363,36,9,BAY,TZS,2B,,,1
 Emer Bock,309.0,123.0,Joey McCarty,390.0,1.0,1B,122,B6,1,6,,,,,1,0,363,36,9,BAY,TZS,1B,,,1
-Foxx Dashington,306.0,215.0,Joey McCarty,390.0,668.0,DP,453,B6,1,5,,,,,0,0,363,36,9,BAY,TZS,DP,,,1
+Foxx Dashington,306.0,215.0,Joey McCarty,390.0,668.0,DP,453,B6,1,5,,,,,0,0,363,36,9,BAY,TZS,LGO,,,1
 Anatoli Smorin,387.0,222.0,G.H. Morello,211.0,1.0,BB,221,T1,0,0,,,,,0,0,364,37,10,LAN,SCB,BB,,,1
-Sevag Vapor,106.0,787.0,G.H. Morello,211.0,221.0,DP,434,T1,0,1,,,,,0,0,364,37,10,LAN,SCB,DP,,,1
+Sevag Vapor,106.0,787.0,G.H. Morello,211.0,221.0,DP,434,T1,0,1,,,,,0,0,364,37,10,LAN,SCB,RGO,,,1
 Thomas Nova,1.0,777.0,G.H. Morello,211.0,777.0,HR,0,T1,2,0,,,,,1,1,364,37,10,LAN,SCB,HR,,,1
 John Johnson Jr.,91.0,420.0,G.H. Morello,211.0,666.0,FO,246,T1,2,0,,,,,0,0,364,37,10,LAN,SCB,FO,,,1
 Pretzels Poffenberger,86.0,,Babatunde Oladotun,386.0,,Auto K,,B1,0,0,,,,,0,0,365,37,10,SCB,LAN,Auto K,,,9
@@ -1681,7 +1681,7 @@ Sevag Vapor,106.0,210.0,G.H. Morello,211.0,420.0,FO,210,T3,1,2,,,,,0,0,368,37,10
 Thomas Nova,1.0,1.0,G.H. Morello,211.0,50.0,3B,49,T3,2,2,,,,,1,0,368,37,10,LAN,SCB,3B,,,1
 John Johnson Jr.,91.0,404.0,G.H. Morello,211.0,100.0,K,304,T3,2,3,,,,,0,0,368,37,10,LAN,SCB,K,,,1
 G.H. Morello,211.0,1000.0,Babatunde Oladotun,386.0,841.0,BB,159,B3,0,0,,,,,0,0,369,37,10,SCB,LAN,BB,,,1
-Autumn Halladay,297.0,270.0,Babatunde Oladotun,386.0,666.0,DP,396,B3,0,1,,,,,0,0,369,37,10,SCB,LAN,DP,,,1
+Autumn Halladay,297.0,270.0,Babatunde Oladotun,386.0,666.0,DP,396,B3,0,1,,,,,0,0,369,37,10,SCB,LAN,RGO,,,1
 Ryan Vauhn,442.0,,Babatunde Oladotun,386.0,,Auto K,,B3,2,0,,,,,0,0,369,37,10,SCB,LAN,Auto K,,,9
 Antonin Periwinkle,185.0,70.0,Tequila Sunrise,249.0,499.0,RGO,429,T1,0,0,,,,,0,0,370,38,10,BAY,CIN,RGO,,,1
 Garitek,307.0,830.0,Tequila Sunrise,249.0,617.0,FO,213,T1,1,0,,,,,0,0,370,38,10,BAY,CIN,FO,,,1
@@ -1697,7 +1697,7 @@ Splash Nelson,312.0,543.0,Tequila Sunrise,249.0,911.0,RGO,368,T2,1,2,,,,,0,0,372
 Hunter Tuzero,346.0,133.0,Tequila Sunrise,249.0,880.0,K,253,T2,2,3,,,,,0,0,372,38,10,BAY,CIN,K,,,1
 Jose Jose-Jose,43.0,876.0,Fish Fingers,182.0,21.0,BB,145,B2,0,0,,,,,0,0,373,38,10,CIN,BAY,BB,,,1
 Forrest Gleeson,51.0,550.0,Fish Fingers,182.0,236.0,K,314,B2,0,1,,,,,0,0,373,38,10,CIN,BAY,K,,,1
-Dallas Houston,416.0,471.0,Fish Fingers,182.0,900.0,DP,429,B2,1,1,,,,,0,0,373,38,10,CIN,BAY,DP,,,1
+Dallas Houston,416.0,471.0,Fish Fingers,182.0,900.0,DP,429,B2,1,1,,,,,0,0,373,38,10,CIN,BAY,RGO,,,1
 Andrew Nova,191.0,820.0,Tequila Sunrise,249.0,330.0,LGO,490,T3,0,0,,,,,0,0,374,38,10,BAY,CIN,LGO,,,1
 Antonin Periwinkle,185.0,555.0,Tequila Sunrise,249.0,599.0,3B,44,T3,1,0,,,,,1,0,374,38,10,BAY,CIN,3B,,,1
 Garitek,307.0,50.0,Tequila Sunrise,249.0,42.0,HR,8,T3,1,3,,,,,1,2,374,38,10,BAY,CIN,HR,,,1
@@ -1767,10 +1767,10 @@ Arata Hightower,31.0,913.0,Carlos Brownson,132.0,22.0,1B,109,B2,0,2,,,,,0,0,385,
 Harry Peritestes,117.0,260.0,Carlos Brownson,132.0,124.0,1B,136,B2,0,5,,,,,1,0,385,39,10,BER,TZS,1B,,,1
 Nikki Falke,155.0,567.0,Carlos Brownson,132.0,765.0,BB,198,B2,0,4,,,,,0,0,385,39,10,BER,TZS,BB,,,1
 Rex Kidobi,126.0,421.0,Carlos Brownson,132.0,999.0,K,422,B2,0,7,,,,,0,0,385,39,10,BER,TZS,K,,,1
-Owen Thirlwell,156.0,738.0,Carlos Brownson,132.0,321.0,DP,417,B2,1,7,,,,,0,0,385,39,10,BER,TZS,DP,,,1
+Owen Thirlwell,156.0,738.0,Carlos Brownson,132.0,321.0,DP,417,B2,1,7,,,,,0,0,385,39,10,BER,TZS,RGO,,,1
 Becky McBadbat,277.0,169.0,Meerkat Timmons,147.0,666.0,LGO,497,T3,0,0,,,,,0,0,386,39,10,TZS,BER,LGO,,,1
 Slapshot Brady,141.0,805.0,Meerkat Timmons,147.0,1.0,BB,196,T3,1,0,,,,,0,0,386,39,10,TZS,BER,BB,,,1
-Jimjon Jonjim,272.0,500.0,Meerkat Timmons,147.0,102.0,DP,398,T3,1,1,,,,,0,0,386,39,10,TZS,BER,DP,,,1
+Jimjon Jonjim,272.0,500.0,Meerkat Timmons,147.0,102.0,DP,398,T3,1,1,,,,,0,0,386,39,10,TZS,BER,RGO,,,1
 Duke Nukem,124.0,777.0,Carlos Brownson,132.0,123.0,K,346,B3,0,0,,,,,0,0,387,39,10,BER,TZS,K,,,1
 Jordan Peppers,18.0,1.0,Carlos Brownson,132.0,765.0,FO,236,B3,1,0,,,,,0,0,387,39,10,BER,TZS,FO,,,1
 Larry Longshot,32.0,622.0,Carlos Brownson,132.0,654.0,HR,32,B3,2,0,,,,,1,1,387,39,10,BER,TZS,HR,,,1
@@ -1811,7 +1811,7 @@ Aaron IceCream,358.0,695.0,Cal Lidous,227.0,811.0,1B,116,T2,0,0,,,,,0,1,395,40,1
 Forehead Jones,328.0,800.0,Cal Lidous,227.0,811.0,HR,11,T2,0,1,,,,,2,1,395,40,10,FTP,CCF,HR,,,1
 Jack Jackie Jackson,354.0,397.0,Cal Lidous,227.0,550.0,FO,153,T2,0,0,,,,,0,0,395,40,10,FTP,CCF,FO,,,1
 Jayson Burdwell,282.0,126.0,Cal Lidous,227.0,302.0,BB,176,T2,1,0,,,,,0,0,395,40,10,FTP,CCF,BB,,,1
-Donked McToad,330.0,321.0,Cal Lidous,227.0,986.0,DP,335,T2,1,1,,,,,0,0,395,40,10,FTP,CCF,DP,,,1
+Donked McToad,330.0,321.0,Cal Lidous,227.0,986.0,DP,335,T2,1,1,,,,,0,0,395,40,10,FTP,CCF,RGO,,,1
 Jake Blee,232.0,443.0,KC Bats,287.0,420.0,HR,23,B2,0,0,,,,,1,1,396,40,10,CCF,FTP,HR,,,1
 iato yalf,463.0,920.0,KC Bats,287.0,800.0,1B,120,B2,0,0,,,,,0,0,396,40,10,CCF,FTP,1B,,,1
 iato yalf,463.0,800.0,KC Bats,287.0,247.0,CS,447,B2,0,1,,,,,0,0,396,40,10,CCF,FTP,CS 2B,,,4
@@ -1845,14 +1845,14 @@ Trey Rangers,224.0,785.0,Jeffrey LaVert,189.0,666.0,1B,119,T1,2,0,,,,,0,0,401,41
 Federal Credit Union Boi,173.0,69.0,Jeffrey LaVert,189.0,850.0,FO,219,T1,2,1,,,,,0,0,401,41,11,CCF,BAY,FO,,,1
 River Ride,342.0,523.0,Rickey Tucker,163.0,625.0,1B,102,B1,0,0,,,,,0,0,402,41,11,BAY,CCF,1B,,,1
 Junior Biggins,313.0,507.0,Rickey Tucker,163.0,624.0,1B,117,B1,0,1,,,,,0,0,402,41,11,BAY,CCF,1B,,,1
-João Cortez,193.0,50.0,Rickey Tucker,163.0,630.0,DP,420,B1,0,4,,,,,0,0,402,41,11,BAY,CCF,DP,,,1
+João Cortez,193.0,50.0,Rickey Tucker,163.0,630.0,DP,420,B1,0,4,,,,,0,0,402,41,11,BAY,CCF,RGO,,,1
 Javier Tootblan,192.0,590.0,Rickey Tucker,163.0,305.0,K,285,B1,2,1,,,,,0,0,402,41,11,BAY,CCF,K,,,1
 iato yalf,463.0,332.0,Jeffrey LaVert,189.0,990.0,K,342,T2,0,0,,,,,0,0,403,41,11,CCF,BAY,K,,,1
 Smitty Werbenjagermanjensen,223.0,300.0,Jeffrey LaVert,189.0,90.0,FO,210,T2,1,0,,,,,0,0,403,41,11,CCF,BAY,FO,,,1
 Aych Imtiyaz,170.0,420.0,Jeffrey LaVert,189.0,680.0,FO,260,T2,2,0,,,,,0,0,403,41,11,CCF,BAY,FO,,,1
 Emer Bock,309.0,1.0,Rickey Tucker,163.0,143.0,1B,142,B2,0,0,,,,,0,0,404,41,11,BAY,CCF,1B,,,1
 Picov Andropov,340.0,2.0,Rickey Tucker,163.0,700.0,K,302,B2,0,1,,,,,0,0,404,41,11,BAY,CCF,K,,,1
-Henry Crowell,184.0,973.0,Rickey Tucker,163.0,368.0,DP,395,B2,1,3,,,,,0,0,404,41,11,BAY,CCF,DP,,,1
+Henry Crowell,184.0,973.0,Rickey Tucker,163.0,368.0,DP,395,B2,1,3,,,,,0,0,404,41,11,BAY,CCF,RGO,,,1
 Bubba McCali,72.0,399.0,Jeffrey LaVert,189.0,305.0,2B,94,T3,0,0,,,,,0,1,405,41,11,CCF,BAY,2B,,,1
 Pete Jones,216.0,69.0,Jeffrey LaVert,189.0,450.0,K,381,T3,0,2,,,,,0,0,405,41,11,CCF,BAY,K,,,1
 Ethyn Williams,229.0,853.0,Jeffrey LaVert,189.0,1.0,BB,148,T3,1,2,,,,,0,0,405,41,11,CCF,BAY,BB,,,1
@@ -1927,7 +1927,7 @@ Jimjon Jonjim,272.0,430.0,Jericho Caulfield,36.0,645.0,FO,215,B4,0,0,,,,,0,0,419
 Tommy Oldman,143.0,768.0,Jericho Caulfield,36.0,946.0,FO,178,B4,1,0,,,,,0,0,419,42,11,TZS,CIN,FO,,,1
 Dog Man,436.0,,Jericho Caulfield,36.0,,Auto K,,B4,2,0,,,,,0,0,419,42,11,TZS,CIN,Auto K,,,9
 Biff Studd,254.0,262.0,Zack Andersen,127.0,333.0,1B,71,T5,0,0,,,,,0,0,420,42,11,CIN,TZS,1B,,,1
-Jose Jose-Jose,43.0,125.0,Zack Andersen,127.0,444.0,DP,319,T5,0,1,,,,,0,0,420,42,11,CIN,TZS,DP,,,1
+Jose Jose-Jose,43.0,125.0,Zack Andersen,127.0,444.0,DP,319,T5,0,1,,,,,0,0,420,42,11,CIN,TZS,RGO,,,1
 Dallas Houston,416.0,55.0,Zack Andersen,127.0,222.0,BB,167,T5,2,0,,,,,0,0,420,42,11,CIN,TZS,BB,,,1
 Takahiro Hirasawa,419.0,683.0,Zack Andersen,127.0,55.0,K,372,T5,2,1,,,,,0,0,420,42,11,CIN,TZS,K,,,1
 Justin Dingers,215.0,676.0,Jericho Caulfield,36.0,99.0,RGO,423,B5,0,0,,,,,0,0,421,42,11,TZS,CIN,RGO,,,1
@@ -1997,7 +1997,7 @@ John Bumbus,85.0,372.0,Jayson Burdwell,282.0,302.0,1B,70,T1,2,0,,,,,0,0,434,44,1
 Gil Metz,206.0,747.0,Jayson Burdwell,282.0,450.0,K,297,T1,2,1,,,,,0,0,434,44,11,SCB,FTP,K,,,1
 Jackson Takegi,302.0,667.0,Jack Alpha,73.0,998.0,K,331,B1,0,0,,,,,0,0,435,44,11,FTP,SCB,K,,,1
 Connor Morgan,362.0,69.0,Jack Alpha,73.0,939.0,1B,130,B1,1,0,,,,,0,0,435,44,11,FTP,SCB,1B,,,1
-Caleb Athen,325.0,435.0,Jack Alpha,73.0,893.0,DP,458,B1,1,1,,,,,0,0,435,44,11,FTP,SCB,DP,,,1
+Caleb Athen,325.0,435.0,Jack Alpha,73.0,893.0,DP,458,B1,1,1,,,,,0,0,435,44,11,FTP,SCB,LGO,,,1
 Kaylee Stewart,246.0,900.0,Jayson Burdwell,282.0,15.0,1B,115,T2,0,0,,,,,0,0,436,44,11,SCB,FTP,1B,,,1
 Michael Deemer,243.0,501.0,Jayson Burdwell,282.0,215.0,K,286,T2,0,1,,,,,0,0,436,44,11,SCB,FTP,K,,,1
 Charles Lindberg,242.0,340.0,Jayson Burdwell,282.0,9.0,K,331,T2,1,1,,,,,0,0,436,44,11,SCB,FTP,K,,,1
@@ -2022,7 +2022,7 @@ Connor Morgan,362.0,788.0,Jack Alpha,73.0,33.0,FO,245,B3,1,1,,,,,0,0,439,44,11,F
 Caleb Athen,325.0,512.0,Jack Alpha,73.0,299.0,FO,213,B3,2,1,,,,,0,0,439,44,11,FTP,SCB,FO,,,1
 Connor Morgan,362.0,666.0,Tim Spooneybarger,4.0,284.0,K,382,T1,0,1,,,,,0,0,440,45,12,FTP,LAN,K,,,1
 Jocko Jones,295.0,620.0,Tim Spooneybarger,4.0,847.0,BB,227,T1,1,1,,,,,0,0,440,45,12,FTP,LAN,BB,,,1
-Charlie Bae Jr.,293.0,655.0,Tim Spooneybarger,4.0,227.0,DP,428,T1,1,4,,,,,0,0,440,45,12,FTP,LAN,DP,,,1
+Charlie Bae Jr.,293.0,655.0,Tim Spooneybarger,4.0,227.0,DP,428,T1,1,4,,,,,0,0,440,45,12,FTP,LAN,RGO,,,1
 Anatoli Smorin,387.0,2.0,Caleb Athen,325.0,365.0,K,363,B1,0,0,,,,,0,0,441,45,12,LAN,FTP,K,,,1
 John Johnson Jr.,91.0,2.0,Caleb Athen,325.0,56.0,2B,54,B1,1,0,,,,,0,0,441,45,12,LAN,FTP,2B,,,1
 Lawrence Wiseman,380.0,867.0,Caleb Athen,325.0,444.0,K,423,B1,1,2,,,,,0,0,441,45,12,LAN,FTP,K,,,1
@@ -2035,7 +2035,7 @@ Mason Spurs,103.0,69.0,Caleb Athen,325.0,813.0,FO,256,B2,0,0,,,,,0,0,443,45,12,L
 Sevag Vapor,106.0,333.0,Caleb Athen,325.0,814.0,LGO,481,B2,1,0,,,,,0,0,443,45,12,LAN,FTP,LGO,,,1
 Lucifer Putts,12.0,408.0,Caleb Athen,325.0,47.0,K,361,B2,2,0,,,,,0,0,443,45,12,LAN,FTP,K,,,1
 Sylvester Cinnamon,322.0,778.0,Tim Spooneybarger,4.0,945.0,BB,167,T3,0,0,,,,,0,0,444,45,12,FTP,LAN,BB,,,1
-Jordon Canning,353.0,666.0,Tim Spooneybarger,4.0,107.0,DP,441,T3,0,1,,,,,0,0,444,45,12,FTP,LAN,DP,,,1
+Jordon Canning,353.0,666.0,Tim Spooneybarger,4.0,107.0,DP,441,T3,0,1,,,,,0,0,444,45,12,FTP,LAN,LGO,,,1
 Caleb Athen,325.0,802.0,Tim Spooneybarger,4.0,481.0,K,321,T3,2,0,,,,,0,0,444,45,12,FTP,LAN,K,,,1
 Tony McGooch,7.0,476.0,Caleb Athen,325.0,901.0,K,425,B3,0,0,,,,,0,0,445,45,12,LAN,FTP,K,,,1
 Anatoli Smorin,387.0,835.0,Caleb Athen,325.0,623.0,BB,212,B3,1,0,,,,,0,0,445,45,12,LAN,FTP,BB,,,1
@@ -2112,14 +2112,14 @@ Heavy Raine,40.0,772.0,Meerkat Timmons,147.0,770.0,HR,2,T4,1,0,,,,,1,1,458,46,12
 Tyrone Jennings lll,256.0,850.0,Meerkat Timmons,147.0,333.0,LGO,483,T4,1,0,,,,,0,0,458,46,12,CIN,BER,LGO,,,1
 Ziggy Cedar,56.0,246.0,Meerkat Timmons,147.0,762.0,LGO,484,T4,2,0,,,,,0,0,458,46,12,CIN,BER,LGO,,,1
 Chaz McDunnough,121.0,473.0,Markus Wölfe,54.0,600.0,1B,127,B4,0,0,,,,,0,0,459,46,12,BER,CIN,1B,,,1
-Chad Kroeger,30.0,998.0,Markus Wölfe,54.0,437.0,DP,439,B4,0,1,,,,,0,0,459,46,12,BER,CIN,DP,,,1
+Chad Kroeger,30.0,998.0,Markus Wölfe,54.0,437.0,DP,439,B4,0,1,,,,,0,0,459,46,12,BER,CIN,RGO,,,1
 Kris Jaxon,152.0,998.0,Markus Wölfe,54.0,833.0,BB,165,B4,2,0,,,,,0,1,459,46,12,BER,CIN,BB,,,1
 Barney Turbo,28.0,701.0,Markus Wölfe,54.0,901.0,BB,200,B4,2,1,,,,,0,1,459,46,12,BER,CIN,BB,,,1
 Triston Uzumaki,125.0,101.0,Markus Wölfe,54.0,39.0,3B,62,B4,2,4,,,,,2,1,459,46,12,BER,CIN,3B,,,1
 Dallas Hamilton,153.0,342.0,Rich Mahogany,265.0,316.0,3B,26,B4,2,3,,,,,1,0,459,46,12,BER,CIN,3B,,,1
 Girth Brooks,161.0,400.0,Rich Mahogany,265.0,1.0,RGO,399,B4,2,3,,,,,0,0,459,46,12,BER,CIN,RGO,,,1
 Kimberly Jongun,44.0,808.0,Meerkat Timmons,147.0,646.0,1B,162,T5,0,0,,,,,0,0,460,46,12,CIN,BER,1B,,,1
-Jericho Caulfield,36.0,493.0,Meerkat Timmons,147.0,990.0,DP,497,T5,0,1,,,,,0,0,460,46,12,CIN,BER,DP,,,1
+Jericho Caulfield,36.0,493.0,Meerkat Timmons,147.0,990.0,DP,497,T5,0,1,,,,,0,0,460,46,12,CIN,BER,LGO,,,1
 Jose Jose-Jose,43.0,,Meerkat Timmons,147.0,,Auto K,,T5,2,0,,,,,0,0,460,46,12,CIN,BER,Auto K,,,9
 Eric Tsai,,561.0,Pete Jones,216.0,156.0,RGO,405,T1,0,0,,,,,0,0,461,47,12,TZS,CCF,RGO,,,1
 Lloyd Gross,135.0,652.0,Pete Jones,216.0,613.0,3B,39,T1,1,0,,,,,0,1,461,47,12,TZS,CCF,3B,,,1
@@ -2191,7 +2191,7 @@ Jimjon Jonjim,272.0,525.0,Fernando Cruz,176.0,500.0,3B,25,T6,1,1,,,,,1,1,471,47,
 Teo Jones,137.0,739.0,Fernando Cruz,176.0,501.0,Sac,238,T6,1,3,,,,,1,0,471,47,12,TZS,CCF,FO,,,1
 Garren Smudge,133.0,505.0,Fernando Cruz,176.0,739.0,FO,234,T6,2,0,,,,,0,0,471,47,12,TZS,CCF,FO,,,1
 Artie Ziff,164.0,969.0,Joey McCarty,390.0,878.0,1B,91,B6,0,0,,,,,0,0,472,47,12,CCF,TZS,1B,,,1
-Rickey Tucker,163.0,547.0,Joey McCarty,390.0,31.0,DP,484,B6,0,1,,,,,0,0,472,47,12,CCF,TZS,DP,,,1
+Rickey Tucker,163.0,547.0,Joey McCarty,390.0,31.0,DP,484,B6,0,1,,,,,0,0,472,47,12,CCF,TZS,LGO,,,1
 Jake Blee,232.0,788.0,Joey McCarty,390.0,531.0,FO,257,B6,2,0,,,,,0,0,472,47,12,CCF,TZS,FO,,,1
 Javier Tootblan,192.0,565.0,Patrick Doyle,205.0,337.0,FO,228,T1,0,0,,,,,0,0,473,48,12,BAY,SCB,FO,,,1
 Lightning Balls,350.0,113.0,Patrick Doyle,205.0,777.0,K,336,T1,1,0,,,,,0,0,473,48,12,BAY,SCB,K,,,1
@@ -2325,14 +2325,14 @@ Dylan Green,305.0,950.0,Tim Spooneybarger,4.0,648.0,FO,302,B2,2,1,,,,,0,0,498,51
 Will Power,8.0,195.0,Swing N. Miss,195.0,95.0,1B,100,T3,0,0,,,,,0,0,499,51,13,LAN,BAY,1B,,,1
 Thomas Nova,1.0,595.0,Swing N. Miss,195.0,500.0,1B,95,T3,0,1,,,,,0,0,499,51,13,LAN,BAY,1B,,,1
 Sevag Vapor,106.0,287.0,Swing N. Miss,195.0,600.0,K,313,T3,0,4,,,,,0,0,499,51,13,LAN,BAY,K,,,1
-Buck Armstrong,97.0,525.0,Swing N. Miss,195.0,1.0,DP,476,T3,1,4,,,,,0,0,499,51,13,LAN,BAY,DP,,,1
+Buck Armstrong,97.0,525.0,Swing N. Miss,195.0,1.0,DP,476,T3,1,4,,,,,0,0,499,51,13,LAN,BAY,LGO,,,1
 Jonathan Park,341.0,222.0,Tim Spooneybarger,4.0,857.0,K,365,B3,0,0,,,,,0,0,500,51,13,BAY,LAN,K,,,1
 Big Nutterstein,196.0,721.0,Tim Spooneybarger,4.0,459.0,FO,262,B3,1,0,,,,,0,0,500,51,13,BAY,LAN,FO,,,1
 Heinrich Frosch,343.0,153.0,Tim Spooneybarger,4.0,10.0,1B,143,B3,2,0,,,,,0,1,500,51,13,BAY,LAN,1B,,,1
 Antonin Periwinkle,185.0,53.0,Tim Spooneybarger,4.0,143.0,2B,90,B3,2,1,,,,,1,0,500,51,13,BAY,LAN,2B,,,1
 Chunky Dongmeister,348.0,812.0,Tim Spooneybarger,4.0,136.0,RGO,324,B3,2,6,,,,,0,0,500,51,13,BAY,LAN,RGO,,,1
 Mason Spurs,103.0,902.0,Swing N. Miss,195.0,770.0,1B,132,T4,0,0,,,,,0,0,501,51,13,LAN,BAY,1B,,,1
-James Garfield,11.0,3.0,Swing N. Miss,195.0,500.0,DP,497,T4,0,1,,,,,0,0,501,51,13,LAN,BAY,DP,,,1
+James Garfield,11.0,3.0,Swing N. Miss,195.0,500.0,DP,497,T4,0,1,,,,,0,0,501,51,13,LAN,BAY,LGO,,,1
 Peter Peckershine,389.0,622.0,Swing N. Miss,195.0,791.0,BB,169,T4,2,0,,,,,0,0,501,51,13,LAN,BAY,BB,,,1
 Anatoli Smorin,387.0,715.0,Swing N. Miss,195.0,200.0,LGO,485,T4,2,1,,,,,0,0,501,51,13,LAN,BAY,LGO,,,1
 Alex Peters,187.0,600.0,Tim Spooneybarger,4.0,847.0,FO,247,B4,0,0,,,,,0,0,502,51,13,BAY,LAN,FO,,,1
@@ -2371,7 +2371,7 @@ Slapshot Brady,141.0,345.0,Alex Moran,202.0,321.0,HR,24,B1,0,3,,,,,2,1,508,52,13
 Victor Justice,410.0,885.0,Alex Moran,202.0,881.0,HR,4,B1,0,0,,,,,1,1,508,52,13,TZS,SCB,HR,,,1
 Doughy Blobbo,398.0,283.0,Alex Moran,202.0,441.0,BB,158,B1,0,0,,,,,0,0,508,52,13,TZS,SCB,BB,,,1
 Lloyd Gross,135.0,420.0,Alex Moran,202.0,222.0,FO,198,B1,0,1,,,,,0,0,508,52,13,TZS,SCB,FO,,,1
-Haydn Werfer,392.0,421.0,Alex Moran,202.0,921.0,DP,500,B1,1,1,,,,,0,0,508,52,13,TZS,SCB,DP,,,1
+Haydn Werfer,392.0,421.0,Alex Moran,202.0,921.0,DP,500,B1,1,1,,,,,0,0,508,52,13,TZS,SCB,LGO,,,1
 G.H. Morello,211.0,900.0,Garren Smudge,133.0,45.0,1B,145,T2,0,0,,,,,0,0,509,52,13,SCB,TZS,1B,,,1
 Jumbo Dick,79.0,420.0,Garren Smudge,133.0,631.0,FO,211,T2,0,1,,,,,0,0,509,52,13,SCB,TZS,FO,,,1
 Michael Deemer,243.0,412.0,Garren Smudge,133.0,69.0,K,343,T2,1,1,,,,,0,0,509,52,13,SCB,TZS,K,,,1
@@ -2399,7 +2399,7 @@ Alex Moran,202.0,122.0,Dart Ragusa,134.0,1.0,1B,121,T4,0,0,,,,,0,0,513,52,13,SCB
 Johnny Dickshot,233.0,,Dart Ragusa,134.0,,Auto K,,T4,0,1,,,,,0,0,513,52,13,SCB,TZS,Auto K,,,9
 Coco Watanabe,204.0,27.0,Dart Ragusa,134.0,1.0,2B,26,T4,1,1,,,,,0,0,513,52,13,SCB,TZS,2B,,,1
 Pretzels Poffenberger,86.0,,Dart Ragusa,134.0,,BB,IBB,T4,1,6,,,,,0,0,513,52,13,SCB,TZS,BB,,,1
-KayLee Stewart,246.0,245.0,Dart Ragusa,134.0,734.0,DP,489,T4,1,7,,,,,0,0,513,52,13,SCB,TZS,DP,,,1
+KayLee Stewart,246.0,245.0,Dart Ragusa,134.0,734.0,DP,489,T4,1,7,,,,,0,0,513,52,13,SCB,TZS,LGO,,,1
 Superbone Threefinger,413.0,323.0,Hans Ali,197.0,211.0,1B,112,T1,0,0,,,,,0,1,514,53,14,CIN,SCB,1B,,,1
 Cam Singleton,266.0,777.0,Hans Ali,197.0,176.0,PO,399,T1,0,1,,,,,0,0,514,53,14,CIN,SCB,PO,,,1
 Rick McLightning,55.0,658.0,Hans Ali,197.0,687.0,3B,29,T1,1,1,,,,,1,1,514,53,14,CIN,SCB,3B,,,1
@@ -2463,7 +2463,7 @@ Ozzie Baez,228.0,,Lane Clementine IV,200.0,,Auto K,,T2,0,0,,,,,0,0,524,54,14,CCF
 Bubba McCali,72.0,750.0,Lane Clementine IV,200.0,201.0,RGO,451,T2,1,0,,,,,0,0,524,54,14,CCF,BER,RGO,,,1
 Jake Blee,232.0,127.0,Lane Clementine IV,200.0,389.0,FO,262,T2,2,0,,,,,0,0,524,54,14,CCF,BER,FO,,,1
 Chad Kroeger,30.0,379.0,Rickey Tucker,163.0,212.0,1B,167,B2,0,0,,,,,0,0,525,54,14,BER,CCF,1B,,,1
-Quint Kimbrel,20.0,719.0,Rickey Tucker,163.0,233.0,DP,486,B2,0,1,,,,,0,0,525,54,14,BER,CCF,DP,,,1
+Quint Kimbrel,20.0,719.0,Rickey Tucker,163.0,233.0,DP,486,B2,0,1,,,,,0,0,525,54,14,BER,CCF,LGO,,,1
 Nikki Falke,155.0,721.0,Rickey Tucker,163.0,457.0,FO,264,B2,2,0,,,,,0,0,525,54,14,BER,CCF,FO,,,1
 Rickey Tucker,163.0,69.0,Lane Clementine IV,200.0,538.0,LGO,469,T3,0,0,,,,,0,0,526,54,14,CCF,BER,LGO,,,1
 Jeorjhe Jerome,177.0,538.0,Lane Clementine IV,200.0,538.0,HR,0,T3,1,0,,,,,1,1,526,54,14,CCF,BER,HR,,,1
@@ -2500,7 +2500,7 @@ Teo Jones,137.0,999.0,Y.E. Wally,5.0,511.0,LGO,488,T1,2,1,,,,,0,0,532,55,14,TZS,
 Doug Quail,388.0,570.0,Jimjon Jonjim,272.0,493.0,HR,77,B1,0,0,,,,,1,1,533,55,14,LAN,TZS,HR,,,1
 Reimer Gonzalez,13.0,1.0,Jimjon Jonjim,272.0,493.0,LGO,492,B1,0,0,,,,,0,0,533,55,14,LAN,TZS,LGO,,,1
 Lawrence Wiseman,380.0,122.0,Jimjon Jonjim,272.0,253.0,1B,131,B1,1,0,,,,,0,0,533,55,14,LAN,TZS,1B,,,1
-Buck Armstrong,97.0,53.0,Jimjon Jonjim,272.0,626.0,DP,427,B1,1,1,,,,,0,0,533,55,14,LAN,TZS,DP,,,1
+Buck Armstrong,97.0,53.0,Jimjon Jonjim,272.0,626.0,DP,427,B1,1,1,,,,,0,0,533,55,14,LAN,TZS,RGO,,,1
 Hayden McCloud,129.0,439.0,Y.E. Wally,5.0,4.0,PO,435,T2,0,0,,,,,0,0,534,55,14,TZS,LAN,PO,,,1
 Garren Smudge,133.0,845.0,Y.E. Wally,5.0,804.0,HR,41,T2,1,0,,,,,1,1,534,55,14,TZS,LAN,HR,,,1
 Carlos Brownson,132.0,743.0,Y.E. Wally,5.0,441.0,K,302,T2,1,0,,,,,0,0,534,55,14,TZS,LAN,K,,,1
@@ -2508,7 +2508,7 @@ Ethan Franklin,128.0,638.0,Y.E. Wally,5.0,14.0,PO,376,T2,2,0,,,,,0,0,534,55,14,T
 Otis Nixon Sr.,107.0,712.0,Jimjon Jonjim,272.0,853.0,FO,141,B2,0,0,,,,,0,0,535,55,14,LAN,TZS,FO,,,1
 Kenneth Moore,98.0,420.0,Jimjon Jonjim,272.0,427.0,HR,7,B2,1,0,,,,,1,1,535,55,14,LAN,TZS,HR,,,1
 Spitz McGregor III,383.0,678.0,Jimjon Jonjim,272.0,802.0,1B,124,B2,1,0,,,,,0,0,535,55,14,LAN,TZS,1B,,,1
-Babatunde Oladotun,386.0,212.0,Jimjon Jonjim,272.0,678.0,DP,466,B2,1,1,,,,,0,0,535,55,14,LAN,TZS,DP,,,1
+Babatunde Oladotun,386.0,212.0,Jimjon Jonjim,272.0,678.0,DP,466,B2,1,1,,,,,0,0,535,55,14,LAN,TZS,LGO,,,1
 Jimjon Jonjim,272.0,747.0,Y.E. Wally,5.0,367.0,PO,380,T3,0,0,,,,,0,0,536,55,14,TZS,LAN,PO,,,1
 Dart Ragusa,134.0,319.0,Y.E. Wally,5.0,303.0,HR,16,T3,1,0,,,,,1,1,536,55,14,TZS,LAN,HR,,,1
 Quentin Adams,397.0,386.0,Y.E. Wally,5.0,583.0,FO,197,T3,1,0,,,,,0,0,536,55,14,TZS,LAN,FO,,,1
@@ -2518,7 +2518,7 @@ Odin Luka,9.0,106.0,Jimjon Jonjim,272.0,542.0,PO,436,B3,0,0,,,,,0,0,537,55,14,LA
 Doug Quail,388.0,740.0,Jimjon Jonjim,272.0,808.0,HR,68,B3,1,0,,,,,1,1,537,55,14,LAN,TZS,HR,,,1
 Reimer Gonzalez,13.0,1.0,Jimjon Jonjim,272.0,75.0,2B,74,B3,1,0,,,,,0,0,537,55,14,LAN,TZS,2B,,,1
 Lawrence Wiseman,380.0,447.0,Jimjon Jonjim,272.0,600.0,BB,153,B3,1,2,,,,,0,0,537,55,14,LAN,TZS,BB,,,1
-Buck Armstrong,97.0,842.0,Jimjon Jonjim,272.0,354.0,DP,488,B3,1,4,,,,,0,0,537,55,14,LAN,TZS,DP,,,1
+Buck Armstrong,97.0,842.0,Jimjon Jonjim,272.0,354.0,DP,488,B3,1,4,,,,,0,0,537,55,14,LAN,TZS,LGO,,,1
 Hayden McCloud,129.0,22.0,Y.E. Wally,5.0,972.0,3B,50,T4,0,0,,,,,0,1,538,55,14,TZS,LAN,3B,,,1
 Garren Smudge,133.0,591.0,Y.E. Wally,5.0,50.0,RGO,459,T4,0,3,,,,,1,0,538,55,14,TZS,LAN,RGO,,,1
 Carlos Brownson,132.0,68.0,Y.E. Wally,5.0,591.0,LGO,477,T4,1,0,,,,,0,0,538,55,14,TZS,LAN,LGO,,,1
@@ -2532,7 +2532,7 @@ Babatunde Oladotun,386.0,618.0,Jimjon Jonjim,272.0,203.0,PO,415,B4,1,4,,,,,0,0,5
 Odin Luka,9.0,822.0,Jimjon Jonjim,272.0,618.0,FO,204,B4,2,4,,,,,0,0,539,55,14,LAN,TZS,FO,,,1
 Quentin Adams,397.0,564.0,Babatunde Oladotun,386.0,317.0,FO,247,T5,0,0,,,,,0,0,540,55,14,TZS,LAN,FO,,,1
 Lloyd Gross,135.0,669.0,Babatunde Oladotun,386.0,847.0,BB,178,T5,1,0,,,,,0,0,540,55,14,TZS,LAN,BB,,,1
-Teo Jones,137.0,346.0,Babatunde Oladotun,386.0,771.0,DP,425,T5,1,1,,,,,0,0,540,55,14,TZS,LAN,DP,,,1
+Teo Jones,137.0,346.0,Babatunde Oladotun,386.0,771.0,DP,425,T5,1,1,,,,,0,0,540,55,14,TZS,LAN,RGO,,,1
 Doug Quail,388.0,126.0,Jimjon Jonjim,272.0,888.0,FO,238,B5,0,0,,,,,0,0,541,55,14,LAN,TZS,FO,,,1
 Reimer Gonzalez,13.0,1.0,Jimjon Jonjim,272.0,19.0,HR,18,B5,1,0,,,,,1,1,541,55,14,LAN,TZS,HR,,,1
 Lawrence Wiseman,380.0,226.0,Jimjon Jonjim,272.0,146.0,2B,80,B5,1,0,,,,,0,1,541,55,14,LAN,TZS,2B,,,1
@@ -2566,7 +2566,7 @@ Donked McToad,330.0,222.0,Demetrios Ooga,180.0,5.0,FO,217,B1,2,4,,,,,0,0,544,56,
 Valeria Lisova,183.0,525.0,Jayson Burdwell,282.0,299.0,FO,226,T2,0,0,,,,,0,0,545,56,14,BAY,FTP,FO,,,1
 Splash Nelson,312.0,75.0,Jayson Burdwell,282.0,1.0,1B,74,T2,1,0,,,,,0,0,545,56,14,BAY,FTP,1B,,,1
 Junior Biggins,313.0,401.0,Jayson Burdwell,282.0,618.0,BB,217,T2,1,1,,,,,0,0,545,56,14,BAY,FTP,BB,,,1
-Alexander Hamilton,347.0,888.0,Jayson Burdwell,282.0,336.0,DP,448,T2,1,4,,,,,0,0,545,56,14,BAY,FTP,DP,,,1
+Alexander Hamilton,347.0,888.0,Jayson Burdwell,282.0,336.0,DP,448,T2,1,4,,,,,0,0,545,56,14,BAY,FTP,LGO,,,1
 Chuck Tingle,355.0,531.0,Demetrios Ooga,180.0,397.0,1B,134,B2,0,0,,,,,0,1,546,56,14,FTP,BAY,1B,,,1
 Buzz Schwinghammer,367.0,810.0,Demetrios Ooga,180.0,817.0,HR,7,B2,0,1,,,,,2,1,546,56,14,FTP,BAY,HR,,,1
 Aaron IceCream,358.0,630.0,Demetrios Ooga,180.0,563.0,2B,67,B2,0,0,,,,,0,1,546,56,14,FTP,BAY,2B,,,1
@@ -2586,7 +2586,7 @@ Buzz Schwinghammer,367.0,,Demetrios Ooga,180.0,,Auto K,,B3,1,0,,,,,0,0,548,56,14
 Aaron IceCream,358.0,474.0,Demetrios Ooga,180.0,366.0,2B,108,B3,2,0,,,,,0,0,548,56,14,FTP,BAY,2B,,,1
 Caleb Athen,325.0,69.0,Jeffrey LaVert,189.0,420.0,K,351,B3,2,2,,,,,0,0,548,56,14,FTP,BAY,K,,,1
 Valeria Lisova,183.0,108.0,Jayson Burdwell,282.0,933.0,BB,175,T4,0,0,,,,,0,0,549,56,14,BAY,FTP,BB,,,1
-Splash Nelson,312.0,225.0,Jayson Burdwell,282.0,710.0,DP,485,T4,0,1,,,,,0,0,549,56,14,BAY,FTP,DP,,,1
+Splash Nelson,312.0,225.0,Jayson Burdwell,282.0,710.0,DP,485,T4,0,1,,,,,0,0,549,56,14,BAY,FTP,LGO,,,1
 Junior Biggins,313.0,451.0,Jayson Burdwell,282.0,499.0,2B,48,T4,2,0,,,,,0,0,549,56,14,BAY,FTP,2B,,,1
 Alexander Hamilton,347.0,738.0,Jayson Burdwell,282.0,113.0,K,375,T4,2,2,,,,,0,0,549,56,14,BAY,FTP,K,,,1
 KC Bats,287.0,666.0,Jeffrey LaVert,189.0,480.0,BB,186,B4,0,0,,,,,0,0,550,56,14,FTP,BAY,BB,,,1
