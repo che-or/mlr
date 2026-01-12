@@ -1,5 +1,13 @@
 # MLR Reference Changelog
 
+#### 1.3.1 - January 11, 2026
+- Corrected loss determination for the case of inherited runners scoring go-ahead run
+- Fixed errant gamelogs for S2(171) and S2(178)
+
+### 1.3 - January 7, 2026
+- Added FCB stats and leaderboards
+- Corrected save and hold determination logic
+
 #### 1.2.1 - December 18, 2025
 - Fixed S3 MiLR CIN overriding S3 MLR CLE (current CIN)
 - Fixed name display for when players have more recently played in MiLR than MLR
