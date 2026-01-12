@@ -12,7 +12,7 @@ It performs the following key functions:
 """
 
 from data_loader import load_all_seasons, load_player_types
-from game_processing import get_pitching_decisions
+from game_processing import get_pitching_decisions, Game, _simulate_play
 from mlr_gamelog_corrections import apply_gamelog_corrections
 from milr_gamelog_corrections import apply_milr_gamelog_corrections
 #from fcb_gamelog_corrections import apply_fcb_gamelog_corrections
@@ -2919,7 +2919,10 @@ def generate_league_data(
         }
 
         def get_re24_components(row):
-            runners_before = runners_map.get(row["OBC"], [False, False, False])
+            runners_before = [
+                row["Pitcher ID"] if r else None
+                for r in runners_map.get(row["OBC"], [False, False, False])
+            ]
             result = (
                 row["Exact Result"]
                 if pd.notna(row["Exact Result"])
@@ -2929,19 +2932,28 @@ def generate_league_data(
             diff = int(diff_val if pd.notna(diff_val) else 0)
             pa_type_val = pd.to_numeric(row.get("PA Type"), errors="coerce")
             pa_type = int(pa_type_val if pd.notna(pa_type_val) else 0)
+            season = int(row["Season"].replace("S", ""))
 
-            new_runners, runs_on_play, outs_for_play = game_simulator._simulate_play(
-                row["obc_after_for_sim"], runners_before, row["Outs"], result,
-                row["Old Result"], diff, int(row["Season"].replace("S", "")), pa_type
+            new_runners, outs_for_play, runs_scored_details = _simulate_play(
+                runners_before,
+                row["Outs"],
+                result,
+                diff,
+                season,
+                pa_type,
+                row["Pitcher ID"],
             )
 
+            runs_on_play = len(runs_scored_details)
             outs_after = row["Outs"] + outs_for_play
             is_last_play_of_inning = pd.isna(row["obc_after_raw"])
 
             if outs_after >= 3 or is_last_play_of_inning:
                 re_after = 0
             else:
-                obc_after = game_simulator._runners_to_obc(tuple(new_runners))
+                obc_after = game_simulator._runners_to_obc(
+                    tuple(bool(r) for r in new_runners)
+                )
                 re_after = re_matrix.get((obc_after, outs_after), 0)
             return pd.Series([re_after, runs_on_play])
 

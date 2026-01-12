@@ -84,7 +84,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 301,Joe Pidgeon,CLE,WC,WC,S,Right,P,,,/u/AnAngryPidgeon,anangrypidgeon,33,1,2,1.0,KEG
 305,Dylan Green,PIT,BC,FP,H,Left,1B,3B,RF,/u/RamblingWreckFromGT,dylang5,53,1,5,,
 308,Moose McCracken,PIT,BC,,,Right,C,3B,RF,/u/KitandCanoodle,honorsystem,53,1,4,,
-309,Emer Bock,PIT,BN,,,Left,1B,LF,RF,/u/gitisbaggz,marjoriemynxpitrecorder,53,2,5,,
+309,Emer Bock,PIT,BN,,,Left,1B,LF,RF,/u/gitisbaggz,marjoriemynxpitrecorder,53,9,5,,
 310,Jameson Poe,PHI,WC,TT,H,Right,P,,,/u/Toli820,jamesonpoe,53,1,2,1.0,WWC
 327,Makesiondon Kelkboom,TBR,WC,,,Right,C,1B,3B,/u/AZhawk,Tenny#1917,53,1,4,,
 331,KeyElle,SDP,SM,NH,S,Right,PH,,,/u/Ashbymtg,keyo,13,1,1,1.0,SEF
@@ -153,7 +153,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 703,Emerson,MTL,BP,BF,H,Right,LF,RF,C,/u/MarkShrekerburg,emersonaustin,53,1,9,,
 713,Pang Winn,CLE,HK,EG,H,Left,SS,CF,C,/u/TBKLarry,tbklarry,53,1,8,,
 714,Randy Pole,TOR,SF,TT,S,Right,P,,,/u/MattA2930,matt2930,53,1,2,,
-734,Gryffith Lindley,BOS,S,,,Left,3B,2B,C,/u/yellowcat5,thunderwolf53,53,1,7,,
+734,Gryffith Lindley,PIT,S,,,Left,3B,2B,C,/u/yellowcat5,thunderwolf53,53,1,7,,
 771,Lee Allen Ripley,,BP,FP,H,Left,P,,,/u/SubcheckForum,subcheckforum,53,1,2,,
 772,Mike Fruitstand,SDP,BC,EG,S,Right,3B,LF,CF,/u/ItsJustFruity,itsjustfruity,33,1,7,,
 776,Sierra Hightower,OAK,HK,TD,S,Right,LF,RF,C,/u/Deathwing_Dragonlord,theymightbereno,53,1,9,1.0,DDD
@@ -265,6 +265,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2616,Peter Hadley,NYY,XB,WC,H,Right,C,3B,LF,/u/anatabolica,anatabolica,53,1,4,,
 2621,Mike Truk,NYY,BC,EG,S,Right,P,,,/u/Explosion2,explosion2,53,1,2,,
 2625,Dutch Boggs,LAD,BC,EG,H,Left,PH,,,/u/heylookjorge,heylookjorge#6136,23,1,1,1.0,CCS
+2626,Oliver Raymond,NYM,BN,,,Right,3B,2B,SS,/u/bob-ak-hsihs,shish-ka-stank#0527,53,9,7,,
 2627,Kenny Powers,TEX,SM,BS,S,Left,P,,,/u/Kenny_Powers_MLR,_mike22,13,1,2,1.0,SCR
 2629,Doc Mainframe,,EN,BS,B,Right,P,,,/u/doc_mainframe,,53,1,2,,
 2634,Jimmy Pop,TEX,SM,,,Left,CF,RF,2B,/u/tandrewpike,wlupike,53,1,10,,
@@ -277,6 +278,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2659,Kevin James,NYM,S,TT,H,Right,P,,,/u/Swarm140,Swarm#3461,33,1,2,,
 2660,Ronnie Pickering,SFG,XB,EN,B,Right,1B,3B,CF,/u/KingNashII,Sketbandit#1243,53,1,5,,
 2664,Robert Glasses,LAD,TT,,,Right,3B,LF,SS,/u/CptJudgeNMS,WARCRIMINAL#5005,33,1,7,,
+2667,Herbie Bucket,CLE,WC,,,Right,LF,1B,,/u/Grinningezra,Grinningezra,53,9,9,,
 2668,Biff Sexy Hotbod,CWS,BC,,,Left,SS,3B,CF,/u/changemyusername,ruoh#0914,53,1,8,,
 2671,Rich Driver,NYY,BP,BF,H,Left,3B,LF,SS,/u/BearN7,YaBoiLogiBear#4073,53,1,7,1.0,SAL
 2673,Noah Diamond,CLE,S,WC,S,Left,CF,RF,LF,/u/olympus803,Olympus803#8087,53,1,10,1.0,DDD
@@ -316,7 +318,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2785,Basil,STL,BP,TD,H,Left,C,1B,3B,/u/Baxlor12,basilthespice,53,1,4,,
 2787,Buster Worthington,SEA,BC,,,Right,C,3B,CF,/u/lawnicus18,lawnicus18#8150,53,1,4,,
 2789,Roosevelt Sandoval,FLA,XB,BF,H,Right,2B,RF,SS,/u/booga_booga_booga_,booga_booga_booga_#5768,53,1,6,,
-2791,Pete Harper,CIN,1B,WC,S,Right,P,,,/u/kevinnc,kevinnc#1243,53,1,2,,
+2791,Pete Harper,CIN,1B,WC,S,Right,P,,,/u/kevinnc,kevinnc#1243,53,2,2,,
 2792,Jerome S. Monroe,SEA,1B,TD,H,Right,P,,,/u/crabface5,crabface5#2766,53,1,2,1.0,PQD
 2800,Buzz Carlton,STL,BC,,,Left,RF,CF,1B,/u/Shuichi_1,shuichi1#0724,53,1,11,,
 2802,Abel Greene,SFG,WC,,,Left,SS,2B,RF,/u/Kohanky,Kohanky#4271,53,1,8,,
@@ -417,7 +419,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2999,Rex McStrange,LAD,BP,BB,S,Left,P,,,/u/Frostylemur,Zedella,53,1,2,,
 3000,Cornbread House,CWS,MH,,,Left,1B,LF,3B,/u/B-rice1211,Bryce_XI,53,1,5,,
 3002,Shag McBenny,ANA,BC,,,Right,3B,SS,LF,/u/shag4031,shag3140,53,1,7,,
-3004,Otto von Pitchmark,MIL,MH,NH,S,Right,P,,,/u/bamabuffseattle,chomutovsojo13,53,1,2,1.0,
+3004,Otto von Pitchmark,MIL,MH,NH,S,Right,P,,,/u/bamabuffseattle,chomutovsojo13,53,1,2,1.0,PQD
 3006,Not Gaca,SFG,WC,NH,S,Left,3B,2B,LF,/u/ThatsNotGACA,thatsnotgaca,53,1,7,,
 3009,CJ,STL,WC,BS,H,Left,3B,LF,C,/u/camwyo,camwyo,53,1,7,,
 3011,Marlboro Jesus,HOU,WC,,,Right,RF,1B,,/u/rawrxdjackerie,jackerie_,53,1,11,,
@@ -548,7 +550,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3228,Jay Kwellon,ANA,BN,BB,H,Right,P,,,/u/MLR_NoReddit_User,YetiTaz,53,1,2,,
 3229,Ant man,MTL,SF,NH,H,Left,P,,,/u/Monthpure8988,Lucad7,53,1,2,1.0,SCR
 3230,Julie Jules,,BC,,,Right,RF,CF,,/u/JulieJulesRules,julesx4,53,1,11,1.0,
-3231,Dude Duderson,OAK,BP,,,Left,2B,SS,,/u/GuitarClef,x_guitarclef_x,53,1,6,1.0,PQD
+3231,Dude Duderson,,BP,,,Left,2B,SS,,/u/GuitarClef,x_guitarclef_x,53,1,6,1.0,
 3232,Isao Makino,,XB,,,Right,CF,LF,,/u/Tap__2,Lolst2,53,1,10,,
 3233,Booby Cancun,LAD,WC,BS,H,Right,P,,,/u/CapnDanger,capndanger,53,1,2,,
 3234,Joan Andreu Rosà,MIN,S,,,Right,SS,3B,,/u/Alquemar,alquemar,53,1,8,1.0,DDD
@@ -599,5 +601,6 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3308,Vivi Bluesky,BOS,SM,,,Left,CF,RF,,/u/libra904,zodiac.exe,53,1,10,,
 3309,Roxy Hurricane,,BC,,,Left,CF,LF,,/u/ravenclawroxy,roxyoulikeahurricane,53,1,10,1.0,SEF
 3310,Tasane Keto,SDP,S,,,Left,CF,RF,,/u/Jumpheart,Jumpheart,53,1,10,,
-3311,Preston Macintosh,,XB,WC,S,Right,CF,LF,,/u/Thegameisaboutglory1,Sickgrof,53,1,10,,
-3312,Fat Lever,,WC,NH,B,Left,2B,1B,,/u/MLR_NoReddit_User,chillsock,53,1,6,,
+3311,Ding L. Barry,CWS,XB,WC,S,Right,CF,LF,,/u/Thegameisaboutglory1,Sickgrof,53,1,10,,
+3312,Fat Lever,MTL,WC,NH,B,Left,2B,1B,,/u/MLR_NoReddit_User,chillsock,53,1,6,,
+3313,Hiram 'Longshank' Shanahan,,XB,,,Right,C,3B,,/u/MLR_NoReddit_User,Tom1042,53,1,4,,
