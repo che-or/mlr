@@ -5088,8 +5088,10 @@
         "formerNames": []
     },
     "2998": {
-        "currentName": "Makoto Date",
-        "formerNames": []
+        "currentName": "Dr. Slime",
+        "formerNames": [
+            "Makoto Date"
+        ]
     },
     "3002": {
         "currentName": "Shag McBenny",
@@ -5413,10 +5415,8 @@
         "formerNames": []
     },
     "3172": {
-        "currentName": "Ahab",
-        "formerNames": [
-            "Ahab Ceeley"
-        ]
+        "currentName": "Ahab Ceeley",
+        "formerNames": []
     },
     "3174": {
         "currentName": "Snape Tooth",
@@ -5559,7 +5559,7 @@
         "formerNames": []
     },
     "3263": {
-        "currentName": "Aladdin Sane",
+        "currentName": "Hard Candy",
         "formerNames": []
     },
     "3265": {
@@ -5599,7 +5599,7 @@
         "formerNames": []
     },
     "3313": {
-        "currentName": "Hiram 'Longshank' Shanahan",
+        "currentName": "Longshank Hank",
         "formerNames": []
     },
     "3317": {
