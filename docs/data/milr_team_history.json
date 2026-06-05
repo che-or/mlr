@@ -1,4 +1,10 @@
 {
+    "S2": {
+        "AKR": "Akron RubberDucks",
+        "HVR": "Hudson Valley Renegades",
+        "SAV": "Savannah Bananas",
+        "TRE": "Trenton Thunder"
+    },
     "S3": {
         "BAY": "Bayside Fish & Ships",
         "BER": "Berlin Blood Saints",
@@ -101,7 +107,7 @@
         "MMA": "Mesquite Malamutes",
         "WSW": "Wall Street Wolves"
     },
-    "S-8": {
+    "S8A": {
         "BAG": "Bay Area Goldfish",
         "BIS": "Bismarck Balks",
         "BLO": "Bloomington Onions",
@@ -115,7 +121,7 @@
         "PPM": "Point Pleasant Mothmen",
         "SCU": "Santa Rosa Scuba Divers"
     },
-    "S8": {
+    "S8B": {
         "ESP": "Kalos Espurrs",
         "MOB": "Miami Orange Bowls",
         "SBD": "Sun Belt Devils",

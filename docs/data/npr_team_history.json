@@ -1,0 +1,14 @@
+{
+    "S1": {
+        "CHI": {"name": "Chiba Lotte Marines", "logo_dark": "img/npr_logos/CHI.svg", "logo_light": "img/npr_logos/CHI.svg"},
+        "CHU": {"name": "Chunichi Dragons", "logo_dark": "img/npr_logos/CHU.svg", "logo_light": "img/npr_logos/CHU.svg"},
+        "HIR": {"name": "Hiroshima Carp", "logo_dark": "img/npr_logos/HIR.svg", "logo_light": "img/npr_logos/HIR.svg"},
+        "HKU": {"name": "Hankyu Braves"},
+        "HNF": {"name": "Hokkaido Nippon-Ham Fighters", "logo_dark": "img/npr_logos/HNF.svg", "logo_light": "img/npr_logos/HNF.svg"},
+        "HSH": {"name": "Hanshin Tigers", "logo_dark": "img/npr_logos/HSH.svg", "logo_light": "img/npr_logos/HSH.svg"},
+        "NAN": {"name": "Nankai Hawks"},
+        "ORI": {"name": "Orix Buffaloes", "logo_dark": "img/npr_logos/ORI.svg", "logo_light": "img/npr_logos/ORI.svg"},
+        "RGE": {"name": "Rakuten Golden Eagles", "logo_dark": "img/npr_logos/RGE.svg", "logo_light": "img/npr_logos/RGE.svg"},
+        "YOK": {"name": "Yokohama DeNA BayStars", "logo_dark": "img/npr_logos/YOK.svg", "logo_light": "img/npr_logos/YOK.svg"}
+    }
+}

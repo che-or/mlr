@@ -1,0 +1,6 @@
+{
+    "S1": {
+        "Central League": ["CHU", "HIR", "HKU", "HSH", "YOK"],
+        "Pacific League" : ["CHI", "HNF", "NAN", "ORI", "RGE"]
+    }
+}

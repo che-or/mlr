@@ -1,0 +1,1389 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,PA Type
+Barius McKockidopolous,612,252,Ryan Tyburn,517,930,K,322,T1,0,0,0,0,,,0,0,1,1,1,GRE,JMC,K,K,,1
+Carlos The great,132,801,Ryan Tyburn,517,6,FO,205,T1,1,0,0,0,,,0,0,1,1,1,GRE,JMC,FO,FO,,1
+Dakota Carolina Montana,65,873,Ryan Tyburn,517,645,FO,228,T1,2,0,0,0,,,0,0,1,1,1,GRE,JMC,FO,FO,,1
+Q Kimbrell,20,920,Swing N. Miss,195,398,LGO,478,B1,0,0,0,0,,,0,0,2,1,1,JMC,GRE,LGO,LGO,,1
+Speedo Meter,675,1000,Swing N. Miss,195,579,PO,421,B1,1,0,0,0,,,0,0,2,1,1,JMC,GRE,PO,PO,,1
+Cam'ron West,525,783,Swing N. Miss,195,2,FO,219,B1,2,0,0,0,,,0,0,2,1,1,JMC,GRE,FO,FO,,1
+"Reno ""El Greco"" McRenoface",776,350,Ryan Tyburn,517,264,1B,86,T2,0,0,0,0,,,0,0,3,1,1,GRE,JMC,1B,1B,,1
+Thomas BEOWULF,218,813,Ryan Tyburn,517,349,DP,464,T2,0,1,0,0,,,0,0,3,1,1,GRE,JMC,LGO,LGO,,1
+Swing N. Miss,195,530,Ryan Tyburn,517,898,PO,368,T2,2,0,0,0,,,0,0,3,1,1,GRE,JMC,PO,PO,,1
+Emerson Austin,703,420,Swing N. Miss,195,930,LGO,490,B2,0,0,0,0,,,0,0,4,1,1,JMC,GRE,LGO,LGO,,1
+Dimebag Jammin,262,729,Swing N. Miss,195,469,FO,260,B2,1,0,0,0,,,0,0,4,1,1,JMC,GRE,FO,FO,,1
+Todd Bonzalez II,169,700,Swing N. Miss,195,250,RGO,450,B2,2,0,0,0,,,0,0,4,1,1,JMC,GRE,RGO,RGO,,1
+Roccrates Rudnikov,114,753,Ryan Tyburn,517,248,LGO,495,T3,0,0,0,0,,,0,0,5,1,1,GRE,JMC,LGO,LGO,,1
+Iama Human,520,88,Ryan Tyburn,517,304,K,216,T3,1,0,0,0,,,0,0,5,1,1,GRE,JMC,K,K,,1
+Ben Bramly,238,999,Ryan Tyburn,517,31,2B,32,T3,2,0,0,0,,,0,0,5,1,1,GRE,JMC,2B,2B,,1
+Barius McKockidopolous,612,325,Ryan Tyburn,517,14,K,311,T3,2,2,0,0,,,0,0,5,1,1,GRE,JMC,K,K,,1
+Girth Brooks,161,187,Swing N. Miss,195,300,BB,113,B3,0,0,0,0,,,0,0,6,1,1,JMC,GRE,BB,BB,,1
+Mongster Mash,344,882,Swing N. Miss,195,750,BB,132,B3,0,1,0,0,,,0,0,6,1,1,JMC,GRE,BB,BB,,1
+Clarinet Clarinet,672,775,Swing N. Miss,195,182,DP,407,B3,0,4,0,0,,,0,0,6,1,1,JMC,GRE,RGO,RGO,,1
+Q Kimbrell,20,500,Swing N. Miss,195,636,FO,136,B3,2,3,0,0,,,0,0,6,1,1,JMC,GRE,FO,FO,,1
+Carlos The great,132,722,Ryan Tyburn,517,623,1B,99,T4,0,0,0,0,,,0,1,7,1,1,GRE,JMC,1B,1B,,1
+Carlos The great,132,773,Ryan Tyburn,517,701,SB,72,T4,0,1,0,0,,,0,0,7,1,1,GRE,JMC,Steal 2B,Steal 2B,,4
+Dakota Carolina Montana,65,931,Ryan Tyburn,517,355,RGO,424,T4,0,2,0,0,,,0,0,7,1,1,GRE,JMC,RGO,RGO,,1
+"Reno ""El Greco"" McRenoface",776,189,Ryan Tyburn,517,424,K,235,T4,1,3,0,0,,,0,0,7,1,1,GRE,JMC,K,K,,2
+Thomas BEOWULF,218,958,Ryan Tyburn,517,17,2B,59,T4,2,3,0,0,,,1,1,7,1,1,GRE,JMC,2B,2B,,1
+Matthaios Himynamis,361,6,Ryan Tyburn,517,137,BB,131,T4,2,2,0,1,,,0,0,7,1,1,GRE,JMC,BB,BB,,1
+Roccrates Rudnikov,114,713,Ryan Tyburn,517,825,1B,112,T4,2,4,0,1,,,1,0,7,1,1,GRE,JMC,1B,1B,,1
+Iama Human,520,,Ryan Tyburn,517,,IBB,,T4,2,5,0,2,,,0,0,7,1,1,GRE,JMC,IBB,IBB,,8
+Ben Bramly,238,101,Ryan Tyburn,517,854,K,247,T4,2,7,0,2,,,0,0,7,1,1,GRE,JMC,K,K,,1
+Speedo Meter,675,477,Theophylaktos Twatklava,657,982,LGO,495,B4,0,0,0,2,,,0,0,8,1,1,JMC,GRE,LGO,LGO,,1
+Cam'ron West,525,198,Theophylaktos Twatklava,657,3,FO,195,B4,1,0,0,2,,,0,0,8,1,1,JMC,GRE,FO,FO,,1
+Emerson Austin,703,20,Theophylaktos Twatklava,657,1,HR,19,B4,2,0,0,2,,,1,1,8,1,1,JMC,GRE,HR,HR,,1
+Dimebag Jammin,262,623,Theophylaktos Twatklava,657,502,BB,121,B4,2,0,1,2,,,0,1,8,1,1,JMC,GRE,BB,BB,,1
+Todd Bonzalez II,169,269,Theophylaktos Twatklava,657,240,HR,29,B4,2,1,1,2,,,2,1,8,1,1,JMC,GRE,HR,HR,,1
+Girth Brooks,161,420,Theophylaktos Twatklava,657,311,BB,109,B4,2,0,3,2,,,0,0,8,1,1,JMC,GRE,BB,BB,,1
+Mongster Mash,344,782,Theophylaktos Twatklava,657,312,LGO,470,B4,2,1,3,2,,,0,0,8,1,1,JMC,GRE,LGO,LGO,,1
+Barius McKockidopolous,612,947,Tara E. Doug,252,167,FO,220,T5,0,0,3,2,,,0,0,9,1,1,GRE,JMC,FO,FO,,1
+Carlos The great,132,,Tara E. Doug,252,,Auto K,,T5,1,0,3,2,,,0,0,9,1,1,GRE,JMC,Auto K,Auto K,,9
+Dakota Carolina Montana,65,953,Tara E. Doug,252,167,FO,214,T5,2,0,3,2,,,0,0,9,1,1,GRE,JMC,FO,FO,,1
+Clarinet Clarinet,672,420,Theophylaktos Twatklava,657,789,K,369,B5,0,0,3,2,,,0,0,10,1,1,JMC,GRE,K,K,,1
+Q Kimbrell,20,500,Theophylaktos Twatklava,657,744,K,244,B5,1,0,3,2,,,0,0,10,1,1,JMC,GRE,K,K,,1
+Speedo Meter,675,383,Theophylaktos Twatklava,657,438,2B,55,B5,2,0,3,2,,,0,0,10,1,1,JMC,GRE,2B,2B,,1
+Cam'ron West,525,222,Theophylaktos Twatklava,657,899,K,323,B5,2,2,3,2,,,0,0,10,1,1,JMC,GRE,K,K,,1
+"Reno ""El Greco"" McRenoface",776,920,Tara E. Doug,252,320,LGO,400,T6,0,0,3,2,,,0,0,11,1,1,GRE,JMC,LGO,LGO,,1
+Thomas BEOWULF,218,939,Tara E. Doug,252,540,RGO,399,T6,1,0,3,2,,,0,0,11,1,1,GRE,JMC,RGO,RGO,,1
+Theophylaktos Twatklava,657,911,Tara E. Doug,252,760,FO,151,T6,2,0,3,2,,,0,0,11,1,1,GRE,JMC,FO,FO,,1
+Nick Tits,59,420,Artanis Jones,37,6,RGO,414,T1,0,0,0,0,,,0,0,12,2,1,SCO,BRB,RGO,RGO,,1
+Liam Abercrombie,270,554,Artanis Jones,37,342,FO,212,T1,1,0,0,0,,,0,0,12,2,1,SCO,BRB,FO,FO,,1
+Buster McNutt,127,218,Artanis Jones,37,520,K,302,T1,2,0,0,0,,,0,0,12,2,1,SCO,BRB,K,K,,1
+Takahiro Rihanna,419,986,señor rustus of house vervulf,651,486,LGO,500,B1,0,0,0,0,,,0,0,13,2,1,BRB,SCO,LGO,LGO,,1
+Francis J Wellington IV,152,666,señor rustus of house vervulf,651,28,K,362,B1,1,0,0,0,,,0,0,13,2,1,BRB,SCO,K,K,,1
+Trevor Mouseman,559,305,señor rustus of house vervulf,651,504,FO,199,B1,2,0,0,0,,,0,0,13,2,1,BRB,SCO,FO,FO,,1
+Cal Lidous,227,777,Artanis Jones,37,613,FO,164,T2,0,0,0,0,,,0,0,14,2,1,SCO,BRB,FO,FO,,1
+Sammy Slingshot,32,388,Artanis Jones,37,43,RGO,345,T2,1,0,0,0,,,0,0,14,2,1,SCO,BRB,RGO,RGO,,1
+Edward Freeman,700,545,Artanis Jones,37,455,1B,90,T2,2,0,0,0,,,0,0,14,2,1,SCO,BRB,1B,1B,,1
+Michael Scarn,746,917,Artanis Jones,37,502,RGO,415,T2,2,1,0,0,,,0,0,14,2,1,SCO,BRB,RGO,RGO,,1
+KC Bats,287,1,señor rustus of house vervulf,651,920,1B,81,B2,0,0,0,0,,,0,0,15,2,1,BRB,SCO,1B,1B,,1
+becky mcbadbat,277,888,señor rustus of house vervulf,651,69,FO,181,B2,0,1,0,0,,,0,0,15,2,1,BRB,SCO,FO,FO,,1
+Garren Smudge,133,666,señor rustus of house vervulf,651,145,DP,479,B2,1,1,0,0,,,0,0,15,2,1,BRB,SCO,LGO,LGO,,1
+Buster Hyman,351,443,Artanis Jones,37,376,1B,67,T3,0,0,0,0,,,0,0,16,2,1,SCO,BRB,1B,1B,,1
+Buster Hyman,351,543,Artanis Jones,37,811,SB,268,T3,0,1,0,0,,,0,0,16,2,1,SCO,BRB,Steal 2B,Steal 2B,,4
+Bench Warmer,665,75,Artanis Jones,37,841,K,234,T3,0,2,0,0,,,0,0,16,2,1,SCO,BRB,K,K,,1
+Nick Tits,59,116,Artanis Jones,37,198,1B,82,T3,1,2,0,0,,,0,0,16,2,1,SCO,BRB,1B,1B,,1
+Liam Abercrombie,270,458,Artanis Jones,37,603,BB,145,T3,1,5,0,0,,,0,0,16,2,1,SCO,BRB,BB,BB,,1
+Buster McNutt,127,666,Artanis Jones,37,98,PO,432,T3,1,7,0,0,,,0,0,16,2,1,SCO,BRB,PO,PO,,1
+Cal Lidous,227,152,Artanis Jones,37,719,LGO,433,T3,2,7,0,0,,,0,0,16,2,1,SCO,BRB,LGO,LGO,,1
+Edward Duncan,620,660,señor rustus of house vervulf,651,511,BB,149,B3,0,0,0,0,,,0,0,17,2,1,BRB,SCO,BB,BB,,1
+Bart Harley Jarvis,2,311,señor rustus of house vervulf,651,510,FO,199,B3,0,1,0,0,,,0,0,17,2,1,BRB,SCO,FO,FO,,1
+Stan Mann,357,509,señor rustus of house vervulf,651,666,BB,157,B3,1,1,0,0,,,0,0,17,2,1,BRB,SCO,BB,BB,,1
+Takahiro Rihanna,419,618,señor rustus of house vervulf,651,853,K,235,B3,1,4,0,0,,,0,0,17,2,1,BRB,SCO,K,K,,1
+Francis J Wellington IV,152,975,señor rustus of house vervulf,651,208,K,233,B3,2,4,0,0,,,0,0,17,2,1,BRB,SCO,K,K,,1
+Sammy Slingshot,32,665,Artanis Jones,37,866,FO,201,T4,0,0,0,0,,,0,0,18,2,1,SCO,BRB,FO,FO,,1
+Edward Freeman,700,424,Artanis Jones,37,973,LGO,451,T4,1,0,0,0,,,0,0,18,2,1,SCO,BRB,LGO,LGO,,1
+Michael Scarn,746,465,Artanis Jones,37,444,2B,21,T4,2,0,0,0,,,0,1,18,2,1,SCO,BRB,2B,2B,,1
+Buster Hyman,351,819,Artanis Jones,37,835,HR,16,T4,2,2,0,0,,,2,1,18,2,1,SCO,BRB,HR,HR,,1
+Bench Warmer,665,812,Artanis Jones,37,64,K,252,T4,2,0,0,2,,,0,0,18,2,1,SCO,BRB,K,K,,1
+Trevor Mouseman,559,444,señor rustus of house vervulf,651,420,HR,24,B4,0,0,0,2,,,1,1,19,2,1,BRB,SCO,HR,HR,,1
+KC Bats,287,573,señor rustus of house vervulf,651,979,K,406,B4,0,0,1,2,,,0,0,19,2,1,BRB,SCO,K,K,,1
+becky mcbadbat,277,666,señor rustus of house vervulf,651,317,K,349,B4,1,0,1,2,,,0,0,19,2,1,BRB,SCO,K,K,,1
+Garren Smudge,133,256,señor rustus of house vervulf,651,210,2B,46,B4,2,0,1,2,,,0,0,19,2,1,BRB,SCO,2B,2B,,1
+Edward Duncan,620,455,señor rustus of house vervulf,651,169,K,286,B4,2,2,1,2,,,0,0,19,2,1,BRB,SCO,K,K,,1
+Rotticus Scott,562,344,Jackson Sanchez,46,743,RGO,399,T5,0,0,1,2,,,0,0,20,2,1,SCO,BRB,RGO,RGO,,1
+Liam Abercrombie,270,183,Jackson Sanchez,46,686,LGO,497,T5,1,0,1,2,,,0,0,20,2,1,SCO,BRB,LGO,LGO,,1
+Buster McNutt,127,1000,Jackson Sanchez,46,979,3B,21,T5,2,0,1,2,,,0,0,20,2,1,SCO,BRB,3B,3B,,1
+Cal Lidous,227,69,Jackson Sanchez,46,722,RGO,347,T5,2,3,1,2,,,0,0,20,2,1,SCO,BRB,RGO,RGO,,1
+Bart Harley Jarvis,2,777,Pablo Sanchez III,250,213,PO,436,B5,0,0,1,2,,,0,0,21,2,1,BRB,SCO,PO,PO,,1
+Stan Mann,357,86,Pablo Sanchez III,250,420,K,334,B5,1,0,1,2,,,0,0,21,2,1,BRB,SCO,K,K,,1
+Takahiro Rihanna,419,423,Pablo Sanchez III,250,420,HR,3,B5,2,0,1,2,,,1,1,21,2,1,BRB,SCO,HR,HR,,1
+Francis J Wellington IV,152,504,Pablo Sanchez III,250,721,K,217,B5,2,0,2,2,,,0,0,21,2,1,BRB,SCO,K,K,,1
+Sammy Slingshot,32,245,Jackson Sanchez,46,649,LGO,404,T6,0,0,2,2,,,0,0,22,2,1,SCO,BRB,LGO,LGO,,1
+Edward Freeman,700,565,Jackson Sanchez,46,229,K,336,T6,1,0,2,2,,,0,0,22,2,1,SCO,BRB,K,K,,1
+Michael Scarn,746,623,Jackson Sanchez,46,366,FO,257,T6,2,0,2,2,,,0,0,22,2,1,SCO,BRB,FO,FO,,1
+Trevor Mouseman,559,270,Pablo Sanchez III,250,121,BB,149,B6,0,0,2,2,,,0,0,23,2,1,BRB,SCO,BB,BB,,1
+KC Bats,287,738,Pablo Sanchez III,250,591,BB,147,B6,0,1,2,2,,,0,0,23,2,1,BRB,SCO,BB,BB,,1
+becky mcbadbat,277,148,Pablo Sanchez III,250,366,FO,218,B6,0,4,2,2,,,0,0,23,2,1,BRB,SCO,FO,FO,,1
+Garren Smudge,133,386,Pablo Sanchez III,250,11,K,375,B6,1,4,2,2,,,0,0,23,2,1,BRB,SCO,K,K,,1
+Edward Duncan,620,433,Pablo Sanchez III,250,212,FO,221,B6,2,4,2,2,,,0,0,23,2,1,BRB,SCO,FO,FO,,1
+Buster Hyman,351,619,Jackson Sanchez,46,606,HR,13,T7,0,2,2,2,,,2,1,24,2,1,SCO,BRB,HR,HR,,1
+Bench Warmer,665,12,Jackson Sanchez,46,125,BB,113,T7,0,0,2,4,,,0,0,24,2,1,SCO,BRB,BB,BB,,1
+Rotticus Scott,562,69,Alyx Sabor,149,777,K,292,T7,0,1,2,4,,,0,0,24,2,1,SCO,BRB,K,K,,1
+Liam Abercrombie,270,555,Alyx Sabor,149,925,K,370,T7,1,1,2,4,,,0,0,24,2,1,SCO,BRB,K,K,,1
+Buster McNutt,127,789,Alyx Sabor,149,31,K,242,T7,2,1,2,4,,,0,0,24,2,1,SCO,BRB,K,K,,1
+Bart Harley Jarvis,2,808,Pablo Sanchez III,250,222,PO,414,B7,0,2,2,4,,,0,0,25,2,1,BRB,SCO,PO,PO,,1
+Stan Mann,357,600,Pablo Sanchez III,250,611,3B,11,B7,1,2,2,4,,,1,0,25,2,1,BRB,SCO,3B,3B,,1
+Takahiro Rihanna,419,,Pablo Sanchez III,250,,IBB,,B7,1,3,3,4,,,0,0,25,2,1,BRB,SCO,IBB,IBB,,8
+Francis J Wellington IV,152,1,Sammy Slingshot,32,550,DP,451,B7,1,5,3,4,,,0,0,25,2,1,BRB,SCO,LGO,LGO,,1
+Thelonius Junk,623,270,Rickey Tucker,163,478,FO,208,T1,0,0,0,0,,,0,0,26,3,1,VC,SWZ,FO,FO,,1
+Jordan Peppers,18,500,Rickey Tucker,163,222,K,278,T1,1,0,0,0,,,0,0,26,3,1,VC,SWZ,K,K,,1
+Fernando Cruz,176,229,Rickey Tucker,163,222,HR,7,T1,2,0,0,0,,,1,1,26,3,1,VC,SWZ,HR,HR,,1
+Jack Kanoff,189,190,Rickey Tucker,163,309,1B,119,T1,2,0,0,1,,,0,0,26,3,1,VC,SWZ,1B,1B,,1
+Wavy Gravy VIII,265,888,Rickey Tucker,163,612,K,276,T1,2,1,0,1,,,0,0,26,3,1,VC,SWZ,K,K,,1
+Jack Marnette,213,738,Jack Kanoff,189,69,K,331,B1,0,0,0,1,,,0,0,27,3,1,SWZ,VC,K,K,,1
+Red Arrow,547,666,Jack Kanoff,189,750,1B,84,B1,1,0,0,1,,,0,0,27,3,1,SWZ,VC,1B,1B,,1
+Mike Fruitstand,772,550,Jack Kanoff,189,240,K,310,B1,1,1,0,1,,,0,0,27,3,1,SWZ,VC,K,K,,1
+Hank Murphy,76,242,Jack Kanoff,189,520,FO,278,B1,2,1,0,1,,,0,0,27,3,1,SWZ,VC,FO,FO,,1
+Derek Bongiovanni,109,839,Rickey Tucker,163,798,2B,41,T2,0,0,0,1,,,0,1,28,3,1,VC,SWZ,2B,2B,,1
+LaCarpetron Dukemarriot,775,800,Rickey Tucker,163,912,BB,112,T2,0,2,0,1,,,0,1,28,3,1,VC,SWZ,BB,BB,,1
+Jacky Wacky,702,199,Rickey Tucker,163,923,K,276,T2,0,4,0,1,,,0,0,28,3,1,VC,SWZ,K,K,,1
+Dallas Houston,416,311,Rickey Tucker,163,1,K,310,T2,1,4,0,1,,,0,0,28,3,1,VC,SWZ,K,K,,1
+Thelonius Junk,623,112,Rickey Tucker,163,66,2B,46,T2,2,4,0,1,,,2,0,28,3,1,VC,SWZ,2B,2B,,1
+Jordan Peppers,18,147,Rickey Tucker,163,722,LGO,425,T2,2,2,0,3,,,0,0,28,3,1,VC,SWZ,LGO,LGO,,1
+Caleb Aiken,324,420,Jack Kanoff,189,150,FO,270,B2,0,0,0,3,,,0,0,29,3,1,SWZ,VC,FO,FO,,1
+Demetrios Ooga,180,564,Jack Kanoff,189,772,FO,208,B2,1,0,0,3,,,0,0,29,3,1,SWZ,VC,FO,FO,,1
+Sir Shirley,698,900,Jack Kanoff,189,451,LGO,449,B2,2,0,0,3,,,0,0,29,3,1,SWZ,VC,LGO,LGO,,1
+Fernando Cruz,176,720,Rickey Tucker,163,311,RGO,409,T3,0,0,0,3,,,0,0,30,3,1,VC,SWZ,RGO,RGO,,1
+Jack Kanoff,189,200,Rickey Tucker,163,12,FO,188,T3,1,0,0,3,,,0,0,30,3,1,VC,SWZ,FO,FO,,1
+Wavy Gravy VIII,265,911,Rickey Tucker,163,386,LGO,475,T3,2,0,0,3,,,0,0,30,3,1,VC,SWZ,LGO,LGO,,1
+Xerxes Dalin,474,312,Jack Kanoff,189,750,RGO,438,B3,0,0,0,3,,,0,0,31,3,1,SWZ,VC,RGO,RGO,,1
+Jack Alpha,73,313,Jack Kanoff,189,850,LGO,463,B3,1,0,0,3,,,0,0,31,3,1,SWZ,VC,LGO,LGO,,1
+Jack Marnette,213,360,Jack Kanoff,189,822,LGO,462,B3,2,0,0,3,,,0,0,31,3,1,SWZ,VC,LGO,LGO,,1
+Derek Bongiovanni,109,184,Rickey Tucker,163,264,1B,80,T4,0,0,0,3,,,0,0,32,3,1,VC,SWZ,1B,1B,,1
+LaCarpetron Dukemarriot,775,50,Rickey Tucker,163,319,K,269,T4,0,1,0,3,,,0,0,32,3,1,VC,SWZ,K,K,,1
+Jacky Wacky,702,69,Rickey Tucker,163,697,DP,372,T4,1,1,0,3,,,0,0,32,3,1,VC,SWZ,RGO,RGO,,1
+Red Arrow,547,277,Jack Kanoff,189,100,FO,177,B4,0,0,0,3,,,0,0,33,3,1,SWZ,VC,FO,FO,,1
+Mike Fruitstand,772,815,Jack Kanoff,189,1,FO,186,B4,1,0,0,3,,,0,0,33,3,1,SWZ,VC,FO,FO,,1
+Hank Murphy,76,420,Jack Kanoff,189,345,1B,75,B4,2,0,0,3,,,0,0,33,3,1,SWZ,VC,1B,1B,,1
+Caleb Aiken,324,191,Jack Kanoff,189,750,RGO,441,B4,2,1,0,3,,,0,0,33,3,1,SWZ,VC,RGO,RGO,,1
+Dallas Houston,416,394,Icna Comit,198,7,RGO,387,T5,0,0,0,3,,,0,0,34,3,1,VC,SWZ,RGO,RGO,,1
+Thelonius Junk,623,512,Icna Comit,198,730,FO,218,T5,1,0,0,3,,,0,0,34,3,1,VC,SWZ,FO,FO,,1
+Jordan Peppers,18,788,Icna Comit,198,533,FO,255,T5,2,0,0,3,,,0,0,34,3,1,VC,SWZ,FO,FO,,1
+Demetrios Ooga,180,911,Jericho Caulfield,36,837,1B,74,B5,0,0,0,3,,,0,0,35,3,1,SWZ,VC,1B,1B,,1
+Sir Shirley,698,990,Jericho Caulfield,36,300,K,310,B5,0,1,0,3,,,0,0,35,3,1,SWZ,VC,K,K,,1
+Xerxes Dalin,474,515,Jericho Caulfield,36,405,BB,110,B5,1,1,0,3,,,0,0,35,3,1,SWZ,VC,BB,BB,,1
+Jack Alpha,73,184,Jericho Caulfield,36,957,K,227,B5,1,4,0,3,,,0,0,35,3,1,SWZ,VC,K,K,,1
+Jack Marnette,213,160,Jericho Caulfield,36,630,LGO,470,B5,2,4,0,3,,,0,0,35,3,1,SWZ,VC,LGO,LGO,,1
+Fernando Cruz,176,812,Icna Comit,198,890,1B,78,T6,0,0,0,3,,,0,0,36,3,1,VC,SWZ,1B,1B,,1
+Jericho Caulfield,36,138,Icna Comit,198,442,K,304,T6,0,1,0,3,,,0,0,36,3,1,VC,SWZ,K,K,,1
+Fernando Cruz,176,628,Icna Comit,198,111,CS,483,T6,1,1,0,3,,,0,0,36,3,1,VC,SWZ,CS 2B,CS 2B,,4
+Wavy Gravy VIII,265,123,Icna Comit,198,1,1B,122,T6,2,0,0,3,,,0,1,36,3,1,VC,SWZ,1B,1B,,1
+Derek Bongiovanni,109,29,Icna Comit,198,986,2B,43,T6,2,1,0,3,,,1,0,36,3,1,VC,SWZ,2B,2B,,1
+LaCarpetron Dukemarriot,775,720,Icna Comit,198,555,FO,165,T6,2,2,0,4,,,0,0,36,3,1,VC,SWZ,FO,FO,,1
+Red Arrow,547,545,Jericho Caulfield,36,225,K,320,B6,0,0,0,4,,,0,0,37,3,1,SWZ,VC,K,K,,1
+Mike Fruitstand,772,898,Jericho Caulfield,36,590,K,308,B6,1,0,0,4,,,0,0,37,3,1,SWZ,VC,K,K,,1
+Hank Murphy,76,969,Jericho Caulfield,36,989,HR,20,B6,2,0,0,4,,,1,1,37,3,1,SWZ,VC,HR,HR,,1
+Caleb Aiken,324,70,Jericho Caulfield,36,251,FO,181,B6,2,0,1,4,,,0,0,37,3,1,SWZ,VC,FO,FO,,1
+Juniped Catfish,488,750,Bobosnia Bones,478,504,K,246,T1,0,0,0,0,,,0,0,38,4,1,SM,BH,K,K,,1
+Paul E. Wag,583,137,Bobosnia Bones,478,111,2B,26,T1,1,0,0,0,,,0,1,38,4,1,SM,BH,2B,2B,,1
+Obama habubger,342,871,Bobosnia Bones,478,762,1B,109,T1,1,2,0,0,,,0,1,38,4,1,SM,BH,1B,1B,,1
+Nori Aru,131,911,Bobosnia Bones,478,1000,1B,89,T1,1,5,0,0,,,1,1,38,4,1,SM,BH,1B,1B,,1
+Emmett Michael,10,478,Bobosnia Bones,478,606,BB,128,T1,1,4,0,1,,,0,1,38,4,1,SM,BH,BB,BB,,1
+Lloyd Gross,135,115,Bobosnia Bones,478,150,3B,35,T1,1,7,0,1,,,3,1,38,4,1,SM,BH,3B,3B,,1
+Michael Ikenberry,63,229,Bobosnia Bones,478,1,Sac,228,T1,1,3,0,4,,,1,0,38,4,1,SM,BH,FO,FO,,1
+Johnny Hendrivederci,600,,Bobosnia Bones,478,,Auto BB,,T1,2,0,0,5,,,0,0,38,4,1,SM,BH,Auto BB,Auto BB,,10
+Richard Northstar,275,69,Bobosnia Bones,478,250,FO,181,T1,2,1,0,5,,,0,0,38,4,1,SM,BH,FO,FO,,1
+Kyle Corbett,707,679,Richard Northstar,275,656,HR,23,B1,0,0,0,5,,,1,1,39,4,1,BH,SM,HR,HR,,1
+Dixon Uraz,34,656,Richard Northstar,275,204,PO,452,B1,0,0,1,5,,,0,0,39,4,1,BH,SM,PO,PO,,1
+Henrik Omega,84,111,Richard Northstar,275,457,K,346,B1,1,0,1,5,,,0,0,39,4,1,BH,SM,K,K,,1
+Miroslav,71,700,Richard Northstar,275,219,LGO,481,B1,2,0,1,5,,,0,0,39,4,1,BH,SM,LGO,LGO,,1
+Juniped Catfish,488,6,Bobosnia Bones,478,300,K,294,T2,0,0,1,5,,,0,0,40,4,1,SM,BH,K,K,,1
+Paul E. Wag,583,555,Bobosnia Bones,478,901,PO,346,T2,1,0,1,5,,,0,0,40,4,1,SM,BH,PO,PO,,1
+Obama habubger,342,101,Bobosnia Bones,478,123,3B,22,T2,2,0,1,5,,,0,0,40,4,1,SM,BH,3B,3B,,1
+Nori Aru,131,567,Bobosnia Bones,478,273,PO,294,T2,2,3,1,5,,,0,0,40,4,1,SM,BH,PO,PO,,1
+Wallace Grommet,492,6,Richard Northstar,275,703,K,303,B2,0,0,1,5,,,0,0,41,4,1,BH,SM,K,K,,1
+Charlie Bae Jr.,293,733,Richard Northstar,275,533,FO,200,B2,1,0,1,5,,,0,0,41,4,1,BH,SM,FO,FO,,1
+Gob Bibson,708,888,Richard Northstar,275,705,K,183,B2,2,0,1,5,,,0,0,41,4,1,BH,SM,K,K,,1
+Emmett Michael,10,711,Bobosnia Bones,478,360,PO,351,T3,0,0,1,5,,,0,0,42,4,1,SM,BH,PO,PO,,1
+Lloyd Gross,135,450,Bobosnia Bones,478,1,RGO,449,T3,1,0,1,5,,,0,0,42,4,1,SM,BH,RGO,RGO,,1
+Michael Ikenberry,63,1,Bobosnia Bones,478,888,BB,113,T3,2,0,1,5,,,0,1,42,4,1,SM,BH,BB,BB,,1
+Johnny Hendrivederci,600,620,Bobosnia Bones,478,580,2B,40,T3,2,1,1,5,,,1,0,42,4,1,SM,BH,2B,2B,,1
+Richard Northstar,275,69,Bobosnia Bones,478,569,LGO,500,T3,2,2,1,6,,,0,0,42,4,1,SM,BH,LGO,LGO,,1
+Joe Watson,194,630,Sammy Capicola,117,828,FO,198,B3,0,0,1,6,,,0,0,43,4,1,BH,SM,FO,FO,,1
+dick richards,487,730,Sammy Capicola,117,345,RGO,385,B3,1,0,1,6,,,0,0,43,4,1,BH,SM,RGO,RGO,,1
+Kyle Corbett,707,411,Sammy Capicola,117,69,RGO,342,B3,2,0,1,6,,,0,0,43,4,1,BH,SM,RGO,RGO,,1
+Juniped Catfish,488,1,Bobosnia Bones,478,726,K,275,T4,0,0,1,6,,,0,0,44,4,1,SM,BH,K,K,,1
+Paul E. Wag,583,169,Bobosnia Bones,478,480,PO,311,T4,1,0,1,6,,,0,0,44,4,1,SM,BH,PO,PO,,1
+Obama habubger,342,333,Bobosnia Bones,478,512,FO,179,T4,2,0,1,6,,,0,0,44,4,1,SM,BH,FO,FO,,1
+Dixon Uraz,34,222,Sammy Capicola,117,138,2B,84,B4,0,0,1,6,,,0,1,45,4,1,BH,SM,2B,2B,,1
+Henrik Omega,84,878,Sammy Capicola,117,552,RGO,326,B4,0,2,1,6,,,0,0,45,4,1,BH,SM,RGO,RGO,,1
+Miroslav,71,900,Sammy Capicola,117,966,1B,66,B4,1,3,1,6,,,1,0,45,4,1,BH,SM,1B,1B,,1
+Wallace Grommet,492,846,Sammy Capicola,117,414,DP,432,B4,1,1,2,6,,,0,0,45,4,1,BH,SM,LGO,LGO,,1
+Nori Aru,131,69,Aaron Burr,646,257,FO,188,T5,0,0,2,6,,,0,0,46,4,1,SM,BH,FO,FO,,1
+Emmett Michael,10,1,Aaron Burr,646,2,HR,1,T5,1,0,2,6,,,1,1,46,4,1,SM,BH,HR,HR,,1
+Lloyd Gross,135,212,Aaron Burr,646,1,K,211,T5,1,0,2,7,,,0,0,46,4,1,SM,BH,K,K,,1
+Michael Ikenberry,63,811,Aaron Burr,646,888,1B,77,T5,2,0,2,7,,,0,0,46,4,1,SM,BH,1B,1B,,1
+Johnny Hendrivederci,600,2,Aaron Burr,646,777,FO,225,T5,2,1,2,7,,,0,0,46,4,1,SM,BH,FO,FO,,1
+Charlie Bae Jr.,293,15,Vinnie Vidi Vici,518,685,K,330,B5,0,0,2,7,,,0,0,47,4,1,BH,SM,K,K,,1
+Gob Bibson,708,369,Vinnie Vidi Vici,518,547,FO,178,B5,1,0,2,7,,,0,0,47,4,1,BH,SM,FO,FO,,1
+Joe Watson,194,395,Vinnie Vidi Vici,518,305,1B,90,B5,2,0,2,7,,,0,1,47,4,1,BH,SM,1B,1B,,1
+dick richards,487,350,Vinnie Vidi Vici,518,305,2B,45,B5,2,1,2,7,,,1,0,47,4,1,BH,SM,2B,2B,,1
+Kyle Corbett,707,442,Vinnie Vidi Vici,518,656,FO,214,B5,2,2,3,7,,,0,0,47,4,1,BH,SM,FO,FO,,1
+Vinnie Vidi Vici,518,237,Aaron Burr,646,2,K,235,T6,0,0,3,7,,,0,0,48,4,1,SM,BH,K,K,,1
+Juniped Catfish,488,2,Aaron Burr,646,237,K,235,T6,1,0,3,7,,,0,0,48,4,1,SM,BH,K,K,,1
+Paul E. Wag,583,786,Aaron Burr,646,772,HR,14,T6,2,0,3,7,,,1,1,48,4,1,SM,BH,HR,HR,,1
+Obama habubger,342,2,Aaron Burr,646,2,HR,0,T6,2,0,3,8,,,1,1,48,4,1,SM,BH,HR,HR,,1
+Nori Aru,131,2,Aaron Burr,646,2,HR,0,T6,2,0,3,9,,,1,1,48,4,1,SM,BH,HR,HR,,1
+Zelk Antilles,490,255,Aaron Burr,646,3,K,252,T6,2,0,3,10,,,0,0,48,4,1,SM,BH,K,K,,1
+Dixon Uraz,34,7,Vinnie Vidi Vici,518,2,HR,5,B6,0,0,3,10,,,1,1,49,4,1,BH,SM,HR,HR,,1
+Henrik Omega,84,532,Vinnie Vidi Vici,518,252,FO,280,B6,0,0,4,10,,,0,0,49,4,1,BH,SM,FO,FO,,1
+Miroslav,71,532,Vinnie Vidi Vici,518,252,K,280,B6,1,0,4,10,,,0,0,49,4,1,BH,SM,K,K,,1
+Wallace Grommet,492,252,Vinnie Vidi Vici,518,701,LGO,449,B6,2,0,4,10,,,0,0,49,4,1,BH,SM,LGO,LGO,,1
+Red Arrow,547,954,Sammy Slingshot,32,140,FO,186,T1,0,0,0,0,,,0,0,50,5,2,SWZ,SCO,FO,FO,,1
+Hank Murphy,76,450,Sammy Slingshot,32,104,RGO,346,T1,1,0,0,0,,,0,0,50,5,2,SWZ,SCO,RGO,RGO,,1
+Caleb Aiken,324,911,Sammy Slingshot,32,850,1B,61,T1,2,0,0,0,,,0,0,50,5,2,SWZ,SCO,1B,1B,,1
+Demetrios Ooga,180,500,Sammy Slingshot,32,611,1B,111,T1,2,1,0,0,,,0,0,50,5,2,SWZ,SCO,1B,1B,,1
+Jack Alpha,73,232,Sammy Slingshot,32,501,K,269,T1,2,5,0,0,,,0,0,50,5,2,SWZ,SCO,K,K,,1
+Nick Tits,59,198,Chaz Gorbachuck,326,527,K,329,B1,0,0,0,0,,,0,0,51,5,2,SCO,SWZ,K,K,,1
+Liam Abercrombie,270,447,Chaz Gorbachuck,326,420,2B,27,B1,1,0,0,0,,,0,0,51,5,2,SCO,SWZ,2B,2B,,1
+Buster McNutt,127,808,Chaz Gorbachuck,326,982,FO,174,B1,1,2,0,0,,,0,0,51,5,2,SCO,SWZ,FO,FO,,1
+Cal Lidous,227,69,Chaz Gorbachuck,326,737,RGO,332,B1,2,2,0,0,,,0,0,51,5,2,SCO,SWZ,RGO,RGO,,1
+Mike Fruitstand,772,780,Sammy Slingshot,32,613,BB,167,T2,0,0,0,0,,,0,1,52,5,2,SWZ,SCO,BB,BB,,1
+Mike Fruitstand,772,215,Sammy Slingshot,32,1,SB,214,T2,0,1,0,0,,,0,0,52,5,2,SWZ,SCO,Steal 2B,Steal 2B,,4
+Sir Shirley,698,360,Sammy Slingshot,32,720,RGO,360,T2,0,2,0,0,,,0,0,52,5,2,SWZ,SCO,RGO,RGO,,1
+Xerxes Dalin,474,765,Sammy Slingshot,32,900,1B,135,T2,1,3,0,0,,,1,0,52,5,2,SWZ,SCO,1B,1B,,2
+Jack Marnette,213,377,Sammy Slingshot,32,100,K,277,T2,1,1,0,1,,,0,0,52,5,2,SWZ,SCO,K,K,,1
+Red Arrow,547,410,Sammy Slingshot,32,600,FO,190,T2,2,1,0,1,,,0,0,52,5,2,SWZ,SCO,FO,FO,,1
+Rotticus Scott,562,544,Chaz Gorbachuck,326,206,PO,338,B2,0,0,0,1,,,0,0,53,5,2,SCO,SWZ,PO,PO,,1
+Edward Freeman,700,636,Chaz Gorbachuck,326,622,HR,14,B2,1,0,0,1,,,1,1,53,5,2,SCO,SWZ,HR,HR,,1
+Michael Scarn,746,142,Chaz Gorbachuck,326,101,2B,41,B2,1,0,1,1,,,0,0,53,5,2,SCO,SWZ,2B,2B,,1
+Henry Crowell,184,69,Chaz Gorbachuck,326,316,K,247,B2,1,2,1,1,,,0,0,53,5,2,SCO,SWZ,K,K,,1
+Bench Warmer,665,875,Chaz Gorbachuck,326,500,RGO,375,B2,2,2,1,1,,,0,0,53,5,2,SCO,SWZ,RGO,RGO,,1
+Hank Murphy,76,199,Sammy Slingshot,32,101,1B,98,T3,0,0,1,1,,,0,0,54,5,2,SWZ,SCO,1B,1B,,1
+Caleb Aiken,324,432,Sammy Slingshot,32,870,DP,438,T3,0,1,1,1,,,0,0,54,5,2,SWZ,SCO,RGO,RGO,,1
+Demetrios Ooga,180,850,Sammy Slingshot,32,965,1B,115,T3,2,0,1,1,,,0,0,54,5,2,SWZ,SCO,1B,1B,,1
+Jack Alpha,73,844,Sammy Slingshot,32,950,1B,106,T3,2,1,1,1,,,0,0,54,5,2,SWZ,SCO,1B,1B,,1
+Mike Fruitstand,772,85,Sammy Slingshot,32,851,FO,234,T3,2,5,1,1,,,0,0,54,5,2,SWZ,SCO,FO,FO,,1
+Nick Tits,59,126,Chaz Gorbachuck,326,342,FO,216,B3,0,0,1,1,,,0,0,55,5,2,SCO,SWZ,FO,FO,,1
+Liam Abercrombie,270,635,Chaz Gorbachuck,326,591,2B,44,B3,1,0,1,1,,,0,1,55,5,2,SCO,SWZ,2B,2B,,1
+Buster McNutt,127,492,Chaz Gorbachuck,326,222,K,270,B3,1,2,1,1,,,0,0,55,5,2,SCO,SWZ,K,K,,1
+Cal Lidous,227,816,Chaz Gorbachuck,326,872,HR,56,B3,2,2,1,1,,,2,1,55,5,2,SCO,SWZ,HR,HR,,1
+Rotticus Scott,562,777,Chaz Gorbachuck,326,1,FO,224,B3,2,0,3,1,,,0,0,55,5,2,SCO,SWZ,FO,FO,,1
+Sir Shirley,698,810,Sammy Slingshot,32,400,RGO,410,T4,0,0,3,1,,,0,0,56,5,2,SWZ,SCO,RGO,RGO,,1
+Xerxes Dalin,474,134,Sammy Slingshot,32,350,FO,216,T4,1,0,3,1,,,0,0,56,5,2,SWZ,SCO,FO,FO,,1
+Jack Marnette,213,628,Sammy Slingshot,32,753,BB,125,T4,2,0,3,1,,,0,0,56,5,2,SWZ,SCO,BB,BB,,1
+Red Arrow,547,463,Sammy Slingshot,32,612,BB,149,T4,2,1,3,1,,,0,0,56,5,2,SWZ,SCO,BB,BB,,1
+Hank Murphy,76,613,Sammy Slingshot,32,463,BB,150,T4,2,4,3,1,,,0,0,56,5,2,SWZ,SCO,BB,BB,,1
+Caleb Aiken,324,688,Sammy Slingshot,32,888,FO,200,T4,2,7,3,1,,,0,0,56,5,2,SWZ,SCO,FO,FO,,1
+Edward Freeman,700,232,Chaz Gorbachuck,326,982,FO,250,B4,0,0,3,1,,,0,0,57,5,2,SCO,SWZ,FO,FO,,1
+Michael Scarn,746,917,Chaz Gorbachuck,326,666,FO,251,B4,1,0,3,1,,,0,0,57,5,2,SCO,SWZ,FO,FO,,1
+Henry Crowell,184,233,Chaz Gorbachuck,326,192,3B,41,B4,2,0,3,1,,,0,0,57,5,2,SCO,SWZ,3B,3B,,1
+Bench Warmer,665,375,Chaz Gorbachuck,326,22,PO,353,B4,2,3,3,1,,,0,0,57,5,2,SCO,SWZ,PO,PO,,1
+Demetrios Ooga,180,514,Pablo Sanchez III,250,411,1B,103,T5,0,0,3,1,,,0,0,58,5,2,SWZ,SCO,1B,1B,,1
+Demetrios Ooga,180,911,Pablo Sanchez III,250,782,SB,129,T5,0,1,3,1,,,0,0,58,5,2,SWZ,SCO,Steal 2B,Steal 2B,,4
+Jack Alpha,73,849,Pablo Sanchez III,250,777,1B,72,T5,0,2,3,1,,,0,0,58,5,2,SWZ,SCO,1B,1B,,1
+Mike Fruitstand,772,530,Pablo Sanchez III,250,111,RGO,419,T5,0,5,3,1,,,0,0,58,5,2,SWZ,SCO,RGO,RGO,,2
+Sir Shirley,698,,Pablo Sanchez III,250,,IBB,,T5,1,6,3,1,,,0,0,58,5,2,SWZ,SCO,IBB,IBB,,8
+Xerxes Dalin,474,634,Pablo Sanchez III,250,26,DP,392,T5,1,7,3,1,,,0,0,58,5,2,SWZ,SCO,RGO,RGO,,1
+Nick Tits,59,666,Rickey Tucker,163,324,PO,342,B5,0,0,3,1,,,0,0,59,5,2,SCO,SWZ,PO,PO,,1
+Liam Abercrombie,270,386,Rickey Tucker,163,111,FO,275,B5,1,0,3,1,,,0,0,59,5,2,SCO,SWZ,FO,FO,,1
+Buster McNutt,127,888,Rickey Tucker,163,798,1B,90,B5,2,0,3,1,,,0,0,59,5,2,SCO,SWZ,1B,1B,,1
+Cal Lidous,227,798,Rickey Tucker,163,999,FO,201,B5,2,1,3,1,,,0,0,59,5,2,SCO,SWZ,FO,FO,,1
+Jack Marnette,213,318,Pablo Sanchez III,250,911,RGO,407,T6,0,0,3,1,,,0,0,60,5,2,SWZ,SCO,RGO,RGO,,1
+Red Arrow,547,514,Pablo Sanchez III,250,209,K,305,T6,1,0,3,1,,,0,0,60,5,2,SWZ,SCO,K,K,,1
+Hank Murphy,76,580,Pablo Sanchez III,250,601,2B,21,T6,2,0,3,1,,,0,1,60,5,2,SWZ,SCO,2B,2B,,1
+Caleb Aiken,324,650,Pablo Sanchez III,250,591,1B,59,T6,2,2,3,1,,,1,1,60,5,2,SWZ,SCO,1B,1B,,1
+Demetrios Ooga,180,877,Pablo Sanchez III,250,898,3B,21,T6,2,1,3,2,,,1,0,60,5,2,SWZ,SCO,3B,3B,,1
+Jack Alpha,73,328,Pablo Sanchez III,250,855,LGO,473,T6,2,3,3,3,,,0,0,60,5,2,SWZ,SCO,LGO,LGO,,1
+Rotticus Scott,562,644,Rickey Tucker,163,222,RGO,422,B6,0,0,3,3,,,0,0,61,5,2,SCO,SWZ,RGO,RGO,,1
+Edward Freeman,700,765,Rickey Tucker,163,21,FO,256,B6,1,0,3,3,,,0,0,61,5,2,SCO,SWZ,FO,FO,,1
+Michael Scarn,746,867,Rickey Tucker,163,599,FO,268,B6,2,0,3,3,,,0,0,61,5,2,SCO,SWZ,FO,FO,,1
+Mike Fruitstand,772,320,Pablo Sanchez III,250,822,LGO,498,T7,0,2,3,3,,,0,0,62,5,2,SWZ,SCO,LGO,LGO,,1
+Sir Shirley,698,270,Pablo Sanchez III,250,463,FO,193,T7,1,2,3,3,,,0,0,62,5,2,SWZ,SCO,FO,FO,,1
+Xerxes Dalin,474,69,Pablo Sanchez III,250,666,RGO,403,T7,2,2,3,3,,,0,0,62,5,2,SWZ,SCO,RGO,RGO,,1
+Henry Crowell,184,777,Rickey Tucker,163,222,Bunt K,445,B7,0,2,3,3,,,0,0,63,5,2,SCO,SWZ,Bunt K,Bunt K,,3
+Bench Warmer,665,950,Rickey Tucker,163,7,2B,57,B7,1,2,3,3,,,1,0,63,5,2,SCO,SWZ,2B,2B,,1
+Francis J Wellington IV,152,933,Ty Palmatier,258,851,1B,82,T1,0,0,0,0,,,0,0,64,6,2,BRB,VC,1B,1B,,1
+becky mcbadbat,277,122,Ty Palmatier,258,730,DP,392,T1,0,1,0,0,,,0,0,64,6,2,BRB,VC,RGO,RGO,,1
+Edward Duncan,620,405,Ty Palmatier,258,964,RGO,441,T1,2,0,0,0,,,0,0,64,6,2,BRB,VC,RGO,RGO,,1
+Thelonius Junk,623,730,Jackson Sanchez,46,148,RGO,418,B1,0,0,0,0,,,0,0,65,6,2,VC,BRB,RGO,RGO,,1
+Jordan Peppers,18,500,Jackson Sanchez,46,52,LGO,448,B1,1,0,0,0,,,0,0,65,6,2,VC,BRB,LGO,LGO,,1
+Wavy Gravy VIII,265,808,Jackson Sanchez,46,317,LGO,491,B1,2,0,0,0,,,0,0,65,6,2,VC,BRB,LGO,LGO,,1
+Bart Harley Jarvis,2,900,Ty Palmatier,258,916,HR,16,T2,0,0,0,0,,,1,1,66,6,2,BRB,VC,HR,HR,,1
+Takahiro Rihanna,419,851,Ty Palmatier,258,512,K,339,T2,0,0,0,1,,,0,0,66,6,2,BRB,VC,K,K,,1
+Trevor Mouseman,559,340,Ty Palmatier,258,205,BB,135,T2,1,0,0,1,,,0,1,66,6,2,BRB,VC,BB,BB,,1
+KC Bats,287,511,Ty Palmatier,258,698,FO,187,T2,1,1,0,1,,,0,0,66,6,2,BRB,VC,FO,FO,,1
+Garren Smudge,133,6,Ty Palmatier,258,37,HR,31,T2,2,1,0,1,,,2,1,66,6,2,BRB,VC,HR,HR,,1
+Stan Mann,357,700,Ty Palmatier,258,22,K,322,T2,2,0,0,3,,,0,0,66,6,2,BRB,VC,K,K,,1
+Faye Suzuki,22,101,Jackson Sanchez,46,294,BB,193,B2,0,0,0,3,,,0,0,67,6,2,VC,BRB,BB,BB,,1
+Derek Bongiovanni,109,729,Jackson Sanchez,46,566,BB,163,B2,0,1,0,3,,,0,0,67,6,2,VC,BRB,BB,BB,,1
+Fernando Cruz,176,533,Jackson Sanchez,46,199,K,334,B2,0,4,0,3,,,0,0,67,6,2,VC,BRB,K,K,,1
+Jacky Wacky,702,607,Jackson Sanchez,46,125,DP,482,B2,1,4,0,3,,,0,0,67,6,2,VC,BRB,LGO,LGO,,1
+Francis J Wellington IV,152,975,Ty Palmatier,258,471,LGO,496,T3,0,0,0,3,,,0,0,68,6,2,BRB,VC,LGO,LGO,,1
+becky mcbadbat,277,471,Ty Palmatier,258,506,2B,35,T3,1,0,0,3,,,0,0,68,6,2,BRB,VC,2B,2B,,1
+Edward Duncan,620,762,Ty Palmatier,258,587,FO,175,T3,1,2,0,3,,,0,0,68,6,2,BRB,VC,FO,FO,,1
+Bart Harley Jarvis,2,900,Ty Palmatier,258,130,FO,230,T3,2,2,0,3,,,0,0,68,6,2,BRB,VC,FO,FO,,1
+Dallas Houston,416,736,Jackson Sanchez,46,730,HR,6,B3,0,0,0,3,,,1,1,69,6,2,VC,BRB,HR,HR,,1
+LaCarpetron Dukemarriot,775,782,Jackson Sanchez,46,686,BB,96,B3,0,0,1,3,,,0,1,69,6,2,VC,BRB,BB,BB,,1
+Thelonius Junk,623,487,Jackson Sanchez,46,278,FO,209,B3,0,1,1,3,,,0,0,69,6,2,VC,BRB,FO,FO,,1
+Jordan Peppers,18,500,Jackson Sanchez,46,343,BB,157,B3,1,1,1,3,,,0,1,69,6,2,VC,BRB,BB,BB,,1
+Wavy Gravy VIII,265,114,Jackson Sanchez,46,99,HR,15,B3,1,4,1,3,,,3,1,69,6,2,VC,BRB,HR,HR,,1
+Faye Suzuki,22,777,Jackson Sanchez,46,501,FO,276,B3,1,0,4,3,,,0,0,69,6,2,VC,BRB,FO,FO,,1
+Derek Bongiovanni,109,684,Jackson Sanchez,46,798,BB,114,B3,2,0,4,3,,,0,0,69,6,2,VC,BRB,BB,BB,,1
+Fernando Cruz,176,56,Jackson Sanchez,46,798,K,258,B3,2,1,4,3,,,0,0,69,6,2,VC,BRB,K,K,,1
+Takahiro Rihanna,419,559,Ty Palmatier,258,1000,LGO,441,T4,0,0,4,3,,,0,0,70,6,2,BRB,VC,LGO,LGO,,1
+Trevor Mouseman,559,169,Ty Palmatier,258,856,K,313,T4,1,0,4,3,,,0,0,70,6,2,BRB,VC,K,K,,1
+KC Bats,287,420,Ty Palmatier,258,520,1B,100,T4,2,0,4,3,,,0,0,70,6,2,BRB,VC,1B,1B,,1
+Garren Smudge,133,149,Ty Palmatier,258,611,LGO,462,T4,2,1,4,3,,,0,0,70,6,2,BRB,VC,LGO,LGO,,1
+Jacky Wacky,702,11,Jackson Sanchez,46,798,FO,213,B4,0,0,4,3,,,0,0,71,6,2,VC,BRB,FO,FO,,1
+Dallas Houston,416,425,Jackson Sanchez,46,367,1B,58,B4,1,0,4,3,,,0,0,71,6,2,VC,BRB,1B,1B,,1
+LaCarpetron Dukemarriot,775,550,Jackson Sanchez,46,99,DP,451,B4,1,1,4,3,,,0,0,71,6,2,VC,BRB,LGO,LGO,,1
+Stan Mann,357,,Jericho Caulfield,36,,Auto K,,T5,0,0,4,3,,,0,0,72,6,2,BRB,VC,Auto K,Auto K,,9
+Francis J Wellington IV,152,337,Jericho Caulfield,36,398,2B,61,T5,1,0,4,3,,,0,0,72,6,2,BRB,VC,2B,2B,,1
+becky mcbadbat,277,893,Jericho Caulfield,36,792,BB,101,T5,1,2,4,3,,,0,0,72,6,2,BRB,VC,BB,BB,,1
+Edward Duncan,620,550,Jericho Caulfield,36,825,K,275,T5,1,4,4,3,,,0,0,72,6,2,BRB,VC,K,K,,1
+Bart Harley Jarvis,2,420,Jericho Caulfield,36,162,K,258,T5,2,4,4,3,,,0,0,72,6,2,BRB,VC,K,K,,1
+Thelonius Junk,623,683,Artanis Jones,37,759,1B,76,B5,0,0,4,3,,,0,0,73,6,2,VC,BRB,1B,1B,,1
+Jordan Peppers,18,888,Artanis Jones,37,272,PO,384,B5,0,1,4,3,,,0,0,73,6,2,VC,BRB,PO,PO,,1
+Wavy Gravy VIII,265,444,Artanis Jones,37,712,K,268,B5,1,1,4,3,,,0,0,73,6,2,VC,BRB,K,K,,1
+Faye Suzuki,22,820,Artanis Jones,37,171,K,351,B5,2,1,4,3,,,0,0,73,6,2,VC,BRB,K,K,,1
+Takahiro Rihanna,419,,Jericho Caulfield,36,,Auto K,,T6,0,0,4,3,,,0,0,74,6,2,BRB,VC,Auto K,Auto K,,9
+Trevor Mouseman,559,598,Jericho Caulfield,36,297,K,301,T6,1,0,4,3,,,0,0,74,6,2,BRB,VC,K,K,,1
+KC Bats,287,420,Jericho Caulfield,36,602,FO,182,T6,2,0,4,3,,,0,0,74,6,2,BRB,VC,FO,FO,,1
+Kyle Corbett,707,685,Sam Wood,108,522,FO,163,T1,0,0,0,0,,,0,0,75,7,2,BH,GRE,FO,FO,,1
+Miroslav,71,13,Sam Wood,108,399,PO,386,T1,1,0,0,0,,,0,0,75,7,2,BH,GRE,PO,PO,,1
+Henrik Omega,84,675,Sam Wood,108,711,2B,36,T1,2,0,0,0,,,0,0,75,7,2,BH,GRE,2B,2B,,1
+Dixon Uraz,34,7,Sam Wood,108,752,FO,255,T1,2,2,0,0,,,0,0,75,7,2,BH,GRE,FO,FO,,1
+Ben Bramly,238,921,Bobosnia Bones,478,666,K,255,B1,0,0,0,0,,,0,0,76,7,2,GRE,BH,K,K,,1
+Carlos The great,132,112,Bobosnia Bones,478,211,BB,99,B1,1,0,0,0,,,0,0,76,7,2,GRE,BH,BB,BB,,1
+"Reno ""El Greco"" McRenoface",776,315,Bobosnia Bones,478,876,DP,439,B1,1,1,0,0,,,0,0,76,7,2,GRE,BH,LGO,LGO,,1
+Wallace Grommet,492,906,Sam Wood,108,414,LGO,492,T2,0,0,0,0,,,0,0,77,7,2,BH,GRE,LGO,LGO,,1
+Charlie Bae Jr.,293,799,Sam Wood,108,88,K,289,T2,1,0,0,0,,,0,0,77,7,2,BH,GRE,K,K,,1
+Gob Bibson,708,555,Sam Wood,108,901,K,346,T2,2,0,0,0,,,0,0,77,7,2,BH,GRE,K,K,,1
+Roccrates Rudnikov,114,,Bobosnia Bones,478,,Auto K,,B2,0,0,0,0,,,0,0,78,7,2,GRE,BH,Auto K,Auto K,,9
+Barius McKockidopolous,612,350,Bobosnia Bones,478,678,PO,328,B2,1,0,0,0,,,0,0,78,7,2,GRE,BH,PO,PO,,1
+Dakota Carolina Montana,65,698,Bobosnia Bones,478,901,K,203,B2,2,0,0,0,,,0,0,78,7,2,GRE,BH,K,K,,1
+Joe Watson,194,782,Sam Wood,108,299,LGO,483,T3,0,0,0,0,,,0,0,79,7,2,BH,GRE,LGO,LGO,,1
+dick richards,487,730,Sam Wood,108,511,FO,219,T3,1,0,0,0,,,0,0,79,7,2,BH,GRE,FO,FO,,1
+Kyle Corbett,707,509,Sam Wood,108,699,FO,190,T3,2,0,0,0,,,0,0,79,7,2,BH,GRE,FO,FO,,1
+Sam Wood,108,699,Bobosnia Bones,478,222,LGO,477,B3,0,0,0,0,,,0,0,80,7,2,GRE,BH,LGO,LGO,,1
+Iama Human,520,125,Bobosnia Bones,478,1,BB,124,B3,1,0,0,0,,,0,1,80,7,2,GRE,BH,BB,BB,,1
+Thomas BEOWULF,218,230,Bobosnia Bones,478,567,PO,337,B3,1,1,0,0,,,0,0,80,7,2,GRE,BH,PO,PO,,1
+Ben Bramly,238,283,Bobosnia Bones,478,300,HR,17,B3,2,1,0,0,,,2,1,80,7,2,GRE,BH,HR,HR,,1
+Carlos The great,132,854,Bobosnia Bones,478,666,FO,188,B3,2,0,2,0,,,0,0,80,7,2,GRE,BH,FO,FO,,1
+Miroslav,71,501,Sam Wood,108,99,RGO,402,T4,0,0,2,0,,,0,0,81,7,2,BH,GRE,RGO,RGO,,1
+Henrik Omega,84,199,Sam Wood,108,301,1B,102,T4,1,0,2,0,,,0,1,81,7,2,BH,GRE,1B,1B,,1
+Henrik Omega,84,835,Sam Wood,108,615,SB,220,T4,1,1,2,0,,,0,0,81,7,2,BH,GRE,Steal 2B,Steal 2B,,4
+Dixon Uraz,34,,Sam Wood,108,,Auto K,,T4,1,2,2,0,,,0,0,81,7,2,BH,GRE,Auto K,Auto K,,9
+Wallace Grommet,492,966,Sam Wood,108,999,2B,33,T4,2,2,2,0,,,1,1,81,7,2,BH,GRE,2B,2B,,1
+Charlie Bae Jr.,293,323,Sam Wood,108,412,1B,89,T4,2,2,2,1,,,1,0,81,7,2,BH,GRE,1B,1B,,1
+Gob Bibson,708,202,Sam Wood,108,511,K,309,T4,2,1,2,2,,,0,0,81,7,2,BH,GRE,K,K,,1
+"Reno ""El Greco"" McRenoface",776,222,Bobosnia Bones,478,420,PO,198,B4,0,0,2,2,,,0,0,82,7,2,GRE,BH,PO,PO,,1
+Roccrates Rudnikov,114,167,Bobosnia Bones,478,901,K,266,B4,1,0,2,2,,,0,0,82,7,2,GRE,BH,K,K,,1
+Barius McKockidopolous,612,568,Bobosnia Bones,478,333,K,235,B4,2,0,2,2,,,0,0,82,7,2,GRE,BH,K,K,,1
+Joe Watson,194,631,Apollo,477,746,BB,115,T5,0,0,2,2,,,0,0,83,7,2,BH,GRE,BB,BB,,1
+dick richards,487,920,Apollo,477,264,K,344,T5,0,1,2,2,,,0,0,83,7,2,BH,GRE,K,K,,1
+Kyle Corbett,707,333,Apollo,477,818,DP,485,T5,1,1,2,2,,,0,0,83,7,2,BH,GRE,LGO,LGO,,1
+Dakota Carolina Montana,65,290,Keyo,331,738,LGO,448,B5,0,0,2,2,,,0,0,84,7,2,GRE,BH,LGO,LGO,,1
+Apollo,477,891,Keyo,331,282,PO,391,B5,1,0,2,2,,,0,0,84,7,2,GRE,BH,PO,PO,,1
+Iama Human,520,813,Keyo,331,55,K,242,B5,2,0,2,2,,,0,0,84,7,2,GRE,BH,K,K,,1
+Miroslav,71,500,Apollo,477,690,BB,190,T6,0,0,2,2,,,0,0,85,7,2,BH,GRE,BB,BB,,1
+Henrik Omega,84,301,Apollo,477,812,DP,489,T6,0,1,2,2,,,0,0,85,7,2,BH,GRE,LGO,LGO,,1
+Dixon Uraz,34,7,Apollo,477,33,2B,26,T6,2,0,2,2,,,0,0,85,7,2,BH,GRE,2B,2B,,1
+Wallace Grommet,492,356,Apollo,477,22,K,334,T6,2,2,2,2,,,0,0,85,7,2,BH,GRE,K,K,,1
+Thomas BEOWULF,218,505,Keyo,331,712,FO,207,B6,0,0,2,2,,,0,0,86,7,2,GRE,BH,FO,FO,,1
+Ben Bramly,238,42,Keyo,331,207,FO,165,B6,1,0,2,2,,,0,0,86,7,2,GRE,BH,FO,FO,,1
+Carlos The great,132,69,Keyo,331,879,BB,190,B6,2,0,2,2,,,0,0,86,7,2,GRE,BH,BB,BB,,1
+"Reno ""El Greco"" McRenoface",776,80,Keyo,331,233,FO,153,B6,2,1,2,2,,,0,0,86,7,2,GRE,BH,FO,FO,,1
+Charlie Bae Jr.,293,1,Apollo,477,309,Bunt Sac,308,T7,0,2,2,2,,,0,0,87,7,2,BH,GRE,Bunt Sac,Bunt Sac,,3
+Gob Bibson,708,404,Apollo,477,756,PO,352,T7,1,3,2,2,,,0,0,87,7,2,BH,GRE,PO,PO,,1
+Joe Watson,194,115,Apollo,477,509,RGO,394,T7,2,3,2,2,,,0,0,87,7,2,BH,GRE,RGO,RGO,,1
+Roccrates Rudnikov,114,656,Keyo,331,739,1B,83,B7,0,2,2,2,,,0,0,88,7,2,GRE,BH,1B,1B,,1
+Roccrates Rudnikov,114,504,Keyo,331,819,CS,315,B7,0,5,2,2,,,0,0,88,7,2,GRE,BH,CS 2B,CS 2B,,5
+Barius McKockidopolous,612,321,Keyo,331,37,Sac,284,B7,1,3,2,2,,,1,0,88,7,2,GRE,BH,FO,FO,,1
+Speedo Meter,675,323,Richard Northstar,275,639,K,316,T1,0,0,0,0,,,0,0,89,8,2,JMC,SM,K,K,,1
+Q Kimbrell,20,246,Richard Northstar,275,494,FO,248,T1,1,0,0,0,,,0,0,89,8,2,JMC,SM,FO,FO,,1
+Todd Bonzalez II,169,123,Richard Northstar,275,726,K,397,T1,2,0,0,0,,,0,0,89,8,2,JMC,SM,K,K,,1
+Paul E. Wag,583,911,Wheeler Walker Jr.,529,687,FO,224,B1,0,0,0,0,,,0,0,90,8,2,SM,JMC,FO,FO,,1
+Emmett Michael,10,904,Wheeler Walker Jr.,529,333,LGO,429,B1,1,0,0,0,,,0,0,90,8,2,SM,JMC,LGO,LGO,,1
+Lloyd Gross,135,284,Wheeler Walker Jr.,529,49,FO,235,B1,2,0,0,0,,,0,0,90,8,2,SM,JMC,FO,FO,,1
+Emerson Austin,703,777,Richard Northstar,275,451,K,326,T2,0,0,0,0,,,0,0,91,8,2,JMC,SM,K,K,,1
+Dimebag Jammin,262,944,Richard Northstar,275,318,K,374,T2,1,0,0,0,,,0,0,91,8,2,JMC,SM,K,K,,1
+Cam'ron West,525,827,Richard Northstar,275,777,2B,50,T2,2,0,0,0,,,0,0,91,8,2,JMC,SM,2B,2B,,1
+Girth Brooks,161,138,Richard Northstar,275,687,RGO,451,T2,2,2,0,0,,,0,0,91,8,2,JMC,SM,RGO,RGO,,1
+Nori Aru,131,808,Wheeler Walker Jr.,529,858,2B,50,B2,0,0,0,0,,,0,1,92,8,2,SM,JMC,2B,2B,,1
+Obama habubger,342,133,Wheeler Walker Jr.,529,530,RGO,397,B2,0,2,0,0,,,0,0,92,8,2,SM,JMC,RGO,RGO,,1
+Johnny Hendrivederci,600,24,Wheeler Walker Jr.,529,621,RGO,403,B2,1,3,0,0,,,0,0,92,8,2,SM,JMC,RGO,RGO,,2
+Michael Ikenberry,63,321,Wheeler Walker Jr.,529,288,2B,33,B2,2,3,0,0,,,1,1,92,8,2,SM,JMC,2B,2B,,1
+Richard Northstar,275,504,Wheeler Walker Jr.,529,450,2B,54,B2,2,2,1,0,,,1,0,92,8,2,SM,JMC,2B,2B,,1
+Juniped Catfish,488,512,Wheeler Walker Jr.,529,147,PO,365,B2,2,2,2,0,,,0,0,92,8,2,SM,JMC,PO,PO,,1
+Clarinet Clarinet,672,340,Richard Northstar,275,383,2B,43,T3,0,0,2,0,,,0,0,93,8,2,JMC,SM,2B,2B,,1
+Mongster Mash,344,83,Richard Northstar,275,569,LGO,486,T3,0,2,2,0,,,0,0,93,8,2,JMC,SM,LGO,LGO,,1
+Speedo Meter,675,220,Sammy Capicola,117,2,FO,218,T3,1,2,2,0,,,0,0,93,8,2,JMC,SM,FO,FO,,1
+Q Kimbrell,20,123,Sammy Capicola,117,599,LGO,476,T3,2,2,2,0,,,0,0,93,8,2,JMC,SM,LGO,LGO,,1
+Paul E. Wag,583,18,Wheeler Walker Jr.,529,344,K,326,B3,0,0,2,0,,,0,0,94,8,2,SM,JMC,K,K,,1
+Emmett Michael,10,577,Wheeler Walker Jr.,529,757,BB,180,B3,1,0,2,0,,,0,1,94,8,2,SM,JMC,BB,BB,,1
+Lloyd Gross,135,466,Wheeler Walker Jr.,529,492,3B,26,B3,1,1,2,0,,,1,1,94,8,2,SM,JMC,3B,3B,,1
+Nori Aru,131,666,Wheeler Walker Jr.,529,311,RGO,355,B3,1,3,3,0,,,1,0,94,8,2,SM,JMC,RGO,RGO,,1
+Obama habubger,342,845,Wheeler Walker Jr.,529,311,LGO,466,B3,2,0,4,0,,,0,0,94,8,2,SM,JMC,LGO,LGO,,1
+Todd Bonzalez II,169,900,Sammy Capicola,117,240,RGO,340,T4,0,0,4,0,,,0,0,95,8,2,JMC,SM,RGO,RGO,,1
+Emerson Austin,703,69,Sammy Capicola,117,888,FO,181,T4,1,0,4,0,,,0,0,95,8,2,JMC,SM,FO,FO,,1
+Dimebag Jammin,262,420,Sammy Capicola,117,555,1B,135,T4,2,0,4,0,,,0,0,95,8,2,JMC,SM,1B,1B,,1
+Cam'ron West,525,327,Sammy Capicola,117,790,LGO,463,T4,2,1,4,0,,,0,0,95,8,2,JMC,SM,LGO,LGO,,1
+Johnny Hendrivederci,600,911,Wheeler Walker Jr.,529,884,2B,27,B4,0,0,4,0,,,0,0,96,8,2,SM,JMC,2B,2B,,1
+Michael Ikenberry,63,,Wheeler Walker Jr.,529,,IBB,,B4,0,2,4,0,,,0,1,96,8,2,SM,JMC,IBB,IBB,,8
+Johnny Hendrivederci,600,486,Wheeler Walker Jr.,529,223,CS,263,B4,0,4,4,0,,,0,0,96,8,2,SM,JMC,CMS 3B,CMS 3B,,6
+Sammy Capicola,117,,Wheeler Walker Jr.,529,,IBB,,B4,1,2,4,0,,,0,1,96,8,2,SM,JMC,IBB,IBB,,8
+Juniped Catfish,488,1,Wheeler Walker Jr.,529,8,HR,7,B4,1,4,4,0,,,3,1,96,8,2,SM,JMC,HR,HR,,1
+Paul E. Wag,583,920,Sablo Panchez,638,920,HR,0,B4,1,0,7,0,,,1,1,96,8,2,SM,JMC,HR,HR,,1
+Emmett Michael,10,543,Sablo Panchez,638,920,RGO,377,B4,1,0,8,0,,,0,0,96,8,2,SM,JMC,RGO,RGO,,1
+Lloyd Gross,135,80,Sablo Panchez,638,543,LGO,463,B4,2,0,8,0,,,0,0,96,8,2,SM,JMC,LGO,LGO,,1
+Ryan Tyburn,517,235,Sammy Capicola,117,868,RGO,367,T5,0,0,8,0,,,0,0,97,8,2,JMC,SM,RGO,RGO,,1
+Clarinet Clarinet,672,202,Sammy Capicola,117,630,LGO,428,T5,1,0,8,0,,,0,0,97,8,2,JMC,SM,LGO,LGO,,1
+Mongster Mash,344,222,Sammy Capicola,117,56,BB,166,T5,2,0,8,0,,,0,0,97,8,2,JMC,SM,BB,BB,,1
+Speedo Meter,675,3,Sammy Capicola,117,424,LGO,421,T5,2,1,8,0,,,0,0,97,8,2,JMC,SM,LGO,LGO,,1
+Nori Aru,131,420,Sablo Panchez,638,920,LGO,500,B5,0,0,8,0,,,0,0,98,8,2,SM,JMC,LGO,LGO,,1
+Obama habubger,342,69,Sablo Panchez,638,1000,1B,69,B5,1,0,8,0,,,0,0,98,8,2,SM,JMC,1B,1B,,1
+Johnny Hendrivederci,600,423,Sablo Panchez,638,920,DP,497,B5,1,1,8,0,,,0,0,98,8,2,SM,JMC,LGO,LGO,,1
+Q Kimbrell,20,69,Vinnie Vidi Vici,518,630,LGO,439,T6,0,0,8,0,,,0,0,99,8,2,JMC,SM,LGO,LGO,,1
+Todd Bonzalez II,169,333,Vinnie Vidi Vici,518,630,FO,297,T6,1,0,8,0,,,0,0,99,8,2,JMC,SM,FO,FO,,1
+Emerson Austin,703,420,Vinnie Vidi Vici,518,630,FO,210,T6,2,0,8,0,,,0,0,99,8,2,JMC,SM,FO,FO,,1
+Jordan Peppers,18,864,señor rustus of house vervulf,651,878,HR,14,T1,0,0,0,0,,,1,1,100,9,3,VC,SCO,HR,HR,,1
+Wavy Gravy VIII,265,2,señor rustus of house vervulf,651,420,RGO,418,T1,0,0,0,1,,,0,0,100,9,3,VC,SCO,RGO,RGO,,1
+Dallas Houston,416,60,señor rustus of house vervulf,651,420,K,360,T1,1,0,0,1,,,0,0,100,9,3,VC,SCO,K,K,,1
+Jacky Wacky,702,420,señor rustus of house vervulf,651,145,K,275,T1,2,0,0,1,,,0,0,100,9,3,VC,SCO,K,K,,1
+Liam Abercrombie,270,222,Jack Kanoff,189,175,2B,47,B1,0,0,0,1,,,0,0,101,9,3,SCO,VC,2B,2B,,1
+Nick Tits,59,180,Jack Kanoff,189,350,FO,170,B1,0,2,0,1,,,0,0,101,9,3,SCO,VC,FO,FO,,1
+Sammy Slingshot,32,1,Jack Kanoff,189,839,FO,162,B1,1,2,0,1,,,0,0,101,9,3,SCO,VC,FO,FO,,1
+Bench Warmer,665,625,Jack Kanoff,189,175,RGO,450,B1,2,2,0,1,,,0,0,101,9,3,SCO,VC,RGO,RGO,,1
+Derek Bongiovanni,109,363,señor rustus of house vervulf,651,143,FO,220,T2,0,0,0,1,,,0,0,102,9,3,VC,SCO,FO,FO,,1
+Fernando Cruz,176,70,señor rustus of house vervulf,651,920,FO,150,T2,1,0,0,1,,,0,0,102,9,3,VC,SCO,FO,FO,,1
+Faye Suzuki,22,120,señor rustus of house vervulf,651,872,K,248,T2,2,0,0,1,,,0,0,102,9,3,VC,SCO,K,K,,1
+Buster McNutt,127,80,Jack Kanoff,189,676,PO,404,B2,0,0,0,1,,,0,0,103,9,3,SCO,VC,PO,PO,,1
+Cal Lidous,227,383,Jack Kanoff,189,777,LGO,394,B2,1,0,0,1,,,0,0,103,9,3,SCO,VC,LGO,LGO,,1
+Michael Scarn,746,234,Jack Kanoff,189,450,FO,216,B2,2,0,0,1,,,0,0,103,9,3,SCO,VC,FO,FO,,1
+LaCarpetron Dukemarriot,775,100,señor rustus of house vervulf,651,882,K,218,T3,0,0,0,1,,,0,0,104,9,3,VC,SCO,K,K,,1
+Thelonius Junk,623,21,señor rustus of house vervulf,651,69,1B,48,T3,1,0,0,1,,,0,0,104,9,3,VC,SCO,1B,1B,,1
+Jordan Peppers,18,24,señor rustus of house vervulf,651,113,1B,89,T3,1,1,0,1,,,0,0,104,9,3,VC,SCO,1B,1B,,1
+Wavy Gravy VIII,265,316,señor rustus of house vervulf,651,69,K,247,T3,1,4,0,1,,,0,0,104,9,3,VC,SCO,K,K,,1
+Dallas Houston,416,74,señor rustus of house vervulf,651,666,K,408,T3,2,4,0,1,,,0,0,104,9,3,VC,SCO,K,K,,1
+Lemon Juiced,193,125,Jack Kanoff,189,380,FO,255,B3,0,0,0,1,,,0,0,105,9,3,SCO,VC,FO,FO,,1
+Edward Freeman,700,732,Jack Kanoff,189,525,FO,207,B3,1,0,0,1,,,0,0,105,9,3,SCO,VC,FO,FO,,1
+Liam Abercrombie,270,525,Jack Kanoff,189,467,2B,58,B3,2,0,0,1,,,0,0,105,9,3,SCO,VC,2B,2B,,1
+Nick Tits,59,721,Jack Kanoff,189,920,FO,199,B3,2,2,0,1,,,0,0,105,9,3,SCO,VC,FO,FO,,1
+Jacky Wacky,702,971,señor rustus of house vervulf,651,783,FO,188,T4,0,0,0,1,,,0,0,106,9,3,VC,SCO,FO,FO,,1
+Derek Bongiovanni,109,428,señor rustus of house vervulf,651,920,LGO,492,T4,1,0,0,1,,,0,0,106,9,3,VC,SCO,LGO,LGO,,1
+Fernando Cruz,176,428,señor rustus of house vervulf,651,420,HR,8,T4,2,0,0,1,,,1,1,106,9,3,VC,SCO,HR,HR,,1
+Faye Suzuki,22,7,señor rustus of house vervulf,651,300,K,293,T4,2,0,0,2,,,0,0,106,9,3,VC,SCO,K,K,,1
+Sammy Slingshot,32,814,Jack Kanoff,189,365,LGO,449,B4,0,0,0,2,,,0,0,107,9,3,SCO,VC,LGO,LGO,,1
+Bench Warmer,665,12,Jack Kanoff,189,864,FO,148,B4,1,0,0,2,,,0,0,107,9,3,SCO,VC,FO,FO,,1
+Buster McNutt,127,666,Jack Kanoff,189,222,RGO,444,B4,2,0,0,2,,,0,0,107,9,3,SCO,VC,RGO,RGO,,1
+LaCarpetron Dukemarriot,775,111,Sammy Slingshot,32,44,1B,67,T5,0,0,0,2,,,0,0,108,9,3,VC,SCO,1B,1B,,1
+Thelonius Junk,623,777,Sammy Slingshot,32,380,DP,397,T5,0,1,0,2,,,0,0,108,9,3,VC,SCO,RGO,RGO,,1
+Jordan Peppers,18,24,Sammy Slingshot,32,166,BB,142,T5,2,0,0,2,,,0,0,108,9,3,VC,SCO,BB,BB,,1
+Wavy Gravy VIII,265,69,Sammy Slingshot,32,800,K,269,T5,2,1,0,2,,,0,0,108,9,3,VC,SCO,K,K,,1
+Cal Lidous,227,714,Jericho Caulfield,36,244,LGO,470,B5,0,0,0,2,,,0,0,109,9,3,SCO,VC,LGO,LGO,,1
+Michael Scarn,746,834,Jericho Caulfield,36,511,K,323,B5,1,0,0,2,,,0,0,109,9,3,SCO,VC,K,K,,1
+Lemon Juiced,193,666,Jericho Caulfield,36,807,BB,141,B5,2,0,0,2,,,0,0,109,9,3,SCO,VC,BB,BB,,1
+Edward Freeman,700,69,Jericho Caulfield,36,440,K,371,B5,2,1,0,2,,,0,0,109,9,3,SCO,VC,K,K,,1
+Dallas Houston,416,568,Sammy Slingshot,32,854,K,286,T6,0,0,0,2,,,0,0,110,9,3,VC,SCO,K,K,,1
+Jacky Wacky,702,309,Sammy Slingshot,32,612,PO,303,T6,1,0,0,2,,,0,0,110,9,3,VC,SCO,PO,PO,,1
+Derek Bongiovanni,109,112,Sammy Slingshot,32,648,LGO,464,T6,2,0,0,2,,,0,0,110,9,3,VC,SCO,LGO,LGO,,1
+Liam Abercrombie,270,736,Jericho Caulfield,36,165,RGO,429,B6,0,0,0,2,,,0,0,111,9,3,SCO,VC,RGO,RGO,,1
+Nick Tits,59,330,Jericho Caulfield,36,242,BB,88,B6,1,0,0,2,,,0,0,111,9,3,SCO,VC,BB,BB,,1
+Sammy Slingshot,32,635,Jericho Caulfield,36,398,K,237,B6,1,1,0,2,,,0,0,111,9,3,SCO,VC,K,K,,1
+Bench Warmer,665,950,Jericho Caulfield,36,849,BB,101,B6,2,1,0,2,,,0,0,111,9,3,SCO,VC,BB,BB,,1
+Buster McNutt,127,789,Jericho Caulfield,36,95,K,306,B6,2,4,0,2,,,0,0,111,9,3,SCO,VC,K,K,,1
+Francis J Wellington IV,152,102,Icna Comit,198,798,K,304,T1,0,0,0,0,,,0,0,112,10,3,BRB,SWZ,K,K,,1
+becky mcbadbat,277,555,Icna Comit,198,443,1B,112,T1,1,0,0,0,,,0,1,112,10,3,BRB,SWZ,1B,1B,,1
+Bart Harley Jarvis,2,365,Icna Comit,198,345,3B,20,T1,1,1,0,0,,,1,1,112,10,3,BRB,SWZ,3B,3B,,1
+KC Bats,287,200,Icna Comit,198,97,1B,103,T1,1,3,0,1,,,1,1,112,10,3,BRB,SWZ,1B,1B,,1
+Garren Smudge,133,6,Icna Comit,198,1000,HR,6,T1,1,1,0,2,,,2,1,112,10,3,BRB,SWZ,HR,HR,,1
+Edward Duncan,620,404,Icna Comit,198,867,LGO,463,T1,1,0,0,4,,,0,0,112,10,3,BRB,SWZ,LGO,LGO,,1
+Takahiro Rihanna,419,247,Icna Comit,198,243,HR,4,T1,2,0,0,4,,,1,1,112,10,3,BRB,SWZ,HR,HR,,1
+Trevor Mouseman,559,123,Icna Comit,198,653,LGO,470,T1,2,0,0,5,,,0,0,112,10,3,BRB,SWZ,LGO,LGO,,1
+Red Arrow,547,514,Alyx Sabor,149,955,RGO,441,B1,0,0,0,5,,,0,0,113,10,3,SWZ,BRB,RGO,RGO,,1
+Hank Murphy,76,824,Alyx Sabor,149,802,3B,22,B1,1,0,0,5,,,0,0,113,10,3,SWZ,BRB,3B,3B,,1
+Caleb Aiken,324,600,Alyx Sabor,149,498,BB,102,B1,1,3,0,5,,,0,0,113,10,3,SWZ,BRB,BB,BB,,1
+Demetrios Ooga,180,177,Alyx Sabor,149,542,K,365,B1,1,5,0,5,,,0,0,113,10,3,SWZ,BRB,K,K,,1
+Jack Alpha,73,,Alyx Sabor,149,,Auto K,,B1,2,5,0,5,,,0,0,113,10,3,SWZ,BRB,Auto K,Auto K,,9
+Stan Mann,357,1,Icna Comit,198,700,K,301,T2,0,0,0,5,,,0,0,114,10,3,BRB,SWZ,K,K,,1
+Francis J Wellington IV,152,474,Icna Comit,198,689,K,215,T2,1,0,0,5,,,0,0,114,10,3,BRB,SWZ,K,K,,1
+becky mcbadbat,277,24,Icna Comit,198,877,BB,147,T2,2,0,0,5,,,0,1,114,10,3,BRB,SWZ,BB,BB,,1
+Bart Harley Jarvis,2,228,Chaz Gorbachuck,326,206,3B,22,T2,2,1,0,5,,,1,0,114,10,3,BRB,SWZ,3B,3B,,1
+KC Bats,287,738,Chaz Gorbachuck,326,444,K,294,T2,2,3,0,6,,,0,0,114,10,3,BRB,SWZ,K,K,,1
+Mike Fruitstand,772,790,Alyx Sabor,149,559,K,231,B2,0,0,0,6,,,0,0,115,10,3,SWZ,BRB,K,K,,1
+Sir Shirley,698,450,Alyx Sabor,149,420,3B,30,B2,1,0,0,6,,,0,1,115,10,3,SWZ,BRB,3B,3B,,1
+Xerxes Dalin,474,195,Alyx Sabor,149,9,Sac,186,B2,1,3,0,6,,,1,0,115,10,3,SWZ,BRB,FO,FO,,1
+Jack Marnette,213,265,Alyx Sabor,149,61,FO,204,B2,2,0,1,6,,,0,0,115,10,3,SWZ,BRB,FO,FO,,1
+Garren Smudge,133,666,Chaz Gorbachuck,326,888,FO,222,T3,0,0,1,6,,,0,0,116,10,3,BRB,SWZ,FO,FO,,1
+Edward Duncan,620,,Chaz Gorbachuck,326,,Auto K,,T3,1,0,1,6,,,0,0,116,10,3,BRB,SWZ,Auto K,Auto K,,9
+Takahiro Rihanna,419,311,Chaz Gorbachuck,326,316,HR,5,T3,2,0,1,6,,,1,1,116,10,3,BRB,SWZ,HR,HR,,1
+Trevor Mouseman,559,569,Chaz Gorbachuck,326,622,1B,53,T3,2,0,1,7,,,0,0,116,10,3,BRB,SWZ,1B,1B,,1
+Stan Mann,357,69,Chaz Gorbachuck,326,769,K,300,T3,2,1,1,7,,,0,0,116,10,3,BRB,SWZ,K,K,,1
+Red Arrow,547,500,Alyx Sabor,149,919,RGO,419,B3,0,0,1,7,,,0,0,117,10,3,SWZ,BRB,RGO,RGO,,1
+Hank Murphy,76,888,Alyx Sabor,149,101,FO,213,B3,1,0,1,7,,,0,0,117,10,3,SWZ,BRB,FO,FO,,1
+Caleb Aiken,324,911,Alyx Sabor,149,827,BB,84,B3,2,0,1,7,,,0,0,117,10,3,SWZ,BRB,BB,BB,,1
+Demetrios Ooga,180,333,Alyx Sabor,149,69,K,264,B3,2,1,1,7,,,0,0,117,10,3,SWZ,BRB,K,K,,1
+Francis J Wellington IV,152,410,Chaz Gorbachuck,326,920,LGO,490,T4,0,0,1,7,,,0,0,118,10,3,BRB,SWZ,LGO,LGO,,1
+becky mcbadbat,277,190,Chaz Gorbachuck,326,316,BB,126,T4,1,0,1,7,,,0,0,118,10,3,BRB,SWZ,BB,BB,,1
+Bart Harley Jarvis,2,750,Chaz Gorbachuck,326,500,FO,250,T4,1,1,1,7,,,0,0,118,10,3,BRB,SWZ,FO,FO,,1
+KC Bats,287,776,Chaz Gorbachuck,326,24,FO,248,T4,2,1,1,7,,,0,0,118,10,3,BRB,SWZ,FO,FO,,1
+Jack Alpha,73,198,Alyx Sabor,149,304,BB,106,B4,0,0,1,7,,,0,0,119,10,3,SWZ,BRB,BB,BB,,1
+Mike Fruitstand,772,415,Alyx Sabor,149,920,DP,495,B4,0,1,1,7,,,0,0,119,10,3,SWZ,BRB,LGO,LGO,,1
+Sir Shirley,698,71,Alyx Sabor,149,777,K,294,B4,2,0,1,7,,,0,0,119,10,3,SWZ,BRB,K,K,,1
+Garren Smudge,133,229,Rickey Tucker,163,467,FO,238,T5,0,0,1,7,,,0,0,120,10,3,BRB,SWZ,FO,FO,,1
+Edward Duncan,620,821,Rickey Tucker,163,1,FO,180,T5,1,0,1,7,,,0,0,120,10,3,BRB,SWZ,FO,FO,,1
+Takahiro Rihanna,419,440,Rickey Tucker,163,94,PO,346,T5,2,0,1,7,,,0,0,120,10,3,BRB,SWZ,PO,PO,,1
+Xerxes Dalin,474,,Artanis Jones,37,,Auto BB,,B5,0,0,1,7,,,0,0,121,10,3,SWZ,BRB,Auto BB,Auto BB,,10
+Jack Marnette,213,725,Artanis Jones,37,1,FO,276,B5,0,1,1,7,,,0,0,121,10,3,SWZ,BRB,FO,FO,,1
+Red Arrow,547,834,Artanis Jones,37,30,FO,196,B5,1,1,1,7,,,0,0,121,10,3,SWZ,BRB,FO,FO,,1
+Hank Murphy,76,15,Artanis Jones,37,330,K,315,B5,2,1,1,7,,,0,0,121,10,3,SWZ,BRB,K,K,,1
+Girth Brooks,161,69,Bobosnia Bones,478,555,LGO,486,T1,0,0,0,0,,,0,0,122,11,3,JMC,BH,LGO,LGO,,1
+Speedo Meter,675,622,Bobosnia Bones,478,640,3B,18,T1,1,0,0,0,,,0,1,122,11,3,JMC,BH,3B,3B,,1
+Dimebag Jammin,262,303,Bobosnia Bones,478,360,2B,57,T1,1,3,0,0,,,1,1,122,11,3,JMC,BH,2B,2B,,2
+Cam'ron West,525,49,Bobosnia Bones,478,1000,2B,49,T1,1,2,0,1,,,1,0,122,11,3,JMC,BH,2B,2B,,1
+Sablo Panchez,638,79,Bobosnia Bones,478,222,1B,143,T1,1,2,0,2,,,0,0,122,11,3,JMC,BH,1B,1B,,1
+Q Kimbrell,20,114,Bobosnia Bones,478,779,PO,335,T1,1,5,0,2,,,0,0,122,11,3,JMC,BH,PO,PO,,1
+Emerson Austin,703,420,Bobosnia Bones,478,1,PO,419,T1,2,5,0,2,,,0,0,122,11,3,JMC,BH,PO,PO,,1
+Kyle Corbett,707,898,Tara E. Doug,252,620,K,278,B1,0,0,0,2,,,0,0,123,11,3,BH,JMC,K,K,,1
+Miroslav,71,220,Tara E. Doug,252,77,BB,143,B1,1,0,0,2,,,0,0,123,11,3,BH,JMC,BB,BB,,1
+Wallace Grommet,492,333,Tara E. Doug,252,777,DP,444,B1,1,1,0,2,,,0,0,123,11,3,BH,JMC,LGO,LGO,,1
+Todd Bonzalez II,169,420,Bobosnia Bones,478,420,HR,0,T2,0,0,0,2,,,1,1,124,11,3,JMC,BH,HR,HR,,1
+Clarinet Clarinet,672,919,Bobosnia Bones,478,733,FO,186,T2,0,0,0,3,,,0,0,124,11,3,JMC,BH,FO,FO,,1
+Girth Brooks,161,378,Bobosnia Bones,478,69,K,309,T2,1,0,0,3,,,0,0,124,11,3,JMC,BH,K,K,,1
+Speedo Meter,675,24,Bobosnia Bones,478,210,FO,186,T2,2,0,0,3,,,0,0,124,11,3,JMC,BH,FO,FO,,1
+Charlie Bae Jr.,293,333,Tara E. Doug,252,500,BB,167,B2,0,0,0,3,,,0,0,125,11,3,BH,JMC,BB,BB,,1
+Dixon Uraz,34,12,Tara E. Doug,252,501,DP,489,B2,0,1,0,3,,,0,0,125,11,3,BH,JMC,LGO,LGO,,1
+Henrik Omega,84,327,Tara E. Doug,252,201,1B,126,B2,2,0,0,3,,,0,1,125,11,3,BH,JMC,1B,1B,,1
+Gob Bibson,708,808,Tara E. Doug,252,893,2B,85,B2,2,1,0,3,,,1,0,125,11,3,BH,JMC,2B,2B,,1
+Joe Watson,194,683,Tara E. Doug,252,1,K,318,B2,2,2,1,3,,,0,0,125,11,3,BH,JMC,K,K,,1
+Dimebag Jammin,262,24,Bobosnia Bones,478,824,FO,200,T3,0,0,1,3,,,0,0,126,11,3,JMC,BH,FO,FO,,1
+Cam'ron West,525,824,Bobosnia Bones,478,500,PO,324,T3,1,0,1,3,,,0,0,126,11,3,JMC,BH,PO,PO,,1
+Sablo Panchez,638,248,Bobosnia Bones,478,248,HR,0,T3,2,0,1,3,,,1,1,126,11,3,JMC,BH,HR,HR,,1
+Q Kimbrell,20,748,Bobosnia Bones,478,744,HR,4,T3,2,0,1,4,,,1,1,126,11,3,JMC,BH,HR,HR,,1
+Emerson Austin,703,669,Keyo,331,268,PO,401,T3,2,0,1,5,,,0,0,126,11,3,JMC,BH,PO,PO,,1
+dick richards,487,1,Tara E. Doug,252,800,FO,201,B3,0,0,1,5,,,0,0,127,11,3,BH,JMC,FO,FO,,1
+Kyle Corbett,707,633,Tara E. Doug,252,700,1B,67,B3,1,0,1,5,,,0,0,127,11,3,BH,JMC,1B,1B,,1
+Miroslav,71,300,Tara E. Doug,252,633,K,333,B3,1,1,1,5,,,0,0,127,11,3,BH,JMC,K,K,,1
+Wallace Grommet,492,250,Tara E. Doug,252,101,BB,149,B3,2,1,1,5,,,0,0,127,11,3,BH,JMC,BB,BB,,1
+Charlie Bae Jr.,293,250,Tara E. Doug,252,400,BB,150,B3,2,4,1,5,,,0,0,127,11,3,BH,JMC,BB,BB,,1
+Dixon Uraz,34,777,Tara E. Doug,252,451,K,326,B3,2,7,1,5,,,0,0,127,11,3,BH,JMC,K,K,,1
+Todd Bonzalez II,169,333,Keyo,331,893,RGO,440,T4,0,0,1,5,,,0,0,128,11,3,JMC,BH,RGO,RGO,,1
+Clarinet Clarinet,672,188,Keyo,331,178,3B,10,T4,1,0,1,5,,,0,1,128,11,3,JMC,BH,3B,3B,,1
+Girth Brooks,161,508,Keyo,331,616,1B,108,T4,1,3,1,5,,,1,1,128,11,3,JMC,BH,1B,1B,,1
+Speedo Meter,675,332,Keyo,331,48,K,284,T4,1,1,1,6,,,0,0,128,11,3,JMC,BH,K,K,,1
+Dimebag Jammin,262,333,Keyo,331,284,2B,49,T4,2,1,1,6,,,1,0,128,11,3,JMC,BH,2B,2B,,1
+Cam'ron West,525,488,Keyo,331,678,FO,190,T4,2,2,1,7,,,0,0,128,11,3,JMC,BH,FO,FO,,1
+Henrik Omega,84,232,Tara E. Doug,252,452,FO,220,B4,0,0,1,7,,,0,0,129,11,3,BH,JMC,FO,FO,,1
+Gob Bibson,708,888,Tara E. Doug,252,200,K,312,B4,1,0,1,7,,,0,0,129,11,3,BH,JMC,K,K,,1
+Joe Watson,194,720,Tara E. Doug,252,900,FO,180,B4,2,0,1,7,,,0,0,129,11,3,BH,JMC,FO,FO,,1
+Sablo Panchez,638,433,Keyo,331,213,FO,220,T5,0,0,1,7,,,0,0,130,11,3,JMC,BH,FO,FO,,1
+Q Kimbrell,20,43,Keyo,331,611,RGO,432,T5,1,0,1,7,,,0,0,130,11,3,JMC,BH,RGO,RGO,,1
+Emerson Austin,703,912,Keyo,331,443,LGO,469,T5,2,0,1,7,,,0,0,130,11,3,JMC,BH,LGO,LGO,,1
+dick richards,487,730,Wheeler Walker Jr.,529,264,LGO,466,B5,0,0,1,7,,,0,0,131,11,3,BH,JMC,LGO,LGO,,1
+Kyle Corbett,707,422,Wheeler Walker Jr.,529,730,K,308,B5,1,0,1,7,,,0,0,131,11,3,BH,JMC,K,K,,1
+Miroslav,71,920,Wheeler Walker Jr.,529,308,RGO,388,B5,2,0,1,7,,,0,0,131,11,3,BH,JMC,RGO,RGO,,1
+Todd Bonzalez II,169,726,Keyo,331,311,PO,415,T6,0,0,1,7,,,0,0,132,11,3,JMC,BH,PO,PO,,1
+Clarinet Clarinet,672,71,Keyo,331,914,1B,157,T6,1,0,1,7,,,0,1,132,11,3,JMC,BH,1B,1B,,1
+Girth Brooks,161,24,Keyo,331,121,1B,97,T6,1,1,1,7,,,0,1,132,11,3,JMC,BH,1B,1B,,1
+Speedo Meter,675,900,Keyo,331,111,FO,211,T6,1,4,1,7,,,0,0,132,11,3,JMC,BH,FO,FO,,1
+Dimebag Jammin,262,512,Keyo,331,567,2B,55,T6,2,4,1,7,,,2,0,132,11,3,JMC,BH,2B,2B,,1
+Cam'ron West,525,476,Keyo,331,918,LGO,442,T6,2,2,1,9,,,0,0,132,11,3,JMC,BH,LGO,LGO,,1
+Wallace Grommet,492,6,Wheeler Walker Jr.,529,114,1B,108,B6,0,0,1,9,,,0,1,133,11,3,BH,JMC,1B,1B,,1
+Charlie Bae Jr.,293,6,Wheeler Walker Jr.,529,3,HR,3,B6,0,1,1,9,,,2,1,133,11,3,BH,JMC,HR,HR,,1
+Dixon Uraz,34,420,Wheeler Walker Jr.,529,586,BB,166,B6,0,0,3,9,,,0,0,133,11,3,BH,JMC,BB,BB,,1
+Henrik Omega,84,293,Wheeler Walker Jr.,529,727,DP,434,B6,0,1,3,9,,,0,0,133,11,3,BH,JMC,RGO,RGO,,1
+Gob Bibson,708,876,Wheeler Walker Jr.,529,727,BB,149,B6,2,0,3,9,,,0,0,133,11,3,BH,JMC,BB,BB,,1
+Joe Watson,194,450,Wheeler Walker Jr.,529,8,RGO,442,B6,2,1,3,9,,,0,0,133,11,3,BH,JMC,RGO,RGO,,1
+Emmett Michael,10,950,Swing N. Miss,195,750,FO,200,T1,0,0,0,0,,,0,0,134,12,3,SM,GRE,FO,FO,,1
+Paul E. Wag,583,213,Swing N. Miss,195,901,K,312,T1,1,0,0,0,,,0,0,134,12,3,SM,GRE,K,K,,1
+Lloyd Gross,135,218,Swing N. Miss,195,312,2B,94,T1,2,0,0,0,,,0,1,134,12,3,SM,GRE,2B,2B,,1
+Michael Ikenberry,63,404,Swing N. Miss,195,384,HR,20,T1,2,2,0,0,,,2,1,134,12,3,SM,GRE,HR,HR,,1
+Nori Aru,131,920,Swing N. Miss,195,940,HR,20,T1,2,0,0,2,,,1,1,134,12,3,SM,GRE,HR,HR,,1
+Juniped Catfish,488,730,Swing N. Miss,195,500,FO,230,T1,2,0,0,3,,,0,0,134,12,3,SM,GRE,FO,FO,,1
+Swing N. Miss,195,250,Richard Northstar,275,3,FO,247,B1,0,0,0,3,,,0,0,135,12,3,GRE,SM,FO,FO,,1
+Thomas BEOWULF,218,700,Richard Northstar,275,383,K,317,B1,1,0,0,3,,,0,0,135,12,3,GRE,SM,K,K,,1
+Dakota Carolina Montana,65,873,Richard Northstar,275,380,LGO,493,B1,2,0,0,3,,,0,0,135,12,3,GRE,SM,LGO,LGO,,1
+Obama habubger,342,748,Swing N. Miss,195,909,FO,161,T2,0,0,0,3,,,0,0,136,12,3,SM,GRE,FO,FO,,1
+Johnny Hendrivederci,600,969,Swing N. Miss,195,524,RGO,445,T2,1,0,0,3,,,0,0,136,12,3,SM,GRE,RGO,RGO,,1
+Richard Northstar,275,24,Swing N. Miss,195,1,HR,23,T2,2,0,0,3,,,1,1,136,12,3,SM,GRE,HR,HR,,1
+Emmett Michael,10,888,Swing N. Miss,195,500,RGO,388,T2,2,0,0,4,,,0,0,136,12,3,SM,GRE,RGO,RGO,,1
+"Reno ""El Greco"" McRenoface",776,469,Richard Northstar,275,900,LGO,431,B2,0,0,0,4,,,0,0,137,12,3,GRE,SM,LGO,LGO,,1
+Roccrates Rudnikov,114,610,Richard Northstar,275,82,LGO,472,B2,1,0,0,4,,,0,0,137,12,3,GRE,SM,LGO,LGO,,1
+Barius McKockidopolous,612,518,Richard Northstar,275,244,K,274,B2,2,0,0,4,,,0,0,137,12,3,GRE,SM,K,K,,1
+Paul E. Wag,583,533,Swing N. Miss,195,388,BB,145,T3,0,0,0,4,,,0,0,138,12,3,SM,GRE,BB,BB,,1
+Lloyd Gross,135,477,Swing N. Miss,195,222,K,255,T3,0,1,0,4,,,0,0,138,12,3,SM,GRE,K,K,,1
+Michael Ikenberry,63,878,Swing N. Miss,195,174,FO,296,T3,1,1,0,4,,,0,0,138,12,3,SM,GRE,FO,FO,,1
+Nori Aru,131,420,Swing N. Miss,195,676,FO,256,T3,2,1,0,4,,,0,0,138,12,3,SM,GRE,FO,FO,,1
+Carlos The great,132,777,Sammy Capicola,117,220,LGO,443,B3,0,0,0,4,,,0,0,139,12,3,GRE,SM,LGO,LGO,,1
+Iama Human,520,250,Sammy Capicola,117,808,LGO,442,B3,1,0,0,4,,,0,0,139,12,3,GRE,SM,LGO,LGO,,1
+Ben Bramly,238,572,Sammy Capicola,117,121,LGO,451,B3,2,0,0,4,,,0,0,139,12,3,GRE,SM,LGO,LGO,,1
+Juniped Catfish,488,919,Swing N. Miss,195,600,K,319,T4,0,0,0,4,,,0,0,140,12,3,SM,GRE,K,K,,1
+Obama habubger,342,840,Swing N. Miss,195,250,RGO,410,T4,1,0,0,4,,,0,0,140,12,3,SM,GRE,RGO,RGO,,1
+Johnny Hendrivederci,600,442,Swing N. Miss,195,110,K,332,T4,2,0,0,4,,,0,0,140,12,3,SM,GRE,K,K,,1
+Swing N. Miss,195,111,Sammy Capicola,117,989,BB,122,B4,0,0,0,4,,,0,0,141,12,3,GRE,SM,BB,BB,,1
+Thomas BEOWULF,218,289,Sammy Capicola,117,777,DP,488,B4,0,1,0,4,,,0,0,141,12,3,GRE,SM,LGO,LGO,,1
+Dakota Carolina Montana,65,462,Sammy Capicola,117,919,LGO,457,B4,2,0,0,4,,,0,0,141,12,3,GRE,SM,LGO,LGO,,1
+Sammy Capicola,117,375,Apollo,477,138,FO,237,T5,0,0,0,4,,,0,0,142,12,3,SM,GRE,FO,FO,,1
+Emmett Michael,10,420,Apollo,477,300,BB,120,T5,1,0,0,4,,,0,0,142,12,3,SM,GRE,BB,BB,,1
+Paul E. Wag,583,681,Apollo,477,801,BB,120,T5,1,1,0,4,,,0,0,142,12,3,SM,GRE,BB,BB,,1
+Lloyd Gross,135,696,Apollo,477,808,BB,112,T5,1,4,0,4,,,0,0,142,12,3,SM,GRE,BB,BB,,1
+Michael Ikenberry,63,510,Apollo,477,97,DP,413,T5,1,7,0,4,,,0,0,142,12,3,SM,GRE,RGO,RGO,,1
+"Reno ""El Greco"" McRenoface",776,630,Vinnie Vidi Vici,518,840,FO,210,B5,0,0,0,4,,,0,0,143,12,3,GRE,SM,FO,FO,,1
+Roccrates Rudnikov,114,87,Vinnie Vidi Vici,518,940,FO,147,B5,1,0,0,4,,,0,0,143,12,3,GRE,SM,FO,FO,,1
+Barius McKockidopolous,612,609,Vinnie Vidi Vici,518,518,1B,91,B5,2,0,0,4,,,0,1,143,12,3,GRE,SM,1B,1B,,1
+Carlos The great,132,286,Vinnie Vidi Vici,518,230,2B,56,B5,2,1,0,4,,,1,0,143,12,3,GRE,SM,2B,2B,,1
+Iama Human,520,222,Vinnie Vidi Vici,518,31,FO,191,B5,2,2,1,4,,,0,0,143,12,3,GRE,SM,FO,FO,,1
+Nori Aru,131,831,Apollo,477,35,FO,204,T6,0,0,1,4,,,0,0,144,12,3,SM,GRE,FO,FO,,1
+Juniped Catfish,488,512,Apollo,477,939,RGO,427,T6,1,0,1,4,,,0,0,144,12,3,SM,GRE,RGO,RGO,,1
+Obama habubger,342,380,Apollo,477,413,2B,33,T6,2,0,1,4,,,0,0,144,12,3,SM,GRE,2B,2B,,1
+Johnny Hendrivederci,600,424,Apollo,477,754,FO,330,T6,2,2,1,4,,,0,0,144,12,3,SM,GRE,FO,FO,,1
+Ben Bramly,238,945,Vinnie Vidi Vici,518,283,PO,338,B6,0,0,1,4,,,0,0,145,12,3,GRE,SM,PO,PO,,1
+Mattress Cadaire,116,110,Vinnie Vidi Vici,518,226,1B,116,B6,1,0,1,4,,,0,0,145,12,3,GRE,SM,1B,1B,,1
+Thomas BEOWULF,218,735,Vinnie Vidi Vici,518,958,FO,223,B6,1,1,1,4,,,0,0,145,12,3,GRE,SM,FO,FO,,1
+Dakota Carolina Montana,65,,Vinnie Vidi Vici,518,,Auto K,,B6,2,1,1,4,,,0,0,145,12,3,GRE,SM,Auto K,Auto K,,9
+Caleb Aiken,324,828,Jackson Sanchez,46,699,BB,129,T1,0,0,0,0,,,0,0,146,13,4,SWZ,BRB,BB,BB,,1
+Hank Murphy,76,199,Jackson Sanchez,46,900,K,299,T1,0,1,0,0,,,0,0,146,13,4,SWZ,BRB,K,K,,1
+Demetrios Ooga,180,14,Jackson Sanchez,46,587,DP,427,T1,1,1,0,0,,,0,0,146,13,4,SWZ,BRB,RGO,RGO,,1
+Bart Harley Jarvis,2,190,Rickey Tucker,163,477,K,287,B1,0,0,0,0,,,0,0,147,13,4,BRB,SWZ,K,K,,1
+Takahiro Rihanna,419,,Rickey Tucker,163,,Auto BB,,B1,1,0,0,0,,,0,1,147,13,4,BRB,SWZ,Auto BB,Auto BB,,10
+becky mcbadbat,277,610,Rickey Tucker,163,478,BB,132,B1,1,1,0,0,,,0,1,147,13,4,BRB,SWZ,BB,BB,,1
+KC Bats,287,5,Rickey Tucker,163,1,HR,4,B1,1,4,0,0,,,3,1,147,13,4,BRB,SWZ,HR,HR,,1
+Garren Smudge,133,2,Rickey Tucker,163,5,HR,3,B1,1,0,3,0,,,1,1,147,13,4,BRB,SWZ,HR,HR,,1
+Trevor Mouseman,559,203,Rickey Tucker,163,386,FO,183,B1,1,0,4,0,,,0,0,147,13,4,BRB,SWZ,FO,FO,,1
+Francis J Wellington IV,152,447,Rickey Tucker,163,598,FO,151,B1,2,0,4,0,,,0,0,147,13,4,BRB,SWZ,FO,FO,,1
+Red Arrow,547,496,Jackson Sanchez,46,478,3B,18,T2,0,0,4,0,,,0,1,148,13,4,SWZ,BRB,3B,3B,,1
+Jack Marnette,213,256,Jackson Sanchez,46,295,2B,39,T2,0,3,4,0,,,1,0,148,13,4,SWZ,BRB,2B,2B,,1
+Xerxes Dalin,474,904,Jackson Sanchez,46,401,LGO,497,T2,0,2,4,1,,,0,0,148,13,4,SWZ,BRB,LGO,LGO,,1
+Mike Fruitstand,772,699,Jackson Sanchez,46,787,1B,88,T2,1,2,4,1,,,0,0,148,13,4,SWZ,BRB,1B,1B,,1
+Sir Shirley,698,900,Jackson Sanchez,46,10,BB,110,T2,1,5,4,1,,,0,0,148,13,4,SWZ,BRB,BB,BB,,1
+Jack Alpha,73,303,Jackson Sanchez,46,787,DP,484,T2,1,7,4,1,,,0,0,148,13,4,SWZ,BRB,LGO,LGO,,1
+Edward Duncan,620,804,Rickey Tucker,163,245,RGO,441,B2,0,0,4,1,,,0,0,149,13,4,BRB,SWZ,RGO,RGO,,1
+Stan Mann,357,289,Rickey Tucker,163,222,1B,67,B2,1,0,4,1,,,0,0,149,13,4,BRB,SWZ,1B,1B,,1
+Bart Harley Jarvis,2,898,Rickey Tucker,163,100,FO,202,B2,1,1,4,1,,,0,0,149,13,4,BRB,SWZ,FO,FO,,1
+Takahiro Rihanna,419,735,Rickey Tucker,163,34,K,299,B2,2,1,4,1,,,0,0,149,13,4,BRB,SWZ,K,K,,1
+Caleb Aiken,324,801,Alyx Sabor,149,196,PO,395,T3,0,0,4,1,,,0,0,150,13,4,SWZ,BRB,PO,PO,,1
+Hank Murphy,76,855,Alyx Sabor,149,1,BB,146,T3,1,0,4,1,,,0,1,150,13,4,SWZ,BRB,BB,BB,,1
+Hank Murphy,76,715,Alyx Sabor,149,666,SB,49,T3,1,1,4,1,,,0,0,150,13,4,SWZ,BRB,Steal 2B,Steal 2B,,4
+Demetrios Ooga,180,625,Alyx Sabor,149,715,1B,90,T3,1,2,4,1,,,0,0,150,13,4,SWZ,BRB,1B,1B,,1
+Red Arrow,547,461,Alyx Sabor,149,266,Sac,195,T3,1,5,4,1,,,1,0,150,13,4,SWZ,BRB,FO,FO,,1
+Jack Marnette,213,535,Alyx Sabor,149,777,K,242,T3,2,1,4,2,,,0,0,150,13,4,SWZ,BRB,K,K,,1
+becky mcbadbat,277,777,Rickey Tucker,163,777,HR,0,B3,0,0,4,2,,,1,1,151,13,4,BRB,SWZ,HR,HR,,1
+KC Bats,287,2,Rickey Tucker,163,777,FO,225,B3,0,0,5,2,,,0,0,151,13,4,BRB,SWZ,FO,FO,,1
+Garren Smudge,133,777,Rickey Tucker,163,1,FO,224,B3,1,0,5,2,,,0,0,151,13,4,BRB,SWZ,FO,FO,,1
+Trevor Mouseman,559,169,Rickey Tucker,163,462,K,293,B3,2,0,5,2,,,0,0,151,13,4,BRB,SWZ,K,K,,1
+Xerxes Dalin,474,294,Alyx Sabor,149,13,K,281,T4,0,0,5,2,,,0,0,152,13,4,SWZ,BRB,K,K,,1
+Mike Fruitstand,772,380,Alyx Sabor,149,69,K,311,T4,1,0,5,2,,,0,0,152,13,4,SWZ,BRB,K,K,,1
+Sir Shirley,698,810,Alyx Sabor,149,515,K,295,T4,2,0,5,2,,,0,0,152,13,4,SWZ,BRB,K,K,,1
+Francis J Wellington IV,152,469,Rickey Tucker,163,378,1B,91,B4,0,0,5,2,,,0,0,153,13,4,BRB,SWZ,1B,1B,,1
+Edward Duncan,620,365,Rickey Tucker,163,221,FO,144,B4,0,1,5,2,,,0,0,153,13,4,BRB,SWZ,FO,FO,,1
+Stan Mann,357,289,Rickey Tucker,163,78,FO,211,B4,1,1,5,2,,,0,0,153,13,4,BRB,SWZ,FO,FO,,1
+Bart Harley Jarvis,2,666,Rickey Tucker,163,891,FO,225,B4,2,1,5,2,,,0,0,153,13,4,BRB,SWZ,FO,FO,,1
+Jack Alpha,73,187,Artanis Jones,37,151,2B,36,T5,0,0,5,2,,,0,1,154,13,4,SWZ,BRB,2B,2B,,1
+Caleb Aiken,324,376,Artanis Jones,37,413,2B,37,T5,0,2,5,2,,,1,1,154,13,4,SWZ,BRB,2B,2B,,1
+Hank Murphy,76,222,Artanis Jones,37,709,LGO,487,T5,0,2,5,3,,,0,0,154,13,4,SWZ,BRB,LGO,LGO,,1
+Demetrios Ooga,180,500,Artanis Jones,37,944,LGO,444,T5,1,2,5,3,,,0,0,154,13,4,SWZ,BRB,LGO,LGO,,1
+Red Arrow,547,689,Artanis Jones,37,583,1B,106,T5,2,2,5,3,,,1,0,154,13,4,SWZ,BRB,1B,1B,,1
+Jack Marnette,213,640,Artanis Jones,37,493,BB,147,T5,2,1,5,4,,,0,0,154,13,4,SWZ,BRB,BB,BB,,1
+Xerxes Dalin,474,1,Artanis Jones,37,710,K,291,T5,2,4,5,4,,,0,0,154,13,4,SWZ,BRB,K,K,,1
+Takahiro Rihanna,419,243,Icna Comit,198,889,PO,354,B5,0,0,5,4,,,0,0,155,13,4,BRB,SWZ,PO,PO,,1
+becky mcbadbat,277,669,Icna Comit,198,55,RGO,386,B5,1,0,5,4,,,0,0,155,13,4,BRB,SWZ,RGO,RGO,,1
+KC Bats,287,420,Icna Comit,198,789,RGO,369,B5,2,0,5,4,,,0,0,155,13,4,BRB,SWZ,RGO,RGO,,1
+Mike Fruitstand,772,319,Artanis Jones,37,548,FO,229,T6,0,0,5,4,,,0,0,156,13,4,SWZ,BRB,FO,FO,,1
+Sir Shirley,698,720,Artanis Jones,37,103,PO,383,T6,1,0,5,4,,,0,0,156,13,4,SWZ,BRB,PO,PO,,1
+Jack Alpha,73,887,Artanis Jones,37,420,LGO,467,T6,2,0,5,4,,,0,0,156,13,4,SWZ,BRB,LGO,LGO,,1
+Nick Tits,59,88,Ty Palmatier,258,254,BB,166,T1,0,0,0,0,,,0,0,157,14,4,SCO,VC,BB,BB,,1
+Liam Abercrombie,270,436,Ty Palmatier,258,913,DP,477,T1,0,1,0,0,,,0,0,157,14,4,SCO,VC,LGO,LGO,,1
+Buster McNutt,127,667,Ty Palmatier,258,619,2B,48,T1,2,0,0,0,,,0,1,157,14,4,SCO,VC,2B,2B,,1
+Cal Lidous,227,848,Ty Palmatier,258,819,HR,29,T1,2,2,0,0,,,2,1,157,14,4,SCO,VC,HR,HR,,1
+Rotticus Scott,562,222,Ty Palmatier,258,275,2B,53,T1,2,0,0,2,,,0,0,157,14,4,SCO,VC,2B,2B,,1
+Edward Freeman,700,575,Ty Palmatier,258,7,LGO,432,T1,2,2,0,2,,,0,0,157,14,4,SCO,VC,LGO,LGO,,1
+Thelonius Junk,623,747,Sammy Slingshot,32,344,RGO,403,B1,0,0,0,2,,,0,0,158,14,4,VC,SCO,RGO,RGO,,1
+Wavy Gravy VIII,265,222,Sammy Slingshot,32,301,1B,79,B1,1,0,0,2,,,0,0,158,14,4,VC,SCO,1B,1B,,1
+Wavy Gravy VIII,265,725,Sammy Slingshot,32,385,CS,340,B1,1,1,0,2,,,0,0,158,14,4,VC,SCO,CS 2B,CS 2B,,4
+Fernando Cruz,176,333,Sammy Slingshot,32,12,K,321,B1,2,0,0,2,,,0,0,158,14,4,VC,SCO,K,K,,1
+Michael Scarn,746,501,Ty Palmatier,258,41,LGO,460,T2,0,0,0,2,,,0,0,159,14,4,SCO,VC,LGO,LGO,,1
+Henry Crowell,184,533,Ty Palmatier,258,976,LGO,443,T2,1,0,0,2,,,0,0,159,14,4,SCO,VC,LGO,LGO,,1
+Bench Warmer,665,440,Ty Palmatier,258,729,K,289,T2,2,0,0,2,,,0,0,159,14,4,SCO,VC,K,K,,1
+Faye Suzuki,22,333,Sammy Slingshot,32,830,LGO,497,B2,0,0,0,2,,,0,0,160,14,4,VC,SCO,LGO,LGO,,1
+LaCarpetron Dukemarriot,775,212,Sammy Slingshot,32,350,BB,138,B2,1,0,0,2,,,0,0,160,14,4,VC,SCO,BB,BB,,1
+Jordan Peppers,18,308,Sammy Slingshot,32,466,BB,158,B2,1,1,0,2,,,0,0,160,14,4,VC,SCO,BB,BB,,1
+Dallas Houston,416,54,Sammy Slingshot,32,980,1B,74,B2,1,4,0,2,,,0,0,160,14,4,VC,SCO,1B,1B,,1
+Derek Bongiovanni,109,442,Sammy Slingshot,32,88,DP,354,B2,1,7,0,2,,,0,0,160,14,4,VC,SCO,RGO,RGO,,1
+Nick Tits,59,834,Ty Palmatier,258,445,RGO,389,T3,0,0,0,2,,,0,0,161,14,4,SCO,VC,RGO,RGO,,1
+Liam Abercrombie,270,192,Ty Palmatier,258,155,2B,37,T3,1,0,0,2,,,0,0,161,14,4,SCO,VC,2B,2B,,1
+Buster McNutt,127,680,Ty Palmatier,258,838,FO,158,T3,1,2,0,2,,,0,0,161,14,4,SCO,VC,FO,FO,,1
+Cal Lidous,227,,Ty Palmatier,258,,Auto BB,,T3,2,2,0,2,,,0,0,161,14,4,SCO,VC,Auto BB,Auto BB,,10
+Rotticus Scott,562,456,Ty Palmatier,258,942,LGO,486,T3,2,4,0,2,,,0,0,161,14,4,SCO,VC,LGO,LGO,,1
+Jacky Wacky,702,222,Sammy Slingshot,32,777,LGO,445,B3,0,0,0,2,,,0,0,162,14,4,VC,SCO,LGO,LGO,,1
+Thelonius Junk,623,156,Sammy Slingshot,32,624,LGO,468,B3,1,0,0,2,,,0,0,162,14,4,VC,SCO,LGO,LGO,,1
+Wavy Gravy VIII,265,569,Sammy Slingshot,32,798,FO,229,B3,2,0,0,2,,,0,0,162,14,4,VC,SCO,FO,FO,,1
+Edward Freeman,700,251,Ty Palmatier,258,902,PO,349,T4,0,0,0,2,,,0,0,163,14,4,SCO,VC,PO,PO,,1
+Michael Scarn,746,263,Ty Palmatier,258,656,RGO,393,T4,1,0,0,2,,,0,0,163,14,4,SCO,VC,RGO,RGO,,1
+Henry Crowell,184,800,Ty Palmatier,258,465,PO,335,T4,2,0,0,2,,,0,0,163,14,4,SCO,VC,PO,PO,,1
+Fernando Cruz,176,531,Sammy Slingshot,32,666,BB,135,B4,0,0,0,2,,,0,0,164,14,4,VC,SCO,BB,BB,,1
+Faye Suzuki,22,400,Sammy Slingshot,32,799,DP,399,B4,0,1,0,2,,,0,0,164,14,4,VC,SCO,RGO,RGO,,1
+LaCarpetron Dukemarriot,775,666,Sammy Slingshot,32,999,PO,333,B4,2,0,0,2,,,0,0,164,14,4,VC,SCO,PO,PO,,1
+Bench Warmer,665,512,Jericho Caulfield,36,2,LGO,490,T5,0,0,0,2,,,0,0,165,14,4,SCO,VC,LGO,LGO,,1
+Nick Tits,59,12,Jericho Caulfield,36,446,RGO,434,T5,1,0,0,2,,,0,0,165,14,4,SCO,VC,RGO,RGO,,1
+Liam Abercrombie,270,113,Jericho Caulfield,36,154,1B,41,T5,2,0,0,2,,,0,0,165,14,4,SCO,VC,1B,1B,,1
+Buster McNutt,127,888,Jericho Caulfield,36,657,K,231,T5,2,1,0,2,,,0,0,165,14,4,SCO,VC,K,K,,1
+Jordan Peppers,18,743,Pablo Sanchez III,250,123,RGO,380,B5,0,0,0,2,,,0,0,166,14,4,VC,SCO,RGO,RGO,,1
+Dallas Houston,416,457,Pablo Sanchez III,250,853,PO,396,B5,1,0,0,2,,,0,0,166,14,4,VC,SCO,PO,PO,,1
+Derek Bongiovanni,109,482,Pablo Sanchez III,250,211,FO,271,B5,2,0,0,2,,,0,0,166,14,4,VC,SCO,FO,FO,,1
+Cal Lidous,227,827,Jericho Caulfield,36,158,RGO,331,T6,0,0,0,2,,,0,0,167,14,4,SCO,VC,RGO,RGO,,1
+Rotticus Scott,562,666,Jericho Caulfield,36,213,LGO,453,T6,1,0,0,2,,,0,0,167,14,4,SCO,VC,LGO,LGO,,1
+Edward Freeman,700,676,Jericho Caulfield,36,436,K,240,T6,2,0,0,2,,,0,0,167,14,4,SCO,VC,K,K,,1
+Jacky Wacky,702,801,Pablo Sanchez III,250,819,3B,18,B6,0,0,0,2,,,0,1,168,14,4,VC,SCO,3B,3B,,1
+Thelonius Junk,623,488,Pablo Sanchez III,250,822,K,334,B6,0,3,0,2,,,0,0,168,14,4,VC,SCO,K,K,,1
+Wavy Gravy VIII,265,500,Pablo Sanchez III,250,952,LGO,452,B6,1,3,0,2,,,0,0,168,14,4,VC,SCO,LGO,LGO,,2
+Fernando Cruz,176,278,Pablo Sanchez III,250,322,2B,44,B6,2,3,0,2,,,1,0,168,14,4,VC,SCO,2B,2B,,1
+Faye Suzuki,22,101,Pablo Sanchez III,250,420,K,319,B6,2,2,1,2,,,0,0,168,14,4,VC,SCO,K,K,,1
+Dixon Uraz,34,222,Wheeler Walker Jr.,529,920,K,302,T1,0,0,0,0,,,0,0,169,15,4,BH,JMC,K,K,,1
+dick richards,487,709,Wheeler Walker Jr.,529,166,LGO,457,T1,1,0,0,0,,,0,0,169,15,4,BH,JMC,LGO,LGO,,1
+Henrik Omega,84,327,Wheeler Walker Jr.,529,569,FO,242,T1,2,0,0,0,,,0,0,169,15,4,BH,JMC,FO,FO,,1
+Todd Bonzalez II,169,420,Keyo,331,643,FO,223,B1,0,0,0,0,,,0,0,170,15,4,JMC,BH,FO,FO,,1
+Speedo Meter,675,595,Keyo,331,222,K,373,B1,1,0,0,0,,,0,0,170,15,4,JMC,BH,K,K,,1
+Dimebag Jammin,262,833,Keyo,331,561,FO,272,B1,2,0,0,0,,,0,0,170,15,4,JMC,BH,FO,FO,,1
+Joe Watson,194,730,Wheeler Walker Jr.,529,849,BB,119,T2,0,0,0,0,,,0,0,171,15,4,BH,JMC,BB,BB,,1
+Kyle Corbett,707,948,Wheeler Walker Jr.,529,327,DP,379,T2,0,1,0,0,,,0,0,171,15,4,BH,JMC,RGO,RGO,,1
+Wallace Grommet,492,654,Wheeler Walker Jr.,529,730,1B,76,T2,2,0,0,0,,,0,0,171,15,4,BH,JMC,1B,1B,,1
+Miroslav,71,808,Wheeler Walker Jr.,529,2,FO,194,T2,2,1,0,0,,,0,0,171,15,4,BH,JMC,FO,FO,,1
+Cam'ron West,525,704,Keyo,331,324,RGO,380,B2,0,0,0,0,,,0,0,172,15,4,JMC,BH,RGO,RGO,,1
+Emerson Austin,703,240,Keyo,331,222,HR,18,B2,1,0,0,0,,,1,1,172,15,4,JMC,BH,HR,HR,,1
+Q Kimbrell,20,833,Keyo,331,23,FO,190,B2,1,0,1,0,,,0,0,172,15,4,JMC,BH,FO,FO,,1
+Mongster Mash,344,331,Keyo,331,745,RGO,414,B2,2,0,1,0,,,0,0,172,15,4,JMC,BH,RGO,RGO,,1
+Charlie Bae Jr.,293,290,Wheeler Walker Jr.,529,194,1B,96,T3,0,0,1,0,,,0,0,173,15,4,BH,JMC,1B,1B,,1
+Gob Bibson,708,512,Wheeler Walker Jr.,529,727,FO,215,T3,0,1,1,0,,,0,0,173,15,4,BH,JMC,FO,FO,,1
+Dixon Uraz,34,7,Wheeler Walker Jr.,529,214,FO,207,T3,1,1,1,0,,,0,0,173,15,4,BH,JMC,FO,FO,,1
+dick richards,487,36,Wheeler Walker Jr.,529,432,RGO,396,T3,2,1,1,0,,,0,0,173,15,4,BH,JMC,RGO,RGO,,1
+Girth Brooks,161,114,Keyo,331,248,BB,134,B3,0,0,1,0,,,0,0,174,15,4,JMC,BH,BB,BB,,1
+Clarinet Clarinet,672,770,Keyo,331,468,K,302,B3,0,1,1,0,,,0,0,174,15,4,JMC,BH,K,K,,1
+Todd Bonzalez II,169,850,Keyo,331,333,DP,483,B3,1,1,1,0,,,0,0,174,15,4,JMC,BH,LGO,LGO,,1
+Henrik Omega,84,678,Wheeler Walker Jr.,529,115,RGO,437,T4,0,0,1,0,,,0,0,175,15,4,BH,JMC,RGO,RGO,,1
+Joe Watson,194,730,Wheeler Walker Jr.,529,911,FO,181,T4,1,0,1,0,,,0,0,175,15,4,BH,JMC,FO,FO,,1
+Kyle Corbett,707,311,Wheeler Walker Jr.,529,948,PO,363,T4,2,0,1,0,,,0,0,175,15,4,BH,JMC,PO,PO,,1
+Speedo Meter,675,494,Keyo,331,563,1B,69,B4,0,0,1,0,,,0,0,176,15,4,JMC,BH,1B,1B,,1
+Dimebag Jammin,262,769,Keyo,331,69,K,300,B4,0,1,1,0,,,0,0,176,15,4,JMC,BH,K,K,,1
+Cam'ron West,525,333,Keyo,331,865,DP,468,B4,1,1,1,0,,,0,0,176,15,4,JMC,BH,LGO,LGO,,1
+Wallace Grommet,492,654,Ryan Tyburn,517,514,BB,140,T5,0,0,1,0,,,0,0,177,15,4,BH,JMC,BB,BB,,1
+Miroslav,71,509,Ryan Tyburn,517,307,FO,202,T5,0,1,1,0,,,0,0,177,15,4,BH,JMC,FO,FO,,1
+Charlie Bae Jr.,293,768,Ryan Tyburn,517,853,1B,85,T5,1,1,1,0,,,0,0,177,15,4,BH,JMC,1B,1B,,1
+Gob Bibson,708,369,Ryan Tyburn,517,75,K,294,T5,1,4,1,0,,,0,0,177,15,4,BH,JMC,K,K,,1
+Dixon Uraz,34,327,Ryan Tyburn,517,27,K,300,T5,2,4,1,0,,,0,0,177,15,4,BH,JMC,K,K,,1
+Emerson Austin,703,666,Bobosnia Bones,478,234,RGO,432,B5,0,0,1,0,,,0,0,178,15,4,JMC,BH,RGO,RGO,,1
+Q Kimbrell,20,5,Bobosnia Bones,478,114,1B,109,B5,1,0,1,0,,,0,0,178,15,4,JMC,BH,1B,1B,,1
+Q Kimbrell,20,420,Bobosnia Bones,478,690,SB,270,B5,1,1,1,0,,,0,0,178,15,4,JMC,BH,Steal 2B,Steal 2B,,4
+Mongster Mash,344,656,Bobosnia Bones,478,270,PO,386,B5,1,2,1,0,,,0,0,178,15,4,JMC,BH,PO,PO,,1
+Girth Brooks,161,720,Bobosnia Bones,478,69,PO,349,B5,2,2,1,0,,,0,0,178,15,4,JMC,BH,PO,PO,,1
+dick richards,487,271,Ryan Tyburn,517,390,1B,119,T6,0,0,1,0,,,0,1,179,15,4,BH,JMC,1B,1B,,1
+Henrik Omega,84,845,Ryan Tyburn,517,806,2B,39,T6,0,1,1,0,,,0,1,179,15,4,BH,JMC,2B,2B,,1
+Joe Watson,194,950,Ryan Tyburn,517,730,Sac,220,T6,0,6,1,0,,,1,0,179,15,4,BH,JMC,FO,FO,,1
+Kyle Corbett,707,862,Ryan Tyburn,517,806,2B,56,T6,1,2,1,1,,,1,0,179,15,4,BH,JMC,2B,2B,,1
+Wallace Grommet,492,186,Ryan Tyburn,517,807,PO,379,T6,1,2,1,2,,,0,0,179,15,4,BH,JMC,PO,PO,,1
+Miroslav,71,205,Ryan Tyburn,517,609,RGO,404,T6,2,2,1,2,,,0,0,179,15,4,BH,JMC,RGO,RGO,,1
+Clarinet Clarinet,672,205,Bobosnia Bones,478,405,FO,200,B6,0,0,1,2,,,0,0,180,15,4,JMC,BH,FO,FO,,1
+Todd Bonzalez II,169,820,Bobosnia Bones,478,101,K,281,B6,1,0,1,2,,,0,0,180,15,4,JMC,BH,K,K,,1
+Tara E. Doug,252,733,Bobosnia Bones,478,900,FO,167,B6,2,0,1,2,,,0,0,180,15,4,JMC,BH,FO,FO,,1
+Barius McKockidopolous,612,333,Richard Northstar,275,715,K,382,T1,0,0,0,0,,,0,0,181,16,4,GRE,SM,K,K,,1
+Carlos The great,132,601,Richard Northstar,275,57,RGO,456,T1,1,0,0,0,,,0,0,181,16,4,GRE,SM,RGO,RGO,,1
+Dakota Carolina Montana,65,183,Richard Northstar,275,768,RGO,415,T1,2,0,0,0,,,0,0,181,16,4,GRE,SM,RGO,RGO,,1
+Nori Aru,131,800,Sam Wood,108,588,FO,212,B1,0,0,0,0,,,0,0,182,16,4,SM,GRE,FO,FO,,1
+Obama habubger,342,671,Sam Wood,108,612,2B,59,B1,1,0,0,0,,,0,1,182,16,4,SM,GRE,2B,2B,,1
+Richard Northstar,275,38,Sam Wood,108,500,LGO,462,B1,1,2,0,0,,,0,0,182,16,4,SM,GRE,LGO,LGO,,1
+Johnny Hendrivederci,600,878,Sam Wood,108,888,HR,10,B1,2,2,0,0,,,2,1,182,16,4,SM,GRE,HR,HR,,1
+Emmett Michael,10,999,Sam Wood,108,156,BB,157,B1,2,0,2,0,,,0,0,182,16,4,SM,GRE,BB,BB,,1
+Paul E. Wag,583,172,Sam Wood,108,500,K,328,B1,2,1,2,0,,,0,0,182,16,4,SM,GRE,K,K,,1
+"Reno ""El Greco"" McRenoface",776,,Richard Northstar,275,,Auto BB,,T2,0,0,2,0,,,0,1,183,16,4,GRE,SM,Auto BB,Auto BB,,10
+"Reno ""El Greco"" McRenoface",776,651,Richard Northstar,275,596,SB,55,T2,0,1,2,0,,,0,0,183,16,4,GRE,SM,Steal 2B,Steal 2B,,4
+Thomas BEOWULF,218,352,Richard Northstar,275,725,K,373,T2,0,2,2,0,,,0,0,183,16,4,GRE,SM,K,K,,1
+Sam Wood,108,500,Richard Northstar,275,444,1B,56,T2,1,2,2,0,,,0,0,183,16,4,GRE,SM,1B,1B,,1
+Mattress Cadaire,116,711,Richard Northstar,275,474,Sac,237,T2,1,5,2,0,,,1,0,183,16,4,GRE,SM,FO,FO,,1
+Iama Human,520,250,Richard Northstar,275,338,1B,88,T2,2,1,2,1,,,0,0,183,16,4,GRE,SM,1B,1B,,1
+Ben Bramly,238,372,Richard Northstar,275,1,K,371,T2,2,5,2,1,,,0,0,183,16,4,GRE,SM,K,K,,1
+Juniped Catfish,488,420,Sam Wood,108,211,FO,209,B2,0,0,2,1,,,0,0,184,16,4,SM,GRE,FO,FO,,1
+Michael Ikenberry,63,18,Sam Wood,108,12,HR,6,B2,1,0,2,1,,,1,1,184,16,4,SM,GRE,HR,HR,,1
+Lloyd Gross,135,378,Sam Wood,108,611,K,233,B2,1,0,3,1,,,0,0,184,16,4,SM,GRE,K,K,,1
+Nori Aru,131,69,Sam Wood,108,123,2B,54,B2,2,0,3,1,,,0,1,184,16,4,SM,GRE,2B,2B,,1
+Obama habubger,342,457,Sam Wood,108,500,2B,43,B2,2,2,3,1,,,1,0,184,16,4,SM,GRE,2B,2B,,1
+Richard Northstar,275,777,Sam Wood,108,555,FO,222,B2,2,2,4,1,,,0,0,184,16,4,SM,GRE,FO,FO,,1
+Barius McKockidopolous,612,666,Isaac Snowbender,339,569,BB,97,T3,0,0,4,1,,,0,0,185,16,4,GRE,SM,BB,BB,,1
+Carlos The great,132,333,Isaac Snowbender,339,465,BB,132,T3,0,1,4,1,,,0,0,185,16,4,GRE,SM,BB,BB,,1
+Dakota Carolina Montana,65,545,Isaac Snowbender,339,9,DP,464,T3,0,4,4,1,,,0,0,185,16,4,GRE,SM,LGO,LGO,,1
+"Reno ""El Greco"" McRenoface",776,729,Isaac Snowbender,339,108,RGO,379,T3,2,3,4,1,,,0,0,185,16,4,GRE,SM,RGO,RGO,,1
+Johnny Hendrivederci,600,912,Sam Wood,108,211,FO,299,B3,0,0,4,1,,,0,0,186,16,4,SM,GRE,FO,FO,,1
+Emmett Michael,10,760,Sam Wood,108,811,1B,51,B3,1,0,4,1,,,0,1,186,16,4,SM,GRE,1B,1B,,1
+Paul E. Wag,583,422,Sam Wood,108,600,BB,178,B3,1,1,4,1,,,0,0,186,16,4,SM,GRE,BB,BB,,1
+Juniped Catfish,488,69,Sam Wood,108,888,FO,181,B3,1,4,4,1,,,0,0,186,16,4,SM,GRE,FO,FO,,1
+Michael Ikenberry,63,260,Sam Wood,108,199,1B,61,B3,2,4,4,1,,,1,0,186,16,4,SM,GRE,1B,1B,,1
+Lloyd Gross,135,363,Sam Wood,108,11,PO,352,B3,2,5,5,1,,,0,0,186,16,4,SM,GRE,PO,PO,,1
+Thomas BEOWULF,218,768,Isaac Snowbender,339,352,PO,416,T4,0,0,5,1,,,0,0,187,16,4,GRE,SM,PO,PO,,1
+Sam Wood,108,999,Isaac Snowbender,339,820,FO,179,T4,1,0,5,1,,,0,0,187,16,4,GRE,SM,FO,FO,,1
+Mattress Cadaire,116,731,Isaac Snowbender,339,369,K,362,T4,2,0,5,1,,,0,0,187,16,4,GRE,SM,K,K,,1
+Nori Aru,131,569,Sam Wood,108,555,HR,14,B4,0,0,5,1,,,1,1,188,16,4,SM,GRE,HR,HR,,1
+Obama habubger,342,222,Sam Wood,108,313,1B,91,B4,0,0,6,1,,,0,0,188,16,4,SM,GRE,1B,1B,,1
+Obama habubger,342,720,Swing N. Miss,195,123,CS,403,B4,0,1,6,1,,,0,0,188,16,4,SM,GRE,CS 2B,CS 2B,,4
+Isaac Snowbender,339,956,Swing N. Miss,195,77,1B,121,B4,1,0,6,1,,,0,0,188,16,4,SM,GRE,1B,1B,,1
+Isaac Snowbender,339,588,Swing N. Miss,195,5,CS,417,B4,1,1,6,1,,,0,0,188,16,4,SM,GRE,CS 2B,CS 2B,,4
+Johnny Hendrivederci,600,424,Swing N. Miss,195,130,FO,294,B4,2,0,6,1,,,0,0,188,16,4,SM,GRE,FO,FO,,1
+Iama Human,520,333,Sammy Capicola,117,645,RGO,312,T5,0,0,6,1,,,0,0,189,16,4,GRE,SM,RGO,RGO,,1
+Ben Bramly,238,655,Sammy Capicola,117,2,RGO,347,T5,1,0,6,1,,,0,0,189,16,4,GRE,SM,RGO,RGO,,1
+Barius McKockidopolous,612,69,Sammy Capicola,117,155,1B,86,T5,2,0,6,1,,,0,0,189,16,4,GRE,SM,1B,1B,,1
+Carlos The great,132,666,Sammy Capicola,117,888,FO,222,T5,2,1,6,1,,,0,0,189,16,4,GRE,SM,FO,FO,,1
+Emmett Michael,10,811,Swing N. Miss,195,1,FO,190,B5,0,0,6,1,,,0,0,190,16,4,SM,GRE,FO,FO,,1
+Paul E. Wag,583,2,Swing N. Miss,195,290,FO,288,B5,1,0,6,1,,,0,0,190,16,4,SM,GRE,FO,FO,,1
+Juniped Catfish,488,650,Swing N. Miss,195,500,FO,150,B5,2,0,6,1,,,0,0,190,16,4,SM,GRE,FO,FO,,1
+Dakota Carolina Montana,65,35,Sammy Capicola,117,560,LGO,475,T6,0,0,6,1,,,0,0,191,16,4,GRE,SM,LGO,LGO,,1
+"Reno ""El Greco"" McRenoface",776,361,Sammy Capicola,117,911,LGO,450,T6,1,0,6,1,,,0,0,191,16,4,GRE,SM,LGO,LGO,,1
+Thomas BEOWULF,218,457,Sammy Capicola,117,2,LGO,455,T6,2,0,6,1,,,0,0,191,16,4,GRE,SM,LGO,LGO,,1
+Nick Tits,59,,Chaz Gorbachuck,326,,Auto BB,,T1,0,0,0,0,,,0,0,192,17,5,SCO,SWZ,Auto BB,Auto BB,,10
+Nick Tits,59,300,Chaz Gorbachuck,326,872,CS,428,T1,0,1,0,0,,,0,0,192,17,5,SCO,SWZ,CS 2B,CS 2B,,4
+Liam Abercrombie,270,431,Chaz Gorbachuck,326,123,K,308,T1,1,0,0,0,,,0,0,192,17,5,SCO,SWZ,K,K,,1
+Buster McNutt,127,477,Chaz Gorbachuck,326,212,K,265,T1,2,0,0,0,,,0,0,192,17,5,SCO,SWZ,K,K,,1
+Caleb Aiken,324,646,señor rustus of house vervulf,651,569,1B,77,B1,0,0,0,0,,,0,0,193,17,5,SWZ,SCO,1B,1B,,1
+Hank Murphy,76,350,señor rustus of house vervulf,651,511,BB,161,B1,0,1,0,0,,,0,0,193,17,5,SWZ,SCO,BB,BB,,1
+Demetrios Ooga,180,869,señor rustus of house vervulf,651,387,DP,482,B1,0,4,0,0,,,0,0,193,17,5,SWZ,SCO,LGO,LGO,,1
+Red Arrow,547,689,señor rustus of house vervulf,651,890,FO,201,B1,2,3,0,0,,,0,0,193,17,5,SWZ,SCO,FO,FO,,1
+Cal Lidous,227,152,Chaz Gorbachuck,326,777,RGO,375,T2,0,0,0,0,,,0,0,194,17,5,SCO,SWZ,RGO,RGO,,1
+Henry Crowell,184,231,Chaz Gorbachuck,326,522,K,291,T2,1,0,0,0,,,0,0,194,17,5,SCO,SWZ,K,K,,1
+Edward Freeman,700,943,Chaz Gorbachuck,326,911,2B,32,T2,2,0,0,0,,,0,0,194,17,5,SCO,SWZ,2B,2B,,1
+Michael Scarn,746,831,Chaz Gorbachuck,326,629,FO,202,T2,2,2,0,0,,,0,0,194,17,5,SCO,SWZ,FO,FO,,1
+Jack Marnette,213,329,señor rustus of house vervulf,651,903,RGO,426,B2,0,0,0,0,,,0,0,195,17,5,SWZ,SCO,RGO,RGO,,1
+Xerxes Dalin,474,117,señor rustus of house vervulf,651,46,1B,71,B2,1,0,0,0,,,0,1,195,17,5,SWZ,SCO,1B,1B,,1
+Xerxes Dalin,474,617,señor rustus of house vervulf,651,391,SB,226,B2,1,1,0,0,,,0,0,195,17,5,SWZ,SCO,Steal 2B,Steal 2B,,4
+Mike Fruitstand,772,50,señor rustus of house vervulf,651,108,2B,58,B2,1,2,0,0,,,1,0,195,17,5,SWZ,SCO,2B,2B,,1
+Sir Shirley,698,450,señor rustus of house vervulf,651,131,K,319,B2,1,2,1,0,,,0,0,195,17,5,SWZ,SCO,K,K,,1
+Jack Alpha,73,602,señor rustus of house vervulf,651,788,FO,186,B2,2,2,1,0,,,0,0,195,17,5,SWZ,SCO,FO,FO,,1
+Lemon Juiced,193,566,Chaz Gorbachuck,326,288,K,278,T3,0,0,1,0,,,0,0,196,17,5,SCO,SWZ,K,K,,1
+Bench Warmer,665,50,Chaz Gorbachuck,326,700,PO,350,T3,1,0,1,0,,,0,0,196,17,5,SCO,SWZ,PO,PO,,1
+Nick Tits,59,6,Chaz Gorbachuck,326,396,RGO,390,T3,2,0,1,0,,,0,0,196,17,5,SCO,SWZ,RGO,RGO,,1
+Caleb Aiken,324,899,señor rustus of house vervulf,651,569,K,330,B3,0,0,1,0,,,0,0,197,17,5,SWZ,SCO,K,K,,1
+Hank Murphy,76,777,señor rustus of house vervulf,651,333,RGO,444,B3,1,0,1,0,,,0,0,197,17,5,SWZ,SCO,RGO,RGO,,1
+Demetrios Ooga,180,333,señor rustus of house vervulf,651,420,1B,87,B3,2,0,1,0,,,0,0,197,17,5,SWZ,SCO,1B,1B,,1
+Red Arrow,547,441,señor rustus of house vervulf,651,1000,RGO,441,B3,2,1,1,0,,,0,0,197,17,5,SWZ,SCO,RGO,RGO,,1
+Liam Abercrombie,270,212,Chaz Gorbachuck,326,121,1B,91,T4,0,0,1,0,,,0,1,198,17,5,SCO,SWZ,1B,1B,,1
+Liam Abercrombie,270,781,Chaz Gorbachuck,326,777,SB,4,T4,0,1,1,0,,,0,0,198,17,5,SCO,SWZ,Steal 2B,Steal 2B,,4
+Buster McNutt,127,57,Chaz Gorbachuck,326,425,PO,368,T4,0,2,1,0,,,0,0,198,17,5,SCO,SWZ,PO,PO,,1
+Cal Lidous,227,783,Chaz Gorbachuck,326,619,FO,164,T4,1,2,1,0,,,0,0,198,17,5,SCO,SWZ,FO,FO,,1
+Henry Crowell,184,333,Chaz Gorbachuck,326,316,HR,17,T4,2,2,1,0,,,2,1,198,17,5,SCO,SWZ,HR,HR,,1
+Edward Freeman,700,474,Chaz Gorbachuck,326,808,K,334,T4,2,0,1,2,,,0,0,198,17,5,SCO,SWZ,K,K,,1
+Jack Marnette,213,673,señor rustus of house vervulf,651,666,HR,7,B4,0,0,1,2,,,1,1,199,17,5,SWZ,SCO,HR,HR,,1
+Xerxes Dalin,474,345,Sammy Slingshot,32,842,LGO,497,B4,0,0,2,2,,,0,0,199,17,5,SWZ,SCO,LGO,LGO,,1
+Mike Fruitstand,772,330,Sammy Slingshot,32,807,LGO,477,B4,1,0,2,2,,,0,0,199,17,5,SWZ,SCO,LGO,LGO,,1
+Sir Shirley,698,720,Sammy Slingshot,32,190,LGO,470,B4,2,0,2,2,,,0,0,199,17,5,SWZ,SCO,LGO,LGO,,1
+Michael Scarn,746,341,Rickey Tucker,163,313,2B,28,T5,0,0,2,2,,,0,0,200,17,5,SCO,SWZ,2B,2B,,1
+Lemon Juiced,193,768,Rickey Tucker,163,599,BB,169,T5,0,2,2,2,,,0,0,200,17,5,SCO,SWZ,BB,BB,,1
+Bench Warmer,665,850,Rickey Tucker,163,21,FO,171,T5,0,4,2,2,,,0,0,200,17,5,SCO,SWZ,FO,FO,,1
+Nick Tits,59,736,Rickey Tucker,163,274,DP,462,T5,1,4,2,2,,,0,0,200,17,5,SCO,SWZ,LGO,LGO,,1
+Jack Alpha,73,103,Sammy Slingshot,32,485,RGO,382,B5,0,0,2,2,,,0,0,201,17,5,SWZ,SCO,RGO,RGO,,1
+Caleb Aiken,324,271,Sammy Slingshot,32,180,BB,91,B5,1,0,2,2,,,0,0,201,17,5,SWZ,SCO,BB,BB,,1
+Hank Murphy,76,577,Sammy Slingshot,32,312,FO,265,B5,1,1,2,2,,,0,0,201,17,5,SWZ,SCO,FO,FO,,1
+Demetrios Ooga,180,600,Sammy Slingshot,32,304,K,296,B5,2,1,2,2,,,0,0,201,17,5,SWZ,SCO,K,K,,1
+Liam Abercrombie,270,777,Rickey Tucker,163,699,1B,78,T6,0,0,2,2,,,0,0,202,17,5,SCO,SWZ,1B,1B,,1
+Liam Abercrombie,270,183,Rickey Tucker,163,267,SB,84,T6,0,1,2,2,,,0,0,202,17,5,SCO,SWZ,Steal 2B,Steal 2B,,4
+Buster McNutt,127,739,Rickey Tucker,163,222,LGO,483,T6,0,2,2,2,,,0,0,202,17,5,SCO,SWZ,LGO,LGO,,1
+Cal Lidous,227,427,Rickey Tucker,163,699,RGO,272,T6,1,2,2,2,,,0,0,202,17,5,SCO,SWZ,RGO,RGO,,1
+Henry Crowell,184,944,Rickey Tucker,163,486,LGO,458,T6,2,3,2,2,,,0,0,202,17,5,SCO,SWZ,LGO,LGO,,1
+Red Arrow,547,265,Sammy Slingshot,32,383,BB,118,B6,0,0,2,2,,,0,0,203,17,5,SWZ,SCO,BB,BB,,1
+Jack Marnette,213,439,Sammy Slingshot,32,309,BB,130,B6,0,1,2,2,,,0,0,203,17,5,SWZ,SCO,BB,BB,,1
+Xerxes Dalin,474,777,Sammy Slingshot,32,550,Bunt Sac,227,B6,0,4,2,2,,,0,0,203,17,5,SWZ,SCO,Bunt Sac,Bunt Sac,,3
+Mike Fruitstand,772,,Sammy Slingshot,32,,IBB,,B6,1,6,2,2,,,0,0,203,17,5,SWZ,SCO,IBB,IBB,,8
+Sir Shirley,698,270,Sammy Slingshot,32,901,DP,369,B6,1,7,2,2,,,0,0,203,17,5,SWZ,SCO,RGO,RGO,,1
+Edward Freeman,700,412,Rickey Tucker,163,295,1B,117,T7,0,2,2,2,,,0,0,204,17,5,SCO,SWZ,1B,1B,,1
+Michael Scarn,746,523,Rickey Tucker,163,800,Sac,277,T7,0,5,2,2,,,1,0,204,17,5,SCO,SWZ,FO,FO,,2
+Lemon Juiced,193,955,Rickey Tucker,163,1,2B,46,T7,1,1,2,3,,,0,0,204,17,5,SCO,SWZ,2B,2B,,1
+Bench Warmer,665,775,Rickey Tucker,163,322,LGO,453,T7,1,6,2,3,,,0,0,204,17,5,SCO,SWZ,LGO,LGO,,2
+Nick Tits,59,666,Rickey Tucker,163,853,FO,187,T7,2,6,2,3,,,0,0,204,17,5,SCO,SWZ,FO,FO,,1
+Jack Alpha,73,513,Sammy Slingshot,32,478,2B,35,B7,0,2,2,3,,,1,0,205,17,5,SWZ,SCO,2B,2B,,1
+Caleb Aiken,324,953,Sammy Slingshot,32,678,K,275,B7,0,2,3,3,,,0,0,205,17,5,SWZ,SCO,K,K,,1
+Hank Murphy,76,606,Sammy Slingshot,32,200,RGO,406,B7,1,2,3,3,,,0,0,205,17,5,SWZ,SCO,RGO,RGO,,1
+Demetrios Ooga,180,1,Sammy Slingshot,32,750,FO,251,B7,2,3,3,3,,,0,0,205,17,5,SWZ,SCO,FO,FO,,1
+Liam Abercrombie,270,277,Rickey Tucker,163,699,LGO,422,T8,0,6,3,3,,,0,0,206,17,5,SCO,SWZ,LGO,LGO,,2
+Buster McNutt,127,,Rickey Tucker,163,,IBB,,T8,1,6,3,3,,,0,0,206,17,5,SCO,SWZ,IBB,IBB,,8
+Rotticus Scott,562,510,Rickey Tucker,163,21,DP,489,T8,1,7,3,3,,,0,0,206,17,5,SCO,SWZ,LGO,LGO,,1
+Red Arrow,547,543,Pablo Sanchez III,250,101,RGO,442,B8,0,6,3,3,,,0,0,207,17,5,SWZ,SCO,RGO,RGO,,2
+Jack Marnette,213,,Pablo Sanchez III,250,,IBB,,B8,1,6,3,3,,,0,0,207,17,5,SWZ,SCO,IBB,IBB,,8
+Xerxes Dalin,474,18,Pablo Sanchez III,250,209,Sac,191,B8,1,7,3,3,,,1,0,207,17,5,SWZ,SCO,FO,FO,,1
+Layzer Gunn,259,642,Artanis Jones,37,69,RGO,427,T1,0,0,0,0,,,0,0,208,18,5,VC,BRB,RGO,RGO,,1
+Jacky Wacky,702,69,Artanis Jones,37,52,HR,17,T1,1,0,0,0,,,1,1,208,18,5,VC,BRB,HR,HR,,1
+Fernando Cruz,176,320,Artanis Jones,37,972,K,348,T1,1,0,0,1,,,0,0,208,18,5,VC,BRB,K,K,,1
+Jordan Peppers,18,17,Artanis Jones,37,648,K,369,T1,2,0,0,1,,,0,0,208,18,5,VC,BRB,K,K,,1
+becky mcbadbat,277,500,Jack Kanoff,189,600,BB,100,B1,0,0,0,1,,,0,1,209,18,5,BRB,VC,BB,BB,,1
+KC Bats,287,373,Jack Kanoff,189,666,FO,293,B1,0,1,0,1,,,0,0,209,18,5,BRB,VC,FO,FO,,1
+Garren Smudge,133,420,Jack Kanoff,189,475,2B,55,B1,1,1,0,1,,,0,1,209,18,5,BRB,VC,2B,2B,,1
+Francis J Wellington IV,152,750,Jack Kanoff,189,700,3B,50,B1,1,6,0,1,,,2,0,209,18,5,BRB,VC,3B,3B,,2
+Stan Mann,357,800,Jack Kanoff,189,202,RGO,402,B1,1,3,2,1,,,0,0,209,18,5,BRB,VC,RGO,RGO,,2
+Bart Harley Jarvis,2,209,Jack Kanoff,189,888,K,321,B1,2,3,2,1,,,0,0,209,18,5,BRB,VC,K,K,,1
+Thelonius Junk,623,,Artanis Jones,37,,Auto BB,,T2,0,0,2,1,,,0,0,210,18,5,VC,BRB,Auto BB,Auto BB,,10
+LaCarpetron Dukemarriot,775,373,Artanis Jones,37,843,DP,470,T2,0,1,2,1,,,0,0,210,18,5,VC,BRB,LGO,LGO,,1
+Wavy Gravy VIII,265,222,Artanis Jones,37,441,FO,219,T2,2,0,2,1,,,0,0,210,18,5,VC,BRB,FO,FO,,1
+Takahiro Rihanna,419,421,Jack Kanoff,189,838,RGO,417,B2,0,0,2,1,,,0,0,211,18,5,BRB,VC,RGO,RGO,,1
+Trevor Mouseman,559,390,Jack Kanoff,189,339,2B,51,B2,1,0,2,1,,,0,0,211,18,5,BRB,VC,2B,2B,,1
+Edward Duncan,620,278,Jack Kanoff,189,997,K,281,B2,1,2,2,1,,,0,0,211,18,5,BRB,VC,K,K,,1
+becky mcbadbat,277,421,Jack Kanoff,189,772,PO,351,B2,2,2,2,1,,,0,0,211,18,5,BRB,VC,PO,PO,,1
+Dallas Houston,416,175,Artanis Jones,37,172,HR,3,T3,0,0,2,1,,,1,1,212,18,5,VC,BRB,HR,HR,,1
+Faye Suzuki,22,125,Artanis Jones,37,119,HR,6,T3,0,0,2,2,,,1,1,212,18,5,VC,BRB,HR,HR,,1
+Layzer Gunn,259,215,Alyx Sabor,149,285,2B,70,T3,0,0,2,3,,,0,1,212,18,5,VC,BRB,2B,2B,,1
+Jacky Wacky,702,288,Alyx Sabor,149,856,RGO,432,T3,0,2,2,3,,,0,0,212,18,5,VC,BRB,RGO,RGO,,1
+Fernando Cruz,176,34,Alyx Sabor,149,255,Sac,221,T3,1,3,2,3,,,1,0,212,18,5,VC,BRB,FO,FO,,2
+Jordan Peppers,18,888,Alyx Sabor,149,15,BB,127,T3,2,0,2,4,,,0,0,212,18,5,VC,BRB,BB,BB,,1
+Thelonius Junk,623,69,Alyx Sabor,149,959,1B,110,T3,2,1,2,4,,,0,0,212,18,5,VC,BRB,1B,1B,,1
+LaCarpetron Dukemarriot,775,500,Alyx Sabor,149,864,PO,364,T3,2,5,2,4,,,0,0,212,18,5,VC,BRB,PO,PO,,1
+KC Bats,287,543,Jack Kanoff,189,470,2B,73,B3,0,0,2,4,,,0,0,213,18,5,BRB,VC,2B,2B,,1
+Garren Smudge,133,690,Jack Kanoff,189,970,K,280,B3,0,2,2,4,,,0,0,213,18,5,BRB,VC,K,K,,1
+Francis J Wellington IV,152,102,Jack Kanoff,189,855,K,247,B3,1,2,2,4,,,0,0,213,18,5,BRB,VC,K,K,,1
+Stan Mann,357,876,Jack Kanoff,189,222,K,346,B3,2,2,2,4,,,0,0,213,18,5,BRB,VC,K,K,,1
+Wavy Gravy VIII,265,424,Alyx Sabor,149,133,K,291,T4,0,0,2,4,,,0,0,214,18,5,VC,BRB,K,K,,1
+Dallas Houston,416,588,Alyx Sabor,149,291,K,297,T4,1,0,2,4,,,0,0,214,18,5,VC,BRB,K,K,,1
+Faye Suzuki,22,125,Alyx Sabor,149,999,BB,126,T4,2,0,2,4,,,0,0,214,18,5,VC,BRB,BB,BB,,1
+Layzer Gunn,259,421,Alyx Sabor,149,333,1B,88,T4,2,1,2,4,,,0,0,214,18,5,VC,BRB,1B,1B,,1
+Jacky Wacky,702,588,Alyx Sabor,149,19,RGO,431,T4,2,5,2,4,,,0,0,214,18,5,VC,BRB,RGO,RGO,,1
+Bart Harley Jarvis,2,385,Jack Kanoff,189,390,HR,5,B4,0,0,2,4,,,1,1,215,18,5,BRB,VC,HR,HR,,1
+Takahiro Rihanna,419,384,Jack Kanoff,189,600,FO,216,B4,0,0,3,4,,,0,0,215,18,5,BRB,VC,FO,FO,,1
+Trevor Mouseman,559,888,Jack Kanoff,189,160,FO,272,B4,1,0,3,4,,,0,0,215,18,5,BRB,VC,FO,FO,,1
+Edward Duncan,620,3,Jack Kanoff,189,290,K,287,B4,2,0,3,4,,,0,0,215,18,5,BRB,VC,K,K,,1
+Fernando Cruz,176,635,Alyx Sabor,149,599,HR,36,T5,0,0,3,4,,,1,1,216,18,5,VC,BRB,HR,HR,,1
+Jordan Peppers,18,500,Alyx Sabor,149,69,RGO,431,T5,0,0,3,5,,,0,0,216,18,5,VC,BRB,RGO,RGO,,1
+Thelonius Junk,623,2,Alyx Sabor,149,420,RGO,418,T5,1,0,3,5,,,0,0,216,18,5,VC,BRB,RGO,RGO,,1
+LaCarpetron Dukemarriot,775,666,Alyx Sabor,149,166,LGO,500,T5,2,0,3,5,,,0,0,216,18,5,VC,BRB,LGO,LGO,,1
+becky mcbadbat,277,200,Jericho Caulfield,36,233,HR,33,B5,0,0,3,5,,,1,1,217,18,5,BRB,VC,HR,HR,,1
+KC Bats,287,420,Jericho Caulfield,36,920,LGO,500,B5,0,0,4,5,,,0,0,217,18,5,BRB,VC,LGO,LGO,,1
+Garren Smudge,133,420,Jericho Caulfield,36,758,K,338,B5,1,0,4,5,,,0,0,217,18,5,BRB,VC,K,K,,1
+Francis J Wellington IV,152,504,Jericho Caulfield,36,485,HR,19,B5,2,0,4,5,,,1,1,217,18,5,BRB,VC,HR,HR,,1
+Stan Mann,357,450,Jericho Caulfield,36,485,2B,35,B5,2,0,5,5,,,0,1,217,18,5,BRB,VC,2B,2B,,1
+Bart Harley Jarvis,2,922,Jericho Caulfield,36,63,BB,141,B5,2,2,5,5,,,0,0,217,18,5,BRB,VC,BB,BB,,1
+Takahiro Rihanna,419,856,Jericho Caulfield,36,934,1B,78,B5,2,4,5,5,,,1,0,217,18,5,BRB,VC,1B,1B,,1
+Trevor Mouseman,559,615,Jericho Caulfield,36,852,K,237,B5,2,5,6,5,,,0,0,217,18,5,BRB,VC,K,K,,1
+Wavy Gravy VIII,265,945,Alyx Sabor,149,520,RGO,425,T6,0,0,6,5,,,0,0,218,18,5,VC,BRB,RGO,RGO,,1
+Dallas Houston,416,345,Alyx Sabor,149,13,K,332,T6,1,0,6,5,,,0,0,218,18,5,VC,BRB,K,K,,1
+Faye Suzuki,22,28,Alyx Sabor,149,756,K,272,T6,2,0,6,5,,,0,0,218,18,5,VC,BRB,K,K,,1
+Matthaios Himynamis,361,666,Keyo,331,716,1B,50,T1,0,0,0,0,,,0,0,219,19,5,GRE,BH,1B,1B,,1
+Matthaios Himynamis,361,500,Keyo,331,611,SB,111,T1,0,1,0,0,,,0,0,219,19,5,GRE,BH,Steal 2B,Steal 2B,,4
+Mattress Cadaire,116,115,Keyo,331,411,K,296,T1,0,2,0,0,,,0,0,219,19,5,GRE,BH,K,K,,1
+Barius McKockidopolous,612,812,Keyo,331,696,1B,116,T1,1,2,0,0,,,0,0,219,19,5,GRE,BH,1B,1B,,1
+Barius McKockidopolous,612,845,Keyo,331,869,SB,24,T1,1,5,0,0,,,0,0,219,19,5,GRE,BH,Steal 2B,Steal 2B,,5
+"Reno ""El Greco"" McRenoface",776,9,Keyo,331,232,K,223,T1,1,6,0,0,,,0,0,219,19,5,GRE,BH,K,K,,1
+Ben Bramly,238,273,Keyo,331,738,LGO,465,T1,2,6,0,0,,,0,0,219,19,5,GRE,BH,LGO,LGO,,1
+Dixon Uraz,34,505,Apollo,477,577,1B,72,B1,0,0,0,0,,,0,0,220,19,5,BH,GRE,1B,1B,,1
+dick richards,487,730,Apollo,477,582,BB,148,B1,0,1,0,0,,,0,0,220,19,5,BH,GRE,BB,BB,,1
+Henrik Omega,84,465,Apollo,477,69,DP,396,B1,0,4,0,0,,,0,0,220,19,5,BH,GRE,RGO,RGO,,1
+Joe Watson,194,1,Apollo,477,785,FO,216,B1,2,3,0,0,,,0,0,220,19,5,BH,GRE,FO,FO,,1
+Carlos The great,132,399,Keyo,331,237,BB,162,T2,0,0,0,0,,,0,0,221,19,5,GRE,BH,BB,BB,,1
+Thomas BEOWULF,218,263,Keyo,331,718,DP,455,T2,0,1,0,0,,,0,0,221,19,5,GRE,BH,RGO,RGO,,1
+Iama Human,520,401,Keyo,331,571,FO,170,T2,2,0,0,0,,,0,0,221,19,5,GRE,BH,FO,FO,,1
+Kyle Corbett,707,1,Apollo,477,405,RGO,404,B2,0,0,0,0,,,0,0,222,19,5,BH,GRE,RGO,RGO,,1
+Wallace Grommet,492,850,Apollo,477,594,FO,256,B2,1,0,0,0,,,0,0,222,19,5,BH,GRE,FO,FO,,1
+Miroslav,71,420,Apollo,477,676,FO,256,B2,2,0,0,0,,,0,0,222,19,5,BH,GRE,FO,FO,,1
+Dakota Carolina Montana,65,839,Keyo,331,527,K,312,T3,0,0,0,0,,,0,0,223,19,5,GRE,BH,K,K,,1
+Matthaios Himynamis,361,527,Keyo,331,937,RGO,410,T3,1,0,0,0,,,0,0,223,19,5,GRE,BH,RGO,RGO,,1
+Mattress Cadaire,116,389,Keyo,331,244,BB,145,T3,2,0,0,0,,,0,0,223,19,5,GRE,BH,BB,BB,,1
+Barius McKockidopolous,612,471,Keyo,331,732,FO,261,T3,2,1,0,0,,,0,0,223,19,5,GRE,BH,FO,FO,,1
+Charlie Bae Jr.,293,555,Apollo,477,595,1B,40,B3,0,0,0,0,,,0,0,224,19,5,BH,GRE,1B,1B,,1
+Charlie Bae Jr.,293,550,Apollo,477,1000,CS,450,B3,0,1,0,0,,,0,0,224,19,5,BH,GRE,CS 2B,CS 2B,,4
+Gob Bibson,708,246,Apollo,477,704,LGO,458,B3,1,0,0,0,,,0,0,224,19,5,BH,GRE,LGO,LGO,,1
+Dixon Uraz,34,333,Apollo,477,212,BB,121,B3,2,0,0,0,,,0,0,224,19,5,BH,GRE,BB,BB,,1
+dick richards,487,350,Apollo,477,212,BB,138,B3,2,1,0,0,,,0,0,224,19,5,BH,GRE,BB,BB,,1
+Henrik Omega,84,212,Apollo,477,696,LGO,484,B3,2,4,0,0,,,0,0,224,19,5,BH,GRE,LGO,LGO,,1
+"Reno ""El Greco"" McRenoface",776,728,Keyo,331,618,1B,110,T4,0,0,0,0,,,0,0,225,19,5,GRE,BH,1B,1B,,1
+Ben Bramly,238,240,Keyo,331,144,1B,96,T4,0,1,0,0,,,0,0,225,19,5,GRE,BH,1B,1B,,1
+Carlos The great,132,244,Keyo,331,19,FO,225,T4,0,4,0,0,,,0,0,225,19,5,GRE,BH,FO,FO,,1
+Thomas BEOWULF,218,653,Keyo,331,816,BB,163,T4,1,4,0,0,,,0,0,225,19,5,GRE,BH,BB,BB,,1
+Iama Human,520,250,Keyo,331,839,DP,411,T4,1,7,0,0,,,0,0,225,19,5,GRE,BH,LGO,LGO,,1
+Joe Watson,194,320,Apollo,477,477,BB,157,B4,0,0,0,0,,,0,1,226,19,5,BH,GRE,BB,BB,,1
+Kyle Corbett,707,577,Apollo,477,733,BB,156,B4,0,1,0,0,,,0,0,226,19,5,BH,GRE,BB,BB,,1
+Wallace Grommet,492,1,Apollo,477,61,1B,60,B4,0,4,0,0,,,0,0,226,19,5,BH,GRE,1B,1B,,1
+Miroslav,71,275,Apollo,477,992,Sac,283,B4,0,7,0,0,,,1,0,226,19,5,BH,GRE,FO,FO,,1
+Charlie Bae Jr.,293,783,Apollo,477,562,FO,221,B4,1,4,1,0,,,0,0,226,19,5,BH,GRE,FO,FO,,1
+Gob Bibson,708,225,Apollo,477,783,LGO,442,B4,2,4,1,0,,,0,0,226,19,5,BH,GRE,LGO,LGO,,1
+Dakota Carolina Montana,65,20,Aaron Burr,646,520,LGO,500,T5,0,0,1,0,,,0,0,227,19,5,GRE,BH,LGO,LGO,,1
+Matthaios Himynamis,361,20,Aaron Burr,646,216,FO,196,T5,1,0,1,0,,,0,0,227,19,5,GRE,BH,FO,FO,,1
+Mattress Cadaire,116,913,Aaron Burr,646,502,RGO,411,T5,2,0,1,0,,,0,0,227,19,5,GRE,BH,RGO,RGO,,1
+Dixon Uraz,34,69,Sam Wood,108,299,FO,230,B5,0,0,1,0,,,0,0,228,19,5,BH,GRE,FO,FO,,1
+dick richards,487,77,Sam Wood,108,511,RGO,434,B5,1,0,1,0,,,0,0,228,19,5,BH,GRE,RGO,RGO,,1
+Henrik Omega,84,2,Sam Wood,108,911,1B,91,B5,2,0,1,0,,,0,0,228,19,5,BH,GRE,1B,1B,,1
+Joe Watson,194,666,Sam Wood,108,150,LGO,484,B5,2,1,1,0,,,0,0,228,19,5,BH,GRE,LGO,LGO,,1
+Barius McKockidopolous,612,197,Aaron Burr,646,205,HR,8,T6,0,0,1,0,,,1,1,229,19,5,GRE,BH,HR,HR,,1
+"Reno ""El Greco"" McRenoface",776,2,Aaron Burr,646,2,HR,0,T6,0,0,1,1,,,1,1,229,19,5,GRE,BH,HR,HR,,1
+Ben Bramly,238,823,Aaron Burr,646,489,K,334,T6,0,0,1,2,,,0,0,229,19,5,GRE,BH,K,K,,1
+Carlos The great,132,477,Aaron Burr,646,502,HR,25,T6,1,0,1,2,,,1,1,229,19,5,GRE,BH,HR,HR,,1
+Thomas BEOWULF,218,269,Aaron Burr,646,2,K,267,T6,1,0,1,3,,,0,0,229,19,5,GRE,BH,K,K,,1
+Iama Human,520,525,Aaron Burr,646,699,K,174,T6,2,0,1,3,,,0,0,229,19,5,GRE,BH,K,K,,1
+Kyle Corbett,707,1,Sam Wood,108,323,K,322,B6,0,0,1,3,,,0,0,230,19,5,BH,GRE,K,K,,1
+Wallace Grommet,492,900,Sam Wood,108,599,K,301,B6,1,0,1,3,,,0,0,230,19,5,BH,GRE,K,K,,1
+Miroslav,71,850,Sam Wood,108,777,1B,73,B6,2,0,1,3,,,0,0,230,19,5,BH,GRE,1B,1B,,1
+Charlie Bae Jr.,293,1,Sam Wood,108,121,BB,120,B6,2,1,1,3,,,0,0,230,19,5,BH,GRE,BB,BB,,1
+Gob Bibson,708,669,Sam Wood,108,808,FO,139,B6,2,4,1,3,,,0,0,230,19,5,BH,GRE,FO,FO,,1
+Paul E. Wag,583,512,Tara E. Doug,252,12,LGO,500,T1,0,0,0,0,,,0,0,231,20,5,SM,JMC,LGO,LGO,,1
+Emmett Michael,10,812,Tara E. Doug,252,127,K,315,T1,1,0,0,0,,,0,0,231,20,5,SM,JMC,K,K,,1
+Lloyd Gross,135,292,Tara E. Doug,252,243,2B,49,T1,2,0,0,0,,,0,0,231,20,5,SM,JMC,2B,2B,,1
+Nori Aru,131,420,Tara E. Doug,252,120,K,300,T1,2,2,0,0,,,0,0,231,20,5,SM,JMC,K,K,,1
+Cam'ron West,525,816,Richard Northstar,275,344,LGO,472,B1,0,0,0,0,,,0,0,232,20,5,JMC,SM,LGO,LGO,,1
+Dimebag Jammin,262,722,Richard Northstar,275,210,LGO,488,B1,1,0,0,0,,,0,0,232,20,5,JMC,SM,LGO,LGO,,1
+Todd Bonzalez II,169,550,Richard Northstar,275,885,K,335,B1,2,0,0,0,,,0,0,232,20,5,JMC,SM,K,K,,1
+Obama habubger,342,843,Tara E. Doug,252,12,FO,169,T2,0,0,0,0,,,0,0,233,20,5,SM,JMC,FO,FO,,1
+Johnny Hendrivederci,600,555,Tara E. Doug,252,827,FO,272,T2,1,0,0,0,,,0,0,233,20,5,SM,JMC,FO,FO,,1
+Michael Ikenberry,63,623,Tara E. Doug,252,443,FO,180,T2,2,0,0,0,,,0,0,233,20,5,SM,JMC,FO,FO,,1
+Emerson Austin,703,725,Richard Northstar,275,291,RGO,434,B2,0,0,0,0,,,0,0,234,20,5,JMC,SM,RGO,RGO,,1
+Q Kimbrell,20,711,Richard Northstar,275,297,K,414,B2,1,0,0,0,,,0,0,234,20,5,JMC,SM,K,K,,1
+Clarinet Clarinet,672,119,Richard Northstar,275,,K,,B2,2,0,0,0,,,0,0,234,20,5,JMC,SM,K,K,,1
+Richard Northstar,275,718,Tara E. Doug,252,512,FO,206,T3,0,0,0,0,,,0,0,235,20,5,SM,JMC,FO,FO,,1
+Juniped Catfish,488,612,Tara E. Doug,252,127,LGO,485,T3,1,0,0,0,,,0,0,235,20,5,SM,JMC,LGO,LGO,,1
+Paul E. Wag,583,,Tara E. Doug,252,,Auto K,,T3,2,0,0,0,,,0,0,235,20,5,SM,JMC,Auto K,Auto K,,9
+Speedo Meter,675,333,Richard Northstar,275,666,K,333,B3,0,0,0,0,,,0,0,236,20,5,JMC,SM,K,K,,1
+Girth Brooks,161,696,Richard Northstar,275,171,LGO,475,B3,1,0,0,0,,,0,0,236,20,5,JMC,SM,LGO,LGO,,1
+Mongster Mash,344,8,Richard Northstar,275,294,K,286,B3,2,0,0,0,,,0,0,236,20,5,JMC,SM,K,K,,1
+Emmett Michael,10,738,Tara E. Doug,252,943,FO,205,T4,0,0,0,0,,,0,0,237,20,5,SM,JMC,FO,FO,,1
+Lloyd Gross,135,250,Tara E. Doug,252,738,LGO,488,T4,1,0,0,0,,,0,0,237,20,5,SM,JMC,LGO,LGO,,1
+Nori Aru,131,250,Tara E. Doug,252,500,FO,250,T4,2,0,0,0,,,0,0,237,20,5,SM,JMC,FO,FO,,1
+Cam'ron West,525,612,Richard Northstar,275,642,3B,30,B4,0,0,0,0,,,0,1,238,20,5,JMC,SM,3B,3B,,1
+Dimebag Jammin,262,12,Vinnie Vidi Vici,518,124,1B,112,B4,0,3,0,0,,,1,0,238,20,5,JMC,SM,1B,1B,,2
+Todd Bonzalez II,169,700,Vinnie Vidi Vici,518,597,1B,103,B4,0,1,1,0,,,0,0,238,20,5,JMC,SM,1B,1B,,1
+Emerson Austin,703,989,Vinnie Vidi Vici,518,804,FO,185,B4,0,4,1,0,,,0,0,238,20,5,JMC,SM,FO,FO,,1
+Q Kimbrell,20,3,Vinnie Vidi Vici,518,653,PO,350,B4,1,4,1,0,,,0,0,238,20,5,JMC,SM,PO,PO,,1
+Clarinet Clarinet,672,420,Vinnie Vidi Vici,518,235,FO,185,B4,2,4,1,0,,,0,0,238,20,5,JMC,SM,FO,FO,,1
+Obama habubger,342,624,Wheeler Walker Jr.,529,471,BB,153,T5,0,0,1,0,,,0,0,239,20,5,SM,JMC,BB,BB,,1
+Johnny Hendrivederci,600,821,Wheeler Walker Jr.,529,215,DP,394,T5,0,1,1,0,,,0,0,239,20,5,SM,JMC,RGO,RGO,,1
+Michael Ikenberry,63,721,Wheeler Walker Jr.,529,537,FO,184,T5,2,0,1,0,,,0,0,239,20,5,SM,JMC,FO,FO,,1
+Speedo Meter,675,83,Vinnie Vidi Vici,518,758,K,325,B5,0,0,1,0,,,0,0,240,20,5,JMC,SM,K,K,,1
+Girth Brooks,161,932,Vinnie Vidi Vici,518,903,2B,29,B5,1,0,1,0,,,0,0,240,20,5,JMC,SM,2B,2B,,1
+Mongster Mash,344,111,Vinnie Vidi Vici,518,755,RGO,356,B5,1,2,1,0,,,0,0,240,20,5,JMC,SM,RGO,RGO,,1
+Cam'ron West,525,929,Vinnie Vidi Vici,518,684,FO,245,B5,2,3,1,0,,,0,0,240,20,5,JMC,SM,FO,FO,,1
+Vinnie Vidi Vici,518,725,Wheeler Walker Jr.,529,684,2B,41,T6,0,0,1,0,,,0,1,241,20,5,SM,JMC,2B,2B,,1
+Juniped Catfish,488,256,Wheeler Walker Jr.,529,308,Bunt Sac,52,T6,0,2,1,0,,,0,0,241,20,5,SM,JMC,Bunt Sac,Bunt Sac,,3
+Isaac Snowbender,339,969,Wheeler Walker Jr.,529,717,Sac,252,T6,1,3,1,0,,,1,0,241,20,5,SM,JMC,FO,FO,,2
+Emmett Michael,10,811,Wheeler Walker Jr.,529,234,RGO,423,T6,2,0,1,1,,,0,0,241,20,5,SM,JMC,RGO,RGO,,1
+Dimebag Jammin,262,399,Vinnie Vidi Vici,518,597,FO,198,B6,0,0,1,1,,,0,0,242,20,5,JMC,SM,FO,FO,,1
+Todd Bonzalez II,169,210,Vinnie Vidi Vici,518,892,K,318,B6,1,0,1,1,,,0,0,242,20,5,JMC,SM,K,K,,1
+Emerson Austin,703,666,Vinnie Vidi Vici,518,788,BB,122,B6,2,0,1,1,,,0,0,242,20,5,JMC,SM,BB,BB,,1
+Q Kimbrell,20,920,Vinnie Vidi Vici,518,847,1B,73,B6,2,1,1,1,,,0,0,242,20,5,JMC,SM,1B,1B,,1
+Clarinet Clarinet,672,288,Isaac Snowbender,339,521,K,233,B6,2,5,1,1,,,0,0,242,20,5,JMC,SM,K,K,,1
+Lloyd Gross,135,666,Wheeler Walker Jr.,529,327,Bunt Sac,339,T7,0,2,1,1,,,0,0,243,20,5,SM,JMC,Bunt Sac,Bunt Sac,,3
+Nori Aru,131,800,Wheeler Walker Jr.,529,47,Sac,247,T7,1,3,1,1,,,1,0,243,20,5,SM,JMC,FO,FO,,2
+Obama habubger,342,,Wheeler Walker Jr.,529,,IBB,,T7,2,0,1,2,,,0,0,243,20,5,SM,JMC,IBB,IBB,,8
+Johnny Hendrivederci,600,365,Wheeler Walker Jr.,529,302,1B,63,T7,2,1,1,2,,,0,0,243,20,5,SM,JMC,1B,1B,,1
+Michael Ikenberry,63,711,Wheeler Walker Jr.,529,42,FO,331,T7,2,5,1,2,,,0,0,243,20,5,SM,JMC,FO,FO,,1
+Speedo Meter,675,220,Isaac Snowbender,339,899,Bunt Sac,321,B7,0,2,1,2,,,0,0,244,20,5,JMC,SM,Bunt Sac,Bunt Sac,,3
+Girth Brooks,161,900,Isaac Snowbender,339,787,BB,113,B7,1,3,1,2,,,0,0,244,20,5,JMC,SM,BB,BB,,1
+Ryan Tyburn,517,420,Sammy Capicola,117,999,DP,421,B7,1,5,1,2,,,0,0,244,20,5,JMC,SM,LGO,LGO,,1
+Caleb Aiken,324,372,Ty Palmatier,258,111,K,261,T1,0,0,0,0,,,0,0,245,21,6,SWZ,VC,K,K,,1
+Hank Murphy,76,822,Ty Palmatier,258,372,LGO,450,T1,1,0,0,0,,,0,0,245,21,6,SWZ,VC,LGO,LGO,,1
+Demetrios Ooga,180,325,Ty Palmatier,258,81,FO,244,T1,2,0,0,0,,,0,0,245,21,6,SWZ,VC,FO,FO,,1
+Faye Suzuki,22,101,Rickey Tucker,163,881,FO,220,B1,0,0,0,0,,,0,0,246,21,6,VC,SWZ,FO,FO,,1
+Jacky Wacky,702,488,Rickey Tucker,163,881,RGO,393,B1,1,0,0,0,,,0,0,246,21,6,VC,SWZ,RGO,RGO,,1
+Thelonius Junk,623,69,Rickey Tucker,163,265,FO,196,B1,2,0,0,0,,,0,0,246,21,6,VC,SWZ,FO,FO,,1
+Red Arrow,547,384,Ty Palmatier,258,175,FO,209,T2,0,0,0,0,,,0,0,247,21,6,SWZ,VC,FO,FO,,1
+Jack Marnette,213,278,Ty Palmatier,258,676,RGO,398,T2,1,0,0,0,,,0,0,247,21,6,SWZ,VC,RGO,RGO,,1
+Xerxes Dalin,474,143,Ty Palmatier,258,160,2B,17,T2,2,0,0,0,,,0,0,247,21,6,SWZ,VC,2B,2B,,1
+Mike Fruitstand,772,275,Ty Palmatier,258,895,RGO,380,T2,2,2,0,0,,,0,0,247,21,6,SWZ,VC,RGO,RGO,,1
+Fernando Cruz,176,918,Rickey Tucker,163,487,RGO,431,B2,0,0,0,0,,,0,0,248,21,6,VC,SWZ,RGO,RGO,,1
+Wavy Gravy VIII,265,722,Rickey Tucker,163,264,LGO,458,B2,1,0,0,0,,,0,0,248,21,6,VC,SWZ,LGO,LGO,,1
+Dallas Houston,416,33,Rickey Tucker,163,1,3B,32,B2,2,0,0,0,,,0,0,248,21,6,VC,SWZ,3B,3B,,1
+LaCarpetron Dukemarriot,775,825,Rickey Tucker,163,211,RGO,386,B2,2,3,0,0,,,0,0,248,21,6,VC,SWZ,RGO,RGO,,1
+Sir Shirley,698,270,Ty Palmatier,258,780,LGO,490,T3,0,0,0,0,,,0,0,249,21,6,SWZ,VC,LGO,LGO,,1
+Jack Alpha,73,114,Ty Palmatier,258,126,HR,12,T3,1,0,0,0,,,1,1,249,21,6,SWZ,VC,HR,HR,,1
+Caleb Aiken,324,799,Ty Palmatier,258,666,BB,133,T3,1,0,0,1,,,0,0,249,21,6,SWZ,VC,BB,BB,,1
+Hank Murphy,76,114,Ty Palmatier,258,277,BB,163,T3,1,1,0,1,,,0,0,249,21,6,SWZ,VC,BB,BB,,1
+Demetrios Ooga,180,314,Ty Palmatier,258,586,FO,272,T3,1,4,0,1,,,0,0,249,21,6,SWZ,VC,FO,FO,,1
+Red Arrow,547,510,Ty Palmatier,258,99,RGO,411,T3,2,4,0,1,,,0,0,249,21,6,SWZ,VC,RGO,RGO,,1
+Jordan Peppers,18,23,Rickey Tucker,163,285,FO,262,B3,0,0,0,1,,,0,0,250,21,6,VC,SWZ,FO,FO,,1
+Derek Bongiovanni,109,202,Rickey Tucker,163,738,LGO,464,B3,1,0,0,1,,,0,0,250,21,6,VC,SWZ,LGO,LGO,,1
+Faye Suzuki,22,528,Rickey Tucker,163,999,LGO,471,B3,2,0,0,1,,,0,0,250,21,6,VC,SWZ,LGO,LGO,,1
+Jack Marnette,213,722,Ty Palmatier,258,444,K,278,T4,0,0,0,1,,,0,0,251,21,6,SWZ,VC,K,K,,1
+Xerxes Dalin,474,654,Ty Palmatier,258,774,BB,120,T4,1,0,0,1,,,0,0,251,21,6,SWZ,VC,BB,BB,,1
+Jonah Fister,408,711,Ty Palmatier,258,871,FO,160,T4,1,1,0,1,,,0,0,251,21,6,SWZ,VC,FO,FO,,1
+Sir Shirley,698,630,Ty Palmatier,258,201,RGO,429,T4,2,1,0,1,,,0,0,251,21,6,SWZ,VC,RGO,RGO,,1
+Jacky Wacky,702,678,Rickey Tucker,163,488,FO,190,B4,0,0,0,1,,,0,0,252,21,6,VC,SWZ,FO,FO,,1
+Thelonius Junk,623,10,Rickey Tucker,163,874,BB,136,B4,1,0,0,1,,,0,1,252,21,6,VC,SWZ,BB,BB,,1
+Fernando Cruz,176,337,Rickey Tucker,163,212,BB,125,B4,1,1,0,1,,,0,1,252,21,6,VC,SWZ,BB,BB,,1
+Wavy Gravy VIII,265,114,Rickey Tucker,163,212,1B,98,B4,1,4,0,1,,,0,0,252,21,6,VC,SWZ,1B,1B,,1
+Dallas Houston,416,148,Rickey Tucker,163,212,1B,64,B4,1,7,0,1,,,1,0,252,21,6,VC,SWZ,1B,1B,,1
+LaCarpetron Dukemarriot,775,350,Rickey Tucker,163,1,PO,349,B4,1,7,1,1,,,0,0,252,21,6,VC,SWZ,PO,PO,,1
+Jordan Peppers,18,223,Rickey Tucker,163,350,BB,127,B4,2,7,1,1,,,1,0,252,21,6,VC,SWZ,BB,BB,,1
+Derek Bongiovanni,109,763,Rickey Tucker,163,377,RGO,386,B4,2,7,2,1,,,0,0,252,21,6,VC,SWZ,RGO,RGO,,1
+Jack Alpha,73,747,Jericho Caulfield,36,753,HR,6,T5,0,0,2,1,,,1,1,253,21,6,SWZ,VC,HR,HR,,1
+Caleb Aiken,324,871,Jericho Caulfield,36,486,K,385,T5,0,0,2,2,,,0,0,253,21,6,SWZ,VC,K,K,,1
+Hank Murphy,76,99,Jericho Caulfield,36,113,HR,14,T5,1,0,2,2,,,1,1,253,21,6,SWZ,VC,HR,HR,,1
+Demetrios Ooga,180,613,Jericho Caulfield,36,581,3B,32,T5,1,0,2,3,,,0,1,253,21,6,SWZ,VC,3B,3B,,1
+Red Arrow,547,895,Jericho Caulfield,36,945,1B,50,T5,1,3,2,3,,,1,0,253,21,6,SWZ,VC,1B,1B,,2
+Jack Marnette,213,640,Layzer Gunn,259,238,DP,402,T5,1,1,2,4,,,0,0,253,21,6,SWZ,VC,LGO,LGO,,1
+Faye Suzuki,22,69,Icna Comit,198,8,2B,61,B5,0,0,2,4,,,0,0,254,21,6,VC,SWZ,2B,2B,,1
+Jacky Wacky,702,,Icna Comit,198,,Auto K,,B5,0,2,2,4,,,0,0,254,21,6,VC,SWZ,Auto K,Auto K,,9
+Thelonius Junk,623,840,Icna Comit,198,774,1B,66,B5,1,2,2,4,,,0,0,254,21,6,VC,SWZ,1B,1B,,1
+Fernando Cruz,176,500,Icna Comit,198,888,DP,388,B5,1,5,2,4,,,0,0,254,21,6,VC,SWZ,RGO,RGO,,1
+Xerxes Dalin,474,45,Layzer Gunn,259,319,PO,274,T6,0,0,2,4,,,0,0,255,21,6,SWZ,VC,PO,PO,,1
+Jonah Fister,408,777,Layzer Gunn,259,920,FO,143,T6,1,0,2,4,,,0,0,255,21,6,SWZ,VC,FO,FO,,1
+Sir Shirley,698,150,Layzer Gunn,259,266,BB,116,T6,2,0,2,4,,,0,0,255,21,6,SWZ,VC,BB,BB,,1
+Jack Alpha,73,669,Layzer Gunn,259,559,1B,110,T6,2,1,2,4,,,0,0,255,21,6,SWZ,VC,1B,1B,,1
+Caleb Aiken,324,379,Layzer Gunn,259,266,BB,113,T6,2,5,2,4,,,0,0,255,21,6,SWZ,VC,BB,BB,,1
+Hank Murphy,76,639,Layzer Gunn,259,97,LGO,458,T6,2,7,2,4,,,0,0,255,21,6,SWZ,VC,LGO,LGO,,1
+Wavy Gravy VIII,265,2,Icna Comit,198,56,2B,54,B6,0,0,2,4,,,0,0,256,21,6,VC,SWZ,2B,2B,,1
+Dallas Houston,416,451,Icna Comit,198,988,LGO,463,B6,0,2,2,4,,,0,0,256,21,6,VC,SWZ,LGO,LGO,,1
+LaCarpetron Dukemarriot,775,555,Icna Comit,198,86,LGO,469,B6,1,2,2,4,,,0,0,256,21,6,VC,SWZ,LGO,LGO,,1
+Jordan Peppers,18,420,Icna Comit,198,52,RGO,368,B6,2,2,2,4,,,0,0,256,21,6,VC,SWZ,RGO,RGO,,1
+Francis J Wellington IV,152,244,Sammy Slingshot,32,410,FO,166,T1,0,0,0,0,,,0,0,257,22,6,BRB,SCO,FO,FO,,1
+becky mcbadbat,277,352,Sammy Slingshot,32,188,BB,164,T1,1,0,0,0,,,0,0,257,22,6,BRB,SCO,BB,BB,,1
+KC Bats,287,792,Sammy Slingshot,32,333,DP,459,T1,1,1,0,0,,,0,0,257,22,6,BRB,SCO,LGO,LGO,,1
+Nick Tits,59,69,Jackson Sanchez,46,1,1B,68,B1,0,0,0,0,,,0,1,258,22,6,SCO,BRB,1B,1B,,1
+Nick Tits,59,420,Jackson Sanchez,46,312,SB,108,B1,0,1,0,0,,,0,0,258,22,6,SCO,BRB,Steal 2B,Steal 2B,,4
+Liam Abercrombie,270,589,Jackson Sanchez,46,298,K,291,B1,0,2,0,0,,,0,0,258,22,6,SCO,BRB,K,K,,1
+Buster McNutt,127,688,Jackson Sanchez,46,399,K,289,B1,1,2,0,0,,,0,0,258,22,6,SCO,BRB,K,K,,1
+Henry Crowell,184,655,Jackson Sanchez,46,619,3B,36,B1,2,2,0,0,,,1,0,258,22,6,SCO,BRB,3B,3B,,1
+señor rustus of house vervulf,651,971,Jackson Sanchez,46,477,LGO,494,B1,2,3,1,0,,,0,0,258,22,6,SCO,BRB,LGO,LGO,,1
+Garren Smudge,133,707,Sammy Slingshot,32,599,1B,108,T2,0,0,1,0,,,0,0,259,22,6,BRB,SCO,1B,1B,,1
+Stan Mann,357,69,Sammy Slingshot,32,633,DP,436,T2,0,1,1,0,,,0,0,259,22,6,BRB,SCO,LGO,LGO,,1
+Bart Harley Jarvis,2,122,Sammy Slingshot,32,840,FO,282,T2,2,0,1,0,,,0,0,259,22,6,BRB,SCO,FO,FO,,1
+Edward Freeman,700,742,Jackson Sanchez,46,742,HR,0,B2,0,0,1,0,,,1,1,260,22,6,SCO,BRB,HR,HR,,1
+Michael Scarn,746,172,Jackson Sanchez,46,855,K,317,B2,0,0,2,0,,,0,0,260,22,6,SCO,BRB,K,K,,1
+Lemon Juiced,193,911,Jackson Sanchez,46,503,RGO,408,B2,1,0,2,0,,,0,0,260,22,6,SCO,BRB,RGO,RGO,,1
+Bench Warmer,665,950,Jackson Sanchez,46,299,PO,349,B2,2,0,2,0,,,0,0,260,22,6,SCO,BRB,PO,PO,,1
+Takahiro Rihanna,419,601,Sammy Slingshot,32,550,2B,51,T3,0,0,2,0,,,0,0,261,22,6,BRB,SCO,2B,2B,,1
+Trevor Mouseman,559,850,Sammy Slingshot,32,33,FO,183,T3,0,2,2,0,,,0,0,261,22,6,BRB,SCO,FO,FO,,1
+Edward Duncan,620,105,Sammy Slingshot,32,575,LGO,470,T3,1,2,2,0,,,0,0,261,22,6,BRB,SCO,LGO,LGO,,1
+Francis J Wellington IV,152,975,Sammy Slingshot,32,340,PO,365,T3,2,2,2,0,,,0,0,261,22,6,BRB,SCO,PO,PO,,1
+Nick Tits,59,300,Jackson Sanchez,46,467,BB,167,B3,0,0,2,0,,,0,0,262,22,6,SCO,BRB,BB,BB,,1
+Nick Tits,59,600,Jackson Sanchez,46,54,CS,454,B3,0,1,2,0,,,0,0,262,22,6,SCO,BRB,CS 2B,CS 2B,,4
+Liam Abercrombie,270,222,Jackson Sanchez,46,324,1B,102,B3,1,0,2,0,,,0,0,262,22,6,SCO,BRB,1B,1B,,1
+Liam Abercrombie,270,803,Jackson Sanchez,46,222,CS,419,B3,0,1,2,0,,,0,0,262,22,6,SCO,BRB,CS 2B,CS 2B,,4
+Buster McNutt,127,444,Jackson Sanchez,46,419,3B,25,B3,2,0,2,0,,,0,0,262,22,6,SCO,BRB,3B,3B,,1
+Henry Crowell,184,444,Jackson Sanchez,46,99,PO,345,B3,2,3,2,0,,,0,0,262,22,6,SCO,BRB,PO,PO,,1
+becky mcbadbat,277,737,Sammy Slingshot,32,304,RGO,433,T4,0,0,2,0,,,0,0,263,22,6,BRB,SCO,RGO,RGO,,1
+KC Bats,287,973,Sammy Slingshot,32,69,1B,96,T4,1,0,2,0,,,0,1,263,22,6,BRB,SCO,1B,1B,,1
+Garren Smudge,133,845,Sammy Slingshot,32,789,2B,56,T4,1,1,2,0,,,0,1,263,22,6,BRB,SCO,2B,2B,,1
+Stan Mann,357,,Sammy Slingshot,32,,IBB,,T4,1,6,2,0,,,0,0,263,22,6,BRB,SCO,IBB,IBB,,8
+Bart Harley Jarvis,2,280,Sammy Slingshot,32,450,BB,170,T4,1,7,2,0,,,1,0,263,22,6,BRB,SCO,BB,BB,,1
+Takahiro Rihanna,419,426,Sammy Slingshot,32,190,Sac,236,T4,1,7,2,1,,,1,0,263,22,6,BRB,SCO,FO,FO,,1
+Trevor Mouseman,559,365,Sammy Slingshot,32,950,RGO,415,T4,1,4,2,2,,,0,0,263,22,6,BRB,SCO,RGO,RGO,,1
+señor rustus of house vervulf,651,420,Jackson Sanchez,46,700,K,280,B4,0,0,2,2,,,0,0,264,22,6,SCO,BRB,K,K,,1
+Edward Freeman,700,213,Jackson Sanchez,46,50,BB,163,B4,1,0,2,2,,,0,0,264,22,6,SCO,BRB,BB,BB,,1
+Michael Scarn,746,971,Jackson Sanchez,46,299,K,328,B4,1,1,2,2,,,0,0,264,22,6,SCO,BRB,K,K,,1
+Lemon Juiced,193,750,Jackson Sanchez,46,896,BB,146,B4,2,1,2,2,,,0,0,264,22,6,SCO,BRB,BB,BB,,1
+Bench Warmer,665,575,Jackson Sanchez,46,800,K,225,B4,2,4,2,2,,,0,0,264,22,6,SCO,BRB,K,K,,1
+Edward Duncan,620,725,señor rustus of house vervulf,651,920,FO,195,T5,0,0,2,2,,,0,0,265,22,6,BRB,SCO,FO,FO,,1
+Francis J Wellington IV,152,420,señor rustus of house vervulf,651,22,K,398,T5,1,0,2,2,,,0,0,265,22,6,BRB,SCO,K,K,,1
+becky mcbadbat,277,666,señor rustus of house vervulf,651,250,PO,416,T5,2,0,2,2,,,0,0,265,22,6,BRB,SCO,PO,PO,,1
+Nick Tits,59,222,Artanis Jones,37,478,FO,256,B5,0,0,2,2,,,0,0,266,22,6,SCO,BRB,FO,FO,,1
+Liam Abercrombie,270,539,Artanis Jones,37,17,LGO,478,B5,1,0,2,2,,,0,0,266,22,6,SCO,BRB,LGO,LGO,,1
+Buster McNutt,127,150,Artanis Jones,37,444,K,294,B5,2,0,2,2,,,0,0,266,22,6,SCO,BRB,K,K,,1
+KC Bats,287,823,señor rustus of house vervulf,651,549,K,274,T6,0,0,2,2,,,0,0,267,22,6,BRB,SCO,K,K,,1
+Garren Smudge,133,333,Pablo Sanchez III,250,911,RGO,422,T6,1,0,2,2,,,0,0,267,22,6,BRB,SCO,RGO,RGO,,1
+Stan Mann,357,912,Pablo Sanchez III,250,48,BB,136,T6,2,0,2,2,,,0,0,267,22,6,BRB,SCO,BB,BB,,1
+Bart Harley Jarvis,2,815,Pablo Sanchez III,250,22,FO,207,T6,2,1,2,2,,,0,0,267,22,6,BRB,SCO,FO,FO,,1
+Henry Crowell,184,684,Artanis Jones,37,5,K,321,B6,0,0,2,2,,,0,0,268,22,6,SCO,BRB,K,K,,1
+señor rustus of house vervulf,651,317,Artanis Jones,37,420,1B,103,B6,1,0,2,2,,,0,1,268,22,6,SCO,BRB,1B,1B,,1
+Edward Freeman,700,757,Artanis Jones,37,669,1B,88,B6,1,1,2,2,,,0,1,268,22,6,SCO,BRB,1B,1B,,1
+Michael Scarn,746,222,Artanis Jones,37,555,K,333,B6,1,4,2,2,,,0,0,268,22,6,SCO,BRB,K,K,,1
+Lemon Juiced,193,833,Artanis Jones,37,810,2B,23,B6,2,4,2,2,,,2,0,268,22,6,SCO,BRB,2B,2B,,1
+Dixon Uraz,34,920,Richard Northstar,275,901,HR,19,T1,0,0,0,0,,,1,1,269,23,6,BH,SM,HR,HR,,1
+dick richards,487,77,Richard Northstar,275,633,RGO,444,T1,0,0,0,1,,,0,0,269,23,6,BH,SM,RGO,RGO,,1
+Miroslav,71,944,Richard Northstar,275,141,FO,197,T1,1,0,0,1,,,0,0,269,23,6,BH,SM,FO,FO,,1
+Charlie Bae Jr.,293,141,Richard Northstar,275,700,RGO,441,T1,2,0,0,1,,,0,0,269,23,6,BH,SM,RGO,RGO,,1
+Juniped Catfish,488,212,Keyo,331,478,FO,266,B1,0,0,0,1,,,0,0,270,23,6,SM,BH,FO,FO,,1
+Paul E. Wag,583,240,Keyo,331,312,1B,72,B1,1,0,0,1,,,0,0,270,23,6,SM,BH,1B,1B,,1
+Obama habubger,342,461,Keyo,331,288,FO,173,B1,1,1,0,1,,,0,0,270,23,6,SM,BH,FO,FO,,1
+Nori Aru,131,569,Keyo,331,777,FO,208,B1,2,1,0,1,,,0,0,270,23,6,SM,BH,FO,FO,,1
+Kyle Corbett,707,989,Richard Northstar,275,35,2B,46,T2,0,0,0,1,,,0,0,271,23,6,BH,SM,2B,2B,,1
+Wallace Grommet,492,777,Richard Northstar,275,44,K,267,T2,0,2,0,1,,,0,0,271,23,6,BH,SM,K,K,,1
+Henrik Omega,84,527,Richard Northstar,275,200,K,327,T2,1,2,0,1,,,0,0,271,23,6,BH,SM,K,K,,1
+Joe Watson,194,684,Richard Northstar,275,157,LGO,473,T2,2,2,0,1,,,0,0,271,23,6,BH,SM,LGO,LGO,,1
+Emmett Michael,10,645,Keyo,331,332,K,313,B2,0,0,0,1,,,0,0,272,23,6,SM,BH,K,K,,1
+Lloyd Gross,135,505,Keyo,331,217,K,288,B2,1,0,0,1,,,0,0,272,23,6,SM,BH,K,K,,1
+Michael Ikenberry,63,18,Keyo,331,553,RGO,465,B2,2,0,0,1,,,0,0,272,23,6,SM,BH,RGO,RGO,,1
+Gob Bibson,708,355,Isaac Snowbender,339,69,K,286,T3,0,0,0,1,,,0,0,273,23,6,BH,SM,K,K,,1
+Dixon Uraz,34,69,Isaac Snowbender,339,600,RGO,469,T3,1,0,0,1,,,0,0,273,23,6,BH,SM,RGO,RGO,,1
+dick richards,487,390,Isaac Snowbender,339,108,K,282,T3,2,0,0,1,,,0,0,273,23,6,BH,SM,K,K,,1
+Johnny Hendrivederci,600,420,Keyo,331,288,BB,132,B3,0,0,0,1,,,0,0,274,23,6,SM,BH,BB,BB,,1
+Isaac Snowbender,339,935,Keyo,331,711,FO,224,B3,0,1,0,1,,,0,0,274,23,6,SM,BH,FO,FO,,1
+Juniped Catfish,488,512,Keyo,331,819,K,307,B3,1,1,0,1,,,0,0,274,23,6,SM,BH,K,K,,1
+Paul E. Wag,583,808,Keyo,331,432,PO,376,B3,2,1,0,1,,,0,0,274,23,6,SM,BH,PO,PO,,1
+Miroslav,71,666,Isaac Snowbender,339,366,K,300,T4,0,0,0,1,,,0,0,275,23,6,BH,SM,K,K,,1
+Charlie Bae Jr.,293,542,Isaac Snowbender,339,30,LGO,488,T4,1,0,0,1,,,0,0,275,23,6,BH,SM,LGO,LGO,,1
+Kyle Corbett,707,919,Isaac Snowbender,339,600,K,319,T4,2,0,0,1,,,0,0,275,23,6,BH,SM,K,K,,1
+Obama habubger,342,468,Keyo,331,133,K,335,B4,0,0,0,1,,,0,0,276,23,6,SM,BH,K,K,,1
+Nori Aru,131,444,Keyo,331,588,BB,144,B4,1,0,0,1,,,0,1,276,23,6,SM,BH,BB,BB,,1
+Emmett Michael,10,588,Keyo,331,361,FO,227,B4,1,1,0,1,,,0,0,276,23,6,SM,BH,FO,FO,,1
+Lloyd Gross,135,234,Keyo,331,277,2B,43,B4,2,1,0,1,,,1,0,276,23,6,SM,BH,2B,2B,,1
+Michael Ikenberry,63,420,Keyo,331,893,LGO,473,B4,2,2,1,1,,,0,0,276,23,6,SM,BH,LGO,LGO,,1
+Wallace Grommet,492,150,Isaac Snowbender,339,703,RGO,447,T5,0,0,1,1,,,0,0,277,23,6,BH,SM,RGO,RGO,,1
+Henrik Omega,84,224,Isaac Snowbender,339,969,K,255,T5,1,0,1,1,,,0,0,277,23,6,BH,SM,K,K,,1
+Joe Watson,194,750,Isaac Snowbender,339,696,2B,54,T5,2,0,1,1,,,0,0,277,23,6,BH,SM,2B,2B,,1
+Gob Bibson,708,633,Isaac Snowbender,339,270,K,363,T5,2,2,1,1,,,0,0,277,23,6,BH,SM,K,K,,1
+Johnny Hendrivederci,600,1,Jeff Dingerhitter,298,520,LGO,481,B5,0,0,1,1,,,0,0,278,23,6,SM,BH,LGO,LGO,,1
+Isaac Snowbender,339,777,Bobosnia Bones,478,2,FO,225,B5,1,0,1,1,,,0,0,278,23,6,SM,BH,FO,FO,,1
+Juniped Catfish,488,512,Bobosnia Bones,478,350,BB,162,B5,2,0,1,1,,,0,0,278,23,6,SM,BH,BB,BB,,1
+Paul E. Wag,583,351,Bobosnia Bones,478,875,LGO,476,B5,2,1,1,1,,,0,0,278,23,6,SM,BH,LGO,LGO,,1
+Dixon Uraz,34,12,Isaac Snowbender,339,466,PO,454,T6,0,0,1,1,,,0,0,279,23,6,BH,SM,PO,PO,,1
+dick richards,487,120,Vinnie Vidi Vici,518,924,FO,196,T6,1,0,1,1,,,0,0,279,23,6,BH,SM,FO,FO,,1
+Miroslav,71,101,Vinnie Vidi Vici,518,474,RGO,373,T6,2,0,1,1,,,0,0,279,23,6,BH,SM,RGO,RGO,,1
+Obama habubger,342,569,Bobosnia Bones,478,999,PO,430,B6,0,0,1,1,,,0,0,280,23,6,SM,BH,PO,PO,,1
+Nori Aru,131,999,Bobosnia Bones,478,202,FO,203,B6,1,0,1,1,,,0,0,280,23,6,SM,BH,FO,FO,,1
+Emmett Michael,10,666,Bobosnia Bones,478,747,1B,81,B6,2,0,1,1,,,0,0,280,23,6,SM,BH,1B,1B,,1
+Lloyd Gross,135,623,Bobosnia Bones,478,101,LGO,478,B6,2,1,1,1,,,0,0,280,23,6,SM,BH,LGO,LGO,,1
+Charlie Bae Jr.,293,275,Vinnie Vidi Vici,518,317,Bunt 1B,42,T7,0,2,1,1,,,0,0,281,23,6,BH,SM,Bunt 1B,Bunt 1B,,3
+Kyle Corbett,707,242,Sammy Capicola,117,840,DP,402,T7,0,5,1,1,,,0,0,281,23,6,BH,SM,RGO,RGO,,1
+Wallace Grommet,492,222,Sammy Capicola,117,211,3B,11,T7,2,0,1,2,,,0,0,281,23,6,BH,SM,3B,3B,,1
+Henrik Omega,84,515,Sammy Capicola,117,50,LGO,465,T7,2,3,1,2,,,0,0,281,23,6,BH,SM,LGO,LGO,,1
+Michael Ikenberry,63,777,Bobosnia Bones,478,275,Bunt GO,498,B7,0,2,1,2,,,0,0,282,23,6,SM,BH,Bunt GO,Bunt GO,,3
+Johnny Hendrivederci,600,725,Bobosnia Bones,478,2,FO,277,B7,1,2,1,2,,,0,0,282,23,6,SM,BH,FO,FO,,1
+Sammy Capicola,117,512,Bobosnia Bones,478,611,1B,99,B7,2,2,1,2,,,1,1,282,23,6,SM,BH,1B,1B,,1
+Juniped Catfish,488,850,Bobosnia Bones,478,7,BB,157,B7,2,1,2,2,,,0,0,282,23,6,SM,BH,BB,BB,,1
+Paul E. Wag,583,420,Bobosnia Bones,478,480,1B,60,B7,2,4,2,2,,,1,0,282,23,6,SM,BH,1B,1B,,1
+Mongster Mash,344,234,Swing N. Miss,195,225,HR,9,T1,0,0,0,0,,,1,1,283,24,6,JMC,GRE,HR,HR,,1
+Cam'ron West,525,777,Swing N. Miss,195,600,FO,177,T1,0,0,0,1,,,0,0,283,24,6,JMC,GRE,FO,FO,,1
+Todd Bonzalez II,169,444,Swing N. Miss,195,610,FO,166,T1,1,0,0,1,,,0,0,283,24,6,JMC,GRE,FO,FO,,1
+Emerson Austin,703,925,Swing N. Miss,195,720,FO,205,T1,2,0,0,1,,,0,0,283,24,6,JMC,GRE,FO,FO,,1
+Sam Wood,108,999,Tara E. Doug,252,851,1B,148,B1,0,0,0,1,,,0,1,284,24,6,GRE,JMC,1B,1B,,1
+Carlos The great,132,275,Tara E. Doug,252,279,HR,4,B1,0,1,0,1,,,2,1,284,24,6,GRE,JMC,HR,HR,,1
+Dakota Carolina Montana,65,589,Tara E. Doug,252,505,2B,84,B1,0,0,2,1,,,0,1,284,24,6,GRE,JMC,2B,2B,,1
+"Reno ""El Greco"" McRenoface",776,496,Tara E. Doug,252,370,BB,126,B1,0,2,2,1,,,0,0,284,24,6,GRE,JMC,BB,BB,,1
+Barius McKockidopolous,612,779,Wheeler Walker Jr.,529,77,K,298,B1,0,4,2,1,,,0,0,284,24,6,GRE,JMC,K,K,,1
+Matthaios Himynamis,361,327,Wheeler Walker Jr.,529,298,2B,29,B1,1,4,2,1,,,1,0,284,24,6,GRE,JMC,2B,2B,,1
+Mattress Cadaire,116,320,Wheeler Walker Jr.,529,779,LGO,459,B1,1,6,3,1,,,0,0,284,24,6,GRE,JMC,LGO,LGO,,2
+Roccrates Rudnikov,114,430,Wheeler Walker Jr.,529,867,LGO,437,B1,2,6,3,1,,,0,0,284,24,6,GRE,JMC,LGO,LGO,,1
+Dimebag Jammin,262,9,Swing N. Miss,195,975,3B,34,T2,0,0,3,1,,,0,1,285,24,6,JMC,GRE,3B,3B,,1
+Speedo Meter,675,700,Swing N. Miss,195,200,LGO,500,T2,0,3,3,1,,,1,0,285,24,6,JMC,GRE,LGO,LGO,,1
+Q Kimbrell,20,1,Swing N. Miss,195,300,K,299,T2,1,0,3,2,,,0,0,285,24,6,JMC,GRE,K,K,,1
+Clarinet Clarinet,672,150,Swing N. Miss,195,1,BB,149,T2,2,0,3,2,,,0,0,285,24,6,JMC,GRE,BB,BB,,1
+Ryan Tyburn,517,300,Swing N. Miss,195,1,K,299,T2,2,1,3,2,,,0,0,285,24,6,JMC,GRE,K,K,,1
+Thomas BEOWULF,218,345,Sablo Panchez,638,257,1B,88,B2,0,0,3,2,,,0,0,286,24,6,GRE,JMC,1B,1B,,1
+Sam Wood,108,920,Sablo Panchez,638,454,DP,466,B2,0,1,3,2,,,0,0,286,24,6,GRE,JMC,LGO,LGO,,1
+Carlos The great,132,295,Sablo Panchez,638,257,2B,38,B2,2,0,3,2,,,0,0,286,24,6,GRE,JMC,2B,2B,,1
+Dakota Carolina Montana,65,807,Sablo Panchez,638,224,RGO,417,B2,2,2,3,2,,,0,0,286,24,6,GRE,JMC,RGO,RGO,,1
+Mongster Mash,344,891,Swing N. Miss,195,170,FO,279,T3,0,0,3,2,,,0,0,287,24,6,JMC,GRE,FO,FO,,1
+Cam'ron West,525,440,Swing N. Miss,195,670,FO,230,T3,1,0,3,2,,,0,0,287,24,6,JMC,GRE,FO,FO,,1
+Todd Bonzalez II,169,400,Swing N. Miss,195,666,FO,266,T3,2,0,3,2,,,0,0,287,24,6,JMC,GRE,FO,FO,,1
+"Reno ""El Greco"" McRenoface",776,350,Sablo Panchez,638,142,FO,208,B3,0,0,3,2,,,0,0,288,24,6,GRE,JMC,FO,FO,,1
+Barius McKockidopolous,612,83,Sablo Panchez,638,315,FO,232,B3,1,0,3,2,,,0,0,288,24,6,GRE,JMC,FO,FO,,1
+Matthaios Himynamis,361,420,Sablo Panchez,638,204,FO,216,B3,2,0,3,2,,,0,0,288,24,6,GRE,JMC,FO,FO,,1
+Emerson Austin,703,252,Swing N. Miss,195,1,FO,251,T4,0,0,3,2,,,0,0,289,24,6,JMC,GRE,FO,FO,,1
+Dimebag Jammin,262,420,Swing N. Miss,195,485,2B,65,T4,1,0,3,2,,,0,0,289,24,6,JMC,GRE,2B,2B,,1
+Speedo Meter,675,1,Swing N. Miss,195,175,FO,174,T4,1,2,3,2,,,0,0,289,24,6,JMC,GRE,FO,FO,,1
+Q Kimbrell,20,222,Swing N. Miss,195,400,FO,178,T4,2,2,3,2,,,0,0,289,24,6,JMC,GRE,FO,FO,,1
+Mattress Cadaire,116,245,Sablo Panchez,638,489,FO,244,B4,0,0,3,2,,,0,0,290,24,6,GRE,JMC,FO,FO,,1
+Roccrates Rudnikov,114,262,Sablo Panchez,638,195,1B,67,B4,1,0,3,2,,,0,0,290,24,6,GRE,JMC,1B,1B,,1
+Roccrates Rudnikov,114,50,Sablo Panchez,638,401,CS,351,B4,1,1,3,2,,,0,0,290,24,6,GRE,JMC,CS 2B,CS 2B,,4
+Thomas BEOWULF,218,347,Sablo Panchez,638,335,HR,12,B4,2,0,3,2,,,1,1,290,24,6,GRE,JMC,HR,HR,,1
+Sam Wood,108,340,Sablo Panchez,638,420,1B,80,B4,2,0,4,2,,,0,0,290,24,6,GRE,JMC,1B,1B,,1
+Carlos The great,132,869,Sablo Panchez,638,205,K,336,B4,2,1,4,2,,,0,0,290,24,6,GRE,JMC,K,K,,1
+Clarinet Clarinet,672,995,Apollo,477,18,2B,23,T5,0,0,4,2,,,0,0,291,24,6,JMC,GRE,2B,2B,,1
+Ryan Tyburn,517,300,Apollo,477,902,RGO,398,T5,0,2,4,2,,,0,0,291,24,6,JMC,GRE,RGO,RGO,,1
+Mongster Mash,344,420,Apollo,477,890,LGO,470,T5,1,3,4,2,,,0,0,291,24,6,JMC,GRE,LGO,LGO,,2
+Cam'ron West,525,222,Apollo,477,607,RGO,385,T5,2,3,4,2,,,0,0,291,24,6,JMC,GRE,RGO,RGO,,1
+Dakota Carolina Montana,65,205,Sablo Panchez,638,499,K,294,B5,0,0,4,2,,,0,0,292,24,6,GRE,JMC,K,K,,1
+"Reno ""El Greco"" McRenoface",776,450,Sablo Panchez,638,227,K,223,B5,1,0,4,2,,,0,0,292,24,6,GRE,JMC,K,K,,1
+Barius McKockidopolous,612,300,Sablo Panchez,638,127,BB,173,B5,2,0,4,2,,,0,0,292,24,6,GRE,JMC,BB,BB,,1
+Matthaios Himynamis,361,420,Sablo Panchez,638,701,K,281,B5,2,1,4,2,,,0,0,292,24,6,GRE,JMC,K,K,,1
+Todd Bonzalez II,169,229,Apollo,477,135,1B,94,T6,0,0,4,2,,,0,0,293,24,6,JMC,GRE,1B,1B,,1
+Emerson Austin,703,669,Apollo,477,858,FO,189,T6,0,1,4,2,,,0,0,293,24,6,JMC,GRE,FO,FO,,1
+Dimebag Jammin,262,222,Apollo,477,2,FO,220,T6,1,1,4,2,,,0,0,293,24,6,JMC,GRE,FO,FO,,1
+Speedo Meter,675,1,Apollo,477,474,LGO,473,T6,2,1,4,2,,,0,0,293,24,6,JMC,GRE,LGO,LGO,,1
+Jordan Peppers,18,2,Richard Northstar,275,326,K,324,T1,0,0,0,0,,,0,0,294,25,7,VC,SM,K,K,,1
+Fernando Cruz,176,710,Richard Northstar,275,969,K,259,T1,1,0,0,0,,,0,0,294,25,7,VC,SM,K,K,,1
+LaCarpetron Dukemarriot,775,182,Richard Northstar,275,444,K,262,T1,2,0,0,0,,,0,0,294,25,7,VC,SM,K,K,,1
+Paul E. Wag,583,814,Jack Kanoff,189,631,FO,183,B1,0,0,0,0,,,0,0,295,25,7,SM,VC,FO,FO,,1
+Obama habubger,342,787,Jack Kanoff,189,900,1B,113,B1,1,0,0,0,,,0,1,295,25,7,SM,VC,1B,1B,,1
+Nori Aru,131,333,Jack Kanoff,189,333,HR,0,B1,1,1,0,0,,,2,1,295,25,7,SM,VC,HR,HR,,1
+Lloyd Gross,135,703,Jack Kanoff,189,469,K,234,B1,1,0,2,0,,,0,0,295,25,7,SM,VC,K,K,,1
+Emmett Michael,10,188,Jack Kanoff,189,110,1B,78,B1,2,0,2,0,,,0,0,295,25,7,SM,VC,1B,1B,,1
+Michael Ikenberry,63,561,Jack Kanoff,189,110,RGO,451,B1,2,1,2,0,,,0,0,295,25,7,SM,VC,RGO,RGO,,1
+Dallas Houston,416,117,Richard Northstar,275,251,BB,134,T2,0,0,2,0,,,0,0,296,25,7,VC,SM,BB,BB,,1
+Thelonius Junk,623,69,Richard Northstar,275,380,K,311,T2,0,1,2,0,,,0,0,296,25,7,VC,SM,K,K,,1
+Derek Bongiovanni,109,69,Richard Northstar,275,826,FO,243,T2,1,1,2,0,,,0,0,296,25,7,VC,SM,FO,FO,,1
+Faye Suzuki,22,675,Richard Northstar,275,436,K,239,T2,2,1,2,0,,,0,0,296,25,7,VC,SM,K,K,,1
+Johnny Hendrivederci,600,262,Jack Kanoff,189,321,2B,59,B2,0,0,2,0,,,0,1,297,25,7,SM,VC,2B,2B,,1
+Juniped Catfish,488,888,Jack Kanoff,189,777,1B,111,B2,0,2,2,0,,,0,1,297,25,7,SM,VC,1B,1B,,1
+Richard Northstar,275,140,Jack Kanoff,189,210,1B,70,B2,0,5,2,0,,,1,1,297,25,7,SM,VC,1B,1B,,1
+Paul E. Wag,583,666,Ty Palmatier,258,953,Bunt Sac,287,B2,0,4,3,0,,,0,0,297,25,7,SM,VC,Bunt Sac,Bunt Sac,,3
+Obama habubger,342,811,Ty Palmatier,258,866,1B,55,B2,1,6,3,0,,,1,1,297,25,7,SM,VC,1B,1B,,1
+Nori Aru,131,69,Ty Palmatier,258,83,3B,14,B2,1,5,4,0,,,2,1,297,25,7,SM,VC,3B,3B,,1
+Lloyd Gross,135,103,Ty Palmatier,258,975,BB,128,B2,1,3,6,0,,,0,0,297,25,7,SM,VC,BB,BB,,1
+Emmett Michael,10,675,Ty Palmatier,258,589,1B,86,B2,1,5,6,0,,,1,0,297,25,7,SM,VC,1B,1B,,1
+Michael Ikenberry,63,420,Ty Palmatier,258,842,DP,422,B2,1,4,7,0,,,0,0,297,25,7,SM,VC,RGO,RGO,,1
+Jacky Wacky,702,,Richard Northstar,275,,Auto K,,T3,0,0,7,0,,,0,0,298,25,7,VC,SM,Auto K,Auto K,,9
+Wavy Gravy VIII,265,70,Richard Northstar,275,479,RGO,409,T3,1,0,7,0,,,0,0,298,25,7,VC,SM,RGO,RGO,,1
+Jordan Peppers,18,111,Richard Northstar,275,266,BB,155,T3,2,0,7,0,,,0,0,298,25,7,VC,SM,BB,BB,,1
+Fernando Cruz,176,921,Richard Northstar,275,712,FO,209,T3,2,1,7,0,,,0,0,298,25,7,VC,SM,FO,FO,,1
+Johnny Hendrivederci,600,132,Ty Palmatier,258,98,2B,34,B3,0,0,7,0,,,0,0,299,25,7,SM,VC,2B,2B,,1
+Juniped Catfish,488,919,Ty Palmatier,258,598,K,321,B3,0,2,7,0,,,0,0,299,25,7,SM,VC,K,K,,1
+Richard Northstar,275,952,Ty Palmatier,258,114,BB,162,B3,1,2,7,0,,,0,0,299,25,7,SM,VC,BB,BB,,1
+Paul E. Wag,583,512,Ty Palmatier,258,160,PO,352,B3,1,4,7,0,,,0,0,299,25,7,SM,VC,PO,PO,,1
+Obama habubger,342,2,Ty Palmatier,258,548,LGO,454,B3,2,4,7,0,,,0,0,299,25,7,SM,VC,LGO,LGO,,1
+LaCarpetron Dukemarriot,775,309,Richard Northstar,275,753,RGO,444,T4,0,0,7,0,,,0,0,300,25,7,VC,SM,RGO,RGO,,1
+Dallas Houston,416,911,Richard Northstar,275,521,K,390,T4,1,0,7,0,,,0,0,300,25,7,VC,SM,K,K,,1
+Thelonius Junk,623,837,Richard Northstar,275,505,K,332,T4,2,0,7,0,,,0,0,300,25,7,VC,SM,K,K,,1
+Nori Aru,131,205,Ty Palmatier,258,126,1B,79,B4,0,0,7,0,,,0,0,301,25,7,SM,VC,1B,1B,,1
+Lloyd Gross,135,321,Ty Palmatier,258,734,DP,413,B4,0,1,7,0,,,0,0,301,25,7,SM,VC,RGO,RGO,,1
+Emmett Michael,10,384,Ty Palmatier,258,902,LGO,482,B4,2,0,7,0,,,0,0,301,25,7,SM,VC,LGO,LGO,,1
+Derek Bongiovanni,109,802,Richard Northstar,275,326,LGO,476,T5,0,0,7,0,,,0,0,302,25,7,VC,SM,LGO,LGO,,1
+Faye Suzuki,22,352,Richard Northstar,275,32,K,320,T5,1,0,7,0,,,0,0,302,25,7,VC,SM,K,K,,1
+Jacky Wacky,702,,Richard Northstar,275,,Auto K,,T5,2,0,7,0,,,0,0,302,25,7,VC,SM,Auto K,Auto K,,9
+Michael Ikenberry,63,999,Ty Palmatier,258,556,RGO,443,B5,0,0,7,0,,,0,0,303,25,7,SM,VC,RGO,RGO,,1
+Johnny Hendrivederci,600,411,Ty Palmatier,258,29,RGO,382,B5,1,0,7,0,,,0,0,303,25,7,SM,VC,RGO,RGO,,1
+Juniped Catfish,488,2,Ty Palmatier,258,569,RGO,433,B5,2,0,7,0,,,0,0,303,25,7,SM,VC,RGO,RGO,,1
+Wavy Gravy VIII,265,214,Richard Northstar,275,405,K,191,T6,0,0,7,0,,,0,0,304,25,7,VC,SM,K,K,,1
+Jordan Peppers,18,390,Richard Northstar,275,767,K,377,T6,1,0,7,0,,,0,0,304,25,7,VC,SM,K,K,,1
+Fernando Cruz,176,666,Richard Northstar,275,459,FO,207,T6,2,0,7,0,,,0,0,304,25,7,VC,SM,FO,FO,,1
+Sam Wood,108,700,Sammy Slingshot,32,527,BB,173,T1,0,0,0,0,,,0,1,305,26,7,GRE,SCO,BB,BB,,1
+Carlos The great,132,69,Sammy Slingshot,32,790,K,279,T1,0,1,0,0,,,0,0,305,26,7,GRE,SCO,K,K,,1
+Sam Wood,108,190,Sammy Slingshot,32,250,SB,60,T1,1,1,0,0,,,0,0,305,26,7,GRE,SCO,Steal 2B,Steal 2B,,4
+Dakota Carolina Montana,65,21,Sammy Slingshot,32,750,K,271,T1,1,2,0,0,,,0,0,305,26,7,GRE,SCO,K,K,,1
+Iama Human,520,250,Sammy Slingshot,32,189,1B,61,T1,2,2,0,0,,,1,0,305,26,7,GRE,SCO,1B,1B,,1
+Barius McKockidopolous,612,479,Sammy Slingshot,32,321,BB,158,T1,2,1,0,1,,,0,0,305,26,7,GRE,SCO,BB,BB,,1
+Matthaios Himynamis,361,808,Sammy Slingshot,32,123,K,315,T1,2,4,0,1,,,0,0,305,26,7,GRE,SCO,K,K,,1
+Nick Tits,59,900,Swing N. Miss,195,777,BB,123,B1,0,0,0,1,,,0,1,306,26,7,SCO,GRE,BB,BB,,1
+Liam Abercrombie,270,203,Swing N. Miss,195,250,2B,47,B1,0,1,0,1,,,0,0,306,26,7,SCO,GRE,2B,2B,,1
+Buster McNutt,127,500,Swing N. Miss,195,250,Sac,250,B1,0,6,0,1,,,1,0,306,26,7,SCO,GRE,FO,FO,,1
+Henry Crowell,184,724,Swing N. Miss,195,800,1B,76,B1,1,2,1,1,,,0,0,306,26,7,SCO,GRE,1B,1B,,1
+señor rustus of house vervulf,651,620,Swing N. Miss,195,1,PO,381,B1,1,5,1,1,,,0,0,306,26,7,SCO,GRE,PO,PO,,2
+Edward Freeman,700,756,Swing N. Miss,195,900,BB,144,B1,2,5,1,1,,,0,0,306,26,7,SCO,GRE,BB,BB,,1
+Michael Scarn,746,150,Swing N. Miss,195,360,FO,210,B1,2,7,1,1,,,0,0,306,26,7,SCO,GRE,FO,FO,,1
+Mattress Cadaire,116,790,Sammy Slingshot,32,377,RGO,413,T2,0,0,1,1,,,0,0,307,26,7,GRE,SCO,RGO,RGO,,1
+Ben Bramly,238,642,Sammy Slingshot,32,341,K,301,T2,1,0,1,1,,,0,0,307,26,7,GRE,SCO,K,K,,1
+Thomas BEOWULF,218,678,Sammy Slingshot,32,399,K,279,T2,2,0,1,1,,,0,0,307,26,7,GRE,SCO,K,K,,1
+Lemon Juiced,193,215,Swing N. Miss,195,834,RGO,381,B2,0,0,1,1,,,0,0,308,26,7,SCO,GRE,RGO,RGO,,1
+Bench Warmer,665,312,Swing N. Miss,195,69,K,243,B2,1,0,1,1,,,0,0,308,26,7,SCO,GRE,K,K,,1
+Nick Tits,59,900,Swing N. Miss,195,444,LGO,456,B2,2,0,1,1,,,0,0,308,26,7,SCO,GRE,LGO,LGO,,1
+Sam Wood,108,333,Sammy Slingshot,32,19,K,314,T3,0,0,1,1,,,0,0,309,26,7,GRE,SCO,K,K,,1
+Carlos The great,132,642,Sammy Slingshot,32,549,1B,93,T3,1,0,1,1,,,0,0,309,26,7,GRE,SCO,1B,1B,,1
+Carlos The great,132,1,Sammy Slingshot,32,712,SB,289,T3,1,1,1,1,,,0,0,309,26,7,GRE,SCO,Steal 2B,Steal 2B,,4
+Dakota Carolina Montana,65,212,Sammy Slingshot,32,615,RGO,403,T3,1,2,1,1,,,0,0,309,26,7,GRE,SCO,RGO,RGO,,1
+Iama Human,520,333,Sammy Slingshot,32,712,LGO,379,T3,2,3,1,1,,,0,0,309,26,7,GRE,SCO,LGO,LGO,,1
+Liam Abercrombie,270,327,Apollo,477,214,BB,113,B3,0,0,1,1,,,0,1,310,26,7,SCO,GRE,BB,BB,,1
+Buster McNutt,127,833,Apollo,477,544,K,289,B3,0,1,1,1,,,0,0,310,26,7,SCO,GRE,K,K,,1
+Henry Crowell,184,530,Apollo,477,799,K,269,B3,1,1,1,1,,,0,0,310,26,7,SCO,GRE,K,K,,1
+señor rustus of house vervulf,651,875,Apollo,477,798,1B,77,B3,2,1,1,1,,,0,0,310,26,7,SCO,GRE,1B,1B,,1
+Edward Freeman,700,435,Apollo,477,339,1B,96,B3,2,5,1,1,,,1,0,310,26,7,SCO,GRE,1B,1B,,1
+Michael Scarn,746,626,Apollo,477,150,LGO,476,B3,2,5,2,1,,,0,0,310,26,7,SCO,GRE,LGO,LGO,,1
+Barius McKockidopolous,612,633,Sammy Slingshot,32,450,FO,183,T4,0,0,2,1,,,0,0,311,26,7,GRE,SCO,FO,FO,,1
+Matthaios Himynamis,361,20,Sammy Slingshot,32,759,FO,261,T4,1,0,2,1,,,0,0,311,26,7,GRE,SCO,FO,FO,,1
+Mattress Cadaire,116,700,Sammy Slingshot,32,420,K,280,T4,2,0,2,1,,,0,0,311,26,7,GRE,SCO,K,K,,1
+Lemon Juiced,193,625,Apollo,477,808,FO,183,B4,0,0,2,1,,,0,0,312,26,7,SCO,GRE,FO,FO,,1
+Bench Warmer,665,475,Apollo,477,96,RGO,379,B4,1,0,2,1,,,0,0,312,26,7,SCO,GRE,RGO,RGO,,1
+Nick Tits,59,400,Apollo,477,109,K,291,B4,2,0,2,1,,,0,0,312,26,7,SCO,GRE,K,K,,1
+Ben Bramly,238,843,Pablo Sanchez III,250,366,LGO,477,T5,0,0,2,1,,,0,0,313,26,7,GRE,SCO,LGO,LGO,,1
+Thomas BEOWULF,218,526,Pablo Sanchez III,250,298,FO,228,T5,1,0,2,1,,,0,0,313,26,7,GRE,SCO,FO,FO,,1
+Sam Wood,108,198,Pablo Sanchez III,250,420,FO,222,T5,2,0,2,1,,,0,0,313,26,7,GRE,SCO,FO,FO,,1
+Liam Abercrombie,270,202,Apollo,477,979,FO,223,B5,0,0,2,1,,,0,0,314,26,7,SCO,GRE,FO,FO,,1
+Buster McNutt,127,822,Apollo,477,86,FO,264,B5,1,0,2,1,,,0,0,314,26,7,SCO,GRE,FO,FO,,1
+Henry Crowell,184,321,Apollo,477,531,FO,210,B5,2,0,2,1,,,0,0,314,26,7,SCO,GRE,FO,FO,,1
+Carlos The great,132,325,Pablo Sanchez III,250,420,1B,95,T6,0,0,2,1,,,0,0,315,26,7,GRE,SCO,1B,1B,,1
+Carlos The great,132,369,Pablo Sanchez III,250,987,CS,382,T6,0,1,2,1,,,0,0,315,26,7,GRE,SCO,CS 2B,CS 2B,,4
+Dakota Carolina Montana,65,654,Pablo Sanchez III,250,122,LGO,468,T6,1,0,2,1,,,0,0,315,26,7,GRE,SCO,LGO,LGO,,1
+"Reno ""El Greco"" McRenoface",776,833,Pablo Sanchez III,250,566,PO,267,T6,2,0,2,1,,,0,0,315,26,7,GRE,SCO,PO,PO,,1
+Nick Tits,59,333,Richard Northstar,275,888,RGO,445,T1,0,0,0,0,,,0,0,316,27,8,SCO,SM,RGO,RGO,,1
+Liam Abercrombie,270,117,Richard Northstar,275,924,FO,193,T1,1,0,0,0,,,0,0,316,27,8,SCO,SM,FO,FO,,1
+Buster McNutt,127,56,Richard Northstar,275,355,K,299,T1,2,0,0,0,,,0,0,316,27,8,SCO,SM,K,K,,1
+Paul E. Wag,583,69,señor rustus of house vervulf,651,420,K,351,B1,0,0,0,0,,,0,0,317,27,8,SM,SCO,K,K,,1
+Obama habubger,342,420,señor rustus of house vervulf,651,200,FO,220,B1,1,0,0,0,,,0,0,317,27,8,SM,SCO,FO,FO,,1
+Nori Aru,131,420,señor rustus of house vervulf,651,920,LGO,500,B1,2,0,0,0,,,0,0,317,27,8,SM,SCO,LGO,LGO,,1
+Henry Crowell,184,,Richard Northstar,275,,Auto BB,,T2,0,0,0,0,,,0,0,318,27,8,SCO,SM,Auto BB,Auto BB,,10
+señor rustus of house vervulf,651,217,Richard Northstar,275,456,K,239,T2,0,1,0,0,,,0,0,318,27,8,SCO,SM,K,K,,1
+Edward Freeman,700,876,Richard Northstar,275,658,K,218,T2,1,1,0,0,,,0,0,318,27,8,SCO,SM,K,K,,1
+Michael Scarn,746,378,Richard Northstar,275,16,K,362,T2,2,1,0,0,,,0,0,318,27,8,SCO,SM,K,K,,1
+Lloyd Gross,135,350,señor rustus of house vervulf,651,766,PO,416,B2,0,0,0,0,,,0,0,319,27,8,SM,SCO,PO,PO,,1
+Emmett Michael,10,909,señor rustus of house vervulf,651,118,FO,209,B2,1,0,0,0,,,0,0,319,27,8,SM,SCO,FO,FO,,1
+Michael Ikenberry,63,920,señor rustus of house vervulf,651,69,FO,149,B2,2,0,0,0,,,0,0,319,27,8,SM,SCO,FO,FO,,1
+Lemon Juiced,193,512,Richard Northstar,275,929,RGO,417,T3,0,0,0,0,,,0,0,320,27,8,SCO,SM,RGO,RGO,,1
+Bench Warmer,665,775,Richard Northstar,275,903,BB,128,T3,1,0,0,0,,,0,0,320,27,8,SCO,SM,BB,BB,,1
+Nick Tits,59,31,Richard Northstar,275,570,DP,461,T3,1,1,0,0,,,0,0,320,27,8,SCO,SM,LGO,LGO,,1
+Johnny Hendrivederci,600,923,señor rustus of house vervulf,651,315,K,392,B3,0,0,0,0,,,0,0,321,27,8,SM,SCO,K,K,,1
+Juniped Catfish,488,812,señor rustus of house vervulf,651,69,K,257,B3,1,0,0,0,,,0,0,321,27,8,SM,SCO,K,K,,1
+Richard Northstar,275,996,señor rustus of house vervulf,651,911,BB,85,B3,2,0,0,0,,,0,1,321,27,8,SM,SCO,BB,BB,,1
+Paul E. Wag,583,458,señor rustus of house vervulf,651,420,2B,38,B3,2,1,0,0,,,1,0,321,27,8,SM,SCO,2B,2B,,1
+Obama habubger,342,756,Sammy Slingshot,32,104,K,348,B3,2,2,1,0,,,0,0,321,27,8,SM,SCO,K,K,,1
+Liam Abercrombie,270,106,Richard Northstar,275,913,FO,193,T4,0,0,1,0,,,0,0,322,27,8,SCO,SM,FO,FO,,1
+Buster McNutt,127,651,Richard Northstar,275,432,FO,219,T4,1,0,1,0,,,0,0,322,27,8,SCO,SM,FO,FO,,1
+Henry Crowell,184,136,Richard Northstar,275,355,K,219,T4,2,0,1,0,,,0,0,322,27,8,SCO,SM,K,K,,1
+Nori Aru,131,569,Sammy Slingshot,32,250,K,319,B4,0,0,1,0,,,0,0,323,27,8,SM,SCO,K,K,,1
+Lloyd Gross,135,353,Sammy Slingshot,32,250,1B,103,B4,1,0,1,0,,,0,1,323,27,8,SM,SCO,1B,1B,,1
+Emmett Michael,10,400,Sammy Slingshot,32,321,1B,79,B4,1,1,1,0,,,0,0,323,27,8,SM,SCO,1B,1B,,1
+Michael Ikenberry,63,194,Sammy Slingshot,32,500,FO,306,B4,1,4,1,0,,,0,0,323,27,8,SM,SCO,FO,FO,,1
+Johnny Hendrivederci,600,117,Sammy Slingshot,32,190,1B,73,B4,2,4,1,0,,,1,0,323,27,8,SM,SCO,1B,1B,,1
+Juniped Catfish,488,221,Sammy Slingshot,32,666,LGO,445,B4,2,5,2,0,,,0,0,323,27,8,SM,SCO,LGO,LGO,,1
+Sammy Slingshot,32,829,Richard Northstar,275,967,FO,138,T5,0,0,2,0,,,0,0,324,27,8,SCO,SM,FO,FO,,1
+Edward Freeman,700,456,Richard Northstar,275,881,RGO,425,T5,1,0,2,0,,,0,0,324,27,8,SCO,SM,RGO,RGO,,1
+Michael Scarn,746,489,Richard Northstar,275,275,FO,214,T5,2,0,2,0,,,0,0,324,27,8,SCO,SM,FO,FO,,1
+Richard Northstar,275,952,Sammy Slingshot,32,777,FO,175,B5,0,0,2,0,,,0,0,325,27,8,SM,SCO,FO,FO,,1
+Paul E. Wag,583,369,Sammy Slingshot,32,666,K,297,B5,1,0,2,0,,,0,0,325,27,8,SM,SCO,K,K,,1
+Obama habubger,342,555,Sammy Slingshot,32,999,RGO,444,B5,2,0,2,0,,,0,0,325,27,8,SM,SCO,RGO,RGO,,1
+Lemon Juiced,193,555,Richard Northstar,275,583,2B,28,T6,0,0,2,0,,,0,1,326,27,8,SCO,SM,2B,2B,,1
+Bench Warmer,665,479,Vinnie Vidi Vici,518,223,K,256,T6,0,2,2,0,,,0,0,326,27,8,SCO,SM,K,K,,1
+Nick Tits,59,987,Vinnie Vidi Vici,518,842,BB,145,T6,1,2,2,0,,,0,1,326,27,8,SCO,SM,BB,BB,,1
+Liam Abercrombie,270,872,Vinnie Vidi Vici,518,943,1B,71,T6,1,4,2,0,,,0,1,326,27,8,SCO,SM,1B,1B,,1
+Buster McNutt,127,32,Sammy Capicola,117,12,3B,20,T6,1,7,2,0,,,3,1,326,27,8,SCO,SM,3B,3B,,1
+Henry Crowell,184,311,Sammy Capicola,117,570,PO,259,T6,1,3,2,3,,,0,0,326,27,8,SCO,SM,PO,PO,,2
+Sammy Slingshot,32,317,Sammy Capicola,117,350,HR,33,T6,2,3,2,3,,,2,1,326,27,8,SCO,SM,HR,HR,,1
+Edward Freeman,700,789,Sammy Capicola,117,210,LGO,421,T6,2,0,2,5,,,0,0,326,27,8,SCO,SM,LGO,LGO,,1
+Nori Aru,131,869,Sammy Slingshot,32,333,LGO,464,B6,0,0,2,5,,,0,0,327,27,8,SM,SCO,LGO,LGO,,1
+Lloyd Gross,135,462,Sammy Slingshot,32,2,LGO,460,B6,1,0,2,5,,,0,0,327,27,8,SM,SCO,LGO,LGO,,1
+Emmett Michael,10,602,Sammy Slingshot,32,349,FO,253,B6,2,0,2,5,,,0,0,327,27,8,SM,SCO,FO,FO,,1

@@ -1,0 +1,120 @@
+Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
+22,Faye Valentine,XB,NT,B,Right,2B
+24,Nate Lewis,BC,,,Right,C
+28,Jerry Mandarin,BC,BS,H,Right,SS
+32,Sammy Slingshot,TT,FP,H,Right,PH
+34,Simba Simba,S,FP,S,Right,RF
+36,Weather Report,WC,FP,H,Right,2B
+45,LaPrince Frye,BC,WC,S,Right,3B
+63,Michael Ikenberry,BN,BB,B,Left,RF
+84,Meatwad,BP,FP,S,Left,3B
+108,Iwastold Theredbecake,BC,BS,S,Left,C
+114,Hugh Jass,HK,BF,B,Right,C
+116,Mattress Soprano,BC,FP,S,Right,2B
+117,Dan Glesack,1B,EG,H,Right,PH
+133,Ryutai Yoshigahara,BN,NT,H,Left,P
+134,Dart Ragusa,MH,FP,H,Right,1B
+163,Rickey Tucker,BP,FP,H,Left,PH
+169,Todd Bonzalez II,BN,,,Left,1B
+176,Paul Calderwood,BP,BF,B,Right,LF
+180,Demetrios ooga,BC,FP,S,Left,C
+213,Jack Marnette,1B,,,Right,LF
+226,Phil Coulson,SF,EG,B,Left,3B
+227,Cal Lidous,SM,NH,H,Right,PH
+235,J. E. Wilkins,S,TD,H,Left,P
+238,Ben Bramly,XB,EN,B,Right,PH
+249,Tequila Sunrise,1B,EG,S,Left,LF
+252,Dean O`Saur,TT,TD,S,Right,C
+258,Ty Palmatier,BP,BS,B,Right,P
+259,"Earth, Wind & Fire",XB,EG,S,Right,2B
+262,Apollo Creed,SM,EG,S,Left,PH
+264,Skye McDowell,WC,WC,S,Right,LF
+265,Mr. Miyagi,BP,EG,H,Left,P
+270,Goey Jallo,SF,BS,B,Right,P
+275,Benzonatate Dupixent,1B,TT,S,Left,P
+289,Left Hook Larry,BP,BS,B,Left,1B
+293,Charlie Bae,BC,BB,S,Left,2B
+305,Dylan Green,SM,FP,S,Right,PH
+326,John John Jr.,S,WC,H,Right,P
+331,Rekt Contract,SM,NH,S,Left,PH
+344,Cookie Mongster,1B,NT,H,Left,3B
+390,Gritty Wray,TT,NH,H,Right,P
+479,Revan Skywalker,WC,BS,H,Left,2B
+490,Wedge Antilles,XB,BF,S,Right,3B
+492,Wallace Grommet,TT,WC,S,Right,2B
+502,Johnnie Twofingers,1B,TT,H,Right,3B
+517,Ryan Tyburn,1B,NH,H,Right,P
+518,Zaphod Beeblebrox,HK,FP,S,Left,P
+522,Good Doggo,XB,EG,S,Right,2B
+525,Cam'ron,1B,TD,H,Right,2B
+541,Deep's Victim,BN,EG,S,Left,SS
+547,Red Arrow,BC,BS,H,Left,2B
+562,Rotticus Scott,BC,BF,B,Left,SS
+564,Blue Moon,XB,,,Right,C
+567,Cary Doubt,SF,EG,H,Left,LF
+583,Paulie Wag,BC,NH,B,Left,RF
+596,Poop McGee,XB,BS,H,Left,3B
+600,Opegonna Scootbya,BC,BS,B,Right,LF
+606,Dub L. Tapper,BC,EG,S,Right,C
+622,Holland Oats,1B,WC,B,Left,CF
+623,Thelonius Junk,SF,NH,H,Left,CF
+638,Sophocleats,SM,,,Right,SS
+647,Ol' Weller,BN,NH,S,Left,3B
+662,Joey Wheeler,TT,BS,B,Right,2B
+675,Speedo Meter,S,TD,S,Right,P
+686,Chow Lemon,MH,,,Right,SS
+702,Jacky Wacky,S,TT,H,Right,2B
+703,Emerson Austin,BP,BF,H,Right,3B
+719,Nikolai Federkievwicz,XB,FP,S,Left,SS
+729,Clem Johnson,WC,FP,H,Left,P
+745,Will THE THRILL,SF,EG,S,Left,PH
+770,Dottie Hooligan,SF,EG,S,Left,C
+772,Mark Fruitsand,BC,EG,S,Right,P
+775,Longrod Von Hugendong,SF,TT,H,Right,P
+776,Rey Revanchist,S,BS,S,Right,P
+777,Yogurt Ward,BP,NH,B,Right,P
+783,Dmitri Petrovich,XB,WC,S,Right,C
+1692,Cash Considerations,S,SF,S,Left,P
+1699,Tork Porkleton,SM,EG,H,Right,C
+1703,Harry McPotterson,HK,BF,H,Left,P
+1706,Glenallen Mixon,XB,BB,B,Right,C
+1717,Corey Skateboard,XB,WC,H,Right,1B
+1719,Moby Dick,1B,WC,H,Left,C
+1721,Zack Mouse,WC,EG,S,Left,C
+1732,Gang Weed,BC,,,Left,3B
+1733,Fir St. Last,S,NT,S,Left,CF
+1734,Streetlamp LeMoose,EN,TD,S,Left,2B
+1736,Robert Dobby,WC,WC,S,Right,P
+1748,Bobby Sweetness,XB,EN,H,Left,3B
+1763,Tax Haven,BP,,,Right,2B
+1764,Horace Kope,XB,TD,H,Right,1B
+1792,Dixon Cider,S,WC,S,Left,LF
+1793,Troy McClure,XB,,,Left,SS
+1798,Pedro Cerrano-Spaz,S,BS,B,Left,2B
+1799,Alternative Site,XB,EG,B,Right,2B
+1800,Paisley Birch,WC,TD,H,Right,LF
+1801,Freddy Quicksilver,BN,BS,H,Left,C
+1814,Momo Jungogo,XB,,,Right,C
+1832,John Valor,BN,EG,H,Left,1B
+1838,Brian Taylor,WC,TD,S,Left,P
+1842,Haloick Oasis,S,NT,B,Left,CF
+1844,Ioe Storm,BP,WC,H,Right,3B
+1942,Hero Brine,BP,WC,H,Right,SS
+1961,Gray Goose McGillicuddy,S,EG,H,Right,P
+2206,Dirk Digglet,1B,WC,S,Left,P
+2225,Turk Turkelton,WC,FP,H,Right,LF
+2229,King Kruul,TT,,,Left,RF
+2230,Barry Chuckle,BP,TD,S,Right,3B
+2236,Sticky Mickey Mantle,BP,BS,B,Right,SS
+2241,Johnny Omar,WC,BS,B,Right,2B
+2246,Free Ronnie,SM,,,Right,2B
+2251,Han Solo,BN,,,Left,1B
+2260,Nelson Boozecruise,BP,TD,B,Right,C
+2261,Jeff Loldee,S,,,Right,LF
+2275,John Smith,MH,TT,S,Left,LF
+2282,Troy Pressing,BP,,,Right,1B
+2455,Malcolm Fish,TT,FB,H,Left,C
+2690,Taro Tsujimoto,WC,,,Right,2B
+3364,Craven Yeo,BN,,,Right,DH
+3365,Nolan Ryan,BN,BB,B,Right,P
+3366,Natro Goat,BN,BB,B,Right,P

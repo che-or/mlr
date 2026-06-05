@@ -1,0 +1,152 @@
+Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
+20,Q Kimbrel,TT,NH,S,Left,CF
+32,Larold,TT,FP,H,Right,PH
+34,Dixon Uraz,WC,EG,H,Right,RF
+63,Michael Ikenberry,WC,SF,H,Left,P
+78,Crimson Chin,BC,EN,H,Right,P
+79,Jumbo Dick,BP,,,Left,1B
+89,Gottlieb Giannopolous,EN,BF,S,Right,C
+117,Harry Peritestes,1B,EG,H,Right,PH
+127,Baron Butzenkatzen-Butzenkatzen,S,BS,S,Right,RF
+131,Nori Aru,1B,FP,H,Left,RF
+134,Dart Ragusa,MH,FP,H,Right,P
+149,perta rose sabor,WC,FP,S,Left,P
+163,Tuck,1B,FP,H,Left,CF
+165,Geno Scaramucci,WC,NH,S,Left,1B
+180,Demetrios Ooga,BC,BS,S,Left,C
+198,Skye Comet,S,EN,S,Left,P
+233,Johnny Dickshot,BP,EG,S,Right,3B
+262,Dirtbag Darrell,SM,EG,S,Left,PH
+265,Mecha Vulfzilla,BC,EG,H,Left,PH
+270,Ferda Bois,HK,TT,S,Right,P
+301,Joe Pidgeon,WC,WC,S,Right,CF
+331,Keyo,SM,NH,S,Right,P
+413,Superbone Threefinger,S,TD,S,Left,PH
+487,cocl,BC,WC,S,Left,CF
+516,Brick Bruiser,MH,WC,H,Right,P
+529,Wheeler,BC,BS,H,Left,C
+564,Nate Kondylis,XB,,,Right,CF
+567,Tucker Doubt,SF,FP,B,Left,LF
+606,Homer Nocker,SF,EG,S,Right,C
+638,Sablo Panchez,SM,,,Left,SS
+647,Walter Yeller Weller,SM,NH,S,Left,PH
+703,Emerson,BP,BF,H,Right,LF
+775,LaCarpetron Dukemarriot,S,TT,H,Right,P
+776,Sierra Hightower,HK,TD,S,Left,P
+778,Tyler Pylon,1B,FP,S,Left,CF
+783,Kenny Kawaguchi,BN,WC,S,Right,PH
+786,Hunter Scott CCCXXVII,S,NH,S,Right,P
+1709,Sean Carrcrash,WC,TT,H,Right,LF
+1724,Hannibal Bligh,BN,EG,H,Right,3B
+1725,Trevor Rosé,WC,TT,H,Right,SS
+1733,Bonesy McSkellington,WC,NT,S,Left,CF
+1734,Streetlamp LeMoose,EN,TD,S,Left,2B
+1838,Brian Taylor,WC,TD,S,Left,SS
+2206,Dirk Digglet,SF,EN,S,Left,PH
+2229,King Kruul,TT,,,Left,RF
+2248,Raja Ayun,SM,SF,S,Right,P
+2256,Doc Otis,WC,SF,B,Left,PH
+2327,Pope Coswi,BC,,,,2B
+2329,Tencer Sporkelson,1B,NH,S,Right,P
+2350,Bad Mulligan,1B,NH,B,Left,P
+2377,Mark Spoon,EN,EG,B,Left,CF
+2379,Anthony Burland,1B,EG,S,Right,LF
+2389,Gerald McCoy,MH,EG,S,Left,2B
+2474,Six,SM,BS,H,Right,PH
+2499,M'reddie Confinedman,XB,FP,H,Left,PH
+2504,Peter Hoomanawanui,XB,BS,B,Right,3B
+2507,Hank Braun,S,EG,S,Left,C
+2508,Fatts Richard,SM,SF,S,Right,PH
+2518,Sammy Scully,S,WC,S,Left,2B
+2523,Martin Ducksworth,TT,TT,H,Right,P
+2542,Ovaltine,BC,TD,S,Left,RF
+2544,Mark Schihne,HK,EG,H,Right,P
+2545,Onionhead LEASHY Dirtwit,SF,SF,H,Right,RF
+2555,Noooooot,MH,WC,S,Left,P
+2584,Robbie Tightpants,BC,FP,B,Left,3B
+2585,Rocky Li,TT,NH,S,Right,P
+2588,Derek Rasmussen,BC,EG,B,Left,P
+2606,Princess Peach,BC,TD,S,Right,SS
+2622,Hans Freii,EN,TD,B,Left,LF
+2624,Kilometers Straw,HK,EG,H,Right,CF
+2625,Dutch Boggs,BC,EG,H,Left,PH
+2627,Kenny Powers,SF,BS,S,Left,C
+2641,Jerome Peterson,MH,NH,H,Left,1B
+2642,Seymour Asses,WC,,,Right,RF
+2646,Mr. Plow,SM,BF,H,Right,PH
+2657,Vader Page,BC,BF,H,Right,2B
+2659,Kevin James,S,TT,H,Right,P
+2661,Stevey Swinger,BP,EG,S,Right,2B
+2663,Toastman,S,TD,H,Right,P
+2667,Herbie Bucket,WC,,,Right,LF
+2673,Noah Diamond,S,WC,S,Left,CF
+2679,Kiwi Cleveland,BC,BS,S,Right,2B
+2689,Brent Chillwater,BP,EG,H,Left,1B
+2691,Francesco Hardgust,BC,EG,S,Left,SS
+2692,Bryce Parker,WC,WC,S,Right,SS
+2696,Captain Trash,BN,TT,H,Left,RF
+2708,Saul Pewald,WC,FP,H,Right,1B
+2712,Neddy Edgewise,BC,,,Left,C
+2715,King Raj,1B,EN,S,Left,2B
+2720,Lee Luda,SF,NH,S,Left,C
+2722,Teddy Bigstick,BC,TD,S,Right,2B
+2730,Laars Nootbaar jr,MH,NH,S,Left,1B
+2734,Enrique Rosales,XB,NT,B,Right,2B
+2735,Dill Doe,TT,BS,B,Left,P
+2740,Justin P. L. Griffin,BP,,,Right,RF
+2761,Mike LaViva,BC,EG,H,Right,C
+2773,Toky Oto,BN,NT,B,Right,LF
+2780,Jimmy Payne,BC,EG,S,Right,PH
+2785,Basil,BC,NH,H,Left,C
+2792,Jerome S. Monroe,1B,BS,S,Right,P
+2805,Calvin Ball,BC,FP,H,Left,CF
+2824,DeAaron Taylor,BC,FP,S,Left,1B
+2827,Corbin Christmas Carol,BP,BS,B,Right,1B
+2829,Guillermo Griffey III,BC,TT,B,Left,P
+2833,Dayman Nightman,BN,,,Right,SS
+2834,Mack Quackerson,BC,,,Right,C
+2835,Salsa Steve,BC,,,Right,CF
+2840,Wheezy Whifflesworth,WC,TT,S,Right,C
+2848,Axkoa Griffin,WC,,,Right,RF
+2849,Johnmaine Chupri,BC,BB,S,Right,LF
+2853,John McDonald Jr.,BN,NT,S,Left,PH
+2856,Willie Gardner,XB,BS,B,Left,SS
+2858,16-bit Griffey,BN,,,Right,CF
+2866,Stupido Einsteiny,SM,BS,S,Left,2B
+2867,William T. Striker,BN,TD,B,Right,P
+2873,Jihmih Tyranus,SM,NT,H,Right,C
+2875,Leo Pollersbeck,BC,WC,S,Right,P
+2877,C. T. Bailiff,BC,TD,S,Right,P
+2878,Goaty McGoatFace,WC,,,Left,C
+2879,Hickey Renderson,BP,,,Right,SS
+2882,Mîke Ock,HK,NH,H,Right,RF
+2886,Justin Time,BC,BB,B,Right,C
+2887,Jimothy Jhompson,S,NT,B,Left,P
+2890,Pablo The Hip Kawasaki,1B,BF,H,Left,P
+2891,Chad Isotope,S,,,Right,CF
+2893,Hitgood McChunky,MH,TT,H,Right,1B
+2897,Choc Banana,WC,EN,H,Left,C
+2898,Javi D. Modelo,XB,,,Right,C
+2900,Bart Bishop,P,BS,S,Right,P
+2902,Hippo Jars,1B,NT,S,Right,3B
+2905,Jose Can-Fake-O,MH,,,Right,RF
+2908,T-Rav,S,BS,S,Right,SS
+2911,Karl Havoc,BP,WC,H,Right,P
+2913,Scoot Heller,SF,NT,S,Left,SS
+2914,Skarch McGooter,BN,1B,S,Right,2B
+2915,Hans Zahn,HK,WC,S,Right,P
+2916,Strawberry Jones,BP,TT,H,Left,C
+2922,Randy Mann,WC,,,Left,2B
+2931,Jeff Newman,S,NH,S,Left,2B
+2933,Boomer Fisher,BC,,,Left,3B
+2934,Pontos Napoleon,S,NT,S,Right,2B
+2935,Rex Renfield,XB,,,Left,C
+2939,Epto Bismol,XB,TT,S,Right,P
+2944,Bobert Hideyoshi,BC,TT,H,Right,P
+2945,Smokey Zygowski,BP,BS,H,Right,P
+2946,Tueballs Wunbatt,BP,,,Right,3B
+2947,Mama Luigi,XB,BS,H,Right,3B
+2949,Antony Joy,BP,NH,H,Right,RF
+2951,Brandon Rice III,S,WC,S,Left,SS
+2953,Ratryox,BC,TT,S,Right,2B
+2959,Kries Von Kriestalhauser,BP,,,Right,CF

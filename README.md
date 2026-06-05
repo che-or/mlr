@@ -20,8 +20,8 @@ The web application provides several pages to explore the data:
 - **Leaderboards (`#/leaderboards`):** Provides all-time and single-season leaderboards for a wide variety of statistical categories.
 - **Awards (`#/awards`):** A page to view season-by-season award winners.
 - **Hall of Fame (`#/hof`):** View the members of the Hall of Fame.
+- **Player Comparison (`#/compare`):** Compare up to 4 players.
 - **Glossary (`#/glossary`):** A reference for advanced stats and terminology used in the application.
-- **Known Gamelog Errors (`#/gamelog-errors`):** A list of known errors in the gamelogs.
 
 ### Running the Web App
 
@@ -50,25 +50,30 @@ Since the web application is built with static files (HTML, CSS, JS), it can be 
 3.  Configure the source to deploy from the `/docs` folder on your main branch.
 
 ## Scripts Overview
-
-- **`scripts/data_loader.py`**: Handles the loading of season data from Google Sheets URLs listed in `data/gamelogs.txt`.
-- **`scripts/game_processing.py`**: Contains the core logic for simulating game play-by-play, determining pitching decisions (Win, Loss, Save, Hold), and calculating advanced metrics.
-- **`scripts/generate_web_data.py`**: The primary script for processing all raw game data, calculating comprehensive player and team statistics (including OPS+, ERA+, FIP, WAR, RE24), and exporting all necessary data into JSON files for the web application. This script also handles player ID reconciliation, stat corrections for pinch runners and multi-steals, and generates run expectancy matrices.
+- **`scripts/add_re_column.py`**: Adds a Run Expectancy to the gamelogs based on a season's RE Matrix.
+- **`scripts/add_war_columns.py`**: Adds batter WAR and pitcher WAR columns to the gamelogs.
+- **`scripts/calculate_fip_constant.py`**: Calculates season FIP Constants.
+- **`scripts/calculate_pitching_neutrals.py`**: Calculates nER, nIP, lgnER, and lgnIP.
+- **`scripts/calculate_re_matrix.py`**: Calculate the Run Expectancy Matrix for a season.
+- **`scripts/create_subrows.py`**: Creates combined season stats for players that played for multiple teams in a single season.
+- **`scripts/determine_pitcher_decisions.py`**: Determines W, L, SV, BS, HLD, GS, GF, CG, and SHO for each game.
+- **`scripts/download_gamelogs.py`**: Donwloads gamelogs from Google Sheets
+- **`scripts/generate_web_data.py`**: Generates the JSON statistic content the site uses. This script runs automatically every night to keep the site up to date.
+- **`scripts/get_hitting_stats.py`**: Calculates hitting stats.
+- **`scripts/get_pitching_stats.py`**: Calculates pitching stats.
+- **`scripts/get_player_names.py`**: Creates a list of players and their basic player info.
+- **`scripts/load_gamelogs.py`**: Loads gamelogs
+- **`scripts/runner_attribution.py`**: Adds Manfred runners and trailing runner stolen bases to the gamelogs for easier stat calculations
+- **`scripts/simulate_inning.py`**: Simulates a gamelog inning.
+- **`scripts/simulate_runners.py`**: Simulates a single play.
+- **`scripts/update_glossary_re_matrix.py`**: Updates the RE24 glossary entry with the latest MLR RE matrix.
 
 ## Maintenance Information
 
-The site requires maintenance at the beginning of seasons.
+The site requires maintenance, mostly at the beginning of seasons.
 
-### MLR
-- **`data/gamelogs.txt`** needs to be updated to include the new season. A new row with the format {season}*tab*{number_of_sessions}*tab*{gamelog_url} should be added to the file.
-- **`data/player_types.txt`** needs to be updated to include the new season. A new row with the format {season}*tab*{player_list_url} should be added to the file. The player list should be one of the sheets in the season's rosters notebook.
-- **`docs/data/divisions.json`** needs to be updated to include the new season.
-- **`docs/data/team_history.json`** needs to be updated if a franchise changes its name, abbreviation, or logo. This will also need to be updated if teams are added or removed from the league.
-- **`scripts/game_processing.py`** needs to be updated if a logical change has been made to the game rules. The `_simulate_play` function tracks the resulting base-out state of outcomes. This is a fairly complex change. Logical changes are made infrequently, the most recent being the addition of lineouts. Changes that don't affect logic (e.g. changes to player types) can be ignored. This file only needs to be updated if a new rule redefines how runners move in a certain situation.
-- **`docs/data/awards.json`** needs to be updated to include the previous season's awards and All-Star teams.
-- Any new logos need to be added to **`docs/img/logos/`** as `.svg` files.
-
-### MiLR
-- **`data/milr_gamelogs.txt`** needs to be updated to include the new season. A new row with the format {season}*tab*{number_of_sessions}*tab*{gamelog_url} should be added to the file.
-- **`data/milr_player_types.txt`** needs to be updated to include the new season. A new row with the format {season}*tab*{player_list_url} should be added to the file. The player list should be one of the sheets in the season's rosters notebook.
-- **`docs/data/milr_team_history.json`** needs to be updated with the new season's MiLR teams and abbreviations.
+- **`data/gamelog_links.csv`** needs to be updated for the new seaons. Make sure to updated the 'Active' column for newly inactive seasons. It's not required, but it is good practice to move the source of gamelogs and player types for completed seasons to an archive.
+- **`docs/data/awards.json`** needs to be updated to include the previous season's awards, all-stars, and Hall of Famers.
+- **`docs/data/*_divisions`** needs to be updated with season division structure
+- **`docs/data/*_team_history`** needs to be updated with the season's teams, abbreviation, and logo
+- **`docs/img/*`** needs to be updated with any new logos as `.svg.` files.

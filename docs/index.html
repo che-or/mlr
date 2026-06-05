@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MLR Reference</title>
+    <link rel="icon" type="image/png" href="baseball_snoo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="loader" class="loader-container">
         <div class="loader"></div>
-        <p>Loading All MLR Data...</p>
+        <p>Loading...</p>
     </div>
 
     <div id="app" style="display: none;">
@@ -32,6 +33,7 @@
 
         <main>
             <div id="home-view" class="view"></div>
+
             <div id="stats-view" class="view">
                 <div class="controls" id="stats-controls">
                     <div class="control-group">
@@ -41,7 +43,7 @@
                     </div>
                 </div>
                 <div id="stats-content-display">
-                    <!-- Player stats and scouting reports will be rendered here -->
+                    <!-- Player scouting report rendered here -->
                 </div>
             </div>
 
@@ -51,7 +53,14 @@
                         <label for="leaderboard-league-select">League:</label>
                         <select id="leaderboard-league-select">
                             <option value="mlr" selected>MLR</option>
+                            <option value="mlr_playoff">MLR Playoffs</option>
                             <option value="milr">MiLR</option>
+                            <option value="milr_playoff">MiLR Playoffs</option>
+                            <option value="fcb">FCB</option>
+                            <option value="gib">GIB</option>
+                            <option value="eco">ECO</option>
+                            <option value="npr">NPR</option>
+                            <option value="wbc">WBC</option>
                         </select>
                     </span>
                     <span class="control-item">
@@ -81,19 +90,23 @@
                     </span>
                     <div id="batting-minimum-controls" class="control-item" style="display: inline-block;">
                         <label for="min-pa">Min PA/Session:</label>
-                        <input type="number" id="min-pa" step="0.1" style="width: 60px;">
+                        <input type="number" id="min-pa" step="0.1" value="2" style="width: 60px;">
                     </div>
                     <div id="pitching-minimum-controls" class="control-item" style="display: none;">
                         <label for="min-outs">Min Outs/Session:</label>
-                        <input type="number" id="min-outs" step="1" style="width: 60px;">
+                        <input type="number" id="min-outs" step="1" value="3" style="width: 60px;">
                     </div>
                     <div id="attempts-minimum-controls" class="control-item" style="display: none;">
                         <label for="min-attempts">Min Attempts:</label>
-                        <input type="number" id="min-attempts" step="1" style="width: 60px;">
+                        <input type="number" id="min-attempts" step="1" value="5" style="width: 60px;">
                     </div>
                     <div id="decisions-minimum-controls" class="control-item" style="display: none;">
                         <label for="min-decisions">Min Decisions:</label>
-                        <input type="number" id="min-decisions" step="1" style="width: 60px;">
+                        <input type="number" id="min-decisions" step="1" value="3" style="width: 60px;">
+                    </div>
+                    <div id="opp-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-opp">Min Save Opp:</label>
+                        <input type="number" id="min-opp" step="1" value="3" style="width: 60px;">
                     </div>
                     <span class="control-item">
                         <label for="leaderboard-length">Top:</label>
@@ -108,7 +121,7 @@
                     </span>
                 </div>
                 <div id="leaderboards-content-display">
-                    <!-- Leaderboards will be rendered here -->
+                    <!-- Leaderboards rendered here -->
                 </div>
             </div>
 
@@ -118,11 +131,11 @@
             </div>
             <div id="awards-view" class="view" style="display: none;"></div>
             <div id="hof-view" class="view" style="display: none;"></div>
+            <div id="compare-view" class="view" style="display: none;"></div>
             <div id="team-stats-view" class="view" style="display: none;"></div>
         </main>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
-    <script src="app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>

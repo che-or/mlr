@@ -1,5 +1,14 @@
 # MLR Reference Changelog
 
+### 2.0 - June 5, 2026
+- For in depth changes and updates, see: https://docs.google.com/document/d/1Rzsf8Mb7Te3oy2DLX2rT6RU62OscoBm58HuEwqsIyjk/edit?usp=sharing
+
+#### 1.3.3 - May 4, 2026
+- Add S12 MLR All Star Game reserves
+
+#### 1.3.2 - May 2, 2026
+- Add S12 MLR All Star Game starters
+
 #### 1.3.1 - January 11, 2026
 - Corrected loss determination for the case of inherited runners scoring go-ahead run
 - Fixed errant gamelogs for S2(171) and S2(178)

@@ -1,0 +1,100 @@
+Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
+74,Einhorn,SF,TT,H,Right,P
+75,Garrett Evans,BC,BS,B,Right,P
+76,Hank Murphy,1B,FP,S,Right,P
+78,Crimson Chim,XB,,,Right,C
+80,Steel Pipe Simpson,BP,,,Left,1B
+81,Dick McScrotington IV,BC,,,Left,2B
+82,Juan Diego De Las Rosas,1B,,,Right,2B
+83,Les Dee-Ache,WC,,,Right,2B
+84,Henrik Omega,BP,,,Left,3B
+87,Jesse Kilgannon,BC,,,Right,CF
+89,Gottlieb Giannopolous,EN,,,Right,RF
+90,"Robert Alexander Reuel James Tiberius Kirk ""Bob"" Robb IV",S,,,Left,RF
+128,Ethan Franklin,BC,BS,S,Right,P
+129,Hayden McCloud,XB,WC,S,Left,P
+132,Carlos Brownson,WC,,,Right,C
+133,Garren Smudge,HK,,,Left,C
+134,Dart Ragusa,MH,,,Right,1B
+135,Lloyd Gross,XB,,,Left,1B
+136,Tyler Gordon,S,,,Left,1B
+137,Teo Jones,S,,,Right,2B
+139,Mako Bierman,BP,,,Left,SS
+140,Rob Patterson,EN,,,Left,CF
+144,Homer Pimpson,TT,,,Left,RF
+146,Jerry Jingles,XB,,,Right,RF
+148,Chipper Dipper,MH,NT,B,Right,P
+149,Daniel Collins,1B,TT,H,Left,P
+150,Pickle Rick,MH,NT,H,Right,P
+151,Indy Sayne,BC,,,Right,C
+152,Kris Jaxon,BP,,,Left,C
+153,Dallas Hamilton,S,,,Right,1B
+155,Nikki Falke,BC,,,Left,2B
+156,Owen Thirlwell,BC,,,Right,2B
+157,Nikolas Romero,BN,,,Right,3B
+158,Sam Smith,BP,,,Right,3B
+159,Vigolashi Dongeroso,S,,,Left,SS
+160,Zum Boehner,1B,,,Left,SS
+161,Girth Brooks,XB,,,Right,LF
+162,Whit Merto,BC,,,Right,RF
+216,Pete Jones,WC,EG,B,Left,P
+217,Benjamin Abenduct,SM,TD,S,Left,P
+218,Thomas Beowulf,BN,BS,S,Right,P
+219,Chris Orosz,WC,EG,B,Right,P
+220,Charles Magnus,BP,BS,S,Right,P
+221,Pike Miazza,BP,,,Right,C
+222,King Fielder,BP,,,Right,1B
+223,Smitty Werbenjagermanjensen,HK,,,Left,1B
+226,Phil Coulson,1B,,,Left,3B
+227,Cal Lidous,S,,,Right,SS
+228,Ozzie Baez,BN,,,Right,SS
+229,Ethyn Williams,TT,,,Left,LF
+230,Matt Verdin,XB,,,Right,LF
+231,Sadler Oriole,BC,,,Right,CF
+232,Jake Blee,WC,,,Right,RF
+250,Pablo Sanchez III,SM,NH,S,Right,P
+251,Seik Golden,BC,EG,B,Right,P
+253,Tommy Foxconn,SM,NH,S,Right,P
+254,Biff Studd,TT,,,Right,C
+256,Tyrone Jennings III,1B,,,Left,C
+257,Hingle McCringleberry,EN,,,Left,1B
+259,Layzer Gunn,XB,,,Right,2B
+260,Oliver Skipp,BC,,,Right,2B
+262,Dirtbag Darrell,BN,,,Left,3B
+263,Rapid Eagle,TT,,,Right,3B
+264,Skye McDowell,EN,,,Right,LF
+265,Rich Mahogany,EN,,,Right,CF
+266,Cam Singleton,1B,,,Left,RF
+336,Darth Vader,1B,BS,S,Right,P
+337,Andrew Peters,BN,BS,H,Left,P
+338,Eric Cowan,BN,,,Right,C
+339,Isaac Snowbender,WC,,,Right,C
+340,Picov Andropov,EN,,,Right,C
+341,Jonathan Park,BP,,,Right,2B
+342,River Ride,1B,,,Right,2B
+347,Alexander Hamilton,HK,,,Left,CF
+348,Chunky Dongmeister,MH,,,Left,CF
+349,Kentho Birne,1B,,,Left,RF
+350,Lightning Balls,BC,,,Right,RF
+351,Buster Hyman,BP,,,Left,C
+352,Filib Al'anhar JR.,1B,BS,S,Right,P
+353,Jordon Canning,MH,FP,S,Right,P
+354,Jack Jackie Jackson,MH,,,Right,C
+355,Chuck Tingle,BP,,,Left,1B
+357,Stan Mann,1B,,,Right,1B
+358,Aaron Icecream,XB,,,Right,2B
+361,Matt Himynamis,BP,,,Right,2B
+362,Connor Morgan,BC,,,Right,3B
+367,Buzz Schwinghammer,BP,,,Right,CF
+370,Tre Nichols,1B,,,Left,RF
+411,Rabbi Chase,BN,BB,B,Right,PH
+413,Superbone Threefinger,1B,EG,B,Right,P
+414,Barney Summers,1B,,,Left,C
+415,Joe Random,BP,,,Right,C
+416,Dallas Houston,BP,,,Right,1B
+417,Duke McCracken,BP,,,Right,1B
+419,Takahiro Hirasawa,BC,,,Left,2B
+420,Jered Bentley,SF,,,Right,3B
+421,Joe Trundle,BP,,,Right,LF
+422,Dixie Wrecked,BP,,,Left,CF
+423,Spike McBride,BN,,,Right,CF

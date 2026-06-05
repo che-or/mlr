@@ -1,0 +1,568 @@
+Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
+1,Thomas Nova,TT,,,Left,C
+3,Syd Kidd,P,EG,B,Left,P
+5,Y.E. Wally,P,WC,H,Right,P
+10,Holden Summers,BC,,,Left,2B
+14,Baba Ganoosh,TT,,,Right,LF
+20,Q Kimbrel,WC,,,Right,CF
+32,Larry Longshot,EN,,,Right,CF
+34,Dixon Uraz,WC,,,Left,RF
+37,Artanis Jones,P,BS,H,Left,P
+39,Commie Ohtani,P,NH,H,Right,P
+48,Willow Briansdóttir,BC,,,Right,2B
+54,Holly Kühnhackl,XB,,,Left,SS
+55,Rick McLightning,BN,,,Right,RF
+59,La+ Darknesss,BC,NT,H,Left,P
+65,Dakota Carolina Montana,BN,,,Right,1B
+66,Daniel Dove,SF,,,Right,2B
+68,Erin Pickles,WC,,,Right,2B
+71,Miroslav,SM,,,Right,CF
+73,Jack Alpha,P,BB,B,Right,PH
+76,Hank Murphy,P,BF,S,Left,P
+80,Steel Pipe Simpson,BP,,,Left,1B
+81,Dick McScrotington,BC,,,Left,2B
+82,Juan Diego De Las Rosas,1B,,,Right,2B
+84,Henrik Omega,BP,,,Left,3B
+89,Gottlieb Giannopolous,XB,,,Right,C
+91,John Johnson Jr.,TT,,,Right,3B
+93,Tree Fiddy,WC,,,Right,LF
+99,Tyler Phoenix,SM,,,Right,1B
+100,Merodach Baladan,P,WC,B,Right,P
+103,Mason Spurs,P,EG,S,Left,P
+104,Morris Deratt,BN,,,Left,LF
+108,Spiro Agnew,BC,,,Left,C
+109,Pauiie Wag,BP,,,Right,C
+112,Willoughby Hoose,P,TT,H,Left,P
+113,Kevin Arianna,HK,,,Left,C
+114,Rocco Rudnikov,P,BF,H,Right,P
+117,Harry Peritestes,1B,EG,H,Right,PH
+119,Ola Gjeilo,1B,,,Right,SS
+127,Blaise Bailey Finnegan III,S,,,Right,RF
+130,Mongy Whumpus,1B,,,Left,C
+131,Nori Aru,TT,,,Left,RF
+134,Dort Rogoso,BP,,,Right,1B
+138,Donnie Draper,S,,,Right,2B
+140,Rob Patterson,EN,,,Left,CF
+149,brianna rose sabor,P,FP,S,Left,P
+151,Indy Sayne,BC,,,Right,C
+161,Girth Brooks,BN,,,Right,LF
+163,Tuck,1B,,,Left,CF
+165,Geno Scaramucci,WC,,,Left,1B
+166,Lefty Louis,P,FP,S,Left,P
+168,Bo-Horse Jackman,BN,,,Right,C
+169,Todd Bonzalez II,BN,,,Left,1B
+170,Aych Imtiyaz,BC,,,Right,2B
+176,Fernando Cruz,BP,,,Right,LF
+178,Hannah Outlaw,BN,,,Left,CF
+180,Demetrios Ooga,BC,,,Left,C
+183,Erin Theolia,P,WC,H,Right,P
+190,Lane Drew,BC,,,Left,LF
+191,Andrew REDACTED Nova,BC,,,Right,LF
+198,Skye Comet,P,EN,S,Left,P
+204,Coco Watanabe,1B,,,Right,C
+219,Chris Orosz,P,EG,B,Right,P
+220,Charles Magnus,MH,,,Right,RF
+226,Phil Coulson,SF,,,Left,3B
+233,Johnny Dickshot,1B,,,Right,SS
+238,Ben Bramly,SF,,,Right,C
+241,Jay Money,HK,,,Right,1B
+249,Tequila Sunrise,P,TD,S,Right,P
+255,S. Jay Cutler,EN,,,Left,C
+258,Ty Palmatier,P,BS,B,Right,P
+259,Mr Peggable,WC,,,Right,2B
+262,Dirtbag Darrell,SM,EG,S,Left,PH
+264,Skye McDowell,WC,,,Right,2B
+265,Grand Slamdalf,BP,,,Right,3B
+268,Jefferson Steelflex,1B,,,Left,CF
+270,Ferda Bois,P,TT,S,Right,P
+271,Assassin Xekutioner,XB,,,Left,2B
+275,Richard Northstar,P,FP,S,Left,P
+278,Dominus Nominus,1B,,,Right,LF
+287,Tasker Morris,BN,,,Right,SS
+290,Miguel Snow Jr,P,BF,S,Right,P
+293,Magdalena Bae,BC,,,Left,C
+295,Jocko Jones,BN,,,Right,2B
+296,Sbujoe Arrestrump,P,TT,S,Right,P
+298,Jeff Dingerhitter,HK,,,Left,SS
+301,Joe Pidgeon,P,WC,S,Right,P
+305,Dylan Green,BC,,,Left,1B
+308,Moose McCracken,BC,,,Right,C
+309,Emer Bock,BN,,,Left,1B
+310,Jameson Poe,P,TT,H,Right,P
+327,Makesiondon Kelkboom,WC,,,Right,C
+331,Keyo,SM,NH,S,Right,PH
+337,Andrew Peters,P,BS,H,Left,P
+339,Isaac Snowbender,HK,,,Left,C
+344,Mongster Mash,1B,,,Left,3B
+349,Kentho Birne,BC,POS,,Left,RF
+350,Lightning Balls,BC,,,Right,RF
+354,Jack Jackie Jackson,MH,,,Right,C
+355,Alvin and the Chipmunks The Squeakquel,BP,,,Left,C
+357,Stan Mann,1B,,,Right,3B
+361,Matt Himynamis,P,FP,S,Right,P
+362,Connor Morgan,BC,,,Right,3B
+371,Robin Reynolds,P,TT,S,Right,P
+373,Ed Turner,P,BB,S,Right,P
+378,Carly Bae,P,EG,H,Right,P
+390,Joey McCarty,P,NH,H,Right,P
+391,Jasper de Bever,WC,,,Right,2B
+392,Haydn Werfer,P,WC,S,Left,P
+394,Ryan Gastings,P,EG,B,Left,P
+395,S.A.R. Dinka,P,WC,H,Right,P
+396,Mylo Grams,BC,,,Right,C
+400,Graham Grams,BC,,,Left,2B
+402,Amelia,SF,,,Right,2B
+405,Sven Jorgenson,BC,,,Right,3B
+413,Superbone Threefinger,P,NH,S,Right,P
+443,Hess Nahstee,1B,,,Right,1B
+471,Kowboy Rivers,P,NT,B,Right,P
+479,Revan Skywalker,WC,,,Left,2B
+480,Captain Harry C Legs,BP,,,Left,2B
+481,Don Chalupa,P,NH,S,Right,P
+485,Cal Q. Lon,P,EG,S,Right,P
+488,AA --xXx-- Main Event Juni Panda --xXx--,HK,,,Left,2B
+490,Zelk Antilles,BN,,,Left,2B
+492,Wallace Grommet,BC,,,Right,2B
+516,Brick Bruiser,TT,,,Right,C
+517,Ryan Tyburn,P,NH,H,Right,P
+518,Arthur Vandelay,SF,,,Left,C
+522,Good Doggo,TT,,,Right,2B
+525,Cam'ron Simmons,1B,,,Right,2B
+529,Wheeler,SF,,,Left,2B
+530,Ping Pong,MH,,,Left,1B
+534,Bill Billiamson,1B,,,Right,CF
+549,Paddy O'Connor,1B,,,Left,LF
+557,Monty Johnson,WC,,,Left,C
+559,Big T,TT,,,Left,SS
+563,Fizzbear Doormat,BP,,,Left,2B
+564,Nate Kondylis,XB,,,Right,CF
+567,Tucker Doubt,SF,,,Left,LF
+583,NOT Paulie Wag,BC,,,Right,RF
+596,Poop McGee,XB,,,Left,3B
+597,Charpasm Chim,XB,,,Left,RF
+606,Homer Nocker,SF,,,Right,C
+607,Eli Sasak,P,TT,H,Right,P
+610,Francis Swagger,P,BS,H,Left,P
+620,Edward Duncan,BP,,,Right,RF
+622,Delta Airlines,1B,,,Left,CF
+638,Sablo Panchez,SM,,,Right,SS
+639,Bingo Hammersmith,WC,,,Left,SS
+646,Aaron Burr,P,TT,H,Right,P
+647,Walter Yeller Weller,SM,NH,S,Left,PH
+649,Nelson Van Halen,HK,,,Right,CF
+651,Rusty Nails,XB,,,Left,CF
+662,Joey Wheeler,TT,,,Right,2B
+672,Clarinet Clarinet II,BC,,,Left,1B
+675,Speedo Meter,S,,,Right,CF
+679,Scherbie Fully-Loaded,S,,,Right,CF
+683,Kris Kringle,1B,,,Right,SS
+686,Julio Escobar,MH,,,Right,SS
+703,Emerson,BP,,,Right,LF
+713,Pang Winn,HK,,,Left,SS
+714,Randy Pole,P,TT,S,Right,P
+716,Penny Lane,P,FP,S,Left,P
+734,Gryffith Lindley,S,,,Left,3B
+771,Lee Allen Ripley,P,FP,H,Left,P
+772,Mike Fruitstand,BC,,,Right,SS
+776,Sierra Hightower,HK,,,Right,LF
+778,Tyler Pylon,1B,,,Left,CF
+780,Matt Taylor,BC,,,Right,CF
+783,Kenny Kawaguchi,P,WC,S,Right,P
+786,Skork Hooker,P,WC,H,Left,P
+788,Jericho Styles,P,WC,S,Right,P
+813,Tendaji Okoye,WC,,,Left,C
+814,Saitoo Syde,TT,,,Right,C
+1692,Tristan,P,TT,S,Left,P
+1700,KlentakPay TheFuckingTax,1B,,,Right,C
+1703,Harry McPotterson,P,BF,H,Left,P
+1705,Usada Pekora,S,,,Right,SS
+1709,Sean Carrcrash,WC,,,Right,LF
+1717,Corey Scooter,1B,,,Right,1B
+1719,Moby Dick,1B,,,Left,C
+1724,Hannibal Bligh,BN,EG,H,Right,PH
+1725,Trevor Rosé,SF,,,Right,SS
+1732,Gang Weed,BC,,,Left,2B
+1733,Bonesy McSkellington,BP,,,Left,CF
+1734,Streetlamp LeMoose,EN,,,Left,2B
+1737,Slappy McBatty,BN,,,Right,2B
+1738,Leroy Hawk,BN,,,Left,CF
+1745,Robbie,BP,,,Left,1B
+1759,Che Or,P,WC,S,Right,P
+1763,Dermot Mulveiny,BP,,,Right,2B
+1764,Ross Ewage,BC,,,Right,1B
+1772,Dick Shitfart,MH,,,Right,1B
+1776,Nicholas Fouss,SM,,,Left,C
+1777,Alexander West,P,EG,S,Right,P
+1781,BEANS Leschnewski,BP,,,Right,CF
+1786,im sleve,P,BF,H,Right,P
+1788,Apple Watch,BC,,,Left,CF
+1792,Simba,P,WC,S,Left,P
+1797,Mike Unt,SF,,,Right,3B
+1799,Spider Tack,XB,,,Left,RF
+1801,Doc Dockgoose,P,TD,H,Right,P
+1813,Freddie Eggman Huff,WC,,,Right,C
+1814,Maximus Os,BC,,,Left,CF
+1824,Ax Finesse,TT,,,Right,C
+1826,Jimmy Haase,EN,,,Right,1B
+1830,Guidooooo,HK,,,Left,CF
+1834,Bob Kelso,P,NT,H,Right,P
+1838,Brian Taylor,WC,TD,S,Left,P
+1843,Skipper Studebaker,P,NT,H,Right,P
+1844,Ioe Torrent,HK,,,Left,LF
+1942,Hero Brine,P,TT,H,Right,P
+1949,Davoin Shower-Handel,BC,,,Left,CF
+1960,Richard Sucker II,BC,,,Right,C
+1961,Gray Goose McGillicuddy,P,EG,H,Right,P
+1963,Slim Mathers,P,NT,S,Right,P
+1977,Alex Yaxley,P,NH,S,Right,P
+2055,Catfish Champ,EN,,,Left,CF
+2135,Baron Samedi,TT,,,Left,1B
+2206,Dirk Digglet,P,EN,S,Left,P
+2207,Fik Seiko,P,NH,S,Left,P
+2212,Kyle Brambley,BC,,,Right,2B
+2220,Dogwood Maple,P,WC,H,Right,P
+2221,JC Nicholson,BP,,,Right,SS
+2222,Dazzy Zastempowski,P,TT,H,Right,P
+2229,King Kruul,TT,,,Left,RF
+2230,Garfield Chubbs,BP,,,Right,3B
+2242,Wonder Francoh,XB,,,Right,1B
+2248,Raja Ayun,SF,,,Left,3B
+2256,Doc Otis,WC,SF,B,Left,PH
+2262,Burg McTurdBerg,SF,,,Right,2B
+2275,Franz Lisztpitcher,BC,EG,S,Left,P
+2282,Troy Pressing,BP,,,Right,1B
+2291,Richard Avery,SF,,,Right,3B
+2327,Pope Coswi,BC,,,Left,2B
+2329,Fauxtani,BC,,,Left,3B
+2334,Buck Maverick,SF,,,Left,3B
+2342,Egor Kucherov,BC,,,Left,SS
+2344,Cybeast Falzar,1B,,,Right,SS
+2349,Terry Gaskins,TT,,,Left,C
+2350,Bad Mulligan,P,NH,B,Left,P
+2353,Theo Rodder,BC,,,Right,1B
+2371,Frederick Thunderpants,TT,,,Left,SS
+2377,Mark Spoon,TT,,,Left,CF
+2379,Anthony Burland,BC,,,Right,3B
+2389,Gerald McCoy,WC,,,Left,2B
+2390,Chester Einhorn,P,TD,H,Right,P
+2397,Kuuma Kivi,S,,,Left,SS
+2455,Malcolm Fish,HK,,,Left,C
+2457,Nate Duke,BN,BB,S,Left,PH
+2461,Pontius Inebrius,P,BS,H,Right,P
+2474,Six,SM,BS,H,Right,PH
+2482,Dingers McGee,TT,,,Left,CF
+2486,Tex Wolffe,SF,,,Right,2B
+2499,Cash Considerations,XB,,,Left,LF
+2501,Hakuna Moncada,HK,,,Left,3B
+2504,Peter Hoomanawanui,BC,,,Right,3B
+2507,Hank Braun,S,,,Left,C
+2508,Fatts Richard,SM,SF,S,Right,PH
+2509,Big Cheech,S,,,Right,1B
+2518,Sammy Scully,S,,,Left,2B
+2523,Martin Ducksworth,TT,TT,S,Left,PH
+2524,WoodCutter Jones,TT,TD,H,Left,3B
+2532,Herb Bumbleflower,S,,,Right,CF
+2542,Ovaltine,BC,,,Left,RF
+2543,Numbers Spector,1B,,,Right,3B
+2544,Mark Schihne,P,EG,H,Right,P
+2545,New Age Ms Frizzle,SF,,,Right,RF
+2584,Robbie Tightpants,BC,FP,B,Left,PH
+2585,Rocky Li,TT,,,Right,LF
+2589,Lil Lilith Lillian,XB,,,Left,SS
+2591,Hunter D. Parker,MH,,,Right,C
+2593,Don Sturgeon,P,TT,S,Left,P
+2594,Hunter West,TT,WC,S,Right,PH
+2597,Rod Kimball,BC,,,Right,RF
+2598,Mattie Christewson,S,,,Left,2B
+2606,Princess Peach,BC,TD,B,Right,PH
+2611,CJ Ayer,SM,EG,H,Right,PH
+2616,Peter Hadley,XB,,,Right,C
+2621,Mike Truk,P,EG,S,Right,P
+2622,Hans Freii,EN,,,Left,LF
+2624,Kilometers Straw,BC,,,Left,CF
+2625,Dutch Boggs,BC,EG,H,Left,PH
+2627,Kenny Powers,SM,BS,S,Left,PH
+2629,Doc Mainframe,P,BS,B,Right,P
+2634,Jimmy Pop,SM,,,Left,CF
+2637,Mo Cheeks,BC,,,Right,LF
+2640,Anthony Barkevious IV,EN,,,Right,3B
+2641,Jerome Peterson,MH,,,Left,1B
+2642,Seymour Asses,WC,,,Right,RF
+2646,Jason Waterfalls,WC,WC,H,Right,P
+2651,Mack MacMack,BN,,,Left,SS
+2657,Vader Page,P,NT,S,Right,P
+2659,Kevin James,P,TT,H,Right,P
+2660,Ronnie Pickering,XB,,,Right,1B
+2664,Robert Glasses,XB,,,Right,3B
+2668,Biff Sexy Hotbod,BC,,,Left,SS
+2671,Rich Driver,BP,,,Left,3B
+2673,Noah Diamond,S,,,Left,CF
+2675,Goose Gordon,BP,,,Right,C
+2678,Alex Lancer,P,BS,S,Right,P
+2679,Leland K. Cleveland,S,,,Right,2B
+2681,Jim Johnman,HK,,,Right,RF
+2683,Huell Babineaux,BC,,,Left,2B
+2689,Brent Chillwater,SM,EG,H,Left,PH
+2691,Francesco Hardgust,BC,,,Left,SS
+2692,Bryce Parker,WC,,,Right,SS
+2696,Captain Trash,BN,,,Left,RF
+2702,Adam Autovino,HK,TD,S,Right,2B
+2706,Cameron Trinidad,WC,,,Right,1B
+2708,Saul Pewald,SM,EG,B,Right,PH
+2710,Sterling Turlington,HK,,,Right,2B
+2715,King Raj,1B,,,Left,2B
+2720,Lee Luda,P,EN,S,Left,P
+2722,Teddy Bigstick,SF,,,Right,3B
+2723,Matias Thagod,MH,,,Left,C
+2724,James Jonathan Jr. III,SM,,,Right,2B
+2730,Laars Nootbaar jr,MH,NH,S,Left,PH
+2734,Enrique Rosales,XB,,,Left,2B
+2735,Michael Cumfarto,P,TD,S,Left,P
+2736,James Jameson CDXX,S,,,Left,3B
+2738,Donatello Hamato,P,TT,S,Left,P
+2740,Justin P. L. Griffin,BP,,,Right,RF
+2743,Pete Morris,P,BS,B,Left,P
+2744,Troy-Anthony Parker,P,TT,H,Right,P
+2752,Henry Thibodeau,XB,,,Right,C
+2754,Jacques François,1B,,,Right,2B
+2760,Shorty McDougall,WC,,,Left,SS
+2761,Mike LaViva,TT,,,Left,C
+2768,Spencer Hart,BP,,,Left,1B
+2772,Creatør Slander,XB,,,Right,3B
+2773,Toky Oto,BN,,,Right,LF
+2774,Bill Aural Jr. III,XB,,,Left,LF
+2780,Jimmy Payne,P,EG,S,Right,P
+2782,Eijun Sawamura,P,BS,H,Left,P
+2785,Basil,BP,,,Left,C
+2787,Buster Worthington,BC,,,Right,C
+2789,Roosevelt Sandoval,BC,,,Right,2B
+2791,Pete Harper,P,WC,S,Right,P
+2792,Jerome S. Monroe,P,TD,H,Right,P
+2795,International Signing Bonus Pool Space,P,FP,S,Right,P
+2800,Buzz Carlton,BC,,,Left,RF
+2802,Abel Greene,WC,,,Left,SS
+2804,Billy TheKid,WC,,,Right,2B
+2805,Calvin Ball,BC,,,Left,CF
+2810,Sonar McDeuceski II,P,TT,H,Right,P
+2811,Jeb Barnes,TT,,,Right,1B
+2814,Pillsbury Doughboy,P,EG,H,Left,P
+2815,Jamal Jackson,S,,,Left,CF
+2817,Maxwell Slander,P,BS,B,Left,P
+2820,Michael Last-Name,P,NH,H,Right,P
+2821,Jack Parkman,XB,,,Left,C
+2825,Casper Greenwell,BC,,,Left,2B
+2826,Friday Phd,XB,,,Left,1B
+2827,Corbin Christmas Carol,BP,,,Right,1B
+2833,Dayman Nightman,BN,,,Right,SS
+2834,Mack Quackerson,BC,,,Right,C
+2835,Salsa Steve,BC,,,Right,CF
+2838,Ringo Swingo,BC,,,Right,CF
+2840,Wheezy Whifflesworth,SM,,,Right,C
+2842,Moon Malarkey,SF,,,Right,SS
+2844,Tony Pizza,1B,,,Right,C
+2846,Dante Dagostino,BP,,,Left,CF
+2847,Jorbel Boykins,BC,,,Left,2B
+2848,Axkoa Griffin,WC,,,Right,RF
+2849,Johnmaine Chupri,SM,POS,,Right,3B
+2852,Dusty Jabroni,BN,,,Left,3B
+2853,Tubby Wubby,WC,WC,S,Left,C
+2854,Verde Jack,BC,,,Right,LF
+2855,Triscuit McBiskit,P,NT,H,Right,P
+2856,Willie Gardner,WC,,,Left,SS
+2857,River James,SF,,,Right,SS
+2858,16-bit Griffey,BN,,,Right,CF
+2864,Scoreson McCorkle,S,,,Left,CF
+2867,William T. Striker,P,TD,B,Right,P
+2868,TWs Frozen Head,SM,,,Left,2B
+2869,Charles Vella,BP,,,Right,C
+2870,Lincoln Pickett,BC,,,Left,2B
+2873,Jihmih Tyranus,P,WC,S,Right,P
+2874,Ace Ventura,BP,,,Right,3B
+2875,Velma Dingkerly,BC,POS,,Right,C
+2877,C. T. Bailiff,P,TD,S,Right,P
+2878,Goaty McGoatFace,S,,,Left,1B
+2880,Ryan McBryan,SF,,,Right,LF
+2882,Mîke Ock,TT,,,Right,RF
+2886,Justin Time,BC,,,Right,C
+2887,Jimothy Jhompson,P,NT,B,Left,P
+2888,Just A. Girl,P,SF,S,Left,P
+2889,Primero Ultimo,BC,,,Left,3B
+2890,Pablo The Hip Kawasaki,P,BF,H,Left,P
+2893,Hitgood McChunky,MH,,,Right,1B
+2897,Choc Tuah,SM,EN,H,Right,PH
+2898,Javi D. Modelo,BC,,,Right,C
+2900,Bart Bishop,BP,,,Right,3B
+2902,Hippo Jars,SM,,,Right,3B
+2904,Nicaragua del Toro,1B,POS,,Left,2B
+2905,Jose Can-Fake-O,MH,,,Right,C
+2908,T-Rav,S,BS,S,Right,PH
+2911,Karl Havoc,BC,,,Right,LF
+2913,Scoot Heller,BC,,,Left,SS
+2914,MILKBOY,BN,,,Left,LF
+2915,Hans Zahn,P,BF,B,Right,P
+2916,Jawberry Stones,BC,,,Left,C
+2922,Randy Mann,WC,,,Left,2B
+2930,Zeke Euselachii,XB,,,Right,RF
+2931,Jeff Newman,S,,,Left,2B
+2932,Seth Kablamo,HK,,,Right,CF
+2933,Boomer Fisher,BC,,,Left,3B
+2942,Tleyber Alfredo Cruz Fernandez III,SF,,,Left,SS
+2943,Mo Bonzalez,BN,,,Right,2B
+2944,Bobert Hideyoshi,P,BS,H,Left,P
+2945,Smokey Zygowski,P,BS,H,Right,P
+2946,Tueballs Wunbatt,BP,,,Right,3B
+2947,Mama Luigi,XB,BS,H,Right,PH
+2948,Grunt Manly,TT,,,Left,3B
+2949,Twatt Barton,BP,,,Right,1B
+2950,Anthony Esposito III,BC,,,Right,RF
+2951,Brandon Rice III,BN,,,Left,SS
+2953,Ratryox,BC,,,Right,2B
+2954,Jimbo Wellington III,P,BS,S,Right,P
+2957,Winston Pepperwood,TT,,,Left,RF
+2959,Kries Von Kriestalhauser,BN,,,Right,CF
+2960,Penguino,WC,EG,H,Left,PH
+2962,Carlos Narvaez Jr.,S,,,Left,CF
+2963,Vartan Ichabod Cassidy,BP,,,Right,C
+2964,Gnome Chomsky,SM,,,Right,CF
+2965,Randall Peppers,TT,,,Left,3B
+2969,Crystal Claire,S,,,Right,2B
+2970,John Baseball,WC,,,Right,SS
+2973,Champ Kind,SF,,,Left,3B
+2975,Skyy Moore,BP,,,Right,SS
+2976,Junior Antonius,BC,,,Right,RF
+2978,Corva Johnson,XB,,,Right,SS
+2981,Maverick Madera,XB,,,Left,CF
+2983,Liru Wolf,BN,,,Right,3B
+2987,Kyogo Jota,S,,,Left,1B
+2988,Rip Dingers,XB,,,Left,RF
+2989,Serengeti Fingers,P,WC,S,Right,P
+2990,Finnegan Craigellachie,1B,,,Right,SS
+2991,Tanzig Nordic,P,FP,S,Right,P
+2992,Butch Sterling,EN,,,Right,CF
+2994,Gavrilo Principle,P,BS,H,Right,P
+2996,Chico Pappas,XB,,,Left,LF
+2997,Ichiro Rose,BC,,,Right,LF
+2998,Makoto Date,P,WC,H,Left,P
+2999,Rex McStrange,BP,,,Left,C
+3000,Cornbread House,MH,,,Left,1B
+3002,Shag McBenny,BC,,,Right,3B
+3003,Tacitus Kilgore,EN,,,Left,LF
+3004,Baberaham Lincoln,P,NH,S,Right,P
+3006,Not Gaca,WC,,,Left,3B
+3007,Carmelo Anthony,BP,,,Right,SS
+3009,CJ,WC,,,Left,3B
+3011,Marlboro Jesus,WC,,,Right,RF
+3012,Erling De La Cruz,BC,,,Right,SS
+3013,Total Dial,BC,,,Left,RF
+3016,Copernicus Hel,P,BS,H,Right,P
+3018,Fin 'Shark' Maddox,WC,,,Right,1B
+3021,Jason Sensation,BC,,,Right,CF
+3023,Duke Houston,BP,,,Right,C
+3025,Matty Jay,P,BB,H,Right,P
+3026,John Applebees,XB,,,Left,LF
+3028,Dan Candoit,P,WC,S,Right,P
+3029,Dan Von DOOM,P,WC,S,Right,P
+3030,Cared Jarrabis,WC,,,Left,SS
+3031,Steve Holt!,BN,,,Right,3B
+3032,Sid Hugo V,WC,,,Left,SS
+3034,Beans Returns,XB,,,Left,C
+3035,Andre Pope,P,TT,H,Right,P
+3037,Matt Pudds,S,,,Left,CF
+3038,Stealing Seconds,S,,,Left,3B
+3039,Speed Shark,WC,,,Right,RF
+3040,Cole Slaw,BP,,,Left,CF
+3041,Raymond Philippe,P,NT,S,Left,P
+3042,Archie Henderson,BC,,,Right,RF
+3044,Cat ToeBeans,P,WC,S,Left,P
+3045,Keith Bourgignon,XB,,,Right,2B
+3046,Norm Niner,XB,,,Right,SS
+3047,Greg Keller,P,WC,S,Right,P
+3048,Cliff Griffin,WC,,,Right,2B
+3051,Jed I. Knight,S,,,Right,CF
+3052,Arxy Winkler,BP,,,Right,SS
+3056,TheGreatBambi,XB,,,Right,3B
+3059,Lou Coler,P,TT,H,Right,P
+3060,Dark Brother,BC,,,Left,3B
+3061,Slick Grifter,SM,,,Right,3B
+3063,Albino Albono,HK,,,Right,1B
+3066,Chief Cheeseball,BC,,,Right,2B
+3068,Osha Wott,BC,,,Right,LF
+3072,Uncle Crush,P,WC,S,Right,P
+3074,Vern Solomon,BP,,,Left,SS
+3075,Jason Damiani,P,TT,B,Left,P
+3078,Cracker McJack,P,WC,S,Left,P
+3079,LeCheesestick Turtle,TT,,,Right,RF
+3081,Ray 'Cole Train' Cole,SF,,,Left,RF
+3082,Thick Mints,P,BF,S,Left,P
+3085,PickYrSpot n'Swing,S,,,Right,CF
+3086,Pepe Silvia,P,WC,S,Left,P
+3087,Wheezy Wiggleborn,S,,,Right,SS
+3088,Brad Hatley,XB,,,Left,C
+3092,Shmitty Von Flabbergasted,XB,,,Right,2B
+3093,Archie 'Clumsy' Sybil,BC,,,Right,2B
+3094,Lou Zrectum,WC,,,Right,RF
+3096,Dingerz McLongball,MH,,,Right,RF
+3097,Bubson Dugnutt,BN,,,Right,2B
+3099,Dirk Nurple,BC,POS,,Right,3B
+3101,Cash Thrower,BP,,,Right,1B
+3102,Marquis de Leek,WC,,,Left,SS
+3103,Psykokwak,S,,,Right,LF
+3104,Otis Stubbs,WC,,,Right,2B
+3105,Jacob Thomas,WC,,,Right,RF
+3106,Tomothy Toledo,SM,,,Left,3B
+3107,Elijah Walker,S,,,Left,SS
+3108,Cormac Karona,TT,,,Right,CF
+3110,Katelyn 'River' Hoshino,HK,,,Left,2B
+3111,Deacon Bowles,WC,,,Right,C
+3112,Toots 'Fat Belly' Jones,BP,,,Right,LF
+3115,Tom E. Jahns,P,WC,B,Right,P
+3117,Benny Barslinger,XB,,,Left,SS
+3118,Domino Calzone,XB,,,Right,2B
+3119,Daniel Harrison,P,EG,S,Left,P
+3121,3PieceMcNuggets,BC,,,Right,1B
+3124,Bucky Sabre,WC,,,Right,2B
+3126,Sleve McDichael,BC,,,Left,2B
+3127,Tater Tots,XB,,,Right,RF
+3128,Ellis Nash,SM,,,Right,SS
+3129,TheAverageUnit,P,EN,S,Right,P
+3132,Richard Nixon,WC,,,Right,1B
+3134,Ty Taenus,BC,,,Right,LF
+3135,Brody Page,HK,,,Right,1B
+3137,Philip Berkenshire,EN,,,Right,SS
+3138,Matty Eight,XB,,,Left,C
+3139,Juan Manuel Navarrete,WC,,,Right,SS
+3140,Scooter Buskie,BP,,,Right,3B
+3141,Slammin Sammy Sofa,BP,,,Right,2B
+3142,Ken the Kid,XB,,,Left,1B
+3143,Ferdinand Fritzwilliam,WC,,,Right,CF
+3144,Flame-Test Fleming,BC,,,Right,C
+3148,Jarek Park,BC,,,Right,CF
+3151,Antonio Bubonetti,XB,,,Right,C
+3154,Sisyphus McGinnys,BC,,,Left,2B
+3155,Sam Stayman,WC,,,Right,SS
+3156,Vernon St. Backstop,WC,,,Right,C
+3157,Myriad Profiteroles,P,TT,H,Right,P
+3158,Bucky Gorgonzola,P,NH,H,Left,P
+3159,Lamar Scrotum,TT,,,Right,2B
+3160,Natasha Kanyon,XB,,,Right,2B
+3161,Boby Chadwick,P,NH,S,Right,P
+3163,Salami,TT,,,Left,C
+3164,Desiree Path,P,BS,B,Left,P
+3166,Martin Van Nostrand,SM,,,Left,2B
+3167,Kordz Sonata,P,TT,H,Left,P
+3168,Ethan Stooks,SM,,,Left,2B
+3169,Danté Martín Vega,MH,,,Left,1B
+3172,Ahab Ceeley,XB,,,Left,CF
+3174,Snape Tooth,P,EG,H,Left,P
+3175,Gellybelly,P,NH,H,Left,P
+3176,Frankie Tommy,S,,,Right,1B
+3180,Sir Walks-A-Littlw,WC,,,Left,SS
+3181,Jingle Bohnson,SF,,,Left,RF
+3182,Glep Glop Griestalhauser,P,BS,B,Right,P
+3186,Roger Waters,XB,,,Left,2B
+3188,Liquidator,P,NH,H,Right,P
+3189,Alic Alphaball,P,TT,H,Right,P
+3190,Loafus Cramwell,1B,,,Right,C
+3191,Scott Sterling,EN,,,Right,3B
+3192,Oozora Subaru,P,TT,S,Right,P
+3193,Secret Wolfe,1B,,,Right,CF
