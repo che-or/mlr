@@ -319,7 +319,7 @@ function filterCareer(data, stat, isHitting, isCounting, selTeam, selType, minAt
 
 function filterSeasonRows(data, displaySeason, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames) {
     let rows = data.filter(r => r[stat] !== undefined && r[stat] !== null
-        && (selTeam ? r.Team === selTeam : !r.is_sub_row)
+        && (selTeam ? r.Franchise === selTeam : !r.is_sub_row)
         && r['Display Season']?.startsWith('S'));
     if (displaySeason) rows = rows.filter(r => r['Display Season'] === displaySeason);
     if (selType) {
