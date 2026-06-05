@@ -1,0 +1,869 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Jose Can-Fake-O,2905,789,Bartholomew McSlapHappy,2871,637,BB,152,T1,0,0,0,0,,,0,0,1,1,1,HVD,TEN,BB,BB,,,,,,1
+Jose Can-Fake-O,2905,157,Bartholomew McSlapHappy,2871,789,CS,368,T1,0,1,0,0,,,0,0,1,1,1,HVD,TEN,CS 2B,CS 2B,,,,,,4
+John McDonald Jr.,2853,157,Bartholomew McSlapHappy,2871,999,BB,158,T1,1,0,0,0,,,0,0,1,1,1,HVD,TEN,BB,BB,,,,,,1
+John McDonald Jr.,2853,420,Bartholomew McSlapHappy,2871,225,SB,195,T1,1,1,0,0,,,0,0,1,1,1,HVD,TEN,Steal 2B,Steal 2B,,,,,,4
+Sloppy Dock,215,448,Bartholomew McSlapHappy,2871,673,FO,225,T1,1,2,0,0,,,0,0,1,1,1,HVD,TEN,FO,FO,,,,,,1
+Randy Mann,2922,798,Bartholomew McSlapHappy,2871,372,LGO,426,T1,2,2,0,0,,,0,0,1,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Just A. Guy,2888,1000,C. T. Bailiff,2877,232,FO,232,B1,0,0,0,0,,,0,0,2,1,1,TEN,HVD,FO,FO,,,,,,1
+Goaty McGoatFace,2878,519,C. T. Bailiff,2877,10,LGO,491,B1,1,0,0,0,,,0,0,2,1,1,TEN,HVD,LGO,LGO,,,,,,1
+Connor McDavid,2881,600,C. T. Bailiff,2877,686,2B,86,B1,2,0,0,0,,,0,0,2,1,1,TEN,HVD,2B,2B,,,,,,1
+"One Beer, Please",2850,239,C. T. Bailiff,2877,673,RGO,434,B1,2,2,0,0,,,0,0,2,1,1,TEN,HVD,RGO,RGO,,,,,,1
+Rex Renfield,2935,360,Bartholomew McSlapHappy,2871,831,LGO,471,T2,0,0,0,0,,,0,0,3,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Jake Lazer,2884,99,Bartholomew McSlapHappy,2871,536,LGO,437,T2,1,0,0,0,,,0,0,3,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Axkoa Griffin,2848,283,Bartholomew McSlapHappy,2871,72,FO,211,T2,2,0,0,0,,,0,0,3,1,1,HVD,TEN,FO,FO,,,,,,1
+Gooch Jones,2896,323,C. T. Bailiff,2877,13,PO,310,B2,0,0,0,0,,,0,0,4,1,1,TEN,HVD,PO,PO,,,,,,1
+Scoot Heller,2913,473,C. T. Bailiff,2877,780,PO,307,B2,1,0,0,0,,,0,0,4,1,1,TEN,HVD,PO,PO,,,,,,1
+Peanuts Lee,2923,572,C. T. Bailiff,2877,555,3B,17,B2,2,0,0,0,,,0,0,4,1,1,TEN,HVD,3B,3B,,,,,,1
+Warren Peace,2843,123,C. T. Bailiff,2877,964,BB,159,B2,2,3,0,0,,,0,0,4,1,1,TEN,HVD,BB,BB,,,,,,1
+Johnmaine Chupri,2849,209,C. T. Bailiff,2877,651,LGO,442,B2,2,5,0,0,,,0,0,4,1,1,TEN,HVD,LGO,LGO,,,,,,1
+Mr. Beevan,616,838,Bartholomew McSlapHappy,2871,283,LGO,445,T3,0,0,0,0,,,0,0,5,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Dayman Nightman,2833,521,Bartholomew McSlapHappy,2871,28,LGO,493,T3,1,0,0,0,,,0,0,5,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Jose Can-Fake-O,2905,521,Bartholomew McSlapHappy,2871,247,K,274,T3,2,0,0,0,,,0,0,5,1,1,HVD,TEN,K,K,,,,,,1
+Just A. Guy,2888,540,Ozuna FromTheBraves,2828,815,FO,275,B3,0,0,0,0,,,0,0,6,1,1,TEN,HVD,FO,FO,,,,,,1
+Goaty McGoatFace,2878,166,Ozuna FromTheBraves,2828,540,K,374,B3,1,0,0,0,,,0,0,6,1,1,TEN,HVD,K,K,,,,,,1
+Connor McDavid,2881,222,Ozuna FromTheBraves,2828,45,FO,177,B3,2,0,0,0,,,0,0,6,1,1,TEN,HVD,FO,FO,,,,,,1
+John McDonald Jr.,2853,952,Bartholomew McSlapHappy,2871,134,FO,182,T4,0,0,0,0,,,0,0,7,1,1,HVD,TEN,FO,FO,,,,,,1
+Sloppy Dock,215,797,Bartholomew McSlapHappy,2871,927,BB,130,T4,1,0,0,0,,,0,1,7,1,1,HVD,TEN,BB,BB,,,,,,1
+Randy Mann,2922,420,Bartholomew McSlapHappy,2871,332,1B,88,T4,1,1,0,0,,,0,0,7,1,1,HVD,TEN,1B,1B,,,,,,1
+Rex Renfield,2935,840,Bartholomew McSlapHappy,2871,877,2B,37,T4,1,4,0,0,,,1,0,7,1,1,HVD,TEN,2B,2B,,,,,,1
+Jake Lazer,2884,199,Bartholomew McSlapHappy,2871,877,RGO,322,T4,1,6,0,1,,,0,0,7,1,1,HVD,TEN,RGO,RGO,,,,,,2
+Axkoa Griffin,2848,469,Bartholomew McSlapHappy,2871,123,RGO,346,T4,2,6,0,1,,,0,0,7,1,1,HVD,TEN,RGO,RGO,,,,,,1
+"One Beer, Please",2850,777,Ozuna FromTheBraves,2828,123,K,346,B4,0,0,0,1,,,0,0,8,1,1,TEN,HVD,K,K,,,,,,1
+Gooch Jones,2896,555,Ozuna FromTheBraves,2828,225,K,330,B4,1,0,0,1,,,0,0,8,1,1,TEN,HVD,K,K,,,,,,1
+Scoot Heller,2913,336,Ozuna FromTheBraves,2828,769,RGO,433,B4,2,0,0,1,,,0,0,8,1,1,TEN,HVD,RGO,RGO,,,,,,1
+Mr. Beevan,616,704,Tequila Sunrise,249,168,LGO,464,T5,0,0,0,1,,,0,0,9,1,1,HVD,TEN,LGO,LGO,,,,,,1
+Dayman Nightman,2833,789,Tequila Sunrise,249,213,RGO,424,T5,1,0,0,1,,,0,0,9,1,1,HVD,TEN,RGO,RGO,,,,,,1
+Jose Can-Fake-O,2905,365,Tequila Sunrise,249,37,PO,328,T5,2,0,0,1,,,0,0,9,1,1,HVD,TEN,PO,PO,,,,,,1
+Peanuts Lee,2923,933,"Robert ""Bob"" Hideyoshi",2944,789,BB,144,B5,0,0,0,1,,,0,0,10,1,1,TEN,HVD,BB,BB,,,,,,1
+Warren Peace,2843,74,"Robert ""Bob"" Hideyoshi",2944,890,FO,184,B5,0,1,0,1,,,0,0,10,1,1,TEN,HVD,FO,FO,,,,,,1
+Peanuts Lee,2923,284,"Robert ""Bob"" Hideyoshi",2944,382,SB,98,B5,1,1,0,1,,,0,0,10,1,1,TEN,HVD,Steal 2B,Steal 2B,,,,,,4
+Johnmaine Chupri,2849,310,"Robert ""Bob"" Hideyoshi",2944,921,K,389,B5,1,2,0,1,,,0,0,10,1,1,TEN,HVD,K,K,,,,,,1
+Just A. Guy,2888,1000,"Robert ""Bob"" Hideyoshi",2944,410,PO,410,B5,2,2,0,1,,,0,0,10,1,1,TEN,HVD,PO,PO,,,,,,1
+John McDonald Jr.,2853,153,Tequila Sunrise,249,392,FO,239,T6,0,0,0,1,,,0,0,11,1,1,HVD,TEN,FO,FO,,,,,,1
+Sloppy Dock,215,206,Tequila Sunrise,249,595,RGO,389,T6,1,0,0,1,,,0,0,11,1,1,HVD,TEN,RGO,RGO,,,,,,1
+Randy Mann,2922,420,Tequila Sunrise,249,123,K,297,T6,2,0,0,1,,,0,0,11,1,1,HVD,TEN,K,K,,,,,,1
+Goaty McGoatFace,2878,878,Bobert Hideyoshi,2944,410,RGO,468,B6,0,0,0,1,,,0,0,12,1,1,TEN,HVD,RGO,RGO,,,,,,1
+Connor McDavid,2881,172,Bobert Hideyoshi,2944,671,LGO,499,B6,1,0,0,1,,,0,0,12,1,1,TEN,HVD,LGO,LGO,,,,,,1
+fridayphd,2826,35,Bobert Hideyoshi,2944,35,HR,34,B6,2,0,0,1,,,1,1,12,1,1,TEN,HVD,HR,HR,,,,,,1
+Gooch Jones,2896,644,Bobert Hideyoshi,2944,913,K,269,B6,2,0,1,1,,,0,0,12,1,1,TEN,HVD,K,K,,,,,,1
+Skarch Mcgooter,2914,656,Hans Zahn,2915,888,FO,232,T1,0,0,0,0,,,0,0,13,2,1,UCC,TOL,FO,FO,,,,,,1
+River James,2857,537,Hans Zahn,2915,151,PO,386,T1,1,0,0,0,,,0,0,13,2,1,UCC,TOL,PO,PO,,,,,,1
+DeAaron Taylor,2824,590,Hans Zahn,2915,401,K,189,T1,2,0,0,0,,,0,0,13,2,1,UCC,TOL,K,K,,,,,,1
+Sean Carrcrash,1709,707,Jimothy Jhompson,2887,613,1B,94,B1,0,0,0,0,,,0,1,14,2,1,TOL,UCC,1B,1B,,,,,,1
+Boomer Fisher,2933,834,Jimothy Jhompson,2887,902,1B,68,B1,0,1,0,0,,,0,1,14,2,1,TOL,UCC,1B,1B,,,,,,1
+Stupido Einsteiny,2866,389,Jimothy Jhompson,2887,27,K,362,B1,0,4,0,0,,,0,0,14,2,1,TOL,UCC,K,K,,,,,,1
+Corbin Christmas Carol,2827,440,Jimothy Jhompson,2887,415,HR,25,B1,1,4,0,0,,,3,1,14,2,1,TOL,UCC,HR,HR,,,,,,1
+Ace Ventura,2874,277,Jimothy Jhompson,2887,75,FO,202,B1,1,0,3,0,,,0,0,14,2,1,TOL,UCC,FO,FO,,,,,,1
+16-bit Griffey,2858,728,Jimothy Jhompson,2887,299,RGO,429,B1,2,0,3,0,,,0,0,14,2,1,TOL,UCC,RGO,RGO,,,,,,1
+Ringo Swingo,2838,620,Hans Zahn,2915,20,PO,400,T2,0,0,3,0,,,0,0,15,2,1,UCC,TOL,PO,PO,,,,,,1
+TWs Frozen Head,2868,901,Hans Zahn,2915,231,PO,330,T2,1,0,3,0,,,0,0,15,2,1,UCC,TOL,PO,PO,,,,,,1
+Choc Banana,2897,713,Hans Zahn,2915,501,FO,212,T2,2,0,3,0,,,0,0,15,2,1,UCC,TOL,FO,FO,,,,,,1
+Mustard Fatherson,2910,570,Jimothy Jhompson,2887,508,1B,62,B2,0,0,3,0,,,0,1,16,2,1,TOL,UCC,1B,1B,,,,,,1
+Johnny Appleseed,2929,737,Jimothy Jhompson,2887,13,K,276,B2,0,1,3,0,,,0,0,16,2,1,TOL,UCC,K,K,,,,,,1
+George P. Burdell,2903,1,Jimothy Jhompson,2887,89,1B,88,B2,1,1,3,0,,,0,1,16,2,1,TOL,UCC,1B,1B,,,,,,1
+Sean Carrcrash,1709,333,Jimothy Jhompson,2887,701,PO,368,B2,1,4,3,0,,,0,0,16,2,1,TOL,UCC,PO,PO,,,,,,2
+Boomer Fisher,2933,72,Jimothy Jhompson,2887,2,1B,70,B2,2,4,3,0,,,0,1,16,2,1,TOL,UCC,1B,1B,,,,,,1
+Stupido Einsteiny,2866,324,Jimothy Jhompson,2887,280,2B,44,B2,2,7,3,0,,,3,0,16,2,1,TOL,UCC,2B,2B,,,,,,1
+Corbin Christmas Carol,2827,512,Jimothy Jhompson,2887,840,K,328,B2,2,2,6,0,,,0,0,16,2,1,TOL,UCC,K,K,,,,,,1
+Seth Kablamo,2932,731,Hans Zahn,2915,514,K,217,T3,0,0,6,0,,,0,0,17,2,1,UCC,TOL,K,K,,,,,,1
+Johnny Baseknocks,2883,739,Hans Zahn,2915,501,K,238,T3,1,0,6,0,,,0,0,17,2,1,UCC,TOL,K,K,,,,,,1
+Javi D. Modelo,2898,25,Hans Zahn,2915,122,1B,97,T3,2,0,6,0,,,0,0,17,2,1,UCC,TOL,1B,1B,,,,,,1
+Skarch Mcgooter,2914,611,Hans Zahn,2915,211,PO,400,T3,2,1,6,0,,,0,0,17,2,1,UCC,TOL,PO,PO,,,,,,1
+Ace Ventura,2874,619,Jimothy Jhompson,2887,933,K,314,B3,0,0,6,0,,,0,0,18,2,1,TOL,UCC,K,K,,,,,,1
+16-bit Griffey,2858,153,Jimothy Jhompson,2887,69,1B,84,B3,1,0,6,0,,,0,0,18,2,1,TOL,UCC,1B,1B,,,,,,1
+Mustard Fatherson,2910,499,Jimothy Jhompson,2887,747,FO,248,B3,1,1,6,0,,,0,0,18,2,1,TOL,UCC,FO,FO,,,,,,1
+Johnny Appleseed,2929,412,Jimothy Jhompson,2887,99,K,313,B3,2,1,6,0,,,0,0,18,2,1,TOL,UCC,K,K,,,,,,1
+River James,2857,393,Triscuit McBiskit,2855,388,HR,5,T4,0,0,6,0,,,1,1,19,2,1,UCC,TOL,HR,HR,,,,,,1
+DeAaron Taylor,2824,844,Triscuit McBiskit,2855,991,BB,147,T4,0,0,6,1,,,0,0,19,2,1,UCC,TOL,BB,BB,,,,,,1
+Ringo Swingo,2838,12,Triscuit McBiskit,2855,640,DP,372,T4,0,1,6,1,,,0,0,19,2,1,UCC,TOL,RGO,RGO,,,,,,1
+TWs Frozen Head,2868,420,Triscuit McBiskit,2855,670,FO,250,T4,2,0,6,1,,,0,0,19,2,1,UCC,TOL,FO,FO,,,,,,1
+George P. Burdell,2903,500,Guillermo Griffey III,2829,1,LGO,499,B4,0,0,6,1,,,0,0,20,2,1,TOL,UCC,LGO,LGO,,,,,,1
+Sean Carrcrash,1709,888,Guillermo Griffey III,2829,2,BB,114,B4,1,0,6,1,,,0,0,20,2,1,TOL,UCC,BB,BB,,,,,,1
+Sean Carrcrash,1709,250,Guillermo Griffey III,2829,303,SB,53,B4,1,1,6,1,,,0,0,20,2,1,TOL,UCC,Steal 2B,Steal 2B,,,,,,4
+Boomer Fisher,2933,831,Guillermo Griffey III,2829,104,K,273,B4,1,2,6,1,,,0,0,20,2,1,TOL,UCC,K,K,,,,,,1
+Stupido Einsteiny,2866,555,Guillermo Griffey III,2829,999,RGO,444,B4,2,2,6,1,,,0,0,20,2,1,TOL,UCC,RGO,RGO,,,,,,1
+Choc Banana,2897,256,Triscuit McBiskit,2855,212,2B,44,T5,0,0,6,1,,,0,1,21,2,1,UCC,TOL,2B,2B,,,,,,1
+Seth Kablamo,2932,117,Triscuit McBiskit,2855,923,FO,194,T5,0,2,6,1,,,0,0,21,2,1,UCC,TOL,FO,FO,,,,,,1
+Johnny Baseknocks,2883,236,Triscuit McBiskit,2855,806,RGO,430,T5,1,2,6,1,,,0,0,21,2,1,UCC,TOL,RGO,RGO,,,,,,1
+Javi D. Modelo,2898,633,Triscuit McBiskit,2855,570,2B,63,T5,2,3,6,1,,,1,0,21,2,1,UCC,TOL,2B,2B,,,,,,1
+Skarch Mcgooter,2914,307,Triscuit McBiskit,2855,822,LGO,485,T5,2,2,6,2,,,0,0,21,2,1,UCC,TOL,LGO,LGO,,,,,,1
+Corbin Christmas Carol,2827,69,Guillermo Griffey III,2829,595,LGO,474,B5,0,0,6,2,,,0,0,22,2,1,TOL,UCC,LGO,LGO,,,,,,1
+Ace Ventura,2874,819,Guillermo Griffey III,2829,217,K,398,B5,1,0,6,2,,,0,0,22,2,1,TOL,UCC,K,K,,,,,,1
+16-bit Griffey,2858,995,Guillermo Griffey III,2829,701,K,294,B5,2,0,6,2,,,0,0,22,2,1,TOL,UCC,K,K,,,,,,1
+River James,2857,514,Triscuit McBiskit,2855,781,K,267,T6,0,0,6,2,,,0,0,23,2,1,UCC,TOL,K,K,,,,,,1
+DeAaron Taylor,2824,201,Triscuit McBiskit,2855,147,2B,54,T6,1,0,6,2,,,0,0,23,2,1,UCC,TOL,2B,2B,,,,,,1
+Ringo Swingo,2838,420,Triscuit McBiskit,2855,652,FO,232,T6,1,2,6,2,,,0,0,23,2,1,UCC,TOL,FO,FO,,,,,,1
+TWs Frozen Head,2868,101,Triscuit McBiskit,2855,650,RGO,451,T6,2,2,6,2,,,0,0,23,2,1,UCC,TOL,RGO,RGO,,,,,,1
+Willie Gardner,2856,486,Rordan Jomano,2830,416,2B,70,T1,0,0,0,0,,,0,0,24,3,1,UGA,WSU,2B,2B,,,,,,1
+Mack Quackerson,2834,811,Rordan Jomano,2830,84,K,273,T1,0,2,0,0,,,0,0,24,3,1,UGA,WSU,K,K,,,,,,1
+Jamal Jackson,2815,828,Rordan Jomano,2830,43,FO,215,T1,1,2,0,0,,,0,0,24,3,1,UGA,WSU,FO,FO,,,,,,1
+Scoreson McCorkle,2864,378,Rordan Jomano,2830,140,FO,238,T1,2,2,0,0,,,0,0,24,3,1,UGA,WSU,FO,FO,,,,,,1
+Salsa Steve,2835,22,Tee Bird,2863,274,K,252,B1,0,0,0,0,,,0,0,25,3,1,WSU,UGA,K,K,,,,,,1
+Casper Greenwell,2825,187,Tee Bird,2863,835,PO,352,B1,1,0,0,0,,,0,0,25,3,1,WSU,UGA,PO,PO,,,,,,1
+Zeke Euselachii,2930,517,Tee Bird,2863,341,FO,176,B1,2,0,0,0,,,0,0,25,3,1,WSU,UGA,FO,FO,,,,,,1
+Hickey Renderson,2879,794,Rordan Jomano,2830,860,1B,66,T2,0,0,0,0,,,0,0,26,3,1,UGA,WSU,1B,1B,,,,,,1
+Lincoln Pickett,2870,434,Rordan Jomano,2830,144,K,290,T2,0,1,0,0,,,0,0,26,3,1,UGA,WSU,K,K,,,,,,1
+Dante Dagostino,2846,112,Rordan Jomano,2830,416,K,304,T2,1,1,0,0,,,0,0,26,3,1,UGA,WSU,K,K,,,,,,1
+Verde Jack,2854,58,Rordan Jomano,2830,437,PO,379,T2,2,1,0,0,,,0,0,26,3,1,UGA,WSU,PO,PO,,,,,,1
+Ryan McBryan,2880,586,Tee Bird,2863,372,K,214,B2,0,0,0,0,,,0,0,27,3,1,WSU,UGA,K,K,,,,,,1
+Strawberry Jones,2916,678,Tee Bird,2863,629,2B,49,B2,1,0,0,0,,,0,1,27,3,1,WSU,UGA,2B,2B,,,,,,1
+T-Rav,2908,314,Tee Bird,2863,673,PO,359,B2,1,2,0,0,,,0,0,27,3,1,WSU,UGA,PO,PO,,,,,,1
+Kyle Lew,2851,273,Tee Bird,2863,315,2B,42,B2,2,2,0,0,,,1,0,27,3,1,WSU,UGA,2B,2B,,,,,,1
+John-Carlos Tanten,2865,305,Tee Bird,2863,889,PO,416,B2,2,2,1,0,,,0,0,27,3,1,WSU,UGA,PO,PO,,,,,,1
+Kai Sedillo,2917,432,Rordan Jomano,2830,290,BB,142,T3,0,0,1,0,,,0,0,28,3,1,UGA,WSU,BB,BB,,,,,,1
+Willie Gardner,2856,932,Rordan Jomano,2830,120,FO,188,T3,0,1,1,0,,,0,0,28,3,1,UGA,WSU,FO,FO,,,,,,1
+Mack Quackerson,2834,707,Rordan Jomano,2830,587,1B,120,T3,1,1,1,0,,,0,0,28,3,1,UGA,WSU,1B,1B,,,,,,1
+Jamal Jackson,2815,600,Rordan Jomano,2830,911,K,311,T3,1,4,1,0,,,0,0,28,3,1,UGA,WSU,K,K,,,,,,1
+Scoreson McCorkle,2864,248,Rordan Jomano,2830,790,RGO,458,T3,2,4,1,0,,,0,0,28,3,1,UGA,WSU,RGO,RGO,,,,,,1
+Dusty Jabroni,2852,69,Bart Bishop,2900,288,FO,219,B3,0,0,1,0,,,0,0,29,3,1,WSU,UGA,FO,FO,,,,,,1
+Salsa Steve,2835,373,Bart Bishop,2900,336,2B,37,B3,1,0,1,0,,,0,1,29,3,1,WSU,UGA,2B,2B,,,,,,1
+Casper Greenwell,2825,550,Bart Bishop,2900,501,2B,49,B3,1,2,1,0,,,1,0,29,3,1,WSU,UGA,2B,2B,,,,,,1
+Zeke Euselachii,2930,759,Bart Bishop,2900,164,PO,405,B3,1,2,2,0,,,0,0,29,3,1,WSU,UGA,PO,PO,,,,,,1
+Ryan McBryan,2880,174,Bart Bishop,2900,879,K,295,B3,2,2,2,0,,,0,0,29,3,1,WSU,UGA,K,K,,,,,,1
+Hickey Renderson,2879,324,Rordan Jomano,2830,812,LGO,488,T4,0,0,2,0,,,0,0,30,3,1,UGA,WSU,LGO,LGO,,,,,,1
+Lincoln Pickett,2870,188,Rordan Jomano,2830,630,LGO,442,T4,1,0,2,0,,,0,0,30,3,1,UGA,WSU,LGO,LGO,,,,,,1
+Dante Dagostino,2846,718,Rordan Jomano,2830,112,K,394,T4,2,0,2,0,,,0,0,30,3,1,UGA,WSU,K,K,,,,,,1
+Strawberry Jones,2916,60,Bart Bishop,2900,300,FO,240,B4,0,0,2,0,,,0,0,31,3,1,WSU,UGA,FO,FO,,,,,,1
+T-Rav,2908,657,Bart Bishop,2900,999,K,342,B4,1,0,2,0,,,0,0,31,3,1,WSU,UGA,K,K,,,,,,1
+Kyle Lew,2851,450,Bart Bishop,2900,273,BB,177,B4,2,0,2,0,,,0,0,31,3,1,WSU,UGA,BB,BB,,,,,,1
+John-Carlos Tanten,2865,99,Bart Bishop,2900,273,FO,174,B4,2,1,2,0,,,0,0,31,3,1,WSU,UGA,FO,FO,,,,,,1
+Verde Jack,2854,557,Chester Einhorn,2390,331,FO,226,T5,0,0,2,0,,,0,0,32,3,1,UGA,WSU,FO,FO,,,,,,1
+Kai Sedillo,2917,32,Chester Einhorn,2390,757,K,275,T5,1,0,2,0,,,0,0,32,3,1,UGA,WSU,K,K,,,,,,1
+Willie Gardner,2856,632,Chester Einhorn,2390,814,FO,182,T5,2,0,2,0,,,0,0,32,3,1,UGA,WSU,FO,FO,,,,,,1
+Dusty Jabroni,2852,417,Leopold Pollersbeck,2875,840,PO,423,B5,0,0,2,0,,,0,0,33,3,1,WSU,UGA,PO,PO,,,,,,1
+Salsa Steve,2835,404,Leopold Pollersbeck,2875,1000,PO,404,B5,1,0,2,0,,,0,0,33,3,1,WSU,UGA,PO,PO,,,,,,1
+Casper Greenwell,2825,612,Leopold Pollersbeck,2875,936,PO,324,B5,2,0,2,0,,,0,0,33,3,1,WSU,UGA,PO,PO,,,,,,1
+Mack Quackerson,2834,92,Chester Einhorn,2390,213,1B,121,T6,0,0,2,0,,,0,0,34,3,1,UGA,WSU,1B,1B,,,,,,1
+Jamal Jackson,2815,575,Chester Einhorn,2390,447,BB,128,T6,0,1,2,0,,,0,0,34,3,1,UGA,WSU,BB,BB,,,,,,1
+Scoreson McCorkle,2864,731,Chester Einhorn,2390,112,PO,381,T6,0,4,2,0,,,0,0,34,3,1,UGA,WSU,PO,PO,,,,,,1
+Hickey Renderson,2879,793,Chester Einhorn,2390,515,K,278,T6,1,4,2,0,,,0,0,34,3,1,UGA,WSU,K,K,,,,,,1
+Lincoln Pickett,2870,787,Chester Einhorn,2390,599,FO,188,T6,2,4,2,0,,,0,0,34,3,1,UGA,WSU,FO,FO,,,,,,1
+Hal Pipken,2936,23,Duster Velvet,2921,871,BB,152,T1,0,0,0,0,,,0,0,35,4,2,TEN,UCC,BB,BB,,,,,,1
+Hal Pipken,2936,144,Duster Velvet,2921,319,SB,175,T1,0,1,0,0,,,0,0,35,4,2,TEN,UCC,Steal 2B,Steal 2B,,,,,,4
+fridayphd,2826,87,Duster Velvet,2921,590,LGO,497,T1,0,2,0,0,,,0,0,35,4,2,TEN,UCC,LGO,LGO,,,,,,1
+Gooch Jones,2896,944,Duster Velvet,2921,525,RGO,419,T1,1,2,0,0,,,0,0,35,4,2,TEN,UCC,RGO,RGO,,,,,,1
+"One Beer, Please",2850,325,Duster Velvet,2921,1,K,324,T1,2,3,0,0,,,0,0,35,4,2,TEN,UCC,K,K,,,,,,1
+Tleyber Gorres,2942,666,Soggy Arm,2839,759,1B,93,B1,0,0,0,0,,,0,1,36,4,2,UCC,TEN,1B,1B,,,,,,1
+Tleyber Gorres,2942,342,Soggy Arm,2839,350,SB,8,B1,0,1,0,0,,,0,0,36,4,2,UCC,TEN,Steal 2B,Steal 2B,,,,,,4
+Ashington Swift,2845,505,Soggy Arm,2839,946,LGO,441,B1,0,2,0,0,,,0,0,36,4,2,UCC,TEN,LGO,LGO,,,,,,1
+TWs Frozen Head,2868,162,Soggy Arm,2839,805,K,357,B1,1,2,0,0,,,0,0,36,4,2,UCC,TEN,K,K,,,,,,1
+DeAaron Taylor,2824,915,Soggy Arm,2839,3,1B,88,B1,2,2,0,0,,,1,0,36,4,2,UCC,TEN,1B,1B,,,,,,1
+Nicaragua del Toro,2904,714,Soggy Arm,2839,420,K,294,B1,2,1,1,0,,,0,0,36,4,2,UCC,TEN,K,K,,,,,,1
+Jihmih Tyranus,2873,802,Duster Velvet,2921,81,K,279,T2,0,0,1,0,,,0,0,37,4,2,TEN,UCC,K,K,,,,,,1
+Mo Bonzalez,2943,711,Duster Velvet,2921,319,PO,392,T2,1,0,1,0,,,0,0,37,4,2,TEN,UCC,PO,PO,,,,,,1
+Johnmaine Chupri,2849,696,Duster Velvet,2921,917,FO,221,T2,2,0,1,0,,,0,0,37,4,2,TEN,UCC,FO,FO,,,,,,1
+Baxter Bean,2909,999,Soggy Arm,2839,69,2B,70,B2,0,0,1,0,,,0,1,38,4,2,UCC,TEN,2B,2B,,,,,,1
+Skarch Mcgooter,2914,512,Soggy Arm,2839,301,FO,211,B2,0,2,1,0,,,0,0,38,4,2,UCC,TEN,FO,FO,,,,,,1
+Leland Poindexter,2940,712,Soggy Arm,2839,781,1B,69,B2,1,2,1,0,,,0,1,38,4,2,UCC,TEN,1B,1B,,,,,,1
+Leland Poindexter,2940,876,Soggy Arm,2839,135,SB,259,B2,1,5,1,0,,,0,0,38,4,2,UCC,TEN,Steal 2B,Steal 2B,,,,,,5
+Mama Luigi,2947,205,Soggy Arm,2839,135,1B,70,B2,1,6,1,0,,,1,1,38,4,2,UCC,TEN,1B,1B,,,,,,2
+Mama Luigi,2947,799,Soggy Arm,2839,530,SB,269,B2,1,5,2,0,,,0,0,38,4,2,UCC,TEN,Steal 2B,Steal 2B,,,,,,5
+Tleyber Gorres,2942,323,Soggy Arm,2839,417,1B,94,B2,1,6,2,0,,,1,1,38,4,2,UCC,TEN,1B,1B,,,,,,2
+Tleyber Gorres,2942,841,Soggy Arm,2839,891,SB,50,B2,1,5,3,0,,,0,0,38,4,2,UCC,TEN,Steal 2B,Steal 2B,,,,,,5
+Ashington Swift,2845,69,Soggy Arm,2839,24,2B,45,B2,1,6,3,0,,,2,0,38,4,2,UCC,TEN,2B,2B,,,,,,2
+TWs Frozen Head,2868,242,Tequila Sunrise,249,777,LGO,465,B2,1,2,5,0,,,0,0,38,4,2,UCC,TEN,LGO,LGO,,,,,,1
+DeAaron Taylor,2824,379,Tequila Sunrise,249,35,RGO,344,B2,2,2,5,0,,,0,0,38,4,2,UCC,TEN,RGO,RGO,,,,,,1
+Anthony Esposito III,2950,678,Duster Velvet,2921,732,1B,54,T3,0,0,5,0,,,0,0,39,4,2,TEN,UCC,1B,1B,,,,,,1
+Fidel Cashflow,2836,77,Duster Velvet,2921,891,FO,186,T3,0,1,5,0,,,0,0,39,4,2,TEN,UCC,FO,FO,,,,,,1
+Peanuts Lee,2923,,Duster Velvet,2921,,Auto K,,T3,1,1,5,0,,,0,0,39,4,2,TEN,UCC,Auto K,Auto K,,,,,,9
+fridayphd,2826,427,Duster Velvet,2921,301,BB,126,T3,2,1,5,0,,,0,0,39,4,2,TEN,UCC,BB,BB,,,,,,1
+Gooch Jones,2896,16,Duster Velvet,2921,565,RGO,451,T3,2,4,5,0,,,0,0,39,4,2,TEN,UCC,RGO,RGO,,,,,,1
+Nicaragua del Toro,2904,890,Tequila Sunrise,249,225,PO,335,B3,0,0,5,0,,,0,0,40,4,2,UCC,TEN,PO,PO,,,,,,1
+Baxter Bean,2909,397,Tequila Sunrise,249,891,LGO,494,B3,1,0,5,0,,,0,0,40,4,2,UCC,TEN,LGO,LGO,,,,,,1
+Skarch Mcgooter,2914,378,Tequila Sunrise,249,478,BB,100,B3,2,0,5,0,,,0,0,40,4,2,UCC,TEN,BB,BB,,,,,,1
+Leland Poindexter,2940,437,Tequila Sunrise,249,516,1B,79,B3,2,1,5,0,,,0,0,40,4,2,UCC,TEN,1B,1B,,,,,,1
+Mama Luigi,2947,928,Tequila Sunrise,249,625,PO,303,B3,2,5,5,0,,,0,0,40,4,2,UCC,TEN,PO,PO,,,,,,1
+Just A. Guy,2888,950,Katerina Aston,2952,318,K,368,T4,0,0,5,0,,,0,0,41,4,2,TEN,UCC,K,K,,,,,,1
+Jihmih Tyranus,2873,653,Katerina Aston,2952,375,FO,278,T4,1,0,5,0,,,0,0,41,4,2,TEN,UCC,FO,FO,,,,,,1
+Mo Bonzalez,2943,833,Katerina Aston,2952,223,PO,390,T4,2,0,5,0,,,0,0,41,4,2,TEN,UCC,PO,PO,,,,,,1
+Tleyber Gorres,2942,952,Tequila Sunrise,249,404,LGO,452,B4,0,0,5,0,,,0,0,42,4,2,UCC,TEN,LGO,LGO,,,,,,1
+Ashington Swift,2845,715,Tequila Sunrise,249,894,BB,179,B4,1,0,5,0,,,0,0,42,4,2,UCC,TEN,BB,BB,,,,,,1
+TWs Frozen Head,2868,7,Tequila Sunrise,249,350,K,343,B4,1,1,5,0,,,0,0,42,4,2,UCC,TEN,K,K,,,,,,1
+Fernando Macias,2938,667,Tark Tarkington Jr,2892,217,LGO,450,T1,0,0,0,0,,,0,0,43,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Justin Time,2886,463,Tark Tarkington Jr,2892,899,LGO,436,T1,1,0,0,0,,,0,0,43,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Jorbel Boykins,2847,720,Tark Tarkington Jr,2892,415,PO,305,T1,2,0,0,0,,,0,0,43,5,2,WSU,TOL,PO,PO,,,,,,1
+Kyle Brambley,2212,411,Pablo The Hip Kawasaki,2890,624,FO,213,B1,0,0,0,0,,,0,0,44,5,2,TOL,WSU,FO,FO,,,,,,1
+Mîke Ock,2882,6,Pablo The Hip Kawasaki,2890,893,1B,113,B1,1,0,0,0,,,0,0,44,5,2,TOL,WSU,1B,1B,,,,,,1
+Tony Pizza,2844,333,Pablo The Hip Kawasaki,2890,482,BB,149,B1,1,1,0,0,,,0,0,44,5,2,TOL,WSU,BB,BB,,,,,,1
+Stupido Einsteiny,2866,714,Pablo The Hip Kawasaki,2890,921,FO,207,B1,1,4,0,0,,,0,0,44,5,2,TOL,WSU,FO,FO,,,,,,1
+Primero Ultimo,2889,149,Pablo The Hip Kawasaki,2890,378,K,229,B1,2,4,0,0,,,0,0,44,5,2,TOL,WSU,K,K,,,,,,1
+Moon Malarkey,2842,675,Tark Tarkington Jr,2892,309,RGO,366,T2,0,0,0,0,,,0,0,45,5,2,WSU,TOL,RGO,RGO,,,,,,1
+Casper Greenwell,2825,411,Tark Tarkington Jr,2892,784,RGO,373,T2,1,0,0,0,,,0,0,45,5,2,WSU,TOL,RGO,RGO,,,,,,1
+Charlie Slay,2872,723,Tark Tarkington Jr,2892,134,LGO,411,T2,2,0,0,0,,,0,0,45,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Chad Isotope,2891,575,Pablo The Hip Kawasaki,2890,173,PO,402,B2,0,0,0,0,,,0,0,46,5,2,TOL,WSU,PO,PO,,,,,,1
+Grunt Manly,2948,679,Pablo The Hip Kawasaki,2890,514,FO,165,B2,1,0,0,0,,,0,0,46,5,2,TOL,WSU,FO,FO,,,,,,1
+Ace Ventura,2874,218,Pablo The Hip Kawasaki,2890,971,FO,247,B2,2,0,0,0,,,0,0,46,5,2,TOL,WSU,FO,FO,,,,,,1
+Kyle Lew,2851,698,Tark Tarkington Jr,2892,874,BB,176,T3,0,0,0,0,,,0,0,47,5,2,WSU,TOL,BB,BB,,,,,,1
+Seth Jaws,2901,112,Tark Tarkington Jr,2892,210,1B,98,T3,0,1,0,0,,,0,0,47,5,2,WSU,TOL,1B,1B,,,,,,1
+Salsa Steve,2835,555,Tark Tarkington Jr,2892,10,DP,455,T3,0,4,0,0,,,0,0,47,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Fernando Macias,2938,900,Tark Tarkington Jr,2892,420,LGO,480,T3,2,3,0,0,,,0,0,47,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Johnny Appleseed,2929,291,Pablo The Hip Kawasaki,2890,621,K,330,B3,0,0,0,0,,,0,0,48,5,2,TOL,WSU,K,K,,,,,,1
+Kyle Brambley,2212,241,Pablo The Hip Kawasaki,2890,172,1B,69,B3,1,0,0,0,,,0,0,48,5,2,TOL,WSU,1B,1B,,,,,,1
+Mîke Ock,2882,888,Pablo The Hip Kawasaki,2890,412,DP,476,B3,1,1,0,0,,,0,0,48,5,2,TOL,WSU,LGO,LGO,,,,,,1
+Justin Time,2886,913,Smokey Zygowski,2945,817,1B,96,T4,0,0,0,0,,,0,0,49,5,2,WSU,TOL,1B,1B,,,,,,1
+Jorbel Boykins,2847,120,Smokey Zygowski,2945,830,K,290,T4,0,1,0,0,,,0,0,49,5,2,WSU,TOL,K,K,,,,,,1
+Moon Malarkey,2842,333,Smokey Zygowski,2945,669,K,336,T4,1,1,0,0,,,0,0,49,5,2,WSU,TOL,K,K,,,,,,1
+Casper Greenwell,2825,997,Smokey Zygowski,2945,411,RGO,414,T4,2,1,0,0,,,0,0,49,5,2,WSU,TOL,RGO,RGO,,,,,,1
+Tony Pizza,2844,802,Pablo The Hip Kawasaki,2890,43,FO,241,B4,0,0,0,0,,,0,0,50,5,2,TOL,WSU,FO,FO,,,,,,1
+Stupido Einsteiny,2866,456,Pablo The Hip Kawasaki,2890,732,FO,276,B4,1,0,0,0,,,0,0,50,5,2,TOL,WSU,FO,FO,,,,,,1
+Primero Ultimo,2889,245,Pablo The Hip Kawasaki,2890,842,RGO,403,B4,2,0,0,0,,,0,0,50,5,2,TOL,WSU,RGO,RGO,,,,,,1
+Charlie Slay,2872,815,Smokey Zygowski,2945,348,LGO,467,T5,0,0,0,0,,,0,0,51,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Kyle Lew,2851,670,Smokey Zygowski,2945,504,BB,166,T5,1,0,0,0,,,0,0,51,5,2,WSU,TOL,BB,BB,,,,,,1
+Seth Jaws,2901,971,Smokey Zygowski,2945,452,DP,481,T5,1,1,0,0,,,0,0,51,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Chad Isotope,2891,808,Epto Bismol,2939,428,K,380,B5,0,0,0,0,,,0,0,52,5,2,TOL,WSU,K,K,,,,,,1
+Grunt Manly,2948,103,Epto Bismol,2939,911,FO,192,B5,1,0,0,0,,,0,0,52,5,2,TOL,WSU,FO,FO,,,,,,1
+Ace Ventura,2874,121,Epto Bismol,2939,227,BB,106,B5,2,0,0,0,,,0,0,52,5,2,TOL,WSU,BB,BB,,,,,,1
+Johnny Appleseed,2929,782,Epto Bismol,2939,120,K,338,B5,2,1,0,0,,,0,0,52,5,2,TOL,WSU,K,K,,,,,,1
+Salsa Steve,2835,69,Smokey Zygowski,2945,931,BB,138,T6,0,0,0,0,,,0,0,53,5,2,WSU,TOL,BB,BB,,,,,,1
+Salsa Steve,2835,850,Smokey Zygowski,2945,420,CS,430,T6,0,1,0,0,,,0,0,53,5,2,WSU,TOL,CS 2B,CS 2B,,,,,,4
+Fernando Macias,2938,446,Smokey Zygowski,2945,206,FO,240,T6,1,0,0,0,,,0,0,53,5,2,WSU,TOL,FO,FO,,,,,,1
+Justin Time,2886,707,Smokey Zygowski,2945,198,LGO,491,T6,2,0,0,0,,,0,0,53,5,2,WSU,TOL,LGO,LGO,,,,,,1
+Kyle Brambley,2212,415,Epto Bismol,2939,555,BB,140,B6,0,0,0,0,,,0,1,54,5,2,TOL,WSU,BB,BB,,,,,,1
+Mîke Ock,2882,88,Epto Bismol,2939,972,BB,116,B6,0,1,0,0,,,0,1,54,5,2,TOL,WSU,BB,BB,,,,,,1
+Tony Pizza,2844,786,Epto Bismol,2939,759,HR,27,B6,0,4,0,0,,,3,1,54,5,2,TOL,WSU,HR,HR,,,,,,1
+Jamal Jackson,2815,145,Ozuna FromTheBraves,2828,829,K,316,T1,0,0,0,0,,,0,0,55,6,2,UGA,HVD,K,K,,,,,,1
+Beckham Hudson,2906,843,Ozuna FromTheBraves,2828,911,1B,68,T1,1,0,0,0,,,0,0,55,6,2,UGA,HVD,1B,1B,,,,,,1
+Lincoln Pickett,2870,243,Ozuna FromTheBraves,2828,787,DP,456,T1,1,1,0,0,,,0,0,55,6,2,UGA,HVD,LGO,LGO,,,,,,1
+Demarquavis Unberskelaeton,2861,149,Leopold Pollersbeck,2875,983,BB,166,B1,0,0,0,0,,,0,0,56,6,2,HVD,UGA,BB,BB,,,,,,1
+Demarquavis Unberskelaeton,2861,708,Leopold Pollersbeck,2875,123,CS,415,B1,0,1,0,0,,,0,0,56,6,2,HVD,UGA,CS 2B,CS 2B,,,,,,4
+Jeff Newman,2931,500,Leopold Pollersbeck,2875,870,PO,370,B1,1,0,0,0,,,0,0,56,6,2,HVD,UGA,PO,PO,,,,,,1
+Hitgood McChunky,2893,227,Leopold Pollersbeck,2875,333,BB,106,B1,2,0,0,0,,,0,0,56,6,2,HVD,UGA,BB,BB,,,,,,1
+Wheezy Whifflesworth,2840,44,Leopold Pollersbeck,2875,281,FO,237,B1,2,1,0,0,,,0,0,56,6,2,HVD,UGA,FO,FO,,,,,,1
+Verde Jack,2854,311,Ozuna FromTheBraves,2828,499,FO,188,T2,0,0,0,0,,,0,0,57,6,2,UGA,HVD,FO,FO,,,,,,1
+Mack Quackerson,2834,865,Ozuna FromTheBraves,2828,557,K,308,T2,1,0,0,0,,,0,0,57,6,2,UGA,HVD,K,K,,,,,,1
+Plankton Theodinian,2894,371,Ozuna FromTheBraves,2828,499,1B,128,T2,2,0,0,0,,,0,0,57,6,2,UGA,HVD,1B,1B,,,,,,1
+Antony Joy,2949,385,Ozuna FromTheBraves,2828,173,FO,212,T2,2,1,0,0,,,0,0,57,6,2,UGA,HVD,FO,FO,,,,,,1
+Charles Vella,2869,742,Leopold Pollersbeck,2875,34,K,292,B2,0,0,0,0,,,0,0,58,6,2,HVD,UGA,K,K,,,,,,1
+Rip Van Winkle,2899,397,Leopold Pollersbeck,2875,793,PO,396,B2,1,0,0,0,,,0,0,58,6,2,HVD,UGA,PO,PO,,,,,,1
+Tueballs Wunbatt,2946,400,Leopold Pollersbeck,2875,397,HR,3,B2,2,0,0,0,,,1,1,58,6,2,HVD,UGA,HR,HR,,,,,,1
+Hippo Jars,2902,832,Leopold Pollersbeck,2875,321,LGO,489,B2,2,0,1,0,,,0,0,58,6,2,HVD,UGA,LGO,LGO,,,,,,1
+Pontos Napoleon,2934,371,Bobert Hideyoshi,2944,113,K,258,T3,0,0,1,0,,,0,0,59,6,2,UGA,HVD,K,K,,,,,,1
+Dante Dagostino,2846,222,Bobert Hideyoshi,2944,565,K,343,T3,1,0,1,0,,,0,0,59,6,2,UGA,HVD,K,K,,,,,,1
+Jamal Jackson,2815,501,Bobert Hideyoshi,2944,585,1B,84,T3,2,0,1,0,,,0,0,59,6,2,UGA,HVD,1B,1B,,,,,,1
+Beckham Hudson,2906,168,Bobert Hideyoshi,2944,495,RGO,327,T3,2,1,1,0,,,0,0,59,6,2,UGA,HVD,RGO,RGO,,,,,,1
+Dayman Nightman,2833,808,Leopold Pollersbeck,2875,134,PO,326,B3,0,0,1,0,,,0,0,60,6,2,HVD,UGA,PO,PO,,,,,,1
+Demarquavis Unberskelaeton,2861,851,Leopold Pollersbeck,2875,343,LGO,492,B3,1,0,1,0,,,0,0,60,6,2,HVD,UGA,LGO,LGO,,,,,,1
+Jeff Newman,2931,380,Leopold Pollersbeck,2875,570,FO,190,B3,2,0,1,0,,,0,0,60,6,2,HVD,UGA,FO,FO,,,,,,1
+Lincoln Pickett,2870,298,Bobert Hideyoshi,2944,13,K,285,T4,0,0,1,0,,,0,0,61,6,2,UGA,HVD,K,K,,,,,,1
+Verde Jack,2854,940,Bobert Hideyoshi,2944,768,FO,172,T4,1,0,1,0,,,0,0,61,6,2,UGA,HVD,FO,FO,,,,,,1
+Mack Quackerson,2834,520,Bobert Hideyoshi,2944,811,K,291,T4,2,0,1,0,,,0,0,61,6,2,UGA,HVD,K,K,,,,,,1
+Hitgood McChunky,2893,700,Karl Havoc,2911,831,FO,131,B4,0,0,1,0,,,0,0,62,6,2,HVD,UGA,FO,FO,,,,,,1
+Wheezy Whifflesworth,2840,948,Karl Havoc,2911,796,BB,152,B4,1,0,1,0,,,0,0,62,6,2,HVD,UGA,BB,BB,,,,,,1
+Wheezy Whifflesworth,2840,225,Karl Havoc,2911,503,SB,278,B4,1,1,1,0,,,0,0,62,6,2,HVD,UGA,Steal 2B,Steal 2B,,,,,,4
+Charles Vella,2869,325,Karl Havoc,2911,56,K,269,B4,1,2,1,0,,,0,0,62,6,2,HVD,UGA,K,K,,,,,,1
+Rip Van Winkle,2899,576,Karl Havoc,2911,11,RGO,435,B4,2,2,1,0,,,0,0,62,6,2,HVD,UGA,RGO,RGO,,,,,,1
+Plankton Theodinian,2894,682,C. T. Bailiff,2877,820,BB,138,T5,0,0,1,0,,,0,1,63,6,2,UGA,HVD,BB,BB,,,,,,1
+Plankton Theodinian,2894,461,C. T. Bailiff,2877,511,SB,50,T5,0,1,1,0,,,0,0,63,6,2,UGA,HVD,Steal 2B,Steal 2B,,,,,,4
+Antony Joy,2949,254,C. T. Bailiff,2877,292,2B,38,T5,0,2,1,0,,,1,1,63,6,2,UGA,HVD,2B,2B,,,,,,1
+Pontos Napoleon,2934,371,C. T. Bailiff,2877,432,2B,61,T5,0,2,1,1,,,1,1,63,6,2,UGA,HVD,2B,2B,,,,,,1
+Dante Dagostino,2846,18,C. T. Bailiff,2877,934,1B,84,T5,0,2,1,2,,,0,0,63,6,2,UGA,HVD,1B,1B,,,,,,1
+Dante Dagostino,2846,718,C. T. Bailiff,2877,960,SB,242,T5,0,5,1,2,,,0,0,63,6,2,UGA,HVD,Steal 2B,Steal 2B,,,,,,5
+Jamal Jackson,2815,695,C. T. Bailiff,2877,888,Sac,193,T5,0,6,1,2,,,1,0,63,6,2,UGA,HVD,FO,FO,,,,,,2
+Beckham Hudson,2906,510,C. T. Bailiff,2877,919,LGO,409,T5,1,2,1,3,,,0,0,63,6,2,UGA,HVD,LGO,LGO,,,,,,1
+Lincoln Pickett,2870,197,C. T. Bailiff,2877,343,BB,146,T5,2,2,1,3,,,0,0,63,6,2,UGA,HVD,BB,BB,,,,,,1
+Verde Jack,2854,28,C. T. Bailiff,2877,698,PO,330,T5,2,4,1,3,,,0,0,63,6,2,UGA,HVD,PO,PO,,,,,,1
+Tueballs Wunbatt,2946,630,Karl Havoc,2911,144,LGO,486,B5,0,0,1,3,,,0,0,64,6,2,HVD,UGA,LGO,LGO,,,,,,1
+Hippo Jars,2902,644,Karl Havoc,2911,438,FO,206,B5,1,0,1,3,,,0,0,64,6,2,HVD,UGA,FO,FO,,,,,,1
+Dayman Nightman,2833,969,Karl Havoc,2911,940,HR,29,B5,2,0,1,3,,,1,1,64,6,2,HVD,UGA,HR,HR,,,,,,1
+Demarquavis Unberskelaeton,2861,272,Karl Havoc,2911,689,PO,417,B5,2,0,2,3,,,0,0,64,6,2,HVD,UGA,PO,PO,,,,,,1
+Mack Quackerson,2834,8,C. T. Bailiff,2877,176,FO,168,T6,0,0,2,3,,,0,0,65,6,2,UGA,HVD,FO,FO,,,,,,1
+Plankton Theodinian,2894,210,C. T. Bailiff,2877,753,LGO,457,T6,1,0,2,3,,,0,0,65,6,2,UGA,HVD,LGO,LGO,,,,,,1
+Antony Joy,2949,624,C. T. Bailiff,2877,984,PO,360,T6,2,0,2,3,,,0,0,65,6,2,UGA,HVD,PO,PO,,,,,,1
+Jeff Newman,2931,250,Karl Havoc,2911,688,PO,438,B6,0,0,2,3,,,0,0,66,6,2,HVD,UGA,PO,PO,,,,,,1
+Hitgood McChunky,2893,917,Karl Havoc,2911,411,LGO,494,B6,1,0,2,3,,,0,0,66,6,2,HVD,UGA,LGO,LGO,,,,,,1
+Wheezy Whifflesworth,2840,39,Karl Havoc,2911,801,K,238,B6,2,0,2,3,,,0,0,66,6,2,HVD,UGA,K,K,,,,,,1
+Ringo Swingo,2838,717,Epto Bismol,2939,119,PO,402,T1,0,0,0,0,,,0,0,67,7,3,UCC,WSU,PO,PO,,,,,,1
+Seth Kablamo,2932,231,Epto Bismol,2939,469,K,238,T1,1,0,0,0,,,0,0,67,7,3,UCC,WSU,K,K,,,,,,1
+Tleyber Gorres,2942,521,Epto Bismol,2939,547,HR,26,T1,2,0,0,0,,,1,1,67,7,3,UCC,WSU,HR,HR,,,,,,1
+TWs Frozen Head,2868,848,Epto Bismol,2939,956,BB,108,T1,2,0,0,1,,,0,1,67,7,3,UCC,WSU,BB,BB,,,,,,1
+TWs Frozen Head,2868,666,Epto Bismol,2939,362,SB,304,T1,2,1,0,1,,,0,0,67,7,3,UCC,WSU,Steal 2B,Steal 2B,,,,,,4
+Mama Luigi,2947,746,Epto Bismol,2939,771,HR,25,T1,2,2,0,1,,,2,1,67,7,3,UCC,WSU,HR,HR,,,,,,1
+Ashington Swift,2845,699,Epto Bismol,2939,723,HR,24,T1,2,0,0,3,,,1,1,67,7,3,UCC,WSU,HR,HR,,,,,,1
+River James,2857,977,Epto Bismol,2939,670,K,307,T1,2,0,0,4,,,0,0,67,7,3,UCC,WSU,K,K,,,,,,1
+Zeke Euselachii,2930,448,Katerina Aston,2952,433,HR,15,B1,0,0,0,4,,,1,1,68,7,3,WSU,UCC,HR,HR,,,,,,1
+T-Rav,2908,937,Katerina Aston,2952,215,K,278,B1,0,0,1,4,,,0,0,68,7,3,WSU,UCC,K,K,,,,,,1
+Strawberry Jones,2916,650,Katerina Aston,2952,279,K,371,B1,1,0,1,4,,,0,0,68,7,3,WSU,UCC,K,K,,,,,,1
+Ryan McBryan,2880,281,Katerina Aston,2952,207,1B,74,B1,2,0,1,4,,,0,0,68,7,3,WSU,UCC,1B,1B,,,,,,1
+Ryan McBryan,2880,425,Katerina Aston,2952,735,CS,310,B1,2,1,1,4,,,0,0,68,7,3,WSU,UCC,CS 2B,CS 2B,,,,,,4
+Baxter Bean,2909,412,Epto Bismol,2939,700,K,288,T2,0,0,1,4,,,0,0,69,7,3,UCC,WSU,K,K,,,,,,1
+Javi D. Modelo,2898,250,Epto Bismol,2939,69,K,181,T2,1,0,1,4,,,0,0,69,7,3,UCC,WSU,K,K,,,,,,1
+Ringo Swingo,2838,206,Epto Bismol,2939,822,K,384,T2,2,0,1,4,,,0,0,69,7,3,UCC,WSU,K,K,,,,,,1
+Jorbel Boykins,2847,323,Katerina Aston,2952,711,PO,388,B2,0,0,1,4,,,0,0,70,7,3,WSU,UCC,PO,PO,,,,,,1
+Dusty Jabroni,2852,763,Katerina Aston,2952,581,FO,182,B2,1,0,1,4,,,0,0,70,7,3,WSU,UCC,FO,FO,,,,,,1
+Gravy Stains McGee,2895,860,Katerina Aston,2952,336,LGO,476,B2,2,0,1,4,,,0,0,70,7,3,WSU,UCC,LGO,LGO,,,,,,1
+Seth Kablamo,2932,391,Epto Bismol,2939,491,BB,100,T3,0,0,1,4,,,0,0,71,7,3,UCC,WSU,BB,BB,,,,,,1
+Seth Kablamo,2932,601,Epto Bismol,2939,117,CS,484,T3,0,1,1,4,,,0,0,71,7,3,UCC,WSU,CS 2B,CS 2B,,,,,,4
+Tleyber Gorres,2942,750,Epto Bismol,2939,978,FO,228,T3,1,0,1,4,,,0,0,71,7,3,UCC,WSU,FO,FO,,,,,,1
+TWs Frozen Head,2868,583,Epto Bismol,2939,47,RGO,464,T3,2,0,1,4,,,0,0,71,7,3,UCC,WSU,RGO,RGO,,,,,,1
+Justin Time,2886,298,Katerina Aston,2952,119,FO,179,B3,0,0,1,4,,,0,0,72,7,3,WSU,UCC,FO,FO,,,,,,1
+Casper Greenwell,2825,310,Katerina Aston,2952,427,1B,117,B3,1,0,1,4,,,0,0,72,7,3,WSU,UCC,1B,1B,,,,,,1
+Zeke Euselachii,2930,197,Katerina Aston,2952,802,PO,395,B3,1,1,1,4,,,0,0,72,7,3,WSU,UCC,PO,PO,,,,,,1
+T-Rav,2908,326,Katerina Aston,2952,715,PO,389,B3,2,1,1,4,,,0,0,72,7,3,WSU,UCC,PO,PO,,,,,,1
+Mama Luigi,2947,699,Epto Bismol,2939,699,K,181,T4,0,0,1,4,,,0,0,73,7,3,UCC,WSU,K,K,,,,,,1
+Ashington Swift,2845,611,Epto Bismol,2939,29,RGO,418,T4,1,0,1,4,,,0,0,73,7,3,UCC,WSU,RGO,RGO,,,,,,1
+River James,2857,937,Epto Bismol,2939,695,K,242,T4,2,0,1,4,,,0,0,73,7,3,UCC,WSU,K,K,,,,,,1
+Strawberry Jones,2916,400,Katerina Aston,2952,220,FO,180,B4,0,0,1,4,,,0,0,74,7,3,WSU,UCC,FO,FO,,,,,,1
+Ryan McBryan,2880,262,Katerina Aston,2952,336,1B,74,B4,1,0,1,4,,,0,0,74,7,3,WSU,UCC,1B,1B,,,,,,1
+Jorbel Boykins,2847,737,Katerina Aston,2952,440,K,297,B4,1,1,1,4,,,0,0,74,7,3,WSU,UCC,K,K,,,,,,1
+Dusty Jabroni,2852,384,Katerina Aston,2952,819,RGO,435,B4,2,1,1,4,,,0,0,74,7,3,WSU,UCC,RGO,RGO,,,,,,1
+Baxter Bean,2909,808,Chester Einhorn,2390,648,FO,160,T5,0,0,1,4,,,0,0,75,7,3,UCC,WSU,FO,FO,,,,,,1
+Javi D. Modelo,2898,225,Chester Einhorn,2390,882,PO,343,T5,1,0,1,4,,,0,0,75,7,3,UCC,WSU,PO,PO,,,,,,1
+Ringo Swingo,2838,404,Chester Einhorn,2390,917,Bunt GO,487,T5,2,0,1,4,,,0,0,75,7,3,UCC,WSU,Bunt GO,Bunt GO,,,,,,3
+Gravy Stains McGee,2895,836,Guillermo Griffey III,2829,625,K,211,B5,0,0,1,4,,,0,0,76,7,3,WSU,UCC,K,K,,,,,,1
+Justin Time,2886,212,Guillermo Griffey III,2829,713,LGO,499,B5,1,0,1,4,,,0,0,76,7,3,WSU,UCC,LGO,LGO,,,,,,1
+Casper Greenwell,2825,505,Guillermo Griffey III,2829,588,1B,83,B5,2,0,1,4,,,0,0,76,7,3,WSU,UCC,1B,1B,,,,,,1
+Zeke Euselachii,2930,873,Guillermo Griffey III,2829,199,K,326,B5,2,1,1,4,,,0,0,76,7,3,WSU,UCC,K,K,,,,,,1
+Seth Kablamo,2932,555,Chester Einhorn,2390,357,FO,198,T6,0,0,1,4,,,0,0,77,7,3,UCC,WSU,FO,FO,,,,,,1
+Tleyber Gorres,2942,420,Chester Einhorn,2390,191,FO,229,T6,1,0,1,4,,,0,0,77,7,3,UCC,WSU,FO,FO,,,,,,1
+TWs Frozen Head,2868,1000,Chester Einhorn,2390,979,3B,21,T6,2,0,1,4,,,0,0,77,7,3,UCC,WSU,3B,3B,,,,,,1
+Mama Luigi,2947,626,Chester Einhorn,2390,417,FO,209,T6,2,3,1,4,,,0,0,77,7,3,UCC,WSU,FO,FO,,,,,,1
+T-Rav,2908,827,Guillermo Griffey III,2829,878,2B,51,B6,0,0,1,4,,,0,1,78,7,3,WSU,UCC,2B,2B,,,,,,1
+Strawberry Jones,2916,972,Guillermo Griffey III,2829,463,LGO,491,B6,0,2,1,4,,,0,0,78,7,3,WSU,UCC,LGO,LGO,,,,,,1
+Ryan McBryan,2880,261,Guillermo Griffey III,2829,464,FO,203,B6,1,2,1,4,,,0,0,78,7,3,WSU,UCC,FO,FO,,,,,,1
+Jorbel Boykins,2847,576,Guillermo Griffey III,2829,515,1B,61,B6,2,2,1,4,,,1,0,78,7,3,WSU,UCC,1B,1B,,,,,,1
+Dusty Jabroni,2852,826,Guillermo Griffey III,2829,4,FO,178,B6,2,1,2,4,,,0,0,78,7,3,WSU,UCC,FO,FO,,,,,,1
+Goaty McGoatFace,2878,278,Bart Bishop,2900,212,1B,66,T1,0,0,0,0,,,0,0,79,8,3,TEN,UGA,1B,1B,,,,,,1
+Goaty McGoatFace,2878,522,Bart Bishop,2900,666,SB,144,T1,0,1,0,0,,,0,0,79,8,3,TEN,UGA,Steal 2B,Steal 2B,,,,,,4
+Johnmaine Chupri,2849,848,Bart Bishop,2900,225,PO,377,T1,0,2,0,0,,,0,0,79,8,3,TEN,UGA,PO,PO,,,,,,1
+Warren Peace,2843,153,Bart Bishop,2900,15,BB,138,T1,1,2,0,0,,,0,0,79,8,3,TEN,UGA,BB,BB,,,,,,1
+Mo Bonzalez,2943,724,Bart Bishop,2900,299,DP,425,T1,1,4,0,0,,,0,0,79,8,3,TEN,UGA,RGO,RGO,,,,,,1
+Jamal Jackson,2815,852,Bartholomew McSlapHappy,2871,725,1B,127,B1,0,0,0,0,,,0,0,80,8,3,UGA,TEN,1B,1B,,,,,,1
+Mack Quackerson,2834,894,Bartholomew McSlapHappy,2871,527,DP,367,B1,0,1,0,0,,,0,0,80,8,3,UGA,TEN,RGO,RGO,,,,,,1
+Verde Jack,2854,294,Bartholomew McSlapHappy,2871,77,FO,217,B1,2,0,0,0,,,0,0,80,8,3,UGA,TEN,FO,FO,,,,,,1
+Scoot Heller,2913,165,Bart Bishop,2900,415,FO,250,T2,0,0,0,0,,,0,0,81,8,3,TEN,UGA,FO,FO,,,,,,1
+Jihmih Tyranus,2873,472,Bart Bishop,2900,808,K,336,T2,1,0,0,0,,,0,0,81,8,3,TEN,UGA,K,K,,,,,,1
+Anthony Esposito III,2950,382,Bart Bishop,2900,384,HR,2,T2,2,0,0,0,,,1,1,81,8,3,TEN,UGA,HR,HR,,,,,,1
+Hal Pipken,2936,435,Bart Bishop,2900,384,2B,51,T2,2,0,0,1,,,0,1,81,8,3,TEN,UGA,2B,2B,,,,,,1
+fridayphd,2826,401,Bart Bishop,2900,501,1B,100,T2,2,2,0,1,,,1,0,81,8,3,TEN,UGA,1B,1B,,,,,,1
+Goaty McGoatFace,2878,350,Bart Bishop,2900,875,CS,475,T2,2,1,0,2,,,0,0,81,8,3,TEN,UGA,CS 2B,CS 2B,,,,,,4
+Antony Joy,2949,385,Bartholomew McSlapHappy,2871,273,1B,112,B2,0,0,0,2,,,0,0,82,8,3,UGA,TEN,1B,1B,,,,,,1
+Leopold Pollersbeck,2875,870,Bartholomew McSlapHappy,2871,77,K,207,B2,0,1,0,2,,,0,0,82,8,3,UGA,TEN,K,K,,,,,,1
+Antony Joy,2949,475,Bartholomew McSlapHappy,2871,889,CS,414,B2,1,1,0,2,,,0,0,82,8,3,UGA,TEN,CS 2B,CS 2B,,,,,,4
+Scoreson McCorkle,2864,699,Bartholomew McSlapHappy,2871,235,LGO,464,B2,2,0,0,2,,,0,0,82,8,3,UGA,TEN,LGO,LGO,,,,,,1
+Goaty McGoatFace,2878,278,Bart Bishop,2900,916,K,362,T3,0,0,0,2,,,0,0,83,8,3,TEN,UGA,K,K,,,,,,1
+Johnmaine Chupri,2849,333,Bart Bishop,2900,478,BB,145,T3,1,0,0,2,,,0,0,83,8,3,TEN,UGA,BB,BB,,,,,,1
+Warren Peace,2843,699,Bart Bishop,2900,888,FO,189,T3,1,1,0,2,,,0,0,83,8,3,TEN,UGA,FO,FO,,,,,,1
+Mo Bonzalez,2943,943,Bart Bishop,2900,699,K,244,T3,2,1,0,2,,,0,0,83,8,3,TEN,UGA,K,K,,,,,,1
+Willie Gardner,2856,434,Just A. Guy,2888,845,RGO,411,B3,0,0,0,2,,,0,0,84,8,3,UGA,TEN,RGO,RGO,,,,,,1
+Kai Sedillo,2917,237,Just A. Guy,2888,650,RGO,413,B3,1,0,0,2,,,0,0,84,8,3,UGA,TEN,RGO,RGO,,,,,,1
+Lincoln Pickett,2870,843,Just A. Guy,2888,100,K,257,B3,2,0,0,2,,,0,0,84,8,3,UGA,TEN,K,K,,,,,,1
+Scoot Heller,2913,543,Tee Bird,2863,673,1B,130,T4,0,0,0,2,,,0,1,85,8,3,TEN,UGA,1B,1B,,,,,,1
+Scoot Heller,2913,325,Tee Bird,2863,92,SB,233,T4,0,1,0,2,,,0,0,85,8,3,TEN,UGA,Steal 2B,Steal 2B,,,,,,4
+Jihmih Tyranus,2873,831,Tee Bird,2863,843,HR,12,T4,0,2,0,2,,,2,1,85,8,3,TEN,UGA,HR,HR,,,,,,1
+Anthony Esposito III,2950,432,Tee Bird,2863,844,RGO,412,T4,0,0,0,4,,,0,0,85,8,3,TEN,UGA,RGO,RGO,,,,,,1
+Hal Pipken,2936,141,Tee Bird,2863,447,PO,306,T4,1,0,0,4,,,0,0,85,8,3,TEN,UGA,PO,PO,,,,,,1
+fridayphd,2826,143,Tee Bird,2863,263,1B,120,T4,2,0,0,4,,,0,0,85,8,3,TEN,UGA,1B,1B,,,,,,1
+Goaty McGoatFace,2878,69,Tee Bird,2863,3,1B,66,T4,2,1,0,4,,,0,0,85,8,3,TEN,UGA,1B,1B,,,,,,1
+Johnmaine Chupri,2849,704,Tee Bird,2863,452,K,252,T4,2,5,0,4,,,0,0,85,8,3,TEN,UGA,K,K,,,,,,1
+Jamal Jackson,2815,510,Just A. Guy,2888,540,2B,30,B4,0,0,0,4,,,0,1,86,8,3,UGA,TEN,2B,2B,,,,,,1
+Mack Quackerson,2834,515,Just A. Guy,2888,700,BB,185,B4,0,2,0,4,,,0,1,86,8,3,UGA,TEN,BB,BB,,,,,,1
+Verde Jack,2854,998,Just A. Guy,2888,69,1B,71,B4,0,4,0,4,,,0,1,86,8,3,UGA,TEN,1B,1B,,,,,,1
+Antony Joy,2949,410,Just A. Guy,2888,300,1B,110,B4,0,7,0,4,,,1,0,86,8,3,UGA,TEN,1B,1B,,,,,,1
+Dante Dagostino,2846,569,Just A. Guy,2888,735,Sac,166,B4,0,7,1,4,,,1,0,86,8,3,UGA,TEN,FO,FO,,,,,,1
+Scoreson McCorkle,2864,567,Just A. Guy,2888,269,K,298,B4,1,4,2,4,,,0,0,86,8,3,UGA,TEN,K,K,,,,,,1
+Willie Gardner,2856,618,Just A. Guy,2888,700,1B,82,B4,2,4,2,4,,,1,0,86,8,3,UGA,TEN,1B,1B,,,,,,1
+Kai Sedillo,2917,332,Just A. Guy,2888,69,K,263,B4,2,5,3,4,,,0,0,86,8,3,UGA,TEN,K,K,,,,,,1
+Warren Peace,2843,401,Tee Bird,2863,467,2B,66,T5,0,0,3,4,,,0,1,87,8,3,TEN,UGA,2B,2B,,,,,,1
+Mo Bonzalez,2943,734,Tee Bird,2863,874,FO,140,T5,0,2,3,4,,,0,0,87,8,3,TEN,UGA,FO,FO,,,,,,1
+Scoot Heller,2913,862,Tee Bird,2863,551,PO,311,T5,1,2,3,4,,,0,0,87,8,3,TEN,UGA,PO,PO,,,,,,1
+Jihmih Tyranus,2873,1,Tee Bird,2863,903,1B,98,T5,2,2,3,4,,,1,0,87,8,3,TEN,UGA,1B,1B,,,,,,1
+Jihmih Tyranus,2873,711,Tee Bird,2863,293,CS,418,T5,2,1,3,5,,,0,0,87,8,3,TEN,UGA,CS 2B,CS 2B,,,,,,4
+Lincoln Pickett,2870,225,Soggy Arm,2839,493,FO,268,B5,0,0,3,5,,,0,0,88,8,3,UGA,TEN,FO,FO,,,,,,1
+Jamal Jackson,2815,145,Soggy Arm,2839,624,LGO,479,B5,1,0,3,5,,,0,0,88,8,3,UGA,TEN,LGO,LGO,,,,,,1
+Mack Quackerson,2834,585,Soggy Arm,2839,380,FO,205,B5,2,0,3,5,,,0,0,88,8,3,UGA,TEN,FO,FO,,,,,,1
+Anthony Esposito III,2950,738,Karl Havoc,2911,318,RGO,420,T6,0,0,3,5,,,0,0,89,8,3,TEN,UGA,RGO,RGO,,,,,,1
+Hal Pipken,2936,18,Karl Havoc,2911,239,FO,221,T6,1,0,3,5,,,0,0,89,8,3,TEN,UGA,FO,FO,,,,,,1
+fridayphd,2826,320,Karl Havoc,2911,498,FO,178,T6,2,0,3,5,,,0,0,89,8,3,TEN,UGA,FO,FO,,,,,,1
+Verde Jack,2854,10,Soggy Arm,2839,666,PO,344,B6,0,0,3,5,,,0,0,90,8,3,UGA,TEN,PO,PO,,,,,,1
+Antony Joy,2949,339,Soggy Arm,2839,621,K,282,B6,1,0,3,5,,,0,0,90,8,3,UGA,TEN,K,K,,,,,,1
+Dante Dagostino,2846,69,Soggy Arm,2839,891,FO,178,B6,2,0,3,5,,,0,0,90,8,3,UGA,TEN,FO,FO,,,,,,1
+Brandon Rice III,2951,711,Bobert Hideyoshi,2944,841,BB,130,T1,0,0,0,0,,,0,0,91,9,3,TOL,HVD,BB,BB,,,,,,1
+Sean Carrcrash,1709,400,Bobert Hideyoshi,2944,863,DP,463,T1,0,1,0,0,,,0,0,91,9,3,TOL,HVD,RGO,RGO,,,,,,1
+Corbin Christmas Carol,2827,434,Bobert Hideyoshi,2944,814,K,380,T1,2,0,0,0,,,0,0,91,9,3,TOL,HVD,K,K,,,,,,1
+Jeff Newman,2931,750,Smokey Zygowski,2945,619,BB,131,B1,0,0,0,0,,,0,1,92,9,3,HVD,TOL,BB,BB,,,,,,1
+Jeff Newman,2931,550,Smokey Zygowski,2945,311,SB,239,B1,0,1,0,0,,,0,0,92,9,3,HVD,TOL,Steal 2B,Steal 2B,,,,,,4
+Mr. Beevan,616,420,Smokey Zygowski,2945,212,FO,208,B1,0,2,0,0,,,0,0,92,9,3,HVD,TOL,FO,FO,,,,,,1
+Axkoa Griffin,2848,836,Smokey Zygowski,2945,420,RGO,416,B1,1,2,0,0,,,0,0,92,9,3,HVD,TOL,RGO,RGO,,,,,,1
+Jake Lazer,2884,909,Smokey Zygowski,2945,21,1B,112,B1,2,3,0,0,,,1,1,92,9,3,HVD,TOL,1B,1B,,,,,,1
+Rex Renfield,2935,560,Smokey Zygowski,2945,486,2B,74,B1,2,1,1,0,,,1,0,92,9,3,HVD,TOL,2B,2B,,,,,,1
+Randy Mann,2922,237,Smokey Zygowski,2945,701,LGO,464,B1,2,2,2,0,,,0,0,92,9,3,HVD,TOL,LGO,LGO,,,,,,1
+Chad Isotope,2891,235,Bobert Hideyoshi,2944,827,PO,408,T2,0,0,2,0,,,0,0,93,9,3,TOL,HVD,PO,PO,,,,,,1
+16-bit Griffey,2858,867,Bobert Hideyoshi,2944,13,BB,146,T2,1,0,2,0,,,0,0,93,9,3,TOL,HVD,BB,BB,,,,,,1
+Tony Pizza,2844,888,Bobert Hideyoshi,2944,486,K,402,T2,1,1,2,0,,,0,0,93,9,3,TOL,HVD,K,K,,,,,,1
+Mustard Fatherson,2910,896,Bobert Hideyoshi,2944,717,FO,179,T2,2,1,2,0,,,0,0,93,9,3,TOL,HVD,FO,FO,,,,,,1
+Sloppy Dock,215,896,Smokey Zygowski,2945,810,1B,86,B2,0,0,2,0,,,0,0,94,9,3,HVD,TOL,1B,1B,,,,,,1
+Sloppy Dock,215,320,Smokey Zygowski,2945,1,CS,319,B2,0,1,2,0,,,0,0,94,9,3,HVD,TOL,CS 2B,CS 2B,,,,,,4
+John McDonald Jr.,2853,458,Smokey Zygowski,2945,744,K,286,B2,1,0,2,0,,,0,0,94,9,3,HVD,TOL,K,K,,,,,,1
+Jose Can-Fake-O,2905,468,Smokey Zygowski,2945,833,K,365,B2,2,0,2,0,,,0,0,94,9,3,HVD,TOL,K,K,,,,,,1
+Grunt Manly,2948,821,Bobert Hideyoshi,2944,536,K,285,T3,0,0,2,0,,,0,0,95,9,3,TOL,HVD,K,K,,,,,,1
+Kyle Brambley,2212,623,Bobert Hideyoshi,2944,192,RGO,431,T3,1,0,2,0,,,0,0,95,9,3,TOL,HVD,RGO,RGO,,,,,,1
+Brandon Rice III,2951,333,Bobert Hideyoshi,2944,635,K,302,T3,2,0,2,0,,,0,0,95,9,3,TOL,HVD,K,K,,,,,,1
+Jeff Newman,2931,450,Smokey Zygowski,2945,681,FO,231,B3,0,0,2,0,,,0,0,96,9,3,HVD,TOL,FO,FO,,,,,,1
+Mr. Beevan,616,100,Smokey Zygowski,2945,904,FO,196,B3,1,0,2,0,,,0,0,96,9,3,HVD,TOL,FO,FO,,,,,,1
+Axkoa Griffin,2848,201,Smokey Zygowski,2945,911,K,290,B3,2,0,2,0,,,0,0,96,9,3,HVD,TOL,K,K,,,,,,1
+Sean Carrcrash,1709,400,Bobert Hideyoshi,2944,958,RGO,442,T4,0,0,2,0,,,0,0,97,9,3,TOL,HVD,RGO,RGO,,,,,,1
+Corbin Christmas Carol,2827,541,Bobert Hideyoshi,2944,805,K,264,T4,1,0,2,0,,,0,0,97,9,3,TOL,HVD,K,K,,,,,,1
+Chad Isotope,2891,850,Bobert Hideyoshi,2944,721,BB,129,T4,2,0,2,0,,,0,0,97,9,3,TOL,HVD,BB,BB,,,,,,1
+Chad Isotope,2891,999,Bobert Hideyoshi,2944,989,SB,10,T4,2,1,2,0,,,0,0,97,9,3,TOL,HVD,Steal 2B,Steal 2B,,,,,,4
+16-bit Griffey,2858,911,Bobert Hideyoshi,2944,322,PO,411,T4,2,2,2,0,,,0,0,97,9,3,TOL,HVD,PO,PO,,,,,,1
+Jake Lazer,2884,509,Hans Zahn,2915,852,PO,343,B4,0,0,2,0,,,0,0,98,9,3,HVD,TOL,PO,PO,,,,,,1
+Rex Renfield,2935,460,Hans Zahn,2915,608,BB,148,B4,1,0,2,0,,,0,0,98,9,3,HVD,TOL,BB,BB,,,,,,1
+Rex Renfield,2935,260,Hans Zahn,2915,920,CS,340,B4,1,1,2,0,,,0,0,98,9,3,HVD,TOL,CS 2B,CS 2B,,,,,,4
+Randy Mann,2922,608,Hans Zahn,2915,190,PO,418,B4,2,0,2,0,,,0,0,98,9,3,HVD,TOL,PO,PO,,,,,,1
+Tony Pizza,2844,227,William T. Striker,2867,17,FO,210,T5,0,0,2,0,,,0,0,99,9,3,TOL,HVD,FO,FO,,,,,,1
+Mustard Fatherson,2910,550,William T. Striker,2867,882,K,332,T5,1,0,2,0,,,0,0,99,9,3,TOL,HVD,K,K,,,,,,1
+Grunt Manly,2948,524,William T. Striker,2867,934,K,410,T5,2,0,2,0,,,0,0,99,9,3,TOL,HVD,K,K,,,,,,1
+Sloppy Dock,215,537,Hans Zahn,2915,108,RGO,429,B5,0,0,2,0,,,0,0,100,9,3,HVD,TOL,RGO,RGO,,,,,,1
+John McDonald Jr.,2853,501,Hans Zahn,2915,978,LGO,477,B5,1,0,2,0,,,0,0,100,9,3,HVD,TOL,LGO,LGO,,,,,,1
+Jose Can-Fake-O,2905,556,Hans Zahn,2915,41,LGO,485,B5,2,0,2,0,,,0,0,100,9,3,HVD,TOL,LGO,LGO,,,,,,1
+Kyle Brambley,2212,444,William T. Striker,2867,301,BB,143,T6,0,0,2,0,,,0,1,101,9,3,TOL,HVD,BB,BB,,,,,,1
+Brandon Rice III,2951,694,William T. Striker,2867,8,K,314,T6,0,1,2,0,,,0,0,101,9,3,TOL,HVD,K,K,,,,,,1
+Sean Carrcrash,1709,666,William T. Striker,2867,694,HR,28,T6,1,1,2,0,,,2,1,101,9,3,TOL,HVD,HR,HR,,,,,,1
+Corbin Christmas Carol,2827,777,William T. Striker,2867,83,K,306,T6,1,0,2,2,,,0,0,101,9,3,TOL,HVD,K,K,,,,,,1
+Chad Isotope,2891,313,William T. Striker,2867,294,HR,19,T6,2,0,2,2,,,1,1,101,9,3,TOL,HVD,HR,HR,,,,,,1
+16-bit Griffey,2858,423,William T. Striker,2867,959,LGO,464,T6,2,0,2,3,,,0,0,101,9,3,TOL,HVD,LGO,LGO,,,,,,1
+Jeff Newman,2931,350,Hans Zahn,2915,892,RGO,458,B6,0,0,2,3,,,0,0,102,9,3,HVD,TOL,RGO,RGO,,,,,,1
+Mr. Beevan,616,889,Hans Zahn,2915,250,PO,361,B6,1,0,2,3,,,0,0,102,9,3,HVD,TOL,PO,PO,,,,,,1
+Axkoa Griffin,2848,420,Hans Zahn,2915,351,1B,69,B6,2,0,2,3,,,0,0,102,9,3,HVD,TOL,1B,1B,,,,,,1
+Axkoa Griffin,2848,683,Hans Zahn,2915,831,SB,148,B6,2,1,2,3,,,0,0,102,9,3,HVD,TOL,Steal 2B,Steal 2B,,,,,,4
+Jake Lazer,2884,99,Hans Zahn,2915,713,PO,386,B6,2,2,2,3,,,0,0,102,9,3,HVD,TOL,PO,PO,,,,,,1
+Hippo Jars,2902,462,Rordan Jomano,2830,839,PO,377,T1,0,0,0,0,,,0,0,103,10,4,HVD,WSU,PO,PO,,,,,,1
+Rip Van Winkle,2899,86,Rordan Jomano,2830,680,PO,406,T1,1,0,0,0,,,0,0,103,10,4,HVD,WSU,PO,PO,,,,,,1
+Wheezy Whifflesworth,2840,480,Rordan Jomano,2830,856,K,376,T1,2,0,0,0,,,0,0,103,10,4,HVD,WSU,K,K,,,,,,1
+Salsa Steve,2835,656,C. T. Bailiff,2877,491,FO,165,B1,0,0,0,0,,,0,0,104,10,4,WSU,HVD,FO,FO,,,,,,1
+Kyle Lew,2851,70,C. T. Bailiff,2877,630,LGO,440,B1,1,0,0,0,,,0,0,104,10,4,WSU,HVD,LGO,LGO,,,,,,1
+Fernando Macias,2938,17,C. T. Bailiff,2877,371,RGO,354,B1,2,0,0,0,,,0,0,104,10,4,WSU,HVD,RGO,RGO,,,,,,1
+Tueballs Wunbatt,2946,750,Rordan Jomano,2830,203,RGO,453,T2,0,0,0,0,,,0,0,105,10,4,HVD,WSU,RGO,RGO,,,,,,1
+Charles Vella,2869,212,Rordan Jomano,2830,612,PO,400,T2,1,0,0,0,,,0,0,105,10,4,HVD,WSU,PO,PO,,,,,,1
+Hitgood McChunky,2893,672,Rordan Jomano,2830,453,K,219,T2,2,0,0,0,,,0,0,105,10,4,HVD,WSU,K,K,,,,,,1
+John-Carlos Tanten,2865,750,C. T. Bailiff,2877,826,1B,76,B2,0,0,0,0,,,0,0,106,10,4,WSU,HVD,1B,1B,,,,,,1
+Strawberry Jones,2916,713,C. T. Bailiff,2877,512,FO,201,B2,0,1,0,0,,,0,0,106,10,4,WSU,HVD,FO,FO,,,,,,1
+Moon Malarkey,2842,111,C. T. Bailiff,2877,760,PO,351,B2,1,1,0,0,,,0,0,106,10,4,WSU,HVD,PO,PO,,,,,,1
+Seth Jaws,2901,799,C. T. Bailiff,2877,198,RGO,399,B2,2,1,0,0,,,0,0,106,10,4,WSU,HVD,RGO,RGO,,,,,,1
+Demarquavis Unberskelaeton,2861,870,Rordan Jomano,2830,109,FO,239,T3,0,0,0,0,,,0,0,107,10,4,HVD,WSU,FO,FO,,,,,,1
+Dayman Nightman,2833,969,Rordan Jomano,2830,711,FO,258,T3,1,0,0,0,,,0,0,107,10,4,HVD,WSU,FO,FO,,,,,,1
+Rex Renfield,2935,560,Rordan Jomano,2830,940,PO,380,T3,2,0,0,0,,,0,0,107,10,4,HVD,WSU,PO,PO,,,,,,1
+Casper Greenwell,2825,727,C. T. Bailiff,2877,599,1B,128,B3,0,0,0,0,,,0,0,108,10,4,WSU,HVD,1B,1B,,,,,,1
+Charlie Slay,2872,483,C. T. Bailiff,2877,177,K,306,B3,0,1,0,0,,,0,0,108,10,4,WSU,HVD,K,K,,,,,,1
+Salsa Steve,2835,12,C. T. Bailiff,2877,429,DP,417,B3,1,1,0,0,,,0,0,108,10,4,WSU,HVD,RGO,RGO,,,,,,1
+Hippo Jars,2902,277,Rordan Jomano,2830,601,K,324,T4,0,0,0,0,,,0,0,109,10,4,HVD,WSU,K,K,,,,,,1
+Rip Van Winkle,2899,142,Rordan Jomano,2830,281,BB,139,T4,1,0,0,0,,,0,1,109,10,4,HVD,WSU,BB,BB,,,,,,1
+Wheezy Whifflesworth,2840,15,Rordan Jomano,2830,329,K,314,T4,1,1,0,0,,,0,0,109,10,4,HVD,WSU,K,K,,,,,,1
+Tueballs Wunbatt,2946,708,Rordan Jomano,2830,664,2B,44,T4,2,1,0,0,,,1,0,109,10,4,HVD,WSU,2B,2B,,,,,,1
+Charles Vella,2869,950,Rordan Jomano,2830,145,FO,195,T4,2,2,0,1,,,0,0,109,10,4,HVD,WSU,FO,FO,,,,,,1
+Kyle Lew,2851,935,C. T. Bailiff,2877,199,K,264,B4,0,0,0,1,,,0,0,110,10,4,WSU,HVD,K,K,,,,,,1
+Fernando Macias,2938,176,C. T. Bailiff,2877,789,RGO,387,B4,1,0,0,1,,,0,0,110,10,4,WSU,HVD,RGO,RGO,,,,,,1
+John-Carlos Tanten,2865,185,C. T. Bailiff,2877,312,BB,127,B4,2,0,0,1,,,0,0,110,10,4,WSU,HVD,BB,BB,,,,,,1
+Strawberry Jones,2916,812,C. T. Bailiff,2877,640,FO,172,B4,2,1,0,1,,,0,0,110,10,4,WSU,HVD,FO,FO,,,,,,1
+Hitgood McChunky,2893,227,Chester Einhorn,2390,501,RGO,274,T5,0,0,0,1,,,0,0,111,10,4,HVD,WSU,RGO,RGO,,,,,,1
+Demarquavis Unberskelaeton,2861,190,Chester Einhorn,2390,27,BB,163,T5,1,0,0,1,,,0,0,111,10,4,HVD,WSU,BB,BB,,,,,,1
+Demarquavis Unberskelaeton,2861,700,Chester Einhorn,2390,139,CS,439,T5,1,1,0,1,,,0,0,111,10,4,HVD,WSU,CS 2B,CS 2B,,,,,,4
+Dayman Nightman,2833,69,Chester Einhorn,2390,915,BB,154,T5,2,0,0,1,,,0,0,111,10,4,HVD,WSU,BB,BB,,,,,,1
+Rex Renfield,2935,670,Chester Einhorn,2390,929,K,259,T5,2,1,0,1,,,0,0,111,10,4,HVD,WSU,K,K,,,,,,1
+Moon Malarkey,2842,831,Bobert Hideyoshi,2944,603,K,228,B5,0,0,0,1,,,0,0,112,10,4,WSU,HVD,K,K,,,,,,1
+Seth Jaws,2901,112,Bobert Hideyoshi,2944,903,K,209,B5,1,0,0,1,,,0,0,112,10,4,WSU,HVD,K,K,,,,,,1
+Casper Greenwell,2825,406,Bobert Hideyoshi,2944,561,BB,155,B5,2,0,0,1,,,0,0,112,10,4,WSU,HVD,BB,BB,,,,,,1
+Charlie Slay,2872,291,Bobert Hideyoshi,2944,75,FO,216,B5,2,1,0,1,,,0,0,112,10,4,WSU,HVD,FO,FO,,,,,,1
+Hippo Jars,2902,469,Chester Einhorn,2390,235,FO,234,T6,0,0,0,1,,,0,0,113,10,4,HVD,WSU,FO,FO,,,,,,1
+Rip Van Winkle,2899,45,Chester Einhorn,2390,393,K,348,T6,1,0,0,1,,,0,0,113,10,4,HVD,WSU,K,K,,,,,,1
+Wheezy Whifflesworth,2840,44,Chester Einhorn,2390,377,K,333,T6,2,0,0,1,,,0,0,113,10,4,HVD,WSU,K,K,,,,,,1
+Salsa Steve,2835,284,Bobert Hideyoshi,2944,21,K,263,B6,0,0,0,1,,,0,0,114,10,4,WSU,HVD,K,K,,,,,,1
+Kyle Lew,2851,560,Bobert Hideyoshi,2944,905,K,345,B6,1,0,0,1,,,0,0,114,10,4,WSU,HVD,K,K,,,,,,1
+Fernando Macias,2938,286,Bobert Hideyoshi,2944,617,K,331,B6,2,0,0,1,,,0,0,114,10,4,WSU,HVD,K,K,,,,,,1
+Scoreson McCorkle,2864,821,Jimothy Jhompson,2887,13,FO,192,T1,0,0,0,0,,,0,0,115,11,4,UGA,UCC,FO,FO,,,,,,1
+Verde Jack,2854,947,Jimothy Jhompson,2887,500,LGO,447,T1,1,0,0,0,,,0,0,115,11,4,UGA,UCC,LGO,LGO,,,,,,1
+Hickey Renderson,2879,304,Jimothy Jhompson,2887,101,FO,203,T1,2,0,0,0,,,0,0,115,11,4,UGA,UCC,FO,FO,,,,,,1
+Nicaragua del Toro,2904,714,Karl Havoc,2911,771,1B,57,B1,0,0,0,0,,,0,1,116,11,4,UCC,UGA,1B,1B,,,,,,1
+Johnny Baseknocks,2883,734,Karl Havoc,2911,801,2B,67,B1,0,1,0,0,,,0,1,116,11,4,UCC,UGA,2B,2B,,,,,,1
+Leland Poindexter,2940,688,Karl Havoc,2911,491,Sac,197,B1,0,6,0,0,,,1,0,116,11,4,UCC,UGA,FO,FO,,,,,,2
+DeAaron Taylor,2824,910,Karl Havoc,2911,844,2B,66,B1,1,2,1,0,,,1,0,116,11,4,UCC,UGA,2B,2B,,,,,,1
+Ringo Swingo,2838,324,Karl Havoc,2911,256,1B,68,B1,1,2,2,0,,,0,0,116,11,4,UCC,UGA,1B,1B,,,,,,1
+Ringo Swingo,2838,910,Karl Havoc,2911,61,SB,151,B1,1,5,2,0,,,0,0,116,11,4,UCC,UGA,Steal 2B,Steal 2B,,,,,,5
+Skarch McGooter,2914,12,Karl Havoc,2911,288,K,276,B1,1,6,2,0,,,0,0,116,11,4,UCC,UGA,K,K,,,,,,2
+Seth Kablamo,2932,505,Karl Havoc,2911,615,BB,110,B1,2,6,2,0,,,0,0,116,11,4,UCC,UGA,BB,BB,,,,,,1
+Choc Banana,2897,650,Karl Havoc,2911,431,FO,219,B1,2,7,2,0,,,0,0,116,11,4,UCC,UGA,FO,FO,,,,,,1
+Pontos Napoleon,2934,117,Jimothy Jhompson,2887,333,FO,216,T2,0,0,2,0,,,0,0,117,11,4,UGA,UCC,FO,FO,,,,,,1
+Lincoln Pickett,2870,533,Jimothy Jhompson,2887,612,1B,79,T2,1,0,2,0,,,0,0,117,11,4,UGA,UCC,1B,1B,,,,,,1
+Plankton Theodinian,2894,73,Jimothy Jhompson,2887,898,BB,175,T2,1,1,2,0,,,0,0,117,11,4,UGA,UCC,BB,BB,,,,,,1
+Jamal Jackson,2815,145,Jimothy Jhompson,2887,275,BB,130,T2,1,4,2,0,,,0,0,117,11,4,UGA,UCC,BB,BB,,,,,,1
+Antony Joy,2949,600,Jimothy Jhompson,2887,145,DP,455,T2,1,7,2,0,,,0,0,117,11,4,UGA,UCC,LGO,LGO,,,,,,1
+TWs Frozen Head,2868,808,Karl Havoc,2911,64,FO,256,B2,0,0,2,0,,,0,0,118,11,4,UCC,UGA,FO,FO,,,,,,1
+Nicaragua del Toro,2904,202,Karl Havoc,2911,584,PO,382,B2,1,0,2,0,,,0,0,118,11,4,UCC,UGA,PO,PO,,,,,,1
+Tleyber Alfredo Cruz Fernandez III,2942,828,Karl Havoc,2911,131,K,303,B2,2,0,2,0,,,0,0,118,11,4,UCC,UGA,K,K,,,,,,1
+Dante Dagostino,2846,22,Jimothy Jhompson,2887,444,RGO,422,T3,0,0,2,0,,,0,0,119,11,4,UGA,UCC,RGO,RGO,,,,,,1
+Scoreson McCorkle,2864,783,Jimothy Jhompson,2887,888,BB,105,T3,1,0,2,0,,,0,1,119,11,4,UGA,UCC,BB,BB,,,,,,1
+Scoreson McCorkle,2864,142,Jimothy Jhompson,2887,387,SB,245,T3,1,1,2,0,,,0,0,119,11,4,UGA,UCC,Steal 2B,Steal 2B,,,,,,4
+Verde Jack,2854,69,Jimothy Jhompson,2887,69,HR,0,T3,1,2,2,0,,,2,1,119,11,4,UGA,UCC,HR,HR,,,,,,1
+Hickey Renderson,2879,527,Jimothy Jhompson,2887,515,HR,12,T3,1,0,2,2,,,1,1,119,11,4,UGA,UCC,HR,HR,,,,,,1
+Mack Quackerson,2834,734,Samuel Swamp Donkeys,2954,319,RGO,415,T3,1,0,2,3,,,0,0,119,11,4,UGA,UCC,RGO,RGO,,,,,,1
+Lincoln Pickett,2870,9,Samuel Swamp Donkeys,2954,226,FO,217,T3,2,0,2,3,,,0,0,119,11,4,UGA,UCC,FO,FO,,,,,,1
+Leland Poindexter,2940,109,Leopold Pollersbeck,2875,340,FO,231,B3,0,0,2,3,,,0,0,120,11,4,UCC,UGA,FO,FO,,,,,,1
+DeAaron Taylor,2824,300,Leopold Pollersbeck,2875,570,PO,270,B3,1,0,2,3,,,0,0,120,11,4,UCC,UGA,PO,PO,,,,,,1
+Ringo Swingo,2838,224,Leopold Pollersbeck,2875,120,1B,104,B3,2,0,2,3,,,0,0,120,11,4,UCC,UGA,1B,1B,,,,,,1
+Skarch McGooter,2914,850,Leopold Pollersbeck,2875,340,CS,490,B3,2,1,2,3,,,0,0,120,11,4,UCC,UGA,CS 2B,CS 2B,,,,,,4
+Plankton Theodinian,2894,863,Samuel Swamp Donkeys,2954,539,K,324,T4,0,0,2,3,,,0,0,121,11,4,UGA,UCC,K,K,,,,,,1
+Jamal Jackson,2815,490,Samuel Swamp Donkeys,2954,278,FO,212,T4,1,0,2,3,,,0,0,121,11,4,UGA,UCC,FO,FO,,,,,,1
+Antony Joy,2949,721,Samuel Swamp Donkeys,2954,621,1B,100,T4,2,0,2,3,,,0,0,121,11,4,UGA,UCC,1B,1B,,,,,,1
+Dante Dagostino,2846,818,Samuel Swamp Donkeys,2954,328,LGO,490,T4,2,1,2,3,,,0,0,121,11,4,UGA,UCC,LGO,LGO,,,,,,1
+Skarch McGooter,2914,211,Leopold Pollersbeck,2875,490,K,279,B4,0,0,2,3,,,0,0,122,11,4,UCC,UGA,K,K,,,,,,1
+Mama Luigi,2947,257,Leopold Pollersbeck,2875,111,FO,146,B4,1,0,2,3,,,0,0,122,11,4,UCC,UGA,FO,FO,,,,,,1
+Choc Banana,2897,487,Leopold Pollersbeck,2875,234,FO,253,B4,2,0,2,3,,,0,0,122,11,4,UCC,UGA,FO,FO,,,,,,1
+Scoreson McCorkle,2864,214,Samuel Swamp Donkeys,2954,718,LGO,496,T5,0,0,2,3,,,0,0,123,11,4,UGA,UCC,LGO,LGO,,,,,,1
+Verde Jack,2854,378,Samuel Swamp Donkeys,2954,627,FO,249,T5,1,0,2,3,,,0,0,123,11,4,UGA,UCC,FO,FO,,,,,,1
+Hickey Renderson,2879,207,Samuel Swamp Donkeys,2954,269,1B,62,T5,2,0,2,3,,,0,0,123,11,4,UGA,UCC,1B,1B,,,,,,1
+Mack Quackerson,2834,818,Samuel Swamp Donkeys,2954,133,K,315,T5,2,1,2,3,,,0,0,123,11,4,UGA,UCC,K,K,,,,,,1
+TWs Frozen Head,2868,333,Tee Bird,2863,932,PO,401,B5,0,0,2,3,,,0,0,124,11,4,UCC,UGA,PO,PO,,,,,,1
+Nicaragua del Toro,2904,214,Tee Bird,2863,719,LGO,495,B5,1,0,2,3,,,0,0,124,11,4,UCC,UGA,LGO,LGO,,,,,,1
+Tleyber Alfredo Cruz Fernandez III,2942,660,Tee Bird,2863,437,FO,223,B5,2,0,2,3,,,0,0,124,11,4,UCC,UGA,FO,FO,,,,,,1
+George P. Burdell,2903,648,Just A. Guy,2888,400,FO,248,T1,0,0,0,0,,,0,0,125,12,4,TOL,TEN,FO,FO,,,,,,1
+Boomer Fisher,2933,800,Just A. Guy,2888,135,PO,335,T1,1,0,0,0,,,0,0,125,12,4,TOL,TEN,PO,PO,,,,,,1
+Mîke Ock,2882,420,Just A. Guy,2888,750,PO,330,T1,2,0,0,0,,,0,0,125,12,4,TOL,TEN,PO,PO,,,,,,1
+Hal Pipken,2936,602,Triscuit McBiskit,2855,618,HR,16,B1,0,0,0,0,,,1,1,126,12,4,TEN,TOL,HR,HR,,,,,,1
+Gooch Jones,2896,932,Triscuit McBiskit,2855,816,BB,116,B1,0,0,1,0,,,0,1,126,12,4,TEN,TOL,BB,BB,,,,,,1
+Gooch Jones,2896,653,Triscuit McBiskit,2855,451,SB,202,B1,0,1,1,0,,,0,0,126,12,4,TEN,TOL,Steal 2B,Steal 2B,,,,,,4
+Peanuts Lee,2923,779,Triscuit McBiskit,2855,84,K,305,B1,0,2,1,0,,,0,0,126,12,4,TEN,TOL,K,K,,,,,,1
+Warren Peace,2843,103,Triscuit McBiskit,2855,801,K,302,B1,1,2,1,0,,,0,0,126,12,4,TEN,TOL,K,K,,,,,,1
+"One Beer, Please",2850,508,Triscuit McBiskit,2855,525,HR,17,B1,2,2,1,0,,,2,1,126,12,4,TEN,TOL,HR,HR,,,,,,1
+Goaty McGoatFace,2878,231,Triscuit McBiskit,2855,669,RGO,438,B1,2,0,3,0,,,0,0,126,12,4,TEN,TOL,RGO,RGO,,,,,,1
+Brandon Rice III,2951,233,Just A. Guy,2888,985,K,248,T2,0,0,3,0,,,0,0,127,12,4,TOL,TEN,K,K,,,,,,1
+Primero Ultimo,2889,224,Just A. Guy,2888,321,1B,97,T2,1,0,3,0,,,0,0,127,12,4,TOL,TEN,1B,1B,,,,,,1
+Johnny Appleseed,2929,700,Just A. Guy,2888,69,PO,369,T2,1,1,3,0,,,0,0,127,12,4,TOL,TEN,PO,PO,,,,,,1
+Mustard Fatherson,2910,655,Just A. Guy,2888,569,1B,86,T2,2,1,3,0,,,0,0,127,12,4,TOL,TEN,1B,1B,,,,,,1
+Ace Ventura,2874,49,Just A. Guy,2888,250,FO,201,T2,2,5,3,0,,,0,0,127,12,4,TOL,TEN,FO,FO,,,,,,1
+Anthony Esposito III,2950,872,Triscuit McBiskit,2855,188,K,316,B2,0,0,3,0,,,0,0,128,12,4,TEN,TOL,K,K,,,,,,1
+Mo Bonzalez,2943,572,Triscuit McBiskit,2855,184,RGO,388,B2,1,0,3,0,,,0,0,128,12,4,TEN,TOL,RGO,RGO,,,,,,1
+Scoot Heller,2913,789,Triscuit McBiskit,2855,712,1B,77,B2,2,0,3,0,,,0,0,128,12,4,TEN,TOL,1B,1B,,,,,,1
+Hal Pipken,2936,602,Triscuit McBiskit,2855,220,PO,382,B2,2,1,3,0,,,0,0,128,12,4,TEN,TOL,PO,PO,,,,,,1
+Trashstar Ratryox,2953,393,Soggy Arm,2839,634,K,241,T3,0,0,3,0,,,0,0,129,12,4,TOL,TEN,K,K,,,,,,1
+George P. Burdell,2903,777,Soggy Arm,2839,799,3B,22,T3,1,0,3,0,,,0,1,129,12,4,TOL,TEN,3B,3B,,,,,,1
+Boomer Fisher,2933,108,Soggy Arm,2839,19,1B,89,T3,1,3,3,0,,,1,0,129,12,4,TOL,TEN,1B,1B,,,,,,2
+Mîke Ock,2882,449,Soggy Arm,2839,990,DP,459,T3,1,1,3,1,,,0,0,129,12,4,TOL,TEN,LGO,LGO,,,,,,1
+Gooch Jones,2896,522,Triscuit McBiskit,2855,748,FO,226,B3,0,0,3,1,,,0,0,130,12,4,TEN,TOL,FO,FO,,,,,,1
+Johnmaine Chupri,2849,322,Triscuit McBiskit,2855,454,BB,132,B3,1,0,3,1,,,0,1,130,12,4,TEN,TOL,BB,BB,,,,,,1
+Warren Peace,2843,888,Triscuit McBiskit,2855,904,HR,16,B3,1,1,3,1,,,2,1,130,12,4,TEN,TOL,HR,HR,,,,,,1
+"One Beer, Please",2850,614,Triscuit McBiskit,2855,33,RGO,419,B3,1,0,5,1,,,0,0,130,12,4,TEN,TOL,RGO,RGO,,,,,,1
+Goaty McGoatFace,2878,655,Triscuit McBiskit,2855,900,FO,245,B3,2,0,5,1,,,0,0,130,12,4,TEN,TOL,FO,FO,,,,,,1
+Brandon Rice III,2951,402,Soggy Arm,2839,105,K,297,T4,0,0,5,1,,,0,0,131,12,4,TOL,TEN,K,K,,,,,,1
+Primero Ultimo,2889,624,Soggy Arm,2839,376,K,248,T4,1,0,5,1,,,0,0,131,12,4,TOL,TEN,K,K,,,,,,1
+Johnny Appleseed,2929,52,Soggy Arm,2839,231,FO,179,T4,2,0,5,1,,,0,0,131,12,4,TOL,TEN,FO,FO,,,,,,1
+Anthony Esposito III,2950,220,Tark Tarkington Jr,2892,13,FO,207,B4,0,0,5,1,,,0,0,132,12,4,TEN,TOL,FO,FO,,,,,,1
+Mo Bonzalez,2943,824,Tark Tarkington Jr,2892,975,BB,151,B4,1,0,5,1,,,0,0,132,12,4,TEN,TOL,BB,BB,,,,,,1
+Scoot Heller,2913,714,Tark Tarkington Jr,2892,552,BB,162,B4,1,1,5,1,,,0,0,132,12,4,TEN,TOL,BB,BB,,,,,,1
+Hal Pipken,2936,435,Tark Tarkington Jr,2892,999,DP,436,B4,1,4,5,1,,,0,0,132,12,4,TEN,TOL,LGO,LGO,,,,,,1
+Mustard Fatherson,2910,420,Tequila Sunrise,249,69,PO,351,T5,0,0,5,1,,,0,0,133,12,4,TOL,TEN,PO,PO,,,,,,1
+Ace Ventura,2874,619,Tequila Sunrise,249,69,LGO,450,T5,1,0,5,1,,,0,0,133,12,4,TOL,TEN,LGO,LGO,,,,,,1
+Trashstar Ratryox,2953,69,Tequila Sunrise,249,69,HR,0,T5,2,0,5,1,,,1,1,133,12,4,TOL,TEN,HR,HR,,,,,,1
+George P. Burdell,2903,101,Tequila Sunrise,249,777,K,324,T5,2,0,5,2,,,0,0,133,12,4,TOL,TEN,K,K,,,,,,1
+Gooch Jones,2896,144,Tark Tarkington Jr,2892,430,PO,286,B5,0,0,5,2,,,0,0,134,12,4,TEN,TOL,PO,PO,,,,,,1
+Johnmaine Chupri,2849,151,Tark Tarkington Jr,2892,630,LGO,479,B5,1,0,5,2,,,0,0,134,12,4,TEN,TOL,LGO,LGO,,,,,,1
+Warren Peace,2843,945,Tark Tarkington Jr,2892,329,RGO,384,B5,2,0,5,2,,,0,0,134,12,4,TEN,TOL,RGO,RGO,,,,,,1
+Boomer Fisher,2933,999,Tequila Sunrise,249,777,FO,222,T6,0,0,5,2,,,0,0,135,12,4,TOL,TEN,FO,FO,,,,,,1
+Mîke Ock,2882,69,Tequila Sunrise,249,500,RGO,431,T6,1,0,5,2,,,0,0,135,12,4,TOL,TEN,RGO,RGO,,,,,,1
+Brandon Rice III,2951,420,Tequila Sunrise,249,202,FO,218,T6,2,0,5,2,,,0,0,135,12,4,TOL,TEN,FO,FO,,,,,,1
+River James,2857,997,William T. Striker,2867,609,K,388,T1,0,0,0,0,,,0,0,136,13,5,UCC,HVD,K,K,,,,,,1
+Javi D. Modelo,2898,69,William T. Striker,2867,862,K,207,T1,1,0,0,0,,,0,0,136,13,5,UCC,HVD,K,K,,,,,,1
+Tleyber Alfredo Cruz Fernandez III,2942,531,William T. Striker,2867,532,HR,1,T1,2,0,0,0,,,1,1,136,13,5,UCC,HVD,HR,HR,,,,,,1
+DeAaron Taylor,2824,69,William T. Striker,2867,997,2B,72,T1,2,0,0,1,,,0,0,136,13,5,UCC,HVD,2B,2B,,,,,,1
+Mama Luigi,2947,299,William T. Striker,2867,892,PO,407,T1,2,2,0,1,,,0,0,136,13,5,UCC,HVD,PO,PO,,,,,,1
+John McDonald Jr.,2853,707,Guillermo Griffey III,2829,929,FO,222,B1,0,0,0,1,,,0,0,137,13,5,HVD,UCC,FO,FO,,,,,,1
+Jake Lazer,2884,420,Guillermo Griffey III,2829,896,LGO,476,B1,1,0,0,1,,,0,0,137,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Mr. Beevan,616,821,Guillermo Griffey III,2829,901,2B,80,B1,2,0,0,1,,,0,0,137,13,5,HVD,UCC,2B,2B,,,,,,1
+Charles Vella,2869,314,Guillermo Griffey III,2829,104,FO,210,B1,2,2,0,1,,,0,0,137,13,5,HVD,UCC,FO,FO,,,,,,1
+Seth Kablamo,2932,121,William T. Striker,2867,27,BB,94,T2,0,0,0,1,,,0,1,138,13,5,UCC,HVD,BB,BB,,,,,,1
+Seth Kablamo,2932,55,William T. Striker,2867,128,SB,73,T2,0,1,0,1,,,0,0,138,13,5,UCC,HVD,Steal 2B,Steal 2B,,,,,,4
+Nicaragua del Toro,2904,777,William T. Striker,2867,364,RGO,413,T2,0,2,0,1,,,0,0,138,13,5,UCC,HVD,RGO,RGO,,,,,,1
+Choc Banana,2897,913,William T. Striker,2867,746,BB,167,T2,1,3,0,1,,,0,0,138,13,5,UCC,HVD,BB,BB,,,,,,2
+Choc Banana,2897,800,William T. Striker,2867,943,SB,143,T2,1,5,0,1,,,0,0,138,13,5,UCC,HVD,Steal 2B,Steal 2B,,,,,,5
+Ashington Swift,2845,710,William T. Striker,2867,493,Sac,217,T2,1,6,0,1,,,1,0,138,13,5,UCC,HVD,FO,FO,,,,,,2
+River James,2857,696,William T. Striker,2867,31,K,335,T2,2,2,0,2,,,0,0,138,13,5,UCC,HVD,K,K,,,,,,1
+Axkoa Griffin,2848,493,Guillermo Griffey III,2829,641,BB,148,B2,0,0,0,2,,,0,1,139,13,5,HVD,UCC,BB,BB,,,,,,1
+Axkoa Griffin,2848,293,Guillermo Griffey III,2829,113,SB,180,B2,0,1,0,2,,,0,0,139,13,5,HVD,UCC,Steal 2B,Steal 2B,,,,,,4
+Randy Mann,2922,451,Guillermo Griffey III,2829,13,RGO,438,B2,0,2,0,2,,,0,0,139,13,5,HVD,UCC,RGO,RGO,,,,,,1
+Sloppy Dock,215,420,Guillermo Griffey III,2829,599,Sac,179,B2,1,3,0,2,,,1,0,139,13,5,HVD,UCC,FO,FO,,,,,,1
+Jeff Newman,2931,409,Guillermo Griffey III,2829,797,PO,388,B2,2,0,1,2,,,0,0,139,13,5,HVD,UCC,PO,PO,,,,,,1
+Javi D. Modelo,2898,296,William T. Striker,2867,643,K,347,T3,0,0,1,2,,,0,0,140,13,5,UCC,HVD,K,K,,,,,,1
+Tleyber Alfredo Cruz Fernandez III,2942,225,William T. Striker,2867,519,K,294,T3,1,0,1,2,,,0,0,140,13,5,UCC,HVD,K,K,,,,,,1
+DeAaron Taylor,2824,750,William T. Striker,2867,934,K,184,T3,2,0,1,2,,,0,0,140,13,5,UCC,HVD,K,K,,,,,,1
+Jose Can-Fake-O,2905,699,Guillermo Griffey III,2829,914,FO,215,B3,0,0,1,2,,,0,0,141,13,5,HVD,UCC,FO,FO,,,,,,1
+John McDonald Jr.,2853,125,Guillermo Griffey III,2829,484,K,359,B3,1,0,1,2,,,0,0,141,13,5,HVD,UCC,K,K,,,,,,1
+Jake Lazer,2884,757,Guillermo Griffey III,2829,287,LGO,470,B3,2,0,1,2,,,0,0,141,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Mama Luigi,2947,982,William T. Striker,2867,833,FO,149,T4,0,0,1,2,,,0,0,142,13,5,UCC,HVD,FO,FO,,,,,,1
+Seth Kablamo,2932,314,William T. Striker,2867,579,K,265,T4,1,0,1,2,,,0,0,142,13,5,UCC,HVD,K,K,,,,,,1
+Nicaragua del Toro,2904,118,William T. Striker,2867,600,LGO,482,T4,2,0,1,2,,,0,0,142,13,5,UCC,HVD,LGO,LGO,,,,,,1
+Mr. Beevan,616,219,Katerina Aston,2952,133,1B,86,B4,0,0,1,2,,,0,0,143,13,5,HVD,UCC,1B,1B,,,,,,1
+Mr. Beevan,616,241,Katerina Aston,2952,281,SB,40,B4,0,1,1,2,,,0,0,143,13,5,HVD,UCC,Steal 2B,Steal 2B,,,,,,4
+Charles Vella,2869,742,Katerina Aston,2952,201,LGO,459,B4,0,2,1,2,,,0,0,143,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Axkoa Griffin,2848,405,Katerina Aston,2952,620,FO,215,B4,1,2,1,2,,,0,0,143,13,5,HVD,UCC,FO,FO,,,,,,1
+Randy Mann,2922,551,Katerina Aston,2952,116,RGO,435,B4,2,2,1,2,,,0,0,143,13,5,HVD,UCC,RGO,RGO,,,,,,1
+Choc Banana,2897,13,William T. Striker,2867,968,2B,45,T5,0,0,1,2,,,0,0,144,13,5,UCC,HVD,2B,2B,,,,,,1
+Ashington Swift,2845,317,William T. Striker,2867,236,1B,81,T5,0,2,1,2,,,0,0,144,13,5,UCC,HVD,1B,1B,,,,,,1
+Choc Banana,2897,69,William T. Striker,2867,533,CS,464,T5,0,5,1,2,,,0,0,144,13,5,UCC,HVD,CMS Home,CMS Home,,,,,,6
+River James,2857,734,William T. Striker,2867,37,K,303,T5,1,2,1,2,,,0,0,144,13,5,UCC,HVD,K,K,,,,,,1
+Javi D. Modelo,2898,399,William T. Striker,2867,962,RGO,437,T5,2,2,1,2,,,0,0,144,13,5,UCC,HVD,RGO,RGO,,,,,,1
+Sloppy Dock,215,205,Katerina Aston,2952,737,LGO,468,B5,0,0,1,2,,,0,0,145,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Jeff Newman,2931,950,Katerina Aston,2952,601,K,349,B5,1,0,1,2,,,0,0,145,13,5,HVD,UCC,K,K,,,,,,1
+Jose Can-Fake-O,2905,375,Katerina Aston,2952,890,LGO,485,B5,2,0,1,2,,,0,0,145,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Tleyber Alfredo Cruz Fernandez III,2942,645,William T. Striker,2867,22,K,377,T6,0,0,1,2,,,0,0,146,13,5,UCC,HVD,K,K,,,,,,1
+DeAaron Taylor,2824,450,William T. Striker,2867,324,BB,126,T6,1,0,1,2,,,0,0,146,13,5,UCC,HVD,BB,BB,,,,,,1
+Mama Luigi,2947,590,William T. Striker,2867,22,DP,432,T6,1,1,1,2,,,0,0,146,13,5,UCC,HVD,RGO,RGO,,,,,,1
+John McDonald Jr.,2853,629,Katerina Aston,2952,941,K,312,B6,0,0,1,2,,,0,0,147,13,5,HVD,UCC,K,K,,,,,,1
+Jake Lazer,2884,345,Katerina Aston,2952,680,K,335,B6,1,0,1,2,,,0,0,147,13,5,HVD,UCC,K,K,,,,,,1
+Mr. Beevan,616,274,Katerina Aston,2952,749,LGO,475,B6,2,0,1,2,,,0,0,147,13,5,HVD,UCC,LGO,LGO,,,,,,1
+Trashstar Ratryox,2953,253,Bart Bishop,2900,748,LGO,495,T1,0,0,0,0,,,0,0,148,14,5,TOL,UGA,LGO,LGO,,,,,,1
+Stupido Einsteiny,2866,732,Bart Bishop,2900,555,FO,177,T1,1,0,0,0,,,0,0,148,14,5,TOL,UGA,FO,FO,,,,,,1
+Boomer Fisher,2933,252,Bart Bishop,2900,177,1B,75,T1,2,0,0,0,,,0,0,148,14,5,TOL,UGA,1B,1B,,,,,,1
+Boomer Fisher,2933,137,Bart Bishop,2900,32,SB,105,T1,2,1,0,0,,,0,0,148,14,5,TOL,UGA,Steal 2B,Steal 2B,,,,,,4
+Corbin Christmas Carol,2827,210,Bart Bishop,2900,425,FO,215,T1,2,2,0,0,,,0,0,148,14,5,TOL,UGA,FO,FO,,,,,,1
+Plankton Theodinian,2894,821,Hans Zahn,2915,420,PO,401,B1,0,0,0,0,,,0,0,149,14,5,UGA,TOL,PO,PO,,,,,,1
+Ernie Steele,2956,911,Hans Zahn,2915,518,PO,393,B1,1,0,0,0,,,0,0,149,14,5,UGA,TOL,PO,PO,,,,,,1
+Jamal Jackson,2815,658,Hans Zahn,2915,69,PO,411,B1,2,0,0,0,,,0,0,149,14,5,UGA,TOL,PO,PO,,,,,,1
+Tony Pizza,2844,500,Bart Bishop,2900,222,K,278,T2,0,0,0,0,,,0,0,150,14,5,TOL,UGA,K,K,,,,,,1
+Grunt Manly,2948,807,Bart Bishop,2900,583,FO,224,T2,1,0,0,0,,,0,0,150,14,5,TOL,UGA,FO,FO,,,,,,1
+Sean Carrcrash,1709,212,Bart Bishop,2900,755,RGO,457,T2,2,0,0,0,,,0,0,150,14,5,TOL,UGA,RGO,RGO,,,,,,1
+Kai Sedillo,2917,277,Hans Zahn,2915,512,K,235,B2,0,0,0,0,,,0,0,151,14,5,UGA,TOL,K,K,,,,,,1
+Pontos Napoleon,2934,603,Hans Zahn,2915,402,FO,201,B2,1,0,0,0,,,0,0,151,14,5,UGA,TOL,FO,FO,,,,,,1
+Scoreson McCorkle,2864,980,Hans Zahn,2915,295,PO,315,B2,2,0,0,0,,,0,0,151,14,5,UGA,TOL,PO,PO,,,,,,1
+Kyle Brambley,2212,630,Tee Bird,2863,520,1B,110,T3,0,0,0,0,,,0,0,152,14,5,TOL,UGA,1B,1B,,,,,,1
+Chad Isotope,2891,404,Tee Bird,2863,520,BB,116,T3,0,1,0,0,,,0,0,152,14,5,TOL,UGA,BB,BB,,,,,,1
+Trashstar Ratryox,2953,950,Tee Bird,2863,782,FO,168,T3,0,4,0,0,,,0,0,152,14,5,TOL,UGA,FO,FO,,,,,,1
+Stupido Einsteiny,2866,299,Tee Bird,2863,116,FO,183,T3,1,4,0,0,,,0,0,152,14,5,TOL,UGA,FO,FO,,,,,,1
+Boomer Fisher,2933,217,Tee Bird,2863,823,PO,394,T3,2,4,0,0,,,0,0,152,14,5,TOL,UGA,PO,PO,,,,,,1
+Dante Dagostino,2846,420,Hans Zahn,2915,181,FO,239,B3,0,0,0,0,,,0,0,153,14,5,UGA,TOL,FO,FO,,,,,,1
+Hickey Renderson,2879,777,Hans Zahn,2915,291,LGO,486,B3,1,0,0,0,,,0,0,153,14,5,UGA,TOL,LGO,LGO,,,,,,1
+Willie Gardner,2856,187,Hans Zahn,2915,471,PO,284,B3,2,0,0,0,,,0,0,153,14,5,UGA,TOL,PO,PO,,,,,,1
+Corbin Christmas Carol,2827,888,Tee Bird,2863,3,BB,115,T4,0,0,0,0,,,0,0,154,14,5,TOL,UGA,BB,BB,,,,,,1
+Luke fromm,2958,423,Tee Bird,2863,932,DP,491,T4,0,1,0,0,,,0,0,154,14,5,TOL,UGA,LGO,LGO,,,,,,1
+Grunt Manly,2948,433,Tee Bird,2863,371,2B,62,T4,2,0,0,0,,,0,0,154,14,5,TOL,UGA,2B,2B,,,,,,1
+Sean Carrcrash,1709,215,Tee Bird,2863,421,FO,206,T4,2,2,0,0,,,0,0,154,14,5,TOL,UGA,FO,FO,,,,,,1
+Plankton Theodinian,2894,310,Hans Zahn,2915,902,PO,408,B4,0,0,0,0,,,0,0,155,14,5,UGA,TOL,PO,PO,,,,,,1
+Ernie Steele,2956,208,Hans Zahn,2915,131,1B,77,B4,1,0,0,0,,,0,0,155,14,5,UGA,TOL,1B,1B,,,,,,1
+Ernie Steele,2956,455,Hans Zahn,2915,102,CS,353,B4,1,1,0,0,,,0,0,155,14,5,UGA,TOL,CS 2B,CS 2B,,,,,,4
+Jamal Jackson,2815,750,Hans Zahn,2915,89,PO,339,B4,2,0,0,0,,,0,0,155,14,5,UGA,TOL,PO,PO,,,,,,1
+Kyle Brambley,2212,340,Leopold Pollersbeck,2875,643,PO,303,T5,0,0,0,0,,,0,0,156,14,5,TOL,UGA,PO,PO,,,,,,1
+Chad Isotope,2891,747,Leopold Pollersbeck,2875,410,PO,337,T5,1,0,0,0,,,0,0,156,14,5,TOL,UGA,PO,PO,,,,,,1
+Trashstar Ratryox,2953,242,Leopold Pollersbeck,2875,240,HR,2,T5,2,0,0,0,,,1,1,156,14,5,TOL,UGA,HR,HR,,,,,,1
+Stupido Einsteiny,2866,252,Leopold Pollersbeck,2875,460,FO,208,T5,2,0,0,1,,,0,0,156,14,5,TOL,UGA,FO,FO,,,,,,1
+Kai Sedillo,2917,372,Hans Zahn,2915,190,FO,182,B5,0,0,0,1,,,0,0,157,14,5,UGA,TOL,FO,FO,,,,,,1
+Pontos Napoleon,2934,579,Hans Zahn,2915,711,BB,132,B5,1,0,0,1,,,0,0,157,14,5,UGA,TOL,BB,BB,,,,,,1
+Pontos Napoleon,2934,587,Hans Zahn,2915,250,CS,337,B5,1,1,0,1,,,0,0,157,14,5,UGA,TOL,CS 2B,CS 2B,,,,,,4
+Scoreson McCorkle,2864,207,Hans Zahn,2915,919,PO,288,B5,2,0,0,1,,,0,0,157,14,5,UGA,TOL,PO,PO,,,,,,1
+Boomer Fisher,2933,470,Leopold Pollersbeck,2875,920,RGO,450,T6,0,0,0,1,,,0,0,158,14,5,TOL,UGA,RGO,RGO,,,,,,1
+Corbin Christmas Carol,2827,345,Leopold Pollersbeck,2875,1000,PO,345,T6,1,0,0,1,,,0,0,158,14,5,TOL,UGA,PO,PO,,,,,,1
+Luke fromm,2958,217,Leopold Pollersbeck,2875,499,PO,282,T6,2,0,0,1,,,0,0,158,14,5,TOL,UGA,PO,PO,,,,,,1
+Dante Dagostino,2846,501,Hans Zahn,2915,20,LGO,481,B6,0,0,0,1,,,0,0,159,14,5,UGA,TOL,LGO,LGO,,,,,,1
+Hickey Renderson,2879,218,Hans Zahn,2915,211,HR,7,B6,1,0,0,1,,,1,1,159,14,5,UGA,TOL,HR,HR,,,,,,1
+Willie Gardner,2856,443,Hans Zahn,2915,814,PO,371,B6,1,0,1,1,,,0,0,159,14,5,UGA,TOL,PO,PO,,,,,,1
+Plankton Theodinian,2894,200,Hans Zahn,2915,540,PO,340,B6,2,0,1,1,,,0,0,159,14,5,UGA,TOL,PO,PO,,,,,,1
+Grunt Manly,2948,404,Karl Havoc,2911,116,K,288,T7,0,2,1,1,,,0,0,160,14,5,TOL,UGA,K,K,,,,,,1
+Sean Carrcrash,1709,420,Karl Havoc,2911,93,K,327,T7,1,2,1,1,,,0,0,160,14,5,TOL,UGA,K,K,,,,,,1
+Kyle Brambley,2212,264,Karl Havoc,2911,577,K,313,T7,2,2,1,1,,,0,0,160,14,5,TOL,UGA,K,K,,,,,,1
+Ernie Steele,2956,642,Hans Zahn,2915,211,PO,431,B7,0,2,1,1,,,0,0,161,14,5,UGA,TOL,PO,PO,,,,,,1
+Jamal Jackson,2815,285,Hans Zahn,2915,888,PO,397,B7,1,2,1,1,,,0,0,161,14,5,UGA,TOL,PO,PO,,,,,,1
+Kai Sedillo,2917,372,Hans Zahn,2915,619,K,247,B7,2,2,1,1,,,0,0,161,14,5,UGA,TOL,K,K,,,,,,1
+Chad Isotope,2891,313,Karl Havoc,2911,855,RGO,458,T8,0,6,1,1,,,1,0,162,14,5,TOL,UGA,RGO,RGO,,,,,,1
+Trashstar Ratryox,2953,909,Karl Havoc,2911,136,K,227,T8,1,3,1,2,,,0,0,162,14,5,TOL,UGA,K,K,,,,,,2
+Stupido Einsteiny,2866,237,Karl Havoc,2911,729,LGO,492,T8,2,3,1,2,,,0,0,162,14,5,TOL,UGA,LGO,LGO,,,,,,1
+Pontos Napoleon,2934,659,Hans Zahn,2915,945,PO,286,B8,0,6,1,2,,,0,0,163,14,5,UGA,TOL,PO,PO,,,,,,1
+Scoreson McCorkle,2864,337,Hans Zahn,2915,728,PO,391,B8,1,6,1,2,,,0,0,163,14,5,UGA,TOL,PO,PO,,,,,,1
+Dante Dagostino,2846,718,Hans Zahn,2915,771,2B,53,B8,2,6,1,2,,,2,0,163,14,5,UGA,TOL,2B,2B,,,,,,1
+T-Rav,2908,638,Soggy Arm,2839,500,BB,138,T1,0,0,0,0,,,0,0,164,15,5,WSU,TEN,BB,BB,,,,,,1
+T-Rav,2908,581,Soggy Arm,2839,213,CS,368,T1,0,1,0,0,,,0,0,164,15,5,WSU,TEN,CS 2B,CS 2B,,,,,,4
+Moon Malarkey,2842,649,Soggy Arm,2839,222,RGO,427,T1,1,0,0,0,,,0,0,164,15,5,WSU,TEN,RGO,RGO,,,,,,1
+Zeke Euselachii,2930,640,Soggy Arm,2839,427,K,213,T1,2,0,0,0,,,0,0,164,15,5,WSU,TEN,K,K,,,,,,1
+Goaty McGoatFace,2878,519,Pablo The Hip Kawasaki,2890,541,3B,22,B1,0,0,0,0,,,0,1,165,15,5,TEN,WSU,3B,3B,,,,,,1
+fridayphd,2826,867,Pablo The Hip Kawasaki,2890,593,K,274,B1,0,3,0,0,,,0,0,165,15,5,TEN,WSU,K,K,,,,,,1
+Johnmaine Chupri,2849,811,Pablo The Hip Kawasaki,2890,921,1B,110,B1,1,3,0,0,,,1,1,165,15,5,TEN,WSU,1B,1B,,,,,,2
+Johnmaine Chupri,2849,472,Pablo The Hip Kawasaki,2890,472,SB,164,B1,1,1,1,0,,,0,0,165,15,5,TEN,WSU,Steal 2B,Steal 2B,,,,,,4
+Winston Pepperwood,2957,753,Pablo The Hip Kawasaki,2890,432,K,321,B1,1,2,1,0,,,0,0,165,15,5,TEN,WSU,K,K,,,,,,1
+Gooch Jones,2896,924,Pablo The Hip Kawasaki,2890,942,HR,18,B1,2,2,1,0,,,2,1,165,15,5,TEN,WSU,HR,HR,,,,,,1
+Peanuts Lee,2923,611,Pablo The Hip Kawasaki,2890,382,FO,229,B1,2,0,3,0,,,0,0,165,15,5,TEN,WSU,FO,FO,,,,,,1
+Justin Time,2886,362,Soggy Arm,2839,427,1B,65,T2,0,0,3,0,,,0,0,166,15,5,WSU,TEN,1B,1B,,,,,,1
+Dusty Jabroni,2852,707,Soggy Arm,2839,141,DP,434,T2,0,1,3,0,,,0,0,166,15,5,WSU,TEN,RGO,RGO,,,,,,1
+Ryan McBryan,2880,846,Soggy Arm,2839,231,RGO,385,T2,2,0,3,0,,,0,0,166,15,5,WSU,TEN,RGO,RGO,,,,,,1
+Scoot Heller,2913,77,Pablo The Hip Kawasaki,2890,186,1B,109,B2,0,0,3,0,,,0,1,167,15,5,TEN,WSU,1B,1B,,,,,,1
+"One Beer, Please",2850,260,Pablo The Hip Kawasaki,2890,289,HR,29,B2,0,1,3,0,,,2,1,167,15,5,TEN,WSU,HR,HR,,,,,,1
+Jihmih Tyranus,2873,601,Pablo The Hip Kawasaki,2890,785,FO,184,B2,0,0,5,0,,,0,0,167,15,5,TEN,WSU,FO,FO,,,,,,1
+Goaty McGoatFace,2878,969,Pablo The Hip Kawasaki,2890,411,LGO,442,B2,1,0,5,0,,,0,0,167,15,5,TEN,WSU,LGO,LGO,,,,,,1
+fridayphd,2826,50,Pablo The Hip Kawasaki,2890,310,K,260,B2,2,0,5,0,,,0,0,167,15,5,TEN,WSU,K,K,,,,,,1
+Gravy Stains McGee,2895,256,Just A. Guy,2888,420,BB,164,T3,0,0,5,0,,,0,0,168,15,5,WSU,TEN,BB,BB,,,,,,1
+Jorbel Boykins,2847,117,Just A. Guy,2888,900,FO,217,T3,0,1,5,0,,,0,0,168,15,5,WSU,TEN,FO,FO,,,,,,1
+Whiff Sniff,2859,432,Just A. Guy,2888,580,BB,148,T3,1,1,5,0,,,0,0,168,15,5,WSU,TEN,BB,BB,,,,,,1
+T-Rav,2908,999,Just A. Guy,2888,232,FO,233,T3,1,4,5,0,,,0,0,168,15,5,WSU,TEN,FO,FO,,,,,,1
+Moon Malarkey,2842,280,Just A. Guy,2888,777,LGO,497,T3,2,4,5,0,,,0,0,168,15,5,WSU,TEN,LGO,LGO,,,,,,1
+Johnmaine Chupri,2849,682,Pablo The Hip Kawasaki,2890,639,2B,43,B3,0,0,5,0,,,0,1,169,15,5,TEN,WSU,2B,2B,,,,,,1
+Winston Pepperwood,2957,535,Pablo The Hip Kawasaki,2890,131,RGO,404,B3,0,2,5,0,,,0,0,169,15,5,TEN,WSU,RGO,RGO,,,,,,1
+Gooch Jones,2896,222,Pablo The Hip Kawasaki,2890,381,Sac,159,B3,1,3,5,0,,,1,0,169,15,5,TEN,WSU,FO,FO,,,,,,1
+Peanuts Lee,2923,299,Pablo The Hip Kawasaki,2890,610,K,311,B3,2,0,6,0,,,0,0,169,15,5,TEN,WSU,K,K,,,,,,1
+Zeke Euselachii,2930,96,Just A. Guy,2888,899,FO,197,T4,0,0,6,0,,,0,0,170,15,5,WSU,TEN,FO,FO,,,,,,1
+Justin Time,2886,69,Just A. Guy,2888,700,PO,369,T4,1,0,6,0,,,0,0,170,15,5,WSU,TEN,PO,PO,,,,,,1
+Dusty Jabroni,2852,109,Just A. Guy,2888,230,1B,121,T4,2,0,6,0,,,0,0,170,15,5,WSU,TEN,1B,1B,,,,,,1
+Ryan McBryan,2880,681,Just A. Guy,2888,569,1B,112,T4,2,1,6,0,,,0,0,170,15,5,WSU,TEN,1B,1B,,,,,,1
+Gravy Stains McGee,2895,880,Just A. Guy,2888,569,PO,311,T4,2,5,6,0,,,0,0,170,15,5,WSU,TEN,PO,PO,,,,,,1
+Scoot Heller,2913,450,James St Louis,2955,333,1B,117,B4,0,0,6,0,,,0,1,171,15,5,TEN,WSU,1B,1B,,,,,,1
+"One Beer, Please",2850,700,James St Louis,2955,789,1B,89,B4,0,1,6,0,,,0,0,171,15,5,TEN,WSU,1B,1B,,,,,,1
+Jihmih Tyranus,2873,153,James St Louis,2955,789,PO,364,B4,0,4,6,0,,,0,0,171,15,5,TEN,WSU,PO,PO,,,,,,1
+Goaty McGoatFace,2878,420,James St Louis,2955,565,BB,145,B4,1,4,6,0,,,0,0,171,15,5,TEN,WSU,BB,BB,,,,,,1
+fridayphd,2826,75,James St Louis,2955,251,Sac,176,B4,1,7,6,0,,,1,0,171,15,5,TEN,WSU,FO,FO,,,,,,1
+Johnmaine Chupri,2849,922,James St Louis,2955,99,FO,177,B4,2,4,7,0,,,0,0,171,15,5,TEN,WSU,FO,FO,,,,,,1
+Jorbel Boykins,2847,188,Bartholomew McSlapHappy,2871,782,RGO,406,T5,0,0,7,0,,,0,0,172,15,5,WSU,TEN,RGO,RGO,,,,,,1
+Salsa Steve,2835,277,Bartholomew McSlapHappy,2871,279,HR,2,T5,1,0,7,0,,,1,1,172,15,5,WSU,TEN,HR,HR,,,,,,1
+T-Rav,2908,279,Bartholomew McSlapHappy,2871,263,3B,16,T5,1,0,7,1,,,0,0,172,15,5,WSU,TEN,3B,3B,,,,,,1
+Moon Malarkey,2842,810,Bartholomew McSlapHappy,2871,83,PO,273,T5,1,3,7,1,,,0,0,172,15,5,WSU,TEN,PO,PO,,,,,,1
+Zeke Euselachii,2930,114,Bartholomew McSlapHappy,2871,806,PO,308,T5,2,3,7,1,,,0,0,172,15,5,WSU,TEN,PO,PO,,,,,,1
+Brandon Rice III,2951,221,Bartholomew McSlapHappy,2871,537,PO,316,T1,0,0,0,0,,,0,0,173,16,6,TOL,TEN,PO,PO,,,,,,1
+Sean Carrcrash,1709,77,Bartholomew McSlapHappy,2871,87,HR,10,T1,1,0,0,0,,,1,1,173,16,6,TOL,TEN,HR,HR,,,,,,1
+16-bit Griffey,2858,69,Bartholomew McSlapHappy,2871,335,K,266,T1,1,0,0,1,,,0,0,173,16,6,TOL,TEN,K,K,,,,,,1
+Johnny Appleseed,2929,174,Bartholomew McSlapHappy,2871,308,BB,134,T1,2,0,0,1,,,0,0,173,16,6,TOL,TEN,BB,BB,,,,,,1
+Ace Ventura,2874,315,Bartholomew McSlapHappy,2871,73,FO,242,T1,2,1,0,1,,,0,0,173,16,6,TOL,TEN,FO,FO,,,,,,1
+Hal Pipken,2936,324,Tark Tarkington Jr,2892,521,FO,197,B1,0,0,0,1,,,0,0,174,16,6,TEN,TOL,FO,FO,,,,,,1
+Mo Bonzalez,2943,47,Tark Tarkington Jr,2892,104,2B,57,B1,1,0,0,1,,,0,1,174,16,6,TEN,TOL,2B,2B,,,,,,1
+Winston Pepperwood,2957,703,Tark Tarkington Jr,2892,2,K,299,B1,1,2,0,1,,,0,0,174,16,6,TEN,TOL,K,K,,,,,,1
+Warren Peace,2843,435,Tark Tarkington Jr,2892,330,1B,105,B1,2,2,0,1,,,1,0,174,16,6,TEN,TOL,1B,1B,,,,,,1
+Warren Peace,2843,50,Tark Tarkington Jr,2892,801,SB,249,B1,2,1,1,1,,,0,0,174,16,6,TEN,TOL,Steal 2B,Steal 2B,,,,,,4
+Jihmih Tyranus,2873,1,Tark Tarkington Jr,2892,714,FO,287,B1,2,2,1,1,,,0,0,174,16,6,TEN,TOL,FO,FO,,,,,,1
+Trashstar Ratryox,2953,999,Bartholomew McSlapHappy,2871,888,1B,111,T2,0,0,1,1,,,0,0,175,16,6,TOL,TEN,1B,1B,,,,,,1
+Trashstar Ratryox,2953,761,Bartholomew McSlapHappy,2871,265,CS,496,T2,0,1,1,1,,,0,0,175,16,6,TOL,TEN,CS 2B,CS 2B,,,,,,4
+Boomer Fisher,2933,177,Bartholomew McSlapHappy,2871,157,2B,20,T2,1,0,1,1,,,0,1,175,16,6,TOL,TEN,2B,2B,,,,,,1
+Mîke Ock,2882,45,Bartholomew McSlapHappy,2871,389,RGO,344,T2,1,2,1,1,,,0,0,175,16,6,TOL,TEN,RGO,RGO,,,,,,1
+Tony Pizza,2844,6,Bartholomew McSlapHappy,2871,923,1B,83,T2,2,3,1,1,,,1,0,175,16,6,TOL,TEN,1B,1B,,,,,,1
+Brandon Rice III,2951,527,Bartholomew McSlapHappy,2871,723,FO,196,T2,2,1,1,2,,,0,0,175,16,6,TOL,TEN,FO,FO,,,,,,1
+Peanuts Lee,2923,887,Tark Tarkington Jr,2892,420,LGO,467,B2,0,0,1,2,,,0,0,176,16,6,TEN,TOL,LGO,LGO,,,,,,1
+fridayphd,2826,60,Tark Tarkington Jr,2892,101,2B,41,B2,1,0,1,2,,,0,1,176,16,6,TEN,TOL,2B,2B,,,,,,1
+Anthony Esposito III,2950,16,Tark Tarkington Jr,2892,505,LGO,489,B2,1,2,1,2,,,0,0,176,16,6,TEN,TOL,LGO,LGO,,,,,,1
+"One Beer, Please",2850,118,Tark Tarkington Jr,2892,120,HR,2,B2,2,2,1,2,,,2,1,176,16,6,TEN,TOL,HR,HR,,,,,,1
+Hal Pipken,2936,18,Tark Tarkington Jr,2892,740,K,278,B2,2,0,3,2,,,0,0,176,16,6,TEN,TOL,K,K,,,,,,1
+Sean Carrcrash,1709,666,Soggy Arm,2839,231,RGO,435,T3,0,0,3,2,,,0,0,177,16,6,TOL,TEN,RGO,RGO,,,,,,1
+16-bit Griffey,2858,69,Soggy Arm,2839,788,K,281,T3,1,0,3,2,,,0,0,177,16,6,TOL,TEN,K,K,,,,,,1
+Johnny Appleseed,2929,350,Soggy Arm,2839,69,K,281,T3,2,0,3,2,,,0,0,177,16,6,TOL,TEN,K,K,,,,,,1
+Mo Bonzalez,2943,461,Smokey Zygowski,2945,321,BB,140,B3,0,0,3,2,,,0,0,178,16,6,TEN,TOL,BB,BB,,,,,,1
+Mo Bonzalez,2943,511,Smokey Zygowski,2945,150,CS,361,B3,0,1,3,2,,,0,0,178,16,6,TEN,TOL,CS 2B,CS 2B,,,,,,4
+Winston Pepperwood,2957,808,Smokey Zygowski,2945,505,K,303,B3,1,0,3,2,,,0,0,178,16,6,TEN,TOL,K,K,,,,,,1
+Warren Peace,2843,972,Smokey Zygowski,2945,456,LGO,484,B3,2,0,3,2,,,0,0,178,16,6,TEN,TOL,LGO,LGO,,,,,,1
+Ace Ventura,2874,235,Soggy Arm,2839,401,FO,166,T4,0,0,3,2,,,0,0,179,16,6,TOL,TEN,FO,FO,,,,,,1
+Trashstar Ratryox,2953,694,Soggy Arm,2839,300,RGO,394,T4,1,0,3,2,,,0,0,179,16,6,TOL,TEN,RGO,RGO,,,,,,1
+Boomer Fisher,2933,325,Soggy Arm,2839,836,LGO,489,T4,2,0,3,2,,,0,0,179,16,6,TOL,TEN,LGO,LGO,,,,,,1
+Jihmih Tyranus,2873,53,Smokey Zygowski,2945,100,2B,47,B4,0,0,3,2,,,0,0,180,16,6,TEN,TOL,2B,2B,,,,,,1
+Peanuts Lee,2923,177,Smokey Zygowski,2945,547,K,370,B4,0,2,3,2,,,0,0,180,16,6,TEN,TOL,K,K,,,,,,1
+fridayphd,2826,851,Smokey Zygowski,2945,751,1B,100,B4,1,2,3,2,,,0,0,180,16,6,TEN,TOL,1B,1B,,,,,,1
+Anthony Esposito III,2950,416,Smokey Zygowski,2945,953,DP,463,B4,1,5,3,2,,,0,0,180,16,6,TEN,TOL,LGO,LGO,,,,,,1
+Mîke Ock,2882,250,Just A. Guy,2888,850,PO,400,T5,0,0,3,2,,,0,0,181,16,6,TOL,TEN,PO,PO,,,,,,1
+Tony Pizza,2844,13,Just A. Guy,2888,985,3B,28,T5,1,0,3,2,,,0,1,181,16,6,TOL,TEN,3B,3B,,,,,,1
+Brandon Rice III,2951,314,Just A. Guy,2888,321,HR,7,T5,1,3,3,2,,,2,1,181,16,6,TOL,TEN,HR,HR,,,,,,1
+Sean Carrcrash,1709,69,Just A. Guy,2888,69,HR,0,T5,1,0,3,4,,,1,1,181,16,6,TOL,TEN,HR,HR,,,,,,1
+16-bit Griffey,2858,420,Just A. Guy,2888,600,BB,180,T5,1,0,3,5,,,0,0,181,16,6,TOL,TEN,BB,BB,,,,,,1
+Johnny Appleseed,2929,250,Just A. Guy,2888,420,FO,170,T5,1,1,3,5,,,0,0,181,16,6,TOL,TEN,FO,FO,,,,,,1
+Ace Ventura,2874,69,Just A. Guy,2888,666,RGO,403,T5,2,1,3,5,,,0,0,181,16,6,TOL,TEN,RGO,RGO,,,,,,1
+"One Beer, Please",2850,424,Smokey Zygowski,2945,133,K,291,B5,0,0,3,5,,,0,0,182,16,6,TEN,TOL,K,K,,,,,,1
+Hal Pipken,2936,416,Smokey Zygowski,2945,763,K,347,B5,1,0,3,5,,,0,0,182,16,6,TEN,TOL,K,K,,,,,,1
+Mo Bonzalez,2943,159,Smokey Zygowski,2945,551,PO,392,B5,2,0,3,5,,,0,0,182,16,6,TEN,TOL,PO,PO,,,,,,1
+Trashstar Ratryox,2953,760,Tequila Sunrise,249,656,1B,104,T6,0,0,3,5,,,0,0,183,16,6,TOL,TEN,1B,1B,,,,,,1
+Boomer Fisher,2933,430,Tequila Sunrise,249,900,DP,470,T6,0,1,3,5,,,0,0,183,16,6,TOL,TEN,LGO,LGO,,,,,,1
+Mîke Ock,2882,420,Tequila Sunrise,249,333,1B,87,T6,2,0,3,5,,,0,1,183,16,6,TOL,TEN,1B,1B,,,,,,1
+Tony Pizza,2844,807,Tequila Sunrise,249,750,2B,57,T6,2,1,3,5,,,1,0,183,16,6,TOL,TEN,2B,2B,,,,,,1
+Brandon Rice III,2951,69,Tequila Sunrise,249,807,FO,262,T6,2,2,3,6,,,0,0,183,16,6,TOL,TEN,FO,FO,,,,,,1
+Winston Pepperwood,2957,53,Smokey Zygowski,2945,855,FO,198,B6,0,0,3,6,,,0,0,184,16,6,TEN,TOL,FO,FO,,,,,,1
+Warren Peace,2843,515,Smokey Zygowski,2945,799,K,284,B6,1,0,3,6,,,0,0,184,16,6,TEN,TOL,K,K,,,,,,1
+Jihmih Tyranus,2873,463,Smokey Zygowski,2945,69,K,394,B6,2,0,3,6,,,0,0,184,16,6,TEN,TOL,K,K,,,,,,1
+Mack Quackerson,2834,515,Samuel Swamp Donkeys,2954,662,BB,147,T1,0,0,0,0,,,0,1,185,17,6,UGA,UCC,BB,BB,,,,,,1
+Dante Dagostino,2846,104,Samuel Swamp Donkeys,2954,66,2B,38,T1,0,1,0,0,,,0,0,185,17,6,UGA,UCC,2B,2B,,,,,,1
+Pontos Napoleon,2934,651,Samuel Swamp Donkeys,2954,564,1B,87,T1,0,6,0,0,,,1,0,185,17,6,UGA,UCC,1B,1B,,,,,,1
+Pontos Napoleon,2934,383,Samuel Swamp Donkeys,2954,6,CS,377,T1,0,5,0,1,,,0,0,185,17,6,UGA,UCC,CS 2B,CS 2B,,,,,,5
+Antony Joy,2949,461,Samuel Swamp Donkeys,2954,728,K,267,T1,1,3,0,1,,,0,0,185,17,6,UGA,UCC,K,K,,,,,,2
+Verde Jack,2854,930,Samuel Swamp Donkeys,2954,526,RGO,404,T1,2,3,0,1,,,0,0,185,17,6,UGA,UCC,RGO,RGO,,,,,,1
+River James,2857,740,Leopold Pollersbeck,2875,934,FO,194,B1,0,0,0,1,,,0,0,186,17,6,UCC,UGA,FO,FO,,,,,,1
+Ashington Swift,2845,901,Leopold Pollersbeck,2875,480,RGO,421,B1,1,0,0,1,,,0,0,186,17,6,UCC,UGA,RGO,RGO,,,,,,1
+Choc Banana,2897,340,Leopold Pollersbeck,2875,870,RGO,470,B1,2,0,0,1,,,0,0,186,17,6,UCC,UGA,RGO,RGO,,,,,,1
+Ernie Steele,2956,,Samuel Swamp Donkeys,2954,,Auto BB,,T2,0,0,0,1,,,0,0,187,17,6,UGA,UCC,Auto BB,Auto BB,,,,,,10
+Hickey Renderson,2879,328,Samuel Swamp Donkeys,2954,895,DP,433,T2,0,1,0,1,,,0,0,187,17,6,UGA,UCC,RGO,RGO,,,,,,1
+Willie Gardner,2856,535,Samuel Swamp Donkeys,2954,246,K,289,T2,2,0,0,1,,,0,0,187,17,6,UGA,UCC,K,K,,,,,,1
+Seth Kablamo,2932,615,Leopold Pollersbeck,2875,777,FO,162,B2,0,0,0,1,,,0,0,188,17,6,UCC,UGA,FO,FO,,,,,,1
+Skarch McGooter,2914,938,Leopold Pollersbeck,2875,534,PO,404,B2,1,0,0,1,,,0,0,188,17,6,UCC,UGA,PO,PO,,,,,,1
+Nicaragua del Toro,2904,660,Karl Havoc,2911,346,K,314,B2,2,0,0,1,,,0,0,188,17,6,UCC,UGA,K,K,,,,,,1
+Scoreson McCorkle,2864,927,Samuel Swamp Donkeys,2954,737,FO,190,T3,0,0,0,1,,,0,0,189,17,6,UGA,UCC,FO,FO,,,,,,1
+Mack Quackerson,2834,319,Samuel Swamp Donkeys,2954,788,LGO,469,T3,1,0,0,1,,,0,0,189,17,6,UGA,UCC,LGO,LGO,,,,,,1
+Dante Dagostino,2846,788,Samuel Swamp Donkeys,2954,727,1B,61,T3,2,0,0,1,,,0,0,189,17,6,UGA,UCC,1B,1B,,,,,,1
+Pontos Napoleon,2934,253,Samuel Swamp Donkeys,2954,637,PO,384,T3,2,1,0,1,,,0,0,189,17,6,UGA,UCC,PO,PO,,,,,,1
+Javi D. Modelo,2898,999,Karl Havoc,2911,43,2B,44,B3,0,0,0,1,,,0,0,190,17,6,UCC,UGA,2B,2B,,,,,,1
+DeAaron Taylor,2824,240,Karl Havoc,2911,644,RGO,404,B3,0,2,0,1,,,0,0,190,17,6,UCC,UGA,RGO,RGO,,,,,,1
+Ringo Swingo,2838,284,Karl Havoc,2911,899,K,385,B3,1,3,0,1,,,0,0,190,17,6,UCC,UGA,K,K,,,,,,2
+River James,2857,433,Karl Havoc,2911,604,FO,171,B3,2,3,0,1,,,0,0,190,17,6,UCC,UGA,FO,FO,,,,,,1
+Antony Joy,2949,582,Guillermo Griffey III,2829,927,K,345,T4,0,0,0,1,,,0,0,191,17,6,UGA,UCC,K,K,,,,,,1
+Jamal Jackson,2815,340,Guillermo Griffey III,2829,316,HR,24,T4,1,0,0,1,,,1,1,191,17,6,UGA,UCC,HR,HR,,,,,,1
+Kai Sedillo,2917,782,Guillermo Griffey III,2829,427,K,355,T4,1,0,0,2,,,0,0,191,17,6,UGA,UCC,K,K,,,,,,1
+Hickey Renderson,2879,182,Guillermo Griffey III,2829,108,1B,74,T4,2,0,0,2,,,0,0,191,17,6,UGA,UCC,1B,1B,,,,,,1
+Willie Gardner,2856,872,Guillermo Griffey III,2829,703,FO,169,T4,2,1,0,2,,,0,0,191,17,6,UGA,UCC,FO,FO,,,,,,1
+Ashington Swift,2845,329,Tee Bird,2863,356,2B,27,B4,0,0,0,2,,,0,1,192,17,6,UCC,UGA,2B,2B,,,,,,1
+Choc Banana,2897,993,Tee Bird,2863,117,1B,124,B4,0,2,0,2,,,0,1,192,17,6,UCC,UGA,1B,1B,,,,,,1
+Choc Banana,2897,717,Tee Bird,2863,804,SB,87,B4,0,5,0,2,,,0,0,192,17,6,UCC,UGA,Steal 2B,Steal 2B,,,,,,5
+Seth Kablamo,2932,575,Tee Bird,2863,822,K,247,B4,0,6,0,2,,,0,0,192,17,6,UCC,UGA,K,K,,,,,,2
+Skarch McGooter,2914,370,Tee Bird,2863,773,PO,403,B4,1,6,0,2,,,0,0,192,17,6,UCC,UGA,PO,PO,,,,,,2
+Nicaragua del Toro,2904,144,Tee Bird,2863,97,2B,47,B4,2,6,0,2,,,2,0,192,17,6,UCC,UGA,2B,2B,,,,,,1
+Javi D. Modelo,2898,450,Tee Bird,2863,912,RGO,462,B4,2,2,2,2,,,0,0,192,17,6,UCC,UGA,RGO,RGO,,,,,,1
+Scoreson McCorkle,2864,640,Guillermo Griffey III,2829,441,FO,199,T5,0,0,2,2,,,0,0,193,17,6,UGA,UCC,FO,FO,,,,,,1
+Mack Quackerson,2834,642,Guillermo Griffey III,2829,682,2B,40,T5,1,0,2,2,,,0,0,193,17,6,UGA,UCC,2B,2B,,,,,,1
+Dante Dagostino,2846,405,Guillermo Griffey III,2829,4,K,401,T5,1,2,2,2,,,0,0,193,17,6,UGA,UCC,K,K,,,,,,1
+Pontos Napoleon,2934,225,Guillermo Griffey III,2829,5,FO,220,T5,2,2,2,2,,,0,0,193,17,6,UGA,UCC,FO,FO,,,,,,1
+DeAaron Taylor,2824,450,Tee Bird,2863,201,PO,249,B5,0,0,2,2,,,0,0,194,17,6,UCC,UGA,PO,PO,,,,,,1
+Ringo Swingo,2838,111,Bart Bishop,2900,501,PO,390,B5,1,0,2,2,,,0,0,194,17,6,UCC,UGA,PO,PO,,,,,,1
+River James,2857,283,Bart Bishop,2900,55,FO,228,B5,2,0,2,2,,,0,0,194,17,6,UCC,UGA,FO,FO,,,,,,1
+Antony Joy,2949,118,Jimothy Jhompson,2887,658,LGO,460,T6,0,0,2,2,,,0,0,195,17,6,UGA,UCC,LGO,LGO,,,,,,1
+Jamal Jackson,2815,610,Jimothy Jhompson,2887,707,1B,97,T6,1,0,2,2,,,0,0,195,17,6,UGA,UCC,1B,1B,,,,,,1
+Kai Sedillo,2917,432,Jimothy Jhompson,2887,137,K,295,T6,1,1,2,2,,,0,0,195,17,6,UGA,UCC,K,K,,,,,,1
+Lincoln Pickett,2870,24,Jimothy Jhompson,2887,800,FO,224,T6,2,1,2,2,,,0,0,195,17,6,UGA,UCC,FO,FO,,,,,,1
+Ashington Swift,2845,1,Bart Bishop,2900,800,FO,201,B6,0,0,2,2,,,0,0,196,17,6,UCC,UGA,FO,FO,,,,,,1
+Choc Banana,2897,293,Bart Bishop,2900,114,FO,179,B6,1,0,2,2,,,0,0,196,17,6,UCC,UGA,FO,FO,,,,,,1
+Seth Kablamo,2932,221,Bart Bishop,2900,464,FO,243,B6,2,0,2,2,,,0,0,196,17,6,UCC,UGA,FO,FO,,,,,,1
+Willie Gardner,2856,676,Jimothy Jhompson,2887,888,FO,212,T7,0,2,2,2,,,0,0,197,17,6,UGA,UCC,FO,FO,,,,,,1
+Scoreson McCorkle,2864,256,Jimothy Jhompson,2887,5,FO,251,T7,1,2,2,2,,,0,0,197,17,6,UGA,UCC,FO,FO,,,,,,1
+Mack Quackerson,2834,69,Jimothy Jhompson,2887,316,FO,247,T7,2,2,2,2,,,0,0,197,17,6,UGA,UCC,FO,FO,,,,,,1
+Skarch McGooter,2914,420,Bart Bishop,2900,782,K,362,B7,0,2,2,2,,,0,0,198,17,6,UCC,UGA,K,K,,,,,,1
+Nicaragua del Toro,2904,842,Bart Bishop,2900,799,2B,43,B7,1,2,2,2,,,1,0,198,17,6,UCC,UGA,2B,2B,,,,,,1
+T-Rav,2908,636,C. T. Bailiff,2877,26,PO,390,T1,0,0,0,0,,,0,0,199,18,6,WSU,HVD,PO,PO,,,,,,1
+Ryan McBryan,2880,440,C. T. Bailiff,2877,399,2B,41,T1,1,0,0,0,,,0,0,199,18,6,WSU,HVD,2B,2B,,,,,,1
+Casper Greenwell,2825,196,C. T. Bailiff,2877,500,K,304,T1,1,2,0,0,,,0,0,199,18,6,WSU,HVD,K,K,,,,,,1
+Salsa Steve,2835,210,C. T. Bailiff,2877,500,K,290,T1,2,2,0,0,,,0,0,199,18,6,WSU,HVD,K,K,,,,,,1
+Dayman Nightman,2833,521,Chester Einhorn,2390,281,FO,240,B1,0,0,0,0,,,0,0,200,18,6,HVD,WSU,FO,FO,,,,,,1
+Tueballs Wunbatt,2946,53,Chester Einhorn,2390,142,1B,89,B1,1,0,0,0,,,0,0,200,18,6,HVD,WSU,1B,1B,,,,,,1
+Tueballs Wunbatt,2946,701,Chester Einhorn,2390,117,CS,416,B1,1,1,0,0,,,0,0,200,18,6,HVD,WSU,CS 2B,CS 2B,,,,,,4
+Wheezy Whifflesworth,2840,2,Chester Einhorn,2390,809,FO,193,B1,2,0,0,0,,,0,0,200,18,6,HVD,WSU,FO,FO,,,,,,1
+Justin Time,2886,600,C. T. Bailiff,2877,401,FO,199,T2,0,0,0,0,,,0,0,201,18,6,WSU,HVD,FO,FO,,,,,,1
+Kyle Lew,2851,706,C. T. Bailiff,2877,260,LGO,446,T2,1,0,0,0,,,0,0,201,18,6,WSU,HVD,LGO,LGO,,,,,,1
+Jorbel Boykins,2847,451,C. T. Bailiff,2877,8,LGO,443,T2,2,0,0,0,,,0,0,201,18,6,WSU,HVD,LGO,LGO,,,,,,1
+Hitgood McChunky,2893,300,Chester Einhorn,2390,497,FO,197,B2,0,0,0,0,,,0,0,202,18,6,HVD,WSU,FO,FO,,,,,,1
+Demarquavis Unberskelaeton,2861,485,Chester Einhorn,2390,723,FO,238,B2,1,0,0,0,,,0,0,202,18,6,HVD,WSU,FO,FO,,,,,,1
+Jose Can-Fake-O,2905,237,Chester Einhorn,2390,157,1B,80,B2,2,0,0,0,,,0,0,202,18,6,HVD,WSU,1B,1B,,,,,,1
+Rex Renfield,2935,120,Chester Einhorn,2390,659,LGO,461,B2,2,1,0,0,,,0,0,202,18,6,HVD,WSU,LGO,LGO,,,,,,1
+Fernando Macias,2938,286,Bobert Hideyoshi,2944,328,2B,42,T3,0,0,0,0,,,0,1,203,18,6,WSU,HVD,2B,2B,,,,,,1
+Strawberry Jones,2916,95,Bobert Hideyoshi,2944,22,1B,73,T3,0,2,0,0,,,0,0,203,18,6,WSU,HVD,1B,1B,,,,,,1
+T-Rav,2908,818,Bobert Hideyoshi,2944,13,Sac,195,T3,0,5,0,0,,,1,0,203,18,6,WSU,HVD,FO,FO,,,,,,2
+Ryan McBryan,2880,777,Bobert Hideyoshi,2944,20,K,243,T3,1,1,0,1,,,0,0,203,18,6,WSU,HVD,K,K,,,,,,1
+Casper Greenwell,2825,816,Bobert Hideyoshi,2944,21,FO,205,T3,2,1,0,1,,,0,0,203,18,6,WSU,HVD,FO,FO,,,,,,1
+Hippo Jars,2902,659,James St Louis,2955,895,K,236,B3,0,0,0,1,,,0,0,204,18,6,HVD,WSU,K,K,,,,,,1
+Axkoa Griffin,2848,605,James St Louis,2955,427,FO,178,B3,1,0,0,1,,,0,0,204,18,6,HVD,WSU,FO,FO,,,,,,1
+Dayman Nightman,2833,235,James St Louis,2955,90,BB,145,B3,2,0,0,1,,,0,1,204,18,6,HVD,WSU,BB,BB,,,,,,1
+Tueballs Wunbatt,2946,29,James St Louis,2955,987,2B,42,B3,2,1,0,1,,,1,1,204,18,6,HVD,WSU,2B,2B,,,,,,1
+Wheezy Whifflesworth,2840,453,James St Louis,2955,540,1B,87,B3,2,2,1,1,,,1,1,204,18,6,HVD,WSU,1B,1B,,,,,,1
+Wheezy Whifflesworth,2840,1,James St Louis,2955,756,SB,245,B3,2,1,2,1,,,0,0,204,18,6,HVD,WSU,Steal 2B,Steal 2B,,,,,,4
+Hitgood McChunky,2893,289,James St Louis,2955,245,2B,44,B3,2,2,2,1,,,1,0,204,18,6,HVD,WSU,2B,2B,,,,,,1
+Demarquavis Unberskelaeton,2861,17,James St Louis,2955,440,PO,423,B3,2,2,3,1,,,0,0,204,18,6,HVD,WSU,PO,PO,,,,,,1
+Salsa Steve,2835,922,Bobert Hideyoshi,2944,309,K,387,T4,0,0,3,1,,,0,0,205,18,6,WSU,HVD,K,K,,,,,,1
+Justin Time,2886,882,Bobert Hideyoshi,2944,22,BB,140,T4,1,0,3,1,,,0,0,205,18,6,WSU,HVD,BB,BB,,,,,,1
+Kyle Lew,2851,495,Bobert Hideyoshi,2944,765,K,270,T4,1,1,3,1,,,0,0,205,18,6,WSU,HVD,K,K,,,,,,1
+Jorbel Boykins,2847,4,Bobert Hideyoshi,2944,808,FO,196,T4,2,1,3,1,,,0,0,205,18,6,WSU,HVD,FO,FO,,,,,,1
+Jose Can-Fake-O,2905,99,James St Louis,2955,251,FO,152,B4,0,0,3,1,,,0,0,206,18,6,HVD,WSU,FO,FO,,,,,,1
+Rex Renfield,2935,760,James St Louis,2955,33,PO,273,B4,1,0,3,1,,,0,0,206,18,6,HVD,WSU,PO,PO,,,,,,1
+Hippo Jars,2902,573,James St Louis,2955,830,K,257,B4,2,0,3,1,,,0,0,206,18,6,HVD,WSU,K,K,,,,,,1
+Fernando Macias,2938,178,William T. Striker,2867,609,RGO,431,T5,0,0,3,1,,,0,0,207,18,6,WSU,HVD,RGO,RGO,,,,,,1
+Strawberry Jones,2916,287,William T. Striker,2867,532,K,245,T5,1,0,3,1,,,0,0,207,18,6,WSU,HVD,K,K,,,,,,1
+T-Rav,2908,469,William T. Striker,2867,218,K,251,T5,2,0,3,1,,,0,0,207,18,6,WSU,HVD,K,K,,,,,,1
+Axkoa Griffin,2848,745,Epto Bismol,2939,276,LGO,469,B5,0,0,3,1,,,0,0,208,18,6,HVD,WSU,LGO,LGO,,,,,,1
+Jeff Newman,2931,450,Epto Bismol,2939,128,K,322,B5,1,0,3,1,,,0,0,208,18,6,HVD,WSU,K,K,,,,,,1
+Randy Mann,2922,295,Epto Bismol,2939,666,K,371,B5,2,0,3,1,,,0,0,208,18,6,HVD,WSU,K,K,,,,,,1
+Charlie Slay,2872,718,William T. Striker,2867,721,HR,3,T6,0,0,3,1,,,1,1,209,18,6,WSU,HVD,HR,HR,,,,,,1
+Casper Greenwell,2825,980,William T. Striker,2867,721,K,259,T6,0,0,3,2,,,0,0,209,18,6,WSU,HVD,K,K,,,,,,1
+Salsa Steve,2835,69,William T. Striker,2867,936,BB,133,T6,1,0,3,2,,,0,0,209,18,6,WSU,HVD,BB,BB,,,,,,1
+Justin Time,2886,464,William T. Striker,2867,582,BB,118,T6,1,1,3,2,,,0,0,209,18,6,WSU,HVD,BB,BB,,,,,,1
+Kyle Lew,2851,400,William T. Striker,2867,232,BB,168,T6,1,4,3,2,,,0,0,209,18,6,WSU,HVD,BB,BB,,,,,,1
+Jorbel Boykins,2847,904,William T. Striker,2867,234,K,330,T6,1,7,3,2,,,0,0,209,18,6,WSU,HVD,K,K,,,,,,1
+Fernando Macias,2938,195,William T. Striker,2867,637,RGO,442,T6,2,7,3,2,,,0,0,209,18,6,WSU,HVD,RGO,RGO,,,,,,1

@@ -1,0 +1,21 @@
+{
+    "S1": {
+        "GIB": "Germany Inglorious Batters",
+        "ORL": "Orlando Marvels",
+        "SYC": "Syracuse Centurions",
+        "VAN": "Vancouver Venom",
+        "WBK": "Whitehorse Black Knights",
+        "WOO": "Woolloomooloo Wooloo"
+    },
+    "S2": {
+        "FUB": "Fubon Guardians",
+        "GIB": "Germany Inglorious Batters",
+        "NOL": "New Orleans Spirits",
+        "ORL": "Orlando Marvels",
+        "SYC": "Syracuse Centurions",
+        "VIP": "Viper Venom",
+        "WBK": "Whitehorse Black Knights",
+        "WOO": "Woolloomooloo Wooloo"
+    },
+    "S3": "S2"
+}

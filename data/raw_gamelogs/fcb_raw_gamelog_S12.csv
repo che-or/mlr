@@ -1,0 +1,947 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Angry Lizard,3256,500,Gary Appalachia,3235,680,FO,180,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,FUR,LSU,FO,FO,FO,,,,,1
+Tomba,3220,357,Gary Appalachia,3235,621,K,264,T1,1,0,0,0,-2.18%,2.18%,0,0,1,1,1,FUR,LSU,K,K,FO,,,,,1
+Lucius Salem,3194,555,Gary Appalachia,3235,96,LGO,459,T1,2,0,0,0,-1.76%,1.76%,0,0,1,1,1,FUR,LSU,LGO,LGO,LGO,,,,,1
+Captain Hate,3253,630,Jaime Villafuerte,3243,983,PO,353,B1,0,0,0,0,-2.48%,2.48%,0,0,2,1,1,LSU,FUR,PO,PO,K,,,,,1
+Harry Johnson,3218,252,Jaime Villafuerte,3243,39,K,213,B1,1,0,0,0,-2.17%,2.17%,0,0,2,1,1,LSU,FUR,K,K,FO,,,,,1
+Skip Bellew,3225,722,Jaime Villafuerte,3243,899,FO,177,B1,2,0,0,0,-1.79%,1.79%,0,0,2,1,1,LSU,FUR,FO,FO,BB,,,,,1
+Jiggs Kingman,3249,420,Gary Appalachia,3235,502,1B,82,T2,0,0,0,0,3.09%,-3.09%,0,1,3,1,1,FUR,LSU,1B,1B,1B,,,,,1
+Pike Trout,3216,777,Gary Appalachia,3235,419,PO,358,T2,0,1,0,0,-3.24%,3.24%,0,0,3,1,1,FUR,LSU,PO,PO,K,,,,,1
+Evil Corn Barn,2337,417,Gary Appalachia,3235,212,K,205,T2,1,1,0,0,-2.82%,2.82%,0,0,3,1,1,FUR,LSU,K,K,FO,,,,,1
+Jiggs Kingman,3249,750,Gary Appalachia,3235,983,SB,233,T2,2,1,0,0,1.21%,-1.21%,0,0,3,1,1,FUR,LSU,STEAL 2B,STEAL 2B,SB,,,,,4
+Johnny,3224,699,Gary Appalachia,3235,714,HR,15,T2,2,2,0,0,22.49%,-22.49%,2,1,3,1,1,FUR,LSU,HR,HR,HR,,3235,,3235,1
+Norman Sland,3207,245,Gary Appalachia,3235,643,RGO,398,T2,2,0,0,2,-1.37%,1.37%,0,0,3,1,1,FUR,LSU,RGO,RGO,PO,,,,,1
+Napoleon Swingsalot,3214,333,Jaime Villafuerte,3243,518,FO,185,B2,0,0,0,2,-2.94%,2.94%,0,0,4,1,1,LSU,FUR,FO,FO,FO,,,,,1
+Gary Appalachia,3235,770,Jaime Villafuerte,3243,632,BB,138,B2,1,0,0,2,2.98%,-2.98%,0,1,4,1,1,LSU,FUR,BB,BB,BB,,,,,1
+Harrison Cinderstone,3245,444,Jaime Villafuerte,3243,518,1B,74,B2,1,1,0,2,5.26%,-5.26%,0,0,4,1,1,LSU,FUR,1B,1B,1B,,,,,1
+Isao Makino,3232,722,Jaime Villafuerte,3243,899,FO,177,B2,1,4,0,2,-4.88%,4.88%,0,0,4,1,1,LSU,FUR,FO,FO,BB,,,,,1
+Peter Nautilus,3203,110,Jaime Villafuerte,3243,200,1B,90,B2,2,4,0,2,12.30%,-12.30%,1,0,4,1,1,LSU,FUR,1B,1B,1B,,3243,,,1
+Joseph Randome,3257,746,Jaime Villafuerte,3243,999,FO,253,B2,2,5,1,2,-8.28%,8.28%,0,0,4,1,1,LSU,FUR,FO,FO,FO,,,,,1
+Julie Jules,3230,700,Gary Appalachia,3235,3,K,303,T3,0,0,1,2,-2.37%,2.37%,0,0,5,1,1,FUR,LSU,K,K,K,,,,,1
+Angry Lizard,3256,599,Gary Appalachia,3235,192,RGO,407,T3,1,0,1,2,-2.03%,2.03%,0,0,5,1,1,FUR,LSU,RGO,RGO,RGO,,,,,1
+Tomba,3220,936,Gary Appalachia,3235,753,FO,183,T3,2,0,1,2,-1.82%,1.82%,0,0,5,1,1,FUR,LSU,FO,FO,FO,,,,,1
+Captain Hate,3253,421,Jaime Villafuerte,3243,298,BB,123,B3,0,0,1,2,4.12%,-4.12%,0,1,6,1,1,LSU,FUR,BB,BB,1B,,,,,1
+Harry Johnson,3218,858,Jaime Villafuerte,3243,32,FO,174,B3,0,1,1,2,-4.39%,4.39%,0,0,6,1,1,LSU,FUR,FO,FO,BB,,,,,1
+Skip Bellew,3225,582,Jaime Villafuerte,3243,777,FO,195,B3,1,1,1,2,-3.75%,3.75%,0,0,6,1,1,LSU,FUR,FO,FO,FO,,,,,1
+Napoleon Swingsalot,3214,198,Jaime Villafuerte,3243,271,2B,73,B3,2,1,1,2,18.84%,-18.84%,1,0,6,1,1,LSU,FUR,2B,2B,1B,,,3243,,1
+Gary Appalachia,3235,616,Jaime Villafuerte,3243,331,K,285,B3,2,2,2,2,-6.17%,6.17%,0,0,6,1,1,LSU,FUR,K,K,K,,,,,1
+Lucius Salem,3194,999,Gary Appalachia,3235,808,FO,191,T4,0,0,2,2,-3.58%,3.58%,0,0,7,1,1,FUR,LSU,FO,FO,FO,,,,,1
+Jiggs Kingman,3249,455,Gary Appalachia,3235,69,RGO,386,T4,1,0,2,2,-3.19%,3.19%,0,0,7,1,1,FUR,LSU,RGO,RGO,PO,,,,,1
+Pike Trout,3216,647,Gary Appalachia,3235,114,LGO,467,T4,2,0,2,2,-2.75%,2.75%,0,0,7,1,1,FUR,LSU,LGO,LGO,LGO,,,,,1
+Harrison Cinderstone,3245,555,Jaime Villafuerte,3243,12,LGO,457,B4,0,0,2,2,-3.43%,3.43%,0,0,8,1,1,LSU,FUR,LGO,LGO,LGO,,,,,1
+Isao Makino,3232,2,Jaime Villafuerte,3243,759,K,243,B4,1,0,2,2,-3.17%,3.17%,0,0,8,1,1,LSU,FUR,K,K,FO,,,,,1
+Peter Nautilus,3203,350,Jaime Villafuerte,3243,666,K,316,B4,2,0,2,2,-2.87%,2.87%,0,0,8,1,1,LSU,FUR,K,K,K,,,,,1
+Evil Corn Barn,2337,611,Gary Appalachia,3235,500,BB,111,T5,0,0,2,2,4.12%,-4.12%,0,0,9,1,1,FUR,LSU,BB,BB,1B,,,,,1
+Johnny,3224,919,Gary Appalachia,3235,462,DP,457,T5,0,1,2,2,-12.33%,12.33%,0,0,9,1,1,FUR,LSU,LGO,LGO,DP,,,,,1
+Norman Sland,3207,615,Gary Appalachia,3235,873,K,258,T5,2,0,2,2,-3.51%,3.51%,0,0,9,1,1,FUR,LSU,K,K,FO,,,,,1
+Joseph Randome,3257,159,Jaime Villafuerte,3243,460,K,301,B5,0,0,2,2,-4.12%,4.12%,0,0,10,1,1,LSU,FUR,K,K,K,,,,,1
+Captain Hate,3253,717,Jaime Villafuerte,3243,725,HR,8,B5,1,0,2,2,26.97%,-26.97%,1,1,10,1,1,LSU,FUR,HR,HR,HR,,,,3243,1
+Harry Johnson,3218,463,Jaime Villafuerte,3243,500,2B,37,B5,1,0,3,2,2.53%,-2.53%,0,0,10,1,1,LSU,FUR,2B,2B,2B,,,,,1
+Skip Bellew,3225,620,Jaime Villafuerte,3243,903,K,283,B5,1,2,3,2,-1.95%,1.95%,0,0,10,1,1,LSU,FUR,K,K,FO,,,,,1
+Napoleon Swingsalot,3214,47,Jaime Villafuerte,3243,592,LGO,455,B5,2,2,3,2,-3.02%,3.02%,0,0,10,1,1,LSU,FUR,LGO,LGO,LGO,,,,,1
+Julie Jules,3230,3,Gary Appalachia,3235,875,1B,128,T6,0,0,3,2,7.48%,-7.48%,0,0,11,1,1,FUR,LSU,1B,1B,1B,,,,,1
+Angry Lizard,3256,100,Gary Appalachia,3235,26,2B,74,T6,0,1,3,2,33.10%,-33.10%,0,0,11,1,1,FUR,LSU,2B,2B,1B,,,,,1
+Tomba,3220,441,Gary Appalachia,3235,789,PO,348,T6,0,6,3,2,-14.83%,14.83%,0,0,11,1,1,FUR,LSU,PO,PO,K,,,,,1
+Lucius Salem,3194,182,Gary Appalachia,3235,843,PO,339,T6,1,6,3,2,-22.17%,22.17%,0,0,11,1,1,FUR,LSU,PO,PO,K,,,,,2
+Jiggs Kingman,3249,248,Gary Appalachia,3235,576,PO,328,T6,2,6,3,2,-21.44%,21.44%,0,0,11,1,1,FUR,LSU,PO,PO,K,,,,,1
+LeeLoo Dallas Multi-Guess,3244,4,Ant man,3229,753,FO,251,T1,0,0,0,0,-2.51%,2.51%,0,0,12,2,1,SYR,UOM,FO,FO,FO,,,,,1
+Alex Blockman,3202,850,Ant man,3229,172,K,322,T1,1,0,0,0,-2.18%,2.18%,0,0,12,2,1,SYR,UOM,K,K,K,,,,,1
+Jack Hoffman,3250,444,Ant man,3229,488,2B,44,T1,2,0,0,0,3.05%,-3.05%,0,0,12,2,1,SYR,UOM,2B,2B,2B,,,,,1
+Camden Yardsy,3227,912,Ant man,3229,289,PO,377,T1,2,2,0,0,-4.81%,4.81%,0,0,12,2,1,SYR,UOM,PO,PO,K,,,,,1
+Minto McGuire,3219,325,Booby Cancun,3233,712,K,387,B1,0,0,0,0,-2.48%,2.48%,0,0,13,2,1,UOM,SYR,K,K,PO,,,,,1
+Alph Overdale,3255,50,Booby Cancun,3233,139,1B,89,B1,1,0,0,0,2.28%,-2.28%,0,0,13,2,1,UOM,SYR,1B,1B,1B,,,,,1
+Greggy Gabagool,3237,372,Booby Cancun,3233,594,FO,222,B1,1,1,0,0,-2.55%,2.55%,0,0,13,2,1,UOM,SYR,FO,FO,FO,,,,,1
+Cat with a Bat,3204,901,Booby Cancun,3233,314,RGO,413,B1,2,1,0,0,-3.69%,3.69%,0,0,13,2,1,UOM,SYR,RGO,RGO,RGO,,,,,1
+Jackie Jormp-Jomp,3236,713,Ant man,3229,390,K,323,T2,0,0,0,0,-2.72%,2.72%,0,0,14,2,1,SYR,UOM,K,K,K,,,,,1
+Jimmy Sticks,3221,33,Ant man,3229,822,FO,211,T2,1,0,0,0,-2.40%,2.40%,0,0,14,2,1,SYR,UOM,FO,FO,FO,,,,,1
+Mario Goretti,3215,701,Ant man,3229,555,FO,146,T2,2,0,0,0,-1.99%,1.99%,0,0,14,2,1,SYR,UOM,FO,FO,BB,,,,,1
+jorjor wel,3217,725,Booby Cancun,3233,900,FO,175,B2,0,0,0,0,-2.72%,2.72%,0,0,15,2,1,UOM,SYR,FO,FO,BB,,,,,1
+Okie,3238,285,Booby Cancun,3233,372,1B,87,B2,1,0,0,0,2.47%,-2.47%,0,0,15,2,1,UOM,SYR,1B,1B,1B,,,,,1
+Erik Hamilton,3251,195,Booby Cancun,3233,726,DP,469,B2,1,1,0,0,-6.88%,6.88%,0,0,15,2,1,UOM,SYR,LGO,LGO,DP,,,,,1
+James Longoria,3210,615,Ant man,3229,922,K,307,T3,0,0,0,0,-3.03%,3.03%,0,0,16,2,1,SYR,UOM,K,K,K,,,,,1
+Booby Cancun,3233,667,Ant man,3229,788,BB,121,T3,1,0,0,0,2.77%,-2.77%,0,0,16,2,1,SYR,UOM,BB,BB,1B,,,,,1
+Booby Cancun,3233,505,Ant man,3229,810,CS,305,T3,1,1,0,0,-5.51%,5.51%,0,0,16,2,1,SYR,UOM,CS 2B,CS 2B,CS,,,,,4
+LeeLoo Dallas Multi-Guess,3244,44,Ant man,3229,258,FO,214,T3,2,0,0,0,-2.31%,2.31%,0,0,16,2,1,SYR,UOM,FO,FO,FO,,,,,1
+Butts Carlton,2845,299,Booby Cancun,3233,135,BB,164,B3,0,0,0,0,3.09%,-3.09%,0,0,17,2,1,UOM,SYR,BB,BB,BB,,,,,1
+Ant man,3229,378,Booby Cancun,3233,287,1B,91,B3,0,1,0,0,6.11%,-6.11%,0,0,17,2,1,UOM,SYR,1B,1B,1B,,,,,1
+Minto McGuire,3219,850,Booby Cancun,3233,375,DP,475,B3,0,4,0,0,-10.84%,10.84%,0,0,17,2,1,UOM,SYR,LGO,LGO,DP,,,,,1
+Alph Overdale,3255,970,Booby Cancun,3233,133,FO,163,B3,2,3,0,0,-6.47%,6.47%,0,0,17,2,1,UOM,SYR,FO,FO,BB,,,,,1
+Alex Blockman,3202,232,Ant man,3229,108,BB,124,T4,0,0,0,0,3.68%,-3.68%,0,0,18,2,1,SYR,UOM,BB,BB,1B,,,,,1
+Jack Hoffman,3250,550,Ant man,3229,160,DP,390,T4,0,1,0,0,-10.45%,10.45%,0,0,18,2,1,SYR,UOM,RGO,RGO,PO,,,,,1
+Camden Yardsy,3227,610,Ant man,3229,630,3B,20,T4,2,0,0,0,4.52%,-4.52%,0,1,18,2,1,SYR,UOM,3B,3B,HR,,,,,1
+Jackie Jormp-Jomp,3236,222,Ant man,3229,88,1B,134,T4,2,3,0,0,17.45%,-17.45%,1,0,18,2,1,SYR,UOM,1B,1B,1B,3229,,,,1
+Jimmy Sticks,3221,175,Ant man,3229,439,FO,264,T4,2,1,0,1,-3.78%,3.78%,0,0,18,2,1,SYR,UOM,FO,FO,FO,,,,,1
+Greggy Gabagool,3237,717,Booby Cancun,3233,808,1B,91,B4,0,0,0,1,4.73%,-4.73%,0,1,19,2,1,UOM,SYR,1B,1B,1B,,,,,1
+Cat with a Bat,3204,246,Booby Cancun,3233,421,FO,175,B4,0,1,0,1,-5.04%,5.04%,0,0,19,2,1,UOM,SYR,FO,FO,BB,,,,,1
+Greggy Gabagool,3237,200,Booby Cancun,3233,117,SB,83,B4,1,1,0,1,4.35%,-4.35%,0,0,19,2,1,UOM,SYR,STEAL 2B,STEAL 2B,SB,,,,,4
+jorjor wel,3217,482,Booby Cancun,3233,286,FO,196,B4,1,2,0,1,-6.64%,6.64%,0,0,19,2,1,UOM,SYR,FO,FO,FO,,,,,1
+Okie,3238,406,Booby Cancun,3233,477,1B,71,B4,2,2,0,1,19.59%,-19.59%,1,0,19,2,1,UOM,SYR,1B,1B,1B,,3233,,,1
+Erik Hamilton,3251,485,Booby Cancun,3233,22,LGO,463,B4,2,1,1,1,-5.52%,5.52%,0,0,19,2,1,UOM,SYR,LGO,LGO,LGO,,,,,1
+Mario Goretti,3215,810,Alph Overdale,3255,852,2B,42,T5,0,0,1,1,10.68%,-10.68%,0,1,20,2,1,SYR,UOM,2B,2B,2B,,,,,1
+James Longoria,3210,927,Alph Overdale,3255,711,FO,216,T5,0,2,1,1,-7.02%,7.02%,0,0,20,2,1,SYR,UOM,FO,FO,FO,,,,,1
+Booby Cancun,3233,914,Alph Overdale,3255,60,BB,146,T5,1,2,1,1,1.58%,-1.58%,0,1,20,2,1,SYR,UOM,BB,BB,BB,,,,,1
+LeeLoo Dallas Multi-Guess,3244,300,Alph Overdale,3255,900,PO,400,T5,1,4,1,1,-5.78%,5.78%,0,0,20,2,1,SYR,UOM,PO,PO,DP,,,,,1
+Alex Blockman,3202,420,Alph Overdale,3255,592,BB,172,T5,2,4,1,1,4.39%,-4.39%,0,1,20,2,1,SYR,UOM,BB,BB,BB,,,,,1
+Jack Hoffman,3250,222,Alph Overdale,3255,200,2B,22,T5,2,7,1,1,37.81%,-37.81%,3,0,20,2,1,SYR,UOM,2B,2B,HR,3255,3255,3255,,1
+Camden Yardsy,3227,342,Alph Overdale,3255,999,K,343,T5,2,2,1,4,-1.51%,1.51%,0,0,20,2,1,SYR,UOM,K,K,K,,,,,1
+Butts Carlton,2845,5,Booby Cancun,3233,290,K,285,B5,0,0,1,4,-2.75%,2.75%,0,0,21,2,1,UOM,SYR,K,K,K,,,,,1
+Ant man,3229,650,Booby Cancun,3233,138,LGO,488,B5,1,0,1,4,-2.12%,2.12%,0,0,21,2,1,UOM,SYR,LGO,LGO,LGO,,,,,1
+Minto McGuire,3219,360,Booby Cancun,3233,123,FO,237,B5,2,0,1,4,-1.22%,1.22%,0,0,21,2,1,UOM,SYR,FO,FO,FO,,,,,1
+Jackie Jormp-Jomp,3236,658,Alph Overdale,3255,621,2B,37,T6,0,0,1,4,0.95%,-0.95%,0,0,22,2,1,SYR,UOM,2B,2B,2B,,,,,1
+Jimmy Sticks,3221,336,Alph Overdale,3255,150,BB,186,T6,0,2,1,4,0.02%,-0.02%,0,0,22,2,1,SYR,UOM,BB,BB,FO,,,,,1
+Mario Goretti,3215,333,Alph Overdale,3255,621,PO,288,T6,0,4,1,4,-0.55%,0.55%,0,0,22,2,1,SYR,UOM,PO,PO,K,,,,,1
+James Longoria,3210,979,Alph Overdale,3255,610,PO,369,T6,1,4,1,4,-0.53%,0.53%,0,0,22,2,1,SYR,UOM,PO,PO,K,,,,,1
+Booby Cancun,3233,365,Alph Overdale,3255,666,K,301,T6,2,4,1,4,-0.96%,0.96%,0,0,22,2,1,SYR,UOM,K,K,K,,,,,1
+Alph Overdale,3255,666,Booby Cancun,3233,345,K,321,B6,0,0,1,4,-2.48%,2.48%,0,0,23,2,1,UOM,SYR,K,K,K,,,,,1
+Greggy Gabagool,3237,508,Booby Cancun,3233,622,1B,114,B6,1,0,1,4,3.13%,-3.13%,0,0,23,2,1,UOM,SYR,1B,1B,1B,,,,,1
+Cat with a Bat,3204,432,Booby Cancun,3233,231,FO,201,B6,1,1,1,4,-3.27%,3.27%,0,0,23,2,1,UOM,SYR,FO,FO,FO,,,,,1
+jorjor wel,3217,862,Booby Cancun,3233,543,K,319,B6,2,1,1,4,-2.22%,2.22%,0,0,23,2,1,UOM,SYR,K,K,K,,,,,1
+Ricky 'The Rat' Venucci,3252,414,Dusk Jackson,3242,847,PO,433,T1,0,0,0,0,-2.51%,2.51%,0,0,24,3,1,OWL,WKU,PO,PO,RGO,,,,,1
+Jodie Baller,3247,678,Dusk Jackson,3242,4,PO,326,T1,1,0,0,0,-2.18%,2.18%,0,0,24,3,1,OWL,WKU,PO,PO,K,,,,,1
+Paul Crews,3248,50,Dusk Jackson,3242,621,RGO,429,T1,2,0,0,0,-1.76%,1.76%,0,0,24,3,1,OWL,WKU,RGO,RGO,RGO,,,,,1
+Justin Carlson,3239,487,Jay Kwellon,3228,513,2B,26,B1,0,0,0,0,6.33%,-6.33%,0,0,25,3,1,WKU,OWL,2B,2B,3B,,,,,1
+Henry McCade,3213,300,Jay Kwellon,3228,995,K,305,B1,0,2,0,0,-4.08%,4.08%,0,0,25,3,1,WKU,OWL,K,K,K,,,,,1
+Ezra Wind,3226,500,Jay Kwellon,3228,423,1B,77,B1,1,2,0,0,5.13%,-5.13%,0,0,25,3,1,WKU,OWL,1B,1B,1B,,,,,1
+Steven Scola,3222,127,Jay Kwellon,3228,402,K,275,B1,1,5,0,0,-7.31%,7.31%,0,0,25,3,1,WKU,OWL,K,K,Sac,,,,,1
+Arthur Bullpendragon,3246,117,Jay Kwellon,3228,914,FO,203,B1,2,5,0,0,-6.51%,6.51%,0,0,25,3,1,WKU,OWL,FO,FO,FO,,,,,1
+Ferris Wheeler,2816,563,Dusk Jackson,3242,976,RGO,413,T2,0,0,0,0,-2.72%,2.72%,0,0,26,3,1,OWL,WKU,RGO,RGO,RGO,,,,,1
+Kendrick Lamar,3208,333,Dusk Jackson,3242,314,3B,19,T2,1,0,0,0,8.70%,-8.70%,0,0,26,3,1,OWL,WKU,3B,3B,HR,,,,,1
+Joan Andreu Rosà,3234,874,Dusk Jackson,3242,160,PO,286,T2,1,3,0,0,-7.54%,7.54%,0,0,26,3,1,OWL,WKU,PO,PO,K,,,,,1
+Franklin Louis Henderson,3240,400,Dusk Jackson,3242,210,FO,190,T2,2,3,0,0,-5.55%,5.55%,0,0,26,3,1,OWL,WKU,FO,FO,FO,,,,,1
+faron hylia,3205,240,Jay Kwellon,3228,5,FO,235,B2,0,0,0,0,-2.72%,2.72%,0,0,27,3,1,WKU,OWL,FO,FO,FO,,,,,1
+Dusk Jackson,3242,314,Jay Kwellon,3228,857,LGO,457,B2,1,0,0,0,-2.38%,2.38%,0,0,27,3,1,WKU,OWL,LGO,LGO,LGO,,,,,1
+Dude Duderson,3231,287,Jay Kwellon,3228,8,K,279,B2,2,0,0,0,-2.03%,2.03%,0,0,27,3,1,WKU,OWL,K,K,FO,,,,,1
+Mo Soso,3223,747,Dusk Jackson,3242,177,RGO,430,T3,0,0,0,0,-3.03%,3.03%,0,0,28,3,1,OWL,WKU,RGO,RGO,RGO,,,,,1
+Jay Kwellon,3228,246,Dusk Jackson,3242,101,BB,145,T3,1,0,0,0,2.77%,-2.77%,0,0,28,3,1,OWL,WKU,BB,BB,BB,,,,,1
+Ricky 'The Rat' Venucci,3252,777,Dusk Jackson,3242,972,FO,195,T3,1,1,0,0,-3.01%,3.01%,0,0,28,3,1,OWL,WKU,FO,FO,FO,,,,,1
+Jodie Baller,3247,29,Dusk Jackson,3242,401,PO,372,T3,2,1,0,0,-4.81%,4.81%,0,0,28,3,1,OWL,WKU,PO,PO,K,,,,,1
+Hiram Birnbaum,3206,224,Jay Kwellon,3228,941,K,283,B3,0,0,0,0,-3.07%,3.07%,0,0,29,3,1,WKU,OWL,K,K,FO,,,,,1
+Justin Carlson,3239,269,Jay Kwellon,3228,986,K,283,B3,1,0,0,0,-2.77%,2.77%,0,0,29,3,1,WKU,OWL,K,K,FO,,,,,1
+Henry McCade,3213,1000,Jay Kwellon,3228,374,PO,374,B3,2,0,0,0,-2.27%,2.27%,0,0,29,3,1,WKU,OWL,PO,PO,K,,,,,1
+Paul Crews,3248,50,Steven Scola,3222,125,1B,75,T4,0,0,0,0,3.68%,-3.68%,0,1,30,3,1,OWL,WKU,1B,1B,1B,,,,,1
+Ferris Wheeler,2816,711,Steven Scola,3222,570,BB,141,T4,0,1,0,0,6.99%,-6.99%,0,1,30,3,1,OWL,WKU,BB,BB,BB,,,,,1
+Kendrick Lamar,3208,405,Steven Scola,3222,783,PO,378,T4,0,4,0,0,-5.81%,5.81%,0,0,30,3,1,OWL,WKU,PO,PO,PO,,,,,1
+Joan Andreu Rosà,3234,612,Steven Scola,3222,954,PO,342,T4,1,4,0,0,-5.09%,5.09%,0,0,30,3,1,OWL,WKU,PO,PO,K,,,,,1
+Franklin Louis Henderson,3240,125,Steven Scola,3222,150,3B,25,T4,2,4,0,0,29.77%,-29.77%,2,0,30,3,1,OWL,WKU,3B,3B,3B,,3222,3222,,1
+Mo Soso,3223,695,Steven Scola,3222,378,PO,317,T4,2,3,0,2,-3.52%,3.52%,0,0,30,3,1,OWL,WKU,PO,PO,K,,,,,1
+Ezra Wind,3226,800,Jay Kwellon,3228,423,PO,377,B4,0,0,0,2,-3.76%,3.76%,0,0,31,3,1,WKU,OWL,PO,PO,K,,,,,1
+Steven Scola,3222,768,Jay Kwellon,3228,248,LGO,480,B4,1,0,0,2,-3.09%,3.09%,0,0,31,3,1,WKU,OWL,LGO,LGO,LGO,,,,,1
+Arthur Bullpendragon,3246,741,Jay Kwellon,3228,977,FO,236,B4,2,0,0,2,-2.26%,2.26%,0,0,31,3,1,WKU,OWL,FO,FO,FO,,,,,1
+Jay Kwellon,3228,228,Steven Scola,3222,35,FO,193,T5,0,0,0,2,-1.31%,1.31%,0,0,32,3,1,OWL,WKU,FO,FO,FO,,,,,1
+Ricky 'The Rat' Venucci,3252,589,Steven Scola,3222,906,FO,317,T5,1,0,0,2,-1.19%,1.19%,0,0,32,3,1,OWL,WKU,FO,FO,K,,,,,1
+Jodie Baller,3247,123,Steven Scola,3222,162,2B,39,T5,2,0,0,2,1.65%,-1.65%,0,0,32,3,1,OWL,WKU,2B,2B,2B,,,,,1
+Paul Crews,3248,80,Steven Scola,3222,563,LGO,483,T5,2,2,0,2,-2.78%,2.78%,0,0,32,3,1,OWL,WKU,LGO,LGO,LGO,,,,,1
+faron hylia,3205,130,Jay Kwellon,3228,642,LGO,488,B5,0,0,0,2,-4.27%,4.27%,0,0,33,3,1,WKU,OWL,LGO,LGO,LGO,,,,,1
+Dusk Jackson,3242,743,Jay Kwellon,3228,201,LGO,458,B5,1,0,0,2,-3.45%,3.45%,0,0,33,3,1,WKU,OWL,LGO,LGO,LGO,,,,,1
+Dude Duderson,3231,333,Jay Kwellon,3228,6,K,327,B5,2,0,0,2,-2.42%,2.42%,0,0,33,3,1,WKU,OWL,K,K,K,,,,,1
+Ferris Wheeler,2816,377,Steven Scola,3222,181,FO,196,T6,0,0,0,2,-0.82%,0.82%,0,0,34,3,1,OWL,WKU,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,666,Steven Scola,3222,982,K,316,T6,1,0,0,2,-0.80%,0.80%,0,0,34,3,1,OWL,WKU,K,K,K,,,,,1
+Joan Andreu Rosà,3234,73,Steven Scola,3222,575,LGO,498,T6,2,0,0,2,-0.69%,0.69%,0,0,34,3,1,OWL,WKU,LGO,LGO,LGO,,,,,1
+Hiram Birnbaum,3206,702,Jay Kwellon,3228,495,FO,207,B6,0,0,0,2,-4.76%,4.76%,0,0,35,3,1,WKU,OWL,FO,FO,FO,,,,,1
+Justin Carlson,3239,721,Jay Kwellon,3228,196,LGO,475,B6,1,0,0,2,-3.71%,3.71%,0,0,35,3,1,WKU,OWL,LGO,LGO,LGO,,,,,1
+Henry McCade,3213,750,Jay Kwellon,3228,921,FO,171,B6,2,0,0,2,-2.16%,2.16%,0,0,35,3,1,WKU,OWL,FO,FO,BB,,,,,1
+Alex Blockman,3202,500,Paul Crews,3248,610,BB,110,T1,0,0,0,0,2.91%,-2.91%,0,1,36,4,2,SYR,OWL,BB,BB,1B,,,,,1
+Jack Hoffman,3250,132,Paul Crews,3248,10,1B,122,T1,0,1,0,0,5.56%,-5.56%,0,0,36,4,2,SYR,OWL,1B,1B,1B,,,,,1
+Camden Yardsy,3227,717,Paul Crews,3248,800,1B,83,T1,0,4,0,0,9.34%,-9.34%,0,0,36,4,2,SYR,OWL,1B,1B,1B,,,,,1
+Jackie Jormp-Jomp,3236,313,Paul Crews,3248,764,DP,451,T1,0,7,0,0,-7.66%,7.66%,0,0,36,4,2,SYR,OWL,LGO,LGO,DP,3248,,,,1
+Jimmy Sticks,3221,123,Paul Crews,3248,531,RGO,408,T1,2,3,0,1,-4.47%,4.47%,0,0,36,4,2,SYR,OWL,RGO,RGO,RGO,,,,,1
+Mo Soso,3223,950,LeeLoo Dallas Multi-Guess,3244,222,K,272,B1,0,0,0,1,-2.79%,2.79%,0,0,37,4,2,OWL,SYR,K,K,FO,,,,,1
+Franklin Louis Henderson,3240,420,LeeLoo Dallas Multi-Guess,3244,592,FO,172,B1,1,0,0,1,-2.36%,2.36%,0,0,37,4,2,OWL,SYR,FO,FO,BB,,,,,1
+Joan Andreu Rosà,3234,,LeeLoo Dallas Multi-Guess,3244,,AUTO K,,B1,2,0,0,1,-1.88%,1.88%,0,0,37,4,2,OWL,SYR,AUTO K,AUTO K,AUTO K,,,,,9
+Mario Goretti,3215,725,Paul Crews,3248,582,BB,143,T2,0,0,0,1,2.40%,-2.40%,0,0,38,4,2,SYR,OWL,BB,BB,BB,,,,,1
+James Longoria,3210,572,Paul Crews,3248,789,FO,217,T2,0,1,0,1,-2.69%,2.69%,0,0,38,4,2,SYR,OWL,FO,FO,FO,,,,,1
+Weehaddababy Itzaboi,3254,666,Paul Crews,3248,531,1B,135,T2,1,1,0,1,3.51%,-3.51%,0,0,38,4,2,SYR,OWL,1B,1B,1B,,,,,1
+LeeLoo Dallas Multi-Guess,3244,344,Paul Crews,3248,879,DP,465,T2,1,4,0,1,-9.20%,9.20%,0,0,38,4,2,SYR,OWL,RGO,RGO,DP,,,,,1
+Kendrick Lamar,3208,999,LeeLoo Dallas Multi-Guess,3244,393,PO,394,B2,0,0,0,1,-3.11%,3.11%,0,0,39,4,2,OWL,SYR,PO,PO,PO,,,,,1
+Ferris Wheeler,2816,680,LeeLoo Dallas Multi-Guess,3244,777,1B,97,B2,1,0,0,1,3.03%,-3.03%,0,0,39,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Jodie Baller,3247,501,LeeLoo Dallas Multi-Guess,3244,620,1B,119,B2,1,1,0,1,5.01%,-5.01%,0,0,39,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Jay Kwellon,3228,818,LeeLoo Dallas Multi-Guess,3244,540,FO,278,B2,1,4,0,1,-4.68%,4.68%,0,0,39,4,2,OWL,SYR,FO,FO,FO,,,,,1
+Ricky 'The Rat' Venucci,3252,179,LeeLoo Dallas Multi-Guess,3244,888,K,291,B2,2,4,0,1,-8.18%,8.18%,0,0,39,4,2,OWL,SYR,K,K,K,,,,,1
+Alex Blockman,3202,30,Paul Crews,3248,1,HR,29,T3,0,0,0,1,11.83%,-11.83%,1,1,40,4,2,SYR,OWL,HR,HR,3B,,,,3248,1
+Jack Hoffman,3250,69,Paul Crews,3248,482,RGO,413,T3,0,0,0,2,-1.72%,1.72%,0,0,40,4,2,SYR,OWL,RGO,RGO,RGO,,,,,1
+Camden Yardsy,3227,250,Paul Crews,3248,889,K,361,T3,1,0,0,2,-1.56%,1.56%,0,0,40,4,2,SYR,OWL,K,K,K,,,,,1
+Jackie Jormp-Jomp,3236,603,Paul Crews,3248,189,RGO,414,T3,2,0,0,2,-1.30%,1.30%,0,0,40,4,2,SYR,OWL,RGO,RGO,RGO,,,,,1
+Paul Crews,3248,899,LeeLoo Dallas Multi-Guess,3244,267,PO,368,B3,0,0,0,2,-3.28%,3.28%,0,0,41,4,2,OWL,SYR,PO,PO,K,,,,,1
+Mo Soso,3223,943,LeeLoo Dallas Multi-Guess,3244,222,K,279,B3,1,0,0,2,-2.78%,2.78%,0,0,41,4,2,OWL,SYR,K,K,FO,,,,,1
+Franklin Louis Henderson,3240,592,LeeLoo Dallas Multi-Guess,3244,710,1B,118,B3,2,0,0,2,2.71%,-2.71%,0,0,41,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Joan Andreu Rosà,3234,513,LeeLoo Dallas Multi-Guess,3244,301,FO,212,B3,2,1,0,2,-4.78%,4.78%,0,0,41,4,2,OWL,SYR,FO,FO,FO,,,,,1
+Jimmy Sticks,3221,336,Paul Crews,3248,553,FO,217,T4,0,0,0,2,-1.53%,1.53%,0,0,42,4,2,SYR,OWL,FO,FO,FO,,,,,1
+Mario Goretti,3215,472,Paul Crews,3248,331,BB,141,T4,1,0,0,2,1.32%,-1.32%,0,1,42,4,2,SYR,OWL,BB,BB,BB,,,,,1
+James Longoria,3210,132,Paul Crews,3248,399,FO,267,T4,1,1,0,2,-1.46%,1.46%,0,0,42,4,2,SYR,OWL,FO,FO,FO,,,,,1
+Weehaddababy Itzaboi,3254,373,Paul Crews,3248,410,2B,37,T4,2,1,0,2,8.95%,-8.95%,1,0,42,4,2,SYR,OWL,2B,2B,2B,,,3248,,1
+LeeLoo Dallas Multi-Guess,3244,613,Paul Crews,3248,410,FO,203,T4,2,2,0,3,-1.86%,1.86%,0,0,42,4,2,SYR,OWL,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,420,LeeLoo Dallas Multi-Guess,3244,119,K,301,B4,0,0,0,3,-2.76%,2.76%,0,0,43,4,2,OWL,SYR,K,K,K,,,,,1
+Ferris Wheeler,2816,620,LeeLoo Dallas Multi-Guess,3244,698,1B,78,B4,1,0,0,3,3.15%,-3.15%,0,1,43,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Jodie Baller,3247,399,LeeLoo Dallas Multi-Guess,3244,408,HR,9,B4,1,1,0,3,19.48%,-19.48%,2,1,43,4,2,OWL,SYR,HR,HR,HR,,,3244,3244,1
+Jay Kwellon,3228,775,LeeLoo Dallas Multi-Guess,3244,245,LGO,470,B4,1,0,2,3,-3.91%,3.91%,0,0,43,4,2,OWL,SYR,LGO,LGO,LGO,,,,,1
+Ricky 'The Rat' Venucci,3252,179,LeeLoo Dallas Multi-Guess,3244,711,LGO,468,B4,2,0,2,3,-3.24%,3.24%,0,0,43,4,2,OWL,SYR,LGO,LGO,LGO,,,,,1
+Alex Blockman,3202,555,Paul Crews,3248,800,K,245,T5,0,0,2,3,-2.29%,2.29%,0,0,44,4,2,SYR,OWL,K,K,FO,,,,,1
+Jack Hoffman,3250,410,Paul Crews,3248,870,LGO,460,T5,1,0,2,3,-2.08%,2.08%,0,0,44,4,2,SYR,OWL,LGO,LGO,LGO,,,,,1
+Camden Yardsy,3227,891,Paul Crews,3248,450,RGO,441,T5,2,0,2,3,-1.91%,1.91%,0,0,44,4,2,SYR,OWL,RGO,RGO,RGO,,,,,1
+Paul Crews,3248,210,LeeLoo Dallas Multi-Guess,3244,700,LGO,490,B5,0,0,2,3,-5.77%,5.77%,0,0,45,4,2,OWL,SYR,LGO,LGO,LGO,,,,,1
+Mo Soso,3223,222,LeeLoo Dallas Multi-Guess,3244,903,PO,319,B5,1,0,2,3,-5.16%,5.16%,0,0,45,4,2,OWL,SYR,PO,PO,K,,,,,1
+Franklin Louis Henderson,3240,714,LeeLoo Dallas Multi-Guess,3244,666,2B,48,B5,2,0,2,3,7.51%,-7.51%,0,0,45,4,2,OWL,SYR,2B,2B,2B,,,,,1
+Joan Andreu Rosà,3234,32,LeeLoo Dallas Multi-Guess,3244,590,RGO,442,B5,2,2,2,3,-11.96%,11.96%,0,0,45,4,2,OWL,SYR,RGO,RGO,RGO,,,,,1
+Jackie Jormp-Jomp,3236,222,Jay Kwellon,3228,692,LGO,470,T6,0,0,2,3,-1.71%,1.71%,0,0,46,4,2,SYR,OWL,LGO,LGO,LGO,,,,,1
+Jimmy Sticks,3221,432,Jay Kwellon,3228,359,1B,73,T6,1,0,2,3,1.31%,-1.31%,0,0,46,4,2,SYR,OWL,1B,1B,1B,,,,,1
+Mario Goretti,3215,656,Jay Kwellon,3228,199,DP,457,T6,1,1,2,3,-4.43%,4.43%,0,0,46,4,2,SYR,OWL,LGO,LGO,DP,,,,,1
+Kendrick Lamar,3208,307,LeeLoo Dallas Multi-Guess,3244,196,1B,111,B6,0,0,2,3,8.33%,-8.33%,0,0,47,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Ferris Wheeler,2816,612,LeeLoo Dallas Multi-Guess,3244,37,DP,425,B6,0,1,2,3,-24.25%,24.25%,0,0,47,4,2,OWL,SYR,RGO,RGO,DP,,,,,1
+Jodie Baller,3247,872,LeeLoo Dallas Multi-Guess,3244,37,BB,165,B6,2,0,2,3,7.10%,-7.10%,0,1,47,4,2,OWL,SYR,BB,BB,BB,,,,,1
+Jay Kwellon,3228,850,LeeLoo Dallas Multi-Guess,3244,747,1B,103,B6,2,1,2,3,8.39%,-8.39%,0,1,47,4,2,OWL,SYR,1B,1B,1B,,,,,1
+Ricky 'The Rat' Venucci,3252,669,LeeLoo Dallas Multi-Guess,3244,701,3B,32,B6,2,5,2,3,77.69%,-77.69%,2,0,47,4,2,OWL,SYR,3B,3B,2B,3244,,3244,,1
+Cat with a Bat,3204,897,Jaime Villafuerte,3243,888,HR,9,T1,0,0,0,0,11.33%,-11.33%,1,1,48,5,2,UOM,FUR,HR,HR,HR,,,,3243,1
+Alph Overdale,3255,847,Jaime Villafuerte,3243,723,BB,124,T1,0,0,0,1,2.39%,-2.39%,0,0,48,5,2,UOM,FUR,BB,BB,1B,,,,,1
+Ant man,3229,298,Jaime Villafuerte,3243,600,PO,302,T1,0,1,0,1,-2.31%,2.31%,0,0,48,5,2,UOM,FUR,PO,PO,K,,,,,1
+jorjor wel,3217,111,Jaime Villafuerte,3243,803,K,308,T1,1,1,0,1,-2.13%,2.13%,0,0,48,5,2,UOM,FUR,K,K,K,,,,,1
+Minto McGuire,3219,650,Jaime Villafuerte,3243,69,RGO,419,T1,2,1,0,1,-3.35%,3.35%,0,0,48,5,2,UOM,FUR,RGO,RGO,RGO,,,,,1
+Norman Sland,3207,100,Greggy Gabagool,3237,42,2B,58,B1,0,0,0,1,7.04%,-7.04%,0,1,49,5,2,FUR,UOM,2B,2B,2B,,,,,1
+Angry Lizard,3256,250,Greggy Gabagool,3237,614,RGO,364,B1,0,2,0,1,-1.53%,1.53%,0,0,49,5,2,FUR,UOM,RGO,RGO,K,,,,,1
+Jiggs Kingman,3249,818,Greggy Gabagool,3237,861,2B,43,B1,1,3,0,1,9.12%,-9.12%,1,0,49,5,2,FUR,UOM,2B,2B,2B,3237,,,,1
+Johnny,3224,601,Greggy Gabagool,3237,818,FO,217,B1,1,2,1,1,-3.77%,3.77%,0,0,49,5,2,FUR,UOM,FO,FO,FO,,,,,1
+Julie Jules,3230,100,Greggy Gabagool,3237,569,LGO,469,B1,2,2,1,1,-4.92%,4.92%,0,0,49,5,2,FUR,UOM,LGO,LGO,LGO,,,,,1
+Okie,3238,828,Jaime Villafuerte,3243,393,RGO,435,T2,0,0,1,1,-2.72%,2.72%,0,0,50,5,2,UOM,FUR,RGO,RGO,RGO,,,,,1
+Erik Hamilton,3251,150,Jaime Villafuerte,3243,745,RGO,405,T2,1,0,1,1,-2.40%,2.40%,0,0,50,5,2,UOM,FUR,RGO,RGO,RGO,,,,,1
+Butts Carlton,2845,990,Jaime Villafuerte,3243,940,1B,50,T2,2,0,1,1,2.15%,-2.15%,0,0,50,5,2,UOM,FUR,1B,1B,2B,,,,,1
+Greggy Gabagool,3237,810,Jaime Villafuerte,3243,691,1B,119,T2,2,1,1,1,3.19%,-3.19%,0,0,50,5,2,UOM,FUR,1B,1B,1B,,,,,1
+Cat with a Bat,3204,555,Jaime Villafuerte,3243,3,LGO,448,T2,2,5,1,1,-7.33%,7.33%,0,0,50,5,2,UOM,FUR,LGO,LGO,RGO,,,,,1
+Tomba,3220,315,Greggy Gabagool,3237,272,3B,43,B2,0,0,1,1,11.18%,-11.18%,0,1,51,5,2,FUR,UOM,3B,3B,2B,,,,,1
+Pike Trout,3216,222,Greggy Gabagool,3237,315,1B,93,B2,0,3,1,1,4.17%,-4.17%,1,0,51,5,2,FUR,UOM,1B,1B,1B,3237,,,,1
+Lucius Salem,3194,442,Greggy Gabagool,3237,584,FO,142,B2,0,1,2,1,-2.24%,2.24%,0,0,51,5,2,FUR,UOM,FO,FO,BB,,,,,1
+Evil Corn Barn,2337,270,Greggy Gabagool,3237,966,DP,304,B2,1,1,2,1,-5.17%,5.17%,0,0,51,5,2,FUR,UOM,RGO,RGO,K,,,,,1
+Alph Overdale,3255,650,Jaime Villafuerte,3243,500,FO,150,T3,0,0,2,1,-3.32%,3.32%,0,0,52,5,2,UOM,FUR,FO,FO,BB,,,,,1
+Ant man,3229,578,Jaime Villafuerte,3243,500,1B,78,T3,1,0,2,1,3.27%,-3.27%,0,0,52,5,2,UOM,FUR,1B,1B,1B,,,,,1
+jorjor wel,3217,92,Jaime Villafuerte,3243,567,DP,475,T3,1,1,2,1,-8.38%,8.38%,0,0,52,5,2,UOM,FUR,LGO,LGO,DP,,,,,1
+Norman Sland,3207,750,Greggy Gabagool,3237,132,RGO,382,B3,0,0,2,1,-2.04%,2.04%,0,0,53,5,2,FUR,UOM,RGO,RGO,PO,,,,,1
+Angry Lizard,3256,696,Greggy Gabagool,3237,891,FO,195,B3,1,0,2,1,-1.80%,1.80%,0,0,53,5,2,FUR,UOM,FO,FO,FO,,,,,1
+Jiggs Kingman,3249,393,Greggy Gabagool,3237,727,PO,334,B3,2,0,2,1,-1.62%,1.62%,0,0,53,5,2,FUR,UOM,PO,PO,K,,,,,1
+Minto McGuire,3219,670,Jaime Villafuerte,3243,327,K,343,T4,0,0,2,1,-3.96%,3.96%,0,0,54,5,2,UOM,FUR,K,K,K,,,,,1
+Okie,3238,775,Jaime Villafuerte,3243,870,1B,95,T4,1,0,2,1,3.84%,-3.84%,0,0,54,5,2,UOM,FUR,1B,1B,1B,,,,,1
+Erik Hamilton,3251,553,Jaime Villafuerte,3243,1,DP,448,T4,1,1,2,1,-9.99%,9.99%,0,0,54,5,2,UOM,FUR,LGO,LGO,DP,,,,,1
+Johnny,3224,491,Greggy Gabagool,3237,411,1B,80,B4,0,0,2,1,1.82%,-1.82%,0,0,55,5,2,FUR,UOM,1B,1B,1B,,,,,1
+Julie Jules,3230,650,Greggy Gabagool,3237,71,DP,421,B4,0,1,2,1,-5.43%,5.43%,0,0,55,5,2,FUR,UOM,RGO,RGO,DP,,,,,1
+Tomba,3220,358,Greggy Gabagool,3237,131,FO,227,B4,2,0,2,1,-1.49%,1.49%,0,0,55,5,2,FUR,UOM,FO,FO,FO,,,,,1
+Butts Carlton,2845,707,Jaime Villafuerte,3243,331,RGO,376,T5,0,0,2,1,-4.98%,4.98%,0,0,56,5,2,UOM,FUR,RGO,RGO,K,,,,,1
+Greggy Gabagool,3237,544,Jaime Villafuerte,3243,666,1B,122,T5,1,0,2,1,4.87%,-4.87%,0,0,56,5,2,UOM,FUR,1B,1B,1B,,,,,1
+Greggy Gabagool,3237,527,Jaime Villafuerte,3243,667,SB,140,T5,1,1,2,1,4.54%,-4.54%,0,0,56,5,2,UOM,FUR,STEAL 2B,STEAL 2B,SB,,,,,4
+Cat with a Bat,3204,923,Jaime Villafuerte,3243,379,LGO,456,T5,1,2,2,1,-7.63%,7.63%,0,0,56,5,2,UOM,FUR,LGO,LGO,LGO,,,,,1
+Alph Overdale,3255,33,Jaime Villafuerte,3243,420,RGO,387,T5,2,2,2,1,-9.71%,9.71%,0,0,56,5,2,UOM,FUR,RGO,RGO,PO,,,,,1
+Pike Trout,3216,500,Greggy Gabagool,3237,969,LGO,469,B5,0,0,2,1,-1.37%,1.37%,0,0,57,5,2,FUR,UOM,LGO,LGO,LGO,,,,,1
+Lucius Salem,3194,83,Greggy Gabagool,3237,475,RGO,392,B5,1,0,2,1,-1.30%,1.30%,0,0,57,5,2,FUR,UOM,RGO,RGO,PO,,,,,1
+Evil Corn Barn,2337,243,Greggy Gabagool,3237,270,HR,27,B5,2,0,2,1,8.87%,-8.87%,1,1,57,5,2,FUR,UOM,HR,HR,3B,,,,3237,1
+Norman Sland,3207,720,Greggy Gabagool,3237,133,RGO,413,B5,2,0,3,1,-0.51%,0.51%,0,0,57,5,2,FUR,UOM,RGO,RGO,RGO,,,,,1
+Ant man,3229,288,Jiggs Kingman,3249,347,2B,59,T6,0,0,3,1,10.10%,-10.10%,0,0,58,5,2,UOM,FUR,2B,2B,2B,,,,,1
+jorjor wel,3217,667,Jiggs Kingman,3249,119,LGO,452,T6,0,2,3,1,-6.67%,6.67%,0,0,58,5,2,UOM,FUR,LGO,LGO,LGO,,,,,1
+Minto McGuire,3219,555,Jiggs Kingman,3249,840,K,285,T6,1,2,3,1,-6.63%,6.63%,0,0,58,5,2,UOM,FUR,K,K,K,,,,,1
+Okie,3238,207,Jiggs Kingman,3249,492,K,285,T6,2,2,3,1,-5.16%,5.16%,0,0,58,5,2,UOM,FUR,K,K,K,,,,,1
+Danny Hurley III,3259,723,Arthur Bullpendragon,3246,598,BB,125,T1,0,0,0,0,2.91%,-2.91%,0,1,59,6,2,LSU,WKU,BB,BB,1B,,,,,1
+Isao Makino,3232,622,Arthur Bullpendragon,3246,711,1B,89,T1,0,1,0,0,5.56%,-5.56%,0,1,59,6,2,LSU,WKU,1B,1B,1B,,,,,1
+Joseph Randome,3257,908,Arthur Bullpendragon,3246,711,FO,197,T1,0,4,0,0,-4.44%,4.44%,0,0,59,6,2,LSU,WKU,FO,FO,FO,,,,,1
+Harrison Cinderstone,3245,67,Arthur Bullpendragon,3246,381,PO,314,T1,1,4,0,0,-3.93%,3.93%,0,0,59,6,2,LSU,WKU,PO,PO,K,,,,,1
+Peter Nautilus,3203,149,Arthur Bullpendragon,3246,114,2B,35,T1,2,4,0,0,20.64%,-20.64%,2,0,59,6,2,LSU,WKU,2B,2B,2B,,3246,3246,,1
+Harry Johnson,3218,869,Arthur Bullpendragon,3246,537,PO,332,T1,2,2,0,2,-3.46%,3.46%,0,0,59,6,2,LSU,WKU,PO,PO,K,,,,,1
+Dusk Jackson,3242,396,Skip Bellew,3225,39,K,357,B1,0,0,0,2,-2.74%,2.74%,0,0,60,6,2,WKU,LSU,K,K,K,,,,,1
+Ezra Wind,3226,501,Skip Bellew,3225,211,K,290,B1,1,0,0,2,-2.20%,2.20%,0,0,60,6,2,WKU,LSU,K,K,K,,,,,1
+Soy Okey,3258,442,Skip Bellew,3225,199,FO,243,B1,2,0,0,2,-1.72%,1.72%,0,0,60,6,2,WKU,LSU,FO,FO,FO,,,,,1
+Captain Hate,3253,613,Arthur Bullpendragon,3246,648,2B,35,T2,0,0,0,2,4.41%,-4.41%,0,1,61,6,2,LSU,WKU,2B,2B,2B,,,,,1
+Napoleon Swingsalot,3214,208,Arthur Bullpendragon,3246,53,FO,155,T2,0,2,0,2,-2.84%,2.84%,0,0,61,6,2,LSU,WKU,FO,FO,BB,,,,,1
+Gary Appalachia,3235,148,Arthur Bullpendragon,3246,961,FO,187,T2,1,2,0,2,-2.59%,2.59%,0,0,61,6,2,LSU,WKU,FO,FO,FO,,,,,1
+Danny Hurley III,3259,634,Arthur Bullpendragon,3246,723,1B,89,T2,2,2,0,2,7.97%,-7.97%,1,0,61,6,2,LSU,WKU,1B,1B,1B,,3246,,,1
+Isao Makino,3232,850,Arthur Bullpendragon,3246,67,K,217,T2,2,1,0,3,-1.81%,1.81%,0,0,61,6,2,LSU,WKU,K,K,FO,,,,,1
+Henry McCade,3213,500,Skip Bellew,3225,730,FO,230,B2,0,0,0,3,-2.53%,2.53%,0,0,62,6,2,WKU,LSU,FO,FO,FO,,,,,1
+Dude Duderson,3231,117,Skip Bellew,3225,475,K,358,B2,1,0,0,3,-2.03%,2.03%,0,0,62,6,2,WKU,LSU,K,K,K,,,,,1
+Hiram Birnbaum,3206,917,Skip Bellew,3225,566,PO,351,B2,2,0,0,3,-1.48%,1.48%,0,0,62,6,2,WKU,LSU,PO,PO,K,,,,,1
+Joseph Randome,3257,510,Arthur Bullpendragon,3246,475,2B,35,T3,0,0,0,3,2.76%,-2.76%,0,1,63,6,2,LSU,WKU,2B,2B,2B,,,,,1
+Harrison Cinderstone,3245,632,Arthur Bullpendragon,3246,201,LGO,431,T3,0,2,0,3,-1.97%,1.97%,0,0,63,6,2,LSU,WKU,LGO,LGO,RGO,,,,,1
+Peter Nautilus,3203,965,Arthur Bullpendragon,3246,134,BB,169,T3,1,2,0,3,0.39%,-0.39%,0,1,63,6,2,LSU,WKU,BB,BB,BB,,,,,1
+Harry Johnson,3218,910,Arthur Bullpendragon,3246,766,FO,144,T3,1,4,0,3,-1.36%,1.36%,0,0,63,6,2,LSU,WKU,FO,FO,BB,,,,,1
+Captain Hate,3253,211,Arthur Bullpendragon,3246,221,HR,10,T3,2,4,0,3,11.45%,-11.45%,3,1,63,6,2,LSU,WKU,HR,HR,HR,,3246,3246,3246,1
+Napoleon Swingsalot,3214,118,Arthur Bullpendragon,3246,905,K,213,T3,2,0,0,6,-0.24%,0.24%,0,0,63,6,2,LSU,WKU,K,K,FO,,,,,1
+faron hylia,3205,215,Skip Bellew,3225,800,RGO,415,B3,0,0,0,6,-0.86%,0.86%,0,0,64,6,2,WKU,LSU,RGO,RGO,RGO,,,,,1
+Justin Carlson,3239,694,Skip Bellew,3225,691,HR,3,B3,1,0,0,6,2.29%,-2.29%,1,1,64,6,2,WKU,LSU,HR,HR,HR,,,,3225,1
+Steven Scola,3222,783,Skip Bellew,3225,411,PO,372,B3,1,0,1,6,-0.97%,0.97%,0,0,64,6,2,WKU,LSU,PO,PO,K,,,,,1
+Dusk Jackson,3242,114,Skip Bellew,3225,899,FO,215,B3,2,0,1,6,-0.65%,0.65%,0,0,64,6,2,WKU,LSU,FO,FO,FO,,,,,1
+Gary Appalachia,3235,148,Arthur Bullpendragon,3246,880,K,268,T4,0,0,1,6,-0.38%,0.38%,0,0,65,6,2,LSU,WKU,K,K,FO,,,,,1
+Danny Hurley III,3259,107,Arthur Bullpendragon,3246,218,1B,111,T4,1,0,1,6,0.32%,-0.32%,0,0,65,6,2,LSU,WKU,1B,1B,1B,,,,,1
+Isao Makino,3232,850,Arthur Bullpendragon,3246,67,K,217,T4,1,1,1,6,-0.37%,0.37%,0,0,65,6,2,LSU,WKU,K,K,FO,,,,,1
+Joseph Randome,3257,610,Arthur Bullpendragon,3246,734,1B,124,T4,2,1,1,6,0.37%,-0.37%,0,0,65,6,2,LSU,WKU,1B,1B,1B,,,,,1
+Harrison Cinderstone,3245,222,Arthur Bullpendragon,3246,518,PO,296,T4,2,5,1,6,-0.83%,0.83%,0,0,65,6,2,LSU,WKU,PO,PO,K,,,,,1
+Ezra Wind,3226,531,Skip Bellew,3225,39,LGO,492,B4,0,0,1,6,-1.24%,1.24%,0,0,66,6,2,WKU,LSU,LGO,LGO,LGO,,,,,1
+Soy Okey,3258,282,Skip Bellew,3225,900,K,382,B4,1,0,1,6,-0.82%,0.82%,0,0,66,6,2,WKU,LSU,K,K,PO,,,,,1
+Henry McCade,3213,450,Skip Bellew,3225,322,BB,128,B4,2,0,1,6,0.70%,-0.70%,0,1,66,6,2,WKU,LSU,BB,BB,1B,,,,,1
+Dude Duderson,3231,645,Skip Bellew,3225,696,2B,51,B4,2,1,1,6,3.40%,-3.40%,1,0,66,6,2,WKU,LSU,2B,2B,2B,,,3225,,1
+Hiram Birnbaum,3206,312,Skip Bellew,3225,82,K,230,B4,2,2,2,6,-2.52%,2.52%,0,0,66,6,2,WKU,LSU,K,K,FO,,,,,1
+Peter Nautilus,3203,375,Arthur Bullpendragon,3246,965,PO,410,T5,0,0,2,6,-0.37%,0.37%,0,0,67,6,2,LSU,WKU,PO,PO,RGO,,,,,1
+Harry Johnson,3218,342,Arthur Bullpendragon,3246,617,PO,275,T5,1,0,2,6,-0.34%,0.34%,0,0,67,6,2,LSU,WKU,PO,PO,FO,,,,,1
+Captain Hate,3253,817,Arthur Bullpendragon,3246,14,FO,197,T5,2,0,2,6,-0.30%,0.30%,0,0,67,6,2,LSU,WKU,FO,FO,FO,,,,,1
+faron hylia,3205,800,Skip Bellew,3225,832,2B,32,B5,0,0,2,6,4.15%,-4.15%,0,1,68,6,2,WKU,LSU,2B,2B,2B,,,,,1
+Justin Carlson,3239,815,Skip Bellew,3225,711,1B,104,B5,0,2,2,6,5.07%,-5.07%,0,1,68,6,2,WKU,LSU,1B,1B,1B,,,,,1
+Steven Scola,3222,7,Skip Bellew,3225,949,2B,58,B5,0,5,2,6,15.54%,-15.54%,1,1,68,6,2,WKU,LSU,2B,2B,2B,3225,,,,1
+Dusk Jackson,3242,743,Skip Bellew,3225,479,K,264,B5,0,6,3,6,-7.60%,7.60%,0,0,68,6,2,WKU,LSU,K,K,Sac,,,,,2
+Ezra Wind,3226,225,Skip Bellew,3225,911,K,314,B5,1,6,3,6,-10.08%,10.08%,0,0,68,6,2,WKU,LSU,K,K,K,,,,,2
+Soy Okey,3258,655,Skip Bellew,3225,699,2B,44,B5,2,6,3,6,17.71%,-17.71%,2,0,68,6,2,WKU,LSU,2B,2B,2B,3225,3225,,,1
+Henry McCade,3213,300,Gary Appalachia,3235,1,K,299,B5,2,2,5,6,-11.96%,11.96%,0,0,68,6,2,WKU,LSU,K,K,K,,,,,1
+Napoleon Swingsalot,3214,355,Arthur Bullpendragon,3246,764,PO,409,T6,0,0,5,6,-1.71%,1.71%,0,0,69,6,2,LSU,WKU,PO,PO,RGO,,,,,1
+Gary Appalachia,3235,392,Arthur Bullpendragon,3246,367,2B,25,T6,1,0,5,6,3.25%,-3.25%,0,1,69,6,2,LSU,WKU,2B,2B,3B,,,,,1
+Danny Hurley III,3259,79,Arthur Bullpendragon,3246,104,3B,25,T6,1,2,5,6,10.19%,-10.19%,1,1,69,6,2,LSU,WKU,3B,3B,3B,,3246,,,1
+Isao Makino,3232,69,Arthur Bullpendragon,3246,171,1B,102,T6,1,3,5,7,2.32%,-2.32%,1,0,69,6,2,LSU,WKU,1B,1B,1B,3246,,,,1
+Joseph Randome,3257,186,Arthur Bullpendragon,3246,592,DP,406,T6,1,1,5,8,-0.98%,0.98%,0,0,69,6,2,LSU,WKU,RGO,RGO,DP,,,,,1
+Dude Duderson,3231,206,Gary Appalachia,3235,135,2B,71,B6,0,0,5,8,6.45%,-6.45%,0,1,70,6,2,WKU,LSU,2B,2B,1B,,,,,1
+Hiram Birnbaum,3206,519,Gary Appalachia,3235,501,HR,18,B6,0,2,5,8,11.45%,-11.45%,2,1,70,6,2,WKU,LSU,HR,HR,HR,,3235,,3235,1
+faron hylia,3205,400,Gary Appalachia,3235,476,1B,76,B6,0,0,7,8,8.33%,-8.33%,0,0,70,6,2,WKU,LSU,1B,1B,1B,,,,,1
+Justin Carlson,3239,194,Gary Appalachia,3235,711,DP,483,B6,0,1,7,8,-24.25%,24.25%,0,0,70,6,2,WKU,LSU,LGO,LGO,DP,,,,,1
+Steven Scola,3222,229,Gary Appalachia,3235,283,2B,54,B6,2,0,7,8,11.08%,-11.08%,0,1,70,6,2,WKU,LSU,2B,2B,2B,,,,,1
+Dusk Jackson,3242,314,Gary Appalachia,3235,255,2B,59,B6,2,2,7,8,44.96%,-44.96%,1,0,70,6,2,WKU,LSU,2B,2B,2B,,3235,,,1
+Ezra Wind,3226,121,Gary Appalachia,3235,855,K,266,B6,2,2,8,8,-12.82%,12.82%,0,0,70,6,2,WKU,LSU,K,K,FO,,,,,1
+Harrison Cinderstone,3245,309,Henry McCade,3213,872,LGO,437,T7,0,0,8,8,-5.44%,5.44%,0,0,71,6,2,LSU,WKU,LGO,LGO,RGO,,,,,1
+Peter Nautilus,3203,435,Henry McCade,3213,872,RGO,437,T7,1,0,8,8,-5.08%,5.08%,0,0,71,6,2,LSU,WKU,RGO,RGO,RGO,,,,,1
+Harry Johnson,3218,910,Henry McCade,3213,231,PO,321,T7,2,0,8,8,-4.91%,4.91%,0,0,71,6,2,LSU,WKU,PO,PO,K,,,,,1
+Soy Okey,3258,3,Captain Hate,3253,187,FO,184,B7,0,0,8,8,-5.27%,5.27%,0,0,72,6,2,WKU,LSU,FO,FO,FO,,,,,1
+Henry McCade,3213,835,Captain Hate,3253,709,BB,126,B7,1,0,8,8,2.93%,-2.93%,0,0,72,6,2,WKU,LSU,BB,BB,1B,,,,,1
+Henry McCade,3213,500,Captain Hate,3253,955,CS,455,B7,1,1,8,8,-8.02%,8.02%,0,0,72,6,2,WKU,LSU,CS 2B,CS 2B,CS,,,,,4
+Dude Duderson,3231,393,Captain Hate,3253,669,K,276,B7,2,0,8,8,-5.07%,5.07%,0,0,72,6,2,WKU,LSU,K,K,FO,,,,,1
+Captain Hate,3253,523,Henry McCade,3213,666,BB,143,T8,0,0,8,8,4.38%,-4.38%,0,0,73,6,2,LSU,WKU,BB,BB,BB,,,,,1
+Captain Hate,3253,250,Henry McCade,3213,2,SB,248,T8,0,1,8,8,9.05%,-9.05%,0,0,73,6,2,LSU,WKU,STEAL 2B,STEAL 2B,SB,,,,,4
+Napoleon Swingsalot,3214,500,Henry McCade,3213,143,PO,357,T8,0,2,8,8,-9.04%,9.04%,0,0,73,6,2,LSU,WKU,PO,PO,K,,,,,1
+Gary Appalachia,3235,420,Henry McCade,3213,921,LO,499,T8,1,2,8,8,-19.82%,19.82%,0,0,73,6,2,LSU,WKU,LGO,LGO,LGO,,,,,1
+Hiram Birnbaum,3206,311,Captain Hate,3253,27,K,284,B8,0,0,8,8,-5.27%,5.27%,0,0,74,6,2,WKU,LSU,K,K,FO,,,,,1
+faron hylia,3205,1000,Captain Hate,3253,101,1B,101,B8,1,0,8,8,2.93%,-2.93%,0,0,74,6,2,WKU,LSU,1B,1B,1B,,,,,1
+Justin Carlson,3239,674,Captain Hate,3253,498,FO,176,B8,1,1,8,8,-4.29%,4.29%,0,0,74,6,2,WKU,LSU,FO,FO,BB,,,,,1
+Steven Scola,3222,563,Captain Hate,3253,455,1B,108,B8,2,1,8,8,4.76%,-4.76%,0,0,74,6,2,WKU,LSU,1B,1B,1B,,,,,1
+Dusk Jackson,3242,943,Captain Hate,3253,817,BB,126,B8,2,5,8,8,2.68%,-2.68%,0,0,74,6,2,WKU,LSU,BB,BB,1B,,,,,1
+Ezra Wind,3226,750,Captain Hate,3253,201,LGO,451,B8,2,7,8,8,-16.24%,16.24%,0,0,74,6,2,WKU,LSU,LGO,LGO,LGO,,,,,1
+Danny Hurley III,3259,61,Henry McCade,3213,420,PO,359,T9,0,0,8,8,-5.44%,5.44%,0,0,75,6,2,LSU,WKU,PO,PO,K,,,,,1
+Isao Makino,3232,999,Henry McCade,3213,921,2B,78,T9,1,0,8,8,9.83%,-9.83%,0,0,75,6,2,LSU,WKU,2B,2B,1B,,,,,1
+Joseph Randome,3257,199,Henry McCade,3213,700,LO,499,T9,1,2,8,8,-19.82%,19.82%,0,0,75,6,2,LSU,WKU,LGO,LGO,LGO,,,,,1
+Soy Okey,3258,500,Joseph Randome,3257,80,RGO,420,B9,0,0,8,8,-5.27%,5.27%,0,0,76,6,2,WKU,LSU,RGO,RGO,RGO,,,,,1
+Henry McCade,3213,800,Joseph Randome,3257,189,PO,389,B9,1,0,8,8,-5.09%,5.09%,0,0,76,6,2,WKU,LSU,PO,PO,PO,,,,,1
+Dude Duderson,3231,713,Joseph Randome,3257,12,K,299,B9,2,0,8,8,-5.07%,5.07%,0,0,76,6,2,WKU,LSU,K,K,K,,,,,1
+Harrison Cinderstone,3245,283,Hiram Birnbaum,3206,192,1B,91,T10,0,0,8,8,4.38%,-4.38%,0,0,77,6,2,LSU,WKU,1B,1B,1B,,,,,1
+Peter Nautilus,3203,550,Hiram Birnbaum,3206,74,DP,476,T10,0,1,8,8,-14.90%,14.90%,0,0,77,6,2,LSU,WKU,LGO,LGO,DP,,,,,1
+Harry Johnson,3218,768,Hiram Birnbaum,3206,27,K,259,T10,2,0,8,8,-4.91%,4.91%,0,0,77,6,2,LSU,WKU,K,K,FO,,,,,1
+Hiram Birnbaum,3206,810,Joseph Randome,3257,319,LGO,491,B10,0,0,8,8,-5.27%,5.27%,0,0,78,6,2,WKU,LSU,LGO,LGO,LGO,,,,,1
+faron hylia,3205,450,Joseph Randome,3257,526,2B,76,B10,1,0,8,8,9.58%,-9.58%,0,1,78,6,2,WKU,LSU,2B,2B,1B,,,,,1
+Justin Carlson,3239,328,Joseph Randome,3257,189,BB,139,B10,1,2,8,8,-0.84%,0.84%,0,1,78,6,2,WKU,LSU,BB,BB,BB,,,,,1
+Steven Scola,3222,826,Joseph Randome,3257,790,3B,36,B10,1,4,8,8,31.06%,-31.06%,2,0,78,6,2,WKU,LSU,3B,3B,2B,,3257,3257,,1
+Weehaddababy Itzaboi,3254,420,Jaime Villafuerte,3243,301,1B,119,T1,0,0,0,0,2.91%,-2.91%,0,0,79,7,3,SYR,FUR,1B,1B,1B,,,,,1
+Weehaddababy Itzaboi,3254,587,Jaime Villafuerte,3243,38,CS,451,T1,0,1,0,0,-5.42%,5.42%,0,0,79,7,3,SYR,FUR,CS 2B,CS 2B,CS,,,,,4
+James Longoria,3210,353,Jaime Villafuerte,3243,177,BB,176,T1,1,0,0,0,2.43%,-2.43%,0,0,79,7,3,SYR,FUR,BB,BB,BB,,,,,1
+Jack Hoffman,3250,800,Jaime Villafuerte,3243,417,DP,383,T1,1,1,0,0,-6.37%,6.37%,0,0,79,7,3,SYR,FUR,RGO,RGO,PO,,,,,1
+Tomba,3220,448,Booby Cancun,3233,444,HR,4,B1,0,0,0,0,11.79%,-11.79%,1,1,80,7,3,FUR,SYR,HR,HR,HR,,,,3233,1
+Lucius Salem,3194,842,Booby Cancun,3233,397,RGO,445,B1,0,0,1,0,-1.97%,1.97%,0,0,80,7,3,FUR,SYR,RGO,RGO,RGO,,,,,1
+Jiggs Kingman,3249,789,Booby Cancun,3233,48,FO,259,B1,1,0,1,0,-1.80%,1.80%,0,0,80,7,3,FUR,SYR,FO,FO,FO,,,,,1
+Pike Trout,3216,898,Booby Cancun,3233,946,1B,48,B1,2,0,1,0,1.69%,-1.69%,0,0,80,7,3,FUR,SYR,1B,1B,2B,,,,,1
+Julie Jules,3230,300,Booby Cancun,3233,723,RGO,423,B1,2,1,1,0,-3.13%,3.13%,0,0,80,7,3,FUR,SYR,RGO,RGO,RGO,,,,,1
+Mario Goretti,3215,575,Jaime Villafuerte,3243,147,LGO,428,T2,0,0,1,0,-2.95%,2.95%,0,0,81,7,3,SYR,FUR,LGO,LGO,RGO,,,,,1
+Jimmy Sticks,3221,333,Jaime Villafuerte,3243,207,1B,126,T2,1,0,1,0,2.84%,-2.84%,0,0,81,7,3,SYR,FUR,1B,1B,1B,,,,,1
+Alex Blockman,3202,377,Jaime Villafuerte,3243,724,K,347,T2,1,1,1,0,-3.11%,3.11%,0,0,81,7,3,SYR,FUR,K,K,K,,,,,1
+Camden Yardsy,3227,67,Jaime Villafuerte,3243,900,FO,167,T2,2,1,1,0,-4.20%,4.20%,0,0,81,7,3,SYR,FUR,FO,FO,BB,,,,,1
+Norman Sland,3207,650,Booby Cancun,3233,531,BB,119,B2,0,0,1,0,2.02%,-2.02%,0,1,82,7,3,FUR,SYR,BB,BB,1B,,,,,1
+Johnny,3224,890,Booby Cancun,3233,613,K,277,B2,0,1,1,0,-2.24%,2.24%,0,0,82,7,3,FUR,SYR,K,K,FO,,,,,1
+Angry Lizard,3256,475,Booby Cancun,3233,435,3B,40,B2,1,1,1,0,13.51%,-13.51%,1,1,82,7,3,FUR,SYR,3B,3B,2B,,,3233,,1
+Evil Corn Barn,2337,312,Booby Cancun,3233,9,RGO,303,B2,1,3,2,0,2.04%,-2.04%,1,0,82,7,3,FUR,SYR,RGO,RGO,K,3233,,,,1
+Tomba,3220,972,Booby Cancun,3233,341,K,369,B2,2,0,3,0,-0.69%,0.69%,0,0,82,7,3,FUR,SYR,K,K,K,,,,,1
+Jackie Jormp-Jomp,3236,907,Jaime Villafuerte,3243,745,BB,162,T3,0,0,3,0,3.25%,-3.25%,0,1,83,7,3,SYR,FUR,BB,BB,BB,,,,,1
+LeeLoo Dallas Multi-Guess,3244,890,Jaime Villafuerte,3243,941,2B,51,T3,0,1,3,0,12.46%,-12.46%,0,1,83,7,3,SYR,FUR,2B,2B,2B,,,,,1
+Weehaddababy Itzaboi,3254,343,Jaime Villafuerte,3243,13,K,330,T3,0,6,3,0,-6.23%,6.23%,0,0,83,7,3,SYR,FUR,K,K,K,,,,,1
+Salsa Steve,2835,808,Jaime Villafuerte,3243,129,K,321,T3,1,6,3,0,-7.46%,7.46%,0,0,83,7,3,SYR,FUR,K,K,K,,,,,1
+Jack Hoffman,3250,241,Jaime Villafuerte,3243,252,HR,11,T3,2,6,3,0,27.31%,-27.31%,3,1,83,7,3,SYR,FUR,HR,HR,HR,3243,3243,,3243,1
+Mario Goretti,3215,222,Jaime Villafuerte,3243,509,RGO,287,T3,2,0,3,3,-2.31%,2.31%,0,0,83,7,3,SYR,FUR,RGO,RGO,K,,,,,1
+Lucius Salem,3194,642,Booby Cancun,3233,622,HR,20,B3,0,0,3,3,15.42%,-15.42%,1,1,84,7,3,FUR,SYR,HR,HR,HR,,,,3233,1
+Jiggs Kingman,3249,224,Booby Cancun,3233,120,1B,104,B3,0,0,4,3,2.09%,-2.09%,0,1,84,7,3,FUR,SYR,1B,1B,1B,,,,,1
+Pike Trout,3216,344,Booby Cancun,3233,380,2B,36,B3,0,1,4,3,10.08%,-10.08%,0,1,84,7,3,FUR,SYR,2B,2B,2B,,,,,1
+Julie Jules,3230,50,Booby Cancun,3233,128,1B,78,B3,0,6,4,3,4.83%,-4.83%,1,1,84,7,3,FUR,SYR,1B,1B,1B,3233,,,,2
+Norman Sland,3207,100,Booby Cancun,3233,672,RGO,428,B3,0,5,5,3,-2.07%,2.07%,0,0,84,7,3,FUR,SYR,RGO,RGO,DP,,,,,2
+Johnny,3224,490,Booby Cancun,3233,726,Sac,236,B3,1,6,5,3,1.53%,-1.53%,1,0,84,7,3,FUR,SYR,FO,FO,Sac,3233,,,,1
+Angry Lizard,3256,850,Booby Cancun,3233,873,HR,23,B3,2,2,6,3,6.66%,-6.66%,2,1,84,7,3,FUR,SYR,HR,HR,HR,,3233,,3233,1
+Evil Corn Barn,2337,621,Booby Cancun,3233,346,K,275,B3,2,0,8,3,-0.21%,0.21%,0,0,84,7,3,FUR,SYR,K,K,FO,,,,,1
+Jimmy Sticks,3221,295,Jaime Villafuerte,3243,557,FO,262,T4,0,0,8,3,-0.97%,0.97%,0,0,85,7,3,SYR,FUR,FO,FO,FO,,,,,1
+Alex Blockman,3202,333,Jaime Villafuerte,3243,713,K,380,T4,1,0,8,3,-0.65%,0.65%,0,0,85,7,3,SYR,FUR,K,K,PO,,,,,1
+Camden Yardsy,3227,951,Jaime Villafuerte,3243,40,1B,89,T4,2,0,8,3,0.60%,-0.60%,0,0,85,7,3,SYR,FUR,1B,1B,1B,,,,,1
+Jackie Jormp-Jomp,3236,533,Jaime Villafuerte,3243,114,RGO,419,T4,2,1,8,3,-0.99%,0.99%,0,0,85,7,3,SYR,FUR,RGO,RGO,RGO,,,,,1
+Tomba,3220,522,Weehaddababy Itzaboi,3254,651,BB,129,B4,0,0,8,3,0.07%,-0.07%,0,0,86,7,3,FUR,SYR,BB,BB,1B,,,,,1
+Lucius Salem,3194,213,Weehaddababy Itzaboi,3254,392,FO,179,B4,0,1,8,3,-0.09%,0.09%,0,0,86,7,3,FUR,SYR,FO,FO,FO,,,,,1
+Jiggs Kingman,3249,859,Weehaddababy Itzaboi,3254,7,BB,148,B4,1,1,8,3,0.21%,-0.21%,0,0,86,7,3,FUR,SYR,BB,BB,BB,,,,,1
+Pike Trout,3216,555,Weehaddababy Itzaboi,3254,833,K,278,B4,1,4,8,3,-0.18%,0.18%,0,0,86,7,3,FUR,SYR,K,K,FO,,,,,1
+Julie Jules,3230,800,Weehaddababy Itzaboi,3254,500,K,300,B4,2,4,8,3,-0.43%,0.43%,0,0,86,7,3,FUR,SYR,K,K,K,,,,,1
+LeeLoo Dallas Multi-Guess,3244,248,Jaime Villafuerte,3243,218,3B,30,T5,0,0,8,3,2.16%,-2.16%,0,1,87,7,3,SYR,FUR,3B,3B,2B,,,,,1
+Weehaddababy Itzaboi,3254,333,Jaime Villafuerte,3243,643,K,310,T5,0,3,8,3,-1.56%,1.56%,0,0,87,7,3,SYR,FUR,K,K,K,,,,,1
+Salsa Steve,2835,,Jaime Villafuerte,3243,,AUTO BB,,T5,1,3,8,3,1.64%,-1.64%,0,0,87,7,3,SYR,FUR,AUTO BB,AUTO BB,AUTO BB,,,,,10
+Jack Hoffman,3250,888,Jaime Villafuerte,3243,112,Sac,224,T5,1,5,8,3,-1.67%,1.67%,1,0,87,7,3,SYR,FUR,FO,FO,Sac,3243,,,,1
+Mario Goretti,3215,922,Jaime Villafuerte,3243,126,K,204,T5,2,1,8,4,-1.32%,1.32%,0,0,87,7,3,SYR,FUR,K,K,FO,,,,,1
+Norman Sland,3207,850,Weehaddababy Itzaboi,3254,708,BB,142,B5,0,0,8,4,0.12%,-0.12%,0,0,88,7,3,FUR,SYR,BB,BB,BB,,,,,1
+Johnny,3224,311,Weehaddababy Itzaboi,3254,708,PO,397,B5,0,1,8,4,-0.14%,0.14%,0,0,88,7,3,FUR,SYR,PO,PO,PO,,,,,1
+Angry Lizard,3256,450,Weehaddababy Itzaboi,3254,497,2B,47,B5,1,1,8,4,0.44%,-0.44%,0,0,88,7,3,FUR,SYR,2B,2B,2B,,,,,1
+Evil Corn Barn,2337,871,Weehaddababy Itzaboi,3254,304,LGO,433,B5,1,6,8,4,-0.60%,0.60%,0,0,88,7,3,FUR,SYR,LGO,LGO,RGO,,,,,2
+Tomba,3220,139,Weehaddababy Itzaboi,3254,907,FO,232,B5,2,6,8,4,-0.20%,0.20%,0,0,88,7,3,FUR,SYR,FO,FO,FO,,,,,1
+Jimmy Sticks,3221,333,Angry Lizard,3256,777,RGO,444,T6,0,0,8,4,-0.92%,0.92%,0,0,89,7,3,SYR,FUR,RGO,RGO,RGO,,,,,1
+Alex Blockman,3202,969,Angry Lizard,3256,617,K,352,T6,1,0,8,4,-0.54%,0.54%,0,0,89,7,3,SYR,FUR,K,K,K,,,,,1
+Camden Yardsy,3227,617,Angry Lizard,3256,207,PO,410,T6,2,0,8,4,-0.18%,0.18%,0,0,89,7,3,SYR,FUR,PO,PO,RGO,,,,,1
+Paul Crews,3248,480,Gary Appalachia,3235,731,K,251,T1,0,0,0,0,-2.51%,2.51%,0,0,90,8,3,OWL,LSU,K,K,FO,,,,,1
+Ferris Wheeler,2816,21,Gary Appalachia,3235,731,K,290,T1,1,0,0,0,-2.18%,2.18%,0,0,90,8,3,OWL,LSU,K,K,K,,,,,1
+Kendrick Lamar,3208,300,Gary Appalachia,3235,499,FO,199,T1,2,0,0,0,-1.76%,1.76%,0,0,90,8,3,OWL,LSU,FO,FO,FO,,,,,1
+Napoleon Swingsalot,3214,50,Jay Kwellon,3228,899,FO,151,B1,0,0,0,0,-2.48%,2.48%,0,0,91,8,3,LSU,OWL,FO,FO,BB,,,,,1
+Peter Nautilus,3203,1000,Jay Kwellon,3228,500,LGO,500,B1,1,0,0,0,-2.17%,2.17%,0,0,91,8,3,LSU,OWL,LGO,LGO,LGO,,,,,1
+Harry Johnson,3218,362,Jay Kwellon,3228,956,RGO,406,B1,2,0,0,0,-1.79%,1.79%,0,0,91,8,3,LSU,OWL,RGO,RGO,RGO,,,,,1
+Jodie Baller,3247,619,Gary Appalachia,3235,23,RGO,404,T2,0,0,0,0,-2.72%,2.72%,0,0,92,8,3,OWL,LSU,RGO,RGO,RGO,,,,,1
+Franklin Louis Henderson,3240,634,Gary Appalachia,3235,864,FO,230,T2,1,0,0,0,-2.40%,2.40%,0,0,92,8,3,OWL,LSU,FO,FO,FO,,,,,1
+Mo Soso,3223,824,Gary Appalachia,3235,731,1B,93,T2,2,0,0,0,2.15%,-2.15%,0,0,92,8,3,OWL,LSU,1B,1B,1B,,,,,1
+Ricky 'The Rat' Venucci,3252,187,Gary Appalachia,3235,967,K,220,T2,2,1,0,0,-4.14%,4.14%,0,0,92,8,3,OWL,LSU,K,K,FO,,,,,1
+Danny Hurley III,3259,177,Jay Kwellon,3228,534,PO,357,B2,0,0,0,0,-2.72%,2.72%,0,0,93,8,3,LSU,OWL,PO,PO,K,,,,,1
+Joseph Randome,3257,409,Jay Kwellon,3228,941,LGO,468,B2,1,0,0,0,-2.38%,2.38%,0,0,93,8,3,LSU,OWL,LGO,LGO,LGO,,,,,1
+Captain Hate,3253,365,Jay Kwellon,3228,406,2B,41,B2,2,0,0,0,3.40%,-3.40%,0,0,93,8,3,LSU,OWL,2B,2B,2B,,,,,1
+Skip Bellew,3225,122,Jay Kwellon,3228,463,K,341,B2,2,2,0,0,-5.43%,5.43%,0,0,93,8,3,LSU,OWL,K,K,K,,,,,1
+Joan Andreu Rosà,3234,758,Gary Appalachia,3235,501,K,257,T3,0,0,0,0,-3.03%,3.03%,0,0,94,8,3,OWL,LSU,K,K,FO,,,,,1
+Jay Kwellon,3228,506,Gary Appalachia,3235,19,LGO,487,T3,1,0,0,0,-2.74%,2.74%,0,0,94,8,3,OWL,LSU,LGO,LGO,LGO,,,,,1
+Paul Crews,3248,790,Gary Appalachia,3235,231,LGO,441,T3,2,0,0,0,-2.31%,2.31%,0,0,94,8,3,OWL,LSU,LGO,LGO,RGO,,,,,1
+Isao Makino,3232,699,Jay Kwellon,3228,604,1B,95,B3,0,0,0,0,3.09%,-3.09%,0,0,95,8,3,LSU,OWL,1B,1B,1B,,,,,1
+Harrison Cinderstone,3245,328,Jay Kwellon,3228,698,DP,370,B3,0,1,0,0,-8.93%,8.93%,0,0,95,8,3,LSU,OWL,RGO,RGO,K,,,,,1
+Napoleon Swingsalot,3214,330,Jay Kwellon,3228,241,1B,89,B3,2,0,0,0,2.37%,-2.37%,0,0,95,8,3,LSU,OWL,1B,1B,1B,,,,,1
+Peter Nautilus,3203,435,Jay Kwellon,3228,894,LGO,459,B3,2,1,0,0,-4.64%,4.64%,0,0,95,8,3,LSU,OWL,LGO,LGO,LGO,,,,,1
+Ferris Wheeler,2816,668,Gary Appalachia,3235,4,PO,336,T4,0,0,0,0,-3.58%,3.58%,0,0,96,8,3,OWL,LSU,PO,PO,K,,,,,1
+Kendrick Lamar,3208,42,Gary Appalachia,3235,682,PO,360,T4,1,0,0,0,-3.19%,3.19%,0,0,96,8,3,OWL,LSU,PO,PO,K,,,,,1
+Jodie Baller,3247,942,Gary Appalachia,3235,902,2B,40,T4,2,0,0,0,4.46%,-4.46%,0,0,96,8,3,OWL,LSU,2B,2B,2B,,,,,1
+Franklin Louis Henderson,3240,764,Gary Appalachia,3235,396,PO,368,T4,2,2,0,0,-7.21%,7.21%,0,0,96,8,3,OWL,LSU,PO,PO,K,,,,,1
+Harry Johnson,3218,322,Jay Kwellon,3228,774,LGO,452,B4,0,0,0,0,-3.43%,3.43%,0,0,97,8,3,LSU,OWL,LGO,LGO,LGO,,,,,1
+Danny Hurley III,3259,87,Jay Kwellon,3228,234,BB,147,B4,1,0,0,0,2.66%,-2.66%,0,1,97,8,3,LSU,OWL,BB,BB,BB,,,,,1
+Joseph Randome,3257,718,Jay Kwellon,3228,860,BB,142,B4,1,1,0,0,4.93%,-4.93%,0,1,97,8,3,LSU,OWL,BB,BB,BB,,,,,1
+Captain Hate,3253,523,Jay Kwellon,3228,730,FO,207,B4,1,4,0,0,-4.67%,4.67%,0,0,97,8,3,LSU,OWL,FO,FO,FO,,,,,1
+Skip Bellew,3225,272,Jay Kwellon,3228,231,2B,41,B4,2,4,0,0,28.53%,-28.53%,2,0,97,8,3,LSU,OWL,2B,2B,2B,,3228,3228,,1
+Isao Makino,3232,699,Jay Kwellon,3228,899,FO,200,B4,2,2,2,0,-2.36%,2.36%,0,0,97,8,3,LSU,OWL,FO,FO,FO,,,,,1
+Mo Soso,3223,747,Gary Appalachia,3235,144,RGO,397,T5,0,0,2,0,-3.57%,3.57%,0,0,98,8,3,OWL,LSU,RGO,RGO,PO,,,,,1
+Ricky 'The Rat' Venucci,3252,968,Gary Appalachia,3235,616,K,352,T5,1,0,2,0,-2.82%,2.82%,0,0,98,8,3,OWL,LSU,K,K,K,,,,,1
+Joan Andreu Rosà,3234,870,Gary Appalachia,3235,731,BB,139,T5,2,0,2,0,2.91%,-2.91%,0,0,98,8,3,OWL,LSU,BB,BB,BB,,,,,1
+Jay Kwellon,3228,468,Gary Appalachia,3235,877,RGO,409,T5,2,1,2,0,-4.84%,4.84%,0,0,98,8,3,OWL,LSU,RGO,RGO,RGO,,,,,1
+Harrison Cinderstone,3245,738,Jay Kwellon,3228,538,FO,200,B5,0,0,2,0,-0.67%,0.67%,0,0,99,8,3,LSU,OWL,FO,FO,FO,,,,,1
+Napoleon Swingsalot,3214,250,Jay Kwellon,3228,659,RGO,409,B5,1,0,2,0,-0.64%,0.64%,0,0,99,8,3,LSU,OWL,RGO,RGO,RGO,,,,,1
+Peter Nautilus,3203,231,Jay Kwellon,3228,753,LGO,478,B5,2,0,2,0,-0.51%,0.51%,0,0,99,8,3,LSU,OWL,LGO,LGO,LGO,,,,,1
+Paul Crews,3248,50,Peter Nautilus,3203,346,K,296,T6,0,0,2,0,-3.81%,3.81%,0,0,100,8,3,OWL,LSU,K,K,K,,,,,1
+Ferris Wheeler,2816,163,Peter Nautilus,3203,799,PO,364,T6,1,0,2,0,-2.88%,2.88%,0,0,100,8,3,OWL,LSU,PO,PO,K,,,,,1
+Kendrick Lamar,3208,1,Peter Nautilus,3203,222,FO,221,T6,2,0,2,0,-1.67%,1.67%,0,0,100,8,3,OWL,LSU,FO,FO,FO,,,,,1
+Justin Carlson,3239,712,Alph Overdale,3255,111,PO,399,T1,0,0,0,0,-2.51%,2.51%,0,0,101,9,3,WKU,UOM,PO,PO,PO,,,,,1
+faron hylia,3205,520,Alph Overdale,3255,999,LGO,479,T1,1,0,0,0,-2.18%,2.18%,0,0,101,9,3,WKU,UOM,LGO,LGO,LGO,,,,,1
+Steven Scola,3222,23,Alph Overdale,3255,222,FO,199,T1,2,0,0,0,-1.76%,1.76%,0,0,101,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Ruby McCade,3260,283,Ezra Wind,3226,111,FO,172,B1,0,0,0,0,-2.48%,2.48%,0,0,102,9,3,UOM,WKU,FO,FO,BB,,,,,1
+Butts Carlton,2845,519,Ezra Wind,3226,47,LGO,472,B1,1,0,0,0,-2.17%,2.17%,0,0,102,9,3,UOM,WKU,LGO,LGO,LGO,,,,,1
+Greggy Gabagool,3237,696,Ezra Wind,3226,999,PO,303,B1,2,0,0,0,-1.79%,1.79%,0,0,102,9,3,UOM,WKU,PO,PO,K,,,,,1
+Hiram Birnbaum,3206,187,Alph Overdale,3255,999,FO,188,T2,0,0,0,0,-2.72%,2.72%,0,0,103,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Arthur Bullpendragon,3246,714,Alph Overdale,3255,654,1B,60,T2,1,0,0,0,2.57%,-2.57%,0,1,103,9,3,WKU,UOM,1B,1B,2B,,,,,1
+Soy Okey,3258,342,Alph Overdale,3255,180,BB,162,T2,1,1,0,0,4.45%,-4.45%,0,1,103,9,3,WKU,UOM,BB,BB,BB,,,,,1
+Henry McCade,3213,420,Alph Overdale,3255,360,2B,60,T2,1,4,0,0,17.17%,-17.17%,1,0,103,9,3,WKU,UOM,2B,2B,2B,,3255,,,1
+Dude Duderson,3231,150,Alph Overdale,3255,888,Sac,262,T2,1,6,0,1,1.46%,-1.46%,1,0,103,9,3,WKU,UOM,FO,FO,Sac,3255,,,,1
+Dusk Jackson,3242,760,Alph Overdale,3255,180,RGO,420,T2,2,2,0,2,-3.57%,3.57%,0,0,103,9,3,WKU,UOM,RGO,RGO,RGO,,,,,1
+Okie,3238,274,Ezra Wind,3226,696,RGO,422,B2,0,0,0,2,-2.94%,2.94%,0,0,104,9,3,UOM,WKU,RGO,RGO,RGO,,,,,1
+Minto McGuire,3219,800,Ezra Wind,3226,21,FO,221,B2,1,0,0,2,-2.53%,2.53%,0,0,104,9,3,UOM,WKU,FO,FO,FO,,,,,1
+jorjor wel,3217,117,Ezra Wind,3226,780,K,337,B2,2,0,0,2,-1.92%,1.92%,0,0,104,9,3,UOM,WKU,K,K,K,,,,,1
+Justin Carlson,3239,214,Alph Overdale,3255,456,FO,242,T3,0,0,0,2,-1.72%,1.72%,0,0,105,9,3,WKU,UOM,FO,FO,FO,,,,,1
+faron hylia,3205,246,Alph Overdale,3255,654,RGO,408,T3,1,0,0,2,-1.56%,1.56%,0,0,105,9,3,WKU,UOM,RGO,RGO,RGO,,,,,1
+Steven Scola,3222,856,Alph Overdale,3255,654,FO,202,T3,2,0,0,2,-1.30%,1.30%,0,0,105,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Ant man,3229,502,Ezra Wind,3226,350,BB,152,B3,0,0,0,2,4.11%,-4.11%,0,1,106,9,3,UOM,WKU,BB,BB,BB,,,,,1
+Erik Hamilton,3251,310,Ezra Wind,3226,351,2B,41,B3,0,1,0,2,16.83%,-16.83%,0,1,106,9,3,UOM,WKU,2B,2B,2B,,,,,1
+Cat with a Bat,3204,999,Ezra Wind,3226,101,1B,102,B3,0,6,0,2,11.02%,-11.02%,1,0,106,9,3,UOM,WKU,1B,1B,1B,3226,,,,1
+Ruby McCade,3260,587,Ezra Wind,3226,502,1B,85,B3,0,5,1,2,7.47%,-7.47%,1,0,106,9,3,UOM,WKU,1B,1B,1B,3226,,,,2
+Butts Carlton,2845,667,Ezra Wind,3226,555,1B,112,B3,0,4,2,2,10.61%,-10.61%,0,0,106,9,3,UOM,WKU,1B,1B,1B,,,,,1
+Greggy Gabagool,3237,825,Arthur Bullpendragon,3246,343,LGO,482,B3,0,7,2,2,-6.85%,6.85%,0,0,106,9,3,UOM,WKU,LGO,LGO,DP,,,,,2
+Okie,3238,107,Arthur Bullpendragon,3246,738,PO,369,B3,1,7,2,2,-9.61%,9.61%,0,0,106,9,3,UOM,WKU,PO,PO,K,,,,,1
+Minto McGuire,3219,805,Arthur Bullpendragon,3246,63,K,258,B3,2,7,2,2,-11.46%,11.46%,0,0,106,9,3,UOM,WKU,K,K,FO,,,,,1
+Hiram Birnbaum,3206,810,Alph Overdale,3255,222,RGO,412,T4,0,0,2,2,-3.58%,3.58%,0,0,107,9,3,WKU,UOM,RGO,RGO,RGO,,,,,1
+Arthur Bullpendragon,3246,564,Alph Overdale,3255,777,FO,213,T4,1,0,2,2,-3.19%,3.19%,0,0,107,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Soy Okey,3258,218,Alph Overdale,3255,654,RGO,436,T4,2,0,2,2,-2.75%,2.75%,0,0,107,9,3,WKU,UOM,RGO,RGO,RGO,,,,,1
+jorjor wel,3217,775,Arthur Bullpendragon,3246,167,PO,392,B4,0,0,2,2,-3.43%,3.43%,0,0,108,9,3,UOM,WKU,PO,PO,PO,,,,,1
+Ant man,3229,681,Arthur Bullpendragon,3246,479,FO,202,B4,1,0,2,2,-3.17%,3.17%,0,0,108,9,3,UOM,WKU,FO,FO,FO,,,,,1
+Erik Hamilton,3251,580,Arthur Bullpendragon,3246,982,PO,402,B4,2,0,2,2,-2.87%,2.87%,0,0,108,9,3,UOM,WKU,PO,PO,RGO,,,,,1
+Henry McCade,3213,69,Ant man,3229,831,K,238,T5,0,0,2,2,-4.31%,4.31%,0,0,109,9,3,WKU,UOM,K,K,FO,,,,,1
+Dude Duderson,3231,950,Ant man,3229,169,FO,219,T5,1,0,2,2,-3.90%,3.90%,0,0,109,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Dusk Jackson,3242,741,Ant man,3229,444,K,297,T5,2,0,2,2,-3.51%,3.51%,0,0,109,9,3,WKU,UOM,K,K,K,,,,,1
+Cat with a Bat,3204,752,Arthur Bullpendragon,3246,7,K,255,B5,0,0,2,2,-4.12%,4.12%,0,0,110,9,3,UOM,WKU,K,K,FO,,,,,1
+Ruby McCade,3260,326,Arthur Bullpendragon,3246,588,PO,262,B5,1,0,2,2,-3.89%,3.89%,0,0,110,9,3,UOM,WKU,PO,PO,FO,,,,,1
+Butts Carlton,2845,812,Arthur Bullpendragon,3246,731,1B,81,B5,2,0,2,2,3.18%,-3.18%,0,0,110,9,3,UOM,WKU,1B,1B,1B,,,,,1
+Greggy Gabagool,3237,294,Arthur Bullpendragon,3246,15,PO,279,B5,2,1,2,2,-6.86%,6.86%,0,0,110,9,3,UOM,WKU,PO,PO,FO,,,,,1
+Justin Carlson,3239,489,Ant man,3229,711,FO,222,T6,0,0,2,2,-5.44%,5.44%,0,0,111,9,3,WKU,UOM,FO,FO,FO,,,,,1
+faron hylia,3205,900,Ant man,3229,15,BB,115,T6,1,0,2,2,3.75%,-3.75%,0,0,111,9,3,WKU,UOM,BB,BB,1B,,,,,1
+Steven Scola,3222,358,Ant man,3229,38,K,320,T6,1,1,2,2,-4.81%,4.81%,0,0,111,9,3,WKU,UOM,K,K,K,,,,,1
+Hiram Birnbaum,3206,8,Ant man,3229,333,K,325,T6,2,1,2,2,-8.93%,8.93%,0,0,111,9,3,WKU,UOM,K,K,K,,,,,1
+Okie,3238,654,Arthur Bullpendragon,3246,972,PO,318,B6,0,0,2,2,-5.27%,5.27%,0,0,112,9,3,UOM,WKU,PO,PO,K,,,,,1
+Minto McGuire,3219,550,Arthur Bullpendragon,3246,813,K,263,B6,1,0,2,2,-5.09%,5.09%,0,0,112,9,3,UOM,WKU,K,K,FO,,,,,1
+jorjor wel,3217,455,Arthur Bullpendragon,3246,554,1B,99,B6,2,0,2,2,3.73%,-3.73%,0,0,112,9,3,UOM,WKU,1B,1B,1B,,,,,1
+Ant man,3229,236,Arthur Bullpendragon,3246,141,1B,95,B6,2,1,2,2,4.76%,-4.76%,0,0,112,9,3,UOM,WKU,1B,1B,1B,,,,,1
+Erik Hamilton,3251,435,Arthur Bullpendragon,3246,951,LGO,484,B6,2,5,2,2,-13.56%,13.56%,0,0,112,9,3,UOM,WKU,LGO,LGO,LGO,,,,,1
+Arthur Bullpendragon,3246,111,Ant man,3229,733,PO,378,T7,0,0,2,2,-5.44%,5.44%,0,0,113,9,3,WKU,UOM,PO,PO,PO,,,,,1
+Soy Okey,3258,888,Ant man,3229,899,HR,11,T7,1,0,2,2,35.86%,-35.86%,1,1,113,9,3,WKU,UOM,HR,HR,HR,,,,3229,1
+Henry McCade,3213,240,Ant man,3229,788,RGO,452,T7,1,0,2,3,-1.62%,1.62%,0,0,113,9,3,WKU,UOM,RGO,RGO,LGO,,,,,1
+Dude Duderson,3231,344,Ant man,3229,528,FO,184,T7,2,0,2,3,-1.50%,1.50%,0,0,113,9,3,WKU,UOM,FO,FO,FO,,,,,1
+Cat with a Bat,3204,743,Arthur Bullpendragon,3246,522,FO,221,B7,0,0,2,3,-8.33%,8.33%,0,0,114,9,3,UOM,WKU,FO,FO,FO,,,,,1
+Ruby McCade,3260,513,Arthur Bullpendragon,3246,279,K,234,B7,1,0,2,3,-7.59%,7.59%,0,0,114,9,3,UOM,WKU,K,K,FO,,,,,1
+Butts Carlton,2845,303,Arthur Bullpendragon,3246,30,PO,273,B7,2,0,2,3,-6.82%,6.82%,0,0,114,9,3,UOM,WKU,PO,PO,FO,,,,,1
+Jiggs Kingman,3249,420,Franklin Louis Henderson,3240,273,BB,147,T1,0,0,0,0,2.91%,-2.91%,0,1,115,10,4,FUR,OWL,BB,BB,BB,,,,,1
+Angry Lizard,3256,567,Franklin Louis Henderson,3240,705,BB,138,T1,0,1,0,0,5.56%,-5.56%,0,0,115,10,4,FUR,OWL,BB,BB,BB,,,,,1
+Johnny,3224,835,Franklin Louis Henderson,3240,960,BB,125,T1,0,4,0,0,9.34%,-9.34%,0,0,115,10,4,FUR,OWL,BB,BB,1B,,,,,1
+Norman Sland,3207,320,Franklin Louis Henderson,3240,834,DP,486,T1,0,7,0,0,-7.66%,7.66%,0,0,115,10,4,FUR,OWL,LGO,LGO,DP,3240,,,,1
+Pike Trout,3216,10,Franklin Louis Henderson,3240,218,FO,208,T1,2,3,0,1,-4.47%,4.47%,0,0,115,10,4,FUR,OWL,FO,FO,FO,,,,,1
+Chilidog Clayton,3261,302,Jaime Villafuerte,3243,243,2B,59,B1,0,0,0,1,7.04%,-7.04%,0,1,116,10,4,OWL,FUR,2B,2B,2B,,,,,1
+Mo Soso,3223,324,Jaime Villafuerte,3243,914,RGO,410,B1,0,2,0,1,-1.53%,1.53%,0,0,116,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Paul Crews,3248,670,Jaime Villafuerte,3243,95,RGO,425,B1,1,3,0,1,2.22%,-2.22%,1,0,116,10,4,OWL,FUR,RGO,RGO,RGO,3243,,,,1
+Ricky 'The Rat' Venucci,3252,222,Jaime Villafuerte,3243,229,HR,7,B1,2,0,1,1,12.67%,-12.67%,1,1,116,10,4,OWL,FUR,HR,HR,HR,,,,3243,1
+Joan Andreu Rosà,3234,848,Jaime Villafuerte,3243,877,3B,29,B1,2,0,2,1,2.42%,-2.42%,0,0,116,10,4,OWL,FUR,3B,3B,3B,,,,,1
+Jodie Baller,3247,919,Jaime Villafuerte,3243,754,BB,165,B1,2,3,2,1,1.68%,-1.68%,0,0,116,10,4,OWL,FUR,BB,BB,BB,,,,,1
+Kendrick Lamar,3208,150,Jaime Villafuerte,3243,500,PO,350,B1,2,5,2,1,-5.54%,5.54%,0,0,116,10,4,OWL,FUR,PO,PO,K,,,,,1
+Julie Jules,3230,400,Franklin Louis Henderson,3240,302,1B,98,T2,0,0,2,1,3.46%,-3.46%,0,1,117,10,4,FUR,OWL,1B,1B,1B,,,,,1
+Tomba,3220,682,Franklin Louis Henderson,3240,624,2B,58,T2,0,1,2,1,14.71%,-14.71%,0,0,117,10,4,FUR,OWL,2B,2B,2B,,,,,1
+Lucius Salem,3194,751,Franklin Louis Henderson,3240,295,RGO,456,T2,0,6,2,1,0.83%,-0.83%,1,0,117,10,4,FUR,OWL,RGO,RGO,LGO,3240,,,,1
+Champ Winters,3262,,Franklin Louis Henderson,3240,,AUTO K,,T2,1,3,2,2,-7.54%,7.54%,0,0,117,10,4,FUR,OWL,AUTO K,AUTO K,AUTO K,,,,,9
+Jiggs Kingman,3249,818,Franklin Louis Henderson,3240,995,FO,177,T2,2,3,2,2,-5.55%,5.55%,0,0,117,10,4,FUR,OWL,FO,FO,BB,,,,,1
+Ferris Wheeler,2816,774,Jaime Villafuerte,3243,999,FO,225,B2,0,0,2,2,-2.72%,2.72%,0,0,118,10,4,OWL,FUR,FO,FO,FO,,,,,1
+Jay Kwellon,3228,500,Jaime Villafuerte,3243,220,K,280,B2,1,0,2,2,-2.38%,2.38%,0,0,118,10,4,OWL,FUR,K,K,FO,,,,,1
+Chilidog Clayton,3261,274,Jaime Villafuerte,3243,888,RGO,386,B2,2,0,2,2,-2.03%,2.03%,0,0,118,10,4,OWL,FUR,RGO,RGO,PO,,,,,1
+Angry Lizard,3256,130,Franklin Louis Henderson,3240,167,3B,37,T3,0,0,2,2,12.12%,-12.12%,0,1,119,10,4,FUR,OWL,3B,3B,2B,,,,,1
+Johnny,3224,862,Franklin Louis Henderson,3240,512,PO,350,T3,0,3,2,2,-5.41%,5.41%,0,0,119,10,4,FUR,OWL,PO,PO,K,,,,,2
+Norman Sland,3207,850,Franklin Louis Henderson,3240,379,RGO,471,T3,1,3,2,2,-8.92%,8.92%,0,0,119,10,4,FUR,OWL,RGO,RGO,LGO,,,,,2
+Pike Trout,3216,411,Jay Kwellon,3228,332,1B,79,T3,2,3,2,2,14.46%,-14.46%,1,0,119,10,4,FUR,OWL,1B,1B,1B,3240,,,,1
+Julie Jules,3230,,Jay Kwellon,3228,,AUTO K,,T3,2,1,2,3,-3.57%,3.57%,0,0,119,10,4,FUR,OWL,AUTO K,AUTO K,AUTO K,,,,,9
+Mo Soso,3223,745,Jaime Villafuerte,3243,730,HR,15,B3,0,0,2,3,16.76%,-16.76%,1,1,120,10,4,OWL,FUR,HR,HR,HR,,,,3243,1
+Paul Crews,3248,1,Jaime Villafuerte,3243,598,RGO,403,B3,0,0,3,3,-3.07%,3.07%,0,0,120,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Ricky 'The Rat' Venucci,3252,34,Jaime Villafuerte,3243,419,PO,385,B3,1,0,3,3,-2.77%,2.77%,0,0,120,10,4,OWL,FUR,PO,PO,PO,,,,,1
+Joan Andreu Rosà,3234,212,Jaime Villafuerte,3243,800,RGO,412,B3,2,0,3,3,-2.27%,2.27%,0,0,120,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Bucky Sabre,3124,266,Jay Kwellon,3228,320,1B,54,T4,0,0,3,3,3.68%,-3.68%,0,0,121,10,4,FUR,OWL,1B,1B,2B,,,,,1
+Lucius Salem,3194,420,Jay Kwellon,3228,790,PO,370,T4,0,1,3,3,-4.07%,4.07%,0,0,121,10,4,FUR,OWL,PO,PO,K,,,,,1
+Dixon Uraz,34,500,Jay Kwellon,3228,1000,LO,500,T4,1,1,3,3,-9.13%,9.13%,0,0,121,10,4,FUR,OWL,LGO,LGO,DP,,,,,1
+Jodie Baller,3247,247,Jaime Villafuerte,3243,9,FO,238,B4,0,0,3,3,-3.43%,3.43%,0,0,122,10,4,OWL,FUR,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,509,Jaime Villafuerte,3243,69,RGO,440,B4,1,0,3,3,-3.17%,3.17%,0,0,122,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Ferris Wheeler,2816,390,Jaime Villafuerte,3243,814,RGO,424,B4,2,0,3,3,-2.87%,2.87%,0,0,122,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Jiggs Kingman,3249,666,Jay Kwellon,3228,178,LGO,488,T5,0,0,3,3,-4.31%,4.31%,0,0,123,10,4,FUR,OWL,LGO,LGO,LGO,,,,,1
+Angry Lizard,3256,248,Jay Kwellon,3228,255,HR,7,T5,1,0,3,3,25.02%,-25.02%,1,1,123,10,4,FUR,OWL,HR,HR,HR,,,,3228,1
+Johnny,3224,925,Jay Kwellon,3228,451,LGO,474,T5,1,0,3,4,-2.08%,2.08%,0,0,123,10,4,FUR,OWL,LGO,LGO,LGO,,,,,1
+Norman Sland,3207,200,Jay Kwellon,3228,588,PO,388,T5,2,0,3,4,-1.91%,1.91%,0,0,123,10,4,FUR,OWL,PO,PO,PO,,,,,1
+Jay Kwellon,3228,622,Jaime Villafuerte,3243,337,K,285,B5,0,0,3,4,-5.77%,5.77%,0,0,124,10,4,OWL,FUR,K,K,K,,,,,1
+Chilidog Clayton,3261,921,Jaime Villafuerte,3243,942,HR,21,B5,1,0,3,4,30.09%,-30.09%,1,1,124,10,4,OWL,FUR,HR,HR,HR,,,,3243,1
+Mo Soso,3223,469,Jaime Villafuerte,3243,1000,LGO,469,B5,1,0,4,4,-3.89%,3.89%,0,0,124,10,4,OWL,FUR,LGO,LGO,LGO,,,,,1
+Paul Crews,3248,485,Jaime Villafuerte,3243,292,FO,193,B5,2,0,4,4,-3.68%,3.68%,0,0,124,10,4,OWL,FUR,FO,FO,FO,,,,,1
+Pike Trout,3216,777,Jay Kwellon,3228,986,FO,209,T6,0,0,4,4,-5.44%,5.44%,0,0,125,10,4,FUR,OWL,FO,FO,FO,,,,,1
+Julie Jules,3230,800,Jay Kwellon,3228,201,RGO,401,T6,1,0,4,4,-5.08%,5.08%,0,0,125,10,4,FUR,OWL,RGO,RGO,RGO,,,,,1
+Bucky Sabre,3124,850,Jay Kwellon,3228,100,FO,250,T6,2,0,4,4,-4.91%,4.91%,0,0,125,10,4,FUR,OWL,FO,FO,FO,,,,,1
+Ricky 'The Rat' Venucci,3252,147,Jaime Villafuerte,3243,533,PO,386,B6,0,0,4,4,-5.27%,5.27%,0,0,126,10,4,OWL,FUR,PO,PO,PO,,,,,1
+Joan Andreu Rosà,3234,972,Jaime Villafuerte,3243,533,RGO,439,B6,1,0,4,4,-5.09%,5.09%,0,0,126,10,4,OWL,FUR,RGO,RGO,RGO,,,,,1
+Jodie Baller,3247,400,Jaime Villafuerte,3243,6,RGO,394,B6,2,0,4,4,-5.07%,5.07%,0,0,126,10,4,OWL,FUR,RGO,RGO,PO,,,,,1
+Lucius Salem,3194,693,Jay Kwellon,3228,764,1B,71,T7,0,0,4,4,4.38%,-4.38%,0,0,127,10,4,FUR,OWL,1B,1B,1B,,,,,1
+Dixon Uraz,34,909,Jay Kwellon,3228,128,FO,219,T7,0,1,4,4,-6.07%,6.07%,0,0,127,10,4,FUR,OWL,FO,FO,FO,,,,,1
+Jiggs Kingman,3249,301,Jay Kwellon,3228,5,K,296,T7,1,1,4,4,-4.81%,4.81%,0,0,127,10,4,FUR,OWL,K,K,K,,,,,1
+Angry Lizard,3256,891,Jay Kwellon,3228,667,FO,224,T7,2,1,4,4,-8.93%,8.93%,0,0,127,10,4,FUR,OWL,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,616,Angry Lizard,3256,644,3B,28,B7,0,0,4,4,26.12%,-26.12%,0,1,128,10,4,OWL,FUR,3B,3B,3B,,,,,1
+Ferris Wheeler,2816,648,Angry Lizard,3256,324,K,324,B7,0,3,4,4,-9.54%,9.54%,0,0,128,10,4,OWL,FUR,K,K,K,,,,,1
+Jay Kwellon,3228,80,Angry Lizard,3256,235,BB,155,B7,1,3,4,4,-2.68%,2.68%,0,1,128,10,4,OWL,FUR,BB,BB,BB,,,,,1
+Chilidog Clayton,3261,872,Angry Lizard,3256,532,K,340,B7,1,5,4,4,-15.77%,15.77%,0,0,128,10,4,OWL,FUR,K,K,K,,,,,1
+Mo Soso,3223,877,Angry Lizard,3256,828,2B,49,B7,2,5,4,4,36.40%,-36.40%,2,0,128,10,4,OWL,FUR,2B,2B,2B,3256,,3256,,1
+Isao Makino,3232,100,Murray,3267,501,PO,401,T1,0,0,0,0,-2.51%,2.51%,0,0,129,11,4,LSU,UOM,PO,PO,RGO,,,,,1
+Skip Bellew,3225,721,Murray,3267,892,FO,171,T1,1,0,0,0,-2.18%,2.18%,0,0,129,11,4,LSU,UOM,FO,FO,BB,,,,,1
+Harrison Cinderstone,3245,138,Murray,3267,893,PO,245,T1,2,0,0,0,-1.76%,1.76%,0,0,129,11,4,LSU,UOM,PO,PO,FO,,,,,1
+Robert Sitkowski,3265,705,Gary Appalachia,3235,117,RGO,412,B1,0,0,0,0,-2.48%,2.48%,0,0,130,11,4,UOM,LSU,RGO,RGO,RGO,,,,,1
+Alph Overdale,3255,499,Gary Appalachia,3235,439,2B,60,B1,1,0,0,0,4.73%,-4.73%,0,0,130,11,4,UOM,LSU,2B,2B,2B,,,,,1
+Greggy Gabagool,3237,817,Gary Appalachia,3235,372,LGO,445,B1,1,2,0,0,-3.77%,3.77%,0,0,130,11,4,UOM,LSU,LGO,LGO,RGO,,,,,1
+Cat with a Bat,3204,993,Gary Appalachia,3235,619,RGO,374,B1,2,2,0,0,-4.92%,4.92%,0,0,130,11,4,UOM,LSU,RGO,RGO,K,,,,,1
+Peter Nautilus,3203,255,Murray,3267,180,1B,75,T2,0,0,0,0,3.09%,-3.09%,0,1,131,11,4,LSU,UOM,1B,1B,1B,,,,,1
+Harry Johnson,3218,453,Murray,3267,306,BB,147,T2,0,1,0,0,5.91%,-5.91%,0,1,131,11,4,LSU,UOM,BB,BB,BB,,,,,1
+Captain Hate,3253,700,Murray,3267,90,PO,390,T2,0,4,0,0,-4.70%,4.70%,0,0,131,11,4,LSU,UOM,PO,PO,PO,,,,,1
+Joseph Randome,3257,702,Murray,3267,700,HR,2,T2,1,4,0,0,26.83%,-26.83%,3,1,131,11,4,LSU,UOM,HR,HR,HR,,3267,3267,3267,1
+Meezer Slippers,3266,,Murray,3267,,AUTO K,,T2,1,0,0,3,-1.15%,1.15%,0,0,131,11,4,LSU,UOM,AUTO K,AUTO K,AUTO K,,,,,9
+Danny Hurley III,3259,114,Murray,3267,790,PO,324,T2,2,0,0,3,-0.89%,0.89%,0,0,131,11,4,LSU,UOM,PO,PO,K,,,,,1
+Ant man,3229,279,Gary Appalachia,3235,71,FO,208,B2,0,0,0,3,-2.53%,2.53%,0,0,132,11,4,UOM,LSU,FO,FO,FO,,,,,1
+Minto McGuire,3219,515,Gary Appalachia,3235,425,1B,90,B2,1,0,0,3,2.55%,-2.55%,0,0,132,11,4,UOM,LSU,1B,1B,1B,,,,,1
+jorjor wel,3217,773,Gary Appalachia,3235,148,PO,375,B2,1,1,0,3,-2.57%,2.57%,0,0,132,11,4,UOM,LSU,PO,PO,K,,,,,1
+Okie,3238,634,Gary Appalachia,3235,913,K,279,B2,2,1,0,3,-3.49%,3.49%,0,0,132,11,4,UOM,LSU,K,K,FO,,,,,1
+Isao Makino,3232,900,Murray,3267,449,RGO,451,T3,0,0,0,3,-1.14%,1.14%,0,0,133,11,4,LSU,UOM,RGO,RGO,LGO,,,,,1
+Skip Bellew,3225,162,Murray,3267,202,2B,40,T3,1,0,0,3,1.93%,-1.93%,0,0,133,11,4,LSU,UOM,2B,2B,2B,,,,,1
+Harrison Cinderstone,3245,,Murray,3267,,AUTO K,,T3,1,2,0,3,-1.63%,1.63%,0,0,133,11,4,LSU,UOM,AUTO K,AUTO K,AUTO K,,,,,9
+Peter Nautilus,3203,26,Murray,3267,404,PO,378,T3,2,2,0,3,-2.21%,2.21%,0,0,133,11,4,LSU,UOM,PO,PO,PO,,,,,1
+Ruby McCade,3260,467,Gary Appalachia,3235,372,1B,95,B3,0,0,0,3,3.68%,-3.68%,0,0,134,11,4,UOM,LSU,1B,1B,1B,,,,,1
+Robert Sitkowski,3265,815,Gary Appalachia,3235,372,DP,443,B3,0,1,0,3,-8.53%,8.53%,0,0,134,11,4,UOM,LSU,LGO,LGO,DP,,,,,1
+Alph Overdale,3255,1,Gary Appalachia,3235,6,HR,5,B3,2,0,0,3,8.70%,-8.70%,1,1,134,11,4,UOM,LSU,HR,HR,HR,,,,3235,1
+Greggy Gabagool,3237,167,Gary Appalachia,3235,670,LGO,497,B3,2,0,1,3,-2.07%,2.07%,0,0,134,11,4,UOM,LSU,LGO,LGO,LGO,,,,,1
+Harry Johnson,3218,324,Murray,3267,138,FO,186,T4,0,0,1,3,-1.53%,1.53%,0,0,135,11,4,LSU,UOM,FO,FO,FO,,,,,1
+Captain Hate,3253,808,Murray,3267,942,BB,134,T4,1,0,1,3,1.32%,-1.32%,0,0,135,11,4,LSU,UOM,BB,BB,1B,,,,,1
+Joseph Randome,3257,922,Murray,3267,6,1B,84,T4,1,1,1,3,2.10%,-2.10%,0,0,135,11,4,LSU,UOM,1B,1B,1B,,,,,1
+Napoleon Swingsalot,3214,750,Murray,3267,412,PO,338,T4,1,4,1,3,-2.05%,2.05%,0,0,135,11,4,LSU,UOM,PO,PO,K,,,,,1
+Danny Hurley III,3259,519,Murray,3267,948,PO,429,T4,2,4,1,3,-4.07%,4.07%,0,0,135,11,4,LSU,UOM,PO,PO,RGO,,,,,1
+Cat with a Bat,3204,875,Gary Appalachia,3235,561,K,314,B4,0,0,1,3,-3.76%,3.76%,0,0,136,11,4,UOM,LSU,K,K,K,,,,,1
+Ant man,3229,279,Gary Appalachia,3235,804,LGO,475,B4,1,0,1,3,-3.09%,3.09%,0,0,136,11,4,UOM,LSU,LGO,LGO,LGO,,,,,1
+Minto McGuire,3219,755,Gary Appalachia,3235,981,FO,226,B4,2,0,1,3,-2.26%,2.26%,0,0,136,11,4,UOM,LSU,FO,FO,FO,,,,,1
+Isao Makino,3232,100,Murray,3267,864,K,236,T5,0,0,1,3,-1.31%,1.31%,0,0,137,11,4,LSU,UOM,K,K,FO,,,,,1
+Skip Bellew,3225,441,Murray,3267,600,BB,159,T5,1,0,1,3,0.89%,-0.89%,0,1,137,11,4,LSU,UOM,BB,BB,BB,,,,,1
+Justin Time,2886,726,Murray,3267,912,FO,186,T5,1,1,1,3,-1.12%,1.12%,0,0,137,11,4,LSU,UOM,FO,FO,FO,,,,,1
+Peter Nautilus,3203,455,Murray,3267,437,3B,18,T5,2,1,1,3,8.15%,-8.15%,1,0,137,11,4,LSU,UOM,3B,3B,HR,,,3267,,1
+Harry Johnson,3218,921,Murray,3267,112,FO,191,T5,2,3,1,4,-1.64%,1.64%,0,0,137,11,4,LSU,UOM,FO,FO,FO,,,,,1
+jorjor wel,3217,123,Gary Appalachia,3235,451,K,328,B5,0,0,1,4,-2.75%,2.75%,0,0,138,11,4,UOM,LSU,K,K,K,,,,,1
+Okie,3238,832,Gary Appalachia,3235,718,BB,114,B5,1,0,1,4,3.38%,-3.38%,0,0,138,11,4,UOM,LSU,BB,BB,1B,,,,,1
+Ruby McCade,3260,713,Gary Appalachia,3235,42,PO,329,B5,1,1,1,4,-3.39%,3.39%,0,0,138,11,4,UOM,LSU,PO,PO,K,,,,,1
+Robert Sitkowski,3265,550,Gary Appalachia,3235,238,PO,312,B5,2,1,1,4,-3.33%,3.33%,0,0,138,11,4,UOM,LSU,PO,PO,K,,,,,1
+Captain Hate,3253,380,Murray,3267,238,BB,142,T6,0,0,1,4,0.29%,-0.29%,0,0,139,11,4,LSU,UOM,BB,BB,BB,,,,,1
+Joseph Randome,3257,256,Murray,3267,712,DP,456,T6,0,1,1,4,-1.03%,1.03%,0,0,139,11,4,LSU,UOM,LGO,LGO,DP,,,,,1
+Napoleon Swingsalot,3214,375,Murray,3267,903,LGO,472,T6,2,0,1,4,-0.33%,0.33%,0,0,139,11,4,LSU,UOM,LGO,LGO,LGO,,,,,1
+Alph Overdale,3255,555,Peter Nautilus,3203,675,1B,120,B6,0,0,1,4,4.46%,-4.46%,0,0,140,11,4,UOM,LSU,1B,1B,1B,,,,,1
+Greggy Gabagool,3237,163,Peter Nautilus,3203,105,1B,58,B6,0,1,1,4,10.64%,-10.64%,0,0,140,11,4,UOM,LSU,1B,1B,2B,,,,,1
+Cat with a Bat,3204,543,Peter Nautilus,3203,879,PO,336,B6,0,4,1,4,-6.05%,6.05%,0,0,140,11,4,UOM,LSU,PO,PO,K,,,,,1
+Ant man,3229,333,Peter Nautilus,3203,998,PO,335,B6,1,4,1,4,-6.99%,6.99%,0,0,140,11,4,UOM,LSU,PO,PO,K,,,,,1
+Minto McGuire,3219,950,Peter Nautilus,3203,333,PO,383,B6,2,4,1,4,-6.90%,6.90%,0,0,140,11,4,UOM,LSU,PO,PO,PO,,,,,1
+Justin Carlson,3239,378,Booby Cancun,3233,879,LGO,499,T1,0,0,0,0,-2.51%,2.51%,0,0,141,12,4,WKU,SYR,LGO,LGO,LGO,,,,,1
+faron hylia,3205,450,Booby Cancun,3233,644,FO,194,T1,1,0,0,0,-2.18%,2.18%,0,0,141,12,4,WKU,SYR,FO,FO,FO,,,,,1
+Steven Scola,3222,644,Booby Cancun,3233,165,LGO,479,T1,2,0,0,0,-1.76%,1.76%,0,0,141,12,4,WKU,SYR,LGO,LGO,LGO,,,,,1
+Weehaddababy Itzaboi,3254,74,Arthur Bullpendragon,3246,797,K,277,B1,0,0,0,0,-2.48%,2.48%,0,0,142,12,4,SYR,WKU,K,K,FO,,,,,1
+LeeLoo Dallas Multi-Guess,3244,640,Arthur Bullpendragon,3246,473,FO,167,B1,1,0,0,0,-2.17%,2.17%,0,0,142,12,4,SYR,WKU,FO,FO,BB,,,,,1
+Jack Hoffman,3250,123,Arthur Bullpendragon,3246,807,RGO,316,B1,2,0,0,0,-1.79%,1.79%,0,0,142,12,4,SYR,WKU,RGO,RGO,K,,,,,1
+Soy Okey,3258,33,Booby Cancun,3233,145,BB,112,T2,0,0,0,0,3.09%,-3.09%,0,1,143,12,4,WKU,SYR,BB,BB,1B,,,,,1
+Dude Duderson,3231,50,Booby Cancun,3233,115,1B,65,T2,0,1,0,0,5.91%,-5.91%,0,0,143,12,4,WKU,SYR,1B,1B,1B,,,,,1
+Ezra Wind,3226,900,Booby Cancun,3233,808,1B,92,T2,0,4,0,0,10.21%,-10.21%,0,0,143,12,4,WKU,SYR,1B,1B,1B,,,,,1
+Henry McCade,3213,650,Booby Cancun,3233,138,DP,488,T2,0,7,0,0,-7.76%,7.76%,0,0,143,12,4,WKU,SYR,LGO,LGO,DP,3233,,,,1
+Hiram Birnbaum,3206,301,Booby Cancun,3233,900,PO,401,T2,2,3,0,1,-4.63%,4.63%,0,0,143,12,4,WKU,SYR,PO,PO,RGO,,,,,1
+Aladdin Sane,3263,329,Arthur Bullpendragon,3246,591,K,262,B2,0,0,0,1,-3.11%,3.11%,0,0,144,12,4,SYR,WKU,K,K,FO,,,,,1
+Alex Blockman,3202,69,Arthur Bullpendragon,3246,324,K,255,B2,1,0,0,1,-2.69%,2.69%,0,0,144,12,4,SYR,WKU,K,K,FO,,,,,1
+James Longoria,3210,243,Arthur Bullpendragon,3246,242,HR,1,B2,2,0,0,1,14.80%,-14.80%,1,1,144,12,4,SYR,WKU,HR,HR,HR,,,,3246,1
+Camden Yardsy,3227,927,Arthur Bullpendragon,3246,38,1B,111,B2,2,0,1,1,2.07%,-2.07%,0,0,144,12,4,SYR,WKU,1B,1B,1B,,,,,1
+Jackie Jormp-Jomp,3236,553,Arthur Bullpendragon,3246,703,1B,150,B2,2,1,1,1,3.29%,-3.29%,0,0,144,12,4,SYR,WKU,1B,1B,BB,,,,,1
+Jimmy Sticks,3221,427,Arthur Bullpendragon,3246,888,LGO,461,B2,2,5,1,1,-7.39%,7.39%,0,0,144,12,4,SYR,WKU,LGO,LGO,LGO,,,,,1
+Dusk Jackson,3242,933,Booby Cancun,3233,193,K,260,T3,0,0,1,1,-3.03%,3.03%,0,0,145,12,4,WKU,SYR,K,K,FO,,,,,1
+Justin Carlson,3239,643,Booby Cancun,3233,573,1B,70,T3,1,0,1,1,2.77%,-2.77%,0,0,145,12,4,WKU,SYR,1B,1B,1B,,,,,1
+faron hylia,3205,950,Booby Cancun,3233,319,K,369,T3,1,1,1,1,-3.01%,3.01%,0,0,145,12,4,WKU,SYR,K,K,K,,,,,1
+Steven Scola,3222,727,Booby Cancun,3233,520,FO,207,T3,2,1,1,1,-4.81%,4.81%,0,0,145,12,4,WKU,SYR,FO,FO,FO,,,,,1
+Weehaddababy Itzaboi,3254,666,Arthur Bullpendragon,3246,82,LGO,416,B3,0,0,1,1,-3.07%,3.07%,0,0,146,12,4,SYR,WKU,LGO,LGO,RGO,,,,,1
+LeeLoo Dallas Multi-Guess,3244,999,Arthur Bullpendragon,3246,613,RGO,386,B3,1,0,1,1,-2.77%,2.77%,0,0,146,12,4,SYR,WKU,RGO,RGO,PO,,,,,1
+Jack Hoffman,3250,420,Arthur Bullpendragon,3246,997,LGO,423,B3,2,0,1,1,-2.27%,2.27%,0,0,146,12,4,SYR,WKU,LGO,LGO,RGO,,,,,1
+Soy Okey,3258,814,Booby Cancun,3233,906,1B,92,T4,0,0,1,1,3.68%,-3.68%,0,0,147,12,4,WKU,SYR,1B,1B,1B,,,,,1
+Soy Okey,3258,332,Booby Cancun,3233,652,CS,320,T4,0,1,1,1,-7.26%,7.26%,0,0,147,12,4,WKU,SYR,CS 2B,CS 2B,CS,,,,,4
+Dude Duderson,3231,400,Booby Cancun,3233,140,FO,260,T4,1,0,1,1,-3.19%,3.19%,0,0,147,12,4,WKU,SYR,FO,FO,FO,,,,,1
+Ezra Wind,3226,1,Booby Cancun,3233,18,HR,17,T4,2,0,1,1,20.12%,-20.12%,1,1,147,12,4,WKU,SYR,HR,HR,HR,,,,3233,1
+Henry McCade,3213,555,Booby Cancun,3233,707,FO,152,T4,2,0,1,2,-1.93%,1.93%,0,0,147,12,4,WKU,SYR,FO,FO,BB,,,,,1
+Aladdin Sane,3263,215,Arthur Bullpendragon,3246,295,2B,80,B4,0,0,1,2,11.26%,-11.26%,0,1,148,12,4,SYR,WKU,2B,2B,1B,,,,,1
+Alex Blockman,3202,555,Arthur Bullpendragon,3246,72,LGO,483,B4,0,2,1,2,-7.22%,7.22%,0,0,148,12,4,SYR,WKU,LGO,LGO,LGO,,,,,1
+James Longoria,3210,621,Arthur Bullpendragon,3246,103,LGO,482,B4,1,2,1,2,-6.64%,6.64%,0,0,148,12,4,SYR,WKU,LGO,LGO,LGO,,,,,1
+Camden Yardsy,3227,651,Arthur Bullpendragon,3246,534,1B,117,B4,2,2,1,2,19.59%,-19.59%,1,1,148,12,4,SYR,WKU,1B,1B,1B,,3246,,,1
+Jackie Jormp-Jomp,3236,333,Arthur Bullpendragon,3246,417,1B,84,B4,2,1,2,2,3.57%,-3.57%,0,1,148,12,4,SYR,WKU,1B,1B,1B,,,,,1
+Jimmy Sticks,3221,420,Arthur Bullpendragon,3246,427,HR,7,B4,2,5,2,2,33.54%,-33.54%,3,1,148,12,4,SYR,WKU,HR,HR,HR,3246,,3246,3246,1
+Weehaddababy Itzaboi,3254,666,Arthur Bullpendragon,3246,714,2B,48,B4,2,0,5,2,0.71%,-0.71%,0,0,148,12,4,SYR,WKU,2B,2B,2B,,,,,1
+LeeLoo Dallas Multi-Guess,3244,48,Arthur Bullpendragon,3246,599,LGO,449,B4,2,2,5,2,-1.23%,1.23%,0,0,148,12,4,SYR,WKU,LGO,LGO,RGO,,,,,1
+Hiram Birnbaum,3206,8,Booby Cancun,3233,245,K,237,T5,0,0,5,2,-2.30%,2.30%,0,0,149,12,4,WKU,SYR,K,K,FO,,,,,1
+Dusk Jackson,3242,101,Booby Cancun,3233,420,K,319,T5,1,0,5,2,-1.67%,1.67%,0,0,149,12,4,WKU,SYR,K,K,K,,,,,1
+Justin Carlson,3239,814,Booby Cancun,3233,76,FO,262,T5,2,0,5,2,-0.98%,0.98%,0,0,149,12,4,WKU,SYR,FO,FO,FO,,,,,1
+Jack Hoffman,3250,69,Henry McCade,3213,820,FO,249,B5,0,0,5,2,-0.30%,0.30%,0,0,150,12,4,SYR,WKU,FO,FO,FO,,,,,1
+Aladdin Sane,3263,607,Henry McCade,3213,780,FO,173,B5,1,0,5,2,-0.31%,0.31%,0,0,150,12,4,SYR,WKU,FO,FO,BB,,,,,1
+Alex Blockman,3202,222,Henry McCade,3213,607,PO,385,B5,2,0,5,2,-0.22%,0.22%,0,0,150,12,4,SYR,WKU,PO,PO,PO,,,,,1
+faron hylia,3205,560,Booby Cancun,3233,758,FO,198,T6,0,0,5,2,-1.94%,1.94%,0,0,151,12,4,WKU,SYR,FO,FO,FO,,,,,1
+Steven Scola,3222,215,Booby Cancun,3233,45,FO,170,T6,1,0,5,2,-1.28%,1.28%,0,0,151,12,4,WKU,SYR,FO,FO,BB,,,,,1
+Soy Okey,3258,444,Booby Cancun,3233,781,K,337,T6,2,0,5,2,-0.54%,0.54%,0,0,151,12,4,WKU,SYR,K,K,K,,,,,1
+Cat with a Bat,3204,663,Jay Kwellon,3228,83,RGO,420,T1,0,0,0,0,-2.51%,2.51%,0,0,152,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+Alph Overdale,3255,180,Jay Kwellon,3228,34,BB,146,T1,1,0,0,0,2.43%,-2.43%,0,1,152,13,5,UOM,OWL,BB,BB,BB,,,,,1
+Alph Overdale,3255,666,Jay Kwellon,3228,586,SB,80,T1,1,1,0,0,2.22%,-2.22%,0,0,152,13,5,UOM,OWL,STEAL 2B,STEAL 2B,SB,,,,,4
+Greggy Gabagool,3237,868,Jay Kwellon,3228,839,2B,29,T1,1,2,0,0,11.13%,-11.13%,1,0,152,13,5,UOM,OWL,2B,2B,3B,,3228,,,1
+jorjor wel,3217,99,Jay Kwellon,3228,3,1B,96,T1,1,2,0,1,4.33%,-4.33%,0,0,152,13,5,UOM,OWL,1B,1B,1B,,,,,1
+Okie,3238,765,Jay Kwellon,3228,273,DP,492,T1,1,5,0,1,-11.67%,11.67%,0,0,152,13,5,UOM,OWL,LGO,LGO,DP,,,,,1
+OilCanFloydTheBarber,3270,888,Ant man,3229,510,PO,378,B1,0,0,0,1,-2.79%,2.79%,0,0,153,13,5,OWL,UOM,PO,PO,PO,,,,,1
+Giles Sweeney,2573,829,Ant man,3229,99,FO,270,B1,1,0,0,1,-2.36%,2.36%,0,0,153,13,5,OWL,UOM,FO,FO,FO,,,,,1
+Chilidog Clayton,3261,333,Ant man,3229,722,PO,389,B1,2,0,0,1,-1.88%,1.88%,0,0,153,13,5,OWL,UOM,PO,PO,PO,,,,,1
+Minto McGuire,3219,579,Jay Kwellon,3228,852,K,273,T2,0,0,0,1,-2.27%,2.27%,0,0,154,13,5,UOM,OWL,K,K,FO,,,,,1
+Robert Sitkowski,3265,830,Jay Kwellon,3228,894,2B,64,T2,1,0,0,1,4.10%,-4.10%,0,0,154,13,5,UOM,OWL,2B,2B,2B,,,,,1
+Erik Hamilton,3251,538,Jay Kwellon,3228,193,PO,345,T2,1,2,0,1,-3.35%,3.35%,0,0,154,13,5,UOM,OWL,PO,PO,K,,,,,1
+Butts Carlton,2845,399,Jay Kwellon,3228,79,K,320,T2,2,2,0,1,-4.46%,4.46%,0,0,154,13,5,UOM,OWL,K,K,K,,,,,1
+Jodie Baller,3247,170,Ant man,3229,11,BB,159,B2,0,0,0,1,3.61%,-3.61%,0,1,155,13,5,OWL,UOM,BB,BB,BB,,,,,1
+Jodie Baller,3247,358,Ant man,3229,320,SB,38,B2,0,1,0,1,4.26%,-4.26%,0,0,155,13,5,OWL,UOM,STEAL 2B,STEAL 2B,SB,,,,,4
+Joan Andreu Rosà,3234,806,Ant man,3229,661,BB,145,B2,0,2,0,1,2.37%,-2.37%,0,0,155,13,5,OWL,UOM,BB,BB,BB,,,,,1
+Ricky 'The Rat' Venucci,3252,586,Ant man,3229,222,K,364,B2,0,4,0,1,-5.31%,5.31%,0,0,155,13,5,OWL,UOM,K,K,K,,,,,1
+Paul Crews,3248,35,Ant man,3229,180,BB,145,B2,1,4,0,1,9.93%,-9.93%,0,0,155,13,5,OWL,UOM,BB,BB,BB,,,,,1
+Kendrick Lamar,3208,850,Ant man,3229,711,BB,139,B2,1,7,0,1,11.39%,-11.39%,1,0,155,13,5,OWL,UOM,BB,BB,BB,3229,,,,1
+Ferris Wheeler,2816,186,Ant man,3229,711,DP,475,B2,1,7,1,1,-19.28%,19.28%,0,0,155,13,5,OWL,UOM,LGO,LGO,DP,,,,,1
+Cat with a Bat,3204,836,Jay Kwellon,3228,167,K,331,T3,0,0,1,1,-3.03%,3.03%,0,0,156,13,5,UOM,OWL,K,K,K,,,,,1
+Alph Overdale,3255,500,Jay Kwellon,3228,383,1B,117,T3,1,0,1,1,2.77%,-2.77%,0,0,156,13,5,UOM,OWL,1B,1B,1B,,,,,1
+Alph Overdale,3255,13,Jay Kwellon,3228,74,SB,61,T3,1,1,1,1,2.81%,-2.81%,0,0,156,13,5,UOM,OWL,STEAL 2B,STEAL 2B,SB,,,,,4
+Greggy Gabagool,3237,718,Jay Kwellon,3228,282,RGO,436,T3,1,2,1,1,-4.76%,4.76%,0,0,156,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+jorjor wel,3217,24,Jay Kwellon,3228,141,BB,117,T3,2,3,1,1,2.19%,-2.19%,0,0,156,13,5,UOM,OWL,BB,BB,1B,,,,,1
+Okie,3238,258,Jay Kwellon,3228,687,RGO,429,T3,2,5,1,1,-8.06%,8.06%,0,0,156,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+OilCanFloydTheBarber,3270,901,Ant man,3229,512,PO,389,B3,0,0,1,1,-3.07%,3.07%,0,0,157,13,5,OWL,UOM,PO,PO,PO,,,,,1
+Giles Sweeney,2573,910,Ant man,3229,233,K,323,B3,1,0,1,1,-2.77%,2.77%,0,0,157,13,5,OWL,UOM,K,K,K,,,,,1
+Chilidog Clayton,3261,67,Ant man,3229,578,LGO,489,B3,2,0,1,1,-2.27%,2.27%,0,0,157,13,5,OWL,UOM,LGO,LGO,LGO,,,,,1
+Minto McGuire,3219,861,Jay Kwellon,3228,6,BB,145,T4,0,0,1,1,3.68%,-3.68%,0,1,158,13,5,UOM,OWL,BB,BB,BB,,,,,1
+Robert Sitkowski,3265,875,Jay Kwellon,3228,789,1B,86,T4,0,1,1,1,6.99%,-6.99%,0,0,158,13,5,UOM,OWL,1B,1B,1B,,,,,1
+Erik Hamilton,3251,410,Jay Kwellon,3228,454,2B,44,T4,0,4,1,1,21.42%,-21.42%,1,0,158,13,5,UOM,OWL,2B,2B,2B,,3228,,,1
+Butts Carlton,2845,902,Jay Kwellon,3228,493,RGO,409,T4,0,6,1,2,-5.19%,5.19%,0,0,158,13,5,UOM,OWL,RGO,RGO,RGO,,,,,2
+Cat with a Bat,3204,931,Jay Kwellon,3228,242,K,311,T4,1,6,1,2,-7.89%,7.89%,0,0,158,13,5,UOM,OWL,K,K,K,,,,,2
+Alph Overdale,3255,711,Jay Kwellon,3228,264,RGO,447,T4,2,6,1,2,-7.59%,7.59%,0,0,158,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+Jodie Baller,3247,110,Ant man,3229,899,FO,211,B4,0,0,1,2,-4.38%,4.38%,0,0,159,13,5,OWL,UOM,FO,FO,FO,,,,,1
+Joan Andreu Rosà,3234,412,Ant man,3229,381,3B,31,B4,1,0,1,2,14.47%,-14.47%,0,0,159,13,5,OWL,UOM,3B,3B,2B,,,,,1
+Ricky 'The Rat' Venucci,3252,13,Ant man,3229,311,K,298,B4,1,3,1,2,-12.63%,12.63%,0,0,159,13,5,OWL,UOM,K,K,K,,,,,2
+Paul Crews,3248,10,Ant man,3229,701,K,309,B4,2,3,1,2,-8.99%,8.99%,0,0,159,13,5,OWL,UOM,K,K,K,,,,,1
+Greggy Gabagool,3237,632,Jay Kwellon,3228,54,RGO,422,T5,0,0,1,2,-2.29%,2.29%,0,0,160,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+jorjor wel,3217,444,Jay Kwellon,3228,880,RGO,436,T5,1,0,1,2,-2.08%,2.08%,0,0,160,13,5,UOM,OWL,RGO,RGO,RGO,,,,,1
+Okie,3238,715,Jay Kwellon,3228,523,FO,192,T5,2,0,1,2,-1.91%,1.91%,0,0,160,13,5,UOM,OWL,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,625,Ant man,3229,33,PO,408,B5,0,0,1,2,-5.77%,5.77%,0,0,161,13,5,OWL,UOM,PO,PO,RGO,,,,,1
+Ferris Wheeler,2816,320,Ant man,3229,263,2B,57,B5,1,0,1,2,11.08%,-11.08%,0,0,161,13,5,OWL,UOM,2B,2B,2B,,,,,1
+OilCanFloydTheBarber,3270,626,Ant man,3229,999,PO,373,B5,1,2,1,2,-8.73%,8.73%,0,0,161,13,5,OWL,UOM,PO,PO,K,,,,,1
+Giles Sweeney,2573,301,Ant man,3229,721,RGO,420,B5,2,2,1,2,-11.96%,11.96%,0,0,161,13,5,OWL,UOM,RGO,RGO,RGO,,,,,1
+Minto McGuire,3219,260,Jay Kwellon,3228,342,1B,82,T6,0,0,1,2,1.49%,-1.49%,0,0,162,13,5,UOM,OWL,1B,1B,1B,,,,,1
+Minto McGuire,3219,100,Jay Kwellon,3228,528,CS,428,T6,0,1,1,2,-3.20%,3.20%,0,0,162,13,5,UOM,OWL,CS 2B,CS 2B,CS,,,,,4
+Robert Sitkowski,3265,67,Jay Kwellon,3228,716,PO,351,T6,1,0,1,2,-1.62%,1.62%,0,0,162,13,5,UOM,OWL,PO,PO,K,,,,,1
+Erik Hamilton,3251,290,Jay Kwellon,3228,29,K,261,T6,2,0,1,2,-1.50%,1.50%,0,0,162,13,5,UOM,OWL,K,K,FO,,,,,1
+Chilidog Clayton,3261,555,Ant man,3229,199,PO,356,B6,0,0,1,2,-8.33%,8.33%,0,0,163,13,5,OWL,UOM,PO,PO,K,,,,,1
+Mo Soso,3223,604,Ant man,3229,831,FO,227,B6,1,0,1,2,-7.59%,7.59%,0,0,163,13,5,OWL,UOM,FO,FO,FO,,,,,1
+Joan Andreu Rosà,3234,512,Ant man,3229,17,LGO,495,B6,2,0,1,2,-6.82%,6.82%,0,0,163,13,5,OWL,UOM,LGO,LGO,LGO,,,,,1
+Arthur Bullpendragon,3246,417,Buck Futter,3269,761,PO,344,T1,0,0,0,0,-2.51%,2.51%,0,0,164,14,5,WKU,FUR,PO,PO,K,,,,,1
+Ezra Wind,3226,1000,Buck Futter,3269,376,PO,376,T1,1,0,0,0,-2.18%,2.18%,0,0,164,14,5,WKU,FUR,PO,PO,K,,,,,1
+Dude Duderson,3231,1,Buck Futter,3269,436,RGO,435,T1,2,0,0,0,-1.76%,1.76%,0,0,164,14,5,WKU,FUR,RGO,RGO,RGO,,,,,1
+Jiggs Kingman,3249,312,Soy Okey,3258,111,FO,201,B1,0,0,0,0,-2.48%,2.48%,0,0,165,14,5,FUR,WKU,FO,FO,FO,,,,,1
+Pike Trout,3216,222,Soy Okey,3258,112,1B,110,B1,1,0,0,0,2.28%,-2.28%,0,0,165,14,5,FUR,WKU,1B,1B,1B,,,,,1
+Angry Lizard,3256,113,Soy Okey,3258,311,FO,198,B1,1,1,0,0,-2.55%,2.55%,0,0,165,14,5,FUR,WKU,FO,FO,FO,,,,,1
+Howie Feltersnatch,230,306,Soy Okey,3258,114,FO,192,B1,2,1,0,0,-3.69%,3.69%,0,0,165,14,5,FUR,WKU,FO,FO,FO,,,,,1
+Dave Bartholomew,3268,848,Buck Futter,3269,34,FO,186,T2,0,0,0,0,-2.72%,2.72%,0,0,166,14,5,WKU,FUR,FO,FO,FO,,,,,1
+Dusk Jackson,3242,721,Buck Futter,3269,184,RGO,463,T2,1,0,0,0,-2.40%,2.40%,0,0,166,14,5,WKU,FUR,RGO,RGO,LGO,,,,,1
+Henry McCade,3213,566,Buck Futter,3269,709,FO,143,T2,2,0,0,0,-1.99%,1.99%,0,0,166,14,5,WKU,FUR,FO,FO,BB,,,,,1
+Norman Sland,3207,169,Soy Okey,3258,664,LGO,495,B2,0,0,0,0,-2.72%,2.72%,0,0,167,14,5,FUR,WKU,LGO,LGO,LGO,,,,,1
+Evil Corn Barn,2337,410,Soy Okey,3258,2,LGO,408,B2,1,0,0,0,-2.38%,2.38%,0,0,167,14,5,FUR,WKU,LGO,LGO,RGO,,,,,1
+Lucius Salem,3194,113,Soy Okey,3258,410,K,297,B2,2,0,0,0,-2.03%,2.03%,0,0,167,14,5,FUR,WKU,K,K,K,,,,,1
+Steven Scola,3222,999,Buck Futter,3269,349,PO,350,T3,0,0,0,0,-3.03%,3.03%,0,0,168,14,5,WKU,FUR,PO,PO,K,,,,,1
+Justin Carlson,3239,712,Buck Futter,3269,832,BB,120,T3,1,0,0,0,2.77%,-2.77%,0,1,168,14,5,WKU,FUR,BB,BB,1B,,,,,1
+faron hylia,3205,460,Buck Futter,3269,668,FO,208,T3,1,1,0,0,-3.01%,3.01%,0,0,168,14,5,WKU,FUR,FO,FO,FO,,,,,1
+Arthur Bullpendragon,3246,537,Buck Futter,3269,567,2B,30,T3,2,1,0,0,16.74%,-16.74%,1,0,168,14,5,WKU,FUR,2B,2B,2B,,,3269,,1
+Ezra Wind,3226,200,Buck Futter,3269,804,PO,396,T3,2,2,0,1,-4.79%,4.79%,0,0,168,14,5,WKU,FUR,PO,PO,PO,,,,,1
+Tomba,3220,379,Soy Okey,3258,935,LGO,444,B3,0,0,0,1,-3.58%,3.58%,0,0,169,14,5,FUR,WKU,LGO,LGO,RGO,,,,,1
+Julie Jules,3230,111,Soy Okey,3258,935,FO,176,B3,1,0,0,1,-3.10%,3.10%,0,0,169,14,5,FUR,WKU,FO,FO,BB,,,,,1
+Jiggs Kingman,3249,539,Soy Okey,3258,435,1B,104,B3,2,0,0,1,2.66%,-2.66%,0,1,169,14,5,FUR,WKU,1B,1B,1B,,,,,1
+Pike Trout,3216,432,Soy Okey,3258,311,1B,121,B3,2,1,0,1,4.34%,-4.34%,0,0,169,14,5,FUR,WKU,1B,1B,1B,,,,,1
+Angry Lizard,3256,187,Soy Okey,3258,312,1B,125,B3,2,5,0,1,16.20%,-16.20%,1,0,169,14,5,FUR,WKU,1B,1B,1B,3258,,,,1
+Howie Feltersnatch,230,187,Soy Okey,3258,777,RGO,410,B3,2,5,1,1,-7.87%,7.87%,0,0,169,14,5,FUR,WKU,RGO,RGO,RGO,,,,,1
+Dude Duderson,3231,319,Buck Futter,3269,383,2B,64,T4,0,0,1,1,8.83%,-8.83%,0,0,170,14,5,WKU,FUR,2B,2B,2B,,,,,1
+Dave Bartholomew,3268,634,Buck Futter,3269,407,FO,227,T4,0,2,1,1,-5.95%,5.95%,0,0,170,14,5,WKU,FUR,FO,FO,FO,,,,,1
+Dusk Jackson,3242,562,Buck Futter,3269,276,PO,286,T4,1,2,1,1,-5.19%,5.19%,0,0,170,14,5,WKU,FUR,PO,PO,K,,,,,1
+Henry McCade,3213,700,Buck Futter,3269,967,PO,267,T4,2,2,1,1,-7.21%,7.21%,0,0,170,14,5,WKU,FUR,PO,PO,FO,,,,,1
+Norman Sland,3207,450,Soy Okey,3258,567,BB,117,B4,0,0,1,1,3.11%,-3.11%,0,0,171,14,5,FUR,WKU,BB,BB,1B,,,,,1
+Evil Corn Barn,2337,534,Soy Okey,3258,410,BB,124,B4,0,1,1,1,6.73%,-6.73%,0,0,171,14,5,FUR,WKU,BB,BB,1B,,,,,1
+Lucius Salem,3194,873,Soy Okey,3258,16,BB,143,B4,0,4,1,1,12.39%,-12.39%,0,1,171,14,5,FUR,WKU,BB,BB,BB,,,,,1
+Tomba,3220,413,Soy Okey,3258,888,LGO,475,B4,0,7,1,1,-8.06%,8.06%,0,1,171,14,5,FUR,WKU,LGO,LGO,DP,,,,,2
+Julie Jules,3230,711,Soy Okey,3258,88,RGO,377,B4,1,7,1,1,-11.34%,11.34%,0,0,171,14,5,FUR,WKU,RGO,RGO,K,,,,,2
+Jiggs Kingman,3249,444,Soy Okey,3258,555,1B,111,B4,2,7,1,1,25.85%,-25.85%,2,0,171,14,5,FUR,WKU,1B,1B,1B,3258,3258,,,1
+Pike Trout,3216,1000,Soy Okey,3258,555,LGO,445,B4,2,5,3,1,-3.02%,3.02%,0,0,171,14,5,FUR,WKU,LGO,LGO,RGO,,,,,1
+Steven Scola,3222,709,Buck Futter,3269,49,PO,340,T5,0,0,3,1,-3.57%,3.57%,0,0,172,14,5,WKU,FUR,PO,PO,K,,,,,1
+Justin Carlson,3239,988,Buck Futter,3269,695,K,293,T5,1,0,3,1,-2.82%,2.82%,0,0,172,14,5,WKU,FUR,K,K,K,,,,,1
+faron hylia,3205,110,Buck Futter,3269,419,K,309,T5,2,0,3,1,-1.93%,1.93%,0,0,172,14,5,WKU,FUR,K,K,K,,,,,1
+Angry Lizard,3256,,Soy Okey,3258,,AUTO K,,B5,0,0,3,1,-0.67%,0.67%,0,0,173,14,5,FUR,WKU,AUTO K,AUTO K,AUTO K,,,,,9
+Howie Feltersnatch,230,999,Soy Okey,3258,17,3B,18,B5,1,0,3,1,2.35%,-2.35%,0,1,173,14,5,FUR,WKU,3B,3B,HR,,,,,1
+Bucky Sabre,3124,25,Soy Okey,3258,120,1B,95,B5,1,3,3,1,1.85%,-1.85%,1,0,173,14,5,FUR,WKU,1B,1B,1B,3258,,,,1
+Evil Corn Barn,2337,132,Soy Okey,3258,333,FO,201,B5,1,1,4,1,-0.31%,0.31%,0,0,173,14,5,FUR,WKU,FO,FO,FO,,,,,1
+Lucius Salem,3194,710,Soy Okey,3258,333,RGO,377,B5,2,1,4,1,-0.44%,0.44%,0,0,173,14,5,FUR,WKU,RGO,RGO,K,,,,,1
+Arthur Bullpendragon,3246,25,Buck Futter,3269,324,K,299,T6,0,0,4,1,-1.94%,1.94%,0,0,174,14,5,WKU,FUR,K,K,K,,,,,1
+Ezra Wind,3226,551,Buck Futter,3269,178,PO,373,T6,1,0,4,1,-1.28%,1.28%,0,0,174,14,5,WKU,FUR,PO,PO,K,,,,,1
+Dude Duderson,3231,483,Buck Futter,3269,847,PO,364,T6,2,0,4,1,-0.54%,0.54%,0,0,174,14,5,WKU,FUR,PO,PO,K,,,,,1
+Joseph Randome,3257,820,Camden Yardsy,3227,413,RGO,407,T1,0,0,0,0,-2.51%,2.51%,0,0,175,15,5,LSU,SYR,RGO,RGO,RGO,,,,,1
+Danny Hurley III,3259,834,Camden Yardsy,3227,356,RGO,478,T1,1,0,0,0,-2.18%,2.18%,0,0,175,15,5,LSU,SYR,RGO,RGO,LGO,,,,,1
+Captain Hate,3253,512,Camden Yardsy,3227,714,FO,202,T1,2,0,0,0,-1.76%,1.76%,0,0,175,15,5,LSU,SYR,FO,FO,FO,,,,,1
+Aladdin Sane,3263,499,Gary Appalachia,3235,73,RGO,426,B1,0,0,0,0,-2.48%,2.48%,0,0,176,15,5,SYR,LSU,RGO,RGO,RGO,,,,,1
+Jersey Wooders,3109,300,Gary Appalachia,3235,890,RGO,410,B1,1,0,0,0,-2.17%,2.17%,0,0,176,15,5,SYR,LSU,RGO,RGO,RGO,,,,,1
+Jackie Jormp-Jomp,3236,552,Gary Appalachia,3235,661,1B,109,B1,2,0,0,0,1.90%,-1.90%,0,0,176,15,5,SYR,LSU,1B,1B,1B,,,,,1
+Jack Hoffman,3250,350,Gary Appalachia,3235,492,BB,142,B1,2,1,0,0,2.80%,-2.80%,0,0,176,15,5,SYR,LSU,BB,BB,BB,,,,,1
+Mario Goretti,3215,243,Gary Appalachia,3235,483,PO,240,B1,2,4,0,0,-6.49%,6.49%,0,0,176,15,5,SYR,LSU,PO,PO,FO,,,,,1
+Isao Makino,3232,41,Camden Yardsy,3227,530,LGO,489,T2,0,0,0,0,-2.72%,2.72%,0,0,177,15,5,LSU,SYR,LGO,LGO,LGO,,,,,1
+Napoleon Swingsalot,3214,875,Camden Yardsy,3227,372,LGO,497,T2,1,0,0,0,-2.40%,2.40%,0,0,177,15,5,LSU,SYR,LGO,LGO,LGO,,,,,1
+Peter Nautilus,3203,100,Camden Yardsy,3227,94,HR,6,T2,2,0,0,0,13.80%,-13.80%,1,1,177,15,5,LSU,SYR,HR,HR,HR,,,,3227,1
+Skip Bellew,3225,570,Camden Yardsy,3227,137,RGO,433,T2,2,0,0,1,-1.69%,1.69%,0,0,177,15,5,LSU,SYR,RGO,RGO,RGO,,,,,1
+LeeLoo Dallas Multi-Guess,3244,222,Gary Appalachia,3235,301,1B,79,B2,0,0,0,1,3.61%,-3.61%,0,1,178,15,5,SYR,LSU,1B,1B,1B,,,,,1
+James Longoria,3210,872,Gary Appalachia,3235,712,BB,160,B2,0,1,0,1,6.63%,-6.63%,0,1,178,15,5,SYR,LSU,BB,BB,BB,,,,,1
+Alex Blockman,3202,783,Gary Appalachia,3235,684,BB,99,B2,0,4,0,1,11.85%,-11.85%,0,0,178,15,5,SYR,LSU,BB,BB,1B,,,,,1
+Weehaddababy Itzaboi,3254,420,Gary Appalachia,3235,954,DP,466,B2,0,7,0,1,-9.69%,9.69%,0,0,178,15,5,SYR,LSU,LGO,LGO,DP,3235,,,,1
+Aladdin Sane,3263,187,Gary Appalachia,3235,136,2B,51,B2,2,3,1,1,13.69%,-13.69%,1,0,178,15,5,SYR,LSU,2B,2B,2B,3235,,,,1
+Jersey Wooders,3109,333,Gary Appalachia,3235,4,K,329,B2,2,2,2,1,-4.13%,4.13%,0,0,178,15,5,SYR,LSU,K,K,K,,,,,1
+Harry Johnson,3218,646,Camden Yardsy,3227,673,3B,27,T3,0,0,2,1,13.12%,-13.12%,0,1,179,15,5,LSU,SYR,3B,3B,3B,,,,,1
+Gary Appalachia,3235,874,Camden Yardsy,3227,88,Sac,214,T3,0,3,2,1,-1.08%,1.08%,1,0,179,15,5,LSU,SYR,FO,FO,Sac,3227,,,,2
+Joseph Randome,3257,112,Camden Yardsy,3227,222,1B,110,T3,1,0,2,2,2.77%,-2.77%,0,1,179,15,5,LSU,SYR,1B,1B,1B,,,,,1
+Danny Hurley III,3259,897,Camden Yardsy,3227,912,3B,15,T3,1,1,2,2,20.65%,-20.65%,1,1,179,15,5,LSU,SYR,3B,3B,HR,,,3227,,1
+Captain Hate,3253,614,Camden Yardsy,3227,743,BB,129,T3,1,3,2,3,1.32%,-1.32%,0,1,179,15,5,LSU,SYR,BB,BB,1B,,,,,1
+Isao Makino,3232,100,Camden Yardsy,3227,814,PO,286,T3,1,5,2,3,-6.71%,6.71%,0,0,179,15,5,LSU,SYR,PO,PO,K,,,,,1
+Napoleon Swingsalot,3214,377,Camden Yardsy,3227,300,2B,77,T3,2,5,2,3,19.27%,-19.27%,2,1,179,15,5,LSU,SYR,2B,2B,1B,3227,,3227,,1
+Peter Nautilus,3203,450,Camden Yardsy,3227,510,2B,60,T3,2,2,2,5,6.08%,-6.08%,1,0,179,15,5,LSU,SYR,2B,2B,2B,,3227,,,1
+Skip Bellew,3225,92,Camden Yardsy,3227,841,K,251,T3,2,2,2,6,-1.48%,1.48%,0,0,179,15,5,LSU,SYR,K,K,FO,,,,,1
+Jackie Jormp-Jomp,3236,283,Gary Appalachia,3235,391,1B,108,B3,0,0,2,6,2.71%,-2.71%,0,0,180,15,5,SYR,LSU,1B,1B,1B,,,,,1
+Jack Hoffman,3250,199,Gary Appalachia,3235,392,FO,193,B3,0,1,2,6,-2.35%,2.35%,0,0,180,15,5,SYR,LSU,FO,FO,FO,,,,,1
+Mario Goretti,3215,100,Gary Appalachia,3235,782,DP,318,B3,1,1,2,6,-4.82%,4.82%,0,0,180,15,5,SYR,LSU,RGO,RGO,K,,,,,1
+Harry Johnson,3218,750,Camden Yardsy,3227,902,FO,152,T4,0,0,2,6,-0.53%,0.53%,0,0,181,15,5,LSU,SYR,FO,FO,BB,,,,,1
+Gary Appalachia,3235,343,Camden Yardsy,3227,13,PO,330,T4,1,0,2,6,-0.55%,0.55%,0,0,181,15,5,LSU,SYR,PO,PO,K,,,,,1
+Joseph Randome,3257,196,Camden Yardsy,3227,999,FO,197,T4,2,0,2,6,-0.48%,0.48%,0,0,181,15,5,LSU,SYR,FO,FO,FO,,,,,1
+LeeLoo Dallas Multi-Guess,3244,684,Gary Appalachia,3235,893,FO,209,B4,0,0,2,6,-1.89%,1.89%,0,0,182,15,5,SYR,LSU,FO,FO,FO,,,,,1
+James Longoria,3210,534,Gary Appalachia,3235,536,HR,2,B4,1,0,2,6,5.20%,-5.20%,1,1,182,15,5,SYR,LSU,HR,HR,HR,,,,3235,1
+Alex Blockman,3202,110,Gary Appalachia,3235,590,LGO,480,B4,1,0,3,6,-2.21%,2.21%,0,0,182,15,5,SYR,LSU,LGO,LGO,LGO,,,,,1
+Weehaddababy Itzaboi,3254,844,Gary Appalachia,3235,279,LGO,435,B4,2,0,3,6,-1.46%,1.46%,0,0,182,15,5,SYR,LSU,LGO,LGO,RGO,,,,,1
+Danny Hurley III,3259,215,Camden Yardsy,3227,244,3B,29,T5,0,0,3,6,2.97%,-2.97%,0,1,183,15,5,LSU,SYR,3B,3B,3B,,,,,1
+Captain Hate,3253,712,Camden Yardsy,3227,998,K,286,T5,0,3,3,6,-1.11%,1.11%,0,0,183,15,5,LSU,SYR,K,K,K,,,,,2
+Isao Makino,3232,148,Camden Yardsy,3227,877,PO,271,T5,1,3,3,6,-2.22%,2.22%,0,0,183,15,5,LSU,SYR,PO,PO,Sac,,,,,1
+Napoleon Swingsalot,3214,505,Camden Yardsy,3227,402,1B,103,T5,2,3,3,6,3.78%,-3.78%,1,0,183,15,5,LSU,SYR,1B,1B,1B,3227,,,,1
+Peter Nautilus,3203,777,Camden Yardsy,3227,401,PO,376,T5,2,1,3,7,-0.64%,0.64%,0,0,183,15,5,LSU,SYR,PO,PO,K,,,,,1
+Aladdin Sane,3263,843,Gary Appalachia,3235,401,LGO,442,B5,0,0,3,7,-1.65%,1.65%,0,0,184,15,5,SYR,LSU,LGO,LGO,RGO,,,,,1
+Jersey Wooders,3109,300,Gary Appalachia,3235,613,K,313,B5,1,0,3,7,-1.16%,1.16%,0,0,184,15,5,SYR,LSU,K,K,K,,,,,1
+Jackie Jormp-Jomp,3236,144,Gary Appalachia,3235,941,FO,203,B5,2,0,3,7,-0.63%,0.63%,0,0,184,15,5,SYR,LSU,FO,FO,FO,,,,,1
+Skip Bellew,3225,840,Booby Cancun,3233,264,RGO,424,T6,0,0,3,7,-0.18%,0.18%,0,0,185,15,5,LSU,SYR,RGO,RGO,RGO,,,,,1
+Harry Johnson,3218,380,Booby Cancun,3233,973,PO,407,T6,1,0,3,7,-0.15%,0.15%,0,0,185,15,5,LSU,SYR,PO,PO,RGO,,,,,1
+Gary Appalachia,3235,701,Booby Cancun,3233,992,K,291,T6,2,0,3,7,-0.14%,0.14%,0,0,185,15,5,LSU,SYR,K,K,K,,,,,1
+Jack Hoffman,3250,378,Gary Appalachia,3235,379,HR,1,B6,0,0,3,7,2.73%,-2.73%,1,1,186,15,5,SYR,LSU,HR,HR,HR,,,,3235,1
+Mario Goretti,3215,215,Peter Nautilus,3203,573,RGO,358,B6,0,0,4,7,-2.48%,2.48%,0,0,186,15,5,SYR,LSU,RGO,RGO,K,,,,,1
+LeeLoo Dallas Multi-Guess,3244,375,Peter Nautilus,3203,347,3B,28,B6,1,0,4,7,4.59%,-4.59%,0,1,186,15,5,SYR,LSU,3B,3B,3B,,,,,1
+James Longoria,3210,750,Peter Nautilus,3203,888,BB,138,B6,1,3,4,7,7.42%,-7.42%,0,0,186,15,5,SYR,LSU,BB,BB,BB,,,,,2
+Alex Blockman,3202,5,Peter Nautilus,3203,160,Sac,155,B6,1,5,4,7,-7.68%,7.68%,1,0,186,15,5,SYR,LSU,FO,FO,BB,3203,,,,1
+Weehaddababy Itzaboi,3254,351,Peter Nautilus,3203,645,PO,294,B6,2,1,5,7,-6.69%,6.69%,0,0,186,15,5,SYR,LSU,PO,PO,K,,,,,1
+Ferris Wheeler,2816,96,Gary Appalachia,3235,1000,1B,96,T1,0,0,0,0,2.91%,-2.91%,0,1,187,16,6,OWL,LSU,1B,1B,1B,,,,,1
+Mo Soso,3223,134,Gary Appalachia,3235,95,3B,39,T1,0,1,0,0,17.19%,-17.19%,1,1,187,16,6,OWL,LSU,3B,3B,2B,,,3235,,1
+Chilidog Clayton,3261,150,Gary Appalachia,3235,430,K,280,T1,0,3,0,1,-3.62%,3.62%,0,0,187,16,6,OWL,LSU,K,K,Sac,,,,,1
+Giles Sweeney,2573,633,Gary Appalachia,3235,24,RGO,391,T1,1,3,0,1,2.04%,-2.04%,1,0,187,16,6,OWL,LSU,RGO,RGO,PO,3235,,,,1
+Kendrick Lamar,3208,677,Gary Appalachia,3235,719,3B,42,T1,2,0,0,2,1.97%,-1.97%,0,0,187,16,6,OWL,LSU,3B,3B,2B,,,,,1
+OilCanFloydTheBarber,3270,420,Gary Appalachia,3235,719,PO,299,T1,2,3,0,2,-3.21%,3.21%,0,0,187,16,6,OWL,LSU,PO,PO,K,,,,,1
+Danny Hurley III,3259,103,Jay Kwellon,3228,772,K,331,B1,0,0,0,2,-2.74%,2.74%,0,0,188,16,6,LSU,OWL,K,K,K,,,,,1
+Peter Nautilus,3203,555,Jay Kwellon,3228,594,2B,39,B1,1,0,0,2,5.33%,-5.33%,0,0,188,16,6,LSU,OWL,2B,2B,2B,,,,,1
+Captain Hate,3253,375,Jay Kwellon,3228,94,K,281,B1,1,2,0,2,-4.34%,4.34%,0,0,188,16,6,LSU,OWL,K,K,FO,,,,,1
+Napoleon Swingsalot,3214,888,Jay Kwellon,3228,471,RGO,417,B1,2,2,0,2,-4.91%,4.91%,0,0,188,16,6,LSU,OWL,RGO,RGO,RGO,,,,,1
+Jodie Baller,3247,164,Gary Appalachia,3235,504,K,340,T2,0,0,0,2,-1.70%,1.70%,0,0,189,16,6,OWL,LSU,K,K,K,,,,,1
+Paul Crews,3248,35,Gary Appalachia,3235,387,PO,352,T2,1,0,0,2,-1.52%,1.52%,0,0,189,16,6,OWL,LSU,PO,PO,K,,,,,1
+Joan Andreu Rosà,3234,813,Gary Appalachia,3235,918,1B,105,T2,2,0,0,2,1.27%,-1.27%,0,1,189,16,6,OWL,LSU,1B,1B,1B,,,,,1
+Joan Andreu Rosà,3234,124,Gary Appalachia,3235,818,SB,306,T2,2,1,0,2,0.93%,-0.93%,0,0,189,16,6,OWL,LSU,STEAL 2B,STEAL 2B,SB,,,,,4
+Ferris Wheeler,2816,390,Gary Appalachia,3235,491,1B,101,T2,2,2,0,2,7.97%,-7.97%,1,0,189,16,6,OWL,LSU,1B,1B,1B,,3235,,,1
+Mo Soso,3223,612,Gary Appalachia,3235,354,K,258,T2,2,1,0,3,-1.81%,1.81%,0,0,189,16,6,OWL,LSU,K,K,FO,,,,,1
+Skip Bellew,3225,311,Jay Kwellon,3228,340,2B,29,B2,0,0,0,3,6.53%,-6.53%,0,0,190,16,6,LSU,OWL,2B,2B,3B,,,,,1
+Harry Johnson,3218,900,Jay Kwellon,3228,278,PO,378,B2,0,2,0,3,-4.48%,4.48%,0,0,190,16,6,LSU,OWL,PO,PO,PO,,,,,1
+Joseph Randome,3257,974,Jay Kwellon,3228,299,K,325,B2,1,2,0,3,-4.10%,4.10%,0,0,190,16,6,LSU,OWL,K,K,K,,,,,1
+Isao Makino,3232,200,Jay Kwellon,3228,712,LGO,488,B2,2,2,0,3,-3.99%,3.99%,0,0,190,16,6,LSU,OWL,LGO,LGO,LGO,,,,,1
+Chilidog Clayton,3261,327,Gary Appalachia,3235,981,PO,346,T3,0,0,0,3,-1.14%,1.14%,0,0,191,16,6,OWL,LSU,PO,PO,K,,,,,1
+Giles Sweeney,2573,802,Gary Appalachia,3235,807,HR,5,T3,1,0,0,3,6.17%,-6.17%,1,1,191,16,6,OWL,LSU,HR,HR,HR,,,,3235,1
+Kendrick Lamar,3208,333,Skip Bellew,3225,499,FO,166,T3,1,0,0,4,-0.63%,0.63%,0,0,191,16,6,OWL,LSU,FO,FO,BB,,,,,1
+OilCanFloydTheBarber,3270,501,Skip Bellew,3225,526,HR,25,T3,2,0,0,4,4.11%,-4.11%,1,1,191,16,6,OWL,LSU,HR,HR,3B,,,,3225,1
+Jodie Baller,3247,42,Skip Bellew,3225,39,HR,3,T3,2,0,0,5,2.76%,-2.76%,1,1,191,16,6,OWL,LSU,HR,HR,HR,,,,3225,1
+Paul Crews,3248,420,Peter Nautilus,3203,375,2B,45,T3,2,0,0,6,0.33%,-0.33%,0,1,191,16,6,OWL,LSU,2B,2B,2B,,,,,1
+Joan Andreu Rosà,3234,819,Peter Nautilus,3203,677,BB,142,T3,2,2,0,6,0.21%,-0.21%,0,1,191,16,6,OWL,LSU,BB,BB,BB,,,,,1
+Ferris Wheeler,2816,836,Peter Nautilus,3203,909,1B,73,T3,2,4,0,6,1.43%,-1.43%,1,0,191,16,6,OWL,LSU,1B,1B,1B,,3203,,,1
+Mo Soso,3223,222,Peter Nautilus,3203,330,1B,108,T3,2,5,0,7,0.59%,-0.59%,1,0,191,16,6,OWL,LSU,1B,1B,1B,3203,,,,1
+Chilidog Clayton,3261,701,Peter Nautilus,3203,323,PO,378,T3,2,5,0,8,-0.12%,0.12%,0,0,191,16,6,OWL,LSU,PO,PO,PO,,,,,1
+Gary Appalachia,3235,398,Jay Kwellon,3228,897,LGO,499,B3,0,0,0,8,-0.33%,0.33%,0,0,192,16,6,LSU,OWL,LGO,LGO,LGO,,,,,1
+Danny Hurley III,3259,636,Jay Kwellon,3228,445,FO,191,B3,1,0,0,8,-0.17%,0.17%,0,0,192,16,6,LSU,OWL,FO,FO,FO,,,,,1
+Peter Nautilus,3203,122,Jay Kwellon,3228,445,K,323,B3,2,0,0,8,-0.16%,0.16%,0,0,192,16,6,LSU,OWL,K,K,K,,,,,1
+Giles Sweeney,2573,107,Peter Nautilus,3203,123,HR,16,T4,0,0,0,8,0.30%,-0.30%,1,1,193,16,6,OWL,LSU,HR,HR,HR,,,,3203,1
+Kendrick Lamar,3208,708,Peter Nautilus,3203,757,2B,49,T4,0,0,0,9,0.03%,-0.03%,0,0,193,16,6,OWL,LSU,2B,2B,2B,,,,,1
+OilCanFloydTheBarber,3270,925,Peter Nautilus,3203,69,FO,144,T4,0,2,0,9,-0.02%,0.02%,0,0,193,16,6,OWL,LSU,FO,FO,BB,,,,,1
+Jodie Baller,3247,67,Peter Nautilus,3203,888,FO,179,T4,1,2,0,9,-0.13%,0.13%,0,0,193,16,6,OWL,LSU,FO,FO,FO,,,,,1
+Ricky 'The Rat' Venucci,3252,169,Peter Nautilus,3203,696,RGO,473,T4,2,2,0,9,0.04%,-0.04%,0,0,193,16,6,OWL,LSU,RGO,RGO,LGO,,,,,1
+Captain Hate,3253,377,Jay Kwellon,3228,539,BB,162,B4,0,0,0,9,0.22%,-0.22%,0,1,194,16,6,LSU,OWL,BB,BB,BB,,,,,1
+Napoleon Swingsalot,3214,900,Jay Kwellon,3228,940,2B,40,B4,0,1,0,9,0.68%,-0.68%,0,1,194,16,6,LSU,OWL,2B,2B,2B,,,,,1
+Skip Bellew,3225,720,Jay Kwellon,3228,877,BB,157,B4,0,6,0,9,0.62%,-0.62%,0,1,194,16,6,LSU,OWL,BB,BB,BB,,,,,1
+Harry Johnson,3218,790,Jay Kwellon,3228,781,HR,9,B4,0,7,0,9,2.74%,-2.74%,4,1,194,16,6,LSU,OWL,HR,HR,HR,3228,3228,3228,3228,1
+Joseph Randome,3257,605,Jay Kwellon,3228,295,K,310,B4,0,0,4,9,-1.24%,1.24%,0,0,194,16,6,LSU,OWL,K,K,K,,,,,1
+Isao Makino,3232,67,Jay Kwellon,3228,422,PO,355,B4,1,0,4,9,-0.82%,0.82%,0,0,194,16,6,LSU,OWL,PO,PO,K,,,,,1
+Gary Appalachia,3235,267,Jay Kwellon,3228,22,FO,245,B4,2,0,4,9,-0.47%,0.47%,0,0,194,16,6,LSU,OWL,FO,FO,FO,,,,,1
+Joan Andreu Rosà,3234,382,Peter Nautilus,3203,223,FO,159,T5,0,0,4,9,-0.18%,0.18%,0,0,195,16,6,OWL,LSU,FO,FO,BB,,,,,1
+Ferris Wheeler,2816,836,Peter Nautilus,3203,929,1B,93,T5,1,0,4,9,0.11%,-0.11%,0,1,195,16,6,OWL,LSU,1B,1B,1B,,,,,1
+Ferris Wheeler,2816,1000,Peter Nautilus,3203,856,SB,144,T5,1,1,4,9,0.21%,-0.21%,0,0,195,16,6,OWL,LSU,STEAL 2B,STEAL 2B,SB,,,,,4
+Mo Soso,3223,474,Peter Nautilus,3203,433,2B,41,T5,1,2,4,9,0.99%,-0.99%,1,0,195,16,6,OWL,LSU,2B,2B,2B,,3203,,,1
+Chilidog Clayton,3261,90,Peter Nautilus,3203,888,K,202,T5,1,2,4,10,-0.13%,0.13%,0,0,195,16,6,OWL,LSU,K,K,FO,,,,,1
+Dirk Nurple,3099,888,Peter Nautilus,3203,539,PO,349,T5,2,2,4,10,-0.17%,0.17%,0,0,195,16,6,OWL,LSU,PO,PO,K,,,,,1
+Danny Hurley III,3259,876,Jay Kwellon,3228,101,FO,225,B5,0,0,4,10,-0.47%,0.47%,0,0,196,16,6,LSU,OWL,FO,FO,FO,,,,,1
+Peter Nautilus,3203,700,Jay Kwellon,3228,289,RGO,411,B5,1,0,4,10,-0.30%,0.30%,0,0,196,16,6,LSU,OWL,RGO,RGO,RGO,,,,,1
+Captain Hate,3253,402,Jay Kwellon,3228,592,FO,190,B5,2,0,4,10,-0.12%,0.12%,0,0,196,16,6,LSU,OWL,FO,FO,FO,,,,,1
+Kendrick Lamar,3208,111,Joseph Randome,3257,215,1B,104,T6,0,0,4,10,0.02%,-0.02%,0,1,197,16,6,OWL,LSU,1B,1B,1B,,,,,1
+OilCanFloydTheBarber,3270,321,Joseph Randome,3257,478,FO,157,T6,0,1,4,10,-0.03%,0.03%,0,0,197,16,6,OWL,LSU,FO,FO,BB,,,,,1
+Jodie Baller,3247,642,Joseph Randome,3257,670,3B,28,T6,1,1,4,10,0.25%,-0.25%,1,0,197,16,6,OWL,LSU,3B,3B,3B,,,3257,,1
+Ricky 'The Rat' Venucci,3252,679,Joseph Randome,3257,99,PO,420,T6,1,3,4,11,-0.04%,0.04%,0,0,197,16,6,OWL,LSU,PO,PO,RGO,,,,,2
+Joan Andreu Rosà,3234,857,Joseph Randome,3257,533,PO,324,T6,2,3,4,11,-0.05%,0.05%,0,0,197,16,6,OWL,LSU,PO,PO,K,,,,,1
+Napoleon Swingsalot,3214,777,Jay Kwellon,3228,500,K,277,B6,0,0,4,11,-0.11%,0.11%,0,0,198,16,6,LSU,OWL,K,K,FO,,,,,1
+Skip Bellew,3225,701,Jay Kwellon,3228,277,RGO,424,B6,1,0,4,11,-0.03%,0.03%,0,0,198,16,6,LSU,OWL,RGO,RGO,RGO,,,,,1
+Harry Johnson,3218,820,Jay Kwellon,3228,924,1B,104,B6,2,0,4,11,0.01%,-0.01%,0,0,198,16,6,LSU,OWL,1B,1B,1B,,,,,1
+Joseph Randome,3257,621,Jay Kwellon,3228,323,K,298,B6,2,1,4,11,-0.02%,0.02%,0,0,198,16,6,LSU,OWL,K,K,K,,,,,1
+Jackie Jormp-Jomp,3236,301,Jaime Villafuerte,3243,401,1B,100,T1,0,0,0,0,2.91%,-2.91%,0,0,199,17,6,SYR,FUR,1B,1B,1B,,,,,1
+Alex Blockman,3202,666,Jaime Villafuerte,3243,471,FO,195,T1,0,1,0,0,-2.99%,2.99%,0,0,199,17,6,SYR,FUR,FO,FO,FO,,,,,1
+Jack Hoffman,3250,450,Jaime Villafuerte,3243,80,DP,370,T1,1,1,0,0,-6.37%,6.37%,0,0,199,17,6,SYR,FUR,RGO,RGO,K,,,,,1
+Pike Trout,3216,444,Booby Cancun,3233,248,FO,196,B1,0,0,0,0,-2.48%,2.48%,0,0,200,17,6,FUR,SYR,FO,FO,FO,,,,,1
+Howie Feltersnatch,230,15,Booby Cancun,3233,196,FO,181,B1,1,0,0,0,-2.17%,2.17%,0,0,200,17,6,FUR,SYR,FO,FO,FO,,,,,1
+Jiggs Kingman,3249,743,Booby Cancun,3233,769,2B,26,B1,2,0,0,0,3.13%,-3.13%,0,0,200,17,6,FUR,SYR,2B,2B,3B,,,,,1
+Angry Lizard,3256,865,Booby Cancun,3233,212,PO,347,B1,2,2,0,0,-4.92%,4.92%,0,0,200,17,6,FUR,SYR,PO,PO,K,,,,,1
+Mario Goretti,3215,534,Jaime Villafuerte,3243,450,1B,84,T2,0,0,0,0,3.09%,-3.09%,0,1,201,17,6,SYR,FUR,1B,1B,1B,,,,,1
+Jimmy Sticks,3221,425,Jaime Villafuerte,3243,402,3B,23,T2,0,1,0,0,19.07%,-19.07%,1,1,201,17,6,SYR,FUR,3B,3B,HR,,,3243,,1
+Aladdin Sane,3263,69,Jaime Villafuerte,3243,555,LGO,486,T2,0,3,0,1,0.09%,-0.09%,1,0,201,17,6,SYR,FUR,LGO,LGO,LGO,3243,,,,1
+Jersey Wooders,3109,800,Jaime Villafuerte,3243,355,LGO,445,T2,1,0,0,2,-1.52%,1.52%,0,0,201,17,6,SYR,FUR,LGO,LGO,RGO,,,,,1
+James Longoria,3210,72,Jaime Villafuerte,3243,1000,1B,72,T2,2,0,0,2,1.27%,-1.27%,0,0,201,17,6,SYR,FUR,1B,1B,1B,,,,,1
+LeeLoo Dallas Multi-Guess,3244,634,Jaime Villafuerte,3243,327,K,307,T2,2,1,0,2,-2.64%,2.64%,0,0,201,17,6,SYR,FUR,K,K,K,,,,,1
+Tomba,3220,47,Booby Cancun,3233,183,BB,136,B2,0,0,0,2,3.60%,-3.60%,0,0,202,17,6,FUR,SYR,BB,BB,1B,,,,,1
+Norman Sland,3207,800,Booby Cancun,3233,449,K,351,B2,0,1,0,2,-3.56%,3.56%,0,0,202,17,6,FUR,SYR,K,K,K,,,,,1
+Lucius Salem,3194,200,Booby Cancun,3233,530,K,330,B2,1,1,0,2,-3.32%,3.32%,0,0,202,17,6,FUR,SYR,K,K,K,,,,,1
+Johnny,3224,239,Booby Cancun,3233,769,LGO,470,B2,2,1,0,2,-4.11%,4.11%,0,0,202,17,6,FUR,SYR,LGO,LGO,LGO,,,,,1
+Jackie Jormp-Jomp,3236,527,Jaime Villafuerte,3243,663,1B,136,T3,0,0,0,2,1.74%,-1.74%,0,1,203,17,6,SYR,FUR,1B,1B,1B,,,,,1
+Alex Blockman,3202,399,Jaime Villafuerte,3243,222,FO,177,T3,0,1,0,2,-2.03%,2.03%,0,0,203,17,6,SYR,FUR,FO,FO,BB,,,,,1
+Jack Hoffman,3250,602,Jaime Villafuerte,3243,800,FO,198,T3,1,1,0,2,-1.63%,1.63%,0,0,203,17,6,SYR,FUR,FO,FO,FO,,,,,1
+Mario Goretti,3215,534,Jaime Villafuerte,3243,534,HR,0,T3,2,1,0,2,14.70%,-14.70%,2,1,203,17,6,SYR,FUR,HR,HR,HR,,,3243,3243,1
+Jimmy Sticks,3221,500,Jaime Villafuerte,3243,666,BB,166,T3,2,0,0,4,0.60%,-0.60%,0,0,203,17,6,SYR,FUR,BB,BB,BB,,,,,1
+Aladdin Sane,3263,8,Jaime Villafuerte,3243,724,K,284,T3,2,1,0,4,-1.24%,1.24%,0,0,203,17,6,SYR,FUR,K,K,FO,,,,,1
+Evil Corn Barn,2337,712,Booby Cancun,3233,605,1B,107,B3,0,0,0,4,2.71%,-2.71%,0,1,204,17,6,FUR,SYR,1B,1B,1B,,,,,1
+Pike Trout,3216,99,Booby Cancun,3233,110,HR,11,B3,0,1,0,4,14.01%,-14.01%,2,1,204,17,6,FUR,SYR,HR,HR,HR,,,3233,3233,1
+Howie Feltersnatch,230,103,Booby Cancun,3233,162,2B,59,B3,0,0,2,4,8.43%,-8.43%,0,0,204,17,6,FUR,SYR,2B,2B,2B,,,,,1
+Jiggs Kingman,3249,444,Booby Cancun,3233,220,FO,224,B3,0,2,2,4,-5.50%,5.50%,0,0,204,17,6,FUR,SYR,FO,FO,FO,,,,,1
+Angry Lizard,3256,212,Booby Cancun,3233,814,RGO,398,B3,1,2,2,4,-5.24%,5.24%,0,0,204,17,6,FUR,SYR,RGO,RGO,PO,,,,,1
+Tomba,3220,169,Booby Cancun,3233,477,K,308,B3,2,3,2,4,-5.82%,5.82%,0,0,204,17,6,FUR,SYR,K,K,K,,,,,1
+Jersey Wooders,3109,500,Buck Futter,3269,891,PO,391,T4,0,0,2,4,-1.53%,1.53%,0,0,205,17,6,SYR,FUR,PO,PO,PO,,,,,1
+James Longoria,3210,988,Buck Futter,3269,67,1B,79,T4,1,0,2,4,1.32%,-1.32%,0,0,205,17,6,SYR,FUR,1B,1B,1B,,,,,1
+LeeLoo Dallas Multi-Guess,3244,484,Buck Futter,3269,937,PO,453,T4,1,1,2,4,-1.46%,1.46%,0,0,205,17,6,SYR,FUR,PO,PO,DP,,,,,1
+Camden Yardsy,3227,111,Buck Futter,3269,475,PO,364,T4,2,1,2,4,-2.56%,2.56%,0,0,205,17,6,SYR,FUR,PO,PO,K,,,,,1
+Norman Sland,3207,450,Booby Cancun,3233,227,FO,223,B4,0,0,2,4,-3.76%,3.76%,0,0,206,17,6,FUR,SYR,FO,FO,FO,,,,,1
+Lucius Salem,3194,156,Booby Cancun,3233,714,RGO,442,B4,1,0,2,4,-3.09%,3.09%,0,0,206,17,6,FUR,SYR,RGO,RGO,RGO,,,,,1
+Johnny,3224,932,Booby Cancun,3233,419,LGO,487,B4,2,0,2,4,-2.26%,2.26%,0,0,206,17,6,FUR,SYR,LGO,LGO,LGO,,,,,1
+Alex Blockman,3202,440,Buck Futter,3269,572,BB,132,T5,0,0,2,4,1.17%,-1.17%,0,1,207,17,6,SYR,FUR,BB,BB,1B,,,,,1
+Jack Hoffman,3250,999,Buck Futter,3269,67,1B,68,T5,0,1,2,4,2.47%,-2.47%,0,1,207,17,6,SYR,FUR,1B,1B,1B,,,,,1
+Mario Goretti,3215,534,Buck Futter,3269,605,2B,71,T5,0,4,2,4,7.67%,-7.67%,1,1,207,17,6,SYR,FUR,2B,2B,1B,,3269,,,1
+Jimmy Sticks,3221,585,Buck Futter,3269,229,PO,356,T5,0,6,2,5,-1.74%,1.74%,0,0,207,17,6,SYR,FUR,PO,PO,K,,,,,1
+Aladdin Sane,3263,789,Buck Futter,3269,22,K,233,T5,1,6,2,5,-2.44%,2.44%,0,0,207,17,6,SYR,FUR,K,K,Sac,,,,,1
+Jersey Wooders,3109,400,Buck Futter,3269,420,HR,20,T5,2,6,2,5,6.58%,-6.58%,3,1,207,17,6,SYR,FUR,HR,HR,HR,3269,3269,,3269,1
+James Longoria,3210,311,Buck Futter,3269,915,PO,396,T5,2,0,2,8,-0.07%,0.07%,0,0,207,17,6,SYR,FUR,PO,PO,PO,,,,,1
+Evil Corn Barn,2337,918,Weehaddababy Itzaboi,3254,67,FO,149,B5,0,0,2,8,-0.47%,0.47%,0,0,208,17,6,FUR,SYR,FO,FO,BB,,,,,1
+Pike Trout,3216,333,Weehaddababy Itzaboi,3254,834,LGO,499,B5,1,0,2,8,-0.30%,0.30%,0,0,208,17,6,FUR,SYR,LGO,LGO,LGO,,,,,1
+Howie Feltersnatch,230,322,Weehaddababy Itzaboi,3254,349,3B,27,B5,2,0,2,8,0.24%,-0.24%,0,1,208,17,6,FUR,SYR,3B,3B,3B,,,,,1
+Jiggs Kingman,3249,543,Weehaddababy Itzaboi,3254,631,1B,88,B5,2,3,2,8,0.84%,-0.84%,1,1,208,17,6,FUR,SYR,1B,1B,1B,3254,,,,1
+Angry Lizard,3256,969,Weehaddababy Itzaboi,3254,12,2B,43,B5,2,1,3,8,1.85%,-1.85%,1,0,208,17,6,FUR,SYR,2B,2B,2B,,,3254,,1
+Tomba,3220,348,Weehaddababy Itzaboi,3254,12,K,336,B5,2,2,4,8,-1.71%,1.71%,0,0,208,17,6,FUR,SYR,K,K,K,,,,,1
+LeeLoo Dallas Multi-Guess,3244,422,Buck Futter,3269,278,BB,144,T6,0,0,4,8,0.18%,-0.18%,0,0,209,17,6,SYR,FUR,BB,BB,BB,,,,,1
+Camden Yardsy,3227,711,Buck Futter,3269,67,PO,356,T6,0,1,4,8,-0.19%,0.19%,0,0,209,17,6,SYR,FUR,PO,PO,K,,,,,1
+Salsa Steve,2835,555,Buck Futter,3269,964,DP,409,T6,1,1,4,8,-0.46%,0.46%,0,0,209,17,6,SYR,FUR,RGO,RGO,DP,,,,,1
+Norman Sland,3207,300,Weehaddababy Itzaboi,3254,777,LGO,477,B6,0,0,4,8,-1.19%,1.19%,0,0,210,17,6,FUR,SYR,LGO,LGO,LGO,,,,,1
+Lucius Salem,3194,803,Weehaddababy Itzaboi,3254,417,RGO,386,B6,1,0,4,8,-0.70%,0.70%,0,0,210,17,6,FUR,SYR,RGO,RGO,PO,,,,,1
+Johnny,3224,520,Weehaddababy Itzaboi,3254,678,FO,158,B6,2,0,4,8,-0.22%,0.22%,0,0,210,17,6,FUR,SYR,FO,FO,BB,,,,,1
+jorjor wel,3217,828,Arthur Bullpendragon,3246,161,PO,333,T1,0,0,0,0,-2.51%,2.51%,0,0,211,18,6,UOM,WKU,PO,PO,K,,,,,1
+Alph Overdale,3255,666,Arthur Bullpendragon,3246,277,RGO,389,T1,1,0,0,0,-2.18%,2.18%,0,0,211,18,6,UOM,WKU,RGO,RGO,PO,,,,,1
+Greggy Gabagool,3237,813,Arthur Bullpendragon,3246,903,1B,90,T1,2,0,0,0,1.98%,-1.98%,0,0,211,18,6,UOM,WKU,1B,1B,1B,,,,,1
+Cat with a Bat,3204,716,Arthur Bullpendragon,3246,648,1B,68,T1,2,1,0,0,2.83%,-2.83%,0,0,211,18,6,UOM,WKU,1B,1B,1B,,,,,1
+Robert Sitkowski,3265,750,Arthur Bullpendragon,3246,924,FO,174,T1,2,5,0,0,-6.57%,6.57%,0,0,211,18,6,UOM,WKU,FO,FO,BB,,,,,1
+faron hylia,3205,430,Murray,3267,485,2B,55,B1,0,0,0,0,6.33%,-6.33%,0,1,212,18,6,WKU,UOM,2B,2B,2B,,,,,1
+Steven Scola,3222,829,Murray,3267,278,RGO,449,B1,0,2,0,0,-0.91%,0.91%,0,0,212,18,6,WKU,UOM,RGO,RGO,RGO,,,,,1
+Hiram Birnbaum,3206,672,Murray,3267,677,HR,5,B1,1,3,0,0,14.52%,-14.52%,2,1,212,18,6,WKU,UOM,HR,HR,HR,3267,,,3267,1
+Justin Carlson,3239,314,Murray,3267,678,PO,364,B1,1,0,2,0,-1.43%,1.43%,0,0,212,18,6,WKU,UOM,PO,PO,K,,,,,1
+Soy Okey,3258,577,Murray,3267,192,PO,385,B1,2,0,2,0,-1.12%,1.12%,0,0,212,18,6,WKU,UOM,PO,PO,PO,,,,,1
+Minto McGuire,3219,215,Arthur Bullpendragon,3246,874,RGO,341,T2,0,0,2,0,-2.72%,2.72%,0,0,213,18,6,UOM,WKU,RGO,RGO,K,,,,,1
+Okie,3238,67,Arthur Bullpendragon,3246,596,LGO,471,T2,1,0,2,0,-2.27%,2.27%,0,0,213,18,6,UOM,WKU,LGO,LGO,LGO,,,,,1
+Erik Hamilton,3251,130,Arthur Bullpendragon,3246,87,2B,43,T2,2,0,2,0,3.30%,-3.30%,0,0,213,18,6,UOM,WKU,2B,2B,2B,,,,,1
+Ruby McCade,3260,537,Arthur Bullpendragon,3246,120,LGO,417,T2,2,2,2,0,-4.96%,4.96%,0,0,213,18,6,UOM,WKU,LGO,LGO,RGO,,,,,1
+Dude Duderson,3231,372,Murray,3267,372,HR,0,B2,0,0,2,0,7.13%,-7.13%,1,1,214,18,6,WKU,UOM,HR,HR,HR,,,,3267,1
+Dave Bartholomew,3268,534,Murray,3267,500,2B,34,B2,0,0,3,0,2.15%,-2.15%,0,1,214,18,6,WKU,UOM,2B,2B,2B,,,,,1
+Ezra Wind,3226,176,Murray,3267,2,BB,174,B2,0,2,3,0,0.63%,-0.63%,0,0,214,18,6,WKU,UOM,BB,BB,BB,,,,,1
+Dusk Jackson,3242,716,Murray,3267,142,PO,426,B2,0,4,3,0,-1.43%,1.43%,0,0,214,18,6,WKU,UOM,PO,PO,DP,,,,,1
+faron hylia,3205,200,Murray,3267,942,K,258,B2,1,4,3,0,-1.46%,1.46%,0,0,214,18,6,WKU,UOM,K,K,FO,,,,,1
+Steven Scola,3222,231,Murray,3267,324,1B,93,B2,2,4,3,0,5.17%,-5.17%,1,0,214,18,6,WKU,UOM,1B,1B,1B,,3267,,,1
+Hiram Birnbaum,3206,108,Murray,3267,873,K,235,B2,2,5,4,0,-1.76%,1.76%,0,0,214,18,6,WKU,UOM,K,K,FO,,,,,1
+jorjor wel,3217,888,Arthur Bullpendragon,3246,167,K,279,T3,0,0,4,0,-1.61%,1.61%,0,0,215,18,6,UOM,WKU,K,K,FO,,,,,1
+Alph Overdale,3255,911,Arthur Bullpendragon,3246,475,LGO,436,T3,1,0,4,0,-1.33%,1.33%,0,0,215,18,6,UOM,WKU,LGO,LGO,RGO,,,,,1
+Greggy Gabagool,3237,98,Arthur Bullpendragon,3246,49,2B,49,T3,2,0,4,0,1.51%,-1.51%,0,0,215,18,6,UOM,WKU,2B,2B,2B,,,,,1
+Cat with a Bat,3204,603,Arthur Bullpendragon,3246,243,RGO,360,T3,2,2,4,0,-2.39%,2.39%,0,0,215,18,6,UOM,WKU,RGO,RGO,K,,,,,1
+Justin Carlson,3239,712,Murray,3267,69,PO,357,B3,0,0,4,0,-0.45%,0.45%,0,0,216,18,6,WKU,UOM,PO,PO,K,,,,,1
+Soy Okey,3258,111,Murray,3267,694,PO,417,B3,1,0,4,0,-0.44%,0.44%,0,0,216,18,6,WKU,UOM,PO,PO,RGO,,,,,1
+Dude Duderson,3231,293,Murray,3267,912,PO,381,B3,2,0,4,0,-0.41%,0.41%,0,0,216,18,6,WKU,UOM,PO,PO,PO,,,,,1
+Robert Sitkowski,3265,350,Arthur Bullpendragon,3246,773,LGO,423,T4,0,0,4,0,-1.55%,1.55%,0,0,217,18,6,UOM,WKU,LGO,LGO,RGO,,,,,1
+Minto McGuire,3219,450,Arthur Bullpendragon,3246,283,FO,167,T4,1,0,4,0,-1.16%,1.16%,0,0,217,18,6,UOM,WKU,FO,FO,BB,,,,,1
+Okie,3238,826,Arthur Bullpendragon,3246,841,HR,15,T4,2,0,4,0,3.67%,-3.67%,1,1,217,18,6,UOM,WKU,HR,HR,HR,,,,3246,1
+Erik Hamilton,3251,215,Arthur Bullpendragon,3246,857,RGO,358,T4,2,0,4,1,-1.23%,1.23%,0,0,217,18,6,UOM,WKU,RGO,RGO,K,,,,,1
+Dave Bartholomew,3268,50,Murray,3267,857,FO,193,B4,0,0,4,1,-0.54%,0.54%,0,0,218,18,6,WKU,UOM,FO,FO,FO,,,,,1
+Ezra Wind,3226,300,Murray,3267,999,PO,301,B4,1,0,4,1,-0.53%,0.53%,0,0,218,18,6,WKU,UOM,PO,PO,K,,,,,1
+Dusk Jackson,3242,314,Murray,3267,180,BB,134,B4,2,0,4,1,0.46%,-0.46%,0,0,218,18,6,WKU,UOM,BB,BB,1B,,,,,1
+faron hylia,3205,345,Murray,3267,1,PO,344,B4,2,1,4,1,-0.98%,0.98%,0,0,218,18,6,WKU,UOM,PO,PO,K,,,,,1
+Ruby McCade,3260,572,Arthur Bullpendragon,3246,513,2B,59,T5,0,0,4,1,5.87%,-5.87%,0,0,219,18,6,UOM,WKU,2B,2B,2B,,,,,1
+jorjor wel,3217,99,Arthur Bullpendragon,3246,552,LGO,453,T5,0,2,4,1,-4.11%,4.11%,0,0,219,18,6,UOM,WKU,LGO,LGO,LGO,,,,,1
+Alph Overdale,3255,99,Arthur Bullpendragon,3246,934,FO,165,T5,1,2,4,1,-3.80%,3.80%,0,0,219,18,6,UOM,WKU,FO,FO,BB,,,,,1
+Greggy Gabagool,3237,748,Arthur Bullpendragon,3246,76,PO,328,T5,2,2,4,1,-2.91%,2.91%,0,0,219,18,6,UOM,WKU,PO,PO,K,,,,,1
+Steven Scola,3222,581,Murray,3267,600,HR,19,B5,0,0,4,1,1.67%,-1.67%,1,1,220,18,6,WKU,UOM,HR,HR,HR,,,,3267,1
+Hiram Birnbaum,3206,666,Ant man,3229,294,PO,372,B5,0,0,5,1,-0.14%,0.14%,0,0,220,18,6,WKU,UOM,PO,PO,K,,,,,1
+Justin Carlson,3239,806,Ant man,3229,593,FO,213,B5,1,0,5,1,-0.13%,0.13%,0,0,220,18,6,WKU,UOM,FO,FO,FO,,,,,1
+Soy Okey,3258,222,Ant man,3229,610,PO,388,B5,2,0,5,1,-0.11%,0.11%,0,0,220,18,6,WKU,UOM,PO,PO,PO,,,,,1
+Cat with a Bat,3204,245,Arthur Bullpendragon,3246,711,LGO,466,T6,0,0,5,1,-0.92%,0.92%,0,0,221,18,6,UOM,WKU,LGO,LGO,LGO,,,,,1
+Robert Sitkowski,3265,711,Arthur Bullpendragon,3246,267,LGO,444,T6,1,0,5,1,-0.54%,0.54%,0,0,221,18,6,UOM,WKU,LGO,LGO,RGO,,,,,1
+Minto McGuire,3219,711,Arthur Bullpendragon,3246,126,RGO,415,T6,2,0,5,1,-0.18%,0.18%,0,0,221,18,6,UOM,WKU,RGO,RGO,RGO,,,,,1

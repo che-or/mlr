@@ -308,16 +308,21 @@ nav {
 }
 
 .leaderboard-card h4 {
-    margin-top: 0;
+    margin: 0;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .qualifier {
     font-size: 0.8em;
-    color: var(--subtle-text-color); /* Updated */
-    margin-top: -8px;
-    margin-bottom: 10px;
+    color: var(--subtle-text-color);
 }
 
 .tie-info {
@@ -332,6 +337,7 @@ nav {
 .player-team-logo {
     height: 40px;
     width: 40px;
+    object-fit: contain;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -348,52 +354,310 @@ nav {
 
 
 #glossary-view {
-    display: flex;
-    gap: 20px;
+    display: block;
     background-color: transparent;
     padding: 0;
 }
 
 #glossary-sidebar {
-    width: 250px;
-    background-color: var(--primary-color);
-    padding: 15px;
-    border-radius: 8px;
-    height: fit-content;
-}
-
-.glossary-stat-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.glossary-stat-list li {
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-bottom: 5px;
-}
-
-.glossary-stat-list li:hover {
-    background-color: var(--secondary-color);
-}
-
-.glossary-stat-list li.active {
-    background-color: var(--accent-color);
-    color: #fff;
-    font-weight: bold;
+    display: none;
 }
 
 #glossary-content {
-    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
     background-color: var(--primary-color);
     padding: 20px;
     border-radius: 8px;
 }
 
+.league-tab-grid {
+    display: grid;
+    margin: 16px 0 0;
+    border-bottom: 2px solid var(--border-color);
+    width: fit-content;
+}
+
+.lt-header {
+    text-align: center;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: var(--text-color);
+    background: var(--primary-color);
+    border-right: 1px solid var(--border-color);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    bottom: -2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lt-header:hover {
+    background-color: var(--secondary-color);
+}
+
+.lt-header.active-parent {
+    font-weight: bold;
+    border-top: 2px solid var(--accent-color);
+}
+
+.lt-cell {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color);
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-right: 1px solid var(--border-color);
+    border-radius: 4px 4px 0 0;
+    color: var(--text-color);
+    padding: 6px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: normal;
+    position: relative;
+    bottom: -2px;
+    white-space: nowrap;
+}
+
+.lt-cell.lt-sub {
+    border-radius: 0;
+}
+
+.lt-cell::after {
+    content: attr(data-text);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+
+.lt-cell.active {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+    border-bottom-color: var(--secondary-color);
+    border-top: 2px solid var(--accent-color);
+    font-weight: bold;
+}
+
+.lt-cell:hover:not(.active) {
+    background-color: var(--secondary-color);
+}
+
+.league-tab-content {
+    margin-top: 12px;
+}
+
+/* ── Player Comparison ─────────────────────────────────────────────────────── */
+
+.compare-controls {
+    margin-bottom: 20px;
+}
+
+.compare-slots-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+#compare-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.compare-slot {
+    position: relative;
+    width: 200px;
+}
+
+.compare-slot-inner {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.compare-player-input {
+    flex: 1;
+    min-width: 0;
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.compare-player-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.compare-remove-slot {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: var(--subtle-text-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 2px 4px;
+    line-height: 1;
+}
+
+.compare-remove-slot:hover {
+    color: var(--text-color);
+}
+
+.compare-slot .compare-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--secondary-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.compare-add-btn {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.compare-add-btn:hover {
+    background: var(--secondary-color);
+}
+
+.compare-control-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.compare-context-label {
+    font-size: 0.85rem;
+    color: var(--subtle-text-color);
+    margin-bottom: 8px;
+}
+
+.compare-table {
+    width: auto;
+}
+
+.compare-table thead th {
+    text-align: center;
+    min-width: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: var(--secondary-color);
+}
+
+.compare-table thead th:first-child {
+    min-width: 80px;
+    text-align: left;
+}
+
+.compare-stat-name {
+    text-align: left;
+    font-weight: normal;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+tr.compare-section-header td {
+    font-weight: bold;
+    background: var(--secondary-color);
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.compare-best {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.compare-no-data {
+    padding: 12px;
+    font-style: italic;
+    color: var(--subtle-text-color);
+}
+
+.compare-player-link {
+    color: var(--link-color, var(--accent-color));
+    text-decoration: none;
+}
+
+.compare-player-link:hover {
+    text-decoration: underline;
+}
+
+/* ── End Player Comparison ─────────────────────────────────────────────────── */
+
+.toggle-league-section {
+    border-top: 2px solid var(--border-color);
+    margin-top: 16px;
+    padding-top: 12px;
+}
+
+.stats-section + .stats-section {
+    margin-top: 20px;
+}
+
+.glossary-select-header {
+    margin-bottom: 24px;
+}
+
+.glossary-select-header select {
+    font-size: 1.05rem;
+    padding: 6px 10px;
+    min-width: 280px;
+}
+
+.glossary-entry-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.glossary-abbr {
+}
+
+.glossary-summary {
+    font-style: italic;
+    color: var(--subtle-text-color);
+    margin-bottom: 12px;
+}
+
+.glossary-rule {
+    margin-bottom: 16px;
+}
+
+.glossary-placeholder {
+    color: var(--subtle-text-color);
+    font-style: italic;
+}
+
 #glossary-content h4 {
-    margin-top: 15px;
+    margin-top: 36px;
     margin-bottom: 5px;
 }
 
@@ -425,30 +689,6 @@ nav {
     background-color: var(--primary-color);
 }
 
-/* Glossary Sidebar Groups */
-.glossary-group-header {
-    cursor: pointer;
-    margin-top: 1rem;
-    font-size: 1.1em;
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
-
-.glossary-group-header .arrow {
-    display: inline-block;
-    margin-right: 8px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.glossary-group-header.expanded .arrow {
-    transform: rotate(90deg);
-}
-
-.glossary-stat-list.collapsed {
-    display: none;
-}
 
 a {
     color: var(--text-color);
@@ -562,6 +802,7 @@ a:hover {
 .standings-logo {
     height: 24px;
     width: 24px;
+    object-fit: contain;
     margin-right: 8px;
     vertical-align: middle;
 }
@@ -705,9 +946,9 @@ input:disabled {
 }
 
 :root.light-mode {
-    --bg-color: #f0f2f5;
-    --primary-color: #ffffff;
-    --secondary-color: #e9ecef;
+    --bg-color: #e9ecef;
+    --primary-color: #f0f2f5;
+    --secondary-color: #ffffff;
     --text-color: #0e1113;
     --header-color: #000000;
     --accent-color: #FF4500;

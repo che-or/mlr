@@ -1,53 +1,236 @@
 {
+    "S2": {
+        "Minor League Redditball": [
+            "AKR",
+            "HVR",
+            "SAV",
+            "TRE"
+        ]
+    },
     "S3": {
-        "MiLR": ["BAY", "BER", "CCF", "CIN", "FTP", "LAN", "SCB", "TZS"]
+        "Minor League Redditball": [
+            "BAY",
+            "BER",
+            "CCF",
+            "CIN",
+            "FTP",
+            "LAN",
+            "SCB",
+            "TZS"
+        ]
     },
     "S4": {
-        "Group A": ["CEL", "DBV", "DDD", "HON", "N69", "PDB", "PGA", "PGS"],
-        "Group B": ["CCS", "DCL", "EEE", "FWG", "LDN", "LMN", "MBX", "VFQ"]
+        "Group A": [
+            "CEL",
+            "DBV",
+            "DDD",
+            "HON",
+            "N69",
+            "PDB",
+            "PGA",
+            "PGS"
+        ],
+        "Group B": [
+            "CCS",
+            "DCL",
+            "EEE",
+            "FWG",
+            "LDN",
+            "LMN",
+            "MBX",
+            "VFQ"
+        ]
     },
     "S5": {
-        "PCL Dynasty": ["CHI", "KRB", "RKT", "WSH"],
-        "PCL Dominion": ["PPP", "TSA", "WWC", "YUM"],
-        "PCL Empire": ["GBC", "GTY", "ISO", "SPR"],
-        "IL Supreme": ["LMN", "PHB", "TAI", "TRA"],
-        "IL Champion": ["DAD", "JUP", "NUL", "TAC"],
-        "IL Victory": ["KTY", "MVM", "POR", "SAR"]
+        "PCL Dynasty": [
+            "CHI",
+            "KRB",
+            "RKT",
+            "WSH"
+        ],
+        "PCL Dominion": [
+            "PPP",
+            "TSA",
+            "WWC",
+            "YUM"
+        ],
+        "PCL Empire": [
+            "GBC",
+            "GTY",
+            "ISO",
+            "SPR"
+        ],
+        "IL Supreme": [
+            "LMN",
+            "PHB",
+            "TAI",
+            "TRA"
+        ],
+        "IL Champion": [
+            "DAD",
+            "JUP",
+            "NUL",
+            "TAC"
+        ],
+        "IL Victory": [
+            "KTY",
+            "MVM",
+            "POR",
+            "SAR"
+        ]
     },
     "S6": {
-        "PCL": ["AAL", "BAC", "CBC", "CWJ", "JEF", "LID", "LMN", 
-            "MPD", "PUK", "RBD", "SAR", "SAS", "SGP", "WWC"],
-        "IL": ["BBB", "CIM", "FRG", "HEL", "LIM", "MBT", "MVS",
-            "PBA", "PHB", "POR", "SLT", "SUP", "TAK", "TTT"]
+        "Pacific Coast League": [
+            "AAL",
+            "BAC",
+            "CBC",
+            "CWJ",
+            "JEF",
+            "LID",
+            "LMN",
+            "MPD",
+            "PUK",
+            "RBD",
+            "SAR",
+            "SAS",
+            "SGP",
+            "WWC"
+        ],
+        "International League": [
+            "BBB",
+            "CIM",
+            "FRG",
+            "HEL",
+            "LIM",
+            "MBT",
+            "MVS",
+            "PBA",
+            "PHB",
+            "POR",
+            "SLT",
+            "SUP",
+            "TAK",
+            "TTT"
+        ]
     },
     "S7": {
-        "PCL Independence": ["BAC", "BBC", "RRR", "TBL"],
-        "PCL Diamond": ["SCG", "SSC", "STK", "TRI"],
-        "IL Twisted": ["BBB", "KNX", "PBA", "SSJ"],
-        "IL Wildflower": ["CPR", "FAP", "MMA", "WSW"]
+        "PCL Independence": [
+            "BAC",
+            "BBC",
+            "RRR",
+            "TBL"
+        ],
+        "PCL Diamond": [
+            "SCG",
+            "SSC",
+            "STK",
+            "TRI"
+        ],
+        "IL Twisted": [
+            "BBB",
+            "KNX",
+            "PBA",
+            "SSJ"
+        ],
+        "IL Wildflower": [
+            "CPR",
+            "FAP",
+            "MMA",
+            "WSW"
+        ]
     },
-    "S-8": {
-        "MiLR": ["BAG", "BIS", "BLO", "CCD", "CDT", "GND",
-            "LAC", "MKW", "MMM", "NXS", "PPM", "SCU"]
+    "S8A": {
+        "Minor League Redditball": [
+            "BAG",
+            "BIS",
+            "BLO",
+            "CCD",
+            "CDT",
+            "GND",
+            "LAC",
+            "MKW",
+            "MMM",
+            "NXS",
+            "PPM",
+            "SCU"
+        ]
     },
-    "S8": {
-        "PCL": ["ESP", "MOB", "SBD", "SCU"],
-        "IL": ["CC", "NUT", "QQ", "TXR"]
+    "S8B": {
+        "Pacific Coast League": [
+            "ESP",
+            "MOB",
+            "SBD",
+            "SCU"
+        ],
+        "International League": [
+            "CC",
+            "NUT",
+            "QQ",
+            "TXR"
+        ]
     },
     "S9": {
-        "PCL": ["FLB", "GOP", "KGB", "POS"],
-        "IL": ["AND", "ARR", "BIR", "NNL"]
+        "Pacific Coast League": [
+            "FLB",
+            "GOP",
+            "KGB",
+            "POS"
+        ],
+        "International League": [
+            "AND",
+            "ARR",
+            "BIR",
+            "NNL"
+        ]
     },
     "S10": {
-        "PCL": ["CRN", "GOB", "KIR", "KRK", "ZAH"],
-        "IL": ["ACK", "BEE", "GRS", "SEO", "SSS"]
+        "Pacific Coast League": [
+            "CRN",
+            "GOB",
+            "KIR",
+            "KRK",
+            "ZAH"
+        ],
+        "International League": [
+            "ACK",
+            "BEE",
+            "GRS",
+            "SEO",
+            "SSS"
+        ]
     },
     "S11": {
-        "PCL": ["IDR", "LAX", "OKT", "POS", "ROY", "WRM"],
-        "IL": ["ARA", "DOG", "HOT", "LOB", "PRP", "SHH"]
+        "Pacific Coast League": [
+            "IDR",
+            "LAX",
+            "OKT",
+            "POS",
+            "ROY",
+            "WRM"
+        ],
+        "International League": [
+            "ARA",
+            "DOG",
+            "HOT",
+            "LOB",
+            "PRP",
+            "SHH"
+        ]
     },
     "S12": {
-        "PCL": ["CCS", "MMN", "SAL", "SCR", "SEF"],
-        "IL": ["DDD", "KEG", "PQD", "SDV", "WWC"]
+        "Pacific Coast League": [
+            "CCS",
+            "MMN",
+            "SAL",
+            "SCR",
+            "SEF"
+        ],
+        "International League": [
+            "DDD",
+            "KEG",
+            "PQD",
+            "SDV",
+            "WWC"
+        ]
     }
 }

@@ -1,0 +1,690 @@
+{
+  "Avg Diff": {
+    "name": "Average Difference",
+    "details": "For each play, the pitcher sets a number from 1 and 1000 and the batter (or runner in the case of steal attempts) tries to guess that number. The difference between the pitcher's number and the batter's number is the Diff. The valid number range wraps around (i.e. 0 = 1000), so the Diff can range from 0 (exactly correct) to 500 (as far away as possible). The average of all a player's Diffs is their Average Difference.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "Avg Diff = Total Diff / Total Plays"
+          }
+        ]
+      },
+      {
+        "title": "Related Stats",
+        "blocks": [
+          {
+            "type": "list",
+            "value": [
+              "0 Diffs: the number of times a pitcher's number has been guessed exactly, or a batter has guessed the pitcher's number exactly. A 0 Diff usually results in a Home Run, but may also result in a Stolen Base or a Bunt Single.",
+              "500 Diffs: the number of times a pitcher has thrown a pitch with Diff = 500 (the maximum possible diff), or a batter has guessed the exact opposite of the pitcher's number. For regular swings, a 500 Diff may result in a Left Groundout, a Lineout Double Play, or a Triple Play depending on the base-out state. On steal attempts, a 500 Diff results in a Caught Stealing. On bunt attempts, a 500 Diff results in a Bunt Double Play or a Bunt Groundout, depending on the base-out state.",
+              "300+ Pitches: the number of pitches a pitcher has thrown with Diff &ge; 300.",
+              "400+ Pitches: the number of pitches a pitcher has thrown with Diff &ge; 400."
+            ]
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "BA": {
+    "name": "Batting Average",
+    "details": "Batting average measures the percentage of a batter's at-bats that result in a hit. MLR Reference requires players to have 2 PA per team game to qualify for the season leaderboards.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "BA = Hits / At Bats"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "BABIP": {
+    "name": "Batting Average on Balls In Play",
+    "details": "BABIP measures a player's batting average exclusively on balls they hit into the field of play. This means that BABIP excludes home runs and strikeouts. Because MLR has no field component, BABIP is not a very meaningful metric.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "BABIP = (Hits \u00e2\u02c6\u2019 Home Runs) / (At Bats \u00e2\u02c6\u2019 Strikeouts \u00e2\u02c6\u2019 Home Runs + Sacrifice Flies)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "BB6": {
+    "name": "Walks per 6 Innings",
+    "details": "Walks per 6 Innings is the measure of how many walks a pitcher will allow in a full game, on average.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "BB6 = (Walks \u00c3\u2014 6) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "BS": {
+    "name": "Blown Save",
+    "details": "A Blown Save is issued to a pitcher that enters the game in a save situation and subsequently is responsible for the tying run to score. A Blown Save is issued in the following circumstances:",
+    "sections": [],
+    "rules": [
+      {
+        "title": "Blown Save Conditions",
+        "conditions": [
+          "The pitcher must be a relief pitcher. If they are the first relief pitcher, the starting pitcher must be eligible for the Win.",
+          "The pitcher must enter in a save situation, defined as leading by 3 or fewer runs or with the tying run on base, at bat, or on deck.",
+          "At some point during the pitcher's outing, their team relinquishes the lead. This includes the case where the pitcher leaves the tying run on base and the next pitcher allows the inherited runner to score. This criterion may differ from other ways of determining blown saves."
+        ],
+        "blocks": [
+          {
+            "type": "text",
+            "value": "A pitcher that receives a blown save may also be awarded the Win or charged with the Loss."
+          },
+          {
+            "type": "text",
+            "value": "<p>For more information on blown save calculation, and the different ways it has been calculated for MLB, see: <a href=\"https://tht.fangraphs.com/the-unofficial-rules-of-holds-and-blown-saves/\" target=\"_blank\"><u>The Unofficial Rules: Of Holds and Blown Saves</u></a> (Fangraphs).</p>"
+          }
+        ]
+      }
+    ]
+  },
+  "ERA": {
+    "name": "Earned Run Average",
+    "details": "Earned Run Average is the average number of earned runs a pitcher allows per six innings pitched, the length of a typical MLR game. It is the most common statistic for evaluating a pitcher's performance. Ghost runners scoring are considered unearned runs, so they do not count against a pitcher's ERA.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "ERA = (Earned Runs \u00c3\u2014 6) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "ERA-": {
+    "name": "ERA Minus",
+    "details": "ERA- is an advanced statistic that measures a pitcher's performance, adjusted for the overall offensive context of the league and park in a given season. It normalizes a pitcher's Earned Run Average (ERA) so that 100 is always the league average. Like ERA, a lower ERA- is better.",
+    "sections": [
+      {
+        "title": "Interpretation",
+        "blocks": [
+          {
+            "type": "list",
+            "value": [
+              "100 = exactly league average.",
+              "50 = 50% better than the league average pitcher.",
+              "125 = 25% worse than the league average pitcher"
+            ]
+          },
+          {
+            "type": "text",
+            "value": "ERA- is the pitching equivalent of OPS+ and is one of the best ways to compare pitchers across different eras, leagues, seasons, and ballparks."
+          }
+        ]
+      },
+      {
+        "title": "Why ERA-?",
+        "blocks": [
+          {
+            "type": "html",
+            "value": "<p>ERA- and ERA+ both aim to solve the same problem: adjusting a pitcher's ERA for external factors like league-wide offensive performance and ballpark effects. However, they present the information in slightly different ways</p><p><strong>ERA+</strong> sets the league average at 100, and a higher score is better. ERA+ compares <strong>the league ERA to the pitcher's ERA</strong>. An ERA+ of 150 means the league average is 50% worse than the pitcher.</p><p><strong>ERA-</strong> also sets the league average at 100, but a lower score is better. ERA- compares <strong>the pitcher's ERA to the league ERA</strong>. An ERA- of 150 means a pitcher is 50% worse than the league average.</p><p>ERA- is often considered more intuitive because it aligns with the scale of ERA itself, where lower numbers are better. The other advantage of ERA- is how the comparison is made. An ERA- of 75 means a player's ERA is 25% lower than average. An ERA+ of 125 means the average ERA is 25% higher than the player's, which means the player's ERA is only 20% lower than average. This interpretation is not as intuitive.</p><p>For more information on the difference between ERA+ and ERA-, refer to this article: <a href=\"https://www.beyondtheboxscore.com/2012/9/14/3332194/era-plus-vs-era-minus\" target=\"_blank\"><u>ERA+ Vs. ERA-</u></a></p>"
+          }
+        ]
+      },
+      {
+        "title": "Calculation in MLR",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "ERA- = 100 \u00c3\u2014 (Player's Park-Neutral ERA / League's Park-Neutral ERA)"
+          },
+          {
+            "type": "html",
+            "value": "<p>Calculating a pitcher's Park-Neutral ERA (`nERA`) is a complex process:</p><ol><li><strong>Neutral Simulation:</strong> Each inning a pitcher has thrown is re-simulated using the <strong>'Result at Neutral'</strong> column in the PA logs to determine what would have happened in an average ballpark.</li><li><strong>Inherited Runner Accountability:</strong> The simulation is careful to only hold pitchers accountable for runners they put on base. Runs scored by inherited runners are not counted against a pitcher's `nERA`.</li><li><strong>Responsibility for Runners Left on Base:</strong> When a pitcher exits mid-inning, they are still responsible for the runners they leave behind. To account for this, the simulation uses the <strong>Run Expectancy (RE) Matrix</strong> to calculate the probable number of runs that will score. It separates the run expectancy of inherited runners from the pitcher's own runners, ensuring the pitcher is only charged for the run potential they created.</li></ol><p>This comprehensive simulation produces a pitcher's `nERA`, which reflects their performance independent of park effects. This `nERA` is then compared against the league-average `nERA` to produce the final ERA-.</p><p><strong>Career ERA-</strong> is calculated using the same logic, but with the player's career `nERA` measured against a career league-average `nERA`, weighted by the player's innings pitched in each season. This provides a more accurate career value than averaging seasonal ERA- values.</p>"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "FB%": {
+    "name": "Fly Ball Rate",
+    "details": "Fly Ball Rate measures the proportion of balls put in play that result in fly ball outs. Because MLR has no fielding component, hits cannot be identified as fly balls and are excluded from this calculation. Pop-ups are also excluded.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "FB% = Flyouts / (Groundouts + Flyouts + Lineouts + Popouts)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "FIP": {
+    "name": "Fielding Independent Pitching",
+    "details": "Fielding Independent Pitching (FIP) is an advanced pitching metric that estimates a pitcher's performance based only on outcomes that do not involve the defense: home runs, walks, and strikeouts. It operates on the same scale as ERA, making it easy to compare. Because MLR does not have a fielding component, FIP is not a very meaningful stat.",
+    "sections": [
+      {
+        "title": "Interpretation",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "Because FIP is on the same scale as ERA, you can read it in the same way. A FIP of 3.50 is roughly equivalent to a 3.50 ERA. The key difference is that FIP measures what a pitcher's ERA <em>should have been</em>, given their performance on events they can control."
+          },
+          {
+            "type": "list",
+            "value": [
+              "FIP < ERA: The pitcher may have been unlucky or had poor defensive support.",
+              "FIP > ERA: The pitcher may have been lucky or had excellent defensive support."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Calculation in MLR",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "FIP = ((13 \u00c3\u2014 HR) + (3 \u00c3\u2014 BB) \u00e2\u02c6\u2019 (2 \u00c3\u2014 K)) / IP + FIP Constant"
+          },
+          {
+            "type": "html",
+            "value": "<ul><li><strong>HR:</strong> Home Runs Allowed</li><li><strong>BB:</strong> Walks Allowed (does not include Hit By Pitch, as HBP is not tracked)</li><li><strong>K:</strong> Strikeouts</li><li><strong>IP:</strong> Innings Pitched</li></ul>"
+          },
+          {
+            "type": "text",
+            "value": "To ensure FIP is on the same scale as ERA, a FIP Constant is calculated each season and added. This constant is derived from the league's overall performance in a given season:"
+          },
+          {
+            "type": "equation",
+            "value": "FIP Constant = League ERA \u00e2\u02c6\u2019 ((13 \u00c3\u2014 League HR) + (3 \u00c3\u2014 League BB) \u00e2\u02c6\u2019 (2 \u00c3\u2014 League K)) / League IP"
+          },
+          {
+            "type": "text",
+            "value": "This adjustment ensures that league-average FIP equals league-average ERA for each season, making for a fair comparison."
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "GB%": {
+    "name": "Ground Ball Rate",
+    "details": "Ground Ball Rate measures the proportion of balls put in play that result in ground ball outs. Because MLR has no fielding component, hits cannot be identified as ground balls and are excluded from this calculation.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "GB% = Groundouts / (Groundouts + Flyouts + Lineouts + Popouts)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "GB/FB": {
+    "name": "Ground Ball to Fly Ball Ratio",
+    "details": "Ground Ball to Fly Ball Ratio compares a player's rate of ground ball outs to fly ball outs. Values above 1.0 indicate a ground ball tendency; values below 1.0 indicate a fly ball tendency.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "GB/FB = Groundouts / Flyouts"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "H6": {
+    "name": "Hits per 6 Innings",
+    "details": "Hits per 6 Innings measures how many hits a pitcher allows per six innings pitched.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "H6 = (Hits \u00c3\u2014 6) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "HLD": {
+    "name": "Hold",
+    "details": "One or more relief pitchers can be awarded a Hold in a game. A pitcher cannot get a Win or a Save in the same game as a Hold.",
+    "sections": [],
+    "rules": [
+      {
+        "title": "Hold Conditions",
+        "conditions": [
+          "A relief pitcher enters the game in a save situation (see the glossary entry for SV).",
+          "They record at least one out.",
+          "They leave the game with their team still in the lead."
+        ]
+      }
+    ]
+  },
+  "HR6": {
+    "name": "Home Runs per 6 Innings",
+    "details": "Home Runs per 6 Innings measures how many home runs a pitcher allows per six innings pitched.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "HR6 = (Home Runs \u00c3\u2014 6) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "ISO": {
+    "name": "Isolated Power",
+    "details": "ISO measures a hitter's raw power by calculating their extra bases per at-bat. It is the difference between Slugging Percentage and Batting Average.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "ISO = Slugging Percentage \u00e2\u02c6\u2019 Batting Average"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "L": {
+    "name": "Loss",
+    "details": "A single pitcher on the losing team is awarded a Loss.",
+    "sections": [],
+    "rules": [
+      {
+        "title": "Case 1: Pitcher Allows the Go-Ahead Run",
+        "conditions": [
+          "A pitcher allows one or more runs to score, giving the opposing team a lead.",
+          "The opposing team never gives up that lead for the rest of the game."
+        ]
+      },
+      {
+        "title": "Case 2: Pitcher Leaves Runners on Base",
+        "conditions": [
+          "A pitcher leaves the game with one or more runners on base.",
+          "Those runners later score, and one of them is the run that gives the opposing team a permanent lead."
+        ]
+      }
+    ]
+  },
+  "OBP": {
+    "name": "On-Base Percentage",
+    "details": "On-Base Percentage measures the percentage of a batter's plate appearances that result in the player reaching base. This includes hits and walks, but does not include reaching on a fielder's choice (which only happens in very rare situations in MLR).",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "OBP = (Hits + Walks) / (At Bats + Walks + Sacrifice Flies)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "OPS": {
+    "name": "On-Base Plus Slugging",
+    "details": "OPS is a combination of On-Base Percentage (OBP) and Slugging Percentage (SLG). It is intended to combine a hitter's ability to get on base with their ability to hit for power into a single metric.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "OPS = On-Base Percentage + Slugging Percentage"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "OPS+": {
+    "name": "On-Base Plus Slugging Plus",
+    "details": "OPS+ is an advanced statistic that measures a hitter's total offensive value, adjusted for the overall offensive context of the league in a given season. It normalizes a player's On-Base Plus Slugging (OPS) so that 100 is always the league average.",
+    "sections": [
+      {
+        "title": "Interpretation",
+        "blocks": [
+          {
+            "type": "list",
+            "value": [
+              "100: Exactly league average.",
+              "150: 50% better than the league average hitter.",
+              "75: 25% worse than the league average hitter."
+            ]
+          },
+          {
+            "type": "text",
+            "value": "OPS+ is a great way to compare players across different seasons and ballparks, as it accounts for variations in both league-wide offensive performance and park effects."
+          }
+        ]
+      },
+      {
+        "title": "Calculation in MLR",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "OPS+ = 100 \u00c3\u2014 ((Player's Park-Neutral OBP / League's Park-Neutral OBP) + (Player's Park-Neutral SLG / League's Park-Neutral SLG) \u00e2\u02c6\u2019 1)"
+          },
+          {
+            "type": "text",
+            "value": "To achieve a park-neutral statistic, the calculation uses the 'Result at Neutral' column in the PA logs. This column shows what the outcome of the play would have been in a perfectly average ballpark."
+          },
+          {
+            "type": "text",
+            "value": "<strong>Career OPS+</strong> is calculated using the same logic, but with the player's career park-neutral OBP and SLG measured against a career league-average OBP and SLG (weighted by the player's plate appearances in each season). This ensures a more accurate reflection of career value than averaging seasonal OPS+ values."
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "RE24": {
+    "name": "Run Expectancy Over 24 Base-Out States",
+    "details": "RE24 is an advanced statistic that measures the total impact a player has on their team's run-scoring potential. It calculates the change in run expectancy from the beginning of a plate appearance (or stolen base attempt) to the end, crediting or debiting the player for the outcome. Unlike stats that only measure hits or outs, RE24 captures the full context of a play. For example, a solo home run is good, but a bases-clearing double that doesn't score the batter is often more valuable in a given situation.",
+    "sections": [
+      {
+        "title": "Interpretation",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "RE24 is a counting stat, not a rate stat. It accumulates over a season."
+          },
+          {
+            "type": "html",
+            "value": "<ul><li><strong>For Hitters:</strong> A <strong>higher</strong> RE24 is better. A positive value indicates the player consistently creates situations that lead to more runs than an average player would have in the same situations.</li><li><strong>For Pitchers:</strong> A <strong>lower</strong> RE24 is better. A negative value indicates the pitcher has been more effective at suppressing run-scoring opportunities than an average pitcher.</li></ul><p>A value of <strong>0</strong> represents a league-average performance.</p>"
+          }
+        ]
+      },
+      {
+        "title": "Calculation in MLR",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "RE24 = (Run Expectancy After Play) \u00e2\u02c6\u2019 (Run Expectancy Before Play) + (Runs Scored on Play)"
+          },
+          {
+            "type": "html",
+            "value": "<ol><li><strong>Run Expectancy (RE) Matrix:</strong> First, a Run Expectancy Matrix is calculated for each season. This matrix contains the average number of runs that will score from every possible base-out state until the end of the inning. There are 24 possible states (8 base states \u00c3\u2014 3 out states). Because the matrix is calculated empirically from all innings in a season, it can change over the course of the season. A player's RE24 may change without recording a new plate appearance.</li><li><strong>Before and After States:</strong> For every plate appearance in the season, the base-out state before and after the play is recorded.</li><li><strong>Applying the Formula:</strong> The RE values for the before and after states are looked up in the matrix and the formula above is applied. Any runs that score directly on the play are also added.</li><li><strong>Aggregation:</strong> A player's seasonal RE24 is the sum of the RE24 values from all of their plate appearances (or stolen base attempts).</li></ol>"
+          }
+        ]
+      },
+      {
+        "title": "Run Expectancy Matrix (S12)",
+        "blocks": [
+          {
+            "type": "html",
+            "value": "<table class='stats-table re-matrix'><thead><tr><th>Outs</th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th></tr></thead><tbody><tr><td><strong>0</strong></td><td>0.639</td><td>1.011</td><td>1.156</td><td>1.452</td><td>1.296</td><td>1.562</td><td>2.019</td><td>2.100</td></tr><tr><td><strong>1</strong></td><td>0.406</td><td>0.638</td><td>0.876</td><td>0.883</td><td>1.009</td><td>1.067</td><td>1.560</td><td>1.822</td></tr><tr><td><strong>2</strong></td><td>0.168</td><td>0.372</td><td>0.535</td><td>0.408</td><td>0.657</td><td>0.658</td><td>0.606</td><td>0.941</td></tr></tbody></table>"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "SB%": {
+    "name": "Stolen Base Percentage",
+    "details": "Stolen Base Percentage measures how often a baserunner successfully steals a base when they attempt to do so.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "SB% = Stolen Bases / (Stolen Bases + Caught Stealing)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "SLG": {
+    "name": "Slugging Percentage",
+    "details": "Slugging percentage measures a hitter's power by weighting hits based on the number of bases. A double is worth twice as much as a single, a triple three times, and a home run four times. Slugging percentage can be interpreted as the average number of total bases a player records in an at-bat.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "SLG = Total Bases / At Bats"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "SO/BB": {
+    "name": "Strikeout-to-Walk Ratio",
+    "details": "Strikeout-to-Walk Ratio measures how often a pitcher strikes batters out relative to how often they issue walks. A higher ratio indicates better command.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "SO/BB = Strikeouts / Walks"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "SO6": {
+    "name": "Strikeouts per 6 Innings",
+    "details": "Strikeouts per 6 Innings measures how many strikeouts a pitcher records per six innings pitched.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "SO6 = (Strikeouts \u00c3\u2014 6) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "SV": {
+    "name": "Save",
+    "details": "A single relief pitcher on the winning team can be awarded a Save. The pitcher who gets the Save cannot also get the Win.",
+    "sections": [],
+    "rules": [
+      {
+        "title": "Case 1: The \"Standard\" Save",
+        "conditions": [
+          "The pitcher is the final pitcher for the winning team.",
+          "They enter the game with a lead of 3 runs or fewer.",
+          "They pitch for at least 1 full inning."
+        ]
+      },
+      {
+        "title": "Case 2: The \"Tying Run\" Save",
+        "conditions": [
+          "The pitcher is the final pitcher for the winning team.",
+          "They enter the game with the potential tying run already on base, at bat, or in the on-deck circle."
+        ]
+      },
+      {
+        "title": "Case 3: The \"Long Relief\" Save",
+        "conditions": [
+          "The pitcher is the final pitcher for the winning team.",
+          "They pitch for at least 2 innings to finish the game."
+        ]
+      }
+    ]
+  },
+  "SV%": {
+    "name": "Save Percentage",
+    "details": "Save Percentage measures how often a pitcher successfully converts their save opportunities.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "SV% = Saves / Save Opportunities"
+          },
+          {
+            "type": "text",
+            "value": "Save Opportunities is the sum of Saves and Blown Saves."
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "W": {
+    "name": "Win",
+    "details": "A single pitcher on the winning team is awarded a Win.",
+    "sections": [],
+    "rules": [
+      {
+        "title": "Case 1: Starting Pitcher Earns the Win",
+        "conditions": [
+          "Pitches at least 3\u00e2\u2026\u201c innings.",
+          "Their team has the lead when they exit.",
+          "That lead is never given up for the rest of the game."
+        ]
+      },
+      {
+        "title": "Case 2: Reliever Earns the Win (Starter Doesn't Qualify)",
+        "conditions": [
+          "The starting pitcher pitches fewer than 3\u00e2\u2026\u201c innings.",
+          "The team has the lead when the starter exits and never gives it up.",
+          "The win is awarded to the first relief pitcher to record at least one out."
+        ]
+      },
+      {
+        "title": "Case 3: Reliever Earns the Win (Lead Change)",
+        "conditions": [
+          "The game is tied or the pitcher's team is trailing when they enter.",
+          "While that pitcher is still active, their team takes the lead.",
+          "The team never gives up that lead."
+        ]
+      }
+    ]
+  },
+  "W-L%": {
+    "name": "Win-Loss Percentage",
+    "details": "Win-Loss Percentage measures a pitcher's winning percentage across all decisions. It does not account for run support or the overall quality of their outings.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "W-L% = Wins / (Wins + Losses)"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "WAR": {
+    "name": "Wins Above Replacement",
+    "details": "Wins Above Replacement (WAR or cheWAR) is a comprehensive statistic that attempts to consolidate a player's total contribution into a single number. It represents how many more wins a player is worth than a replacement-level player \u00e2\u20ac\u201d a hypothetical, readily-available player who could be substituted at minimal cost. Unlike traditional WAR models (FanGraphs, Baseball Reference), cheWAR is not context-neutral. It is based directly on RE24, meaning it reflects the context of each play. While traditional WAR asks 'Who is the best player?', cheWAR asks 'Who is the most valuable?' MLR does not have a fielding component, so a player's value lies solely in how well they produce or prevent runs.",
+    "sections": [
+      {
+        "title": "Interpretation",
+        "blocks": [
+          {
+            "type": "text",
+            "value": "WAR provides a convenient way to compare the total value of all players, regardless of whether they are a hitter or a pitcher."
+          },
+          {
+            "type": "list",
+            "value": [
+              "0.0 WAR: A replacement-level player.",
+              "0.2 WAR: A solid, everyday player.",
+              "0.6+ WAR: An All-Star caliber player.",
+              "1.0+ WAR: An MVP candidate."
+            ]
+          },
+          {
+            "type": "text",
+            "value": "Since this is a counting stat, these values are benchmarks for a full season. Due to the nature of MLR, pitchers tend to accumulate WAR at a different rate than hitters. As a general rule of thumb, a pitcher often needs approximately double the WAR of a hitter to be considered in the same tier for All-Star or end-of-season award consideration."
+          }
+        ]
+      },
+      {
+        "title": "Calculation in MLR",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "WAR = Runs Above Replacement / Runs Per Win"
+          },
+          {
+            "type": "html",
+            "value": "<ol><li><strong>Total WAR Pool:</strong> The total WAR available for all players in a season is <strong>(Number of Regular Season Games) \u00c3\u2014 0.41</strong>. For recent seasons (16 sessions \u00c3\u2014 15 games = 240 games), this is <strong>98.4 WAR</strong> \u00e2\u20ac\u201d calibrated to match MLB's ~1,000 WAR available per full season.</li><li><strong>Hitter/Pitcher Split:</strong> The total WAR pool is split evenly, with 50% allocated to hitters and 50% to pitchers.</li><li><strong>Runs Per Win (RPW):</strong> A standard value of <strong>10 Runs Per Win</strong> is used \u00e2\u20ac\u201d every 10 runs above replacement equals 1 WAR.</li><li><strong>Runs Above Replacement (RAR):</strong> A player's Runs Above Average (RAA) is their RE24 for the season. A replacement-level run value is then calculated based on the total WAR pool and total playing time (Plate Appearances and Batters Faced) in the league.<div class=\"equation\" style=\"margin:6px 0\">RAR = RE24 + (Replacement Value per PA/BF \u00c3\u2014 Player's PA/BF)</div></li></ol>"
+          },
+          {
+            "type": "html",
+            "value": "<p>For more on the RE24-based WAR framework, see: <a href=\"https://blogs.fangraphs.com/calculating-war-using-re24/\" target=\"_blank\"><u>Calculating WAR Using RE24</u></a> (FanGraphs).</p>"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "WHIP": {
+    "name": "Walks and Hits per Inning Pitched",
+    "details": "WHIP measures how many baserunners a pitcher allows per inning pitched.",
+    "sections": [
+      {
+        "title": "Calculation",
+        "blocks": [
+          {
+            "type": "equation",
+            "value": "WHIP = (Walks + Hits) / Innings Pitched"
+          }
+        ]
+      }
+    ],
+    "rules": []
+  },
+  "WPA": {
+    "name": "Win Probability Added",
+    "details": "WPA measures a player's contribution to their team's win probability. It credits or debits a player based on how much their action in a plate appearance changed the likelihood of their team winning. WPA is zero-sum: every credit to a batter is an identical debit to the pitcher and vice versa. It is taken directly from the gamelogs.",
+    "sections": [],
+    "rules": []
+  }
+}

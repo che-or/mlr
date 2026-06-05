@@ -1,0 +1,155 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+International Signing Bonus Pool Space,2795,315,Tuck,163,738,PO,423,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,CRN,KIR,PO,PO,RGO,,,,,1
+Jamal Jackson,2815,341,Tuck,163,255,2B,86,T1,1,0,0,0,4.65%,-4.65%,0,1,1,1,1,CRN,KIR,2B,1B,1B,,,,,1
+Toky Oto,2773,665,Tuck,163,1,K,336,T1,1,2,0,0,-3.78%,3.78%,0,0,1,1,1,CRN,KIR,K,K,K,,,,,1
+Harry McPotterson,1703,35,Tuck,163,1,HR,34,T1,2,2,0,0,20.16%,-20.16%,2,1,1,1,1,CRN,KIR,HR,HR,2B,,163,,163,1
+Raja Ayun,2248,420,Tuck,163,806,PO,386,T1,2,0,0,2,-1.24%,1.24%,0,0,1,1,1,CRN,KIR,PO,RGO,PO,,,,,1
+Hakuna Moncada,2501,438,Skork Hooker,786,777,K,339,B1,0,0,0,2,-2.74%,2.74%,0,0,2,1,1,KIR,CRN,K,K,K,,,,,1
+Kenny Powers,2627,497,Skork Hooker,786,839,PO,342,B1,1,0,0,2,-2.20%,2.20%,0,0,2,1,1,KIR,CRN,PO,PO,K,,,,,1
+Broon Lurkst,2982,48,Skork Hooker,786,651,PO,397,B1,2,0,0,2,-1.72%,1.72%,0,0,2,1,1,KIR,CRN,PO,PO,PO,,,,,1
+Goaty McGoatFace,2878,369,Tuck,163,706,K,337,T2,0,0,0,2,-1.70%,1.70%,0,0,3,1,1,CRN,KIR,K,K,K,,,,,1
+Mama Luigi,2947,234,Tuck,163,205,HR,29,T2,1,0,0,2,8.88%,-8.88%,1,1,3,1,1,CRN,KIR,HR,HR,3B,,,,163,1
+Skarch McGooter,2914,911,Guillermo Griffey III,2829,293,RGO,382,T2,1,0,0,3,-1.15%,1.15%,0,0,3,1,1,CRN,KIR,RGO,RGO,PO,,,,,1
+Acuña Matata,3025,341,Guillermo Griffey III,2829,289,2B,52,T2,2,0,0,3,1.64%,-1.64%,0,0,3,1,1,CRN,KIR,2B,2B,2B,,,,,1
+International Signing Bonus Pool Space,2795,515,Guillermo Griffey III,2829,119,PO,396,T2,2,2,0,3,-2.53%,2.53%,0,0,3,1,1,CRN,KIR,PO,PO,PO,,,,,1
+Francesco Hardgust,2691,975,Skork Hooker,786,600,PO,375,B2,0,0,0,3,-2.53%,2.53%,0,0,4,1,1,KIR,CRN,PO,PO,K,,,,,1
+Osha Wott,3068,210,Skork Hooker,786,322,1B,112,B2,1,0,0,3,2.55%,-2.55%,0,1,4,1,1,KIR,CRN,1B,1B,1B,,,,,1
+Dixon Uraz,34,69,Skork Hooker,786,473,PO,404,B2,1,1,0,3,-2.57%,2.57%,0,0,4,1,1,KIR,CRN,PO,PO,DP,,,,,1
+Johnny Appleseed,2929,123,Skork Hooker,786,999,1B,124,B2,2,1,0,3,2.97%,-2.97%,0,1,4,1,1,KIR,CRN,1B,1B,1B,,,,,1
+Teddy Bigstick,2722,276,Skork Hooker,786,444,BB,168,B2,2,5,0,3,4.23%,-4.23%,0,0,4,1,1,KIR,CRN,BB,BB,BB,,,,,1
+Fatts Richard,2508,443,Skork Hooker,786,555,1B,112,B2,2,7,0,3,17.80%,-17.80%,2,0,4,1,1,KIR,CRN,1B,1B,1B,786,786,,,1
+Hakuna Moncada,2501,972,Skork Hooker,786,342,PO,370,B2,2,5,2,3,-8.28%,8.28%,0,0,4,1,1,KIR,CRN,PO,PO,K,,,,,1
+Jamal Jackson,2815,643,Guillermo Griffey III,2829,959,K,316,T3,0,0,2,3,-2.37%,2.37%,0,0,5,1,1,CRN,KIR,K,K,K,,,,,1
+Toky Oto,2773,322,Guillermo Griffey III,2829,113,FO,209,T3,1,0,2,3,-2.03%,2.03%,0,0,5,1,1,CRN,KIR,FO,FO,FO,,,,,1
+Harry McPotterson,1703,512,Guillermo Griffey III,2829,825,K,313,T3,2,0,2,3,-1.82%,1.82%,0,0,5,1,1,CRN,KIR,K,K,K,,,,,1
+Kenny Powers,2627,591,Skork Hooker,786,3,RGO,412,B3,0,0,2,3,-3.58%,3.58%,0,0,6,1,1,KIR,CRN,RGO,RGO,RGO,,,,,1
+Broon Lurkst,2982,906,Skork Hooker,786,3,1B,97,B3,1,0,2,3,3.31%,-3.31%,0,0,6,1,1,KIR,CRN,1B,1B,1B,,,,,1
+Broon Lurkst,2982,300,Skork Hooker,786,944,CS,356,B3,1,1,2,3,-6.41%,6.41%,0,0,6,1,1,KIR,CRN,CS 2B,CS 2B,CS,,,,,4
+Francesco Hardgust,2691,115,Skork Hooker,786,920,FO,195,B3,2,0,2,3,-2.59%,2.59%,0,0,6,1,1,KIR,CRN,FO,FO,FO,,,,,1
+Raja Ayun,2248,800,Guillermo Griffey III,2829,766,HR,34,T4,0,0,2,3,12.33%,-12.33%,1,1,7,1,1,CRN,KIR,HR,3B,2B,,,,2829,1
+Goaty McGoatFace,2878,1,Guillermo Griffey III,2829,592,RGO,409,T4,0,0,2,4,-1.53%,1.53%,0,0,7,1,1,CRN,KIR,RGO,RGO,RGO,,,,,1
+Mama Luigi,2947,432,Guillermo Griffey III,2829,412,HR,20,T4,1,0,2,4,8.60%,-8.60%,1,1,7,1,1,CRN,KIR,HR,3B,HR,,,,2829,1
+Skarch McGooter,2914,666,Guillermo Griffey III,2829,210,LGO,456,T4,1,0,2,5,-0.83%,0.83%,0,0,7,1,1,CRN,KIR,LGO,LGO,LGO,,,,,1
+Acuña Matata,3025,872,Guillermo Griffey III,2829,69,FO,197,T4,2,0,2,5,-0.82%,0.82%,0,0,7,1,1,CRN,KIR,FO,FO,FO,,,,,1
+Osha Wott,3068,753,Skork Hooker,786,479,FO,274,B4,0,0,2,5,-2.76%,2.76%,0,0,8,1,1,KIR,CRN,FO,FO,FO,,,,,1
+Dixon Uraz,34,500,Skork Hooker,786,920,RGO,420,B4,1,0,2,5,-2.21%,2.21%,0,0,8,1,1,KIR,CRN,RGO,RGO,RGO,,,,,1
+Johnny Appleseed,2929,979,Skork Hooker,786,853,1B,126,B4,2,0,2,5,2.17%,-2.17%,0,0,8,1,1,KIR,CRN,1B,1B,1B,,,,,1
+Teddy Bigstick,2722,596,Skork Hooker,786,881,K,285,B4,2,1,2,5,-3.63%,3.63%,0,0,8,1,1,KIR,CRN,K,K,K,,,,,1
+International Signing Bonus Pool Space,2795,215,Guillermo Griffey III,2829,69,BB,146,T5,0,0,2,5,0.73%,-0.73%,0,0,9,1,1,CRN,KIR,BB,BB,BB,,,,,1
+Jamal Jackson,2815,277,Guillermo Griffey III,2829,1,FO,276,T5,0,1,2,5,-0.84%,0.84%,0,0,9,1,1,CRN,KIR,FO,FO,FO,,,,,1
+Toky Oto,2773,801,Guillermo Griffey III,2829,277,DP,476,T5,1,1,2,5,-1.89%,1.89%,0,0,9,1,1,CRN,KIR,LGO,LGO,DP,,,,,1
+Fatts Richard,2508,420,Skork Hooker,786,713,FO,293,B5,0,0,2,5,-2.75%,2.75%,0,0,10,1,1,KIR,CRN,FO,FO,K,,,,,1
+Hakuna Moncada,2501,420,Skork Hooker,786,793,PO,373,B5,1,0,2,5,-2.12%,2.12%,0,0,10,1,1,KIR,CRN,PO,PO,K,,,,,1
+Kenny Powers,2627,157,Skork Hooker,786,873,K,284,B5,2,0,2,5,-1.22%,1.22%,0,0,10,1,1,KIR,CRN,K,K,FO,,,,,1
+Harry McPotterson,1703,750,Guillermo Griffey III,2829,69,K,319,T6,0,0,2,5,-0.37%,0.37%,0,0,11,1,1,CRN,KIR,K,K,K,,,,,1
+Raja Ayun,2248,669,Guillermo Griffey III,2829,321,PO,348,T6,1,0,2,5,-0.37%,0.37%,0,0,11,1,1,CRN,KIR,PO,PO,K,,,,,1
+Goaty McGoatFace,2878,69,Guillermo Griffey III,2829,500,RGO,431,T6,2,0,2,5,-0.33%,0.33%,0,0,11,1,1,CRN,KIR,RGO,RGO,RGO,,,,,1
+Broon Lurkst,2982,81,Skork Hooker,786,848,FO,233,B6,0,0,2,5,-2.48%,2.48%,0,0,12,1,1,KIR,CRN,FO,FO,FO,,,,,1
+Francesco Hardgust,2691,740,Skork Hooker,786,289,LGO,451,B6,1,0,2,5,-1.65%,1.65%,0,0,12,1,1,KIR,CRN,LGO,LGO,LGO,,,,,1
+Osha Wott,3068,569,Skork Hooker,786,827,FO,258,B6,2,0,2,5,-0.71%,0.71%,0,0,12,1,1,KIR,CRN,FO,FO,FO,,,,,1
+Jeff Newman,2931,811,Serengeti Fingers,2989,89,K,278,T1,0,0,0,0,-2.51%,2.51%,0,0,13,2,1,SEO,ACK,K,K,FO,,,,,1
+Juni Juni Panda,488,777,Serengeti Fingers,2989,514,K,263,T1,1,0,0,0,-2.18%,2.18%,0,0,13,2,1,SEO,ACK,K,K,FO,,,,,1
+Princess Peach,2606,369,Serengeti Fingers,2989,678,PO,309,T1,2,0,0,0,-1.76%,1.76%,0,0,13,2,1,SEO,ACK,PO,PO,K,,,,,1
+Billy TheKid,2804,1,Jerk McGurkin,3058,489,LGO,488,B1,0,0,0,0,-2.48%,2.48%,0,0,14,2,1,ACK,SEO,LGO,LGO,LGO,,,,,1
+Skippy Gustafsson,1773,12,Jerk McGurkin,3058,572,RGO,440,B1,1,0,0,0,-2.17%,2.17%,0,0,14,2,1,ACK,SEO,RGO,RGO,RGO,,,,,1
+Noah Diamond,2673,800,Jerk McGurkin,3058,338,RGO,462,B1,2,0,0,0,-1.79%,1.79%,0,0,14,2,1,ACK,SEO,RGO,RGO,LGO,,,,,1
+Hans Zahn,2915,90,Serengeti Fingers,2989,122,2B,32,T2,0,0,0,0,6.81%,-6.81%,0,1,15,2,1,SEO,ACK,2B,2B,2B,,,,,1
+Tencer Sporkelson,2329,777,Serengeti Fingers,2989,888,1B,111,T2,0,2,0,0,6.84%,-6.84%,0,0,15,2,1,SEO,ACK,1B,1B,1B,,,,,1
+Kyogo Jota,2987,127,Serengeti Fingers,2989,913,Sac,214,T2,0,5,0,0,-0.97%,0.97%,1,0,15,2,1,SEO,ACK,FO,FO,Sac,2989,,,,2
+Axkoa Griffin,2848,621,Serengeti Fingers,2989,128,DP,493,T2,1,1,0,1,-5.69%,5.69%,0,0,15,2,1,SEO,ACK,LGO,LGO,DP,,,,,1
+Jihmih Tyranus,2873,1,Jerk McGurkin,3058,838,FO,163,B2,0,0,0,1,-3.11%,3.11%,0,0,16,2,1,ACK,SEO,FO,BB,BB,,,,,1
+Wallace Grommet,492,333,Jerk McGurkin,3058,638,PO,305,B2,1,0,0,1,-2.69%,2.69%,0,0,16,2,1,ACK,SEO,PO,PO,K,,,,,1
+Enrique Rosales,2734,478,Jerk McGurkin,3058,938,RGO,460,B2,2,0,0,1,-2.13%,2.13%,0,0,16,2,1,ACK,SEO,RGO,RGO,LGO,,,,,1
+Johnny Dickshot,233,155,Serengeti Fingers,2989,122,2B,33,T3,0,0,0,1,5.93%,-5.93%,0,1,17,2,1,SEO,ACK,2B,2B,2B,,,,,1
+Superbone Threefinger,413,573,Serengeti Fingers,2989,389,FO,184,T3,0,2,0,1,-3.79%,3.79%,0,0,17,2,1,SEO,ACK,FO,FO,FO,,,,,1
+Jeff Newman,2931,905,Serengeti Fingers,2989,189,PO,284,T3,1,2,0,1,-3.57%,3.57%,0,0,17,2,1,SEO,ACK,PO,K,FO,,,,,1
+Juni Juni Panda,488,769,Serengeti Fingers,2989,773,HR,4,T3,2,2,0,1,19.47%,-19.47%,2,1,17,2,1,SEO,ACK,HR,HR,HR,,2989,,2989,1
+Princess Peach,2606,69,Serengeti Fingers,2989,123,2B,54,T3,2,0,0,3,1.33%,-1.33%,0,0,17,2,1,SEO,ACK,2B,2B,2B,,,,,1
+Hans Zahn,2915,983,Serengeti Fingers,2989,800,FO,183,T3,2,2,0,3,-2.21%,2.21%,0,0,17,2,1,SEO,ACK,FO,FO,FO,,,,,1
+Six,2474,420,Jerk McGurkin,3058,901,LGO,481,B3,0,0,0,3,-2.70%,2.70%,0,0,18,2,1,ACK,SEO,LGO,LGO,LGO,,,,,1
+Willie Gardner,2856,434,Jerk McGurkin,3058,601,FO,167,B3,1,0,0,3,-2.15%,2.15%,0,0,18,2,1,ACK,SEO,FO,FO,BB,,,,,1
+Serengeti Fingers,2989,420,Jerk McGurkin,3058,159,PO,261,B3,2,0,0,3,-1.42%,1.42%,0,0,18,2,1,ACK,SEO,PO,PO,FO,,,,,1
+Tencer Sporkelson,2329,250,Baberaham Lincoln,3004,901,K,349,T4,0,0,0,3,-0.98%,0.98%,0,0,19,2,1,SEO,ACK,K,K,K,,,,,1
+Kyogo Jota,2987,367,Baberaham Lincoln,3004,127,FO,240,T4,1,0,0,3,-0.83%,0.83%,0,0,19,2,1,SEO,ACK,FO,FO,FO,,,,,1
+Axkoa Griffin,2848,500,Baberaham Lincoln,3004,750,FO,250,T4,2,0,0,3,-0.82%,0.82%,0,0,19,2,1,SEO,ACK,FO,FO,FO,,,,,1
+Billy TheKid,2804,449,Jerk McGurkin,3058,279,BB,170,B4,0,0,0,3,3.96%,-3.96%,0,0,20,2,1,ACK,SEO,BB,BB,BB,,,,,1
+Skippy Gustafsson,1773,60,Jerk McGurkin,3058,559,LO,499,B4,0,1,0,3,-8.93%,8.93%,0,0,20,2,1,ACK,SEO,LGO,LGO,DP,,,,,1
+Noah Diamond,2673,777,Jerk McGurkin,3058,729,2B,48,B4,2,0,0,3,2.85%,-2.85%,0,1,20,2,1,ACK,SEO,2B,2B,2B,,,,,1
+Jihmih Tyranus,2873,469,Jerk McGurkin,3058,609,BB,140,B4,2,2,0,3,3.13%,-3.13%,0,0,20,2,1,ACK,SEO,BB,BB,BB,,,,,1
+Wallace Grommet,492,778,Peter Hoomanawanui,2504,727,1B,51,B4,2,4,0,3,9.76%,-9.76%,1,0,20,2,1,ACK,SEO,1B,1B,2B,,3058,,,1
+Enrique Rosales,2734,588,Peter Hoomanawanui,2504,101,LGO,487,B4,2,5,1,3,-10.23%,10.23%,0,0,20,2,1,ACK,SEO,LGO,LGO,LGO,,,,,1
+Johnny Dickshot,233,487,Baberaham Lincoln,3004,69,RGO,418,T5,0,0,1,3,-1.31%,1.31%,0,0,21,2,1,SEO,ACK,RGO,RGO,RGO,,,,,1
+Superbone Threefinger,413,500,Baberaham Lincoln,3004,666,FO,166,T5,1,0,1,3,-1.19%,1.19%,0,0,21,2,1,SEO,ACK,FO,FO,BB,,,,,1
+Jeff Newman,2931,632,Baberaham Lincoln,3004,500,BB,132,T5,2,0,1,3,0.96%,-0.96%,0,0,21,2,1,SEO,ACK,BB,BB,1B,,,,,1
+Jeff Newman,2931,326,Baberaham Lincoln,3004,765,CS,439,T5,2,1,1,3,-2.09%,2.09%,0,0,21,2,1,SEO,ACK,CS 2B,CS 2B,CS,,,,,4
+Six,2474,246,Peter Hoomanawanui,2504,709,RGO,463,B5,0,0,1,3,-4.27%,4.27%,0,0,22,2,1,ACK,SEO,RGO,RGO,LGO,,,,,1
+Willie Gardner,2856,543,Peter Hoomanawanui,2504,506,2B,37,B5,1,0,1,3,8.24%,-8.24%,0,0,22,2,1,ACK,SEO,2B,2B,2B,,,,,1
+XxBlaise Bailey Finnegan IIIxX,2897,227,Peter Hoomanawanui,2504,811,RGO,416,B5,1,2,1,3,-7.11%,7.11%,0,0,22,2,1,ACK,SEO,RGO,RGO,RGO,,,,,1
+Billy TheKid,2804,567,Peter Hoomanawanui,2504,457,BB,110,B5,2,3,1,3,5.36%,-5.36%,0,0,22,2,1,ACK,SEO,BB,BB,1B,,,,,1
+Skippy Gustafsson,1773,927,Peter Hoomanawanui,2504,373,LGO,446,B5,2,5,1,3,-12.36%,12.36%,0,0,22,2,1,ACK,SEO,LGO,LGO,RGO,,,,,1
+Juni Juni Panda,488,531,Jihmih Tyranus,2873,501,HR,30,T6,0,0,1,3,4.55%,-4.55%,1,1,23,2,1,SEO,ACK,HR,HR,2B,,,,2873,1
+Princess Peach,2606,777,Jihmih Tyranus,2873,111,K,334,T6,0,0,1,4,-0.37%,0.37%,0,0,23,2,1,SEO,ACK,K,K,K,,,,,1
+Hans Zahn,2915,300,Jihmih Tyranus,2873,426,BB,126,T6,1,0,1,4,0.28%,-0.28%,0,0,23,2,1,SEO,ACK,BB,BB,1B,,,,,1
+Hans Zahn,2915,426,Jihmih Tyranus,2873,932,CS,494,T6,1,1,1,4,-0.65%,0.65%,0,0,23,2,1,SEO,ACK,CS 2B,CS 2B,CS,,,,,4
+Tencer Sporkelson,2329,750,Jihmih Tyranus,2873,1,FO,251,T6,2,0,1,4,-0.33%,0.33%,0,0,23,2,1,SEO,ACK,FO,FO,FO,,,,,1
+Noah Diamond,2673,3,Anthony Burland,2379,741,K,262,B6,0,0,1,4,-2.48%,2.48%,0,0,24,2,1,ACK,SEO,K,K,FO,,,,,1
+Jihmih Tyranus,2873,199,Anthony Burland,2379,269,1B,70,B6,1,0,1,4,3.13%,-3.13%,0,0,24,2,1,ACK,SEO,1B,1B,1B,,,,,1
+Wallace Grommet,492,466,Anthony Burland,2379,68,DP,398,B6,1,1,1,4,-5.49%,5.49%,0,0,24,2,1,ACK,SEO,RGO,RGO,PO,,,,,1
+Makoto Date,2998,892,Ratryox,2953,900,HR,8,T1,0,0,0,0,11.33%,-11.33%,1,1,25,3,2,CRN,SEO,HR,HR,HR,,,,2953,1
+King Raj,2715,400,Ratryox,2953,605,FO,205,T1,0,0,0,1,-2.09%,2.09%,0,0,25,3,2,CRN,SEO,FO,FO,FO,,,,,1
+Friday Phd,2826,124,Ratryox,2953,72,2B,52,T1,1,0,0,1,4.03%,-4.03%,0,1,25,3,2,CRN,SEO,2B,2B,2B,,,,,1
+Harry McPotterson,1703,420,Ratryox,2953,33,K,387,T1,1,2,0,1,-3.12%,3.12%,0,0,25,3,2,CRN,SEO,K,K,PO,,,,,1
+Skarch McGooter,2914,327,Ratryox,2953,420,1B,93,T1,2,2,0,1,9.79%,-9.79%,1,0,25,3,2,CRN,SEO,1B,1B,1B,,2953,,,1
+Acuña Matata,3025,700,Ratryox,2953,153,RGO,453,T1,2,1,0,2,-2.66%,2.66%,0,0,25,3,2,CRN,SEO,RGO,RGO,LGO,,,,,1
+Jeff Newman,2931,896,Bobert Hideyoshi,2944,249,K,353,B1,0,0,0,2,-2.74%,2.74%,0,0,26,3,2,SEO,CRN,K,K,K,,,,,1
+Juni Juni Panda,488,765,Bobert Hideyoshi,2944,411,K,354,B1,1,0,0,2,-2.20%,2.20%,0,0,26,3,2,SEO,CRN,K,K,K,,,,,1
+Princess Peach,2606,794,Bobert Hideyoshi,2944,497,K,297,B1,2,0,0,2,-1.72%,1.72%,0,0,26,3,2,SEO,CRN,K,K,K,,,,,1
+Toky Oto,2773,696,Ratryox,2953,754,2B,58,T2,0,0,0,2,4.41%,-4.41%,0,0,27,3,2,CRN,SEO,2B,2B,2B,,,,,1
+Goaty McGoatFace,2878,69,Ratryox,2953,288,FO,219,T2,0,2,0,2,-2.84%,2.84%,0,0,27,3,2,CRN,SEO,FO,FO,FO,,,,,1
+Raja Ayun,2248,230,Ratryox,2953,351,BB,121,T2,1,2,0,2,0.93%,-0.93%,0,0,27,3,2,CRN,SEO,BB,BB,1B,,,,,1
+Makoto Date,2998,69,Ratryox,2953,566,LO,497,T2,1,4,0,2,-7.09%,7.09%,0,0,27,3,2,CRN,SEO,LGO,LGO,DP,,,,,1
+Hans Zahn,2915,1,Bobert Hideyoshi,2944,302,K,301,B2,0,0,0,2,-2.94%,2.94%,0,0,28,3,2,SEO,CRN,K,K,K,,,,,1
+Mîke Ock,2882,250,Bobert Hideyoshi,2944,802,RGO,448,B2,1,0,0,2,-2.53%,2.53%,0,0,28,3,2,SEO,CRN,RGO,RGO,RGO,,,,,1
+Kyogo Jota,2987,765,Bobert Hideyoshi,2944,313,PO,452,B2,2,0,0,2,-1.92%,1.92%,0,0,28,3,2,SEO,CRN,PO,PO,LGO,,,,,1
+King Raj,2715,390,Ratryox,2953,365,HR,25,T3,0,0,0,2,8.38%,-8.38%,1,1,29,3,2,CRN,SEO,HR,HR,3B,,,,2953,1
+Friday Phd,2826,597,Jerk McGurkin,3058,920,PO,323,T3,0,0,0,3,-1.14%,1.14%,0,0,29,3,2,CRN,SEO,PO,PO,K,,,,,1
+Harry McPotterson,1703,582,Jerk McGurkin,3058,696,BB,114,T3,1,0,0,3,0.93%,-0.93%,0,0,29,3,2,CRN,SEO,BB,BB,1B,,,,,1
+Skarch McGooter,2914,911,Jerk McGurkin,3058,582,PO,329,T3,1,1,0,3,-0.98%,0.98%,0,0,29,3,2,CRN,SEO,PO,PO,K,,,,,1
+Acuña Matata,3025,778,Jerk McGurkin,3058,299,LGO,479,T3,2,1,0,3,-1.86%,1.86%,0,0,29,3,2,CRN,SEO,LGO,LGO,LGO,,,,,1
+Axkoa Griffin,2848,612,Bobert Hideyoshi,2944,452,BB,160,B3,0,0,0,3,3.68%,-3.68%,0,1,30,3,2,SEO,CRN,BB,BB,BB,,,,,1
+Superbone Threefinger,413,882,Bobert Hideyoshi,2944,508,K,374,B3,0,1,0,3,-3.51%,3.51%,0,0,30,3,2,SEO,CRN,K,K,K,,,,,1
+Johnny Dickshot,233,1,Bobert Hideyoshi,2944,8,HR,7,B3,1,1,0,3,19.63%,-19.63%,2,1,30,3,2,SEO,CRN,HR,HR,HR,,,2944,2944,1
+Jeff Newman,2931,837,Bobert Hideyoshi,2944,128,K,291,B3,1,0,2,3,-3.10%,3.10%,0,0,30,3,2,SEO,CRN,K,K,K,,,,,1
+Juni Juni Panda,488,420,Bobert Hideyoshi,2944,734,K,314,B3,2,0,2,3,-2.59%,2.59%,0,0,30,3,2,SEO,CRN,K,K,K,,,,,1
+Toky Oto,2773,291,Jerk McGurkin,3058,228,2B,63,T4,0,0,2,3,6.17%,-6.17%,0,0,31,3,2,CRN,SEO,2B,2B,2B,,,,,1
+Toky Oto,2773,957,Jerk McGurkin,3058,969,SB,12,T4,0,2,2,3,3.55%,-3.55%,0,0,31,3,2,CRN,SEO,STEAL 3B,STEAL 3B,SB,,,,,4
+Jamal Jackson,2815,213,Jerk McGurkin,3058,579,PO,366,T4,0,3,2,3,-3.91%,3.91%,0,0,31,3,2,CRN,SEO,PO,PO,K,,,,,2
+Raja Ayun,2248,616,Jerk McGurkin,3058,849,K,233,T4,1,3,2,3,-7.30%,7.30%,0,0,31,3,2,CRN,SEO,K,K,Sac,,,,,2
+Makoto Date,2998,569,Jerk McGurkin,3058,199,PO,370,T4,2,3,2,3,-5.01%,5.01%,0,0,31,3,2,CRN,SEO,PO,PO,K,,,,,1
+Princess Peach,2606,260,Bobert Hideyoshi,2944,605,K,345,B4,0,0,2,3,-4.38%,4.38%,0,0,32,3,2,SEO,CRN,K,K,K,,,,,1
+Hans Zahn,2915,450,Bobert Hideyoshi,2944,901,RGO,451,B4,1,0,2,3,-3.91%,3.91%,0,0,32,3,2,SEO,CRN,RGO,RGO,LGO,,,,,1
+Mîke Ock,2882,321,Bobert Hideyoshi,2944,565,K,244,B4,2,0,2,3,-3.24%,3.24%,0,0,32,3,2,SEO,CRN,K,K,FO,,,,,1
+King Raj,2715,199,Jerk McGurkin,3058,30,BB,169,T5,0,0,2,3,2.08%,-2.08%,0,0,33,3,2,CRN,SEO,BB,FO,BB,,,,,1
+Big Cheech,2509,828,Jerk McGurkin,3058,961,SB,133,T5,0,1,2,3,3.71%,-3.71%,0,0,33,3,2,CRN,SEO,STEAL 2B,STEAL 2B,SB,,,,,4
+Friday Phd,2826,690,Jerk McGurkin,3058,272,PO,418,T5,0,2,2,3,-3.88%,3.88%,0,0,33,3,2,CRN,SEO,PO,PO,RGO,,,,,1
+Harry McPotterson,1703,978,Jerk McGurkin,3058,751,K,227,T5,1,2,2,3,-3.39%,3.39%,0,0,33,3,2,CRN,SEO,K,K,FO,,,,,1
+Skarch McGooter,2914,300,Jerk McGurkin,3058,639,PO,339,T5,2,2,2,3,-4.80%,4.80%,0,0,33,3,2,CRN,SEO,PO,PO,K,,,,,1
+Kyogo Jota,2987,275,Bobert Hideyoshi,2944,115,FO,160,B5,0,0,2,3,-5.77%,5.77%,0,0,34,3,2,SEO,CRN,FO,FO,BB,,,,,1
+Axkoa Griffin,2848,266,Bobert Hideyoshi,2944,160,BB,106,B5,1,0,2,3,5.33%,-5.33%,0,0,34,3,2,SEO,CRN,BB,BB,1B,,,,,1
+Superbone Threefinger,413,818,Bobert Hideyoshi,2944,202,K,384,B5,1,1,2,3,-5.74%,5.74%,0,0,34,3,2,SEO,CRN,K,K,PO,,,,,1
+Johnny Dickshot,233,186,Bobert Hideyoshi,2944,384,FO,198,B5,2,1,2,3,-9.20%,9.20%,0,0,34,3,2,SEO,CRN,FO,FO,FO,,,,,1
+Acuña Matata,3025,121,Anthony Burland,2379,522,RGO,401,T6,0,0,2,3,-1.71%,1.71%,0,0,35,3,2,CRN,SEO,RGO,RGO,RGO,,,,,1
+Toky Oto,2773,455,Anthony Burland,2379,29,LGO,426,T6,1,0,2,3,-1.62%,1.62%,0,0,35,3,2,CRN,SEO,LGO,LGO,RGO,,,,,1
+Jamal Jackson,2815,341,Anthony Burland,2379,845,LGO,496,T6,2,0,2,3,-1.50%,1.50%,0,0,35,3,2,CRN,SEO,LGO,LGO,LGO,,,,,1
+Jeff Newman,2931,879,Bobert Hideyoshi,2944,191,K,312,B6,0,0,2,3,-8.33%,8.33%,0,0,36,3,2,SEO,CRN,K,K,K,,,,,1
+Juni Juni Panda,488,726,Bobert Hideyoshi,2944,749,HR,23,B6,1,0,2,3,45.79%,-45.79%,1,1,36,3,2,SEO,CRN,HR,HR,HR,,,,2944,1
+Princess Peach,2606,629,Basil,2785,20,PO,391,B6,1,0,3,3,-5.09%,5.09%,0,0,36,3,2,SEO,CRN,PO,PO,PO,,,,,1
+Hans Zahn,2915,499,Basil,2785,159,K,340,B6,2,0,3,3,-5.07%,5.07%,0,0,36,3,2,SEO,CRN,K,K,K,,,,,1
+Raja Ayun,2248,230,Peter Hoomanawanui,2504,597,K,367,T7,0,0,3,3,-5.44%,5.44%,0,0,37,3,2,CRN,SEO,K,K,K,,,,,1
+Makoto Date,2998,412,Peter Hoomanawanui,2504,334,1B,78,T7,1,0,3,3,3.75%,-3.75%,0,1,37,3,2,CRN,SEO,1B,1B,1B,,,,,1
+Makoto Date,2998,262,Peter Hoomanawanui,2504,472,SB,210,T7,1,1,3,3,6.08%,-6.08%,0,0,37,3,2,CRN,SEO,STEAL 2B,STEAL 2B,SB,,,,,4
+Big Cheech,2509,768,Peter Hoomanawanui,2504,101,K,333,T7,1,2,3,3,-7.31%,7.31%,0,0,37,3,2,CRN,SEO,K,K,K,,,,,1
+Friday Phd,2826,476,Peter Hoomanawanui,2504,404,2B,72,T7,2,2,3,3,34.19%,-34.19%,1,0,37,3,2,CRN,SEO,2B,2B,1B,,2504,,,1
+Harry McPotterson,1703,434,Peter Hoomanawanui,2504,899,LGO,465,T7,2,2,3,4,-3.97%,3.97%,0,0,37,3,2,CRN,SEO,LGO,LGO,LGO,,,,,1
+Mîke Ock,2882,269,Basil,2785,121,BB,148,B7,0,0,3,4,8.33%,-8.33%,0,1,38,3,2,SEO,CRN,BB,BB,BB,,,,,1
+Smokey Zygowski,2945,892,Makoto Date,2998,892,HR,0,B7,0,1,3,4,68.93%,-68.93%,2,1,38,3,2,SEO,CRN,HR,HR,HR,,,2785,2998,1

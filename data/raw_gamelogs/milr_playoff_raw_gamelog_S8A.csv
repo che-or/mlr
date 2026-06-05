@@ -1,0 +1,135 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Toastman,2663,820,Goose Gordon,2675,840,3B,20,T1,0,0,0,0,9.57%,-9.57%,0,1,1,1,1,BAG,CCD,3B,3B,HR,,,,,1
+Doc Otis,2256,722,Goose Gordon,2675,598,1B,124,T1,0,3,0,0,4.15%,-4.15%,1,0,1,1,1,BAG,CCD,1B,1B,1B,2675,,,,2
+Doc Otis,2256,420,Goose Gordon,2675,704,SB,284,T1,0,1,0,1,3.31%,-3.31%,0,0,1,1,1,BAG,CCD,STEAL 2B,STEAL 2B,SB,,,,,4
+Brent Chillwater,2689,420,Goose Gordon,2675,506,1B,86,T1,0,2,0,1,5.42%,-5.42%,0,0,1,1,1,BAG,CCD,1B,1B,1B,,,,,1
+Stu PunDous,2487,96,Goose Gordon,2675,340,K,244,T1,0,5,0,1,-4.85%,4.85%,0,0,1,1,1,BAG,CCD,K,K,Sac,,,,,1
+B.a. Dickey,802,666,Goose Gordon,2675,244,PO,422,T1,1,5,0,1,-6.06%,6.06%,0,0,1,1,1,BAG,CCD,PO,PO,DP,,,,,1
+Mike LaViva,2761,96,Goose Gordon,2675,434,PO,338,T1,2,5,0,1,-5.61%,5.61%,0,0,1,1,1,BAG,CCD,PO,PO,K,,,,,1
+Jimmy Kalkowski,2546,14,Tasker Morris,287,719,K,295,B1,0,0,0,1,-2.79%,2.79%,0,0,2,1,1,CCD,BAG,K,K,K,,,,,1
+Chicano Bradley,2509,333,Tasker Morris,287,609,K,276,B1,1,0,0,1,-2.36%,2.36%,0,0,2,1,1,CCD,BAG,K,K,FO,,,,,1
+"Kiwi Cleveland, Esq.",2679,69,Tasker Morris,287,819,FO,250,B1,2,0,0,1,-1.88%,1.88%,0,0,2,1,1,CCD,BAG,FO,FO,FO,,,,,1
+Dutch Boggs,2625,345,Goose Gordon,2675,820,LGO,475,T2,0,0,0,1,-2.27%,2.27%,0,0,3,1,1,BAG,CCD,LGO,LGO,LGO,,,,,1
+Walter Yeller Weller,647,202,Goose Gordon,2675,23,FO,179,T2,1,0,0,1,-2.02%,2.02%,0,0,3,1,1,BAG,CCD,FO,FO,FO,,,,,1
+Tasker Morris,287,420,Goose Gordon,2675,575,BB,155,T2,2,0,0,1,1.88%,-1.88%,0,0,3,1,1,BAG,CCD,BB,BB,BB,,,,,1
+Toastman,2663,820,Goose Gordon,2675,555,K,265,T2,2,1,0,1,-3.57%,3.57%,0,0,3,1,1,BAG,CCD,K,K,FO,,,,,1
+Laars Nootbaar jr,2730,259,Tasker Morris,287,650,LGO,391,B2,0,0,0,1,-3.11%,3.11%,0,0,4,1,1,CCD,BAG,LGO,LGO,PO,,,,,1
+Geno Scaramucci,165,777,Tasker Morris,287,444,K,333,B2,1,0,0,1,-2.69%,2.69%,0,0,4,1,1,CCD,BAG,K,K,K,,,,,1
+Skippy Gustafsson,1773,973,Tasker Morris,287,570,RGO,403,B2,2,0,0,1,-2.13%,2.13%,0,0,4,1,1,CCD,BAG,RGO,RGO,RGO,,,,,1
+Doc Otis,2256,432,Goose Gordon,2675,923,LGO,491,T3,0,0,0,1,-2.37%,2.37%,0,0,5,1,1,BAG,CCD,LGO,LGO,LGO,,,,,1
+Brent Chillwater,2689,112,Goose Gordon,2675,477,PO,365,T3,1,0,0,1,-2.03%,2.03%,0,0,5,1,1,BAG,CCD,PO,PO,K,,,,,1
+Stu PunDous,2487,355,Goose Gordon,2675,886,LGO,469,T3,2,0,0,1,-1.82%,1.82%,0,0,5,1,1,BAG,CCD,LGO,LGO,LGO,,,,,1
+Tucker Doubt,567,133,Tasker Morris,287,520,RGO,387,B3,0,0,0,1,-3.58%,3.58%,0,0,6,1,1,CCD,BAG,RGO,RGO,PO,,,,,1
+Franklin Poffenberger,2747,515,Tasker Morris,287,120,RGO,395,B3,1,0,0,1,-3.10%,3.10%,0,0,6,1,1,CCD,BAG,RGO,RGO,PO,,,,,1
+Goose Gordon,2675,687,Tasker Morris,287,220,LGO,467,B3,2,0,0,1,-2.59%,2.59%,0,0,6,1,1,CCD,BAG,LGO,LGO,LGO,,,,,1
+B.a. Dickey,802,555,Goose Gordon,2675,107,PO,448,T4,0,0,0,1,-2.44%,2.44%,0,0,7,1,1,BAG,CCD,PO,PO,RGO,,,,,1
+Mike LaViva,2761,13,Goose Gordon,2675,333,PO,320,T4,1,0,0,1,-2.13%,2.13%,0,0,7,1,1,BAG,CCD,PO,PO,K,,,,,1
+Dutch Boggs,2625,621,Goose Gordon,2675,897,PO,276,T4,2,0,0,1,-1.93%,1.93%,0,0,7,1,1,BAG,CCD,PO,PO,FO,,,,,1
+Jimmy Kalkowski,2546,396,Tasker Morris,287,869,LGO,473,B4,0,0,0,1,-4.38%,4.38%,0,0,8,1,1,CCD,BAG,LGO,LGO,LGO,,,,,1
+Chicano Bradley,2509,777,Tasker Morris,287,400,PO,377,B4,1,0,0,1,-3.91%,3.91%,0,0,8,1,1,CCD,BAG,PO,PO,K,,,,,1
+"Kiwi Cleveland, Esq.",2679,650,Tasker Morris,287,201,LGO,449,B4,2,0,0,1,-3.24%,3.24%,0,0,8,1,1,CCD,BAG,LGO,LGO,RGO,,,,,1
+Walter Yeller Weller,647,909,Goose Gordon,2675,618,FO,291,T5,0,0,0,1,-2.29%,2.29%,0,0,9,1,1,BAG,CCD,FO,FO,K,,,,,1
+Tasker Morris,287,420,Goose Gordon,2675,495,1B,75,T5,1,0,0,1,1.81%,-1.81%,0,0,9,1,1,BAG,CCD,1B,1B,1B,,,,,1
+Toastman,2663,575,Goose Gordon,2675,257,PO,318,T5,1,1,0,1,-2.02%,2.02%,0,0,9,1,1,BAG,CCD,PO,PO,K,,,,,1
+Doc Otis,2256,1,Goose Gordon,2675,618,PO,383,T5,2,1,0,1,-3.78%,3.78%,0,0,9,1,1,BAG,CCD,PO,PO,PO,,,,,1
+Laars Nootbaar jr,2730,423,Tasker Morris,287,830,LGO,407,B5,0,0,0,1,-5.77%,5.77%,0,0,10,1,1,CCD,BAG,LGO,LGO,RGO,,,,,1
+Geno Scaramucci,165,583,Tasker Morris,287,680,1B,97,B5,1,0,0,1,5.33%,-5.33%,0,0,10,1,1,CCD,BAG,1B,1B,1B,,,,,1
+Geno Scaramucci,165,500,Tasker Morris,287,958,CS,458,B5,1,1,0,1,-10.49%,10.49%,0,0,10,1,1,CCD,BAG,CS 2B,CS 2B,CS,,,,,4
+Skippy Gustafsson,1773,818,Tasker Morris,287,22,FO,204,B5,2,0,0,1,-4.45%,4.45%,0,0,10,1,1,CCD,BAG,FO,FO,FO,,,,,1
+Brent Chillwater,2689,215,Goose Gordon,2675,31,FO,184,T6,0,0,0,1,-1.71%,1.71%,0,0,11,1,1,BAG,CCD,FO,FO,FO,,,,,1
+Stu PunDous,2487,965,Goose Gordon,2675,724,K,241,T6,1,0,0,1,-1.62%,1.62%,0,0,11,1,1,BAG,CCD,K,K,FO,,,,,1
+B.a. Dickey,802,618,Goose Gordon,2675,804,FO,186,T6,2,0,0,1,-1.50%,1.50%,0,0,11,1,1,BAG,CCD,FO,FO,FO,,,,,1
+Tucker Doubt,567,121,Toastman,2663,250,1B,129,B6,0,0,0,1,8.33%,-8.33%,0,0,12,1,1,CCD,BAG,1B,1B,1B,,,,,1
+Franklin Poffenberger,2747,711,Toastman,2663,930,FO,219,B6,0,1,0,1,-9.27%,9.27%,0,0,12,1,1,CCD,BAG,FO,FO,FO,,,,,1
+LaCarpetron Dukemarriot,775,500,Toastman,2663,842,PO,342,B6,1,1,0,1,-7.88%,7.88%,0,0,12,1,1,CCD,BAG,PO,PO,K,,,,,1
+Jimmy Kalkowski,2546,777,Toastman,2663,54,FO,277,B6,2,1,0,1,-13.92%,13.92%,0,0,12,1,1,CCD,BAG,FO,FO,FO,,,,,1
+Joey McCarty,390,881,Ben Bramly,238,244,K,363,T1,0,0,0,0,-2.51%,2.51%,0,0,13,2,1,LAC,BIS,K,PO,K,,,,,1
+Hannibal Bligh,1724,501,Ben Bramly,238,102,RGO,399,T1,1,0,0,0,-2.18%,2.18%,0,0,13,2,1,LAC,BIS,RGO,RGO,PO,,,,,1
+Roosevelt Sandoval,2789,415,Ben Bramly,238,509,1B,94,T1,2,0,0,0,1.98%,-1.98%,0,1,13,2,1,LAC,BIS,1B,1B,1B,,,,,1
+Roosevelt Sandoval,2789,251,Ben Bramly,238,415,SB,164,T1,2,1,0,0,1.07%,-1.07%,0,0,13,2,1,LAC,BIS,STEAL 2B,STEAL 2B,SB,,,,,4
+Kevin James,2659,725,Ben Bramly,238,801,2B,76,T1,2,2,0,0,11.79%,-11.79%,1,0,13,2,1,LAC,BIS,2B,2B,1B,,238,,,1
+Emerson,703,11,Ben Bramly,238,500,LGO,489,T1,2,2,0,1,-4.22%,4.22%,0,0,13,2,1,LAC,BIS,LGO,LGO,LGO,,,,,1
+Nicholas Fouss,1776,344,Holden Summers,10,842,LGO,498,B1,0,0,0,1,-2.79%,2.79%,0,0,14,2,1,BIS,LAC,LGO,LGO,LGO,,,,,1
+Fik Seiko,2207,700,Holden Summers,10,107,RGO,407,B1,1,0,0,1,-2.36%,2.36%,0,0,14,2,1,BIS,LAC,RGO,RGO,RGO,,,,,1
+Dylan Green,305,7,Holden Summers,10,831,FO,176,B1,2,0,0,1,-1.88%,1.88%,0,0,14,2,1,BIS,LAC,FO,FO,BB,,,,,1
+Heechul Kim,671,741,Ben Bramly,238,682,2B,59,T2,0,0,0,1,5.58%,-5.58%,0,1,15,2,1,LAC,BIS,2B,2B,2B,,,,,1
+Holden Summers,10,39,Ben Bramly,238,544,LGO,495,T2,0,2,0,1,-3.75%,3.75%,0,0,15,2,1,LAC,BIS,LGO,LGO,LGO,,,,,1
+Chuck Tingle,355,504,Ben Bramly,238,799,K,295,T2,1,2,0,1,-3.35%,3.35%,0,0,15,2,1,LAC,BIS,K,K,K,,,,,1
+Hunter Scott CCCXXVII,786,11,Ben Bramly,238,69,2B,58,T2,2,2,0,1,11.48%,-11.48%,1,0,15,2,1,LAC,BIS,2B,2B,2B,,238,,,1
+Joey McCarty,390,1000,Ben Bramly,238,344,K,344,T2,2,2,0,2,-3.57%,3.57%,0,0,15,2,1,LAC,BIS,K,K,K,,,,,1
+Monty Johnson,557,939,Holden Summers,10,741,FO,198,B2,0,0,0,2,-2.94%,2.94%,0,0,16,2,1,BIS,LAC,FO,FO,FO,,,,,1
+Francis Swagger,610,213,Holden Summers,10,685,LGO,472,B2,1,0,0,2,-2.53%,2.53%,0,0,16,2,1,BIS,LAC,LGO,LGO,LGO,,,,,1
+Robbie,1745,532,Holden Summers,10,497,2B,35,B2,2,0,0,2,3.70%,-3.70%,0,1,16,2,1,BIS,LAC,2B,2B,2B,,,,,1
+Phillip Mahooters,2253,750,Holden Summers,10,824,1B,74,B2,2,2,0,2,10.90%,-10.90%,1,0,16,2,1,BIS,LAC,1B,1B,1B,,10,,,1
+Phillip Mahooters,2253,500,Holden Summers,10,404,SB,96,B2,2,1,1,2,1.29%,-1.29%,0,0,16,2,1,BIS,LAC,STEAL 2B,STEAL 2B,SB,,,,,4
+Rocco Rudnikov,114,225,Holden Summers,10,460,K,235,B2,2,2,1,2,-5.98%,5.98%,0,0,16,2,1,BIS,LAC,K,K,FO,,,,,1
+Hannibal Bligh,1724,223,Ben Bramly,238,215,HR,8,T3,0,0,1,2,11.83%,-11.83%,1,1,17,2,1,LAC,BIS,HR,HR,HR,,,,238,1
+Roosevelt Sandoval,2789,415,Ben Bramly,238,1,RGO,414,T3,0,0,1,3,-1.72%,1.72%,0,0,17,2,1,LAC,BIS,RGO,RGO,RGO,,,,,1
+Kevin James,2659,404,Ben Bramly,238,214,FO,190,T3,1,0,1,3,-1.56%,1.56%,0,0,17,2,1,LAC,BIS,FO,FO,FO,,,,,1
+Emerson,703,944,Ben Bramly,238,645,K,299,T3,2,0,1,3,-1.30%,1.30%,0,0,17,2,1,LAC,BIS,K,K,K,,,,,1
+Brian Taylor,1838,605,Holden Summers,10,753,BB,148,B3,0,0,1,3,4.11%,-4.11%,0,1,18,2,1,BIS,LAC,BB,BB,BB,,,,,1
+Nicholas Fouss,1776,737,Holden Summers,10,363,K,374,B3,0,1,1,3,-4.06%,4.06%,0,0,18,2,1,BIS,LAC,K,PO,K,,,,,1
+Fik Seiko,2207,804,Holden Summers,10,839,2B,35,B3,1,1,1,3,12.83%,-12.83%,0,1,18,2,1,BIS,LAC,2B,2B,2B,,,,,1
+Dylan Green,305,707,Kenny Powers,2627,196,LGO,489,B3,1,6,1,3,-10.72%,10.72%,0,0,18,2,1,BIS,LAC,LGO,LGO,LGO,,,,,2
+Monty Johnson,557,591,Kenny Powers,2627,588,HR,3,B3,2,6,1,3,39.65%,-39.65%,3,1,18,2,1,BIS,LAC,HR,HR,HR,10,10,,2627,1
+Francis Swagger,610,828,Kenny Powers,2627,542,PO,286,B3,2,0,4,3,-1.62%,1.62%,0,0,18,2,1,BIS,LAC,PO,PO,K,,,,,1
+Heechul Kim,671,310,Simba,1792,221,1B,89,T4,0,0,4,3,4.68%,-4.68%,0,0,19,2,1,LAC,BIS,1B,1B,1B,,,,,1
+Kenny Powers,2627,973,Simba,1792,414,DP,441,T4,0,1,4,3,-12.01%,12.01%,0,0,19,2,1,LAC,BIS,RGO,RGO,DP,,,,,1
+Chuck Tingle,355,540,Simba,1792,271,K,269,T4,2,0,4,3,-2.78%,2.78%,0,0,19,2,1,LAC,BIS,K,K,FO,,,,,1
+Robbie,1745,758,Kenny Powers,2627,188,RGO,430,B4,0,0,4,3,-1.87%,1.87%,0,0,20,2,1,BIS,LAC,RGO,RGO,RGO,,,,,1
+Phillip Mahooters,2253,555,Kenny Powers,2627,813,FO,258,B4,1,0,4,3,-1.74%,1.74%,0,0,20,2,1,BIS,LAC,FO,FO,FO,,,,,1
+Rocco Rudnikov,114,667,Kenny Powers,2627,363,K,304,B4,2,0,4,3,-1.49%,1.49%,0,0,20,2,1,BIS,LAC,K,K,K,,,,,1
+Hunter Scott CCCXXVII,786,92,Simba,1792,813,K,279,T5,0,0,4,3,-4.98%,4.98%,0,0,21,2,1,LAC,BIS,K,K,FO,,,,,1
+Rocky Li,2585,420,Simba,1792,11,PO,409,T5,1,0,4,3,-4.32%,4.32%,0,0,21,2,1,LAC,BIS,PO,PO,RGO,,,,,1
+Hannibal Bligh,1724,880,Simba,1792,1,1B,121,T5,2,0,4,3,4.19%,-4.19%,0,0,21,2,1,LAC,BIS,1B,1B,1B,,,,,1
+Roosevelt Sandoval,2789,175,Simba,1792,744,RGO,431,T5,2,1,4,3,-7.80%,7.80%,0,0,21,2,1,LAC,BIS,RGO,RGO,RGO,,,,,1
+Brian Taylor,1838,330,Kenny Powers,2627,696,K,366,B5,0,0,4,3,-1.37%,1.37%,0,0,22,2,1,BIS,LAC,K,K,K,,,,,1
+Nicholas Fouss,1776,374,Kenny Powers,2627,196,FO,178,B5,1,0,4,3,-1.30%,1.30%,0,0,22,2,1,BIS,LAC,FO,FO,FO,,,,,1
+Fik Seiko,2207,576,Kenny Powers,2627,936,PO,360,B5,2,0,4,3,-1.14%,1.14%,0,0,22,2,1,BIS,LAC,PO,PO,K,,,,,1
+Kevin James,2659,872,Simba,1792,371,LGO,499,T6,0,0,4,3,-6.73%,6.73%,0,0,23,2,1,LAC,BIS,LGO,LGO,LGO,,,,,1
+Mr Peggable,259,111,Simba,1792,641,LGO,470,T6,1,0,4,3,-6.00%,6.00%,0,0,23,2,1,LAC,BIS,LGO,LGO,LGO,,,,,1
+Heechul Kim,671,908,Simba,1792,91,FO,183,T6,2,0,4,3,-5.13%,5.13%,0,0,23,2,1,LAC,BIS,FO,FO,FO,,,,,1
+Walter Yeller Weller,647,404,Derek Rasmussen,2588,811,RGO,407,T1,0,0,0,0,-2.51%,2.51%,0,0,24,3,2,BAG,BIS,RGO,RGO,RGO,,,,,1
+Dutch Boggs,2625,897,Derek Rasmussen,2588,80,FO,183,T1,1,0,0,0,-2.18%,2.18%,0,0,24,3,2,BAG,BIS,FO,FO,FO,,,,,1
+Toastman,2663,511,Derek Rasmussen,2588,211,K,300,T1,2,0,0,0,-1.76%,1.76%,0,0,24,3,2,BAG,BIS,K,PO,K,,,,,1
+Phillip Mahooters,2253,355,Matias Thagod,2723,60,K,295,B1,0,0,0,0,-2.48%,2.48%,0,0,25,3,2,BIS,BAG,K,K,K,,,,,1
+Robbie,1745,602,Matias Thagod,2723,745,BB,143,B1,1,0,0,0,2.28%,-2.28%,0,1,25,3,2,BIS,BAG,BB,BB,BB,,,,,1
+Fik Seiko,2207,113,Matias Thagod,2723,745,PO,368,B1,1,1,0,0,-2.55%,2.55%,0,0,25,3,2,BIS,BAG,PO,PO,K,,,,,1
+Monty Johnson,557,828,Matias Thagod,2723,879,2B,51,B1,2,1,0,0,13.34%,-13.34%,1,1,25,3,2,BIS,BAG,2B,2B,2B,,,2723,,1
+Brian Taylor,1838,879,Matias Thagod,2723,14,BB,135,B1,2,2,1,0,1.07%,-1.07%,0,1,25,3,2,BIS,BAG,BB,BB,1B,,,,,1
+Kev Biffington,2276,14,Matias Thagod,2723,55,2B,41,B1,2,4,1,0,16.51%,-16.51%,2,0,25,3,2,BIS,BAG,2B,2B,2B,,2723,2723,,1
+Rocco Rudnikov,114,69,B.a. Dickey,802,377,K,308,B1,2,2,3,0,-2.27%,2.27%,0,0,25,3,2,BIS,BAG,K,K,K,,,,,1
+Brent Chillwater,2689,735,Derek Rasmussen,2588,998,K,263,T2,0,0,3,0,-2.30%,2.30%,0,0,26,3,2,BAG,BIS,K,K,FO,,,,,1
+Mike LaViva,2761,213,Derek Rasmussen,2588,735,LGO,478,T2,1,0,3,0,-1.79%,1.79%,0,0,26,3,2,BAG,BIS,LGO,LGO,LGO,,,,,1
+Doc Otis,2256,601,Derek Rasmussen,2588,513,1B,88,T2,2,0,3,0,1.76%,-1.76%,0,0,26,3,2,BAG,BIS,1B,1B,1B,,,,,1
+Tuck,163,704,Derek Rasmussen,2588,200,LGO,496,T2,2,1,3,0,-2.94%,2.94%,0,0,26,3,2,BAG,BIS,LGO,LGO,LGO,,,,,1
+Francis Swagger,610,375,B.a. Dickey,802,734,RGO,359,B2,0,0,3,0,-0.95%,0.95%,0,0,27,3,2,BIS,BAG,RGO,RGO,K,,,,,1
+Matt Himynamis,361,880,B.a. Dickey,802,734,BB,146,B2,1,0,3,0,0.91%,-0.91%,0,0,27,3,2,BIS,BAG,BB,BB,BB,,,,,1
+Phillip Mahooters,2253,500,B.a. Dickey,802,17,DP,483,B2,1,1,3,0,-2.49%,2.49%,0,0,27,3,2,BIS,BAG,LGO,LGO,DP,,,,,1
+Sid Houn,2258,723,Derek Rasmussen,2588,111,RGO,388,T3,0,0,3,0,-2.28%,2.28%,0,0,28,3,2,BAG,BIS,RGO,RGO,PO,,,,,1
+Wheeler,529,867,Derek Rasmussen,2588,300,LGO,433,T3,1,0,3,0,-1.87%,1.87%,0,0,28,3,2,BAG,BIS,LGO,LGO,RGO,,,,,1
+Walter Yeller Weller,647,599,Derek Rasmussen,2588,211,RGO,388,T3,2,0,3,0,-1.22%,1.22%,0,0,28,3,2,BAG,BIS,RGO,RGO,PO,,,,,1
+Robbie,1745,221,B.a. Dickey,802,634,RGO,413,B3,0,0,3,0,-0.81%,0.81%,0,0,29,3,2,BIS,BAG,RGO,RGO,RGO,,,,,1
+Fik Seiko,2207,394,B.a. Dickey,802,369,2B,25,B3,1,0,3,0,1.45%,-1.45%,0,0,29,3,2,BIS,BAG,2B,2B,3B,,,,,1
+Monty Johnson,557,630,B.a. Dickey,802,202,RGO,428,B3,1,2,3,0,-1.21%,1.21%,0,0,29,3,2,BIS,BAG,RGO,RGO,RGO,,,,,1
+Brian Taylor,1838,707,B.a. Dickey,802,2,K,295,B3,2,3,3,0,-1.57%,1.57%,0,0,29,3,2,BIS,BAG,K,K,K,,,,,1
+Dutch Boggs,2625,483,Derek Rasmussen,2588,499,HR,16,T4,0,0,3,0,8.04%,-8.04%,1,1,30,3,2,BAG,BIS,HR,HR,HR,,,,2588,1
+Toastman,2663,500,Derek Rasmussen,2588,811,PO,311,T4,0,0,3,1,-3.22%,3.22%,0,0,30,3,2,BAG,BIS,PO,PO,K,,,,,1
+Brent Chillwater,2689,677,Derek Rasmussen,2588,812,BB,135,T4,1,0,3,1,3.54%,-3.54%,0,0,30,3,2,BAG,BIS,BB,BB,1B,,,,,1
+Mike LaViva,2761,113,Derek Rasmussen,2588,600,DP,487,T4,1,1,3,1,-8.08%,8.08%,0,0,30,3,2,BAG,BIS,LGO,LGO,DP,,,,,1
+Kev Biffington,2276,257,B.a. Dickey,802,434,FO,177,B4,0,0,3,1,-1.07%,1.07%,0,0,31,3,2,BIS,BAG,FO,FO,BB,,,,,1
+Rocco Rudnikov,114,113,B.a. Dickey,802,101,HR,12,B4,1,0,3,1,6.20%,-6.20%,1,1,31,3,2,BIS,BAG,HR,HR,HR,,,,802,1
+Francis Swagger,610,100,B.a. Dickey,802,327,K,227,B4,1,0,4,1,-0.53%,0.53%,0,0,31,3,2,BIS,BAG,K,K,FO,,,,,1
+Matt Himynamis,361,45,B.a. Dickey,802,444,RGO,399,B4,2,0,4,1,-0.52%,0.52%,0,0,31,3,2,BIS,BAG,RGO,RGO,PO,,,,,1
+Doc Otis,2256,13,Derek Rasmussen,2588,291,K,278,T5,0,0,4,1,-2.30%,2.30%,0,0,32,3,2,BAG,BIS,K,K,FO,,,,,1
+Tuck,163,478,Derek Rasmussen,2588,13,LGO,465,T5,1,0,4,1,-1.67%,1.67%,0,0,32,3,2,BAG,BIS,LGO,LGO,LGO,,,,,1
+Sid Houn,2258,975,Derek Rasmussen,2588,777,K,198,T5,2,0,4,1,-0.98%,0.98%,0,0,32,3,2,BAG,BIS,K,K,FO,,,,,1
+Phillip Mahooters,2253,350,B.a. Dickey,802,983,RGO,367,B5,0,0,4,1,-0.30%,0.30%,0,0,33,3,2,BIS,BAG,RGO,RGO,K,,,,,1
+Robbie,1745,739,B.a. Dickey,802,699,2B,40,B5,1,0,4,1,0.68%,-0.68%,0,0,33,3,2,BIS,BAG,2B,2B,2B,,,,,1
+Fik Seiko,2207,175,B.a. Dickey,802,739,LGO,436,B5,1,2,4,1,-0.54%,0.54%,0,0,33,3,2,BIS,BAG,LGO,LGO,RGO,,,,,1
+Monty Johnson,557,149,B.a. Dickey,802,511,PO,362,B5,2,2,4,1,-0.67%,0.67%,0,0,33,3,2,BIS,BAG,PO,PO,K,,,,,1
+Wheeler,529,590,Derek Rasmussen,2588,569,2B,21,T6,0,0,4,1,4.99%,-4.99%,0,1,34,3,2,BAG,BIS,2B,2B,HR,,,,,1
+Jefferson Saelflex,268,420,Ben Bramly,238,804,RGO,384,T6,0,2,4,1,-3.71%,3.71%,0,0,34,3,2,BAG,BIS,RGO,RGO,PO,,,,,1
+Dutch Boggs,2625,690,Ben Bramly,238,742,3B,52,T6,1,3,4,1,7.27%,-7.27%,1,0,34,3,2,BAG,BIS,3B,2B,2B,2588,,,,2
+Toastman,2663,366,Ben Bramly,238,1000,PO,366,T6,1,3,4,2,-7.02%,7.02%,0,0,34,3,2,BAG,BIS,PO,PO,K,,,,,1
+Brent Chillwater,2689,311,Ben Bramly,238,648,K,337,T6,2,3,4,2,-5.29%,5.29%,0,0,34,3,2,BAG,BIS,K,K,K,,,,,1

@@ -1,7 +1,7 @@
 {
   "S1": {
-    "AL": ["BAL", "DET", "HOU", "MIN", "OAK", "TOR"],
-    "NL": ["ARI", "ATL", "NYM", "PHI", "PIT", "WAS"]
+    "American League": ["BAL", "DET", "HOU", "MIN", "OAK", "TOR"],
+    "National League": ["ARI", "ATL", "NYM", "PHI", "PIT", "WAS"]
   },
   "S2": {
     "AL West": ["DET", "HOU", "OAK", "SEA", "TEX"],

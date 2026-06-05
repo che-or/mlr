@@ -1,0 +1,9 @@
+{
+    "S1": {
+        "GIB": ["GIB", "ORL", "SYC", "VAN", "WBK", "WOO"]
+    },
+    "S2": {
+        "GIB": ["FUB", "GIB", "NOL", "ORL", "SYC", "VIP", "WBK", "WOO"]
+    },
+    "S3": "S2"
+}

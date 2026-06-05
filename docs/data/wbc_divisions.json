@@ -1,0 +1,6 @@
+{
+    "S1": {
+        "Group A": ["BRB", "SCO", "SWZ", "VC"],
+        "Group B" : ["BH", "GRE", "JMC", "SM"]
+    }
+}
