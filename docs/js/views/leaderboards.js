@@ -264,9 +264,49 @@ async function renderLeaderboard() {
 
         // ── Render ─────────────────────────────────────────────────────────
         display.innerHTML = `<h2 class="section-title">${stat} Leaderboards</h2>`;
+
+        const mobileSelector = document.createElement('div');
+        mobileSelector.className = 'lb-mobile-selector';
+
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'lb-nav-btn';
+        prevBtn.textContent = '‹';
+
+        const mobileSelect = document.createElement('select');
+        mobileSelect.className = 'lb-mobile-select';
+        cards.forEach((card, i) => {
+            const opt = document.createElement('option');
+            opt.value = String(i);
+            opt.textContent = card.label;
+            mobileSelect.appendChild(opt);
+        });
+
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'lb-nav-btn';
+        nextBtn.textContent = '›';
+
+        mobileSelector.appendChild(prevBtn);
+        mobileSelector.appendChild(mobileSelect);
+        mobileSelector.appendChild(nextBtn);
+        display.appendChild(mobileSelector);
+
         const grid = document.createElement('div');
         grid.className = 'leaderboard-grid';
-        cards.forEach(card => grid.appendChild(buildCard(card, stat, topN)));
+        const cardEls = cards.map(card => {
+            const el = buildCard(card, stat, topN);
+            grid.appendChild(el);
+            return el;
+        });
+
+        const setActiveCard = (idx) => {
+            mobileSelect.value = String(idx);
+            cardEls.forEach((el, i) => el.classList.toggle('lb-active', i === idx));
+        };
+
+        if (cardEls.length > 0) cardEls[0].classList.add('lb-active');
+        mobileSelect.addEventListener('change', () => setActiveCard(parseInt(mobileSelect.value)));
+        prevBtn.addEventListener('click', () => setActiveCard((parseInt(mobileSelect.value) - 1 + cardEls.length) % cardEls.length));
+        nextBtn.addEventListener('click', () => setActiveCard((parseInt(mobileSelect.value) + 1) % cardEls.length));
         display.appendChild(grid);
         wirePlayerLinks(display);
 
@@ -393,8 +433,8 @@ function buildTableHTML(data, stat, topN, showTeam, showSeason) {
     }
 
     let html = '<table class="stats-table"><thead><tr><th>Rank</th><th>Player</th>';
-    if (showTeam)   html += '<th>Team</th>';
-    if (showSeason) html += '<th>Season</th>';
+    if (showTeam)   html += '<th class="lb-short-col">Team</th>';
+    if (showSeason) html += '<th class="lb-short-col">Season</th>';
     html += `<th>${stat}</th></tr></thead><tbody>`;
 
     let lastVal = null, lastRank = 0;
@@ -406,8 +446,8 @@ function buildTableHTML(data, stat, topN, showTeam, showSeason) {
         html += `<tr>
             <td>${dispRank}</td>
             <td class="player-name-cell" data-player-id="${r.ID}" style="cursor:pointer;text-decoration:underline">${name}</td>
-            ${showTeam   ? `<td>${r.Team || ''}</td>` : ''}
-            ${showSeason ? `<td>${(r['Display Season'] || '').slice(1)}</td>` : ''}
+            ${showTeam   ? `<td class="lb-short-col">${r.Team || ''}</td>` : ''}
+            ${showSeason ? `<td class="lb-short-col">${(r['Display Season'] || '').slice(1)}</td>` : ''}
             <td>${formatStat(stat, r[stat])}</td>
         </tr>`;
     });
