@@ -91,9 +91,20 @@ export function getMlrTeamName(franchiseKey, displaySeason) {
 // ── Team helpers (season-keyed leagues: MiLR, FCB, GIB, ECO, NPR, WBC) ─────
 
 // MiLR history: { S3: { BAY: "Bayside Fish & Ships", ... } }
+// Entries may be plain strings or objects { name, logo_dark, logo_light }.
 export function getMilrTeamName(abbr, displaySeason) {
     const season = state.teamHistory.milr[displaySeason];
-    return (season && season[abbr]) || abbr;
+    if (!season) return abbr;
+    const entry = season[abbr];
+    return (typeof entry === 'string' ? entry : entry?.name) || abbr;
+}
+
+export function getMilrLogoPair(abbr, displaySeason) {
+    const season = state.teamHistory.milr[displaySeason];
+    if (!season) return null;
+    const entry = season[abbr];
+    if (!entry || typeof entry === 'string' || !entry.logo_dark) return null;
+    return { dark: entry.logo_dark, light: entry.logo_light };
 }
 
 // FCB history: { S3: { ABB: "Team Name", ... } }  (plain name strings)

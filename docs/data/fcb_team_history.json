@@ -19,7 +19,7 @@
         "SBU": {"name": "Stony Brook University Seawolves", "logo_dark": "img/fcb_logos/StonyBrook.svg", "logo_light": "img/fcb_logos/StonyBrook.svg"},
         "ULA": {"name": "University of California, Los Angeles Bruins", "logo_dark": "img/fcb_logos/UCLA.svg", "logo_light": "img/fcb_logos/UCLA.svg"},
         "UNC": {"name": "University of North Carolina Tar Heels", "logo_dark": "img/fcb_logos/UNC.svg", "logo_light": "img/fcb_logos/UNC.svg"},
-        "UWO": {"name": "University of Western Ontario Mustangs"},
+        "UWO": {"name": "University of Western Ontario Mustangs", "logo_dark": "img/fcb_logos/WOntario.png", "logo_light": "img/fcb_logos/WOntario.png"},
         "VAN": {"name": "Vanderbilt University Commodores", "logo_dark": "img/fcb_logos/Vanderbilt.svg", "logo_light": "img/fcb_logos/Vanderbilt.svg"},
         "VT": {"name": "Virginia Tech Hokies", "logo_dark": "img/fcb_logos/VirginiaTech.svg", "logo_light": "img/fcb_logos/VirginiaTech.svg"},
         "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"},
@@ -31,7 +31,7 @@
         "LOU": {"name": "University of Louisville Cardinals", "logo_dark": "img/fcb_logos/Louisville.svg", "logo_light": "img/fcb_logos/Louisville.svg"},
         "NCS": {"name": "North Carolina State University Wolfpack", "logo_dark": "img/fcb_logos/NCState.svg", "logo_light": "img/fcb_logos/NCState.svg"},
         "NEB": {"name": "University of Nebraska Cornhuskers", "logo_dark": "img/fcb_logos/Nebraska.svg", "logo_light": "img/fcb_logos/Nebraska.svg"},
-        "SLC": {"name": "Sarah Lawrence College Gryphons"},
+        "SLC": {"name": "Sarah Lawrence College Gryphons", "logo_dark": "img/fcb_logos/SarahLawrence.png", "logo_light": "img/fcb_logos/SarahLawrence.png"},
         "UNC": {"name": "University of North Carolina Tar Heels", "logo_dark": "img/fcb_logos/UNC.svg", "logo_light": "img/fcb_logos/UNC.svg"},
         "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
     },
@@ -63,8 +63,8 @@
         "HVD": {"name": "Harvard University Crimson", "logo_dark": "img/fcb_logos/Harvard.svg", "logo_light": "img/fcb_logos/Harvard.svg"},
         "TEN": {"name": "University of Tennessee Volunteers", "logo_dark": "img/fcb_logos/Tennessee.svg", "logo_light": "img/fcb_logos/Tennessee.svg"},
         "TOL": {"name": "University of Toledo Rockets", "logo_dark": "img/fcb_logos/Toledo.svg", "logo_light": "img/fcb_logos/Toledo.svg"},
-        "UCC": {"name": "UCC Rebels"},
-        "UGA": {"name": "University of Georgia Bulldogs", "logo_dark": "img/fcb_logos/Georgia.svg", "logo_light": "img/fcb_logos/Georgia.svg"},
+        "UCC": {"name": "University College Cork Rebels", "logo_dark": "img/fcb_logos/UCC.png", "logo_light": "img/fcb_logos/UCC.svg"},
+        "UGA": {"name": "University of Georgia Bulldogs", "logo_dark": "img/fcb_logos/Georgia.svg", "logo_light": "img/fcb_logos/Georgia.png"},
         "WSU": {"name": "Wichita State University Shockers", "logo_dark": "img/fcb_logos/WichitaSt.svg", "logo_light": "img/fcb_logos/WichitaSt.svg"}
     },
     "S10": {

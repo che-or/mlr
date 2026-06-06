@@ -1,7 +1,7 @@
 import { state } from '../state.js';
 import { loadStats, loadTeamStats } from '../data.js';
 import { formatStat, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
-         getMilrTeamName, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
+         getMilrTeamName, getMilrLogoPair, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS } from '../constants.js';
 
@@ -139,6 +139,8 @@ function renderDivisionCard(divName, teams, records, league, season, lgParam) {
             logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         } else if (league === 'milr' || league === 'milr_playoff') {
             name = getMilrTeamName(t.abbr, season);
+            const pair = getMilrLogoPair(t.abbr, season);
+            logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         } else if (league === 'fcb') {
             name = getFcbTeamName(t.abbr, season);
             const pair = getFcbLogoPair(t.abbr, season);
@@ -226,6 +228,7 @@ export async function displayTeamStatsPage(teamAbbr, season, league = 'mlr') {
                        : league === 'fcb' ? getFcbTeamName(actualAbbr, displaySeason)
                        : getHistoricalTeamName(league, actualAbbr, displaySeason);
         const logoPair = isMLR ? getMlrLogoPair(franchiseKey, displaySeason)
+                       : isMiLR ? getMilrLogoPair(actualAbbr, displaySeason)
                        : league === 'fcb' ? getFcbLogoPair(actualAbbr, displaySeason)
                        : getHistoricalLogoPair(league, actualAbbr, displaySeason);
 
