@@ -608,8 +608,85 @@ function buildLeagueTabGrid(container, leagues, primaryRole) {
         });
     });
 
+    // Build mobile dropdown
+    const leagueGroups = [];
+    {
+        let ci = 0;
+        for (const lg of leagues) {
+            const hasRegular = lg.regH.length || lg.regP.length;
+            const hasPlayoffs = lg.poH.length || lg.poP.length;
+            if (hasRegular && hasPlayoffs) {
+                leagueGroups.push({ label: lg.label, regIdx: ci, poIdx: ci + 1 });
+                ci += 2;
+            } else {
+                leagueGroups.push({ label: lg.label, regIdx: ci, poIdx: null });
+                ci += 1;
+            }
+        }
+    }
+
+    const mobileWrap = document.createElement('div');
+    mobileWrap.className = 'lt-mobile';
+
+    const mobileRow = document.createElement('div');
+    mobileRow.className = 'lt-mobile-row';
+
+    const mobileSelect = document.createElement('select');
+    mobileSelect.className = 'lt-league-select';
+    leagueGroups.forEach((grp, i) => {
+        const opt = document.createElement('option');
+        opt.value = String(i);
+        opt.textContent = grp.label;
+        mobileSelect.appendChild(opt);
+    });
+
+    const mobileToggle = document.createElement('div');
+    mobileToggle.className = 'lt-season-toggle';
+
+    const mobileRegBtn = document.createElement('button');
+    mobileRegBtn.className = 'lt-season-btn active';
+    mobileRegBtn.textContent = 'Regular Season';
+
+    const mobilePoBtn = document.createElement('button');
+    mobilePoBtn.className = 'lt-season-btn';
+    mobilePoBtn.textContent = 'Postseason';
+
+    mobileToggle.appendChild(mobileRegBtn);
+    mobileToggle.appendChild(mobilePoBtn);
+    mobileRow.appendChild(mobileSelect);
+    mobileRow.appendChild(mobileToggle);
+    mobileWrap.appendChild(mobileRow);
+
+    let mobileIsPlayoffs = false;
+
+    const updateMobileState = (grpIdx) => {
+        const grp = leagueGroups[grpIdx];
+        const hasBoth = grp.poIdx !== null;
+        mobileToggle.style.display = hasBoth ? '' : 'none';
+        mobileRegBtn.classList.toggle('active', !mobileIsPlayoffs);
+        mobilePoBtn.classList.toggle('active', mobileIsPlayoffs);
+        activate(mobileIsPlayoffs && hasBoth ? grp.poIdx : grp.regIdx);
+        setStickyColumnOffsets();
+    };
+
+    mobileSelect.addEventListener('change', () => {
+        mobileIsPlayoffs = false;
+        updateMobileState(parseInt(mobileSelect.value));
+    });
+    mobileRegBtn.addEventListener('click', () => {
+        mobileIsPlayoffs = false;
+        updateMobileState(parseInt(mobileSelect.value));
+    });
+    mobilePoBtn.addEventListener('click', () => {
+        mobileIsPlayoffs = true;
+        updateMobileState(parseInt(mobileSelect.value));
+    });
+
+    if (leagueGroups.length > 0) mobileToggle.style.display = leagueGroups[0].poIdx !== null ? '' : 'none';
+
     if (allCells.length > 0) activate(0);
 
+    container.appendChild(mobileWrap);
     container.appendChild(grid);
     container.appendChild(contentWrap);
 }

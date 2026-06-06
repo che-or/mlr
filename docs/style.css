@@ -451,6 +451,66 @@ nav {
     margin-top: 12px;
 }
 
+.lt-mobile {
+    display: none;
+    margin: 16px 0 8px;
+}
+
+.lt-mobile-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.lt-league-select {
+    padding: 6px 10px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.lt-season-toggle {
+    display: flex;
+}
+
+.lt-season-btn {
+    padding: 6px 14px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.lt-season-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.lt-season-btn:last-child {
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+}
+
+.lt-season-btn.active {
+    background: var(--secondary-color);
+    font-weight: bold;
+    border-top: 2px solid var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .lt-mobile {
+        display: block;
+    }
+    .league-tab-grid {
+        display: none;
+    }
+}
+
 /* ── Player Comparison ─────────────────────────────────────────────────────── */
 
 .compare-controls {
