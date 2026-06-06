@@ -29,5 +29,8 @@
     },
     "S12": {
         "Fake College Baseball": ["FUR", "LSU", "OWL", "SYR", "UOM", "WKU"]
+    },
+    "S13": {
+        "Fake College Baseball": ["CAL", "DPU", "KSU", "PSU", "SLG", "UMN"]
     }
 }

@@ -1,12 +1,12 @@
 {
     "S1": {
-        "BH": "Bosnia and Herzegovina",
-        "BRB": "Barbados",
-        "GRE": "Greece",
-        "JMC": "Jamaica",
-        "SCO": "Scotland",
-        "SM": "San Marino",
-        "SWZ": "Swaziland",
-        "VC": "Vatican City"
+        "BH": {"name": "Bosnia and Herzegovina", "logo_dark": "img/wbc_logos/Bosnia.svg", "logo_light": "img/wbc_logos/Bosnia.svg"},
+        "BRB": {"name": "Barbados", "logo_dark": "img/wbc_logos/Barbados.svg", "logo_light": "img/wbc_logos/Barbados.svg"},
+        "GRE": {"name": "Greece", "logo_dark": "img/wbc_logos/Greece.svg", "logo_light": "img/wbc_logos/Greece.svg"},
+        "JMC": {"name": "Jamaica", "logo_dark": "img/wbc_logos/Jamaica.svg", "logo_light": "img/wbc_logos/Jamaica.svg"},
+        "SCO": {"name": "Scotland", "logo_dark": "img/wbc_logos/Scotland.svg", "logo_light": "img/wbc_logos/Scotland.svg"},
+        "SM": {"name": "San Marino", "logo_dark": "img/wbc_logos/SanMarino.svg", "logo_light": "img/wbc_logos/SanMarino.svg"},
+        "SWZ": {"name": "Swaziland", "logo_dark": "img/wbc_logos/Swaziland.svg", "logo_light": "img/wbc_logos/Swaziland.svg"},
+        "VC": {"name": "Vatican City", "logo_dark": "img/wbc_logos/Vatican.svg", "logo_light": "img/wbc_logos/Vatican.svg"}
     }
 }
