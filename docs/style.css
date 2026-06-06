@@ -292,6 +292,10 @@ nav {
 
 .career-row {
     font-weight: bold;
+}
+
+.career-row td,
+.career-row th {
     border-top: 2px solid var(--accent-color);
 }
 
