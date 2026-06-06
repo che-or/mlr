@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats, loadTeamStats } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrTeamName,
+import { formatStat, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
          getMilrTeamName, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS } from '../constants.js';
@@ -217,6 +217,9 @@ export async function displayTeamStatsPage(teamAbbr, season, league = 'mlr') {
         const prev = idx > 0 ? allSeasons[idx - 1] : null;
         const next = idx < allSeasons.length - 1 ? allSeasons[idx + 1] : null;
 
+        const prevAbbr = isMLR && prev ? (getMlrTeamEntry(franchiseKey, prev)?.abbr ?? teamAbbr) : teamAbbr;
+        const nextAbbr = isMLR && next ? (getMlrTeamEntry(franchiseKey, next)?.abbr ?? teamAbbr) : teamAbbr;
+
         const lgParam = league !== 'mlr' ? `&league=${league}` : '';
         const teamName = isMLR  ? getMlrTeamName(franchiseKey, displaySeason)
                        : isMiLR ? getMilrTeamName(actualAbbr, displaySeason)
@@ -232,8 +235,8 @@ export async function displayTeamStatsPage(teamAbbr, season, league = 'mlr') {
                 ${teamName} — Season ${displaySeason.slice(1)}
             </h2>
             <div class="season-nav-buttons">
-                ${prev ? `<a href="#/team-stats?season=${prev}&team=${teamAbbr}${lgParam}" class="season-nav-button">&lt; Prev Season</a>` : ''}
-                ${next ? `<a href="#/team-stats?season=${next}&team=${teamAbbr}${lgParam}" class="season-nav-button">Next Season &gt;</a>` : ''}
+                ${prev ? `<a href="#/team-stats?season=${prev}&team=${prevAbbr}${lgParam}" class="season-nav-button">&lt; Prev Season</a>` : ''}
+                ${next ? `<a href="#/team-stats?season=${next}&team=${nextAbbr}${lgParam}" class="season-nav-button">Next Season &gt;</a>` : ''}
             </div>
         </div>`;
 
