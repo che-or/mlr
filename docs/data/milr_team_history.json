@@ -108,28 +108,28 @@
         "WSW": "Wall Street Wolves"
     },
     "S8A": {
-        "BAG": "Bay Area Goldfish",
-        "BIS": "Bismarck Balks",
-        "BLO": "Bloomington Onions",
-        "CCD": "Chattanooga Coconut Dogs",
-        "CDT": "Carolina Disco Turkeys",
-        "GND": "Gondor Gronds",
-        "LAC": "La Crosse Loggers",
-        "MKW": "Mackinaw City Trolls",
-        "MMM": "Michigan Marksmen",
-        "NXS": "Anxiety Attacks",
-        "PPM": "Point Pleasant Mothmen",
-        "SCU": "Santa Rosa Scuba Divers"
+        "BAG": {"name": "Bay Area Goldfish", "logo_dark": "img/milr_logos/S8ABAG.png", "logo_light": "img/milr_logos/S8ABAG.png"},
+        "BIS": {"name": "Bismarck Balks", "logo_dark": "img/milr_logos/S8ABIS.png", "logo_light": "img/milr_logos/S8ABIS.png"},
+        "BLO": {"name": "Bloomington Onions", "logo_dark": "img/milr_logos/S8ABLO.png", "logo_light": "img/milr_logos/S8ABLO.png"},
+        "CCD": {"name": "Chattanooga Coconut Dogs", "logo_dark": "img/milr_logos/S8ACCD.png", "logo_light": "img/milr_logos/S8ACCD.png"},
+        "CDT": {"name": "Carolina Disco Turkeys", "logo_dark": "img/milr_logos/S8ACDT.png", "logo_light": "img/milr_logos/S8ACDT.png"},
+        "GND": {"name": "Gondor Gronds", "logo_dark": "img/milr_logos/S8AGND.png", "logo_light": "img/milr_logos/S8AGND.png"},
+        "LAC": {"name": "La Crosse Loggers", "logo_dark": "img/milr_logos/S8ALAC.png", "logo_light": "img/milr_logos/S8ALAC.png"},
+        "MKW": {"name": "Mackinaw City Trolls", "logo_dark": "img/milr_logos/S8AMKW.png", "logo_light": "img/milr_logos/S8AMKW.png"},
+        "MMM": {"name": "Michigan Marksmen", "logo_dark": "img/milr_logos/S8AMMM.png", "logo_light": "img/milr_logos/S8AMMM.png"},
+        "NXS": {"name": "Anxiety Attacks", "logo_dark": "img/milr_logos/S8ANXS.png", "logo_light": "img/milr_logos/S8ANXS.png"},
+        "PPM": {"name": "Point Pleasant Mothmen", "logo_dark": "img/milr_logos/S8APPM.png", "logo_light": "img/milr_logos/S8APPM.png"},
+        "SCU": {"name": "Santa Rosa Scuba Divers", "logo_dark": "img/milr_logos/S8ASCU.png", "logo_light": "img/milr_logos/S8ASCU.png"}
     },
     "S8B": {
-        "CC": "Columbus Crowns",
-        "ESP": "Kalos Espurrs",
-        "MOB": "Miami Orange Bowls",
-        "NUT": "Belize Nuts",
-        "QQ": "Queensland Quokkas",
-        "SBD": "Sun Belt Devils",
-        "SCU": "Santa Rosa Scuba Divers",
-        "TXR": "Texas Rattlesnakes"
+        "CC": {"name": "Columbus Crowns", "logo_dark": "img/milr_logos/S8BCC.png", "logo_light": "img/milr_logos/S8BCC.png"},
+        "ESP": {"name": "Kalos Espurrs", "logo_dark": "img/milr_logos/S8BESP.png", "logo_light": "img/milr_logos/S8BESP.png"},
+        "MOB": {"name": "Miami Orange Bowls", "logo_dark": "img/milr_logos/S8BMOB.png", "logo_light": "img/milr_logos/S8BMOB.png"},
+        "NUT": {"name": "Belize Nuts", "logo_dark": "img/milr_logos/S8BNUT.png", "logo_light": "img/milr_logos/S8BNUT.png"},
+        "QQ": {"name": "Queensland Quokkas", "logo_dark": "img/milr_logos/S8BQQ.png", "logo_light": "img/milr_logos/S8BQQ.png"},
+        "SBD": {"name": "Sun Belt Devils", "logo_dark": "img/milr_logos/S8BSBD.png", "logo_light": "img/milr_logos/S8BSBD.png"},
+        "SCU": {"name": "Santa Rosa Scuba Divers", "logo_dark": "img/milr_logos/S8ASCU.png", "logo_light": "img/milr_logos/S8ASCU.png"},
+        "TXR": {"name": "Texas Rattlesnakes", "logo_dark": "img/milr_logos/S8BTXR.png", "logo_light": "img/milr_logos/S8BTXR.png"}
     },
     "S9": {
         "AND": {"name": "The Montclair Valley Regional High School Theatre Club and Recreational Baseball", "logo_dark": "img/milr_logos/S9AND.jpg", "logo_light": "img/milr_logos/S9AND.jpg"},
