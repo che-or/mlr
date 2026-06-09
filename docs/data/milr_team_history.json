@@ -1,9 +1,9 @@
 {
     "S2": {
-        "AKR": "Akron RubberDucks",
-        "HVR": "Hudson Valley Renegades",
-        "SAV": "Savannah Bananas",
-        "TRE": "Trenton Thunder"
+        "AKR": {"name": "Akron RubberDucks", "logo_dark": "img/milr_logos/S2AKR.svg", "logo_light": "img/milr_logos/S2AKR.svg"},
+        "HVR": {"name": "Hudson Valley Renegades", "logo_dark": "img/milr_logos/S2HVR.svg", "logo_light": "img/milr_logos/S2HVR.svg"},
+        "SAV": {"name": "Savannah Bananas", "logo_dark": "img/milr_logos/S2SAV.png", "logo_light": "img/milr_logos/S2SAV.png"},
+        "TRE": {"name": "Trenton Thunder", "logo_dark": "img/milr_logos/S2TRE.svg", "logo_light": "img/milr_logos/S2TRE.svg"}
     },
     "S3": {
         "BAY": "Bayside Fish & Ships",
@@ -64,8 +64,8 @@
         "BAC": {"name": "Blue Grass Ax Cats", "logo_dark": "img/milr_logos/S6BAC.png", "logo_light": "img/milr_logos/S6BAC.png"},
         "BBB": {"name": "Bronzeville Birthday Boys", "logo_dark": "img/milr_logos/S6BBB.png", "logo_light": "img/milr_logos/S6BBB.png"},
         "CBC": {"name": "Congo Bongocats", "logo_dark": "img/milr_logos/S6CBC.png", "logo_light": "img/milr_logos/S6CBC.png"},
-        "CIM": "Cohen's Island Malamutes",
-        "CWJ": "Caulfield Walls of Jericho",
+        "CIM": {"name": "Cohen's Island Malamutes", "logo_dark": "img/milr_logos/S6CIM.png", "logo_light": "img/milr_logos/S6CIM.png"},
+        "CWJ": {"name": "Caulfield Walls of Jericho", "logo_dark": "img/milr_logos/S6CWJ.png", "logo_light": "img/milr_logos/S6CWJ.png"},
         "FRG": {"name": "Fargo Woodchippers", "logo_dark": "img/milr_logos/S6FRG.png", "logo_light": "img/milr_logos/S6FRG.png"},
         "HEL": {"name": "Helena Handbaskets", "logo_dark": "img/milr_logos/S6HEL.png", "logo_light": "img/milr_logos/S6HEL.png"},
         "JEF": {"name": "Jefferson Jeffies", "logo_dark": "img/milr_logos/S6JEF.png", "logo_light": "img/milr_logos/S6JEF.png"},
@@ -79,13 +79,13 @@
         "PHB": {"name": "Philadelphia B's", "logo_dark": "img/milr_logos/S5PHB.png", "logo_light": "img/milr_logos/S5PHB.png"},
         "POR": {"name": "Portland Roses", "logo_dark": "img/milr_logos/S5POR.png", "logo_light": "img/milr_logos/S5POR.png"},
         "PUK": {"name": "Amherst Pukwudgies", "logo_dark": "img/milr_logos/S6PUK.png", "logo_light": "img/milr_logos/S6PUK.png"},
-        "RBD": "Rookie Bat Dogs",
+        "RBD": {"name": "Rookie Bat Dogs", "logo_dark": "img/milr_logos/S6RBD.png", "logo_light": "img/milr_logos/S6RBD.png"},
         "SAR": {"name": "Sarasota Savages", "logo_dark": "img/milr_logos/S5SAR.png", "logo_light": "img/milr_logos/S5SAR.png"},
         "SAS": {"name": "Saskatoon Saloons", "logo_dark": "img/milr_logos/S6SAS.png", "logo_light": "img/milr_logos/S6SAS.png"},
         "SGP": {"name": "Singapore Slingers", "logo_dark": "img/milr_logos/S6SGP.png", "logo_light": "img/milr_logos/S6SGP.png"},
         "SLT": {"name": "South Side L Train", "logo_dark": "img/milr_logos/S6SLT.png", "logo_light": "img/milr_logos/S6SLT.png"},
         "SUP": {"name": "Surprise, Pitches", "logo_dark": "img/milr_logos/S6SUP.png", "logo_light": "img/milr_logos/S6SUP.png"},
-        "TAK": "Talladega Knights",
+        "TAK": {"name": "Talladega Knights", "logo_dark": "img/milr_logos/S6TAK.png", "logo_light": "img/milr_logos/S6TAK.png"},
         "TTT": {"name": "Tallahassee Toxic Tyrants", "logo_dark": "img/milr_logos/S6TTT.png", "logo_light": "img/milr_logos/S6TTT.png"},
         "WWC": {"name": "Waukesha White Claws", "logo_dark": "img/milr_logos/S5WWC.png", "logo_light": "img/milr_logos/S5WWC.png"}
     },
