@@ -924,6 +924,13 @@ a:hover {
 .standings-table td:first-child {
     display: flex;
     align-items: center;
+    min-width: 0;
+}
+
+.standings-table .team-link {
+    display: flex;
+    align-items: center;
+    min-width: 0;
 }
 
 .standings-logo {
@@ -931,7 +938,13 @@ a:hover {
     width: 24px;
     object-fit: contain;
     margin-right: 8px;
-    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.standings-team-name {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .standings-columns {
@@ -1548,6 +1561,11 @@ input:checked + .slider:before {
     }
     .stats-table {
         white-space: nowrap;
+    }
+    .standings-table,
+    .standings-table td,
+    .standings-table th {
+        white-space: normal;
     }
     .stats-table th,
     .stats-table td {

@@ -151,7 +151,7 @@ function renderDivisionCard(divName, teams, records, league, season, lgParam) {
             logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         }
         html += `<tr>
-            <td><span class="team-link" data-team="${t.abbr}" style="cursor:pointer">${logo}${name}</span></td>
+            <td><span class="team-link" data-team="${t.abbr}" style="cursor:pointer">${logo}<span class="standings-team-name">${name}</span></span></td>
             <td>${t.W}</td><td>${t.L}</td>
             <td>${formatStat('W-L%', t.PCT)}</td>
             <td>${t.GB}</td>
