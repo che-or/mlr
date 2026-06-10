@@ -82,6 +82,8 @@ export async function displayPlayerPage(playerId) {
     const display = document.getElementById('stats-content-display');
     state.currentPlayerId = playerId;
     display.innerHTML = '<p>Loading...</p>';
+    const searchInput = document.getElementById('player-search');
+    if (searchInput) searchInput.value = '';
 
     try {
         // Build full fetch list: MLR core + franchise breakdowns + all toggle leagues
@@ -207,7 +209,8 @@ function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
                 html += `<a href="#/hof"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else if (award.seasons?.length) {
                 const last = award.seasons[award.seasons.length - 1];
-                html += `<a href="#/awards?season=${last}"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
+                const lgParam = award.league ? `&league=${award.league}` : '';
+                html += `<a href="#/awards?season=${last}${lgParam}"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else {
                 html += `<div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div>`;
             }

@@ -285,6 +285,10 @@ async function renderLeaderboard() {
         nextBtn.className = 'lb-nav-btn';
         nextBtn.textContent = '›';
 
+        if (cards.length <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
         mobileSelector.appendChild(prevBtn);
         mobileSelector.appendChild(mobileSelect);
         mobileSelector.appendChild(nextBtn);

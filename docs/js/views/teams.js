@@ -45,7 +45,7 @@ export async function displayTeamList(season, league = 'mlr') {
         const leagueOptions = TEAM_LEAGUES.map(l =>
             `<option value="${l.key}" ${l.key === league ? 'selected' : ''}>${l.label}</option>`
         ).join('');
-        const seasonOptions = allSeasons.map(s =>
+        const seasonOptions = [...allSeasons].reverse().map(s =>
             `<option value="${s}" ${s === currentSeason ? 'selected' : ''}>Season ${s.slice(1)}</option>`
         ).join('');
 
