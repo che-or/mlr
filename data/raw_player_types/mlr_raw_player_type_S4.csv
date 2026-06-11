@@ -358,8 +358,10 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 421,Joe Trundle,BP,,,Right,LF
 422,Dixie Wrecked,BP,,,Left,CF
 423,Spike McBride,BN,,,Right,CF
+432,Rumple Foreskin,XB,,,Right,2B
 439,Karl Jernigan,1B,,,Left,SS
 468,Chadimir Guerrero Jr.,BC,,,Right,2B
+469,Dick Cockman,XB,,,Right,C
 471,Frank Rivers,SM,BF,S,Right,P
 472,Hefe Rojo,1B,,,Right,LF
 473,Bill Bisquick,XB,,,Right,3B
@@ -373,6 +375,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 481,Jordan Lamas,BC,NH,H,Right,P
 482,Oil Can Titcomb,XB,,,Right,1B
 483,Blose Blerblanblez,BC,,,Right,3B
+484,Moomoo Cow,XB,,,Right,3B
 485,Francois Onime,WC,,,Right,2B
 486,Gonzo Alonzo,BP,,,Right,SS
 487,dick richards,BC,,,Right,2B

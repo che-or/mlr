@@ -22,11 +22,11 @@ Nima Meile,2541,140,Martin Ducksworth,2523,47,1B,93,T3,1,4,2,0,10.04%,-10.04%,0,
 Bim Bam,2536,777,Martin Ducksworth,2523,411,PO,366,T3,1,7,2,0,-11.14%,11.14%,0,0,5,1,1,UVA,USF,PO,PO,K,,,,,1
 Ovaltine Jenkins,2542,469,Martin Ducksworth,2523,390,2B,79,T3,2,7,2,0,35.34%,-35.34%,3,0,5,1,1,UVA,USF,2B,2B,1B,2523,2523,2523,,1
 Medium Goose,2569,780,Martin Ducksworth,2523,578,FO,202,T3,2,2,2,3,-4.79%,4.79%,0,0,5,1,1,UVA,USF,FO,FO,FO,,,,,1
-Chipper James,2527,319,Threefinger Jansen lll,2574,345,3B,26,B3,0,0,2,3,14.10%,-14.10%,0,1,6,1,1,USF,UVA,3B,3B,3B,,,,,1
-Munki Oshu,2568,847,Threefinger Jansen lll,2574,872,3B,25,B3,0,3,2,3,15.31%,-15.31%,1,1,6,1,1,USF,UVA,3B,3B,3B,2574,,,,1
-Rollie Dingers,2520,430,Threefinger Jansen lll,2574,823,RGO,393,B3,0,3,3,3,0.73%,-0.73%,1,0,6,1,1,USF,UVA,RGO,RGO,PO,2574,,,,1
-Iosef Mere,2530,561,Threefinger Jansen lll,2574,925,RGO,364,B3,1,0,4,3,-1.80%,1.80%,0,0,6,1,1,USF,UVA,RGO,RGO,K,,,,,1
-Billy Wurtz,2531,930,Threefinger Jansen lll,2574,666,K,264,B3,2,0,4,3,-1.62%,1.62%,0,0,6,1,1,USF,UVA,K,K,FO,,,,,1
+Chipper James,2527,319,Threefinger Jansen lll,256,345,3B,26,B3,0,0,2,3,14.10%,-14.10%,0,1,6,1,1,USF,UVA,3B,3B,3B,,,,,1
+Munki Oshu,2568,847,Threefinger Jansen lll,256,872,3B,25,B3,0,3,2,3,15.31%,-15.31%,1,1,6,1,1,USF,UVA,3B,3B,3B,2574,,,,1
+Rollie Dingers,2520,430,Threefinger Jansen lll,256,823,RGO,393,B3,0,3,3,3,0.73%,-0.73%,1,0,6,1,1,USF,UVA,RGO,RGO,PO,2574,,,,1
+Iosef Mere,2530,561,Threefinger Jansen lll,256,925,RGO,364,B3,1,0,4,3,-1.80%,1.80%,0,0,6,1,1,USF,UVA,RGO,RGO,K,,,,,1
+Billy Wurtz,2531,930,Threefinger Jansen lll,256,666,K,264,B3,2,0,4,3,-1.62%,1.62%,0,0,6,1,1,USF,UVA,K,K,FO,,,,,1
 Brayden Ennis,2537,678,Slim Mathers,1963,313,PO,365,T4,0,0,4,3,-3.96%,3.96%,0,0,7,1,1,UVA,USF,PO,PO,K,,,,,1
 Jake Kim,2535,908,Slim Mathers,1963,13,BB,105,T4,1,0,4,3,3.84%,-3.84%,0,0,7,1,1,UVA,USF,BB,BB,1B,,,,,1
 Numbers Spector,2543,945,Slim Mathers,1963,778,BB,167,T4,1,1,4,3,6.43%,-6.43%,0,0,7,1,1,UVA,USF,BB,BB,BB,,,,,1
@@ -95,29 +95,29 @@ Numbers Spector,2543,42,Chicano Bradley,2509,997,2B,45,T1,1,1,0,0,9.55%,-9.55%,0
 Ovaltine Jenkins,2542,995,Chicano Bradley,2509,587,DP,408,T1,1,5,0,0,-13.81%,13.81%,0,0,23,4,2,UVA,MICH,RGO,RGO,DP,,,,,1
 Bill Stokes,2539,302,Chicano Bradley,2509,316,3B,14,T1,2,5,0,0,20.37%,-20.37%,2,0,23,4,2,UVA,MICH,3B,3B,HR,2509,2509,,,1
 Herb Bumbleflower,2532,365,Chicano Bradley,2509,31,PO,334,T1,2,3,0,2,-3.21%,3.21%,0,0,23,4,2,UVA,MICH,PO,PO,K,,,,,1
-Sammy Scully,2518,333,Threefinger Jansen lll,2574,352,3B,19,B1,0,0,0,2,9.81%,-9.81%,0,1,24,4,2,MICH,UVA,3B,3B,HR,,,,,1
-Studly Hungwell,2580,501,Threefinger Jansen lll,2574,162,PO,339,B1,0,3,0,2,-4.69%,4.69%,0,0,24,4,2,MICH,UVA,PO,PO,K,,,,,1
-Giles Sweeney,2573,745,Threefinger Jansen lll,2574,267,2B,478,B1,1,3,0,2,8.41%,-8.41%,1,0,24,4,2,MICH,UVA,2B,2B,LGO,2574,,,,1
-Sam Hicks,2516,904,Threefinger Jansen lll,2574,348,LGO,444,B1,1,2,1,2,-3.80%,3.80%,0,0,24,4,2,MICH,UVA,LGO,LGO,RGO,,,,,1
-Chet Slamburger,2572,504,Threefinger Jansen lll,2574,230,RGO,274,B1,2,2,1,2,-5.41%,5.41%,0,0,24,4,2,MICH,UVA,RGO,RGO,FO,,,,,1
+Sammy Scully,2518,333,Threefinger Jansen lll,256,352,3B,19,B1,0,0,0,2,9.81%,-9.81%,0,1,24,4,2,MICH,UVA,3B,3B,HR,,,,,1
+Studly Hungwell,2580,501,Threefinger Jansen lll,256,162,PO,339,B1,0,3,0,2,-4.69%,4.69%,0,0,24,4,2,MICH,UVA,PO,PO,K,,,,,1
+Giles Sweeney,2573,745,Threefinger Jansen lll,256,267,2B,478,B1,1,3,0,2,8.41%,-8.41%,1,0,24,4,2,MICH,UVA,2B,2B,LGO,2574,,,,1
+Sam Hicks,2516,904,Threefinger Jansen lll,256,348,LGO,444,B1,1,2,1,2,-3.80%,3.80%,0,0,24,4,2,MICH,UVA,LGO,LGO,RGO,,,,,1
+Chet Slamburger,2572,504,Threefinger Jansen lll,256,230,RGO,274,B1,2,2,1,2,-5.41%,5.41%,0,0,24,4,2,MICH,UVA,RGO,RGO,FO,,,,,1
 Brayden Ennis,2537,978,Chicano Bradley,2509,561,RGO,417,T2,0,0,1,2,-2.27%,2.27%,0,0,25,4,2,UVA,MICH,RGO,RGO,RGO,,,,,1
 Jake Kim,2535,695,Chicano Bradley,2509,449,FO,246,T2,1,0,1,2,-2.02%,2.02%,0,0,25,4,2,UVA,MICH,FO,FO,FO,,,,,1
 Nima Meile,2541,900,Chicano Bradley,2509,135,FO,235,T2,2,0,1,2,-1.69%,1.69%,0,0,25,4,2,UVA,MICH,FO,FO,FO,,,,,1
-Joe Castle,2512,527,Threefinger Jansen lll,2574,69,LGO,458,B2,0,0,1,2,-3.11%,3.11%,0,0,26,4,2,MICH,UVA,LGO,LGO,LGO,,,,,1
-George Pinetar,2510,420,Threefinger Jansen lll,2574,348,1B,72,B2,1,0,1,2,3.03%,-3.03%,0,1,26,4,2,MICH,UVA,1B,1B,1B,,,,,1
-Ty Spain,2514,731,Threefinger Jansen lll,2574,723,HR,8,B2,1,1,1,2,25.51%,-25.51%,2,1,26,4,2,MICH,UVA,HR,HR,HR,,,2574,2574,1
-Ryan PINGU,2511,231,Threefinger Jansen lll,2574,523,K,292,B2,1,0,3,2,-1.83%,1.83%,0,0,26,4,2,MICH,UVA,K,K,K,,,,,1
-Sammy Scully,2518,333,Threefinger Jansen lll,2574,438,1B,105,B2,2,0,3,2,1.60%,-1.60%,0,0,26,4,2,MICH,UVA,1B,1B,1B,,,,,1
-Studly Hungwell,2580,843,Threefinger Jansen lll,2574,1,BB,158,B2,2,1,3,2,2.10%,-2.10%,0,0,26,4,2,MICH,UVA,BB,BB,BB,,,,,1
-Giles Sweeney,2573,800,Threefinger Jansen lll,2574,134,RGO,334,B2,2,4,3,2,-5.26%,5.26%,0,0,26,4,2,MICH,UVA,RGO,RGO,K,,,,,1
+Joe Castle,2512,527,Threefinger Jansen lll,256,69,LGO,458,B2,0,0,1,2,-3.11%,3.11%,0,0,26,4,2,MICH,UVA,LGO,LGO,LGO,,,,,1
+George Pinetar,2510,420,Threefinger Jansen lll,256,348,1B,72,B2,1,0,1,2,3.03%,-3.03%,0,1,26,4,2,MICH,UVA,1B,1B,1B,,,,,1
+Ty Spain,2514,731,Threefinger Jansen lll,256,723,HR,8,B2,1,1,1,2,25.51%,-25.51%,2,1,26,4,2,MICH,UVA,HR,HR,HR,,,2574,2574,1
+Ryan PINGU,2511,231,Threefinger Jansen lll,256,523,K,292,B2,1,0,3,2,-1.83%,1.83%,0,0,26,4,2,MICH,UVA,K,K,K,,,,,1
+Sammy Scully,2518,333,Threefinger Jansen lll,256,438,1B,105,B2,2,0,3,2,1.60%,-1.60%,0,0,26,4,2,MICH,UVA,1B,1B,1B,,,,,1
+Studly Hungwell,2580,843,Threefinger Jansen lll,256,1,BB,158,B2,2,1,3,2,2.10%,-2.10%,0,0,26,4,2,MICH,UVA,BB,BB,BB,,,,,1
+Giles Sweeney,2573,800,Threefinger Jansen lll,256,134,RGO,334,B2,2,4,3,2,-5.26%,5.26%,0,0,26,4,2,MICH,UVA,RGO,RGO,K,,,,,1
 Medium Goose,2569,554,Demon Time,2467,417,1B,137,T3,0,0,3,2,3.96%,-3.96%,0,0,27,4,2,UVA,MICH,1B,1B,1B,,,,,1
 Bim Bam,2536,74,Demon Time,2467,113,2B,39,T3,0,1,3,2,16.75%,-16.75%,0,0,27,4,2,UVA,MICH,2B,2B,2B,,,,,1
 Numbers Spector,2543,907,Demon Time,2467,531,PO,376,T3,0,5,3,2,-6.79%,6.79%,0,0,27,4,2,UVA,MICH,PO,PO,K,,,,,1
 Ovaltine Jenkins,2542,31,Demon Time,2467,531,DP,500,T3,1,5,3,2,-18.69%,18.69%,0,0,27,4,2,UVA,MICH,LGO,LGO,DP,,,,,1
 Bill Stokes,2539,911,Demon Time,2467,281,PO,370,T3,2,5,3,2,-8.87%,8.87%,0,0,27,4,2,UVA,MICH,PO,PO,K,,,,,1
-Sam Hicks,2516,234,Threefinger Jansen lll,2574,794,LGO,440,B3,0,0,3,2,-2.04%,2.04%,0,0,28,4,2,MICH,UVA,LGO,LGO,RGO,,,,,1
-Chet Slamburger,2572,234,Threefinger Jansen lll,2574,876,RGO,358,B3,1,0,3,2,-1.80%,1.80%,0,0,28,4,2,MICH,UVA,RGO,RGO,K,,,,,1
-Joe Castle,2512,140,Threefinger Jansen lll,2574,127,HR,13,B3,2,0,3,2,11.68%,-11.68%,1,1,28,4,2,MICH,UVA,HR,HR,HR,,,,2574,1
+Sam Hicks,2516,234,Threefinger Jansen lll,256,794,LGO,440,B3,0,0,3,2,-2.04%,2.04%,0,0,28,4,2,MICH,UVA,LGO,LGO,RGO,,,,,1
+Chet Slamburger,2572,234,Threefinger Jansen lll,256,876,RGO,358,B3,1,0,3,2,-1.80%,1.80%,0,0,28,4,2,MICH,UVA,RGO,RGO,K,,,,,1
+Joe Castle,2512,140,Threefinger Jansen lll,256,127,HR,13,B3,2,0,3,2,11.68%,-11.68%,1,1,28,4,2,MICH,UVA,HR,HR,HR,,,,2574,1
 George Pinetar,2510,551,Jacob deGem,2540,256,K,295,B3,2,0,4,2,-1.05%,1.05%,0,0,28,4,2,MICH,UVA,K,K,K,,,,,1
 Herb Bumbleflower,2532,40,Demon Time,2467,771,K,269,T4,0,0,4,2,-3.22%,3.22%,0,0,29,4,2,UVA,MICH,K,K,FO,,,,,1
 Brayden Ennis,2537,267,Demon Time,2467,31,K,236,T4,1,0,4,2,-2.65%,2.65%,0,0,29,4,2,UVA,MICH,K,K,FO,,,,,1
@@ -280,7 +280,7 @@ Jake Kim,2535,234,Yuspen Askon,2582,89,BB,145,T4,1,5,0,2,2.10%,-2.10%,0,1,66,9,3
 Brayden Ennis,2537,439,Yuspen Askon,2582,675,K,236,T4,1,7,0,2,-5.27%,5.27%,0,0,66,9,3,UVA,LBS,K,K,Sac,,,,,1
 Peter Hadley,2616,337,Yuspen Askon,2582,450,BB,113,T4,2,7,0,2,7.81%,-7.81%,1,1,66,9,3,UVA,LBS,BB,BB,1B,2582,,,,1
 toronto mans,2587,799,Mars Bars,2498,733,2B,66,T4,2,7,0,3,8.66%,-8.66%,3,1,66,9,3,UVA,LBS,2B,2B,1B,2582,2582,2582,,1
-Threefinger Jansen lll,2574,1,Mars Bars,2498,103,BB,102,T4,2,2,0,6,0.24%,-0.24%,0,0,66,9,3,UVA,LBS,BB,BB,1B,,,,,1
+Threefinger Jansen lll,256,1,Mars Bars,2498,103,BB,102,T4,2,2,0,6,0.24%,-0.24%,0,0,66,9,3,UVA,LBS,BB,BB,1B,,,,,1
 Mattie Christewson,2598,386,Mars Bars,2498,504,1B,118,T4,2,4,0,6,0.84%,-0.84%,1,0,66,9,3,UVA,LBS,1B,1B,1B,,2498,,,1
 Bill Stokes,2539,933,Zenzizenzizenzic Xystarch,2505,622,K,311,T4,2,5,0,7,-0.24%,0.24%,0,0,66,9,3,UVA,LBS,K,K,K,,,,,1
 Barry Mays,2619,,Mike Truk,2621,,Auto K,,B4,0,0,0,7,-0.42%,0.42%,0,0,67,9,3,LBS,UVA,Auto K,Auto K,Auto K,,,,,9
@@ -316,25 +316,25 @@ Joe DiBango,2577,112,Noooot,2555,882,FO,230,T4,2,0,2,0,-1.89%,1.89%,0,0,74,10,4,
 Medium Goose,2569,631,Matt Longballo,2557,321,K,310,T1,0,0,0,0,-2.51%,2.51%,0,0,75,11,4,UVA,UCLA,K,K,K,,,,,1
 toronto mans,2587,542,Matt Longballo,2557,788,K,246,T1,1,0,0,0,-2.18%,2.18%,0,0,75,11,4,UVA,UCLA,K,K,FO,,,,,1
 Peter Hadley,2616,313,Matt Longballo,2557,123,FO,190,T1,2,0,0,0,-1.76%,1.76%,0,0,75,11,4,UVA,UCLA,FO,FO,FO,,,,,1
-Ricky Robert,2618,626,Threefinger Jansen lll,2574,69,LGO,443,B1,0,0,0,0,-2.48%,2.48%,0,0,76,11,4,UCLA,UVA,LGO,LGO,RGO,,,,,1
-Tobias Fünke,2601,323,Threefinger Jansen lll,2574,734,RGO,411,B1,1,0,0,0,-2.17%,2.17%,0,0,76,11,4,UCLA,UVA,RGO,RGO,RGO,,,,,1
-Xavier Gordon,2559,324,Threefinger Jansen lll,2574,420,1B,96,B1,2,0,0,0,1.90%,-1.90%,0,0,76,11,4,UCLA,UVA,1B,1B,1B,,,,,1
-Xavier Gordon,2559,538,Threefinger Jansen lll,2574,942,CS,404,B1,2,1,0,0,-3.69%,3.69%,0,0,76,11,4,UCLA,UVA,CS 2B,CS 2B,CS,,,,,4
+Ricky Robert,2618,626,Threefinger Jansen lll,256,69,LGO,443,B1,0,0,0,0,-2.48%,2.48%,0,0,76,11,4,UCLA,UVA,LGO,LGO,RGO,,,,,1
+Tobias Fünke,2601,323,Threefinger Jansen lll,256,734,RGO,411,B1,1,0,0,0,-2.17%,2.17%,0,0,76,11,4,UCLA,UVA,RGO,RGO,RGO,,,,,1
+Xavier Gordon,2559,324,Threefinger Jansen lll,256,420,1B,96,B1,2,0,0,0,1.90%,-1.90%,0,0,76,11,4,UCLA,UVA,1B,1B,1B,,,,,1
+Xavier Gordon,2559,538,Threefinger Jansen lll,256,942,CS,404,B1,2,1,0,0,-3.69%,3.69%,0,0,76,11,4,UCLA,UVA,CS 2B,CS 2B,CS,,,,,4
 Ovaltine Jenkins,2542,447,Matt Longballo,2557,1,RGO,446,T2,0,0,0,0,-2.72%,2.72%,0,0,77,11,4,UVA,UCLA,RGO,RGO,RGO,,,,,1
 Numbers Spector,2543,670,Matt Longballo,2557,1,K,331,T2,1,0,0,0,-2.40%,2.40%,0,0,77,11,4,UVA,UCLA,K,K,K,,,,,1
 Bill Stokes,2539,859,Matt Longballo,2557,2,BB,143,T2,2,0,0,0,2.15%,-2.15%,0,0,77,11,4,UVA,UCLA,BB,BB,BB,,,,,1
 Mattie Christewson,2598,13,Matt Longballo,2557,777,K,236,T2,2,1,0,0,-4.14%,4.14%,0,0,77,11,4,UVA,UCLA,K,K,FO,,,,,1
-Troy Pistachio,2565,634,Threefinger Jansen lll,2574,30,RGO,396,B2,0,0,0,0,-2.72%,2.72%,0,0,78,11,4,UCLA,UVA,RGO,RGO,PO,,,,,1
-Rabe Booth,2609,666,Threefinger Jansen lll,2574,8,RGO,342,B2,1,0,0,0,-2.38%,2.38%,0,0,78,11,4,UCLA,UVA,RGO,RGO,K,,,,,1
-Robbie Tightpants,2584,45,Threefinger Jansen lll,2574,456,LGO,411,B2,2,0,0,0,-2.03%,2.03%,0,0,78,11,4,UCLA,UVA,LGO,LGO,RGO,,,,,1
+Troy Pistachio,2565,634,Threefinger Jansen lll,256,30,RGO,396,B2,0,0,0,0,-2.72%,2.72%,0,0,78,11,4,UCLA,UVA,RGO,RGO,PO,,,,,1
+Rabe Booth,2609,666,Threefinger Jansen lll,256,8,RGO,342,B2,1,0,0,0,-2.38%,2.38%,0,0,78,11,4,UCLA,UVA,RGO,RGO,K,,,,,1
+Robbie Tightpants,2584,45,Threefinger Jansen lll,256,456,LGO,411,B2,2,0,0,0,-2.03%,2.03%,0,0,78,11,4,UCLA,UVA,LGO,LGO,RGO,,,,,1
 Herb Bumbleflower,2532,420,Matt Longballo,2557,378,3B,42,T3,0,0,0,0,12.12%,-12.12%,0,0,79,11,4,UVA,UCLA,3B,3B,2B,,,,,1
 Brayden Ennis,2537,123,Matt Longballo,2557,642,LGO,481,T3,0,3,0,0,0.41%,-0.41%,0,0,79,11,4,UVA,UCLA,LGO,LGO,LGO,,,,,2
 Medium Goose,2569,632,Matt Longballo,2557,999,PO,367,T3,1,3,0,0,-8.92%,8.92%,0,0,79,11,4,UVA,UCLA,PO,PO,K,,,,,1
 toronto mans,2587,301,Matt Longballo,2557,555,K,254,T3,2,3,0,0,-5.87%,5.87%,0,0,79,11,4,UVA,UCLA,K,K,FO,,,,,1
-Grover Grimes,2558,812,Threefinger Jansen lll,2574,788,HR,24,B3,0,0,0,0,15.42%,-15.42%,1,1,80,11,4,UCLA,UVA,HR,HR,HR,,,,2574,1
-Cardiac Kemba,2567,490,Threefinger Jansen lll,2574,324,BB,166,B3,0,0,1,0,2.09%,-2.09%,0,0,80,11,4,UCLA,UVA,BB,BB,BB,,,,,1
-Joseph Phillips,2556,679,Threefinger Jansen lll,2574,345,DP,334,B3,0,1,1,0,-5.93%,5.93%,0,0,80,11,4,UCLA,UVA,RGO,RGO,K,,,,,1
-Ricky Robert,2618,,Threefinger Jansen lll,2574,,Auto K,,B3,2,0,1,0,-1.62%,1.62%,0,0,80,11,4,UCLA,UVA,Auto K,Auto K,Auto K,,,,,9
+Grover Grimes,2558,812,Threefinger Jansen lll,256,788,HR,24,B3,0,0,0,0,15.42%,-15.42%,1,1,80,11,4,UCLA,UVA,HR,HR,HR,,,,2574,1
+Cardiac Kemba,2567,490,Threefinger Jansen lll,256,324,BB,166,B3,0,0,1,0,2.09%,-2.09%,0,0,80,11,4,UCLA,UVA,BB,BB,BB,,,,,1
+Joseph Phillips,2556,679,Threefinger Jansen lll,256,345,DP,334,B3,0,1,1,0,-5.93%,5.93%,0,0,80,11,4,UCLA,UVA,RGO,RGO,K,,,,,1
+Ricky Robert,2618,,Threefinger Jansen lll,256,,Auto K,,B3,2,0,1,0,-1.62%,1.62%,0,0,80,11,4,UCLA,UVA,Auto K,Auto K,Auto K,,,,,9
 Peter Hadley,2616,234,Matt Longballo,2557,666,PO,432,T4,0,0,1,0,-3.96%,3.96%,0,0,81,11,4,UVA,UCLA,PO,PO,RGO,,,,,1
 Ovaltine Jenkins,2542,246,Matt Longballo,2557,321,1B,75,T4,1,0,1,0,3.84%,-3.84%,0,0,81,11,4,UVA,UCLA,1B,1B,1B,,,,,1
 Ovaltine Jenkins,2542,420,Matt Longballo,2557,432,SB,12,T4,1,1,1,0,3.59%,-3.59%,0,0,81,11,4,UVA,UCLA,Steal 2B,Steal 2B,SB,,,,,4

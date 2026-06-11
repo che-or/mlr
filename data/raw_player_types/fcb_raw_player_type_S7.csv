@@ -1,5 +1,6 @@
 Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
 78,Crimson Chin,HK,,,Right,LF
+256,Threefinger Jansen lll,WC,EG,H,Left,P
 273,Max Wasson,BN,,,Right,SS
 1963,Slim Mathers,WC,NH,S,Right,P
 2467,Demon Time,P,WC,S,Right,P
@@ -70,7 +71,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2571,Brady Sizemore,XB,,,Right,2B
 2572,Chet Slamburger,MH,,,Right,C
 2573,Giles Sweeney,MH,,,Right,1B
-2574,Threefinger Jansen lll,WC,EG,H,Left,P
 2576,"Hiram ""3 Eggs"" Delacroix",XB,,,Right,SS
 2577,Joe DiBango,BP,,,Left,C
 2578,Levi Walker,BC,,,Right,3B
