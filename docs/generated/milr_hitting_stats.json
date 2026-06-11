@@ -245,7 +245,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Thomas Nova",
-    "OPS+":54.031054508
+    "OPS+":54.3553842452
   },
   {
     "ID":1,
@@ -617,7 +617,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Vinny Vedecci",
-    "OPS+":78.5928000738
+    "OPS+":78.9535195161
   },
   {
     "ID":2,
@@ -865,7 +865,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Chip Otle",
-    "OPS+":1.4770744175
+    "OPS+":1.6976654567
   },
   {
     "ID":4,
@@ -1361,7 +1361,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Xavier Quinn Jr.",
-    "OPS+":103.8222797138
+    "OPS+":104.2029238615
   },
   {
     "ID":6,
@@ -2167,7 +2167,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Holden Summers",
-    "OPS+":12.7080666286
+    "OPS+":12.9354234736
   },
   {
     "ID":10,
@@ -2919,6 +2919,130 @@
     "HR":0,
     "3B":0,
     "2B":1,
+    "1B":1,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":3,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":2,
+    "PA":6,
+    "AB":6,
+    "TB":3,
+    "G":3,
+    "R":0,
+    "RBI":0,
+    "RE24":-0.0920601015,
+    "WPA":-0.0242,
+    "WAR":0.0157023555,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.3333333333,
+    "OBP":0.3333333333,
+    "SLG":0.5,
+    "OPS":0.8333333333,
+    "ISO":0.1666666667,
+    "BABIP":0.6666666667,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.5,
+    "BB%":0.0,
+    "GB%":1.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":246.6666666667,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"POR",
+    "Last Session":8,
+    "Batting Type":"WC",
+    "Pitching Type":"BS-H",
+    "Handedness":"Right",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Reimer Gonzalez",
+    "OPS+":75.4138151818
+  },
+  {
+    "ID":13,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":1,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":2,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":4,
+    "AB":4,
+    "TB":1,
+    "G":2,
+    "R":0,
+    "RBI":0,
+    "RE24":-0.5676830439,
+    "WPA":-0.0343,
+    "WAR":-0.0401627273,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.25,
+    "OBP":0.25,
+    "SLG":0.25,
+    "OPS":0.5,
+    "ISO":0.0,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.5,
+    "BB%":0.0,
+    "GB%":1.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":281.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"POR",
+    "Last Session":8,
+    "Batting Type":"WC",
+    "Pitching Type":"BS-H",
+    "Handedness":"Right",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Reimer Gonzalez",
+    "OPS+":-23.8440366972
+  },
+  {
+    "ID":13,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
     "1B":0,
     "BB":0,
     "IBB":0,
@@ -2964,7 +3088,7 @@
     "Avg Diff":178.0,
     "Team":"POR",
     "Franchise":"POR",
-    "is_sub_row":false,
+    "is_sub_row":true,
     "Last Team":"POR",
     "Last Session":12,
     "Batting Type":"WC",
@@ -2973,7 +3097,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Reimer Gonzalez",
-    "OPS+":236.3161410017
+    "OPS+":236.9932535509
   },
   {
     "ID":13,
@@ -3221,7 +3345,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"A.Z. Chapman",
-    "OPS+":100.035656868
+    "OPS+":100.4534559023
   },
   {
     "ID":16,
@@ -3407,7 +3531,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Thomas Chiggins",
-    "OPS+":41.2668094573
+    "OPS+":41.5365280055
   },
   {
     "ID":16,
@@ -3531,7 +3655,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Haywood Jablome",
-    "OPS+":130.9184864002
+    "OPS+":131.3678617591
   },
   {
     "ID":17,
@@ -3965,7 +4089,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Jordan Peppers",
-    "OPS+":119.4116514632
+    "OPS+":119.8090465856
   },
   {
     "ID":18,
@@ -4523,7 +4647,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Q Kimbrel",
-    "OPS+":71.2815721577
+    "OPS+":71.6423113455
   },
   {
     "ID":20,
@@ -5019,7 +5143,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Snoop E. Dogg",
-    "OPS+":87.5397788796
+    "OPS+":87.8757738142
   },
   {
     "ID":22,
@@ -5267,7 +5391,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Nate Lewis",
-    "OPS+":64.0359883174
+    "OPS+":64.3223878643
   },
   {
     "ID":24,
@@ -6073,7 +6197,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Eric Leeder",
-    "OPS+":-64.8304021704
+    "OPS+":-64.7689786587
   },
   {
     "ID":29,
@@ -6693,7 +6817,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Larry Longshot",
-    "OPS+":111.6677210862
+    "OPS+":112.0847344381
   },
   {
     "ID":32,
@@ -6755,7 +6879,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Larry Longshot",
-    "OPS+":110.2079481019
+    "OPS+":110.6092861461
   },
   {
     "ID":32,
@@ -6817,7 +6941,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Larry Longshot",
-    "OPS+":111.7520769295
+    "OPS+":112.1741278716
   },
   {
     "ID":32,
@@ -7871,7 +7995,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Brian Zucchini",
-    "OPS+":199.4340802961
+    "OPS+":200.0372919023
   },
   {
     "ID":33,
@@ -8181,7 +8305,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Dixon Uraz",
-    "OPS+":17.8095397003
+    "OPS+":18.0100322765
   },
   {
     "ID":34,
@@ -8243,7 +8367,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Dixon Uraz",
-    "OPS+":39.5815669957
+    "OPS+":39.8201337129
   },
   {
     "ID":34,
@@ -9173,7 +9297,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Jeffrey Nolan",
-    "OPS+":2.5955542207
+    "OPS+":2.778839616
   },
   {
     "ID":35,
@@ -9607,7 +9731,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jose Canyousico",
-    "OPS+":166.2714711473
+    "OPS+":166.797363366
   },
   {
     "ID":36,
@@ -9669,7 +9793,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jose Canyousico",
-    "OPS+":146.9944018076
+    "OPS+":147.4265799077
   },
   {
     "ID":36,
@@ -9731,7 +9855,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jose Canyousico",
-    "OPS+":169.9173864501
+    "OPS+":170.461447014
   },
   {
     "ID":36,
@@ -10227,7 +10351,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Whitt Bass",
-    "OPS+":94.6801128533
+    "OPS+":95.040930929
   },
   {
     "ID":39,
@@ -10599,7 +10723,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Thaddeus Gomorrah",
-    "OPS+":78.6943112037
+    "OPS+":79.0334764615
   },
   {
     "ID":41,
@@ -10847,7 +10971,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Viking Fishbird",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":42,
@@ -10909,7 +11033,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Viking Fishbird",
-    "OPS+":-49.2867150681
+    "OPS+":-49.2293577982
   },
   {
     "ID":42,
@@ -11591,7 +11715,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"LaPrince Frye",
-    "OPS+":201.0066435823
+    "OPS+":201.648211842
   },
   {
     "ID":45,
@@ -11839,7 +11963,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jackson Sanchez",
-    "OPS+":572.6322820035
+    "OPS+":573.9865071018
   },
   {
     "ID":46,
@@ -12273,7 +12397,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Willow Briansdottir",
-    "OPS+":102.4219074656
+    "OPS+":102.8135673225
   },
   {
     "ID":48,
@@ -12645,7 +12769,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Austin Schwartz",
-    "OPS+":13.785146931
+    "OPS+":13.9746039807
   },
   {
     "ID":50,
@@ -12769,7 +12893,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Blandon Brade",
-    "OPS+":-8.1695276447
+    "OPS+":-7.9951201421
   },
   {
     "ID":50,
@@ -13637,7 +13761,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Katia W\u00f6lfe",
-    "OPS+":154.9068083688
+    "OPS+":155.4423901915
   },
   {
     "ID":54,
@@ -13885,7 +14009,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Rick McLightning",
-    "OPS+":222.8250278476
+    "OPS+":223.5264255954
   },
   {
     "ID":55,
@@ -14322,6 +14446,68 @@
     "OPS+":-100.0
   },
   {
+    "ID":56,
+    "Season":5.0,
+    "HR":2,
+    "3B":0,
+    "2B":0,
+    "1B":2,
+    "BB":1,
+    "IBB":0,
+    "FO":2,
+    "SO":3,
+    "Auto K":1,
+    "PO":1,
+    "RGO":4,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":4,
+    "GIDP":2,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":4,
+    "PA":15,
+    "AB":14,
+    "TB":10,
+    "G":6,
+    "R":3,
+    "RBI":4,
+    "RE24":0.4060906713,
+    "WPA":-0.0912,
+    "WAR":0.1028799812,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2857142857,
+    "OBP":0.3333333333,
+    "SLG":0.7142857143,
+    "OPS":1.0476190476,
+    "ISO":0.4285714286,
+    "BABIP":0.2222222222,
+    "SB%":null,
+    "HR%":0.1333333333,
+    "K%":0.2,
+    "BB%":0.0666666667,
+    "GB%":0.5714285714,
+    "FB%":0.2857142857,
+    "GB\/FB":2.0,
+    "Avg Diff":270.7857142857,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":8,
+    "Batting Type":"S",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Ziggy Cedar",
+    "OPS+":130.5553277326
+  },
+  {
     "ID":57,
     "Season":3.0,
     "HR":0,
@@ -14567,7 +14753,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Velvet Scarlatina",
-    "OPS+":-24.7255998127
+    "OPS+":-24.5736565016
   },
   {
     "ID":59,
@@ -15311,7 +15497,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Michael Ikenberry",
-    "OPS+":140.9617647988
+    "OPS+":141.3962558254
   },
   {
     "ID":63,
@@ -15373,7 +15559,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Michael Ikenberry",
-    "OPS+":122.0321552961
+    "OPS+":122.4627338258
   },
   {
     "ID":63,
@@ -15435,7 +15621,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Michael Ikenberry",
-    "OPS+":110.1604069696
+    "OPS+":110.5896283543
   },
   {
     "ID":63,
@@ -15621,7 +15807,7 @@
     "Position":"RF",
     "Display Season":"S6",
     "Name":"Michael Ikenberry",
-    "OPS+":360.4441414667
+    "OPS+":360.4441414666
   },
   {
     "ID":63,
@@ -15993,7 +16179,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Dakota Carolina Montana",
-    "OPS+":89.1198599963
+    "OPS+":89.4913848468
   },
   {
     "ID":65,
@@ -16427,7 +16613,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Daniel Dove",
-    "OPS+":388.4559957973
+    "OPS+":389.3051801564
   },
   {
     "ID":66,
@@ -16737,7 +16923,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Leonard Boyfriend",
-    "OPS+":305.0471524016
+    "OPS+":305.8514563598
   },
   {
     "ID":68,
@@ -16923,7 +17109,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Erin Pickles",
-    "OPS+":94.6381111628
+    "OPS+":95.0492799305
   },
   {
     "ID":68,
@@ -17295,7 +17481,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Miroslav",
-    "OPS+":248.5431642104
+    "OPS+":249.2538052065
   },
   {
     "ID":71,
@@ -17853,7 +18039,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Bubba McCali",
-    "OPS+":12.7080666286
+    "OPS+":12.9354234736
   },
   {
     "ID":72,
@@ -18225,7 +18411,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Jack Alpha",
-    "OPS+":-49.2867150681
+    "OPS+":-49.2293577982
   },
   {
     "ID":73,
@@ -18783,7 +18969,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Einhorn",
-    "OPS+":136.8890819008
+    "OPS+":137.3548295844
   },
   {
     "ID":74,
@@ -19031,7 +19217,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Hank Murphy",
-    "OPS+":57.3316374176
+    "OPS+":57.5996525655
   },
   {
     "ID":76,
@@ -19968,6 +20154,130 @@
     "Season":5.0,
     "HR":0,
     "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":1,
+    "SO":2,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":2,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":5,
+    "AB":5,
+    "TB":0,
+    "G":2,
+    "R":0,
+    "RBI":0,
+    "RE24":-2.4452478387,
+    "WPA":-0.1722,
+    "WAR":-0.2237678125,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0,
+    "OBP":0.0,
+    "SLG":0.0,
+    "OPS":0.0,
+    "ISO":0.0,
+    "BABIP":0.0,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.4,
+    "BB%":0.0,
+    "GB%":0.6666666667,
+    "FB%":0.3333333333,
+    "GB\/FB":2.0,
+    "Avg Diff":360.4,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"ISO",
+    "Last Session":3,
+    "Batting Type":"BP",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"1B",
+    "Display Season":"S5",
+    "Name":"Jumbo Dick",
+    "OPS+":-100.0
+  },
+  {
+    "ID":79,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":1,
+    "BB":1,
+    "IBB":0,
+    "FO":1,
+    "SO":2,
+    "Auto K":0,
+    "PO":1,
+    "RGO":2,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":4,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":1,
+    "H":2,
+    "PA":11,
+    "AB":10,
+    "TB":3,
+    "G":4,
+    "R":1,
+    "RBI":3,
+    "RE24":-1.2327602606,
+    "WPA":-0.058201,
+    "WAR":-0.0734592948,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2,
+    "OBP":0.2727272727,
+    "SLG":0.3,
+    "OPS":0.5727272727,
+    "ISO":0.1,
+    "BABIP":0.25,
+    "SB%":0.0,
+    "HR%":0.0,
+    "K%":0.1818181818,
+    "BB%":0.0909090909,
+    "GB%":0.6666666667,
+    "FB%":0.1666666667,
+    "GB\/FB":4.0,
+    "Avg Diff":313.3333333333,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"ISO",
+    "Last Session":10,
+    "Batting Type":"BP",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"1B",
+    "Display Season":"S5",
+    "Name":"Jumbo Dick",
+    "OPS+":38.8086973425
+  },
+  {
+    "ID":79,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
     "2B":1,
     "1B":1,
     "BB":1,
@@ -20014,7 +20324,7 @@
     "Avg Diff":279.7142857143,
     "Team":"ISO",
     "Franchise":"ISO",
-    "is_sub_row":false,
+    "is_sub_row":true,
     "Last Team":"ISO",
     "Last Session":10,
     "Batting Type":"BP",
@@ -20023,7 +20333,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Jumbo Dick",
-    "OPS+":162.6456265193
+    "OPS+":163.1207227727
   },
   {
     "ID":79,
@@ -20519,7 +20829,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Juan Diego De Las Rosas",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":83,
@@ -20767,7 +21077,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Henrik Omega",
-    "OPS+":114.3110260393
+    "OPS+":114.7204320016
   },
   {
     "ID":84,
@@ -22011,6 +22321,68 @@
   },
   {
     "ID":90,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":2,
+    "BB":0,
+    "IBB":0,
+    "FO":3,
+    "SO":2,
+    "Auto K":0,
+    "PO":1,
+    "RGO":1,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":3,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":3,
+    "PA":12,
+    "AB":12,
+    "TB":4,
+    "G":5,
+    "R":1,
+    "RBI":0,
+    "RE24":-2.5248329789,
+    "WPA":-0.3374,
+    "WAR":-0.2026665666,
+    "0 Diffs":0,
+    "500 Diffs":1,
+    "BA":0.25,
+    "OBP":0.25,
+    "SLG":0.3333333333,
+    "OPS":0.5833333333,
+    "ISO":0.0833333333,
+    "BABIP":0.3,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.1666666667,
+    "BB%":0.0,
+    "GB%":0.4285714286,
+    "FB%":0.4285714286,
+    "GB\/FB":1.0,
+    "Avg Diff":267.25,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":12,
+    "Batting Type":"S",
+    "Pitching Type":"EG-H",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Bob Robb",
+    "OPS+":23.0095300247
+  },
+  {
+    "ID":90,
     "Season":6.0,
     "HR":0,
     "3B":1,
@@ -22503,7 +22875,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"John Johnson Jr.",
-    "OPS+":-72.338208219
+    "OPS+":-72.3069224354
   },
   {
     "ID":91,
@@ -23185,7 +23557,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Mackin Tosh",
-    "OPS+":-13.8145221802
+    "OPS+":-13.6394678416
   },
   {
     "ID":93,
@@ -23619,7 +23991,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Buck Armstrong",
-    "OPS+":2.6019103368
+    "OPS+":2.7607011689
   },
   {
     "ID":97,
@@ -23991,7 +24363,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Tyler Phoenix",
-    "OPS+":95.2236099299
+    "OPS+":95.5682953599
   },
   {
     "ID":99,
@@ -24301,7 +24673,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Merodach Baladan",
-    "OPS+":-29.9994871194
+    "OPS+":-29.877568818
   },
   {
     "ID":100,
@@ -24673,7 +25045,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Mason Spurs",
-    "OPS+":144.2279978986
+    "OPS+":144.6525900782
   },
   {
     "ID":103,
@@ -25355,7 +25727,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Sevag Vapor",
-    "OPS+":232.779300301
+    "OPS+":233.37986338
   },
   {
     "ID":106,
@@ -25665,7 +26037,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Otis Nixon Sr.",
-    "OPS+":159.7316646849
+    "OPS+":160.2804770328
   },
   {
     "ID":108,
@@ -26905,7 +27277,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Kevin Arianna",
-    "OPS+":-6.2058198178
+    "OPS+":-6.0536726198
   },
   {
     "ID":113,
@@ -27773,7 +28145,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Mattress Cadaire",
-    "OPS+":-4.5468970485
+    "OPS+":-4.3704085276
   },
   {
     "ID":116,
@@ -28331,7 +28703,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Harry Peritestes",
-    "OPS+":-18.2742519305
+    "OPS+":-18.1481948709
   },
   {
     "ID":117,
@@ -28393,7 +28765,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Harry Peritestes",
-    "OPS+":125.9008835567
+    "OPS+":126.334843633
   },
   {
     "ID":117,
@@ -28455,7 +28827,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Harry Peritestes",
-    "OPS+":180.8505445485
+    "OPS+":181.402797137
   },
   {
     "ID":117,
@@ -29199,7 +29571,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Luap Renraw",
-    "OPS+":69.1391573425
+    "OPS+":69.4068679355
   },
   {
     "ID":118,
@@ -30625,7 +30997,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Triston Uzumaki",
-    "OPS+":-19.0018588611
+    "OPS+":-18.8571553376
   },
   {
     "ID":125,
@@ -31183,7 +31555,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Zander Ackley",
-    "OPS+":199.2250924182
+    "OPS+":199.8437518565
   },
   {
     "ID":127,
@@ -31741,7 +32113,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Ethan Franklin",
-    "OPS+":19.5662201441
+    "OPS+":19.7579120445
   },
   {
     "ID":128,
@@ -32113,7 +32485,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Hayden McCloud",
-    "OPS+":188.5789691539
+    "OPS+":189.1817449043
   },
   {
     "ID":129,
@@ -32485,7 +32857,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Nori Aru",
-    "OPS+":107.3586270901
+    "OPS+":107.7433975587
   },
   {
     "ID":131,
@@ -33229,7 +33601,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Carlos",
-    "OPS+":40.6944361718
+    "OPS+":40.8996280631
   },
   {
     "ID":132,
@@ -33477,7 +33849,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Bud Tuggli",
-    "OPS+":165.5901372499
+    "OPS+":166.1141611424
   },
   {
     "ID":133,
@@ -33663,7 +34035,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Dart Ragusa",
-    "OPS+":236.3161410017
+    "OPS+":236.9932535509
   },
   {
     "ID":134,
@@ -34345,7 +34717,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Lloyd Gross",
-    "OPS+":65.0760866311
+    "OPS+":65.383495325
   },
   {
     "ID":135,
@@ -34407,7 +34779,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Lloyd Gross",
-    "OPS+":135.499277679
+    "OPS+":135.9582962035
   },
   {
     "ID":135,
@@ -34469,7 +34841,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Lloyd Gross",
-    "OPS+":23.2634177957
+    "OPS+":23.4825797135
   },
   {
     "ID":135,
@@ -35027,7 +35399,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Batter Buckland",
-    "OPS+":99.5753351332
+    "OPS+":99.9740449881
   },
   {
     "ID":137,
@@ -35275,7 +35647,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Donnie Draper",
-    "OPS+":125.0117213832
+    "OPS+":125.4653261113
   },
   {
     "ID":138,
@@ -35337,7 +35709,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Donnie Draper",
-    "OPS+":159.9875838841
+    "OPS+":160.5119574979
   },
   {
     "ID":138,
@@ -35399,7 +35771,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Donnie Draper",
-    "OPS+":239.0416072812
+    "OPS+":239.7261934934
   },
   {
     "ID":138,
@@ -35771,7 +36143,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Rob Patterson",
-    "OPS+":37.2090359836
+    "OPS+":37.4919060152
   },
   {
     "ID":141,
@@ -35957,7 +36329,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Slapshot Brady",
-    "OPS+":409.8136167377
+    "OPS+":410.884780383
   },
   {
     "ID":142,
@@ -36144,6 +36516,68 @@
     "Display Season":"S4",
     "Name":"Homer Pimpson",
     "OPS+":259.523284321
+  },
+  {
+    "ID":144,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":2,
+    "1B":3,
+    "BB":1,
+    "IBB":0,
+    "FO":3,
+    "SO":6,
+    "Auto K":1,
+    "PO":1,
+    "RGO":1,
+    "LGO":3,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":4,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":5,
+    "PA":20,
+    "AB":19,
+    "TB":7,
+    "G":8,
+    "R":2,
+    "RBI":2,
+    "RE24":-1.0108021299,
+    "WPA":-0.108344,
+    "WAR":-0.0180523276,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2631578947,
+    "OBP":0.3,
+    "SLG":0.3684210526,
+    "OPS":0.6684210526,
+    "ISO":0.1052631579,
+    "BABIP":0.3846153846,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.3,
+    "BB%":0.05,
+    "GB%":0.5,
+    "FB%":0.375,
+    "GB\/FB":1.3333333333,
+    "Avg Diff":276.3157894737,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"WC",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Homer Pimpson",
+    "OPS+":7.1369737297
   },
   {
     "ID":144,
@@ -36701,7 +37135,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Jerry Jingles",
-    "OPS+":43.7870290504
+    "OPS+":44.0832680366
   },
   {
     "ID":146,
@@ -37755,7 +38189,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Pickle Rick Vaughan",
-    "OPS+":246.9949514719
+    "OPS+":247.7830536642
   },
   {
     "ID":150,
@@ -37817,7 +38251,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Pickle Rick Vaughan",
-    "OPS+":246.9949514719
+    "OPS+":247.7830536642
   },
   {
     "ID":150,
@@ -37879,7 +38313,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Pickle Rick Vaughan",
-    "OPS+":246.9949514719
+    "OPS+":247.7830536642
   },
   {
     "ID":150,
@@ -38251,7 +38685,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Indy Sayne",
-    "OPS+":44.8009387977
+    "OPS+":45.0141661117
   },
   {
     "ID":151,
@@ -38685,7 +39119,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Coleman Waters",
-    "OPS+":145.5411705301
+    "OPS+":146.0744150357
   },
   {
     "ID":152,
@@ -38747,7 +39181,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Coleman Waters",
-    "OPS+":848.8967113127
+    "OPS+":851.0084975199
   },
   {
     "ID":152,
@@ -38809,7 +39243,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Coleman Waters",
-    "OPS+":115.2166852317
+    "OPS+":115.6842837302
   },
   {
     "ID":152,
@@ -38871,7 +39305,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Coleman Waters",
-    "OPS+":77.4643014647
+    "OPS+":77.8419946819
   },
   {
     "ID":152,
@@ -39739,7 +40173,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Nikki Falke",
-    "OPS+":145.6918912492
+    "OPS+":146.1770637947
   },
   {
     "ID":156,
@@ -40173,7 +40607,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Nikolas Romero",
-    "OPS+":-8.8454167602
+    "OPS+":-8.7043985503
   },
   {
     "ID":158,
@@ -40359,7 +40793,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Sam Smith",
-    "OPS+":76.9345037928
+    "OPS+":77.2917977526
   },
   {
     "ID":158,
@@ -40421,7 +40855,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Sam Smith",
-    "OPS+":33.7119675127
+    "OPS+":33.9632764909
   },
   {
     "ID":158,
@@ -40483,7 +40917,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Sam Smith",
-    "OPS+":187.410914954
+    "OPS+":188.0356282189
   },
   {
     "ID":158,
@@ -40731,7 +41165,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Vigolashi Dongeroso",
-    "OPS+":193.4654522367
+    "OPS+":194.0250613657
   },
   {
     "ID":159,
@@ -40979,7 +41413,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Zum Saparilla",
-    "OPS+":79.6184592187
+    "OPS+":79.8965217336
   },
   {
     "ID":160,
@@ -41537,7 +41971,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Whit Merto",
-    "OPS+":137.6705125436
+    "OPS+":138.0771230529
   },
   {
     "ID":162,
@@ -42033,7 +42467,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rickey Tucker",
-    "OPS+":46.8842485901
+    "OPS+":47.1508508797
   },
   {
     "ID":163,
@@ -42095,7 +42529,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rickey Tucker",
-    "OPS+":63.2354089689
+    "OPS+":63.5510388312
   },
   {
     "ID":163,
@@ -42157,7 +42591,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rickey Tucker",
-    "OPS+":92.8835227013
+    "OPS+":93.2898801077
   },
   {
     "ID":163,
@@ -42777,7 +43211,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Artie Ziff",
-    "OPS+":142.9304788718
+    "OPS+":143.4332196896
   },
   {
     "ID":164,
@@ -43025,7 +43459,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Geno Scaramucci",
-    "OPS+":92.0720821733
+    "OPS+":92.443332539
   },
   {
     "ID":165,
@@ -43459,7 +43893,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Lefty Louis",
-    "OPS+":169.9677486645
+    "OPS+":170.4629233442
   },
   {
     "ID":166,
@@ -43769,7 +44203,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Ronald Eagle Jr.",
-    "OPS+":-61.9650363011
+    "OPS+":-61.9220183486
   },
   {
     "ID":167,
@@ -43831,7 +44265,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Ronald Eagle Jr.",
-    "OPS+":-49.2867150681
+    "OPS+":-49.2293577982
   },
   {
     "ID":167,
@@ -44017,7 +44451,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Bo-Horse Jackman",
-    "OPS+":150.5067500073
+    "OPS+":151.0302661685
   },
   {
     "ID":168,
@@ -44265,7 +44699,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Todd Bonzalez II",
-    "OPS+":178.8629810781
+    "OPS+":179.443827885
   },
   {
     "ID":169,
@@ -44513,7 +44947,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Aych Imtiyaz",
-    "OPS+":78.6943112037
+    "OPS+":79.0334764615
   },
   {
     "ID":170,
@@ -44947,7 +45381,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Federal Credit Union Boi",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":175,
@@ -45010,6 +45444,68 @@
     "Display Season":"S3",
     "Name":"Brigham Young",
     "OPS+":174.0569839697
+  },
+  {
+    "ID":175,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":1,
+    "BB":1,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":1,
+    "RGO":0,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":4,
+    "AB":3,
+    "TB":1,
+    "G":2,
+    "R":1,
+    "RBI":0,
+    "RE24":0.4628439642,
+    "WPA":0.0072,
+    "WAR":0.0628899735,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.3333333333,
+    "OBP":0.5,
+    "SLG":0.3333333333,
+    "OPS":0.8333333333,
+    "ISO":0.0,
+    "BABIP":0.3333333333,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.0,
+    "BB%":0.25,
+    "GB%":0.5,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":256.25,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":4,
+    "Batting Type":"1B",
+    "Pitching Type":"BS-S",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Jasmine Skyla",
+    "OPS+":52.3119266055
   },
   {
     "ID":176,
@@ -45133,7 +45629,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Fernando Cruz",
-    "OPS+":101.5878571546
+    "OPS+":102.0005746675
   },
   {
     "ID":176,
@@ -45505,7 +46001,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Hannah Outlaw",
-    "OPS+":239.0416072812
+    "OPS+":239.7261934934
   },
   {
     "ID":178,
@@ -45567,7 +46063,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Hannah Outlaw",
-    "OPS+":128.9905776758
+    "OPS+":129.4346664016
   },
   {
     "ID":178,
@@ -45629,7 +46125,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Hannah Outlaw",
-    "OPS+":-49.2867150681
+    "OPS+":-49.2293577982
   },
   {
     "ID":178,
@@ -46125,7 +46621,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Demetrios Ooga",
-    "OPS+":171.3418868863
+    "OPS+":171.8596850511
   },
   {
     "ID":180,
@@ -46869,7 +47365,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Boof Jones",
-    "OPS+":161.8881982007
+    "OPS+":162.4102414503
   },
   {
     "ID":182,
@@ -47117,7 +47613,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Valeria Lisova",
-    "OPS+":52.1398547956
+    "OPS+":52.3119266055
   },
   {
     "ID":183,
@@ -47365,7 +47861,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Henry Crowell",
-    "OPS+":114.0681036814
+    "OPS+":114.5080405936
   },
   {
     "ID":184,
@@ -47799,7 +48295,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Antonin Periwinkle",
-    "OPS+":246.9949514719
+    "OPS+":247.7830536642
   },
   {
     "ID":186,
@@ -48109,7 +48605,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"IBO Bust",
-    "OPS+":190.0801149158
+    "OPS+":190.6032053628
   },
   {
     "ID":186,
@@ -48171,7 +48667,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"IBO Bust",
-    "OPS+":126.6454067711
+    "OPS+":127.103491325
   },
   {
     "ID":186,
@@ -48233,7 +48729,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"IBO Bust",
-    "OPS+":197.9134681351
+    "OPS+":198.4444211117
   },
   {
     "ID":186,
@@ -48543,7 +49039,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Alex Peters",
-    "OPS+":144.5377307419
+    "OPS+":145.02445224
   },
   {
     "ID":187,
@@ -48853,7 +49349,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Tonto Kowalski",
-    "OPS+":191.2866126295
+    "OPS+":191.840247033
   },
   {
     "ID":188,
@@ -49287,7 +49783,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Future Trunks",
-    "OPS+":-30.220572029
+    "OPS+":-30.0992599777
   },
   {
     "ID":189,
@@ -49659,7 +50155,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Lane Drew",
-    "OPS+":165.2855133953
+    "OPS+":165.7678486394
   },
   {
     "ID":190,
@@ -49969,7 +50465,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"BEST Nova",
-    "OPS+":130.9571640496
+    "OPS+":131.4153997519
   },
   {
     "ID":191,
@@ -50217,7 +50713,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Javier Tootblan",
-    "OPS+":110.7496680942
+    "OPS+":111.1783738492
   },
   {
     "ID":192,
@@ -50589,7 +51085,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Lemon Ade",
-    "OPS+":73.2528987598
+    "OPS+":73.6346068094
   },
   {
     "ID":193,
@@ -50713,7 +51209,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Lemon Ade",
-    "OPS+":142.0118349582
+    "OPS+":142.5447393649
   },
   {
     "ID":193,
@@ -50961,7 +51457,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Joe Watson",
-    "OPS+":87.2007256731
+    "OPS+":87.5506466229
   },
   {
     "ID":194,
@@ -51519,7 +52015,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Big Nutty",
-    "OPS+":77.7688847169
+    "OPS+":78.0929420551
   },
   {
     "ID":196,
@@ -51891,7 +52387,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Hans Ali",
-    "OPS+":175.4273691501
+    "OPS+":176.0043658687
   },
   {
     "ID":198,
@@ -52015,7 +52511,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"icna comit",
-    "OPS+":8.8808838501
+    "OPS+":9.0744011948
   },
   {
     "ID":198,
@@ -52635,7 +53131,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Alex Moran",
-    "OPS+":388.4559957973
+    "OPS+":389.3051801564
   },
   {
     "ID":203,
@@ -52821,7 +53317,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Bradle Beamen",
-    "OPS+":127.453488824
+    "OPS+":127.9137892677
   },
   {
     "ID":203,
@@ -53131,7 +53627,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Coco Watanabe",
-    "OPS+":149.3732456581
+    "OPS+":149.8119469273
   },
   {
     "ID":204,
@@ -53379,7 +53875,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Patrick Doyle",
-    "OPS+":331.1163724309
+    "OPS+":332.0534423283
   },
   {
     "ID":205,
@@ -53813,7 +54309,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Gil Metz",
-    "OPS+":36.645580906
+    "OPS+":36.942878581
   },
   {
     "ID":207,
@@ -53999,7 +54495,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"J.J. Guemes",
-    "OPS+":51.8848269668
+    "OPS+":52.1981109864
   },
   {
     "ID":207,
@@ -54619,7 +55115,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Gianni",
-    "OPS+":-9.1911604519
+    "OPS+":-9.0510903263
   },
   {
     "ID":210,
@@ -54743,7 +55239,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Chris P. Bacon",
-    "OPS+":114.3552368336
+    "OPS+":114.7679474046
   },
   {
     "ID":210,
@@ -55425,7 +55921,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Jack Marnette",
-    "OPS+":99.5876140388
+    "OPS+":99.9388191544
   },
   {
     "ID":213,
@@ -56665,7 +57161,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Benjamin Abenduct",
-    "OPS+":22.1139989493
+    "OPS+":22.3262950391
   },
   {
     "ID":217,
@@ -56913,7 +57409,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Thomas Beowulf",
-    "OPS+":101.2153410033
+    "OPS+":101.6139055929
   },
   {
     "ID":218,
@@ -56975,7 +57471,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Thomas Beowulf",
-    "OPS+":-39.1440580818
+    "OPS+":-39.0752293578
   },
   {
     "ID":218,
@@ -57037,7 +57533,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Thomas Beowulf",
-    "OPS+":157.988196089
+    "OPS+":158.5173718149
   },
   {
     "ID":219,
@@ -57223,7 +57719,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Chris Orosz",
-    "OPS+":138.0944544902
+    "OPS+":138.5635074976
   },
   {
     "ID":219,
@@ -57285,7 +57781,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Chris Orosz",
-    "OPS+":297.7082364038
+    "OPS+":298.553695866
   },
   {
     "ID":219,
@@ -57347,7 +57843,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Chris Orosz",
-    "OPS+":-23.9300726022
+    "OPS+":-23.8440366972
   },
   {
     "ID":220,
@@ -57471,7 +57967,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Charles Magnus",
-    "OPS+":70.9999487807
+    "OPS+":71.3054446174
   },
   {
     "ID":221,
@@ -58339,7 +58835,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Phil Coulson",
-    "OPS+":152.9660914822
+    "OPS+":153.4212697703
   },
   {
     "ID":226,
@@ -59641,7 +60137,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Mike Oxlong",
-    "OPS+":101.9998448138
+    "OPS+":102.396883839
   },
   {
     "ID":230,
@@ -60385,7 +60881,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Johnny Dickshot",
-    "OPS+":44.8905980948
+    "OPS+":45.1898632433
   },
   {
     "ID":233,
@@ -61005,7 +61501,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Angel Leon",
-    "OPS+":59.6180859798
+    "OPS+":59.8923709342
   },
   {
     "ID":235,
@@ -61129,7 +61625,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"J.E. Wilkins",
-    "OPS+":365.7259320954
+    "OPS+":366.7228897906
   },
   {
     "ID":235,
@@ -61377,7 +61873,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jeo From",
-    "OPS+":22.7953655192
+    "OPS+":23.0095300247
   },
   {
     "ID":238,
@@ -61687,7 +62183,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Ben Bramly",
-    "OPS+":187.1198694151
+    "OPS+":187.7029312656
   },
   {
     "ID":238,
@@ -61749,7 +62245,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Ben Bramly",
-    "OPS+":274.0639796491
+    "OPS+":274.8634581688
   },
   {
     "ID":238,
@@ -61811,7 +62307,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Ben Bramly",
-    "OPS+":84.3176816065
+    "OPS+":84.6448410367
   },
   {
     "ID":238,
@@ -62617,7 +63113,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Jay Money",
-    "OPS+":331.2641724749
+    "OPS+":332.1316133987
   },
   {
     "ID":241,
@@ -63361,7 +63857,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Caelan Rooney",
-    "OPS+":65.9164624752
+    "OPS+":66.2377300884
   },
   {
     "ID":244,
@@ -63798,6 +64294,68 @@
     "OPS+":98.866425028
   },
   {
+    "ID":246,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":1,
+    "Auto K":1,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":1,
+    "AB":1,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "RE24":-0.2731680507,
+    "WPA":-0.0277,
+    "WAR":-0.0231654108,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0,
+    "OBP":0.0,
+    "SLG":0.0,
+    "OPS":0.0,
+    "ISO":0.0,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":1.0,
+    "BB%":0.0,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":1,
+    "Batting Type":"BP",
+    "Pitching Type":null,
+    "Handedness":"Right",
+    "Position":"LF",
+    "Display Season":"S5",
+    "Name":"KayLee Stewart",
+    "OPS+":-100.0
+  },
+  {
     "ID":247,
     "Season":3.0,
     "HR":0,
@@ -63981,7 +64539,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dr.Degratest Toevadoit",
-    "OPS+":94.728529795
+    "OPS+":95.1103630655
   },
   {
     "ID":247,
@@ -64353,7 +64911,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Tequila Sunrise",
-    "OPS+":43.2460429312
+    "OPS+":43.5407984473
   },
   {
     "ID":249,
@@ -64725,7 +65283,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Pablo Sanchez III",
-    "OPS+":75.9666599355
+    "OPS+":76.2857752861
   },
   {
     "ID":251,
@@ -65345,7 +65903,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Oscar Vinegrette",
-    "OPS+":9.0832568086
+    "OPS+":9.2734382997
   },
   {
     "ID":252,
@@ -66337,7 +66895,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Tyrone Jennings",
-    "OPS+":249.2899448272
+    "OPS+":250.0298691623
   },
   {
     "ID":256,
@@ -66647,7 +67205,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Hingle McCringleberry",
-    "OPS+":130.6772774139
+    "OPS+":131.1566313301
   },
   {
     "ID":257,
@@ -66709,7 +67267,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Hingle McCringleberry",
-    "OPS+":158.8526697377
+    "OPS+":159.3842159881
   },
   {
     "ID":257,
@@ -66771,7 +67329,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Hingle McCringleberry",
-    "OPS+":71.3617136419
+    "OPS+":71.7335668094
   },
   {
     "ID":257,
@@ -67143,7 +67701,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Ty Palmatier",
-    "OPS+":18.24176911
+    "OPS+":18.425938362
   },
   {
     "ID":258,
@@ -67577,7 +68135,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Layzer Gunn",
-    "OPS+":129.6515440344
+    "OPS+":130.1451074433
   },
   {
     "ID":259,
@@ -67639,7 +68197,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Layzer Gunn",
-    "OPS+":420.4924272079
+    "OPS+":421.6745804963
   },
   {
     "ID":259,
@@ -67701,7 +68259,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Layzer Gunn",
-    "OPS+":92.8835227013
+    "OPS+":93.2898801077
   },
   {
     "ID":259,
@@ -68135,7 +68693,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Oliver Skipp",
-    "OPS+":69.7959404667
+    "OPS+":70.1144760492
   },
   {
     "ID":260,
@@ -68507,7 +69065,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Dirtbag Darrell",
-    "OPS+":116.1454541462
+    "OPS+":116.5645328257
   },
   {
     "ID":262,
@@ -68569,7 +69127,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Dirtbag Darrell",
-    "OPS+":133.2632626771
+    "OPS+":133.7174115706
   },
   {
     "ID":262,
@@ -68631,7 +69189,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Dirtbag Darrell",
-    "OPS+":57.5254654148
+    "OPS+":57.8237235763
   },
   {
     "ID":262,
@@ -69809,7 +70367,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Skye McDowell",
-    "OPS+":163.9499899033
+    "OPS+":164.4286629291
   },
   {
     "ID":264,
@@ -69871,7 +70429,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Skye McDowell",
-    "OPS+":54.7144190028
+    "OPS+":54.9752573206
   },
   {
     "ID":264,
@@ -69995,7 +70553,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Skye McDowell",
-    "OPS+":67.755955388
+    "OPS+":68.0198730208
   },
   {
     "ID":264,
@@ -70491,7 +71049,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Mr. Miyagi",
-    "OPS+":-18.4407317525
+    "OPS+":-18.2987898786
   },
   {
     "ID":265,
@@ -71111,7 +71669,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Cam Singleton",
-    "OPS+":-5.8235746669
+    "OPS+":-5.6572478671
   },
   {
     "ID":266,
@@ -71297,7 +71855,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jeff Steelflex",
-    "OPS+":201.9539014436
+    "OPS+":202.5718043861
   },
   {
     "ID":268,
@@ -71917,7 +72475,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Mason Miller",
-    "OPS+":47.9565328619
+    "OPS+":48.2469027093
   },
   {
     "ID":270,
@@ -71979,7 +72537,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Mason Miller",
-    "OPS+":22.4521800091
+    "OPS+":22.6654034453
   },
   {
     "ID":270,
@@ -72041,7 +72599,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Mason Miller",
-    "OPS+":70.6053395087
+    "OPS+":70.9642243588
   },
   {
     "ID":270,
@@ -72475,7 +73033,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Assassin Xekutioner",
-    "OPS+":108.4538290348
+    "OPS+":108.8620293824
   },
   {
     "ID":271,
@@ -73033,7 +73591,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Jimjon Jonjim",
-    "OPS+":162.9716798834
+    "OPS+":163.5702301906
   },
   {
     "ID":272,
@@ -73281,7 +73839,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Max Wasson",
-    "OPS+":-38.6023172404
+    "OPS+":-38.4952349876
   },
   {
     "ID":273,
@@ -73343,7 +73901,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Max Wasson",
-    "OPS+":-1.6527472591
+    "OPS+":-1.4811113837
   },
   {
     "ID":273,
@@ -73653,7 +74211,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Richard Northstar",
-    "OPS+":4.2463085913
+    "OPS+":4.419036315
   },
   {
     "ID":275,
@@ -73715,7 +74273,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Richard Northstar",
-    "OPS+":24.7249876455
+    "OPS+":24.9333016677
   },
   {
     "ID":275,
@@ -74397,7 +74955,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Becky McBadbat",
-    "OPS+":152.2874479966
+    "OPS+":152.8158471155
   },
   {
     "ID":278,
@@ -75265,7 +75823,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Cy Hadd Jr.",
-    "OPS+":208.062109016
+    "OPS+":208.7107684904
   },
   {
     "ID":282,
@@ -75513,7 +76071,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Hudson Hildebrandt",
-    "OPS+":133.5220189442
+    "OPS+":133.966277608
   },
   {
     "ID":284,
@@ -75699,7 +76257,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Joel Embiid",
-    "OPS+":106.4593486015
+    "OPS+":106.872293096
   },
   {
     "ID":286,
@@ -75823,7 +76381,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Oliver Yu",
-    "OPS+":259.467572626
+    "OPS+":260.2081700916
   },
   {
     "ID":287,
@@ -76009,7 +76567,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"KC Bats",
-    "OPS+":131.5296871556
+    "OPS+":131.9571693007
   },
   {
     "ID":287,
@@ -76505,7 +77063,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Conor Sexton",
-    "OPS+":34.6548854765
+    "OPS+":34.8934000123
   },
   {
     "ID":289,
@@ -76815,7 +77373,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Miguel Snow",
-    "OPS+":210.687245353
+    "OPS+":211.3757860267
   },
   {
     "ID":290,
@@ -77002,6 +77560,68 @@
     "Display Season":"S4",
     "Name":"S-E V-E Newman-Costanza",
     "OPS+":357.129633525
+  },
+  {
+    "ID":291,
+    "Season":5.0,
+    "HR":2,
+    "3B":2,
+    "2B":0,
+    "1B":1,
+    "BB":1,
+    "IBB":0,
+    "FO":3,
+    "SO":9,
+    "Auto K":1,
+    "PO":1,
+    "RGO":4,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":6,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":5,
+    "PA":25,
+    "AB":24,
+    "TB":15,
+    "G":9,
+    "R":3,
+    "RBI":6,
+    "RE24":-0.7639206759,
+    "WPA":0.086979,
+    "WAR":0.0273927892,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2083333333,
+    "OBP":0.24,
+    "SLG":0.625,
+    "OPS":0.865,
+    "ISO":0.4166666667,
+    "BABIP":0.2307692308,
+    "SB%":null,
+    "HR%":0.08,
+    "K%":0.36,
+    "BB%":0.04,
+    "GB%":0.6,
+    "FB%":0.3,
+    "GB\/FB":2.0,
+    "Avg Diff":255.5,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":12,
+    "Batting Type":"EN",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"1B",
+    "Display Season":"S5",
+    "Name":"Joey-Claire Hiveswap",
+    "OPS+":78.2950919464
   },
   {
     "ID":292,
@@ -77497,7 +78117,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Charlie Bae Jr.",
-    "OPS+":174.8716931378
+    "OPS+":175.4190183615
   },
   {
     "ID":293,
@@ -77559,7 +78179,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Charlie Bae Jr.",
-    "OPS+":207.1268090374
+    "OPS+":207.7238797848
   },
   {
     "ID":293,
@@ -77621,7 +78241,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Charlie Bae Jr.",
-    "OPS+":159.9875838841
+    "OPS+":160.5119574979
   },
   {
     "ID":293,
@@ -78613,7 +79233,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jocko Jones",
-    "OPS+":102.8531397274
+    "OPS+":103.0825688073
   },
   {
     "ID":295,
@@ -78923,7 +79543,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Chuck McCluster",
-    "OPS+":129.2150699755
+    "OPS+":129.659774295
   },
   {
     "ID":296,
@@ -78985,7 +79605,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Chuck McCluster",
-    "OPS+":101.789684601
+    "OPS+":102.1959521305
   },
   {
     "ID":296,
@@ -79047,7 +79667,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Chuck McCluster",
-    "OPS+":225.6373305315
+    "OPS+":226.2034534376
   },
   {
     "ID":296,
@@ -79109,7 +79729,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Chuck McCluster",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":296,
@@ -79419,7 +80039,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jeff Dingerhitter",
-    "OPS+":76.5648080556
+    "OPS+":76.9264169448
   },
   {
     "ID":298,
@@ -79481,7 +80101,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jeff Dingerhitter",
-    "OPS+":92.0255589261
+    "OPS+":92.429563659
   },
   {
     "ID":298,
@@ -79543,7 +80163,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jeff Dingerhitter",
-    "OPS+":68.8344326204
+    "OPS+":69.1748435877
   },
   {
     "ID":298,
@@ -80039,7 +80659,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Joe Pidgeon",
-    "OPS+":61.8307553551
+    "OPS+":62.1344525566
   },
   {
     "ID":301,
@@ -80845,7 +81465,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Jackson Takegi",
-    "OPS+":388.4559957973
+    "OPS+":389.3051801564
   },
   {
     "ID":302,
@@ -81031,7 +81651,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Jimmy Johns",
-    "OPS+":130.3986614313
+    "OPS+":130.8670380079
   },
   {
     "ID":303,
@@ -81589,7 +82209,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Dylan Green",
-    "OPS+":191.2866126295
+    "OPS+":191.840247033
   },
   {
     "ID":305,
@@ -81713,7 +82333,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Dylan Green",
-    "OPS+":174.3821843189
+    "OPS+":174.9166996324
   },
   {
     "ID":305,
@@ -82457,7 +83077,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Garitek",
-    "OPS+":228.0719766348
+    "OPS+":228.6447757287
   },
   {
     "ID":307,
@@ -82767,7 +83387,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Moose McCracken",
-    "OPS+":203.7198982261
+    "OPS+":204.3641928179
   },
   {
     "ID":308,
@@ -83015,7 +83635,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Emer Bock",
-    "OPS+":144.2279978986
+    "OPS+":144.6525900782
   },
   {
     "ID":309,
@@ -83201,7 +83821,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jameson Poe",
-    "OPS+":32.1824436883
+    "OPS+":32.4836290404
   },
   {
     "ID":310,
@@ -84193,7 +84813,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Sunshine Pardue",
-    "OPS+":1.5816287765
+    "OPS+":1.7674337169
   },
   {
     "ID":315,
@@ -85433,7 +86053,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"C.J. Yantzi",
-    "OPS+":106.0171785826
+    "OPS+":106.4014958477
   },
   {
     "ID":323,
@@ -85743,7 +86363,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Caleb Aiken",
-    "OPS+":103.3701590899
+    "OPS+":103.7573142786
   },
   {
     "ID":324,
@@ -86177,7 +86797,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Caleb Athen",
-    "OPS+":328.4042841048
+    "OPS+":329.3339170236
   },
   {
     "ID":326,
@@ -86301,7 +86921,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Chaz Gorbachuck",
-    "OPS+":45.1360347251
+    "OPS+":45.4114609073
   },
   {
     "ID":326,
@@ -86487,7 +87107,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Makesiondon Kelkboom",
-    "OPS+":113.0640794523
+    "OPS+":113.4491751854
   },
   {
     "ID":327,
@@ -86797,7 +87417,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Drew Savage",
-    "OPS+":81.1896973964
+    "OPS+":81.4958996009
   },
   {
     "ID":329,
@@ -87479,7 +88099,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rekt Keyo",
-    "OPS+":297.7082364038
+    "OPS+":298.553695866
   },
   {
     "ID":331,
@@ -87541,7 +88161,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rekt Keyo",
-    "OPS+":207.7622219921
+    "OPS+":208.4223151248
   },
   {
     "ID":331,
@@ -87603,7 +88223,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rekt Keyo",
-    "OPS+":192.2998416509
+    "OPS+":192.929790468
   },
   {
     "ID":331,
@@ -88471,7 +89091,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Dixie Normos",
-    "OPS+":82.222264827
+    "OPS+":82.5687473738
   },
   {
     "ID":334,
@@ -88781,7 +89401,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dwayne Stevenson",
-    "OPS+":46.3865443872
+    "OPS+":46.6128739676
   },
   {
     "ID":335,
@@ -89091,7 +89711,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Chris Yukine",
-    "OPS+":60.234794669
+    "OPS+":60.5011581908
   },
   {
     "ID":335,
@@ -89339,7 +89959,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Darth Vader",
-    "OPS+":53.4843810517
+    "OPS+":53.8072117232
   },
   {
     "ID":336,
@@ -89463,7 +90083,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Darth Vader",
-    "OPS+":91.1801062766
+    "OPS+":91.5817926436
   },
   {
     "ID":337,
@@ -89587,7 +90207,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Andrew Peters",
-    "OPS+":129.2698677571
+    "OPS+":129.6966988168
   },
   {
     "ID":338,
@@ -89773,7 +90393,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Eric Cowan",
-    "OPS+":239.9681101567
+    "OPS+":240.6552369875
   },
   {
     "ID":338,
@@ -90269,7 +90889,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Isaac Snowbender",
-    "OPS+":-18.2893242198
+    "OPS+":-18.1469671623
   },
   {
     "ID":339,
@@ -90703,7 +91323,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Picov Andropov",
-    "OPS+":100.2763129331
+    "OPS+":100.6854339827
   },
   {
     "ID":340,
@@ -91447,7 +92067,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Mongster Mash",
-    "OPS+":-31.6070570023
+    "OPS+":-31.5128916687
   },
   {
     "ID":344,
@@ -91943,7 +92563,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Lily Pink",
-    "OPS+":35.39603199
+    "OPS+":35.6692615246
   },
   {
     "ID":348,
@@ -92253,7 +92873,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Kentho Birne",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":349,
@@ -92687,7 +93307,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Lightning Balls",
-    "OPS+":234.3862957378
+    "OPS+":235.0436975244
   },
   {
     "ID":350,
@@ -93431,7 +94051,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Jack Jackie Jackson",
-    "OPS+":12.7080666286
+    "OPS+":12.9354234736
   },
   {
     "ID":354,
@@ -93803,7 +94423,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Chuck Tingle",
-    "OPS+":44.9770948768
+    "OPS+":45.2214452297
   },
   {
     "ID":355,
@@ -93865,7 +94485,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Chuck Tingle",
-    "OPS+":196.3027502505
+    "OPS+":196.8088597213
   },
   {
     "ID":355,
@@ -94485,7 +95105,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Stan Mann",
-    "OPS+":43.2460429312
+    "OPS+":43.5407984473
   },
   {
     "ID":357,
@@ -94919,7 +95539,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Stephen Bear",
-    "OPS+":251.8642436785
+    "OPS+":252.6656982463
   },
   {
     "ID":360,
@@ -95167,7 +95787,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Matt Himynamis",
-    "OPS+":-23.9300726022
+    "OPS+":-23.8440366972
   },
   {
     "ID":361,
@@ -95663,7 +96283,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Connor Morgan",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":362,
@@ -95918,11 +96538,11 @@
     "Season":5.0,
     "HR":0,
     "3B":0,
-    "2B":2,
+    "2B":0,
     "1B":0,
-    "BB":3,
+    "BB":0,
     "IBB":0,
-    "FO":2,
+    "FO":0,
     "SO":2,
     "Auto K":2,
     "PO":0,
@@ -95936,34 +96556,96 @@
     "GITP":0,
     "SB":0,
     "CS":0,
-    "H":2,
-    "PA":9,
-    "AB":6,
-    "TB":4,
-    "G":6,
-    "R":1,
-    "RBI":1,
-    "RE24":1.5007262391,
-    "WPA":0.1173,
-    "WAR":0.1874351724,
+    "H":0,
+    "PA":2,
+    "AB":2,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "RE24":-0.5470810942,
+    "WPA":-0.0403,
+    "WAR":-0.0464053209,
     "0 Diffs":0,
     "500 Diffs":0,
-    "BA":0.3333333333,
-    "OBP":0.5555555556,
-    "SLG":0.6666666667,
-    "OPS":1.2222222222,
-    "ISO":0.3333333333,
+    "BA":0.0,
+    "OBP":0.0,
+    "SLG":0.0,
+    "OPS":0.0,
+    "ISO":0.0,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":1.0,
+    "BB%":0.0,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"CHI",
+    "Last Session":3,
+    "Batting Type":"1B",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"3B",
+    "Display Season":"S5",
+    "Name":"Supreme Asslord",
+    "OPS+":-100.0
+  },
+  {
+    "ID":363,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":2,
+    "1B":0,
+    "BB":3,
+    "IBB":0,
+    "FO":2,
+    "SO":4,
+    "Auto K":4,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":2,
+    "PA":11,
+    "AB":8,
+    "TB":4,
+    "G":7,
+    "R":1,
+    "RBI":1,
+    "RE24":0.9536451449,
+    "WPA":0.077,
+    "WAR":0.1410298515,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.25,
+    "OBP":0.4545454545,
+    "SLG":0.5,
+    "OPS":0.9545454545,
+    "ISO":0.25,
     "BABIP":0.5,
     "SB%":null,
     "HR%":0.0,
-    "K%":0.2222222222,
-    "BB%":0.3333333333,
+    "K%":0.3636363636,
+    "BB%":0.2727272727,
     "GB%":0.0,
     "FB%":1.0,
     "GB\/FB":0.0,
     "Avg Diff":145.8333333333,
-    "Team":"2TM",
-    "Franchise":"2TM",
+    "Team":"3TM",
+    "Franchise":"3TM",
     "is_sub_row":false,
     "Last Team":"CHI",
     "Last Session":14,
@@ -95973,7 +96655,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Supreme Asslord",
-    "OPS+":194.2631200136
+    "OPS+":132.1725212671
   },
   {
     "ID":363,
@@ -96035,7 +96717,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Supreme Asslord",
-    "OPS+":307.051743732
+    "OPS+":307.8177731837
   },
   {
     "ID":363,
@@ -96469,7 +97151,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Buzz Schwinghammer",
-    "OPS+":113.5319501976
+    "OPS+":113.8723689206
   },
   {
     "ID":367,
@@ -97089,7 +97771,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Robin Reynolds",
-    "OPS+":-13.0629401168
+    "OPS+":-12.9646133683
   },
   {
     "ID":373,
@@ -97337,7 +98019,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Tanner Hendrix",
-    "OPS+":-51.9558353277
+    "OPS+":-51.9014968614
   },
   {
     "ID":377,
@@ -97585,7 +98267,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Isaac Saffron",
-    "OPS+":133.0963237744
+    "OPS+":133.4903911288
   },
   {
     "ID":377,
@@ -97957,7 +98639,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Gimpy Schlempteen 32",
-    "OPS+":167.4058697232
+    "OPS+":167.8873944596
   },
   {
     "ID":379,
@@ -98267,7 +98949,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Lawrence Wiseman",
-    "OPS+":100.8330583535
+    "OPS+":101.228962032
   },
   {
     "ID":381,
@@ -98453,7 +99135,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Cue Anon",
-    "OPS+":237.5175820748
+    "OPS+":238.197989167
   },
   {
     "ID":381,
@@ -98701,7 +99383,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Fuzzy Dunlop",
-    "OPS+":162.8209612881
+    "OPS+":163.3218955713
   },
   {
     "ID":383,
@@ -98887,7 +99569,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Spitz McGregor III",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":385,
@@ -99259,7 +99941,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Babatunde Oladotun",
-    "OPS+":81.3135195156
+    "OPS+":81.6881501287
   },
   {
     "ID":386,
@@ -99755,7 +100437,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Peter Peckershine",
-    "OPS+":238.1241998858
+    "OPS+":238.8062704207
   },
   {
     "ID":389,
@@ -100132,6 +100814,68 @@
   {
     "ID":390,
     "Season":5.0,
+    "HR":2,
+    "3B":0,
+    "2B":1,
+    "1B":6,
+    "BB":1,
+    "IBB":0,
+    "FO":5,
+    "SO":1,
+    "Auto K":0,
+    "PO":0,
+    "RGO":6,
+    "LGO":7,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":13,
+    "GIDP":2,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":9,
+    "PA":29,
+    "AB":28,
+    "TB":16,
+    "G":12,
+    "R":6,
+    "RBI":6,
+    "RE24":1.2434634301,
+    "WPA":-0.402465,
+    "WAR":0.2447367769,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.3214285714,
+    "OBP":0.3448275862,
+    "SLG":0.5714285714,
+    "OPS":0.9162561576,
+    "ISO":0.25,
+    "BABIP":0.28,
+    "SB%":null,
+    "HR%":0.0689655172,
+    "K%":0.0344827586,
+    "BB%":0.0344827586,
+    "GB%":0.7222222222,
+    "FB%":0.2777777778,
+    "GB\/FB":2.6,
+    "Avg Diff":239.5357142857,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":5,
+    "Batting Type":"MH",
+    "Pitching Type":"NH-H",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Joey McCarty",
+    "OPS+":94.52485518
+  },
+  {
+    "ID":390,
+    "Season":5.0,
     "HR":1,
     "3B":0,
     "2B":1,
@@ -100180,8 +100924,8 @@
     "Avg Diff":262.0,
     "Team":"LMN",
     "Franchise":"LMN",
-    "is_sub_row":false,
-    "Last Team":"LMN",
+    "is_sub_row":true,
+    "Last Team":"NUL",
     "Last Session":5,
     "Batting Type":"MH",
     "Pitching Type":"NH-H",
@@ -100189,7 +100933,69 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Joey McCarty",
-    "OPS+":205.8881700426
+    "OPS+":206.5308682298
+  },
+  {
+    "ID":390,
+    "Season":5.0,
+    "HR":1,
+    "3B":0,
+    "2B":0,
+    "1B":6,
+    "BB":1,
+    "IBB":0,
+    "FO":5,
+    "SO":1,
+    "Auto K":0,
+    "PO":0,
+    "RGO":5,
+    "LGO":5,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":10,
+    "GIDP":2,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":7,
+    "PA":24,
+    "AB":23,
+    "TB":10,
+    "G":10,
+    "R":5,
+    "RBI":2,
+    "RE24":-1.6539074905,
+    "WPA":-0.533665,
+    "WAR":-0.0657572865,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.3043478261,
+    "OBP":0.3333333333,
+    "SLG":0.4347826087,
+    "OPS":0.768115942,
+    "ISO":0.1304347826,
+    "BABIP":0.2857142857,
+    "SB%":null,
+    "HR%":0.0416666667,
+    "K%":0.0416666667,
+    "BB%":0.0416666667,
+    "GB%":0.6666666667,
+    "FB%":0.3333333333,
+    "GB\/FB":2.0,
+    "Avg Diff":234.652173913,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"MH",
+    "Pitching Type":"NH-H",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Joey McCarty",
+    "OPS+":66.9427139258
   },
   {
     "ID":390,
@@ -100565,6 +101371,68 @@
   },
   {
     "ID":391,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":1,
+    "BB":0,
+    "IBB":0,
+    "FO":1,
+    "SO":4,
+    "Auto K":4,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":6,
+    "AB":6,
+    "TB":1,
+    "G":4,
+    "R":0,
+    "RBI":0,
+    "RE24":-1.2493185065,
+    "WPA":-0.057,
+    "WAR":-0.100023485,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.1666666667,
+    "OBP":0.1666666667,
+    "SLG":0.1666666667,
+    "OPS":0.3333333333,
+    "ISO":0.0,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.6666666667,
+    "BB%":0.0,
+    "GB%":0.0,
+    "FB%":1.0,
+    "GB\/FB":0.0,
+    "Avg Diff":118.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":9,
+    "Batting Type":"MH",
+    "Pitching Type":"BS-S",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Maxelia Gray",
+    "OPS+":-18.1469671623
+  },
+  {
+    "ID":391,
     "Season":6.0,
     "HR":0,
     "3B":0,
@@ -100815,6 +101683,68 @@
     "ID":392,
     "Season":5.0,
     "HR":0,
+    "3B":2,
+    "2B":2,
+    "1B":4,
+    "BB":2,
+    "IBB":0,
+    "FO":5,
+    "SO":7,
+    "Auto K":1,
+    "PO":3,
+    "RGO":5,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":7,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":8,
+    "PA":32,
+    "AB":30,
+    "TB":14,
+    "G":13,
+    "R":6,
+    "RBI":6,
+    "RE24":1.5502525272,
+    "WPA":-0.019939,
+    "WAR":0.2878698694,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2666666667,
+    "OBP":0.3125,
+    "SLG":0.4666666667,
+    "OPS":0.7791666667,
+    "ISO":0.2,
+    "BABIP":0.347826087,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.21875,
+    "BB%":0.0625,
+    "GB%":0.4666666667,
+    "FB%":0.3333333333,
+    "GB\/FB":1.4,
+    "Avg Diff":266.2580645161,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"S",
+    "Pitching Type":"SF-S",
+    "Handedness":"Left",
+    "Position":"PH",
+    "Display Season":"S5",
+    "Name":"Haydn Werfer",
+    "OPS+":68.5120001668
+  },
+  {
+    "ID":392,
+    "Season":5.0,
+    "HR":0,
     "3B":1,
     "2B":0,
     "1B":1,
@@ -100862,8 +101792,8 @@
     "Avg Diff":134.0,
     "Team":"LMN",
     "Franchise":"LMN",
-    "is_sub_row":false,
-    "Last Team":"LMN",
+    "is_sub_row":true,
+    "Last Team":"NUL",
     "Last Session":14,
     "Batting Type":"S",
     "Pitching Type":"SF-S",
@@ -100871,7 +101801,69 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Haydn Werfer",
-    "OPS+":353.2908135422
+    "OPS+":354.20698265
+  },
+  {
+    "ID":392,
+    "Season":5.0,
+    "HR":0,
+    "3B":1,
+    "2B":2,
+    "1B":3,
+    "BB":2,
+    "IBB":0,
+    "FO":4,
+    "SO":7,
+    "Auto K":1,
+    "PO":3,
+    "RGO":5,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":7,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":6,
+    "PA":29,
+    "AB":27,
+    "TB":10,
+    "G":12,
+    "R":5,
+    "RBI":2,
+    "RE24":-2.1661444742,
+    "WPA":-0.223839,
+    "WAR":-0.0962240135,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2222222222,
+    "OBP":0.275862069,
+    "SLG":0.3703703704,
+    "OPS":0.6462324393,
+    "ISO":0.1481481481,
+    "BABIP":0.3,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.2413793103,
+    "BB%":0.0689655172,
+    "GB%":0.5,
+    "FB%":0.2857142857,
+    "GB\/FB":1.75,
+    "Avg Diff":280.4285714286,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"S",
+    "Pitching Type":"SF-S",
+    "Handedness":"Left",
+    "Position":"PH",
+    "Display Season":"S5",
+    "Name":"Haydn Werfer",
+    "OPS+":36.2320855892
   },
   {
     "ID":392,
@@ -101119,7 +102111,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Birdman",
-    "OPS+":52.5366162593
+    "OPS+":52.8063384479
   },
   {
     "ID":393,
@@ -101181,7 +102173,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Birdman",
-    "OPS+":146.9944018076
+    "OPS+":147.4265799077
   },
   {
     "ID":393,
@@ -101243,7 +102235,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Birdman",
-    "OPS+":46.0445630463
+    "OPS+":46.3027128219
   },
   {
     "ID":393,
@@ -101615,7 +102607,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Mylo Grams",
-    "OPS+":198.6814399282
+    "OPS+":199.2553521271
   },
   {
     "ID":396,
@@ -101813,6 +102805,130 @@
     "BB":0,
     "IBB":0,
     "FO":1,
+    "SO":1,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":1,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":2,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":5,
+    "AB":4,
+    "TB":4,
+    "G":2,
+    "R":1,
+    "RBI":3,
+    "RE24":0.8469816533,
+    "WPA":0.0716,
+    "WAR":0.1054551367,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.25,
+    "OBP":0.2,
+    "SLG":1.0,
+    "OPS":1.2,
+    "ISO":0.75,
+    "BABIP":0.0,
+    "SB%":null,
+    "HR%":0.2,
+    "K%":0.2,
+    "BB%":0.0,
+    "GB%":0.6666666667,
+    "FB%":0.3333333333,
+    "GB\/FB":2.0,
+    "Avg Diff":300.4,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"CHI",
+    "Last Session":4,
+    "Batting Type":"BP",
+    "Pitching Type":null,
+    "Handedness":"Right",
+    "Position":"C",
+    "Display Season":"S5",
+    "Name":"Stella Adams",
+    "OPS+":110.413752407
+  },
+  {
+    "ID":397,
+    "Season":5.0,
+    "HR":2,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":2,
+    "SO":1,
+    "Auto K":0,
+    "PO":1,
+    "RGO":1,
+    "LGO":4,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":5,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":2,
+    "PA":11,
+    "AB":10,
+    "TB":8,
+    "G":4,
+    "R":2,
+    "RBI":4,
+    "RE24":-0.0653723918,
+    "WPA":0.021,
+    "WAR":0.0391280978,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2,
+    "OBP":0.1818181818,
+    "SLG":0.8,
+    "OPS":0.9818181818,
+    "ISO":0.6,
+    "BABIP":0.0,
+    "SB%":null,
+    "HR%":0.1818181818,
+    "K%":0.0909090909,
+    "BB%":0.0,
+    "GB%":0.625,
+    "FB%":0.25,
+    "GB\/FB":2.5,
+    "Avg Diff":318.6363636364,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"CHI",
+    "Last Session":8,
+    "Batting Type":"BP",
+    "Pitching Type":null,
+    "Handedness":"Right",
+    "Position":"C",
+    "Display Season":"S5",
+    "Name":"Stella Adams",
+    "OPS+":91.1395589379
+  },
+  {
+    "ID":397,
+    "Season":5.0,
+    "HR":1,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":1,
     "SO":0,
     "Auto K":0,
     "PO":1,
@@ -101854,7 +102970,7 @@
     "Avg Diff":333.8333333333,
     "Team":"CHI",
     "Franchise":"CHI",
-    "is_sub_row":false,
+    "is_sub_row":true,
     "Last Team":"CHI",
     "Last Session":8,
     "Batting Type":"BP",
@@ -101863,7 +102979,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Stella Adams",
-    "OPS+":74.7028483254
+    "OPS+":75.1002047453
   },
   {
     "ID":398,
@@ -102235,7 +103351,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Jake Wexler",
-    "OPS+":-45.3900800998
+    "OPS+":-45.2948020881
   },
   {
     "ID":400,
@@ -102359,7 +103475,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Graham Grams",
-    "OPS+":291.4292373936
+    "OPS+":292.1757721972
   },
   {
     "ID":400,
@@ -102546,6 +103662,68 @@
     "Display Season":"S4",
     "Name":"Iris Solstice",
     "OPS+":77.8797124373
+  },
+  {
+    "ID":401,
+    "Season":5.0,
+    "HR":2,
+    "3B":0,
+    "2B":1,
+    "1B":2,
+    "BB":2,
+    "IBB":0,
+    "FO":2,
+    "SO":1,
+    "Auto K":0,
+    "PO":1,
+    "RGO":2,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":3,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":5,
+    "PA":14,
+    "AB":12,
+    "TB":12,
+    "G":5,
+    "R":3,
+    "RBI":5,
+    "RE24":3.0888496843,
+    "WPA":0.259326,
+    "WAR":0.3670044882,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.4166666667,
+    "OBP":0.5,
+    "SLG":1.0,
+    "OPS":1.5,
+    "ISO":0.5833333333,
+    "BABIP":0.3333333333,
+    "SB%":null,
+    "HR%":0.1428571429,
+    "K%":0.0714285714,
+    "BB%":0.1428571429,
+    "GB%":0.5,
+    "FB%":0.3333333333,
+    "GB\/FB":1.5,
+    "Avg Diff":206.5714285714,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"BP",
+    "Pitching Type":"BS-H",
+    "Handedness":"Right",
+    "Position":"2B",
+    "Display Season":"S5",
+    "Name":"Iris Solstice",
+    "OPS+":203.3541621188
   },
   {
     "ID":401,
@@ -102917,7 +104095,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Sven Jorgenson",
-    "OPS+":1.2157853694
+    "OPS+":1.3802029153
   },
   {
     "ID":405,
@@ -103104,6 +104282,68 @@
     "Display Season":"S4",
     "Name":"Catfish O'Acid",
     "OPS+":203.9092016235
+  },
+  {
+    "ID":406,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":2,
+    "BB":1,
+    "IBB":0,
+    "FO":2,
+    "SO":2,
+    "Auto K":0,
+    "PO":1,
+    "RGO":3,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":4,
+    "GIDP":2,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":2,
+    "PA":12,
+    "AB":11,
+    "TB":2,
+    "G":6,
+    "R":0,
+    "RBI":1,
+    "RE24":-2.453981675,
+    "WPA":-0.010301,
+    "WAR":-0.1955814362,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.1818181818,
+    "OBP":0.25,
+    "SLG":0.1818181818,
+    "OPS":0.4318181818,
+    "ISO":0.0,
+    "BABIP":0.2222222222,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.1666666667,
+    "BB%":0.0833333333,
+    "GB%":0.5714285714,
+    "FB%":0.2857142857,
+    "GB\/FB":2.0,
+    "Avg Diff":283.6666666667,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"BC",
+    "Pitching Type":"BF-H",
+    "Handedness":"Right",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Catfish O'Acid",
+    "OPS+":10.0943142549
   },
   {
     "ID":406,
@@ -103475,7 +104715,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Cole Martinez",
-    "OPS+":99.415461433
+    "OPS+":99.7661944787
   },
   {
     "ID":409,
@@ -103723,7 +104963,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Rabbi Chase",
-    "OPS+":77.0652649997
+    "OPS+":77.4282462216
   },
   {
     "ID":411,
@@ -104033,7 +105273,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Superbone Threefinger",
-    "OPS+":102.4380398376
+    "OPS+":102.8460852605
   },
   {
     "ID":413,
@@ -104095,7 +105335,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Superbone Threefinger",
-    "OPS+":164.7276168344
+    "OPS+":165.2434393697
   },
   {
     "ID":413,
@@ -104157,7 +105397,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Superbone Threefinger",
-    "OPS+":229.509784111
+    "OPS+":230.1459489147
   },
   {
     "ID":413,
@@ -104901,7 +106141,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Barney Summers",
-    "OPS+":75.5293211705
+    "OPS+":75.8472372685
   },
   {
     "ID":414,
@@ -105707,7 +106947,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Duke McCracken",
-    "OPS+":-62.167545363
+    "OPS+":-62.1015134989
   },
   {
     "ID":417,
@@ -105959,6 +107199,68 @@
   },
   {
     "ID":418,
+    "Season":5.0,
+    "HR":1,
+    "3B":1,
+    "2B":1,
+    "1B":1,
+    "BB":0,
+    "IBB":0,
+    "FO":4,
+    "SO":4,
+    "Auto K":2,
+    "PO":1,
+    "RGO":0,
+    "LGO":3,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":3,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":4,
+    "PA":16,
+    "AB":16,
+    "TB":10,
+    "G":6,
+    "R":2,
+    "RBI":3,
+    "RE24":0.0144416013,
+    "WPA":0.047699,
+    "WAR":0.0678664685,
+    "0 Diffs":1,
+    "500 Diffs":0,
+    "BA":0.25,
+    "OBP":0.25,
+    "SLG":0.625,
+    "OPS":0.875,
+    "ISO":0.375,
+    "BABIP":0.2727272727,
+    "SB%":null,
+    "HR%":0.0625,
+    "K%":0.25,
+    "BB%":0.0,
+    "GB%":0.375,
+    "FB%":0.5,
+    "GB\/FB":0.75,
+    "Avg Diff":264.0714285714,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"SM",
+    "Pitching Type":null,
+    "Handedness":"Right",
+    "Position":"C",
+    "Display Season":"S5",
+    "Name":"Anthony Richards",
+    "OPS+":75.8152844793
+  },
+  {
+    "ID":418,
     "Season":6.0,
     "HR":0,
     "3B":0,
@@ -106141,7 +107443,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Takahiro Hirasawa",
-    "OPS+":-17.9820058413
+    "OPS+":-17.8388060678
   },
   {
     "ID":419,
@@ -106513,7 +107815,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Joe Trundle",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":421,
@@ -106761,7 +108063,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dixie Wrecked",
-    "OPS+":69.5208036406
+    "OPS+":69.8630967467
   },
   {
     "ID":423,
@@ -106885,7 +108187,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Spike McBride",
-    "OPS+":-10.6815370133
+    "OPS+":-10.5346595189
   },
   {
     "ID":423,
@@ -107257,7 +108559,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Lord Azula",
-    "OPS+":-29.9994871194
+    "OPS+":-29.877568818
   },
   {
     "ID":425,
@@ -108311,7 +109613,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Karl Jernigan",
-    "OPS+":28.6917234567
+    "OPS+":28.9220567157
   },
   {
     "ID":439,
@@ -109303,7 +110605,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Grigury Polinko",
-    "OPS+":123.7422059139
+    "OPS+":124.177473675
   },
   {
     "ID":452,
@@ -109365,7 +110667,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Grigury Polinko",
-    "OPS+":119.8884989323
+    "OPS+":120.3108535692
   },
   {
     "ID":452,
@@ -109427,7 +110729,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Grigury Polinko",
-    "OPS+":96.2519739083
+    "OPS+":96.5940321668
   },
   {
     "ID":453,
@@ -111101,7 +112403,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Xerxes Dalin",
-    "OPS+":263.9716847717
+    "OPS+":264.7246332309
   },
   {
     "ID":474,
@@ -111163,7 +112465,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Xerxes Dalin",
-    "OPS+":100.2243338534
+    "OPS+":100.6173954897
   },
   {
     "ID":474,
@@ -111225,7 +112527,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Xerxes Dalin",
-    "OPS+":-17.9820058413
+    "OPS+":-17.8388060678
   },
   {
     "ID":474,
@@ -111659,7 +112961,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Abraham Lincoln",
-    "OPS+":114.7492732493
+    "OPS+":115.0930300662
   },
   {
     "ID":477,
@@ -111845,7 +113147,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Bobo Bones",
-    "OPS+":33.170997897
+    "OPS+":33.4289340361
   },
   {
     "ID":478,
@@ -112093,7 +113395,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Revan Skywalker",
-    "OPS+":245.4998980313
+    "OPS+":246.2294294538
   },
   {
     "ID":479,
@@ -112465,7 +113767,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Captain Harry C Legs",
-    "OPS+":108.4895972311
+    "OPS+":108.884277887
   },
   {
     "ID":480,
@@ -112651,7 +113953,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Don Chalupa",
-    "OPS+":40.5059855666
+    "OPS+":40.7798572307
   },
   {
     "ID":481,
@@ -112713,7 +114015,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Don Chalupa",
-    "OPS+":105.0426375691
+    "OPS+":105.4596409174
   },
   {
     "ID":481,
@@ -112775,7 +114077,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Don Chalupa",
-    "OPS+":377.2498836845
+    "OPS+":378.2644350392
   },
   {
     "ID":482,
@@ -113147,7 +114449,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Francis X. Clampazzo",
-    "OPS+":53.9708274436
+    "OPS+":54.2500533753
   },
   {
     "ID":485,
@@ -113643,7 +114945,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"cocl",
-    "OPS+":108.2626872578
+    "OPS+":108.6703634641
   },
   {
     "ID":487,
@@ -113891,7 +115193,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Juni Panda",
-    "OPS+":112.9741901701
+    "OPS+":113.3650745622
   },
   {
     "ID":488,
@@ -114263,7 +115565,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Zelk Antilles",
-    "OPS+":213.3589114511
+    "OPS+":213.8913649746
   },
   {
     "ID":490,
@@ -114325,7 +115627,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Zelk Antilles",
-    "OPS+":107.4099840261
+    "OPS+":107.7524707209
   },
   {
     "ID":490,
@@ -114387,7 +115689,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Zelk Antilles",
-    "OPS+":17.6331075842
+    "OPS+":17.8156077893
   },
   {
     "ID":490,
@@ -115379,7 +116681,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Mutton Happleburth",
-    "OPS+":-12.0339390804
+    "OPS+":-11.8335754384
   },
   {
     "ID":497,
@@ -115503,7 +116805,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Theodora DiBiaserunner",
-    "OPS+":64.3959584358
+    "OPS+":64.7241983994
   },
   {
     "ID":497,
@@ -115565,7 +116867,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Theodora DiBiaserunner",
-    "OPS+":154.3951532183
+    "OPS+":154.882642491
   },
   {
     "ID":497,
@@ -115627,7 +116929,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Theodora DiBiaserunner",
-    "OPS+":18.615817126
+    "OPS+":18.865659091
   },
   {
     "ID":498,
@@ -115813,7 +117115,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Nick Papagiorgio",
-    "OPS+":120.6321916156
+    "OPS+":121.0812148514
   },
   {
     "ID":500,
@@ -115937,7 +117239,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Orlando Champagne",
-    "OPS+":-62.167545363
+    "OPS+":-62.1015134989
   },
   {
     "ID":500,
@@ -116123,7 +117425,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Fuzzy Spit",
-    "OPS+":172.6609404562
+    "OPS+":173.2685516945
   },
   {
     "ID":501,
@@ -116371,7 +117673,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Johnnie Twofingers",
-    "OPS+":251.5569875865
+    "OPS+":252.2326365091
   },
   {
     "ID":502,
@@ -116743,7 +118045,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Ray Dingerz",
-    "OPS+":67.798969159
+    "OPS+":68.070546894
   },
   {
     "ID":510,
@@ -116991,7 +118293,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Johnny Hustle",
-    "OPS+":165.9530558967
+    "OPS+":166.5314985438
   },
   {
     "ID":514,
@@ -117239,7 +118541,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Blackbean Burrito",
-    "OPS+":48.1520079851
+    "OPS+":48.3948511256
   },
   {
     "ID":516,
@@ -117797,7 +119099,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Ryan Tyburn",
-    "OPS+":168.9534500991
+    "OPS+":169.4458434104
   },
   {
     "ID":517,
@@ -118293,7 +119595,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Arthur Vandelay",
-    "OPS+":-23.9300726022
+    "OPS+":-23.8440366972
   },
   {
     "ID":518,
@@ -118355,7 +119657,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Arthur Vandelay",
-    "OPS+":8.38754944
+    "OPS+":8.5956308615
   },
   {
     "ID":518,
@@ -118417,7 +119719,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Arthur Vandelay",
-    "OPS+":12.5058606916
+    "OPS+":12.7326630557
   },
   {
     "ID":518,
@@ -118727,7 +120029,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Iama Human",
-    "OPS+":179.4852486047
+    "OPS+":180.0609928815
   },
   {
     "ID":520,
@@ -118975,7 +120277,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Good Doggo",
-    "OPS+":-1.8740130459
+    "OPS+":-1.7029839166
   },
   {
     "ID":522,
@@ -119347,7 +120649,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Cam'ron",
-    "OPS+":134.7140304065
+    "OPS+":135.1670048653
   },
   {
     "ID":525,
@@ -120153,7 +121455,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Nipsey Slip",
-    "OPS+":45.9672806114
+    "OPS+":46.2609722846
   },
   {
     "ID":529,
@@ -120897,7 +122199,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Ping Pong",
-    "OPS+":160.8776380553
+    "OPS+":161.4381935441
   },
   {
     "ID":530,
@@ -120959,7 +122261,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Ping Pong",
-    "OPS+":89.7793422625
+    "OPS+":90.201699504
   },
   {
     "ID":530,
@@ -121021,7 +122323,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Ping Pong",
-    "OPS+":239.8757444918
+    "OPS+":240.5898535887
   },
   {
     "ID":530,
@@ -121331,7 +122633,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dr. Tuna Altuna",
-    "OPS+":237.3967330626
+    "OPS+":238.0768087675
   },
   {
     "ID":534,
@@ -121765,7 +123067,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Stubby Footman",
-    "OPS+":33.2152715811
+    "OPS+":33.4468673154
   },
   {
     "ID":539,
@@ -121951,7 +123253,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Cockus Mclong",
-    "OPS+":115.9400421435
+    "OPS+":116.3687708809
   },
   {
     "ID":540,
@@ -122385,7 +123687,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Randy Poovey",
-    "OPS+":353.2908135422
+    "OPS+":354.20698265
   },
   {
     "ID":546,
@@ -122509,7 +123811,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Cal Otter",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":546,
@@ -122695,7 +123997,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Red Arrow",
-    "OPS+":87.5608322294
+    "OPS+":87.9219539791
   },
   {
     "ID":547,
@@ -122819,7 +124121,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Paddy O'Connor",
-    "OPS+":71.6746636778
+    "OPS+":71.9763747495
   },
   {
     "ID":549,
@@ -123191,7 +124493,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Alexander Hamilton II",
-    "OPS+":-18.5906673671
+    "OPS+":-18.4491366406
   },
   {
     "ID":553,
@@ -123625,7 +124927,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Monty Johnson",
-    "OPS+":191.2866126295
+    "OPS+":191.840247033
   },
   {
     "ID":557,
@@ -123687,7 +124989,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Monty Johnson",
-    "OPS+":130.2233423397
+    "OPS+":130.6340435137
   },
   {
     "ID":557,
@@ -123749,7 +125051,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Monty Johnson",
-    "OPS+":83.0201785637
+    "OPS+":83.3177824657
   },
   {
     "ID":557,
@@ -124059,7 +125361,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Star Burns",
-    "OPS+":71.5147270458
+    "OPS+":71.8216344866
   },
   {
     "ID":559,
@@ -124183,7 +125485,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Trevor Mouseman",
-    "OPS+":244.460108167
+    "OPS+":245.1945699049
   },
   {
     "ID":559,
@@ -124431,7 +125733,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Napoleon Shortsleeve",
-    "OPS+":69.1763531835
+    "OPS+":69.5177017515
   },
   {
     "ID":560,
@@ -124617,7 +125919,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Rotticus Scott",
-    "OPS+":172.6899971404
+    "OPS+":173.2220510507
   },
   {
     "ID":562,
@@ -124803,7 +126105,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Fizzbear Doormat",
-    "OPS+":190.2720694502
+    "OPS+":190.8229218145
   },
   {
     "ID":563,
@@ -125609,7 +126911,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Tucker Doubt",
-    "OPS+":-50.9370065229
+    "OPS+":-50.8514919583
   },
   {
     "ID":567,
@@ -125671,7 +126973,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Tucker Doubt",
-    "OPS+":1.2157853694
+    "OPS+":1.3802029153
   },
   {
     "ID":567,
@@ -125733,7 +127035,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Tucker Doubt",
-    "OPS+":194.9412828305
+    "OPS+":195.42323228
   },
   {
     "ID":567,
@@ -126291,7 +127593,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Deku Matsui",
-    "OPS+":-39.1440580818
+    "OPS+":-39.0752293578
   },
   {
     "ID":570,
@@ -126973,7 +128275,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Magnus Dongfest",
-    "OPS+":82.6695791306
+    "OPS+":82.9699355714
   },
   {
     "ID":579,
@@ -127159,7 +128461,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Derek Tombides",
-    "OPS+":141.2796065584
+    "OPS+":141.7647473584
   },
   {
     "ID":580,
@@ -127345,7 +128647,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Wee Laddy Donkus",
-    "OPS+":23.7389743199
+    "OPS+":24.0082520499
   },
   {
     "ID":582,
@@ -127531,7 +128833,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Roland Kholin",
-    "OPS+":-38.9430005253
+    "OPS+":-38.8368524804
   },
   {
     "ID":583,
@@ -128399,7 +129701,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Deej Gambino",
-    "OPS+":63.7419918022
+    "OPS+":64.0468102561
   },
   {
     "ID":595,
@@ -128585,7 +129887,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Poop McGee",
-    "OPS+":89.0113743631
+    "OPS+":89.4036120081
   },
   {
     "ID":596,
@@ -128833,7 +130135,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Charpasm Chim",
-    "OPS+":120.9637276643
+    "OPS+":121.4225734767
   },
   {
     "ID":597,
@@ -128895,7 +130197,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Charpasm Chim",
-    "OPS+":116.7311240576
+    "OPS+":117.1947047246
   },
   {
     "ID":597,
@@ -128957,7 +130259,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Charpasm Chim",
-    "OPS+":108.1969708832
+    "OPS+":108.6698321985
   },
   {
     "ID":597,
@@ -129205,7 +130507,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"P'quilla Porgsby",
-    "OPS+":153.2516489306
+    "OPS+":153.7622653816
   },
   {
     "ID":599,
@@ -129515,7 +130817,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Johnny Hendrix",
-    "OPS+":2.0463542313
+    "OPS+":2.2526456254
   },
   {
     "ID":600,
@@ -129639,7 +130941,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Duke Silver",
-    "OPS+":65.5590709541
+    "OPS+":65.8549184327
   },
   {
     "ID":602,
@@ -129890,6 +131192,68 @@
     "OPS+":179.3745750056
   },
   {
+    "ID":604,
+    "Season":5.0,
+    "HR":2,
+    "3B":1,
+    "2B":0,
+    "1B":1,
+    "BB":1,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":2,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":4,
+    "PA":7,
+    "AB":6,
+    "TB":12,
+    "G":3,
+    "R":4,
+    "RBI":2,
+    "RE24":3.6789350314,
+    "WPA":0.3112,
+    "WAR":0.396953263,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.6666666667,
+    "OBP":0.7142857143,
+    "SLG":2.0,
+    "OPS":2.7142857143,
+    "ISO":1.3333333333,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.2857142857,
+    "K%":0.0,
+    "BB%":0.1428571429,
+    "GB%":1.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":147.1428571429,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":7,
+    "Batting Type":"MH",
+    "Pitching Type":"BS-H",
+    "Handedness":"Left",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Callie Braden",
+    "OPS+":425.3906781549
+  },
+  {
     "ID":605,
     "Season":4.0,
     "HR":0,
@@ -130011,7 +131375,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Sini Alexander",
-    "OPS+":-23.9300726022
+    "OPS+":-23.8440366972
   },
   {
     "ID":605,
@@ -130259,7 +131623,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Homer Nocker",
-    "OPS+":168.0124913803
+    "OPS+":168.5513284183
   },
   {
     "ID":606,
@@ -130321,7 +131685,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Homer Nocker",
-    "OPS+":189.5974874588
+    "OPS+":190.1815071442
   },
   {
     "ID":606,
@@ -130383,7 +131747,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Homer Nocker",
-    "OPS+":155.8375824553
+    "OPS+":156.3505761036
   },
   {
     "ID":606,
@@ -131375,7 +132739,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Eli Sasak",
-    "OPS+":75.9593601828
+    "OPS+":76.2886688465
   },
   {
     "ID":607,
@@ -131809,7 +133173,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Roy Hobbs",
-    "OPS+":-2.9853291473
+    "OPS+":-2.8045585582
   },
   {
     "ID":609,
@@ -131995,7 +133359,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Francis Swagger",
-    "OPS+":255.2131012915
+    "OPS+":255.9420323184
   },
   {
     "ID":610,
@@ -132429,7 +133793,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Barry McKockiner",
-    "OPS+":180.8308497152
+    "OPS+":181.3207956175
   },
   {
     "ID":614,
@@ -132553,7 +133917,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Joe Nastasi",
-    "OPS+":220.701755879
+    "OPS+":221.3850752802
   },
   {
     "ID":614,
@@ -132615,7 +133979,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Joe Nastasi",
-    "OPS+":165.057942169
+    "OPS+":165.6213600189
   },
   {
     "ID":614,
@@ -132863,7 +134227,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Christian Bevan",
-    "OPS+":177.1478649998
+    "OPS+":177.7152544019
   },
   {
     "ID":616,
@@ -133235,7 +134599,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Edward Duncan",
-    "OPS+":-39.1440580818
+    "OPS+":-39.0752293578
   },
   {
     "ID":620,
@@ -133483,7 +134847,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Delta Airlines",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":622,
@@ -133669,7 +135033,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Thelonius Junk",
-    "OPS+":105.3005965996
+    "OPS+":105.6729147337
   },
   {
     "ID":623,
@@ -133731,7 +135095,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Thelonius Junk",
-    "OPS+":55.6658762148
+    "OPS+":55.9701769011
   },
   {
     "ID":623,
@@ -133793,7 +135157,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Thelonius Junk",
-    "OPS+":144.2279978986
+    "OPS+":144.6525900782
   },
   {
     "ID":623,
@@ -134041,7 +135405,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"J.J. Romero",
-    "OPS+":266.7441119608
+    "OPS+":267.455638872
   },
   {
     "ID":629,
@@ -134909,7 +136273,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Bingo Hammersmith",
-    "OPS+":255.0286281964
+    "OPS+":255.7298178213
   },
   {
     "ID":639,
@@ -135281,7 +136645,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Caleb Craven",
-    "OPS+":38.4779455171
+    "OPS+":38.6942608361
   },
   {
     "ID":640,
@@ -135783,6 +137147,130 @@
     "ID":644,
     "Season":5.0,
     "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":1,
+    "IBB":0,
+    "FO":0,
+    "SO":1,
+    "Auto K":1,
+    "PO":1,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":3,
+    "AB":2,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "RE24":-0.9478970496,
+    "WPA":-0.0518,
+    "WAR":-0.0823355221,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0,
+    "OBP":0.3333333333,
+    "SLG":0.0,
+    "OPS":0.3333333333,
+    "ISO":0.0,
+    "BABIP":0.0,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.3333333333,
+    "BB%":0.3333333333,
+    "GB%":0.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":251.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"JUP",
+    "Last Session":1,
+    "Batting Type":"EN",
+    "Pitching Type":"TD-H",
+    "Handedness":"Left",
+    "Position":"C",
+    "Display Season":"S5",
+    "Name":"Rhys Wilson",
+    "OPS+":1.5412844037
+  },
+  {
+    "ID":644,
+    "Season":5.0,
+    "HR":0,
+    "3B":1,
+    "2B":0,
+    "1B":0,
+    "BB":1,
+    "IBB":0,
+    "FO":0,
+    "SO":2,
+    "Auto K":2,
+    "PO":1,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":5,
+    "AB":4,
+    "TB":3,
+    "G":2,
+    "R":1,
+    "RBI":0,
+    "RE24":-0.2882662116,
+    "WPA":0.0663,
+    "WAR":-0.0080696498,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.25,
+    "OBP":0.4,
+    "SLG":0.75,
+    "OPS":1.15,
+    "ISO":0.5,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.4,
+    "BB%":0.2,
+    "GB%":0.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "Avg Diff":181.3333333333,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"JUP",
+    "Last Session":6,
+    "Batting Type":"EN",
+    "Pitching Type":"TD-H",
+    "Handedness":"Left",
+    "Position":"C",
+    "Display Season":"S5",
+    "Name":"Rhys Wilson",
+    "OPS+":160.3605364934
+  },
+  {
+    "ID":644,
+    "Season":5.0,
+    "HR":0,
     "3B":1,
     "2B":0,
     "1B":0,
@@ -135830,7 +137318,7 @@
     "Avg Diff":42.0,
     "Team":"JUP",
     "Franchise":"JUP",
-    "is_sub_row":false,
+    "is_sub_row":true,
     "Last Team":"JUP",
     "Last Session":6,
     "Batting Type":"EN",
@@ -135839,7 +137327,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Rhys Wilson",
-    "OPS+":328.4042841048
+    "OPS+":329.3339170236
   },
   {
     "ID":644,
@@ -136087,7 +137575,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Aaron Burr",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":646,
@@ -136831,7 +138319,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Randy Townsend",
-    "OPS+":-69.5720290409
+    "OPS+":-69.5376146789
   },
   {
     "ID":649,
@@ -136955,7 +138443,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Nelson Van Halen",
-    "OPS+":-32.272758033
+    "OPS+":-32.1687457804
   },
   {
     "ID":649,
@@ -137203,7 +138691,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Chody McCarty",
-    "OPS+":29.3577765369
+    "OPS+":29.5899362197
   },
   {
     "ID":650,
@@ -137575,7 +139063,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"ViktRon Swanson",
-    "OPS+":133.3438283935
+    "OPS+":133.7905695811
   },
   {
     "ID":651,
@@ -137637,7 +139125,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"ViktRon Swanson",
-    "OPS+":124.8105031262
+    "OPS+":125.2635560817
   },
   {
     "ID":651,
@@ -137699,7 +139187,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"ViktRon Swanson",
-    "OPS+":136.3215048128
+    "OPS+":136.7594332603
   },
   {
     "ID":651,
@@ -139001,7 +140489,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Lincoln Lincoln",
-    "OPS+":45.102281945
+    "OPS+":45.31633559
   },
   {
     "ID":662,
@@ -139125,7 +140613,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Joey Wheeler",
-    "OPS+":83.9807129449
+    "OPS+":84.3515156128
   },
   {
     "ID":662,
@@ -139497,7 +140985,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Oni R1",
-    "OPS+":302.352679218
+    "OPS+":303.1440235937
   },
   {
     "ID":663,
@@ -139807,7 +141295,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Bench Warmer",
-    "OPS+":68.9919295246
+    "OPS+":69.3327723736
   },
   {
     "ID":665,
@@ -140055,7 +141543,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Mitch Kramer",
-    "OPS+":122.6657866785
+    "OPS+":123.0516784979
   },
   {
     "ID":669,
@@ -140303,7 +141791,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Heechul Kim",
-    "OPS+":176.0187019975
+    "OPS+":176.4814453705
   },
   {
     "ID":671,
@@ -140613,7 +142101,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Clarinet Clarinet",
-    "OPS+":-23.9300726022
+    "OPS+":-23.8440366972
   },
   {
     "ID":672,
@@ -140985,7 +142473,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Speedo Meter",
-    "OPS+":-1.4288385485
+    "OPS+":-1.2565886798
   },
   {
     "ID":675,
@@ -141047,7 +142535,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Speedo Meter",
-    "OPS+":22.7953655192
+    "OPS+":23.0095300247
   },
   {
     "ID":675,
@@ -141109,7 +142597,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Speedo Meter",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":675,
@@ -141357,7 +142845,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Scherbie Fully-Loaded",
-    "OPS+":185.1716046165
+    "OPS+":185.7638203541
   },
   {
     "ID":679,
@@ -141791,7 +143279,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Billy McBeans",
-    "OPS+":143.6608459799
+    "OPS+":144.1584846553
   },
   {
     "ID":683,
@@ -141915,7 +143403,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Kris Kringle",
-    "OPS+":324.1466724684
+    "OPS+":325.0373947899
   },
   {
     "ID":683,
@@ -142225,7 +143713,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Julio Escobar",
-    "OPS+":102.4219074656
+    "OPS+":102.8135673225
   },
   {
     "ID":686,
@@ -142845,7 +144333,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Nick Dudley",
-    "OPS+":83.3840709531
+    "OPS+":83.7507615746
   },
   {
     "ID":691,
@@ -142969,7 +144457,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Arthur Dent",
-    "OPS+":196.3040159702
+    "OPS+":196.7897022513
   },
   {
     "ID":693,
@@ -143093,7 +144581,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Chicken Joe of Sheboygan",
-    "OPS+":162.6456265193
+    "OPS+":163.1207227727
   },
   {
     "ID":696,
@@ -143155,7 +144643,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Ayden Davis",
-    "OPS+":98.88542524
+    "OPS+":99.2592168346
   },
   {
     "ID":696,
@@ -143280,6 +144768,68 @@
     "Display Season":"S4",
     "Name":"Alaric Davis",
     "OPS+":87.4485819941
+  },
+  {
+    "ID":697,
+    "Season":5.0,
+    "HR":0,
+    "3B":1,
+    "2B":2,
+    "1B":1,
+    "BB":3,
+    "IBB":0,
+    "FO":2,
+    "SO":2,
+    "Auto K":0,
+    "PO":1,
+    "RGO":1,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":4,
+    "PA":13,
+    "AB":10,
+    "TB":8,
+    "G":6,
+    "R":3,
+    "RBI":1,
+    "RE24":1.7638178598,
+    "WPA":0.1729,
+    "WAR":0.2303499115,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.4,
+    "OBP":0.5384615385,
+    "SLG":0.8,
+    "OPS":1.3384615385,
+    "ISO":0.4,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.1538461538,
+    "BB%":0.2307692308,
+    "GB%":0.25,
+    "FB%":0.5,
+    "GB\/FB":0.5,
+    "Avg Diff":220.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"SM",
+    "Pitching Type":"TD-H",
+    "Handedness":"Left",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Alaric Davis",
+    "OPS+":194.8310876963
   },
   {
     "ID":697,
@@ -143527,7 +145077,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Shirley Sir",
-    "OPS+":44.122194829
+    "OPS+":44.3665578321
   },
   {
     "ID":698,
@@ -144023,7 +145573,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Richard Cheese Jr.",
-    "OPS+":94.1910750863
+    "OPS+":94.5601646887
   },
   {
     "ID":700,
@@ -144147,7 +145697,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Edward Freeman",
-    "OPS+":58.4155230577
+    "OPS+":58.7098551478
   },
   {
     "ID":700,
@@ -144457,7 +146007,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Sandy Zipp",
-    "OPS+":79.3986818375
+    "OPS+":79.7397785919
   },
   {
     "ID":701,
@@ -144705,7 +146255,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jacky Wacky",
-    "OPS+":81.9266670803
+    "OPS+":82.2935513523
   },
   {
     "ID":702,
@@ -145016,6 +146566,68 @@
     "Display Season":"S4",
     "Name":"Emerson Austin",
     "OPS+":137.6385096835
+  },
+  {
+    "ID":703,
+    "Season":5.0,
+    "HR":2,
+    "3B":0,
+    "2B":6,
+    "1B":1,
+    "BB":3,
+    "IBB":0,
+    "FO":6,
+    "SO":2,
+    "Auto K":0,
+    "PO":1,
+    "RGO":1,
+    "LGO":4,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":5,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":9,
+    "PA":26,
+    "AB":23,
+    "TB":21,
+    "G":10,
+    "R":7,
+    "RBI":5,
+    "RE24":4.1081668829,
+    "WPA":0.8451,
+    "WAR":0.5187529393,
+    "0 Diffs":0,
+    "500 Diffs":1,
+    "BA":0.3913043478,
+    "OBP":0.4615384615,
+    "SLG":0.9130434783,
+    "OPS":1.3745819398,
+    "ISO":0.5217391304,
+    "BABIP":0.3684210526,
+    "SB%":null,
+    "HR%":0.0769230769,
+    "K%":0.0769230769,
+    "BB%":0.1153846154,
+    "GB%":0.4166666667,
+    "FB%":0.5,
+    "GB\/FB":0.8333333333,
+    "Avg Diff":205.4615384615,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"BP",
+    "Pitching Type":"BF-H",
+    "Handedness":"Right",
+    "Position":"3B",
+    "Display Season":"S5",
+    "Name":"Emerson Austin",
+    "OPS+":167.7182564216
   },
   {
     "ID":703,
@@ -145821,7 +147433,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Viktor Patterson",
-    "OPS+":35.2225481662
+    "OPS+":35.4462779951
   },
   {
     "ID":705,
@@ -146131,7 +147743,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Kyle Corbett",
-    "OPS+":22.2655053211
+    "OPS+":22.4918346392
   },
   {
     "ID":707,
@@ -146193,7 +147805,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Kyle Corbett",
-    "OPS+":22.7953655192
+    "OPS+":23.0095300247
   },
   {
     "ID":707,
@@ -146255,7 +147867,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Kyle Corbett",
-    "OPS+":22.3847291887
+    "OPS+":22.6137537461
   },
   {
     "ID":707,
@@ -146693,6 +148305,68 @@
   },
   {
     "ID":711,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":2,
+    "1B":1,
+    "BB":1,
+    "IBB":0,
+    "FO":1,
+    "SO":1,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":5,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":6,
+    "GIDP":3,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":3,
+    "PA":12,
+    "AB":11,
+    "TB":5,
+    "G":5,
+    "R":1,
+    "RBI":3,
+    "RE24":-1.3500885822,
+    "WPA":-0.1542,
+    "WAR":-0.085192127,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2727272727,
+    "OBP":0.3333333333,
+    "SLG":0.4545454545,
+    "OPS":0.7878787879,
+    "ISO":0.1818181818,
+    "BABIP":0.3,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.0833333333,
+    "BB%":0.0833333333,
+    "GB%":0.8571428571,
+    "FB%":0.1428571429,
+    "GB\/FB":6.0,
+    "Avg Diff":295.5833333333,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"MH",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"LF",
+    "Display Season":"S5",
+    "Name":"Abelardo Montoya",
+    "OPS+":10.0943142549
+  },
+  {
+    "ID":711,
     "Season":6.0,
     "HR":0,
     "3B":0,
@@ -146937,7 +148611,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Shygen Tinybeard",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":712,
@@ -146999,7 +148673,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Shygen Tinybeard",
-    "OPS+":128.4704321759
+    "OPS+":128.9130945798
   },
   {
     "ID":712,
@@ -147061,7 +148735,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Shygen Tinybeard",
-    "OPS+":152.4128218657
+    "OPS+":152.9164242744
   },
   {
     "ID":713,
@@ -147371,7 +149045,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Randy Pole",
-    "OPS+":33.753686967
+    "OPS+":33.9867591221
   },
   {
     "ID":714,
@@ -147619,7 +149293,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Candy Sollazo",
-    "OPS+":-18.2893242198
+    "OPS+":-18.1469671623
   },
   {
     "ID":716,
@@ -147805,7 +149479,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Penny Lane",
-    "OPS+":175.0600804505
+    "OPS+":175.6042362483
   },
   {
     "ID":716,
@@ -148425,7 +150099,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Runner Buehler",
-    "OPS+":74.9136328197
+    "OPS+":75.2612862336
   },
   {
     "ID":717,
@@ -148487,7 +150161,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Runner Buehler",
-    "OPS+":90.2848718787
+    "OPS+":90.6636767097
   },
   {
     "ID":717,
@@ -148673,7 +150347,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Nikola Tefla",
-    "OPS+":135.2785946754
+    "OPS+":135.6930649838
   },
   {
     "ID":719,
@@ -149231,7 +150905,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Vinny Vega",
-    "OPS+":170.5359021382
+    "OPS+":171.0455358341
   },
   {
     "ID":723,
@@ -149417,7 +151091,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jay Peg",
-    "OPS+":104.4636313374
+    "OPS+":104.8245758634
   },
   {
     "ID":724,
@@ -149665,7 +151339,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Dirk Thrustmore",
-    "OPS+":47.3333528101
+    "OPS+":47.6242320783
   },
   {
     "ID":726,
@@ -150037,7 +151711,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jeremy Carolina",
-    "OPS+":66.3087667396
+    "OPS+":66.646478134
   },
   {
     "ID":728,
@@ -150657,7 +152331,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Kyle Bellinger",
-    "OPS+":48.6973734961
+    "OPS+":48.9090294588
   },
   {
     "ID":730,
@@ -150905,7 +152579,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Sammy Tee",
-    "OPS+":-45.5936181255
+    "OPS+":-45.4988982475
   },
   {
     "ID":731,
@@ -151277,7 +152951,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Kevin Harrison",
-    "OPS+":227.3385415277
+    "OPS+":228.0098914468
   },
   {
     "ID":734,
@@ -151463,7 +153137,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Joh\u00f1\u00f1y Coppolella",
-    "OPS+":54.5761722501
+    "OPS+":54.8729455364
   },
   {
     "ID":739,
@@ -151587,7 +153261,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jeter O'Cola",
-    "OPS+":249.9910095902
+    "OPS+":250.7056208092
   },
   {
     "ID":739,
@@ -151650,6 +153324,68 @@
     "Display Season":"S6",
     "Name":"Jeter O'Cola",
     "OPS+":907.5864932297
+  },
+  {
+    "ID":740,
+    "Season":5.0,
+    "HR":1,
+    "3B":0,
+    "2B":0,
+    "1B":2,
+    "BB":1,
+    "IBB":0,
+    "FO":3,
+    "SO":3,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":2,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":3,
+    "PA":12,
+    "AB":11,
+    "TB":6,
+    "G":4,
+    "R":2,
+    "RBI":5,
+    "RE24":2.2535152634,
+    "WPA":-0.056,
+    "WAR":0.2751682576,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.2727272727,
+    "OBP":0.3333333333,
+    "SLG":0.5454545455,
+    "OPS":0.8787878788,
+    "ISO":0.2727272727,
+    "BABIP":0.2857142857,
+    "SB%":null,
+    "HR%":0.0833333333,
+    "K%":0.25,
+    "BB%":0.0833333333,
+    "GB%":0.4,
+    "FB%":0.6,
+    "GB\/FB":0.6666666667,
+    "Avg Diff":272.3333333333,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":8,
+    "Batting Type":"SM",
+    "Pitching Type":"BF-H",
+    "Handedness":"Left",
+    "Position":"CF",
+    "Display Season":"S5",
+    "Name":"Bartholomew J. Bottomtext",
+    "OPS+":76.7295203518
   },
   {
     "ID":740,
@@ -152145,7 +153881,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Festus Ezeli",
-    "OPS+":115.1627600793
+    "OPS+":115.5566747283
   },
   {
     "ID":743,
@@ -152269,7 +154005,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"WILL THE THRILL",
-    "OPS+":136.9913459581
+    "OPS+":137.5092263583
   },
   {
     "ID":745,
@@ -152393,7 +154129,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"WILL THE THRILL",
-    "OPS+":157.3367562418
+    "OPS+":157.8994280295
   },
   {
     "ID":745,
@@ -152765,7 +154501,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Michael Scarn",
-    "OPS+":85.4114441065
+    "OPS+":85.7447861836
   },
   {
     "ID":746,
@@ -153199,7 +154935,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Skinny Bear Brown Hill",
-    "OPS+":99.4647919225
+    "OPS+":99.8986239079
   },
   {
     "ID":754,
@@ -153323,7 +155059,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Ferdinand Sea-Bull",
-    "OPS+":167.89534118
+    "OPS+":168.4120685354
   },
   {
     "ID":755,
@@ -153447,7 +155183,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Rake Inthelake",
-    "OPS+":232.4683029705
+    "OPS+":233.0916076767
   },
   {
     "ID":755,
@@ -153633,7 +155369,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Jayson Kincaid",
-    "OPS+":81.0936962499
+    "OPS+":81.4565822577
   },
   {
     "ID":756,
@@ -154067,7 +155803,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Jrue Pierce",
-    "OPS+":175.2865852608
+    "OPS+":175.8709467554
   },
   {
     "ID":759,
@@ -154129,7 +155865,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Jrue Pierce",
-    "OPS+":206.6071586091
+    "OPS+":207.2518283776
   },
   {
     "ID":759,
@@ -154191,7 +155927,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Jrue Pierce",
-    "OPS+":116.246241762
+    "OPS+":116.7166634687
   },
   {
     "ID":761,
@@ -154315,7 +156051,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Legend 27",
-    "OPS+":63.4213515605
+    "OPS+":63.7060656754
   },
   {
     "ID":762,
@@ -154501,7 +156237,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Baron Harold Willingsby",
-    "OPS+":199.9938663634
+    "OPS+":200.5958894375
   },
   {
     "ID":765,
@@ -154749,7 +156485,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Dottie Hooligan",
-    "OPS+":54.7212310517
+    "OPS+":55.0013131414
   },
   {
     "ID":770,
@@ -155307,7 +157043,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Lee Allen Ripley",
-    "OPS+":122.5035007568
+    "OPS+":122.9665688726
   },
   {
     "ID":771,
@@ -155865,7 +157601,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Amper Sand",
-    "OPS+":29.966839163
+    "OPS+":30.2200205658
   },
   {
     "ID":774,
@@ -156051,7 +157787,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Duke Marriot",
-    "OPS+":59.9275287286
+    "OPS+":60.2435155454
   },
   {
     "ID":775,
@@ -156423,7 +158159,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rey Revanchist",
-    "OPS+":109.1660289284
+    "OPS+":109.5710755764
   },
   {
     "ID":776,
@@ -156547,7 +158283,7 @@
     "Position":"PH",
     "Display Season":"S5",
     "Name":"Rey Revanchist",
-    "OPS+":139.9614137049
+    "OPS+":140.4268319291
   },
   {
     "ID":776,
@@ -157167,7 +158903,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jaeger Ward",
-    "OPS+":17.1754583613
+    "OPS+":17.383639875
   },
   {
     "ID":777,
@@ -157415,7 +159151,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Tyler Pylon",
-    "OPS+":1.4815965558
+    "OPS+":1.6781686301
   },
   {
     "ID":778,
@@ -157973,7 +159709,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Primal Cookie",
-    "OPS+":146.0293314547
+    "OPS+":146.5257140672
   },
   {
     "ID":779,
@@ -158345,7 +160081,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Matt Taylor",
-    "OPS+":181.0385927643
+    "OPS+":181.5947654544
   },
   {
     "ID":780,
@@ -158593,7 +160329,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Grand Salami",
-    "OPS+":27.8282432209
+    "OPS+":28.0970620006
   },
   {
     "ID":781,
@@ -158779,7 +160515,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Mike Hampton",
-    "OPS+":156.705234913
+    "OPS+":157.1757140431
   },
   {
     "ID":782,
@@ -159027,7 +160763,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Pete Wheeler",
-    "OPS+":177.6341380568
+    "OPS+":178.2483831693
   },
   {
     "ID":783,
@@ -159647,7 +161383,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Red Fox",
-    "OPS+":92.8086915998
+    "OPS+":93.1506457313
   },
   {
     "ID":784,
@@ -159709,7 +161445,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Red Fox",
-    "OPS+":128.8842782597
+    "OPS+":129.2940310612
   },
   {
     "ID":784,
@@ -159957,7 +161693,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Hunter Scott",
-    "OPS+":52.1398547956
+    "OPS+":52.3119266055
   },
   {
     "ID":786,
@@ -160639,7 +162375,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"JZ",
-    "OPS+":136.812770076
+    "OPS+":137.3532062558
   },
   {
     "ID":788,
@@ -160701,7 +162437,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"JZ",
-    "OPS+":254.3720285625
+    "OPS+":255.1803598762
   },
   {
     "ID":788,
@@ -161321,7 +163057,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Etsuko Rune",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":813,
@@ -161383,7 +163119,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Tendaji Okoye",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":813,
@@ -161569,7 +163305,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Saitoo Syde",
-    "OPS+":-21.8329552358
+    "OPS+":-21.7038678423
   },
   {
     "ID":814,
@@ -161755,7 +163491,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Yahtzee Pinocchio",
-    "OPS+":22.1139989493
+    "OPS+":22.3262950391
   },
   {
     "ID":815,
@@ -161941,7 +163677,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Steven Seagal",
-    "OPS+":187.410914954
+    "OPS+":188.0356282189
   },
   {
     "ID":1687,
@@ -162127,7 +163863,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Tristan Leung",
-    "OPS+":68.4373219579
+    "OPS+":68.7031080064
   },
   {
     "ID":1692,
@@ -162313,7 +164049,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Steven Wilson",
-    "OPS+":107.5205481138
+    "OPS+":107.8794997464
   },
   {
     "ID":1695,
@@ -162375,7 +164111,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jin Yang",
-    "OPS+":174.9240455997
+    "OPS+":175.4328112358
   },
   {
     "ID":1698,
@@ -162437,7 +164173,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Jonny Mac",
-    "OPS+":103.6393396692
+    "OPS+":104.0194821661
   },
   {
     "ID":1698,
@@ -162623,7 +164359,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Pork Torkleton",
-    "OPS+":-69.2140831519
+    "OPS+":-69.1603032507
   },
   {
     "ID":1699,
@@ -162748,6 +164484,68 @@
     "Display Season":"S7",
     "Name":"Pork Torkleton",
     "OPS+":2.6518957542
+  },
+  {
+    "ID":1700,
+    "Season":5.0,
+    "HR":3,
+    "3B":3,
+    "2B":3,
+    "1B":3,
+    "BB":3,
+    "IBB":0,
+    "FO":3,
+    "SO":5,
+    "Auto K":0,
+    "PO":1,
+    "RGO":4,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":6,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":12,
+    "PA":30,
+    "AB":27,
+    "TB":30,
+    "G":11,
+    "R":8,
+    "RBI":7,
+    "RE24":5.5474664474,
+    "WPA":0.700658,
+    "WAR":0.6792884729,
+    "0 Diffs":1,
+    "500 Diffs":0,
+    "BA":0.4444444444,
+    "OBP":0.5,
+    "SLG":1.1111111111,
+    "OPS":1.6111111111,
+    "ISO":0.6666666667,
+    "BABIP":0.4736842105,
+    "SB%":null,
+    "HR%":0.1,
+    "K%":0.1666666667,
+    "BB%":0.1,
+    "GB%":0.6,
+    "FB%":0.3,
+    "GB\/FB":2.0,
+    "Avg Diff":211.9333333333,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"WC",
+    "Pitching Type":null,
+    "Handedness":"Right",
+    "Position":"2B",
+    "Display Season":"S5",
+    "Name":"KlentakPay TheFuckingTax",
+    "OPS+":221.7397787614
   },
   {
     "ID":1700,
@@ -162933,7 +164731,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"DeVon Pepper",
-    "OPS+":107.5545016197
+    "OPS+":107.9602358681
   },
   {
     "ID":1701,
@@ -163057,7 +164855,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Harry McPotterson",
-    "OPS+":79.4104828653
+    "OPS+":79.7623864823
   },
   {
     "ID":1703,
@@ -163615,7 +165413,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jeffrey Salmon",
-    "OPS+":214.3500210547
+    "OPS+":214.966899001
   },
   {
     "ID":1705,
@@ -163677,7 +165475,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Sarah Curvingsworth",
-    "OPS+":287.2081437615
+    "OPS+":287.9757863104
   },
   {
     "ID":1705,
@@ -164111,7 +165909,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ferret McGivins",
-    "OPS+":141.0127084912
+    "OPS+":141.5101904769
   },
   {
     "ID":1706,
@@ -164669,7 +166467,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Chase Hillinger",
-    "OPS+":51.6977190895
+    "OPS+":51.984687932
   },
   {
     "ID":1710,
@@ -164855,7 +166653,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Gregory Taint",
-    "OPS+":54.7394118055
+    "OPS+":55.0493426429
   },
   {
     "ID":1715,
@@ -164917,7 +166715,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Dinglebop McKringleberry",
-    "OPS+":-72.338208219
+    "OPS+":-72.3069224354
   },
   {
     "ID":1715,
@@ -165103,7 +166901,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Corey Scooter",
-    "OPS+":155.1314167086
+    "OPS+":155.6676144431
   },
   {
     "ID":1717,
@@ -165165,7 +166963,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Corey Scooter",
-    "OPS+":143.0527410001
+    "OPS+":143.5558170802
   },
   {
     "ID":1717,
@@ -165227,7 +167025,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Corey Scooter",
-    "OPS+":1.4265698637
+    "OPS+":1.5412844037
   },
   {
     "ID":1717,
@@ -165475,7 +167273,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Beeg Yoshi",
-    "OPS+":124.4376431408
+    "OPS+":124.8599621485
   },
   {
     "ID":1718,
@@ -165785,7 +167583,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Moby Dick",
-    "OPS+":20.1362123656
+    "OPS+":20.3549456909
   },
   {
     "ID":1719,
@@ -166033,7 +167831,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Henryk Szydlowski",
-    "OPS+":103.5617564282
+    "OPS+":103.9202278695
   },
   {
     "ID":1720,
@@ -166281,7 +168079,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Zack Mouse",
-    "OPS+":130.1811482638
+    "OPS+":130.5909430255
   },
   {
     "ID":1721,
@@ -166591,7 +168389,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"James Jameson LXIX",
-    "OPS+":85.6084614799
+    "OPS+":86.0123780748
   },
   {
     "ID":1722,
@@ -166715,7 +168513,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"William Lloyd Garrison",
-    "OPS+":16.4330053983
+    "OPS+":16.6542352908
   },
   {
     "ID":1723,
@@ -166778,6 +168576,68 @@
     "Display Season":"S6",
     "Name":"William Lloyd Garrison",
     "OPS+":80.8934119319
+  },
+  {
+    "ID":1724,
+    "Season":5.0,
+    "HR":1,
+    "3B":0,
+    "2B":2,
+    "1B":3,
+    "BB":1,
+    "IBB":0,
+    "FO":3,
+    "SO":5,
+    "Auto K":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":2,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":6,
+    "PA":17,
+    "AB":16,
+    "TB":11,
+    "G":7,
+    "R":2,
+    "RBI":1,
+    "RE24":0.7724540827,
+    "WPA":-0.0051,
+    "WAR":0.1478191109,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.375,
+    "OBP":0.4117647059,
+    "SLG":0.6875,
+    "OPS":1.0992647059,
+    "ISO":0.3125,
+    "BABIP":0.5,
+    "SB%":null,
+    "HR%":0.0588235294,
+    "K%":0.2941176471,
+    "BB%":0.0588235294,
+    "GB%":0.4,
+    "FB%":0.6,
+    "GB\/FB":0.6666666667,
+    "Avg Diff":213.5294117647,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"BN",
+    "Pitching Type":"EG-B",
+    "Handedness":"Right",
+    "Position":"3B",
+    "Display Season":"S5",
+    "Name":"Hannibal Bligh",
+    "OPS+":100.1275854987
   },
   {
     "ID":1724,
@@ -167459,7 +169319,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Trevor Rose",
-    "OPS+":255.9224208893
+    "OPS+":256.6532969837
   },
   {
     "ID":1725,
@@ -168017,7 +169877,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Scott Medge",
-    "OPS+":236.3161410017
+    "OPS+":236.9932535509
   },
   {
     "ID":1729,
@@ -168079,7 +169939,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Cali Guerensk",
-    "OPS+":27.4008591307
+    "OPS+":27.6582926248
   },
   {
     "ID":1729,
@@ -168265,7 +170125,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Gang Weed",
-    "OPS+":79.7887909624
+    "OPS+":80.1309574582
   },
   {
     "ID":1732,
@@ -168451,7 +170311,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Bonesy McSkellington",
-    "OPS+":159.0434484788
+    "OPS+":159.5485702297
   },
   {
     "ID":1733,
@@ -168885,7 +170745,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Streetlamp LeMoose",
-    "OPS+":156.4135241056
+    "OPS+":156.953237583
   },
   {
     "ID":1734,
@@ -169443,7 +171303,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Bob Dobby",
-    "OPS+":70.6661065507
+    "OPS+":70.9590145614
   },
   {
     "ID":1736,
@@ -169753,7 +171613,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Slappy McBatty",
-    "OPS+":118.2401651672
+    "OPS+":118.6752012086
   },
   {
     "ID":1737,
@@ -169939,7 +171799,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Leroy Hawk",
-    "OPS+":18.349340405
+    "OPS+":18.5104598797
   },
   {
     "ID":1738,
@@ -170125,7 +171985,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"David Roidtiz",
-    "OPS+":75.0672068238
+    "OPS+":75.4247090517
   },
   {
     "ID":1743,
@@ -170187,7 +172047,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Cagney O\u2019verpaid",
-    "OPS+":-53.187736986
+    "OPS+":-53.1347918137
   },
   {
     "ID":1743,
@@ -170311,7 +172171,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Robbie Liapis",
-    "OPS+":177.8062778408
+    "OPS+":178.3392883456
   },
   {
     "ID":1745,
@@ -170559,7 +172419,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Patty Ice",
-    "OPS+":196.3225315683
+    "OPS+":196.8899752644
   },
   {
     "ID":1748,
@@ -170621,7 +172481,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Sweet Bobby Dangles Jr",
-    "OPS+":139.3308084355
+    "OPS+":139.8302149145
   },
   {
     "ID":1748,
@@ -171055,7 +172915,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Brian Talapia",
-    "OPS+":166.4986840453
+    "OPS+":167.0734805157
   },
   {
     "ID":1752,
@@ -171117,7 +172977,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Brian Talapia",
-    "OPS+":-31.8568095077
+    "OPS+":-31.7189740009
   },
   {
     "ID":1752,
@@ -171179,7 +173039,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Brian Talapia",
-    "OPS+":329.7537046362
+    "OPS+":330.6870378812
   },
   {
     "ID":1752,
@@ -171303,7 +173163,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Joe Whomper",
-    "OPS+":91.7423648314
+    "OPS+":92.1455930009
   },
   {
     "ID":1755,
@@ -171427,7 +173287,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Speedy Claxton",
-    "OPS+":180.3648289663
+    "OPS+":180.9157496452
   },
   {
     "ID":1756,
@@ -171613,7 +173473,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Che Or",
-    "OPS+":110.6989004308
+    "OPS+":111.0805744651
   },
   {
     "ID":1759,
@@ -171799,7 +173659,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Anita Shower",
-    "OPS+":14.8207828747
+    "OPS+":14.9885678106
   },
   {
     "ID":1762,
@@ -171861,7 +173721,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Shogun Of Harlem",
-    "OPS+":184.8870292242
+    "OPS+":185.4581320821
   },
   {
     "ID":1762,
@@ -171985,7 +173845,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Dermot Mulveiny",
-    "OPS+":251.2409017843
+    "OPS+":251.9202372606
   },
   {
     "ID":1763,
@@ -172171,7 +174031,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Ross Ewage",
-    "OPS+":176.8290462516
+    "OPS+":177.3718733416
   },
   {
     "ID":1764,
@@ -172605,7 +174465,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Cam Caminiti",
-    "OPS+":-64.2023871069
+    "OPS+":-64.1618996222
   },
   {
     "ID":1768,
@@ -172729,7 +174589,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Husky Pawson",
-    "OPS+":114.174739541
+    "OPS+":114.5782008766
   },
   {
     "ID":1770,
@@ -172915,7 +174775,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Pierre Bryant",
-    "OPS+":82.0508476643
+    "OPS+":82.3968601579
   },
   {
     "ID":1771,
@@ -173039,7 +174899,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Adrian \"Pudge\" Young",
-    "OPS+":5.0692839477
+    "OPS+":5.2756940327
   },
   {
     "ID":1772,
@@ -173287,7 +175147,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Skippy Gustafsson",
-    "OPS+":48.0941247234
+    "OPS+":48.3870901494
   },
   {
     "ID":1773,
@@ -173542,6 +175402,68 @@
     "Season":5.0,
     "HR":0,
     "3B":0,
+    "2B":1,
+    "1B":0,
+    "BB":6,
+    "IBB":0,
+    "FO":7,
+    "SO":4,
+    "Auto K":0,
+    "PO":3,
+    "RGO":3,
+    "LGO":2,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":5,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":26,
+    "AB":19,
+    "TB":2,
+    "G":11,
+    "R":1,
+    "RBI":3,
+    "RE24":-2.143037431,
+    "WPA":0.015344,
+    "WAR":-0.106367492,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0526315789,
+    "OBP":0.2692307692,
+    "SLG":0.1052631579,
+    "OPS":0.3744939271,
+    "ISO":0.0526315789,
+    "BABIP":0.0625,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.1538461538,
+    "BB%":0.2307692308,
+    "GB%":0.3333333333,
+    "FB%":0.4666666667,
+    "GB\/FB":0.7142857143,
+    "Avg Diff":273.1538461538,
+    "Team":"2TM",
+    "Franchise":"2TM",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":3,
+    "Batting Type":"WC",
+    "Pitching Type":"FP-H",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Monica M. Clinton",
+    "OPS+":-24.3117889584
+  },
+  {
+    "ID":1774,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
     "2B":0,
     "1B":0,
     "BB":0,
@@ -173588,8 +175510,8 @@
     "Avg Diff":351.6,
     "Team":"CHI",
     "Franchise":"CHI",
-    "is_sub_row":false,
-    "Last Team":"CHI",
+    "is_sub_row":true,
+    "Last Team":"NUL",
     "Last Session":3,
     "Batting Type":"WC",
     "Pitching Type":"FP-H",
@@ -173598,6 +175520,68 @@
     "Display Season":"S5",
     "Name":"Monica M. Clinton",
     "OPS+":-100.0
+  },
+  {
+    "ID":1774,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":0,
+    "BB":6,
+    "IBB":0,
+    "FO":6,
+    "SO":3,
+    "Auto K":0,
+    "PO":1,
+    "RGO":3,
+    "LGO":1,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":4,
+    "GIDP":1,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "PA":21,
+    "AB":14,
+    "TB":2,
+    "G":9,
+    "R":1,
+    "RBI":3,
+    "RE24":-0.7142025739,
+    "WPA":0.118244,
+    "WAR":0.0157590223,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0714285714,
+    "OBP":0.3333333333,
+    "SLG":0.1428571429,
+    "OPS":0.4761904762,
+    "ISO":0.0714285714,
+    "BABIP":0.0833333333,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.1428571429,
+    "BB%":0.2857142857,
+    "GB%":0.3636363636,
+    "FB%":0.5454545455,
+    "GB\/FB":0.6666666667,
+    "Avg Diff":254.4761904762,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":true,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"WC",
+    "Pitching Type":"FP-H",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Monica M. Clinton",
+    "OPS+":-5.2086102276
   },
   {
     "ID":1774,
@@ -173721,7 +175705,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Nicholas Fouss",
-    "OPS+":205.9853959672
+    "OPS+":206.5956781064
   },
   {
     "ID":1776,
@@ -174341,7 +176325,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Alexander West",
-    "OPS+":49.3924228747
+    "OPS+":49.6730702274
   },
   {
     "ID":1777,
@@ -174775,7 +176759,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Tommy Tightpants",
-    "OPS+":242.6919968571
+    "OPS+":243.4252961659
   },
   {
     "ID":1778,
@@ -174961,7 +176945,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Herderber Derperger III",
-    "OPS+":61.9535031856
+    "OPS+":62.2614277738
   },
   {
     "ID":1779,
@@ -175271,7 +177255,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dirk Leschnewski",
-    "OPS+":93.9522918692
+    "OPS+":94.3043853614
   },
   {
     "ID":1781,
@@ -175395,7 +177379,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Dick Nutter LXIX",
-    "OPS+":-62.1013307546
+    "OPS+":-62.0351173195
   },
   {
     "ID":1784,
@@ -175519,7 +177503,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Elmo Seabreeze",
-    "OPS+":137.9886854906
+    "OPS+":138.4606737247
   },
   {
     "ID":1785,
@@ -175767,7 +177751,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Sleve McDichael",
-    "OPS+":94.9477717926
+    "OPS+":95.3352777064
   },
   {
     "ID":1786,
@@ -175891,7 +177875,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jeremy Nakamoto",
-    "OPS+":34.8932079624
+    "OPS+":35.1487173449
   },
   {
     "ID":1788,
@@ -175953,7 +177937,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Apple Watch",
-    "OPS+":99.3088950823
+    "OPS+":99.6994464395
   },
   {
     "ID":1788,
@@ -176015,7 +177999,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Apple Watch",
-    "OPS+":58.7406139951
+    "OPS+":59.0358375364
   },
   {
     "ID":1788,
@@ -176077,7 +178061,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Apple Watch",
-    "OPS+":173.2967887307
+    "OPS+":173.8623721508
   },
   {
     "ID":1788,
@@ -176263,7 +178247,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Almondo Albuterol",
-    "OPS+":166.7899166322
+    "OPS+":167.3036127373
   },
   {
     "ID":1790,
@@ -176511,7 +178495,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Simba Martinez",
-    "OPS+":148.7141568935
+    "OPS+":149.2401853551
   },
   {
     "ID":1792,
@@ -176821,7 +178805,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Hamish McSmashithard",
-    "OPS+":50.6100174696
+    "OPS+":50.9004541851
   },
   {
     "ID":1793,
@@ -176945,7 +178929,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Truck Month",
-    "OPS+":40.5664802316
+    "OPS+":40.770365614
   },
   {
     "ID":1794,
@@ -177255,7 +179239,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Pedro Cerrano-Spaz",
-    "OPS+":115.834429246
+    "OPS+":116.2557634505
   },
   {
     "ID":1798,
@@ -177441,7 +179425,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"AllStar Lin",
-    "OPS+":165.3175420971
+    "OPS+":165.9143544683
   },
   {
     "ID":1799,
@@ -177689,7 +179673,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Kirby Birch",
-    "OPS+":63.1645467152
+    "OPS+":63.4677817226
   },
   {
     "ID":1800,
@@ -177813,7 +179797,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Doc Dockgoose",
-    "OPS+":38.0647090945
+    "OPS+":38.3207445745
   },
   {
     "ID":1801,
@@ -178247,7 +180231,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Mantis Toboggan",
-    "OPS+":154.3717985315
+    "OPS+":154.8732306149
   },
   {
     "ID":1802,
@@ -178371,7 +180355,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"JT Longbottoms",
-    "OPS+":42.712069121
+    "OPS+":43.0053603957
   },
   {
     "ID":1803,
@@ -178433,7 +180417,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"JT Longbottoms",
-    "OPS+":93.4911470667
+    "OPS+":93.8880288611
   },
   {
     "ID":1803,
@@ -178495,7 +180479,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"JT Longbottoms",
-    "OPS+":572.6322820035
+    "OPS+":573.9865071018
   },
   {
     "ID":1808,
@@ -178557,7 +180541,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Cap Keeler",
-    "OPS+":322.5338049457
+    "OPS+":323.4473400748
   },
   {
     "ID":1808,
@@ -178867,7 +180851,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Jason Varitek",
-    "OPS+":83.0201785637
+    "OPS+":83.3177824657
   },
   {
     "ID":1810,
@@ -179053,7 +181037,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Doc Crudelly",
-    "OPS+":30.4293208352
+    "OPS+":30.6889308559
   },
   {
     "ID":1811,
@@ -179301,7 +181285,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Freddie Huff",
-    "OPS+":64.5763924078
+    "OPS+":64.8526014514
   },
   {
     "ID":1813,
@@ -179673,7 +181657,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Mo Jungo",
-    "OPS+":119.6734808641
+    "OPS+":120.1210479848
   },
   {
     "ID":1814,
@@ -179859,7 +181843,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Hubert Farnsworth",
-    "OPS+":150.2381068539
+    "OPS+":150.7375415977
   },
   {
     "ID":1815,
@@ -179983,7 +181967,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ray Saint Pete",
-    "OPS+":111.4476614398
+    "OPS+":111.8269319702
   },
   {
     "ID":1816,
@@ -180045,7 +182029,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ray Saint Pete",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":1816,
@@ -180107,7 +182091,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ray Saint Pete",
-    "OPS+":102.8531397274
+    "OPS+":103.0825688073
   },
   {
     "ID":1816,
@@ -180169,7 +182153,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ray Saint Pete",
-    "OPS+":113.7237148362
+    "OPS+":114.1259393902
   },
   {
     "ID":1816,
@@ -180293,7 +182277,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Babraham Thincoln",
-    "OPS+":122.5035007568
+    "OPS+":122.9665688726
   },
   {
     "ID":1817,
@@ -180479,7 +182463,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Tabasco Greensauce",
-    "OPS+":168.0720372096
+    "OPS+":168.5522087492
   },
   {
     "ID":1819,
@@ -180789,7 +182773,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Ax Finesse",
-    "OPS+":-13.0629401168
+    "OPS+":-12.9646133683
   },
   {
     "ID":1824,
@@ -181037,7 +183021,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Jimmy Haase",
-    "OPS+":-1.8740130459
+    "OPS+":-1.7029839166
   },
   {
     "ID":1826,
@@ -181285,7 +183269,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Jack Meoff",
-    "OPS+":93.4674967822
+    "OPS+":93.8264315532
   },
   {
     "ID":1830,
@@ -181347,7 +183331,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Guido Ligiorno",
-    "OPS+":235.4606978779
+    "OPS+":236.1218468919
   },
   {
     "ID":1830,
@@ -181719,7 +183703,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"John Valor",
-    "OPS+":68.4373219579
+    "OPS+":68.7031080064
   },
   {
     "ID":1832,
@@ -181781,7 +183765,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"John Valor",
-    "OPS+":236.3161410017
+    "OPS+":236.9932535509
   },
   {
     "ID":1832,
@@ -181843,7 +183827,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"John Valor",
-    "OPS+":147.6174930905
+    "OPS+":148.1182306954
   },
   {
     "ID":1832,
@@ -181905,7 +183889,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"John Valor",
-    "OPS+":132.0655554866
+    "OPS+":132.5682144587
   },
   {
     "ID":1832,
@@ -182091,7 +184075,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Bob Kelso",
-    "OPS+":-12.3345094494
+    "OPS+":-12.2166766616
   },
   {
     "ID":1834,
@@ -182215,7 +184199,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Brian Taylor",
-    "OPS+":10.282190497
+    "OPS+":10.4620418817
   },
   {
     "ID":1838,
@@ -183331,7 +185315,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Nick Willis Jr.",
-    "OPS+":242.4337484669
+    "OPS+":243.1548720185
   },
   {
     "ID":1841,
@@ -183517,7 +185501,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Skippy Schumaker",
-    "OPS+":108.7411732983
+    "OPS+":109.1384892121
   },
   {
     "ID":1843,
@@ -183641,7 +185625,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Ioe Torrent",
-    "OPS+":156.4135241056
+    "OPS+":156.953237583
   },
   {
     "ID":1844,
@@ -184137,7 +186121,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Hero Brine",
-    "OPS+":312.6619662174
+    "OPS+":313.5134140584
   },
   {
     "ID":1942,
@@ -184323,7 +186307,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Oxleohl Driver",
-    "OPS+":74.9889238002
+    "OPS+":75.3380406993
   },
   {
     "ID":1943,
@@ -184447,7 +186431,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Oxleohl Driver",
-    "OPS+":103.191008322
+    "OPS+":103.5973474288
   },
   {
     "ID":1943,
@@ -184881,7 +186865,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Alaina Mclean",
-    "OPS+":162.9031765942
+    "OPS+":163.4305832862
   },
   {
     "ID":1947,
@@ -185005,7 +186989,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Davoin Shower-Handel",
-    "OPS+":75.0191829559
+    "OPS+":75.3459135038
   },
   {
     "ID":1949,
@@ -185377,7 +187361,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Paxton Paige",
-    "OPS+":94.8667805064
+    "OPS+":95.247936331
   },
   {
     "ID":1953,
@@ -185439,7 +187423,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Dan Gerzone",
-    "OPS+":104.9456798966
+    "OPS+":105.29757083
   },
   {
     "ID":1953,
@@ -185563,7 +187547,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Matt Murphy",
-    "OPS+":104.0631711806
+    "OPS+":104.4937344411
   },
   {
     "ID":1954,
@@ -185687,7 +187671,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Michael Smith",
-    "OPS+":37.8371257702
+    "OPS+":38.0680251877
   },
   {
     "ID":1956,
@@ -185935,7 +187919,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Kris Pcock",
-    "OPS+":120.2863606028
+    "OPS+":120.7344355148
   },
   {
     "ID":1958,
@@ -185997,7 +187981,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"Reggie Stocker",
-    "OPS+":64.3285606771
+    "OPS+":64.6349875964
   },
   {
     "ID":1958,
@@ -186121,7 +188105,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Frankson Ahtra",
-    "OPS+":132.3979152685
+    "OPS+":132.9262452126
   },
   {
     "ID":1959,
@@ -186183,7 +188167,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Frankson Ahtra",
-    "OPS+":130.2998439759
+    "OPS+":130.8088029003
   },
   {
     "ID":1959,
@@ -186245,7 +188229,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Frankson Ahtra",
-    "OPS+":124.2107606678
+    "OPS+":124.6621690339
   },
   {
     "ID":1959,
@@ -186369,7 +188353,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Aidan Myers",
-    "OPS+":182.5726944408
+    "OPS+":183.1024338914
   },
   {
     "ID":1960,
@@ -186865,7 +188849,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Pete Parker",
-    "OPS+":-69.5720290409
+    "OPS+":-69.5376146789
   },
   {
     "ID":1963,
@@ -187113,7 +189097,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Jabreakit Jubawit",
-    "OPS+":228.1289273565
+    "OPS+":228.8108248081
   },
   {
     "ID":1964,
@@ -189221,7 +191205,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Dirk Digglet",
-    "OPS+":167.0112176158
+    "OPS+":167.5089424041
   },
   {
     "ID":2206,
@@ -189903,7 +191887,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Fik Seiko",
-    "OPS+":64.0359883174
+    "OPS+":64.3223878643
   },
   {
     "ID":2207,
@@ -190213,7 +192197,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Maddie Williams",
-    "OPS+":114.1235230804
+    "OPS+":114.5472706329
   },
   {
     "ID":2213,
@@ -190275,7 +192259,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Maddie Williams",
-    "OPS+":167.6544038505
+    "OPS+":168.1840882911
   },
   {
     "ID":2213,
@@ -190585,7 +192569,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Jack Ryan",
-    "OPS+":80.2693127861
+    "OPS+":80.629938203
   },
   {
     "ID":2215,
@@ -190771,7 +192755,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"David Peterson",
-    "OPS+":558.7542543128
+    "OPS+":560.152130289
   },
   {
     "ID":2218,
@@ -190833,7 +192817,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"David Peterson",
-    "OPS+":200.4144693997
+    "OPS+":201.0281509741
   },
   {
     "ID":2218,
@@ -190895,7 +192879,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"David Peterson",
-    "OPS+":-38.9430005253
+    "OPS+":-38.8368524804
   },
   {
     "ID":2219,
@@ -191019,7 +193003,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Dogwood Maple",
-    "OPS+":47.7724386948
+    "OPS+":48.0726028831
   },
   {
     "ID":2220,
@@ -191205,7 +193189,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"JC Nicholson",
-    "OPS+":156.4135241056
+    "OPS+":156.953237583
   },
   {
     "ID":2221,
@@ -191391,7 +193375,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Not From Wisconsin",
-    "OPS+":85.7126691311
+    "OPS+":86.0710798453
   },
   {
     "ID":2222,
@@ -191515,7 +193499,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Kenny Pupton",
-    "OPS+":-69.4293823026
+    "OPS+":-69.376192786
   },
   {
     "ID":2224,
@@ -191763,7 +193747,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Nickey Hallaway",
-    "OPS+":231.3821672458
+    "OPS+":232.0185145049
   },
   {
     "ID":2225,
@@ -192197,7 +194181,7 @@
     "Position":"RF",
     "Display Season":"S5",
     "Name":"King Kruul",
-    "OPS+":110.2057701248
+    "OPS+":110.5936340688
   },
   {
     "ID":2229,
@@ -192817,7 +194801,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"Garfield Chubbs",
-    "OPS+":197.2688619957
+    "OPS+":197.8797540018
   },
   {
     "ID":2230,
@@ -193189,7 +195173,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Henri Deschenes",
-    "OPS+":92.180652001
+    "OPS+":92.5675734577
   },
   {
     "ID":2234,
@@ -193313,7 +195297,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Sticky Mickey Mantle",
-    "OPS+":41.4679390708
+    "OPS+":41.7578187426
   },
   {
     "ID":2236,
@@ -193499,7 +195483,7 @@
     "Position":"3B",
     "Display Season":"S5",
     "Name":"John-Rhys Ealy",
-    "OPS+":-42.9475544517
+    "OPS+":-42.8830275229
   },
   {
     "ID":2240,
@@ -193561,7 +195545,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"ModeratoSevere PlaquePsoriasis",
-    "OPS+":205.6200933007
+    "OPS+":206.2130323933
   },
   {
     "ID":2240,
@@ -193747,7 +195731,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Johnny Omar",
-    "OPS+":-18.5906673671
+    "OPS+":-18.4491366406
   },
   {
     "ID":2241,
@@ -193809,7 +195793,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Johnny Omar",
-    "OPS+":143.51409789
+    "OPS+":144.0088265381
   },
   {
     "ID":2241,
@@ -193871,7 +195855,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Johnny Omar",
-    "OPS+":245.6366767355
+    "OPS+":246.3616313093
   },
   {
     "ID":2241,
@@ -193995,7 +195979,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Wonder Francoh",
-    "OPS+":103.9775459183
+    "OPS+":104.3968163388
   },
   {
     "ID":2242,
@@ -194181,7 +196165,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Matthew Paul",
-    "OPS+":62.8186652658
+    "OPS+":63.1017267188
   },
   {
     "ID":2243,
@@ -194243,7 +196227,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Matthew Paul",
-    "OPS+":74.3503432319
+    "OPS+":74.6752397147
   },
   {
     "ID":2243,
@@ -194305,7 +196289,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Matthew Paul",
-    "OPS+":77.787307363
+    "OPS+":78.1239854717
   },
   {
     "ID":2243,
@@ -194491,7 +196475,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Revant Avenir",
-    "OPS+":17.9344507316
+    "OPS+":18.1177772676
   },
   {
     "ID":2244,
@@ -194677,7 +196661,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Ronnie Wristclocks",
-    "OPS+":36.5677722274
+    "OPS+":36.7980746389
   },
   {
     "ID":2246,
@@ -195049,7 +197033,7 @@
     "Position":"P",
     "Display Season":"S5",
     "Name":"Ananias Thomson",
-    "OPS+":144.2279978986
+    "OPS+":144.6525900782
   },
   {
     "ID":2249,
@@ -195173,7 +197157,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Luke Skywalker",
-    "OPS+":57.0036333438
+    "OPS+":57.2707490523
   },
   {
     "ID":2251,
@@ -195359,7 +197343,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Mike Litoris",
-    "OPS+":82.3602758098
+    "OPS+":82.6560701532
   },
   {
     "ID":2252,
@@ -195421,7 +197405,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Mike Litoris",
-    "OPS+":125.810369278
+    "OPS+":126.1844573837
   },
   {
     "ID":2252,
@@ -195483,7 +197467,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Mike Litoris",
-    "OPS+":38.6966148996
+    "OPS+":38.9135298449
   },
   {
     "ID":2252,
@@ -195855,7 +197839,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Phillips Mahooters",
-    "OPS+":72.8454824732
+    "OPS+":73.1411833044
   },
   {
     "ID":2253,
@@ -195979,7 +197963,7 @@
     "Position":"1B",
     "Display Season":"S5",
     "Name":"Phillips Mahooters",
-    "OPS+":145.1320273407
+    "OPS+":145.5590985131
   },
   {
     "ID":2253,
@@ -196227,7 +198211,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Julian O'Sullivan",
-    "OPS+":207.6933155885
+    "OPS+":208.3191753346
   },
   {
     "ID":2255,
@@ -196289,7 +198273,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Bubkis Fajita",
-    "OPS+":2.3808254272
+    "OPS+":2.5390100092
   },
   {
     "ID":2256,
@@ -196351,7 +198335,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Doc Otis",
-    "OPS+":388.4559957973
+    "OPS+":389.3051801564
   },
   {
     "ID":2256,
@@ -197343,7 +199327,7 @@
     "Position":"C",
     "Display Season":"S5",
     "Name":"Willians Adobestudio",
-    "OPS+":603.8644831883
+    "OPS+":605.4023999323
   },
   {
     "ID":2260,
@@ -197653,7 +199637,7 @@
     "Position":"LF",
     "Display Season":"S5",
     "Name":"Jeff Loldee",
-    "OPS+":96.2811168757
+    "OPS+":96.6559377059
   },
   {
     "ID":2261,
@@ -197839,7 +199823,7 @@
     "Position":"2B",
     "Display Season":"S5",
     "Name":"Burg McTurdBerg",
-    "OPS+":2.3808254272
+    "OPS+":2.5390100092
   },
   {
     "ID":2262,
@@ -198149,7 +200133,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Ivan Yakenov",
-    "OPS+":89.0797556989
+    "OPS+":89.4348292486
   },
   {
     "ID":2274,
@@ -198211,7 +200195,7 @@
     "Position":"SS",
     "Display Season":"S5",
     "Name":"Joseph Michaels",
-    "OPS+":348.4215213356
+    "OPS+":349.3243380679
   },
   {
     "ID":2274,
@@ -198645,7 +200629,7 @@
     "Position":"CF",
     "Display Season":"S5",
     "Name":"Kev Biffington",
-    "OPS+":208.6136363221
+    "OPS+":209.2638081723
   },
   {
     "ID":2276,
@@ -198894,6 +200878,68 @@
     "Display Season":"S8B",
     "Name":"Kev Biffington",
     "OPS+":205.0363801887
+  },
+  {
+    "ID":2277,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":1,
+    "IBB":0,
+    "FO":2,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":3,
+    "AB":2,
+    "TB":0,
+    "G":1,
+    "R":1,
+    "RBI":0,
+    "RE24":-0.2706443914,
+    "WPA":-0.0459,
+    "WAR":-0.0146102563,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":0.0,
+    "OBP":0.3333333333,
+    "SLG":0.0,
+    "OPS":0.3333333333,
+    "ISO":0.0,
+    "BABIP":0.0,
+    "SB%":null,
+    "HR%":0.0,
+    "K%":0.0,
+    "BB%":0.3333333333,
+    "GB%":0.0,
+    "FB%":1.0,
+    "GB\/FB":0.0,
+    "Avg Diff":195.3333333333,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"S",
+    "Pitching Type":null,
+    "Handedness":"Left",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Oregano Moon",
+    "OPS+":1.5412844037
   },
   {
     "ID":2277,
