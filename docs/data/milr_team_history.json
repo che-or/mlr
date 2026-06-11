@@ -8,7 +8,7 @@
     "S3": {
         "BAY": "Bayside Fish & Ships",
         "BER": "Berlin Blood Saints",
-        "CCF": "Chesapeake Cangrejos Fantasmas",
+        "CCF": {"name": "Chesapeake Cangrejos Fantasmas", "logo_dark": "img/milr_logos/S3CCF.png", "logo_light": "img/milr_logos/S3CCF.png"},
         "CIN": "Cincinnati Bongo Cats",
         "FTP": "Fontana Trash Pandas",
         "LAN": "Lancaster Dumpster Fires",
@@ -17,20 +17,20 @@
     },
     "S4": {
         "CCS": {"name": "Caribbean Chain Shots", "logo_dark": "img/milr_logos/S4CCS.png", "logo_light": "img/milr_logos/S4CCS.png"},
-        "CEL": "Celebration Unicorns",
+        "CEL": {"name": "Celebration Unicorns", "logo_dark": "img/milr_logos/S4CEL.png", "logo_light": "img/milr_logos/S4CEL.png"},
         "DBV": {"name": "Del Boca Vista BongoCats", "logo_dark": "img/milr_logos/S4DBV.png", "logo_light": "img/milr_logos/S4DBV.png"},
-        "DCL": "North Dakota Corporate Lobbyist Bean Flickers of Sioux Falls, South Dakota",
-        "DDD": "Dayton Drum Dogs",
-        "EEE": "Egyptian Enlarging Eggplants",
-        "FWG": "Fort Wayne Gretzkys",
-        "HON": "Honolulu Whale Tails",
-        "LDN": "London Calling",
+        "DCL": {"name": "North Dakota Corporate Lobbyist Bean Flickers of Sioux Falls, South Dakota", "logo_dark": "img/milr_logos/S4DCL.png", "logo_light": "img/milr_logos/S4DCL.png"},
+        "DDD": {"name": "Dayton Drum Dogs", "logo_dark": "img/milr_logos/S4DDD.png", "logo_light": "img/milr_logos/S4DDD.png"},
+        "EEE": {"name": "Egyptian Enlarging Eggplants", "logo_dark": "img/milr_logos/S4EEE.png", "logo_light": "img/milr_logos/S4EEE.png"},
+        "FWG": {"name": "Fort Wayne Gretzkys", "logo_dark": "img/milr_logos/S4FWG.png", "logo_light": "img/milr_logos/S4FWG.png"},
+        "HON": {"name": "Honolulu Whale Tails", "logo_dark": "img/milr_logos/S4HON.png", "logo_light": "img/milr_logos/S4HON.png"},
+        "LDN": {"name": "London Calling", "logo_dark": "img/milr_logos/S4LDN.png", "logo_light": "img/milr_logos/S4LDN.png"},
         "LMN": {"name": "Lemon Lake Lemons", "logo_dark": "img/milr_logos/S4LMN.png", "logo_light": "img/milr_logos/S4LMN.png"},
-        "MBX": "Montreal Bay ExRays",
-        "N69": "Nevada 69s",
+        "MBX": {"name": "Montreal Bay ExRays", "logo_dark": "img/milr_logos/S4MBX.png", "logo_light": "img/milr_logos/S4MBX.png"},
+        "N69": {"name": "Nevada 69s", "logo_dark": "img/milr_logos/S4N69.png", "logo_light": "img/milr_logos/S4N69.png"},
         "PDB": {"name": "Pee-Dee Biscuits", "logo_dark": "img/milr_logos/S4PDB.png", "logo_light": "img/milr_logos/S4PDB.png"},
         "PGA": {"name": "Philadelphia Gamblers", "logo_dark": "img/milr_logos/S4PGA.png", "logo_light": "img/milr_logos/S4PGA.png"},
-        "PGS": "Promontory Summit Golden Spikes",
+        "PGS": {"name": "Promontory Summit Golden Spikes", "logo_dark": "img/milr_logos/S4PGS.png", "logo_light": "img/milr_logos/S4PGS.png"},
         "VFQ": {"name": "Las Vegas Foam Quetzals", "logo_dark": "img/milr_logos/S4VFQ.png", "logo_light": "img/milr_logos/S4VFQ.png"}
     },
     "S5": {
@@ -57,10 +57,10 @@
         "TSA": {"name": "Tri-State Area Platypi", "logo_dark": "img/milr_logos/S5TSA.png", "logo_light": "img/milr_logos/S5TSA.png"},
         "WSH": {"name": "Washington Nationals", "logo_dark": "img/milr_logos/S5WSH.png", "logo_light": "img/milr_logos/S5WSH.png"},
         "WWC": {"name": "Waukesha White Claws", "logo_dark": "img/milr_logos/S5WWC.png", "logo_light": "img/milr_logos/S5WWC.png"},
-        "YUM": "Yum Yum Yum Yums"
+        "YUM": {"name": "Yum Yum Yum Yums", "logo_dark": "img/milr_logos/S5YUM.png", "logo_light": "img/milr_logos/S5YUM.png"}
     },
     "S6": {
-        "AAL": "Allegheny Alcoholics",
+        "AAL": {"name": "Allegheny Alcoholics", "logo_dark": "img/milr_logos/S6AAL.png", "logo_light": "img/milr_logos/S6AAL.png"},
         "BAC": {"name": "Blue Grass Ax Cats", "logo_dark": "img/milr_logos/S6BAC.png", "logo_light": "img/milr_logos/S6BAC.png"},
         "BBB": {"name": "Bronzeville Birthday Boys", "logo_dark": "img/milr_logos/S6BBB.png", "logo_light": "img/milr_logos/S6BBB.png"},
         "CBC": {"name": "Congo Bongocats", "logo_dark": "img/milr_logos/S6CBC.png", "logo_light": "img/milr_logos/S6CBC.png"},
