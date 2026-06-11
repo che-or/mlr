@@ -729,7 +729,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":2,
     "Batting Type":"MH",
@@ -762,7 +762,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":284.8571428571,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":5,
@@ -899,7 +899,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":14,
     "Batting Type":"1B",
@@ -932,7 +932,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":236.4117647059,
-    "ERA-":71.4056065364
+    "ERA-":70.2439879293
   },
   {
     "ID":10,
@@ -1275,6 +1275,91 @@
     "ERA-":117.3838371823
   },
   {
+    "ID":13,
+    "Season":5.0,
+    "HR":2,
+    "3B":1,
+    "2B":0,
+    "1B":2,
+    "BB":3,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":3,
+    "SO":0,
+    "PO":0,
+    "RGO":3,
+    "LGO":3,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":6,
+    "DP":1,
+    "TP":0,
+    "SB":1,
+    "CS":0,
+    "H":5,
+    "IP":3.3333333333,
+    "BF":17,
+    "AB":14,
+    "TB":13,
+    "G":1,
+    "ER":5,
+    "RE24":2.7148987751,
+    "WAR":-0.199470981,
+    "WPA":-0.3898,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":6,
+    "400+ Pitches":5,
+    "W":0.0,
+    "L":0.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":1.0,
+    "GF":0.0,
+    "CG":0.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":7,
+    "Batting Type":"WC",
+    "Pitching Type":"BS-H",
+    "Pitching Type (Main)":"BS",
+    "Handedness":"Right",
+    "Position":"SS",
+    "Display Season":"S5",
+    "Name":"Reimer Gonzalez",
+    "ERA":9.0,
+    "WHIP":2.4,
+    "FIP":11.7243733794,
+    "H6":9.0,
+    "HR6":3.6,
+    "BB6":5.4,
+    "SO6":0.0,
+    "SO\/BB":0.0,
+    "BA":0.3571428571,
+    "OBP":0.4705882353,
+    "SLG":0.7647058824,
+    "OPS":1.2352941176,
+    "BABIP":0.25,
+    "SB%":1.0,
+    "HR%":0.1176470588,
+    "K%":0.0,
+    "BB%":0.1764705882,
+    "GB%":0.6666666667,
+    "FB%":0.3333333333,
+    "GB\/FB":2.0,
+    "W-L%":0.0,
+    "SV%":0.0,
+    "Avg Diff":240.3888888889,
+    "ERA-":250.2325735301
+  },
+  {
     "ID":16,
     "Season":4.0,
     "HR":0,
@@ -1494,7 +1579,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":1,
     "Batting Type":"1B",
@@ -1527,7 +1612,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":237.6315789474,
-    "ERA-":108.0848967316
+    "ERA-":106.3265834383
   },
   {
     "ID":19,
@@ -2089,7 +2174,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":12,
     "Batting Type":"XB",
@@ -2122,7 +2207,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":168.75,
-    "ERA-":62.836933752
+    "ERA-":61.8147093778
   },
   {
     "ID":28,
@@ -2514,7 +2599,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":13,
     "Batting Type":"TT",
@@ -2547,7 +2632,7 @@
     "W-L%":0.3333333333,
     "SV%":0.0,
     "Avg Diff":245.7837837838,
-    "ERA-":118.5363053222
+    "ERA-":116.6079696556
   },
   {
     "ID":32,
@@ -3789,7 +3874,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":11,
     "Batting Type":"S",
@@ -3822,7 +3907,7 @@
     "W-L%":0.0,
     "SV%":null,
     "Avg Diff":121.3333333333,
-    "ERA-":691.3944058044
+    "ERA-":680.1468771358
   },
   {
     "ID":34,
@@ -3874,7 +3959,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":11,
     "Batting Type":"S",
@@ -3959,7 +4044,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":12,
     "Batting Type":"S",
@@ -5234,7 +5319,7 @@
     "Team":"SAR",
     "Franchise":"SAR",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":6,
     "Batting Type":"1B",
@@ -5267,7 +5352,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":265.04,
-    "ERA-":104.72822292
+    "ERA-":103.0245156296
   },
   {
     "ID":42,
@@ -5319,7 +5404,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":14,
     "Batting Type":"1B",
@@ -5352,7 +5437,7 @@
     "W-L%":1.0,
     "SV%":null,
     "Avg Diff":250.3043478261,
-    "ERA-":65.455139325
+    "ERA-":64.3903222685
   },
   {
     "ID":42,
@@ -5404,7 +5489,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":14,
     "Batting Type":"1B",
@@ -5437,7 +5522,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":232.7619047619,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":45,
@@ -5659,7 +5744,7 @@
     "Team":"YUM",
     "Franchise":"YUM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"YUM",
     "Last Session":12,
     "Batting Type":"SF",
@@ -5692,7 +5777,7 @@
     "W-L%":1.0,
     "SV%":1.0,
     "Avg Diff":244.4637681159,
-    "ERA-":48.0169022067
+    "ERA-":47.2357684868
   },
   {
     "ID":46,
@@ -7104,7 +7189,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":7,
     "Batting Type":"SM",
@@ -7137,7 +7222,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":257.375,
-    "ERA-":144.1575240313
+    "ERA-":141.8123851776
   },
   {
     "ID":63,
@@ -7189,7 +7274,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":10,
     "Batting Type":"SM",
@@ -7222,7 +7307,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":255.862745098,
-    "ERA-":92.6922641266
+    "ERA-":91.1843564991
   },
   {
     "ID":63,
@@ -7274,7 +7359,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":10,
     "Batting Type":"SM",
@@ -7307,7 +7392,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":255.1714285714,
-    "ERA-":69.81881528
+    "ERA-":68.6830104198
   },
   {
     "ID":63,
@@ -7699,7 +7784,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":14,
     "Batting Type":"S",
@@ -7732,7 +7817,7 @@
     "W-L%":1.0,
     "SV%":1.0,
     "Avg Diff":268.7142857143,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":65,
@@ -8294,7 +8379,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":13,
     "Batting Type":"1B",
@@ -8327,7 +8412,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":310.0740740741,
-    "ERA-":10.2451522422
+    "ERA-":10.0784852246
   },
   {
     "ID":67,
@@ -8634,7 +8719,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":4,
     "Batting Type":"MH",
@@ -8667,7 +8752,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":308.5555555556,
-    "ERA-":52.36411146
+    "ERA-":51.5122578148
   },
   {
     "ID":71,
@@ -8804,7 +8889,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":9,
     "Batting Type":"BC",
@@ -8837,7 +8922,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":185.2307692308,
-    "ERA-":281.5652368399
+    "ERA-":276.984764324
   },
   {
     "ID":71,
@@ -9569,7 +9654,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":8,
     "Batting Type":"1B",
@@ -9602,7 +9687,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":230.2608695652,
-    "ERA-":43.4627345867
+    "ERA-":42.7556875681
   },
   {
     "ID":77,
@@ -9909,7 +9994,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":9,
     "Batting Type":"BP",
@@ -9942,7 +10027,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":236.5555555556,
-    "ERA-":128.5300917655
+    "ERA-":126.4391782727
   },
   {
     "ID":80,
@@ -10164,7 +10249,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":5,
     "Batting Type":"BC",
@@ -10538,6 +10623,91 @@
     "SV%":0.0,
     "Avg Diff":210.6511627907,
     "ERA-":209.0041920888
+  },
+  {
+    "ID":90,
+    "Season":5.0,
+    "HR":4,
+    "3B":6,
+    "2B":4,
+    "1B":11,
+    "BB":11,
+    "IBB":1,
+    "Auto BB":1,
+    "FO":8,
+    "SO":12,
+    "PO":4,
+    "RGO":2,
+    "LGO":5,
+    "LO":0,
+    "SF":1,
+    "SH":1,
+    "GO":7,
+    "DP":0,
+    "TP":0,
+    "SB":2,
+    "CS":0,
+    "H":25,
+    "IP":10.6666666667,
+    "BF":68,
+    "AB":55,
+    "TB":53,
+    "G":3,
+    "ER":23,
+    "RE24":15.6091558606,
+    "WAR":-1.2808420997,
+    "WPA":-0.3076,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":20,
+    "400+ Pitches":7,
+    "W":0.0,
+    "L":2.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":2.0,
+    "GF":0.0,
+    "CG":0.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"S",
+    "Pitching Type":"EG-H",
+    "Pitching Type (Main)":"EG",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Bob Robb",
+    "ERA":12.9375,
+    "WHIP":3.375,
+    "FIP":6.9431233794,
+    "H6":14.0625,
+    "HR6":2.25,
+    "BB6":6.1875,
+    "SO6":6.75,
+    "SO\/BB":1.0909090909,
+    "BA":0.4545454545,
+    "OBP":0.5373134328,
+    "SLG":0.7794117647,
+    "OPS":1.3167251975,
+    "BABIP":0.525,
+    "SB%":1.0,
+    "HR%":0.0588235294,
+    "K%":0.1764705882,
+    "BB%":0.1617647059,
+    "GB%":0.3684210526,
+    "FB%":0.4210526316,
+    "GB\/FB":0.875,
+    "W-L%":0.0,
+    "SV%":0.0,
+    "Avg Diff":204.696969697,
+    "ERA-":202.0625438427
   },
   {
     "ID":90,
@@ -11184,7 +11354,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":7,
     "Batting Type":"BC",
@@ -11217,7 +11387,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":256.7164179104,
-    "ERA-":81.6298315316
+    "ERA-":80.3018863491
   },
   {
     "ID":108,
@@ -11864,7 +12034,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":14,
     "Batting Type":"HK",
@@ -11897,7 +12067,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":261.4166666667,
-    "ERA-":51.7255247349
+    "ERA-":50.8840595488
   },
   {
     "ID":114,
@@ -12204,7 +12374,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":11,
     "Batting Type":"BC",
@@ -12237,7 +12407,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":227.875,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":116,
@@ -12799,7 +12969,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":13,
     "Batting Type":"1B",
@@ -12832,7 +13002,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.2083333333,
-    "ERA-":158.2021036158
+    "ERA-":155.6284890755
   },
   {
     "ID":117,
@@ -14669,7 +14839,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":6,
     "Batting Type":"XB",
@@ -14702,7 +14872,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":89.625,
-    "ERA-":3046.7062597371
+    "ERA-":2997.142775113
   },
   {
     "ID":129,
@@ -14839,7 +15009,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":1,
     "Batting Type":"1B",
@@ -14872,7 +15042,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":283.4210526316,
-    "ERA-":116.8707059694
+    "ERA-":114.9694660911
   },
   {
     "ID":131,
@@ -14924,7 +15094,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":12,
     "Batting Type":"1B",
@@ -14957,7 +15127,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":292.3913043478,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":131,
@@ -15604,7 +15774,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":7,
     "Batting Type":"WC",
@@ -15637,7 +15807,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":262.4736842105,
-    "ERA-":134.7124521844
+    "ERA-":132.5209647276
   },
   {
     "ID":133,
@@ -16029,7 +16199,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":11,
     "Batting Type":"TT",
@@ -16062,7 +16232,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":266.7777777778,
-    "ERA-":142.3830482935
+    "ERA-":140.0667764172
   },
   {
     "ID":134,
@@ -16624,7 +16794,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":13,
     "Batting Type":"XB",
@@ -16657,7 +16827,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":265.45,
-    "ERA-":91.2149038336
+    "ERA-":89.7310297419
   },
   {
     "ID":135,
@@ -17134,7 +17304,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":6,
     "Batting Type":"S",
@@ -17167,7 +17337,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":269.5952380952,
-    "ERA-":31.418466876
+    "ERA-":30.9073546889
   },
   {
     "ID":138,
@@ -17219,7 +17389,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":4,
     "Batting Type":"S",
@@ -17252,7 +17422,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":284.5652173913,
-    "ERA-":39.273083595
+    "ERA-":38.6341933611
   },
   {
     "ID":138,
@@ -17304,7 +17474,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":13,
     "Batting Type":"S",
@@ -17337,7 +17507,7 @@
     "W-L%":0.6,
     "SV%":null,
     "Avg Diff":279.71,
-    "ERA-":47.7242534825
+    "ERA-":46.9478805401
   },
   {
     "ID":138,
@@ -17389,7 +17559,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":13,
     "Batting Type":"S",
@@ -17422,7 +17592,7 @@
     "W-L%":0.3333333333,
     "SV%":0.0,
     "Avg Diff":275.5740740741,
-    "ERA-":54.7996515279
+    "ERA-":53.908176783
   },
   {
     "ID":138,
@@ -17559,7 +17729,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BP",
@@ -17899,7 +18069,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":10,
     "Batting Type":"WC",
@@ -17932,7 +18102,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":278.0666666667,
-    "ERA-":39.273083595
+    "ERA-":38.6341933611
   },
   {
     "ID":149,
@@ -18919,7 +19089,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":2,
     "Batting Type":"XB",
@@ -18952,7 +19122,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":272.8823529412,
-    "ERA-":33.6626430814
+    "ERA-":33.115022881
   },
   {
     "ID":152,
@@ -19004,7 +19174,7 @@
     "Team":"3TM",
     "Franchise":"3TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":3,
     "Batting Type":"XB",
@@ -19037,7 +19207,7 @@
     "W-L%":0.6,
     "SV%":null,
     "Avg Diff":236.037593985,
-    "ERA-":135.5489147792
+    "ERA-":133.3438198403
   },
   {
     "ID":152,
@@ -19089,7 +19259,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":3,
     "Batting Type":"XB",
@@ -19122,7 +19292,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":278.375,
-    "ERA-":71.0191294815
+    "ERA-":69.863798041
   },
   {
     "ID":152,
@@ -19174,7 +19344,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"XB",
@@ -19207,7 +19377,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":223.0,
-    "ERA-":172.085931112
+    "ERA-":169.2864559826
   },
   {
     "ID":152,
@@ -19854,7 +20024,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":3,
     "Batting Type":"BC",
@@ -19887,7 +20057,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":244.2857142857,
-    "ERA-":188.5108012561
+    "ERA-":185.4441281334
   },
   {
     "ID":163,
@@ -20279,7 +20449,7 @@
     "Team":"POR",
     "Franchise":"POR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"POR",
     "Last Session":14,
     "Batting Type":"BP",
@@ -20312,7 +20482,7 @@
     "W-L%":0.2,
     "SV%":0.0,
     "Avg Diff":232.0131578947,
-    "ERA-":157.2574604294
+    "ERA-":154.6992132413
   },
   {
     "ID":163,
@@ -21469,7 +21639,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":10,
     "Batting Type":"SF",
@@ -21502,7 +21672,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":217.2222222222,
-    "ERA-":147.8082471485
+    "ERA-":145.4037187298
   },
   {
     "ID":167,
@@ -21809,7 +21979,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":9,
     "Batting Type":"BP",
@@ -21842,7 +22012,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":226.7272727273,
-    "ERA-":372.4608573204
+    "ERA-":366.4017047796
   },
   {
     "ID":176,
@@ -22319,7 +22489,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":14,
     "Batting Type":"BC",
@@ -22352,7 +22522,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":247.8518518519,
-    "ERA-":70.054689656
+    "ERA-":68.9150476171
   },
   {
     "ID":180,
@@ -23169,7 +23339,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":2,
     "Batting Type":"XB",
@@ -23509,7 +23679,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":6,
     "Batting Type":"EN",
@@ -23542,7 +23712,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":244.8571428571,
-    "ERA-":207.2429471222
+    "ERA-":203.8715414968
   },
   {
     "ID":188,
@@ -23764,7 +23934,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":5,
     "Batting Type":"SM",
@@ -23797,7 +23967,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":82.5,
-    "ERA-":1221.1168305098
+    "ERA-":1201.2518353007
   },
   {
     "ID":189,
@@ -24614,7 +24784,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":4,
     "Batting Type":"TT",
@@ -24647,7 +24817,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":237.6842105263,
-    "ERA-":169.4390563129
+    "ERA-":166.6826402536
   },
   {
     "ID":191,
@@ -24869,7 +25039,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":8,
     "Batting Type":"SM",
@@ -24954,7 +25124,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":13,
     "Batting Type":"WC",
@@ -24987,7 +25157,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":274.3823529412,
-    "ERA-":14.7274063481
+    "ERA-":14.4878225104
   },
   {
     "ID":194,
@@ -25719,7 +25889,7 @@
     "Team":"YUM",
     "Franchise":"YUM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"YUM",
     "Last Session":14,
     "Batting Type":"WC",
@@ -25752,7 +25922,7 @@
     "W-L%":0.75,
     "SV%":0.0,
     "Avg Diff":259.953125,
-    "ERA-":81.8849462007
+    "ERA-":80.5528508406
   },
   {
     "ID":197,
@@ -25974,7 +26144,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":7,
     "Batting Type":"MH",
@@ -26007,7 +26177,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":275.2592592593,
-    "ERA-":103.1851059656
+    "ERA-":101.5065019333
   },
   {
     "ID":198,
@@ -27079,7 +27249,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"XB",
@@ -27112,7 +27282,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":317.0,
-    "ERA-":85.8486453188
+    "ERA-":84.4520689345
   },
   {
     "ID":207,
@@ -27249,7 +27419,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":14,
     "Batting Type":"1B",
@@ -27282,7 +27452,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":327.375,
-    "ERA-":67.3252861629
+    "ERA-":66.2300457619
   },
   {
     "ID":207,
@@ -28524,7 +28694,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":7,
     "Batting Type":"1B",
@@ -28557,7 +28727,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":275.3076923077,
-    "ERA-":42.8433639218
+    "ERA-":42.1463927576
   },
   {
     "ID":217,
@@ -28949,7 +29119,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":9,
     "Batting Type":"WC",
@@ -28982,7 +29152,7 @@
     "W-L%":0.6666666667,
     "SV%":null,
     "Avg Diff":242.7222222222,
-    "ERA-":84.9083630453
+    "ERA-":83.5270830703
   },
   {
     "ID":218,
@@ -29034,7 +29204,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":9,
     "Batting Type":"WC",
@@ -29067,7 +29237,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":243.0344827586,
-    "ERA-":85.7462325158
+    "ERA-":84.3513221718
   },
   {
     "ID":218,
@@ -29119,7 +29289,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":9,
     "Batting Type":"WC",
@@ -29152,7 +29322,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":242.511627907,
-    "ERA-":84.2149538283
+    "ERA-":82.8449541587
   },
   {
     "ID":218,
@@ -30989,7 +31159,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":10,
     "Batting Type":"BN",
@@ -31022,7 +31192,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":248.9285714286,
-    "ERA-":81.4261933203
+    "ERA-":80.101560902
   },
   {
     "ID":235,
@@ -31754,7 +31924,7 @@
     "Team":"POR",
     "Franchise":"POR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"POR",
     "Last Session":8,
     "Batting Type":"BP",
@@ -31787,7 +31957,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":262.7714285714,
-    "ERA-":55.4443533106
+    "ERA-":54.5423906275
   },
   {
     "ID":249,
@@ -32859,7 +33029,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":14,
     "Batting Type":"BP",
@@ -32892,7 +33062,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":264.9,
-    "ERA-":49.0913544938
+    "ERA-":48.2927417014
   },
   {
     "ID":259,
@@ -33794,7 +33964,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":6,
     "Batting Type":"EN",
@@ -33827,7 +33997,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":256.3,
-    "ERA-":28.6864262781
+    "ERA-":28.219758629
   },
   {
     "ID":264,
@@ -34389,7 +34559,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":13,
     "Batting Type":"BC",
@@ -34422,7 +34592,7 @@
     "W-L%":0.75,
     "SV%":0.0,
     "Avg Diff":279.5362318841,
-    "ERA-":68.8582976864
+    "ERA-":67.7381184215
   },
   {
     "ID":265,
@@ -34729,7 +34899,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"1B",
@@ -34762,7 +34932,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":420.0,
-    "ERA-":187.3214586614
+    "ERA-":184.2741336341
   },
   {
     "ID":268,
@@ -35494,7 +35664,7 @@
     "Team":"SAR",
     "Franchise":"SAR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":11,
     "Batting Type":"SF",
@@ -35527,7 +35697,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":231.5737704918,
-    "ERA-":165.5838119141
+    "ERA-":162.8901125496
   },
   {
     "ID":270,
@@ -35834,7 +36004,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"XB",
@@ -36939,7 +37109,7 @@
     "Team":"POR",
     "Franchise":"POR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"POR",
     "Last Session":7,
     "Batting Type":"1B",
@@ -37534,7 +37704,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":1,
     "Batting Type":"SM",
@@ -37567,7 +37737,7 @@
     "W-L%":0.6,
     "SV%":null,
     "Avg Diff":246.1615384615,
-    "ERA-":132.1758268554
+    "ERA-":130.0256049425
   },
   {
     "ID":284,
@@ -37619,7 +37789,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":1,
     "Batting Type":"SM",
@@ -37704,7 +37874,7 @@
     "Team":"SAR",
     "Franchise":"SAR",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":14,
     "Batting Type":"SM",
@@ -37737,7 +37907,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":243.3625498008,
-    "ERA-":136.8135751662
+    "ERA-":134.5879068703
   },
   {
     "ID":285,
@@ -37789,7 +37959,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":13,
     "Batting Type":"S",
@@ -37822,7 +37992,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":246.2903225806,
-    "ERA-":141.383100942
+    "ERA-":139.0830961
   },
   {
     "ID":286,
@@ -37874,7 +38044,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":13,
     "Batting Type":"TT",
@@ -37907,7 +38077,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":249.18,
-    "ERA-":91.637195055
+    "ERA-":90.1464511759
   },
   {
     "ID":287,
@@ -38129,7 +38299,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":11,
     "Batting Type":"BP",
@@ -38162,7 +38332,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":263.8484848485,
-    "ERA-":67.3252861629
+    "ERA-":66.2300457619
   },
   {
     "ID":287,
@@ -39149,7 +39319,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":2,
     "Batting Type":"HK",
@@ -39182,7 +39352,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":268.1,
-    "ERA-":94.0854945431
+    "ERA-":92.5549219954
   },
   {
     "ID":298,
@@ -39234,7 +39404,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":3,
     "Batting Type":"HK",
@@ -39267,7 +39437,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":230.0666666667,
-    "ERA-":239.8086796156
+    "ERA-":235.9074982113
   },
   {
     "ID":298,
@@ -39319,7 +39489,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":3,
     "Batting Type":"HK",
@@ -39352,7 +39522,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":154.0,
-    "ERA-":749.8398273696
+    "ERA-":737.6415149673
   },
   {
     "ID":298,
@@ -39574,7 +39744,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":14,
     "Batting Type":"1B",
@@ -39607,7 +39777,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":220.0,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":301,
@@ -40339,7 +40509,7 @@
     "Team":"TRA",
     "Franchise":"TRA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TRA",
     "Last Session":13,
     "Batting Type":"BC",
@@ -40372,7 +40542,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":247.6144578313,
-    "ERA-":167.8281333249
+    "ERA-":165.0979235848
   },
   {
     "ID":305,
@@ -40594,7 +40764,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":12,
     "Batting Type":"1B",
@@ -40627,7 +40797,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":267.4090909091,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":305,
@@ -40679,7 +40849,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":14,
     "Batting Type":"1B",
@@ -40712,7 +40882,7 @@
     "W-L%":0.75,
     "SV%":null,
     "Avg Diff":255.0428571429,
-    "ERA-":70.1102667353
+    "ERA-":68.9697205746
   },
   {
     "ID":305,
@@ -40764,7 +40934,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":14,
     "Batting Type":"1B",
@@ -40797,7 +40967,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":249.375,
-    "ERA-":66.0063151627
+    "ERA-":64.9325316379
   },
   {
     "ID":305,
@@ -41359,7 +41529,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BP",
@@ -41784,7 +41954,7 @@
     "Team":"YUM",
     "Franchise":"YUM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"YUM",
     "Last Session":9,
     "Batting Type":"SM",
@@ -41817,7 +41987,7 @@
     "W-L%":0.3333333333,
     "SV%":0.0,
     "Avg Diff":236.1206896552,
-    "ERA-":218.4726791892
+    "ERA-":214.9185895092
   },
   {
     "ID":321,
@@ -42464,7 +42634,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":12,
     "Batting Type":"BC",
@@ -42497,7 +42667,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":283.3965517241,
-    "ERA-":63.493475846
+    "ERA-":62.4605709167
   },
   {
     "ID":330,
@@ -42804,7 +42974,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":14,
     "Batting Type":"BC",
@@ -42837,7 +43007,7 @@
     "W-L%":0.4,
     "SV%":0.0,
     "Avg Diff":237.9166666667,
-    "ERA-":88.7594627219
+    "ERA-":87.315533478
   },
   {
     "ID":331,
@@ -43484,7 +43654,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":7,
     "Batting Type":"BC",
@@ -43517,7 +43687,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":175.5,
-    "ERA-":410.4670672511
+    "ERA-":403.7896338388
   },
   {
     "ID":339,
@@ -44164,7 +44334,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":13,
     "Batting Type":"1B",
@@ -44197,7 +44367,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":218.1833333333,
-    "ERA-":182.5826717607
+    "ERA-":179.6124368011
   },
   {
     "ID":344,
@@ -44419,7 +44589,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":3,
     "Batting Type":"1B",
@@ -44452,7 +44622,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":246.2,
-    "ERA-":104.72822292
+    "ERA-":103.0245156296
   },
   {
     "ID":351,
@@ -45609,7 +45779,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":5,
     "Batting Type":"TT",
@@ -45642,7 +45812,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":302.0,
-    "ERA-":19.6365417975
+    "ERA-":19.3170966806
   },
   {
     "ID":372,
@@ -45779,7 +45949,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":8,
     "Batting Type":"BC",
@@ -45812,7 +45982,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":247.4594594595,
-    "ERA-":125.345122673
+    "ERA-":123.3060219095
   },
   {
     "ID":376,
@@ -45981,7 +46151,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0.0,
+    "Avg Diff":0,
     "ERA-":null
   },
   {
@@ -46374,7 +46544,7 @@
     "Team":"SAR",
     "Franchise":"SAR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":2,
     "Batting Type":"BP",
@@ -46629,7 +46799,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":2,
     "Batting Type":"BP",
@@ -46662,7 +46832,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":270.0,
-    "ERA-":94.255400628
+    "ERA-":92.7220640667
   },
   {
     "ID":388,
@@ -47088,6 +47258,91 @@
     "SV%":0.0,
     "Avg Diff":243.4150943396,
     "ERA-":105.7748416496
+  },
+  {
+    "ID":390,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":9,
+    "BB":4,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":8,
+    "SO":12,
+    "PO":4,
+    "RGO":5,
+    "LGO":2,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":7,
+    "DP":2,
+    "TP":0,
+    "SB":0,
+    "CS":0,
+    "H":10,
+    "IP":11.0,
+    "BF":45,
+    "AB":41,
+    "TB":11,
+    "G":3,
+    "ER":1,
+    "RE24":-5.4945412075,
+    "WAR":0.729501362,
+    "WPA":0.7329,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":17,
+    "400+ Pitches":6,
+    "W":2.0,
+    "L":0.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":2.0,
+    "GF":2.0,
+    "CG":1.0,
+    "SHO":1.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":4,
+    "Batting Type":"MH",
+    "Pitching Type":"NH-H",
+    "Pitching Type (Main)":"NH",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Joey McCarty",
+    "ERA":0.5454545455,
+    "WHIP":1.2727272727,
+    "FIP":0.1334642885,
+    "H6":5.4545454545,
+    "HR6":0.0,
+    "BB6":2.1818181818,
+    "SO6":6.5454545455,
+    "SO\/BB":3.0,
+    "BA":0.243902439,
+    "OBP":0.3111111111,
+    "SLG":0.2444444444,
+    "OPS":0.5555555556,
+    "BABIP":0.3448275862,
+    "SB%":0.0,
+    "HR%":0.0,
+    "K%":0.2666666667,
+    "BB%":0.0888888889,
+    "GB%":0.3684210526,
+    "FB%":0.4210526316,
+    "GB\/FB":0.875,
+    "W-L%":1.0,
+    "SV%":0.0,
+    "Avg Diff":254.9523809524,
+    "ERA-":35.869270432
   },
   {
     "ID":390,
@@ -47649,7 +47904,7 @@
     "Team":"TRA",
     "Franchise":"TRA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TRA",
     "Last Session":8,
     "Batting Type":"S",
@@ -47682,7 +47937,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":250.25,
-    "ERA-":127.2592521265
+    "ERA-":125.1890125142
   },
   {
     "ID":394,
@@ -48023,6 +48278,91 @@
     "SV%":0.0,
     "Avg Diff":219.0925925926,
     "ERA-":249.7458908866
+  },
+  {
+    "ID":401,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":4,
+    "BB":3,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":4,
+    "SO":3,
+    "PO":2,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":0,
+    "DP":0,
+    "TP":0,
+    "SB":0,
+    "CS":0,
+    "H":5,
+    "IP":3.0,
+    "BF":17,
+    "AB":13,
+    "TB":6,
+    "G":1,
+    "ER":3,
+    "RE24":0.9880668258,
+    "WAR":-0.0307888359,
+    "WPA":-0.1364,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":4,
+    "400+ Pitches":2,
+    "W":0.0,
+    "L":0.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":0.0,
+    "GF":1.0,
+    "CG":0.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":11,
+    "Batting Type":"BP",
+    "Pitching Type":"BS-H",
+    "Pitching Type (Main)":"BS",
+    "Handedness":"Right",
+    "Position":"2B",
+    "Display Season":"S5",
+    "Name":"Iris Solstice",
+    "ERA":6.0,
+    "WHIP":2.6666666667,
+    "FIP":2.2243733794,
+    "H6":10.0,
+    "HR6":0.0,
+    "BB6":6.0,
+    "SO6":6.0,
+    "SO\/BB":1.0,
+    "BA":0.3846153846,
+    "OBP":0.4705882353,
+    "SLG":0.3529411765,
+    "OPS":0.8235294118,
+    "BABIP":0.4545454545,
+    "SB%":0.0,
+    "HR%":0.0,
+    "K%":0.1764705882,
+    "BB%":0.1764705882,
+    "GB%":0.0,
+    "FB%":0.6666666667,
+    "GB\/FB":0.0,
+    "W-L%":0.0,
+    "SV%":0.0,
+    "Avg Diff":212.0588235294,
+    "ERA-":154.5367734445
   },
   {
     "ID":401,
@@ -48754,7 +49094,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":12,
     "Batting Type":"XB",
@@ -48787,7 +49127,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":235.1212121212,
-    "ERA-":152.3889710753
+    "ERA-":149.9099239401
   },
   {
     "ID":439,
@@ -49774,7 +50114,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":10,
     "Batting Type":"1B",
@@ -49807,7 +50147,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.8918918919,
-    "ERA-":187.7374036707
+    "ERA-":184.6833120955
   },
   {
     "ID":479,
@@ -50114,7 +50454,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":9,
     "Batting Type":"WC",
@@ -50147,7 +50487,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":223.7647058824,
-    "ERA-":85.7002209666
+    "ERA-":84.3060591334
   },
   {
     "ID":485,
@@ -50964,7 +51304,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":8,
     "Batting Type":"SF",
@@ -50997,7 +51337,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":177.0,
-    "ERA-":550.8663814914
+    "ERA-":541.9049473716
   },
   {
     "ID":488,
@@ -51219,7 +51559,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":4,
     "Batting Type":"SF",
@@ -51252,7 +51592,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":237.3684210526,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":490,
@@ -51729,7 +52069,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":12,
     "Batting Type":"BC",
@@ -51762,7 +52102,7 @@
     "W-L%":0.75,
     "SV%":0.0,
     "Avg Diff":272.7053571429,
-    "ERA-":63.5532566039
+    "ERA-":62.5193791678
   },
   {
     "ID":500,
@@ -52069,7 +52409,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":7,
     "Batting Type":"1B",
@@ -52102,7 +52442,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":222.4324324324,
-    "ERA-":220.560567734
+    "ERA-":216.9725125112
   },
   {
     "ID":502,
@@ -52324,7 +52664,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":11,
     "Batting Type":"1B",
@@ -52357,7 +52697,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":228.5208333333,
-    "ERA-":90.8505231186
+    "ERA-":89.3725767326
   },
   {
     "ID":510,
@@ -52749,7 +53089,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":11,
     "Batting Type":"1B",
@@ -52782,7 +53122,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":230.3376623377,
-    "ERA-":94.255400628
+    "ERA-":92.7220640667
   },
   {
     "ID":516,
@@ -53429,7 +53769,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":2,
     "Batting Type":"HK",
@@ -53514,7 +53854,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":13,
     "Batting Type":"HK",
@@ -53547,7 +53887,7 @@
     "W-L%":1.0,
     "SV%":1.0,
     "Avg Diff":263.8923076923,
-    "ERA-":45.3150964558
+    "ERA-":44.5779154167
   },
   {
     "ID":518,
@@ -53599,7 +53939,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":13,
     "Batting Type":"HK",
@@ -53632,7 +53972,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":263.7741935484,
-    "ERA-":48.0894901163
+    "ERA-":47.3071755442
   },
   {
     "ID":518,
@@ -53854,7 +54194,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":6,
     "Batting Type":"HK",
@@ -53887,7 +54227,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":278.4545454545,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":522,
@@ -54024,7 +54364,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":12,
     "Batting Type":"BC",
@@ -54057,7 +54397,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":251.0,
-    "ERA-":52.36411146
+    "ERA-":51.5122578148
   },
   {
     "ID":522,
@@ -54789,7 +55129,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":12,
     "Batting Type":"BC",
@@ -54822,7 +55162,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":214.3725490196,
-    "ERA-":341.5081470167
+    "ERA-":335.9525297859
   },
   {
     "ID":529,
@@ -55554,7 +55894,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":7,
     "Batting Type":"BN",
@@ -55587,7 +55927,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":126.5,
-    "ERA-":514.2013257996
+    "ERA-":505.8363548006
   },
   {
     "ID":547,
@@ -55724,7 +56064,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BC",
@@ -55757,7 +56097,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":251.725,
-    "ERA-":169.6597211305
+    "ERA-":166.89971532
   },
   {
     "ID":549,
@@ -56064,7 +56404,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":1,
     "Batting Type":"1B",
@@ -56319,7 +56659,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":7,
     "Batting Type":"S",
@@ -56352,7 +56692,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":254.4423076923,
-    "ERA-":138.4376196724
+    "ERA-":136.1855315979
   },
   {
     "ID":562,
@@ -56489,7 +56829,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":10,
     "Batting Type":"BC",
@@ -56522,7 +56862,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":246.3225806452,
-    "ERA-":138.4866481699
+    "ERA-":136.2337625051
   },
   {
     "ID":563,
@@ -57084,7 +57424,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":7,
     "Batting Type":"BC",
@@ -57117,7 +57457,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":228.3157894737,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":582,
@@ -57764,7 +58104,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":3,
     "Batting Type":"XB",
@@ -57797,7 +58137,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":170.1428571429,
-    "ERA-":314.1846687601
+    "ERA-":309.0735468889
   },
   {
     "ID":597,
@@ -58019,7 +58359,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":13,
     "Batting Type":"BC",
@@ -58052,7 +58392,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":264.9245283019,
-    "ERA-":67.1983151264
+    "ERA-":66.1051402764
   },
   {
     "ID":602,
@@ -58104,7 +58444,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":14,
     "Batting Type":"WC",
@@ -58137,7 +58477,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":251.4444444444,
-    "ERA-":115.8509100798
+    "ERA-":113.9662601297
   },
   {
     "ID":604,
@@ -58225,6 +58565,91 @@
     "ERA-":90.0775097385
   },
   {
+    "ID":604,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":1,
+    "1B":0,
+    "BB":2,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":0,
+    "SO":1,
+    "PO":1,
+    "RGO":0,
+    "LGO":1,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "DP":0,
+    "TP":0,
+    "SB":0,
+    "CS":0,
+    "H":1,
+    "IP":1.0,
+    "BF":6,
+    "AB":4,
+    "TB":2,
+    "G":1,
+    "ER":0,
+    "RE24":0.28,
+    "WAR":-0.0039937012,
+    "WPA":-0.1031,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":3,
+    "400+ Pitches":2,
+    "W":1.0,
+    "L":0.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":0.0,
+    "GF":1.0,
+    "CG":0.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":2,
+    "Batting Type":"MH",
+    "Pitching Type":"BS-H",
+    "Pitching Type (Main)":"BS",
+    "Handedness":"Left",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Callie Braden",
+    "ERA":0.0,
+    "WHIP":3.0,
+    "FIP":5.2243733794,
+    "H6":6.0,
+    "HR6":0.0,
+    "BB6":12.0,
+    "SO6":6.0,
+    "SO\/BB":0.5,
+    "BA":0.25,
+    "OBP":0.5,
+    "SLG":0.3333333333,
+    "OPS":0.8333333333,
+    "BABIP":0.3333333333,
+    "SB%":0.0,
+    "HR%":0.0,
+    "K%":0.1666666667,
+    "BB%":0.3333333333,
+    "GB%":0.5,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "W-L%":1.0,
+    "SV%":0.0,
+    "Avg Diff":260.5,
+    "ERA-":0.0
+  },
+  {
     "ID":605,
     "Season":5.0,
     "HR":2,
@@ -58274,7 +58699,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":6,
     "Batting Type":"1B",
@@ -58307,7 +58732,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":237.3636363636,
-    "ERA-":153.7641069567
+    "ERA-":151.2626892613
   },
   {
     "ID":606,
@@ -58444,7 +58869,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":8,
     "Batting Type":"SF",
@@ -58477,7 +58902,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":190.8,
-    "ERA-":342.8008838664
+    "ERA-":337.2242365338
   },
   {
     "ID":606,
@@ -59294,7 +59719,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":9,
     "Batting Type":"MH",
@@ -59327,7 +59752,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":218.3333333333,
-    "ERA-":160.1152468082
+    "ERA-":157.5105094634
   },
   {
     "ID":614,
@@ -59379,7 +59804,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":6,
     "Batting Type":"WC",
@@ -59412,7 +59837,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.275862069,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":620,
@@ -59464,7 +59889,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":12,
     "Batting Type":"BP",
@@ -59497,7 +59922,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":215.9384615385,
-    "ERA-":235.6385015701
+    "ERA-":231.8051601667
   },
   {
     "ID":622,
@@ -59549,7 +59974,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":13,
     "Batting Type":"1B",
@@ -59582,7 +60007,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":291.7727272727,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":636,
@@ -59804,7 +60229,7 @@
     "Team":"POR",
     "Franchise":"POR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"POR",
     "Last Session":6,
     "Batting Type":"BC",
@@ -59837,7 +60262,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":200.6388888889,
-    "ERA-":340.3667244901
+    "ERA-":334.8296757963
   },
   {
     "ID":646,
@@ -59974,7 +60399,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":13,
     "Batting Type":"BN",
@@ -60007,7 +60432,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":259.0740740741,
-    "ERA-":123.6357050262
+    "ERA-":121.6244128822
   },
   {
     "ID":647,
@@ -60399,7 +60824,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":3,
     "Batting Type":"HK",
@@ -60654,7 +61079,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":7,
     "Batting Type":"SM",
@@ -60687,7 +61112,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":265.9166666667,
-    "ERA-":71.4630852146
+    "ERA-":70.3005315506
   },
   {
     "ID":651,
@@ -60739,7 +61164,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":8,
     "Batting Type":"SM",
@@ -60772,7 +61197,7 @@
     "W-L%":0.3333333333,
     "SV%":null,
     "Avg Diff":275.1964285714,
-    "ERA-":54.1214143481
+    "ERA-":53.2409730915
   },
   {
     "ID":651,
@@ -60824,7 +61249,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":8,
     "Batting Type":"SM",
@@ -60857,7 +61282,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":291.9,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":651,
@@ -61504,7 +61929,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":12,
     "Batting Type":"BC",
@@ -61537,7 +61962,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":229.3421052632,
-    "ERA-":74.9102656455
+    "ERA-":73.6916336269
   },
   {
     "ID":654,
@@ -61929,7 +62354,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":9,
     "Batting Type":"MH",
@@ -62099,7 +62524,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":12,
     "Batting Type":"BP",
@@ -62132,7 +62557,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":257.4583333333,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":665,
@@ -62439,7 +62864,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":8,
     "Batting Type":"SM",
@@ -62472,7 +62897,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":203.4782608696,
-    "ERA-":235.6385015701
+    "ERA-":231.8051601667
   },
   {
     "ID":669,
@@ -62609,7 +63034,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":13,
     "Batting Type":"BC",
@@ -62642,7 +63067,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":273.8,
-    "ERA-":128.5354890147
+    "ERA-":126.4444877201
   },
   {
     "ID":675,
@@ -62779,7 +63204,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":1,
     "Batting Type":"S",
@@ -62812,7 +63237,7 @@
     "W-L%":0.5,
     "SV%":null,
     "Avg Diff":252.9733333333,
-    "ERA-":76.1850096218
+    "ERA-":74.9456402074
   },
   {
     "ID":675,
@@ -62864,7 +63289,7 @@
     "Team":"ISO",
     "Franchise":"ISO",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":1,
     "Batting Type":"S",
@@ -62897,7 +63322,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":220.7333333333,
-    "ERA-":183.2743901101
+    "ERA-":180.2929023519
   },
   {
     "ID":675,
@@ -62949,7 +63374,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":11,
     "Batting Type":"S",
@@ -62982,7 +63407,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":274.4666666667,
-    "ERA-":21.110471085
+    "ERA-":20.7670482474
   },
   {
     "ID":683,
@@ -63714,7 +64139,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"EN",
@@ -63884,7 +64309,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":10,
     "Batting Type":"EN",
@@ -63917,7 +64342,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":275.4857142857,
-    "ERA-":87.2735191
+    "ERA-":85.8537630247
   },
   {
     "ID":702,
@@ -64343,6 +64768,91 @@
     "SV%":0.0,
     "Avg Diff":282.6666666667,
     "ERA-":0.0
+  },
+  {
+    "ID":703,
+    "Season":5.0,
+    "HR":4,
+    "3B":1,
+    "2B":9,
+    "1B":16,
+    "BB":9,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":20,
+    "SO":10,
+    "PO":8,
+    "RGO":12,
+    "LGO":11,
+    "LO":0,
+    "SF":1,
+    "SH":0,
+    "GO":23,
+    "DP":7,
+    "TP":0,
+    "SB":3,
+    "CS":2,
+    "H":30,
+    "IP":23.3333333333,
+    "BF":100,
+    "AB":90,
+    "TB":53,
+    "G":9,
+    "ER":15,
+    "RE24":-2.3736646102,
+    "WAR":0.6574766905,
+    "WPA":0.409534,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":35,
+    "400+ Pitches":18,
+    "W":3.0,
+    "L":1.0,
+    "SV":1.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":4.0,
+    "GF":6.0,
+    "CG":2.0,
+    "SHO":0.0,
+    "OPP":1.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":13,
+    "Batting Type":"BP",
+    "Pitching Type":"BF-H",
+    "Pitching Type (Main)":"BF",
+    "Handedness":"Right",
+    "Position":"3B",
+    "Display Season":"S5",
+    "Name":"Emerson Austin",
+    "ERA":3.8571428571,
+    "WHIP":1.6714285714,
+    "FIP":3.752944808,
+    "H6":7.7142857143,
+    "HR6":1.0285714286,
+    "BB6":2.3142857143,
+    "SO6":2.5714285714,
+    "SO\/BB":1.1111111111,
+    "BA":0.3333333333,
+    "OBP":0.39,
+    "SLG":0.53,
+    "OPS":0.92,
+    "BABIP":0.3376623377,
+    "SB%":0.6,
+    "HR%":0.04,
+    "K%":0.1,
+    "BB%":0.09,
+    "GB%":0.4509803922,
+    "FB%":0.3921568627,
+    "GB\/FB":1.15,
+    "W-L%":0.6666666667,
+    "SV%":1.0,
+    "Avg Diff":233.3786407767,
+    "ERA-":84.4580532231
   },
   {
     "ID":703,
@@ -65074,7 +65584,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":12,
     "Batting Type":"1B",
@@ -65107,7 +65617,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":241.347826087,
-    "ERA-":168.106340757
+    "ERA-":165.3716051688
   },
   {
     "ID":707,
@@ -65244,7 +65754,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":4,
     "Batting Type":"BP",
@@ -65669,7 +66179,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":7,
     "Batting Type":"SF",
@@ -65702,7 +66212,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":258.04,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":716,
@@ -65839,7 +66349,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":13,
     "Batting Type":"1B",
@@ -65872,7 +66382,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":228.5185185185,
-    "ERA-":96.1050160209
+    "ERA-":94.5415901184
   },
   {
     "ID":716,
@@ -66179,7 +66689,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":9,
     "Batting Type":"1B",
@@ -66212,7 +66722,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":212.75,
-    "ERA-":268.2573417653
+    "ERA-":263.8933606327
   },
   {
     "ID":719,
@@ -66349,7 +66859,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":14,
     "Batting Type":"SF",
@@ -66382,7 +66892,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":269.3846153846,
-    "ERA-":60.8099358891
+    "ERA-":59.8206864946
   },
   {
     "ID":723,
@@ -66944,7 +67454,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":13,
     "Batting Type":"S",
@@ -66977,7 +67487,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":249.7407407407,
-    "ERA-":63.6369410104
+    "ERA-":62.6017022055
   },
   {
     "ID":738,
@@ -67029,7 +67539,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BC",
@@ -67062,7 +67572,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":252.0,
-    "ERA-":187.3214586614
+    "ERA-":184.2741336341
   },
   {
     "ID":739,
@@ -67114,7 +67624,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BC",
@@ -67147,7 +67657,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":273.0,
-    "ERA-":187.3214586614
+    "ERA-":184.2741336341
   },
   {
     "ID":740,
@@ -67454,7 +67964,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"MH",
@@ -67879,7 +68389,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"WC",
@@ -68049,7 +68559,7 @@
     "Team":"ISO",
     "Franchise":"ISO",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"ISO",
     "Last Session":5,
     "Batting Type":"HK",
@@ -68082,7 +68592,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":245.3157894737,
-    "ERA-":52.36411146
+    "ERA-":51.5122578148
   },
   {
     "ID":758,
@@ -68219,7 +68729,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":1,
     "Batting Type":"XB",
@@ -68252,7 +68762,7 @@
     "W-L%":1.0,
     "SV%":null,
     "Avg Diff":210.3,
-    "ERA-":337.7160401765
+    "ERA-":332.2221125256
   },
   {
     "ID":759,
@@ -68304,7 +68814,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":1,
     "Batting Type":"XB",
@@ -68337,7 +68847,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":147.7692307692,
-    "ERA-":2399.3093383602
+    "ERA-":2360.2776361342
   },
   {
     "ID":759,
@@ -68389,7 +68899,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":11,
     "Batting Type":"XB",
@@ -68422,7 +68932,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":258.1176470588,
-    "ERA-":62.836933752
+    "ERA-":61.8147093778
   },
   {
     "ID":764,
@@ -68559,7 +69069,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"MH",
@@ -68592,7 +69102,7 @@
     "W-L%":0.75,
     "SV%":0.0,
     "Avg Diff":271.2474226804,
-    "ERA-":38.1643478165
+    "ERA-":37.5434943751
   },
   {
     "ID":770,
@@ -69324,7 +69834,7 @@
     "Team":"POR",
     "Franchise":"POR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"POR",
     "Last Session":13,
     "Batting Type":"BP",
@@ -69357,7 +69867,7 @@
     "W-L%":0.75,
     "SV%":0.0,
     "Avg Diff":260.2164948454,
-    "ERA-":103.3344300273
+    "ERA-":101.6533968074
   },
   {
     "ID":772,
@@ -69409,7 +69919,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":12,
     "Batting Type":"BC",
@@ -69442,7 +69952,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.3150684932,
-    "ERA-":117.085947385
+    "ERA-":115.181205983
   },
   {
     "ID":775,
@@ -69494,7 +70004,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":14,
     "Batting Type":"SF",
@@ -69527,7 +70037,7 @@
     "W-L%":0.8,
     "SV%":1.0,
     "Avg Diff":272.0215827338,
-    "ERA-":48.9721957342
+    "ERA-":48.1755214035
   },
   {
     "ID":775,
@@ -70004,7 +70514,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":10,
     "Batting Type":"HK",
@@ -70037,7 +70547,7 @@
     "W-L%":0.3333333333,
     "SV%":null,
     "Avg Diff":244.7564102564,
-    "ERA-":72.5515168688
+    "ERA-":71.3712567176
   },
   {
     "ID":776,
@@ -70089,7 +70599,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":10,
     "Batting Type":"HK",
@@ -70122,7 +70632,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":263.5714285714,
-    "ERA-":40.670259165
+    "ERA-":40.0086398315
   },
   {
     "ID":776,
@@ -70174,7 +70684,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":14,
     "Batting Type":"HK",
@@ -70207,7 +70717,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":237.8245614035,
-    "ERA-":86.814184789
+    "ERA-":85.401901114
   },
   {
     "ID":776,
@@ -70854,7 +71364,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":2,
     "Batting Type":"BP",
@@ -70887,7 +71397,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":157.0,
-    "ERA-":314.1846687601
+    "ERA-":309.0735468889
   },
   {
     "ID":777,
@@ -71024,7 +71534,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":14,
     "Batting Type":"1B",
@@ -71057,7 +71567,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":192.8,
-    "ERA-":117.064966209
+    "ERA-":115.1605661263
   },
   {
     "ID":778,
@@ -72299,7 +72809,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":11,
     "Batting Type":"TT",
@@ -72332,7 +72842,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":257.4444444444,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":786,
@@ -72724,7 +73234,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":1,
     "Batting Type":"SM",
@@ -72757,7 +73267,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":260.4285714286,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":788,
@@ -72894,7 +73404,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":3,
     "Batting Type":"XB",
@@ -72927,7 +73437,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":170.8888888889,
-    "ERA-":753.7458693756
+    "ERA-":741.4840139086
   },
   {
     "ID":814,
@@ -72979,7 +73489,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":4,
     "Batting Type":"TT",
@@ -73012,7 +73522,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":176.0,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":815,
@@ -73064,7 +73574,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":13,
     "Batting Type":"BC",
@@ -73097,7 +73607,7 @@
     "W-L%":0.6666666667,
     "SV%":0.0,
     "Avg Diff":245.2597402597,
-    "ERA-":92.4009095828
+    "ERA-":90.8977416792
   },
   {
     "ID":815,
@@ -73234,7 +73744,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":9,
     "Batting Type":"MH",
@@ -73267,7 +73777,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":276.3333333333,
-    "ERA-":30.6178235132
+    "ERA-":30.1197361049
   },
   {
     "ID":1687,
@@ -73404,7 +73914,7 @@
     "Team":"YUM",
     "Franchise":"YUM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"YUM",
     "Last Session":8,
     "Batting Type":"BN",
@@ -73437,7 +73947,7 @@
     "W-L%":0.5,
     "SV%":1.0,
     "Avg Diff":241.9846153846,
-    "ERA-":65.5262862156
+    "ERA-":64.4603117493
   },
   {
     "ID":1692,
@@ -73659,7 +74169,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":14,
     "Batting Type":"1B",
@@ -73692,7 +74202,7 @@
     "W-L%":0.8,
     "SV%":0.0,
     "Avg Diff":249.0336134454,
-    "ERA-":66.9513790552
+    "ERA-":65.8622213342
   },
   {
     "ID":1699,
@@ -73744,7 +74254,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"BP",
@@ -73777,7 +74287,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":167.4545454545,
-    "ERA-":342.5855427723
+    "ERA-":337.0123985851
   },
   {
     "ID":1699,
@@ -73999,7 +74509,7 @@
     "Team":"PPP",
     "Franchise":"PPP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PPP",
     "Last Session":8,
     "Batting Type":"WC",
@@ -74032,7 +74542,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":220.0606060606,
-    "ERA-":245.4975257102
+    "ERA-":241.503798779
   },
   {
     "ID":1703,
@@ -74594,7 +75104,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":13,
     "Batting Type":"BC",
@@ -74627,7 +75137,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":289.1,
-    "ERA-":121.6913452855
+    "ERA-":119.7116837735
   },
   {
     "ID":1705,
@@ -74934,7 +75444,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":14,
     "Batting Type":"XB",
@@ -74967,7 +75477,7 @@
     "W-L%":1.0,
     "SV%":0.3333333333,
     "Avg Diff":282.775862069,
-    "ERA-":32.2825947972
+    "ERA-":31.7574250714
   },
   {
     "ID":1706,
@@ -75784,7 +76294,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":9,
     "Batting Type":"BN",
@@ -75817,7 +76327,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":243.1038961039,
-    "ERA-":85.6867278437
+    "ERA-":84.2927855152
   },
   {
     "ID":1719,
@@ -76124,7 +76634,7 @@
     "Team":"GBC",
     "Franchise":"GBC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GBC",
     "Last Session":7,
     "Batting Type":"WC",
@@ -76157,7 +76667,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":241.4146341463,
-    "ERA-":46.8649892106
+    "ERA-":46.1025946855
   },
   {
     "ID":1722,
@@ -76209,7 +76719,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":13,
     "Batting Type":"1B",
@@ -76242,7 +76752,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":297.7441860465,
-    "ERA-":52.36411146
+    "ERA-":51.5122578148
   },
   {
     "ID":1723,
@@ -76328,6 +76838,91 @@
     "SV%":0.0,
     "Avg Diff":245.0909090909,
     "ERA-":214.7101127112
+  },
+  {
+    "ID":1724,
+    "Season":5.0,
+    "HR":11,
+    "3B":4,
+    "2B":10,
+    "1B":10,
+    "BB":5,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":13,
+    "SO":8,
+    "PO":4,
+    "RGO":14,
+    "LGO":23,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":37,
+    "DP":4,
+    "TP":0,
+    "SB":1,
+    "CS":0,
+    "H":35,
+    "IP":22.0,
+    "BF":102,
+    "AB":97,
+    "TB":86,
+    "G":5,
+    "ER":25,
+    "RE24":10.5342151422,
+    "WAR":-0.6413133843,
+    "WPA":-0.464557,
+    "0 Diffs":3,
+    "500 Diffs":3,
+    "300+ Pitches":37,
+    "400+ Pitches":22,
+    "W":1.0,
+    "L":4.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":5.0,
+    "GF":3.0,
+    "CG":3.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":14,
+    "Batting Type":"BN",
+    "Pitching Type":"EG-B",
+    "Pitching Type (Main)":"EG",
+    "Handedness":"Right",
+    "Position":"3B",
+    "Display Season":"S5",
+    "Name":"Hannibal Bligh",
+    "ERA":6.8181818182,
+    "WHIP":1.8181818182,
+    "FIP":7.678918834,
+    "H6":9.5454545455,
+    "HR6":3.0,
+    "BB6":1.3636363636,
+    "SO6":2.1818181818,
+    "SO\/BB":1.6,
+    "BA":0.3608247423,
+    "OBP":0.3921568627,
+    "SLG":0.8431372549,
+    "OPS":1.2352941176,
+    "BABIP":0.3076923077,
+    "SB%":1.0,
+    "HR%":0.1078431373,
+    "K%":0.0784313725,
+    "BB%":0.0490196078,
+    "GB%":0.6851851852,
+    "FB%":0.2407407407,
+    "GB\/FB":2.8461538462,
+    "W-L%":0.25,
+    "SV%":0.0,
+    "Avg Diff":230.96,
+    "ERA-":187.0574958131
   },
   {
     "ID":1724,
@@ -76719,7 +77314,7 @@
     "Team":"YUM",
     "Franchise":"YUM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"YUM",
     "Last Session":13,
     "Batting Type":"BN",
@@ -76752,7 +77347,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":224.4814814815,
-    "ERA-":52.36411146
+    "ERA-":51.5122578148
   },
   {
     "ID":1725,
@@ -77314,7 +77909,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":4,
     "Batting Type":"EN",
@@ -77346,7 +77941,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0.0,
+    "Avg Diff":0,
     "ERA-":null
   },
   {
@@ -77399,7 +77994,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"EN",
@@ -77432,7 +78027,7 @@
     "W-L%":0.0,
     "SV%":null,
     "Avg Diff":235.6538461538,
-    "ERA-":102.7184913084
+    "ERA-":101.0474781123
   },
   {
     "ID":1729,
@@ -77484,7 +78079,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"EN",
@@ -77517,7 +78112,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":235.6538461538,
-    "ERA-":78.9305081442
+    "ERA-":77.6464752597
   },
   {
     "ID":1729,
@@ -77909,7 +78504,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":13,
     "Batting Type":"EN",
@@ -77942,7 +78537,7 @@
     "W-L%":0.3333333333,
     "SV%":0.0,
     "Avg Diff":236.3673469388,
-    "ERA-":158.5592800121
+    "ERA-":155.9798549652
   },
   {
     "ID":1734,
@@ -78504,7 +79099,7 @@
     "Team":"ISO",
     "Franchise":"ISO",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"ISO",
     "Last Session":14,
     "Batting Type":"WC",
@@ -78537,7 +79132,7 @@
     "W-L%":0.6,
     "SV%":1.0,
     "Avg Diff":251.2020725389,
-    "ERA-":68.3010149478
+    "ERA-":67.1899014976
   },
   {
     "ID":1737,
@@ -78674,7 +79269,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":12,
     "Batting Type":"WC",
@@ -78707,7 +79302,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":235.8604651163,
-    "ERA-":189.109281621
+    "ERA-":186.032872485
   },
   {
     "ID":1743,
@@ -78844,7 +79439,7 @@
     "Team":"TRA",
     "Franchise":"TRA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TRA",
     "Last Session":8,
     "Batting Type":"BP",
@@ -78877,7 +79472,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":176.2,
-    "ERA-":449.3231054783
+    "ERA-":442.0135662806
   },
   {
     "ID":1745,
@@ -79014,7 +79609,7 @@
     "Team":"ISO",
     "Franchise":"ISO",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"ISO",
     "Last Session":6,
     "Batting Type":"XB",
@@ -79047,7 +79642,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":212.6363636364,
-    "ERA-":268.1738831263
+    "ERA-":263.8112596898
   },
   {
     "ID":1748,
@@ -79354,7 +79949,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":1,
     "Batting Type":"BC",
@@ -79387,7 +79982,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":301.2,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":1772,
@@ -79561,6 +80156,91 @@
   },
   {
     "ID":1774,
+    "Season":5.0,
+    "HR":1,
+    "3B":1,
+    "2B":1,
+    "1B":4,
+    "BB":0,
+    "IBB":0,
+    "Auto BB":0,
+    "FO":0,
+    "SO":0,
+    "PO":0,
+    "RGO":1,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":1,
+    "DP":0,
+    "TP":0,
+    "SB":0,
+    "CS":1,
+    "H":7,
+    "IP":0.6666666667,
+    "BF":8,
+    "AB":8,
+    "TB":13,
+    "G":1,
+    "ER":6,
+    "RE24":6.3260869565,
+    "WAR":-0.5965992474,
+    "WPA":0.0005,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "300+ Pitches":1,
+    "400+ Pitches":1,
+    "W":0.0,
+    "L":0.0,
+    "SV":0.0,
+    "HLD":0.0,
+    "BS":0.0,
+    "GS":0.0,
+    "GF":1.0,
+    "CG":0.0,
+    "SHO":0.0,
+    "OPP":0.0,
+    "Team":"NUL",
+    "Franchise":"NUL",
+    "is_sub_row":false,
+    "lgnER":1248.6779836646,
+    "Last Team":"NUL",
+    "Last Session":8,
+    "Batting Type":"WC",
+    "Pitching Type":"FP-H",
+    "Pitching Type (Main)":"FP",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S5",
+    "Name":"Monica M. Clinton",
+    "ERA":54.0,
+    "WHIP":10.5,
+    "FIP":20.7243733794,
+    "H6":63.0,
+    "HR6":9.0,
+    "BB6":0.0,
+    "SO6":0.0,
+    "SO\/BB":0.0,
+    "BA":0.875,
+    "OBP":0.875,
+    "SLG":1.625,
+    "OPS":2.5,
+    "BABIP":0.8571428571,
+    "SB%":0.0,
+    "HR%":0.125,
+    "K%":0.0,
+    "BB%":0.0,
+    "GB%":1.0,
+    "FB%":0.0,
+    "GB\/FB":null,
+    "W-L%":0.0,
+    "SV%":0.0,
+    "Avg Diff":148.6666666667,
+    "ERA-":927.2206406668
+  },
+  {
+    "ID":1774,
     "Season":6.0,
     "HR":1,
     "3B":0,
@@ -79694,7 +80374,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":13,
     "Batting Type":"S",
@@ -79727,7 +80407,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":160.7619047619,
-    "ERA-":328.3345297613
+    "ERA-":322.993219497
   },
   {
     "ID":1776,
@@ -80374,7 +81054,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":1,
     "Batting Type":"TT",
@@ -80407,7 +81087,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":284.0869565217,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":1777,
@@ -80629,7 +81309,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":11,
     "Batting Type":"BP",
@@ -80662,7 +81342,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":217.84,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":1778,
@@ -80884,7 +81564,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":12,
     "Batting Type":"BP",
@@ -80917,7 +81597,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":209.1578947368,
-    "ERA-":366.5487802201
+    "ERA-":360.5858047037
   },
   {
     "ID":1781,
@@ -81054,7 +81734,7 @@
     "Team":"SAR",
     "Franchise":"SAR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SAR",
     "Last Session":11,
     "Batting Type":"WC",
@@ -81087,7 +81767,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":223.6,
-    "ERA-":62.836933752
+    "ERA-":61.8147093778
   },
   {
     "ID":1785,
@@ -81309,7 +81989,7 @@
     "Team":"JUP",
     "Franchise":"JUP",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"JUP",
     "Last Session":8,
     "Batting Type":"S",
@@ -81342,7 +82022,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":257.9259259259,
-    "ERA-":89.4191139218
+    "ERA-":87.9644535442
   },
   {
     "ID":1792,
@@ -81734,7 +82414,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":14,
     "Batting Type":"1B",
@@ -81767,7 +82447,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":254.0666666667,
-    "ERA-":80.0175491822
+    "ERA-":78.7158324329
   },
   {
     "ID":1794,
@@ -81904,7 +82584,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":13,
     "Batting Type":"S",
@@ -81937,7 +82617,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.5,
-    "ERA-":117.819250785
+    "ERA-":115.9025800833
   },
   {
     "ID":1798,
@@ -82499,7 +83179,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":14,
     "Batting Type":"WC",
@@ -82532,7 +83212,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":213.7,
-    "ERA-":237.4623289816
+    "ERA-":233.5993177531
   },
   {
     "ID":1800,
@@ -82839,7 +83519,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":8,
     "Batting Type":"BN",
@@ -82872,7 +83552,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":253.16,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":1801,
@@ -83009,7 +83689,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":11,
     "Batting Type":"XB",
@@ -83042,7 +83722,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":236.7894736842,
-    "ERA-":122.5022872516
+    "ERA-":120.5094334242
   },
   {
     "ID":1808,
@@ -83349,7 +84029,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":10,
     "Batting Type":"WC",
@@ -83519,7 +84199,7 @@
     "Team":"TRA",
     "Franchise":"TRA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TRA",
     "Last Session":14,
     "Batting Type":"HK",
@@ -83552,7 +84232,7 @@
     "W-L%":0.5555555556,
     "SV%":0.0,
     "Avg Diff":254.6018957346,
-    "ERA-":58.4009930997
+    "ERA-":57.4509321234
   },
   {
     "ID":1811,
@@ -83944,7 +84624,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":1,
     "Batting Type":"XB",
@@ -83977,7 +84657,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":179.0,
-    "ERA-":157.0923343801
+    "ERA-":154.5367734445
   },
   {
     "ID":1814,
@@ -84114,7 +84794,7 @@
     "Team":"KRB",
     "Franchise":"KRB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KRB",
     "Last Session":11,
     "Batting Type":"WC",
@@ -84147,7 +84827,7 @@
     "W-L%":0.0,
     "SV%":1.0,
     "Avg Diff":271.9183673469,
-    "ERA-":63.6564186822
+    "ERA-":62.6208630166
   },
   {
     "ID":1824,
@@ -84369,7 +85049,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":14,
     "Batting Type":"SM",
@@ -84402,7 +85082,7 @@
     "W-L%":0.6666666667,
     "SV%":1.0,
     "Avg Diff":275.387755102,
-    "ERA-":65.1815681624
+    "ERA-":64.1212015316
   },
   {
     "ID":1830,
@@ -84879,7 +85559,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":7,
     "Batting Type":"BP",
@@ -84912,7 +85592,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":207.0,
-    "ERA-":139.8459205818
+    "ERA-":137.5709224219
   },
   {
     "ID":1832,
@@ -84964,7 +85644,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":14,
     "Batting Type":"BP",
@@ -84997,7 +85677,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":250.3461538462,
-    "ERA-":62.9306642618
+    "ERA-":61.9069150899
   },
   {
     "ID":1832,
@@ -85049,7 +85729,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":14,
     "Batting Type":"BP",
@@ -85304,7 +85984,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"WC",
@@ -86324,7 +87004,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":10,
     "Batting Type":"TT",
@@ -86357,7 +87037,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":243.7210884354,
-    "ERA-":120.064197024
+    "ERA-":118.1110057821
   },
   {
     "ID":1842,
@@ -86409,7 +87089,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":8,
     "Batting Type":"S",
@@ -86494,7 +87174,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":13,
     "Batting Type":"BC",
@@ -86664,7 +87344,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":7,
     "Batting Type":"HK",
@@ -86697,7 +87377,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":215.0476190476,
-    "ERA-":262.747355733
+    "ERA-":258.4730104514
   },
   {
     "ID":1844,
@@ -87004,7 +87684,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":10,
     "Batting Type":"BP",
@@ -87037,7 +87717,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":225.8245614035,
-    "ERA-":62.8415223991
+    "ERA-":61.8192233773
   },
   {
     "ID":1942,
@@ -87259,7 +87939,7 @@
     "Team":"TAC",
     "Franchise":"TAC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAC",
     "Last Session":6,
     "Batting Type":"HK",
@@ -87292,7 +87972,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":220.9333333333,
-    "ERA-":104.72822292
+    "ERA-":103.0245156296
   },
   {
     "ID":1949,
@@ -87514,7 +88194,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":2,
     "Batting Type":"XB",
@@ -87547,7 +88227,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":296.2857142857,
-    "ERA-":14.409342974
+    "ERA-":14.1749333565
   },
   {
     "ID":1955,
@@ -87599,7 +88279,7 @@
     "Team":"DAD",
     "Franchise":"DAD",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"DAD",
     "Last Session":8,
     "Batting Type":"BN",
@@ -87632,7 +88312,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":274.40625,
-    "ERA-":45.1950185977
+    "ERA-":44.459790972
   },
   {
     "ID":1956,
@@ -87684,7 +88364,7 @@
     "Team":"KTY",
     "Franchise":"KTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"KTY",
     "Last Session":3,
     "Batting Type":"SM",
@@ -88024,7 +88704,7 @@
     "Team":"GTY",
     "Franchise":"GTY",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"GTY",
     "Last Session":14,
     "Batting Type":"BP",
@@ -88057,7 +88737,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":244.0384615385,
-    "ERA-":99.2162111874
+    "ERA-":97.6021727018
   },
   {
     "ID":1960,
@@ -88194,7 +88874,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":5,
     "Batting Type":"S",
@@ -88227,7 +88907,7 @@
     "W-L%":1.0,
     "SV%":0.5,
     "Avg Diff":253.487804878,
-    "ERA-":75.3896675058
+    "ERA-":74.1632366301
   },
   {
     "ID":1962,
@@ -88279,7 +88959,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":1,
     "Batting Type":"1B",
@@ -88364,7 +89044,7 @@
     "Team":"2TM",
     "Franchise":"2TM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":2,
     "Batting Type":"1B",
@@ -88397,7 +89077,7 @@
     "W-L%":1.0,
     "SV%":null,
     "Avg Diff":269.3333333333,
-    "ERA-":62.836933752
+    "ERA-":61.8147093778
   },
   {
     "ID":1962,
@@ -88449,7 +89129,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":true,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":2,
     "Batting Type":"1B",
@@ -88482,7 +89162,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":231.5,
-    "ERA-":104.72822292
+    "ERA-":103.0245156296
   },
   {
     "ID":1963,
@@ -89044,7 +89724,7 @@
     "Team":"ISO",
     "Franchise":"ISO",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"ISO",
     "Last Session":11,
     "Batting Type":"1B",
@@ -89077,7 +89757,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":252.1733333333,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":2206,
@@ -90319,7 +90999,7 @@
     "Team":"WSH",
     "Franchise":"WSH",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WSH",
     "Last Session":14,
     "Batting Type":"BN",
@@ -90352,7 +91032,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":229.5172413793,
-    "ERA-":65.455139325
+    "ERA-":64.3903222685
   },
   {
     "ID":2215,
@@ -90489,7 +91169,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":8,
     "Batting Type":"XB",
@@ -90522,7 +91202,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":259.9230769231,
-    "ERA-":66.8525635878
+    "ERA-":65.7650133861
   },
   {
     "ID":2220,
@@ -90744,7 +91424,7 @@
     "Team":"TAI",
     "Franchise":"TAI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TAI",
     "Last Session":11,
     "Batting Type":"XB",
@@ -90777,7 +91457,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":253.4285714286,
-    "ERA-":26.18205573
+    "ERA-":25.7561289074
   },
   {
     "ID":2224,
@@ -90829,7 +91509,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"XB",
@@ -90862,7 +91542,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":299.0,
-    "ERA-":187.3214586614
+    "ERA-":184.2741336341
   },
   {
     "ID":2224,
@@ -91084,7 +91764,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"WC",
@@ -91117,7 +91797,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":261.6904761905,
-    "ERA-":89.4529855145
+    "ERA-":87.9977741176
   },
   {
     "ID":2225,
@@ -91509,7 +92189,7 @@
     "Team":"CHI",
     "Franchise":"CHI",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"CHI",
     "Last Session":14,
     "Batting Type":"BP",
@@ -91542,7 +92222,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":198.6333333333,
-    "ERA-":254.5495102106
+    "ERA-":250.4085265844
   },
   {
     "ID":2230,
@@ -91764,7 +92444,7 @@
     "Team":"WWC",
     "Franchise":"WWC",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"WWC",
     "Last Session":11,
     "Batting Type":"XB",
@@ -91797,7 +92477,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":263.9180327869,
-    "ERA-":62.7708292929
+    "ERA-":61.7496802988
   },
   {
     "ID":2236,
@@ -92359,7 +93039,7 @@
     "Team":"LMN",
     "Franchise":"LMN",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"LMN",
     "Last Session":7,
     "Batting Type":"MH",
@@ -92392,7 +93072,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":200.6666666667,
-    "ERA-":363.3866391946
+    "ERA-":357.475105043
   },
   {
     "ID":2249,
@@ -92529,7 +93209,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":9,
     "Batting Type":"BC",
@@ -92562,7 +93242,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":227.0,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":2252,
@@ -93039,7 +93719,7 @@
     "Team":"TSA",
     "Franchise":"TSA",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"TSA",
     "Last Session":14,
     "Batting Type":"1B",
@@ -93072,7 +93752,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":239.1594202899,
-    "ERA-":94.9490064004
+    "ERA-":93.4043863361
   },
   {
     "ID":2256,
@@ -93719,7 +94399,7 @@
     "Team":"PHB",
     "Franchise":"PHB",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"PHB",
     "Last Session":14,
     "Batting Type":"1B",
@@ -93752,7 +94432,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":308.3846153846,
-    "ERA-":8.5848645319
+    "ERA-":8.4452068935
   },
   {
     "ID":2258,
@@ -94229,7 +94909,7 @@
     "Team":"RKT",
     "Franchise":"RKT",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"RKT",
     "Last Session":12,
     "Batting Type":"SM",
@@ -94314,7 +94994,7 @@
     "Team":"SPR",
     "Franchise":"SPR",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"SPR",
     "Last Session":3,
     "Batting Type":"BN",
@@ -94347,7 +95027,7 @@
     "W-L%":0.0,
     "SV%":0.0,
     "Avg Diff":259.6666666667,
-    "ERA-":85.6867278437
+    "ERA-":84.2927855152
   },
   {
     "ID":2275,
@@ -94399,7 +95079,7 @@
     "Team":"MVM",
     "Franchise":"MVM",
     "is_sub_row":false,
-    "lgnER":1180.8341936738,
+    "lgnER":1248.6779836646,
     "Last Team":"MVM",
     "Last Session":14,
     "Batting Type":"WC",
@@ -94432,7 +95112,7 @@
     "W-L%":1.0,
     "SV%":0.0,
     "Avg Diff":269.25,
-    "ERA-":78.54616719
+    "ERA-":77.2683867222
   },
   {
     "ID":2275,
@@ -135457,7 +136137,7 @@
     "lgnER":737.8551034414,
     "Last Team":"OKT",
     "Last Session":16,
-    "Batting Type":"0",
+    "Batting Type":0,
     "Pitching Type":"BS-B",
     "Pitching Type (Main)":"BS",
     "Handedness":"Left",
@@ -135542,7 +136222,7 @@
     "lgnER":737.8551034414,
     "Last Team":"LOB",
     "Last Session":16,
-    "Batting Type":"0",
+    "Batting Type":0,
     "Pitching Type":"TT-H",
     "Pitching Type (Main)":"TT",
     "Handedness":"Left",
@@ -135882,7 +136562,7 @@
     "lgnER":737.8551034414,
     "Last Team":"POS",
     "Last Session":15,
-    "Batting Type":"0",
+    "Batting Type":0,
     "Pitching Type":"EG-H",
     "Pitching Type (Main)":"EG",
     "Handedness":"Left",
@@ -138461,7 +139141,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0.0,
+    "Avg Diff":0,
     "ERA-":null
   }
 ]
