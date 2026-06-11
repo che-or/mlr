@@ -1,7 +1,7 @@
 import { state } from '../state.js';
 import { loadStats, loadTeamStats } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrTeamName,
-         getMilrTeamName, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
+import { formatStat, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
+         getMilrTeamName, getMilrLogoPair, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS } from '../constants.js';
 
@@ -45,7 +45,7 @@ export async function displayTeamList(season, league = 'mlr') {
         const leagueOptions = TEAM_LEAGUES.map(l =>
             `<option value="${l.key}" ${l.key === league ? 'selected' : ''}>${l.label}</option>`
         ).join('');
-        const seasonOptions = allSeasons.map(s =>
+        const seasonOptions = [...allSeasons].reverse().map(s =>
             `<option value="${s}" ${s === currentSeason ? 'selected' : ''}>Season ${s.slice(1)}</option>`
         ).join('');
 
@@ -139,6 +139,8 @@ function renderDivisionCard(divName, teams, records, league, season, lgParam) {
             logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         } else if (league === 'milr' || league === 'milr_playoff') {
             name = getMilrTeamName(t.abbr, season);
+            const pair = getMilrLogoPair(t.abbr, season);
+            logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         } else if (league === 'fcb') {
             name = getFcbTeamName(t.abbr, season);
             const pair = getFcbLogoPair(t.abbr, season);
@@ -149,7 +151,7 @@ function renderDivisionCard(divName, teams, records, league, season, lgParam) {
             logo = pair ? makeLogoImg(pair.dark, pair.light, 'standings-logo') : '';
         }
         html += `<tr>
-            <td><span class="team-link" data-team="${t.abbr}" style="cursor:pointer">${logo}${name}</span></td>
+            <td><span class="team-link" data-team="${t.abbr}" style="cursor:pointer">${logo}<span class="standings-team-name">${name}</span></span></td>
             <td>${t.W}</td><td>${t.L}</td>
             <td>${formatStat('W-L%', t.PCT)}</td>
             <td>${t.GB}</td>
@@ -217,12 +219,16 @@ export async function displayTeamStatsPage(teamAbbr, season, league = 'mlr') {
         const prev = idx > 0 ? allSeasons[idx - 1] : null;
         const next = idx < allSeasons.length - 1 ? allSeasons[idx + 1] : null;
 
+        const prevAbbr = isMLR && prev ? (getMlrTeamEntry(franchiseKey, prev)?.abbr ?? teamAbbr) : teamAbbr;
+        const nextAbbr = isMLR && next ? (getMlrTeamEntry(franchiseKey, next)?.abbr ?? teamAbbr) : teamAbbr;
+
         const lgParam = league !== 'mlr' ? `&league=${league}` : '';
         const teamName = isMLR  ? getMlrTeamName(franchiseKey, displaySeason)
                        : isMiLR ? getMilrTeamName(actualAbbr, displaySeason)
                        : league === 'fcb' ? getFcbTeamName(actualAbbr, displaySeason)
                        : getHistoricalTeamName(league, actualAbbr, displaySeason);
         const logoPair = isMLR ? getMlrLogoPair(franchiseKey, displaySeason)
+                       : isMiLR ? getMilrLogoPair(actualAbbr, displaySeason)
                        : league === 'fcb' ? getFcbLogoPair(actualAbbr, displaySeason)
                        : getHistoricalLogoPair(league, actualAbbr, displaySeason);
 
@@ -232,8 +238,8 @@ export async function displayTeamStatsPage(teamAbbr, season, league = 'mlr') {
                 ${teamName} — Season ${displaySeason.slice(1)}
             </h2>
             <div class="season-nav-buttons">
-                ${prev ? `<a href="#/team-stats?season=${prev}&team=${teamAbbr}${lgParam}" class="season-nav-button">&lt; Prev Season</a>` : ''}
-                ${next ? `<a href="#/team-stats?season=${next}&team=${teamAbbr}${lgParam}" class="season-nav-button">Next Season &gt;</a>` : ''}
+                ${prev ? `<a href="#/team-stats?season=${prev}&team=${prevAbbr}${lgParam}" class="season-nav-button">&lt; Prev Season</a>` : ''}
+                ${next ? `<a href="#/team-stats?season=${next}&team=${nextAbbr}${lgParam}" class="season-nav-button">Next Season &gt;</a>` : ''}
             </div>
         </div>`;
 

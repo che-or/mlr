@@ -19,6 +19,7 @@ export async function renderAwards() {
 
     const urlParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
     let selected = seasons.includes(urlParams.get('season')) ? urlParams.get('season') : (seasons[0] || null);
+    const initialLeague = urlParams.get('league') === 'nl' ? 'nl' : 'al';
 
     const idx = seasons.indexOf(selected);
     const prev = idx < seasons.length - 1 ? seasons[idx + 1] : null;
@@ -43,10 +44,10 @@ export async function renderAwards() {
 
     html += `<div class="awards-container">
         <div class="league-toggle-buttons">
-            <button class="league-toggle-button active" data-league="al">American League</button>
-            <button class="league-toggle-button" data-league="nl">National League</button>
+            <button class="league-toggle-button${initialLeague === 'al' ? ' active' : ''}" data-league="al">American League</button>
+            <button class="league-toggle-button${initialLeague === 'nl' ? ' active' : ''}" data-league="nl">National League</button>
         </div>
-        <div class="leagues-wrapper">`;
+        <div class="leagues-wrapper show-${initialLeague}">`;
 
     for (const lg of ['AL', 'NL']) {
         const lgName = lg === 'AL' ? 'American League' : 'National League';
@@ -455,7 +456,8 @@ export function getPlayerAwards(playerId) {
         } else if (wins.length) {
             const count = wins.length;
             wins.sort((a, b) => getSeasonSort(a.season) - getSeasonSort(b.season));
-            displayList.push({ text: count > 1 ? `${count}x ${name}` : name, cls: `award-${awardId.toLowerCase()}`, seasons: wins.map(w => w.season) });
+            const lastLeague = wins[wins.length - 1]?.league?.toLowerCase() || null;
+            displayList.push({ text: count > 1 ? `${count}x ${name}` : name, cls: `award-${awardId.toLowerCase()}`, seasons: wins.map(w => w.season), league: lastLeague });
         }
     }
     return displayList;

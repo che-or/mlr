@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats, searchPlayers, getPlayerById } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg } from '../utils.js';
+import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, LEAGUES_WITH_CAREER } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
 
@@ -82,6 +82,8 @@ export async function displayPlayerPage(playerId) {
     const display = document.getElementById('stats-content-display');
     state.currentPlayerId = playerId;
     display.innerHTML = '<p>Loading...</p>';
+    const searchInput = document.getElementById('player-search');
+    if (searchInput) searchInput.value = '';
 
     try {
         // Build full fetch list: MLR core + franchise breakdowns + all toggle leagues
@@ -133,7 +135,11 @@ export async function displayPlayerPage(playerId) {
             [...filterPlayer(state.stats['fcb_hitting']  || [], playerId),
              ...filterPlayer(state.stats['fcb_pitching'] || [], playerId)],
             [...filterPlayer(state.stats['npr_hitting']  || [], playerId),
-             ...filterPlayer(state.stats['npr_pitching'] || [], playerId)]);
+             ...filterPlayer(state.stats['npr_pitching'] || [], playerId)],
+            [...filterPlayer(state.stats['wbc_hitting']  || [], playerId),
+             ...filterPlayer(state.stats['wbc_pitching'] || [], playerId)],
+            [...filterPlayer(state.stats['milr_hitting']  || [], playerId),
+             ...filterPlayer(state.stats['milr_pitching'] || [], playerId)]);
 
         // League tabs: MLR first, then other leagues in order
         const leagues = [];
@@ -179,8 +185,8 @@ export async function displayPlayerPage(playerId) {
 
 // ── Header ────────────────────────────────────────────────────────────────────
 
-function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH) {
-    const logo = resolvePlayerLogo(playerId, mlrH, mlrP, fcbH, nprH);
+function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
+    const logo = resolvePlayerLogo(playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH);
 
     let html = `<h2 class="section-title">`;
     if (logo) html += makeLogoImg(logo.dark, logo.light, 'player-team-logo') + ' ';
@@ -203,7 +209,8 @@ function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH) {
                 html += `<a href="#/hof"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else if (award.seasons?.length) {
                 const last = award.seasons[award.seasons.length - 1];
-                html += `<a href="#/awards?season=${last}"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
+                const lgParam = award.league ? `&league=${award.league}` : '';
+                html += `<a href="#/awards?season=${last}${lgParam}"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else {
                 html += `<div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div>`;
             }
@@ -237,39 +244,53 @@ function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH) {
 }
 
 
-function resolvePlayerLogo(playerId, mlrH, mlrP, fcbH, nprH) {
-    // Check MLR hitting then pitching for most recent record
-    const mlrAll = [
+function resolvePlayerLogo(playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
+    const lastSeason = rows => (rows || [])
+        .filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S'))
+        .sort((a, b) => getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']))[0];
+
+    // MLR
+    const lastMLR = [
         ...mlrH.filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S')),
         ...mlrP.filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S')),
     ].sort((a, b) =>
         getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']) ||
         (b['Last Session'] || 0) - (a['Last Session'] || 0)
-    );
-    const lastMLR = mlrAll[0];
+    )[0];
     if (lastMLR) {
         const fk = recordFranchiseKey(lastMLR);
         return getMlrLogoPair(fk, lastMLR['Display Season']);
     }
-    // FCB fallback
-    const lastFCB = fcbH
-        .filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S'))
-        .sort((a, b) => getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']))[0];
+
+    // FCB
+    const lastFCB = lastSeason(fcbH);
     if (lastFCB) {
         const season = state.teamHistory.fcb[lastFCB['Display Season']] || {};
         const entry  = season[lastFCB.Team];
-        if (entry?.logo_dark) {
-            return { dark: entry.logo_dark, light: entry.logo_light };
-        }
+        if (entry?.logo_dark) return { dark: entry.logo_dark, light: entry.logo_light };
     }
-    // NPR fallback
-    const lastNPR = (nprH || [])
-        .filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S'))
-        .sort((a, b) => getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']))[0];
+
+    // NPR
+    const lastNPR = lastSeason(nprH);
     if (lastNPR) {
         const pair = getHistoricalLogoPair('npr', lastNPR.Team, lastNPR['Display Season']);
         if (pair) return pair;
     }
+
+    // WBC
+    const lastWBC = lastSeason(wbcH);
+    if (lastWBC) {
+        const pair = getHistoricalLogoPair('wbc', lastWBC.Team, lastWBC['Display Season']);
+        if (pair) return pair;
+    }
+
+    // MiLR
+    const lastMiLR = lastSeason(milrH);
+    if (lastMiLR) {
+        const pair = getMilrLogoPair(lastMiLR.Team, lastMiLR['Display Season']);
+        if (pair) return pair;
+    }
+
     return null;
 }
 
