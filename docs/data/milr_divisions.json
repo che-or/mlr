@@ -140,17 +140,19 @@
         ]
     },
     "S8A": {
-        "Minor League Redditball": [
+        "Pacific Coast League": [
             "BAG",
-            "BIS",
             "BLO",
             "CCD",
             "CDT",
+            "MMM",
+            "NXS"
+        ],
+        "International League": [
+            "BIS",
             "GND",
             "LAC",
             "MKW",
-            "MMM",
-            "NXS",
             "PPM",
             "SCU"
         ]
