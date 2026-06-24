@@ -528,7 +528,7 @@ function buildTeamCell(r, isCareer, isFranchise, league, tdCls) {
         lgParam = `&league=${league}`;
     }
 
-    return `<td${tdCls}><span class="team-link" data-team="${encodeURIComponent(franchiseKey)}" data-season="${ds}" data-league="${league}" style="cursor:pointer;text-decoration:underline">${team}</span></td>`;
+    return `<td${tdCls}><span class="team-link" data-team="${encodeURIComponent(team)}" data-season="${ds}" data-league="${league}" style="cursor:pointer;text-decoration:underline">${team}</span></td>`;
 }
 
 // ── League tab grid ───────────────────────────────────────────────────────────
