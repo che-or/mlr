@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats } from '../data.js';
-import { formatStat, getSeasonSort, getTeamName, getMlrFranchiseName } from '../utils.js';
+import { formatStat, getSeasonSort, getTeamName, getMlrFranchiseLabel } from '../utils.js';
 import { wireTeamLinks } from './player.js';
 import {
     COUNTING_STATS, STAT_DEFINITIONS, STAT_DESCRIPTIONS,
@@ -583,7 +583,7 @@ function buildFranchiseTableHTML(data, stat, topN) {
         const rank     = i + 1;
         const dispRank = (i > 0 && r[stat] === lastVal) ? lastRank : rank;
         lastVal = r[stat]; lastRank = dispRank;
-        const name = getMlrFranchiseName(r.Franchise);
+        const name = getMlrFranchiseLabel(r.Franchise);
         html += `<tr>
             <td>${dispRank}</td>
             <td>${name}</td>
