@@ -576,7 +576,7 @@ function buildFranchiseTableHTML(data, stat, topN) {
         }
     }
 
-    let html = `<table class="stats-table"><thead><tr><th>Rank</th><th>Team</th><th>${stat}</th></tr></thead><tbody>`;
+    let html = `<table class="stats-table"><thead><tr><th>Rank</th><th>Franchise</th><th>${stat}</th></tr></thead><tbody>`;
 
     let lastVal = null, lastRank = 0;
     rows.forEach((r, i) => {
