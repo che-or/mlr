@@ -145,6 +145,13 @@ export async function loadTeamStats(league) {
     return Promise.all([loadStats(league, 'team_hitting'), loadStats(league, 'team_pitching')]);
 }
 
+export async function loadDraftHistory() {
+    if (state.draftHistory) return state.draftHistory;
+    const data = await fetch(`${DATA}/draft_history.json`).then(r => r.json());
+    state.draftHistory = data;
+    return data;
+}
+
 export async function loadPlayoffBrackets(league) {
     const key = `${league}_playoff_brackets`;
     if (state.loaded.has(key)) return state.playoffBrackets[league];

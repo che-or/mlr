@@ -1479,6 +1479,61 @@ input:checked + .slider:before {
     border-radius: 8px;
 }
 
+/* Draft History Page */
+.draft-rounds-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+@media (max-width: 1200px) { .draft-rounds-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 850px)  { .draft-rounds-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px)  { .draft-rounds-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.draft-round-column h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.draft-pick {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.15rem 0;
+}
+
+.draft-pick-num {
+    min-width: 1.6rem;
+    text-align: right;
+    color: var(--subtle-text-color);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.draft-pick-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.draft-pick-team-abbr {
+    font-size: 0.75rem;
+    color: var(--subtle-text-color);
+    min-width: 20px;
+    flex-shrink: 0;
+}
+
+.draft-pick-name {
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+span.draft-pick-name {
+    color: #e05555;
+}
+
 /* Hall of Fame Page */
 .hof-grid {
     display: grid;

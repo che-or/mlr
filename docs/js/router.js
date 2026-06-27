@@ -2,6 +2,7 @@ import { state } from './state.js';
 import { renderHome } from './views/home.js';
 import { renderGlossary } from './views/glossary.js';
 import { renderAwards, renderHof } from './views/awards.js';
+import { renderDraftHistory } from './views/draft.js';
 import { renderCompare } from './views/compare.js';
 import { displayTeamList, displayTeamStatsPage } from './views/teams.js';
 import { populateLeaderboardStatSelect } from './views/leaderboards.js';
@@ -18,6 +19,7 @@ const views = {
     hof:         el('hof-view'),
     compare:     el('compare-view'),
     teamStats:   el('team-stats-view'),
+    draft:       el('draft-view'),
 };
 
 const tabs = {
@@ -103,6 +105,12 @@ export function updateView() {
     if (hash.startsWith('#/compare')) {
         show('compare');
         renderCompare();
+        return;
+    }
+
+    if (hash.startsWith('#/draft')) {
+        show('draft');
+        renderDraftHistory();
         return;
     }
 
