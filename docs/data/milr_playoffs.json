@@ -1,0 +1,130 @@
+{
+  "S3": {
+    "format": "4-team",
+    "seeds": ["CIN", "LAN", "FTP", "BER"],
+    "rounds": [
+      { "name": "Semifinals", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S4": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "A": { "label": "Group A", "seeds": ["PGS", "DDD", "PDB", "PGA"] },
+      "B": { "label": "Group B", "seeds": ["EEE", "VFQ", "CCS", "LMN"] }
+    },
+    "rounds": [
+      { "name": "Divisional", "session": 1 },
+      { "name": "League Championship", "session": 2 },
+      { "name": "Styrofoam Cup", "session": 3 }
+    ]
+  },
+  "S5": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["WWC", "KRB", "ISO", "WSH"] },
+      "IL": { "label": "International<br>League", "seeds": ["MVM", "TAC", "LMN", "SAR"] }
+    },
+    "rounds": [
+      { "name": "Divisional", "session": 1 },
+      { "name": "League Championship", "session": 2 },
+      { "name": "Styrofoam Cup", "session": 3 }
+    ]
+  },
+  "S6": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["CBC", "BAC", "SAR", "SAS", "SGP", "WWC"] },
+      "IL": { "label": "International<br>League", "seeds": ["PHB", "FRG", "TTT", "POR", "CIM", "HEL"] }
+    },
+    "rounds": [
+      { "name": "Wild Card", "session": 1 },
+      { "name": "Divisional", "session": 2 },
+      { "name": "League Championship", "session": 3 },
+      { "name": "Styrofoam Cup", "session": 4 }
+    ]
+  },
+  "S7": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["TBL", "SCG", "STK", "BBC", "SSC", "BAC"] },
+      "IL": { "label": "International<br>League", "seeds": ["SSJ", "WSW", "FAP", "PBA", "KNX", "BBB"] }
+    },
+    "rounds": [
+      { "name": "Wild Card", "session": 1 },
+      { "name": "Divisional", "session": 2 },
+      { "name": "League Championship", "session": 3 },
+      { "name": "Styrofoam Cup", "session": 4 }
+    ]
+  },
+  "S8A": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["BAG", "CCD"] },
+      "IL": { "label": "International<br>League", "seeds": ["LAC", "BIS"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S8B": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["SCU", "MOB"] },
+      "IL": { "label": "International<br>League", "seeds": ["CC", "NUT"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S9": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["POS", "KGB"] },
+      "IL": { "label": "International<br>League", "seeds": ["BIR", "NNL"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S10": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["KIR", "CRN"] },
+      "IL": { "label": "International<br>League", "seeds": ["ACK", "SEO"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S11": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["WRM", "IDR"] },
+      "IL": { "label": "International<br>League", "seeds": ["SHH", "DOG"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  },
+  "S12": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": { "label": "Pacific Coast<br>League", "seeds": ["SCR", "SEF"] },
+      "IL": { "label": "International<br>League", "seeds": ["PQD", "DDD"] }
+    },
+    "rounds": [
+      { "name": "League Championship", "session": 1 },
+      { "name": "Styrofoam Cup", "session": 2 }
+    ]
+  }
+}

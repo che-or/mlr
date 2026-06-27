@@ -32,6 +32,9 @@ export const state = {
     // Track which stat files have been fetched (prevents duplicate requests)
     loaded: new Set(),
 
+    // Lazy-loaded playoff bracket data — keyed by league ('mlr', 'milr')
+    playoffBrackets: {},
+
     // UI state
     currentPlayerId: null,
     lastTeamStatsUrl: '#/team-stats',

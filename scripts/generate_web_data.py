@@ -10,6 +10,7 @@ from get_pitching_stats import get_pitching_stats, get_aggregated_pitching_stats
 from create_subrows import create_hitting_subrows, create_pitching_subrows
 from get_player_names import get_player_names
 from update_glossary_re_matrix import update_glossary_re_matrix
+from generate_playoff_brackets import generate_brackets
 
 def _drop_unused_columns(df):
     '''
@@ -190,6 +191,16 @@ def main():
                 pitching_stats_by_team_type = _drop_unused_columns(pitching_stats_by_team_type)
                 pitching_stats_by_team_type.to_json(p_pstty, orient = 'records', indent = 2)
 
+                print('Calculating franchise history hitting stats...')
+                franchise_hitting_stats = get_aggregated_hitting_stats(hitting_stats, 'full-franchise')
+                franchise_hitting_stats = _drop_unused_columns(franchise_hitting_stats)
+                franchise_hitting_stats.to_json(p_fhs, orient = 'records', indent = 2)
+
+                print('Calculating franchise history pitching stats...')
+                franchise_pitching_stats = get_aggregated_pitching_stats(pitching_stats, 'full-franchise')
+                franchise_pitching_stats = _drop_unused_columns(franchise_pitching_stats)
+                franchise_pitching_stats.to_json(p_fps, orient = 'records', indent = 2)
+
         # subrows are added after all aggregations so that things aren't counted twice
         hitting_stats = create_hitting_subrows(hitting_stats)
         hitting_stats = _drop_unused_columns(hitting_stats)
@@ -205,6 +216,10 @@ def main():
     most_recent_mlr = int(str(mlr_rows.iloc[-1]).rstrip('AB'))
     print('Updating glossary RE Matrix...')
     update_glossary_re_matrix(most_recent_mlr)
+
+    print('Generating playoff brackets...')
+    generate_brackets('mlr')
+    generate_brackets('milr')
 
 if __name__ == '__main__':
     main()

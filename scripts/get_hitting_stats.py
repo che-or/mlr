@@ -22,7 +22,7 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     '''
     Function for aggregating hitting stats
         hitting_stats - hitting stats by player aggregated by season and team
-        aggregation_level - what to aggregate by, options: 'team', 'type', 'team-type', 'career', 'full-team'
+        aggregation_level - what to aggregate by, options: 'team', 'type', 'team-type', 'career', 'full-team', 'full-franchise'
     '''
 
     # counting stat columns
@@ -47,8 +47,11 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     elif aggregation_level == 'full-team': # aggregate by season and franchise
         hitting_stats = _aggregate_by_full_team(hitting_stats, cols, sets)
 
+    elif aggregation_level == 'full-franchise': # aggregate by franchise history
+        hitting_stats = _aggregate_by_full_franchise(hitting_stats, cols, sets)
+
     else:
-        print(f"Invalid aggregation level '{aggregation_level}'. Valid aggregation levels are 'team', 'type', 'team-type', 'career', 'full-team'")
+        print(f"Invalid aggregation level '{aggregation_level}'. Valid aggregation levels are 'team', 'type', 'team-type', 'career', 'full-team', 'full-franchise'")
         return None
 
     return hitting_stats
@@ -406,3 +409,22 @@ def _aggregate_by_full_team(stats_df, counting_stats, sets):
     full_team_stats['G'] = full_team_stats['G_list'].apply(lambda x: len(x))
     
     return full_team_stats
+
+
+def _aggregate_by_full_franchise(stats_df, counting_stats, sets):
+    '''
+    Function for aggregating a hitting stats dataframe for an entire franchise history
+        stats_df - hitting stats dataframe
+        counting_stats - list of counting stats for summing
+
+    Output
+        full_team_stats - hitting stats dataframe aggregated to each team
+    '''
+    
+    constants = ['Batting Type', 'Pitching Type', 'Handedness', 'Position'] # these attributes are only kept if they're constant
+    group = ['Franchise']
+
+    full_franchise_stats = _aggregate_stats(stats_df, counting_stats, constants, sets, group)
+    full_franchise_stats['G'] = full_franchise_stats['G_list'].apply(lambda x: len(x))
+    
+    return full_franchise_stats
