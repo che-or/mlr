@@ -1616,3 +1616,506 @@ input:checked + .slider:before {
     scrollbar-color: var(--border-color) var(--primary-color);
     scrollbar-width: thin;
 }
+
+/* ── Playoff Bracket ─────────────────────────────────────────────────────── */
+
+:root {
+    --bracket-aw:  20px;  /* arm/stub width */
+    --slot-h:      54px;  /* logo slot height */
+    --score-w:     28px;  /* score column width */
+    --slot-w:      calc(var(--slot-h) + var(--score-w));  /* total slot width */
+    --slot-gap:     4px;  /* gap between two slots within a matchup */
+    --pair-gap:    20px;  /* gap between matchups within a double/straight pair */
+    --pair-gap-wc: 60px;  /* wider gap for wild card round to hint at byes */
+    /* matchup-h = 2*54+4 = 112px; pair-h = 2*112+12 = 236px */
+}
+
+.playoff-bracket {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto;
+}
+
+.playoff-bracket-title {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--header-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+}
+
+/* ── Body: left half | center | right half ─── */
+
+.bracket-body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    min-width: min-content;
+}
+
+.bracket-single {
+    display: flex;
+    justify-content: center;
+    padding: 0 calc(2 * var(--bracket-aw));
+}
+
+.bracket-half {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.bracket-league-header {
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--subtle-text-color);
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.bracket-half-left .bracket-league-header {
+    transform: translateX(-20px);
+}
+.bracket-half-right .bracket-league-header {
+    transform: translateX(20px);
+}
+
+.bracket-half-cols {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/*
+ * Width = slot-h (44px): arms from both halves span 2*aw through the column
+ * padding, ending at exactly the center matchup's left/right edges respectively.
+ * overflow: visible lets the round-name label extend beyond 44px without
+ * affecting the layout width.
+ */
+.bracket-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--slot-w);
+    overflow: visible;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* Center label floats above adjacent overflow text */
+.bracket-center > .bracket-round-name {
+    position: relative;
+    z-index: 5;
+    background-color: var(--primary-color);
+    padding: 0 4px;
+}
+
+/* ── Round columns ─── */
+
+.bracket-round-col {
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--slot-w) + 2 * var(--bracket-aw));
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Connector arm padding: left half pads right, right half pads left */
+.bracket-half-left .bracket-round-col {
+    padding-right: calc(2 * var(--bracket-aw));
+}
+.bracket-half-right .bracket-round-col {
+    padding-left: calc(2 * var(--bracket-aw));
+}
+
+.bracket-round-name {
+    text-align: center;
+    font-size: 0.72em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--subtle-text-color);
+    margin-bottom: 0.4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.bracket-col-matchups {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ── Pairs ─── */
+
+.bracket-pair {
+    position: relative;
+}
+
+/* double + straight: 2 matchups with gap → 92+12+92 = 196px */
+.bracket-pair-double,
+.bracket-pair-straight {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pair-gap);
+    align-items: center;
+}
+
+/* single: padded to 196px so it vertically aligns with double/straight groups */
+.bracket-pair-single {
+    height: calc(4 * var(--slot-h) + 2 * var(--slot-gap) + var(--pair-gap));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+ * Wild card outer pairs: wider gap to visually hint at bye teams.
+ * S2/S3 (4-per-league): outer = bracket-pair-double; also need connector overrides.
+ * S4+  (6-per-league): outer = bracket-pair-straight; gap only, no shared vertical bar.
+ */
+.bracket-col-outer .bracket-pair-straight {
+    gap: var(--pair-gap-wc);
+}
+
+/*
+ * For straight outer pairs (S4+ wild card), the gap increase shifts matchup
+ * positions relative to the adjacent inner column, making stubs misalign.
+ * Suppress both ends of that connection — the stubs between wild card and
+ * divisional don't connect cleanly anyway and are more confusing than helpful.
+ */
+.bracket-col-outer .bracket-pair-straight .bracket-matchup::after {
+    display: none;
+}
+.bracket-half-left .bracket-col-outer:has(.bracket-pair-straight) + .bracket-col-inner .bracket-matchup::before {
+    display: none;
+}
+.bracket-half-right .bracket-col-inner:has(+ .bracket-col-outer .bracket-pair-straight) .bracket-matchup::before {
+    display: none;
+}
+
+/* Push the championship matchup downward in the center column */
+.bracket-center .bracket-col-matchups {
+    justify-content: flex-end;
+    padding-bottom: 0px;
+}
+
+/* ── LEFT HALF connectors — exact pixel positions from fixed slot sizes ─── */
+/* matchup center within matchup = slot-h + slot-gap/2 = 46px from matchup top  */
+/* pair: m1 center = 46px, m2 center = 150px, arm midpoint at 98px              */
+
+/* Stub: matchup → vertical bar (double pair: 1*aw) */
+.bracket-half-left .bracket-pair-double .bracket-matchup {
+    position: relative;
+}
+.bracket-half-left .bracket-pair-double .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* Stub: matchup → next column (straight pair: 2*aw, no vertical bar) */
+.bracket-half-left .bracket-pair-straight .bracket-matchup {
+    position: relative;
+}
+.bracket-half-left .bracket-pair-straight .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    right: calc(-2 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: calc(2 * var(--bracket-aw));
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* Vertical bar: from top matchup center (46px) to bottom matchup center (150px) */
+.bracket-half-left .bracket-pair-double::before {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2);
+    height: calc(2 * var(--slot-h) + var(--slot-gap) + var(--pair-gap));
+    width: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* Arm: midpoint between matchup centers → next column */
+.bracket-half-left .bracket-pair-double::after {
+    content: '';
+    position: absolute;
+    right: calc(-2 * var(--bracket-aw));
+    top: calc(2 * var(--slot-h) + var(--slot-gap) + var(--pair-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* Single pair: straight connector spanning full 2*bracket-aw at matchup center */
+.bracket-half-left .bracket-pair-single .bracket-matchup {
+    position: relative;
+}
+.bracket-half-left .bracket-pair-single .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    right: calc(-2 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: calc(2 * var(--bracket-aw));
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* ── RIGHT HALF connectors — mirror of left ─── */
+
+.bracket-half-right .bracket-pair-double .bracket-matchup {
+    position: relative;
+}
+.bracket-half-right .bracket-pair-double .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+.bracket-half-right .bracket-pair-straight .bracket-matchup {
+    position: relative;
+}
+.bracket-half-right .bracket-pair-straight .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    left: calc(-2 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: calc(2 * var(--bracket-aw));
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+.bracket-half-right .bracket-pair-double::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2);
+    height: calc(2 * var(--slot-h) + var(--slot-gap) + var(--pair-gap));
+    width: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+.bracket-half-right .bracket-pair-double::after {
+    content: '';
+    position: absolute;
+    left: calc(-2 * var(--bracket-aw));
+    top: calc(2 * var(--slot-h) + var(--slot-gap) + var(--pair-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+.bracket-half-right .bracket-pair-single .bracket-matchup {
+    position: relative;
+}
+.bracket-half-right .bracket-pair-single .bracket-matchup::after {
+    content: '';
+    position: absolute;
+    left: calc(-2 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: calc(2 * var(--bracket-aw));
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* ── Incoming stubs for inner columns (non-outermost) ─── */
+/* Left half inner: short stub on LEFT side of each matchup, receiving the arm from the previous column */
+.bracket-half-left .bracket-col-inner .bracket-pair-double .bracket-matchup::before,
+.bracket-half-left .bracket-col-inner .bracket-pair-straight .bracket-matchup::before,
+.bracket-half-left .bracket-col-inner .bracket-pair-single .bracket-matchup::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* Right half inner: short stub on RIGHT side of each matchup */
+.bracket-half-right .bracket-col-inner .bracket-pair-double .bracket-matchup::before,
+.bracket-half-right .bracket-col-inner .bracket-pair-straight .bracket-matchup::before,
+.bracket-half-right .bracket-col-inner .bracket-pair-single .bracket-matchup::before {
+    content: '';
+    position: absolute;
+    right: calc(-1 * var(--bracket-aw));
+    top: calc(var(--slot-h) + var(--slot-gap) / 2 - 1px);
+    width: var(--bracket-aw);
+    height: 2px;
+    background-color: var(--border-color);
+    pointer-events: none;
+}
+
+/* ── Matchup and team slots ─── */
+
+.bracket-matchup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--slot-gap);
+    position: relative;
+    align-items: center;
+}
+
+.bracket-team-slot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: var(--slot-w);
+    height: var(--slot-h);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: border-color 0.15s, opacity 0.15s;
+}
+
+.bracket-team-slot.bracket-winner {
+    border-color: var(--header-color);
+}
+
+.bracket-team-slot.bracket-loser {
+    opacity: 0.5;
+}
+
+.bracket-team-slot:hover {
+    border-color: var(--subtle-text-color);
+    opacity: 1 !important;
+}
+
+.bracket-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bracket-abbr {
+    font-size: 0.55em;
+    font-weight: 700;
+    color: var(--subtle-text-color);
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bracket-slot-logo {
+    position: relative;
+    width: var(--slot-h);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px 5px 16px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.bracket-score {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--subtle-text-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-left: 1px solid var(--border-color);
+}
+
+.bracket-winner .bracket-score {
+    color: var(--header-color);
+}
+
+.bracket-seed {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 0.6em;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--subtle-text-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--primary-color);
+    border-radius: 2px;
+    padding: 0 1px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.bracket-tbd .bracket-team-slot {
+    border: 1px dashed var(--border-color);
+    background-color: transparent;
+}
+
+/* ── Champion banner ─── */
+
+.bracket-champion {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.bracket-champion-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--subtle-text-color);
+    margin-bottom: 0.6rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+.bracket-champion-team {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--header-color);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bracket-champion-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
