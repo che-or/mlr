@@ -37,6 +37,7 @@ export async function renderHome() {
                 <li><a href="#/leaderboards"><strong>Leaderboards:</strong></a> All-time and single-season leaderboards for a variety of stats.</li>
                 ${awardsLink}
                 ${hofLink}
+                <li><a href="#/draft"><strong>Draft History:</strong></a> Season-by-season draft picks for MLR.</li>
                 <li><a href="#/compare"><strong>Player Comparison:</strong></a> Compare up to four players side-by-side across any league and season.</li>
                 <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
             </ul>
@@ -63,6 +64,12 @@ export async function renderHome() {
             <br>
             <p>Why do my franchise total stat lines include teams I've never played for?</p>
             <p><i>The franchise total stat lines use the abbreviations that are currently used by the franchise. For example, S2-S5 Texas Rangers has been Cleveland Guardians since S6, so even players who only played during the TEX era will have CLE in their franchise totals.</i></p>
+            <br>
+            <p>Why is my stolen base count different than it appears in the roster sheet?</p>
+            <p><i>Differing stolen base count is likely due to being a trailing runner on a multi-steal attempt. The roster sheet does not credit trailing runners with stolen bases. MLR Reference credits all trailing runners with stolen bases, unless an unsuccessful attempts ends the inning. These trailing runner stolen bases count both for runners and against pitchers.</i></p>
+            <br>
+            <p>Why is my runs scored count different than it appears in the roster sheet?</p>
+            <p><i>Differing runs scored count is likely due to being a ghost runner that scored. The roster sheet does not credit ghost runners with runs scored, while MLR Reference does.</i></p>
         </div>`;
 
     try {

@@ -32,6 +32,9 @@ export const state = {
     // Track which stat files have been fetched (prevents duplicate requests)
     loaded: new Set(),
 
+    // Lazy-loaded draft history — populated on first visit to draft view
+    draftHistory: null,
+
     // Lazy-loaded playoff bracket data — keyed by league ('mlr', 'milr')
     playoffBrackets: {},
 
