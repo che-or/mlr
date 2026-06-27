@@ -1,6 +1,7 @@
 import { state } from '../state.js';
 import { loadStats } from '../data.js';
-import { formatStat, getSeasonSort } from '../utils.js';
+import { formatStat, getSeasonSort, getTeamName } from '../utils.js';
+import { wireTeamLinks } from './player.js';
 import {
     COUNTING_STATS, STAT_DEFINITIONS, STAT_DESCRIPTIONS,
     LEADERBOARD_ONLY_STATS, LEAGUES_WITH_BREAKDOWNS, LEAGUES_WITH_CAREER,
@@ -54,6 +55,9 @@ function updateSeasonDefaults(league) {
 // ── Control wiring ────────────────────────────────────────────────────────────
 
 export function initLeaderboardControls() {
+    document.getElementById('leaderboard-entity-select').addEventListener('change', () => {
+        populateLeaderboardStatSelect();
+    });
     document.getElementById('leaderboard-league-select').addEventListener('change', () => {
         populateLeaderboardStatSelect();
     });
@@ -107,6 +111,9 @@ function updateMinimumControls() {
 
     [batting, pitching, attempts, decisions, opp].forEach(el => { el.style.display = 'none'; });
 
+    const isTeam = document.getElementById('leaderboard-entity-select')?.value === 'team';
+    if (isTeam) return;
+
     if (stat === 'SB%') {
         attempts.style.display = 'inline-block';
     } else if (stat === 'W-L%') {
@@ -120,7 +127,8 @@ function updateMinimumControls() {
 }
 
 function updateMlrFilters(league, type) {
-    const hasBreakdowns = LEAGUES_WITH_BREAKDOWNS.includes(league);
+    const isTeam = document.getElementById('leaderboard-entity-select')?.value === 'team';
+    const hasBreakdowns = !isTeam && LEAGUES_WITH_BREAKDOWNS.includes(league);
     document.querySelectorAll('.mlr-filter').forEach(el => {
         el.style.display = hasBreakdowns ? '' : 'none';
     });
@@ -184,6 +192,7 @@ async function renderLeaderboard() {
     const reverse   = document.getElementById('reverse-sort').checked;
     const selTeam   = document.getElementById('leaderboard-team-filter')?.value || '';
     const selType   = document.getElementById('leaderboard-type-filter')?.value || '';
+    const isTeam    = (document.getElementById('leaderboard-entity-select')?.value || 'player') === 'team';
 
     if (!stat) { display.innerHTML = '<p>Please select a stat.</p>'; return; }
 
@@ -203,30 +212,38 @@ async function renderLeaderboard() {
     const minOpp     = parseInt(document.getElementById('min-opp')?.value) || 3;
 
     try {
-        const seasonKey  = isHitting ? 'hitting'        : 'pitching';
-        const hasBreakdowns = LEAGUES_WITH_BREAKDOWNS.includes(league);
-        const careerKey  = isHitting
-            ? (selTeam && selType && hasBreakdowns ? 'hitting_by_team_type'
-               : selType && hasBreakdowns ? 'hitting_by_type'
-               : selTeam && hasBreakdowns ? 'hitting_by_team'
-               : 'career_hitting')
-            : (selTeam && selType && hasBreakdowns ? 'pitching_by_team_type'
-               : selType && hasBreakdowns ? 'pitching_by_type'
-               : selTeam && hasBreakdowns ? 'pitching_by_team'
-               : 'career_pitching');
+        let seasonData, careerData, teamHittingData;
 
-        const [seasonData, careerData, teamHittingData] = await Promise.all([
-            loadStats(league, seasonKey),
-            LEAGUES_WITH_CAREER.includes(league) || ((selTeam || selType) && hasBreakdowns)
-                ? loadStats(league, careerKey)
-                : Promise.resolve([]),
-            loadStats(league, 'team_hitting'),
-        ]);
+        if (isTeam) {
+            seasonData      = await loadStats(league, isHitting ? 'team_hitting' : 'team_pitching');
+            careerData      = [];
+            teamHittingData = [];
+        } else {
+            const seasonKey  = isHitting ? 'hitting'        : 'pitching';
+            const hasBreakdowns = LEAGUES_WITH_BREAKDOWNS.includes(league);
+            const careerKey  = isHitting
+                ? (selTeam && selType && hasBreakdowns ? 'hitting_by_team_type'
+                   : selType && hasBreakdowns ? 'hitting_by_type'
+                   : selTeam && hasBreakdowns ? 'hitting_by_team'
+                   : 'career_hitting')
+                : (selTeam && selType && hasBreakdowns ? 'pitching_by_team_type'
+                   : selType && hasBreakdowns ? 'pitching_by_type'
+                   : selTeam && hasBreakdowns ? 'pitching_by_team'
+                   : 'career_pitching');
+
+            [seasonData, careerData, teamHittingData] = await Promise.all([
+                loadStats(league, seasonKey),
+                LEAGUES_WITH_CAREER.includes(league) || ((selTeam || selType) && hasBreakdowns)
+                    ? loadStats(league, careerKey)
+                    : Promise.resolve([]),
+                loadStats(league, 'team_hitting'),
+            ]);
+        }
 
         // ── All-Time card ──────────────────────────────────────────────────
         const cards = [];
         const atQualInfo = getAllTimeQualInfo(stat, isHitting, isCounting, league);
-        if (careerData.length) {
+        if (!isTeam && careerData.length) {
             const atRows = filterCareer(careerData, stat, isHitting, isCounting, selTeam, selType, minAtt, minDec, atQualInfo?.default);
             atRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
             cards.push({ label: 'All-Time', type: 'all-time', data: atRows, qualInfo: atQualInfo });
@@ -249,17 +266,21 @@ async function renderLeaderboard() {
 
         // ── Single Season card (only shown when there are multiple seasons) ─
         if (displaySeasons.length > 1) {
-            const ssRows = filterSeasonRows(seasonData, null, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
+            const ssRows = isTeam
+                ? filterTeamSeasonRows(seasonData, null, stat, isCounting)
+                : filterSeasonRows(seasonData, null, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
             ssRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
-            cards.push({ label: 'Single Season', type: 'single-season', data: ssRows, qualLabel: '' });
+            cards.push({ label: 'Single Season', type: 'single-season', isTeamMode: isTeam, league, data: ssRows, qualLabel: '' });
         }
 
         for (const ds of displaySeasons) {
-            const rows = filterSeasonRows(seasonData, ds, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
+            const rows = isTeam
+                ? filterTeamSeasonRows(seasonData, ds, stat, isCounting)
+                : filterSeasonRows(seasonData, ds, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
             rows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
             const games = seasonGames[ds] || 0;
-            const qualLabel = buildSeasonQualLabel(stat, isHitting, isCounting, minPA, minOuts, minAtt, minDec, minOpp, games);
-            cards.push({ label: `Season ${ds.slice(1)}`, type: 'season', data: rows, qualLabel });
+            const qualLabel = isTeam ? '' : buildSeasonQualLabel(stat, isHitting, isCounting, minPA, minOuts, minAtt, minDec, minOpp, games);
+            cards.push({ label: `Season ${ds.slice(1)}`, type: 'season', isTeamMode: isTeam, league, data: rows, qualLabel });
         }
 
         // ── Render ─────────────────────────────────────────────────────────
@@ -313,6 +334,7 @@ async function renderLeaderboard() {
         nextBtn.addEventListener('click', () => setActiveCard((parseInt(mobileSelect.value) + 1) % cardEls.length));
         display.appendChild(grid);
         wirePlayerLinks(display);
+        wireTeamLinks(display);
 
         // ── All-Time qualifier input ───────────────────────────────────────
         if (careerData.length && atQualInfo) {
@@ -383,6 +405,16 @@ function filterSeasonRows(data, displaySeason, stat, isHitting, isCounting, selT
             return Math.round((r.IP || 0) * 3) >= minOuts * games;
         });
     }
+    if (isCounting && !CAN_BE_NEGATIVE.has(stat)) rows = rows.filter(r => (r[stat] || 0) > 0);
+    return rows;
+}
+
+function filterTeamSeasonRows(data, displaySeason, stat, isCounting) {
+    let rows = data.filter(r =>
+        r[stat] !== undefined && r[stat] !== null
+        && r['Display Season']?.startsWith('S')
+    );
+    if (displaySeason) rows = rows.filter(r => r['Display Season'] === displaySeason);
     if (isCounting && !CAN_BE_NEGATIVE.has(stat)) rows = rows.filter(r => (r[stat] || 0) > 0);
     return rows;
 }
@@ -465,11 +497,59 @@ function buildTableHTML(data, stat, topN, showTeam, showSeason) {
     return html;
 }
 
+function buildTeamTableHTML(data, stat, topN, showSeason, league) {
+    let rows = data.slice(0, topN);
+    let tieInfo = null;
+
+    if (data.length > topN) {
+        const last = data[topN - 1], next = data[topN];
+        if (last && next && last[stat] === next[stat]) {
+            const tieVal = last[stat];
+            let firstTie = topN - 1;
+            while (firstTie > 0 && data[firstTie - 1][stat] === tieVal) firstTie--;
+            const count = data.filter(r => r[stat] === tieVal).length;
+            rows = data.slice(0, firstTie);
+            tieInfo = { count, value: tieVal };
+        }
+    }
+
+    let html = '<table class="stats-table"><thead><tr><th>Rank</th><th>Team</th>';
+    if (showSeason) html += '<th class="lb-short-col">Season</th>';
+    html += `<th>${stat}</th></tr></thead><tbody>`;
+
+    let lastVal = null, lastRank = 0;
+    rows.forEach((r, i) => {
+        const rank     = i + 1;
+        const dispRank = (i > 0 && r[stat] === lastVal) ? lastRank : rank;
+        lastVal = r[stat]; lastRank = dispRank;
+
+        const ds      = r['Display Season'];
+        const abbr    = r.Team;
+        const name    = getTeamName(league, abbr, ds);
+        const lgAttr  = league !== 'mlr' ? ` data-league="${league}"` : '';
+
+        html += `<tr>
+            <td>${dispRank}</td>
+            <td class="team-link" data-team="${encodeURIComponent(abbr)}" data-season="${ds}"${lgAttr}
+                style="cursor:pointer;text-decoration:underline">${name}</td>
+            ${showSeason ? `<td class="lb-short-col">${(ds || '').slice(1)}</td>` : ''}
+            <td>${formatStat(stat, r[stat])}</td>
+        </tr>`;
+    });
+
+    if (tieInfo) {
+        const cols = 2 + (showSeason ? 1 : 0) + 1;
+        html += `<tr><td class="tie-info" colspan="${cols}">${tieInfo.count} teams tied with ${formatStat(stat, tieInfo.value)}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    return html;
+}
+
 function buildCard(card, stat, topN) {
     const el = document.createElement('div');
     el.className = 'leaderboard-card';
 
-    const showTeam   = card.type === 'season';
+    const showTeam   = card.type === 'season' && !card.isTeamMode;
     const showSeason = card.type === 'single-season';
 
     let html = '<div class="card-header">';
@@ -485,7 +565,11 @@ function buildCard(card, stat, topN) {
 
     html += '</div>';
 
-    html += `<div class="card-table-wrap">${buildTableHTML(card.data, stat, topN, showTeam, showSeason)}</div>`;
+    const tableHTML = card.isTeamMode
+        ? buildTeamTableHTML(card.data, stat, topN, showSeason, card.league)
+        : buildTableHTML(card.data, stat, topN, showTeam, showSeason);
+
+    html += `<div class="card-table-wrap">${tableHTML}</div>`;
 
     el.innerHTML = html;
     return el;

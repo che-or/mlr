@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats, loadTeamStats } from '../data.js';
+import { loadStats, loadTeamStats, loadPlayoffBrackets } from '../data.js';
 import { formatStat, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
          getMilrTeamName, getMilrLogoPair, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
@@ -71,13 +71,25 @@ export async function displayTeamList(season, league = 'mlr') {
         }
         html += '</div>';
 
+        if (league === 'mlr' || league === 'milr') {
+            try {
+                const brackets = await loadPlayoffBrackets(league);
+                const seasonBracket = brackets?.[currentSeason];
+                if (seasonBracket) {
+                    const bracketHtml = renderPlayoffBracket(seasonBracket, league, currentSeason);
+                    if (bracketHtml) html += bracketHtml;
+                }
+            } catch (e) {
+                // bracket data unavailable — silently skip
+            }
+        }
+
         container.innerHTML = html;
 
         container.querySelector('#team-league-select').addEventListener('change', e => {
             const newLeague = e.target.value;
             const newLgParam = newLeague !== 'mlr' ? `&league=${newLeague}` : '';
-            // Drop the season when switching leagues — let it default to the latest
-            window.location.hash = `#/team-stats${newLgParam ? `?${newLgParam.slice(1)}` : ''}`;
+            window.location.hash = `#/team-stats?season=${currentSeason}${newLgParam}`;
         });
         container.querySelector('#team-season-select').addEventListener('change', e => {
             window.location.hash = `#/team-stats?season=${e.target.value}${lgParam}`;
@@ -176,6 +188,211 @@ function buildTeamRecords(teamPitching, league, season) {
         records[abbr] = { W: w, L: l, PCT: r['W-L%'] || 0 };
     }
     return records;
+}
+
+// ── Playoff bracket rendering ─────────────────────────────────────────────────
+
+function renderPlayoffBracket(bracket, league, season) {
+    const hasData = bracket.rounds.some(r => r.matchups.length > 0);
+    if (!hasData) return '';
+
+    const lgParam = `&league=${league}_playoff`;
+    const leagueEntries = Object.entries(bracket.leagues || {});
+    const rounds = bracket.rounds;
+    const finalRound = rounds[rounds.length - 1];
+
+    const seedsMap = {};
+    for (const [, lgData] of leagueEntries) {
+        (lgData.seeds || []).forEach((abbr, i) => { seedsMap[abbr] = i + 1; });
+    }
+
+    let bodyHtml;
+    if (leagueEntries.length >= 2 && rounds.length > 1) {
+        bodyHtml = renderTwoLeagueBracketBody(rounds, leagueEntries, league, season, lgParam, seedsMap);
+    } else if (rounds.length === 1) {
+        // Championship: single centered matchup, no connector lines needed
+        const m = finalRound.matchups[0];
+        bodyHtml = `<div class="bracket-single">${m ? renderMatchupCard(m, league, season, lgParam, seedsMap) : tbd()}</div>`;
+    } else {
+        bodyHtml = renderSingleLeagueBracketBody(rounds, league, season, lgParam, seedsMap);
+    }
+
+    // Champion banner
+    const finalGame = finalRound?.matchups?.[0];
+    let championHtml = '';
+    if (finalGame) {
+        const winnerAbbr = finalGame.home_score > finalGame.away_score ? finalGame.home : finalGame.away;
+        const { name, logo } = teamInfoForBracket(winnerAbbr, league, season, 'bracket-champion-logo');
+        const championHref = `#/team-stats?season=${season}&team=${encodeURIComponent(winnerAbbr)}${lgParam}`;
+        championHtml = `<div class="bracket-champion">
+            <div class="bracket-champion-label">${shortenRoundName(finalRound.name)} Champion</div>
+            <div class="bracket-champion-team">${logo}<a class="bracket-champion-name bracket-team-link" href="${championHref}">${name}</a></div>
+        </div>`;
+    }
+
+    return `<div class="playoff-bracket">
+        <h3 class="playoff-bracket-title">Playoffs</h3>
+        <div class="bracket-body">${bodyHtml}</div>
+        ${championHtml}
+    </div>`;
+}
+
+function renderTwoLeagueBracketBody(rounds, leagueEntries, league, season, lgParam, seedsMap = {}) {
+    const [lg1Key, lg1Data] = leagueEntries[0];
+    const [lg2Key, lg2Data] = leagueEntries[1];
+    const finalRound = rounds[rounds.length - 1];
+    const nonFinalRounds = rounds.slice(0, -1);
+
+    const hideName = nonFinalRounds.length === 1;
+
+    // Left half: lg1, outer→inner (rounds in order)
+    const leftCols = nonFinalRounds.map((round, i) => {
+        const matchups = round.matchups.filter(m => m.league === lg1Key);
+        const nextRound = rounds[i + 1];
+        const nextMatchups = nextRound.matchups.filter(m => m.league === lg1Key || !m.league);
+        return renderBracketCol(round.name, matchups, nextMatchups, league, season, lgParam, 'left', i === 0, seedsMap, hideName);
+    }).join('');
+
+    // Right half: lg2, inner→outer (nonFinalRounds reversed so innermost is leftmost)
+    const reversedNonFinal = [...nonFinalRounds].reverse();
+    const rightCols = reversedNonFinal.map((round, i) => {
+        const matchups = round.matchups.filter(m => m.league === lg2Key);
+        const nextRound = i === 0 ? finalRound : reversedNonFinal[i - 1];
+        const nextMatchups = nextRound.matchups.filter(m => m.league === lg2Key || !m.league);
+        const isOuter = i === reversedNonFinal.length - 1;
+        return renderBracketCol(round.name, matchups, nextMatchups, league, season, lgParam, 'right', isOuter, seedsMap, hideName);
+    }).join('');
+
+    // Center: final round
+    const finalMatchup = finalRound.matchups.length
+        ? finalRound.matchups.map(m => renderMatchupCard(m, league, season, lgParam, seedsMap)).join('')
+        : tbd();
+    const finalHtml = `<div class="bracket-center">
+        <div class="bracket-round-name">${shortenRoundName(finalRound.name)}</div>
+        <div class="bracket-col-matchups">
+            <div class="bracket-pair bracket-pair-single">${finalMatchup}</div>
+        </div>
+    </div>`;
+
+    return `<div class="bracket-half bracket-half-left">
+        <div class="bracket-league-header">${lg1Data.label}</div>
+        <div class="bracket-half-cols">${leftCols}</div>
+    </div>
+    ${finalHtml}
+    <div class="bracket-half bracket-half-right">
+        <div class="bracket-league-header">${lg2Data.label}</div>
+        <div class="bracket-half-cols">${rightCols}</div>
+    </div>`;
+}
+
+function renderSingleLeagueBracketBody(rounds, league, season, lgParam, seedsMap = {}) {
+    const finalRound = rounds[rounds.length - 1];
+    const nonFinalRounds = rounds.slice(0, -1);
+
+    if (nonFinalRounds.length === 1 && nonFinalRounds[0].matchups.length === 2) {
+        // 4-team: matchup 1 on left, final in center, matchup 2 on right
+        const [m1, m2] = nonFinalRounds[0].matchups;
+        const fakeNext = finalRound.matchups.slice(0, 1);
+        const leftCol  = renderBracketCol(nonFinalRounds[0].name, [m1], fakeNext, league, season, lgParam, 'left', true, seedsMap);
+        const rightCol = renderBracketCol(nonFinalRounds[0].name, [m2], fakeNext, league, season, lgParam, 'right', true, seedsMap);
+        const finalHtml = `<div class="bracket-center">
+            <div class="bracket-round-name">${shortenRoundName(finalRound.name)}</div>
+            <div class="bracket-col-matchups">
+                <div class="bracket-pair bracket-pair-single">
+                    ${finalRound.matchups.map(m => renderMatchupCard(m, league, season, lgParam, seedsMap)).join('') || tbd()}
+                </div>
+            </div>
+        </div>`;
+        return `<div class="bracket-half bracket-half-left"><div class="bracket-half-cols">${leftCol}</div></div>
+                ${finalHtml}
+                <div class="bracket-half bracket-half-right"><div class="bracket-half-cols">${rightCol}</div></div>`;
+    }
+
+    // Generic fallback for other single-league formats
+    return rounds.map(r =>
+        `<div class="bracket-round-col">
+            <div class="bracket-round-name">${shortenRoundName(r.name)}</div>
+            <div class="bracket-col-matchups">
+                ${r.matchups.map(m =>
+                    `<div class="bracket-pair bracket-pair-single">${renderMatchupCard(m, league, season, lgParam, seedsMap)}</div>`
+                ).join('') || tbd()}
+            </div>
+        </div>`
+    ).join('');
+}
+
+function renderBracketCol(roundName, matchups, nextMatchups, league, season, lgParam, side, isOuter = false, seedsMap = {}, hideName = false) {
+    const ratio = matchups.length / (nextMatchups.length || 1);
+    let pairsHtml = '';
+    if (ratio >= 2 && matchups.length >= 2) {
+        for (let i = 0; i < matchups.length; i += 2) {
+            pairsHtml += `<div class="bracket-pair bracket-pair-${side} bracket-pair-double">`;
+            pairsHtml += matchups.slice(i, i + 2).map(m => renderMatchupCard(m, league, season, lgParam, seedsMap)).join('');
+            pairsHtml += `</div>`;
+        }
+    } else if (matchups.length > 1) {
+        pairsHtml = `<div class="bracket-pair bracket-pair-${side} bracket-pair-straight">`;
+        pairsHtml += matchups.map(m => renderMatchupCard(m, league, season, lgParam, seedsMap)).join('');
+        pairsHtml += `</div>`;
+    } else if (matchups.length === 1) {
+        pairsHtml = `<div class="bracket-pair bracket-pair-${side} bracket-pair-single">${renderMatchupCard(matchups[0], league, season, lgParam, seedsMap)}</div>`;
+    } else {
+        pairsHtml = `<div class="bracket-pair bracket-pair-${side} bracket-pair-single">${tbd()}</div>`;
+    }
+
+    const colClass = isOuter ? 'bracket-col-outer' : 'bracket-col-inner';
+    const nameHtml = hideName ? '' : `<div class="bracket-round-name">${shortenRoundName(roundName)}</div>`;
+    return `<div class="bracket-round-col bracket-col-${side} ${colClass}">
+        ${nameHtml}
+        <div class="bracket-col-matchups">${pairsHtml}</div>
+    </div>`;
+}
+
+function renderMatchupCard(m, league, season, lgParam, seedsMap = {}) {
+    const awayWon = m.away_score > m.home_score;
+    const homeWon = m.home_score > m.away_score;
+    const away = teamInfoForBracket(m.away, league, season, 'bracket-logo');
+    const home = teamInfoForBracket(m.home, league, season, 'bracket-logo');
+    const awayHref = `#/team-stats?season=${season}&team=${encodeURIComponent(m.away)}${lgParam}`;
+    const homeHref = `#/team-stats?season=${season}&team=${encodeURIComponent(m.home)}${lgParam}`;
+    const awayInner = away.logo || `<span class="bracket-abbr">${m.away}</span>`;
+    const homeInner = home.logo || `<span class="bracket-abbr">${m.home}</span>`;
+    const awayTitle = m.away_score != null ? `${away.name}: ${m.away_score}` : away.name;
+    const homeTitle = m.home_score != null ? `${home.name}: ${m.home_score}` : home.name;
+    const awaySeed = seedsMap[m.away] != null ? `<span class="bracket-seed">${seedsMap[m.away]}</span>` : '';
+    const homeSeed = seedsMap[m.home] != null ? `<span class="bracket-seed">${seedsMap[m.home]}</span>` : '';
+    const awayScore = m.away_score != null ? `<span class="bracket-score">${m.away_score}</span>` : `<span class="bracket-score"></span>`;
+    const homeScore = m.home_score != null ? `<span class="bracket-score">${m.home_score}</span>` : `<span class="bracket-score"></span>`;
+    return `<div class="bracket-matchup">
+        <a class="bracket-team-slot${awayWon ? ' bracket-winner' : (homeWon ? ' bracket-loser' : '')}" href="${awayHref}" title="${awayTitle}"><span class="bracket-slot-logo">${awaySeed}${awayInner}</span>${awayScore}</a>
+        <a class="bracket-team-slot${homeWon ? ' bracket-winner' : (awayWon ? ' bracket-loser' : '')}" href="${homeHref}" title="${homeTitle}"><span class="bracket-slot-logo">${homeSeed}${homeInner}</span>${homeScore}</a>
+    </div>`;
+}
+
+function teamInfoForBracket(abbr, league, season, logoClass) {
+    let name = abbr, logo = '';
+    if (league === 'mlr') {
+        const fk = getFranchiseKey(abbr, season);
+        name = getMlrTeamName(fk, season);
+        const pair = getMlrLogoPair(fk, season);
+        logo = pair ? makeLogoImg(pair.dark, pair.light, logoClass) : '';
+    } else if (league === 'milr') {
+        name = getMilrTeamName(abbr, season);
+        const pair = getMilrLogoPair(abbr, season);
+        logo = pair ? makeLogoImg(pair.dark, pair.light, logoClass) : '';
+    }
+    return { name, logo };
+}
+
+function tbd() {
+    return `<div class="bracket-matchup bracket-tbd">
+        <div class="bracket-team-slot"><span class="bracket-slot-logo"></span><span class="bracket-score"></span></div>
+        <div class="bracket-team-slot"><span class="bracket-slot-logo"></span><span class="bracket-score"></span></div>
+    </div>`;
+}
+
+function shortenRoundName(name) {
+    return name.replace('League Championship', 'League');
 }
 
 // ── Individual team page ──────────────────────────────────────────────────────
