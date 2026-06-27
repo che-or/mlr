@@ -135,6 +135,9 @@ export const LEAGUES_WITH_BREAKDOWNS = ['mlr', 'mlr_playoff'];
 // Leagues that have career stat files
 export const LEAGUES_WITH_CAREER = ['mlr', 'mlr_playoff', 'milr', 'milr_playoff', 'fcb', 'gib'];
 
+// Leagues that have franchise (all-time aggregated team) stat files
+export const LEAGUES_WITH_FRANCHISE = ['mlr', 'mlr_playoff'];
+
 // Display names for leagues
 export const LEAGUE_LABELS = {
     mlr: 'MLR',

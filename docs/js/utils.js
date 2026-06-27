@@ -88,6 +88,14 @@ export function getMlrTeamName(franchiseKey, displaySeason) {
     return entry ? entry.name : franchiseKey;
 }
 
+// Returns the current (most recent) team name for an MLR franchise key.
+export function getMlrFranchiseName(franchiseKey) {
+    const entries = state.teamHistory.mlr[franchiseKey];
+    if (!entries) return franchiseKey;
+    const current = entries.find(e => e.end === 9999);
+    return current ? current.name : (entries[entries.length - 1]?.name || franchiseKey);
+}
+
 // ── Team helpers (season-keyed leagues: MiLR, FCB, GIB, ECO, NPR, WBC) ─────
 
 // MiLR history: { S3: { BAY: "Bayside Fish & Ships", ... } }
