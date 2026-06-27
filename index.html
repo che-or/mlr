@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLR Reference</title>
+    <link rel="icon" type="image/png" href="baseball_snoo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="loader"></div>
+        <p>Loading...</p>
+    </div>
+
+    <div id="app" style="display: none;">
+        <header>
+            <h1>MLR Reference</h1>
+            <nav>
+                <a href="#/home" class="nav-tab" id="home-tab">Home</a>
+                <a href="#/stats" class="nav-tab" id="stats-tab">Player Stats</a>
+                <a href="#/team-stats" class="nav-tab" id="team-stats-tab">Team Stats</a>
+                <a href="#/leaderboards" class="nav-tab" id="leaderboards-tab">Leaderboards</a>
+                <a href="#/glossary" class="nav-tab" id="glossary-tab">Glossary</a>
+            </nav>
+            <div class="theme-switch-container">
+                <label id="theme-switch" class="theme-switch">
+                    <input type="checkbox" id="theme-switch-input">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+
+        <main>
+            <div id="home-view" class="view"></div>
+
+            <div id="stats-view" class="view">
+                <div class="controls" id="stats-controls">
+                    <div class="control-group">
+                        <label for="player-search">Search Player:</label>
+                        <input type="text" id="player-search" placeholder="Enter player name...">
+                        <div id="player-suggestions"></div>
+                    </div>
+                </div>
+                <div id="stats-content-display">
+                    <!-- Player scouting report rendered here -->
+                </div>
+            </div>
+
+            <div id="leaderboards-view" class="view" style="display: none;">
+                <div class="controls">
+                    <span class="control-item">
+                        <label for="leaderboard-league-select">League:</label>
+                        <select id="leaderboard-league-select">
+                            <option value="mlr" selected>MLR</option>
+                            <option value="mlr_playoff">MLR Playoffs</option>
+                            <option value="milr">MiLR</option>
+                            <option value="milr_playoff">MiLR Playoffs</option>
+                            <option value="fcb">FCB</option>
+                            <option value="gib">GIB</option>
+                            <option value="eco">ECO</option>
+                            <option value="npr">NPR</option>
+                            <option value="wbc">WBC</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-entity-select">Show:</label>
+                        <select id="leaderboard-entity-select">
+                            <option value="player">Players</option>
+                            <option value="team">Teams</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-type-select">Leaderboard:</label>
+                        <select id="leaderboard-type-select">
+                            <option value="batting">Batting</option>
+                            <option value="pitching">Pitching</option>
+                        </select>
+                    </span>
+                    <span class="control-item">
+                        <label for="leaderboard-stat-select">Stat:</label>
+                        <select id="leaderboard-stat-select">
+                            <option value="">-- Select Stat --</option>
+                        </select>
+                    </span>
+                    <span class="control-item mlr-filter">
+                        <label for="leaderboard-team-filter">Team:</label>
+                        <select id="leaderboard-team-filter">
+                            <option value="">All Teams</option>
+                        </select>
+                    </span>
+                    <span class="control-item mlr-filter">
+                        <label for="leaderboard-type-filter">Type:</label>
+                        <select id="leaderboard-type-filter">
+                            <option value="">All Types</option>
+                        </select>
+                    </span>
+                    <div id="batting-minimum-controls" class="control-item" style="display: inline-block;">
+                        <label for="min-pa">Min PA/Session:</label>
+                        <input type="number" id="min-pa" step="0.1" value="2" style="width: 60px;">
+                    </div>
+                    <div id="pitching-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-outs">Min Outs/Session:</label>
+                        <input type="number" id="min-outs" step="1" value="3" style="width: 60px;">
+                    </div>
+                    <div id="attempts-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-attempts">Min Attempts:</label>
+                        <input type="number" id="min-attempts" step="1" value="5" style="width: 60px;">
+                    </div>
+                    <div id="decisions-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-decisions">Min Decisions:</label>
+                        <input type="number" id="min-decisions" step="1" value="3" style="width: 60px;">
+                    </div>
+                    <div id="opp-minimum-controls" class="control-item" style="display: none;">
+                        <label for="min-opp">Min Save Opp:</label>
+                        <input type="number" id="min-opp" step="1" value="3" style="width: 60px;">
+                    </div>
+                    <span class="control-item">
+                        <label for="leaderboard-length">Top:</label>
+                        <input type="number" id="leaderboard-length" value="10" min="1" max="100" style="width: 60px;">
+                    </span>
+                    <span class="control-item">
+                        <label for="reverse-sort">Reverse:</label>
+                        <input type="checkbox" id="reverse-sort">
+                    </span>
+                    <span class="control-item">
+                        <button id="leaderboard-button">View</button>
+                    </span>
+                </div>
+                <div id="leaderboards-content-display">
+                    <!-- Leaderboards rendered here -->
+                </div>
+            </div>
+
+            <div id="glossary-view" class="view" style="display: none;">
+                <div id="glossary-sidebar"></div>
+                <div id="glossary-content"></div>
+            </div>
+            <div id="awards-view" class="view" style="display: none;"></div>
+            <div id="hof-view" class="view" style="display: none;"></div>
+            <div id="compare-view" class="view" style="display: none;"></div>
+            <div id="team-stats-view" class="view" style="display: none;"></div>
+        </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
