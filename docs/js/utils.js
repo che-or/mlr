@@ -88,6 +88,29 @@ export function getMlrTeamName(franchiseKey, displaySeason) {
     return entry ? entry.name : franchiseKey;
 }
 
+// Returns the current (most recent) team name for an MLR franchise key.
+export function getMlrFranchiseName(franchiseKey) {
+    const entries = state.teamHistory.mlr[franchiseKey];
+    if (!entries) return franchiseKey;
+    const current = entries.find(e => e.end === 9999);
+    return current ? current.name : (entries[entries.length - 1]?.name || franchiseKey);
+}
+
+// Returns a display label for a franchise in leaderboards.
+// Defunct franchises get a season-range suffix to distinguish them from active ones with the same name.
+export function getMlrFranchiseLabel(franchiseKey) {
+    const entries = state.teamHistory.mlr[franchiseKey];
+    if (!entries) return franchiseKey;
+    const isActive = entries.some(e => e.end === 9999);
+    const name = isActive
+        ? entries.find(e => e.end === 9999).name
+        : (entries[entries.length - 1]?.name || franchiseKey);
+    if (isActive) return name;
+    const minS = Math.min(...entries.map(e => e.start));
+    const maxS = Math.max(...entries.map(e => e.end === 9999 ? e.start : e.end));
+    return minS === maxS ? `${name} (S${minS})` : `${name} (S${minS}–S${maxS})`;
+}
+
 // ── Team helpers (season-keyed leagues: MiLR, FCB, GIB, ECO, NPR, WBC) ─────
 
 // MiLR history: { S3: { BAY: "Bayside Fish & Ships", ... } }

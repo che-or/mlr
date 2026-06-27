@@ -1,10 +1,10 @@
 import { state } from '../state.js';
 import { loadStats } from '../data.js';
-import { formatStat, getSeasonSort, getTeamName } from '../utils.js';
+import { formatStat, getSeasonSort, getTeamName, getMlrFranchiseLabel } from '../utils.js';
 import { wireTeamLinks } from './player.js';
 import {
     COUNTING_STATS, STAT_DEFINITIONS, STAT_DESCRIPTIONS,
-    LEADERBOARD_ONLY_STATS, LEAGUES_WITH_BREAKDOWNS, LEAGUES_WITH_CAREER,
+    LEADERBOARD_ONLY_STATS, LEAGUES_WITH_BREAKDOWNS, LEAGUES_WITH_CAREER, LEAGUES_WITH_FRANCHISE,
 } from '../constants.js';
 
 // Lower is better regardless of batting/pitching context
@@ -212,10 +212,14 @@ async function renderLeaderboard() {
     const minOpp     = parseInt(document.getElementById('min-opp')?.value) || 3;
 
     try {
-        let seasonData, careerData, teamHittingData;
+        let seasonData, careerData, teamHittingData, franchiseData;
 
         if (isTeam) {
-            seasonData      = await loadStats(league, isHitting ? 'team_hitting' : 'team_pitching');
+            const hasFranchise = LEAGUES_WITH_FRANCHISE.includes(league);
+            [seasonData, franchiseData] = await Promise.all([
+                loadStats(league, isHitting ? 'team_hitting' : 'team_pitching'),
+                hasFranchise ? loadStats(league, isHitting ? 'franchise_hitting' : 'franchise_pitching') : Promise.resolve([]),
+            ]);
             careerData      = [];
             teamHittingData = [];
         } else {
@@ -247,6 +251,11 @@ async function renderLeaderboard() {
             const atRows = filterCareer(careerData, stat, isHitting, isCounting, selTeam, selType, minAtt, minDec, atQualInfo?.default);
             atRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
             cards.push({ label: 'All-Time', type: 'all-time', data: atRows, qualInfo: atQualInfo });
+        }
+        if (isTeam && franchiseData?.length) {
+            const atRows = filterFranchiseRows(franchiseData, stat, isCounting);
+            atRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+            cards.push({ label: 'All-Time', type: 'all-time', isTeamMode: true, isFranchise: true, league, data: atRows });
         }
 
         // ── Per-season cards ───────────────────────────────────────────────
@@ -419,6 +428,12 @@ function filterTeamSeasonRows(data, displaySeason, stat, isCounting) {
     return rows;
 }
 
+function filterFranchiseRows(data, stat, isCounting) {
+    let rows = data.filter(r => r[stat] !== undefined && r[stat] !== null);
+    if (isCounting && !CAN_BE_NEGATIVE.has(stat)) rows = rows.filter(r => (r[stat] || 0) > 0);
+    return rows;
+}
+
 // ── Qualifier label helpers ───────────────────────────────────────────────────
 
 // Returns { label, default } describing the all-time qualifier for a stat, or null for counting stats.
@@ -545,6 +560,44 @@ function buildTeamTableHTML(data, stat, topN, showSeason, league) {
     return html;
 }
 
+function buildFranchiseTableHTML(data, stat, topN) {
+    let rows = data.slice(0, topN);
+    let tieInfo = null;
+
+    if (data.length > topN) {
+        const last = data[topN - 1], next = data[topN];
+        if (last && next && last[stat] === next[stat]) {
+            const tieVal = last[stat];
+            let firstTie = topN - 1;
+            while (firstTie > 0 && data[firstTie - 1][stat] === tieVal) firstTie--;
+            const count = data.filter(r => r[stat] === tieVal).length;
+            rows = data.slice(0, firstTie);
+            tieInfo = { count, value: tieVal };
+        }
+    }
+
+    let html = `<table class="stats-table"><thead><tr><th>Rank</th><th>Team</th><th>${stat}</th></tr></thead><tbody>`;
+
+    let lastVal = null, lastRank = 0;
+    rows.forEach((r, i) => {
+        const rank     = i + 1;
+        const dispRank = (i > 0 && r[stat] === lastVal) ? lastRank : rank;
+        lastVal = r[stat]; lastRank = dispRank;
+        const name = getMlrFranchiseLabel(r.Franchise);
+        html += `<tr>
+            <td>${dispRank}</td>
+            <td>${name}</td>
+            <td>${formatStat(stat, r[stat])}</td>
+        </tr>`;
+    });
+
+    if (tieInfo) {
+        html += `<tr><td class="tie-info" colspan="3">${tieInfo.count} teams tied with ${formatStat(stat, tieInfo.value)}</td></tr>`;
+    }
+    html += '</tbody></table>';
+    return html;
+}
+
 function buildCard(card, stat, topN) {
     const el = document.createElement('div');
     el.className = 'leaderboard-card';
@@ -565,9 +618,11 @@ function buildCard(card, stat, topN) {
 
     html += '</div>';
 
-    const tableHTML = card.isTeamMode
-        ? buildTeamTableHTML(card.data, stat, topN, showSeason, card.league)
-        : buildTableHTML(card.data, stat, topN, showTeam, showSeason);
+    const tableHTML = card.isFranchise
+        ? buildFranchiseTableHTML(card.data, stat, topN)
+        : card.isTeamMode
+            ? buildTeamTableHTML(card.data, stat, topN, showSeason, card.league)
+            : buildTableHTML(card.data, stat, topN, showTeam, showSeason);
 
     html += `<div class="card-table-wrap">${tableHTML}</div>`;
 
