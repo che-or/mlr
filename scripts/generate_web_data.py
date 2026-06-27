@@ -59,6 +59,8 @@ def main():
         p_psty = Path(f'../docs/generated/{league}_pitching_stats_by_type.json')
         p_hstty = Path(f'../docs/generated/{league}_hitting_stats_by_team_type.json')
         p_pstty = Path(f'../docs/generated/{league}_pitching_stats_by_team_type.json')
+        p_fhs = Path(f'../docs/generated/{league}_franchise_hitting_stats.json')
+        p_fps = Path(f'../docs/generated/{league}_franchise_pitching_stats.json')
     
         p_hscache = Path(f'../data/{league}_hitting_stats_cache.csv')
         p_pscache = Path(f'../data/{league}_pitching_stats_cache.csv')
@@ -220,6 +222,7 @@ def main():
     print('Generating playoff brackets...')
     generate_brackets('mlr')
     generate_brackets('milr')
+    print('Playoff brackets generated.')
 
 if __name__ == '__main__':
     main()

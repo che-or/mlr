@@ -106,12 +106,12 @@ def generate_brackets(league_prefix):
 
     result = {}
     for season_key, meta in all_meta.items():
-        print(f'  {league_prefix.upper()} playoffs {season_key}...')
+        #print(f'  {league_prefix.upper()} playoffs {season_key}...')
         result[season_key] = _process_season(season_key, meta, league_prefix)
 
     with open(out_path, 'w') as f:
         json.dump(result, f, indent=2)
-    print(f'Written {out_path}')
+    #print(f'Written {out_path}')
 
 
 if __name__ == '__main__':
