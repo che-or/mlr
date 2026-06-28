@@ -88,6 +88,12 @@ export function getMlrTeamName(franchiseKey, displaySeason) {
     return entry ? entry.name : franchiseKey;
 }
 
+// Returns the season-specific abbreviation for an MLR franchise+season.
+export function getMlrTeamAbbr(franchiseKey, displaySeason) {
+    const entry = getMlrTeamEntry(franchiseKey, displaySeason);
+    return entry ? entry.abbr : franchiseKey;
+}
+
 // Returns the current (most recent) team name for an MLR franchise key.
 export function getMlrFranchiseName(franchiseKey) {
     const entries = state.teamHistory.mlr[franchiseKey];

@@ -7,6 +7,7 @@ import { renderCompare } from './views/compare.js';
 import { displayTeamList, displayTeamStatsPage } from './views/teams.js';
 import { populateLeaderboardStatSelect } from './views/leaderboards.js';
 import { displayPlayerPage } from './views/player.js';
+import { renderSingleGameRecords } from './views/single_game_records.js';
 
 const el = id => document.getElementById(id);
 
@@ -19,7 +20,8 @@ const views = {
     hof:         el('hof-view'),
     compare:     el('compare-view'),
     teamStats:   el('team-stats-view'),
-    draft:       el('draft-view'),
+    draft:             el('draft-view'),
+    singleGameRecords: el('single-game-records-view'),
 };
 
 const tabs = {
@@ -111,6 +113,12 @@ export function updateView() {
     if (hash.startsWith('#/draft')) {
         show('draft');
         renderDraftHistory();
+        return;
+    }
+
+    if (hash === '#/single-game-records') {
+        show('singleGameRecords');
+        renderSingleGameRecords();
         return;
     }
 

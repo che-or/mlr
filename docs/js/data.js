@@ -152,6 +152,34 @@ export async function loadDraftHistory() {
     return data;
 }
 
+export async function loadAchievements(league) {
+    const key = `${league}_achievements`;
+    if (state.loaded.has(key)) return state.achievements[league];
+    state.loaded.add(key);
+    try {
+        const data = await fetch(`${GENERATED}/${league}_achievements.json`).then(r => r.json());
+        state.achievements[league] = data;
+        return data;
+    } catch (err) {
+        state.loaded.delete(key);
+        throw err;
+    }
+}
+
+export async function loadSingleGameRecords(league) {
+    const key = `${league}_single_game_records`;
+    if (state.loaded.has(key)) return state.singleGameRecords[league];
+    state.loaded.add(key);
+    try {
+        const data = await fetch(`${GENERATED}/${league}_single_game_records.json`).then(r => r.json());
+        state.singleGameRecords[league] = data;
+        return data;
+    } catch (err) {
+        state.loaded.delete(key);
+        throw err;
+    }
+}
+
 export async function loadPlayoffBrackets(league) {
     const key = `${league}_playoff_brackets`;
     if (state.loaded.has(key)) return state.playoffBrackets[league];
