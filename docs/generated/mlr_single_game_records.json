@@ -1,0 +1,2100 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 3,
+        "tie_count": 21,
+        "most_recent": {
+          "id": 2397,
+          "season": "S11",
+          "session": 10,
+          "team": "SFG",
+          "location": "Away",
+          "opponent": "ATL"
+        }
+      },
+      "3B": {
+        "record": 2,
+        "tie_count": 54,
+        "most_recent": {
+          "id": 362,
+          "season": "S12",
+          "session": 13,
+          "team": "KCR",
+          "location": "Home",
+          "opponent": "HOU"
+        }
+      },
+      "Auto K": {
+        "record": 2,
+        "tie_count": 30,
+        "most_recent": {
+          "id": 309,
+          "season": "S8",
+          "session": 10,
+          "team": "PIT",
+          "location": "Away",
+          "opponent": "MIL"
+        }
+      },
+      "BB": {
+        "record": 3,
+        "tie_count": 56,
+        "most_recent": {
+          "id": 2752,
+          "season": "S12",
+          "session": 15,
+          "team": "KCR",
+          "location": "Away",
+          "opponent": "CLE"
+        }
+      },
+      "CS": {
+        "record": 2,
+        "tie_count": 22,
+        "most_recent": {
+          "id": 2889,
+          "season": "S12",
+          "session": 9,
+          "team": "TBR",
+          "location": "Away",
+          "opponent": "SEA"
+        }
+      },
+      "FO": {
+        "record": 4,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 65,
+          "season": "S10",
+          "session": 15,
+          "team": "PHI",
+          "location": "Away",
+          "opponent": "FLA"
+        }
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 2668,
+            "season": "S10",
+            "session": 15,
+            "team": "MTL",
+            "location": "Home",
+            "opponent": "SFG"
+          }
+        ]
+      },
+      "H": {
+        "record": 4,
+        "tie_count": 43,
+        "most_recent": {
+          "id": 2942,
+          "season": "S12",
+          "session": 6,
+          "team": "ATL",
+          "location": "Away",
+          "opponent": "SDP"
+        }
+      },
+      "HR": {
+        "record": 3,
+        "tie_count": 12,
+        "most_recent": {
+          "id": 530,
+          "season": "S12",
+          "session": 15,
+          "team": "MIN",
+          "location": "Home",
+          "opponent": "SEA"
+        }
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 10,
+            "season": "S3",
+            "session": 8,
+            "team": "ARI",
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 2107,
+            "season": "S1",
+            "session": 2,
+            "team": "MIL",
+            "location": "Away",
+            "opponent": "ATL"
+          }
+        ]
+      },
+      "PA": {
+        "record": 6,
+        "tie_count": 19,
+        "most_recent": {
+          "id": 3037,
+          "season": "S11",
+          "session": 9,
+          "team": "DET",
+          "location": "Away",
+          "opponent": "MIN"
+        }
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 2987,
+            "season": "S10",
+            "session": 15,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "COL"
+          }
+        ]
+      },
+      "R": {
+        "record": 4,
+        "tie_count": 9,
+        "most_recent": {
+          "id": 1824,
+          "season": "S12",
+          "session": 3,
+          "team": "DET",
+          "location": "Away",
+          "opponent": "HOU"
+        }
+      },
+      "RBI": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 71,
+            "season": "S4",
+            "session": 10,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 6.516130310057162,
+        "holders": [
+          {
+            "id": 71,
+            "season": "S4",
+            "session": 10,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 622,
+            "season": "S11",
+            "session": 7,
+            "team": "BOS",
+            "location": "Home",
+            "opponent": "CWS"
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 2868,
+            "season": "S10",
+            "session": 8,
+            "team": "ANA",
+            "location": "Home",
+            "opponent": "PIT"
+          },
+          {
+            "id": 2589,
+            "season": "S10",
+            "session": 6,
+            "team": "BAL",
+            "location": "Away",
+            "opponent": "BOS"
+          },
+          {
+            "id": 2225,
+            "season": "S8",
+            "session": 12,
+            "team": "OAK",
+            "location": "Away",
+            "opponent": "SEA"
+          },
+          {
+            "id": 541,
+            "season": "S4",
+            "session": 14,
+            "team": "ANA",
+            "location": "Home",
+            "opponent": "KCR"
+          }
+        ]
+      },
+      "SO": {
+        "record": 4,
+        "tie_count": 15,
+        "most_recent": {
+          "id": 5,
+          "season": "S12",
+          "session": 11,
+          "team": "TEX",
+          "location": "Away",
+          "opponent": "CHC"
+        }
+      },
+      "TB": {
+        "record": 14,
+        "holders": [
+          {
+            "id": 2487,
+            "season": "S8",
+            "session": 10,
+            "team": "OAK",
+            "location": "Away",
+            "opponent": "ANA"
+          },
+          {
+            "id": 56,
+            "season": "S2",
+            "session": 8,
+            "team": "TOR",
+            "location": "Away",
+            "opponent": "MIN (S1-2)"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.666419209793279,
+        "holders": [
+          {
+            "id": 71,
+            "season": "S4",
+            "session": 10,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.9265,
+        "holders": [
+          {
+            "id": 3056,
+            "season": "S10",
+            "session": 16,
+            "team": "ATL",
+            "location": "Home",
+            "opponent": "PHI"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 100,
+            "season": "S9",
+            "session": 10,
+            "team": "DET",
+            "location": "Home",
+            "opponent": "CHC"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 23,
+        "holders": [
+          {
+            "id": 219,
+            "season": "S10",
+            "session": 15,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "COL"
+          }
+        ]
+      },
+      "3B": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 527,
+            "season": "S5",
+            "session": 15,
+            "team": "DET",
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 12,
+        "holders": [
+          {
+            "id": 1692,
+            "season": "S9",
+            "session": 12,
+            "team": "CIN",
+            "location": "Away",
+            "opponent": "STL"
+          },
+          {
+            "id": 265,
+            "season": "S7",
+            "session": 1,
+            "team": "MIN",
+            "location": "Away",
+            "opponent": "CLE"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 199,
+            "season": "S3",
+            "session": 9,
+            "team": "CIN",
+            "location": "Home",
+            "opponent": "OAK"
+          },
+          {
+            "id": 199,
+            "season": "S3",
+            "session": 3,
+            "team": "ATL",
+            "location": "Away",
+            "opponent": "COL"
+          }
+        ]
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 1843,
+            "season": "S11",
+            "session": 12,
+            "team": "PIT",
+            "location": "Home",
+            "opponent": "STL"
+          },
+          {
+            "id": 112,
+            "season": "S5",
+            "session": 10,
+            "team": "HOU",
+            "location": "Home",
+            "opponent": "DET"
+          },
+          {
+            "id": 22,
+            "season": "S4",
+            "session": 9,
+            "team": "BOS",
+            "location": "Home",
+            "opponent": "NYY"
+          }
+        ]
+      },
+      "BF": {
+        "record": 46,
+        "holders": [
+          {
+            "id": 2892,
+            "season": "S9",
+            "session": 4,
+            "team": "TBR",
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "CS": {
+        "record": 3,
+        "tie_count": 17,
+        "most_recent": {
+          "id": 610,
+          "season": "S12",
+          "session": 13,
+          "team": "DET",
+          "location": "Home",
+          "opponent": "SEA"
+        }
+      },
+      "DP": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 219,
+            "season": "S10",
+            "session": 15,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "COL"
+          },
+          {
+            "id": 76,
+            "season": "S7",
+            "session": 13,
+            "team": "COL",
+            "location": "Away",
+            "opponent": "ARI"
+          }
+        ]
+      },
+      "ER": {
+        "record": 14,
+        "holders": [
+          {
+            "id": 3235,
+            "season": "S12",
+            "session": 5,
+            "team": "CIN",
+            "location": "Home",
+            "opponent": "CHC"
+          }
+        ]
+      },
+      "FO": {
+        "record": 12,
+        "holders": [
+          {
+            "id": 37,
+            "season": "S10",
+            "session": 15,
+            "team": "FLA",
+            "location": "Home",
+            "opponent": "PHI"
+          },
+          {
+            "id": 2991,
+            "season": "S10",
+            "session": 11,
+            "team": "NYM",
+            "location": "Home",
+            "opponent": "PIT"
+          }
+        ]
+      },
+      "H": {
+        "record": 15,
+        "holders": [
+          {
+            "id": 100,
+            "season": "S9",
+            "session": 10,
+            "team": "DET",
+            "location": "Home",
+            "opponent": "CHC"
+          },
+          {
+            "id": 758,
+            "season": "S5",
+            "session": 2,
+            "team": "STL",
+            "location": "Home",
+            "opponent": "MIN"
+          },
+          {
+            "id": 2075,
+            "season": "S2",
+            "session": 14,
+            "team": "MIL",
+            "location": "Home",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 198,
+            "season": "S8",
+            "session": 9,
+            "team": "STL",
+            "location": "Home",
+            "opponent": "MIN"
+          },
+          {
+            "id": 74,
+            "season": "S7",
+            "session": 15,
+            "team": "CIN",
+            "location": "Home",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 181,
+            "season": "S5",
+            "session": 1,
+            "team": "SDP",
+            "location": "Away",
+            "opponent": "PIT"
+          }
+        ]
+      },
+      "IP": {
+        "record": "11.0",
+        "holders": [
+          {
+            "id": 219,
+            "season": "S10",
+            "session": 15,
+            "team": "CHC",
+            "location": "Away",
+            "opponent": "COL"
+          },
+          {
+            "id": 714,
+            "season": "S9",
+            "session": 4,
+            "team": "TOR",
+            "location": "Away",
+            "opponent": "TBR"
+          },
+          {
+            "id": 2892,
+            "season": "S9",
+            "session": 4,
+            "team": "TBR",
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "id": 39,
+            "season": "S1",
+            "session": 4,
+            "team": "HOU",
+            "location": "Home",
+            "opponent": "ATL"
+          }
+        ]
+      },
+      "PO": {
+        "record": 11,
+        "holders": [
+          {
+            "id": 301,
+            "season": "S12",
+            "session": 12,
+            "team": "CLE",
+            "location": "Away",
+            "opponent": "DET"
+          },
+          {
+            "id": 1759,
+            "season": "S11",
+            "session": 5,
+            "team": "NYY",
+            "location": "Home",
+            "opponent": "CLE"
+          },
+          {
+            "id": 605,
+            "season": "S7",
+            "session": 15,
+            "team": "OAK",
+            "location": "Away",
+            "opponent": "DET"
+          },
+          {
+            "id": 1695,
+            "season": "S5",
+            "session": 8,
+            "team": "MIN",
+            "location": "Home",
+            "opponent": "ARI"
+          },
+          {
+            "id": 320,
+            "season": "S3",
+            "session": 8,
+            "team": "SDP",
+            "location": "Home",
+            "opponent": "SFG"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -6.200851115868412,
+        "holders": [
+          {
+            "id": 1692,
+            "season": "S5",
+            "session": 6,
+            "team": "CIN",
+            "location": "Away",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 13,
+        "holders": [
+          {
+            "id": 2892,
+            "season": "S9",
+            "session": 4,
+            "team": "TBR",
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "SB": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 273,
+            "season": "S6",
+            "session": 8,
+            "team": "COL",
+            "location": "Home",
+            "opponent": "BAL"
+          }
+        ]
+      },
+      "SO": {
+        "record": 19,
+        "holders": [
+          {
+            "id": 714,
+            "season": "S9",
+            "session": 4,
+            "team": "TOR",
+            "location": "Away",
+            "opponent": "TBR"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7766717001299954,
+        "holders": [
+          {
+            "id": 714,
+            "season": "S9",
+            "session": 4,
+            "team": "TOR",
+            "location": "Away",
+            "opponent": "TBR"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.8242,
+        "holders": [
+          {
+            "id": 353,
+            "season": "S3",
+            "session": 10,
+            "team": "STL",
+            "location": "Home",
+            "opponent": "LAD"
+          }
+        ]
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 10,
+            "location": "Away",
+            "opponent": "DET"
+          }
+        ]
+      },
+      "3B": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "TOR",
+            "season": "S5",
+            "session": 15,
+            "location": "Away",
+            "opponent": "DET"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "MIL",
+            "season": "S2",
+            "session": 18,
+            "location": "Home",
+            "opponent": "STL"
+          }
+        ]
+      },
+      "BB": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "CS": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "BAL",
+            "season": "S10",
+            "session": 3,
+            "location": "Away",
+            "opponent": "OAK"
+          },
+          {
+            "team": "BAL",
+            "season": "S9",
+            "session": 16,
+            "location": "Home",
+            "opponent": "BOS"
+          },
+          {
+            "team": "BAL",
+            "season": "S9",
+            "session": 7,
+            "location": "Away",
+            "opponent": "BOS"
+          },
+          {
+            "team": "SDP",
+            "season": "S6",
+            "session": 10,
+            "location": "Home",
+            "opponent": "LAD"
+          }
+        ]
+      },
+      "FO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "PHI",
+            "season": "S10",
+            "session": 15,
+            "location": "Away",
+            "opponent": "FLA"
+          },
+          {
+            "team": "PIT",
+            "season": "S10",
+            "session": 11,
+            "location": "Away",
+            "opponent": "NYM"
+          },
+          {
+            "team": "LAD",
+            "season": "S3",
+            "session": 6,
+            "location": "Home",
+            "opponent": "NYM"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "STL",
+            "season": "S12",
+            "session": 3,
+            "location": "Away",
+            "opponent": "CHC"
+          },
+          {
+            "team": "COL",
+            "season": "S10",
+            "session": 15,
+            "location": "Home",
+            "opponent": "CHC"
+          },
+          {
+            "team": "ARI",
+            "season": "S7",
+            "session": 13,
+            "location": "Home",
+            "opponent": "COL"
+          },
+          {
+            "team": "BOS",
+            "season": "S7",
+            "session": 10,
+            "location": "Home",
+            "opponent": "TEX"
+          },
+          {
+            "team": "CWS",
+            "season": "S7",
+            "session": 5,
+            "location": "Away",
+            "opponent": "DET"
+          }
+        ]
+      },
+      "H": {
+        "record": 22,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 5,
+            "location": "Away",
+            "opponent": "STL"
+          },
+          {
+            "team": "CHC",
+            "season": "S7",
+            "session": 13,
+            "location": "Home",
+            "opponent": "ATL"
+          },
+          {
+            "team": "KCR",
+            "season": "S7",
+            "session": 9,
+            "location": "Away",
+            "opponent": "DET"
+          },
+          {
+            "team": "DET",
+            "season": "S7",
+            "session": 6,
+            "location": "Away",
+            "opponent": "TEX"
+          },
+          {
+            "team": "CLE",
+            "season": "S4",
+            "session": 5,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "OAK",
+            "season": "S7",
+            "session": 16,
+            "location": "Home",
+            "opponent": "SEA"
+          },
+          {
+            "team": "PIT",
+            "season": "S5",
+            "session": 1,
+            "location": "Home",
+            "opponent": "SDP"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "ATL",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "HOU"
+          },
+          {
+            "team": "MIL",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "ATL"
+          }
+        ]
+      },
+      "PA": {
+        "record": 50,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 2,
+            "location": "Home",
+            "opponent": "STL"
+          },
+          {
+            "team": "STL",
+            "season": "S9",
+            "session": 2,
+            "location": "Away",
+            "opponent": "CHC"
+          },
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "PO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S11",
+            "session": 9,
+            "location": "Home",
+            "opponent": "DET"
+          },
+          {
+            "team": "ARI",
+            "season": "S5",
+            "session": 8,
+            "location": "Away",
+            "opponent": "MIN"
+          }
+        ]
+      },
+      "R": {
+        "record": 22,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 22,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 18.662346521145977,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "TOR",
+            "season": "S9",
+            "session": 4,
+            "location": "Away",
+            "opponent": "TBR"
+          }
+        ]
+      },
+      "SB": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "BAL",
+            "season": "S6",
+            "session": 8,
+            "location": "Away",
+            "opponent": "COL"
+          }
+        ]
+      },
+      "SO": {
+        "record": 19,
+        "holders": [
+          {
+            "team": "TBR",
+            "season": "S9",
+            "session": 4,
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "TB": {
+        "record": 45,
+        "holders": [
+          {
+            "team": "PIT",
+            "season": "S10",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SDP"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 2.0624165210498044,
+        "holders": [
+          {
+            "team": "MIN",
+            "season": "S4",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.5842,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S12",
+            "session": 7,
+            "location": "Home",
+            "opponent": "MTL"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "DET",
+            "season": "S9",
+            "session": 10,
+            "location": "Home",
+            "opponent": "CHC"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 23,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S10",
+            "session": 15,
+            "location": "Away",
+            "opponent": "COL"
+          }
+        ]
+      },
+      "3B": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "DET",
+            "season": "S5",
+            "session": 15,
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "STL",
+            "season": "S12",
+            "session": 5,
+            "location": "Home",
+            "opponent": "MIL"
+          },
+          {
+            "team": "HOU",
+            "season": "S9",
+            "session": 7,
+            "location": "Home",
+            "opponent": "KCR"
+          },
+          {
+            "team": "DET",
+            "season": "S9",
+            "session": 3,
+            "location": "Away",
+            "opponent": "OAK"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "SEA (S2)",
+            "season": "S2",
+            "session": 18,
+            "location": "Home",
+            "opponent": "HOU"
+          }
+        ]
+      },
+      "BB": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "HOU",
+            "season": "S4",
+            "session": 3,
+            "location": "Home",
+            "opponent": "MIN"
+          }
+        ]
+      },
+      "BF": {
+        "record": 50,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 2,
+            "location": "Home",
+            "opponent": "STL"
+          },
+          {
+            "team": "STL",
+            "season": "S9",
+            "session": 2,
+            "location": "Away",
+            "opponent": "CHC"
+          },
+          {
+            "team": "HOU",
+            "season": "S4",
+            "session": 3,
+            "location": "Home",
+            "opponent": "MIN"
+          }
+        ]
+      },
+      "CS": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "OAK",
+            "season": "S10",
+            "session": 3,
+            "location": "Home",
+            "opponent": "BAL"
+          },
+          {
+            "team": "BOS",
+            "season": "S9",
+            "session": 16,
+            "location": "Away",
+            "opponent": "BAL"
+          },
+          {
+            "team": "BOS",
+            "season": "S9",
+            "session": 7,
+            "location": "Home",
+            "opponent": "BAL"
+          },
+          {
+            "team": "LAD",
+            "season": "S6",
+            "session": 10,
+            "location": "Away",
+            "opponent": "SDP"
+          }
+        ]
+      },
+      "DP": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S12",
+            "session": 3,
+            "location": "Home",
+            "opponent": "STL"
+          },
+          {
+            "team": "CHC",
+            "season": "S10",
+            "session": 15,
+            "location": "Away",
+            "opponent": "COL"
+          },
+          {
+            "team": "COL",
+            "season": "S7",
+            "session": 13,
+            "location": "Away",
+            "opponent": "ARI"
+          },
+          {
+            "team": "TEX",
+            "season": "S7",
+            "session": 10,
+            "location": "Away",
+            "opponent": "BOS"
+          },
+          {
+            "team": "DET",
+            "season": "S7",
+            "session": 5,
+            "location": "Home",
+            "opponent": "CWS"
+          }
+        ]
+      },
+      "ER": {
+        "record": 22,
+        "holders": [
+          {
+            "team": "HOU",
+            "season": "S4",
+            "session": 3,
+            "location": "Home",
+            "opponent": "MIN"
+          }
+        ]
+      },
+      "FO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "FLA",
+            "season": "S10",
+            "session": 15,
+            "location": "Home",
+            "opponent": "PHI"
+          },
+          {
+            "team": "NYM",
+            "season": "S10",
+            "session": 11,
+            "location": "Home",
+            "opponent": "PIT"
+          },
+          {
+            "team": "NYM",
+            "season": "S3",
+            "session": 6,
+            "location": "Away",
+            "opponent": "LAD"
+          }
+        ]
+      },
+      "H": {
+        "record": 22,
+        "holders": [
+          {
+            "team": "HOU",
+            "season": "S4",
+            "session": 3,
+            "location": "Home",
+            "opponent": "MIN"
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "STL",
+            "season": "S9",
+            "session": 5,
+            "location": "Home",
+            "opponent": "CHC"
+          },
+          {
+            "team": "ATL",
+            "season": "S7",
+            "session": 13,
+            "location": "Away",
+            "opponent": "CHC"
+          },
+          {
+            "team": "DET",
+            "season": "S7",
+            "session": 9,
+            "location": "Home",
+            "opponent": "KCR"
+          },
+          {
+            "team": "TEX",
+            "season": "S7",
+            "session": 6,
+            "location": "Home",
+            "opponent": "DET"
+          },
+          {
+            "team": "HOU",
+            "season": "S4",
+            "session": 5,
+            "location": "Home",
+            "opponent": "CLE"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "SEA",
+            "season": "S7",
+            "session": 16,
+            "location": "Away",
+            "opponent": "OAK"
+          },
+          {
+            "team": "SDP",
+            "season": "S5",
+            "session": 1,
+            "location": "Away",
+            "opponent": "PIT"
+          }
+        ]
+      },
+      "IP": {
+        "record": "13.0",
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 2,
+            "location": "Home",
+            "opponent": "STL"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "HOU",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "ATL"
+          },
+          {
+            "team": "ATL",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "MIL"
+          }
+        ]
+      },
+      "PO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "DET",
+            "season": "S11",
+            "session": 9,
+            "location": "Away",
+            "opponent": "MIN"
+          },
+          {
+            "team": "MIN",
+            "season": "S5",
+            "session": 8,
+            "location": "Home",
+            "opponent": "ARI"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -6.426234765875561,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 2,
+            "location": "Home",
+            "opponent": "STL"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "TBR",
+            "season": "S9",
+            "session": 4,
+            "location": "Home",
+            "opponent": "TOR"
+          }
+        ]
+      },
+      "SB": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "COL",
+            "season": "S6",
+            "session": 8,
+            "location": "Home",
+            "opponent": "BAL"
+          }
+        ]
+      },
+      "SO": {
+        "record": 19,
+        "holders": [
+          {
+            "team": "TOR",
+            "season": "S9",
+            "session": 4,
+            "location": "Away",
+            "opponent": "TBR"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.8472267322824428,
+        "holders": [
+          {
+            "team": "CHC",
+            "season": "S9",
+            "session": 2,
+            "location": "Home",
+            "opponent": "STL"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 2.1198,
+        "holders": [
+          {
+            "team": "NYY",
+            "season": "S3",
+            "session": 12,
+            "location": "Home",
+            "opponent": "FLA"
+          }
+        ]
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "ANA",
+            "home": "KCR",
+            "season": "S4",
+            "session": 1
+          }
+        ]
+      },
+      "3B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "CIN",
+            "home": "CHC",
+            "season": "S6",
+            "session": 7
+          },
+          {
+            "away": "TOR",
+            "home": "DET",
+            "season": "S5",
+            "session": 15
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "ARI",
+            "home": "DET",
+            "season": "S3",
+            "session": 13
+          },
+          {
+            "away": "STL",
+            "home": "MIL",
+            "season": "S2",
+            "session": 18
+          }
+        ]
+      },
+      "BB": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "FLA",
+            "season": "S5",
+            "session": 10
+          }
+        ]
+      },
+      "CS": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "NYM",
+            "home": "BAL",
+            "season": "S6",
+            "session": 14
+          }
+        ]
+      },
+      "FO": {
+        "record": 21,
+        "holders": [
+          {
+            "away": "PIT",
+            "home": "STL",
+            "season": "S9",
+            "session": 7
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "TEX",
+            "home": "BOS",
+            "season": "S7",
+            "session": 10
+          }
+        ]
+      },
+      "H": {
+        "record": 30,
+        "holders": [
+          {
+            "away": "MIN",
+            "home": "HOU",
+            "season": "S4",
+            "session": 3
+          }
+        ]
+      },
+      "HR": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "BOS",
+            "home": "CLE",
+            "season": "S9",
+            "session": 12
+          }
+        ]
+      },
+      "IBB": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "CWS",
+            "home": "DET",
+            "season": "S7",
+            "session": 5
+          },
+          {
+            "away": "SDP",
+            "home": "PIT",
+            "season": "S5",
+            "session": 1
+          }
+        ]
+      },
+      "LGO": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "ATL",
+            "home": "HOU",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "PA": {
+        "record": 100,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "PO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "MIL",
+            "season": "S11",
+            "session": 7
+          }
+        ]
+      },
+      "R": {
+        "record": 24,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          },
+          {
+            "away": "MIN",
+            "home": "HOU",
+            "season": "S4",
+            "session": 3
+          }
+        ]
+      },
+      "RBI": {
+        "record": 24,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          },
+          {
+            "away": "MIN",
+            "home": "HOU",
+            "season": "S4",
+            "session": 3
+          }
+        ]
+      },
+      "RE24": {
+        "record": 17.716949152542373,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          }
+        ]
+      },
+      "RGO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "TOR",
+            "home": "TBR",
+            "season": "S9",
+            "session": 4
+          }
+        ]
+      },
+      "SB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          }
+        ]
+      },
+      "SO": {
+        "record": 28,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "TB": {
+        "record": 67,
+        "holders": [
+          {
+            "away": "CIN",
+            "home": "STL",
+            "season": "S9",
+            "session": 12
+          }
+        ]
+      },
+      "WAR": {
+        "record": 2.0562524752513647,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          }
+        ]
+      },
+      "WPA": {
+        "record": 2.5638,
+        "holders": [
+          {
+            "away": "MTL",
+            "home": "CHC",
+            "season": "S12",
+            "session": 7
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "ANA",
+            "home": "KCR",
+            "season": "S4",
+            "session": 1
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 44,
+        "holders": [
+          {
+            "away": "CHC",
+            "home": "COL",
+            "season": "S10",
+            "session": 15
+          }
+        ]
+      },
+      "3B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "CIN",
+            "home": "CHC",
+            "season": "S6",
+            "session": 7
+          },
+          {
+            "away": "TOR",
+            "home": "DET",
+            "season": "S5",
+            "session": 15
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 22,
+        "holders": [
+          {
+            "away": "ANA",
+            "home": "HOU",
+            "season": "S11",
+            "session": 12
+          },
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "HOU",
+            "home": "SEA (S2)",
+            "season": "S2",
+            "session": 18
+          }
+        ]
+      },
+      "BB": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "FLA",
+            "season": "S5",
+            "session": 10
+          }
+        ]
+      },
+      "BF": {
+        "record": 100,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "CS": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "NYM",
+            "home": "BAL",
+            "season": "S6",
+            "session": 14
+          }
+        ]
+      },
+      "DP": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "TEX",
+            "home": "BOS",
+            "season": "S7",
+            "session": 10
+          }
+        ]
+      },
+      "ER": {
+        "record": 24,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          },
+          {
+            "away": "MIN",
+            "home": "HOU",
+            "season": "S4",
+            "session": 3
+          }
+        ]
+      },
+      "FO": {
+        "record": 21,
+        "holders": [
+          {
+            "away": "PIT",
+            "home": "STL",
+            "season": "S9",
+            "session": 7
+          }
+        ]
+      },
+      "H": {
+        "record": 30,
+        "holders": [
+          {
+            "away": "MIN",
+            "home": "HOU",
+            "season": "S4",
+            "session": 3
+          }
+        ]
+      },
+      "HR": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "BOS",
+            "home": "CLE",
+            "season": "S9",
+            "session": 12
+          }
+        ]
+      },
+      "IBB": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "CWS",
+            "home": "DET",
+            "season": "S7",
+            "session": 5
+          },
+          {
+            "away": "SDP",
+            "home": "PIT",
+            "season": "S5",
+            "session": 1
+          }
+        ]
+      },
+      "IP": {
+        "record": "25.1",
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "LGO": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "ATL",
+            "home": "HOU",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "PO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "MIL",
+            "season": "S11",
+            "session": 7
+          }
+        ]
+      },
+      "RE24": {
+        "record": -11.44407912079222,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "RGO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "TOR",
+            "home": "TBR",
+            "season": "S9",
+            "session": 4
+          }
+        ]
+      },
+      "SB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "SFG",
+            "home": "LAD",
+            "season": "S6",
+            "session": 3
+          }
+        ]
+      },
+      "SO": {
+        "record": 28,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.5536144234689953,
+        "holders": [
+          {
+            "away": "STL",
+            "home": "CHC",
+            "season": "S9",
+            "session": 2
+          }
+        ]
+      },
+      "WPA": {
+        "record": 3.7401,
+        "holders": [
+          {
+            "away": "FLA",
+            "home": "NYY",
+            "season": "S3",
+            "session": 12
+          }
+        ]
+      }
+    }
+  }
+}

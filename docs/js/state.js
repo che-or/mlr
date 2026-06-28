@@ -38,6 +38,12 @@ export const state = {
     // Lazy-loaded playoff bracket data — keyed by league ('mlr', 'milr')
     playoffBrackets: {},
 
+    // Lazy-loaded single-game records — keyed by league ('mlr', 'mlr_playoff')
+    singleGameRecords: {},
+
+    // Lazy-loaded single-game achievements — keyed by league ('mlr', 'mlr_playoff')
+    achievements: {},
+
     // UI state
     currentPlayerId: null,
     lastTeamStatsUrl: '#/team-stats',
