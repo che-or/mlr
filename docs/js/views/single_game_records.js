@@ -102,18 +102,18 @@ function buildAchievementsTable(mlrList, poList, key) {
     const none = `<td colspan="3" style="color:var(--subtle-text-color);font-weight:normal;font-style:italic;text-align:center">None</td>`;
 
     const len = Math.max(mlrList.length, poList.length);
-    let body = '';
+    let desktopBody = '';
     if (len === 0) {
-        body = `<tr><td colspan="7" style="text-align:left;color:var(--subtle-text-color)">None recorded</td></tr>`;
+        desktopBody = `<tr><td colspan="7" style="text-align:left;color:var(--subtle-text-color)">None recorded</td></tr>`;
     } else {
         for (let i = 0; i < len; i++) {
             const mlrCells = (i === 0 && mlrList.length === 0) ? none : achCells(mlrList[i], key);
             const poCells  = (i === 0 && poList.length === 0)  ? none : achCells(poList[i], key);
-            body += `<tr>${mlrCells}${sep}${poCells}</tr>`;
+            desktopBody += `<tr>${mlrCells}${sep}${poCells}</tr>`;
         }
     }
 
-    return `<table class="stats-table" style="font-size:0.9em;width:100%;table-layout:fixed"><thead>
+    const desktopTable = `<table class="stats-table" style="font-size:0.9em;width:100%;table-layout:fixed"><thead>
         <tr>
             <th colspan="3" style="text-align:center;width:calc(50% - 4px)">MLR</th>
             <th style="padding:0;width:8px"></th>
@@ -122,7 +122,24 @@ function buildAchievementsTable(mlrList, poList, key) {
             <th>${nameHeader}</th><th style="text-align:left">Game</th><th>${detailHeader}</th>
             <th style="padding:0"></th>
             <th>${nameHeader}</th><th style="text-align:left">Game</th><th>${detailHeader}</th>
-        </tr></thead><tbody>${body}</tbody></table>`;
+        </tr></thead><tbody>${desktopBody}</tbody></table>`;
+
+    function mobileAchBody(list) {
+        if (list.length === 0) return `<tr><td colspan="3" style="color:var(--subtle-text-color);font-weight:normal;font-style:italic;text-align:center">None</td></tr>`;
+        return list.map(h => `<tr>${achCells(h, key)}</tr>`).join('');
+    }
+
+    const mobileTable = `
+        <p class="sgr-section-label">MLR</p>
+        <table class="stats-table" style="font-size:0.9em;width:100%"><thead>
+            <tr><th>${nameHeader}</th><th style="text-align:left">Game</th><th>${detailHeader}</th></tr>
+        </thead><tbody>${mobileAchBody(mlrList)}</tbody></table>
+        <p class="sgr-section-label" style="margin-top:1em">Playoffs</p>
+        <table class="stats-table" style="font-size:0.9em;width:100%"><thead>
+            <tr><th>${nameHeader}</th><th style="text-align:left">Game</th><th>${detailHeader}</th></tr>
+        </thead><tbody>${mobileAchBody(poList)}</tbody></table>`;
+
+    return `<div class="sgr-desktop">${desktopTable}</div><div class="sgr-mobile">${mobileTable}</div>`;
 }
 
 function buildTable(mlrRecords, poRecords, opt) {
@@ -131,15 +148,16 @@ function buildTable(mlrRecords, poRecords, opt) {
 
     const holderHeader = isCombined ? 'Game' : (isPlayer ? 'Player (game)' : 'Team (game)');
 
-    let html = `<table class="stats-table" style="font-size:0.9em"><thead><tr>
-        <th>Stat</th>
-        <th>MLR</th>
-        <th style="text-align:left">${holderHeader}</th>
-        <th>Playoffs</th>
-        <th style="text-align:left">${holderHeader}</th>
-    </tr></thead><tbody>`;
-
     const stats = Object.keys(mlrRecords).sort();
+
+    const nameFn = isPlayer
+        ? (h => playerLink(h.id))
+        : (h => teamLink(h.team, h.season));
+
+    let desktopBody = '';
+    let mlrMobileBody = '';
+    let poMobileBody = '';
+
     for (const stat of stats) {
         const mlr = mlrRecords[stat];
         const po  = poRecords[stat];
@@ -151,22 +169,50 @@ function buildTable(mlrRecords, poRecords, opt) {
             mlrHolders = combinedHolderLines(mlr);
             poHolders  = combinedHolderLines(po);
         } else {
-            const nameFn = isPlayer
-                ? (h => playerLink(h.id))
-                : (h => teamLink(h.team, h.season));
             mlrHolders = holderLines(mlr, nameFn);
             poHolders  = holderLines(po, nameFn);
         }
 
-        html += `<tr>
+        desktopBody += `<tr>
             <td>${stat}</td>
             <td><strong>${mlrVal}</strong></td>
             <td style="text-align:left">${mlrHolders}</td>
             <td><strong>${poVal}</strong></td>
             <td style="text-align:left">${poHolders}</td>
         </tr>`;
+
+        mlrMobileBody += `<tr>
+            <td>${stat}</td>
+            <td><strong>${mlrVal}</strong></td>
+            <td style="text-align:left">${mlrHolders}</td>
+        </tr>`;
+
+        poMobileBody += `<tr>
+            <td>${stat}</td>
+            <td><strong>${poVal}</strong></td>
+            <td style="text-align:left">${poHolders}</td>
+        </tr>`;
     }
-    return html + '</tbody></table>';
+
+    const desktopTable = `<table class="stats-table" style="font-size:0.9em"><thead><tr>
+        <th>Stat</th>
+        <th>MLR</th>
+        <th style="text-align:left">${holderHeader}</th>
+        <th>Playoffs</th>
+        <th style="text-align:left">${holderHeader}</th>
+    </tr></thead><tbody>${desktopBody}</tbody></table>`;
+
+    const mobileTable = `
+        <p class="sgr-section-label">MLR</p>
+        <table class="stats-table" style="font-size:0.9em;width:100%"><thead>
+            <tr><th>Stat</th><th>Record</th><th style="text-align:left">${holderHeader}</th></tr>
+        </thead><tbody>${mlrMobileBody}</tbody></table>
+        <p class="sgr-section-label" style="margin-top:1em">Playoffs</p>
+        <table class="stats-table" style="font-size:0.9em;width:100%"><thead>
+            <tr><th>Stat</th><th>Record</th><th style="text-align:left">${holderHeader}</th></tr>
+        </thead><tbody>${poMobileBody}</tbody></table>`;
+
+    return `<div class="sgr-desktop">${desktopTable}</div><div class="sgr-mobile">${mobileTable}</div>`;
 }
 
 export async function renderSingleGameRecords() {
@@ -192,7 +238,16 @@ export async function renderSingleGameRecords() {
     </select>`;
 
     container.innerHTML = `
-        <style>#sgr-table-container .stats-table td { vertical-align:top }</style>
+        <style>
+            #sgr-table-container .stats-table td { vertical-align:top }
+            .sgr-mobile { display:none }
+            .sgr-section-label { margin:0 0 4px; font-weight:bold; font-size:0.95em }
+            @media (max-width: 700px) {
+                .sgr-desktop { display:none }
+                .sgr-mobile { display:block }
+                .sgr-mobile .stats-table { white-space:normal }
+            }
+        </style>
         <h2 class="section-title">Single-Game Records</h2>
         <div style="margin:10px 0 16px">
             <label for="sgr-select" style="margin-right:6px">Record Board:</label>
