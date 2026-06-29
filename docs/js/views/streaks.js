@@ -3,29 +3,29 @@ import { getMlrLogoPair, getMlrTeamName, getFranchiseKey, recordFranchiseKey } f
 import { state } from '../state.js';
 
 const STREAK_OPTIONS = [
-    { value: 'consecutive_games_played', label: 'Consecutive Games Played',             unit: 'G'  },
-    { value: 'hitting_streak',           label: 'Hitting Streak',                       unit: 'G'  },
-    { value: 'onbase_streak',            label: 'On-Base Streak',                       unit: 'G'  },
-    { value: 'hr_streak',                 label: 'Consecutive Games with HR',            unit: 'G'  },
-    { value: 'consecutive_sb_streak',    label: 'Consecutive SB without CS',            unit: 'SB' },
-    { value: 'scoreless_innings',        label: 'Scoreless Innings Streak',             unit: 'IP' },
-    { value: 'bf_strikeout_streak',      label: 'Consecutive Pitcher Strikeouts',       unit: 'BF' },
-    { value: 'pa_hit_streak',            label: 'Consecutive PA with Hit',              unit: 'PA' },
-    { value: 'pa_onbase_streak',         label: 'Consecutive PA On Base',               unit: 'PA' },
-    { value: 'pa_hitless_streak',        label: 'Consecutive PA without Hit',           unit: 'PA' },
-    { value: 'pa_baseless_streak',       label: 'Consecutive PA without Reaching Base', unit: 'PA' },
-    { value: 'bf_no_hit_streak',         label: 'Consecutive BF without Hit Allowed',   unit: 'BF' },
-    { value: 'bf_no_baserunner_streak',  label: 'Consecutive BF without Baserunner',    unit: 'BF' },
-    { value: 'batter_diff_lt100',        label: 'Consecutive Guesses within 100',        unit: 'PA' },
-    { value: 'batter_diff_lt200',        label: 'Consecutive Guesses within 200',        unit: 'PA' },
-    { value: 'pitcher_diff_gt300',       label: 'Consecutive Pitches over 300 Away',     unit: 'BF' },
-    { value: 'pitcher_diff_gt400',       label: 'Consecutive Pitches over 400 Away',     unit: 'BF' },
-    { value: 'pitcher_win_streak',        label: 'Consecutive Pitcher Wins',             unit: 'W'  },
-    { value: 'pitcher_loss_streak',      label: 'Consecutive Pitcher Losses',           unit: 'L'  },
-    { value: 'pitcher_no_win_streak',    label: 'Pitcher Appearances without Win',      unit: 'G'  },
-    { value: 'pitcher_no_loss_streak',   label: 'Pitcher Appearances without Loss',     unit: 'G'  },
-    { value: 'team_win_streak',          label: 'Team Winning Streak',                  unit: 'G',  entityType: 'team' },
-    { value: 'team_loss_streak',         label: 'Team Losing Streak',                   unit: 'G',  entityType: 'team' },
+    { value: 'team_win_streak',          label: 'Winning Streak',                   unit: 'G',  entityType: 'team', group: 'Team'    },
+    { value: 'team_loss_streak',         label: 'Losing Streak',                    unit: 'G',  entityType: 'team', group: 'Team'    },
+    { value: 'consecutive_games_played', label: 'Games Played',                     unit: 'G'                     },
+    { value: 'hitting_streak',           label: 'Hitting Streak',                   unit: 'G',  group: 'Batting'  },
+    { value: 'onbase_streak',            label: 'On-Base Streak',                   unit: 'G',  group: 'Batting'  },
+    { value: 'hr_streak',                label: 'Games with HR',                    unit: 'G',  group: 'Batting'  },
+    { value: 'consecutive_sb_streak',    label: 'Successful SB',                    unit: 'SB', group: 'Batting'  },
+    { value: 'pa_hit_streak',            label: 'Hits (PA)',                        unit: 'PA', group: 'Batting'  },
+    { value: 'pa_onbase_streak',         label: 'On-Base (PA)',                     unit: 'PA', group: 'Batting'  },
+    { value: 'pa_hitless_streak',        label: 'Hitless (PA)',                     unit: 'PA', group: 'Batting'  },
+    { value: 'pa_baseless_streak',       label: 'Outs (PA)',                        unit: 'PA', group: 'Batting'  },
+    { value: 'batter_diff_lt100',        label: 'Diff < 100',                       unit: 'PA', group: 'Batting'  },
+    { value: 'batter_diff_lt200',        label: 'Diff < 200',                       unit: 'PA', group: 'Batting'  },
+    { value: 'scoreless_innings',        label: 'Scoreless Innings',                unit: 'IP', group: 'Pitching' },
+    { value: 'bf_strikeout_streak',      label: 'Strikeouts',                       unit: 'BF', group: 'Pitching' },
+    { value: 'bf_no_hit_streak',         label: 'Hitless (BF)',                     unit: 'BF', group: 'Pitching' },
+    { value: 'bf_no_baserunner_streak',  label: 'Outs Recorded',                    unit: 'BF', group: 'Pitching' },
+    { value: 'pitcher_diff_gt300',       label: 'Diff > 300',                       unit: 'BF', group: 'Pitching' },
+    { value: 'pitcher_diff_gt400',       label: 'Diff > 400',                       unit: 'BF', group: 'Pitching' },
+    { value: 'pitcher_win_streak',       label: 'Wins',                             unit: 'W',  group: 'Pitching' },
+    { value: 'pitcher_loss_streak',      label: 'Losses',                           unit: 'L',  group: 'Pitching' },
+    { value: 'pitcher_no_win_streak',    label: 'Winless Appearances',              unit: 'G',  group: 'Pitching' },
+    { value: 'pitcher_no_loss_streak',   label: 'Lossless Appearances',             unit: 'G',  group: 'Pitching' },
 ];
 
 function logoHtml(franchise, season) {
@@ -69,7 +69,8 @@ function teamLine(e) {
     const fk   = getFranchiseKey(e.team, e.season_end);
     const logo = logoHtml(fk, e.season_end);
     const name = getMlrTeamName(fk, e.season_end);
-    return `<span style="display:block;margin-bottom:3px">${logo}<strong>${name}</strong> (${periodStr(e)})</span>`;
+    const link = `<a href="#/team-stats?season=${e.season_end}&team=${encodeURIComponent(fk)}">${name}</a>`;
+    return `<span style="display:block;margin-bottom:3px">${logo}${link} (${periodStr(e)})</span>`;
 }
 
 function buildTableHtml(list, franchiseLookup, opt) {
@@ -193,9 +194,16 @@ export async function renderStreaks() {
     const pitching = state.stats['mlr_pitching'] || [];
     const franchiseLookup = buildFranchiseLookup(hitting, pitching);
 
-    const selectHtml = `<select id="streaks-select">
-        ${STREAK_OPTIONS.map(o => `<option value="${o.value}">${o.label}</option>`).join('')}
-    </select>`;
+    const urlParams = new URL('http://x/' + window.location.hash.slice(1));
+    const initialStreak = urlParams.searchParams.get('streak') || STREAK_OPTIONS[0].value;
+
+    const optionHtml = o => `<option value="${o.value}"${o.value === initialStreak ? ' selected' : ''}>${o.label}</option>`;
+    const ungroupedHtml = STREAK_OPTIONS.filter(o => !o.group).map(optionHtml).join('');
+    const groupedHtml = ['Team', 'Batting', 'Pitching'].map(g => {
+        const opts = STREAK_OPTIONS.filter(o => o.group === g).map(optionHtml).join('');
+        return `<optgroup label="${g}">${opts}</optgroup>`;
+    }).join('');
+    const selectHtml = `<select id="streaks-select">${ungroupedHtml}${groupedHtml}</select>`;
 
     container.innerHTML = `
         <style>
@@ -225,6 +233,9 @@ export async function renderStreaks() {
         wirePlayerLinks(tableContainer);
     }
 
-    sel.addEventListener('change', updateTable);
+    sel.addEventListener('change', () => {
+        history.replaceState(null, '', '#/streaks?streak=' + encodeURIComponent(sel.value));
+        updateTable();
+    });
     updateTable();
 }

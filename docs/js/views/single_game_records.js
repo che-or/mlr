@@ -233,8 +233,11 @@ export async function renderSingleGameRecords() {
         return;
     }
 
+    const urlParams = new URL('http://x/' + window.location.hash.slice(1));
+    const initialRecord = urlParams.searchParams.get('record') || OPTIONS[0].value;
+
     const selectHtml = `<select id="sgr-select">
-        ${OPTIONS.map(o => `<option value="${o.value}">${o.label}</option>`).join('')}
+        ${OPTIONS.map(o => `<option value="${o.value}"${o.value === initialRecord ? ' selected' : ''}>${o.label}</option>`).join('')}
     </select>`;
 
     container.innerHTML = `
@@ -290,6 +293,9 @@ export async function renderSingleGameRecords() {
         }
     }
 
-    sel.addEventListener('change', updateTable);
+    sel.addEventListener('change', () => {
+        history.replaceState(null, '', '#/single-game-records?record=' + encodeURIComponent(sel.value));
+        updateTable();
+    });
     updateTable();
 }

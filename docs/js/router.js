@@ -118,13 +118,13 @@ export function updateView() {
         return;
     }
 
-    if (hash === '#/single-game-records') {
+    if (hash.startsWith('#/single-game-records')) {
         show('singleGameRecords');
         renderSingleGameRecords();
         return;
     }
 
-    if (hash === '#/streaks') {
+    if (hash.startsWith('#/streaks')) {
         show('streaks');
         renderStreaks();
         return;
