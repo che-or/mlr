@@ -180,6 +180,20 @@ export async function loadSingleGameRecords(league) {
     }
 }
 
+export async function loadStreakRecords() {
+    const key = 'mlr_streak_records';
+    if (state.loaded.has(key)) return state.streakRecords;
+    state.loaded.add(key);
+    try {
+        const data = await fetch(`${GENERATED}/mlr_streak_records.json`).then(r => r.json());
+        state.streakRecords = data;
+        return data;
+    } catch (err) {
+        state.loaded.delete(key);
+        throw err;
+    }
+}
+
 export async function loadPlayoffBrackets(league) {
     const key = `${league}_playoff_brackets`;
     if (state.loaded.has(key)) return state.playoffBrackets[league];

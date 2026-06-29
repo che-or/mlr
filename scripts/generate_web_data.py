@@ -19,6 +19,7 @@ from get_single_game_stats import (
     get_single_game_records, get_team_game_records, get_combined_game_records,
 )
 from get_single_game_achievements import get_no_hitters, get_cycles, get_multi_hr_games
+from get_streak_records import get_streak_records
 
 def _drop_unused_columns(df):
     '''
@@ -292,6 +293,22 @@ def main():
             with open(p_ach, 'w') as f:
                 json.dump(achievements, f, indent=2)
             print(f'Achievements written to {p_ach}')
+
+            if league == 'mlr':
+                print('Computing streak records...')
+                # PA-level streaks need all-seasons gamelog; reload if sg_gamelog is current-season only
+                if not all_seasons and sg_caches_exist:
+                    print('Loading all mlr gamelogs for streak records...')
+                    streak_gamelog = _load_gamelogs(season, 'mlr', all_seasons=True)
+                    streak_gamelog = _add_re_column(streak_gamelog, 'mlr')
+                    streak_gamelog = _add_war_columns(streak_gamelog)
+                else:
+                    streak_gamelog = sg_gamelog
+                streak_recs = get_streak_records(streak_gamelog, hitting_game)
+                p_streaks = Path('../docs/generated/mlr_streak_records.json')
+                with open(p_streaks, 'w') as f:
+                    json.dump(streak_recs, f, indent=2)
+                print(f'Streak records written to {p_streaks}')
 
         # subrows are added after all aggregations so that things aren't counted twice
         hitting_stats = create_hitting_subrows(hitting_stats)
