@@ -304,7 +304,7 @@ def main():
                     streak_gamelog = _add_war_columns(streak_gamelog)
                 else:
                     streak_gamelog = sg_gamelog
-                streak_recs = get_streak_records(streak_gamelog, hitting_game)
+                streak_recs = get_streak_records(streak_gamelog, hitting_game, hitting_team_game_stats=hitting_team)
                 p_streaks = Path('../docs/generated/mlr_streak_records.json')
                 with open(p_streaks, 'w') as f:
                     json.dump(streak_recs, f, indent=2)

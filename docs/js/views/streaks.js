@@ -1,18 +1,31 @@
 import { loadStreakRecords, loadStats } from '../data.js';
-import { getMlrLogoPair, recordFranchiseKey } from '../utils.js';
+import { getMlrLogoPair, getMlrTeamName, getFranchiseKey, recordFranchiseKey } from '../utils.js';
 import { state } from '../state.js';
 
 const STREAK_OPTIONS = [
     { value: 'consecutive_games_played', label: 'Consecutive Games Played',             unit: 'G'  },
     { value: 'hitting_streak',           label: 'Hitting Streak',                       unit: 'G'  },
     { value: 'onbase_streak',            label: 'On-Base Streak',                       unit: 'G'  },
+    { value: 'hr_streak',                 label: 'Consecutive Games with HR',            unit: 'G'  },
+    { value: 'consecutive_sb_streak',    label: 'Consecutive SB without CS',            unit: 'SB' },
     { value: 'scoreless_innings',        label: 'Scoreless Innings Streak',             unit: 'IP' },
+    { value: 'bf_strikeout_streak',      label: 'Consecutive Pitcher Strikeouts',       unit: 'BF' },
     { value: 'pa_hit_streak',            label: 'Consecutive PA with Hit',              unit: 'PA' },
     { value: 'pa_onbase_streak',         label: 'Consecutive PA On Base',               unit: 'PA' },
     { value: 'pa_hitless_streak',        label: 'Consecutive PA without Hit',           unit: 'PA' },
     { value: 'pa_baseless_streak',       label: 'Consecutive PA without Reaching Base', unit: 'PA' },
     { value: 'bf_no_hit_streak',         label: 'Consecutive BF without Hit Allowed',   unit: 'BF' },
     { value: 'bf_no_baserunner_streak',  label: 'Consecutive BF without Baserunner',    unit: 'BF' },
+    { value: 'batter_diff_lt100',        label: 'Consecutive Guesses within 100',        unit: 'PA' },
+    { value: 'batter_diff_lt200',        label: 'Consecutive Guesses within 200',        unit: 'PA' },
+    { value: 'pitcher_diff_gt300',       label: 'Consecutive Pitches over 300 Away',     unit: 'BF' },
+    { value: 'pitcher_diff_gt400',       label: 'Consecutive Pitches over 400 Away',     unit: 'BF' },
+    { value: 'pitcher_win_streak',        label: 'Consecutive Pitcher Wins',             unit: 'W'  },
+    { value: 'pitcher_loss_streak',      label: 'Consecutive Pitcher Losses',           unit: 'L'  },
+    { value: 'pitcher_no_win_streak',    label: 'Pitcher Appearances without Win',      unit: 'G'  },
+    { value: 'pitcher_no_loss_streak',   label: 'Pitcher Appearances without Loss',     unit: 'G'  },
+    { value: 'team_win_streak',          label: 'Team Winning Streak',                  unit: 'G',  entityType: 'team' },
+    { value: 'team_loss_streak',         label: 'Team Losing Streak',                   unit: 'G',  entityType: 'team' },
 ];
 
 function logoHtml(franchise, season) {
@@ -52,7 +65,16 @@ function holderLine(e, franchiseLookup) {
     return `<span style="display:block;margin-bottom:3px">${logo}${playerLink(e.id)} (${periodStr(e)})</span>`;
 }
 
-function buildTableHtml(list, franchiseLookup, unit) {
+function teamLine(e) {
+    const fk   = getFranchiseKey(e.team, e.season_end);
+    const logo = logoHtml(fk, e.season_end);
+    const name = getMlrTeamName(fk, e.season_end);
+    return `<span style="display:block;margin-bottom:3px">${logo}<strong>${name}</strong> (${periodStr(e)})</span>`;
+}
+
+function buildTableHtml(list, franchiseLookup, opt) {
+    const unit = opt.unit;
+    const isTeam = opt.entityType === 'team';
     const entries = list.entries || [];
 
     if (entries.length === 0) {
@@ -85,7 +107,10 @@ function buildTableHtml(list, franchiseLookup, unit) {
         let playerCell;
         if (overflows) {
             const count = list.tie_at_boundary.count;
-            playerCell = `<span style="color:var(--subtle-text-color);font-style:italic">${count} players tied</span>`;
+            const noun = isTeam ? 'teams' : 'players';
+            playerCell = `<span style="color:var(--subtle-text-color);font-style:italic">${count} ${noun} tied</span>`;
+        } else if (isTeam) {
+            playerCell = g.entries.map(e => teamLine(e)).join('');
         } else {
             playerCell = g.entries.map(e => holderLine(e, franchiseLookup)).join('');
         }
@@ -98,8 +123,9 @@ function buildTableHtml(list, franchiseLookup, unit) {
         rank += g.entries.length;
     }
 
+    const entityLabel = isTeam ? 'Team (period)' : 'Player (period)';
     return `<table class="stats-table" style="font-size:0.9em;width:100%"><thead>
-        <tr><th>Rank</th><th>Streak</th><th style="text-align:left">Player (period)</th></tr>
+        <tr><th>Rank</th><th>Streak</th><th style="text-align:left">${entityLabel}</th></tr>
     </thead><tbody>${body}</tbody></table>`;
 }
 
@@ -107,8 +133,8 @@ function buildStreakView(data, opt, franchiseLookup) {
     const streakData = data[opt.value];
     if (!streakData) return '<p>No data for this streak type.</p>';
 
-    const allTimeHtml = buildTableHtml(streakData.all_time, franchiseLookup, opt.unit);
-    const activeHtml  = buildTableHtml(streakData.active,   franchiseLookup, opt.unit);
+    const allTimeHtml = buildTableHtml(streakData.all_time, franchiseLookup, opt);
+    const activeHtml  = buildTableHtml(streakData.active,   franchiseLookup, opt);
 
     const sep = `<div style="width:2px;background:var(--border-color);align-self:stretch;flex-shrink:0;margin:0 14px"></div>`;
 
