@@ -3,9 +3,9 @@ import { getMlrLogoPair, getMlrTeamName, getFranchiseKey, recordFranchiseKey } f
 import { state } from '../state.js';
 
 const STREAK_OPTIONS = [
+    { value: 'consecutive_games_played', label: 'Games Played',                     unit: 'G'                     },
     { value: 'team_win_streak',          label: 'Winning Streak',                   unit: 'G',  entityType: 'team', group: 'Team'    },
     { value: 'team_loss_streak',         label: 'Losing Streak',                    unit: 'G',  entityType: 'team', group: 'Team'    },
-    { value: 'consecutive_games_played', label: 'Games Played',                     unit: 'G'                     },
     { value: 'hitting_streak',           label: 'Hitting Streak',                   unit: 'G',  group: 'Batting'  },
     { value: 'onbase_streak',            label: 'On-Base Streak',                   unit: 'G',  group: 'Batting'  },
     { value: 'hr_streak',                label: 'Games with HR',                    unit: 'G',  group: 'Batting'  },
