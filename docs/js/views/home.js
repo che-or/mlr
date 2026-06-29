@@ -202,10 +202,11 @@ function buildFeaturedTeam(random) {
 
     const logo = getMlrLogoPair(key, ds);
     const name = entry.name;
+    const abbr = entry.abbr;
 
     const th = teamHitting.find(r => r['Display Season'] === ds && r.Franchise === key);
 
-    return { key, name, ds, logo, hitting: th || null };
+    return { key, abbr, name, ds, logo, hitting: th || null };
 }
 
 // ── Card renderers ────────────────────────────────────────────────────────────
@@ -229,7 +230,7 @@ function renderTeamCard(t) {
     return `
         <div class="featured-item">
             <h4>Featured Team</h4>
-            <a href="#/team-stats?season=${t.ds}&team=${encodeURIComponent(t.key)}">
+            <a href="#/team-stats?season=${t.ds}&team=${encodeURIComponent(t.abbr)}">
                 ${t.logo ? makeLogoImg(t.logo.dark, t.logo.light, 'team-list-logo', `${t.name} logo`) : ''}
                 <p>${seasonLabel}</p>
             </a>
