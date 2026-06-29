@@ -520,3 +520,8 @@ def get_pitcher_decisions(df, league):
     player_decisions['OPP'] = player_decisions['SV'] + player_decisions['BS']
 
     return player_decisions
+
+
+def get_game_level_decisions(gamelog_df, active_season, active_session):
+    """Return per-game pitcher decisions DataFrame (W, L columns with pitcher IDs)."""
+    return _wls(gamelog_df, active_season, active_session)

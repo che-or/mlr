@@ -44,6 +44,9 @@ export const state = {
     // Lazy-loaded single-game achievements — keyed by league ('mlr', 'mlr_playoff')
     achievements: {},
 
+    // Lazy-loaded streak records — MLR only
+    streakRecords: null,
+
     // UI state
     currentPlayerId: null,
     lastTeamStatsUrl: '#/team-stats',

@@ -39,6 +39,7 @@ export async function renderHome() {
                 ${hofLink}
                 <li><a href="#/draft"><strong>Draft History:</strong></a> Season-by-season draft picks for MLR.</li>
                 <li><a href="#/single-game-records"><strong>Single-Game Records:</strong></a> All-time single-game record holders for MLR batting and pitching stats.</li>
+                <li><a href="#/streaks"><strong>Streaks:</strong></a> All-time and active streak records for hitting, on-base, scoreless innings, and more.</li>
                 <li><a href="#/compare"><strong>Player Comparison:</strong></a> Compare up to four players side-by-side across any league and season.</li>
                 <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
             </ul>
