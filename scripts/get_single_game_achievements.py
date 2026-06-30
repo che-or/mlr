@@ -87,6 +87,36 @@ def get_cycles(hitting_game_stats, is_playoff=False):
     return results
 
 
+def get_triangles(hitting_game_stats, is_playoff=False):
+    '''
+    Returns all games where a batter recorded a "triangle": >=1 2B, >=1 3B,
+    and >=1 HR in a single game (no minimum 1B required, unlike a cycle).
+    All cycles are triangles, but not all triangles are cycles.
+    Sorted chronologically.
+    Each entry: {id, team, opponent, location, season, session, h, 2b, 3b, hr}
+    '''
+    hg = hitting_game_stats.copy()
+    triangles = hg[(hg['2B'] >= 1) & (hg['3B'] >= 1) & (hg['HR'] >= 1)]
+
+    _round = make_round_label_fn(hitting_game_stats) if is_playoff else None
+    results = []
+    for _, row in triangles.sort_values(['Season', 'Session', 'Game ID'], ascending=False).iterrows():
+        sess = _round(row['Display Season'], row['Session']) if is_playoff else int(row['Session'])
+        results.append({
+            'id': int(row['ID']),
+            'team': row['Franchise'],
+            'opponent': row['Opponent'],
+            'location': row['Location'],
+            'season': row['Display Season'],
+            'session': sess,
+            'h': int(row['H']),
+            '2b': int(row['2B']),
+            '3b': int(row['3B']),
+            'hr': int(row['HR']),
+        })
+    return results
+
+
 def get_multi_hr_games(hitting_game_stats, min_hr=3, is_playoff=False):
     '''
     Returns all games where a batter hit min_hr or more home runs.

@@ -1,0 +1,2065 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 2,
+        "tie_count": 10,
+        "most_recent": {
+          "id": 2773,
+          "season": "S10",
+          "session": "PC",
+          "team": "CRN",
+          "location": "Away",
+          "opponent": "SEO"
+        }
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 54,
+        "most_recent": {
+          "id": 2256,
+          "season": "S11",
+          "session": "PC",
+          "team": "WRM",
+          "location": "Home",
+          "opponent": "DOG"
+        }
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 631,
+            "season": "S4",
+            "session": "DS",
+            "team": "DDD",
+            "location": "Home",
+            "opponent": "PDB"
+          }
+        ]
+      },
+      "BB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 238,
+            "season": "S6",
+            "session": "WC",
+            "team": "CIM",
+            "location": "Away",
+            "opponent": "POR"
+          },
+          {
+            "id": 48,
+            "season": "S4",
+            "session": "DS",
+            "team": "DDD",
+            "location": "Home",
+            "opponent": "PDB"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 488,
+            "season": "S6",
+            "session": "CS",
+            "team": "TTT",
+            "location": "Away",
+            "opponent": "PHB"
+          }
+        ]
+      },
+      "FO": {
+        "record": 3,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 775,
+          "season": "S9",
+          "session": "PC",
+          "team": "BIR",
+          "location": "Home",
+          "opponent": "POS"
+        }
+      },
+      "GIDP": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 779,
+            "season": "S4",
+            "session": "DS",
+            "team": "EEE",
+            "location": "Home",
+            "opponent": "LMN"
+          }
+        ]
+      },
+      "H": {
+        "record": 3,
+        "tie_count": 16,
+        "most_recent": {
+          "id": 2946,
+          "season": "S9",
+          "session": "PC",
+          "team": "BIR",
+          "location": "Home",
+          "opponent": "POS"
+        }
+      },
+      "HR": {
+        "record": 2,
+        "tie_count": 8,
+        "most_recent": {
+          "id": 488,
+          "season": "S10",
+          "session": "CS",
+          "team": "SEO",
+          "location": "Away",
+          "opponent": "ACK"
+        }
+      },
+      "IBB": {
+        "record": 1,
+        "tie_count": 10,
+        "most_recent": {
+          "id": 2641,
+          "season": "S8B",
+          "session": "PC",
+          "team": "NUT",
+          "location": "Away",
+          "opponent": "SCU"
+        }
+      },
+      "LGO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S7",
+            "session": "CS",
+            "team": "FAP",
+            "location": "Away",
+            "opponent": "SSJ"
+          },
+          {
+            "id": 530,
+            "season": "S6",
+            "session": "WC",
+            "team": "WWC",
+            "location": "Home",
+            "opponent": "SAR"
+          }
+        ]
+      },
+      "PA": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 10,
+            "season": "S3",
+            "session": "PC",
+            "team": "LAN",
+            "location": "Away",
+            "opponent": "CIN"
+          },
+          {
+            "id": 380,
+            "season": "S3",
+            "session": "PC",
+            "team": "LAN",
+            "location": "Away",
+            "opponent": "CIN"
+          }
+        ]
+      },
+      "PO": {
+        "record": 2,
+        "tie_count": 33,
+        "most_recent": {
+          "id": 3118,
+          "season": "S11",
+          "session": "PC",
+          "team": "DOG",
+          "location": "Away",
+          "opponent": "WRM"
+        }
+      },
+      "R": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 770,
+            "season": "S8B",
+            "session": "PC",
+            "team": "SCU",
+            "location": "Home",
+            "opponent": "NUT"
+          },
+          {
+            "id": 2720,
+            "season": "S8B",
+            "session": "CS",
+            "team": "SCU",
+            "location": "Home",
+            "opponent": "MOB"
+          },
+          {
+            "id": 10,
+            "season": "S3",
+            "session": "PC",
+            "team": "LAN",
+            "location": "Away",
+            "opponent": "CIN"
+          },
+          {
+            "id": 104,
+            "season": "S3",
+            "session": "PC",
+            "team": "LAN",
+            "location": "Away",
+            "opponent": "CIN"
+          },
+          {
+            "id": 387,
+            "season": "S3",
+            "session": "CS",
+            "team": "LAN",
+            "location": "Home",
+            "opponent": "FTP"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 32,
+            "season": "S6",
+            "session": "DS",
+            "team": "TTT",
+            "location": "Away",
+            "opponent": "FRG"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 4.906286736519295,
+        "holders": [
+          {
+            "id": 2653,
+            "season": "S7",
+            "session": "WC",
+            "team": "FAP",
+            "location": "Home",
+            "opponent": "BBB"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 2555,
+            "season": "S8B",
+            "session": "PC",
+            "team": "NUT",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 2542,
+            "season": "S8B",
+            "session": "PC",
+            "team": "SCU",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "SO": {
+        "record": 3,
+        "tie_count": 8,
+        "most_recent": {
+          "id": 2931,
+          "season": "S10",
+          "session": "PC",
+          "team": "SEO",
+          "location": "Home",
+          "opponent": "CRN"
+        }
+      },
+      "TB": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 2720,
+            "season": "S8B",
+            "session": "PC",
+            "team": "SCU",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.5015466418087036,
+        "holders": [
+          {
+            "id": 2653,
+            "season": "S7",
+            "session": "WC",
+            "team": "FAP",
+            "location": "Home",
+            "opponent": "BBB"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.6893,
+        "holders": [
+          {
+            "id": 2945,
+            "season": "S10",
+            "session": "PC",
+            "team": "SEO",
+            "location": "Home",
+            "opponent": "CRN"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 516,
+          "season": "S8B",
+          "session": "CS",
+          "team": "MOB",
+          "location": "Away",
+          "opponent": "SCU"
+        }
+      },
+      "300+ Pitches": {
+        "record": 15,
+        "holders": [
+          {
+            "id": 34,
+            "season": "S7",
+            "session": "DS",
+            "team": "FAP",
+            "location": "Away",
+            "opponent": "WSW"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 2900,
+          "season": "S9",
+          "session": "PC",
+          "team": "POS",
+          "location": "Away",
+          "opponent": "BIR"
+        }
+      },
+      "400+ Pitches": {
+        "record": 11,
+        "holders": [
+          {
+            "id": 73,
+            "season": "S6",
+            "session": "DS",
+            "team": "SAS",
+            "location": "Away",
+            "opponent": "BAC"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 109,
+            "season": "S7",
+            "session": "DS",
+            "team": "KNX",
+            "location": "Away",
+            "opponent": "SSJ"
+          }
+        ]
+      },
+      "BB": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 265,
+            "season": "S3",
+            "session": "PC",
+            "team": "CIN",
+            "location": "Home",
+            "opponent": "LAN"
+          }
+        ]
+      },
+      "BF": {
+        "record": 32,
+        "holders": [
+          {
+            "id": 2281,
+            "season": "S6",
+            "session": "WC",
+            "team": "POR",
+            "location": "Home",
+            "opponent": "CIM"
+          }
+        ]
+      },
+      "CS": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 135,
+            "season": "S6",
+            "session": "CS",
+            "team": "PHB",
+            "location": "Home",
+            "opponent": "TTT"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 2253,
+            "season": "S7",
+            "session": "CS",
+            "team": "SSC",
+            "location": "Away",
+            "opponent": "SCG"
+          }
+        ]
+      },
+      "ER": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S4",
+            "session": "CS",
+            "team": "PGA",
+            "location": "Away",
+            "opponent": "DDD"
+          }
+        ]
+      },
+      "FO": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S7",
+            "session": "DS",
+            "team": "WSW",
+            "location": "Home",
+            "opponent": "FAP"
+          },
+          {
+            "id": 270,
+            "season": "S4",
+            "session": "DS",
+            "team": "DDD",
+            "location": "Home",
+            "opponent": "PDB"
+          }
+        ]
+      },
+      "H": {
+        "record": 13,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S4",
+            "session": "CS",
+            "team": "PGA",
+            "location": "Away",
+            "opponent": "DDD"
+          }
+        ]
+      },
+      "HR": {
+        "record": 3,
+        "tie_count": 9,
+        "most_recent": {
+          "id": 2886,
+          "season": "S9",
+          "session": "CS",
+          "team": "NNL",
+          "location": "Away",
+          "opponent": "BIR"
+        }
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 2625,
+            "season": "S8B",
+            "session": "PC",
+            "team": "NUT",
+            "location": "Away",
+            "opponent": "SCU"
+          },
+          {
+            "id": 2379,
+            "season": "S7",
+            "session": "CS",
+            "team": "SCG",
+            "location": "Home",
+            "opponent": "SSC"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "holders": [
+          {
+            "id": 34,
+            "season": "S7",
+            "session": "DS",
+            "team": "FAP",
+            "location": "Away",
+            "opponent": "WSW"
+          },
+          {
+            "id": 163,
+            "season": "S7",
+            "session": "DS",
+            "team": "WSW",
+            "location": "Home",
+            "opponent": "FAP"
+          },
+          {
+            "id": 116,
+            "season": "S7",
+            "session": "WC",
+            "team": "SSC",
+            "location": "Away",
+            "opponent": "BBC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 516,
+            "season": "S7",
+            "session": "CS",
+            "team": "SSJ",
+            "location": "Home",
+            "opponent": "FAP"
+          },
+          {
+            "id": 116,
+            "season": "S7",
+            "session": "WC",
+            "team": "SSC",
+            "location": "Away",
+            "opponent": "BBC"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 2675,
+            "season": "S8A",
+            "session": "CS",
+            "team": "CCD",
+            "location": "Home",
+            "opponent": "BAG"
+          },
+          {
+            "id": 1942,
+            "season": "S6",
+            "session": "DS",
+            "team": "CIM",
+            "location": "Away",
+            "opponent": "PHB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -6.3500000000000005,
+        "holders": [
+          {
+            "id": 4,
+            "season": "S3",
+            "session": "CS",
+            "team": "LAN",
+            "location": "Home",
+            "opponent": "FTP"
+          },
+          {
+            "id": 264,
+            "season": "S3",
+            "session": "CS",
+            "team": "CIN",
+            "location": "Home",
+            "opponent": "BER"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 2253,
+            "season": "S7",
+            "session": "CS",
+            "team": "SSC",
+            "location": "Away",
+            "opponent": "SCG"
+          },
+          {
+            "id": 117,
+            "season": "S4",
+            "session": "DS",
+            "team": "PGA",
+            "location": "Away",
+            "opponent": "PGS"
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 2657,
+            "season": "S9",
+            "session": "CS",
+            "team": "KGB",
+            "location": "Away",
+            "opponent": "POS"
+          },
+          {
+            "id": 2710,
+            "season": "S8B",
+            "session": "PC",
+            "team": "NUT",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "id": 786,
+            "season": "S4",
+            "session": "PC",
+            "team": "LMN",
+            "location": "Away",
+            "opponent": "DDD"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7522413793103448,
+        "holders": [
+          {
+            "id": 4,
+            "season": "S3",
+            "session": "CS",
+            "team": "LAN",
+            "location": "Home",
+            "opponent": "FTP"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.6176,
+        "holders": [
+          {
+            "id": 622,
+            "season": "S5",
+            "session": "DS",
+            "team": "MVM",
+            "location": "Home",
+            "opponent": "SAR"
+          }
+        ]
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "CC",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "VFQ",
+            "season": "S4",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "CCS"
+          },
+          {
+            "team": "DDD",
+            "season": "S4",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "PDB"
+          },
+          {
+            "team": "PGS",
+            "season": "S4",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "PGA"
+          }
+        ]
+      },
+      "BB": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "CIN"
+          }
+        ]
+      },
+      "CS": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "TTT",
+            "season": "S6",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "PHB"
+          }
+        ]
+      },
+      "FO": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "POS",
+            "season": "S9",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "BIR"
+          },
+          {
+            "team": "SCG",
+            "season": "S7",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "SSC"
+          }
+        ]
+      },
+      "H": {
+        "record": 15,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "HR": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "STK",
+            "season": "S7",
+            "session": "WC",
+            "location": "Home",
+            "opponent": "BAC"
+          },
+          {
+            "team": "CIN",
+            "season": "S3",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "BER"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          },
+          {
+            "team": "SSC",
+            "season": "S7",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "SCG"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "CC",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "PA": {
+        "record": 38,
+        "holders": [
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "CIN"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "BAG",
+            "season": "S8A",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "CCD"
+          },
+          {
+            "team": "SSC",
+            "season": "S7",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SSJ"
+          },
+          {
+            "team": "PHB",
+            "season": "S6",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "CIM"
+          }
+        ]
+      },
+      "R": {
+        "record": 14,
+        "holders": [
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "CIN"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "MOB"
+          },
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "CIN"
+          },
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "FTP"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 8.128205128205128,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "MOB"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "ACK",
+            "season": "S10",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "SEO"
+          },
+          {
+            "team": "SCG",
+            "season": "S7",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "SSC"
+          },
+          {
+            "team": "SSJ",
+            "season": "S7",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "KNX"
+          },
+          {
+            "team": "TAC",
+            "season": "S5",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "LMN"
+          },
+          {
+            "team": "PGS",
+            "season": "S4",
+            "session": "DS",
+            "location": "Home",
+            "opponent": "PGA"
+          }
+        ]
+      },
+      "SB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "DOG",
+            "season": "S11",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "SHH"
+          },
+          {
+            "team": "SEO",
+            "season": "S10",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "CRN"
+          },
+          {
+            "team": "DDD",
+            "season": "S4",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "LMN"
+          }
+        ]
+      },
+      "TB": {
+        "record": 32,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7741547283432101,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "MOB"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7771,
+        "holders": [
+          {
+            "team": "SEO",
+            "season": "S10",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "CRN"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 16,
+        "holders": [
+          {
+            "team": "SEO",
+            "season": "S10",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "CRN"
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "CC"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "SAS",
+            "season": "S6",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "BAC"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "KNX",
+            "season": "S7",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "SSJ"
+          }
+        ]
+      },
+      "BB": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "CIN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "LAN"
+          }
+        ]
+      },
+      "BF": {
+        "record": 38,
+        "holders": [
+          {
+            "team": "CIN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "LAN"
+          }
+        ]
+      },
+      "CS": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "PHB",
+            "season": "S6",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "TTT"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "BIR",
+            "season": "S9",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "POS"
+          },
+          {
+            "team": "SSC",
+            "season": "S7",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "SCG"
+          }
+        ]
+      },
+      "ER": {
+        "record": 14,
+        "holders": [
+          {
+            "team": "CIN",
+            "season": "S3",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "LAN"
+          }
+        ]
+      },
+      "FO": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "SCU",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "NUT"
+          }
+        ]
+      },
+      "H": {
+        "record": 15,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "HR": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "BAC",
+            "season": "S7",
+            "session": "WC",
+            "location": "Away",
+            "opponent": "STK"
+          },
+          {
+            "team": "BER",
+            "season": "S3",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "CIN"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SCU"
+          },
+          {
+            "team": "SCG",
+            "season": "S7",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "SSC"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "tie_count": 9,
+        "most_recent": {
+          "team": "WRM",
+          "season": "S11",
+          "session": "CS",
+          "location": "Home",
+          "opponent": "IDR"
+        }
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "CC"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "CCD",
+            "season": "S8A",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "BAG"
+          },
+          {
+            "team": "SSJ",
+            "season": "S7",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "SSC"
+          },
+          {
+            "team": "CIM",
+            "season": "S6",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "PHB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -6.3500000000000005,
+        "holders": [
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "FTP"
+          },
+          {
+            "team": "CIN",
+            "season": "S3",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "BER"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "SEO",
+            "season": "S10",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "ACK"
+          },
+          {
+            "team": "SSC",
+            "season": "S7",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "SCG"
+          },
+          {
+            "team": "KNX",
+            "season": "S7",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "SSJ"
+          },
+          {
+            "team": "LMN",
+            "season": "S5",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "TAC"
+          },
+          {
+            "team": "PGA",
+            "season": "S4",
+            "session": "DS",
+            "location": "Away",
+            "opponent": "PGS"
+          }
+        ]
+      },
+      "SB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "NUT",
+            "season": "S8B",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SCU"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "SHH",
+            "season": "S11",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "DOG"
+          },
+          {
+            "team": "CRN",
+            "season": "S10",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "SEO"
+          },
+          {
+            "team": "LMN",
+            "season": "S4",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "DDD"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7522413793103448,
+        "holders": [
+          {
+            "team": "LAN",
+            "season": "S3",
+            "session": "CS",
+            "location": "Home",
+            "opponent": "FTP"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7388,
+        "holders": [
+          {
+            "team": "BAG",
+            "season": "S8A",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "CCD"
+          }
+        ]
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "EEE",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "3B": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "CC",
+            "season": "S8B",
+            "session": "CS"
+          },
+          {
+            "away": "KRB",
+            "home": "WWC",
+            "season": "S5",
+            "session": "CS"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "CCS",
+            "home": "VFQ",
+            "season": "S4",
+            "session": "DS"
+          },
+          {
+            "away": "PDB",
+            "home": "DDD",
+            "season": "S4",
+            "session": "DS"
+          },
+          {
+            "away": "PGA",
+            "home": "PGS",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "BB": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "LAN",
+            "home": "CIN",
+            "season": "S3",
+            "session": "PC"
+          }
+        ]
+      },
+      "CS": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "TTT",
+            "home": "PHB",
+            "season": "S6",
+            "session": "CS"
+          }
+        ]
+      },
+      "FO": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "POS",
+            "home": "BIR",
+            "season": "S9",
+            "session": "PC"
+          },
+          {
+            "away": "SSC",
+            "home": "SCG",
+            "season": "S7",
+            "session": "CS"
+          },
+          {
+            "away": "LMN",
+            "home": "WWC",
+            "season": "S5",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "DDD",
+            "season": "S4",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "EEE",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "H": {
+        "record": 26,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "CC",
+            "season": "S8B",
+            "session": "CS"
+          }
+        ]
+      },
+      "PA": {
+        "record": 72,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "PO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "IDR",
+            "home": "WRM",
+            "season": "S11",
+            "session": "CS"
+          },
+          {
+            "away": "SSC",
+            "home": "SSJ",
+            "season": "S7",
+            "session": "PC"
+          }
+        ]
+      },
+      "R": {
+        "record": 23,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 23,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 7.089552238805971,
+        "holders": [
+          {
+            "away": "STK",
+            "home": "SCG",
+            "season": "S7",
+            "session": "DS"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "SSC",
+            "home": "SCG",
+            "season": "S7",
+            "session": "CS"
+          },
+          {
+            "away": "CCS",
+            "home": "VFQ",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "SB": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "DOG",
+            "home": "SHH",
+            "season": "S11",
+            "session": "CS"
+          }
+        ]
+      },
+      "TB": {
+        "record": 59,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.9345932324539289,
+        "holders": [
+          {
+            "away": "STK",
+            "home": "SCG",
+            "season": "S7",
+            "session": "DS"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.0541999999999998,
+        "holders": [
+          {
+            "away": "CRN",
+            "home": "SEO",
+            "season": "S10",
+            "session": "PC"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "EEE",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 29,
+        "holders": [
+          {
+            "away": "CRN",
+            "home": "SEO",
+            "season": "S10",
+            "session": "PC"
+          }
+        ]
+      },
+      "3B": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "CC",
+            "season": "S8B",
+            "session": "CS"
+          },
+          {
+            "away": "KRB",
+            "home": "WWC",
+            "season": "S5",
+            "session": "CS"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "SSC",
+            "home": "BBC",
+            "season": "S7",
+            "session": "WC"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "KNX",
+            "home": "SSJ",
+            "season": "S7",
+            "session": "DS"
+          }
+        ]
+      },
+      "BB": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "LAN",
+            "home": "CIN",
+            "season": "S3",
+            "session": "PC"
+          }
+        ]
+      },
+      "BF": {
+        "record": 72,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "CS": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "TTT",
+            "home": "PHB",
+            "season": "S6",
+            "session": "CS"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "POS",
+            "home": "BIR",
+            "season": "S9",
+            "session": "PC"
+          },
+          {
+            "away": "SSC",
+            "home": "SCG",
+            "season": "S7",
+            "session": "CS"
+          },
+          {
+            "away": "LMN",
+            "home": "WWC",
+            "season": "S5",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "DDD",
+            "season": "S4",
+            "session": "PC"
+          },
+          {
+            "away": "LMN",
+            "home": "EEE",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "ER": {
+        "record": 23,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "FO": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "H": {
+        "record": 26,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "IP": {
+        "record": "14.0",
+        "holders": [
+          {
+            "away": "FAP",
+            "home": "WSW",
+            "season": "S7",
+            "session": "DS"
+          },
+          {
+            "away": "SSC",
+            "home": "BBC",
+            "season": "S7",
+            "session": "WC"
+          },
+          {
+            "away": "CIM",
+            "home": "POR",
+            "season": "S6",
+            "session": "WC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "CC",
+            "season": "S8B",
+            "session": "CS"
+          }
+        ]
+      },
+      "PO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "IDR",
+            "home": "WRM",
+            "season": "S11",
+            "session": "CS"
+          },
+          {
+            "away": "SSC",
+            "home": "SSJ",
+            "season": "S7",
+            "session": "PC"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -5.6117647058823525,
+        "holders": [
+          {
+            "away": "LMN",
+            "home": "DDD",
+            "season": "S4",
+            "session": "PC"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 10,
+        "holders": [
+          {
+            "away": "SSC",
+            "home": "SCG",
+            "season": "S7",
+            "session": "CS"
+          },
+          {
+            "away": "CCS",
+            "home": "VFQ",
+            "season": "S4",
+            "session": "DS"
+          }
+        ]
+      },
+      "SB": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "NUT",
+            "home": "SCU",
+            "season": "S8B",
+            "session": "PC"
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "DOG",
+            "home": "SHH",
+            "season": "S11",
+            "session": "CS"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7842454632282713,
+        "holders": [
+          {
+            "away": "LMN",
+            "home": "DDD",
+            "season": "S4",
+            "session": "PC"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.9776,
+        "holders": [
+          {
+            "away": "BAG",
+            "home": "CCD",
+            "season": "S8A",
+            "session": "CS"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,19 +1,19 @@
 {
   "no_hitters": [
     {
-      "id": 127,
+      "combined": false,
       "team": "PHI",
       "opponent": "MIL",
       "location": "Away",
       "season": "S10",
       "session": "DS",
       "perfect": false,
-      "so": 6,
       "bb": 2,
+      "id": 127,
+      "so": 6,
       "ip": "6.0"
     }
   ],
-  "combined_no_hitters": [],
   "cycles": [
     {
       "id": 2715,
@@ -28,108 +28,19 @@
       "hr": 1
     }
   ],
-  "multi_hr": [],
-  "grand_slams": [
+  "triangles": [
     {
-      "id": 1768,
-      "team": "CWS",
-      "opponent": "SEA",
-      "location": "Away",
-      "season": "S6",
-      "session": "WC",
-      "inning": "T1"
-    },
-    {
-      "id": 1721,
-      "team": "SDP",
-      "opponent": "PHI",
-      "location": "Away",
-      "season": "S6",
-      "session": "DS",
-      "inning": "T3"
-    },
-    {
-      "id": 22,
-      "team": "SFG",
-      "opponent": "SDP",
-      "location": "Away",
-      "season": "S7",
-      "session": "WC",
-      "inning": "T1"
-    },
-    {
-      "id": 2780,
-      "team": "LAD",
-      "opponent": "SDP",
-      "location": "Home",
-      "season": "S8",
-      "session": "DS",
-      "inning": "B2"
-    },
-    {
-      "id": 2327,
+      "id": 2715,
       "team": "PHI",
-      "opponent": "STL",
-      "location": "Home",
-      "season": "S11",
-      "session": "CS",
-      "inning": "B2"
+      "opponent": "CHC",
+      "location": "Away",
+      "season": "S9",
+      "session": "WC",
+      "h": 4,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
     }
   ],
-  "walkoffs": [
-    {
-      "id": 223,
-      "team": "ATL",
-      "opponent": "STL",
-      "location": "Home",
-      "season": "S3",
-      "session": "DS",
-      "result": "HR"
-    },
-    {
-      "id": 478,
-      "team": "LAD",
-      "opponent": "CIN",
-      "location": "Home",
-      "season": "S4",
-      "session": "WC",
-      "result": "HR"
-    },
-    {
-      "id": 1797,
-      "team": "DET",
-      "opponent": "MIN",
-      "location": "Home",
-      "season": "S6",
-      "session": "DS",
-      "result": "HR"
-    },
-    {
-      "id": 2846,
-      "team": "COL",
-      "opponent": "MTL",
-      "location": "Home",
-      "season": "S9",
-      "session": "CS",
-      "result": "HR"
-    },
-    {
-      "id": 2963,
-      "team": "BAL",
-      "opponent": "MIN",
-      "location": "Home",
-      "season": "S10",
-      "session": "WC",
-      "result": "HR"
-    },
-    {
-      "id": 2637,
-      "team": "TBR",
-      "opponent": "BAL",
-      "location": "Home",
-      "season": "S10",
-      "session": "CS",
-      "result": "HR"
-    }
-  ]
+  "multi_hr": []
 }

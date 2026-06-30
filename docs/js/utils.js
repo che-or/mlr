@@ -232,6 +232,26 @@ export function getFcbLogoPair(abbr, displaySeason) {
     return { dark: entry.logo_dark, light: entry.logo_light };
 }
 
+// Universal logo-pair resolver — picks the right helper based on league.
+// Unlike getTeamName(), the mlr/mlr_playoff case does NOT translate through
+// getFranchiseKey: callers that already hold an MLR franchise key (as opposed
+// to a season-specific abbreviation) should pass it straight through.
+export function getLogoPair(league, franchise, displaySeason) {
+    if (!franchise || franchise === '2TM' || franchise === '3TM') return null;
+    switch (league) {
+        case 'mlr':
+        case 'mlr_playoff':
+            return getMlrLogoPair(franchise, displaySeason);
+        case 'milr':
+        case 'milr_playoff':
+            return getMilrLogoPair(franchise, displaySeason);
+        case 'fcb':
+            return getFcbLogoPair(franchise, displaySeason);
+        default:
+            return getHistoricalLogoPair(league, franchise, displaySeason);
+    }
+}
+
 // Renders an <img> that carries both logo paths as data attributes so
 // refreshLogos() can swap src without a re-render on theme toggle.
 export function makeLogoImg(dark, light, cssClass, alt = '') {

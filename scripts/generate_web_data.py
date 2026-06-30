@@ -18,7 +18,7 @@ from get_single_game_stats import (
     get_hitting_combined_game_stats, get_pitching_combined_game_stats,
     get_single_game_records, get_team_game_records, get_combined_game_records,
 )
-from get_single_game_achievements import get_no_hitters, get_cycles, get_multi_hr_games
+from get_single_game_achievements import get_no_hitters, get_cycles, get_triangles, get_multi_hr_games
 from get_streak_records import get_streak_records, _load_streak_cache
 
 def _drop_unused_columns(df):
@@ -70,7 +70,9 @@ def main():
         p_pstty = Path(f'../docs/generated/{league}_pitching_stats_by_team_type.json')
         p_fhs = Path(f'../docs/generated/{league}_franchise_hitting_stats.json')
         p_fps = Path(f'../docs/generated/{league}_franchise_pitching_stats.json')
-    
+        p_sgr = Path(f'../docs/generated/{league}_single_game_records.json')
+        p_ach = Path(f'../docs/generated/{league}_achievements.json')
+
         p_hscache = Path(f'../data/{league}_hitting_stats_cache.csv')
         p_pscache = Path(f'../data/{league}_pitching_stats_cache.csv')
     
@@ -97,19 +99,18 @@ def main():
         # check for generated files for inactive leagues
         elif p_hs.exists() and p_ps.exists() and p_ths.exists() and p_tps.exists():
             if league in ['eco', 'npr', 'wbc']:
-                print('All files already generated.')
-                continue
+                if p_sgr.exists() and p_ach.exists():
+                    print('All files already generated.')
+                    continue
             elif p_chs.exists() and p_cps.exists():
                 if league in ['milr', 'milr_playoff', 'fcb', 'gib']:
-                    print('All files already generated.')
-                    continue
+                    if p_sgr.exists() and p_ach.exists():
+                        print('All files already generated.')
+                        continue
                 elif p_hst.exists() and p_pst.exists() and p_hsty.exists() and p_psty.exists() and p_hstty.exists() and p_pstty.exists():
-                    print('All files already generated.')
-                    continue
-                else:
-                    pass
-            else:
-                pass
+                    if p_sgr.exists() and p_ach.exists():
+                        print('All files already generated.')
+                        continue
     
         all_seasons = True # default option. Calculate stats for all seasons
         
@@ -212,111 +213,109 @@ def main():
                 franchise_pitching_stats = _drop_unused_columns(franchise_pitching_stats)
                 franchise_pitching_stats.to_json(p_fps, orient = 'records', indent = 2)
 
-        if league in ['mlr', 'mlr_playoff']:
-            print('Computing single-game records...')
-            p_hgcache  = Path(f'../data/{league}_hitting_game_stats_cache.csv')
-            p_pgcache  = Path(f'../data/{league}_pitching_game_stats_cache.csv')
-            p_htgcache = Path(f'../data/{league}_hitting_team_game_stats_cache.csv')
-            p_ptgcache = Path(f'../data/{league}_pitching_team_game_stats_cache.csv')
-            p_hcgcache = Path(f'../data/{league}_hitting_combined_game_stats_cache.csv')
-            p_pcgcache = Path(f'../data/{league}_pitching_combined_game_stats_cache.csv')
+        print('Computing single-game records...')
+        p_hgcache  = Path(f'../data/{league}_hitting_game_stats_cache.csv')
+        p_pgcache  = Path(f'../data/{league}_pitching_game_stats_cache.csv')
+        p_htgcache = Path(f'../data/{league}_hitting_team_game_stats_cache.csv')
+        p_ptgcache = Path(f'../data/{league}_pitching_team_game_stats_cache.csv')
+        p_hcgcache = Path(f'../data/{league}_hitting_combined_game_stats_cache.csv')
+        p_pcgcache = Path(f'../data/{league}_pitching_combined_game_stats_cache.csv')
 
-            sg_caches_exist = all(p.exists() for p in [
-                p_hgcache, p_pgcache, p_htgcache, p_ptgcache, p_hcgcache, p_pcgcache
-            ])
+        sg_caches_exist = all(p.exists() for p in [
+            p_hgcache, p_pgcache, p_htgcache, p_ptgcache, p_hcgcache, p_pcgcache
+        ])
 
-            if sg_caches_exist:
-                hg_cache  = pd.read_csv(p_hgcache);  hg_cache  = hg_cache[hg_cache['Season']   != season]
-                pg_cache  = pd.read_csv(p_pgcache);  pg_cache  = pg_cache[pg_cache['Season']   != season]
-                htg_cache = pd.read_csv(p_htgcache); htg_cache = htg_cache[htg_cache['Season'] != season]
-                ptg_cache = pd.read_csv(p_ptgcache); ptg_cache = ptg_cache[ptg_cache['Season'] != season]
-                hcg_cache = pd.read_csv(p_hcgcache); hcg_cache = hcg_cache[hcg_cache['Season'] != season]
-                pcg_cache = pd.read_csv(p_pcgcache); pcg_cache = pcg_cache[pcg_cache['Season'] != season]
+        if sg_caches_exist:
+            hg_cache  = pd.read_csv(p_hgcache);  hg_cache  = hg_cache[hg_cache['Season']   != season]
+            pg_cache  = pd.read_csv(p_pgcache);  pg_cache  = pg_cache[pg_cache['Season']   != season]
+            htg_cache = pd.read_csv(p_htgcache); htg_cache = htg_cache[htg_cache['Season'] != season]
+            ptg_cache = pd.read_csv(p_ptgcache); ptg_cache = ptg_cache[ptg_cache['Season'] != season]
+            hcg_cache = pd.read_csv(p_hcgcache); hcg_cache = hcg_cache[hcg_cache['Season'] != season]
+            pcg_cache = pd.read_csv(p_pcgcache); pcg_cache = pcg_cache[pcg_cache['Season'] != season]
 
+            sg_gamelog = gamelog_df
+
+            hitting_game  = pd.concat([hg_cache,  get_hitting_game_stats(sg_gamelog)],          ignore_index=True)
+            pitching_game = pd.concat([pg_cache,  get_pitching_game_stats(sg_gamelog)],         ignore_index=True)
+            hitting_team  = pd.concat([htg_cache, get_hitting_team_game_stats(sg_gamelog)],     ignore_index=True)
+            pitching_team = pd.concat([ptg_cache, get_pitching_team_game_stats(sg_gamelog)],    ignore_index=True)
+            hitting_comb  = pd.concat([hcg_cache, get_hitting_combined_game_stats(sg_gamelog)], ignore_index=True)
+            pitching_comb = pd.concat([pcg_cache, get_pitching_combined_game_stats(sg_gamelog)],ignore_index=True)
+        else:
+            if all_seasons:
                 sg_gamelog = gamelog_df
-
-                hitting_game  = pd.concat([hg_cache,  get_hitting_game_stats(sg_gamelog)],          ignore_index=True)
-                pitching_game = pd.concat([pg_cache,  get_pitching_game_stats(sg_gamelog)],         ignore_index=True)
-                hitting_team  = pd.concat([htg_cache, get_hitting_team_game_stats(sg_gamelog)],     ignore_index=True)
-                pitching_team = pd.concat([ptg_cache, get_pitching_team_game_stats(sg_gamelog)],    ignore_index=True)
-                hitting_comb  = pd.concat([hcg_cache, get_hitting_combined_game_stats(sg_gamelog)], ignore_index=True)
-                pitching_comb = pd.concat([pcg_cache, get_pitching_combined_game_stats(sg_gamelog)],ignore_index=True)
             else:
-                if all_seasons:
-                    sg_gamelog = gamelog_df
-                else:
-                    print(f'Loading all {league} gamelogs for single-game records...')
-                    sg_gamelog = _load_gamelogs(season, league, all_seasons=True)
-                    sg_gamelog = _add_re_column(sg_gamelog, league)
-                    sg_gamelog = _add_war_columns(sg_gamelog)
+                print(f'Loading all {league} gamelogs for single-game records...')
+                sg_gamelog = _load_gamelogs(season, league, all_seasons=True)
+                sg_gamelog = _add_re_column(sg_gamelog, league)
+                sg_gamelog = _add_war_columns(sg_gamelog)
 
-                hitting_game  = get_hitting_game_stats(sg_gamelog)
-                pitching_game = get_pitching_game_stats(sg_gamelog)
-                hitting_team  = get_hitting_team_game_stats(sg_gamelog)
-                pitching_team = get_pitching_team_game_stats(sg_gamelog)
-                hitting_comb  = get_hitting_combined_game_stats(sg_gamelog)
-                pitching_comb = get_pitching_combined_game_stats(sg_gamelog)
+            hitting_game  = get_hitting_game_stats(sg_gamelog)
+            pitching_game = get_pitching_game_stats(sg_gamelog)
+            hitting_team  = get_hitting_team_game_stats(sg_gamelog)
+            pitching_team = get_pitching_team_game_stats(sg_gamelog)
+            hitting_comb  = get_hitting_combined_game_stats(sg_gamelog)
+            pitching_comb = get_pitching_combined_game_stats(sg_gamelog)
 
-            if league in active_leagues:
-                hitting_game.to_csv(p_hgcache,   index=False)
-                pitching_game.to_csv(p_pgcache,  index=False)
-                hitting_team.to_csv(p_htgcache,  index=False)
-                pitching_team.to_csv(p_ptgcache, index=False)
-                hitting_comb.to_csv(p_hcgcache,  index=False)
-                pitching_comb.to_csv(p_pcgcache, index=False)
+        if league in active_leagues:
+            hitting_game.to_csv(p_hgcache,   index=False)
+            pitching_game.to_csv(p_pgcache,  index=False)
+            hitting_team.to_csv(p_htgcache,  index=False)
+            pitching_team.to_csv(p_ptgcache, index=False)
+            hitting_comb.to_csv(p_hcgcache,  index=False)
+            pitching_comb.to_csv(p_pcgcache, index=False)
 
-            is_playoff = (league == 'mlr_playoff')
-            player_rec = get_single_game_records(hitting_game, pitching_game, is_playoff=is_playoff)
-            team_rec   = get_team_game_records(hitting_team, pitching_team, is_playoff=is_playoff)
-            comb_rec   = get_combined_game_records(hitting_comb, pitching_comb, is_playoff=is_playoff)
+        is_playoff = league.endswith('_playoff')
+        player_rec = get_single_game_records(hitting_game, pitching_game, is_playoff=is_playoff)
+        team_rec   = get_team_game_records(hitting_team, pitching_team, is_playoff=is_playoff)
+        comb_rec   = get_combined_game_records(hitting_comb, pitching_comb, is_playoff=is_playoff)
 
-            p_sgr = Path(f'../docs/generated/{league}_single_game_records.json')
-            with open(p_sgr, 'w') as f:
-                json.dump({'player': player_rec, 'team': team_rec, 'combined': comb_rec}, f, indent=2)
-            print(f'Single-game records written to {p_sgr}')
+        with open(p_sgr, 'w') as f:
+            json.dump({'player': player_rec, 'team': team_rec, 'combined': comb_rec}, f, indent=2)
+        print(f'Single-game records written to {p_sgr}')
 
-            # Exclude the active (incomplete) session from achievements
-            if league in active_leagues:
-                active_sess = pitching_game[pitching_game['Season'] == season]['Session'].max()
-                ach_pitching = pitching_game[~((pitching_game['Season'] == season) & (pitching_game['Session'] == active_sess))]
-                ach_hitting  = hitting_game[~((hitting_game['Season'] == season) & (hitting_game['Session'] == active_sess))]
-            else:
-                ach_pitching = pitching_game
-                ach_hitting  = hitting_game
+        # Exclude the active (incomplete) session from achievements
+        if league in active_leagues:
+            active_sess = pitching_game[pitching_game['Season'] == season]['Session'].max()
+            ach_pitching = pitching_game[~((pitching_game['Season'] == season) & (pitching_game['Session'] == active_sess))]
+            ach_hitting  = hitting_game[~((hitting_game['Season'] == season) & (hitting_game['Session'] == active_sess))]
+        else:
+            ach_pitching = pitching_game
+            ach_hitting  = hitting_game
 
-            achievements = {
-                'no_hitters': get_no_hitters(ach_pitching, is_playoff=is_playoff),
-                'cycles':     get_cycles(ach_hitting, is_playoff=is_playoff),
-                'multi_hr':   get_multi_hr_games(ach_hitting, is_playoff=is_playoff),
-            }
-            p_ach = Path(f'../docs/generated/{league}_achievements.json')
-            with open(p_ach, 'w') as f:
-                json.dump(achievements, f, indent=2)
-            print(f'Achievements written to {p_ach}')
+        achievements = {
+            'no_hitters': get_no_hitters(ach_pitching, is_playoff=is_playoff),
+            'cycles':     get_cycles(ach_hitting, is_playoff=is_playoff),
+            'triangles':  get_triangles(ach_hitting, is_playoff=is_playoff),
+            'multi_hr':   get_multi_hr_games(ach_hitting, is_playoff=is_playoff),
+        }
+        with open(p_ach, 'w') as f:
+            json.dump(achievements, f, indent=2)
+        print(f'Achievements written to {p_ach}')
 
-            if league == 'mlr':
-                print('Computing streak records...')
-                p_sr_cache = Path('../data/mlr_streak_records_cache.json')
-                if not all_seasons and sg_caches_exist:
-                    sr_cache = _load_streak_cache(p_sr_cache)
-                    cache_valid = (sr_cache is not None and
-                                   sr_cache.get('cached_through_season') == season - 1)
-                    if not cache_valid:
-                        print('Loading all mlr gamelogs for streak records...')
-                        streak_gamelog = _load_gamelogs(season, 'mlr', all_seasons=True)
-                        streak_gamelog = _add_re_column(streak_gamelog, 'mlr')
-                        streak_gamelog = _add_war_columns(streak_gamelog)
-                    else:
-                        streak_gamelog = sg_gamelog
+        if league == 'mlr':
+            print('Computing streak records...')
+            p_sr_cache = Path('../data/mlr_streak_records_cache.json')
+            if not all_seasons and sg_caches_exist:
+                sr_cache = _load_streak_cache(p_sr_cache)
+                cache_valid = (sr_cache is not None and
+                               sr_cache.get('cached_through_season') == season - 1)
+                if not cache_valid:
+                    print('Loading all mlr gamelogs for streak records...')
+                    streak_gamelog = _load_gamelogs(season, 'mlr', all_seasons=True)
+                    streak_gamelog = _add_re_column(streak_gamelog, 'mlr')
+                    streak_gamelog = _add_war_columns(streak_gamelog)
                 else:
                     streak_gamelog = sg_gamelog
-                streak_recs = get_streak_records(streak_gamelog, hitting_game,
-                                                 hitting_team_game_stats=hitting_team,
-                                                 cache_path=p_sr_cache)
-                p_streaks = Path('../docs/generated/mlr_streak_records.json')
-                with open(p_streaks, 'w') as f:
-                    json.dump(streak_recs, f, indent=2)
-                print(f'Streak records written to {p_streaks}')
+            else:
+                streak_gamelog = sg_gamelog
+            streak_recs = get_streak_records(streak_gamelog, hitting_game,
+                                             hitting_team_game_stats=hitting_team,
+                                             cache_path=p_sr_cache)
+            p_streaks = Path('../docs/generated/mlr_streak_records.json')
+            with open(p_streaks, 'w') as f:
+                json.dump(streak_recs, f, indent=2)
+            print(f'Streak records written to {p_streaks}')
 
         # subrows are added after all aggregations so that things aren't counted twice
         hitting_stats = create_hitting_subrows(hitting_stats)
