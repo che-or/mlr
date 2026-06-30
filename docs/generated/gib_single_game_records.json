@@ -1,0 +1,2101 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 2,
+        "tie_count": 11,
+        "most_recent": {
+          "id": 28,
+          "season": "S3",
+          "session": 7,
+          "team": "NOL",
+          "location": "Away",
+          "opponent": "GIB"
+        }
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 108,
+            "season": "S2",
+            "session": 9,
+            "team": "SYC",
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 1,
+        "tie_count": 19,
+        "most_recent": {
+          "id": 45,
+          "season": "S3",
+          "session": 12,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      },
+      "BB": {
+        "record": 2,
+        "tie_count": 18,
+        "most_recent": {
+          "id": 326,
+          "season": "S3",
+          "session": 9,
+          "team": "WBK",
+          "location": "Home",
+          "opponent": "SYC"
+        }
+      },
+      "CS": {
+        "record": 1,
+        "tie_count": 38,
+        "most_recent": {
+          "id": 2253,
+          "season": "S3",
+          "session": 12,
+          "team": "ORL",
+          "location": "Away",
+          "opponent": "GIB"
+        }
+      },
+      "FO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 355,
+            "season": "S3",
+            "session": 6,
+            "team": "VIP",
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "id": 1764,
+            "season": "S3",
+            "session": 3,
+            "team": "ORL",
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "id": 1800,
+            "season": "S3",
+            "session": 1,
+            "team": "WOO",
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 1,
+        "tie_count": 98,
+        "most_recent": {
+          "id": 10,
+          "season": "S3",
+          "session": 12,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      },
+      "H": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 777,
+            "season": "S3",
+            "session": 4,
+            "team": "ORL",
+            "location": "Away",
+            "opponent": "WOO"
+          },
+          {
+            "id": 63,
+            "season": "S2",
+            "session": 7,
+            "team": "VIP",
+            "location": "Away",
+            "opponent": "FUB"
+          },
+          {
+            "id": 2690,
+            "season": "S2",
+            "session": 6,
+            "team": "SYC",
+            "location": "Away",
+            "opponent": "ORL"
+          },
+          {
+            "id": 169,
+            "season": "S2",
+            "session": 2,
+            "team": "NOL",
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "HR": {
+        "record": 2,
+        "tie_count": 11,
+        "most_recent": {
+          "id": 529,
+          "season": "S3",
+          "session": 11,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "VIP"
+        }
+      },
+      "IBB": {
+        "record": 1,
+        "tie_count": 12,
+        "most_recent": {
+          "id": 289,
+          "season": "S3",
+          "session": 3,
+          "team": "WOO",
+          "location": "Home",
+          "opponent": "SYC"
+        }
+      },
+      "LGO": {
+        "record": 2,
+        "tie_count": 19,
+        "most_recent": {
+          "id": 786,
+          "season": "S3",
+          "session": 10,
+          "team": "WOO",
+          "location": "Home",
+          "opponent": "SYC"
+        }
+      },
+      "PA": {
+        "record": 3,
+        "tie_count": 153,
+        "most_recent": {
+          "id": 22,
+          "season": "S3",
+          "session": 9,
+          "team": "SYC",
+          "location": "Away",
+          "opponent": "WBK"
+        }
+      },
+      "PO": {
+        "record": 2,
+        "tie_count": 29,
+        "most_recent": {
+          "id": 84,
+          "season": "S3",
+          "session": 11,
+          "team": "SYC",
+          "location": "Away",
+          "opponent": "ORL"
+        }
+      },
+      "R": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 301,
+            "season": "S3",
+            "session": 6,
+            "team": "VIP",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 1776,
+            "season": "S3",
+            "session": 7,
+            "team": "FUB",
+            "location": "Away",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 3.701885456885457,
+        "holders": [
+          {
+            "id": 596,
+            "season": "S1",
+            "session": 3,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 2,
+        "tie_count": 13,
+        "most_recent": {
+          "id": 10,
+          "season": "S3",
+          "session": 12,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 2236,
+            "season": "S3",
+            "session": 2,
+            "team": "WOO",
+            "location": "Away",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "SO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 1763,
+            "season": "S2",
+            "session": 4,
+            "team": "ORL",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "TB": {
+        "record": 8,
+        "tie_count": 11,
+        "most_recent": {
+          "id": 529,
+          "season": "S3",
+          "session": 11,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "VIP"
+        }
+      },
+      "WAR": {
+        "record": 0.3903085118987737,
+        "holders": [
+          {
+            "id": 596,
+            "season": "S1",
+            "session": 3,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 1725,
+        "most_recent": {
+          "id": 10,
+          "season": "S3",
+          "session": 12,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 32,
+            "season": "S1",
+            "session": 7,
+            "team": "WBK",
+            "location": "Away",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 45,
+            "season": "S3",
+            "session": 12,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "ORL"
+          },
+          {
+            "id": 479,
+            "season": "S2",
+            "session": 9,
+            "team": "VIP",
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "id": 1703,
+            "season": "S2",
+            "session": 6,
+            "team": "ORL",
+            "location": "Home",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 477,
+            "season": "S3",
+            "session": 7,
+            "team": "VIP",
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 7,
+        "holders": [
+          {
+            "id": 265,
+            "season": "S2",
+            "session": 4,
+            "team": "SYC",
+            "location": "Home",
+            "opponent": "VIP"
+          },
+          {
+            "id": 1692,
+            "season": "S2",
+            "session": 1,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "NOL"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 3,
+            "team": "VAN",
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "BB": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 1776,
+            "season": "S3",
+            "session": 7,
+            "team": "FUB",
+            "location": "Away",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "BF": {
+        "record": 23,
+        "holders": [
+          {
+            "id": 1799,
+            "season": "S1",
+            "session": 5,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 1748,
+            "season": "S2",
+            "session": 8,
+            "team": "ORL",
+            "location": "Home",
+            "opponent": "WOO"
+          },
+          {
+            "id": 1729,
+            "season": "S1",
+            "session": 1,
+            "team": "WOO",
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 492,
+            "season": "S2",
+            "session": 3,
+            "team": "GIB",
+            "location": "Away",
+            "opponent": "FUB"
+          },
+          {
+            "id": 265,
+            "season": "S1",
+            "session": 1,
+            "team": "SYC",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "ER": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 1736,
+            "season": "S2",
+            "session": 2,
+            "team": "FUB",
+            "location": "Home",
+            "opponent": "NOL"
+          }
+        ]
+      },
+      "FO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 675,
+            "season": "S2",
+            "session": 6,
+            "team": "WOO",
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "id": 719,
+            "season": "S2",
+            "session": 3,
+            "team": "FUB",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "H": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 490,
+            "season": "S2",
+            "session": 7,
+            "team": "FUB",
+            "location": "Home",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 1776,
+            "season": "S3",
+            "session": 3,
+            "team": "FUB",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "tie_count": 12,
+        "most_recent": {
+          "id": 265,
+          "season": "S3",
+          "session": 3,
+          "team": "SYC",
+          "location": "Away",
+          "opponent": "WOO"
+        }
+      },
+      "IP": {
+        "record": "5.0",
+        "holders": [
+          {
+            "id": 719,
+            "season": "S2",
+            "session": 3,
+            "team": "FUB",
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "id": 1799,
+            "season": "S1",
+            "session": 5,
+            "team": "GIB",
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 265,
+            "season": "S2",
+            "session": 4,
+            "team": "SYC",
+            "location": "Home",
+            "opponent": "VIP"
+          },
+          {
+            "id": 134,
+            "season": "S2",
+            "session": 3,
+            "team": "SYC",
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 32,
+            "season": "S3",
+            "session": 5,
+            "team": "WBK",
+            "location": "Home",
+            "opponent": "VIP"
+          },
+          {
+            "id": 32,
+            "season": "S2",
+            "session": 5,
+            "team": "WBK",
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -4.328508771929824,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S3",
+            "session": 3,
+            "team": "WBK",
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 265,
+            "season": "S2",
+            "session": 8,
+            "team": "SYC",
+            "location": "Home",
+            "opponent": "WBK"
+          },
+          {
+            "id": 1703,
+            "season": "S2",
+            "session": 6,
+            "team": "ORL",
+            "location": "Home",
+            "opponent": "SYC"
+          },
+          {
+            "id": 783,
+            "season": "S2",
+            "session": 2,
+            "team": "VIP",
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 3,
+            "team": "VAN",
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "SO": {
+        "record": 11,
+        "holders": [
+          {
+            "id": 1692,
+            "season": "S2",
+            "session": 4,
+            "team": "GIB",
+            "location": "Away",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.5246409478329049,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S3",
+            "session": 3,
+            "team": "WBK",
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 341,
+        "most_recent": {
+          "id": 45,
+          "season": "S3",
+          "session": 12,
+          "team": "GIB",
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "ORL",
+            "season": "S3",
+            "session": 5,
+            "location": "Away",
+            "opponent": "NOL"
+          },
+          {
+            "team": "GIB",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "WBK"
+          },
+          {
+            "team": "GIB",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "VAN"
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "FUB",
+            "season": "S3",
+            "session": 7,
+            "location": "Away",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S2",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "BB": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S3",
+            "session": 8,
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S3",
+            "session": 3,
+            "location": "Away",
+            "opponent": "VIP"
+          },
+          {
+            "team": "WOO",
+            "season": "S2",
+            "session": 8,
+            "location": "Away",
+            "opponent": "ORL"
+          },
+          {
+            "team": "WBK",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "GIB"
+          },
+          {
+            "team": "ORL",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "FO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "VIP",
+            "season": "S3",
+            "session": 6,
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 3,
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "team": "GIB",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "H": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 9,
+            "location": "Home",
+            "opponent": "WOO"
+          },
+          {
+            "team": "VIP",
+            "season": "S2",
+            "session": 7,
+            "location": "Away",
+            "opponent": "FUB"
+          },
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "HR": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S3",
+            "session": 3,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 3,
+            "location": "Home",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "PA": {
+        "record": 27,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S3",
+            "session": 6,
+            "location": "Away",
+            "opponent": "VIP"
+          },
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "VIP",
+            "season": "S3",
+            "session": 5,
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 5,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "R": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 9.198653198653199,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 8,
+            "location": "Away",
+            "opponent": "SYC"
+          },
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 6,
+            "location": "Away",
+            "opponent": "ORL"
+          },
+          {
+            "team": "GIB",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "VIP"
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "ORL",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VAN"
+          },
+          {
+            "team": "WOO",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "VAN"
+          },
+          {
+            "team": "WOO",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "ORL",
+            "season": "S2",
+            "session": 4,
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "TB": {
+        "record": 27,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S3",
+            "session": 3,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.0501204501422372,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S2",
+            "session": 2,
+            "location": "Away",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 180,
+        "most_recent": {
+          "team": "GIB",
+          "season": "S3",
+          "session": 12,
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "NOL",
+            "season": "S3",
+            "session": 5,
+            "location": "Home",
+            "opponent": "ORL"
+          },
+          {
+            "team": "WBK",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "GIB"
+          },
+          {
+            "team": "VAN",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "team": "ORL",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "WBK"
+          },
+          {
+            "team": "WBK",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "VIP",
+            "season": "S3",
+            "session": 7,
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "FUB",
+            "season": "S3",
+            "session": 8,
+            "location": "Away",
+            "opponent": "GIB"
+          },
+          {
+            "team": "VAN",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "BB": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "FUB",
+            "season": "S3",
+            "session": 8,
+            "location": "Away",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "BF": {
+        "record": 27,
+        "holders": [
+          {
+            "team": "VIP",
+            "season": "S3",
+            "session": 6,
+            "location": "Home",
+            "opponent": "GIB"
+          },
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NOL"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "VIP",
+            "season": "S3",
+            "session": 3,
+            "location": "Home",
+            "opponent": "NOL"
+          },
+          {
+            "team": "ORL",
+            "season": "S2",
+            "session": 8,
+            "location": "Home",
+            "opponent": "WOO"
+          },
+          {
+            "team": "GIB",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "WBK"
+          },
+          {
+            "team": "WOO",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 3,
+            "location": "Home",
+            "opponent": "SYC"
+          },
+          {
+            "team": "GIB",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "FUB"
+          },
+          {
+            "team": "SYC",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "ER": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NOL"
+          }
+        ]
+      },
+      "FO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S3",
+            "session": 6,
+            "location": "Away",
+            "opponent": "VIP"
+          },
+          {
+            "team": "WOO",
+            "season": "S2",
+            "session": 2,
+            "location": "Home",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "H": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "WOO",
+            "season": "S2",
+            "session": 9,
+            "location": "Away",
+            "opponent": "SYC"
+          },
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 7,
+            "location": "Home",
+            "opponent": "VIP"
+          },
+          {
+            "team": "FUB",
+            "season": "S2",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NOL"
+          }
+        ]
+      },
+      "HR": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "FUB",
+            "season": "S3",
+            "session": 3,
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 3,
+            "location": "Home",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "IP": {
+        "record": "6.0",
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          },
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 3,
+            "location": "Home",
+            "opponent": "SYC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "PO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "WBK",
+            "season": "S3",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VIP"
+          },
+          {
+            "team": "WBK",
+            "season": "S2",
+            "session": 5,
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -3.4291245791245792,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 8,
+            "location": "Home",
+            "opponent": "WBK"
+          },
+          {
+            "team": "ORL",
+            "season": "S2",
+            "session": 6,
+            "location": "Home",
+            "opponent": "SYC"
+          },
+          {
+            "team": "VIP",
+            "season": "S2",
+            "session": 2,
+            "location": "Home",
+            "opponent": "GIB"
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "VAN",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "ORL"
+          },
+          {
+            "team": "VAN",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "WOO"
+          },
+          {
+            "team": "SYC",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "WOO"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S2",
+            "session": 4,
+            "location": "Away",
+            "opponent": "ORL"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.4872693029758543,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 180,
+        "most_recent": {
+          "team": "GIB",
+          "season": "S3",
+          "session": 12,
+          "location": "Home",
+          "opponent": "ORL"
+        }
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 7
+          },
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          },
+          {
+            "away": "VAN",
+            "home": "ORL",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "NOL",
+            "home": "GIB",
+            "season": "S3",
+            "session": 7
+          },
+          {
+            "away": "FUB",
+            "home": "GIB",
+            "season": "S2",
+            "session": 8
+          },
+          {
+            "away": "SYC",
+            "home": "GIB",
+            "season": "S2",
+            "session": 5
+          }
+        ]
+      },
+      "BB": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 7
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "NOL",
+          "home": "VIP",
+          "season": "S3",
+          "session": 3
+        }
+      },
+      "FO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 6
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "H": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          },
+          {
+            "away": "WBK",
+            "home": "GIB",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "SYC",
+            "season": "S2",
+            "session": 10
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "LGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "PA": {
+        "record": 50,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 6
+          }
+        ]
+      },
+      "PO": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "VIP",
+            "home": "WBK",
+            "season": "S3",
+            "session": 5
+          },
+          {
+            "away": "FUB",
+            "home": "ORL",
+            "season": "S3",
+            "session": 1
+          },
+          {
+            "away": "FUB",
+            "home": "WBK",
+            "season": "S2",
+            "session": 5
+          }
+        ]
+      },
+      "R": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NOL",
+            "home": "FUB",
+            "season": "S2",
+            "session": 2
+          }
+        ]
+      },
+      "RBI": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NOL",
+            "home": "FUB",
+            "season": "S2",
+            "session": 2
+          }
+        ]
+      },
+      "RE24": {
+        "record": 10.997306397306398,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "GIB",
+            "season": "S2",
+            "session": 8
+          }
+        ]
+      },
+      "RGO": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "WBK",
+            "home": "SYC",
+            "season": "S2",
+            "session": 8
+          },
+          {
+            "away": "NOL",
+            "home": "FUB",
+            "season": "S2",
+            "session": 2
+          },
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S2",
+            "session": 2
+          }
+        ]
+      },
+      "SB": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "VAN",
+            "home": "ORL",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "ORL",
+            "season": "S2",
+            "session": 4
+          }
+        ]
+      },
+      "TB": {
+        "record": 41,
+        "holders": [
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.3090692419613998,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "GIB",
+            "season": "S2",
+            "session": 8
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 90,
+        "most_recent": {
+          "away": "ORL",
+          "home": "GIB",
+          "season": "S3",
+          "session": 12
+        }
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 22,
+        "holders": [
+          {
+            "away": "WBK",
+            "home": "ORL",
+            "season": "S1",
+            "session": 6
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 7
+          },
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          },
+          {
+            "away": "VAN",
+            "home": "ORL",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "GIB",
+            "season": "S3",
+            "session": 8
+          },
+          {
+            "away": "WOO",
+            "home": "VAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "BB": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 7
+          }
+        ]
+      },
+      "BF": {
+        "record": 50,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 6
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "NOL",
+          "home": "VIP",
+          "season": "S3",
+          "session": 3
+        }
+      },
+      "DP": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "ER": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NOL",
+            "home": "FUB",
+            "season": "S2",
+            "session": 2
+          }
+        ]
+      },
+      "FO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S3",
+            "session": 6
+          }
+        ]
+      },
+      "H": {
+        "record": 17,
+        "holders": [
+          {
+            "away": "WOO",
+            "home": "SYC",
+            "season": "S2",
+            "session": 9
+          },
+          {
+            "away": "WBK",
+            "home": "GIB",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "SYC",
+            "season": "S2",
+            "session": 10
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "IP": {
+        "record": "12.0",
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "LGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "PO": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "VIP",
+            "home": "WBK",
+            "season": "S3",
+            "session": 5
+          },
+          {
+            "away": "FUB",
+            "home": "ORL",
+            "season": "S3",
+            "session": 1
+          },
+          {
+            "away": "FUB",
+            "home": "WBK",
+            "season": "S2",
+            "session": 5
+          }
+        ]
+      },
+      "RE24": {
+        "record": -5.8582491582491585,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "RGO": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "WBK",
+            "home": "SYC",
+            "season": "S2",
+            "session": 8
+          },
+          {
+            "away": "NOL",
+            "home": "FUB",
+            "season": "S2",
+            "session": 2
+          },
+          {
+            "away": "GIB",
+            "home": "VIP",
+            "season": "S2",
+            "session": 2
+          }
+        ]
+      },
+      "SB": {
+        "record": 5,
+        "holders": [
+          {
+            "away": "VAN",
+            "home": "ORL",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "GIB",
+            "home": "ORL",
+            "season": "S2",
+            "session": 4
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.8882868769101273,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.0,
+        "tie_count": 90,
+        "most_recent": {
+          "away": "ORL",
+          "home": "GIB",
+          "season": "S3",
+          "session": 12
+        }
+      }
+    }
+  }
+}

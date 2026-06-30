@@ -1,0 +1,20 @@
+{
+  "no_hitters": [
+    {
+      "combined": false,
+      "team": "SM",
+      "opponent": "VC",
+      "location": "Home",
+      "season": "S1",
+      "session": 7,
+      "perfect": false,
+      "bb": 2,
+      "id": 275,
+      "so": 12,
+      "ip": "6.0"
+    }
+  ],
+  "cycles": [],
+  "triangles": [],
+  "multi_hr": []
+}

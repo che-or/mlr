@@ -138,6 +138,9 @@ export const LEAGUES_WITH_CAREER = ['mlr', 'mlr_playoff', 'milr', 'milr_playoff'
 // Leagues that have franchise (all-time aggregated team) stat files
 export const LEAGUES_WITH_FRANCHISE = ['mlr', 'mlr_playoff'];
 
+// Leagues that have a separate playoff dataset
+export const LEAGUES_WITH_PLAYOFFS = ['mlr', 'milr'];
+
 // Display names for leagues
 export const LEAGUE_LABELS = {
     mlr: 'MLR',
