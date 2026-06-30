@@ -141,6 +141,36 @@ def _build_team_result(records, n=10, active_teams=None):
     return {'entries': entries, 'tie_at_boundary': tie_at_boundary}
 
 
+def _merge_streak_bests(prior_bests, all_time, eid_fn):
+    """
+    Merge cached best streaks with newly computed ones.
+    Allows multiple entries per entity when they tie for the best length.
+    prior_bests values may be a single tuple list (old format) or a list-of-tuple-lists (new format).
+    Returns {eid_str: [tuple_list, ...]} where all entries share the entity's maximum streak length.
+    """
+    merged = {}
+    for eid_str, val in (prior_bests or {}).items():
+        if not val:
+            continue
+        if isinstance(val[0], list):
+            merged[eid_str] = [list(v) for v in val]
+        else:
+            merged[eid_str] = [list(val)]
+    for tup in all_time:
+        eid = eid_fn(tup)
+        t = list(tup)
+        if eid not in merged:
+            merged[eid] = [t]
+        else:
+            cur_best = merged[eid][0][0]
+            if t[0] > cur_best:
+                merged[eid] = [t]
+            elif t[0] == cur_best:
+                if (t[1], t[2]) not in {(e[1], e[2]) for e in merged[eid]}:
+                    merged[eid].append(t)
+    return merged
+
+
 def _load_streak_cache(cache_path):
     if cache_path is None:
         return None
@@ -355,7 +385,7 @@ def get_consecutive_games_played(hitting_game_stats, active_ids=None, cur_season
                     cur_len = 1
                     cur_start_ds, cur_start_sess = ds, session
 
-            if cur_len > best_len:
+            if cur_len >= best_len:
                 best_len = cur_len
                 best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
                 best_end_ds, best_end_sess, best_end_sn = ds, session, season
@@ -396,12 +426,8 @@ def get_consecutive_games_played(hitting_game_stats, active_ids=None, cur_season
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(tup[6])
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(tup[6]))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -427,14 +453,10 @@ def _game_streak(hitting_game_stats, condition_fn, active_ids=None, cur_season=N
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -449,6 +471,7 @@ def _game_streak(hitting_game_stats, condition_fn, active_ids=None, cur_season=N
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = False
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -473,19 +496,25 @@ def _game_streak(hitting_game_stats, condition_fn, active_ids=None, cur_season=N
                 if is_current:
                     current_continued = True
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         # For active: if the current session didn't continue the streak, revert to pre-game state.
         if had_current and not current_continued:
@@ -513,12 +542,8 @@ def _game_streak(hitting_game_stats, condition_fn, active_ids=None, cur_season=N
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(tup[6])
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(tup[6]))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -646,7 +671,7 @@ def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, c
                         cur_start_ds, cur_start_sess = ds, sess
                     cur_outs += inning_outs
                     cur_end_ds, cur_end_sess, cur_end_sn = ds, sess, sn
-                    if cur_outs > best_outs:
+                    if cur_outs >= best_outs:
                         best_outs = cur_outs
                         best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
                         best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
@@ -681,12 +706,8 @@ def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, c
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(int(tup[6]))
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(int(tup[6])))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -710,14 +731,10 @@ def _pa_batter_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cur
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -730,6 +747,7 @@ def _pa_batter_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cur
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True  # cleared if any current-session PA breaks the streak
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -753,21 +771,27 @@ def _pa_batter_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cur
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         act_len = cur_len
         act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
@@ -789,12 +813,8 @@ def _pa_batter_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cur
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(tup[6])
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(tup[6]))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -838,14 +858,10 @@ def _pa_pitcher_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cu
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -858,6 +874,7 @@ def _pa_pitcher_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cu
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -881,21 +898,27 @@ def _pa_pitcher_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cu
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         act_len = cur_len
         act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
@@ -917,12 +940,8 @@ def _pa_pitcher_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cu
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(int(tup[6]))
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(int(tup[6])))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -957,14 +976,10 @@ def _diff_batter_streak(diff_df, condition_fn, active_ids=None, cur_season=None,
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -977,6 +992,7 @@ def _diff_batter_streak(diff_df, condition_fn, active_ids=None, cur_season=None,
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -999,21 +1015,27 @@ def _diff_batter_streak(diff_df, condition_fn, active_ids=None, cur_season=None,
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         if had_current and not current_continued:
             act_len = snap_len
@@ -1040,12 +1062,8 @@ def _diff_batter_streak(diff_df, condition_fn, active_ids=None, cur_season=None,
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(tup[6])
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(tup[6]))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -1066,14 +1084,10 @@ def _diff_pitcher_streak(diff_df, condition_fn, active_ids=None, cur_season=None
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -1086,6 +1100,7 @@ def _diff_pitcher_streak(diff_df, condition_fn, active_ids=None, cur_season=None
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -1108,21 +1123,27 @@ def _diff_pitcher_streak(diff_df, condition_fn, active_ids=None, cur_season=None
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         if had_current and not current_continued:
             act_len = snap_len
@@ -1149,12 +1170,8 @@ def _diff_pitcher_streak(diff_df, condition_fn, active_ids=None, cur_season=None
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(int(tup[6]))
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(int(tup[6])))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -1214,14 +1231,10 @@ def _team_game_streak(team_wl_df, condition_fn, active_teams=None, cur_season=No
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -1234,6 +1247,7 @@ def _team_game_streak(team_wl_df, condition_fn, active_teams=None, cur_season=No
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -1256,21 +1270,27 @@ def _team_game_streak(team_wl_df, condition_fn, active_teams=None, cur_season=No
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, team))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, team))
 
         if had_current and not current_continued:
             act_len = snap_len
@@ -1297,12 +1317,8 @@ def _team_game_streak(team_wl_df, condition_fn, active_teams=None, cur_season=No
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], team_str))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(tup[6])
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(tup[6]))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
@@ -1375,14 +1391,10 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
         if rs:
             cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn = rs
             best_len = cur_len
-            best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-            best_end_ds, best_end_sess, best_end_sn = last_ds, last_sess, last_sn
         else:
             cur_len = 0
             cur_start_ds = cur_start_sess = None
             best_len = 0
-            best_start_ds = best_start_sess = best_end_ds = best_end_sess = None
-            best_end_sn = -1
             last_ds = last_sess = last_sn = None
 
         season_snap_len = None
@@ -1395,6 +1407,7 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
         snap_last_ds = snap_last_sess = snap_last_sn = None
         had_current = False
         current_continued = True
+        pid_all_time = []
 
         for _, row in grp.iterrows():
             ds, sess, sn = row['Display Season'], row['Session'], row['Season']
@@ -1417,21 +1430,27 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
                     cur_start_ds, cur_start_sess = ds, sess
                 cur_len += 1
             else:
+                if cur_len > 0:
+                    if cur_len > best_len:
+                        best_len = cur_len
+                        pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+                    elif cur_len == best_len:
+                        pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
                 if is_current:
                     current_continued = False
                 cur_len = 0
                 cur_start_ds = cur_start_sess = None
 
-            if cur_len > best_len:
-                best_len = cur_len
-                best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
-
             last_ds, last_sess, last_sn = ds, sess, sn
 
-        if best_len > 0:
-            all_time.append((best_len, best_start_ds, best_start_sess,
-                             best_end_ds, best_end_sess, best_end_sn, pid))
+        if cur_len > 0:
+            if cur_len > best_len:
+                best_len = cur_len
+                pid_all_time = [(cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn)]
+            elif cur_len == best_len:
+                pid_all_time.append((cur_len, cur_start_ds, cur_start_sess, last_ds, last_sess, last_sn))
+        for inst in pid_all_time:
+            all_time.append((*inst, pid))
 
         if had_current and not current_continued:
             act_len = snap_len
@@ -1458,12 +1477,8 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
             if rs[0] > 0:
                 active.append((rs[0], rs[1], rs[2], rs[3], rs[4], rs[5], int(pid_str)))
 
-    merged_bests = dict(prior_bests or {})
-    for tup in all_time:
-        eid = str(int(tup[6]))
-        if eid not in merged_bests or tup[0] > merged_bests[eid][0]:
-            merged_bests[eid] = list(tup)
-    final_all_time = list(merged_bests.values())
+    merged_bests = _merge_streak_bests(prior_bests, all_time, lambda tup: str(int(tup[6])))
+    final_all_time = [t for entries in merged_bests.values() for t in entries]
     if cache_output is not None:
         cache_output['raw_all_time'] = merged_bests
         cache_output['new_resume'] = new_resume
