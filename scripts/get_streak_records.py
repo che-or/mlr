@@ -551,9 +551,30 @@ def get_hr_streak(hitting_game_stats, active_ids=None, cur_season=None, cur_sess
 def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, cur_session=None,
                                   prior_bests=None, resume_state=None, cache_output=None):
     """
-    Longest scoreless innings streak for pitchers: outs recorded between runs allowed.
+    Longest scoreless innings streak for pitchers.
+    Outs are counted at the inning level: only innings with no run scored contribute
+    outs to the streak. Caught stealings count as outs. Any run in an inning
+    (including Manfred runners or runs credited to steal rows) discards all outs
+    from that inning and resets the streak.
     Record is displayed as an IP string (e.g. '12.1').
     """
+    # Runs on non-PA rows (Manfred runners, steal attempts) are filtered out by
+    # _prep_pa_df but still break a scoreless streak. Capture their inning IDs first.
+    non_pa_run_inning_ids = set(
+        gamelog_df.loc[
+            gamelog_df['PA Type'].isin(_NON_PA_TYPES) & (gamelog_df['Run'] > 0),
+            'Inning ID'
+        ]
+    )
+
+    # CS outs (caught stealings) are real outs that count toward innings pitched
+    # but live on steal rows (PA Type 4/5/6) filtered out by _prep_pa_df.
+    cs_df = gamelog_df[
+        gamelog_df['PA Type'].isin([4, 5, 6]) &
+        gamelog_df['Exact Result'].isin(CS_RESULTS)
+    ]
+    cs_outs_map = cs_df.groupby(['Pitcher ID', 'Inning ID']).size().to_dict()
+
     df = _prep_pa_df(gamelog_df)
 
     all_time = []
@@ -586,8 +607,10 @@ def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, c
         had_current = False
         current_had_runs = False
 
-        for _, row in grp.iterrows():
-            ds, sess, sn = row['Display Season'], row['Session'], row['Season']
+        for (game_id, inning_id), inning_df in grp.groupby(['Game ID', 'Inning ID'], sort=False):
+            ds   = inning_df['Display Season'].iat[0]
+            sess = inning_df['Session'].iat[0]
+            sn   = inning_df['Season'].iat[0]
             is_current = (cur_season is not None and sn == cur_season and sess == cur_session)
 
             if cur_season is not None and sn == cur_season and not had_cur_season:
@@ -602,31 +625,31 @@ def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, c
                 snap_end_ds, snap_end_sess, snap_end_sn = cur_end_ds, cur_end_sess, cur_end_sn
                 had_current = True
 
-            runs = row.get('Run') or 0
-            try:
-                runs = float(runs)
-            except (TypeError, ValueError):
-                runs = 0
+            inning_has_run = (
+                inning_id in non_pa_run_inning_ids
+                or bool((inning_df['Run'] > 0).any())
+            )
+            inning_outs = sum(
+                _pa_outs(_s(row['Exact Result']), _s(row['Old Result']))
+                for _, row in inning_df.iterrows()
+            ) + cs_outs_map.get((pid, inning_id), 0)
 
-            if runs > 0:
+            if inning_has_run:
                 if is_current:
                     current_had_runs = True
                 cur_outs = 0
                 cur_start_ds = cur_start_sess = None
                 cur_end_ds = cur_end_sess = cur_end_sn = None
             else:
-                exact = _s(row.get('Exact Result'))
-                old   = _s(row.get('Old Result'))
-                outs  = _pa_outs(exact, old)
-                if outs > 0:
+                if inning_outs > 0:
                     if cur_outs == 0:
                         cur_start_ds, cur_start_sess = ds, sess
-                    cur_outs += outs
+                    cur_outs += inning_outs
                     cur_end_ds, cur_end_sess, cur_end_sn = ds, sess, sn
                     if cur_outs > best_outs:
                         best_outs = cur_outs
                         best_start_ds, best_start_sess = cur_start_ds, cur_start_sess
-                        best_end_ds, best_end_sess, best_end_sn = cur_end_ds, cur_end_sess, cur_end_sn
+                        best_end_ds, best_end_sess, best_end_sn = ds, sess, sn
 
         if best_outs > 0:
             all_time.append((best_outs, best_start_ds, best_start_sess,
@@ -746,14 +769,9 @@ def _pa_batter_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cur
             all_time.append((best_len, best_start_ds, best_start_sess,
                              best_end_ds, best_end_sess, best_end_sn, pid))
 
-        if had_current and not current_continued:
-            act_len = snap_len
-            act_start_ds, act_start_sess = snap_start_ds, snap_start_sess
-            act_end_ds, act_end_sess, act_end_sn = snap_last_ds, snap_last_sess, snap_last_sn
-        else:
-            act_len = cur_len
-            act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
-            act_end_ds, act_end_sess, act_end_sn = last_ds, last_sess, last_sn
+        act_len = cur_len
+        act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
+        act_end_ds, act_end_sess, act_end_sn = last_ds, last_sess, last_sn
 
         if act_len > 0 and act_end_ds is not None:
             active.append((act_len, act_start_ds, act_start_sess,
@@ -879,14 +897,9 @@ def _pa_pitcher_streak(pa_df, condition_fn, active_ids=None, cur_season=None, cu
             all_time.append((best_len, best_start_ds, best_start_sess,
                              best_end_ds, best_end_sess, best_end_sn, pid))
 
-        if had_current and not current_continued:
-            act_len = snap_len
-            act_start_ds, act_start_sess = snap_start_ds, snap_start_sess
-            act_end_ds, act_end_sess, act_end_sn = snap_last_ds, snap_last_sess, snap_last_sn
-        else:
-            act_len = cur_len
-            act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
-            act_end_ds, act_end_sess, act_end_sn = last_ds, last_sess, last_sn
+        act_len = cur_len
+        act_start_ds, act_start_sess = cur_start_ds, cur_start_sess
+        act_end_ds, act_end_sess, act_end_sn = last_ds, last_sess, last_sn
 
         if act_len > 0 and act_end_ds is not None:
             active.append((act_len, act_start_ds, act_start_sess,
@@ -1164,6 +1177,30 @@ def _build_team_wl_df(hitting_team_game_stats):
     return df
 
 
+def _build_team_auto_df(gamelog_df, hitting_team_game_stats):
+    """One row per (Team, Game) with auto_free=True if no Auto K or Auto BB that game."""
+    team_games = (
+        hitting_team_game_stats[['Team', 'Game ID', 'Season', 'Display Season', 'Session']]
+        .drop_duplicates(subset=['Team', 'Game ID'])
+    )
+    auto_k = (
+        gamelog_df[gamelog_df['PA Type'] == 9]
+        [['Game ID', 'Batter Franchise']].rename(columns={'Batter Franchise': 'Team'})
+        .drop_duplicates()
+    )
+    auto_k['had_auto'] = True
+    auto_bb = (
+        gamelog_df[gamelog_df['PA Type'] == 10]
+        [['Game ID', 'Pitcher Franchise']].rename(columns={'Pitcher Franchise': 'Team'})
+        .drop_duplicates()
+    )
+    auto_bb['had_auto'] = True
+    auto_events = pd.concat([auto_k, auto_bb]).drop_duplicates(subset=['Team', 'Game ID'])
+    result = team_games.merge(auto_events, on=['Team', 'Game ID'], how='left')
+    result['auto_free'] = ~result['had_auto'].fillna(False).astype(bool)
+    return result[['Team', 'Game ID', 'Season', 'Display Season', 'Session', 'auto_free']]
+
+
 def _team_game_streak(team_wl_df, condition_fn, active_teams=None, cur_season=None, cur_session=None,
                        prior_bests=None, resume_state=None, cache_output=None):
     """Generic game-based team streak. condition_fn(row) -> bool (True = continues streak)."""
@@ -1290,6 +1327,39 @@ def _build_pitcher_app_df(gamelog_df, wls_df):
     apps['got_W'] = apps['Pitcher ID'] == apps['W']
     apps['got_L'] = apps['Pitcher ID'] == apps['L']
     return apps
+
+
+def _build_pitcher_save_opp_df(gamelog_df, wls_df):
+    """One row per (pitcher, game) save opportunity with got_SV / got_BS flags."""
+    real_pa = gamelog_df[~gamelog_df['PA Type'].isin(_NON_PA_TYPES)]
+    apps = (
+        real_pa[real_pa['Pitcher ID'].notna()]
+        [['Pitcher ID', 'Game ID', 'Season', 'Display Season', 'Session']]
+        .drop_duplicates(subset=['Pitcher ID', 'Game ID'])
+    )
+    rows = []
+    for _, game_row in wls_df.iterrows():
+        game_id = game_row['Game ID']
+        sv_pid = game_row.get('SV')
+        sv_set = {int(sv_pid)} if sv_pid and pd.notna(sv_pid) else set()
+        bs_set = set()
+        for col in ('BSH', 'BSA'):
+            val = game_row.get(col) or []
+            for pid in (val if isinstance(val, list) else [val]):
+                if pid is not None and pd.notna(pid):
+                    bs_set.add(int(pid))
+        for pid in sv_set | bs_set:
+            rows.append({'Pitcher ID': pid, 'Game ID': game_id,
+                         'got_SV': pid in sv_set, 'got_BS': pid in bs_set})
+    if not rows:
+        return pd.DataFrame(columns=['Pitcher ID', 'Game ID', 'Season',
+                                     'Display Season', 'Session', 'got_SV', 'got_BS'])
+    sv_opp = pd.DataFrame(rows)
+    sv_opp['Pitcher ID'] = sv_opp['Pitcher ID'].astype(apps['Pitcher ID'].dtype)
+    return sv_opp.merge(
+        apps[['Pitcher ID', 'Game ID', 'Season', 'Display Season', 'Session']],
+        on=['Pitcher ID', 'Game ID'], how='inner'
+    )
 
 
 def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_season=None, cur_session=None,
@@ -1441,6 +1511,7 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
         'batter_diff_lt100', 'batter_diff_lt200',
         'pitcher_diff_gt300', 'pitcher_diff_gt400',
         'team_win_streak', 'team_loss_streak',
+        'pa_no_hr_streak', 'bf_no_hr_streak', 'pitcher_save_streak', 'team_no_auto_streak',
     ]
 
     if use_cache:
@@ -1469,6 +1540,12 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
     pitcher_app_df = _build_pitcher_app_df(gl_use, wls_df)
     pitcher_app_df_no_cur = pitcher_app_df[
         ~((pitcher_app_df['Season'] == cur_season) & (pitcher_app_df['Session'] == cur_session))
+    ]
+
+    pitcher_save_opp_df = _build_pitcher_save_opp_df(gl_use, wls_df)
+    pitcher_save_opp_df_no_cur = pitcher_save_opp_df[
+        ~((pitcher_save_opp_df['Season'] == cur_season) &
+          (pitcher_save_opp_df['Session'] == cur_session))
     ]
 
     kw = dict(cur_season=cur_season, cur_session=cur_session)
@@ -1577,6 +1654,18 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
             diff_df, lambda d: d > 400, active_ids=active_pitcher_ids,
             prior_bests=_pb('pitcher_diff_gt400'), resume_state=_rs('pitcher_diff_gt400'),
             cache_output=cos['pitcher_diff_gt400'], **kw),
+        'pa_no_hr_streak': _pa_batter_streak(
+            pa_df, lambda e: e != 'HR', active_ids=active_batter_ids,
+            prior_bests=_pb('pa_no_hr_streak'), resume_state=_rs('pa_no_hr_streak'),
+            cache_output=cos['pa_no_hr_streak'], **kw),
+        'bf_no_hr_streak': _pa_pitcher_streak(
+            pa_df, lambda e: e != 'HR', active_ids=active_pitcher_ids,
+            prior_bests=_pb('bf_no_hr_streak'), resume_state=_rs('bf_no_hr_streak'),
+            cache_output=cos['bf_no_hr_streak'], **kw),
+        'pitcher_save_streak': _pitcher_game_streak(
+            pitcher_save_opp_df_no_cur, lambda r: r['got_SV'], active_ids=active_pitcher_ids,
+            prior_bests=_pb('pitcher_save_streak'), resume_state=_rs('pitcher_save_streak'),
+            cache_output=cos['pitcher_save_streak'], **kw),
     }
 
     if hitting_team_game_stats is not None:
@@ -1597,6 +1686,11 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
             team_wl_df, lambda r: r['Lost'], active_teams=active_teams,
             prior_bests=_pb('team_loss_streak'), resume_state=_rs('team_loss_streak'),
             cache_output=cos['team_loss_streak'], **kw)
+        team_auto_df = _build_team_auto_df(gl_excl, htgs_excl)
+        result['team_no_auto_streak'] = _team_game_streak(
+            team_auto_df, lambda r: r['auto_free'], active_teams=active_teams,
+            prior_bests=_pb('team_no_auto_streak'), resume_state=_rs('team_no_auto_streak'),
+            cache_output=cos['team_no_auto_streak'], **kw)
 
     # Build and save updated cache
     if use_cache:
