@@ -27,7 +27,8 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
 
     # counting stat columns
     cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO', 
-            'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI', 
+            'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
+            '1RHR', '2RHR', '3RHR', '4RHR',
             'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs', 
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF']
     sets = ['G_list'] # set columns
@@ -71,6 +72,7 @@ def _hitting_stats_table(df):
     hitting_stats_exact = pd.pivot_table(df, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
     hitting_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
     hitting_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
+    hitting_stats_obc = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'OBC'], aggfunc = 'size', fill_value = 0)
 
     hitting_stats = pd.DataFrame()
 
@@ -101,6 +103,12 @@ def _hitting_stats_table(df):
     
     hitting_stats['SB'] = hitting_stats_exact.get('STEAL 2B', 0) + hitting_stats_exact.get('STEAL 3B', 0) + hitting_stats_exact.get('STEAL HOME', 0) + hitting_stats_exact.get('MSTEAL 3B', 0) +hitting_stats_exact.get('MSTEAL HOME', 0)
     hitting_stats['CS'] = hitting_stats_exact.get('CS 2B', 0) + hitting_stats_exact.get('CS 3B', 0) + hitting_stats_exact.get('CS HOME', 0) + hitting_stats_exact.get('CMS 3B', 0) + hitting_stats_exact.get('CMS HOME', 0)
+
+    # Home runs of each type
+    hitting_stats['1RHR'] = hitting_stats_obc.get(('HR', 0), 0)
+    hitting_stats['2RHR'] = hitting_stats_obc.get(('HR', 1), 0) + hitting_stats_obc.get(('HR', 2), 0) + hitting_stats_obc.get(('HR', 3), 0)
+    hitting_stats['3RHR'] = hitting_stats_obc.get(('HR', 4), 0) + hitting_stats_obc.get(('HR', 5), 0) + hitting_stats_obc.get(('HR', 6), 0)
+    hitting_stats['4RHR'] = hitting_stats_obc.get(('HR', 7), 0)
 
     # Hitting stats calculated from raw counts
     hitting_stats['H'] = hitting_stats['1B'] + hitting_stats['2B'] + hitting_stats['3B'] + hitting_stats['HR']

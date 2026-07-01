@@ -846,19 +846,19 @@
         },
         {
           "record": "7.1",
-          "id": 3297,
-          "season_start": "S12",
-          "session_start": 9,
-          "season_end": "S12",
-          "session_end": 15
-        },
-        {
-          "record": "7.0",
           "id": 2875,
           "season_start": "S9",
           "session_start": 15,
           "season_end": "S12",
           "session_end": 16
+        },
+        {
+          "record": "7.1",
+          "id": 3297,
+          "season_start": "S12",
+          "session_start": 9,
+          "season_end": "S12",
+          "session_end": 15
         },
         {
           "record": "6.0",
@@ -984,14 +984,6 @@
         },
         {
           "record": 3,
-          "id": 2932,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 3,
           "id": 3085,
           "season_start": "S12",
           "session_start": 14,
@@ -1049,6 +1041,14 @@
         {
           "record": 2,
           "id": 161,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 2,
+          "id": 226,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -1167,6 +1167,14 @@
         },
         {
           "record": 4,
+          "id": 2932,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 4,
           "id": 3025,
           "season_start": "S10",
           "session_start": 15,
@@ -1207,14 +1215,6 @@
         },
         {
           "record": 3,
-          "id": 2932,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 3,
           "id": 2943,
           "season_start": "S12",
           "session_start": 14,
@@ -1231,7 +1231,7 @@
         }
       ],
       "tie_at_boundary": {
-        "count": 13,
+        "count": 12,
         "record": 3
       }
     }
@@ -1921,23 +1921,23 @@
         },
         {
           "record": 5,
+          "id": 788,
+          "season_start": "S12",
+          "session_start": 14,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 5,
           "id": 3164,
           "season_start": "S12",
           "session_start": 14,
           "season_end": "S12",
           "session_end": 15
-        },
-        {
-          "record": 5,
-          "id": 3168,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 7,
+        "count": 8,
         "record": 5
       }
     }
@@ -2245,14 +2245,6 @@
         },
         {
           "record": 1,
-          "id": 2720,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 1,
           "id": 2782,
           "season_start": "S12",
           "session_start": 16,
@@ -2290,10 +2282,18 @@
           "session_start": 15,
           "season_end": "S12",
           "session_end": 15
+        },
+        {
+          "record": 1,
+          "id": 114,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 16,
+        "count": 15,
         "record": 1
       }
     }
@@ -3100,14 +3100,6 @@
       "entries": [
         {
           "record": 3,
-          "id": 2932,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 3,
           "id": 3206,
           "season_start": "S12",
           "session_start": 16,
@@ -3173,6 +3165,14 @@
         {
           "record": 2,
           "id": 2970,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 2,
+          "id": 3085,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -3323,6 +3323,14 @@
         },
         {
           "record": 4,
+          "id": 2932,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 4,
           "id": 2943,
           "season_start": "S12",
           "session_start": 14,
@@ -3344,18 +3352,10 @@
           "session_start": 14,
           "season_end": "S12",
           "session_end": 15
-        },
-        {
-          "record": 4,
-          "id": 355,
-          "season_start": "S12",
-          "session_start": 14,
-          "season_end": "S12",
-          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 7,
+        "count": 8,
         "record": 4
       }
     }
@@ -3469,6 +3469,14 @@
         },
         {
           "record": 4,
+          "id": 788,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 4,
           "id": 331,
           "season_start": "S12",
           "session_start": 14,
@@ -3490,14 +3498,6 @@
           "session_start": 12,
           "season_end": "S12",
           "session_end": 12
-        },
-        {
-          "record": 3,
-          "id": 788,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
         },
         {
           "record": 3,
@@ -3533,7 +3533,7 @@
         }
       ],
       "tie_at_boundary": {
-        "count": 7,
+        "count": 6,
         "record": 3
       }
     }

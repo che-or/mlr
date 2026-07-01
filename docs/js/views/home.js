@@ -38,8 +38,8 @@ export async function renderHome() {
                 ${awardsLink}
                 ${hofLink}
                 <li><a href="#/draft"><strong>Draft History:</strong></a> Season-by-season draft picks for MLR.</li>
-                <li><a href="#/single-game-records"><strong>Single-Game Records:</strong></a> All-time single-game record holders for MLR batting and pitching stats.</li>
-                <li><a href="#/streaks"><strong>Streaks:</strong></a> All-time and active streak records for hitting, on-base, scoreless innings, and more.</li>
+                <li><a href="#/single-game-records"><strong>Single-Game Records:</strong></a> All-time single-game record holders for batting and pitching stats for all leagues.</li>
+                <li><a href="#/streaks"><strong>Streaks:</strong></a> MLR all-time and active streak records for hitting, on-base, scoreless innings, and more.</li>
                 <li><a href="#/compare"><strong>Player Comparison:</strong></a> Compare up to four players side-by-side across any league and season.</li>
                 <li><a href="#/glossary"><strong>Glossary:</strong></a> Definitions and equations for advanced and calculated stats.</li>
             </ul>
@@ -51,7 +51,7 @@ export async function renderHome() {
                 <li>Milestone tracking</li>
             </ul>
             <br>
-            <p>Feel free to ping me (Che) if you have any suggestions or find any bugs. If you know of any names that are missing from a players former names, please let me know.</p>
+            <p>Feel free to ping me (Che) if you have any suggestions or find any bugs. If you know of any names that are missing from a player's former names, please let me know.</p>
             <br>
 
             <h3 class="section-title">Today's Features</h3>
