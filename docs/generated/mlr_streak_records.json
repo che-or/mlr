@@ -336,15 +336,15 @@
         },
         {
           "record": 5,
-          "id": 400,
+          "id": 3223,
           "season_start": "S12",
-          "session_start": 11,
+          "session_start": 12,
           "season_end": "S12",
-          "session_end": 15
+          "session_end": 16
         }
       ],
       "tie_at_boundary": {
-        "count": 9,
+        "count": 10,
         "record": 5
       }
     }
@@ -813,10 +813,18 @@
           "session_end": 16
         },
         {
-          "record": "8.0",
+          "record": "8.2",
           "id": 3078,
           "season_start": "S12",
           "session_start": 11,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": "8.0",
+          "id": 2720,
+          "season_start": "S12",
+          "session_start": 13,
           "season_end": "S12",
           "session_end": 16
         },
@@ -827,14 +835,6 @@
           "session_start": 11,
           "season_end": "S12",
           "session_end": 14
-        },
-        {
-          "record": "7.2",
-          "id": 2720,
-          "season_start": "S12",
-          "session_start": 13,
-          "season_end": "S12",
-          "session_end": 16
         },
         {
           "record": "7.2",
@@ -984,14 +984,6 @@
         },
         {
           "record": 3,
-          "id": 3085,
-          "season_start": "S12",
-          "session_start": 14,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 3,
           "id": 3206,
           "season_start": "S12",
           "session_start": 16,
@@ -1048,7 +1040,15 @@
         },
         {
           "record": 2,
-          "id": 226,
+          "id": 405,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 2,
+          "id": 606,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -1056,7 +1056,7 @@
         }
       ],
       "tie_at_boundary": {
-        "count": 17,
+        "count": 16,
         "record": 2
       }
     }
@@ -1191,15 +1191,15 @@
         },
         {
           "record": 3,
-          "id": 2482,
+          "id": 1703,
           "season_start": "S12",
-          "session_start": 15,
+          "session_start": 16,
           "season_end": "S12",
           "session_end": 16
         },
         {
           "record": 3,
-          "id": 2616,
+          "id": 2482,
           "season_start": "S12",
           "session_start": 15,
           "season_end": "S12",
@@ -1215,15 +1215,15 @@
         },
         {
           "record": 3,
-          "id": 3085,
+          "id": 3206,
           "season_start": "S12",
-          "session_start": 14,
+          "session_start": 16,
           "season_end": "S12",
           "session_end": 16
         },
         {
           "record": 3,
-          "id": 3206,
+          "id": 3258,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -1231,7 +1231,7 @@
         }
       ],
       "tie_at_boundary": {
-        "count": 12,
+        "count": 10,
         "record": 3
       }
     }
@@ -1289,19 +1289,19 @@
         },
         {
           "record": 28,
-          "id": 330,
-          "season_start": "S3",
-          "session_start": 4,
-          "season_end": "S4",
-          "session_end": 8
-        },
-        {
-          "record": 27,
           "id": 1709,
           "season_start": "S11",
           "session_start": 14,
           "season_end": "S12",
           "session_end": 16
+        },
+        {
+          "record": 28,
+          "id": 330,
+          "season_start": "S3",
+          "session_start": 4,
+          "season_end": "S4",
+          "session_end": 8
         },
         {
           "record": 27,
@@ -1321,7 +1321,7 @@
         }
       ],
       "tie_at_boundary": {
-        "count": 4,
+        "count": 3,
         "record": 27
       }
     },
@@ -1336,7 +1336,7 @@
           "session_end": 16
         },
         {
-          "record": 27,
+          "record": 28,
           "id": 1709,
           "season_start": "S11",
           "session_start": 14,
@@ -1555,14 +1555,6 @@
         },
         {
           "record": 12,
-          "id": 734,
-          "season_start": "S12",
-          "session_start": 11,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 12,
           "id": 2467,
           "season_start": "S12",
           "session_start": 7,
@@ -1584,10 +1576,18 @@
           "session_start": 13,
           "season_end": "S12",
           "session_end": 16
+        },
+        {
+          "record": 10,
+          "id": 2509,
+          "season_start": "S12",
+          "session_start": 10,
+          "season_end": "S12",
+          "session_end": 16
         }
       ],
       "tie_at_boundary": {
-        "count": 2,
+        "count": 3,
         "record": 10
       }
     }
@@ -1692,12 +1692,20 @@
           "session_end": 16
         },
         {
-          "record": 12,
+          "record": 15,
+          "id": 3004,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 13,
           "id": 3164,
           "season_start": "S12",
           "session_start": 12,
           "season_end": "S12",
-          "session_end": 15
+          "session_end": 16
         },
         {
           "record": 12,
@@ -1717,11 +1725,27 @@
         },
         {
           "record": 10,
+          "id": 2621,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 10,
           "id": 2855,
           "season_start": "S12",
           "session_start": 15,
           "season_end": "S12",
           "session_end": 15
+        },
+        {
+          "record": 9,
+          "id": 2782,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
         },
         {
           "record": 9,
@@ -1738,35 +1762,11 @@
           "session_start": 14,
           "season_end": "S12",
           "session_end": 14
-        },
-        {
-          "record": 9,
-          "id": 371,
-          "season_start": "S12",
-          "session_start": 13,
-          "season_end": "S12",
-          "session_end": 14
-        },
-        {
-          "record": 9,
-          "id": 3107,
-          "season_start": "S12",
-          "session_start": 4,
-          "season_end": "S12",
-          "session_end": 9
-        },
-        {
-          "record": 8,
-          "id": 3004,
-          "season_start": "S12",
-          "session_start": 11,
-          "season_end": "S12",
-          "session_end": 11
         }
       ],
       "tie_at_boundary": {
-        "count": 2,
-        "record": 8
+        "count": 5,
+        "record": 9
       }
     }
   },
@@ -1916,32 +1916,32 @@
         },
         {
           "record": 6,
-          "id": 788,
+          "id": 490,
           "season_start": "S12",
-          "session_start": 14,
+          "session_start": 16,
           "season_end": "S12",
           "session_end": 16
         },
         {
           "record": 6,
-          "id": 100,
+          "id": 2782,
           "season_start": "S12",
-          "session_start": 14,
+          "session_start": 16,
           "season_end": "S12",
-          "session_end": 14
+          "session_end": 16
         },
         {
-          "record": 5,
+          "record": 6,
           "id": 3164,
           "season_start": "S12",
           "session_start": 14,
           "season_end": "S12",
-          "session_end": 15
+          "session_end": 16
         }
       ],
       "tie_at_boundary": {
-        "count": 7,
-        "record": 5
+        "count": 4,
+        "record": 6
       }
     }
   },
@@ -1950,19 +1950,19 @@
       "entries": [
         {
           "record": 11,
+          "id": 2734,
+          "season_start": "S9",
+          "session_start": 12,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 11,
           "id": 529,
           "season_start": "S5",
           "session_start": 2,
           "season_end": "S6",
           "session_end": 10
-        },
-        {
-          "record": 10,
-          "id": 2734,
-          "season_start": "S9",
-          "session_start": 12,
-          "season_end": "S12",
-          "session_end": 3
         },
         {
           "record": 8,
@@ -2037,12 +2037,12 @@
     "active": {
       "entries": [
         {
-          "record": 10,
+          "record": 11,
           "id": 2734,
           "season_start": "S9",
           "session_start": 12,
           "season_end": "S12",
-          "session_end": 3
+          "session_end": 16
         },
         {
           "record": 8,
@@ -2240,15 +2240,7 @@
         },
         {
           "record": 1,
-          "id": 2220,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 1,
-          "id": 2877,
+          "id": 788,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -2257,6 +2249,22 @@
         {
           "record": 1,
           "id": 2994,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 1,
+          "id": 3004,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 1,
+          "id": 3078,
           "season_start": "S12",
           "session_start": 16,
           "season_end": "S12",
@@ -2285,18 +2293,10 @@
           "session_start": 15,
           "season_end": "S12",
           "session_end": 15
-        },
-        {
-          "record": 1,
-          "id": 2855,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 13,
+        "count": 14,
         "record": 1
       }
     }
@@ -3143,22 +3143,6 @@
         },
         {
           "record": 2,
-          "id": 238,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 2,
-          "id": 1703,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 2,
           "id": 1839,
           "season_start": "S12",
           "session_start": 13,
@@ -3175,15 +3159,31 @@
         },
         {
           "record": 2,
-          "id": 3085,
+          "id": 54,
           "season_start": "S12",
-          "session_start": 16,
+          "session_start": 15,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
+        },
+        {
+          "record": 2,
+          "id": 2504,
+          "season_start": "S12",
+          "session_start": 14,
+          "season_end": "S12",
+          "session_end": 15
+        },
+        {
+          "record": 2,
+          "id": 2664,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 15,
+        "count": 12,
         "record": 2
       }
     }
@@ -3301,14 +3301,6 @@
           "session_end": 16
         },
         {
-          "record": 5,
-          "id": 3227,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
           "record": 4,
           "id": 2230,
           "season_start": "S12",
@@ -3350,15 +3342,23 @@
         },
         {
           "record": 4,
-          "id": 3085,
+          "id": 54,
           "season_start": "S12",
           "session_start": 14,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
+        },
+        {
+          "record": 4,
+          "id": 355,
+          "season_start": "S12",
+          "session_start": 14,
+          "season_end": "S12",
+          "session_end": 15
         }
       ],
       "tie_at_boundary": {
-        "count": 9,
+        "count": 8,
         "record": 4
       }
     }
@@ -3456,14 +3456,6 @@
       "entries": [
         {
           "record": 5,
-          "id": 788,
-          "season_start": "S12",
-          "session_start": 16,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 5,
           "id": 786,
           "season_start": "S12",
           "session_start": 12,
@@ -3529,6 +3521,14 @@
         {
           "record": 3,
           "id": 2915,
+          "season_start": "S12",
+          "session_start": 15,
+          "season_end": "S12",
+          "session_end": 15
+        },
+        {
+          "record": 3,
+          "id": 3168,
           "season_start": "S12",
           "session_start": 15,
           "season_end": "S12",
@@ -3658,6 +3658,14 @@
         },
         {
           "record": 1,
+          "id": 3164,
+          "season_start": "S12",
+          "session_start": 16,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 1,
           "id": 471,
           "season_start": "S12",
           "session_start": 15,
@@ -3703,18 +3711,10 @@
           "session_start": 15,
           "season_end": "S12",
           "session_end": 15
-        },
-        {
-          "record": 1,
-          "id": 166,
-          "season_start": "S12",
-          "session_start": 14,
-          "season_end": "S12",
-          "session_end": 14
         }
       ],
       "tie_at_boundary": {
-        "count": 28,
+        "count": 29,
         "record": 1
       }
     }
@@ -3991,7 +3991,7 @@
           "session_end": 15
         },
         {
-          "record": 113,
+          "record": 116,
           "id": 2877,
           "season_start": "S11",
           "session_start": 8,
