@@ -1,7 +1,7 @@
 {
   "no_hitters": [
     {
-      "combined": false,
+      "combined": true,
       "team": "CCD",
       "opponent": "MKW",
       "location": "Away",
@@ -9,35 +9,68 @@
       "session": 7,
       "perfect": true,
       "bb": 0,
-      "id": 2675,
-      "so": 3,
-      "ip": "6.0"
+      "pitchers": [
+        {
+          "id": 2675,
+          "ip": "6.0",
+          "so": 3,
+          "bb": 0
+        },
+        {
+          "id": 2675,
+          "ip": "6.0",
+          "so": 3,
+          "bb": 0
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "MMA",
       "opponent": "WSW",
       "location": "Home",
       "season": "S7",
       "session": 14,
       "perfect": false,
-      "bb": 5,
-      "id": 2627,
-      "so": 10,
-      "ip": "6.0"
+      "bb": 10,
+      "pitchers": [
+        {
+          "id": 2627,
+          "ip": "6.0",
+          "so": 10,
+          "bb": 5
+        },
+        {
+          "id": 2627,
+          "ip": "6.0",
+          "so": 10,
+          "bb": 5
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "CPR",
       "opponent": "WSW",
       "location": "Away",
       "season": "S7",
       "session": 12,
       "perfect": false,
-      "bb": 4,
-      "id": 563,
-      "so": 4,
-      "ip": "5.0"
+      "bb": 8,
+      "pitchers": [
+        {
+          "id": 563,
+          "ip": "5.0",
+          "so": 4,
+          "bb": 4
+        },
+        {
+          "id": 563,
+          "ip": "5.0",
+          "so": 4,
+          "bb": 4
+        }
+      ]
     },
     {
       "combined": true,
@@ -47,8 +80,26 @@
       "season": "S7",
       "session": 9,
       "perfect": false,
-      "bb": 6,
+      "bb": 12,
       "pitchers": [
+        {
+          "id": 686,
+          "ip": "2.0",
+          "so": 0,
+          "bb": 1
+        },
+        {
+          "id": 1824,
+          "ip": "2.0",
+          "so": 2,
+          "bb": 2
+        },
+        {
+          "id": 2476,
+          "ip": "2.0",
+          "so": 4,
+          "bb": 3
+        },
         {
           "id": 686,
           "ip": "2.0",
@@ -70,151 +121,284 @@
       ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "CPR",
       "opponent": "KNX",
       "location": "Home",
       "season": "S7",
       "session": 6,
       "perfect": false,
-      "bb": 1,
-      "id": 183,
-      "so": 1,
-      "ip": "6.0"
+      "bb": 2,
+      "pitchers": [
+        {
+          "id": 183,
+          "ip": "6.0",
+          "so": 1,
+          "bb": 1
+        },
+        {
+          "id": 183,
+          "ip": "6.0",
+          "so": 1,
+          "bb": 1
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "SAS",
       "opponent": "CWJ",
       "location": "Home",
       "season": "S6",
       "session": 14,
       "perfect": false,
-      "bb": 3,
-      "id": 2329,
-      "so": 6,
-      "ip": "6.0"
+      "bb": 6,
+      "pitchers": [
+        {
+          "id": 2329,
+          "ip": "6.0",
+          "so": 6,
+          "bb": 3
+        },
+        {
+          "id": 2329,
+          "ip": "6.0",
+          "so": 6,
+          "bb": 3
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "PUK",
       "opponent": "SGP",
       "location": "Home",
       "season": "S6",
       "session": 11,
       "perfect": false,
-      "bb": 2,
-      "id": 775,
-      "so": 13,
-      "ip": "6.0"
+      "bb": 4,
+      "pitchers": [
+        {
+          "id": 775,
+          "ip": "6.0",
+          "so": 13,
+          "bb": 2
+        },
+        {
+          "id": 775,
+          "ip": "6.0",
+          "so": 13,
+          "bb": 2
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "SAS",
       "opponent": "CBC",
       "location": "Away",
       "season": "S6",
       "session": 11,
       "perfect": false,
-      "bb": 2,
-      "id": 2329,
-      "so": 8,
-      "ip": "6.0"
+      "bb": 4,
+      "pitchers": [
+        {
+          "id": 2329,
+          "ip": "6.0",
+          "so": 8,
+          "bb": 2
+        },
+        {
+          "id": 2329,
+          "ip": "6.0",
+          "so": 8,
+          "bb": 2
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "TTT",
       "opponent": "MVS",
       "location": "Away",
       "season": "S6",
       "session": 6,
       "perfect": false,
-      "bb": 1,
-      "id": 2253,
-      "so": 4,
-      "ip": "6.0"
+      "bb": 2,
+      "pitchers": [
+        {
+          "id": 2253,
+          "ip": "6.0",
+          "so": 4,
+          "bb": 1
+        },
+        {
+          "id": 2253,
+          "ip": "6.0",
+          "so": 4,
+          "bb": 1
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "PBA",
       "opponent": "CIM",
       "location": "Away",
       "season": "S6",
       "session": 6,
       "perfect": false,
-      "bb": 4,
-      "id": 698,
-      "so": 3,
-      "ip": "5.0"
+      "bb": 8,
+      "pitchers": [
+        {
+          "id": 698,
+          "ip": "5.0",
+          "so": 3,
+          "bb": 4
+        },
+        {
+          "id": 698,
+          "ip": "5.0",
+          "so": 3,
+          "bb": 4
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "POR",
       "opponent": "CIM",
       "location": "Away",
       "season": "S6",
       "session": 3,
       "perfect": false,
-      "bb": 5,
-      "id": 477,
-      "so": 8,
-      "ip": "6.0"
+      "bb": 10,
+      "pitchers": [
+        {
+          "id": 477,
+          "ip": "6.0",
+          "so": 8,
+          "bb": 5
+        },
+        {
+          "id": 477,
+          "ip": "6.0",
+          "so": 8,
+          "bb": 5
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "GBC",
       "opponent": "GTY",
       "location": "Away",
       "season": "S5",
       "session": 13,
       "perfect": false,
-      "bb": 1,
-      "id": 194,
-      "so": 7,
-      "ip": "5.0"
+      "bb": 2,
+      "pitchers": [
+        {
+          "id": 194,
+          "ip": "5.0",
+          "so": 7,
+          "bb": 1
+        },
+        {
+          "id": 194,
+          "ip": "5.0",
+          "so": 7,
+          "bb": 1
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "TAC",
       "opponent": "KTY",
       "location": "Away",
       "season": "S5",
       "session": 11,
       "perfect": false,
-      "bb": 2,
-      "id": 775,
-      "so": 10,
-      "ip": "6.0"
+      "bb": 4,
+      "pitchers": [
+        {
+          "id": 775,
+          "ip": "6.0",
+          "so": 10,
+          "bb": 2
+        },
+        {
+          "id": 775,
+          "ip": "6.0",
+          "so": 10,
+          "bb": 2
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "PHB",
       "opponent": "TAI",
       "location": "Away",
       "season": "S5",
       "session": 2,
       "perfect": false,
-      "bb": 4,
-      "id": 770,
-      "so": 2,
-      "ip": "6.0"
+      "bb": 8,
+      "pitchers": [
+        {
+          "id": 770,
+          "ip": "6.0",
+          "so": 2,
+          "bb": 4
+        },
+        {
+          "id": 770,
+          "ip": "6.0",
+          "so": 2,
+          "bb": 4
+        }
+      ]
     },
     {
-      "combined": false,
+      "combined": true,
       "team": "LAN",
       "opponent": "SCB",
       "location": "Away",
       "season": "S3",
       "session": 10,
       "perfect": false,
-      "bb": 1,
-      "id": 386,
-      "so": 5,
-      "ip": "3.0"
+      "bb": 2,
+      "pitchers": [
+        {
+          "id": 386,
+          "ip": "3.0",
+          "so": 5,
+          "bb": 1
+        },
+        {
+          "id": 386,
+          "ip": "3.0",
+          "so": 5,
+          "bb": 1
+        }
+      ]
     }
   ],
   "cycles": [],
   "triangles": [
+    {
+      "id": 2258,
+      "team": "NUT",
+      "opponent": "SCU",
+      "location": "Home",
+      "season": "S8B",
+      "session": 7,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
     {
       "id": 2258,
       "team": "NUT",
@@ -240,12 +424,48 @@
       "hr": 2
     },
     {
+      "id": 213,
+      "team": "KNX",
+      "opponent": "BBC",
+      "location": "Away",
+      "season": "S7",
+      "session": 11,
+      "h": 4,
+      "2b": 1,
+      "3b": 1,
+      "hr": 2
+    },
+    {
       "id": 308,
       "team": "GTY",
       "opponent": "CHI",
       "location": "Away",
       "season": "S5",
       "session": 9,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
+      "id": 308,
+      "team": "GTY",
+      "opponent": "CHI",
+      "location": "Away",
+      "season": "S5",
+      "session": 9,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
+      "id": 1776,
+      "team": "TSA",
+      "opponent": "WSH",
+      "location": "Home",
+      "season": "S5",
+      "session": 8,
       "h": 3,
       "2b": 1,
       "3b": 1,
@@ -276,12 +496,48 @@
       "hr": 1
     },
     {
+      "id": 2218,
+      "team": "LMN",
+      "opponent": "MVM",
+      "location": "Home",
+      "season": "S5",
+      "session": 4,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
       "id": 72,
       "team": "CCF",
       "opponent": "TZS",
       "location": "Home",
       "season": "S3",
       "session": 12,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
+      "id": 72,
+      "team": "CCF",
+      "opponent": "TZS",
+      "location": "Home",
+      "season": "S3",
+      "session": 12,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
+      "id": 51,
+      "team": "CIN",
+      "opponent": "LAN",
+      "location": "Home",
+      "season": "S3",
+      "session": 8,
       "h": 3,
       "2b": 1,
       "3b": 1,
@@ -312,6 +568,30 @@
       "hr": 1
     },
     {
+      "id": 383,
+      "team": "LAN",
+      "opponent": "TZS",
+      "location": "Away",
+      "season": "S3",
+      "session": 7,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
+      "id": 346,
+      "team": "BAY",
+      "opponent": "SCB",
+      "location": "Home",
+      "season": "S3",
+      "session": 5,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
       "id": 346,
       "team": "BAY",
       "opponent": "SCB",
@@ -335,12 +615,39 @@
       "hr": 3
     },
     {
+      "id": 2887,
+      "team": "FLB",
+      "opponent": "KGB",
+      "location": "Away",
+      "season": "S9",
+      "session": 8,
+      "hr": 3
+    },
+    {
       "id": 2730,
       "team": "CCD",
       "opponent": "BIS",
       "location": "Away",
       "season": "S8A",
       "session": 4,
+      "hr": 3
+    },
+    {
+      "id": 2730,
+      "team": "CCD",
+      "opponent": "BIS",
+      "location": "Away",
+      "season": "S8A",
+      "session": 4,
+      "hr": 3
+    },
+    {
+      "id": 2367,
+      "team": "WWC",
+      "opponent": "JEF",
+      "location": "Away",
+      "season": "S6",
+      "session": 7,
       "hr": 3
     },
     {
@@ -362,12 +669,39 @@
       "hr": 3
     },
     {
+      "id": 207,
+      "team": "WWC",
+      "opponent": "RKT",
+      "location": "Away",
+      "season": "S5",
+      "session": 10,
+      "hr": 3
+    },
+    {
       "id": 290,
       "team": "WSH",
       "opponent": "GTY",
       "location": "Home",
       "season": "S5",
       "session": 7,
+      "hr": 3
+    },
+    {
+      "id": 290,
+      "team": "WSH",
+      "opponent": "GTY",
+      "location": "Home",
+      "season": "S5",
+      "session": 7,
+      "hr": 3
+    },
+    {
+      "id": 739,
+      "team": "PHB",
+      "opponent": "TAI",
+      "location": "Away",
+      "season": "S5",
+      "session": 2,
       "hr": 3
     },
     {
