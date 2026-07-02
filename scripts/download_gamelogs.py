@@ -58,13 +58,17 @@ def _download_gamelogs():
             _download_data(row)
             df = pd.read_csv(rf'../data/raw_gamelogs/{row['League'].lower()}_raw_gamelog_S{row['Season']}.csv')
 
-            print(f'Calculating RE matrix for {row['League']} S{row['Season']}...')
-            re_matrix = _calculate_re_matrix(df, season)
-            re_matrix.to_csv(rf'../data/re_matrices/{row['League'].lower()}_re_matrix_S{row['Season']}.csv')
+            if len(df) == 0:
+                print(f'No games logged for {row['League']} S{row['Season']}, skipping RE matrix calculation')
+            else:
+                print(f'Calculating RE matrix for {row['League']} S{row['Season']}...')
+                re_matrix = _calculate_re_matrix(df, season)
+                re_matrix.to_csv(rf'../data/re_matrices/{row['League'].lower()}_re_matrix_S{row['Season']}.csv')
 
-        fip_constant = _calculate_fip_constant(df)
-        fip_row = pd.DataFrame([{'League': row['League'], 'Season': row['Season'], 'FIP Constant': fip_constant}])
-        fip_constants = pd.concat([fip_constants, fip_row], ignore_index = True)
+        if len(df) > 0:
+            fip_constant = _calculate_fip_constant(df)
+            fip_row = pd.DataFrame([{'League': row['League'], 'Season': row['Season'], 'FIP Constant': fip_constant}])
+            fip_constants = pd.concat([fip_constants, fip_row], ignore_index = True)
 
     fip_constants.to_csv(r'../data/fip_constants.csv', index = False)
 
