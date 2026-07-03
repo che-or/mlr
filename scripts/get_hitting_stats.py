@@ -28,7 +28,7 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     # counting stat columns
     cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO', 
             'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
-            '1RHR', '2RHR', '3RHR', '4RHR',
+            '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
             'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs', 
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF']
     sets = ['G_list'] # set columns
@@ -73,6 +73,7 @@ def _hitting_stats_table(df):
     hitting_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
     hitting_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
     hitting_stats_obc = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'OBC'], aggfunc = 'size', fill_value = 0)
+    hitting_stats_patype = pd.pivot_table(df, index = cols, columns = 'PA Type', aggfunc = 'size', fill_value = 0)
 
     hitting_stats = pd.DataFrame()
 
@@ -101,7 +102,7 @@ def _hitting_stats_table(df):
     hitting_stats['GIDP'] = hitting_stats_old.get(('RGO','DP'), 0) + hitting_stats_old.get(('LGO','DP'), 0) + hitting_stats_exact.get('BUNT DP', 0)
     hitting_stats['GITP'] = hitting_stats_old.get(('LGO', 'TP'), 0)
     
-    hitting_stats['SB'] = hitting_stats_exact.get('STEAL 2B', 0) + hitting_stats_exact.get('STEAL 3B', 0) + hitting_stats_exact.get('STEAL HOME', 0) + hitting_stats_exact.get('MSTEAL 3B', 0) +hitting_stats_exact.get('MSTEAL HOME', 0)
+    hitting_stats['SB'] = hitting_stats_exact.get('STEAL 2B', 0) + hitting_stats_exact.get('STEAL 3B', 0) + hitting_stats_exact.get('STEAL HOME', 0) + hitting_stats_exact.get('MSTEAL 3B', 0) + hitting_stats_exact.get('MSTEAL HOME', 0)
     hitting_stats['CS'] = hitting_stats_exact.get('CS 2B', 0) + hitting_stats_exact.get('CS 3B', 0) + hitting_stats_exact.get('CS HOME', 0) + hitting_stats_exact.get('CMS 3B', 0) + hitting_stats_exact.get('CMS HOME', 0)
 
     # Home runs of each type
@@ -115,6 +116,7 @@ def _hitting_stats_table(df):
     hitting_stats['PA'] = hitting_stats['H'] + hitting_stats['BB'] + hitting_stats['FO'] + hitting_stats['SO'] + hitting_stats['PO'] + hitting_stats['RGO'] + hitting_stats['LGO'] + hitting_stats['LO'] + hitting_stats['SH'] + hitting_stats_exact.get('BUNT GO', 0) + hitting_stats_exact.get('BUNT DP', 0)
     hitting_stats['AB'] = hitting_stats['PA'] - (hitting_stats['BB'] + hitting_stats['SF'] + hitting_stats['SH'])
     hitting_stats['TB'] = hitting_stats['1B'] + 2 * hitting_stats['2B'] + 3 * hitting_stats['3B'] + 4 * hitting_stats['HR']
+    hitting_stats['TB+'] = hitting_stats['TB'] + hitting_stats_exact.get('BB', 0) + hitting_stats['SB'] - hitting_stats_patype.get(15, 0)
 
     # Stats that need to be taken from other columns
     hitting_stats['G_list'] = df.groupby(cols)['Game ID'].apply(lambda x: set(x))

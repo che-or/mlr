@@ -73,8 +73,8 @@ def main():
         p_sgr = Path(f'../docs/generated/{league}_single_game_records.json')
         p_ach = Path(f'../docs/generated/{league}_achievements.json')
 
-        p_hscache = Path(f'../data/{league}_hitting_stats_cache.csv')
-        p_pscache = Path(f'../data/{league}_pitching_stats_cache.csv')
+        p_hscache = Path(f'../data/cache/{league}_hitting_stats_cache.csv')
+        p_pscache = Path(f'../data/cache/{league}_pitching_stats_cache.csv')
     
         # check for cached stats for active leagues
         if league in active_leagues:
@@ -122,6 +122,11 @@ def main():
         else:
             print(f'Loading gamelogs for S{season}...')
         gamelog_df = _load_gamelogs(season, league, all_seasons)
+
+        if gamelog_df.empty:
+            print(f'No gamelog data for {league} S{season} yet, skipping.')
+            continue
+
         gamelog_df = _add_re_column(gamelog_df, league)
         gamelog_df = _add_war_columns(gamelog_df)
     
@@ -214,12 +219,12 @@ def main():
                 franchise_pitching_stats.to_json(p_fps, orient = 'records', indent = 2)
 
         print('Computing single-game records...')
-        p_hgcache  = Path(f'../data/{league}_hitting_game_stats_cache.csv')
-        p_pgcache  = Path(f'../data/{league}_pitching_game_stats_cache.csv')
-        p_htgcache = Path(f'../data/{league}_hitting_team_game_stats_cache.csv')
-        p_ptgcache = Path(f'../data/{league}_pitching_team_game_stats_cache.csv')
-        p_hcgcache = Path(f'../data/{league}_hitting_combined_game_stats_cache.csv')
-        p_pcgcache = Path(f'../data/{league}_pitching_combined_game_stats_cache.csv')
+        p_hgcache  = Path(f'../data/cache/{league}_hitting_game_stats_cache.csv')
+        p_pgcache  = Path(f'../data/cache/{league}_pitching_game_stats_cache.csv')
+        p_htgcache = Path(f'../data/cache/{league}_hitting_team_game_stats_cache.csv')
+        p_ptgcache = Path(f'../data/cache/{league}_pitching_team_game_stats_cache.csv')
+        p_hcgcache = Path(f'../data/cache/{league}_hitting_combined_game_stats_cache.csv')
+        p_pcgcache = Path(f'../data/cache/{league}_pitching_combined_game_stats_cache.csv')
 
         sg_caches_exist = all(p.exists() for p in [
             p_hgcache, p_pgcache, p_htgcache, p_ptgcache, p_hcgcache, p_pcgcache
@@ -295,7 +300,7 @@ def main():
 
         if league == 'mlr':
             print('Computing streak records...')
-            p_sr_cache = Path('../data/mlr_streak_records_cache.json')
+            p_sr_cache = Path('../data/cache/mlr_streak_records_cache.json')
             if not all_seasons and sg_caches_exist:
                 sr_cache = _load_streak_cache(p_sr_cache)
                 cache_valid = (sr_cache is not None and

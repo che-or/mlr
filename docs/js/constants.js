@@ -7,7 +7,7 @@ export const COUNTING_STATS = [
     'FO', 'PO', 'RGO', 'LGO', 'LO', 'GO', 'SF', 'SH', 'AB', 'TB',
     'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
     // Hitting-only
-    'PA', 'R', 'RBI', 'Auto K', 'GIDP', 'GITP', '1RHR', '2RHR', '3RHR', '4RHR',
+    'PA', 'R', 'RBI', 'Auto K', 'GIDP', 'GITP', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
     // Pitching-only
     'IP', 'ER', 'BF', 'Auto BB', 'W', 'L', 'SV', 'HLD', 'BS',
     'GS', 'GF', 'CG', 'SHO', 'OPP', 'DP', 'TP',
@@ -68,6 +68,7 @@ export const STAT_DESCRIPTIONS = {
     'OPS': 'On-base Plus Slugging',
     'OPS+': 'OPS adjusted for park and league (100 = average)',
     'TB': 'Total Bases',
+    'TB+': 'Total Bases Plus',
     'GIDP': 'Grounded Into Double Play',
     'SH': 'Sacrifice Hits (Bunts)',
     'SF': 'Sacrifice Flies',
@@ -128,7 +129,7 @@ export const STAT_DESCRIPTIONS = {
 
 // Stats that appear in leaderboards but not in the player stats tables
 export const LEADERBOARD_ONLY_STATS = {
-    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR'],
+    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+'],
     pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'DP', 'TP', 'SV%', 'BS', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches'],
 };
 

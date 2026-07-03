@@ -256,6 +256,7 @@ def _runner_attribution(gamelog_df):
         updated_games.append(game_df)
     
     # Reconstruct dataframe using the corrected games
-    gamelog_df = pd.concat(updated_games, ignore_index = True)
+    if updated_games:
+        gamelog_df = pd.concat(updated_games, ignore_index = True)
 
     return gamelog_df
