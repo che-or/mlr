@@ -419,15 +419,21 @@ def _wls(df, active_season, active_session):
     return wls
 
 
-def get_pitcher_decisions(df, league):
+def get_pitcher_decisions(df, league, against = False):
     '''
     Function for getting a dataframe of pitcher decisions, formatted in the same way as stat tables for easy merging.
         df - gamelog dataframe for a season or league
         league - league name. Options mlr, mlr_playoff, milr, fcb, gib, eco, wbc
+        against - if True, key each decision to the opponent's team instead of the pitcher's own team
 
     Outputs:
         player_decisions - dataframe of pitcher decisions
     '''
+
+    win_team_col  = 'LossTeam' if against else 'WinTeam'
+    loss_team_col = 'WinTeam'  if against else 'LossTeam'
+    home_team_col = 'AwayTeam' if against else 'HomeTeam'
+    away_team_col = 'HomeTeam' if against else 'AwayTeam'
 
     # determine active session
     seasons_df = pd.read_csv(r'../data/gamelog_links.csv') # read file containing season info
@@ -454,54 +460,54 @@ def get_pitcher_decisions(df, league):
     decisions = _wls(df, active_season, active_session) # get decisions for each game
 
     # count decisions and reformat
-    wins = pd.pivot_table(decisions, index = ['W', 'Season', 'WinTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    wins = wins.rename(columns = {'W': 'ID', 'WinTeam': 'Team', 0: 'Wins'})
-    
-    losses = pd.pivot_table(decisions, index = ['L', 'Season', 'LossTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    losses = losses.rename(columns = {'L': 'ID', 'LossTeam': 'Team', 0: 'Losses'})
-    
-    saves = pd.pivot_table(decisions, index = ['SV', 'Season', 'WinTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    saves = saves.rename(columns = {'SV': 'ID', 'WinTeam': 'Team', 0: 'Saves'})
-    
+    wins = pd.pivot_table(decisions, index = ['W', 'Season', win_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    wins = wins.rename(columns = {'W': 'ID', win_team_col: 'Team', 0: 'Wins'})
+
+    losses = pd.pivot_table(decisions, index = ['L', 'Season', loss_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    losses = losses.rename(columns = {'L': 'ID', loss_team_col: 'Team', 0: 'Losses'})
+
+    saves = pd.pivot_table(decisions, index = ['SV', 'Season', win_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    saves = saves.rename(columns = {'SV': 'ID', win_team_col: 'Team', 0: 'Saves'})
+
     decisions_exploded = decisions.explode('HLDH')
-    holds_home = pd.pivot_table(decisions_exploded, index = ['HLDH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    holds_home = holds_home.rename(columns = {'HLDH': 'ID', 'HomeTeam': 'Team', 0: 'Holds_Home'})
-    
+    holds_home = pd.pivot_table(decisions_exploded, index = ['HLDH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    holds_home = holds_home.rename(columns = {'HLDH': 'ID', home_team_col: 'Team', 0: 'Holds_Home'})
+
     decisions_exploded = decisions.explode('HLDA')
-    holds_away = pd.pivot_table(decisions_exploded, index = ['HLDA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    holds_away = holds_away.rename(columns = {'HLDA': 'ID', 'AwayTeam': 'Team', 0: 'Holds_Away'})
-    
+    holds_away = pd.pivot_table(decisions_exploded, index = ['HLDA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    holds_away = holds_away.rename(columns = {'HLDA': 'ID', away_team_col: 'Team', 0: 'Holds_Away'})
+
     decisions_exploded = decisions.explode('BSH')
-    bs_home = pd.pivot_table(decisions_exploded, index = ['BSH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    bs_home = bs_home.rename(columns = {'BSH': 'ID', 'HomeTeam': 'Team', 0: 'BS_Home'})
-    
+    bs_home = pd.pivot_table(decisions_exploded, index = ['BSH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    bs_home = bs_home.rename(columns = {'BSH': 'ID', home_team_col: 'Team', 0: 'BS_Home'})
+
     decisions_exploded = decisions.explode('BSA')
-    bs_away = pd.pivot_table(decisions_exploded, index = ['BSA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    bs_away = bs_away.rename(columns = {'BSA': 'ID', 'AwayTeam': 'Team', 0: 'BS_Away'})
+    bs_away = pd.pivot_table(decisions_exploded, index = ['BSA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    bs_away = bs_away.rename(columns = {'BSA': 'ID', away_team_col: 'Team', 0: 'BS_Away'})
 
-    gs_home = pd.pivot_table(decisions, index = ['GSH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    gs_home = gs_home.rename(columns = {'GSH': 'ID', 'HomeTeam': 'Team', 0: 'GS_Home'})
+    gs_home = pd.pivot_table(decisions, index = ['GSH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    gs_home = gs_home.rename(columns = {'GSH': 'ID', home_team_col: 'Team', 0: 'GS_Home'})
 
-    gs_away = pd.pivot_table(decisions, index = ['GSA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    gs_away = gs_away.rename(columns = {'GSA': 'ID', 'AwayTeam': 'Team', 0: 'GS_Away'})
+    gs_away = pd.pivot_table(decisions, index = ['GSA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    gs_away = gs_away.rename(columns = {'GSA': 'ID', away_team_col: 'Team', 0: 'GS_Away'})
 
-    gf_home = pd.pivot_table(decisions, index = ['GFH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    gf_home = gf_home.rename(columns = {'GFH': 'ID', 'HomeTeam': 'Team', 0: 'GF_Home'})
+    gf_home = pd.pivot_table(decisions, index = ['GFH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    gf_home = gf_home.rename(columns = {'GFH': 'ID', home_team_col: 'Team', 0: 'GF_Home'})
 
-    gf_away = pd.pivot_table(decisions, index = ['GFA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    gf_away = gf_away.rename(columns = {'GFA': 'ID', 'AwayTeam': 'Team', 0: 'GF_Away'})
+    gf_away = pd.pivot_table(decisions, index = ['GFA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    gf_away = gf_away.rename(columns = {'GFA': 'ID', away_team_col: 'Team', 0: 'GF_Away'})
 
-    cg_home = pd.pivot_table(decisions, index = ['CGH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    cg_home = cg_home.rename(columns = {'CGH': 'ID', 'HomeTeam': 'Team', 0: 'CG_Home'})
+    cg_home = pd.pivot_table(decisions, index = ['CGH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    cg_home = cg_home.rename(columns = {'CGH': 'ID', home_team_col: 'Team', 0: 'CG_Home'})
 
-    cg_away = pd.pivot_table(decisions, index = ['CGA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    cg_away = cg_away.rename(columns = {'CGA': 'ID', 'AwayTeam': 'Team', 0: 'CG_Away'})
+    cg_away = pd.pivot_table(decisions, index = ['CGA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    cg_away = cg_away.rename(columns = {'CGA': 'ID', away_team_col: 'Team', 0: 'CG_Away'})
 
-    sho_home = pd.pivot_table(decisions, index = ['SHOH', 'Season', 'HomeTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    sho_home = sho_home.rename(columns = {'SHOH': 'ID', 'HomeTeam': 'Team', 0: 'SHO_Home'})
+    sho_home = pd.pivot_table(decisions, index = ['SHOH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    sho_home = sho_home.rename(columns = {'SHOH': 'ID', home_team_col: 'Team', 0: 'SHO_Home'})
 
-    sho_away = pd.pivot_table(decisions, index = ['SHOA', 'Season', 'AwayTeam'], aggfunc = 'size', fill_value = 0).reset_index()
-    sho_away = sho_away.rename(columns = {'SHOA': 'ID', 'AwayTeam': 'Team', 0: 'SHO_Away'})
+    sho_away = pd.pivot_table(decisions, index = ['SHOA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    sho_away = sho_away.rename(columns = {'SHOA': 'ID', away_team_col: 'Team', 0: 'SHO_Away'})
 
     # merge dataframes
     dfs = [wins, losses, saves, holds_home, holds_away, bs_home, bs_away, gs_home, gs_away, gf_home, gf_away, cg_home, cg_away, sho_home, sho_away]

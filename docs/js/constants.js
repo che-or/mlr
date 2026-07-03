@@ -44,6 +44,15 @@ export const STAT_DEFINITIONS = {
     },
 };
 
+// Columns shown in the "vs Team" breakdown tables (career totals per opponent franchise,
+// MLR/MLR Playoffs only). Derived from the Standard tables above so the two stay in sync.
+export const VS_TEAM_STAT_DEFINITIONS = {
+    batting: ['Franchise', ...STAT_DEFINITIONS.batting['Standard Batting'].filter(
+        c => !['Display Season', 'Team', 'Batting Type'].includes(c))],
+    pitching: ['Franchise', ...STAT_DEFINITIONS.pitching['Standard Pitching'].filter(
+        c => !['Display Season', 'Team', 'Pitching Type'].includes(c))],
+};
+
 // Short descriptions shown as table header tooltips
 export const STAT_DESCRIPTIONS = {
     'WAR': 'Wins Above Replacement',
@@ -126,6 +135,7 @@ export const STAT_DESCRIPTIONS = {
     'Pitching Type': 'Pitching Type',
     'Display Season': 'Season',
     'Team': 'Team',
+    'Franchise': 'Opponent Team',
 };
 
 // Stats that appear in leaderboards but not in the player stats tables

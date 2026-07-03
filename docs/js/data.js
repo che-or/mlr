@@ -31,6 +31,8 @@ function statPath(league, type) {
         pitching_by_team_type: `${GENERATED}/${league}_pitching_stats_by_team_type.json`,
         franchise_hitting:     `${GENERATED}/${league}_franchise_hitting_stats.json`,
         franchise_pitching:    `${GENERATED}/${league}_franchise_pitching_stats.json`,
+        hitting_vs_team:       `${GENERATED}/${league}_hitting_stats_vs_team.json`,
+        pitching_vs_team:      `${GENERATED}/${league}_pitching_stats_vs_team.json`,
     };
     return map[type] || null;
 }

@@ -1,7 +1,7 @@
 import { state } from '../state.js';
 import { loadStats, searchPlayers, getPlayerById } from '../data.js';
 import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg } from '../utils.js';
-import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, LEAGUES_WITH_CAREER } from '../constants.js';
+import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
 
 const LOWER_BETTER_PITCH = new Set(['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'RE24', 'HR%', 'BB%', 'ERA-', 'FB%']);
@@ -366,13 +366,88 @@ function sortStats(rows) {
 
 function renderLeagueStats(container, label, lgH, lgP, primaryRole, league) {
     const prefix = label ? `${label} ` : '';
-    if (primaryRole === 'pitcher') {
-        if (lgP.length) container.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
-        if (lgH.length) container.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
-    } else {
-        if (lgH.length) container.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
-        if (lgP.length) container.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
+    const showVsTeam = (league === 'mlr' || league === 'mlr_playoff') && (lgH.length || lgP.length);
+
+    if (!showVsTeam) {
+        if (primaryRole === 'pitcher') {
+            if (lgP.length) container.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
+            if (lgH.length) container.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
+        } else {
+            if (lgH.length) container.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
+            if (lgP.length) container.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
+        }
+        return;
     }
+
+    // Single tab bar switches BOTH batting and pitching together between the season-by-season
+    // tables and the vs-team breakdown. The vs-team data is lazy-loaded on first switch, since
+    // its backing JSON files can be large and shouldn't be fetched on every page load.
+    const tabBar = document.createElement('div');
+    tabBar.className = 'lt-season-toggle';
+    tabBar.style.margin = '4px 0 10px';
+    tabBar.innerHTML = `
+        <button class="lt-season-btn active" data-tab="season">Season-by-Season</button>
+        <button class="lt-season-btn" data-tab="vsteam">vs Team</button>`;
+    container.appendChild(tabBar);
+
+    const seasonDiv = document.createElement('div');
+    if (primaryRole === 'pitcher') {
+        if (lgP.length) seasonDiv.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
+        if (lgH.length) seasonDiv.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
+    } else {
+        if (lgH.length) seasonDiv.innerHTML += createStatsSection(`${prefix}Batting Stats`,  lgH, false, league);
+        if (lgP.length) seasonDiv.innerHTML += createStatsSection(`${prefix}Pitching Stats`, lgP, true,  league);
+    }
+    container.appendChild(seasonDiv);
+
+    const vsTeamDiv = document.createElement('div');
+    vsTeamDiv.style.display = 'none';
+    container.appendChild(vsTeamDiv);
+
+    let loaded = false;
+    tabBar.querySelectorAll('.lt-season-btn').forEach(btn => {
+        btn.addEventListener('click', async () => {
+            tabBar.querySelectorAll('.lt-season-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const showVsTeamTab = btn.dataset.tab === 'vsteam';
+            seasonDiv.style.display = showVsTeamTab ? 'none' : '';
+            vsTeamDiv.style.display = showVsTeamTab ? '' : 'none';
+
+            if (showVsTeamTab && !loaded) {
+                loaded = true;
+                vsTeamDiv.innerHTML = '<p>Loading...</p>';
+                try {
+                    const [hittingData, pitchingData] = await Promise.all([
+                        lgH.length ? loadStats(league, 'hitting_vs_team')  : Promise.resolve(null),
+                        lgP.length ? loadStats(league, 'pitching_vs_team') : Promise.resolve(null),
+                    ]);
+
+                    const buildSide = (data, isPitching, sectionTitle) => {
+                        if (!data) return '';
+                        const rows = data.filter(r => r.ID === state.currentPlayerId);
+                        const sortField = isPitching ? 'IP' : 'PA';
+                        rows.sort((a, b) => (b[sortField] || 0) - (a[sortField] || 0));
+                        return createVsTeamTable(sectionTitle, rows, isPitching);
+                    };
+
+                    let html = '';
+                    if (primaryRole === 'pitcher') {
+                        html += buildSide(pitchingData, true,  `${prefix}Pitching Stats`);
+                        html += buildSide(hittingData,  false, `${prefix}Batting Stats`);
+                    } else {
+                        html += buildSide(hittingData,  false, `${prefix}Batting Stats`);
+                        html += buildSide(pitchingData, true,  `${prefix}Pitching Stats`);
+                    }
+                    vsTeamDiv.innerHTML = html;
+                    vsTeamDiv.querySelectorAll('.stats-table').forEach(t => makeTableSortable(t, { sortableTeam: true }));
+                } catch (err) {
+                    console.error(err);
+                    vsTeamDiv.innerHTML = '<p>Failed to load vs-team stats.</p>';
+                }
+            }
+            setStickyColumnOffsets();
+        });
+    });
 }
 
 function renderLeagueWithPlayoffToggle(container, label, regH, regP, poH, poP, primaryRole, regLeague, poLeague) {
@@ -416,8 +491,14 @@ function renderLeagueWithPlayoffToggle(container, label, regH, regP, poH, poP, p
 
 function createStatsSection(title, rows, isPitching, league) {
     sortStats(rows);
+    return `<div class="stats-section"><h3 class="section-title">${title}</h3>${createStatsTables(rows, isPitching, league)}</div>`;
+}
+
+// The season-by-season Standard/Advanced tables, without the outer section wrapper/heading —
+// factored out so renderStatsBlock() can put a tab bar between the heading and this content.
+function createStatsTables(rows, isPitching, league) {
     const groups = isPitching ? STAT_DEFINITIONS.pitching : STAT_DEFINITIONS.batting;
-    let html = `<div class="stats-section"><h3 class="section-title">${title}</h3>`;
+    let html = '';
 
     for (const [groupName, cols] of Object.entries(groups)) {
         html += `<h4>${groupName}</h4>`;
@@ -447,7 +528,7 @@ function createStatsSection(title, rows, isPitching, league) {
 
         html += '</tbody></table></div>';
     }
-    return html + '</div>';
+    return html;
 }
 
 function colHeaderLabel(col) {
@@ -755,6 +836,55 @@ function addToggle(btnWrap, contentWrap, label, storageKey, league, lgH, lgP, pr
     });
 }
 
+// ── vs Team breakdown (MLR / MLR Playoffs only) ─────────────────────────────
+// Rendered via the "vs Team" tab built in renderLeagueStats() above; the backing JSON
+// file (docs/generated/{league}_{statType}.json) is only fetched on first switch to that
+// tab, since it's not part of the eager fetch list in displayPlayerPage() and can be large.
+
+// sectionTitle mirrors the season view's "Batting Stats"/"Pitching Stats" heading, so the
+// two tabs read as the same sections viewed two different ways. The inner "vs Team" h4 is
+// still needed (not just cosmetic) — makeTableSortable() sniffs it for "Pitching"/"Batting"
+// to pick the correct sort direction per stat.
+function createVsTeamTable(sectionTitle, rows, isPitching) {
+    const vsLabel = isPitching ? 'Pitching vs Team' : 'Batting vs Team';
+    const cols = isPitching ? VS_TEAM_STAT_DEFINITIONS.pitching : VS_TEAM_STAT_DEFINITIONS.batting;
+    let html = `<div class="stats-section"><h3 class="section-title">${sectionTitle}</h3><h4>${vsLabel}</h4>`;
+    html += '<div class="stats-table-container"><table class="stats-table vs-team-table"><thead><tr>';
+    cols.forEach((col, i) => {
+        const cls  = i < 2 ? ` class="sticky-col col-${i}"` : '';
+        // Header text stays "Team" (not "Opponent") so makeTableSortable's existing
+        // `stat === 'Team'` check skips trying to numeric-sort this column.
+        const lbl  = col === 'Franchise' ? 'Team' : col;
+        const desc = STAT_DESCRIPTIONS[col] || '';
+        html += `<th${cls} title="${desc}">${lbl}</th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    if (!rows.length) {
+        html += `<tr><td colspan="${cols.length}">No data.</td></tr>`;
+    }
+
+    rows.forEach((r, idx) => {
+        html += `<tr data-original-index="${idx}">`;
+        cols.forEach((col, i) => {
+            const cls = i < 2 ? ` class="sticky-col col-${i}"` : '';
+            if (col === 'Franchise') {
+                html += `<td${cls}>${r.Franchise || ''}</td>`;
+                return;
+            }
+            let val = r[col];
+            if (val !== null && val !== undefined) {
+                val = suppressRateStat(col, val, r, isPitching, false);
+            }
+            html += `<td${cls}>${formatStat(col, val)}</td>`;
+        });
+        html += '</tr>';
+    });
+
+    html += '</tbody></table></div></div>';
+    return html;
+}
+
 // ── Team link wiring ──────────────────────────────────────────────────────────
 
 export function wireTeamLinks(container) {
@@ -771,17 +901,18 @@ export function wireTeamLinks(container) {
 
 // ── Table sorting ─────────────────────────────────────────────────────────────
 
-function makeTableSortable(table) {
+function makeTableSortable(table, opts = {}) {
     const headers = table.querySelectorAll('thead th');
     const container  = table.closest('.stats-table-container');
     const groupNameEl = container?.previousElementSibling;
     const groupName  = groupNameEl?.textContent || '';
     const isPitching = groupName.includes('Pitching') && !groupName.includes('Batting');
     const isOpponent = groupName === 'Opponent Stats';
+    const sortableTeam = !!(opts && opts.sortableTeam);
 
     headers.forEach((th, colIdx) => {
         const stat = th.textContent.replace(/[↑↓]/, '').trim();
-        if (stat === 'Season' || stat === 'Team') return;
+        if (stat === 'Season' || (stat === 'Team' && !sortableTeam)) return;
         th.style.cursor = 'pointer';
 
         th.addEventListener('click', () => {
@@ -791,10 +922,13 @@ function makeTableSortable(table) {
             const pinnedRows   = allRows.filter(r => r.classList.contains('career-row') || r.classList.contains('franchise-row'));
             const dataRows     = allRows.filter(r => !r.classList.contains('career-row') && !r.classList.contains('franchise-row'));
 
+            const isTeamCol = stat === 'Team';
             const cur         = th.dataset.sortDir;
-            const lowerBetter = isOpponent
-                ? !['SB','CS','DP'].includes(stat)
-                : (isPitching ? LOWER_BETTER_PITCH.has(stat) : LOWER_BETTER_BAT.has(stat));
+            const lowerBetter = isTeamCol
+                ? true
+                : isOpponent
+                    ? !['SB','CS','DP'].includes(stat)
+                    : (isPitching ? LOWER_BETTER_PITCH.has(stat) : LOWER_BETTER_BAT.has(stat));
             const primary = lowerBetter ? 'asc' : 'desc';
             const next    = !cur ? primary : cur === primary ? (lowerBetter ? 'desc' : 'asc') : 'default';
 
@@ -813,6 +947,7 @@ function makeTableSortable(table) {
                 dataRows.sort((a, b) => {
                     const at = a.cells[colIdx]?.textContent.replace(/[↑↓]/,'').trim() || '-';
                     const bt = b.cells[colIdx]?.textContent.replace(/[↑↓]/,'').trim() || '-';
+                    if (isTeamCol) return next === 'asc' ? at.localeCompare(bt) : bt.localeCompare(at);
                     const av = isIP ? parseIPStr(at) : (at === '-' ? (next === 'asc' ? Infinity : -Infinity) : parseFloat(at));
                     const bv = isIP ? parseIPStr(bt) : (bt === '-' ? (next === 'asc' ? Infinity : -Infinity) : parseFloat(bt));
                     return next === 'asc' ? av - bv : bv - av;

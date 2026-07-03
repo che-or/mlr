@@ -1,21 +1,24 @@
 import pandas as pd
 from simulate_inning import _simulate_inning
 
-def _calculate_pitching_neutrals(df, league):
+def _calculate_pitching_neutrals(df, league, against = False):
     '''
     Function for calculating neutral earned runs and neutral innings pitched.
         df - gamelog dataframe
         league - fake baseball league. Options mlr, mlr_playoff, milr, fcb, gib, eco, wbc, npr
+        against - if True, group by the opponent's (batter's) team instead of the pitcher's own team
 
     Output:
         neutrals - dataframe with columns [ID, Season, Team, nER, nIP]
     '''
-    
+
+    team_col = 'Batter Team' if against else 'Pitcher Team'
+
     neutrals = []
     for pitcher, pitcher_df in df.groupby('Pitcher ID'): # iterate through each pitcher
         pitcher_season = {'ID': pitcher}
         for season, season_df in pitcher_df.groupby('Season'): # iterate through each season
-            for team, team_df in season_df.groupby('Pitcher Team'): # iterate through each team
+            for team, team_df in season_df.groupby(team_col): # iterate through each team
                 runs_allowed = 0
                 pitcher_outs = 0
                 for inning, inning_df in team_df.groupby('Inning ID'): # iterate through each inning
