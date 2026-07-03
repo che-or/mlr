@@ -28,7 +28,8 @@ def _drop_unused_columns(df):
     cols = ['nAB', 'nBB', 'nFO', 'nH', 'nOBP', 'nPA', 'nSF', 'nSH', 'nSLG', 'nTB',
             'lgnAB', 'lgnBB', 'lgnH', 'lgnOBP', 'lgnPA', 'lgnSLG', 'lgnTB',
             'nER', 'nERA', 'nIP', 'lgnERA', 'lgnIP',
-            'FIP Constant', 'SF value', 'Total Diff', 'Total Plays', 'G_list']
+            'FIP Constant', 'SF value', 'Total Diff', 'Total Plays', 'G_list',
+            'H_RISP', 'AB_RISP']
     df = df.drop(columns = cols, errors = 'ignore') # ignoring errors effectively creates 'drop column if exists'
 
     return df
