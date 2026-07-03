@@ -19,9 +19,9 @@ def create_hitting_subrows(hitting_stats):
     hitting_stats.loc[hitting_stats.index.isin(multi_teams.index), 'is_sub_row'] = True # set subrow to True for any multi-team seasons
 
     # counting stats
-    cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO', 
+    cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO',
             'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
-            '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
+            '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'H_RISP', 'AB_RISP',
             'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF', 'count']
 

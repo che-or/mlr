@@ -1159,14 +1159,6 @@
         },
         {
           "record": 4,
-          "id": 287,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
-          "record": 4,
           "id": 2932,
           "season_start": "S12",
           "session_start": 15,
@@ -1226,6 +1218,14 @@
           "id": 2943,
           "season_start": "S12",
           "session_start": 14,
+          "season_end": "S12",
+          "session_end": 16
+        },
+        {
+          "record": 3,
+          "id": 3206,
+          "season_start": "S12",
+          "session_start": 16,
           "season_end": "S12",
           "session_end": 16
         }
@@ -3298,14 +3298,6 @@
           "session_end": 16
         },
         {
-          "record": 5,
-          "id": 287,
-          "season_start": "S12",
-          "session_start": 15,
-          "season_end": "S12",
-          "session_end": 16
-        },
-        {
           "record": 4,
           "id": 2230,
           "season_start": "S12",
@@ -3352,12 +3344,17 @@
           "session_start": 14,
           "season_end": "S12",
           "session_end": 15
+        },
+        {
+          "record": 4,
+          "id": 2804,
+          "season_start": "S12",
+          "session_start": 14,
+          "season_end": "S12",
+          "session_end": 15
         }
       ],
-      "tie_at_boundary": {
-        "count": 7,
-        "record": 4
-      }
+      "tie_at_boundary": null
     }
   },
   "pitcher_diff_gt300": {

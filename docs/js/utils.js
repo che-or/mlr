@@ -5,7 +5,7 @@ import { state } from './state.js';
 // Opponent pitching stats (BA, OBP, SLG, OPS, BABIP) share column names with
 // hitting stats in the new data format — no separate *A suffix variants exist.
 const THREE_DECIMAL_STATS = new Set([
-    'BA', 'OBP', 'SLG', 'OPS', 'ISO', 'BABIP', 'W-L%', 'SV%',
+    'BA', 'BARISP', 'OBP', 'SLG', 'OPS', 'ISO', 'BABIP', 'W-L%', 'SV%',
     'nOBP', 'nSLG',
 ]);
 const ZERO_DECIMAL_STATS = new Set(['OPS+', 'ERA-']);

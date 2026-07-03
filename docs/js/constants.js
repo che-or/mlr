@@ -63,6 +63,7 @@ export const STAT_DESCRIPTIONS = {
     'SO': 'Strikeouts',
     'Auto K': 'Automatic Strikeouts',
     'BA': 'Batting Average',
+    'BARISP': 'Batting Average with Runners In Scoring Position',
     'OBP': 'On-base Percentage',
     'SLG': 'Slugging Percentage',
     'OPS': 'On-base Plus Slugging',
@@ -129,7 +130,7 @@ export const STAT_DESCRIPTIONS = {
 
 // Stats that appear in leaderboards but not in the player stats tables
 export const LEADERBOARD_ONLY_STATS = {
-    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+'],
+    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'BARISP'],
     pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'DP', 'TP', 'SV%', 'BS', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches'],
 };
 

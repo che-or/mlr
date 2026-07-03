@@ -26,10 +26,10 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     '''
 
     # counting stat columns
-    cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO', 
+    cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO',
             'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
-            '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
-            'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs', 
+            '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'H_RISP', 'AB_RISP',
+            'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF']
     sets = ['G_list'] # set columns
         
@@ -75,6 +75,12 @@ def _hitting_stats_table(df):
     hitting_stats_obc = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'OBC'], aggfunc = 'size', fill_value = 0)
     hitting_stats_patype = pd.pivot_table(df, index = cols, columns = 'PA Type', aggfunc = 'size', fill_value = 0)
 
+    # Plays with a runner in scoring position (runner on 2nd and/or 3rd), used for H_RISP/AB_RISP
+    risp_obc = [2, 3, 4, 5, 6, 7]
+    df_risp = df[df['OBC'].isin(risp_obc)]
+    hitting_stats_exact_risp = pd.pivot_table(df_risp, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
+    hitting_stats_old_risp = pd.pivot_table(df_risp, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
+
     hitting_stats = pd.DataFrame()
 
     # Hitting stats that can be directly counted from exact result and/or old result
@@ -110,6 +116,24 @@ def _hitting_stats_table(df):
     hitting_stats['2RHR'] = hitting_stats_obc.get(('HR', 1), 0) + hitting_stats_obc.get(('HR', 2), 0) + hitting_stats_obc.get(('HR', 3), 0)
     hitting_stats['3RHR'] = hitting_stats_obc.get(('HR', 4), 0) + hitting_stats_obc.get(('HR', 5), 0) + hitting_stats_obc.get(('HR', 6), 0)
     hitting_stats['4RHR'] = hitting_stats_obc.get(('HR', 7), 0)
+
+    # Hits and at-bats with runners in scoring position
+    h_risp = (hitting_stats_exact_risp.get('1B', 0) + hitting_stats_exact_risp.get('BUNT 1B', 0)
+              + hitting_stats_exact_risp.get('2B', 0) + hitting_stats_exact_risp.get('3B', 0) + hitting_stats_exact_risp.get('HR', 0))
+
+    bb_risp = hitting_stats_exact_risp.get('BB', 0) + hitting_stats_exact_risp.get('IBB', 0) + hitting_stats_exact_risp.get('AUTO BB', 0)
+    so_risp = hitting_stats_exact_risp.get('K', 0) + hitting_stats_exact_risp.get('AUTO K', 0) + hitting_stats_exact_risp.get('BUNT K', 0)
+    sh_risp = hitting_stats_exact_risp.get('BUNT SAC', 0)
+    sf_risp = hitting_stats_old_risp.get(('FO', 'SAC'), 0)
+
+    pa_risp = (h_risp + bb_risp + hitting_stats_exact_risp.get('FO', 0) + so_risp + hitting_stats_exact_risp.get('PO', 0)
+               + hitting_stats_exact_risp.get('RGO', 0) + hitting_stats_exact_risp.get('LGO', 0) + sh_risp
+               + hitting_stats_exact_risp.get('BUNT GO', 0) + hitting_stats_exact_risp.get('BUNT DP', 0))
+
+    hitting_stats['H_RISP'] = h_risp
+    hitting_stats['AB_RISP'] = pa_risp - (bb_risp + sf_risp + sh_risp)
+    hitting_stats['H_RISP'] = hitting_stats['H_RISP'].fillna(0)
+    hitting_stats['AB_RISP'] = hitting_stats['AB_RISP'].fillna(0)
 
     # Hitting stats calculated from raw counts
     hitting_stats['H'] = hitting_stats['1B'] + hitting_stats['2B'] + hitting_stats['3B'] + hitting_stats['HR']
@@ -180,6 +204,7 @@ def _calculate_hitting_rate_stats(hitting_stats):
         hitting_stats - dataframe with rate stat columns added or recalculated
     '''
     hitting_stats['BA'] = hitting_stats['H'] / hitting_stats['AB']
+    hitting_stats['BARISP'] = hitting_stats['H_RISP'] / hitting_stats['AB_RISP']
     hitting_stats['OBP'] = (hitting_stats['H'] + hitting_stats['BB']) / (hitting_stats['AB'] + hitting_stats['BB'] + hitting_stats['SF']) # denominator is different than hitting_stats['PA'] if the player has any sacrifice bunts, which are plate appearances but don't count toward OBP
     hitting_stats['SLG'] = hitting_stats['TB'] / hitting_stats['AB']
     hitting_stats['OPS'] = hitting_stats['OBP'] + hitting_stats['SLG']
