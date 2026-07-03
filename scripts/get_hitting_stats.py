@@ -1,17 +1,18 @@
 import pandas as pd
 import numpy as np
 
-def get_hitting_stats(df, players):
+def get_hitting_stats(df, players, against = False):
     '''
     Function for creating a hitting stats table
         df - gamelog dataframe
         players - dataframe containing a list of all players with their player types, handedness, and primary position
+        against - if True, aggregate by the opponent's team/franchise instead of the batter's own team/franchise
 
     Output:
         hitting_stats - df of hitting stats
     '''
 
-    hitting_stats = _hitting_stats_table(df) # calculate most stats
+    hitting_stats = _hitting_stats_table(df, against) # calculate most stats
     hitting_stats = hitting_stats.merge(players, on = ['Season', 'ID'], how = 'left') # merge with player types
     hitting_stats = _calculate_ops_plus(hitting_stats) # calculate OPS+
 
@@ -58,17 +59,20 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     return hitting_stats
     
     
-def _hitting_stats_table(df):
+def _hitting_stats_table(df, against = False):
     '''
     Function for calculating counting stats from gamelogs. Rate stats are added by this function calling _calculate_hitting_rate_stats().
         df - gamelog dataframe
+        against - if True, group by the opponent's (pitcher's) team/franchise instead of the batter's own team/franchise
 
     Output:
         hitting_stats - dataframe of hitting stats
     '''
 
-    cols = ['Hitter ID', 'Season', 'Display Season', 'Batter Team', 'Batter Franchise']
-        
+    team_col = 'Pitcher Team' if against else 'Batter Team'
+    franchise_col = 'Pitcher Franchise' if against else 'Batter Franchise'
+    cols = ['Hitter ID', 'Season', 'Display Season', team_col, franchise_col]
+
     hitting_stats_exact = pd.pivot_table(df, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
     hitting_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
     hitting_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
@@ -169,7 +173,7 @@ def _hitting_stats_table(df):
     hitting_stats['nAB'] = hitting_stats['nPA'] - (hitting_stats['nBB'] + hitting_stats['nSH'])
 
     hitting_stats = hitting_stats.reset_index()
-    hitting_stats = hitting_stats.rename(columns = {'Hitter ID': 'ID', 'Batter Team': 'Team', 'Batter Franchise': 'Franchise'})
+    hitting_stats = hitting_stats.rename(columns = {'Hitter ID': 'ID', team_col: 'Team', franchise_col: 'Franchise'})
     
     # Correct for sacrifice flies
     sfvalue = _get_sacfly_rate(df)

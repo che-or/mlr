@@ -21,6 +21,14 @@ from get_single_game_stats import (
 from get_single_game_achievements import get_no_hitters, get_cycles, get_triangles, get_multi_hr_games
 from get_streak_records import get_streak_records, _load_streak_cache
 
+# "Standard" stat columns for the vs-team breakdown, mirroring STAT_DEFINITIONS.batting['Standard Batting']
+# and pitching['Standard Pitching'] in docs/js/constants.js (minus Display Season/Team/Type columns,
+# which don't apply to a row aggregated across all seasons), to keep the vs-team JSON files small.
+STANDARD_HITTING_VS_TEAM_COLS = ['ID', 'Franchise', 'WAR', 'G', 'PA', 'AB', 'R', 'H', '2B', '3B',
+    'HR', 'RBI', 'SB', 'CS', 'BB', 'IBB', 'SO', 'Auto K', 'BA', 'OBP', 'SLG', 'OPS', 'OPS+']
+STANDARD_PITCHING_VS_TEAM_COLS = ['ID', 'Franchise', 'WAR', 'W', 'L', 'W-L%', 'ERA', 'G', 'GS',
+    'GF', 'CG', 'SHO', 'SV', 'OPP', 'HLD', 'IP', 'H', 'ER', 'HR', 'BB', 'IBB', 'Auto BB', 'SO', 'BF', 'ERA-']
+
 def _drop_unused_columns(df):
     '''
     Function for dropping the df columns that aren't used by MLR Reference
@@ -71,6 +79,8 @@ def main():
         p_pstty = Path(f'../docs/generated/{league}_pitching_stats_by_team_type.json')
         p_fhs = Path(f'../docs/generated/{league}_franchise_hitting_stats.json')
         p_fps = Path(f'../docs/generated/{league}_franchise_pitching_stats.json')
+        p_hvt = Path(f'../docs/generated/{league}_hitting_stats_vs_team.json')
+        p_pvt = Path(f'../docs/generated/{league}_pitching_stats_vs_team.json')
         p_sgr = Path(f'../docs/generated/{league}_single_game_records.json')
         p_ach = Path(f'../docs/generated/{league}_achievements.json')
 
@@ -108,7 +118,7 @@ def main():
                     if p_sgr.exists() and p_ach.exists():
                         print('All files already generated.')
                         continue
-                elif p_hst.exists() and p_pst.exists() and p_hsty.exists() and p_psty.exists() and p_hstty.exists() and p_pstty.exists():
+                elif p_hst.exists() and p_pst.exists() and p_hsty.exists() and p_psty.exists() and p_hstty.exists() and p_pstty.exists() and p_hvt.exists() and p_pvt.exists():
                     if p_sgr.exists() and p_ach.exists():
                         print('All files already generated.')
                         continue
@@ -218,6 +228,32 @@ def main():
                 franchise_pitching_stats = get_aggregated_pitching_stats(pitching_stats, 'full-franchise')
                 franchise_pitching_stats = _drop_unused_columns(franchise_pitching_stats)
                 franchise_pitching_stats.to_json(p_fps, orient = 'records', indent = 2)
+
+        if league in ['mlr', 'mlr_playoff']:
+            print('Calculating vs-team stats...')
+            # vs-team splits need full career history regardless of whether the "for" stats
+            # above used a cached/current-season-only gamelog, since a player's totals against
+            # a given opponent span every season they've faced that opponent
+            if all_seasons:
+                vs_team_gamelog = gamelog_df
+                vs_team_players = players_df
+            else:
+                print(f'Loading all {league} gamelogs for vs-team stats...')
+                vs_team_gamelog = _load_gamelogs(season, league, all_seasons = True)
+                vs_team_gamelog = _add_re_column(vs_team_gamelog, league)
+                vs_team_gamelog = _add_war_columns(vs_team_gamelog)
+                vs_team_players = _load_player_types(season, league, all_seasons = True)
+
+            against_hitting_stats = get_hitting_stats(vs_team_gamelog, vs_team_players, against = True)
+            against_pitching_stats = get_pitching_stats(vs_team_gamelog, vs_team_players, league, against = True)
+
+            hitting_vs_team = get_aggregated_hitting_stats(against_hitting_stats, 'team')
+            hitting_vs_team = hitting_vs_team[STANDARD_HITTING_VS_TEAM_COLS]
+            hitting_vs_team.to_json(p_hvt, orient = 'records', indent = 2)
+
+            pitching_vs_team = get_aggregated_pitching_stats(against_pitching_stats, 'team')
+            pitching_vs_team = pitching_vs_team[STANDARD_PITCHING_VS_TEAM_COLS]
+            pitching_vs_team.to_json(p_pvt, orient = 'records', indent = 2)
 
         print('Computing single-game records...')
         p_hgcache  = Path(f'../data/cache/{league}_hitting_game_stats_cache.csv')

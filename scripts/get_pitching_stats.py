@@ -5,29 +5,30 @@ from calculate_fip_constant import _get_fip_constants
 from calculate_pitching_neutrals import _calculate_pitching_neutrals
 from get_hitting_stats import _weighted_average, _create_agg_dict
 
-def get_pitching_stats(df, players, league):
+def get_pitching_stats(df, players, league, against = False):
     '''
     Function for creating a pitching stats table
         df - gamelog dataframe
         players - dataframe containing a list of all players with their player types, handedness, and primary position
         aggregation_level - how the data should be aggregated. Options: ['season', 'team', 'career']
         league - fake baseball league. Options: ['mlr', 'mlr_playoff', 'milr', 'fcb', 'gib', 'eco', 'npr', 'wbc']
+        against - if True, aggregate by the opponent's (batter's) team/franchise instead of the pitcher's own team/franchise
 
     Output:
         pitching_stats - df of pitching stats
     '''
-    
-    wls = get_pitcher_decisions(df, league) # determine pitcher decisions from gamelogs
-    neutrals = _calculate_pitching_neutrals(df, league) # determine neutral ER and neutral IP for each pitcher
+
+    wls = get_pitcher_decisions(df, league, against) # determine pitcher decisions from gamelogs
+    neutrals = _calculate_pitching_neutrals(df, league, against) # determine neutral ER and neutral IP for each pitcher
     fip_constants = _get_fip_constants(league) # retrieve FIP constants for the league
 
-    pitching_stats = _pitching_stats_table(df, wls, neutrals, fip_constants) # calculate most stats
+    pitching_stats = _pitching_stats_table(df, wls, neutrals, fip_constants, against) # calculate most stats
     pitching_stats = pitching_stats.merge(players, on = ['Season', 'ID'], how = 'left') # merge with player types
     pitching_stats['Pitching Type (Main)'] = pitching_stats['Pitching Type'].str.split('-', n = 1).str[0] # get main pitching type
-    
+
     pitching_stats = _calculate_era_minus(pitching_stats) # calculate ERA-
 
-    pitching_stats = _apply_pitcher_decision_adjustments(pitching_stats, league)
+    pitching_stats = _apply_pitcher_decision_adjustments(pitching_stats, league, against)
 
     return pitching_stats
 
@@ -71,7 +72,7 @@ def get_aggregated_pitching_stats(pitching_stats, aggregation_level):
     return pitching_stats
 
 
-def _pitching_stats_table(df, wls, neutrals, fip_constants):
+def _pitching_stats_table(df, wls, neutrals, fip_constants, against = False):
     '''
     Function for calculating counting stats from gamelogs. Rate stats are added by this function calling _calculate_pitching_rate_stats().
         df - gamelog dataframe
@@ -79,12 +80,15 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants):
         neutrals - neutral IP and neutral ER dataframe
         lgn - league neutral ERA dataframe
         fip_constants - fip constants for the league
+        against - if True, group by the opponent's (batter's) team/franchise instead of the pitcher's own team/franchise
 
     Output:
         pitching_stats - dataframe of pitching stats
     '''
-    
-    cols = ['Pitcher ID', 'Season', 'Display Season', 'Pitcher Team', 'Pitcher Franchise']
+
+    team_col = 'Batter Team' if against else 'Pitcher Team'
+    franchise_col = 'Batter Franchise' if against else 'Pitcher Franchise'
+    cols = ['Pitcher ID', 'Season', 'Display Season', team_col, franchise_col]
 
     pitching_stats_exact = pd.pivot_table(df, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
     pitching_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
@@ -145,7 +149,7 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants):
     pitching_stats['Last Session'] = df.groupby(cols)['Session'].max()
 
     pitching_stats = pitching_stats.reset_index()
-    pitching_stats = pitching_stats.rename(columns = {'Pitcher ID': 'ID', 'Pitcher Team': 'Team', 'Pitcher Franchise': 'Franchise'})
+    pitching_stats = pitching_stats.rename(columns = {'Pitcher ID': 'ID', team_col: 'Team', franchise_col: 'Franchise'})
     
     pitching_stats = pitching_stats.merge(wls, on = ['ID', 'Season', 'Team'], how = 'outer') # add pitcher decisions to dataframe
     pitching_stats = pitching_stats.merge(neutrals, on = ['ID', 'Season', 'Team'], how = 'outer') # add neutral ER and neutral IP to dataframe
@@ -224,11 +228,12 @@ def _calculate_era_minus(df):
     return df
 
 
-def _apply_pitcher_decision_adjustments(pitching_stats, league):
+def _apply_pitcher_decision_adjustments(pitching_stats, league, against = False):
     '''
     Function for adjusting pitcher Wins and Losses. This is necessary for games that end in a home run derby, as they show as ties in the gamelogs. This is also necessary do to WSH forfeiting S2.11 and DET winning S1.1 due to earlier runner advancement rules.
         pitching_stats - dataframe of pitching stats prior to adjustments being applied
         league - fake baseball league
+        against - if True, attribute each adjustment to the opponent team (the other team on the same adjustment row) instead of the pitcher's own team
 
     Output:
         pitching_stats - df with adjustments applied
@@ -238,11 +243,18 @@ def _apply_pitcher_decision_adjustments(pitching_stats, league):
 
     league_pda = pda[pda['League'].str.lower() == league] # filter to league
 
+    # each row pairs a Win+/Loss+ (or Win-/Loss-) team together from the same game, so the
+    # opponent for one side is simply the team recorded for the other side of the same row
+    win_plus_team_col   = 'Loss+Team' if against else 'Win+Team'
+    win_minus_team_col  = 'Loss-Team' if against else 'Win-Team'
+    loss_plus_team_col  = 'Win+Team'  if against else 'Loss+Team'
+    loss_minus_team_col = 'Win-Team'  if against else 'Loss-Team'
+
     # create a dataframe for each decision adjustment outcome
-    add_win = league_pda.groupby(['Season', 'Win+', 'Win+Team']).size().reset_index(name = '+W').rename(columns = {'Win+': 'ID', 'Win+Team': 'Team'})
-    lose_win = league_pda.groupby(['Season', 'Win-', 'Win-Team']).size().reset_index(name = '-W').rename(columns = {'Win-': 'ID', 'Win-Team': 'Team'})
-    add_loss = league_pda.groupby(['Season', 'Loss+', 'Loss+Team']).size().reset_index(name = '+L').rename(columns = {'Loss+': 'ID', 'Loss+Team': 'Team'})
-    lose_loss = league_pda.groupby(['Season', 'Loss-', 'Loss-Team']).size().reset_index(name = '-L').rename(columns = {'Loss-': 'ID', 'Loss-Team': 'Team'})
+    add_win = league_pda.groupby(['Season', 'Win+', win_plus_team_col]).size().reset_index(name = '+W').rename(columns = {'Win+': 'ID', win_plus_team_col: 'Team'})
+    lose_win = league_pda.groupby(['Season', 'Win-', win_minus_team_col]).size().reset_index(name = '-W').rename(columns = {'Win-': 'ID', win_minus_team_col: 'Team'})
+    add_loss = league_pda.groupby(['Season', 'Loss+', loss_plus_team_col]).size().reset_index(name = '+L').rename(columns = {'Loss+': 'ID', loss_plus_team_col: 'Team'})
+    lose_loss = league_pda.groupby(['Season', 'Loss-', loss_minus_team_col]).size().reset_index(name = '-L').rename(columns = {'Loss-': 'ID', loss_minus_team_col: 'Team'})
 
     # merge to a single dataframe
     merge_columns = ['Season', 'ID', 'Team']
