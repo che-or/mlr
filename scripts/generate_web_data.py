@@ -231,10 +231,43 @@ def main():
 
         if league in ['mlr', 'mlr_playoff']:
             print('Calculating vs-team stats...')
+
+            p_hvtcache = Path(f'../data/cache/{league}_hitting_stats_vs_team_cache.csv')
+            p_pvtcache = Path(f'../data/cache/{league}_pitching_stats_vs_team_cache.csv')
+
+            hitting_vs_team_cache_ex = False
+            pitching_vs_team_cache_ex = False
+
+            # check for cached vs-team stats for active leagues
+            if league in active_leagues:
+                if p_hvtcache.exists():
+                    print('Loading cached vs-team hitting stats...')
+                    hitting_vs_team_cache = pd.read_csv(p_hvtcache)
+                    hitting_vs_team_cache['G_list'] = hitting_vs_team_cache['G_list'].apply(ast.literal_eval)
+                    hitting_vs_team_cache = hitting_vs_team_cache[hitting_vs_team_cache['Season'] != season]
+                    hitting_vs_team_cache_ex = True
+
+                if p_pvtcache.exists():
+                    print('Loading cached vs-team pitching stats...')
+                    pitching_vs_team_cache = pd.read_csv(p_pvtcache)
+                    pitching_vs_team_cache['G_list'] = pitching_vs_team_cache['G_list'].apply(ast.literal_eval)
+                    pitching_vs_team_cache = pitching_vs_team_cache[pitching_vs_team_cache['Season'] != season]
+                    pitching_vs_team_cache_ex = True
+
             # vs-team splits need full career history regardless of whether the "for" stats
             # above used a cached/current-season-only gamelog, since a player's totals against
-            # a given opponent span every season they've faced that opponent
-            if all_seasons:
+            # a given opponent span every season they've faced that opponent. But if the vs-team
+            # caches themselves already cover every prior season, only the current season needs loading.
+            if hitting_vs_team_cache_ex and pitching_vs_team_cache_ex:
+                if all_seasons:
+                    # gamelog_df/players_df cover every season; narrow to the current one
+                    vs_team_gamelog = gamelog_df[gamelog_df['Season'].astype(int) == season]
+                    vs_team_players = players_df[players_df['Season'].astype(int) == season]
+                else:
+                    # gamelog_df/players_df were already loaded above for just the current season
+                    vs_team_gamelog = gamelog_df
+                    vs_team_players = players_df
+            elif all_seasons:
                 vs_team_gamelog = gamelog_df
                 vs_team_players = players_df
             else:
@@ -246,6 +279,20 @@ def main():
 
             against_hitting_stats = get_hitting_stats(vs_team_gamelog, vs_team_players, against = True)
             against_pitching_stats = get_pitching_stats(vs_team_gamelog, vs_team_players, league, against = True)
+
+            if hitting_vs_team_cache_ex:
+                print('Concatenating cached vs-team hitting stats...')
+                against_hitting_stats = pd.concat([hitting_vs_team_cache, against_hitting_stats], ignore_index = True)
+            if league in active_leagues:
+                print('Caching vs-team hitting stats...')
+                against_hitting_stats.to_csv(p_hvtcache, index = False)
+
+            if pitching_vs_team_cache_ex:
+                print('Concatenating cached vs-team pitching stats...')
+                against_pitching_stats = pd.concat([pitching_vs_team_cache, against_pitching_stats], ignore_index = True)
+            if league in active_leagues:
+                print('Caching vs-team pitching stats...')
+                against_pitching_stats.to_csv(p_pvtcache, index = False)
 
             hitting_vs_team = get_aggregated_hitting_stats(against_hitting_stats, 'team')
             hitting_vs_team = hitting_vs_team[STANDARD_HITTING_VS_TEAM_COLS]
