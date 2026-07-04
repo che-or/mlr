@@ -298,6 +298,14 @@ nav {
     font-weight: bold;
 }
 
+.stat-season-leader {
+    font-weight: bold;
+}
+
+.stat-career-leader {
+    font-style: italic;
+}
+
 .career-row td,
 .career-row th {
     border-top: 2px solid var(--accent-color);

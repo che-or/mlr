@@ -1,8 +1,9 @@
 import { state } from '../state.js';
 import { loadStats, searchPlayers, getPlayerById } from '../data.js';
 import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg } from '../utils.js';
-import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER } from '../constants.js';
+import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER, COUNTING_STATS } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
+import { computeLeagueLeaders } from '../leaders.js';
 
 const LOWER_BETTER_PITCH = new Set(['ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'RE24', 'HR%', 'BB%', 'ERA-', 'FB%']);
 const LOWER_BETTER_BAT = new Set(['K%', 'GB%', 'GB/FB', 'Avg Diff']);
@@ -91,17 +92,19 @@ export async function displayPlayerPage(playerId) {
             loadStats('mlr',         'hitting'),          loadStats('mlr',         'pitching'),
             loadStats('mlr',         'career_hitting'),   loadStats('mlr',         'career_pitching'),
             loadStats('mlr',         'hitting_by_team'),  loadStats('mlr',         'pitching_by_team'),
+            loadStats('mlr',         'team_hitting'),
             loadStats('mlr_playoff', 'hitting'),          loadStats('mlr_playoff', 'pitching'),
             loadStats('mlr_playoff', 'career_hitting'),   loadStats('mlr_playoff', 'career_pitching'),
             loadStats('mlr_playoff', 'hitting_by_team'),  loadStats('mlr_playoff', 'pitching_by_team'),
+            loadStats('mlr_playoff', 'team_hitting'),
         ];
         for (const { key, playoffKey } of TOGGLE_LEAGUES) {
-            fetches.push(loadStats(key, 'hitting'), loadStats(key, 'pitching'));
+            fetches.push(loadStats(key, 'hitting'), loadStats(key, 'pitching'), loadStats(key, 'team_hitting'));
             if (LEAGUES_WITH_CAREER.includes(key)) {
                 fetches.push(loadStats(key, 'career_hitting'), loadStats(key, 'career_pitching'));
             }
             if (playoffKey) {
-                fetches.push(loadStats(playoffKey, 'hitting'), loadStats(playoffKey, 'pitching'));
+                fetches.push(loadStats(playoffKey, 'hitting'), loadStats(playoffKey, 'pitching'), loadStats(playoffKey, 'team_hitting'));
                 if (LEAGUES_WITH_CAREER.includes(playoffKey)) {
                     fetches.push(loadStats(playoffKey, 'career_hitting'), loadStats(playoffKey, 'career_pitching'));
                 }
@@ -362,6 +365,37 @@ function sortStats(rows) {
     });
 }
 
+// ── League leaders ────────────────────────────────────────────────────────────
+
+const NON_STAT_COLS = new Set(['Display Season', 'Team', 'Batting Type', 'Pitching Type']);
+const HITTING_STAT_LIST  = [...new Set(Object.values(STAT_DEFINITIONS.batting).flat())]
+    .filter(c => !NON_STAT_COLS.has(c));
+const PITCHING_STAT_LIST = [...new Set(Object.values(STAT_DEFINITIONS.pitching).flat())]
+    .filter(c => !NON_STAT_COLS.has(c));
+
+const isCountingStat = stat => COUNTING_STATS.includes(stat);
+
+// Memoized per league+type for the whole session — the underlying league data
+// doesn't change while the page is loaded, so this is computed once regardless
+// of how many different players are viewed.
+const leaderCache = new Map();
+
+function getLeagueLeaders(league, isHitting) {
+    const key = `${league}:${isHitting}`;
+    if (leaderCache.has(key)) return leaderCache.get(key);
+
+    const seasonData = state.stats[`${league}_${isHitting ? 'hitting' : 'pitching'}`] || [];
+    const careerData = LEAGUES_WITH_CAREER.includes(league)
+        ? (state.stats[`${league}_career_${isHitting ? 'hitting' : 'pitching'}`] || [])
+        : [];
+    const teamHittingData = state.stats[`${league}_team_hitting`] || [];
+    const statList = isHitting ? HITTING_STAT_LIST : PITCHING_STAT_LIST;
+
+    const result = computeLeagueLeaders(seasonData, careerData, teamHittingData, isHitting, statList, league, isCountingStat);
+    leaderCache.set(key, result);
+    return result;
+}
+
 // ── Stats rendering ───────────────────────────────────────────────────────────
 
 function renderLeagueStats(container, label, lgH, lgP, primaryRole, league) {
@@ -497,17 +531,18 @@ function createStatsSection(title, rows, isPitching, league) {
 // The season-by-season Standard/Advanced tables, without the outer section wrapper/heading —
 // factored out so renderStatsBlock() can put a tab bar between the heading and this content.
 function createStatsTables(rows, isPitching, league) {
-    const groups = isPitching ? STAT_DEFINITIONS.pitching : STAT_DEFINITIONS.batting;
+    const groups  = isPitching ? STAT_DEFINITIONS.pitching : STAT_DEFINITIONS.batting;
+    const leaders = getLeagueLeaders(league, !isPitching);
     let html = '';
 
     for (const [groupName, cols] of Object.entries(groups)) {
         html += `<h4>${groupName}</h4>`;
         html += '<div class="stats-table-container"><table class="stats-table"><thead><tr>';
         cols.forEach((col, i) => {
-            const cls  = i < 2 ? ` class="sticky-col col-${i}"` : '';
+            const cls  = i < 2 ? `sticky-col col-${i}` : '';
             const lbl  = colHeaderLabel(col);
             const desc = STAT_DESCRIPTIONS[col] || '';
-            html += `<th${cls} title="${desc}">${lbl}</th>`;
+            html += `<th${classAttr([cls])} title="${desc}">${lbl}</th>`;
         });
         html += '</tr></thead><tbody>';
 
@@ -520,8 +555,8 @@ function createStatsTables(rows, isPitching, league) {
             else if (r.is_sub_row) rowCls = 'sub-row';
             html += `<tr class="${rowCls}" data-original-index="${idx}">`;
             cols.forEach((col, i) => {
-                const cls = i < 2 ? ` class="sticky-col col-${i}"` : '';
-                html += buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league, cls);
+                const cls = i < 2 ? `sticky-col col-${i}` : '';
+                html += buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league, cls, leaders);
             });
             html += '</tr>';
         });
@@ -537,23 +572,29 @@ function colHeaderLabel(col) {
     return col;
 }
 
-function buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league, tdCls) {
+// Builds a ` class="a b c"` attribute from a list of class names, skipping falsy entries.
+function classAttr(classes) {
+    const list = classes.filter(Boolean);
+    return list.length ? ` class="${list.join(' ')}"` : '';
+}
+
+function buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league, stickyCls, leaders) {
     const isOpponent = groupName === 'Opponent Stats';
 
     if (col === 'Display Season') {
         // Franchise rows show a blank season cell
-        return `<td${tdCls}>${isFranchise ? '' : (r['Display Season'] || '-')}</td>`;
+        return `<td${classAttr([stickyCls])}>${isFranchise ? '' : (r['Display Season'] || '-')}</td>`;
     }
 
     if (col === 'Team') {
-        return buildTeamCell(r, isCareer, isFranchise, league, tdCls);
+        return buildTeamCell(r, isCareer, isFranchise, league, stickyCls);
     }
 
     if (col === 'Batting Type' || col === 'Pitching Type') {
         const code     = r[col] || '';
         const category = col === 'Batting Type' ? 'batting' : 'pitching';
         const fullName = code && state.typeDefinitions[category]?.[code] ? state.typeDefinitions[category][code] : '';
-        return `<td${tdCls} title="${fullName}">${code || '-'}</td>`;
+        return `<td${classAttr([stickyCls])} title="${fullName}">${code || '-'}</td>`;
     }
 
     // All other stat cells
@@ -561,7 +602,19 @@ function buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league,
     if (val !== null && val !== undefined) {
         val = suppressRateStat(col, val, r, isPitching, isOpponent);
     }
-    return `<td${tdCls}>${formatStat(col, val)}</td>`;
+
+    let isSeasonLeader = false, isCareerLeader = false;
+    if (val !== null && val !== undefined && leaders) {
+        const ds = r['Display Season'];
+        if (!isCareer && !isFranchise && ds?.startsWith('S') && !r.is_sub_row) {
+            isSeasonLeader = !!leaders.season[ds]?.[col]?.has(r.ID);
+        } else if (isCareer) {
+            isCareerLeader = !!leaders.career?.[col]?.has(r.ID);
+        }
+    }
+
+    const cls = classAttr([stickyCls, isSeasonLeader && 'stat-season-leader', isCareerLeader && 'stat-career-leader']);
+    return `<td${cls}>${formatStat(col, val)}</td>`;
 }
 
 function suppressRateStat(col, val, r, isPitching, isOpponent) {
@@ -587,14 +640,15 @@ function suppressRateStat(col, val, r, isPitching, isOpponent) {
     return val;
 }
 
-function buildTeamCell(r, isCareer, isFranchise, league, tdCls) {
+function buildTeamCell(r, isCareer, isFranchise, league, stickyCls) {
     const team = r.Team || '';
     const isMultiTeam = /^\d+TM$/.test(team);
     const ds = r['Display Season'] || '';
+    const cls = classAttr([stickyCls]);
 
     // Career and Franchise rows are not clickable links
     if (isCareer || isFranchise || isMultiTeam || !team || !ds.startsWith('S')) {
-        return `<td${tdCls}>${team || ''}</td>`;
+        return `<td${cls}>${team || ''}</td>`;
     }
 
     let franchiseKey = team;
@@ -609,7 +663,7 @@ function buildTeamCell(r, isCareer, isFranchise, league, tdCls) {
         lgParam = `&league=${league}`;
     }
 
-    return `<td${tdCls}><span class="team-link" data-team="${encodeURIComponent(team)}" data-season="${ds}" data-league="${league}" style="cursor:pointer;text-decoration:underline">${team}</span></td>`;
+    return `<td${cls}><span class="team-link" data-team="${encodeURIComponent(team)}" data-season="${ds}" data-league="${league}" style="cursor:pointer;text-decoration:underline">${team}</span></td>`;
 }
 
 // ── League tab grid ───────────────────────────────────────────────────────────
