@@ -6,42 +6,10 @@ import {
     COUNTING_STATS, STAT_DEFINITIONS, STAT_DESCRIPTIONS,
     LEADERBOARD_ONLY_STATS, LEAGUES_WITH_BREAKDOWNS, LEAGUES_WITH_CAREER, LEAGUES_WITH_FRANCHISE,
 } from '../constants.js';
-
-// Lower is better regardless of batting/pitching context
-const LOWER_IS_BETTER = new Set([
-    'ERA', 'FIP', 'WHIP', 'H6', 'HR6', 'BB6', 'ERA-',
-]);
-// Lower is better only in batting context (e.g. K% = strikeout rate)
-const LOWER_IS_BETTER_BATTING = new Set(['GB%', 'GB/FB', 'K%', 'Avg Diff']);
-// Lower is better only in pitching context (opponent stats)
-const LOWER_IS_BETTER_PITCHING = new Set([
-    'BA', 'BABIP', 'BB%', 'FB%', 'HR%', 'OBP', 'OPS', 'RE24', 'SB%', 'SLG',
-]);
-const CAN_BE_NEGATIVE = new Set(['WAR', 'WPA', 'RE24']);
-
-// All-time qualifier defaults keyed by league (not adjustable by the user, but shown as editable input)
-const ALLTIME_DEFAULTS = {
-    pa:  { mlr: 100, milr: 100, fcb: 10, mlr_playoff: 20, milr_playoff: 20, gib: 20 },
-    ip:  { mlr: 50,  milr: 50,  fcb: 10, mlr_playoff: 10, milr_playoff: 10, gib: 20 },
-    dec: { mlr: 10,  milr: 10,  fcb: 3,  mlr_playoff: 3,  milr_playoff: 3,  gib: 5  },
-    sv:  { mlr: 10,  milr: 10,  fcb: 2,  mlr_playoff: 2,  milr_playoff: 2,  gib: 2  },
-    att: { mlr: 20,  milr: 20,  fcb: 5,  mlr_playoff: 5,  milr_playoff: 5,  gib: 5  },
-};
-
-function getAlltimeMin(key, league) {
-    return ALLTIME_DEFAULTS[key]?.[league] ?? ALLTIME_DEFAULTS[key].mlr;
-}
-
-// Per-season qualifier defaults keyed by league (pre-fills the user-adjustable inputs)
-const SEASON_DEFAULTS = {
-    dec: { mlr: 3, milr: 3, fcb: 3, mlr_playoff: 2, milr_playoff: 2, gib: 3, eco: 2, npr: 3, wbc: 3 },
-    sv:  { mlr: 3, milr: 3, fcb: 1, mlr_playoff: 1, milr_playoff: 1, gib: 1, eco: 1, npr: 1, wbc: 2 },
-    att: { mlr: 5, milr: 5, fcb: 3, mlr_playoff: 3, milr_playoff: 3, gib: 3, eco: 1, npr: 1, wbc: 1 },
-};
-
-function getSeasonMin(key, league) {
-    return SEASON_DEFAULTS[key]?.[league] ?? SEASON_DEFAULTS[key].mlr;
-}
+import {
+    LOWER_IS_BETTER, LOWER_IS_BETTER_BATTING, LOWER_IS_BETTER_PITCHING, CAN_BE_NEGATIVE,
+    getAlltimeMin, getSeasonMin, filterCareer, filterSeasonRows,
+} from '../leaders.js';
 
 function updateSeasonDefaults(league) {
     const decEl = document.getElementById('min-decisions');
@@ -366,57 +334,6 @@ async function renderLeaderboard() {
 }
 
 // ── Filtering helpers ─────────────────────────────────────────────────────────
-
-function filterCareer(data, stat, isHitting, isCounting, selTeam, selType, minAtt, minDec, atQualMin) {
-    let rows = data.filter(r => r[stat] !== undefined && r[stat] !== null);
-
-    if (selTeam) rows = rows.filter(r => r.Franchise === selTeam);
-    if (selType) {
-        if (isHitting) rows = rows.filter(r => r['Batting Type'] === selType);
-        else           rows = rows.filter(r => r['Pitching Type'] === selType);
-    }
-
-    if (!isCounting) {
-        if (stat === 'SB%') {
-            rows = rows.filter(r => (r.SB || 0) + (r.CS || 0) >= (atQualMin ?? minAtt));
-        } else if (stat === 'W-L%') {
-            rows = rows.filter(r => (r.W || 0) + (r.L || 0) >= (atQualMin ?? ALLTIME_MIN_DEC));
-        } else if (stat === 'SV%') {
-            rows = rows.filter(r => (r.OPP || 0) >= (atQualMin ?? 10));
-        } else {
-            if (isHitting) rows = rows.filter(r => (r.PA || 0) >= (atQualMin ?? ALLTIME_MIN_PA));
-            else           rows = rows.filter(r => (r.IP || 0) >= (atQualMin ?? ALLTIME_MIN_IP));
-        }
-    }
-    if (isCounting && !CAN_BE_NEGATIVE.has(stat)) rows = rows.filter(r => (r[stat] || 0) > 0);
-    return rows;
-}
-
-function filterSeasonRows(data, displaySeason, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames) {
-    let rows = data.filter(r => r[stat] !== undefined && r[stat] !== null
-        && (selTeam ? r.Franchise === selTeam : !r.is_sub_row)
-        && r['Display Season']?.startsWith('S'));
-    if (displaySeason) rows = rows.filter(r => r['Display Season'] === displaySeason);
-    if (selType) {
-        if (isHitting) rows = rows.filter(r => r['Batting Type'] === selType);
-        else           rows = rows.filter(r => r['Pitching Type (Main)'] === selType);
-    }
-
-    if (!isCounting) {
-        rows = rows.filter(r => {
-            const ds    = r['Display Season'];
-            const games = seasonGames[ds] || 0;
-            if (!games) return false;
-            if (stat === 'SB%')  return (r.SB || 0) + (r.CS || 0) >= minAtt;
-            if (stat === 'W-L%') return (r.W  || 0) + (r.L  || 0) >= minDec;
-            if (stat === 'SV%')  return (r.OPP || 0) >= minOpp;
-            if (isHitting) return (r.PA || 0) >= minPA * games;
-            return Math.round((r.IP || 0) * 3) >= minOuts * games;
-        });
-    }
-    if (isCounting && !CAN_BE_NEGATIVE.has(stat)) rows = rows.filter(r => (r[stat] || 0) > 0);
-    return rows;
-}
 
 function filterTeamSeasonRows(data, displaySeason, stat, isCounting) {
     let rows = data.filter(r =>
