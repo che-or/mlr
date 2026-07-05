@@ -354,16 +354,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 435,
-        "most_recent": {
-          "id": 14,
-          "season": "S1",
-          "session": 7,
-          "team": "GCG",
-          "location": "Away",
-          "opponent": "NHR"
-        }
+        "record": 0.47769999999999996,
+        "holders": [
+          {
+            "id": 2015,
+            "season": "S1",
+            "session": 5,
+            "team": "MB",
+            "location": "Away",
+            "opponent": "OFH"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -771,16 +772,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 69,
-        "most_recent": {
-          "id": 112,
-          "season": "S1",
-          "session": 7,
-          "team": "NHR",
-          "location": "Home",
-          "opponent": "GCG"
-        }
+        "record": 0.6252,
+        "holders": [
+          {
+            "id": 373,
+            "season": "S1",
+            "session": 5,
+            "team": "NHR",
+            "location": "Home",
+            "opponent": "SS"
+          }
+        ]
       }
     }
   },
@@ -1135,15 +1137,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 46,
-        "most_recent": {
-          "team": "GCG",
-          "season": "S1",
-          "session": 7,
-          "location": "Away",
-          "opponent": "NHR"
-        }
+        "record": 0.6161999999999999,
+        "holders": [
+          {
+            "team": "MHM",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "NHR"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -1543,15 +1546,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 46,
-        "most_recent": {
-          "team": "GCG",
-          "season": "S1",
-          "session": 7,
-          "location": "Away",
-          "opponent": "NHR"
-        }
+        "record": 0.6252,
+        "holders": [
+          {
+            "team": "NHR",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SS"
+          }
+        ]
       }
     }
   },
@@ -1847,14 +1851,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 23,
-        "most_recent": {
-          "away": "GCG",
-          "home": "NHR",
-          "season": "S1",
-          "session": 7
-        }
+        "record": 0.745,
+        "holders": [
+          {
+            "away": "NHR",
+            "home": "MHM",
+            "season": "S1",
+            "session": 1
+          }
+        ]
       }
     },
     "pitcher": {
@@ -2153,14 +2158,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 23,
-        "most_recent": {
-          "away": "GCG",
-          "home": "NHR",
-          "season": "S1",
-          "session": 7
-        }
+        "record": 0.7504000000000001,
+        "holders": [
+          {
+            "away": "SS",
+            "home": "NHR",
+            "season": "S1",
+            "session": 5
+          }
+        ]
       }
     }
   }

@@ -305,15 +305,15 @@
         ]
       },
       "WPA": {
-        "record": 0.6627,
+        "record": 0.8583,
         "holders": [
           {
-            "id": 3252,
-            "season": "S12",
-            "session": 2,
-            "team": "OWL",
+            "id": 2726,
+            "season": "S8",
+            "session": 3,
+            "team": "ORD",
             "location": "Home",
-            "opponent": "SYR"
+            "opponent": "HRW"
           }
         ]
       }
@@ -692,15 +692,15 @@
         ]
       },
       "WPA": {
-        "record": 0.8725,
+        "record": 1.4128,
         "holders": [
           {
-            "id": 3246,
-            "season": "S12",
-            "session": 3,
-            "team": "WKU",
+            "id": 2245,
+            "season": "S6",
+            "session": 4,
+            "team": "OSU",
             "location": "Away",
-            "opponent": "UOM"
+            "opponent": "GEO"
           }
         ]
       }
@@ -1037,14 +1037,14 @@
         ]
       },
       "WPA": {
-        "record": 0.5874999999999999,
+        "record": 0.7889999999999999,
         "holders": [
           {
-            "team": "FUR",
-            "season": "S12",
+            "team": "WSU",
+            "season": "S5",
             "session": 3,
             "location": "Home",
-            "opponent": "SYR"
+            "opponent": "SLC"
           }
         ]
       }
@@ -1391,14 +1391,14 @@
         ]
       },
       "WPA": {
-        "record": 0.794,
+        "record": 1.4466999999999999,
         "holders": [
           {
-            "team": "OSU",
-            "season": "S6",
-            "session": 4,
-            "location": "Away",
-            "opponent": "GEO"
+            "team": "RU",
+            "season": "S7",
+            "session": 5,
+            "location": "Home",
+            "opponent": "MICH"
           }
         ]
       }
@@ -1728,12 +1728,12 @@
         ]
       },
       "WPA": {
-        "record": 0.6749999999999999,
+        "record": 1.0778999999999999,
         "holders": [
           {
-            "away": "SYR",
-            "home": "FUR",
-            "season": "S12",
+            "away": "SLC",
+            "home": "WSU",
+            "season": "S5",
             "session": 3
           }
         ]
@@ -2061,13 +2061,13 @@
         ]
       },
       "WPA": {
-        "record": 0.9747999999999999,
+        "record": 2.3933,
         "holders": [
           {
-            "away": "CSU",
-            "home": "ZOO",
-            "season": "S11",
-            "session": 1
+            "away": "MICH",
+            "home": "RU",
+            "season": "S7",
+            "session": 5
           }
         ]
       }

@@ -1,932 +1,932 @@
 Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,PA Type
-Mattress Cadaire,116,374,Alvin Lockheart,20,808,RGO,434,T1,0,0,0,0,,,0,0,1,1,1,HIR,CHU,RGO,RGO,,1
-Gottlieb Giannopoulos,89,140,Alvin Lockheart,20,601,LGO,461,T1,1,0,0,0,,,0,0,1,1,1,HIR,CHU,LGO,LGO,,1
-Carlos Brownson,132,321,Alvin Lockheart,20,920,K,401,T1,2,0,0,0,,,0,0,1,1,1,HIR,CHU,K,K,,1
-Thomas Nova,1,501,Silver Shore,3328,12,LGO,489,B1,0,0,0,0,,,0,0,2,1,1,CHU,HIR,LGO,LGO,,1
-Akiyoshi Yamamoto,289,527,Silver Shore,3328,713,FO,186,B1,1,0,0,0,,,0,0,2,1,1,CHU,HIR,FO,FO,,1
-Steel Pipe Simpson,80,420,Silver Shore,3328,978,RGO,442,B1,2,0,0,0,,,0,0,2,1,1,CHU,HIR,RGO,RGO,,1
-Boi Lover,84,109,Alvin Lockheart,20,401,K,292,T2,0,0,0,0,,,0,0,3,1,1,HIR,CHU,K,K,,1
-Rich Mahogany,265,777,Alvin Lockheart,20,405,K,372,T2,1,0,0,0,,,0,0,3,1,1,HIR,CHU,K,K,,1
-River Ride,342,242,Alvin Lockheart,20,666,RGO,424,T2,2,0,0,0,,,0,0,3,1,1,HIR,CHU,RGO,RGO,,1
-Boon Dawg Daniels,115,666,Silver Shore,3328,12,K,346,B2,0,0,0,0,,,0,0,4,1,1,CHU,HIR,K,K,,1
-Fister Roboto,445,699,Silver Shore,3328,542,FO,157,B2,1,0,0,0,,,0,0,4,1,1,CHU,HIR,FO,FO,,1
-Jack Alpha,73,707,Silver Shore,3328,614,1B,93,B2,2,0,0,0,,,0,0,4,1,1,CHU,HIR,1B,1B,,1
-Antonin Periwinkle,185,954,Silver Shore,3328,315,K,361,B2,2,1,0,0,,,0,0,4,1,1,CHU,HIR,K,K,,1
-Dirtbag Darrell,262,233,Alvin Lockheart,20,206,2B,27,T3,0,0,0,0,,,0,1,5,1,1,HIR,CHU,2B,2B,,1
-Alex Brown,444,91,Alvin Lockheart,20,101,HR,10,T3,0,2,0,0,,,2,1,5,1,1,HIR,CHU,HR,HR,,1
-Silver Shore,3328,312,Alvin Lockheart,20,999,K,313,T3,0,0,0,2,,,0,0,5,1,1,HIR,CHU,K,K,,1
-Mattress Cadaire,116,513,Alvin Lockheart,20,606,1B,93,T3,1,0,0,2,,,0,0,5,1,1,HIR,CHU,1B,1B,,1
-Gottlieb Giannopoulos,89,366,Alvin Lockheart,20,20,K,346,T3,1,1,0,2,,,0,0,5,1,1,HIR,CHU,K,K,,1
-Carlos Brownson,132,450,Alvin Lockheart,20,590,1B,140,T3,2,1,0,2,,,0,0,5,1,1,HIR,CHU,1B,1B,,1
-Boi Lover,84,825,Alvin Lockheart,20,590,K,235,T3,2,5,0,2,,,0,0,5,1,1,HIR,CHU,K,K,,1
-Dominus Nominus,278,,Silver Shore,3328,,Auto BB,,B3,0,0,0,2,,,0,0,6,1,1,CHU,HIR,Auto BB,Auto BB,,10
-Alvin Lockheart,20,333,Alex Brown,444,805,DP,472,B3,0,1,0,2,,,0,0,6,1,1,CHU,HIR,LGO,LGO,,1
-Thomas Nova,1,410,Alex Brown,444,920,LGO,490,B3,2,0,0,2,,,0,0,6,1,1,CHU,HIR,LGO,LGO,,1
-Rich Mahogany,265,808,Jessie Vance,33,912,1B,104,T4,0,0,0,2,,,0,1,7,1,1,HIR,CHU,1B,1B,,1
-Rich Mahogany,265,313,Jessie Vance,33,13,SB,300,T4,0,1,0,2,,,0,0,7,1,1,HIR,CHU,Steal 2B,Steal 2B,,4
-River Ride,342,458,Jessie Vance,33,594,1B,136,T4,0,2,0,2,,,0,1,7,1,1,HIR,CHU,1B,1B,,1
-Dirtbag Darrell,262,333,Jessie Vance,33,222,1B,111,T4,0,5,0,2,,,1,1,7,1,1,HIR,CHU,1B,1B,,1
-Alex Brown,444,845,Jessie Vance,33,745,1B,100,T4,0,4,0,3,,,0,1,7,1,1,HIR,CHU,1B,1B,,1
-AJ McMann,433,666,Jessie Vance,33,629,2B,37,T4,0,7,0,3,,,2,1,7,1,1,HIR,CHU,2B,2B,,1
-Mattress Cadaire,116,231,Jessie Vance,33,889,RGO,342,T4,0,6,0,5,,,1,0,7,1,1,HIR,CHU,RGO,RGO,,1
-Gottlieb Giannopoulos,89,56,Jessie Vance,33,440,RGO,384,T4,1,3,0,6,,,1,0,7,1,1,HIR,CHU,RGO,RGO,,1
-Carlos Brownson,132,112,Jessie Vance,33,252,1B,140,T4,2,0,0,7,,,0,0,7,1,1,HIR,CHU,1B,1B,,1
-Boi Lover,84,723,Jessie Vance,33,531,FO,192,T4,2,1,0,7,,,0,0,7,1,1,HIR,CHU,FO,FO,,1
-Akiyoshi Yamamoto,289,829,Alex Brown,444,244,RGO,415,B4,0,0,0,7,,,0,0,8,1,1,CHU,HIR,RGO,RGO,,1
-Steel Pipe Simpson,80,211,Alex Brown,444,569,K,358,B4,1,0,0,7,,,0,0,8,1,1,CHU,HIR,K,K,,1
-Boon Dawg Daniels,115,952,Alex Brown,444,178,FO,226,B4,2,0,0,7,,,0,0,8,1,1,CHU,HIR,FO,FO,,1
-Rich Mahogany,265,804,Jessie Vance,33,931,1B,127,T5,0,0,0,7,,,0,0,9,1,1,HIR,CHU,1B,1B,,1
-River Ride,342,299,Jessie Vance,33,598,K,299,T5,0,1,0,7,,,0,0,9,1,1,HIR,CHU,K,K,,1
-Dirtbag Darrell,262,315,Jessie Vance,33,376,1B,61,T5,1,1,0,7,,,0,0,9,1,1,HIR,CHU,1B,1B,,1
-Alex Brown,444,808,Jessie Vance,33,1,FO,193,T5,1,4,0,7,,,0,0,9,1,1,HIR,CHU,FO,FO,,1
-Silver Shore,3328,768,Jessie Vance,33,24,FO,256,T5,2,4,0,7,,,0,0,9,1,1,HIR,CHU,FO,FO,,1
-Fister Roboto,445,610,Alex Brown,444,765,BB,155,B5,0,0,0,7,,,0,0,10,1,1,CHU,HIR,BB,BB,,1
-Jack Alpha,73,180,Alex Brown,444,901,FO,279,B5,0,1,0,7,,,0,0,10,1,1,CHU,HIR,FO,FO,,1
-Antonin Periwinkle,185,312,Alex Brown,444,899,K,413,B5,1,1,0,7,,,0,0,10,1,1,CHU,HIR,K,K,,1
-Dominus Nominus,278,717,Alex Brown,444,305,K,412,B5,2,1,0,7,,,0,0,10,1,1,CHU,HIR,K,K,,1
-Mattress Cadaire,116,214,Jessie Vance,33,527,RGO,313,T6,0,0,0,7,,,0,0,11,1,1,HIR,CHU,RGO,RGO,,1
-Gottlieb Giannopoulos,89,600,Jessie Vance,33,322,K,278,T6,1,0,0,7,,,0,0,11,1,1,HIR,CHU,K,K,,1
-Carlos Brownson,132,732,Jessie Vance,33,261,LGO,471,T6,2,0,0,7,,,0,0,11,1,1,HIR,CHU,LGO,LGO,,1
-Jessie Vance,33,620,Alex Brown,444,666,2B,46,B6,0,0,0,7,,,0,1,12,1,1,CHU,HIR,2B,2B,,1
-Thomas Nova,1,69,Alex Brown,444,929,1B,140,B6,0,2,0,7,,,0,0,12,1,1,CHU,HIR,1B,1B,,1
-Akiyoshi Yamamoto,289,548,Alex Brown,444,676,1B,128,B6,0,5,0,7,,,1,0,12,1,1,CHU,HIR,1B,1B,,1
-Steel Pipe Simpson,80,50,Alex Brown,444,768,K,282,B6,0,4,1,7,,,0,0,12,1,1,CHU,HIR,K,K,,1
-Boon Dawg Daniels,115,2,Alex Brown,444,205,FO,203,B6,1,4,1,7,,,0,0,12,1,1,CHU,HIR,FO,FO,,1
-Fister Roboto,445,511,Alex Brown,444,809,K,298,B6,2,4,1,7,,,0,0,12,1,1,CHU,HIR,K,K,,1
-Jeff Steelflex,268,777,Logan Anderson,236,98,K,321,T1,0,0,0,0,,,0,0,13,2,1,RGE,HKU,K,K,,1
-Harry Peritestes,117,687,Logan Anderson,236,69,RGO,382,T1,1,0,0,0,,,0,0,13,2,1,RGE,HKU,RGO,RGO,,1
-Jared Sabor VII,149,741,Logan Anderson,236,231,LGO,490,T1,2,0,0,0,,,0,0,13,2,1,RGE,HKU,LGO,LGO,,1
-Kevin Ariannatanabe,113,88,Naoki Tentacles,216,593,LGO,495,B1,0,0,0,0,,,0,0,14,2,1,HKU,RGE,LGO,LGO,,1
-Chi Chi Guns,16,420,Naoki Tentacles,216,856,PO,436,B1,1,0,0,0,,,0,0,14,2,1,HKU,RGE,PO,PO,,1
-Kris Jaxon,152,228,Naoki Tentacles,216,64,FO,164,B1,2,0,0,0,,,0,0,14,2,1,HKU,RGE,FO,FO,,1
-Ronarudo Washi IIIIII,167,269,Logan Anderson,236,890,RGO,379,T2,0,0,0,0,,,0,0,15,2,1,RGE,HKU,RGO,RGO,,1
-Markese Rolle,2503,73,Logan Anderson,236,120,2B,47,T2,1,0,0,0,,,0,0,15,2,1,RGE,HKU,2B,2B,,1
-Olivia Hyde,175,779,Logan Anderson,236,550,FO,229,T2,1,2,0,0,,,0,0,15,2,1,RGE,HKU,FO,FO,,1
-dednuts,448,320,Logan Anderson,236,867,LGO,453,T2,2,2,0,0,,,0,0,15,2,1,RGE,HKU,LGO,LGO,,1
-Layzer Gunn,259,333,Naoki Tentacles,216,454,1B,121,B2,0,0,0,0,,,0,0,16,2,1,HKU,RGE,1B,1B,,1
-Oliver Yu,286,790,Naoki Tentacles,216,124,K,334,B2,0,1,0,0,,,0,0,16,2,1,HKU,RGE,K,K,,1
-A.J. Preller,319,511,Naoki Tentacles,216,798,K,287,B2,1,1,0,0,,,0,0,16,2,1,HKU,RGE,K,K,,1
-KC Bats,287,777,Naoki Tentacles,216,172,K,395,B2,2,1,0,0,,,0,0,16,2,1,HKU,RGE,K,K,,1
-Triscutt Mesmer,39,750,Logan Anderson,236,91,RGO,341,T3,0,0,0,0,,,0,0,17,2,1,RGE,HKU,RGO,RGO,,1
-Naoki Tentacles,216,869,Logan Anderson,236,13,BB,144,T3,1,0,0,0,,,0,0,17,2,1,RGE,HKU,BB,BB,,1
-Jeff Steelflex,268,450,Logan Anderson,236,987,DP,463,T3,1,1,0,0,,,0,0,17,2,1,RGE,HKU,LGO,LGO,,1
-Gustav Ahr,128,482,Naoki Tentacles,216,525,2B,43,B3,0,0,0,0,,,0,1,18,2,1,HKU,RGE,2B,2B,,1
-Logan Anderson,236,98,Naoki Tentacles,216,23,1B,75,B3,0,2,0,0,,,0,1,18,2,1,HKU,RGE,1B,1B,,1
-Kevin Ariannatanabe,113,121,Naoki Tentacles,216,42,1B,79,B3,0,5,0,0,,,1,1,18,2,1,HKU,RGE,1B,1B,,1
-Chi Chi Guns,16,69,Naoki Tentacles,216,798,K,271,B3,0,4,1,0,,,0,0,18,2,1,HKU,RGE,K,K,,1
-Kris Jaxon,152,389,Ronarudo Washi IIIIII,167,309,1B,80,B3,1,4,1,0,,,0,1,18,2,1,HKU,RGE,1B,1B,,1
-Layzer Gunn,259,420,Ronarudo Washi IIIIII,167,209,Sac,211,B3,1,7,1,0,,,1,0,18,2,1,HKU,RGE,FO,FO,,1
-Oliver Yu,286,88,Ronarudo Washi IIIIII,167,999,1B,89,B3,2,4,2,0,,,1,1,18,2,1,HKU,RGE,1B,1B,,1
-A.J. Preller,319,4,Ronarudo Washi IIIIII,167,999,HR,5,B3,2,5,3,0,,,3,1,18,2,1,HKU,RGE,HR,HR,,1
-KC Bats,287,420,Ronarudo Washi IIIIII,167,999,PO,421,B3,2,0,6,0,,,0,0,18,2,1,HKU,RGE,PO,PO,,1
-Harry Peritestes,117,69,Logan Anderson,236,470,RGO,401,T4,0,0,6,0,,,0,0,19,2,1,RGE,HKU,RGO,RGO,,1
-Jared Sabor VII,149,555,Logan Anderson,236,977,LGO,422,T4,1,0,6,0,,,0,0,19,2,1,RGE,HKU,LGO,LGO,,1
-Ronarudo Washi IIIIII,167,420,Logan Anderson,236,711,K,291,T4,2,0,6,0,,,0,0,19,2,1,RGE,HKU,K,K,,1
-Gustav Ahr,128,371,Ronarudo Washi IIIIII,167,250,1B,121,B4,0,0,6,0,,,0,0,20,2,1,HKU,RGE,1B,1B,,1
-Logan Anderson,236,850,Ronarudo Washi IIIIII,167,666,BB,184,B4,0,1,6,0,,,0,0,20,2,1,HKU,RGE,BB,BB,,1
-Kevin Ariannatanabe,113,,Ronarudo Washi IIIIII,167,,Auto K,,B4,0,4,6,0,,,0,0,20,2,1,HKU,RGE,Auto K,Auto K,,9
-Chi Chi Guns,16,280,Jared Sabor VII,149,830,DP,450,B4,1,4,6,0,,,0,0,20,2,1,HKU,RGE,RGO,RGO,,1
-Markese Rolle,2503,56,Logan Anderson,236,409,RGO,353,T5,0,0,6,0,,,0,0,21,2,1,RGE,HKU,RGO,RGO,,1
-Olivia Hyde,175,730,Logan Anderson,236,912,FO,182,T5,1,0,6,0,,,0,0,21,2,1,RGE,HKU,FO,FO,,1
-dednuts,448,715,Logan Anderson,236,10,K,295,T5,2,0,6,0,,,0,0,21,2,1,RGE,HKU,K,K,,1
-Kris Jaxon,152,127,Jared Sabor VII,149,83,HR,44,B5,0,0,6,0,,,1,1,22,2,1,HKU,RGE,HR,HR,,1
-Layzer Gunn,259,237,Jared Sabor VII,149,888,K,349,B5,0,0,7,0,,,0,0,22,2,1,HKU,RGE,K,K,,1
-Oliver Yu,286,1,Jared Sabor VII,149,389,PO,388,B5,1,0,7,0,,,0,0,22,2,1,HKU,RGE,PO,PO,,1
-A.J. Preller,319,512,Jared Sabor VII,149,517,HR,5,B5,2,0,7,0,,,1,1,22,2,1,HKU,RGE,HR,HR,,1
-KC Bats,287,69,Jared Sabor VII,149,391,K,322,B5,2,0,8,0,,,0,0,22,2,1,HKU,RGE,K,K,,1
-Triscutt Mesmer,39,88,Logan Anderson,236,45,2B,43,T6,0,0,8,0,,,0,0,23,2,1,RGE,HKU,2B,2B,,1
-Naoki Tentacles,216,747,Logan Anderson,236,851,1B,104,T6,0,2,8,0,,,0,0,23,2,1,RGE,HKU,1B,1B,,1
-Jeff Steelflex,268,,Logan Anderson,236,273,Sac,227,T6,0,5,8,0,,,0,0,23,2,1,RGE,HKU,FO,FO,,1
-Harry Peritestes,117,687,Logan Anderson,236,617,1B,70,T6,1,1,8,1,,,0,0,23,2,1,RGE,HKU,1B,1B,,1
-Jared Sabor VII,149,420,Logan Anderson,236,711,K,291,T6,1,4,8,1,,,0,0,23,2,1,RGE,HKU,K,K,,1
-Ronarudo Washi IIIIII,167,292,Logan Anderson,236,69,FO,223,T6,2,4,8,1,,,0,0,23,2,1,RGE,HKU,FO,FO,,1
-Caleb Athen,325,240,Valeria Lisova,183,432,FO,192,T1,0,0,0,0,,,0,0,24,3,1,HSH,YOK,FO,FO,,1
-Blake Monroe,3326,801,Valeria Lisova,183,651,BB,150,T1,1,0,0,0,,,0,0,24,3,1,HSH,YOK,BB,BB,,1
-Jack Elliot,76,1,Valeria Lisova,183,313,K,312,T1,1,1,0,0,,,0,0,24,3,1,HSH,YOK,K,K,,1
-Dart Ragusa,134,800,Valeria Lisova,183,711,1B,89,T1,2,1,0,0,,,0,0,24,3,1,HSH,YOK,1B,1B,,1
-Syd Ryu,3,379,Valeria Lisova,183,940,LGO,439,T1,2,5,0,0,,,0,0,24,3,1,HSH,YOK,LGO,LGO,,1
-Lloyd Gross,135,363,Zander Ackley,127,963,K,400,B1,0,0,0,0,,,0,0,25,3,1,YOK,HSH,K,K,,1
-Niko Banks,430,675,Zander Ackley,127,184,LGO,491,B1,1,0,0,0,,,0,0,25,3,1,YOK,HSH,LGO,LGO,,1
-Demetrios Ooga,180,752,Zander Ackley,127,892,BB,140,B1,2,0,0,0,,,0,0,25,3,1,YOK,HSH,BB,BB,,1
-Jake Wilson,454,663,Zander Ackley,127,949,K,286,B1,2,1,0,0,,,0,0,25,3,1,YOK,HSH,K,K,,1
-Homer Pimpson,144,357,Valeria Lisova,183,345,HR,12,T2,0,0,0,0,,,1,1,26,3,1,HSH,YOK,HR,HR,,1
-Rintaro Okabe,290,18,Valeria Lisova,183,640,RGO,378,T2,0,0,0,1,,,0,0,26,3,1,HSH,YOK,RGO,RGO,,1
-Yoshigahara Ryutai,133,6,Valeria Lisova,183,15,HR,9,T2,1,0,0,1,,,1,1,26,3,1,HSH,YOK,HR,HR,,1
-Hidetoshi Hasagawa,102,68,Valeria Lisova,183,544,LGO,476,T2,1,0,0,2,,,0,0,26,3,1,HSH,YOK,LGO,LGO,,1
-Caleb Athen,325,785,Valeria Lisova,183,411,RGO,374,T2,2,0,0,2,,,0,0,26,3,1,HSH,YOK,RGO,RGO,,1
-Jack Meloy,145,999,Zander Ackley,127,764,FO,235,B2,0,0,0,2,,,0,0,27,3,1,YOK,HSH,FO,FO,,1
-Tommy Oldman,143,764,Zander Ackley,127,265,LGO,499,B2,1,0,0,2,,,0,0,27,3,1,YOK,HSH,LGO,LGO,,1
-Koyomi Araragi,293,800,Zander Ackley,127,445,K,355,B2,2,0,0,2,,,0,0,27,3,1,YOK,HSH,K,K,,1
-Blake Monroe,3326,115,Valeria Lisova,183,714,RGO,401,T3,0,0,0,2,,,0,0,28,3,1,HSH,YOK,RGO,RGO,,1
-Jack Elliot,76,207,Valeria Lisova,183,699,LGO,492,T3,1,0,0,2,,,0,0,28,3,1,HSH,YOK,LGO,LGO,,1
-Dart Ragusa,134,267,Valeria Lisova,183,450,FO,183,T3,2,0,0,2,,,0,0,28,3,1,HSH,YOK,FO,FO,,1
-Dylan Green,305,940,Zander Ackley,127,263,K,323,B3,0,0,0,2,,,0,0,29,3,1,YOK,HSH,K,K,,1
-Valeria Lisova,183,350,Zander Ackley,127,688,K,338,B3,1,0,0,2,,,0,0,29,3,1,YOK,HSH,K,K,,1
-Lloyd Gross,135,845,Zander Ackley,127,614,FO,231,B3,2,0,0,2,,,0,0,29,3,1,YOK,HSH,FO,FO,,1
-Syd Ryu,3,813,Tanner Hendrix,375,821,HR,8,T4,0,0,0,2,,,1,1,30,3,1,HSH,YOK,HR,HR,,1
-Homer Pimpson,144,241,Tanner Hendrix,375,127,BB,114,T4,0,0,0,3,,,0,0,30,3,1,HSH,YOK,BB,BB,,1
-Rintaro Okabe,290,100,Tanner Hendrix,375,29,1B,71,T4,0,1,0,3,,,0,0,30,3,1,HSH,YOK,1B,1B,,1
-Yoshigahara Ryutai,133,404,Tanner Hendrix,375,589,FO,185,T4,0,4,0,3,,,0,0,30,3,1,HSH,YOK,FO,FO,,1
-Hidetoshi Hasagawa,102,920,Tanner Hendrix,375,124,FO,204,T4,1,4,0,3,,,0,0,30,3,1,HSH,YOK,FO,FO,,1
-Caleb Athen,325,189,Tanner Hendrix,375,438,FO,249,T4,2,4,0,3,,,0,0,30,3,1,HSH,YOK,FO,FO,,1
-Niko Banks,430,235,Zander Ackley,127,408,FO,173,B4,0,0,0,3,,,0,0,31,3,1,YOK,HSH,FO,FO,,1
-Demetrios Ooga,180,757,Zander Ackley,127,29,FO,272,B4,1,0,0,3,,,0,0,31,3,1,YOK,HSH,FO,FO,,1
-Jake Wilson,454,877,Zander Ackley,127,572,K,305,B4,2,0,0,3,,,0,0,31,3,1,YOK,HSH,K,K,,1
-Blake Monroe,3326,222,Tanner Hendrix,375,32,FO,190,T5,0,0,0,3,,,0,0,32,3,1,HSH,YOK,FO,FO,,1
-Jack Elliot,76,880,Tanner Hendrix,375,578,K,302,T5,1,0,0,3,,,0,0,32,3,1,HSH,YOK,K,K,,1
-Dart Ragusa,134,200,Tanner Hendrix,375,329,BB,129,T5,2,0,0,3,,,0,0,32,3,1,HSH,YOK,BB,BB,,1
-Syd Ryu,3,684,Tanner Hendrix,375,213,LGO,471,T5,2,1,0,3,,,0,0,32,3,1,HSH,YOK,LGO,LGO,,1
-Jack Meloy,145,363,Zander Ackley,127,714,K,351,B5,0,0,0,3,,,0,0,33,3,1,YOK,HSH,K,K,,1
-Tommy Oldman,143,571,Zander Ackley,127,964,K,393,B5,1,0,0,3,,,0,0,33,3,1,YOK,HSH,K,K,,1
-Koyomi Araragi,293,730,Zander Ackley,127,738,HR,8,B5,2,0,0,3,,,1,1,33,3,1,YOK,HSH,HR,HR,,1
-Henry Crowell,184,723,Zander Ackley,127,920,FO,197,B5,2,0,1,3,,,0,0,33,3,1,YOK,HSH,FO,FO,,1
-Homer Pimpson,144,831,Tanner Hendrix,375,943,1B,112,T6,0,0,1,3,,,0,1,34,3,1,HSH,YOK,1B,1B,,1
-Rintaro Okabe,290,496,Tanner Hendrix,375,638,BB,142,T6,0,1,1,3,,,0,0,34,3,1,HSH,YOK,BB,BB,,1
-Yoshigahara Ryutai,133,,Tanner Hendrix,375,,Auto BB,,T6,0,4,1,3,,,0,0,34,3,1,HSH,YOK,Auto BB,Auto BB,,10
-Hidetoshi Hasagawa,102,212,Tanner Hendrix,375,490,K,278,T6,0,7,1,3,,,0,0,34,3,1,HSH,YOK,K,K,,1
-Caleb Athen,325,666,Tanner Hendrix,375,490,BB,176,T6,1,7,1,3,,,1,0,34,3,1,HSH,YOK,BB,BB,,1
-Blake Monroe,3326,,Tanner Hendrix,375,,Auto K,,T6,1,7,1,4,,,0,0,34,3,1,HSH,YOK,Auto K,Auto K,,9
-Jack Elliot,76,490,Tanner Hendrix,375,769,K,279,T6,2,7,1,4,,,0,0,34,3,1,HSH,YOK,K,K,,1
-Tanner Hendrix,375,723,Zander Ackley,127,186,RGO,463,B6,0,0,1,4,,,0,0,35,3,1,YOK,HSH,RGO,RGO,,1
-Lloyd Gross,135,785,Zander Ackley,127,395,K,390,B6,1,0,1,4,,,0,0,35,3,1,YOK,HSH,K,K,,1
-Niko Banks,430,172,Zander Ackley,127,540,K,368,B6,2,0,1,4,,,0,0,35,3,1,YOK,HSH,K,K,,1
-Takahiro Hirasawa,419,557,Nori Aru,131,23,LGO,466,T1,0,0,0,0,,,0,0,36,4,1,ORI,HNF,LGO,LGO,,1
-Luap Renraw,118,221,Nori Aru,131,910,K,311,T1,1,0,0,0,,,0,0,36,4,1,ORI,HNF,K,K,,1
-Nicholas Verducci,70,500,Nori Aru,131,473,2B,27,T1,2,0,0,0,,,0,1,36,4,1,ORI,HNF,2B,2B,,1
-Michael Ikenberry,63,154,Nori Aru,131,69,1B,85,T1,2,2,0,0,,,1,0,36,4,1,ORI,HNF,1B,1B,,1
-Guadalupe Greerson,269,,Nori Aru,131,,Auto K,,T1,2,1,0,1,,,0,0,36,4,1,ORI,HNF,Auto K,Auto K,,9
-Jocko Jones,295,422,Charles Magnus,220,599,BB,177,B1,0,0,0,1,,,0,1,37,4,1,HNF,ORI,BB,BB,,1
-Ian Brendan Owen Bust,186,762,Charles Magnus,220,914,BB,152,B1,0,1,0,1,,,0,1,37,4,1,HNF,ORI,BB,BB,,1
-Jimjon Jonjim,272,487,Charles Magnus,220,899,K,412,B1,0,4,0,1,,,0,0,37,4,1,HNF,ORI,K,K,,1
-Isaac Snowbender,339,215,Charles Magnus,220,111,1B,104,B1,1,4,0,1,,,0,0,37,4,1,HNF,ORI,1B,1B,,1
-Oscar Vinegrette,252,777,Charles Magnus,220,512,Sac,265,B1,1,7,0,1,,,1,0,37,4,1,HNF,ORI,FO,FO,,1
-Jerry Jingles,146,370,Charles Magnus,220,265,1B,105,B1,2,4,1,1,,,1,0,37,4,1,HNF,ORI,1B,1B,,1
-Jerry Jingles,146,758,Charles Magnus,220,666,SB,92,B1,2,5,2,1,,,0,0,37,4,1,HNF,ORI,Steal 2B,Steal 2B,,5
-Reimer Gonzalez,13,291,Charles Magnus,220,5,K,286,B1,2,6,2,1,,,0,0,37,4,1,HNF,ORI,K,K,,1
-Josh Gordon,409,746,Nori Aru,131,260,LGO,486,T2,0,0,2,1,,,0,0,38,4,1,ORI,HNF,LGO,LGO,,1
-Daniel Dove,66,580,Nori Aru,131,996,K,416,T2,1,0,2,1,,,0,0,38,4,1,ORI,HNF,K,K,,1
-Karl Jernigan,439,420,Nori Aru,131,250,BB,170,T2,2,0,2,1,,,0,0,38,4,1,ORI,HNF,BB,BB,,1
-Charles Magnus,220,,Nori Aru,131,,Auto K,,T2,2,1,2,1,,,0,0,38,4,1,ORI,HNF,Auto K,Auto K,,9
-Filet-Mignon Jackson,320,613,Charles Magnus,220,214,K,399,B2,0,0,2,1,,,0,0,39,4,1,HNF,ORI,K,K,,1
-Nori Aru,131,460,Charles Magnus,220,186,FO,274,B2,1,0,2,1,,,0,0,39,4,1,HNF,ORI,FO,FO,,1
-Jocko Jones,295,646,Charles Magnus,220,312,K,334,B2,2,0,2,1,,,0,0,39,4,1,HNF,ORI,K,K,,1
-Takahiro Hirasawa,419,,Nori Aru,131,,Auto K,,T3,0,0,2,1,,,0,0,40,4,1,ORI,HNF,Auto K,Auto K,,9
-Luap Renraw,118,757,Nori Aru,131,2,FO,245,T3,1,0,2,1,,,0,0,40,4,1,ORI,HNF,FO,FO,,1
-Nicholas Verducci,70,312,Nori Aru,131,760,LGO,448,T3,2,0,2,1,,,0,0,40,4,1,ORI,HNF,LGO,LGO,,1
-Ian Brendan Owen Bust,186,480,Charles Magnus,220,579,1B,99,B3,0,0,2,1,,,0,0,41,4,1,HNF,ORI,1B,1B,,1
-Jimjon Jonjim,272,729,Charles Magnus,220,999,FO,270,B3,0,1,2,1,,,0,0,41,4,1,HNF,ORI,FO,FO,,1
-Isaac Snowbender,339,,Charles Magnus,220,,Auto BB,,B3,1,1,2,1,,,0,0,41,4,1,HNF,ORI,Auto BB,Auto BB,,10
-Oscar Vinegrette,252,254,Maximus Pow,344,881,PO,373,B3,1,4,2,1,,,0,0,41,4,1,HNF,ORI,PO,PO,,1
-Jerry Jingles,146,385,Maximus Pow,344,63,PO,322,B3,2,4,2,1,,,0,0,41,4,1,HNF,ORI,PO,PO,,1
-Michael Ikenberry,63,1000,Nori Aru,131,500,LGO,500,T4,0,0,2,1,,,0,0,42,4,1,ORI,HNF,LGO,LGO,,1
-Becky McBadbat,277,444,Nori Aru,131,831,RGO,387,T4,1,0,2,1,,,0,0,42,4,1,ORI,HNF,RGO,RGO,,1
-Josh Gordon,409,223,Nori Aru,131,831,RGO,392,T4,2,0,2,1,,,0,0,42,4,1,ORI,HNF,RGO,RGO,,1
-Reimer Gonzalez,13,88,Maximus Pow,344,812,K,276,B4,0,0,2,1,,,0,0,43,4,1,HNF,ORI,K,K,,1
-Filet-Mignon Jackson,320,852,Maximus Pow,344,772,1B,80,B4,1,0,2,1,,,0,0,43,4,1,HNF,ORI,1B,1B,,1
-Nori Aru,131,460,Maximus Pow,344,867,DP,407,B4,1,1,2,1,,,0,0,43,4,1,HNF,ORI,RGO,RGO,,1
-Daniel Dove,66,615,Nori Aru,131,1,RGO,386,T5,0,0,2,1,,,0,0,44,4,1,ORI,HNF,RGO,RGO,,1
-Karl Jernigan,439,980,Nori Aru,131,386,RGO,406,T5,1,0,2,1,,,0,0,44,4,1,ORI,HNF,RGO,RGO,,1
-Maximus Pow,344,730,Nori Aru,131,1,K,271,T5,2,0,2,1,,,0,0,44,4,1,ORI,HNF,K,K,,1
-Jocko Jones,295,742,Maximus Pow,344,456,K,286,B5,0,0,2,1,,,0,0,45,4,1,HNF,ORI,K,K,,1
-Ian Brendan Owen Bust,186,380,Maximus Pow,344,101,K,279,B5,1,0,2,1,,,0,0,45,4,1,HNF,ORI,K,K,,1
-Jimjon Jonjim,272,209,Maximus Pow,344,355,BB,146,B5,2,0,2,1,,,0,0,45,4,1,HNF,ORI,BB,BB,,1
-Isaac Snowbender,339,961,Maximus Pow,344,355,RGO,394,B5,2,1,2,1,,,0,0,45,4,1,HNF,ORI,RGO,RGO,,1
-Takahiro Hirasawa,419,381,Nori Aru,131,223,BB,158,T6,0,0,2,1,,,0,1,46,4,1,ORI,HNF,BB,BB,,1
-Luap Renraw,118,623,Nori Aru,131,501,BB,122,T6,0,1,2,1,,,0,1,46,4,1,ORI,HNF,BB,BB,,1
-Nicholas Verducci,70,734,Nori Aru,131,501,FO,233,T6,0,4,2,1,,,0,0,46,4,1,ORI,HNF,FO,FO,,1
-Michael Ikenberry,63,501,Nori Aru,131,501,HR,0,T6,1,4,2,1,,,3,1,46,4,1,ORI,HNF,HR,HR,,1
-Becky McBadbat,277,85,Oscar Vinegrette,252,1,1B,84,T6,1,0,2,4,,,0,1,46,4,1,ORI,HNF,1B,1B,,1
-Josh Gordon,409,464,Oscar Vinegrette,252,670,FO,206,T6,1,1,2,4,,,0,0,46,4,1,ORI,HNF,FO,FO,,1
-Daniel Dove,66,420,Oscar Vinegrette,252,341,1B,79,T6,2,1,2,4,,,0,0,46,4,1,ORI,HNF,1B,1B,,1
-Karl Jernigan,439,202,Oscar Vinegrette,252,100,1B,102,T6,2,5,2,4,,,1,0,46,4,1,ORI,HNF,1B,1B,,1
-Maximus Pow,344,775,Oscar Vinegrette,252,910,BB,135,T6,2,5,2,5,,,0,0,46,4,1,ORI,HNF,BB,BB,,1
-Takahiro Hirasawa,419,214,Oscar Vinegrette,252,911,K,303,T6,2,7,2,5,,,0,0,46,4,1,ORI,HNF,K,K,,1
-Oscar Vinegrette,252,444,Maximus Pow,344,999,LGO,445,B6,0,0,2,5,,,0,0,47,4,1,HNF,ORI,LGO,LGO,,1
-Jerry Jingles,146,950,Maximus Pow,344,82,BB,132,B6,1,0,2,5,,,0,0,47,4,1,HNF,ORI,BB,BB,,1
-Reimer Gonzalez,13,456,Maximus Pow,344,944,DP,488,B6,1,1,2,5,,,0,0,47,4,1,HNF,ORI,LGO,LGO,,1
-Robin Reynolds,371,1,Icna Comit,198,30,HR,29,T1,0,0,0,0,,,1,1,48,5,1,NAN,CHI,HR,HR,,1
-Owen Thirlwell,156,399,Icna Comit,198,678,K,279,T1,0,0,0,1,,,0,0,48,5,1,NAN,CHI,K,K,,1
-Ryosuke Takahashi,36,420,Icna Comit,198,345,1B,75,T1,1,0,0,1,,,0,0,48,5,1,NAN,CHI,1B,1B,,1
-Takumi Fujiwara,91,400,Icna Comit,198,572,FO,172,T1,1,1,0,1,,,0,0,48,5,1,NAN,CHI,FO,FO,,1
-Meerkat Timmons,147,711,Icna Comit,198,11,K,300,T1,2,1,0,1,,,0,0,48,5,1,NAN,CHI,K,K,,1
-Morello D. Luffy,211,666,Robin Reynolds,371,44,RGO,378,B1,0,0,0,1,,,0,0,49,5,1,CHI,NAN,RGO,RGO,,1
-Phil Coulson,226,438,Robin Reynolds,371,945,LGO,493,B1,1,0,0,1,,,0,0,49,5,1,CHI,NAN,LGO,LGO,,1
-Viking Fishbird,42,111,Robin Reynolds,371,275,BB,164,B1,2,0,0,1,,,0,0,49,5,1,CHI,NAN,BB,BB,,1
-Tike Mruk,104,,Robin Reynolds,371,,Auto K,,B1,2,1,0,1,,,0,0,49,5,1,CHI,NAN,Auto K,Auto K,,9
-Rickey Tucker,163,286,Icna Comit,198,39,FO,247,T2,0,0,0,1,,,0,0,50,5,1,NAN,CHI,FO,FO,,1
-Donnie Draper,138,820,Icna Comit,198,856,2B,36,T2,1,0,0,1,,,0,0,50,5,1,NAN,CHI,2B,2B,,1
-Rueben Salazar,416,303,Icna Comit,198,100,FO,203,T2,1,2,0,1,,,0,0,50,5,1,NAN,CHI,FO,FO,,1
-Ichigo Kurosaki,351,11,Icna Comit,198,555,RGO,456,T2,2,2,0,1,,,0,0,50,5,1,NAN,CHI,RGO,RGO,,1
-Icna Comit,198,569,Robin Reynolds,371,618,2B,49,B2,0,0,0,1,,,0,0,51,5,1,CHI,NAN,2B,2B,,1
-Hingle McCringleberry,257,333,Robin Reynolds,371,73,FO,260,B2,0,2,0,1,,,0,0,51,5,1,CHI,NAN,FO,FO,,1
-Phoenix McDouglas,2194,777,Robin Reynolds,371,333,LGO,444,B2,1,2,0,1,,,0,0,51,5,1,CHI,NAN,LGO,LGO,,1
-Vigolashi Dongelini,159,,Robin Reynolds,371,,Auto K,,B2,2,2,0,1,,,0,0,51,5,1,CHI,NAN,Auto K,Auto K,,9
-Robin Reynolds,371,888,Icna Comit,198,728,FO,160,T3,0,0,0,1,,,0,0,52,5,1,NAN,CHI,FO,FO,,1
-Owen Thirlwell,156,151,Icna Comit,198,872,FO,279,T3,1,0,0,1,,,0,0,52,5,1,NAN,CHI,FO,FO,,1
-Ryosuke Takahashi,36,63,Icna Comit,198,23,2B,40,T3,2,0,0,1,,,0,0,52,5,1,NAN,CHI,2B,2B,,1
-Takumi Fujiwara,91,877,Icna Comit,198,420,RGO,457,T3,2,2,0,1,,,0,0,52,5,1,NAN,CHI,RGO,RGO,,1
-Seik Golden,251,744,Robin Reynolds,371,531,FO,213,B3,0,0,0,1,,,0,0,53,5,1,CHI,NAN,FO,FO,,1
-Morello D. Luffy,211,100,Robin Reynolds,371,345,FO,245,B3,1,0,0,1,,,0,0,53,5,1,CHI,NAN,FO,FO,,1
-Phil Coulson,226,823,Robin Reynolds,371,345,LGO,478,B3,2,0,0,1,,,0,0,53,5,1,CHI,NAN,LGO,LGO,,1
-Meerkat Timmons,147,420,Icna Comit,198,399,HR,21,T4,0,0,0,1,,,1,1,54,5,1,NAN,CHI,HR,HR,,1
-Rickey Tucker,163,287,Icna Comit,198,69,FO,218,T4,0,0,0,2,,,0,0,54,5,1,NAN,CHI,FO,FO,,1
-Donnie Draper,138,1,Icna Comit,198,750,FO,251,T4,1,0,0,2,,,0,0,54,5,1,NAN,CHI,FO,FO,,1
-Rueben Salazar,416,,Icna Comit,198,,Auto K,,T4,2,0,0,2,,,0,0,54,5,1,NAN,CHI,Auto K,Auto K,,9
-Viking Fishbird,42,999,Robin Reynolds,371,364,RGO,365,B4,0,0,0,2,,,0,0,55,5,1,CHI,NAN,RGO,RGO,,1
-Tike Mruk,104,6,Robin Reynolds,371,338,PO,332,B4,1,0,0,2,,,0,0,55,5,1,CHI,NAN,PO,PO,,1
-Icna Comit,198,420,Robin Reynolds,371,974,LGO,446,B4,2,0,0,2,,,0,0,55,5,1,CHI,NAN,LGO,LGO,,1
-Ichigo Kurosaki,351,611,Seik Golden,251,808,FO,197,T5,0,0,0,2,,,0,0,56,5,1,NAN,CHI,FO,FO,,1
-Robin Reynolds,371,330,Seik Golden,251,1,K,329,T5,1,0,0,2,,,0,0,56,5,1,NAN,CHI,K,K,,1
-Owen Thirlwell,156,119,Seik Golden,251,501,RGO,382,T5,2,0,0,2,,,0,0,56,5,1,NAN,CHI,RGO,RGO,,1
-Hingle McCringleberry,257,420,Robin Reynolds,371,141,K,279,B5,0,0,0,2,,,0,0,57,5,1,CHI,NAN,K,K,,1
-Phoenix McDouglas,2194,244,Robin Reynolds,371,520,FO,276,B5,1,0,0,2,,,0,0,57,5,1,CHI,NAN,FO,FO,,1
-Vigolashi Dongelini,159,800,Robin Reynolds,371,622,BB,178,B5,2,0,0,2,,,0,1,57,5,1,CHI,NAN,BB,BB,,1
-Seik Golden,251,625,Robin Reynolds,371,622,HR,3,B5,2,1,0,2,,,2,1,57,5,1,CHI,NAN,HR,HR,,1
-Morello D. Luffy,211,911,Robin Reynolds,371,622,K,289,B5,2,0,2,2,,,0,0,57,5,1,CHI,NAN,K,K,,1
-Ryosuke Takahashi,36,628,Seik Golden,251,666,2B,38,T6,0,0,2,2,,,0,1,58,5,1,NAN,CHI,2B,2B,,1
-Takumi Fujiwara,91,420,Seik Golden,251,860,RGO,440,T6,0,2,2,2,,,0,0,58,5,1,NAN,CHI,RGO,RGO,,1
-Meerkat Timmons,147,419,Seik Golden,251,363,2B,56,T6,1,3,2,2,,,1,0,58,5,1,NAN,CHI,2B,2B,,1
-Rickey Tucker,163,856,Seik Golden,251,327,LGO,471,T6,1,2,2,3,,,0,0,58,5,1,NAN,CHI,LGO,LGO,,1
-Donnie Draper,138,399,Seik Golden,251,151,FO,248,T6,2,2,2,3,,,0,0,58,5,1,NAN,CHI,FO,FO,,1
-Phil Coulson,226,382,Robin Reynolds,371,927,LGO,455,B6,0,0,2,3,,,0,0,59,5,1,CHI,NAN,LGO,LGO,,1
-Viking Fishbird,42,409,Robin Reynolds,371,456,2B,47,B6,1,0,2,3,,,0,1,59,5,1,CHI,NAN,2B,2B,,1
-Tike Mruk,104,69,Robin Reynolds,371,964,1B,105,B6,1,2,2,3,,,0,1,59,5,1,CHI,NAN,1B,1B,,1
-Icna Comit,198,420,Robin Reynolds,371,252,BB,168,B6,1,5,2,3,,,0,1,59,5,1,CHI,NAN,BB,BB,,1
-Hingle McCringleberry,257,500,Robin Reynolds,371,515,HR,15,B6,1,7,2,3,,,4,1,59,5,1,CHI,NAN,HR,HR,,1
-Jeff Steelflex,268,935,Seik Golden,251,222,FO,287,T1,0,0,0,0,,,0,0,60,6,2,RGE,CHI,FO,FO,,1
-Harry Peritestes,117,687,Seik Golden,251,45,PO,358,T1,1,0,0,0,,,0,0,60,6,2,RGE,CHI,PO,PO,,1
-Jared Sabor VII,149,882,Seik Golden,251,40,BB,158,T1,2,0,0,0,,,0,0,60,6,2,RGE,CHI,BB,BB,,1
-Ronarudo Washi IIIIII,167,882,Seik Golden,251,569,K,313,T1,2,1,0,0,,,0,0,60,6,2,RGE,CHI,K,K,,1
-Morello D. Luffy,211,550,Naoki Tentacles,216,669,BB,119,B1,0,0,0,0,,,0,0,61,6,2,CHI,RGE,BB,BB,,1
-Phil Coulson,226,107,Naoki Tentacles,216,20,1B,87,B1,0,1,0,0,,,0,0,61,6,2,CHI,RGE,1B,1B,,1
-Viking Fishbird,42,899,Naoki Tentacles,216,500,K,399,B1,0,4,0,0,,,0,0,61,6,2,CHI,RGE,K,K,,1
-Tike Mruk,104,775,Naoki Tentacles,216,386,K,389,B1,1,4,0,0,,,0,0,61,6,2,CHI,RGE,K,K,,1
-Icna Comit,198,,Naoki Tentacles,216,,Auto K,,B1,2,4,0,0,,,0,0,61,6,2,CHI,RGE,Auto K,Auto K,,9
-Markese Rolle,2503,277,Seik Golden,251,909,K,368,T2,0,0,0,0,,,0,0,62,6,2,RGE,CHI,K,K,,1
-Olivia Hyde,175,360,Seik Golden,251,406,2B,46,T2,1,0,0,0,,,0,0,62,6,2,RGE,CHI,2B,2B,,1
-dednuts,448,428,Seik Golden,251,895,LGO,467,T2,1,2,0,0,,,0,0,62,6,2,RGE,CHI,LGO,LGO,,1
-Triscutt Mesmer,39,175,Seik Golden,251,666,LGO,491,T2,2,2,0,0,,,0,0,62,6,2,RGE,CHI,LGO,LGO,,1
-Hingle McCringleberry,257,323,Naoki Tentacles,216,302,3B,21,B2,0,0,0,0,,,0,1,63,6,2,CHI,RGE,3B,3B,,1
-Phoenix McDouglas,2194,203,Naoki Tentacles,216,850,K,353,B2,0,3,0,0,,,0,0,63,6,2,CHI,RGE,K,K,,1
-Vigolashi Dongelini,159,525,Naoki Tentacles,216,746,Sac,221,B2,1,3,0,0,,,1,0,63,6,2,CHI,RGE,FO,FO,,1
-Seik Golden,251,90,Naoki Tentacles,216,897,FO,193,B2,2,0,1,0,,,0,0,63,6,2,CHI,RGE,FO,FO,,1
-Naoki Tentacles,216,69,Seik Golden,251,114,HR,45,T3,0,0,1,0,,,1,1,64,6,2,RGE,CHI,HR,HR,,1
-Jeff Steelflex,268,750,Seik Golden,251,404,K,346,T3,0,0,1,1,,,0,0,64,6,2,RGE,CHI,K,K,,1
-Harry Peritestes,117,686,Seik Golden,251,401,FO,285,T3,1,0,1,1,,,0,0,64,6,2,RGE,CHI,FO,FO,,1
-Jared Sabor VII,149,482,Seik Golden,251,666,FO,184,T3,2,0,1,1,,,0,0,64,6,2,RGE,CHI,FO,FO,,1
-Morello D. Luffy,211,321,Naoki Tentacles,216,801,LGO,480,B3,0,0,1,1,,,0,0,65,6,2,CHI,RGE,LGO,LGO,,1
-Phil Coulson,226,,Naoki Tentacles,216,,Auto K,,B3,1,0,1,1,,,0,0,65,6,2,CHI,RGE,Auto K,Auto K,,9
-Viking Fishbird,42,750,Naoki Tentacles,216,648,1B,102,B3,2,0,1,1,,,0,0,65,6,2,CHI,RGE,1B,1B,,1
-Tike Mruk,104,405,Naoki Tentacles,216,27,K,378,B3,2,1,1,1,,,0,0,65,6,2,CHI,RGE,K,K,,1
-Ronarudo Washi IIIIII,167,823,Seik Golden,251,876,2B,53,T4,0,0,1,1,,,0,1,66,6,2,RGE,CHI,2B,2B,,1
-Markese Rolle,2503,53,Seik Golden,251,151,1B,98,T4,0,2,1,1,,,0,0,66,6,2,RGE,CHI,1B,1B,,1
-Olivia Hyde,175,760,Seik Golden,251,500,Sac,260,T4,0,5,1,1,,,1,0,66,6,2,RGE,CHI,FO,FO,,1
-dednuts,448,634,Seik Golden,251,404,FO,230,T4,1,1,1,2,,,0,0,66,6,2,RGE,CHI,FO,FO,,1
-Triscutt Mesmer,39,790,Seik Golden,251,123,K,333,T4,2,1,1,2,,,0,0,66,6,2,RGE,CHI,K,K,,1
-Icna Comit,198,337,Naoki Tentacles,216,231,1B,106,B4,0,0,1,2,,,0,1,67,6,2,CHI,RGE,1B,1B,,1
-Hingle McCringleberry,257,456,Naoki Tentacles,216,420,2B,36,B4,0,1,1,2,,,0,1,67,6,2,CHI,RGE,2B,2B,,1
-Phoenix McDouglas,2194,838,Naoki Tentacles,216,11,BB,173,B4,0,6,1,2,,,0,0,67,6,2,CHI,RGE,BB,BB,,1
-Vigolashi Dongelini,159,638,Naoki Tentacles,216,166,DP,472,B4,0,7,1,2,,,0,0,67,6,2,CHI,RGE,LGO,LGO,,1
-Seik Golden,251,777,Naoki Tentacles,216,787,HR,10,B4,2,3,2,2,,,2,1,67,6,2,CHI,RGE,HR,HR,,1
-Morello D. Luffy,211,911,Naoki Tentacles,216,435,LGO,476,B4,2,0,4,2,,,0,0,67,6,2,CHI,RGE,LGO,LGO,,1
-Naoki Tentacles,216,42,Icna Comit,198,630,PO,412,T5,0,0,4,2,,,0,0,68,6,2,RGE,CHI,PO,PO,,1
-Jeff Steelflex,268,888,Icna Comit,198,821,1B,67,T5,1,0,4,2,,,0,1,68,6,2,RGE,CHI,1B,1B,,1
-Harry Peritestes,117,127,Icna Comit,198,12,1B,115,T5,1,1,4,2,,,0,1,68,6,2,RGE,CHI,1B,1B,,1
-Jared Sabor VII,149,846,Icna Comit,198,12,BB,166,T5,1,4,4,2,,,0,1,68,6,2,RGE,CHI,BB,BB,,1
-Ronarudo Washi IIIIII,167,12,Icna Comit,198,967,HR,45,T5,1,7,4,2,,,4,1,68,6,2,RGE,CHI,HR,HR,,1
-Markese Rolle,2503,56,Seik Golden,251,91,2B,35,T5,1,0,4,6,,,0,0,68,6,2,RGE,CHI,2B,2B,,1
-Olivia Hyde,175,173,Seik Golden,251,465,K,292,T5,1,2,4,6,,,0,0,68,6,2,RGE,CHI,K,K,,1
-dednuts,448,563,Seik Golden,251,999,RGO,436,T5,2,2,4,6,,,0,0,68,6,2,RGE,CHI,RGO,RGO,,1
-Phil Coulson,226,300,Ronarudo Washi IIIIII,167,12,FO,288,B5,0,0,4,6,,,0,0,69,6,2,CHI,RGE,FO,FO,,1
-Viking Fishbird,42,484,Ronarudo Washi IIIIII,167,850,K,366,B5,1,0,4,6,,,0,0,69,6,2,CHI,RGE,K,K,,1
-Tike Mruk,104,484,Ronarudo Washi IIIIII,167,69,K,415,B5,2,0,4,6,,,0,0,69,6,2,CHI,RGE,K,K,,1
-Triscutt Mesmer,39,50,Seik Golden,251,320,FO,270,T6,0,0,4,6,,,0,0,70,6,2,RGE,CHI,FO,FO,,1
-Naoki Tentacles,216,666,Seik Golden,251,312,K,354,T6,1,0,4,6,,,0,0,70,6,2,RGE,CHI,K,K,,1
-Jeff Steelflex,268,352,Seik Golden,251,600,FO,248,T6,2,0,4,6,,,0,0,70,6,2,RGE,CHI,FO,FO,,1
-Icna Comit,198,784,Ronarudo Washi IIIIII,167,967,FO,183,B6,0,0,4,6,,,0,0,71,6,2,CHI,RGE,FO,FO,,1
-Hingle McCringleberry,257,269,Ronarudo Washi IIIIII,167,350,1B,81,B6,1,0,4,6,,,0,0,71,6,2,CHI,RGE,1B,1B,,1
-Phoenix McDouglas,2194,655,Ronarudo Washi IIIIII,167,350,K,305,B6,1,1,4,6,,,0,0,71,6,2,CHI,RGE,K,K,,1
-Vigolashi Dongelini,159,500,Ronarudo Washi IIIIII,167,12,LGO,488,B6,2,1,4,6,,,0,0,71,6,2,CHI,RGE,LGO,LGO,,1
-Syd Ryu,3,411,Alex Brown,444,569,BB,158,T1,0,0,0,0,,,0,1,72,7,2,HSH,HIR,BB,BB,,1
-Caleb Athen,325,408,Alex Brown,444,305,1B,103,T1,0,1,0,0,,,0,0,72,7,2,HSH,HIR,1B,1B,,1
-Blake Monroe,3326,801,Alex Brown,444,310,DP,491,T1,0,4,0,0,,,0,0,72,7,2,HSH,HIR,LGO,LGO,,1
-Jack Elliot,76,878,Alex Brown,444,920,2B,42,T1,2,3,0,0,,,1,1,72,7,2,HSH,HIR,2B,2B,,1
-Dart Ragusa,134,800,Alex Brown,444,824,2B,24,T1,2,2,0,1,,,1,1,72,7,2,HSH,HIR,2B,2B,,1
-Homer Pimpson,144,748,Alex Brown,444,789,2B,41,T1,2,2,0,2,,,1,0,72,7,2,HSH,HIR,2B,2B,,1
-Rintaro Okabe,290,14,Alex Brown,444,305,K,291,T1,2,2,0,3,,,0,0,72,7,2,HSH,HIR,K,K,,1
-AJ McMann,433,,Zander Ackley,127,431,LGO,495,B1,0,0,0,3,,,0,0,73,7,2,HIR,HSH,LGO,LGO,,1
-Dirtbag Darrell,262,633,Zander Ackley,127,432,FO,201,B1,1,0,0,3,,,0,0,73,7,2,HIR,HSH,FO,FO,,1
-Rich Mahogany,265,808,Zander Ackley,127,114,K,306,B1,2,0,0,3,,,0,0,73,7,2,HIR,HSH,K,K,,1
-Yoshigahara Ryutai,133,310,Alex Brown,444,721,K,411,T2,0,0,0,3,,,0,0,74,7,2,HSH,HIR,K,K,,1
-Hidetoshi Hasagawa,102,493,Alex Brown,444,212,K,281,T2,1,0,0,3,,,0,0,74,7,2,HSH,HIR,K,K,,1
-Syd Ryu,3,101,Alex Brown,444,305,FO,204,T2,2,0,0,3,,,0,0,74,7,2,HSH,HIR,FO,FO,,1
-Carlos Brownson,132,762,Zander Ackley,127,936,FO,174,B2,0,0,0,3,,,0,0,75,7,2,HIR,HSH,FO,FO,,1
-Mattress Cadaire,116,145,Zander Ackley,127,248,1B,103,B2,1,0,0,3,,,0,0,75,7,2,HIR,HSH,1B,1B,,1
-River Ride,342,747,Zander Ackley,127,13,FO,266,B2,1,1,0,3,,,0,0,75,7,2,HIR,HSH,FO,FO,,1
-Boi Lover,84,500,Zander Ackley,127,179,K,321,B2,2,1,0,3,,,0,0,75,7,2,HIR,HSH,K,K,,1
-Caleb Athen,325,56,Alex Brown,444,112,1B,56,T3,0,0,0,3,,,0,0,76,7,2,HSH,HIR,1B,1B,,1
-Blake Monroe,3326,200,Alex Brown,444,1,FO,199,T3,0,1,0,3,,,0,0,76,7,2,HSH,HIR,FO,FO,,1
-Jack Elliot,76,2,Alex Brown,444,751,FO,251,T3,1,1,0,3,,,0,0,76,7,2,HSH,HIR,FO,FO,,1
-Dart Ragusa,134,950,Alex Brown,444,566,K,384,T3,2,1,0,3,,,0,0,76,7,2,HSH,HIR,K,K,,1
-Gottlieb Giannopoulos,89,676,Zander Ackley,127,252,RGO,424,B3,0,0,0,3,,,0,0,77,7,2,HIR,HSH,RGO,RGO,,1
-Alex Brown,444,805,Zander Ackley,127,407,K,398,B3,1,0,0,3,,,0,0,77,7,2,HIR,HSH,K,K,,1
-AJ McMann,433,,Zander Ackley,127,531,LGO,470,B3,2,0,0,3,,,0,0,77,7,2,HIR,HSH,LGO,LGO,,1
-Homer Pimpson,144,213,Alex Brown,444,777,PO,436,T4,0,0,0,3,,,0,0,78,7,2,HSH,HIR,PO,PO,,1
-Rintaro Okabe,290,878,Alex Brown,444,462,K,416,T4,1,0,0,3,,,0,0,78,7,2,HSH,HIR,K,K,,1
-Yoshigahara Ryutai,133,281,Alex Brown,444,902,K,379,T4,2,0,0,3,,,0,0,78,7,2,HSH,HIR,K,K,,1
-Dirtbag Darrell,262,750,Zander Ackley,127,44,FO,294,B4,0,0,0,3,,,0,0,79,7,2,HIR,HSH,FO,FO,,1
-Rich Mahogany,265,917,Zander Ackley,127,209,K,292,B4,1,0,0,3,,,0,0,79,7,2,HIR,HSH,K,K,,1
-Carlos Brownson,132,802,Zander Ackley,127,1000,FO,198,B4,2,0,0,3,,,0,0,79,7,2,HIR,HSH,FO,FO,,1
-Hidetoshi Hasagawa,102,235,Alex Brown,444,699,LGO,464,T5,0,0,0,3,,,0,0,80,7,2,HSH,HIR,LGO,LGO,,1
-Syd Ryu,3,141,Alex Brown,444,720,PO,421,T5,1,0,0,3,,,0,0,80,7,2,HSH,HIR,PO,PO,,1
-Caleb Athen,325,287,Alex Brown,444,963,K,324,T5,2,0,0,3,,,0,0,80,7,2,HSH,HIR,K,K,,1
-Mattress Cadaire,116,350,Zander Ackley,127,947,RGO,403,B5,0,0,0,3,,,0,0,81,7,2,HIR,HSH,RGO,RGO,,1
-River Ride,342,888,Zander Ackley,127,184,K,296,B5,1,0,0,3,,,0,0,81,7,2,HIR,HSH,K,K,,1
-Boi Lover,84,399,Zander Ackley,127,685,K,286,B5,2,0,0,3,,,0,0,81,7,2,HIR,HSH,K,K,,1
-Blake Monroe,3326,24,Alex Brown,444,305,K,281,T6,0,0,0,3,,,0,0,82,7,2,HSH,HIR,K,K,,1
-Jack Elliot,76,505,Alex Brown,444,901,K,396,T6,1,0,0,3,,,0,0,82,7,2,HSH,HIR,K,K,,1
-Dart Ragusa,134,500,Alex Brown,444,473,2B,27,T6,2,0,0,3,,,0,0,82,7,2,HSH,HIR,2B,2B,,1
-Homer Pimpson,144,689,Alex Brown,444,212,LGO,477,T6,2,2,0,3,,,0,0,82,7,2,HSH,HIR,LGO,LGO,,1
-Gottlieb Giannopoulos,89,277,Zander Ackley,127,455,BB,178,B6,0,0,0,3,,,0,1,83,7,2,HIR,HSH,BB,BB,,1
-Alex Brown,444,224,Zander Ackley,127,839,K,385,B6,0,1,0,3,,,0,0,83,7,2,HIR,HSH,K,K,,1
-AJ McMann,433,,Zander Ackley,127,316,HR,14,B6,1,1,0,3,,,2,1,83,7,2,HIR,HSH,HR,HR,,1
-Dirtbag Darrell,262,903,Zander Ackley,127,101,FO,198,B6,1,0,2,3,,,0,0,83,7,2,HIR,HSH,FO,FO,,1
-Rich Mahogany,265,767,Zander Ackley,127,527,FO,240,B6,2,0,2,3,,,0,0,83,7,2,HIR,HSH,FO,FO,,1
-Jocko Jones,295,742,Alvin Lockheart,20,738,HR,4,T1,0,0,0,0,,,1,1,84,8,2,HNF,CHU,HR,HR,,1
-Ian Brendan Owen Bust,186,380,Alvin Lockheart,20,141,FO,239,T1,0,0,0,1,,,0,0,84,8,2,HNF,CHU,FO,FO,,1
-Isaac Snowbender,339,305,Alvin Lockheart,20,222,1B,83,T1,1,0,0,1,,,0,1,84,8,2,HNF,CHU,1B,1B,,1
-Jerry Jingles,146,800,Alvin Lockheart,20,801,HR,1,T1,1,1,0,1,,,2,1,84,8,2,HNF,CHU,HR,HR,,1
-Jimjon Jonjim,272,595,Alvin Lockheart,20,801,FO,206,T1,1,0,0,3,,,0,0,84,8,2,HNF,CHU,FO,FO,,1
-Squiggly McCool,3353,220,Alvin Lockheart,20,601,PO,381,T1,2,0,0,3,,,0,0,84,8,2,HNF,CHU,PO,PO,,1
-Thomas Nova,1,569,Oscar Vinegrette,252,490,1B,79,B1,0,0,0,3,,,0,0,85,8,2,CHU,HNF,1B,1B,,1
-Akiyoshi Yamamoto,289,102,Oscar Vinegrette,252,995,1B,107,B1,0,1,0,3,,,0,0,85,8,2,CHU,HNF,1B,1B,,1
-Steel Pipe Simpson,80,143,Oscar Vinegrette,252,931,FO,212,B1,0,4,0,3,,,0,0,85,8,2,CHU,HNF,FO,FO,,1
-Boon Dawg Daniels,115,952,Oscar Vinegrette,252,355,K,403,B1,1,4,0,3,,,0,0,85,8,2,CHU,HNF,K,K,,1
-Fister Roboto,445,641,Oscar Vinegrette,252,169,LGO,472,B1,2,4,0,3,,,0,0,85,8,2,CHU,HNF,LGO,LGO,,1
-Filet-Mignon Jackson,320,207,Alvin Lockheart,20,1000,FO,207,T2,0,0,0,3,,,0,0,86,8,2,HNF,CHU,FO,FO,,1
-Reimer Gonzalez,13,500,Alvin Lockheart,20,901,RGO,401,T2,1,0,0,3,,,0,0,86,8,2,HNF,CHU,RGO,RGO,,1
-Oscar Vinegrette,252,401,Alvin Lockheart,20,100,K,301,T2,2,0,0,3,,,0,0,86,8,2,HNF,CHU,K,K,,1
-Jack Alpha,73,696,Oscar Vinegrette,252,227,LGO,469,B2,0,0,0,3,,,0,0,87,8,2,CHU,HNF,LGO,LGO,,1
-Antonin Periwinkle,185,913,Oscar Vinegrette,252,432,RGO,481,B2,1,0,0,3,,,0,0,87,8,2,CHU,HNF,RGO,RGO,,1
-Dominus Nominus,278,69,Oscar Vinegrette,252,514,RGO,445,B2,2,0,0,3,,,0,0,87,8,2,CHU,HNF,RGO,RGO,,1
-Jocko Jones,295,499,Alvin Lockheart,20,401,1B,98,T3,0,0,0,3,,,0,0,88,8,2,HNF,CHU,1B,1B,,1
-Ian Brendan Owen Bust,186,,Alvin Lockheart,20,,Auto K,,T3,0,1,0,3,,,0,0,88,8,2,HNF,CHU,Auto K,Auto K,,9
-Isaac Snowbender,339,430,Alvin Lockheart,20,333,1B,97,T3,1,1,0,3,,,0,0,88,8,2,HNF,CHU,1B,1B,,1
-Jerry Jingles,146,800,Alvin Lockheart,20,706,1B,94,T3,1,4,0,3,,,0,0,88,8,2,HNF,CHU,1B,1B,,1
-Jimjon Jonjim,272,903,Alvin Lockheart,20,500,K,403,T3,1,7,0,3,,,0,0,88,8,2,HNF,CHU,K,K,,1
-Squiggly McCool,3353,250,Alvin Lockheart,20,920,K,330,T3,2,7,0,3,,,0,0,88,8,2,HNF,CHU,K,K,,1
-Alvin Lockheart,20,178,Oscar Vinegrette,252,101,1B,77,B3,0,0,0,3,,,0,0,89,8,2,CHU,HNF,1B,1B,,1
-Jack Marnette,213,869,Oscar Vinegrette,252,645,FO,224,B3,0,1,0,3,,,0,0,89,8,2,CHU,HNF,FO,FO,,1
-Akiyoshi Yamamoto,289,628,Oscar Vinegrette,252,39,DP,411,B3,1,1,0,3,,,0,0,89,8,2,CHU,HNF,RGO,RGO,,1
-Filet-Mignon Jackson,320,293,Alvin Lockheart,20,1000,FO,293,T4,0,0,0,3,,,0,0,90,8,2,HNF,CHU,FO,FO,,1
-Reimer Gonzalez,13,410,Alvin Lockheart,20,400,HR,10,T4,1,0,0,3,,,1,1,90,8,2,HNF,CHU,HR,HR,,1
-Oscar Vinegrette,252,509,Alvin Lockheart,20,285,FO,224,T4,1,0,0,4,,,0,0,90,8,2,HNF,CHU,FO,FO,,1
-Jocko Jones,295,321,Alvin Lockheart,20,862,LGO,459,T4,2,0,0,4,,,0,0,90,8,2,HNF,CHU,LGO,LGO,,1
-Steel Pipe Simpson,80,721,Oscar Vinegrette,252,711,HR,10,B4,0,0,0,4,,,1,1,91,8,2,CHU,HNF,HR,HR,,1
-Boon Dawg Daniels,115,1,Oscar Vinegrette,252,301,K,300,B4,0,0,1,4,,,0,0,91,8,2,CHU,HNF,K,K,,1
-Fister Roboto,445,550,Oscar Vinegrette,252,999,RGO,449,B4,1,0,1,4,,,0,0,91,8,2,CHU,HNF,RGO,RGO,,1
-Jack Alpha,73,620,Oscar Vinegrette,252,570,2B,50,B4,2,0,1,4,,,0,1,91,8,2,CHU,HNF,2B,2B,,1
-Antonin Periwinkle,185,417,Oscar Vinegrette,252,299,1B,118,B4,2,2,1,4,,,1,0,91,8,2,CHU,HNF,1B,1B,,1
-Dominus Nominus,278,69,Oscar Vinegrette,252,417,K,348,B4,2,1,2,4,,,0,0,91,8,2,CHU,HNF,K,K,,1
-Ian Brendan Owen Bust,186,738,Alvin Lockheart,20,22,FO,284,T5,0,0,2,4,,,0,0,92,8,2,HNF,CHU,FO,FO,,1
-Isaac Snowbender,339,480,Alvin Lockheart,20,222,FO,258,T5,1,0,2,4,,,0,0,92,8,2,HNF,CHU,FO,FO,,1
-Jerry Jingles,146,800,Alvin Lockheart,20,888,1B,88,T5,2,0,2,4,,,0,0,92,8,2,HNF,CHU,1B,1B,,1
-Jimjon Jonjim,272,909,Alvin Lockheart,20,444,RGO,465,T5,2,1,2,4,,,0,0,92,8,2,HNF,CHU,RGO,RGO,,1
-Alvin Lockheart,20,450,Oscar Vinegrette,252,50,K,400,B5,0,0,2,4,,,0,0,93,8,2,CHU,HNF,K,K,,1
-Jack Marnette,213,207,Oscar Vinegrette,252,99,1B,108,B5,1,0,2,4,,,0,1,93,8,2,CHU,HNF,1B,1B,,1
-Akiyoshi Yamamoto,289,784,Oscar Vinegrette,252,788,HR,4,B5,1,1,2,4,,,2,1,93,8,2,CHU,HNF,HR,HR,,1
-Steel Pipe Simpson,80,324,Oscar Vinegrette,252,21,K,303,B5,1,0,4,4,,,0,0,93,8,2,CHU,HNF,K,K,,1
-Boon Dawg Daniels,115,1,Oscar Vinegrette,252,2,HR,1,B5,2,0,4,4,,,1,1,93,8,2,CHU,HNF,HR,HR,,1
-Fister Roboto,445,922,Oscar Vinegrette,252,33,1B,111,B5,2,0,5,4,,,0,1,93,8,2,CHU,HNF,1B,1B,,1
-Jack Alpha,73,528,Oscar Vinegrette,252,511,3B,17,B5,2,1,5,4,,,1,0,93,8,2,CHU,HNF,3B,3B,,1
-Antonin Periwinkle,185,689,Oscar Vinegrette,252,420,FO,269,B5,2,3,6,4,,,0,0,93,8,2,CHU,HNF,FO,FO,,1
-Squiggly McCool,3353,650,Alvin Lockheart,20,801,BB,151,T6,0,0,6,4,,,0,0,94,8,2,HNF,CHU,BB,BB,,1
-Filet-Mignon Jackson,320,1000,Alvin Lockheart,20,696,FO,304,T6,0,1,6,4,,,0,0,94,8,2,HNF,CHU,FO,FO,,1
-Reimer Gonzalez,13,888,Alvin Lockheart,20,109,FO,221,T6,1,1,6,4,,,0,0,94,8,2,HNF,CHU,FO,FO,,1
-Oscar Vinegrette,252,286,Alvin Lockheart,20,2,K,284,T6,2,1,6,4,,,0,0,94,8,2,HNF,CHU,K,K,,1
-Donnie Draper,138,420,Charles Magnus,220,719,K,299,T1,0,0,0,0,,,0,0,95,9,2,NAN,ORI,K,K,,1
-Ryosuke Takahashi,36,288,Charles Magnus,220,891,K,397,T1,1,0,0,0,,,0,0,95,9,2,NAN,ORI,K,K,,1
-Takumi Fujiwara,91,420,Charles Magnus,220,619,FO,199,T1,2,0,0,0,,,0,0,95,9,2,NAN,ORI,FO,FO,,1
-Karl Jernigan,439,44,Pickle Rick,150,899,BB,145,B1,0,0,0,0,,,0,0,96,9,2,ORI,NAN,BB,BB,,1
-Daniel Dove,66,254,Pickle Rick,150,13,FO,241,B1,0,1,0,0,,,0,0,96,9,2,ORI,NAN,FO,FO,,1
-Michael Ikenberry,63,147,Pickle Rick,150,616,DP,469,B1,1,1,0,0,,,0,0,96,9,2,ORI,NAN,RGO,RGO,,1
-Meerkat Timmons,147,180,Charles Magnus,220,119,2B,61,T2,0,0,0,0,,,0,1,97,9,2,NAN,ORI,2B,2B,,1
-Owen Thirlwell,156,890,Charles Magnus,220,43,BB,153,T2,0,2,0,0,,,0,1,97,9,2,NAN,ORI,BB,BB,,1
-Rickey Tucker,163,312,Charles Magnus,220,914,K,398,T2,0,4,0,0,,,0,0,97,9,2,NAN,ORI,K,K,,1
-Rueben Salazar,416,705,Charles Magnus,220,714,HR,9,T2,1,4,0,0,,,3,1,97,9,2,NAN,ORI,HR,HR,,1
-Ichigo Kurosaki,351,969,Charles Magnus,220,298,K,329,T2,1,0,0,3,,,0,0,97,9,2,NAN,ORI,K,K,,1
-Pickle Rick,150,316,Charles Magnus,220,999,K,317,T2,2,0,0,3,,,0,0,97,9,2,NAN,ORI,K,K,,1
-Josh Gordon,409,777,Pickle Rick,150,767,HR,10,B2,0,0,0,3,,,1,1,98,9,2,ORI,NAN,HR,HR,,1
-Nicholas Verducci,70,511,Pickle Rick,150,990,LGO,479,B2,0,0,1,3,,,0,0,98,9,2,ORI,NAN,LGO,LGO,,1
-Gimino Schlimojima,379,800,Pickle Rick,150,575,FO,225,B2,1,0,1,3,,,0,0,98,9,2,ORI,NAN,FO,FO,,1
-Luap Renraw,118,623,Pickle Rick,150,555,1B,68,B2,2,0,1,3,,,0,1,98,9,2,ORI,NAN,1B,1B,,1
-Takahiro Hirasawa,419,223,Pickle Rick,150,212,HR,11,B2,2,1,1,3,,,2,1,98,9,2,ORI,NAN,HR,HR,,1
-Charles Magnus,220,113,Pickle Rick,150,13,1B,100,B2,2,0,3,3,,,0,1,98,9,2,ORI,NAN,1B,1B,,1
-Karl Jernigan,439,819,Pickle Rick,150,790,2B,29,B2,2,1,3,3,,,1,0,98,9,2,ORI,NAN,2B,2B,,1
-Daniel Dove,66,923,Pickle Rick,150,581,K,342,B2,2,2,4,3,,,0,0,98,9,2,ORI,NAN,K,K,,1
-Donnie Draper,138,529,Charles Magnus,220,199,K,330,T3,0,0,4,3,,,0,0,99,9,2,NAN,ORI,K,K,,1
-Ryosuke Takahashi,36,64,Charles Magnus,220,874,FO,190,T3,1,0,4,3,,,0,0,99,9,2,NAN,ORI,FO,FO,,1
-Takumi Fujiwara,91,202,Charles Magnus,220,934,FO,268,T3,2,0,4,3,,,0,0,99,9,2,NAN,ORI,FO,FO,,1
-Michael Ikenberry,63,665,Pickle Rick,150,618,2B,47,B3,0,0,4,3,,,0,1,100,9,2,ORI,NAN,2B,2B,,1
-Josh Gordon,409,863,Pickle Rick,150,718,BB,145,B3,0,2,4,3,,,0,1,100,9,2,ORI,NAN,BB,BB,,1
-Nicholas Verducci,70,475,Pickle Rick,150,538,2B,63,B3,0,4,4,3,,,1,1,100,9,2,ORI,NAN,2B,2B,,1
-Gimino Schlimojima,379,555,Pickle Rick,150,755,Sac,200,B3,0,6,5,3,,,1,0,100,9,2,ORI,NAN,FO,FO,,1
-Luap Renraw,118,17,Pickle Rick,150,919,1B,98,B3,1,2,6,3,,,0,0,100,9,2,ORI,NAN,1B,1B,,1
-Takahiro Hirasawa,419,470,Pickle Rick,150,680,Sac,210,B3,1,5,6,3,,,1,0,100,9,2,ORI,NAN,FO,FO,,1
-Charles Magnus,220,789,Pickle Rick,150,99,K,310,B3,2,1,7,3,,,0,0,100,9,2,ORI,NAN,K,K,,1
-Meerkat Timmons,147,333,Charles Magnus,220,599,FO,266,T4,0,0,7,3,,,0,0,101,9,2,NAN,ORI,FO,FO,,1
-Owen Thirlwell,156,482,Charles Magnus,220,599,1B,117,T4,1,0,7,3,,,0,0,101,9,2,NAN,ORI,1B,1B,,1
-Rickey Tucker,163,221,Charles Magnus,220,711,DP,490,T4,1,1,7,3,,,0,0,101,9,2,NAN,ORI,LGO,LGO,,1
-Karl Jernigan,439,326,Pickle Rick,150,97,FO,229,B4,0,0,7,3,,,0,0,102,9,2,ORI,NAN,FO,FO,,1
-Daniel Dove,66,842,Pickle Rick,150,796,1B,46,B4,1,0,7,3,,,0,1,102,9,2,ORI,NAN,1B,1B,,1
-Michael Ikenberry,63,665,Pickle Rick,150,368,K,297,B4,1,1,7,3,,,0,0,102,9,2,ORI,NAN,K,K,,1
-Josh Gordon,409,161,Pickle Rick,150,123,2B,38,B4,2,1,7,3,,,1,1,102,9,2,ORI,NAN,2B,2B,,1
-Nicholas Verducci,70,864,Pickle Rick,150,890,2B,26,B4,2,2,8,3,,,1,0,102,9,2,ORI,NAN,2B,2B,,1
-Gimino Schlimojima,379,567,Pickle Rick,150,334,FO,233,B4,2,2,9,3,,,0,0,102,9,2,ORI,NAN,FO,FO,,1
-Rueben Salazar,416,220,Maximus Pow,344,420,FO,200,T5,0,0,9,3,,,0,0,103,9,2,NAN,ORI,FO,FO,,1
-Ichigo Kurosaki,351,920,Maximus Pow,344,1000,2B,80,T5,1,0,9,3,,,0,1,103,9,2,NAN,ORI,2B,2B,,1
-Pickle Rick,150,69,Maximus Pow,344,1000,2B,69,T5,1,2,9,3,,,1,1,103,9,2,NAN,ORI,2B,2B,,1
-Donnie Draper,138,740,Maximus Pow,344,687,1B,53,T5,1,2,9,4,,,0,0,103,9,2,NAN,ORI,1B,1B,,1
-Ryosuke Takahashi,36,369,Maximus Pow,344,241,1B,128,T5,1,5,9,4,,,1,0,103,9,2,NAN,ORI,1B,1B,,1
-Takumi Fujiwara,91,888,Maximus Pow,344,687,FO,201,T5,1,4,9,5,,,0,0,103,9,2,NAN,ORI,FO,FO,,1
-Meerkat Timmons,147,241,Maximus Pow,344,719,LGO,478,T5,2,4,9,5,,,0,0,103,9,2,NAN,ORI,LGO,LGO,,1
-Luap Renraw,118,35,Pickle Rick,150,813,FO,222,B5,0,0,9,5,,,0,0,104,9,2,ORI,NAN,FO,FO,,1
-Takahiro Hirasawa,419,875,Pickle Rick,150,87,FO,212,B5,1,0,9,5,,,0,0,104,9,2,ORI,NAN,FO,FO,,1
-Maximus Pow,344,576,Pickle Rick,150,86,LGO,490,B5,2,0,9,5,,,0,0,104,9,2,ORI,NAN,LGO,LGO,,1
-Owen Thirlwell,156,971,Maximus Pow,344,122,BB,151,T6,0,0,9,5,,,0,1,105,9,2,NAN,ORI,BB,BB,,1
-Rickey Tucker,163,333,Maximus Pow,344,293,HR,40,T6,0,1,9,5,,,2,1,105,9,2,NAN,ORI,HR,HR,,1
-Rueben Salazar,416,330,Maximus Pow,344,889,LGO,441,T6,0,0,9,7,,,0,0,105,9,2,NAN,ORI,LGO,LGO,,1
-Ichigo Kurosaki,351,222,Maximus Pow,344,23,FO,199,T6,1,0,9,7,,,0,0,105,9,2,NAN,ORI,FO,FO,,1
-Pickle Rick,150,999,Maximus Pow,344,728,K,271,T6,2,0,9,7,,,0,0,105,9,2,NAN,ORI,K,K,,1
-Koyomi Araragi,293,385,Logan Anderson,236,98,K,287,T1,0,0,0,0,,,0,0,106,10,2,YOK,HKU,K,K,,1
-Demetrios Ooga,180,69,Logan Anderson,236,698,RGO,371,T1,1,0,0,0,,,0,0,106,10,2,YOK,HKU,RGO,RGO,,1
-Henry Crowell,184,376,Logan Anderson,236,711,K,335,T1,2,0,0,0,,,0,0,106,10,2,YOK,HKU,K,K,,1
-Kris Jaxon,152,394,Tanner Hendrix,375,25,K,369,B1,0,0,0,0,,,0,0,107,10,2,HKU,YOK,K,K,,1
-Layzer Gunn,259,811,Tanner Hendrix,375,784,2B,27,B1,1,0,0,0,,,0,0,107,10,2,HKU,YOK,2B,2B,,1
-Gustav Ahr,128,302,Tanner Hendrix,375,678,K,376,B1,1,2,0,0,,,0,0,107,10,2,HKU,YOK,K,K,,1
-A.J. Preller,319,310,Tanner Hendrix,375,69,FO,241,B1,2,2,0,0,,,0,0,107,10,2,HKU,YOK,FO,FO,,1
-Lloyd Gross,135,69,Logan Anderson,236,69,HR,0,T2,0,0,0,0,,,1,1,108,10,2,YOK,HKU,HR,HR,,1
-Jack Meloy,145,545,Logan Anderson,236,170,RGO,375,T2,0,0,0,1,,,0,0,108,10,2,YOK,HKU,RGO,RGO,,1
-Tommy Oldman,143,230,Logan Anderson,236,213,3B,17,T2,1,0,0,1,,,0,1,108,10,2,YOK,HKU,3B,3B,,1
-Tanner Hendrix,375,548,Logan Anderson,236,584,2B,36,T2,1,3,0,1,,,1,0,108,10,2,YOK,HKU,2B,2B,,1
-Niko Banks,430,,Logan Anderson,236,,Auto K,,T2,1,2,0,2,,,0,0,108,10,2,YOK,HKU,Auto K,Auto K,,9
-Jake Wilson,454,898,Logan Anderson,236,56,FO,158,T2,2,2,0,2,,,0,0,108,10,2,YOK,HKU,FO,FO,,1
-KC Bats,287,738,Tanner Hendrix,375,1,K,263,B2,0,0,0,2,,,0,0,109,10,2,HKU,YOK,K,K,,1
-Kevin Ariannatanabe,113,39,Tanner Hendrix,375,754,FO,285,B2,1,0,0,2,,,0,0,109,10,2,HKU,YOK,FO,FO,,1
-Oliver Yu,286,111,Tanner Hendrix,375,759,K,352,B2,2,0,0,2,,,0,0,109,10,2,HKU,YOK,K,K,,1
-Koyomi Araragi,293,673,Logan Anderson,236,706,2B,33,T3,0,0,0,2,,,0,0,110,10,2,YOK,HKU,2B,2B,,1
-Demetrios Ooga,180,250,Logan Anderson,236,810,LGO,440,T3,0,2,0,2,,,0,0,110,10,2,YOK,HKU,LGO,LGO,,1
-Henry Crowell,184,547,Logan Anderson,236,162,RGO,385,T3,1,2,0,2,,,0,0,110,10,2,YOK,HKU,RGO,RGO,,1
-Lloyd Gross,135,586,Logan Anderson,236,324,FO,262,T3,2,3,0,2,,,0,0,110,10,2,YOK,HKU,FO,FO,,1
-Thomas Nova,1,212,Tanner Hendrix,375,651,RGO,439,B3,0,0,0,2,,,0,0,111,10,2,HKU,YOK,RGO,RGO,,1
-Logan Anderson,236,420,Tanner Hendrix,375,478,1B,58,B3,1,0,0,2,,,0,0,111,10,2,HKU,YOK,1B,1B,,1
-Kris Jaxon,152,210,Tanner Hendrix,375,421,FO,211,B3,1,1,0,2,,,0,0,111,10,2,HKU,YOK,FO,FO,,1
-Layzer Gunn,259,550,Tanner Hendrix,375,21,LGO,471,B3,2,1,0,2,,,0,0,111,10,2,HKU,YOK,LGO,LGO,,1
-Jack Meloy,145,714,Logan Anderson,236,232,LGO,482,T4,0,0,0,2,,,0,0,112,10,2,YOK,HKU,LGO,LGO,,1
-Tommy Oldman,143,302,Logan Anderson,236,9,K,293,T4,1,0,0,2,,,0,0,112,10,2,YOK,HKU,K,K,,1
-Tanner Hendrix,375,69,Logan Anderson,236,630,LGO,439,T4,2,0,0,2,,,0,0,112,10,2,YOK,HKU,LGO,LGO,,1
-Gustav Ahr,128,84,Tanner Hendrix,375,580,LGO,496,B4,0,0,0,2,,,0,0,113,10,2,HKU,YOK,LGO,LGO,,1
-A.J. Preller,319,369,Tanner Hendrix,375,212,BB,157,B4,1,0,0,2,,,0,0,113,10,2,HKU,YOK,BB,BB,,1
-KC Bats,287,420,Tanner Hendrix,375,986,PO,434,B4,1,1,0,2,,,0,0,113,10,2,HKU,YOK,PO,PO,,1
-Kevin Ariannatanabe,113,16,Tanner Hendrix,375,421,RGO,405,B4,2,1,0,2,,,0,0,113,10,2,HKU,YOK,RGO,RGO,,1
-Niko Banks,430,,Logan Anderson,236,,Auto BB,,T5,0,0,0,2,,,0,1,114,10,2,YOK,HKU,Auto BB,Auto BB,,10
-Jake Wilson,454,335,Gustav Ahr,128,291,2B,44,T5,0,1,0,2,,,0,0,114,10,2,YOK,HKU,2B,2B,,1
-Koyomi Araragi,293,555,Gustav Ahr,128,320,Sac,235,T5,0,6,0,2,,,1,0,114,10,2,YOK,HKU,FO,FO,,1
-Demetrios Ooga,180,590,Gustav Ahr,128,742,BB,152,T5,1,2,0,3,,,0,0,114,10,2,YOK,HKU,BB,BB,,1
-Henry Crowell,184,547,Gustav Ahr,128,22,DP,475,T5,1,4,0,3,,,0,0,114,10,2,YOK,HKU,LGO,LGO,,1
-Oliver Yu,286,205,Tanner Hendrix,375,12,FO,193,B5,0,0,0,3,,,0,0,115,10,2,HKU,YOK,FO,FO,,1
-Thomas Nova,1,550,Tanner Hendrix,375,788,FO,238,B5,1,0,0,3,,,0,0,115,10,2,HKU,YOK,FO,FO,,1
-Logan Anderson,236,420,Tanner Hendrix,375,283,1B,137,B5,2,0,0,3,,,0,0,115,10,2,HKU,YOK,1B,1B,,1
-Kris Jaxon,152,975,Tanner Hendrix,375,283,K,308,B5,2,1,0,3,,,0,0,115,10,2,HKU,YOK,K,K,,1
-Lloyd Gross,135,615,Gustav Ahr,128,372,FO,243,T6,0,0,0,3,,,0,0,116,10,2,YOK,HKU,FO,FO,,1
-Jack Meloy,145,987,Gustav Ahr,128,372,K,385,T6,1,0,0,3,,,0,0,116,10,2,YOK,HKU,K,K,,1
-Tommy Oldman,143,572,Gustav Ahr,128,80,LGO,492,T6,2,0,0,3,,,0,0,116,10,2,YOK,HKU,LGO,LGO,,1
-Layzer Gunn,259,979,Tanner Hendrix,375,12,2B,33,B6,0,0,0,3,,,0,1,117,10,2,HKU,YOK,2B,2B,,1
-Gustav Ahr,128,362,Tanner Hendrix,375,709,K,347,B6,0,2,0,3,,,0,0,117,10,2,HKU,YOK,K,K,,1
-A.J. Preller,319,61,Tanner Hendrix,375,12,2B,49,B6,1,2,0,3,,,1,0,117,10,2,HKU,YOK,2B,2B,,1
-KC Bats,287,420,Tanner Hendrix,375,894,LGO,474,B6,1,2,1,3,,,0,0,117,10,2,HKU,YOK,LGO,LGO,,1
-Kevin Ariannatanabe,113,24,Tanner Hendrix,375,498,LGO,474,B6,2,2,1,3,,,0,0,117,10,2,HKU,YOK,LGO,LGO,,1
-Kevin Ariannatanabe,113,431,Zander Ackley,127,345,1B,86,T1,0,0,0,0,,,0,0,118,11,3,HKU,HSH,1B,1B,,1
-Thomas Nova,1,101,Zander Ackley,127,690,DP,411,T1,0,1,0,0,,,0,0,118,11,3,HKU,HSH,RGO,RGO,,1
-Kris Jaxon,152,95,Zander Ackley,127,828,K,267,T1,2,0,0,0,,,0,0,118,11,3,HKU,HSH,K,K,,1
-Caleb Athen,325,69,Logan Anderson,236,,3B,20,B1,0,0,0,0,,,0,1,119,11,3,HSH,HKU,3B,3B,,1
-Blake Monroe,3326,784,Logan Anderson,236,509,Sac,275,B1,0,3,0,0,,,1,0,119,11,3,HSH,HKU,FO,FO,,1
-Jack Elliot,76,777,Logan Anderson,236,783,HR,6,B1,1,0,1,0,,,1,1,119,11,3,HSH,HKU,HR,HR,,1
-Dart Ragusa,134,550,Logan Anderson,236,213,K,337,B1,1,0,2,0,,,0,0,119,11,3,HSH,HKU,K,K,,1
-Syd Ryu,3,157,Logan Anderson,236,66,1B,91,B1,2,0,2,0,,,0,1,119,11,3,HSH,HKU,1B,1B,,1
-Homer Pimpson,144,420,Logan Anderson,236,402,HR,18,B1,2,1,2,0,,,2,1,119,11,3,HSH,HKU,HR,HR,,1
-Rintaro Okabe,290,234,Logan Anderson,236,121,1B,113,B1,2,0,4,0,,,0,1,119,11,3,HSH,HKU,1B,1B,,1
-Yoshigahara Ryutai,133,983,Logan Anderson,236,18,2B,35,B1,2,1,4,0,,,1,0,119,11,3,HSH,HKU,2B,2B,,1
-Hidetoshi Hasagawa,102,420,Logan Anderson,236,970,LGO,450,B1,2,2,5,0,,,0,0,119,11,3,HSH,HKU,LGO,LGO,,1
-Layzer Gunn,259,1,Zander Ackley,127,138,BB,137,T2,0,0,5,0,,,0,0,120,11,3,HKU,HSH,BB,BB,,1
-Oliver Yu,286,100,Zander Ackley,127,759,K,341,T2,0,1,5,0,,,0,0,120,11,3,HKU,HSH,K,K,,1
-A.J. Preller,319,667,Zander Ackley,127,552,1B,115,T2,1,1,5,0,,,0,0,120,11,3,HKU,HSH,1B,1B,,1
-KC Bats,287,420,Zander Ackley,127,897,DP,477,T2,1,4,5,0,,,0,0,120,11,3,HKU,HSH,LGO,LGO,,1
-Caleb Athen,325,420,Logan Anderson,236,213,FO,207,B2,0,0,5,0,,,0,0,121,11,3,HSH,HKU,FO,FO,,1
-Blake Monroe,3326,,Logan Anderson,236,,Auto K,,B2,1,0,5,0,,,0,0,121,11,3,HSH,HKU,Auto K,Auto K,,9
-Jack Elliot,76,369,Logan Anderson,236,247,BB,122,B2,2,0,5,0,,,0,0,121,11,3,HSH,HKU,BB,BB,,1
-Dart Ragusa,134,950,Logan Anderson,236,119,FO,169,B2,2,1,5,0,,,0,0,121,11,3,HSH,HKU,FO,FO,,1
-Gustav Ahr,128,261,Zander Ackley,127,897,K,364,T3,0,0,5,0,,,0,0,122,11,3,HKU,HSH,K,K,,1
-Logan Anderson,236,700,Zander Ackley,127,276,RGO,424,T3,1,0,5,0,,,0,0,122,11,3,HKU,HSH,RGO,RGO,,1
-Kevin Ariannatanabe,113,435,Zander Ackley,127,621,FO,186,T3,2,0,5,0,,,0,0,122,11,3,HKU,HSH,FO,FO,,1
-Syd Ryu,3,709,Logan Anderson,236,78,PO,369,B3,0,0,5,0,,,0,0,123,11,3,HSH,HKU,PO,PO,,1
-Homer Pimpson,144,524,Logan Anderson,236,990,LGO,466,B3,1,0,5,0,,,0,0,123,11,3,HSH,HKU,LGO,LGO,,1
-Rintaro Okabe,290,97,Logan Anderson,236,312,FO,215,B3,2,0,5,0,,,0,0,123,11,3,HSH,HKU,FO,FO,,1
-Thomas Nova,1,662,Zander Ackley,127,414,FO,248,T4,0,0,5,0,,,0,0,124,11,3,HKU,HSH,FO,FO,,1
-Kris Jaxon,152,759,Zander Ackley,127,69,K,310,T4,1,0,5,0,,,0,0,124,11,3,HKU,HSH,K,K,,1
-Layzer Gunn,259,660,Zander Ackley,127,483,FO,177,T4,2,0,5,0,,,0,0,124,11,3,HKU,HSH,FO,FO,,1
-Yoshigahara Ryutai,133,,Logan Anderson,236,,Auto BB,,B4,0,0,5,0,,,0,1,125,11,3,HSH,HKU,Auto BB,Auto BB,,10
-Hidetoshi Hasagawa,102,176,Logan Anderson,236,89,1B,87,B4,0,1,5,0,,,0,1,125,11,3,HSH,HKU,1B,1B,,1
-Caleb Athen,325,647,Logan Anderson,236,435,FO,212,B4,0,4,5,0,,,0,0,125,11,3,HSH,HKU,FO,FO,,1
-Blake Monroe,3326,,Logan Anderson,236,,Auto K,,B4,1,4,5,0,,,0,0,125,11,3,HSH,HKU,Auto K,Auto K,,9
-Jack Elliot,76,737,Logan Anderson,236,771,2B,34,B4,2,4,5,0,,,2,0,125,11,3,HSH,HKU,2B,2B,,1
-Dart Ragusa,134,950,Logan Anderson,236,213,FO,263,B4,2,2,7,0,,,0,0,125,11,3,HSH,HKU,FO,FO,,1
-Oliver Yu,286,69,Zander Ackley,127,69,HR,0,T5,0,0,7,0,,,1,1,126,11,3,HKU,HSH,HR,HR,,1
-A.J. Preller,319,456,Zander Ackley,127,759,K,303,T5,0,0,7,1,,,0,0,126,11,3,HKU,HSH,K,K,,1
-KC Bats,287,69,Zander Ackley,127,207,BB,138,T5,1,0,7,1,,,0,0,126,11,3,HKU,HSH,BB,BB,,1
-Gustav Ahr,128,59,Zander Ackley,127,276,FO,217,T5,1,1,7,1,,,0,0,126,11,3,HKU,HSH,FO,FO,,1
-Logan Anderson,236,770,Zander Ackley,127,966,FO,196,T5,2,1,7,1,,,0,0,126,11,3,HKU,HSH,FO,FO,,1
-Syd Ryu,3,511,Logan Anderson,236,89,RGO,422,B5,0,0,7,1,,,0,0,127,11,3,HSH,HKU,RGO,RGO,,1
-Homer Pimpson,144,435,Logan Anderson,236,567,BB,132,B5,1,0,7,1,,,0,0,127,11,3,HSH,HKU,BB,BB,,1
-Rintaro Okabe,290,923,Logan Anderson,236,990,1B,67,B5,1,1,7,1,,,0,0,127,11,3,HSH,HKU,1B,1B,,1
-Yoshigahara Ryutai,133,212,Logan Anderson,236,616,DP,404,B5,1,4,7,1,,,0,0,127,11,3,HSH,HKU,RGO,RGO,,1
-Kevin Ariannatanabe,113,1,Zander Ackley,127,345,K,344,T6,0,0,7,1,,,0,0,128,11,3,HKU,HSH,K,K,,1
-Thomas Nova,1,1,Zander Ackley,127,759,FO,242,T6,1,0,7,1,,,0,0,128,11,3,HKU,HSH,FO,FO,,1
-Kris Jaxon,152,100,Zander Ackley,127,690,RGO,410,T6,2,0,7,1,,,0,0,128,11,3,HKU,HSH,RGO,RGO,,1
-Icna Comit,198,69,Maximus Pow,344,69,HR,0,T1,0,0,0,0,,,1,1,129,12,3,CHI,ORI,HR,HR,,1
-Seik Golden,251,69,Maximus Pow,344,69,HR,0,T1,0,0,0,1,,,1,1,129,12,3,CHI,ORI,HR,HR,,1
-Viking Fishbird,42,70,Maximus Pow,344,420,PO,350,T1,0,0,0,2,,,0,0,129,12,3,CHI,ORI,PO,PO,,1
-Hingle McCringleberry,257,666,Maximus Pow,344,69,RGO,403,T1,1,0,0,2,,,0,0,129,12,3,CHI,ORI,RGO,RGO,,1
-Morello D. Luffy,211,666,Maximus Pow,344,1,K,335,T1,2,0,0,2,,,0,0,129,12,3,CHI,ORI,K,K,,1
-Nicholas Verducci,70,711,Seik Golden,251,319,RGO,392,B1,0,0,0,2,,,0,0,130,12,3,ORI,CHI,RGO,RGO,,1
-Takahiro Hirasawa,419,,Seik Golden,251,,Auto K,,B1,1,0,0,2,,,0,0,130,12,3,ORI,CHI,Auto K,Auto K,,9
-Gimino Schlimojima,379,69,Seik Golden,251,900,FO,169,B1,2,0,0,2,,,0,0,130,12,3,ORI,CHI,FO,FO,,1
-Phoenix McDouglas,2194,833,Maximus Pow,344,1000,BB,167,T2,0,0,0,2,,,0,0,131,12,3,CHI,ORI,BB,BB,,1
-Tike Mruk,104,276,Maximus Pow,344,69,FO,207,T2,0,1,0,2,,,0,0,131,12,3,CHI,ORI,FO,FO,,1
-Miroslav Radovicnovizicidivizcinicizivich,71,543,Maximus Pow,344,333,FO,210,T2,1,1,0,2,,,0,0,131,12,3,CHI,ORI,FO,FO,,1
-Phil Coulson,226,700,Maximus Pow,344,69,RGO,369,T2,2,1,0,2,,,0,0,131,12,3,CHI,ORI,RGO,RGO,,1
-Daniel Dove,66,823,Seik Golden,251,758,1B,65,B2,0,0,0,2,,,0,0,132,12,3,ORI,CHI,1B,1B,,1
-Luap Renraw,118,69,Seik Golden,251,989,1B,80,B2,0,1,0,2,,,0,0,132,12,3,ORI,CHI,1B,1B,,1
-Michael Ikenberry,63,326,Seik Golden,251,636,K,310,B2,0,4,0,2,,,0,0,132,12,3,ORI,CHI,K,K,,1
-Josh Gordon,409,713,Seik Golden,251,69,PO,356,B2,1,4,0,2,,,0,0,132,12,3,ORI,CHI,PO,PO,,1
-Karl Jernigan,439,313,Seik Golden,251,888,RGO,425,B2,2,4,0,2,,,0,0,132,12,3,ORI,CHI,RGO,RGO,,1
-Icna Comit,198,,Maximus Pow,344,,Auto K,,T3,0,0,0,2,,,0,0,133,12,3,CHI,ORI,Auto K,Auto K,,9
-Seik Golden,251,569,Maximus Pow,344,69,LGO,500,T3,1,0,0,2,,,0,0,133,12,3,CHI,ORI,LGO,LGO,,1
-Viking Fishbird,42,421,Maximus Pow,344,319,1B,102,T3,2,0,0,2,,,0,0,133,12,3,CHI,ORI,1B,1B,,1
-Hingle McCringleberry,257,666,Maximus Pow,344,819,BB,153,T3,2,1,0,2,,,0,0,133,12,3,CHI,ORI,BB,BB,,1
-Morello D. Luffy,211,69,Maximus Pow,344,666,RGO,403,T3,2,4,0,2,,,0,0,133,12,3,CHI,ORI,RGO,RGO,,1
-Maximus Pow,344,77,Seik Golden,251,420,K,343,B3,0,0,0,2,,,0,0,134,12,3,ORI,CHI,K,K,,1
-Nicholas Verducci,70,666,Seik Golden,251,554,1B,112,B3,1,0,0,2,,,0,0,134,12,3,ORI,CHI,1B,1B,,1
-Takahiro Hirasawa,419,461,Seik Golden,251,999,DP,462,B3,1,1,0,2,,,0,0,134,12,3,ORI,CHI,LGO,LGO,,1
-Phoenix McDouglas,2194,245,Maximus Pow,344,55,FO,190,T4,0,0,0,2,,,0,0,135,12,3,CHI,ORI,FO,FO,,1
-Tike Mruk,104,103,Maximus Pow,344,69,2B,34,T4,1,0,0,2,,,0,1,135,12,3,CHI,ORI,2B,2B,,1
-Miroslav Radovicnovizicidivizcinicizivich,71,420,Maximus Pow,344,420,HR,0,T4,1,2,0,2,,,2,1,135,12,3,CHI,ORI,HR,HR,,1
-Phil Coulson,226,568,Maximus Pow,344,314,FO,254,T4,1,0,0,4,,,0,0,135,12,3,CHI,ORI,FO,FO,,1
-Icna Comit,198,666,Maximus Pow,344,159,LGO,493,T4,2,0,0,4,,,0,0,135,12,3,CHI,ORI,LGO,LGO,,1
-Takahiro Hirasawa,419,651,Seik Golden,251,890,FO,239,B4,0,0,0,4,,,0,0,136,12,3,ORI,CHI,FO,FO,,1
-Gimino Schlimojima,379,420,Seik Golden,251,212,FO,208,B4,1,0,0,4,,,0,0,136,12,3,ORI,CHI,FO,FO,,1
-Daniel Dove,66,142,Seik Golden,251,214,1B,72,B4,2,0,0,4,,,0,0,136,12,3,ORI,CHI,1B,1B,,1
-Luap Renraw,118,555,Seik Golden,251,234,K,321,B4,2,1,0,4,,,0,0,136,12,3,ORI,CHI,K,K,,1
-Seik Golden,251,69,Maximus Pow,344,111,2B,42,T5,0,0,0,4,,,0,1,137,12,3,CHI,ORI,2B,2B,,1
-Viking Fishbird,42,920,Maximus Pow,344,265,K,345,T5,0,2,0,4,,,0,0,137,12,3,CHI,ORI,K,K,,1
-Hingle McCringleberry,257,420,Maximus Pow,344,358,2B,62,T5,1,2,0,4,,,1,0,137,12,3,CHI,ORI,2B,2B,,1
-Morello D. Luffy,211,500,Maximus Pow,344,999,LGO,499,T5,1,2,0,5,,,0,0,137,12,3,CHI,ORI,LGO,LGO,,1
-Phoenix McDouglas,2194,574,Maximus Pow,344,979,RGO,405,T5,2,2,0,5,,,0,0,137,12,3,CHI,ORI,RGO,RGO,,1
-Michael Ikenberry,63,740,Seik Golden,251,2,FO,262,B5,0,0,0,5,,,0,0,138,12,3,ORI,CHI,FO,FO,,1
-Josh Gordon,409,266,Seik Golden,251,623,PO,357,B5,1,0,0,5,,,0,0,138,12,3,ORI,CHI,PO,PO,,1
-Karl Jernigan,439,897,Seik Golden,251,420,LGO,477,B5,2,0,0,5,,,0,0,138,12,3,ORI,CHI,LGO,LGO,,1
-Tike Mruk,104,100,Maximus Pow,344,323,FO,223,T6,0,0,0,5,,,0,0,139,12,3,CHI,ORI,FO,FO,,1
-Miroslav Radovicnovizicidivizcinicizivich,71,1,Maximus Pow,344,842,BB,159,T6,1,0,0,5,,,0,1,139,12,3,CHI,ORI,BB,BB,,1
-Miroslav Radovicnovizicidivizcinicizivich,71,800,Maximus Pow,344,64,SB,264,T6,1,1,0,5,,,0,0,139,12,3,CHI,ORI,Steal 2B,Steal 2B,,4
-Phil Coulson,226,,Maximus Pow,344,,IBB,,T6,1,2,0,5,,,0,0,139,12,3,CHI,ORI,IBB,IBB,,8
-Icna Comit,198,,Maximus Pow,344,,Auto K,,T6,1,4,0,5,,,0,0,139,12,3,CHI,ORI,Auto K,Auto K,,9
-Seik Golden,251,970,Maximus Pow,344,69,1B,99,T6,2,4,0,5,,,1,0,139,12,3,CHI,ORI,1B,1B,,1
-Viking Fishbird,42,68,Maximus Pow,344,277,FO,209,T6,2,5,0,6,,,0,0,139,12,3,CHI,ORI,FO,FO,,1
-Maximus Pow,344,882,Seik Golden,251,500,PO,382,B6,0,0,0,6,,,0,0,140,12,3,ORI,CHI,PO,PO,,1
-Nicholas Verducci,70,411,Seik Golden,251,666,FO,255,B6,1,0,0,6,,,0,0,140,12,3,ORI,CHI,FO,FO,,1
-Takahiro Hirasawa,419,159,Seik Golden,251,114,2B,45,B6,2,0,0,6,,,0,1,140,12,3,ORI,CHI,2B,2B,,1
-Gimino Schlimojima,379,543,Seik Golden,251,555,HR,12,B6,2,2,0,6,,,2,1,140,12,3,ORI,CHI,HR,HR,,1
-Daniel Dove,66,362,Seik Golden,251,640,K,278,B6,2,0,2,6,,,0,0,140,12,3,ORI,CHI,K,K,,1
-Mattress Cadaire,116,,Pickle Rick,150,,Auto BB,,T1,0,0,0,0,,,0,0,141,13,3,HIR,NAN,Auto BB,Auto BB,,10
-Dirtbag Darrell,262,333,Pickle Rick,150,555,FO,222,T1,0,1,0,0,,,0,0,141,13,3,HIR,NAN,FO,FO,,1
-Rich Mahogany,265,311,Pickle Rick,150,898,K,413,T1,1,1,0,0,,,0,0,141,13,3,HIR,NAN,K,K,,1
-Gottlieb Giannopoulos,89,111,Pickle Rick,150,435,K,324,T1,2,1,0,0,,,0,0,141,13,3,HIR,NAN,K,K,,1
-Pickle Rick,150,,Silver Shore,3328,,Auto BB,,B1,0,0,0,0,,,0,0,142,13,3,NAN,HIR,Auto BB,Auto BB,,10
-Donnie Draper,138,1,Silver Shore,3328,367,K,366,B1,0,1,0,0,,,0,0,142,13,3,NAN,HIR,K,K,,1
-Ryosuke Takahashi,36,861,Silver Shore,3328,433,DP,428,B1,1,1,0,0,,,0,0,142,13,3,NAN,HIR,RGO,RGO,,1
-Boi Lover,84,237,Pickle Rick,150,616,K,379,T2,0,0,0,0,,,0,0,143,13,3,HIR,NAN,K,K,,1
-River Ride,342,1,Pickle Rick,150,99,1B,98,T2,1,0,0,0,,,0,0,143,13,3,HIR,NAN,1B,1B,,1
-Carlos Brownson,132,234,Pickle Rick,150,16,FO,218,T2,1,1,0,0,,,0,0,143,13,3,HIR,NAN,FO,FO,,1
-Alex Brown,444,842,Pickle Rick,150,696,FO,146,T2,2,1,0,0,,,0,0,143,13,3,HIR,NAN,FO,FO,,1
-Rickey Tucker,163,798,Silver Shore,3328,948,FO,150,B2,0,0,0,0,,,0,0,144,13,3,NAN,HIR,FO,FO,,1
-Takumi Fujiwara,91,69,Silver Shore,3328,564,LGO,495,B2,1,0,0,0,,,0,0,144,13,3,NAN,HIR,LGO,LGO,,1
-Meerkat Timmons,147,69,Silver Shore,3328,156,1B,87,B2,2,0,0,0,,,0,0,144,13,3,NAN,HIR,1B,1B,,1
-Owen Thirlwell,156,519,Silver Shore,3328,127,RGO,392,B2,2,1,0,0,,,0,0,144,13,3,NAN,HIR,RGO,RGO,,1
-Silver Shore,3328,69,Pickle Rick,150,645,RGO,424,T3,0,0,0,0,,,0,0,145,13,3,HIR,NAN,RGO,RGO,,1
-Mattress Cadaire,116,104,Pickle Rick,150,880,FO,224,T3,1,0,0,0,,,0,0,145,13,3,HIR,NAN,FO,FO,,1
-Dirtbag Darrell,262,95,Pickle Rick,150,720,K,375,T3,2,0,0,0,,,0,0,145,13,3,HIR,NAN,K,K,,1
-Rueben Salazar,416,716,Silver Shore,3328,433,K,283,B3,0,0,0,0,,,0,0,146,13,3,NAN,HIR,K,K,,1
-Ichigo Kurosaki,351,443,Silver Shore,3328,634,FO,191,B3,1,0,0,0,,,0,0,146,13,3,NAN,HIR,FO,FO,,1
-Pickle Rick,150,666,Silver Shore,3328,832,FO,166,B3,2,0,0,0,,,0,0,146,13,3,NAN,HIR,FO,FO,,1
-Rich Mahogany,265,260,Pickle Rick,150,223,2B,37,T4,0,0,0,0,,,0,1,147,13,3,HIR,NAN,2B,2B,,1
-Gottlieb Giannopoulos,89,598,Pickle Rick,150,280,K,318,T4,0,2,0,0,,,0,0,147,13,3,HIR,NAN,K,K,,1
-Boi Lover,84,725,Pickle Rick,150,721,HR,4,T4,1,2,0,0,,,2,1,147,13,3,HIR,NAN,HR,HR,,1
-River Ride,342,369,Pickle Rick,150,721,K,352,T4,1,0,0,2,,,0,0,147,13,3,HIR,NAN,K,K,,1
-Carlos Brownson,132,420,Pickle Rick,150,111,K,309,T4,2,0,0,2,,,0,0,147,13,3,HIR,NAN,K,K,,1
-Donnie Draper,138,500,Silver Shore,3328,65,RGO,435,B4,0,0,0,2,,,0,0,148,13,3,NAN,HIR,RGO,RGO,,1
-Ryosuke Takahashi,36,630,Silver Shore,3328,307,K,323,B4,1,0,0,2,,,0,0,148,13,3,NAN,HIR,K,K,,1
-Rickey Tucker,163,536,Silver Shore,3328,265,K,271,B4,2,0,0,2,,,0,0,148,13,3,NAN,HIR,K,K,,1
-Alex Brown,444,201,Pickle Rick,150,404,FO,203,T5,0,0,0,2,,,0,0,149,13,3,HIR,NAN,FO,FO,,1
-Silver Shore,3328,245,Pickle Rick,150,999,FO,246,T5,1,0,0,2,,,0,0,149,13,3,HIR,NAN,FO,FO,,1
-Mattress Cadaire,116,100,Pickle Rick,150,3,1B,97,T5,2,0,0,2,,,0,0,149,13,3,HIR,NAN,1B,1B,,1
-Dirtbag Darrell,262,500,Pickle Rick,150,998,LGO,498,T5,2,1,0,2,,,0,0,149,13,3,HIR,NAN,LGO,LGO,,1
-Takumi Fujiwara,91,843,Silver Shore,3328,767,1B,76,B5,0,0,0,2,,,0,0,150,13,3,NAN,HIR,1B,1B,,1
-Meerkat Timmons,147,420,Silver Shore,3328,767,K,347,B5,0,1,0,2,,,0,0,150,13,3,NAN,HIR,K,K,,1
-Owen Thirlwell,156,101,Silver Shore,3328,434,K,333,B5,1,1,0,2,,,0,0,150,13,3,NAN,HIR,K,K,,1
-Rueben Salazar,416,777,Silver Shore,3328,143,K,366,B5,2,1,0,2,,,0,0,150,13,3,NAN,HIR,K,K,,1
-Rich Mahogany,265,261,Pickle Rick,150,615,K,354,T6,0,0,0,2,,,0,0,151,13,3,HIR,NAN,K,K,,1
-Gottlieb Giannopoulos,89,19,Pickle Rick,150,906,1B,113,T6,1,0,0,2,,,0,0,151,13,3,HIR,NAN,1B,1B,,1
-Boi Lover,84,278,Pickle Rick,150,518,FO,240,T6,1,1,0,2,,,0,0,151,13,3,HIR,NAN,FO,FO,,1
-River Ride,342,278,Pickle Rick,150,15,FO,263,T6,2,1,0,2,,,0,0,151,13,3,HIR,NAN,FO,FO,,1
-Ichigo Kurosaki,351,666,Silver Shore,3328,578,1B,88,B6,0,0,0,2,,,0,1,152,13,3,NAN,HIR,1B,1B,,1
-Pickle Rick,150,669,Silver Shore,3328,16,K,347,B6,0,1,0,2,,,0,0,152,13,3,NAN,HIR,K,K,,1
-Donnie Draper,138,339,Silver Shore,3328,76,FO,263,B6,1,1,0,2,,,0,0,152,13,3,NAN,HIR,FO,FO,,1
-Ryosuke Takahashi,36,489,Silver Shore,3328,538,2B,49,B6,2,1,0,2,,,1,1,152,13,3,NAN,HIR,2B,2B,,1
-Rickey Tucker,163,889,Silver Shore,3328,12,BB,123,B6,2,2,1,2,,,0,0,152,13,3,NAN,HIR,BB,BB,,1
-Takumi Fujiwara,91,678,Silver Shore,3328,751,1B,73,B6,2,4,1,2,,,1,0,152,13,3,NAN,HIR,1B,1B,,1
-Meerkat Timmons,147,888,Silver Shore,3328,345,LGO,457,B6,2,5,2,2,,,0,0,152,13,3,NAN,HIR,LGO,LGO,,1
-Carlos Brownson,132,954,Pickle Rick,150,99,BB,145,T7,0,0,2,2,,,0,1,153,13,3,HIR,NAN,BB,BB,,1
-Alex Brown,444,654,Pickle Rick,150,883,FO,229,T7,0,1,2,2,,,0,0,153,13,3,HIR,NAN,FO,FO,,1
-Silver Shore,3328,915,Pickle Rick,150,680,FO,235,T7,1,1,2,2,,,0,0,153,13,3,HIR,NAN,FO,FO,,1
-Mattress Cadaire,116,940,Pickle Rick,150,885,1B,55,T7,2,1,2,2,,,0,0,153,13,3,HIR,NAN,1B,1B,,1
-Dirtbag Darrell,262,350,Pickle Rick,150,434,1B,84,T7,2,5,2,2,,,1,0,153,13,3,HIR,NAN,1B,1B,,1
-Rich Mahogany,265,933,Pickle Rick,150,221,K,288,T7,2,5,2,3,,,0,0,153,13,3,HIR,NAN,K,K,,1
-Owen Thirlwell,156,602,Silver Shore,3328,173,RGO,429,B7,0,0,2,3,,,0,0,154,13,3,NAN,HIR,RGO,RGO,,1
-Rueben Salazar,416,812,Silver Shore,3328,418,K,394,B7,1,0,2,3,,,0,0,154,13,3,NAN,HIR,K,K,,1
-Ichigo Kurosaki,351,17,Silver Shore,3328,213,FO,196,B7,2,0,2,3,,,0,0,154,13,3,NAN,HIR,FO,FO,,1
-Jack Marnette,213,69,Hans Ali,197,1,1B,68,T1,0,0,0,0,,,0,1,155,14,3,CHU,YOK,1B,1B,,1
-Akiyoshi Yamamoto,289,744,Hans Ali,197,644,1B,100,T1,0,1,0,0,,,0,1,155,14,3,CHU,YOK,1B,1B,,1
-Steel Pipe Simpson,80,420,Hans Ali,197,442,HR,22,T1,0,4,0,0,,,3,1,155,14,3,CHU,YOK,HR,HR,,1
-Boon Dawg Daniels,115,844,Hans Ali,197,500,K,344,T1,0,0,0,3,,,0,0,155,14,3,CHU,YOK,K,K,,1
-Fister Roboto,445,810,Hans Ali,197,500,K,310,T1,1,0,0,3,,,0,0,155,14,3,CHU,YOK,K,K,,1
-Jack Alpha,73,999,Hans Ali,197,1,HR,2,T1,2,0,0,3,,,1,1,155,14,3,CHU,YOK,HR,HR,,1
-Antonin Periwinkle,185,420,Hans Ali,197,243,BB,177,T1,2,0,0,4,,,0,0,155,14,3,CHU,YOK,BB,BB,,1
-Dominus Nominus,278,420,Hans Ali,197,244,FO,176,T1,2,1,0,4,,,0,0,155,14,3,CHU,YOK,FO,FO,,1
-Koyomi Araragi,293,745,Alvin Lockheart,20,881,BB,136,B1,0,0,0,4,,,0,0,156,14,3,YOK,CHU,BB,BB,,1
-Demetrios Ooga,180,500,Alvin Lockheart,20,40,DP,460,B1,0,1,0,4,,,0,0,156,14,3,YOK,CHU,RGO,RGO,,1
-Henry Crowell,184,967,Alvin Lockheart,20,41,1B,74,B1,2,0,0,4,,,0,0,156,14,3,YOK,CHU,1B,1B,,1
-Lloyd Gross,135,643,Alvin Lockheart,20,710,1B,67,B1,2,1,0,4,,,0,0,156,14,3,YOK,CHU,1B,1B,,1
-Jack Meloy,145,840,Alvin Lockheart,20,391,RGO,449,B1,2,5,0,4,,,0,0,156,14,3,YOK,CHU,RGO,RGO,,1
-Alvin Lockheart,20,12,Hans Ali,197,333,K,321,T2,0,0,0,4,,,0,0,157,14,3,CHU,YOK,K,K,,1
-Jack Marnette,213,55,Hans Ali,197,765,K,290,T2,1,0,0,4,,,0,0,157,14,3,CHU,YOK,K,K,,1
-Akiyoshi Yamamoto,289,937,Hans Ali,197,656,FO,281,T2,2,0,0,4,,,0,0,157,14,3,CHU,YOK,FO,FO,,1
-Tommy Oldman,143,153,Alvin Lockheart,20,601,RGO,448,B2,0,0,0,4,,,0,0,158,14,3,YOK,CHU,RGO,RGO,,1
-Hans Ali,197,333,Alvin Lockheart,20,410,1B,77,B2,1,0,0,4,,,0,0,158,14,3,YOK,CHU,1B,1B,,1
-Niko Banks,430,756,Alvin Lockheart,20,1000,FO,244,B2,1,1,0,4,,,0,0,158,14,3,YOK,CHU,FO,FO,,1
-Jake Wilson,454,500,Alvin Lockheart,20,252,FO,248,B2,2,1,0,4,,,0,0,158,14,3,YOK,CHU,FO,FO,,1
-Steel Pipe Simpson,80,569,Hans Ali,197,755,FO,186,T3,0,0,0,4,,,0,0,159,14,3,CHU,YOK,FO,FO,,1
-Boon Dawg Daniels,115,11,Hans Ali,197,333,K,322,T3,1,0,0,4,,,0,0,159,14,3,CHU,YOK,K,K,,1
-Fister Roboto,445,11,Hans Ali,197,333,K,322,T3,2,0,0,4,,,0,0,159,14,3,CHU,YOK,K,K,,1
-Koyomi Araragi,293,950,Alvin Lockheart,20,162,FO,212,B3,0,0,0,4,,,0,0,160,14,3,YOK,CHU,FO,FO,,1
-Demetrios Ooga,180,300,Alvin Lockheart,20,792,LGO,492,B3,1,0,0,4,,,0,0,160,14,3,YOK,CHU,LGO,LGO,,1
-Henry Crowell,184,,Alvin Lockheart,20,,Auto K,,B3,2,0,0,4,,,0,0,160,14,3,YOK,CHU,Auto K,Auto K,,9
-Jack Alpha,73,666,Hans Ali,197,569,1B,97,T4,0,0,0,4,,,0,0,161,14,3,CHU,YOK,1B,1B,,1
-Antonin Periwinkle,185,580,Hans Ali,197,132,DP,448,T4,0,1,0,4,,,0,0,161,14,3,CHU,YOK,RGO,RGO,,1
-Dominus Nominus,278,207,Hans Ali,197,687,LGO,480,T4,2,0,0,4,,,0,0,161,14,3,CHU,YOK,LGO,LGO,,1
-Lloyd Gross,135,545,Alvin Lockheart,20,910,K,365,B4,0,0,0,4,,,0,0,162,14,3,YOK,CHU,K,K,,1
-Jack Meloy,145,142,Alvin Lockheart,20,47,1B,95,B4,1,0,0,4,,,0,0,162,14,3,YOK,CHU,1B,1B,,1
-Tommy Oldman,143,120,Alvin Lockheart,20,497,K,377,B4,1,1,0,4,,,0,0,162,14,3,YOK,CHU,K,K,,1
-Hans Ali,197,777,Alvin Lockheart,20,212,RGO,435,B4,2,1,0,4,,,0,0,162,14,3,YOK,CHU,RGO,RGO,,1
-Alvin Lockheart,20,69,Hans Ali,197,867,FO,202,T5,0,0,0,4,,,0,0,163,14,3,CHU,YOK,FO,FO,,1
-Jack Marnette,213,202,Hans Ali,197,663,LGO,461,T5,1,0,0,4,,,0,0,163,14,3,CHU,YOK,LGO,LGO,,1
-Akiyoshi Yamamoto,289,280,Hans Ali,197,554,FO,274,T5,2,0,0,4,,,0,0,163,14,3,CHU,YOK,FO,FO,,1
-Niko Banks,430,122,Alvin Lockheart,20,680,RGO,442,B5,0,0,0,4,,,0,0,164,14,3,YOK,CHU,RGO,RGO,,1
-Jake Wilson,454,977,Alvin Lockheart,20,906,1B,71,B5,1,0,0,4,,,0,1,164,14,3,YOK,CHU,1B,1B,,1
-Koyomi Araragi,293,185,Alvin Lockheart,20,321,BB,136,B5,1,1,0,4,,,0,1,164,14,3,YOK,CHU,BB,BB,,1
-Demetrios Ooga,180,321,Alvin Lockheart,20,500,BB,179,B5,1,4,0,4,,,0,1,164,14,3,YOK,CHU,BB,BB,,1
-Henry Crowell,184,557,Alvin Lockheart,20,500,2B,57,B5,1,7,0,4,,,2,1,164,14,3,YOK,CHU,2B,2B,,1
-Lloyd Gross,135,969,Alvin Lockheart,20,832,BB,137,B5,1,6,2,4,,,0,0,164,14,3,YOK,CHU,BB,BB,,1
-Jack Meloy,145,147,Alvin Lockheart,20,222,1B,75,B5,1,7,2,4,,,1,0,164,14,3,YOK,CHU,1B,1B,,1
-Tommy Oldman,143,403,Alvin Lockheart,20,101,Sac,302,B5,1,7,3,4,,,1,0,164,14,3,YOK,CHU,FO,FO,,1
-Hans Ali,197,666,Alvin Lockheart,20,213,LGO,453,B5,2,4,4,4,,,0,0,164,14,3,YOK,CHU,LGO,LGO,,1
-Steel Pipe Simpson,80,31,Tanner Hendrix,375,31,HR,0,T6,0,0,4,4,,,1,1,165,14,3,CHU,YOK,HR,HR,,1
-Boon Dawg Daniels,115,1,Tanner Hendrix,375,30,HR,29,T6,0,0,4,5,,,1,1,165,14,3,CHU,YOK,HR,HR,,1
-Fister Roboto,445,500,Tanner Hendrix,375,798,K,298,T6,0,0,4,6,,,0,0,165,14,3,CHU,YOK,K,K,,1
-Jack Alpha,73,334,Tanner Hendrix,375,921,K,413,T6,1,0,4,6,,,0,0,165,14,3,CHU,YOK,K,K,,1
-Antonin Periwinkle,185,978,Tanner Hendrix,375,412,PO,434,T6,2,0,4,6,,,0,0,165,14,3,CHU,YOK,PO,PO,,1
-Niko Banks,430,877,Jessie Vance,33,232,K,355,B6,0,0,4,6,,,0,0,166,14,3,YOK,CHU,K,K,,1
-Jake Wilson,454,877,Jessie Vance,33,701,FO,176,B6,1,0,4,6,,,0,0,166,14,3,YOK,CHU,FO,FO,,1
-Koyomi Araragi,293,550,Jessie Vance,33,971,LGO,421,B6,2,0,4,6,,,0,0,166,14,3,YOK,CHU,LGO,LGO,,1
-Jocko Jones,295,42,Naoki Tentacles,216,711,K,331,T1,0,0,0,0,,,0,0,167,15,3,HNF,RGE,K,K,,1
-Ian Brendan Owen Bust,186,243,Naoki Tentacles,216,389,BB,146,T1,1,0,0,0,,,0,0,167,15,3,HNF,RGE,BB,BB,,1
-Jimjon Jonjim,272,153,Naoki Tentacles,216,404,FO,251,T1,1,1,0,0,,,0,0,167,15,3,HNF,RGE,FO,FO,,1
-Jerry Jingles,146,800,Naoki Tentacles,216,989,FO,189,T1,2,1,0,0,,,0,0,167,15,3,HNF,RGE,FO,FO,,1
-Jeff Steelflex,268,,Filet-Mignon Jackson,320,789,K,339,B1,0,0,0,0,,,0,0,168,15,3,RGE,HNF,K,K,,1
-Harry Peritestes,117,438,Filet-Mignon Jackson,320,567,BB,129,B1,1,0,0,0,,,0,1,168,15,3,RGE,HNF,BB,BB,,1
-Jared Sabor VII,149,84,Filet-Mignon Jackson,320,879,FO,205,B1,1,1,0,0,,,0,0,168,15,3,RGE,HNF,FO,FO,,1
-Ronarudo Washi IIIIII,167,12,Filet-Mignon Jackson,320,58,2B,46,B1,2,1,0,0,,,1,1,168,15,3,RGE,HNF,2B,2B,,1
-Markese Rolle,2503,123,Filet-Mignon Jackson,320,90,2B,33,B1,2,2,1,0,,,1,0,168,15,3,RGE,HNF,2B,2B,,1
-Olivia Hyde,175,839,Filet-Mignon Jackson,320,386,LGO,453,B1,2,2,2,0,,,0,0,168,15,3,RGE,HNF,LGO,LGO,,1
-Skeeter Williams,229,273,Naoki Tentacles,216,543,K,270,T2,0,0,2,0,,,0,0,169,15,3,HNF,RGE,K,K,,1
-Reimer Gonzalez,13,410,Naoki Tentacles,216,211,FO,199,T2,1,0,2,0,,,0,0,169,15,3,HNF,RGE,FO,FO,,1
-Oscar Vinegrette,252,720,Naoki Tentacles,216,378,K,342,T2,2,0,2,0,,,0,0,169,15,3,HNF,RGE,K,K,,1
-dednuts,448,469,Filet-Mignon Jackson,320,619,BB,150,B2,0,0,2,0,,,0,0,170,15,3,RGE,HNF,BB,BB,,1
-Triscutt Mesmer,39,950,Filet-Mignon Jackson,320,859,1B,91,B2,0,1,2,0,,,0,0,170,15,3,RGE,HNF,1B,1B,,1
-Naoki Tentacles,216,420,Filet-Mignon Jackson,320,179,FO,241,B2,0,4,2,0,,,0,0,170,15,3,RGE,HNF,FO,FO,,1
-Jeff Steelflex,268,69,Filet-Mignon Jackson,320,783,K,286,B2,1,4,2,0,,,0,0,170,15,3,RGE,HNF,K,K,,1
-Harry Peritestes,117,560,Filet-Mignon Jackson,320,161,RGO,399,B2,2,4,2,0,,,0,0,170,15,3,RGE,HNF,RGO,RGO,,1
-Oscar Vinegrette,252,721,Naoki Tentacles,216,1,K,280,T3,0,0,2,0,,,0,0,171,15,3,HNF,RGE,K,K,,1
-Filet-Mignon Jackson,320,722,Naoki Tentacles,216,754,2B,32,T3,1,0,2,0,,,0,1,171,15,3,HNF,RGE,2B,2B,,1
-Jocko Jones,295,342,Naoki Tentacles,216,252,1B,90,T3,1,2,2,0,,,0,1,171,15,3,HNF,RGE,1B,1B,,1
-Ian Brendan Owen Bust,186,,Naoki Tentacles,216,,Auto K,,T3,1,5,2,0,,,0,0,171,15,3,HNF,RGE,Auto K,Auto K,,9
-Jimjon Jonjim,272,654,Naoki Tentacles,216,698,2B,44,T3,2,5,2,0,,,2,0,171,15,3,HNF,RGE,2B,2B,,1
-Jerry Jingles,146,800,Naoki Tentacles,216,321,LGO,479,T3,2,2,2,2,,,0,0,171,15,3,HNF,RGE,LGO,LGO,,1
-Jared Sabor VII,149,145,Filet-Mignon Jackson,320,776,RGO,369,B3,0,0,2,2,,,0,0,172,15,3,RGE,HNF,RGO,RGO,,1
-Ronarudo Washi IIIIII,167,912,Filet-Mignon Jackson,320,644,FO,268,B3,1,0,2,2,,,0,0,172,15,3,RGE,HNF,FO,FO,,1
-Olivia Hyde,175,693,Filet-Mignon Jackson,320,353,K,340,B3,2,0,2,2,,,0,0,172,15,3,RGE,HNF,K,K,,1
-Skeeter Williams,229,726,Naoki Tentacles,216,897,FO,171,T4,0,0,2,2,,,0,0,173,15,3,HNF,RGE,FO,FO,,1
-Reimer Gonzalez,13,1,Naoki Tentacles,216,231,FO,230,T4,1,0,2,2,,,0,0,173,15,3,HNF,RGE,FO,FO,,1
-Oscar Vinegrette,252,375,Naoki Tentacles,216,589,FO,214,T4,2,0,2,2,,,0,0,173,15,3,HNF,RGE,FO,FO,,1
-Markese Rolle,2503,560,Filet-Mignon Jackson,320,881,K,321,B4,0,0,2,2,,,0,0,174,15,3,RGE,HNF,K,K,,1
-dednuts,448,673,Filet-Mignon Jackson,320,606,1B,67,B4,1,0,2,2,,,0,0,174,15,3,RGE,HNF,1B,1B,,1
-Triscutt Mesmer,39,250,Filet-Mignon Jackson,320,704,DP,454,B4,1,1,2,2,,,0,0,174,15,3,RGE,HNF,LGO,LGO,,1
-Oscar Vinegrette,252,350,Naoki Tentacles,216,804,LGO,454,T5,0,0,2,2,,,0,0,175,15,3,HNF,RGE,LGO,LGO,,1
-Filet-Mignon Jackson,320,89,Naoki Tentacles,216,498,PO,409,T5,1,0,2,2,,,0,0,175,15,3,HNF,RGE,PO,PO,,1
-Jocko Jones,295,142,Naoki Tentacles,216,876,FO,266,T5,2,0,2,2,,,0,0,175,15,3,HNF,RGE,FO,FO,,1
-Naoki Tentacles,216,451,Filet-Mignon Jackson,320,452,HR,1,B5,0,0,2,2,,,1,1,176,15,3,RGE,HNF,HR,HR,,1
-Jeff Steelflex,268,,Filet-Mignon Jackson,320,323,BB,127,B5,0,0,3,2,,,0,0,176,15,3,RGE,HNF,BB,BB,,1
-Harry Peritestes,117,618,Filet-Mignon Jackson,320,137,DP,481,B5,0,1,3,2,,,0,0,176,15,3,RGE,HNF,LGO,LGO,,1
-Jared Sabor VII,149,777,Filet-Mignon Jackson,320,358,RGO,419,B5,2,0,3,2,,,0,0,176,15,3,RGE,HNF,RGO,RGO,,1
-Ian Brendan Owen Bust,186,237,Naoki Tentacles,216,645,RGO,408,T6,0,0,3,2,,,0,0,177,15,3,HNF,RGE,RGO,RGO,,1
-Jimjon Jonjim,272,420,Naoki Tentacles,216,337,1B,83,T6,1,0,3,2,,,0,0,177,15,3,HNF,RGE,1B,1B,,1
-Jerry Jingles,146,69,Naoki Tentacles,216,969,1B,100,T6,1,1,3,2,,,0,0,177,15,3,HNF,RGE,1B,1B,,1
-Skeeter Williams,229,12,Naoki Tentacles,216,207,FO,195,T6,1,4,3,2,,,0,0,177,15,3,HNF,RGE,FO,FO,,1
-Reimer Gonzalez,13,644,Naoki Tentacles,216,420,FO,224,T6,2,4,3,2,,,0,0,177,15,3,HNF,RGE,FO,FO,,1
-Jack Marnette,213,643,Zander Ackley,127,208,RGO,435,T1,0,0,0,0,,,0,0,178,16,4,CHU,HSH,RGO,RGO,,1
-Akiyoshi Yamamoto,289,872,Zander Ackley,127,17,1B,145,T1,1,0,0,0,,,0,0,178,16,4,CHU,HSH,1B,1B,,1
-Steel Pipe Simpson,80,777,Zander Ackley,127,995,FO,218,T1,1,1,0,0,,,0,0,178,16,4,CHU,HSH,FO,FO,,1
-Boon Dawg Daniels,115,602,Zander Ackley,127,383,FO,219,T1,2,1,0,0,,,0,0,178,16,4,CHU,HSH,FO,FO,,1
-Caleb Athen,325,500,Alvin Lockheart,20,120,PO,380,B1,0,0,0,0,,,0,0,179,16,4,HSH,CHU,PO,PO,,1
-Blake Monroe,3326,,Alvin Lockheart,20,,Auto K,,B1,1,0,0,0,,,0,0,179,16,4,HSH,CHU,Auto K,Auto K,,9
-Jack Elliot,76,520,Alvin Lockheart,20,333,FO,187,B1,2,0,0,0,,,0,0,179,16,4,HSH,CHU,FO,FO,,1
-Fister Roboto,445,790,Zander Ackley,127,739,1B,51,T2,0,0,0,0,,,0,0,180,16,4,CHU,HSH,1B,1B,,1
-Jack Alpha,73,675,Zander Ackley,127,545,1B,130,T2,0,1,0,0,,,0,0,180,16,4,CHU,HSH,1B,1B,,1
-Antonin Periwinkle,185,980,Zander Ackley,127,439,DP,459,T2,0,4,0,0,,,0,0,180,16,4,CHU,HSH,RGO,RGO,,1
-Dominus Nominus,278,,Zander Ackley,127,,Auto K,,T2,2,3,0,0,,,0,0,180,16,4,CHU,HSH,Auto K,Auto K,,9
-Dart Ragusa,134,550,Alvin Lockheart,20,601,2B,51,B2,0,0,0,0,,,0,0,181,16,4,HSH,CHU,2B,2B,,1
-Syd Ryu,3,101,Alvin Lockheart,20,812,FO,289,B2,0,2,0,0,,,0,0,181,16,4,HSH,CHU,FO,FO,,1
-Homer Pimpson,144,812,Alvin Lockheart,20,243,PO,431,B2,1,2,0,0,,,0,0,181,16,4,HSH,CHU,PO,PO,,1
-Rintaro Okabe,290,345,Alvin Lockheart,20,1000,K,345,B2,2,2,0,0,,,0,0,181,16,4,HSH,CHU,K,K,,1
-Alvin Lockheart,20,943,Zander Ackley,127,745,BB,198,T3,0,0,0,0,,,0,0,182,16,4,CHU,HSH,BB,BB,,1
-Jack Marnette,213,144,Zander Ackley,127,410,FO,266,T3,0,1,0,0,,,0,0,182,16,4,CHU,HSH,FO,FO,,1
-Akiyoshi Yamamoto,289,669,Zander Ackley,127,531,1B,138,T3,1,1,0,0,,,0,0,182,16,4,CHU,HSH,1B,1B,,1
-Steel Pipe Simpson,80,571,Zander Ackley,127,103,DP,468,T3,1,4,0,0,,,0,0,182,16,4,CHU,HSH,RGO,RGO,,1
-Yoshigahara Ryutai,133,356,Alvin Lockheart,20,776,K,420,B3,0,0,0,0,,,0,0,183,16,4,HSH,CHU,K,K,,1
-Hidetoshi Hasagawa,102,920,Alvin Lockheart,20,492,K,428,B3,1,0,0,0,,,0,0,183,16,4,HSH,CHU,K,K,,1
-Caleb Athen,325,621,Alvin Lockheart,20,,RGO,,B3,2,0,0,0,,,0,0,183,16,4,HSH,CHU,RGO,RGO,,1
-Boon Dawg Daniels,115,1,Zander Ackley,127,6,HR,5,T4,0,0,0,0,,,1,1,184,16,4,CHU,HSH,HR,HR,,1
-Fister Roboto,445,977,Zander Ackley,127,320,K,343,T4,0,0,0,1,,,0,0,184,16,4,CHU,HSH,K,K,,1
-Jack Alpha,73,600,Zander Ackley,127,865,K,265,T4,1,0,0,1,,,0,0,184,16,4,CHU,HSH,K,K,,1
-Antonin Periwinkle,185,487,Zander Ackley,127,612,BB,125,T4,2,0,0,1,,,0,0,184,16,4,CHU,HSH,BB,BB,,1
-Dominus Nominus,278,420,Zander Ackley,127,241,BB,179,T4,2,1,0,1,,,0,0,184,16,4,CHU,HSH,BB,BB,,1
-Alvin Lockheart,20,662,Zander Ackley,127,241,RGO,421,T4,2,4,0,1,,,0,0,184,16,4,CHU,HSH,RGO,RGO,,1
-Zander Ackley,127,34,Alvin Lockheart,20,301,FO,267,B4,0,0,0,1,,,0,0,185,16,4,HSH,CHU,FO,FO,,1
-Jack Elliot,76,55,Alvin Lockheart,20,164,BB,109,B4,1,0,0,1,,,0,1,185,16,4,HSH,CHU,BB,BB,,1
-Dart Ragusa,134,800,Alvin Lockheart,20,100,K,300,B4,1,1,0,1,,,0,0,185,16,4,HSH,CHU,K,K,,1
-Syd Ryu,3,903,Alvin Lockheart,20,860,2B,43,B4,2,1,0,1,,,1,0,185,16,4,HSH,CHU,2B,2B,,1
-Homer Pimpson,144,860,Alvin Lockheart,20,693,FO,167,B4,2,2,1,1,,,0,0,185,16,4,HSH,CHU,FO,FO,,1
-Jack Marnette,213,535,Zander Ackley,127,91,RGO,444,T5,0,0,1,1,,,0,0,186,16,4,CHU,HSH,RGO,RGO,,1
-Akiyoshi Yamamoto,289,876,Zander Ackley,127,741,1B,135,T5,1,0,1,1,,,0,0,186,16,4,CHU,HSH,1B,1B,,1
-Steel Pipe Simpson,80,836,Zander Ackley,127,138,K,302,T5,1,1,1,1,,,0,0,186,16,4,CHU,HSH,K,K,,1
-Boon Dawg Daniels,115,1,Zander Ackley,127,578,RGO,423,T5,2,1,1,1,,,0,0,186,16,4,CHU,HSH,RGO,RGO,,1
-Rintaro Okabe,290,536,Alvin Lockheart,20,782,FO,246,B5,0,0,1,1,,,0,0,187,16,4,HSH,CHU,FO,FO,,1
-Yoshigahara Ryutai,133,942,Alvin Lockheart,20,132,FO,190,B5,1,0,1,1,,,0,0,187,16,4,HSH,CHU,FO,FO,,1
-Hidetoshi Hasagawa,102,777,Alvin Lockheart,20,666,1B,111,B5,2,0,1,1,,,0,0,187,16,4,HSH,CHU,1B,1B,,1
-Caleb Athen,325,542,Alvin Lockheart,20,915,K,373,B5,2,1,1,1,,,0,0,187,16,4,HSH,CHU,K,K,,1
-Jessie Vance,33,702,Zander Ackley,127,188,LGO,486,T6,0,0,1,1,,,0,0,188,16,4,CHU,HSH,LGO,LGO,,1
-Jack Alpha,73,980,Zander Ackley,127,907,1B,73,T6,1,0,1,1,,,0,0,188,16,4,CHU,HSH,1B,1B,,1
-Antonin Periwinkle,185,834,Zander Ackley,127,441,K,393,T6,1,1,1,1,,,0,0,188,16,4,CHU,HSH,K,K,,1
-Dominus Nominus,278,333,Zander Ackley,127,496,BB,163,T6,2,1,1,1,,,0,0,188,16,4,CHU,HSH,BB,BB,,1
-Alvin Lockheart,20,2,Zander Ackley,127,340,K,338,T6,2,4,1,1,,,0,0,188,16,4,CHU,HSH,K,K,,1
-Zander Ackley,127,391,Alvin Lockheart,20,500,1B,109,B6,0,0,1,1,,,0,0,189,16,4,HSH,CHU,1B,1B,,1
-Jack Elliot,76,388,Alvin Lockheart,20,114,K,274,B6,0,1,1,1,,,0,0,189,16,4,HSH,CHU,K,K,,1
-Zander Ackley,127,900,Alvin Lockheart,20,386,CS,486,B6,1,1,1,1,,,0,0,189,16,4,HSH,CHU,CS 2B,CS 2B,,4
-Dart Ragusa,134,742,Alvin Lockheart,20,1000,FO,258,B6,2,0,1,1,,,0,0,189,16,4,HSH,CHU,FO,FO,,1
-Jack Marnette,213,907,Zander Ackley,127,195,K,288,T7,0,2,1,1,,,0,0,190,16,4,CHU,HSH,K,K,,1
-Akiyoshi Yamamoto,289,673,Zander Ackley,127,195,LGO,478,T7,1,2,1,1,,,0,0,190,16,4,CHU,HSH,LGO,LGO,,1
-Steel Pipe Simpson,80,697,Zander Ackley,127,195,LGO,498,T7,2,2,1,1,,,0,0,190,16,4,CHU,HSH,LGO,LGO,,1
-Syd Ryu,3,333,Alvin Lockheart,20,124,FO,209,B7,0,2,1,1,,,0,0,191,16,4,HSH,CHU,FO,FO,,1
-Homer Pimpson,144,414,Alvin Lockheart,20,393,3B,21,B7,1,2,1,1,,,1,0,191,16,4,HSH,CHU,3B,3B,,1
-Kevin Ariannatanabe,113,5,Alex Brown,444,845,1B,160,T1,0,0,0,0,,,0,1,192,17,4,HKU,HIR,1B,1B,,1
-Thomas Nova,1,745,Alex Brown,444,801,1B,56,T1,0,1,0,0,,,0,0,192,17,4,HKU,HIR,1B,1B,,1
-Kris Jaxon,152,675,Alex Brown,444,207,DP,468,T1,0,4,0,0,,,0,0,192,17,4,HKU,HIR,RGO,RGO,,1
-Layzer Gunn,259,942,Alex Brown,444,900,2B,42,T1,2,3,0,0,,,1,0,192,17,4,HKU,HIR,2B,2B,,1
-Oliver Yu,286,385,Alex Brown,444,555,FO,170,T1,2,2,0,1,,,0,0,192,17,4,HKU,HIR,FO,FO,,1
-Mattress Cadaire,116,318,Logan Anderson,236,99,FO,219,B1,0,0,0,1,,,0,0,193,17,4,HIR,HKU,FO,FO,,1
-Dirtbag Darrell,262,350,Logan Anderson,236,662,K,312,B1,1,0,0,1,,,0,0,193,17,4,HIR,HKU,K,K,,1
-Rich Mahogany,265,66,Logan Anderson,236,102,2B,36,B1,2,0,0,1,,,0,0,193,17,4,HIR,HKU,2B,2B,,1
-Gottlieb Giannopoulos,89,508,Logan Anderson,236,110,RGO,398,B1,2,2,0,1,,,0,0,193,17,4,HIR,HKU,RGO,RGO,,1
-A.J. Preller,319,567,Alex Brown,444,24,RGO,457,T2,0,0,0,1,,,0,0,194,17,4,HKU,HIR,RGO,RGO,,1
-KC Bats,287,827,Alex Brown,444,678,FO,149,T2,1,0,0,1,,,0,0,194,17,4,HKU,HIR,FO,FO,,1
-Gustav Ahr,128,739,Alex Brown,444,735,HR,4,T2,2,0,0,1,,,1,1,194,17,4,HKU,HIR,HR,HR,,1
-Logan Anderson,236,,Alex Brown,444,,Auto K,,T2,2,0,0,2,,,0,0,194,17,4,HKU,HIR,Auto K,Auto K,,9
-Boi Lover,84,715,Logan Anderson,236,99,RGO,384,B2,0,0,0,2,,,0,0,195,17,4,HIR,HKU,RGO,RGO,,1
-Icna Comit,198,555,Filet-Mignon Jackson,320,767,FO,212,T1,0,0,0,0,,,0,0,196,18,4,CHI,HNF,FO,FO,,1
-Seik Golden,251,420,Filet-Mignon Jackson,320,361,1B,59,T1,1,0,0,0,,,0,1,196,18,4,CHI,HNF,1B,1B,,1
-Viking Fishbird,42,726,Filet-Mignon Jackson,320,338,PO,388,T1,1,1,0,0,,,0,0,196,18,4,CHI,HNF,PO,PO,,1
-Hingle McCringleberry,257,123,Filet-Mignon Jackson,320,111,HR,12,T1,2,1,0,0,,,2,1,196,18,4,CHI,HNF,HR,HR,,1
-Morello D. Luffy,211,789,Filet-Mignon Jackson,320,101,K,312,T1,2,0,0,2,,,0,0,196,18,4,CHI,HNF,K,K,,1
-Ian Brendan Owen Bust,186,885,Seik Golden,251,35,BB,150,B1,0,0,0,2,,,0,0,197,18,4,HNF,CHI,BB,BB,,1
-Jocko Jones,295,738,Seik Golden,251,565,BB,173,B1,0,1,0,2,,,0,0,197,18,4,HNF,CHI,BB,BB,,1
-Jimjon Jonjim,272,469,Seik Golden,251,920,DP,451,B1,0,4,0,2,,,0,0,197,18,4,HNF,CHI,RGO,RGO,,1
-Jerry Jingles,146,666,Seik Golden,251,895,FO,229,B1,2,3,0,2,,,0,0,197,18,4,HNF,CHI,FO,FO,,1
-Vigolashi Dongelini,159,950,Filet-Mignon Jackson,320,46,1B,96,T2,0,0,0,2,,,0,0,198,18,4,CHI,HNF,1B,1B,,1
-Tike Mruk,104,749,Filet-Mignon Jackson,320,241,DP,492,T2,0,1,0,2,,,0,0,198,18,4,CHI,HNF,LGO,LGO,,1
-Miroslav Radovicnovizicidivizcinicizivich,71,150,Filet-Mignon Jackson,320,337,FO,187,T2,2,0,0,2,,,0,0,198,18,4,CHI,HNF,FO,FO,,1
-Skeeter Williams,229,371,Seik Golden,251,101,FO,270,B2,0,0,0,2,,,0,0,199,18,4,HNF,CHI,FO,FO,,1
-Reimer Gonzalez,13,222,Seik Golden,251,328,1B,106,B2,1,0,0,2,,,0,0,199,18,4,HNF,CHI,1B,1B,,1
-Yoshigahara Ryutai,133,631,Seik Golden,251,908,FO,277,B2,1,1,0,2,,,0,0,199,18,4,HNF,CHI,FO,FO,,1
-Haruto Tanaka,189,666,Seik Golden,251,809,BB,143,B2,2,1,0,2,,,0,0,199,18,4,HNF,CHI,BB,BB,,1
-Filet-Mignon Jackson,320,424,Seik Golden,251,252,FO,172,B2,2,4,0,2,,,0,0,199,18,4,HNF,CHI,FO,FO,,1
-Phil Coulson,226,286,Filet-Mignon Jackson,320,857,LGO,429,T3,0,0,0,2,,,0,0,200,18,4,CHI,HNF,LGO,LGO,,1
-Icna Comit,198,902,Filet-Mignon Jackson,320,484,RGO,418,T3,1,0,0,2,,,0,0,200,18,4,CHI,HNF,RGO,RGO,,1
-Seik Golden,251,787,Filet-Mignon Jackson,320,655,BB,132,T3,2,0,0,2,,,0,0,200,18,4,CHI,HNF,BB,BB,,1
-Viking Fishbird,42,345,Filet-Mignon Jackson,320,121,FO,224,T3,2,1,0,2,,,0,0,200,18,4,CHI,HNF,FO,FO,,1
-Ian Brendan Owen Bust,186,638,Seik Golden,251,132,LGO,494,B3,0,0,0,2,,,0,0,201,18,4,HNF,CHI,LGO,LGO,,1
-Jocko Jones,295,738,Seik Golden,251,132,RGO,394,B3,1,0,0,2,,,0,0,201,18,4,HNF,CHI,RGO,RGO,,1
-Jimjon Jonjim,272,721,Seik Golden,251,132,PO,411,B3,2,0,0,2,,,0,0,201,18,4,HNF,CHI,PO,PO,,1
-Hingle McCringleberry,257,420,Filet-Mignon Jackson,320,250,FO,170,T4,0,0,0,2,,,0,0,202,18,4,CHI,HNF,FO,FO,,1
-Pickle Rick,150,469,Naoki Tentacles,216,299,FO,170,T1,0,0,0,0,,,0,0,203,19,4,NAN,RGE,FO,FO,,1
-Owen Thirlwell,156,299,Naoki Tentacles,216,275,3B,24,T1,1,0,0,0,,,0,0,203,19,4,NAN,RGE,3B,3B,,1
-Ryosuke Takahashi,36,450,Naoki Tentacles,216,800,K,350,T1,1,3,0,0,,,0,0,203,19,4,NAN,RGE,K,K,,1
-Takumi Fujiwara,91,888,Naoki Tentacles,216,21,BB,133,T1,2,3,0,0,,,0,0,203,19,4,NAN,RGE,BB,BB,,1
-Meerkat Timmons,147,555,Naoki Tentacles,216,741,FO,186,T1,2,5,0,0,,,0,0,203,19,4,NAN,RGE,FO,FO,,1
-Jeff Steelflex,268,719,Pickle Rick,150,880,BB,161,B1,0,0,0,0,,,0,0,204,19,4,RGE,NAN,BB,BB,,1
-Harry Peritestes,117,238,Pickle Rick,150,669,DP,431,B1,0,1,0,0,,,0,0,204,19,4,RGE,NAN,RGO,RGO,,1
-Jared Sabor VII,149,3,Pickle Rick,150,816,FO,187,B1,2,0,0,0,,,0,0,204,19,4,RGE,NAN,FO,FO,,1
-Rickey Tucker,163,596,Naoki Tentacles,216,311,K,285,T2,0,0,0,0,,,0,0,205,19,4,NAN,RGE,K,K,,1
-Donnie Draper,138,891,Naoki Tentacles,216,650,FO,241,T2,1,0,0,0,,,0,0,205,19,4,NAN,RGE,FO,FO,,1
-Rueben Salazar,416,246,Naoki Tentacles,216,411,FO,165,T2,2,0,0,0,,,0,0,205,19,4,NAN,RGE,FO,FO,,1
-Ronarudo Washi IIIIII,167,241,Pickle Rick,150,225,HR,16,B2,0,0,0,0,,,1,1,206,19,4,RGE,NAN,HR,HR,,1
-Markese Rolle,2503,486,Pickle Rick,150,70,RGO,416,B2,0,0,1,0,,,0,0,206,19,4,RGE,NAN,RGO,RGO,,1
-Olivia Hyde,175,330,Pickle Rick,150,68,FO,262,B2,1,0,1,0,,,0,0,206,19,4,RGE,NAN,FO,FO,,1
-dednuts,448,71,Pickle Rick,150,860,FO,211,B2,2,0,1,0,,,0,0,206,19,4,RGE,NAN,FO,FO,,1
-Ichigo Kurosaki,351,327,Naoki Tentacles,216,520,FO,193,T3,0,0,1,0,,,0,0,207,19,4,NAN,RGE,FO,FO,,1
-Pickle Rick,150,316,Naoki Tentacles,216,11,K,305,T3,1,0,1,0,,,0,0,207,19,4,NAN,RGE,K,K,,1
-Owen Thirlwell,156,316,Naoki Tentacles,216,780,LGO,464,T3,2,0,1,0,,,0,0,207,19,4,NAN,RGE,LGO,LGO,,1
-Triscutt Mesmer,39,950,Pickle Rick,150,999,2B,49,B3,0,0,1,0,,,0,0,208,19,4,RGE,NAN,2B,2B,,1
-Naoki Tentacles,216,420,Pickle Rick,150,780,K,360,B3,0,2,1,0,,,0,0,208,19,4,RGE,NAN,K,K,,1
-Jeff Steelflex,268,,Pickle Rick,150,,Auto K,,B3,1,2,1,0,,,0,0,208,19,4,RGE,NAN,Auto K,Auto K,,9
-Harry Peritestes,117,258,Pickle Rick,150,780,LGO,478,B3,2,2,1,0,,,0,0,208,19,4,RGE,NAN,LGO,LGO,,1
-Ryosuke Takahashi,36,543,Naoki Tentacles,216,693,BB,150,T4,0,0,1,0,,,0,1,209,19,4,NAN,RGE,BB,BB,,1
-Takumi Fujiwara,91,944,Naoki Tentacles,216,5,2B,61,T4,0,1,1,0,,,0,0,209,19,4,NAN,RGE,2B,2B,,1
-Meerkat Timmons,147,,Naoki Tentacles,216,,Auto K,,T4,0,6,1,0,,,0,0,209,19,4,NAN,RGE,Auto K,Auto K,,9
-Rickey Tucker,163,979,Naoki Tentacles,216,122,Sac,143,T4,1,6,1,0,,,1,0,209,19,4,NAN,RGE,FO,FO,,1
-Donnie Draper,138,500,Naoki Tentacles,216,888,PO,388,T4,2,2,1,1,,,0,0,209,19,4,NAN,RGE,PO,PO,,1
-Jared Sabor VII,149,905,Pickle Rick,150,404,LGO,499,B4,0,0,1,1,,,0,0,210,19,4,RGE,NAN,LGO,LGO,,1
-Ronarudo Washi IIIIII,167,12,Pickle Rick,150,123,BB,111,B4,1,0,1,1,,,0,1,210,19,4,RGE,NAN,BB,BB,,1
-Markese Rolle,2503,56,Pickle Rick,150,355,K,299,B4,1,1,1,1,,,0,0,210,19,4,RGE,NAN,K,K,,1
-Olivia Hyde,175,890,Pickle Rick,150,898,HR,8,B4,2,1,1,1,,,2,1,210,19,4,RGE,NAN,HR,HR,,1
-dednuts,448,229,Pickle Rick,150,333,1B,104,B4,2,0,3,1,,,0,0,210,19,4,RGE,NAN,1B,1B,,1
-Triscutt Mesmer,39,900,Pickle Rick,150,215,K,315,B4,2,1,3,1,,,0,0,210,19,4,RGE,NAN,K,K,,1
-Rueben Salazar,416,74,Naoki Tentacles,216,420,K,346,T5,0,0,3,1,,,0,0,211,19,4,NAN,RGE,K,K,,1
-Ichigo Kurosaki,351,111,Naoki Tentacles,216,611,LGO,500,T5,1,0,3,1,,,0,0,211,19,4,NAN,RGE,LGO,LGO,,1
-Pickle Rick,150,440,Naoki Tentacles,216,232,FO,208,T5,2,0,3,1,,,0,0,211,19,4,NAN,RGE,FO,FO,,1
-Naoki Tentacles,216,777,Pickle Rick,150,919,BB,142,B5,0,0,3,1,,,0,0,212,19,4,RGE,NAN,BB,BB,,1
-Jeff Steelflex,268,,Pickle Rick,150,,Auto K,,B5,0,1,3,1,,,0,0,212,19,4,RGE,NAN,Auto K,Auto K,,9
-Harry Peritestes,117,687,Pickle Rick,150,125,DP,438,B5,1,1,3,1,,,0,0,212,19,4,RGE,NAN,RGO,RGO,,1
-Owen Thirlwell,156,801,Naoki Tentacles,216,711,1B,90,T6,0,0,3,1,,,0,0,213,19,4,NAN,RGE,1B,1B,,1
-Ryosuke Takahashi,36,511,Naoki Tentacles,216,3,DP,492,T6,0,1,3,1,,,0,0,213,19,4,NAN,RGE,LGO,LGO,,1
-Takumi Fujiwara,91,844,Naoki Tentacles,216,879,2B,35,T6,2,0,3,1,,,0,0,213,19,4,NAN,RGE,2B,2B,,1
-Meerkat Timmons,147,720,Naoki Tentacles,216,211,LGO,491,T6,2,2,3,1,,,0,0,213,19,4,NAN,RGE,LGO,LGO,,1
-Nicholas Verducci,70,222,Hans Ali,197,123,1B,99,T1,0,0,0,0,,,0,0,214,20,4,ORI,YOK,1B,1B,,1
-Karl Jernigan,439,708,Hans Ali,197,1,K,293,T1,0,1,0,0,,,0,0,214,20,4,ORI,YOK,K,K,,1
-Daniel Dove,66,592,Hans Ali,197,356,FO,236,T1,1,1,0,0,,,0,0,214,20,4,ORI,YOK,FO,FO,,1
-Nicholas Verducci,70,333,Hans Ali,197,789,CS,456,T1,2,1,0,0,,,0,0,214,20,4,ORI,YOK,CS 2B,CS 2B,,4
-Koyomi Araragi,293,333,Charles Magnus,220,420,1B,87,B1,0,0,0,0,,,0,0,215,20,4,YOK,ORI,1B,1B,,1
-Demetrios Ooga,180,69,Charles Magnus,220,999,1B,70,B1,0,1,0,0,,,0,0,215,20,4,YOK,ORI,1B,1B,,1
-Henry Crowell,184,478,Charles Magnus,220,999,DP,479,B1,0,4,0,0,,,0,0,215,20,4,YOK,ORI,LGO,LGO,,1
-Lloyd Gross,135,269,Charles Magnus,220,999,FO,270,B1,2,3,0,0,,,0,0,215,20,4,YOK,ORI,FO,FO,,1
-Josh Gordon,409,116,Hans Ali,197,123,HR,7,T2,0,0,0,0,,,1,1,216,20,4,ORI,YOK,HR,HR,,1
-Michael Ikenberry,63,123,Hans Ali,197,69,1B,54,T2,0,0,0,1,,,0,0,216,20,4,ORI,YOK,1B,1B,,1
-Michael Ikenberry,63,900,Hans Ali,197,69,SB,169,T2,0,1,0,1,,,0,0,216,20,4,ORI,YOK,Steal 2B,Steal 2B,,4
-Luap Renraw,118,666,Hans Ali,197,69,RGO,403,T2,0,2,0,1,,,0,0,216,20,4,ORI,YOK,RGO,RGO,,1
-Takahiro Hirasawa,419,972,Hans Ali,197,345,PO,373,T2,1,3,0,1,,,0,0,216,20,4,ORI,YOK,PO,PO,,1
-Charles Magnus,220,499,Hans Ali,197,69,RGO,430,T2,2,3,0,1,,,0,0,216,20,4,ORI,YOK,RGO,RGO,,1
-Jack Meloy,145,977,Charles Magnus,220,777,FO,200,B2,0,0,0,1,,,0,0,217,20,4,YOK,ORI,FO,FO,,1
-Tommy Oldman,143,777,Charles Magnus,220,277,LGO,500,B2,1,0,0,1,,,0,0,217,20,4,YOK,ORI,LGO,LGO,,1
-Hans Ali,197,,Charles Magnus,220,,Auto BB,,B2,2,0,0,1,,,0,0,217,20,4,YOK,ORI,Auto BB,Auto BB,,10
-Niko Banks,430,777,Charles Magnus,220,100,K,323,B2,2,1,0,1,,,0,0,217,20,4,YOK,ORI,K,K,,1
-Becky McBadbat,277,133,Hans Ali,197,655,LGO,478,T3,0,0,0,1,,,0,0,218,20,4,ORI,YOK,LGO,LGO,,1
-Nicholas Verducci,70,321,Hans Ali,197,233,1B,88,T3,1,0,0,1,,,0,0,218,20,4,ORI,YOK,1B,1B,,1
-Karl Jernigan,439,871,Hans Ali,197,344,DP,473,T3,1,1,0,1,,,0,0,218,20,4,ORI,YOK,LGO,LGO,,1
-Jake Wilson,454,454,Charles Magnus,220,555,1B,101,B3,0,0,0,1,,,0,0,219,20,4,YOK,ORI,1B,1B,,1
-Koyomi Araragi,293,888,Charles Magnus,220,614,FO,274,B3,0,1,0,1,,,0,0,219,20,4,YOK,ORI,FO,FO,,1
-Demetrios Ooga,180,714,Charles Magnus,220,345,K,369,B3,1,1,0,1,,,0,0,219,20,4,YOK,ORI,K,K,,1
-Henry Crowell,184,347,Charles Magnus,220,999,K,348,B3,2,1,0,1,,,0,0,219,20,4,YOK,ORI,K,K,,1
-Daniel Dove,66,722,Hans Ali,197,1,K,279,T4,0,0,0,1,,,0,0,220,20,4,ORI,YOK,K,K,,1
-Josh Gordon,409,365,Hans Ali,197,243,1B,122,T4,1,0,0,1,,,0,0,220,20,4,ORI,YOK,1B,1B,,1
-Michael Ikenberry,63,555,Hans Ali,197,334,FO,221,T4,1,1,0,1,,,0,0,220,20,4,ORI,YOK,FO,FO,,1
-Luap Renraw,118,123,Hans Ali,197,788,K,335,T4,2,1,0,1,,,0,0,220,20,4,ORI,YOK,K,K,,1
-Lloyd Gross,135,69,Charles Magnus,220,99,HR,30,B4,0,0,0,1,,,1,1,221,20,4,YOK,ORI,HR,HR,,1
-Jack Meloy,145,912,Charles Magnus,220,247,K,335,B4,0,0,1,1,,,0,0,221,20,4,YOK,ORI,K,K,,1
+Mattress Cadaire,116,374,Alvin Lockheart,20,808,RGO,434,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,HIR,CHU,RGO,RGO,,1
+Gottlieb Giannopoulos,89,140,Alvin Lockheart,20,601,LGO,461,T1,1,0,0,0,-2.18%,2.18%,0,0,1,1,1,HIR,CHU,LGO,LGO,,1
+Carlos Brownson,132,321,Alvin Lockheart,20,920,K,401,T1,2,0,0,0,-1.76%,1.76%,0,0,1,1,1,HIR,CHU,K,K,,1
+Thomas Nova,1,501,Silver Shore,3328,12,LGO,489,B1,0,0,0,0,-2.48%,2.48%,0,0,2,1,1,CHU,HIR,LGO,LGO,,1
+Akiyoshi Yamamoto,289,527,Silver Shore,3328,713,FO,186,B1,1,0,0,0,-2.17%,2.17%,0,0,2,1,1,CHU,HIR,FO,FO,,1
+Steel Pipe Simpson,80,420,Silver Shore,3328,978,RGO,442,B1,2,0,0,0,-1.79%,1.79%,0,0,2,1,1,CHU,HIR,RGO,RGO,,1
+Boi Lover,84,109,Alvin Lockheart,20,401,K,292,T2,0,0,0,0,-2.72%,2.72%,0,0,3,1,1,HIR,CHU,K,K,,1
+Rich Mahogany,265,777,Alvin Lockheart,20,405,K,372,T2,1,0,0,0,-2.40%,2.40%,0,0,3,1,1,HIR,CHU,K,K,,1
+River Ride,342,242,Alvin Lockheart,20,666,RGO,424,T2,2,0,0,0,-1.99%,1.99%,0,0,3,1,1,HIR,CHU,RGO,RGO,,1
+Boon Dawg Daniels,115,666,Silver Shore,3328,12,K,346,B2,0,0,0,0,-2.72%,2.72%,0,0,4,1,1,CHU,HIR,K,K,,1
+Fister Roboto,445,699,Silver Shore,3328,542,FO,157,B2,1,0,0,0,-2.38%,2.38%,0,0,4,1,1,CHU,HIR,FO,FO,,1
+Jack Alpha,73,707,Silver Shore,3328,614,1B,93,B2,2,0,0,0,2.07%,-2.07%,0,0,4,1,1,CHU,HIR,1B,1B,,1
+Antonin Periwinkle,185,954,Silver Shore,3328,315,K,361,B2,2,1,0,0,-4.10%,4.10%,0,0,4,1,1,CHU,HIR,K,K,,1
+Dirtbag Darrell,262,233,Alvin Lockheart,20,206,2B,27,T3,0,0,0,0,7.71%,-7.71%,0,1,5,1,1,HIR,CHU,2B,2B,,1
+Alex Brown,444,91,Alvin Lockheart,20,101,HR,10,T3,0,2,0,0,19.02%,-19.02%,2,1,5,1,1,HIR,CHU,HR,HR,,1
+Silver Shore,3328,312,Alvin Lockheart,20,999,K,313,T3,0,0,0,2,-1.72%,1.72%,0,0,5,1,1,HIR,CHU,K,K,,1
+Mattress Cadaire,116,513,Alvin Lockheart,20,606,1B,93,T3,1,0,0,2,1.43%,-1.43%,0,0,5,1,1,HIR,CHU,1B,1B,,1
+Gottlieb Giannopoulos,89,366,Alvin Lockheart,20,20,K,346,T3,1,1,0,2,-1.63%,1.63%,0,0,5,1,1,HIR,CHU,K,K,,1
+Carlos Brownson,132,450,Alvin Lockheart,20,590,1B,140,T3,2,1,0,2,1.71%,-1.71%,0,0,5,1,1,HIR,CHU,1B,1B,,1
+Boi Lover,84,825,Alvin Lockheart,20,590,K,235,T3,2,5,0,2,-4.37%,4.37%,0,0,5,1,1,HIR,CHU,K,K,,1
+Dominus Nominus,278,,Silver Shore,3328,,Auto BB,,B3,0,0,0,2,4.11%,-4.11%,0,0,6,1,1,CHU,HIR,Auto BB,Auto BB,,10
+Alvin Lockheart,20,333,Alex Brown,444,805,DP,472,B3,0,1,0,2,-10.17%,10.17%,0,0,6,1,1,CHU,HIR,LGO,LGO,,1
+Thomas Nova,1,410,Alex Brown,444,920,LGO,490,B3,2,0,0,2,-2.07%,2.07%,0,0,6,1,1,CHU,HIR,LGO,LGO,,1
+Rich Mahogany,265,808,Jessie Vance,33,912,1B,104,T4,0,0,0,2,1.47%,-1.47%,0,1,7,1,1,HIR,CHU,1B,1B,,1
+Rich Mahogany,265,313,Jessie Vance,33,13,SB,300,T4,0,1,0,2,2.30%,-2.30%,0,0,7,1,1,HIR,CHU,Steal 2B,Steal 2B,,4
+River Ride,342,458,Jessie Vance,33,594,1B,136,T4,0,2,0,2,4.03%,-4.03%,0,1,7,1,1,HIR,CHU,1B,1B,,1
+Dirtbag Darrell,262,333,Jessie Vance,33,222,1B,111,T4,0,5,0,2,3.00%,-3.00%,1,1,7,1,1,HIR,CHU,1B,1B,,1
+Alex Brown,444,845,Jessie Vance,33,745,1B,100,T4,0,4,0,3,3.39%,-3.39%,0,1,7,1,1,HIR,CHU,1B,1B,,1
+AJ McMann,433,666,Jessie Vance,33,629,2B,37,T4,0,7,0,3,3.75%,-3.75%,2,1,7,1,1,HIR,CHU,2B,2B,,1
+Mattress Cadaire,116,231,Jessie Vance,33,889,RGO,342,T4,0,6,0,5,0.32%,-0.32%,1,0,7,1,1,HIR,CHU,RGO,RGO,,1
+Gottlieb Giannopoulos,89,56,Jessie Vance,33,440,RGO,384,T4,1,3,0,6,0.23%,-0.23%,1,0,7,1,1,HIR,CHU,RGO,RGO,,1
+Carlos Brownson,132,112,Jessie Vance,33,252,1B,140,T4,2,0,0,7,0.16%,-0.16%,0,0,7,1,1,HIR,CHU,1B,1B,,1
+Boi Lover,84,723,Jessie Vance,33,531,FO,192,T4,2,1,0,7,-0.23%,0.23%,0,0,7,1,1,HIR,CHU,FO,FO,,1
+Akiyoshi Yamamoto,289,829,Alex Brown,444,244,RGO,415,B4,0,0,0,7,-0.42%,0.42%,0,0,8,1,1,CHU,HIR,RGO,RGO,,1
+Steel Pipe Simpson,80,211,Alex Brown,444,569,K,358,B4,1,0,0,7,-0.27%,0.27%,0,0,8,1,1,CHU,HIR,K,K,,1
+Boon Dawg Daniels,115,952,Alex Brown,444,178,FO,226,B4,2,0,0,7,-0.16%,0.16%,0,0,8,1,1,CHU,HIR,FO,FO,,1
+Rich Mahogany,265,804,Jessie Vance,33,931,1B,127,T5,0,0,0,7,0.02%,-0.02%,0,0,9,1,1,HIR,CHU,1B,1B,,1
+River Ride,342,299,Jessie Vance,33,598,K,299,T5,0,1,0,7,-0.13%,0.13%,0,0,9,1,1,HIR,CHU,K,K,,1
+Dirtbag Darrell,262,315,Jessie Vance,33,376,1B,61,T5,1,1,0,7,0.15%,-0.15%,0,0,9,1,1,HIR,CHU,1B,1B,,1
+Alex Brown,444,808,Jessie Vance,33,1,FO,193,T5,1,4,0,7,-0.03%,0.03%,0,0,9,1,1,HIR,CHU,FO,FO,,1
+Silver Shore,3328,768,Jessie Vance,33,24,FO,256,T5,2,4,0,7,-0.15%,0.15%,0,0,9,1,1,HIR,CHU,FO,FO,,1
+Fister Roboto,445,610,Alex Brown,444,765,BB,155,B5,0,0,0,7,0.47%,-0.47%,0,0,10,1,1,CHU,HIR,BB,BB,,1
+Jack Alpha,73,180,Alex Brown,444,901,FO,279,B5,0,1,0,7,-0.41%,0.41%,0,0,10,1,1,CHU,HIR,FO,FO,,1
+Antonin Periwinkle,185,312,Alex Brown,444,899,K,413,B5,1,1,0,7,-0.35%,0.35%,0,0,10,1,1,CHU,HIR,K,K,,1
+Dominus Nominus,278,717,Alex Brown,444,305,K,412,B5,2,1,0,7,-0.16%,0.16%,0,0,10,1,1,CHU,HIR,K,K,,1
+Mattress Cadaire,116,214,Jessie Vance,33,527,RGO,313,T6,0,0,0,7,0.00%,0.00%,0,0,11,1,1,HIR,CHU,RGO,RGO,,1
+Gottlieb Giannopoulos,89,600,Jessie Vance,33,322,K,278,T6,1,0,0,7,-0.01%,0.01%,0,0,11,1,1,HIR,CHU,K,K,,1
+Carlos Brownson,132,732,Jessie Vance,33,261,LGO,471,T6,2,0,0,7,-0.01%,0.01%,0,0,11,1,1,HIR,CHU,LGO,LGO,,1
+Jessie Vance,33,620,Alex Brown,444,666,2B,46,B6,0,0,0,7,0.24%,-0.24%,0,1,12,1,1,CHU,HIR,2B,2B,,1
+Thomas Nova,1,69,Alex Brown,444,929,1B,140,B6,0,2,0,7,0.47%,-0.47%,0,0,12,1,1,CHU,HIR,1B,1B,,1
+Akiyoshi Yamamoto,289,548,Alex Brown,444,676,1B,128,B6,0,5,0,7,1.63%,-1.63%,1,0,12,1,1,CHU,HIR,1B,1B,,1
+Steel Pipe Simpson,80,50,Alex Brown,444,768,K,282,B6,0,4,1,7,-1.37%,1.37%,0,0,12,1,1,CHU,HIR,K,K,,1
+Boon Dawg Daniels,115,2,Alex Brown,444,205,FO,203,B6,1,4,1,7,-0.85%,0.85%,0,0,12,1,1,CHU,HIR,FO,FO,,1
+Fister Roboto,445,511,Alex Brown,444,809,K,298,B6,2,4,1,7,-0.27%,0.27%,0,0,12,1,1,CHU,HIR,K,K,,1
+Jeff Steelflex,268,777,Logan Anderson,236,98,K,321,T1,0,0,0,0,-2.51%,2.51%,0,0,13,2,1,RGE,HKU,K,K,,1
+Harry Peritestes,117,687,Logan Anderson,236,69,RGO,382,T1,1,0,0,0,-2.18%,2.18%,0,0,13,2,1,RGE,HKU,RGO,RGO,,1
+Jared Sabor VII,149,741,Logan Anderson,236,231,LGO,490,T1,2,0,0,0,-1.76%,1.76%,0,0,13,2,1,RGE,HKU,LGO,LGO,,1
+Kevin Ariannatanabe,113,88,Naoki Tentacles,216,593,LGO,495,B1,0,0,0,0,-2.48%,2.48%,0,0,14,2,1,HKU,RGE,LGO,LGO,,1
+Chi Chi Guns,16,420,Naoki Tentacles,216,856,PO,436,B1,1,0,0,0,-2.17%,2.17%,0,0,14,2,1,HKU,RGE,PO,PO,,1
+Kris Jaxon,152,228,Naoki Tentacles,216,64,FO,164,B1,2,0,0,0,-1.79%,1.79%,0,0,14,2,1,HKU,RGE,FO,FO,,1
+Ronarudo Washi IIIIII,167,269,Logan Anderson,236,890,RGO,379,T2,0,0,0,0,-2.72%,2.72%,0,0,15,2,1,RGE,HKU,RGO,RGO,,1
+Markese Rolle,2503,73,Logan Anderson,236,120,2B,47,T2,1,0,0,0,5.11%,-5.11%,0,0,15,2,1,RGE,HKU,2B,2B,,1
+Olivia Hyde,175,779,Logan Anderson,236,550,FO,229,T2,1,2,0,0,-4.15%,4.15%,0,0,15,2,1,RGE,HKU,FO,FO,,1
+dednuts,448,320,Logan Anderson,236,867,LGO,453,T2,2,2,0,0,-5.35%,5.35%,0,0,15,2,1,RGE,HKU,LGO,LGO,,1
+Layzer Gunn,259,333,Naoki Tentacles,216,454,1B,121,B2,0,0,0,0,2.94%,-2.94%,0,0,16,2,1,HKU,RGE,1B,1B,,1
+Oliver Yu,286,790,Naoki Tentacles,216,124,K,334,B2,0,1,0,0,-3.19%,3.19%,0,0,16,2,1,HKU,RGE,K,K,,1
+A.J. Preller,319,511,Naoki Tentacles,216,798,K,287,B2,1,1,0,0,-2.78%,2.78%,0,0,16,2,1,HKU,RGE,K,K,,1
+KC Bats,287,777,Naoki Tentacles,216,172,K,395,B2,2,1,0,0,-4.10%,4.10%,0,0,16,2,1,HKU,RGE,K,K,,1
+Triscutt Mesmer,39,750,Logan Anderson,236,91,RGO,341,T3,0,0,0,0,-3.03%,3.03%,0,0,17,2,1,RGE,HKU,RGO,RGO,,1
+Naoki Tentacles,216,869,Logan Anderson,236,13,BB,144,T3,1,0,0,0,2.77%,-2.77%,0,0,17,2,1,RGE,HKU,BB,BB,,1
+Jeff Steelflex,268,450,Logan Anderson,236,987,DP,463,T3,1,1,0,0,-7.82%,7.82%,0,0,17,2,1,RGE,HKU,LGO,LGO,,1
+Gustav Ahr,128,482,Naoki Tentacles,216,525,2B,43,B3,0,0,0,0,7.73%,-7.73%,0,1,18,2,1,HKU,RGE,2B,2B,,1
+Logan Anderson,236,98,Naoki Tentacles,216,23,1B,75,B3,0,2,0,0,7.62%,-7.62%,0,1,18,2,1,HKU,RGE,1B,1B,,1
+Kevin Ariannatanabe,113,121,Naoki Tentacles,216,42,1B,79,B3,0,5,0,0,6.09%,-6.09%,1,1,18,2,1,HKU,RGE,1B,1B,,1
+Chi Chi Guns,16,69,Naoki Tentacles,216,798,K,271,B3,0,4,1,0,-3.44%,3.44%,0,0,18,2,1,HKU,RGE,K,K,,1
+Kris Jaxon,152,389,Ronarudo Washi IIIIII,167,309,1B,80,B3,1,4,1,0,6.19%,-6.19%,0,1,18,2,1,HKU,RGE,1B,1B,,1
+Layzer Gunn,259,420,Ronarudo Washi IIIIII,167,209,Sac,211,B3,1,7,1,0,1.48%,-1.48%,1,0,18,2,1,HKU,RGE,FO,FO,,1
+Oliver Yu,286,88,Ronarudo Washi IIIIII,167,999,1B,89,B3,2,4,2,0,6.76%,-6.76%,1,1,18,2,1,HKU,RGE,1B,1B,,1
+A.J. Preller,319,4,Ronarudo Washi IIIIII,167,999,HR,5,B3,2,5,3,0,7.68%,-7.68%,3,1,18,2,1,HKU,RGE,HR,HR,,1
+KC Bats,287,420,Ronarudo Washi IIIIII,167,999,PO,421,B3,2,0,6,0,-0.16%,0.16%,0,0,18,2,1,HKU,RGE,PO,PO,,1
+Harry Peritestes,117,69,Logan Anderson,236,470,RGO,401,T4,0,0,6,0,-0.60%,0.60%,0,0,19,2,1,RGE,HKU,RGO,RGO,,1
+Jared Sabor VII,149,555,Logan Anderson,236,977,LGO,422,T4,1,0,6,0,-0.42%,0.42%,0,0,19,2,1,RGE,HKU,LGO,LGO,,1
+Ronarudo Washi IIIIII,167,420,Logan Anderson,236,711,K,291,T4,2,0,6,0,-0.22%,0.22%,0,0,19,2,1,RGE,HKU,K,K,,1
+Gustav Ahr,128,371,Ronarudo Washi IIIIII,167,250,1B,121,B4,0,0,6,0,0.03%,-0.03%,0,0,20,2,1,HKU,RGE,1B,1B,,1
+Logan Anderson,236,850,Ronarudo Washi IIIIII,167,666,BB,184,B4,0,1,6,0,0.19%,-0.19%,0,0,20,2,1,HKU,RGE,BB,BB,,1
+Kevin Ariannatanabe,113,,Ronarudo Washi IIIIII,167,,Auto K,,B4,0,4,6,0,-0.16%,0.16%,0,0,20,2,1,HKU,RGE,Auto K,Auto K,,9
+Chi Chi Guns,16,280,Jared Sabor VII,149,830,DP,450,B4,1,4,6,0,-0.25%,0.25%,0,0,20,2,1,HKU,RGE,RGO,RGO,,1
+Markese Rolle,2503,56,Logan Anderson,236,409,RGO,353,T5,0,0,6,0,-0.36%,0.36%,0,0,21,2,1,RGE,HKU,RGO,RGO,,1
+Olivia Hyde,175,730,Logan Anderson,236,912,FO,182,T5,1,0,6,0,-0.24%,0.24%,0,0,21,2,1,RGE,HKU,FO,FO,,1
+dednuts,448,715,Logan Anderson,236,10,K,295,T5,2,0,6,0,-0.12%,0.12%,0,0,21,2,1,RGE,HKU,K,K,,1
+Kris Jaxon,152,127,Jared Sabor VII,149,83,HR,44,B5,0,0,6,0,0.12%,-0.12%,1,1,22,2,1,HKU,RGE,HR,HR,,1
+Layzer Gunn,259,237,Jared Sabor VII,149,888,K,349,B5,0,0,7,0,-0.01%,0.01%,0,0,22,2,1,HKU,RGE,K,K,,1
+Oliver Yu,286,1,Jared Sabor VII,149,389,PO,388,B5,1,0,7,0,-0.02%,0.02%,0,0,22,2,1,HKU,RGE,PO,PO,,1
+A.J. Preller,319,512,Jared Sabor VII,149,517,HR,5,B5,2,0,7,0,0.07%,-0.07%,1,1,22,2,1,HKU,RGE,HR,HR,,1
+KC Bats,287,69,Jared Sabor VII,149,391,K,322,B5,2,0,8,0,0.00%,0.00%,0,0,22,2,1,HKU,RGE,K,K,,1
+Triscutt Mesmer,39,88,Logan Anderson,236,45,2B,43,T6,0,0,8,0,0.09%,-0.09%,0,0,23,2,1,RGE,HKU,2B,2B,,1
+Naoki Tentacles,216,747,Logan Anderson,236,851,1B,104,T6,0,2,8,0,0.26%,-0.26%,0,0,23,2,1,RGE,HKU,1B,1B,,1
+Jeff Steelflex,268,,Logan Anderson,236,273,Sac,227,T6,0,5,8,0,-0.29%,0.29%,0,0,23,2,1,RGE,HKU,FO,FO,,1
+Harry Peritestes,117,687,Logan Anderson,236,617,1B,70,T6,1,1,8,1,0.23%,-0.23%,0,0,23,2,1,RGE,HKU,1B,1B,,1
+Jared Sabor VII,149,420,Logan Anderson,236,711,K,291,T6,1,4,8,1,-0.27%,0.27%,0,0,23,2,1,RGE,HKU,K,K,,1
+Ronarudo Washi IIIIII,167,292,Logan Anderson,236,69,FO,223,T6,2,4,8,1,-0.07%,0.07%,0,0,23,2,1,RGE,HKU,FO,FO,,1
+Caleb Athen,325,240,Valeria Lisova,183,432,FO,192,T1,0,0,0,0,-2.51%,2.51%,0,0,24,3,1,HSH,YOK,FO,FO,,1
+Blake Monroe,3326,801,Valeria Lisova,183,651,BB,150,T1,1,0,0,0,2.43%,-2.43%,0,0,24,3,1,HSH,YOK,BB,BB,,1
+Jack Elliot,76,1,Valeria Lisova,183,313,K,312,T1,1,1,0,0,-2.63%,2.63%,0,0,24,3,1,HSH,YOK,K,K,,1
+Dart Ragusa,134,800,Valeria Lisova,183,711,1B,89,T1,2,1,0,0,2.83%,-2.83%,0,0,24,3,1,HSH,YOK,1B,1B,,1
+Syd Ryu,3,379,Valeria Lisova,183,940,LGO,439,T1,2,5,0,0,-6.57%,6.57%,0,0,24,3,1,HSH,YOK,LGO,LGO,,1
+Lloyd Gross,135,363,Zander Ackley,127,963,K,400,B1,0,0,0,0,-2.48%,2.48%,0,0,25,3,1,YOK,HSH,K,K,,1
+Niko Banks,430,675,Zander Ackley,127,184,LGO,491,B1,1,0,0,0,-2.17%,2.17%,0,0,25,3,1,YOK,HSH,LGO,LGO,,1
+Demetrios Ooga,180,752,Zander Ackley,127,892,BB,140,B1,2,0,0,0,1.90%,-1.90%,0,0,25,3,1,YOK,HSH,BB,BB,,1
+Jake Wilson,454,663,Zander Ackley,127,949,K,286,B1,2,1,0,0,-3.69%,3.69%,0,0,25,3,1,YOK,HSH,K,K,,1
+Homer Pimpson,144,357,Valeria Lisova,183,345,HR,12,T2,0,0,0,0,12.97%,-12.97%,1,1,26,3,1,HSH,YOK,HR,HR,,1
+Rintaro Okabe,290,18,Valeria Lisova,183,640,RGO,378,T2,0,0,0,1,-2.27%,2.27%,0,0,26,3,1,HSH,YOK,RGO,RGO,,1
+Yoshigahara Ryutai,133,6,Valeria Lisova,183,15,HR,9,T2,1,0,0,1,11.55%,-11.55%,1,1,26,3,1,HSH,YOK,HR,HR,,1
+Hidetoshi Hasagawa,102,68,Valeria Lisova,183,544,LGO,476,T2,1,0,0,2,-1.52%,1.52%,0,0,26,3,1,HSH,YOK,LGO,LGO,,1
+Caleb Athen,325,785,Valeria Lisova,183,411,RGO,374,T2,2,0,0,2,-1.37%,1.37%,0,0,26,3,1,HSH,YOK,RGO,RGO,,1
+Jack Meloy,145,999,Zander Ackley,127,764,FO,235,B2,0,0,0,2,-2.94%,2.94%,0,0,27,3,1,YOK,HSH,FO,FO,,1
+Tommy Oldman,143,764,Zander Ackley,127,265,LGO,499,B2,1,0,0,2,-2.53%,2.53%,0,0,27,3,1,YOK,HSH,LGO,LGO,,1
+Koyomi Araragi,293,800,Zander Ackley,127,445,K,355,B2,2,0,0,2,-1.92%,1.92%,0,0,27,3,1,YOK,HSH,K,K,,1
+Blake Monroe,3326,115,Valeria Lisova,183,714,RGO,401,T3,0,0,0,2,-1.72%,1.72%,0,0,28,3,1,HSH,YOK,RGO,RGO,,1
+Jack Elliot,76,207,Valeria Lisova,183,699,LGO,492,T3,1,0,0,2,-1.56%,1.56%,0,0,28,3,1,HSH,YOK,LGO,LGO,,1
+Dart Ragusa,134,267,Valeria Lisova,183,450,FO,183,T3,2,0,0,2,-1.30%,1.30%,0,0,28,3,1,HSH,YOK,FO,FO,,1
+Dylan Green,305,940,Zander Ackley,127,263,K,323,B3,0,0,0,2,-3.28%,3.28%,0,0,29,3,1,YOK,HSH,K,K,,1
+Valeria Lisova,183,350,Zander Ackley,127,688,K,338,B3,1,0,0,2,-2.78%,2.78%,0,0,29,3,1,YOK,HSH,K,K,,1
+Lloyd Gross,135,845,Zander Ackley,127,614,FO,231,B3,2,0,0,2,-2.07%,2.07%,0,0,29,3,1,YOK,HSH,FO,FO,,1
+Syd Ryu,3,813,Tanner Hendrix,375,821,HR,8,T4,0,0,0,2,8.05%,-8.05%,1,1,30,3,1,HSH,YOK,HR,HR,,1
+Homer Pimpson,144,241,Tanner Hendrix,375,127,BB,114,T4,0,0,0,3,0.92%,-0.92%,0,0,30,3,1,HSH,YOK,BB,BB,,1
+Rintaro Okabe,290,100,Tanner Hendrix,375,29,1B,71,T4,0,1,0,3,1.83%,-1.83%,0,0,30,3,1,HSH,YOK,1B,1B,,1
+Yoshigahara Ryutai,133,404,Tanner Hendrix,375,589,FO,185,T4,0,4,0,3,-1.87%,1.87%,0,0,30,3,1,HSH,YOK,FO,FO,,1
+Hidetoshi Hasagawa,102,920,Tanner Hendrix,375,124,FO,204,T4,1,4,0,3,-1.14%,1.14%,0,0,30,3,1,HSH,YOK,FO,FO,,1
+Caleb Athen,325,189,Tanner Hendrix,375,438,FO,249,T4,2,4,0,3,-2.37%,2.37%,0,0,30,3,1,HSH,YOK,FO,FO,,1
+Niko Banks,430,235,Zander Ackley,127,408,FO,173,B4,0,0,0,3,-2.76%,2.76%,0,0,31,3,1,YOK,HSH,FO,FO,,1
+Demetrios Ooga,180,757,Zander Ackley,127,29,FO,272,B4,1,0,0,3,-2.21%,2.21%,0,0,31,3,1,YOK,HSH,FO,FO,,1
+Jake Wilson,454,877,Zander Ackley,127,572,K,305,B4,2,0,0,3,-1.46%,1.46%,0,0,31,3,1,YOK,HSH,K,K,,1
+Blake Monroe,3326,222,Tanner Hendrix,375,32,FO,190,T5,0,0,0,3,-0.76%,0.76%,0,0,32,3,1,HSH,YOK,FO,FO,,1
+Jack Elliot,76,880,Tanner Hendrix,375,578,K,302,T5,1,0,0,3,-0.66%,0.66%,0,0,32,3,1,HSH,YOK,K,K,,1
+Dart Ragusa,134,200,Tanner Hendrix,375,329,BB,129,T5,2,0,0,3,0.68%,-0.68%,0,0,32,3,1,HSH,YOK,BB,BB,,1
+Syd Ryu,3,684,Tanner Hendrix,375,213,LGO,471,T5,2,1,0,3,-1.26%,1.26%,0,0,32,3,1,HSH,YOK,LGO,LGO,,1
+Jack Meloy,145,363,Zander Ackley,127,714,K,351,B5,0,0,0,3,-2.75%,2.75%,0,0,33,3,1,YOK,HSH,K,K,,1
+Tommy Oldman,143,571,Zander Ackley,127,964,K,393,B5,1,0,0,3,-2.12%,2.12%,0,0,33,3,1,YOK,HSH,K,K,,1
+Koyomi Araragi,293,730,Zander Ackley,127,738,HR,8,B5,2,0,0,3,5.75%,-5.75%,1,1,33,3,1,YOK,HSH,HR,HR,,1
+Henry Crowell,184,723,Zander Ackley,127,920,FO,197,B5,2,0,1,3,-2.42%,2.42%,0,0,33,3,1,YOK,HSH,FO,FO,,1
+Homer Pimpson,144,831,Tanner Hendrix,375,943,1B,112,T6,0,0,1,3,0.67%,-0.67%,0,1,34,3,1,HSH,YOK,1B,1B,,1
+Rintaro Okabe,290,496,Tanner Hendrix,375,638,BB,142,T6,0,1,1,3,1.49%,-1.49%,0,0,34,3,1,HSH,YOK,BB,BB,,1
+Yoshigahara Ryutai,133,,Tanner Hendrix,375,,Auto BB,,T6,0,4,1,3,2.89%,-2.89%,0,0,34,3,1,HSH,YOK,Auto BB,Auto BB,,10
+Hidetoshi Hasagawa,102,212,Tanner Hendrix,375,490,K,278,T6,0,7,1,3,-1.92%,1.92%,0,0,34,3,1,HSH,YOK,K,K,,1
+Caleb Athen,325,666,Tanner Hendrix,375,490,BB,176,T6,1,7,1,3,2.90%,-2.90%,1,0,34,3,1,HSH,YOK,BB,BB,,1
+Blake Monroe,3326,,Tanner Hendrix,375,,Auto K,,T6,1,7,1,4,-1.15%,1.15%,0,0,34,3,1,HSH,YOK,Auto K,Auto K,,9
+Jack Elliot,76,490,Tanner Hendrix,375,769,K,279,T6,2,7,1,4,-1.40%,1.40%,0,0,34,3,1,HSH,YOK,K,K,,1
+Tanner Hendrix,375,723,Zander Ackley,127,186,RGO,463,B6,0,0,1,4,-2.48%,2.48%,0,0,35,3,1,YOK,HSH,RGO,RGO,,1
+Lloyd Gross,135,785,Zander Ackley,127,395,K,390,B6,1,0,1,4,-1.65%,1.65%,0,0,35,3,1,YOK,HSH,K,K,,1
+Niko Banks,430,172,Zander Ackley,127,540,K,368,B6,2,0,1,4,-0.71%,0.71%,0,0,35,3,1,YOK,HSH,K,K,,1
+Takahiro Hirasawa,419,557,Nori Aru,131,23,LGO,466,T1,0,0,0,0,-2.51%,2.51%,0,0,36,4,1,ORI,HNF,LGO,LGO,,1
+Luap Renraw,118,221,Nori Aru,131,910,K,311,T1,1,0,0,0,-2.18%,2.18%,0,0,36,4,1,ORI,HNF,K,K,,1
+Nicholas Verducci,70,500,Nori Aru,131,473,2B,27,T1,2,0,0,0,3.05%,-3.05%,0,1,36,4,1,ORI,HNF,2B,2B,,1
+Michael Ikenberry,63,154,Nori Aru,131,69,1B,85,T1,2,2,0,0,10.92%,-10.92%,1,0,36,4,1,ORI,HNF,1B,1B,,1
+Guadalupe Greerson,269,,Nori Aru,131,,Auto K,,T1,2,1,0,1,-3.35%,3.35%,0,0,36,4,1,ORI,HNF,Auto K,Auto K,,9
+Jocko Jones,295,422,Charles Magnus,220,599,BB,177,B1,0,0,0,1,3.22%,-3.22%,0,1,37,4,1,HNF,ORI,BB,BB,,1
+Ian Brendan Owen Bust,186,762,Charles Magnus,220,914,BB,152,B1,0,1,0,1,6.00%,-6.00%,0,1,37,4,1,HNF,ORI,BB,BB,,1
+Jimjon Jonjim,272,487,Charles Magnus,220,899,K,412,B1,0,4,0,1,-4.75%,4.75%,0,0,37,4,1,HNF,ORI,K,K,,1
+Isaac Snowbender,339,215,Charles Magnus,220,111,1B,104,B1,1,4,0,1,8.83%,-8.83%,0,0,37,4,1,HNF,ORI,1B,1B,,1
+Oscar Vinegrette,252,777,Charles Magnus,220,512,Sac,265,B1,1,7,0,1,-0.87%,0.87%,1,0,37,4,1,HNF,ORI,FO,FO,,1
+Jerry Jingles,146,370,Charles Magnus,220,265,1B,105,B1,2,4,1,1,12.07%,-12.07%,1,0,37,4,1,HNF,ORI,1B,1B,,1
+Jerry Jingles,146,758,Charles Magnus,220,666,SB,92,B1,2,5,2,1,0.69%,-0.69%,0,0,37,4,1,HNF,ORI,Steal 2B,Steal 2B,,5
+Reimer Gonzalez,13,291,Charles Magnus,220,5,K,286,B1,2,6,2,1,-6.23%,6.23%,0,0,37,4,1,HNF,ORI,K,K,,1
+Josh Gordon,409,746,Nori Aru,131,260,LGO,486,T2,0,0,2,1,-2.95%,2.95%,0,0,38,4,1,ORI,HNF,LGO,LGO,,1
+Daniel Dove,66,580,Nori Aru,131,996,K,416,T2,1,0,2,1,-2.51%,2.51%,0,0,38,4,1,ORI,HNF,K,K,,1
+Karl Jernigan,439,420,Nori Aru,131,250,BB,170,T2,2,0,2,1,2.24%,-2.24%,0,0,38,4,1,ORI,HNF,BB,BB,,1
+Charles Magnus,220,,Nori Aru,131,,Auto K,,T2,2,1,2,1,-4.20%,4.20%,0,0,38,4,1,ORI,HNF,Auto K,Auto K,,9
+Filet-Mignon Jackson,320,613,Charles Magnus,220,214,K,399,B2,0,0,2,1,-2.00%,2.00%,0,0,39,4,1,HNF,ORI,K,K,,1
+Nori Aru,131,460,Charles Magnus,220,186,FO,274,B2,1,0,2,1,-1.83%,1.83%,0,0,39,4,1,HNF,ORI,FO,FO,,1
+Jocko Jones,295,646,Charles Magnus,220,312,K,334,B2,2,0,2,1,-1.56%,1.56%,0,0,39,4,1,HNF,ORI,K,K,,1
+Takahiro Hirasawa,419,,Nori Aru,131,,Auto K,,T3,0,0,2,1,-3.32%,3.32%,0,0,40,4,1,ORI,HNF,Auto K,Auto K,,9
+Luap Renraw,118,757,Nori Aru,131,2,FO,245,T3,1,0,2,1,-2.85%,2.85%,0,0,40,4,1,ORI,HNF,FO,FO,,1
+Nicholas Verducci,70,312,Nori Aru,131,760,LGO,448,T3,2,0,2,1,-2.26%,2.26%,0,0,40,4,1,ORI,HNF,LGO,LGO,,1
+Ian Brendan Owen Bust,186,480,Charles Magnus,220,579,1B,99,B3,0,0,2,1,2.09%,-2.09%,0,0,41,4,1,HNF,ORI,1B,1B,,1
+Jimjon Jonjim,272,729,Charles Magnus,220,999,FO,270,B3,0,1,2,1,-2.48%,2.48%,0,0,41,4,1,HNF,ORI,FO,FO,,1
+Isaac Snowbender,339,,Charles Magnus,220,,Auto BB,,B3,1,1,2,1,2.97%,-2.97%,0,0,41,4,1,HNF,ORI,Auto BB,Auto BB,,10
+Oscar Vinegrette,252,254,Maximus Pow,344,881,PO,373,B3,1,4,2,1,-2.90%,2.90%,0,0,41,4,1,HNF,ORI,PO,PO,,1
+Jerry Jingles,146,385,Maximus Pow,344,63,PO,322,B3,2,4,2,1,-5.14%,5.14%,0,0,41,4,1,HNF,ORI,PO,PO,,1
+Michael Ikenberry,63,1000,Nori Aru,131,500,LGO,500,T4,0,0,2,1,-3.96%,3.96%,0,0,42,4,1,ORI,HNF,LGO,LGO,,1
+Becky McBadbat,277,444,Nori Aru,131,831,RGO,387,T4,1,0,2,1,-3.37%,3.37%,0,0,42,4,1,ORI,HNF,RGO,RGO,,1
+Josh Gordon,409,223,Nori Aru,131,831,RGO,392,T4,2,0,2,1,-2.78%,2.78%,0,0,42,4,1,ORI,HNF,RGO,RGO,,1
+Reimer Gonzalez,13,88,Maximus Pow,344,812,K,276,B4,0,0,2,1,-1.87%,1.87%,0,0,43,4,1,HNF,ORI,K,K,,1
+Filet-Mignon Jackson,320,852,Maximus Pow,344,772,1B,80,B4,1,0,2,1,1.59%,-1.59%,0,0,43,4,1,HNF,ORI,1B,1B,,1
+Nori Aru,131,460,Maximus Pow,344,867,DP,407,B4,1,1,2,1,-4.82%,4.82%,0,0,43,4,1,HNF,ORI,RGO,RGO,,1
+Daniel Dove,66,615,Nori Aru,131,1,RGO,386,T5,0,0,2,1,-4.98%,4.98%,0,0,44,4,1,ORI,HNF,RGO,RGO,,1
+Karl Jernigan,439,980,Nori Aru,131,386,RGO,406,T5,1,0,2,1,-4.32%,4.32%,0,0,44,4,1,ORI,HNF,RGO,RGO,,1
+Maximus Pow,344,730,Nori Aru,131,1,K,271,T5,2,0,2,1,-3.61%,3.61%,0,0,44,4,1,ORI,HNF,K,K,,1
+Jocko Jones,295,742,Maximus Pow,344,456,K,286,B5,0,0,2,1,-1.37%,1.37%,0,0,45,4,1,HNF,ORI,K,K,,1
+Ian Brendan Owen Bust,186,380,Maximus Pow,344,101,K,279,B5,1,0,2,1,-1.30%,1.30%,0,0,45,4,1,HNF,ORI,K,K,,1
+Jimjon Jonjim,272,209,Maximus Pow,344,355,BB,146,B5,2,0,2,1,1.06%,-1.06%,0,0,45,4,1,HNF,ORI,BB,BB,,1
+Isaac Snowbender,339,961,Maximus Pow,344,355,RGO,394,B5,2,1,2,1,-2.20%,2.20%,0,0,45,4,1,HNF,ORI,RGO,RGO,,1
+Takahiro Hirasawa,419,381,Nori Aru,131,223,BB,158,T6,0,0,2,1,7.48%,-7.48%,0,1,46,4,1,ORI,HNF,BB,BB,,1
+Luap Renraw,118,623,Nori Aru,131,501,BB,122,T6,0,1,2,1,12.67%,-12.67%,0,1,46,4,1,ORI,HNF,BB,BB,,1
+Nicholas Verducci,70,734,Nori Aru,131,501,FO,233,T6,0,4,2,1,-10.91%,10.91%,0,0,46,4,1,ORI,HNF,FO,FO,,1
+Michael Ikenberry,63,501,Nori Aru,131,501,HR,0,T6,1,4,2,1,63.76%,-63.76%,3,1,46,4,1,ORI,HNF,HR,HR,,1
+Becky McBadbat,277,85,Oscar Vinegrette,252,1,1B,84,T6,1,0,2,4,0.68%,-0.68%,0,1,46,4,1,ORI,HNF,1B,1B,,1
+Josh Gordon,409,464,Oscar Vinegrette,252,670,FO,206,T6,1,1,2,4,-0.82%,0.82%,0,0,46,4,1,ORI,HNF,FO,FO,,1
+Daniel Dove,66,420,Oscar Vinegrette,252,341,1B,79,T6,2,1,2,4,0.88%,-0.88%,0,0,46,4,1,ORI,HNF,1B,1B,,1
+Karl Jernigan,439,202,Oscar Vinegrette,252,100,1B,102,T6,2,5,2,4,4.60%,-4.60%,1,0,46,4,1,ORI,HNF,1B,1B,,1
+Maximus Pow,344,775,Oscar Vinegrette,252,910,BB,135,T6,2,5,2,5,0.36%,-0.36%,0,0,46,4,1,ORI,HNF,BB,BB,,1
+Takahiro Hirasawa,419,214,Oscar Vinegrette,252,911,K,303,T6,2,7,2,5,-1.40%,1.40%,0,0,46,4,1,ORI,HNF,K,K,,1
+Oscar Vinegrette,252,444,Maximus Pow,344,999,LGO,445,B6,0,0,2,5,-2.48%,2.48%,0,0,47,4,1,HNF,ORI,LGO,LGO,,1
+Jerry Jingles,146,950,Maximus Pow,344,82,BB,132,B6,1,0,2,5,3.13%,-3.13%,0,0,47,4,1,HNF,ORI,BB,BB,,1
+Reimer Gonzalez,13,456,Maximus Pow,344,944,DP,488,B6,1,1,2,5,-5.49%,5.49%,0,0,47,4,1,HNF,ORI,LGO,LGO,,1
+Robin Reynolds,371,1,Icna Comit,198,30,HR,29,T1,0,0,0,0,11.33%,-11.33%,1,1,48,5,1,NAN,CHI,HR,HR,,1
+Owen Thirlwell,156,399,Icna Comit,198,678,K,279,T1,0,0,0,1,-2.09%,2.09%,0,0,48,5,1,NAN,CHI,K,K,,1
+Ryosuke Takahashi,36,420,Icna Comit,198,345,1B,75,T1,1,0,0,1,2.17%,-2.17%,0,0,48,5,1,NAN,CHI,1B,1B,,1
+Takumi Fujiwara,91,400,Icna Comit,198,572,FO,172,T1,1,1,0,1,-2.13%,2.13%,0,0,48,5,1,NAN,CHI,FO,FO,,1
+Meerkat Timmons,147,711,Icna Comit,198,11,K,300,T1,2,1,0,1,-3.35%,3.35%,0,0,48,5,1,NAN,CHI,K,K,,1
+Morello D. Luffy,211,666,Robin Reynolds,371,44,RGO,378,B1,0,0,0,1,-2.79%,2.79%,0,0,49,5,1,CHI,NAN,RGO,RGO,,1
+Phil Coulson,226,438,Robin Reynolds,371,945,LGO,493,B1,1,0,0,1,-2.36%,2.36%,0,0,49,5,1,CHI,NAN,LGO,LGO,,1
+Viking Fishbird,42,111,Robin Reynolds,371,275,BB,164,B1,2,0,0,1,2.22%,-2.22%,0,0,49,5,1,CHI,NAN,BB,BB,,1
+Tike Mruk,104,,Robin Reynolds,371,,Auto K,,B1,2,1,0,1,-4.10%,4.10%,0,0,49,5,1,CHI,NAN,Auto K,Auto K,,9
+Rickey Tucker,163,286,Icna Comit,198,39,FO,247,T2,0,0,0,1,-2.27%,2.27%,0,0,50,5,1,NAN,CHI,FO,FO,,1
+Donnie Draper,138,820,Icna Comit,198,856,2B,36,T2,1,0,0,1,4.10%,-4.10%,0,0,50,5,1,NAN,CHI,2B,2B,,1
+Rueben Salazar,416,303,Icna Comit,198,100,FO,203,T2,1,2,0,1,-3.35%,3.35%,0,0,50,5,1,NAN,CHI,FO,FO,,1
+Ichigo Kurosaki,351,11,Icna Comit,198,555,RGO,456,T2,2,2,0,1,-4.46%,4.46%,0,0,50,5,1,NAN,CHI,RGO,RGO,,1
+Icna Comit,198,569,Robin Reynolds,371,618,2B,49,B2,0,0,0,1,7.87%,-7.87%,0,0,51,5,1,CHI,NAN,2B,2B,,1
+Hingle McCringleberry,257,333,Robin Reynolds,371,73,FO,260,B2,0,2,0,1,-5.10%,5.10%,0,0,51,5,1,CHI,NAN,FO,FO,,1
+Phoenix McDouglas,2194,777,Robin Reynolds,371,333,LGO,444,B2,1,2,0,1,-4.72%,4.72%,0,0,51,5,1,CHI,NAN,LGO,LGO,,1
+Vigolashi Dongelini,159,,Robin Reynolds,371,,Auto K,,B2,2,2,0,1,-5.98%,5.98%,0,0,51,5,1,CHI,NAN,Auto K,Auto K,,9
+Robin Reynolds,371,888,Icna Comit,198,728,FO,160,T3,0,0,0,1,-2.37%,2.37%,0,0,52,5,1,NAN,CHI,FO,FO,,1
+Owen Thirlwell,156,151,Icna Comit,198,872,FO,279,T3,1,0,0,1,-2.03%,2.03%,0,0,52,5,1,NAN,CHI,FO,FO,,1
+Ryosuke Takahashi,36,63,Icna Comit,198,23,2B,40,T3,2,0,0,1,2.97%,-2.97%,0,0,52,5,1,NAN,CHI,2B,2B,,1
+Takumi Fujiwara,91,877,Icna Comit,198,420,RGO,457,T3,2,2,0,1,-4.79%,4.79%,0,0,52,5,1,NAN,CHI,RGO,RGO,,1
+Seik Golden,251,744,Robin Reynolds,371,531,FO,213,B3,0,0,0,1,-3.58%,3.58%,0,0,53,5,1,CHI,NAN,FO,FO,,1
+Morello D. Luffy,211,100,Robin Reynolds,371,345,FO,245,B3,1,0,0,1,-3.10%,3.10%,0,0,53,5,1,CHI,NAN,FO,FO,,1
+Phil Coulson,226,823,Robin Reynolds,371,345,LGO,478,B3,2,0,0,1,-2.59%,2.59%,0,0,53,5,1,CHI,NAN,LGO,LGO,,1
+Meerkat Timmons,147,420,Icna Comit,198,399,HR,21,T4,0,0,0,1,12.33%,-12.33%,1,1,54,5,1,NAN,CHI,HR,HR,,1
+Rickey Tucker,163,287,Icna Comit,198,69,FO,218,T4,0,0,0,2,-1.53%,1.53%,0,0,54,5,1,NAN,CHI,FO,FO,,1
+Donnie Draper,138,1,Icna Comit,198,750,FO,251,T4,1,0,0,2,-1.44%,1.44%,0,0,54,5,1,NAN,CHI,FO,FO,,1
+Rueben Salazar,416,,Icna Comit,198,,Auto K,,T4,2,0,0,2,-1.26%,1.26%,0,0,54,5,1,NAN,CHI,Auto K,Auto K,,9
+Viking Fishbird,42,999,Robin Reynolds,371,364,RGO,365,B4,0,0,0,2,-3.76%,3.76%,0,0,55,5,1,CHI,NAN,RGO,RGO,,1
+Tike Mruk,104,6,Robin Reynolds,371,338,PO,332,B4,1,0,0,2,-3.09%,3.09%,0,0,55,5,1,CHI,NAN,PO,PO,,1
+Icna Comit,198,420,Robin Reynolds,371,974,LGO,446,B4,2,0,0,2,-2.26%,2.26%,0,0,55,5,1,CHI,NAN,LGO,LGO,,1
+Ichigo Kurosaki,351,611,Seik Golden,251,808,FO,197,T5,0,0,0,2,-1.31%,1.31%,0,0,56,5,1,NAN,CHI,FO,FO,,1
+Robin Reynolds,371,330,Seik Golden,251,1,K,329,T5,1,0,0,2,-1.19%,1.19%,0,0,56,5,1,NAN,CHI,K,K,,1
+Owen Thirlwell,156,119,Seik Golden,251,501,RGO,382,T5,2,0,0,2,-1.13%,1.13%,0,0,56,5,1,NAN,CHI,RGO,RGO,,1
+Hingle McCringleberry,257,420,Robin Reynolds,371,141,K,279,B5,0,0,0,2,-4.27%,4.27%,0,0,57,5,1,CHI,NAN,K,K,,1
+Phoenix McDouglas,2194,244,Robin Reynolds,371,520,FO,276,B5,1,0,0,2,-3.45%,3.45%,0,0,57,5,1,CHI,NAN,FO,FO,,1
+Vigolashi Dongelini,159,800,Robin Reynolds,371,622,BB,178,B5,2,0,0,2,3.78%,-3.78%,0,1,57,5,1,CHI,NAN,BB,BB,,1
+Seik Golden,251,625,Robin Reynolds,371,622,HR,3,B5,2,1,0,2,39.20%,-39.20%,2,1,57,5,1,CHI,NAN,HR,HR,,1
+Morello D. Luffy,211,911,Robin Reynolds,371,622,K,289,B5,2,0,2,2,-3.68%,3.68%,0,0,57,5,1,CHI,NAN,K,K,,1
+Ryosuke Takahashi,36,628,Seik Golden,251,666,2B,38,T6,0,0,2,2,13.43%,-13.43%,0,1,58,5,1,NAN,CHI,2B,2B,,1
+Takumi Fujiwara,91,420,Seik Golden,251,860,RGO,440,T6,0,2,2,2,1.55%,-1.55%,0,0,58,5,1,NAN,CHI,RGO,RGO,,1
+Meerkat Timmons,147,419,Seik Golden,251,363,2B,56,T6,1,3,2,2,18.69%,-18.69%,1,0,58,5,1,NAN,CHI,2B,2B,,1
+Rickey Tucker,163,856,Seik Golden,251,327,LGO,471,T6,1,2,2,3,-2.40%,2.40%,0,0,58,5,1,NAN,CHI,LGO,LGO,,1
+Donnie Draper,138,399,Seik Golden,251,151,FO,248,T6,2,2,2,3,-3.97%,3.97%,0,0,58,5,1,NAN,CHI,FO,FO,,1
+Phil Coulson,226,382,Robin Reynolds,371,927,LGO,455,B6,0,0,2,3,-8.33%,8.33%,0,0,59,5,1,CHI,NAN,LGO,LGO,,1
+Viking Fishbird,42,409,Robin Reynolds,371,456,2B,47,B6,1,0,2,3,16.13%,-16.13%,0,1,59,5,1,CHI,NAN,2B,2B,,1
+Tike Mruk,104,69,Robin Reynolds,371,964,1B,105,B6,1,2,2,3,15.03%,-15.03%,0,1,59,5,1,CHI,NAN,1B,1B,,1
+Icna Comit,198,420,Robin Reynolds,371,252,BB,168,B6,1,5,2,3,9.11%,-9.11%,0,1,59,5,1,CHI,NAN,BB,BB,,1
+Hingle McCringleberry,257,500,Robin Reynolds,371,515,HR,15,B6,1,7,2,3,45.32%,-45.32%,4,1,59,5,1,CHI,NAN,HR,HR,,1
+Jeff Steelflex,268,935,Seik Golden,251,222,FO,287,T1,0,0,0,0,-2.51%,2.51%,0,0,60,6,2,RGE,CHI,FO,FO,,1
+Harry Peritestes,117,687,Seik Golden,251,45,PO,358,T1,1,0,0,0,-2.18%,2.18%,0,0,60,6,2,RGE,CHI,PO,PO,,1
+Jared Sabor VII,149,882,Seik Golden,251,40,BB,158,T1,2,0,0,0,1.98%,-1.98%,0,0,60,6,2,RGE,CHI,BB,BB,,1
+Ronarudo Washi IIIIII,167,882,Seik Golden,251,569,K,313,T1,2,1,0,0,-3.74%,3.74%,0,0,60,6,2,RGE,CHI,K,K,,1
+Morello D. Luffy,211,550,Naoki Tentacles,216,669,BB,119,B1,0,0,0,0,2.76%,-2.76%,0,0,61,6,2,CHI,RGE,BB,BB,,1
+Phil Coulson,226,107,Naoki Tentacles,216,20,1B,87,B1,0,1,0,0,5.20%,-5.20%,0,0,61,6,2,CHI,RGE,1B,1B,,1
+Viking Fishbird,42,899,Naoki Tentacles,216,500,K,399,B1,0,4,0,0,-4.27%,4.27%,0,0,61,6,2,CHI,RGE,K,K,,1
+Tike Mruk,104,775,Naoki Tentacles,216,386,K,389,B1,1,4,0,0,-3.64%,3.64%,0,0,61,6,2,CHI,RGE,K,K,,1
+Icna Comit,198,,Naoki Tentacles,216,,Auto K,,B1,2,4,0,0,-6.49%,6.49%,0,0,61,6,2,CHI,RGE,Auto K,Auto K,,9
+Markese Rolle,2503,277,Seik Golden,251,909,K,368,T2,0,0,0,0,-2.72%,2.72%,0,0,62,6,2,RGE,CHI,K,K,,1
+Olivia Hyde,175,360,Seik Golden,251,406,2B,46,T2,1,0,0,0,5.11%,-5.11%,0,0,62,6,2,RGE,CHI,2B,2B,,1
+dednuts,448,428,Seik Golden,251,895,LGO,467,T2,1,2,0,0,-4.15%,4.15%,0,0,62,6,2,RGE,CHI,LGO,LGO,,1
+Triscutt Mesmer,39,175,Seik Golden,251,666,LGO,491,T2,2,2,0,0,-5.35%,5.35%,0,0,62,6,2,RGE,CHI,LGO,LGO,,1
+Hingle McCringleberry,257,323,Naoki Tentacles,216,302,3B,21,B2,0,0,0,0,11.18%,-11.18%,0,1,63,6,2,CHI,RGE,3B,3B,,1
+Phoenix McDouglas,2194,203,Naoki Tentacles,216,850,K,353,B2,0,3,0,0,-5.10%,5.10%,0,0,63,6,2,CHI,RGE,K,K,,1
+Vigolashi Dongelini,159,525,Naoki Tentacles,216,746,Sac,221,B2,1,3,0,0,3.42%,-3.42%,1,0,63,6,2,CHI,RGE,FO,FO,,1
+Seik Golden,251,90,Naoki Tentacles,216,897,FO,193,B2,2,0,1,0,-1.56%,1.56%,0,0,63,6,2,CHI,RGE,FO,FO,,1
+Naoki Tentacles,216,69,Seik Golden,251,114,HR,45,T3,0,0,1,0,15.07%,-15.07%,1,1,64,6,2,RGE,CHI,HR,HR,,1
+Jeff Steelflex,268,750,Seik Golden,251,404,K,346,T3,0,0,1,1,-3.03%,3.03%,0,0,64,6,2,RGE,CHI,K,K,,1
+Harry Peritestes,117,686,Seik Golden,251,401,FO,285,T3,1,0,1,1,-2.74%,2.74%,0,0,64,6,2,RGE,CHI,FO,FO,,1
+Jared Sabor VII,149,482,Seik Golden,251,666,FO,184,T3,2,0,1,1,-2.31%,2.31%,0,0,64,6,2,RGE,CHI,FO,FO,,1
+Morello D. Luffy,211,321,Naoki Tentacles,216,801,LGO,480,B3,0,0,1,1,-3.07%,3.07%,0,0,65,6,2,CHI,RGE,LGO,LGO,,1
+Phil Coulson,226,,Naoki Tentacles,216,,Auto K,,B3,1,0,1,1,-2.77%,2.77%,0,0,65,6,2,CHI,RGE,Auto K,Auto K,,9
+Viking Fishbird,42,750,Naoki Tentacles,216,648,1B,102,B3,2,0,1,1,2.37%,-2.37%,0,0,65,6,2,CHI,RGE,1B,1B,,1
+Tike Mruk,104,405,Naoki Tentacles,216,27,K,378,B3,2,1,1,1,-4.64%,4.64%,0,0,65,6,2,CHI,RGE,K,K,,1
+Ronarudo Washi IIIIII,167,823,Seik Golden,251,876,2B,53,T4,0,0,1,1,8.83%,-8.83%,0,1,66,6,2,RGE,CHI,2B,2B,,1
+Markese Rolle,2503,53,Seik Golden,251,151,1B,98,T4,0,2,1,1,9.42%,-9.42%,0,0,66,6,2,RGE,CHI,1B,1B,,1
+Olivia Hyde,175,760,Seik Golden,251,500,Sac,260,T4,0,5,1,1,-0.84%,0.84%,1,0,66,6,2,RGE,CHI,FO,FO,,1
+dednuts,448,634,Seik Golden,251,404,FO,230,T4,1,1,1,2,-2.21%,2.21%,0,0,66,6,2,RGE,CHI,FO,FO,,1
+Triscutt Mesmer,39,790,Seik Golden,251,123,K,333,T4,2,1,1,2,-3.78%,3.78%,0,0,66,6,2,RGE,CHI,K,K,,1
+Icna Comit,198,337,Naoki Tentacles,216,231,1B,106,B4,0,0,1,2,4.73%,-4.73%,0,1,67,6,2,CHI,RGE,1B,1B,,1
+Hingle McCringleberry,257,456,Naoki Tentacles,216,420,2B,36,B4,0,1,1,2,21.76%,-21.76%,0,1,67,6,2,CHI,RGE,2B,2B,,1
+Phoenix McDouglas,2194,838,Naoki Tentacles,216,11,BB,173,B4,0,6,1,2,2.31%,-2.31%,0,0,67,6,2,CHI,RGE,BB,BB,,1
+Vigolashi Dongelini,159,638,Naoki Tentacles,216,166,DP,472,B4,0,7,1,2,-9.90%,9.90%,0,0,67,6,2,CHI,RGE,LGO,LGO,,1
+Seik Golden,251,777,Naoki Tentacles,216,787,HR,10,B4,2,3,2,2,28.56%,-28.56%,2,1,67,6,2,CHI,RGE,HR,HR,,1
+Morello D. Luffy,211,911,Naoki Tentacles,216,435,LGO,476,B4,2,0,4,2,-0.86%,0.86%,0,0,67,6,2,CHI,RGE,LGO,LGO,,1
+Naoki Tentacles,216,42,Icna Comit,198,630,PO,412,T5,0,0,4,2,-3.57%,3.57%,0,0,68,6,2,RGE,CHI,PO,PO,,1
+Jeff Steelflex,268,888,Icna Comit,198,821,1B,67,T5,1,0,4,2,4.25%,-4.25%,0,1,68,6,2,RGE,CHI,1B,1B,,1
+Harry Peritestes,117,127,Icna Comit,198,12,1B,115,T5,1,1,4,2,7.53%,-7.53%,0,1,68,6,2,RGE,CHI,1B,1B,,1
+Jared Sabor VII,149,846,Icna Comit,198,12,BB,166,T5,1,4,4,2,11.90%,-11.90%,0,1,68,6,2,RGE,CHI,BB,BB,,1
+Ronarudo Washi IIIIII,167,12,Icna Comit,198,967,HR,45,T5,1,7,4,2,48.89%,-48.89%,4,1,68,6,2,RGE,CHI,HR,HR,,1
+Markese Rolle,2503,56,Seik Golden,251,91,2B,35,T5,1,0,4,6,2.41%,-2.41%,0,0,68,6,2,RGE,CHI,2B,2B,,1
+Olivia Hyde,175,173,Seik Golden,251,465,K,292,T5,1,2,4,6,-1.95%,1.95%,0,0,68,6,2,RGE,CHI,K,K,,1
+dednuts,448,563,Seik Golden,251,999,RGO,436,T5,2,2,4,6,-2.78%,2.78%,0,0,68,6,2,RGE,CHI,RGO,RGO,,1
+Phil Coulson,226,300,Ronarudo Washi IIIIII,167,12,FO,288,B5,0,0,4,6,-4.27%,4.27%,0,0,69,6,2,CHI,RGE,FO,FO,,1
+Viking Fishbird,42,484,Ronarudo Washi IIIIII,167,850,K,366,B5,1,0,4,6,-3.45%,3.45%,0,0,69,6,2,CHI,RGE,K,K,,1
+Tike Mruk,104,484,Ronarudo Washi IIIIII,167,69,K,415,B5,2,0,4,6,-2.42%,2.42%,0,0,69,6,2,CHI,RGE,K,K,,1
+Triscutt Mesmer,39,50,Seik Golden,251,320,FO,270,T6,0,0,4,6,-0.82%,0.82%,0,0,70,6,2,RGE,CHI,FO,FO,,1
+Naoki Tentacles,216,666,Seik Golden,251,312,K,354,T6,1,0,4,6,-0.80%,0.80%,0,0,70,6,2,RGE,CHI,K,K,,1
+Jeff Steelflex,268,352,Seik Golden,251,600,FO,248,T6,2,0,4,6,-0.69%,0.69%,0,0,70,6,2,RGE,CHI,FO,FO,,1
+Icna Comit,198,784,Ronarudo Washi IIIIII,167,967,FO,183,B6,0,0,4,6,-4.76%,4.76%,0,0,71,6,2,CHI,RGE,FO,FO,,1
+Hingle McCringleberry,257,269,Ronarudo Washi IIIIII,167,350,1B,81,B6,1,0,4,6,6.92%,-6.92%,0,0,71,6,2,CHI,RGE,1B,1B,,1
+Phoenix McDouglas,2194,655,Ronarudo Washi IIIIII,167,350,K,305,B6,1,1,4,6,-6.10%,6.10%,0,0,71,6,2,CHI,RGE,K,K,,1
+Vigolashi Dongelini,159,500,Ronarudo Washi IIIIII,167,12,LGO,488,B6,2,1,4,6,-6.69%,6.69%,0,0,71,6,2,CHI,RGE,LGO,LGO,,1
+Syd Ryu,3,411,Alex Brown,444,569,BB,158,T1,0,0,0,0,2.91%,-2.91%,0,1,72,7,2,HSH,HIR,BB,BB,,1
+Caleb Athen,325,408,Alex Brown,444,305,1B,103,T1,0,1,0,0,5.56%,-5.56%,0,0,72,7,2,HSH,HIR,1B,1B,,1
+Blake Monroe,3326,801,Alex Brown,444,310,DP,491,T1,0,4,0,0,-10.00%,10.00%,0,0,72,7,2,HSH,HIR,LGO,LGO,,1
+Jack Elliot,76,878,Alex Brown,444,920,2B,42,T1,2,3,0,0,11.68%,-11.68%,1,1,72,7,2,HSH,HIR,2B,2B,,1
+Dart Ragusa,134,800,Alex Brown,444,824,2B,24,T1,2,2,0,1,10.59%,-10.59%,1,1,72,7,2,HSH,HIR,2B,2B,,1
+Homer Pimpson,144,748,Alex Brown,444,789,2B,41,T1,2,2,0,2,8.44%,-8.44%,1,0,72,7,2,HSH,HIR,2B,2B,,1
+Rintaro Okabe,290,14,Alex Brown,444,305,K,291,T1,2,2,0,3,-2.62%,2.62%,0,0,72,7,2,HSH,HIR,K,K,,1
+AJ McMann,433,,Zander Ackley,127,431,LGO,495,B1,0,0,0,3,-2.35%,2.35%,0,0,73,7,2,HIR,HSH,LGO,LGO,,1
+Dirtbag Darrell,262,633,Zander Ackley,127,432,FO,201,B1,1,0,0,3,-1.98%,1.98%,0,0,73,7,2,HIR,HSH,FO,FO,,1
+Rich Mahogany,265,808,Zander Ackley,127,114,K,306,B1,2,0,0,3,-1.42%,1.42%,0,0,73,7,2,HIR,HSH,K,K,,1
+Yoshigahara Ryutai,133,310,Alex Brown,444,721,K,411,T2,0,0,0,3,-1.19%,1.19%,0,0,74,7,2,HSH,HIR,K,K,,1
+Hidetoshi Hasagawa,102,493,Alex Brown,444,212,K,281,T2,1,0,0,3,-1.15%,1.15%,0,0,74,7,2,HSH,HIR,K,K,,1
+Syd Ryu,3,101,Alex Brown,444,305,FO,204,T2,2,0,0,3,-0.89%,0.89%,0,0,74,7,2,HSH,HIR,FO,FO,,1
+Carlos Brownson,132,762,Zander Ackley,127,936,FO,174,B2,0,0,0,3,-2.53%,2.53%,0,0,75,7,2,HIR,HSH,FO,FO,,1
+Mattress Cadaire,116,145,Zander Ackley,127,248,1B,103,B2,1,0,0,3,2.55%,-2.55%,0,0,75,7,2,HIR,HSH,1B,1B,,1
+River Ride,342,747,Zander Ackley,127,13,FO,266,B2,1,1,0,3,-2.57%,2.57%,0,0,75,7,2,HIR,HSH,FO,FO,,1
+Boi Lover,84,500,Zander Ackley,127,179,K,321,B2,2,1,0,3,-3.49%,3.49%,0,0,75,7,2,HIR,HSH,K,K,,1
+Caleb Athen,325,56,Alex Brown,444,112,1B,56,T3,0,0,0,3,1.05%,-1.05%,0,0,76,7,2,HSH,HIR,1B,1B,,1
+Blake Monroe,3326,200,Alex Brown,444,1,FO,199,T3,0,1,0,3,-1.26%,1.26%,0,0,76,7,2,HSH,HIR,FO,FO,,1
+Jack Elliot,76,2,Alex Brown,444,751,FO,251,T3,1,1,0,3,-0.98%,0.98%,0,0,76,7,2,HSH,HIR,FO,FO,,1
+Dart Ragusa,134,950,Alex Brown,444,566,K,384,T3,2,1,0,3,-1.86%,1.86%,0,0,76,7,2,HSH,HIR,K,K,,1
+Gottlieb Giannopoulos,89,676,Zander Ackley,127,252,RGO,424,B3,0,0,0,3,-2.70%,2.70%,0,0,77,7,2,HIR,HSH,RGO,RGO,,1
+Alex Brown,444,805,Zander Ackley,127,407,K,398,B3,1,0,0,3,-2.15%,2.15%,0,0,77,7,2,HIR,HSH,K,K,,1
+AJ McMann,433,,Zander Ackley,127,531,LGO,470,B3,2,0,0,3,-1.42%,1.42%,0,0,77,7,2,HIR,HSH,LGO,LGO,,1
+Homer Pimpson,144,213,Alex Brown,444,777,PO,436,T4,0,0,0,3,-0.98%,0.98%,0,0,78,7,2,HSH,HIR,PO,PO,,1
+Rintaro Okabe,290,878,Alex Brown,444,462,K,416,T4,1,0,0,3,-0.83%,0.83%,0,0,78,7,2,HSH,HIR,K,K,,1
+Yoshigahara Ryutai,133,281,Alex Brown,444,902,K,379,T4,2,0,0,3,-0.82%,0.82%,0,0,78,7,2,HSH,HIR,K,K,,1
+Dirtbag Darrell,262,750,Zander Ackley,127,44,FO,294,B4,0,0,0,3,-2.76%,2.76%,0,0,79,7,2,HIR,HSH,FO,FO,,1
+Rich Mahogany,265,917,Zander Ackley,127,209,K,292,B4,1,0,0,3,-2.21%,2.21%,0,0,79,7,2,HIR,HSH,K,K,,1
+Carlos Brownson,132,802,Zander Ackley,127,1000,FO,198,B4,2,0,0,3,-1.46%,1.46%,0,0,79,7,2,HIR,HSH,FO,FO,,1
+Hidetoshi Hasagawa,102,235,Alex Brown,444,699,LGO,464,T5,0,0,0,3,-0.76%,0.76%,0,0,80,7,2,HSH,HIR,LGO,LGO,,1
+Syd Ryu,3,141,Alex Brown,444,720,PO,421,T5,1,0,0,3,-0.66%,0.66%,0,0,80,7,2,HSH,HIR,PO,PO,,1
+Caleb Athen,325,287,Alex Brown,444,963,K,324,T5,2,0,0,3,-0.58%,0.58%,0,0,80,7,2,HSH,HIR,K,K,,1
+Mattress Cadaire,116,350,Zander Ackley,127,947,RGO,403,B5,0,0,0,3,-2.75%,2.75%,0,0,81,7,2,HIR,HSH,RGO,RGO,,1
+River Ride,342,888,Zander Ackley,127,184,K,296,B5,1,0,0,3,-2.12%,2.12%,0,0,81,7,2,HIR,HSH,K,K,,1
+Boi Lover,84,399,Zander Ackley,127,685,K,286,B5,2,0,0,3,-1.22%,1.22%,0,0,81,7,2,HIR,HSH,K,K,,1
+Blake Monroe,3326,24,Alex Brown,444,305,K,281,T6,0,0,0,3,-0.37%,0.37%,0,0,82,7,2,HSH,HIR,K,K,,1
+Jack Elliot,76,505,Alex Brown,444,901,K,396,T6,1,0,0,3,-0.37%,0.37%,0,0,82,7,2,HSH,HIR,K,K,,1
+Dart Ragusa,134,500,Alex Brown,444,473,2B,27,T6,2,0,0,3,0.49%,-0.49%,0,0,82,7,2,HSH,HIR,2B,2B,,1
+Homer Pimpson,144,689,Alex Brown,444,212,LGO,477,T6,2,2,0,3,-0.82%,0.82%,0,0,82,7,2,HSH,HIR,LGO,LGO,,1
+Gottlieb Giannopoulos,89,277,Zander Ackley,127,455,BB,178,B6,0,0,0,3,4.46%,-4.46%,0,1,83,7,2,HIR,HSH,BB,BB,,1
+Alex Brown,444,224,Zander Ackley,127,839,K,385,B6,0,1,0,3,-3.81%,3.81%,0,0,83,7,2,HIR,HSH,K,K,,1
+AJ McMann,433,,Zander Ackley,127,316,HR,14,B6,1,1,0,3,8.92%,-8.92%,2,1,83,7,2,HIR,HSH,HR,HR,,1
+Dirtbag Darrell,262,903,Zander Ackley,127,101,FO,198,B6,1,0,2,3,-7.59%,7.59%,0,0,83,7,2,HIR,HSH,FO,FO,,1
+Rich Mahogany,265,767,Zander Ackley,127,527,FO,240,B6,2,0,2,3,-6.82%,6.82%,0,0,83,7,2,HIR,HSH,FO,FO,,1
+Jocko Jones,295,742,Alvin Lockheart,20,738,HR,4,T1,0,0,0,0,11.33%,-11.33%,1,1,84,8,2,HNF,CHU,HR,HR,,1
+Ian Brendan Owen Bust,186,380,Alvin Lockheart,20,141,FO,239,T1,0,0,0,1,-2.09%,2.09%,0,0,84,8,2,HNF,CHU,FO,FO,,1
+Isaac Snowbender,339,305,Alvin Lockheart,20,222,1B,83,T1,1,0,0,1,2.17%,-2.17%,0,1,84,8,2,HNF,CHU,1B,1B,,1
+Jerry Jingles,146,800,Alvin Lockheart,20,801,HR,1,T1,1,1,0,1,17.32%,-17.32%,2,1,84,8,2,HNF,CHU,HR,HR,,1
+Jimjon Jonjim,272,595,Alvin Lockheart,20,801,FO,206,T1,1,0,0,3,-1.26%,1.26%,0,0,84,8,2,HNF,CHU,FO,FO,,1
+Squiggly McCool,3353,220,Alvin Lockheart,20,601,PO,381,T1,2,0,0,3,-0.91%,0.91%,0,0,84,8,2,HNF,CHU,PO,PO,,1
+Thomas Nova,1,569,Oscar Vinegrette,252,490,1B,79,B1,0,0,0,3,3.01%,-3.01%,0,0,85,8,2,CHU,HNF,1B,1B,,1
+Akiyoshi Yamamoto,289,102,Oscar Vinegrette,252,995,1B,107,B1,0,1,0,3,6.62%,-6.62%,0,0,85,8,2,CHU,HNF,1B,1B,,1
+Steel Pipe Simpson,80,143,Oscar Vinegrette,252,931,FO,212,B1,0,4,0,3,-4.74%,4.74%,0,0,85,8,2,CHU,HNF,FO,FO,,1
+Boon Dawg Daniels,115,952,Oscar Vinegrette,252,355,K,403,B1,1,4,0,3,-4.29%,4.29%,0,0,85,8,2,CHU,HNF,K,K,,1
+Fister Roboto,445,641,Oscar Vinegrette,252,169,LGO,472,B1,2,4,0,3,-6.35%,6.35%,0,0,85,8,2,CHU,HNF,LGO,LGO,,1
+Filet-Mignon Jackson,320,207,Alvin Lockheart,20,1000,FO,207,T2,0,0,0,3,-1.19%,1.19%,0,0,86,8,2,HNF,CHU,FO,FO,,1
+Reimer Gonzalez,13,500,Alvin Lockheart,20,901,RGO,401,T2,1,0,0,3,-1.15%,1.15%,0,0,86,8,2,HNF,CHU,RGO,RGO,,1
+Oscar Vinegrette,252,401,Alvin Lockheart,20,100,K,301,T2,2,0,0,3,-0.89%,0.89%,0,0,86,8,2,HNF,CHU,K,K,,1
+Jack Alpha,73,696,Oscar Vinegrette,252,227,LGO,469,B2,0,0,0,3,-2.53%,2.53%,0,0,87,8,2,CHU,HNF,LGO,LGO,,1
+Antonin Periwinkle,185,913,Oscar Vinegrette,252,432,RGO,481,B2,1,0,0,3,-2.03%,2.03%,0,0,87,8,2,CHU,HNF,RGO,RGO,,1
+Dominus Nominus,278,69,Oscar Vinegrette,252,514,RGO,445,B2,2,0,0,3,-1.48%,1.48%,0,0,87,8,2,CHU,HNF,RGO,RGO,,1
+Jocko Jones,295,499,Alvin Lockheart,20,401,1B,98,T3,0,0,0,3,1.05%,-1.05%,0,0,88,8,2,HNF,CHU,1B,1B,,1
+Ian Brendan Owen Bust,186,,Alvin Lockheart,20,,Auto K,,T3,0,1,0,3,-1.26%,1.26%,0,0,88,8,2,HNF,CHU,Auto K,Auto K,,9
+Isaac Snowbender,339,430,Alvin Lockheart,20,333,1B,97,T3,1,1,0,3,1.39%,-1.39%,0,0,88,8,2,HNF,CHU,1B,1B,,1
+Jerry Jingles,146,800,Alvin Lockheart,20,706,1B,94,T3,1,4,0,3,3.37%,-3.37%,0,0,88,8,2,HNF,CHU,1B,1B,,1
+Jimjon Jonjim,272,903,Alvin Lockheart,20,500,K,403,T3,1,7,0,3,-3.78%,3.78%,0,0,88,8,2,HNF,CHU,K,K,,1
+Squiggly McCool,3353,250,Alvin Lockheart,20,920,K,330,T3,2,7,0,3,-3.82%,3.82%,0,0,88,8,2,HNF,CHU,K,K,,1
+Alvin Lockheart,20,178,Oscar Vinegrette,252,101,1B,77,B3,0,0,0,3,3.68%,-3.68%,0,0,89,8,2,CHU,HNF,1B,1B,,1
+Jack Marnette,213,869,Oscar Vinegrette,252,645,FO,224,B3,0,1,0,3,-3.51%,3.51%,0,0,89,8,2,CHU,HNF,FO,FO,,1
+Akiyoshi Yamamoto,289,628,Oscar Vinegrette,252,39,DP,411,B3,1,1,0,3,-6.44%,6.44%,0,0,89,8,2,CHU,HNF,RGO,RGO,,1
+Filet-Mignon Jackson,320,293,Alvin Lockheart,20,1000,FO,293,T4,0,0,0,3,-0.98%,0.98%,0,0,90,8,2,HNF,CHU,FO,FO,,1
+Reimer Gonzalez,13,410,Alvin Lockheart,20,400,HR,10,T4,1,0,0,3,5.45%,-5.45%,1,1,90,8,2,HNF,CHU,HR,HR,,1
+Oscar Vinegrette,252,509,Alvin Lockheart,20,285,FO,224,T4,1,0,0,4,-0.55%,0.55%,0,0,90,8,2,HNF,CHU,FO,FO,,1
+Jocko Jones,295,321,Alvin Lockheart,20,862,LGO,459,T4,2,0,0,4,-0.48%,0.48%,0,0,90,8,2,HNF,CHU,LGO,LGO,,1
+Steel Pipe Simpson,80,721,Oscar Vinegrette,252,711,HR,10,B4,0,0,0,4,6.07%,-6.07%,1,1,91,8,2,CHU,HNF,HR,HR,,1
+Boon Dawg Daniels,115,1,Oscar Vinegrette,252,301,K,300,B4,0,0,1,4,-2.76%,2.76%,0,0,91,8,2,CHU,HNF,K,K,,1
+Fister Roboto,445,550,Oscar Vinegrette,252,999,RGO,449,B4,1,0,1,4,-2.21%,2.21%,0,0,91,8,2,CHU,HNF,RGO,RGO,,1
+Jack Alpha,73,620,Oscar Vinegrette,252,570,2B,50,B4,2,0,1,4,2.85%,-2.85%,0,1,91,8,2,CHU,HNF,2B,2B,,1
+Antonin Periwinkle,185,417,Oscar Vinegrette,252,299,1B,118,B4,2,2,1,4,8.02%,-8.02%,1,0,91,8,2,CHU,HNF,1B,1B,,1
+Dominus Nominus,278,69,Oscar Vinegrette,252,417,K,348,B4,2,1,2,4,-5.36%,5.36%,0,0,91,8,2,CHU,HNF,K,K,,1
+Ian Brendan Owen Bust,186,738,Alvin Lockheart,20,22,FO,284,T5,0,0,2,4,-1.31%,1.31%,0,0,92,8,2,HNF,CHU,FO,FO,,1
+Isaac Snowbender,339,480,Alvin Lockheart,20,222,FO,258,T5,1,0,2,4,-1.19%,1.19%,0,0,92,8,2,HNF,CHU,FO,FO,,1
+Jerry Jingles,146,800,Alvin Lockheart,20,888,1B,88,T5,2,0,2,4,0.96%,-0.96%,0,0,92,8,2,HNF,CHU,1B,1B,,1
+Jimjon Jonjim,272,909,Alvin Lockheart,20,444,RGO,465,T5,2,1,2,4,-2.09%,2.09%,0,0,92,8,2,HNF,CHU,RGO,RGO,,1
+Alvin Lockheart,20,450,Oscar Vinegrette,252,50,K,400,B5,0,0,2,4,-4.27%,4.27%,0,0,93,8,2,CHU,HNF,K,K,,1
+Jack Marnette,213,207,Oscar Vinegrette,252,99,1B,108,B5,1,0,2,4,5.17%,-5.17%,0,1,93,8,2,CHU,HNF,1B,1B,,1
+Akiyoshi Yamamoto,289,784,Oscar Vinegrette,252,788,HR,4,B5,1,1,2,4,38.25%,-38.25%,2,1,93,8,2,CHU,HNF,HR,HR,,1
+Steel Pipe Simpson,80,324,Oscar Vinegrette,252,21,K,303,B5,1,0,4,4,-3.89%,3.89%,0,0,93,8,2,CHU,HNF,K,K,,1
+Boon Dawg Daniels,115,1,Oscar Vinegrette,252,2,HR,1,B5,2,0,4,4,29.56%,-29.56%,1,1,93,8,2,CHU,HNF,HR,HR,,1
+Fister Roboto,445,922,Oscar Vinegrette,252,33,1B,111,B5,2,0,5,4,1.06%,-1.06%,0,1,93,8,2,CHU,HNF,1B,1B,,1
+Jack Alpha,73,528,Oscar Vinegrette,252,511,3B,17,B5,2,1,5,4,8.74%,-8.74%,1,0,93,8,2,CHU,HNF,3B,3B,,1
+Antonin Periwinkle,185,689,Oscar Vinegrette,252,420,FO,269,B5,2,3,6,4,-1.44%,1.44%,0,0,93,8,2,CHU,HNF,FO,FO,,1
+Squiggly McCool,3353,650,Alvin Lockheart,20,801,BB,151,T6,0,0,6,4,6.61%,-6.61%,0,0,94,8,2,HNF,CHU,BB,BB,,1
+Filet-Mignon Jackson,320,1000,Alvin Lockheart,20,696,FO,304,T6,0,1,6,4,-5.14%,5.14%,0,0,94,8,2,HNF,CHU,FO,FO,,1
+Reimer Gonzalez,13,888,Alvin Lockheart,20,109,FO,221,T6,1,1,6,4,-4.77%,4.77%,0,0,94,8,2,HNF,CHU,FO,FO,,1
+Oscar Vinegrette,252,286,Alvin Lockheart,20,2,K,284,T6,2,1,6,4,-5.06%,5.06%,0,0,94,8,2,HNF,CHU,K,K,,1
+Donnie Draper,138,420,Charles Magnus,220,719,K,299,T1,0,0,0,0,-2.51%,2.51%,0,0,95,9,2,NAN,ORI,K,K,,1
+Ryosuke Takahashi,36,288,Charles Magnus,220,891,K,397,T1,1,0,0,0,-2.18%,2.18%,0,0,95,9,2,NAN,ORI,K,K,,1
+Takumi Fujiwara,91,420,Charles Magnus,220,619,FO,199,T1,2,0,0,0,-1.76%,1.76%,0,0,95,9,2,NAN,ORI,FO,FO,,1
+Karl Jernigan,439,44,Pickle Rick,150,899,BB,145,B1,0,0,0,0,2.76%,-2.76%,0,0,96,9,2,ORI,NAN,BB,BB,,1
+Daniel Dove,66,254,Pickle Rick,150,13,FO,241,B1,0,1,0,0,-2.96%,2.96%,0,0,96,9,2,ORI,NAN,FO,FO,,1
+Michael Ikenberry,63,147,Pickle Rick,150,616,DP,469,B1,1,1,0,0,-6.24%,6.24%,0,0,96,9,2,ORI,NAN,RGO,RGO,,1
+Meerkat Timmons,147,180,Charles Magnus,220,119,2B,61,T2,0,0,0,0,6.81%,-6.81%,0,1,97,9,2,NAN,ORI,2B,2B,,1
+Owen Thirlwell,156,890,Charles Magnus,220,43,BB,153,T2,0,2,0,0,2.19%,-2.19%,0,1,97,9,2,NAN,ORI,BB,BB,,1
+Rickey Tucker,163,312,Charles Magnus,220,914,K,398,T2,0,4,0,0,-4.70%,4.70%,0,0,97,9,2,NAN,ORI,K,K,,1
+Rueben Salazar,416,705,Charles Magnus,220,714,HR,9,T2,1,4,0,0,26.83%,-26.83%,3,1,97,9,2,NAN,ORI,HR,HR,,1
+Ichigo Kurosaki,351,969,Charles Magnus,220,298,K,329,T2,1,0,0,3,-1.15%,1.15%,0,0,97,9,2,NAN,ORI,K,K,,1
+Pickle Rick,150,316,Charles Magnus,220,999,K,317,T2,2,0,0,3,-0.89%,0.89%,0,0,97,9,2,NAN,ORI,K,K,,1
+Josh Gordon,409,777,Pickle Rick,150,767,HR,10,B2,0,0,0,3,9.73%,-9.73%,1,1,98,9,2,ORI,NAN,HR,HR,,1
+Nicholas Verducci,70,511,Pickle Rick,150,990,LGO,479,B2,0,0,1,3,-2.94%,2.94%,0,0,98,9,2,ORI,NAN,LGO,LGO,,1
+Gimino Schlimojima,379,800,Pickle Rick,150,575,FO,225,B2,1,0,1,3,-2.53%,2.53%,0,0,98,9,2,ORI,NAN,FO,FO,,1
+Luap Renraw,118,623,Pickle Rick,150,555,1B,68,B2,2,0,1,3,2.19%,-2.19%,0,1,98,9,2,ORI,NAN,1B,1B,,1
+Takahiro Hirasawa,419,223,Pickle Rick,150,212,HR,11,B2,2,1,1,3,24.65%,-24.65%,2,1,98,9,2,ORI,NAN,HR,HR,,1
+Charles Magnus,220,113,Pickle Rick,150,13,1B,100,B2,2,0,3,3,2.07%,-2.07%,0,1,98,9,2,ORI,NAN,1B,1B,,1
+Karl Jernigan,439,819,Pickle Rick,150,790,2B,29,B2,2,1,3,3,15.10%,-15.10%,1,0,98,9,2,ORI,NAN,2B,2B,,1
+Daniel Dove,66,923,Pickle Rick,150,581,K,342,B2,2,2,4,3,-4.13%,4.13%,0,0,98,9,2,ORI,NAN,K,K,,1
+Donnie Draper,138,529,Charles Magnus,220,199,K,330,T3,0,0,4,3,-3.32%,3.32%,0,0,99,9,2,NAN,ORI,K,K,,1
+Ryosuke Takahashi,36,64,Charles Magnus,220,874,FO,190,T3,1,0,4,3,-2.85%,2.85%,0,0,99,9,2,NAN,ORI,FO,FO,,1
+Takumi Fujiwara,91,202,Charles Magnus,220,934,FO,268,T3,2,0,4,3,-2.26%,2.26%,0,0,99,9,2,NAN,ORI,FO,FO,,1
+Michael Ikenberry,63,665,Pickle Rick,150,618,2B,47,B3,0,0,4,3,5.21%,-5.21%,0,1,100,9,2,ORI,NAN,2B,2B,,1
+Josh Gordon,409,863,Pickle Rick,150,718,BB,145,B3,0,2,4,3,0.81%,-0.81%,0,1,100,9,2,ORI,NAN,BB,BB,,1
+Nicholas Verducci,70,475,Pickle Rick,150,538,2B,63,B3,0,4,4,3,11.74%,-11.74%,1,1,100,9,2,ORI,NAN,2B,2B,,1
+Gimino Schlimojima,379,555,Pickle Rick,150,755,Sac,200,B3,0,6,5,3,-0.15%,0.15%,1,0,100,9,2,ORI,NAN,FO,FO,,1
+Luap Renraw,118,17,Pickle Rick,150,919,1B,98,B3,1,2,6,3,1.57%,-1.57%,0,0,100,9,2,ORI,NAN,1B,1B,,1
+Takahiro Hirasawa,419,470,Pickle Rick,150,680,Sac,210,B3,1,5,6,3,1.56%,-1.56%,1,0,100,9,2,ORI,NAN,FO,FO,,1
+Charles Magnus,220,789,Pickle Rick,150,99,K,310,B3,2,1,7,3,-0.79%,0.79%,0,0,100,9,2,ORI,NAN,K,K,,1
+Meerkat Timmons,147,333,Charles Magnus,220,599,FO,266,T4,0,0,7,3,-1.55%,1.55%,0,0,101,9,2,NAN,ORI,FO,FO,,1
+Owen Thirlwell,156,482,Charles Magnus,220,599,1B,117,T4,1,0,7,3,1.73%,-1.73%,0,0,101,9,2,NAN,ORI,1B,1B,,1
+Rickey Tucker,163,221,Charles Magnus,220,711,DP,490,T4,1,1,7,3,-3.55%,3.55%,0,0,101,9,2,NAN,ORI,LGO,LGO,,1
+Karl Jernigan,439,326,Pickle Rick,150,97,FO,229,B4,0,0,7,3,-0.28%,0.28%,0,0,102,9,2,ORI,NAN,FO,FO,,1
+Daniel Dove,66,842,Pickle Rick,150,796,1B,46,B4,1,0,7,3,0.27%,-0.27%,0,1,102,9,2,ORI,NAN,1B,1B,,1
+Michael Ikenberry,63,665,Pickle Rick,150,368,K,297,B4,1,1,7,3,-0.29%,0.29%,0,0,102,9,2,ORI,NAN,K,K,,1
+Josh Gordon,409,161,Pickle Rick,150,123,2B,38,B4,2,1,7,3,1.79%,-1.79%,1,1,102,9,2,ORI,NAN,2B,2B,,1
+Nicholas Verducci,70,864,Pickle Rick,150,890,2B,26,B4,2,2,8,3,0.90%,-0.90%,1,0,102,9,2,ORI,NAN,2B,2B,,1
+Gimino Schlimojima,379,567,Pickle Rick,150,334,FO,233,B4,2,2,9,3,-0.13%,0.13%,0,0,102,9,2,ORI,NAN,FO,FO,,1
+Rueben Salazar,416,220,Maximus Pow,344,420,FO,200,T5,0,0,9,3,-0.36%,0.36%,0,0,103,9,2,NAN,ORI,FO,FO,,1
+Ichigo Kurosaki,351,920,Maximus Pow,344,1000,2B,80,T5,1,0,9,3,0.58%,-0.58%,0,1,103,9,2,NAN,ORI,2B,2B,,1
+Pickle Rick,150,69,Maximus Pow,344,1000,2B,69,T5,1,2,9,3,1.16%,-1.16%,1,1,103,9,2,NAN,ORI,2B,2B,,1
+Donnie Draper,138,740,Maximus Pow,344,687,1B,53,T5,1,2,9,4,1.94%,-1.94%,0,0,103,9,2,NAN,ORI,1B,1B,,1
+Ryosuke Takahashi,36,369,Maximus Pow,344,241,1B,128,T5,1,5,9,4,3.67%,-3.67%,1,0,103,9,2,NAN,ORI,1B,1B,,1
+Takumi Fujiwara,91,888,Maximus Pow,344,687,FO,201,T5,1,4,9,5,-3.52%,3.52%,0,0,103,9,2,NAN,ORI,FO,FO,,1
+Meerkat Timmons,147,241,Maximus Pow,344,719,LGO,478,T5,2,4,9,5,-3.14%,3.14%,0,0,103,9,2,NAN,ORI,LGO,LGO,,1
+Luap Renraw,118,35,Pickle Rick,150,813,FO,222,B5,0,0,9,5,-0.14%,0.14%,0,0,104,9,2,ORI,NAN,FO,FO,,1
+Takahiro Hirasawa,419,875,Pickle Rick,150,87,FO,212,B5,1,0,9,5,-0.13%,0.13%,0,0,104,9,2,ORI,NAN,FO,FO,,1
+Maximus Pow,344,576,Pickle Rick,150,86,LGO,490,B5,2,0,9,5,-0.11%,0.11%,0,0,104,9,2,ORI,NAN,LGO,LGO,,1
+Owen Thirlwell,156,971,Maximus Pow,344,122,BB,151,T6,0,0,9,5,1.69%,-1.69%,0,1,105,9,2,NAN,ORI,BB,BB,,1
+Rickey Tucker,163,333,Maximus Pow,344,293,HR,40,T6,0,1,9,5,5.03%,-5.03%,2,1,105,9,2,NAN,ORI,HR,HR,,1
+Rueben Salazar,416,330,Maximus Pow,344,889,LGO,441,T6,0,0,9,7,-3.81%,3.81%,0,0,105,9,2,NAN,ORI,LGO,LGO,,1
+Ichigo Kurosaki,351,222,Maximus Pow,344,23,FO,199,T6,1,0,9,7,-2.88%,2.88%,0,0,105,9,2,NAN,ORI,FO,FO,,1
+Pickle Rick,150,999,Maximus Pow,344,728,K,271,T6,2,0,9,7,-1.67%,1.67%,0,0,105,9,2,NAN,ORI,K,K,,1
+Koyomi Araragi,293,385,Logan Anderson,236,98,K,287,T1,0,0,0,0,-2.51%,2.51%,0,0,106,10,2,YOK,HKU,K,K,,1
+Demetrios Ooga,180,69,Logan Anderson,236,698,RGO,371,T1,1,0,0,0,-2.18%,2.18%,0,0,106,10,2,YOK,HKU,RGO,RGO,,1
+Henry Crowell,184,376,Logan Anderson,236,711,K,335,T1,2,0,0,0,-1.76%,1.76%,0,0,106,10,2,YOK,HKU,K,K,,1
+Kris Jaxon,152,394,Tanner Hendrix,375,25,K,369,B1,0,0,0,0,-2.48%,2.48%,0,0,107,10,2,HKU,YOK,K,K,,1
+Layzer Gunn,259,811,Tanner Hendrix,375,784,2B,27,B1,1,0,0,0,4.73%,-4.73%,0,0,107,10,2,HKU,YOK,2B,2B,,1
+Gustav Ahr,128,302,Tanner Hendrix,375,678,K,376,B1,1,2,0,0,-3.77%,3.77%,0,0,107,10,2,HKU,YOK,K,K,,1
+A.J. Preller,319,310,Tanner Hendrix,375,69,FO,241,B1,2,2,0,0,-4.92%,4.92%,0,0,107,10,2,HKU,YOK,FO,FO,,1
+Lloyd Gross,135,69,Logan Anderson,236,69,HR,0,T2,0,0,0,0,12.97%,-12.97%,1,1,108,10,2,YOK,HKU,HR,HR,,1
+Jack Meloy,145,545,Logan Anderson,236,170,RGO,375,T2,0,0,0,1,-2.27%,2.27%,0,0,108,10,2,YOK,HKU,RGO,RGO,,1
+Tommy Oldman,143,230,Logan Anderson,236,213,3B,17,T2,1,0,0,1,7.31%,-7.31%,0,1,108,10,2,YOK,HKU,3B,3B,,1
+Tanner Hendrix,375,548,Logan Anderson,236,584,2B,36,T2,1,3,0,1,7.51%,-7.51%,1,0,108,10,2,YOK,HKU,2B,2B,,1
+Niko Banks,430,,Logan Anderson,236,,Auto K,,T2,1,2,0,2,-2.59%,2.59%,0,0,108,10,2,YOK,HKU,Auto K,Auto K,,9
+Jake Wilson,454,898,Logan Anderson,236,56,FO,158,T2,2,2,0,2,-3.57%,3.57%,0,0,108,10,2,YOK,HKU,FO,FO,,1
+KC Bats,287,738,Tanner Hendrix,375,1,K,263,B2,0,0,0,2,-2.94%,2.94%,0,0,109,10,2,HKU,YOK,K,K,,1
+Kevin Ariannatanabe,113,39,Tanner Hendrix,375,754,FO,285,B2,1,0,0,2,-2.53%,2.53%,0,0,109,10,2,HKU,YOK,FO,FO,,1
+Oliver Yu,286,111,Tanner Hendrix,375,759,K,352,B2,2,0,0,2,-1.92%,1.92%,0,0,109,10,2,HKU,YOK,K,K,,1
+Koyomi Araragi,293,673,Logan Anderson,236,706,2B,33,T3,0,0,0,2,4.18%,-4.18%,0,0,110,10,2,YOK,HKU,2B,2B,,1
+Demetrios Ooga,180,250,Logan Anderson,236,810,LGO,440,T3,0,2,0,2,-2.83%,2.83%,0,0,110,10,2,YOK,HKU,LGO,LGO,,1
+Henry Crowell,184,547,Logan Anderson,236,162,RGO,385,T3,1,2,0,2,-2.52%,2.52%,0,0,110,10,2,YOK,HKU,RGO,RGO,,1
+Lloyd Gross,135,586,Logan Anderson,236,324,FO,262,T3,2,3,0,2,-3.41%,3.41%,0,0,110,10,2,YOK,HKU,FO,FO,,1
+Thomas Nova,1,212,Tanner Hendrix,375,651,RGO,439,B3,0,0,0,2,-3.28%,3.28%,0,0,111,10,2,HKU,YOK,RGO,RGO,,1
+Logan Anderson,236,420,Tanner Hendrix,375,478,1B,58,B3,1,0,0,2,3.33%,-3.33%,0,0,111,10,2,HKU,YOK,1B,1B,,1
+Kris Jaxon,152,210,Tanner Hendrix,375,421,FO,211,B3,1,1,0,2,-3.40%,3.40%,0,0,111,10,2,HKU,YOK,FO,FO,,1
+Layzer Gunn,259,550,Tanner Hendrix,375,21,LGO,471,B3,2,1,0,2,-4.78%,4.78%,0,0,111,10,2,HKU,YOK,LGO,LGO,,1
+Jack Meloy,145,714,Logan Anderson,236,232,LGO,482,T4,0,0,0,2,-1.53%,1.53%,0,0,112,10,2,YOK,HKU,LGO,LGO,,1
+Tommy Oldman,143,302,Logan Anderson,236,9,K,293,T4,1,0,0,2,-1.44%,1.44%,0,0,112,10,2,YOK,HKU,K,K,,1
+Tanner Hendrix,375,69,Logan Anderson,236,630,LGO,439,T4,2,0,0,2,-1.26%,1.26%,0,0,112,10,2,YOK,HKU,LGO,LGO,,1
+Gustav Ahr,128,84,Tanner Hendrix,375,580,LGO,496,B4,0,0,0,2,-3.76%,3.76%,0,0,113,10,2,HKU,YOK,LGO,LGO,,1
+A.J. Preller,319,369,Tanner Hendrix,375,212,BB,157,B4,1,0,0,2,4.19%,-4.19%,0,0,113,10,2,HKU,YOK,BB,BB,,1
+KC Bats,287,420,Tanner Hendrix,375,986,PO,434,B4,1,1,0,2,-4.18%,4.18%,0,0,113,10,2,HKU,YOK,PO,PO,,1
+Kevin Ariannatanabe,113,16,Tanner Hendrix,375,421,RGO,405,B4,2,1,0,2,-5.36%,5.36%,0,0,113,10,2,HKU,YOK,RGO,RGO,,1
+Niko Banks,430,,Logan Anderson,236,,Auto BB,,T5,0,0,0,2,1.17%,-1.17%,0,1,114,10,2,YOK,HKU,Auto BB,Auto BB,,10
+Jake Wilson,454,335,Gustav Ahr,128,291,2B,44,T5,0,1,0,2,6.20%,-6.20%,0,0,114,10,2,YOK,HKU,2B,2B,,1
+Koyomi Araragi,293,555,Gustav Ahr,128,320,Sac,235,T5,0,6,0,2,0.29%,-0.29%,1,0,114,10,2,YOK,HKU,FO,FO,,1
+Demetrios Ooga,180,590,Gustav Ahr,128,742,BB,152,T5,1,2,0,3,0.10%,-0.10%,0,0,114,10,2,YOK,HKU,BB,BB,,1
+Henry Crowell,184,547,Gustav Ahr,128,22,DP,475,T5,1,4,0,3,-2.79%,2.79%,0,0,114,10,2,YOK,HKU,LGO,LGO,,1
+Oliver Yu,286,205,Tanner Hendrix,375,12,FO,193,B5,0,0,0,3,-2.75%,2.75%,0,0,115,10,2,HKU,YOK,FO,FO,,1
+Thomas Nova,1,550,Tanner Hendrix,375,788,FO,238,B5,1,0,0,3,-2.12%,2.12%,0,0,115,10,2,HKU,YOK,FO,FO,,1
+Logan Anderson,236,420,Tanner Hendrix,375,283,1B,137,B5,2,0,0,3,2.11%,-2.11%,0,0,115,10,2,HKU,YOK,1B,1B,,1
+Kris Jaxon,152,975,Tanner Hendrix,375,283,K,308,B5,2,1,0,3,-3.33%,3.33%,0,0,115,10,2,HKU,YOK,K,K,,1
+Lloyd Gross,135,615,Gustav Ahr,128,372,FO,243,T6,0,0,0,3,-0.37%,0.37%,0,0,116,10,2,YOK,HKU,FO,FO,,1
+Jack Meloy,145,987,Gustav Ahr,128,372,K,385,T6,1,0,0,3,-0.37%,0.37%,0,0,116,10,2,YOK,HKU,K,K,,1
+Tommy Oldman,143,572,Gustav Ahr,128,80,LGO,492,T6,2,0,0,3,-0.33%,0.33%,0,0,116,10,2,YOK,HKU,LGO,LGO,,1
+Layzer Gunn,259,979,Tanner Hendrix,375,12,2B,33,B6,0,0,0,3,6.45%,-6.45%,0,1,117,10,2,HKU,YOK,2B,2B,,1
+Gustav Ahr,128,362,Tanner Hendrix,375,709,K,347,B6,0,2,0,3,-4.70%,4.70%,0,0,117,10,2,HKU,YOK,K,K,,1
+A.J. Preller,319,61,Tanner Hendrix,375,12,2B,49,B6,1,2,0,3,8.71%,-8.71%,1,0,117,10,2,HKU,YOK,2B,2B,,1
+KC Bats,287,420,Tanner Hendrix,375,894,LGO,474,B6,1,2,1,3,-8.48%,8.48%,0,0,117,10,2,HKU,YOK,LGO,LGO,,1
+Kevin Ariannatanabe,113,24,Tanner Hendrix,375,498,LGO,474,B6,2,2,1,3,-6.82%,6.82%,0,0,117,10,2,HKU,YOK,LGO,LGO,,1
+Kevin Ariannatanabe,113,431,Zander Ackley,127,345,1B,86,T1,0,0,0,0,2.91%,-2.91%,0,0,118,11,3,HKU,HSH,1B,1B,,1
+Thomas Nova,1,101,Zander Ackley,127,690,DP,411,T1,0,1,0,0,-7.60%,7.60%,0,0,118,11,3,HKU,HSH,RGO,RGO,,1
+Kris Jaxon,152,95,Zander Ackley,127,828,K,267,T1,2,0,0,0,-1.76%,1.76%,0,0,118,11,3,HKU,HSH,K,K,,1
+Caleb Athen,325,69,Logan Anderson,236,,3B,20,B1,0,0,0,0,9.82%,-9.82%,0,1,119,11,3,HSH,HKU,3B,3B,,1
+Blake Monroe,3326,784,Logan Anderson,236,509,Sac,275,B1,0,3,0,0,0.00%,0.00%,1,0,119,11,3,HSH,HKU,FO,FO,,1
+Jack Elliot,76,777,Logan Anderson,236,783,HR,6,B1,1,0,1,0,10.12%,-10.12%,1,1,119,11,3,HSH,HKU,HR,HR,,1
+Dart Ragusa,134,550,Logan Anderson,236,213,K,337,B1,1,0,2,0,-1.43%,1.43%,0,0,119,11,3,HSH,HKU,K,K,,1
+Syd Ryu,3,157,Logan Anderson,236,66,1B,91,B1,2,0,2,0,1.24%,-1.24%,0,1,119,11,3,HSH,HKU,1B,1B,,1
+Homer Pimpson,144,420,Logan Anderson,236,402,HR,18,B1,2,1,2,0,13.13%,-13.13%,2,1,119,11,3,HSH,HKU,HR,HR,,1
+Rintaro Okabe,290,234,Logan Anderson,236,121,1B,113,B1,2,0,4,0,0.47%,-0.47%,0,1,119,11,3,HSH,HKU,1B,1B,,1
+Yoshigahara Ryutai,133,983,Logan Anderson,236,18,2B,35,B1,2,1,4,0,3.91%,-3.91%,1,0,119,11,3,HSH,HKU,2B,2B,,1
+Hidetoshi Hasagawa,102,420,Logan Anderson,236,970,LGO,450,B1,2,2,5,0,-0.87%,0.87%,0,0,119,11,3,HSH,HKU,LGO,LGO,,1
+Layzer Gunn,259,1,Zander Ackley,127,138,BB,137,T2,0,0,5,0,1.89%,-1.89%,0,0,120,11,3,HKU,HSH,BB,BB,,1
+Oliver Yu,286,100,Zander Ackley,127,759,K,341,T2,0,1,5,0,-1.78%,1.78%,0,0,120,11,3,HKU,HSH,K,K,,1
+A.J. Preller,319,667,Zander Ackley,127,552,1B,115,T2,1,1,5,0,2.70%,-2.70%,0,0,120,11,3,HKU,HSH,1B,1B,,1
+KC Bats,287,420,Zander Ackley,127,897,DP,477,T2,1,4,5,0,-5.55%,5.55%,0,0,120,11,3,HKU,HSH,LGO,LGO,,1
+Caleb Athen,325,420,Logan Anderson,236,213,FO,207,B2,0,0,5,0,-0.32%,0.32%,0,0,121,11,3,HSH,HKU,FO,FO,,1
+Blake Monroe,3326,,Logan Anderson,236,,Auto K,,B2,1,0,5,0,-0.36%,0.36%,0,0,121,11,3,HSH,HKU,Auto K,Auto K,,9
+Jack Elliot,76,369,Logan Anderson,236,247,BB,122,B2,2,0,5,0,0.24%,-0.24%,0,0,121,11,3,HSH,HKU,BB,BB,,1
+Dart Ragusa,134,950,Logan Anderson,236,119,FO,169,B2,2,1,5,0,-0.52%,0.52%,0,0,121,11,3,HSH,HKU,FO,FO,,1
+Gustav Ahr,128,261,Zander Ackley,127,897,K,364,T3,0,0,5,0,-1.11%,1.11%,0,0,122,11,3,HKU,HSH,K,K,,1
+Logan Anderson,236,700,Zander Ackley,127,276,RGO,424,T3,1,0,5,0,-0.91%,0.91%,0,0,122,11,3,HKU,HSH,RGO,RGO,,1
+Kevin Ariannatanabe,113,435,Zander Ackley,127,621,FO,186,T3,2,0,5,0,-0.47%,0.47%,0,0,122,11,3,HKU,HSH,FO,FO,,1
+Syd Ryu,3,709,Logan Anderson,236,78,PO,369,B3,0,0,5,0,-0.30%,0.30%,0,0,123,11,3,HSH,HKU,PO,PO,,1
+Homer Pimpson,144,524,Logan Anderson,236,990,LGO,466,B3,1,0,5,0,-0.20%,0.20%,0,0,123,11,3,HSH,HKU,LGO,LGO,,1
+Rintaro Okabe,290,97,Logan Anderson,236,312,FO,215,B3,2,0,5,0,-0.21%,0.21%,0,0,123,11,3,HSH,HKU,FO,FO,,1
+Thomas Nova,1,662,Zander Ackley,127,414,FO,248,T4,0,0,5,0,-0.97%,0.97%,0,0,124,11,3,HKU,HSH,FO,FO,,1
+Kris Jaxon,152,759,Zander Ackley,127,69,K,310,T4,1,0,5,0,-0.65%,0.65%,0,0,124,11,3,HKU,HSH,K,K,,1
+Layzer Gunn,259,660,Zander Ackley,127,483,FO,177,T4,2,0,5,0,-0.39%,0.39%,0,0,124,11,3,HKU,HSH,FO,FO,,1
+Yoshigahara Ryutai,133,,Logan Anderson,236,,Auto BB,,B4,0,0,5,0,0.07%,-0.07%,0,1,125,11,3,HSH,HKU,Auto BB,Auto BB,,10
+Hidetoshi Hasagawa,102,176,Logan Anderson,236,89,1B,87,B4,0,1,5,0,0.13%,-0.13%,0,1,125,11,3,HSH,HKU,1B,1B,,1
+Caleb Athen,325,647,Logan Anderson,236,435,FO,212,B4,0,4,5,0,-0.01%,0.01%,0,0,125,11,3,HSH,HKU,FO,FO,,1
+Blake Monroe,3326,,Logan Anderson,236,,Auto K,,B4,1,4,5,0,-0.18%,0.18%,0,0,125,11,3,HSH,HKU,Auto K,Auto K,,9
+Jack Elliot,76,737,Logan Anderson,236,771,2B,34,B4,2,4,5,0,1.24%,-1.24%,2,0,125,11,3,HSH,HKU,2B,2B,,1
+Dart Ragusa,134,950,Logan Anderson,236,213,FO,263,B4,2,2,7,0,-0.10%,0.10%,0,0,125,11,3,HSH,HKU,FO,FO,,1
+Oliver Yu,286,69,Zander Ackley,127,69,HR,0,T5,0,0,7,0,0.49%,-0.49%,1,1,126,11,3,HKU,HSH,HR,HR,,1
+A.J. Preller,319,456,Zander Ackley,127,759,K,303,T5,0,0,7,1,-0.36%,0.36%,0,0,126,11,3,HKU,HSH,K,K,,1
+KC Bats,287,69,Zander Ackley,127,207,BB,138,T5,1,0,7,1,0.45%,-0.45%,0,0,126,11,3,HKU,HSH,BB,BB,,1
+Gustav Ahr,128,59,Zander Ackley,127,276,FO,217,T5,1,1,7,1,-0.48%,0.48%,0,0,126,11,3,HKU,HSH,FO,FO,,1
+Logan Anderson,236,770,Zander Ackley,127,966,FO,196,T5,2,1,7,1,-0.33%,0.33%,0,0,126,11,3,HKU,HSH,FO,FO,,1
+Syd Ryu,3,511,Logan Anderson,236,89,RGO,422,B5,0,0,7,1,-0.02%,0.02%,0,0,127,11,3,HSH,HKU,RGO,RGO,,1
+Homer Pimpson,144,435,Logan Anderson,236,567,BB,132,B5,1,0,7,1,-0.02%,0.02%,0,0,127,11,3,HSH,HKU,BB,BB,,1
+Rintaro Okabe,290,923,Logan Anderson,236,990,1B,67,B5,1,1,7,1,0.05%,-0.05%,0,0,127,11,3,HSH,HKU,1B,1B,,1
+Yoshigahara Ryutai,133,212,Logan Anderson,236,616,DP,404,B5,1,4,7,1,-0.07%,0.07%,0,0,127,11,3,HSH,HKU,RGO,RGO,,1
+Kevin Ariannatanabe,113,1,Zander Ackley,127,345,K,344,T6,0,0,7,1,-0.16%,0.16%,0,0,128,11,3,HKU,HSH,K,K,,1
+Thomas Nova,1,1,Zander Ackley,127,759,FO,242,T6,1,0,7,1,-0.09%,0.09%,0,0,128,11,3,HKU,HSH,FO,FO,,1
+Kris Jaxon,152,100,Zander Ackley,127,690,RGO,410,T6,2,0,7,1,-0.02%,0.02%,0,0,128,11,3,HKU,HSH,RGO,RGO,,1
+Icna Comit,198,69,Maximus Pow,344,69,HR,0,T1,0,0,0,0,11.33%,-11.33%,1,1,129,12,3,CHI,ORI,HR,HR,,1
+Seik Golden,251,69,Maximus Pow,344,69,HR,0,T1,0,0,0,1,10.33%,-10.33%,1,1,129,12,3,CHI,ORI,HR,HR,,1
+Viking Fishbird,42,70,Maximus Pow,344,420,PO,350,T1,0,0,0,2,-1.68%,1.68%,0,0,129,12,3,CHI,ORI,PO,PO,,1
+Hingle McCringleberry,257,666,Maximus Pow,344,69,RGO,403,T1,1,0,0,2,-1.46%,1.46%,0,0,129,12,3,CHI,ORI,RGO,RGO,,1
+Morello D. Luffy,211,666,Maximus Pow,344,1,K,335,T1,2,0,0,2,-1.24%,1.24%,0,0,129,12,3,CHI,ORI,K,K,,1
+Nicholas Verducci,70,711,Seik Golden,251,319,RGO,392,B1,0,0,0,2,-2.74%,2.74%,0,0,130,12,3,ORI,CHI,RGO,RGO,,1
+Takahiro Hirasawa,419,,Seik Golden,251,,Auto K,,B1,1,0,0,2,-2.20%,2.20%,0,0,130,12,3,ORI,CHI,Auto K,Auto K,,9
+Gimino Schlimojima,379,69,Seik Golden,251,900,FO,169,B1,2,0,0,2,-1.72%,1.72%,0,0,130,12,3,ORI,CHI,FO,FO,,1
+Phoenix McDouglas,2194,833,Maximus Pow,344,1000,BB,167,T2,0,0,0,2,1.66%,-1.66%,0,0,131,12,3,CHI,ORI,BB,BB,,1
+Tike Mruk,104,276,Maximus Pow,344,69,FO,207,T2,0,1,0,2,-2.00%,2.00%,0,0,131,12,3,CHI,ORI,FO,FO,,1
+Miroslav Radovicnovizicidivizcinicizivich,71,543,Maximus Pow,344,333,FO,210,T2,1,1,0,2,-1.61%,1.61%,0,0,131,12,3,CHI,ORI,FO,FO,,1
+Phil Coulson,226,700,Maximus Pow,344,69,RGO,369,T2,2,1,0,2,-2.64%,2.64%,0,0,131,12,3,CHI,ORI,RGO,RGO,,1
+Daniel Dove,66,823,Seik Golden,251,758,1B,65,B2,0,0,0,2,3.60%,-3.60%,0,0,132,12,3,ORI,CHI,1B,1B,,1
+Luap Renraw,118,69,Seik Golden,251,989,1B,80,B2,0,1,0,2,7.14%,-7.14%,0,0,132,12,3,ORI,CHI,1B,1B,,1
+Michael Ikenberry,63,326,Seik Golden,251,636,K,310,B2,0,4,0,2,-5.44%,5.44%,0,0,132,12,3,ORI,CHI,K,K,,1
+Josh Gordon,409,713,Seik Golden,251,69,PO,356,B2,1,4,0,2,-4.88%,4.88%,0,0,132,12,3,ORI,CHI,PO,PO,,1
+Karl Jernigan,439,313,Seik Golden,251,888,RGO,425,B2,2,4,0,2,-7.81%,7.81%,0,0,132,12,3,ORI,CHI,RGO,RGO,,1
+Icna Comit,198,,Maximus Pow,344,,Auto K,,T3,0,0,0,2,-1.72%,1.72%,0,0,133,12,3,CHI,ORI,Auto K,Auto K,,9
+Seik Golden,251,569,Maximus Pow,344,69,LGO,500,T3,1,0,0,2,-1.56%,1.56%,0,0,133,12,3,CHI,ORI,LGO,LGO,,1
+Viking Fishbird,42,421,Maximus Pow,344,319,1B,102,T3,2,0,0,2,1.36%,-1.36%,0,0,133,12,3,CHI,ORI,1B,1B,,1
+Hingle McCringleberry,257,666,Maximus Pow,344,819,BB,153,T3,2,1,0,2,1.75%,-1.75%,0,0,133,12,3,CHI,ORI,BB,BB,,1
+Morello D. Luffy,211,69,Maximus Pow,344,666,RGO,403,T3,2,4,0,2,-4.41%,4.41%,0,0,133,12,3,CHI,ORI,RGO,RGO,,1
+Maximus Pow,344,77,Seik Golden,251,420,K,343,B3,0,0,0,2,-3.28%,3.28%,0,0,134,12,3,ORI,CHI,K,K,,1
+Nicholas Verducci,70,666,Seik Golden,251,554,1B,112,B3,1,0,0,2,3.33%,-3.33%,0,0,134,12,3,ORI,CHI,1B,1B,,1
+Takahiro Hirasawa,419,461,Seik Golden,251,999,DP,462,B3,1,1,0,2,-8.18%,8.18%,0,0,134,12,3,ORI,CHI,LGO,LGO,,1
+Phoenix McDouglas,2194,245,Maximus Pow,344,55,FO,190,T4,0,0,0,2,-1.53%,1.53%,0,0,135,12,3,CHI,ORI,FO,FO,,1
+Tike Mruk,104,103,Maximus Pow,344,69,2B,34,T4,1,0,0,2,2.88%,-2.88%,0,1,135,12,3,CHI,ORI,2B,2B,,1
+Miroslav Radovicnovizicidivizcinicizivich,71,420,Maximus Pow,344,420,HR,0,T4,1,2,0,2,11.17%,-11.17%,2,1,135,12,3,CHI,ORI,HR,HR,,1
+Phil Coulson,226,568,Maximus Pow,344,314,FO,254,T4,1,0,0,4,-0.55%,0.55%,0,0,135,12,3,CHI,ORI,FO,FO,,1
+Icna Comit,198,666,Maximus Pow,344,159,LGO,493,T4,2,0,0,4,-0.48%,0.48%,0,0,135,12,3,CHI,ORI,LGO,LGO,,1
+Takahiro Hirasawa,419,651,Seik Golden,251,890,FO,239,B4,0,0,0,4,-1.89%,1.89%,0,0,136,12,3,ORI,CHI,FO,FO,,1
+Gimino Schlimojima,379,420,Seik Golden,251,212,FO,208,B4,1,0,0,4,-1.37%,1.37%,0,0,136,12,3,ORI,CHI,FO,FO,,1
+Daniel Dove,66,142,Seik Golden,251,214,1B,72,B4,2,0,0,4,1.26%,-1.26%,0,0,136,12,3,ORI,CHI,1B,1B,,1
+Luap Renraw,118,555,Seik Golden,251,234,K,321,B4,2,1,0,4,-2.15%,2.15%,0,0,136,12,3,ORI,CHI,K,K,,1
+Seik Golden,251,69,Maximus Pow,344,111,2B,42,T5,0,0,0,4,0.99%,-0.99%,0,1,137,12,3,CHI,ORI,2B,2B,,1
+Viking Fishbird,42,920,Maximus Pow,344,265,K,345,T5,0,2,0,4,-0.67%,0.67%,0,0,137,12,3,CHI,ORI,K,K,,1
+Hingle McCringleberry,257,420,Maximus Pow,344,358,2B,62,T5,1,2,0,4,1.87%,-1.87%,1,0,137,12,3,CHI,ORI,2B,2B,,1
+Morello D. Luffy,211,500,Maximus Pow,344,999,LGO,499,T5,1,2,0,5,-0.20%,0.20%,0,0,137,12,3,CHI,ORI,LGO,LGO,,1
+Phoenix McDouglas,2194,574,Maximus Pow,344,979,RGO,405,T5,2,2,0,5,-0.44%,0.44%,0,0,137,12,3,CHI,ORI,RGO,RGO,,1
+Michael Ikenberry,63,740,Seik Golden,251,2,FO,262,B5,0,0,0,5,-0.91%,0.91%,0,0,138,12,3,ORI,CHI,FO,FO,,1
+Josh Gordon,409,266,Seik Golden,251,623,PO,357,B5,1,0,0,5,-0.62%,0.62%,0,0,138,12,3,ORI,CHI,PO,PO,,1
+Karl Jernigan,439,897,Seik Golden,251,420,LGO,477,B5,2,0,0,5,-0.28%,0.28%,0,0,138,12,3,ORI,CHI,LGO,LGO,,1
+Tike Mruk,104,100,Maximus Pow,344,323,FO,223,T6,0,0,0,5,-0.08%,0.08%,0,0,139,12,3,CHI,ORI,FO,FO,,1
+Miroslav Radovicnovizicidivizcinicizivich,71,1,Maximus Pow,344,842,BB,159,T6,1,0,0,5,0.06%,-0.06%,0,1,139,12,3,CHI,ORI,BB,BB,,1
+Miroslav Radovicnovizicidivizcinicizivich,71,800,Maximus Pow,344,64,SB,264,T6,1,1,0,5,0.12%,-0.12%,0,0,139,12,3,CHI,ORI,Steal 2B,Steal 2B,,4
+Phil Coulson,226,,Maximus Pow,344,,IBB,,T6,1,2,0,5,-0.06%,0.06%,0,0,139,12,3,CHI,ORI,IBB,IBB,,8
+Icna Comit,198,,Maximus Pow,344,,Auto K,,T6,1,4,0,5,-0.10%,0.10%,0,0,139,12,3,CHI,ORI,Auto K,Auto K,,9
+Seik Golden,251,970,Maximus Pow,344,69,1B,99,T6,2,4,0,5,0.43%,-0.43%,1,0,139,12,3,CHI,ORI,1B,1B,,1
+Viking Fishbird,42,68,Maximus Pow,344,277,FO,209,T6,2,5,0,6,-0.06%,0.06%,0,0,139,12,3,CHI,ORI,FO,FO,,1
+Maximus Pow,344,882,Seik Golden,251,500,PO,382,B6,0,0,0,6,-0.26%,0.26%,0,0,140,12,3,ORI,CHI,PO,PO,,1
+Nicholas Verducci,70,411,Seik Golden,251,666,FO,255,B6,1,0,0,6,-0.11%,0.11%,0,0,140,12,3,ORI,CHI,FO,FO,,1
+Takahiro Hirasawa,419,159,Seik Golden,251,114,2B,45,B6,2,0,0,6,0.05%,-0.05%,0,1,140,12,3,ORI,CHI,2B,2B,,1
+Gimino Schlimojima,379,543,Seik Golden,251,555,HR,12,B6,2,2,0,6,0.14%,-0.14%,2,1,140,12,3,ORI,CHI,HR,HR,,1
+Daniel Dove,66,362,Seik Golden,251,640,K,278,B6,2,0,2,6,-0.22%,0.22%,0,0,140,12,3,ORI,CHI,K,K,,1
+Mattress Cadaire,116,,Pickle Rick,150,,Auto BB,,T1,0,0,0,0,2.91%,-2.91%,0,0,141,13,3,HIR,NAN,Auto BB,Auto BB,,10
+Dirtbag Darrell,262,333,Pickle Rick,150,555,FO,222,T1,0,1,0,0,-2.99%,2.99%,0,0,141,13,3,HIR,NAN,FO,FO,,1
+Rich Mahogany,265,311,Pickle Rick,150,898,K,413,T1,1,1,0,0,-2.63%,2.63%,0,0,141,13,3,HIR,NAN,K,K,,1
+Gottlieb Giannopoulos,89,111,Pickle Rick,150,435,K,324,T1,2,1,0,0,-3.74%,3.74%,0,0,141,13,3,HIR,NAN,K,K,,1
+Pickle Rick,150,,Silver Shore,3328,,Auto BB,,B1,0,0,0,0,2.76%,-2.76%,0,0,142,13,3,NAN,HIR,Auto BB,Auto BB,,10
+Donnie Draper,138,1,Silver Shore,3328,367,K,366,B1,0,1,0,0,-2.96%,2.96%,0,0,142,13,3,NAN,HIR,K,K,,1
+Ryosuke Takahashi,36,861,Silver Shore,3328,433,DP,428,B1,1,1,0,0,-6.24%,6.24%,0,0,142,13,3,NAN,HIR,RGO,RGO,,1
+Boi Lover,84,237,Pickle Rick,150,616,K,379,T2,0,0,0,0,-2.72%,2.72%,0,0,143,13,3,HIR,NAN,K,K,,1
+River Ride,342,1,Pickle Rick,150,99,1B,98,T2,1,0,0,0,2.57%,-2.57%,0,0,143,13,3,HIR,NAN,1B,1B,,1
+Carlos Brownson,132,234,Pickle Rick,150,16,FO,218,T2,1,1,0,0,-2.82%,2.82%,0,0,143,13,3,HIR,NAN,FO,FO,,1
+Alex Brown,444,842,Pickle Rick,150,696,FO,146,T2,2,1,0,0,-4.14%,4.14%,0,0,143,13,3,HIR,NAN,FO,FO,,1
+Rickey Tucker,163,798,Silver Shore,3328,948,FO,150,B2,0,0,0,0,-2.72%,2.72%,0,0,144,13,3,NAN,HIR,FO,FO,,1
+Takumi Fujiwara,91,69,Silver Shore,3328,564,LGO,495,B2,1,0,0,0,-2.38%,2.38%,0,0,144,13,3,NAN,HIR,LGO,LGO,,1
+Meerkat Timmons,147,69,Silver Shore,3328,156,1B,87,B2,2,0,0,0,2.07%,-2.07%,0,0,144,13,3,NAN,HIR,1B,1B,,1
+Owen Thirlwell,156,519,Silver Shore,3328,127,RGO,392,B2,2,1,0,0,-4.10%,4.10%,0,0,144,13,3,NAN,HIR,RGO,RGO,,1
+Silver Shore,3328,69,Pickle Rick,150,645,RGO,424,T3,0,0,0,0,-3.03%,3.03%,0,0,145,13,3,HIR,NAN,RGO,RGO,,1
+Mattress Cadaire,116,104,Pickle Rick,150,880,FO,224,T3,1,0,0,0,-2.74%,2.74%,0,0,145,13,3,HIR,NAN,FO,FO,,1
+Dirtbag Darrell,262,95,Pickle Rick,150,720,K,375,T3,2,0,0,0,-2.31%,2.31%,0,0,145,13,3,HIR,NAN,K,K,,1
+Rueben Salazar,416,716,Silver Shore,3328,433,K,283,B3,0,0,0,0,-3.07%,3.07%,0,0,146,13,3,NAN,HIR,K,K,,1
+Ichigo Kurosaki,351,443,Silver Shore,3328,634,FO,191,B3,1,0,0,0,-2.77%,2.77%,0,0,146,13,3,NAN,HIR,FO,FO,,1
+Pickle Rick,150,666,Silver Shore,3328,832,FO,166,B3,2,0,0,0,-2.27%,2.27%,0,0,146,13,3,NAN,HIR,FO,FO,,1
+Rich Mahogany,265,260,Pickle Rick,150,223,2B,37,T4,0,0,0,0,8.83%,-8.83%,0,1,147,13,3,HIR,NAN,2B,2B,,1
+Gottlieb Giannopoulos,89,598,Pickle Rick,150,280,K,318,T4,0,2,0,0,-5.95%,5.95%,0,0,147,13,3,HIR,NAN,K,K,,1
+Boi Lover,84,725,Pickle Rick,150,721,HR,4,T4,1,2,0,0,25.84%,-25.84%,2,1,147,13,3,HIR,NAN,HR,HR,,1
+River Ride,342,369,Pickle Rick,150,721,K,352,T4,1,0,0,2,-1.44%,1.44%,0,0,147,13,3,HIR,NAN,K,K,,1
+Carlos Brownson,132,420,Pickle Rick,150,111,K,309,T4,2,0,0,2,-1.26%,1.26%,0,0,147,13,3,HIR,NAN,K,K,,1
+Donnie Draper,138,500,Silver Shore,3328,65,RGO,435,B4,0,0,0,2,-3.76%,3.76%,0,0,148,13,3,NAN,HIR,RGO,RGO,,1
+Ryosuke Takahashi,36,630,Silver Shore,3328,307,K,323,B4,1,0,0,2,-3.09%,3.09%,0,0,148,13,3,NAN,HIR,K,K,,1
+Rickey Tucker,163,536,Silver Shore,3328,265,K,271,B4,2,0,0,2,-2.26%,2.26%,0,0,148,13,3,NAN,HIR,K,K,,1
+Alex Brown,444,201,Pickle Rick,150,404,FO,203,T5,0,0,0,2,-1.31%,1.31%,0,0,149,13,3,HIR,NAN,FO,FO,,1
+Silver Shore,3328,245,Pickle Rick,150,999,FO,246,T5,1,0,0,2,-1.19%,1.19%,0,0,149,13,3,HIR,NAN,FO,FO,,1
+Mattress Cadaire,116,100,Pickle Rick,150,3,1B,97,T5,2,0,0,2,0.96%,-0.96%,0,0,149,13,3,HIR,NAN,1B,1B,,1
+Dirtbag Darrell,262,500,Pickle Rick,150,998,LGO,498,T5,2,1,0,2,-2.09%,2.09%,0,0,149,13,3,HIR,NAN,LGO,LGO,,1
+Takumi Fujiwara,91,843,Silver Shore,3328,767,1B,76,B5,0,0,0,2,6.11%,-6.11%,0,0,150,13,3,NAN,HIR,1B,1B,,1
+Meerkat Timmons,147,420,Silver Shore,3328,767,K,347,B5,0,1,0,2,-5.21%,5.21%,0,0,150,13,3,NAN,HIR,K,K,,1
+Owen Thirlwell,156,101,Silver Shore,3328,434,K,333,B5,1,1,0,2,-4.84%,4.84%,0,0,150,13,3,NAN,HIR,K,K,,1
+Rueben Salazar,416,777,Silver Shore,3328,143,K,366,B5,2,1,0,2,-6.20%,6.20%,0,0,150,13,3,NAN,HIR,K,K,,1
+Rich Mahogany,265,261,Pickle Rick,150,615,K,354,T6,0,0,0,2,-0.82%,0.82%,0,0,151,13,3,HIR,NAN,K,K,,1
+Gottlieb Giannopoulos,89,19,Pickle Rick,150,906,1B,113,T6,1,0,0,2,0.68%,-0.68%,0,0,151,13,3,HIR,NAN,1B,1B,,1
+Boi Lover,84,278,Pickle Rick,150,518,FO,240,T6,1,1,0,2,-0.82%,0.82%,0,0,151,13,3,HIR,NAN,FO,FO,,1
+River Ride,342,278,Pickle Rick,150,15,FO,263,T6,2,1,0,2,-1.35%,1.35%,0,0,151,13,3,HIR,NAN,FO,FO,,1
+Ichigo Kurosaki,351,666,Silver Shore,3328,578,1B,88,B6,0,0,0,2,8.22%,-8.22%,0,1,152,13,3,NAN,HIR,1B,1B,,1
+Pickle Rick,150,669,Silver Shore,3328,16,K,347,B6,0,1,0,2,-6.06%,6.06%,0,0,152,13,3,NAN,HIR,K,K,,1
+Donnie Draper,138,339,Silver Shore,3328,76,FO,263,B6,1,1,0,2,-6.10%,6.10%,0,0,152,13,3,NAN,HIR,FO,FO,,1
+Ryosuke Takahashi,36,489,Silver Shore,3328,538,2B,49,B6,2,1,0,2,11.21%,-11.21%,1,1,152,13,3,NAN,HIR,2B,2B,,1
+Rickey Tucker,163,889,Silver Shore,3328,12,BB,123,B6,2,2,1,2,3.81%,-3.81%,0,0,152,13,3,NAN,HIR,BB,BB,,1
+Takumi Fujiwara,91,678,Silver Shore,3328,751,1B,73,B6,2,4,1,2,41.89%,-41.89%,1,0,152,13,3,NAN,HIR,1B,1B,,1
+Meerkat Timmons,147,888,Silver Shore,3328,345,LGO,457,B6,2,5,2,2,-13.56%,13.56%,0,0,152,13,3,NAN,HIR,LGO,LGO,,1
+Carlos Brownson,132,954,Pickle Rick,150,99,BB,145,T7,0,0,2,2,4.38%,-4.38%,0,1,153,13,3,HIR,NAN,BB,BB,,1
+Alex Brown,444,654,Pickle Rick,150,883,FO,229,T7,0,1,2,2,-6.07%,6.07%,0,0,153,13,3,HIR,NAN,FO,FO,,1
+Silver Shore,3328,915,Pickle Rick,150,680,FO,235,T7,1,1,2,2,-4.81%,4.81%,0,0,153,13,3,HIR,NAN,FO,FO,,1
+Mattress Cadaire,116,940,Pickle Rick,150,885,1B,55,T7,2,1,2,2,5.21%,-5.21%,0,0,153,13,3,HIR,NAN,1B,1B,,1
+Dirtbag Darrell,262,350,Pickle Rick,150,434,1B,84,T7,2,5,2,2,33.04%,-33.04%,1,0,153,13,3,HIR,NAN,1B,1B,,1
+Rich Mahogany,265,933,Pickle Rick,150,221,K,288,T7,2,5,2,3,-4.45%,4.45%,0,0,153,13,3,HIR,NAN,K,K,,1
+Owen Thirlwell,156,602,Silver Shore,3328,173,RGO,429,B7,0,0,2,3,-8.33%,8.33%,0,0,154,13,3,NAN,HIR,RGO,RGO,,1
+Rueben Salazar,416,812,Silver Shore,3328,418,K,394,B7,1,0,2,3,-7.59%,7.59%,0,0,154,13,3,NAN,HIR,K,K,,1
+Ichigo Kurosaki,351,17,Silver Shore,3328,213,FO,196,B7,2,0,2,3,-6.82%,6.82%,0,0,154,13,3,NAN,HIR,FO,FO,,1
+Jack Marnette,213,69,Hans Ali,197,1,1B,68,T1,0,0,0,0,2.91%,-2.91%,0,1,155,14,3,CHU,YOK,1B,1B,,1
+Akiyoshi Yamamoto,289,744,Hans Ali,197,644,1B,100,T1,0,1,0,0,5.56%,-5.56%,0,1,155,14,3,CHU,YOK,1B,1B,,1
+Steel Pipe Simpson,80,420,Hans Ali,197,442,HR,22,T1,0,4,0,0,21.35%,-21.35%,3,1,155,14,3,CHU,YOK,HR,HR,,1
+Boon Dawg Daniels,115,844,Hans Ali,197,500,K,344,T1,0,0,0,3,-1.09%,1.09%,0,0,155,14,3,CHU,YOK,K,K,,1
+Fister Roboto,445,810,Hans Ali,197,500,K,310,T1,1,0,0,3,-1.26%,1.26%,0,0,155,14,3,CHU,YOK,K,K,,1
+Jack Alpha,73,999,Hans Ali,197,1,HR,2,T1,2,0,0,3,7.18%,-7.18%,1,1,155,14,3,CHU,YOK,HR,HR,,1
+Antonin Periwinkle,185,420,Hans Ali,197,243,BB,177,T1,2,0,0,4,0.75%,-0.75%,0,0,155,14,3,CHU,YOK,BB,BB,,1
+Dominus Nominus,278,420,Hans Ali,197,244,FO,176,T1,2,1,0,4,-1.46%,1.46%,0,0,155,14,3,CHU,YOK,FO,FO,,1
+Koyomi Araragi,293,745,Alvin Lockheart,20,881,BB,136,B1,0,0,0,4,3.02%,-3.02%,0,0,156,14,3,YOK,CHU,BB,BB,,1
+Demetrios Ooga,180,500,Alvin Lockheart,20,40,DP,460,B1,0,1,0,4,-6.54%,6.54%,0,0,156,14,3,YOK,CHU,RGO,RGO,,1
+Henry Crowell,184,967,Alvin Lockheart,20,41,1B,74,B1,2,0,0,4,1.48%,-1.48%,0,0,156,14,3,YOK,CHU,1B,1B,,1
+Lloyd Gross,135,643,Alvin Lockheart,20,710,1B,67,B1,2,1,0,4,3.17%,-3.17%,0,0,156,14,3,YOK,CHU,1B,1B,,1
+Jack Meloy,145,840,Alvin Lockheart,20,391,RGO,449,B1,2,5,0,4,-5.76%,5.76%,0,0,156,14,3,YOK,CHU,RGO,RGO,,1
+Alvin Lockheart,20,12,Hans Ali,197,333,K,321,T2,0,0,0,4,-0.85%,0.85%,0,0,157,14,3,CHU,YOK,K,K,,1
+Jack Marnette,213,55,Hans Ali,197,765,K,290,T2,1,0,0,4,-0.73%,0.73%,0,0,157,14,3,CHU,YOK,K,K,,1
+Akiyoshi Yamamoto,289,937,Hans Ali,197,656,FO,281,T2,2,0,0,4,-0.69%,0.69%,0,0,157,14,3,CHU,YOK,FO,FO,,1
+Tommy Oldman,143,153,Alvin Lockheart,20,601,RGO,448,B2,0,0,0,4,-1.98%,1.98%,0,0,158,14,3,YOK,CHU,RGO,RGO,,1
+Hans Ali,197,333,Alvin Lockheart,20,410,1B,77,B2,1,0,0,4,2.05%,-2.05%,0,0,158,14,3,YOK,CHU,1B,1B,,1
+Niko Banks,430,756,Alvin Lockheart,20,1000,FO,244,B2,1,1,0,4,-2.00%,2.00%,0,0,158,14,3,YOK,CHU,FO,FO,,1
+Jake Wilson,454,500,Alvin Lockheart,20,252,FO,248,B2,2,1,0,4,-2.59%,2.59%,0,0,158,14,3,YOK,CHU,FO,FO,,1
+Steel Pipe Simpson,80,569,Hans Ali,197,755,FO,186,T3,0,0,0,4,-0.67%,0.67%,0,0,159,14,3,CHU,YOK,FO,FO,,1
+Boon Dawg Daniels,115,11,Hans Ali,197,333,K,322,T3,1,0,0,4,-0.63%,0.63%,0,0,159,14,3,CHU,YOK,K,K,,1
+Fister Roboto,445,11,Hans Ali,197,333,K,322,T3,2,0,0,4,-0.64%,0.64%,0,0,159,14,3,CHU,YOK,K,K,,1
+Koyomi Araragi,293,950,Alvin Lockheart,20,162,FO,212,B3,0,0,0,4,-1.89%,1.89%,0,0,160,14,3,YOK,CHU,FO,FO,,1
+Demetrios Ooga,180,300,Alvin Lockheart,20,792,LGO,492,B3,1,0,0,4,-1.53%,1.53%,0,0,160,14,3,YOK,CHU,LGO,LGO,,1
+Henry Crowell,184,,Alvin Lockheart,20,,Auto K,,B3,2,0,0,4,-1.04%,1.04%,0,0,160,14,3,YOK,CHU,Auto K,Auto K,,9
+Jack Alpha,73,666,Hans Ali,197,569,1B,97,T4,0,0,0,4,0.51%,-0.51%,0,0,161,14,3,CHU,YOK,1B,1B,,1
+Antonin Periwinkle,185,580,Hans Ali,197,132,DP,448,T4,0,1,0,4,-1.59%,1.59%,0,0,161,14,3,CHU,YOK,RGO,RGO,,1
+Dominus Nominus,278,207,Hans Ali,197,687,LGO,480,T4,2,0,0,4,-0.48%,0.48%,0,0,161,14,3,CHU,YOK,LGO,LGO,,1
+Lloyd Gross,135,545,Alvin Lockheart,20,910,K,365,B4,0,0,0,4,-1.89%,1.89%,0,0,162,14,3,YOK,CHU,K,K,,1
+Jack Meloy,145,142,Alvin Lockheart,20,47,1B,95,B4,1,0,0,4,2.08%,-2.08%,0,0,162,14,3,YOK,CHU,1B,1B,,1
+Tommy Oldman,143,120,Alvin Lockheart,20,497,K,377,B4,1,1,0,4,-2.19%,2.19%,0,0,162,14,3,YOK,CHU,K,K,,1
+Hans Ali,197,777,Alvin Lockheart,20,212,RGO,435,B4,2,1,0,4,-2.15%,2.15%,0,0,162,14,3,YOK,CHU,RGO,RGO,,1
+Alvin Lockheart,20,69,Hans Ali,197,867,FO,202,T5,0,0,0,4,-0.37%,0.37%,0,0,163,14,3,CHU,YOK,FO,FO,,1
+Jack Marnette,213,202,Hans Ali,197,663,LGO,461,T5,1,0,0,4,-0.34%,0.34%,0,0,163,14,3,CHU,YOK,LGO,LGO,,1
+Akiyoshi Yamamoto,289,280,Hans Ali,197,554,FO,274,T5,2,0,0,4,-0.30%,0.30%,0,0,163,14,3,CHU,YOK,FO,FO,,1
+Niko Banks,430,122,Alvin Lockheart,20,680,RGO,442,B5,0,0,0,4,-1.65%,1.65%,0,0,164,14,3,YOK,CHU,RGO,RGO,,1
+Jake Wilson,454,977,Alvin Lockheart,20,906,1B,71,B5,1,0,0,4,1.86%,-1.86%,0,1,164,14,3,YOK,CHU,1B,1B,,1
+Koyomi Araragi,293,185,Alvin Lockheart,20,321,BB,136,B5,1,1,0,4,4.47%,-4.47%,0,1,164,14,3,YOK,CHU,BB,BB,,1
+Demetrios Ooga,180,321,Alvin Lockheart,20,500,BB,179,B5,1,4,0,4,8.46%,-8.46%,0,1,164,14,3,YOK,CHU,BB,BB,,1
+Henry Crowell,184,557,Alvin Lockheart,20,500,2B,57,B5,1,7,0,4,18.31%,-18.31%,2,1,164,14,3,YOK,CHU,2B,2B,,1
+Lloyd Gross,135,969,Alvin Lockheart,20,832,BB,137,B5,1,6,2,4,4.19%,-4.19%,0,0,164,14,3,YOK,CHU,BB,BB,,1
+Jack Meloy,145,147,Alvin Lockheart,20,222,1B,75,B5,1,7,2,4,16.93%,-16.93%,1,0,164,14,3,YOK,CHU,1B,1B,,1
+Tommy Oldman,143,403,Alvin Lockheart,20,101,Sac,302,B5,1,7,3,4,2.94%,-2.94%,1,0,164,14,3,YOK,CHU,FO,FO,,1
+Hans Ali,197,666,Alvin Lockheart,20,213,LGO,453,B5,2,4,4,4,-10.55%,10.55%,0,0,164,14,3,YOK,CHU,LGO,LGO,,1
+Steel Pipe Simpson,80,31,Tanner Hendrix,375,31,HR,0,T6,0,0,4,4,32.13%,-32.13%,1,1,165,14,3,CHU,YOK,HR,HR,,1
+Boon Dawg Daniels,115,1,Tanner Hendrix,375,30,HR,29,T6,0,0,4,5,9.59%,-9.59%,1,1,165,14,3,CHU,YOK,HR,HR,,1
+Fister Roboto,445,500,Tanner Hendrix,375,798,K,298,T6,0,0,4,6,-0.82%,0.82%,0,0,165,14,3,CHU,YOK,K,K,,1
+Jack Alpha,73,334,Tanner Hendrix,375,921,K,413,T6,1,0,4,6,-0.80%,0.80%,0,0,165,14,3,CHU,YOK,K,K,,1
+Antonin Periwinkle,185,978,Tanner Hendrix,375,412,PO,434,T6,2,0,4,6,-0.69%,0.69%,0,0,165,14,3,CHU,YOK,PO,PO,,1
+Niko Banks,430,877,Jessie Vance,33,232,K,355,B6,0,0,4,6,-4.76%,4.76%,0,0,166,14,3,YOK,CHU,K,K,,1
+Jake Wilson,454,877,Jessie Vance,33,701,FO,176,B6,1,0,4,6,-3.71%,3.71%,0,0,166,14,3,YOK,CHU,FO,FO,,1
+Koyomi Araragi,293,550,Jessie Vance,33,971,LGO,421,B6,2,0,4,6,-2.16%,2.16%,0,0,166,14,3,YOK,CHU,LGO,LGO,,1
+Jocko Jones,295,42,Naoki Tentacles,216,711,K,331,T1,0,0,0,0,-2.51%,2.51%,0,0,167,15,3,HNF,RGE,K,K,,1
+Ian Brendan Owen Bust,186,243,Naoki Tentacles,216,389,BB,146,T1,1,0,0,0,2.43%,-2.43%,0,0,167,15,3,HNF,RGE,BB,BB,,1
+Jimjon Jonjim,272,153,Naoki Tentacles,216,404,FO,251,T1,1,1,0,0,-2.63%,2.63%,0,0,167,15,3,HNF,RGE,FO,FO,,1
+Jerry Jingles,146,800,Naoki Tentacles,216,989,FO,189,T1,2,1,0,0,-3.74%,3.74%,0,0,167,15,3,HNF,RGE,FO,FO,,1
+Jeff Steelflex,268,,Filet-Mignon Jackson,320,789,K,339,B1,0,0,0,0,-2.48%,2.48%,0,0,168,15,3,RGE,HNF,K,K,,1
+Harry Peritestes,117,438,Filet-Mignon Jackson,320,567,BB,129,B1,1,0,0,0,2.28%,-2.28%,0,1,168,15,3,RGE,HNF,BB,BB,,1
+Jared Sabor VII,149,84,Filet-Mignon Jackson,320,879,FO,205,B1,1,1,0,0,-2.55%,2.55%,0,0,168,15,3,RGE,HNF,FO,FO,,1
+Ronarudo Washi IIIIII,167,12,Filet-Mignon Jackson,320,58,2B,46,B1,2,1,0,0,13.34%,-13.34%,1,1,168,15,3,RGE,HNF,2B,2B,,1
+Markese Rolle,2503,123,Filet-Mignon Jackson,320,90,2B,33,B1,2,2,1,0,9.64%,-9.64%,1,0,168,15,3,RGE,HNF,2B,2B,,1
+Olivia Hyde,175,839,Filet-Mignon Jackson,320,386,LGO,453,B1,2,2,2,0,-2.84%,2.84%,0,0,168,15,3,RGE,HNF,LGO,LGO,,1
+Skeeter Williams,229,273,Naoki Tentacles,216,543,K,270,T2,0,0,2,0,-2.72%,2.72%,0,0,169,15,3,HNF,RGE,K,K,,1
+Reimer Gonzalez,13,410,Naoki Tentacles,216,211,FO,199,T2,1,0,2,0,-2.27%,2.27%,0,0,169,15,3,HNF,RGE,FO,FO,,1
+Oscar Vinegrette,252,720,Naoki Tentacles,216,378,K,342,T2,2,0,2,0,-1.66%,1.66%,0,0,169,15,3,HNF,RGE,K,K,,1
+dednuts,448,469,Filet-Mignon Jackson,320,619,BB,150,B2,0,0,2,0,1.52%,-1.52%,0,0,170,15,3,RGE,HNF,BB,BB,,1
+Triscutt Mesmer,39,950,Filet-Mignon Jackson,320,859,1B,91,B2,0,1,2,0,2.77%,-2.77%,0,0,170,15,3,RGE,HNF,1B,1B,,1
+Naoki Tentacles,216,420,Filet-Mignon Jackson,320,179,FO,241,B2,0,4,2,0,-2.33%,2.33%,0,0,170,15,3,RGE,HNF,FO,FO,,1
+Jeff Steelflex,268,69,Filet-Mignon Jackson,320,783,K,286,B2,1,4,2,0,-2.22%,2.22%,0,0,170,15,3,RGE,HNF,K,K,,1
+Harry Peritestes,117,560,Filet-Mignon Jackson,320,161,RGO,399,B2,2,4,2,0,-3.62%,3.62%,0,0,170,15,3,RGE,HNF,RGO,RGO,,1
+Oscar Vinegrette,252,721,Naoki Tentacles,216,1,K,280,T3,0,0,2,0,-2.94%,2.94%,0,0,171,15,3,HNF,RGE,K,K,,1
+Filet-Mignon Jackson,320,722,Naoki Tentacles,216,754,2B,32,T3,1,0,2,0,5.33%,-5.33%,0,1,171,15,3,HNF,RGE,2B,2B,,1
+Jocko Jones,295,342,Naoki Tentacles,216,252,1B,90,T3,1,2,2,0,6.17%,-6.17%,0,1,171,15,3,HNF,RGE,1B,1B,,1
+Ian Brendan Owen Bust,186,,Naoki Tentacles,216,,Auto K,,T3,1,5,2,0,-8.16%,8.16%,0,0,171,15,3,HNF,RGE,Auto K,Auto K,,9
+Jimjon Jonjim,272,654,Naoki Tentacles,216,698,2B,44,T3,2,5,2,0,24.15%,-24.15%,2,0,171,15,3,HNF,RGE,2B,2B,,1
+Jerry Jingles,146,800,Naoki Tentacles,216,321,LGO,479,T3,2,2,2,2,-6.01%,6.01%,0,0,171,15,3,HNF,RGE,LGO,LGO,,1
+Jared Sabor VII,149,145,Filet-Mignon Jackson,320,776,RGO,369,B3,0,0,2,2,-3.07%,3.07%,0,0,172,15,3,RGE,HNF,RGO,RGO,,1
+Ronarudo Washi IIIIII,167,912,Filet-Mignon Jackson,320,644,FO,268,B3,1,0,2,2,-2.77%,2.77%,0,0,172,15,3,RGE,HNF,FO,FO,,1
+Olivia Hyde,175,693,Filet-Mignon Jackson,320,353,K,340,B3,2,0,2,2,-2.27%,2.27%,0,0,172,15,3,RGE,HNF,K,K,,1
+Skeeter Williams,229,726,Naoki Tentacles,216,897,FO,171,T4,0,0,2,2,-3.58%,3.58%,0,0,173,15,3,HNF,RGE,FO,FO,,1
+Reimer Gonzalez,13,1,Naoki Tentacles,216,231,FO,230,T4,1,0,2,2,-3.19%,3.19%,0,0,173,15,3,HNF,RGE,FO,FO,,1
+Oscar Vinegrette,252,375,Naoki Tentacles,216,589,FO,214,T4,2,0,2,2,-2.75%,2.75%,0,0,173,15,3,HNF,RGE,FO,FO,,1
+Markese Rolle,2503,560,Filet-Mignon Jackson,320,881,K,321,B4,0,0,2,2,-3.43%,3.43%,0,0,174,15,3,RGE,HNF,K,K,,1
+dednuts,448,673,Filet-Mignon Jackson,320,606,1B,67,B4,1,0,2,2,2.66%,-2.66%,0,0,174,15,3,RGE,HNF,1B,1B,,1
+Triscutt Mesmer,39,250,Filet-Mignon Jackson,320,704,DP,454,B4,1,1,2,2,-8.70%,8.70%,0,0,174,15,3,RGE,HNF,LGO,LGO,,1
+Oscar Vinegrette,252,350,Naoki Tentacles,216,804,LGO,454,T5,0,0,2,2,-4.31%,4.31%,0,0,175,15,3,HNF,RGE,LGO,LGO,,1
+Filet-Mignon Jackson,320,89,Naoki Tentacles,216,498,PO,409,T5,1,0,2,2,-3.90%,3.90%,0,0,175,15,3,HNF,RGE,PO,PO,,1
+Jocko Jones,295,142,Naoki Tentacles,216,876,FO,266,T5,2,0,2,2,-3.51%,3.51%,0,0,175,15,3,HNF,RGE,FO,FO,,1
+Naoki Tentacles,216,451,Filet-Mignon Jackson,320,452,HR,1,B5,0,0,2,2,24.22%,-24.22%,1,1,176,15,3,RGE,HNF,HR,HR,,1
+Jeff Steelflex,268,,Filet-Mignon Jackson,320,323,BB,127,B5,0,0,3,2,1.23%,-1.23%,0,0,176,15,3,RGE,HNF,BB,BB,,1
+Harry Peritestes,117,618,Filet-Mignon Jackson,320,137,DP,481,B5,0,1,3,2,-3.90%,3.90%,0,0,176,15,3,RGE,HNF,LGO,LGO,,1
+Jared Sabor VII,149,777,Filet-Mignon Jackson,320,358,RGO,419,B5,2,0,3,2,-1.14%,1.14%,0,0,176,15,3,RGE,HNF,RGO,RGO,,1
+Ian Brendan Owen Bust,186,237,Naoki Tentacles,216,645,RGO,408,T6,0,0,3,2,-6.73%,6.73%,0,0,177,15,3,HNF,RGE,RGO,RGO,,1
+Jimjon Jonjim,272,420,Naoki Tentacles,216,337,1B,83,T6,1,0,3,2,6.49%,-6.49%,0,0,177,15,3,HNF,RGE,1B,1B,,1
+Jerry Jingles,146,69,Naoki Tentacles,216,969,1B,100,T6,1,1,3,2,9.48%,-9.48%,0,0,177,15,3,HNF,RGE,1B,1B,,1
+Skeeter Williams,229,12,Naoki Tentacles,216,207,FO,195,T6,1,4,3,2,-9.20%,9.20%,0,0,177,15,3,HNF,RGE,FO,FO,,1
+Reimer Gonzalez,13,644,Naoki Tentacles,216,420,FO,224,T6,2,4,3,2,-17.90%,17.90%,0,0,177,15,3,HNF,RGE,FO,FO,,1
+Jack Marnette,213,643,Zander Ackley,127,208,RGO,435,T1,0,0,0,0,-2.51%,2.51%,0,0,178,16,4,CHU,HSH,RGO,RGO,,1
+Akiyoshi Yamamoto,289,872,Zander Ackley,127,17,1B,145,T1,1,0,0,0,2.43%,-2.43%,0,0,178,16,4,CHU,HSH,1B,1B,,1
+Steel Pipe Simpson,80,777,Zander Ackley,127,995,FO,218,T1,1,1,0,0,-2.63%,2.63%,0,0,178,16,4,CHU,HSH,FO,FO,,1
+Boon Dawg Daniels,115,602,Zander Ackley,127,383,FO,219,T1,2,1,0,0,-3.74%,3.74%,0,0,178,16,4,CHU,HSH,FO,FO,,1
+Caleb Athen,325,500,Alvin Lockheart,20,120,PO,380,B1,0,0,0,0,-2.48%,2.48%,0,0,179,16,4,HSH,CHU,PO,PO,,1
+Blake Monroe,3326,,Alvin Lockheart,20,,Auto K,,B1,1,0,0,0,-2.17%,2.17%,0,0,179,16,4,HSH,CHU,Auto K,Auto K,,9
+Jack Elliot,76,520,Alvin Lockheart,20,333,FO,187,B1,2,0,0,0,-1.79%,1.79%,0,0,179,16,4,HSH,CHU,FO,FO,,1
+Fister Roboto,445,790,Zander Ackley,127,739,1B,51,T2,0,0,0,0,3.09%,-3.09%,0,0,180,16,4,CHU,HSH,1B,1B,,1
+Jack Alpha,73,675,Zander Ackley,127,545,1B,130,T2,0,1,0,0,5.91%,-5.91%,0,0,180,16,4,CHU,HSH,1B,1B,,1
+Antonin Periwinkle,185,980,Zander Ackley,127,439,DP,459,T2,0,4,0,0,-10.56%,10.56%,0,0,180,16,4,CHU,HSH,RGO,RGO,,1
+Dominus Nominus,278,,Zander Ackley,127,,Auto K,,T2,2,3,0,0,-5.55%,5.55%,0,0,180,16,4,CHU,HSH,Auto K,Auto K,,9
+Dart Ragusa,134,550,Alvin Lockheart,20,601,2B,51,B2,0,0,0,0,6.77%,-6.77%,0,0,181,16,4,HSH,CHU,2B,2B,,1
+Syd Ryu,3,101,Alvin Lockheart,20,812,FO,289,B2,0,2,0,0,-4.43%,4.43%,0,0,181,16,4,HSH,CHU,FO,FO,,1
+Homer Pimpson,144,812,Alvin Lockheart,20,243,PO,431,B2,1,2,0,0,-4.04%,4.04%,0,0,181,16,4,HSH,CHU,PO,PO,,1
+Rintaro Okabe,290,345,Alvin Lockheart,20,1000,K,345,B2,2,2,0,0,-5.43%,5.43%,0,0,181,16,4,HSH,CHU,K,K,,1
+Alvin Lockheart,20,943,Zander Ackley,127,745,BB,198,T3,0,0,0,0,3.31%,-3.31%,0,0,182,16,4,CHU,HSH,BB,BB,,1
+Jack Marnette,213,144,Zander Ackley,127,410,FO,266,T3,0,1,0,0,-3.57%,3.57%,0,0,182,16,4,CHU,HSH,FO,FO,,1
+Akiyoshi Yamamoto,289,669,Zander Ackley,127,531,1B,138,T3,1,1,0,0,4.75%,-4.75%,0,0,182,16,4,CHU,HSH,1B,1B,,1
+Steel Pipe Simpson,80,571,Zander Ackley,127,103,DP,468,T3,1,4,0,0,-12.57%,12.57%,0,0,182,16,4,CHU,HSH,RGO,RGO,,1
+Yoshigahara Ryutai,133,356,Alvin Lockheart,20,776,K,420,B3,0,0,0,0,-3.07%,3.07%,0,0,183,16,4,HSH,CHU,K,K,,1
+Hidetoshi Hasagawa,102,920,Alvin Lockheart,20,492,K,428,B3,1,0,0,0,-2.77%,2.77%,0,0,183,16,4,HSH,CHU,K,K,,1
+Caleb Athen,325,621,Alvin Lockheart,20,,RGO,,B3,2,0,0,0,-2.27%,2.27%,0,0,183,16,4,HSH,CHU,RGO,RGO,,1
+Boon Dawg Daniels,115,1,Zander Ackley,127,6,HR,5,T4,0,0,0,0,17.92%,-17.92%,1,1,184,16,4,CHU,HSH,HR,HR,,1
+Fister Roboto,445,977,Zander Ackley,127,320,K,343,T4,0,0,0,1,-2.44%,2.44%,0,0,184,16,4,CHU,HSH,K,K,,1
+Jack Alpha,73,600,Zander Ackley,127,865,K,265,T4,1,0,0,1,-2.13%,2.13%,0,0,184,16,4,CHU,HSH,K,K,,1
+Antonin Periwinkle,185,487,Zander Ackley,127,612,BB,125,T4,2,0,0,1,1.85%,-1.85%,0,0,184,16,4,CHU,HSH,BB,BB,,1
+Dominus Nominus,278,420,Zander Ackley,127,241,BB,179,T4,2,1,0,1,2.72%,-2.72%,0,0,184,16,4,CHU,HSH,BB,BB,,1
+Alvin Lockheart,20,662,Zander Ackley,127,241,RGO,421,T4,2,4,0,1,-6.50%,6.50%,0,0,184,16,4,CHU,HSH,RGO,RGO,,1
+Zander Ackley,127,34,Alvin Lockheart,20,301,FO,267,B4,0,0,0,1,-4.38%,4.38%,0,0,185,16,4,HSH,CHU,FO,FO,,1
+Jack Elliot,76,55,Alvin Lockheart,20,164,BB,109,B4,1,0,0,1,4.07%,-4.07%,0,1,185,16,4,HSH,CHU,BB,BB,,1
+Dart Ragusa,134,800,Alvin Lockheart,20,100,K,300,B4,1,1,0,1,-4.31%,4.31%,0,0,185,16,4,HSH,CHU,K,K,,1
+Syd Ryu,3,903,Alvin Lockheart,20,860,2B,43,B4,2,1,0,1,23.50%,-23.50%,1,0,185,16,4,HSH,CHU,2B,2B,,1
+Homer Pimpson,144,860,Alvin Lockheart,20,693,FO,167,B4,2,2,1,1,-7.41%,7.41%,0,0,185,16,4,HSH,CHU,FO,FO,,1
+Jack Marnette,213,535,Zander Ackley,127,91,RGO,444,T5,0,0,1,1,-4.31%,4.31%,0,0,186,16,4,CHU,HSH,RGO,RGO,,1
+Akiyoshi Yamamoto,289,876,Zander Ackley,127,741,1B,135,T5,1,0,1,1,3.47%,-3.47%,0,0,186,16,4,CHU,HSH,1B,1B,,1
+Steel Pipe Simpson,80,836,Zander Ackley,127,138,K,302,T5,1,1,1,1,-4.01%,4.01%,0,0,186,16,4,CHU,HSH,K,K,,1
+Boon Dawg Daniels,115,1,Zander Ackley,127,578,RGO,423,T5,2,1,1,1,-6.87%,6.87%,0,0,186,16,4,CHU,HSH,RGO,RGO,,1
+Rintaro Okabe,290,536,Alvin Lockheart,20,782,FO,246,B5,0,0,1,1,-4.12%,4.12%,0,0,187,16,4,HSH,CHU,FO,FO,,1
+Yoshigahara Ryutai,133,942,Alvin Lockheart,20,132,FO,190,B5,1,0,1,1,-3.89%,3.89%,0,0,187,16,4,HSH,CHU,FO,FO,,1
+Hidetoshi Hasagawa,102,777,Alvin Lockheart,20,666,1B,111,B5,2,0,1,1,3.18%,-3.18%,0,0,187,16,4,HSH,CHU,1B,1B,,1
+Caleb Athen,325,542,Alvin Lockheart,20,915,K,373,B5,2,1,1,1,-6.86%,6.86%,0,0,187,16,4,HSH,CHU,K,K,,1
+Jessie Vance,33,702,Zander Ackley,127,188,LGO,486,T6,0,0,1,1,-5.44%,5.44%,0,0,188,16,4,CHU,HSH,LGO,LGO,,1
+Jack Alpha,73,980,Zander Ackley,127,907,1B,73,T6,1,0,1,1,3.75%,-3.75%,0,0,188,16,4,CHU,HSH,1B,1B,,1
+Antonin Periwinkle,185,834,Zander Ackley,127,441,K,393,T6,1,1,1,1,-4.81%,4.81%,0,0,188,16,4,CHU,HSH,K,K,,1
+Dominus Nominus,278,333,Zander Ackley,127,496,BB,163,T6,2,1,1,1,4.96%,-4.96%,0,0,188,16,4,CHU,HSH,BB,BB,,1
+Alvin Lockheart,20,2,Zander Ackley,127,340,K,338,T6,2,4,1,1,-13.89%,13.89%,0,0,188,16,4,CHU,HSH,K,K,,1
+Zander Ackley,127,391,Alvin Lockheart,20,500,1B,109,B6,0,0,1,1,3.24%,-3.24%,0,0,189,16,4,HSH,CHU,1B,1B,,1
+Jack Elliot,76,388,Alvin Lockheart,20,114,K,274,B6,0,1,1,1,-5.58%,5.58%,0,0,189,16,4,HSH,CHU,K,K,,1
+Zander Ackley,127,900,Alvin Lockheart,20,386,CS,486,B6,1,1,1,1,-8.02%,8.02%,0,0,189,16,4,HSH,CHU,CS 2B,CS 2B,,4
+Dart Ragusa,134,742,Alvin Lockheart,20,1000,FO,258,B6,2,0,1,1,-18.50%,18.50%,0,0,189,16,4,HSH,CHU,FO,FO,,1
+Jack Marnette,213,907,Zander Ackley,127,195,K,288,T7,0,2,1,1,-9.04%,9.04%,0,0,190,16,4,CHU,HSH,K,K,,1
+Akiyoshi Yamamoto,289,673,Zander Ackley,127,195,LGO,478,T7,1,2,1,1,-7.31%,7.31%,0,0,190,16,4,CHU,HSH,LGO,LGO,,1
+Steel Pipe Simpson,80,697,Zander Ackley,127,195,LGO,498,T7,2,2,1,1,-25.25%,25.25%,0,0,190,16,4,CHU,HSH,LGO,LGO,,1
+Syd Ryu,3,333,Alvin Lockheart,20,124,FO,209,B7,0,2,1,1,-8.43%,8.43%,0,0,191,16,4,HSH,CHU,FO,FO,,1
+Homer Pimpson,144,414,Alvin Lockheart,20,393,3B,21,B7,1,2,1,1,30.22%,-30.22%,1,0,191,16,4,HSH,CHU,3B,3B,,1
+Kevin Ariannatanabe,113,5,Alex Brown,444,845,1B,160,T1,0,0,0,0,2.91%,-2.91%,0,1,192,17,4,HKU,HIR,1B,1B,,1
+Thomas Nova,1,745,Alex Brown,444,801,1B,56,T1,0,1,0,0,5.56%,-5.56%,0,0,192,17,4,HKU,HIR,1B,1B,,1
+Kris Jaxon,152,675,Alex Brown,444,207,DP,468,T1,0,4,0,0,-10.00%,10.00%,0,0,192,17,4,HKU,HIR,RGO,RGO,,1
+Layzer Gunn,259,942,Alex Brown,444,900,2B,42,T1,2,3,0,0,11.68%,-11.68%,1,0,192,17,4,HKU,HIR,2B,2B,,1
+Oliver Yu,286,385,Alex Brown,444,555,FO,170,T1,2,2,0,1,-4.22%,4.22%,0,0,192,17,4,HKU,HIR,FO,FO,,1
+Mattress Cadaire,116,318,Logan Anderson,236,99,FO,219,B1,0,0,0,1,-2.79%,2.79%,0,0,193,17,4,HIR,HKU,FO,FO,,1
+Dirtbag Darrell,262,350,Logan Anderson,236,662,K,312,B1,1,0,0,1,-2.36%,2.36%,0,0,193,17,4,HIR,HKU,K,K,,1
+Rich Mahogany,265,66,Logan Anderson,236,102,2B,36,B1,2,0,0,1,3.53%,-3.53%,0,0,193,17,4,HIR,HKU,2B,2B,,1
+Gottlieb Giannopoulos,89,508,Logan Anderson,236,110,RGO,398,B1,2,2,0,1,-5.41%,5.41%,0,0,193,17,4,HIR,HKU,RGO,RGO,,1
+A.J. Preller,319,567,Alex Brown,444,24,RGO,457,T2,0,0,0,1,-2.27%,2.27%,0,0,194,17,4,HKU,HIR,RGO,RGO,,1
+KC Bats,287,827,Alex Brown,444,678,FO,149,T2,1,0,0,1,-2.02%,2.02%,0,0,194,17,4,HKU,HIR,FO,FO,,1
+Gustav Ahr,128,739,Alex Brown,444,735,HR,4,T2,2,0,0,1,12.05%,-12.05%,1,1,194,17,4,HKU,HIR,HR,HR,,1
+Logan Anderson,236,,Alex Brown,444,,Auto K,,T2,2,0,0,2,-1.37%,1.37%,0,0,194,17,4,HKU,HIR,Auto K,Auto K,,9
+Boi Lover,84,715,Logan Anderson,236,99,RGO,384,B2,0,0,0,2,-2.94%,2.94%,0,0,195,17,4,HIR,HKU,RGO,RGO,,1
+Icna Comit,198,555,Filet-Mignon Jackson,320,767,FO,212,T1,0,0,0,0,-2.51%,2.51%,0,0,196,18,4,CHI,HNF,FO,FO,,1
+Seik Golden,251,420,Filet-Mignon Jackson,320,361,1B,59,T1,1,0,0,0,2.43%,-2.43%,0,1,196,18,4,CHI,HNF,1B,1B,,1
+Viking Fishbird,42,726,Filet-Mignon Jackson,320,338,PO,388,T1,1,1,0,0,-2.63%,2.63%,0,0,196,18,4,CHI,HNF,PO,PO,,1
+Hingle McCringleberry,257,123,Filet-Mignon Jackson,320,111,HR,12,T1,2,1,0,0,21.23%,-21.23%,2,1,196,18,4,CHI,HNF,HR,HR,,1
+Morello D. Luffy,211,789,Filet-Mignon Jackson,320,101,K,312,T1,2,0,0,2,-1.24%,1.24%,0,0,196,18,4,CHI,HNF,K,K,,1
+Ian Brendan Owen Bust,186,885,Seik Golden,251,35,BB,150,B1,0,0,0,2,3.47%,-3.47%,0,0,197,18,4,HNF,CHI,BB,BB,,1
+Jocko Jones,295,738,Seik Golden,251,565,BB,173,B1,0,1,0,2,6.67%,-6.67%,0,0,197,18,4,HNF,CHI,BB,BB,,1
+Jimjon Jonjim,272,469,Seik Golden,251,920,DP,451,B1,0,4,0,2,-11.98%,11.98%,0,0,197,18,4,HNF,CHI,RGO,RGO,,1
+Jerry Jingles,146,666,Seik Golden,251,895,FO,229,B1,2,3,0,2,-4.82%,4.82%,0,0,197,18,4,HNF,CHI,FO,FO,,1
+Vigolashi Dongelini,159,950,Filet-Mignon Jackson,320,46,1B,96,T2,0,0,0,2,1.66%,-1.66%,0,0,198,18,4,CHI,HNF,1B,1B,,1
+Tike Mruk,104,749,Filet-Mignon Jackson,320,241,DP,492,T2,0,1,0,2,-4.88%,4.88%,0,0,198,18,4,CHI,HNF,LGO,LGO,,1
+Miroslav Radovicnovizicidivizcinicizivich,71,150,Filet-Mignon Jackson,320,337,FO,187,T2,2,0,0,2,-1.37%,1.37%,0,0,198,18,4,CHI,HNF,FO,FO,,1
+Skeeter Williams,229,371,Seik Golden,251,101,FO,270,B2,0,0,0,2,-2.94%,2.94%,0,0,199,18,4,HNF,CHI,FO,FO,,1
+Reimer Gonzalez,13,222,Seik Golden,251,328,1B,106,B2,1,0,0,2,2.98%,-2.98%,0,0,199,18,4,HNF,CHI,1B,1B,,1
+Yoshigahara Ryutai,133,631,Seik Golden,251,908,FO,277,B2,1,1,0,2,-3.32%,3.32%,0,0,199,18,4,HNF,CHI,FO,FO,,1
+Haruto Tanaka,189,666,Seik Golden,251,809,BB,143,B2,2,1,0,2,3.70%,-3.70%,0,0,199,18,4,HNF,CHI,BB,BB,,1
+Filet-Mignon Jackson,320,424,Seik Golden,251,252,FO,172,B2,2,4,0,2,-7.81%,7.81%,0,0,199,18,4,HNF,CHI,FO,FO,,1
+Phil Coulson,226,286,Filet-Mignon Jackson,320,857,LGO,429,T3,0,0,0,2,-1.72%,1.72%,0,0,200,18,4,CHI,HNF,LGO,LGO,,1
+Icna Comit,198,902,Filet-Mignon Jackson,320,484,RGO,418,T3,1,0,0,2,-1.56%,1.56%,0,0,200,18,4,CHI,HNF,RGO,RGO,,1
+Seik Golden,251,787,Filet-Mignon Jackson,320,655,BB,132,T3,2,0,0,2,1.36%,-1.36%,0,0,200,18,4,CHI,HNF,BB,BB,,1
+Viking Fishbird,42,345,Filet-Mignon Jackson,320,121,FO,224,T3,2,1,0,2,-2.66%,2.66%,0,0,200,18,4,CHI,HNF,FO,FO,,1
+Ian Brendan Owen Bust,186,638,Seik Golden,251,132,LGO,494,B3,0,0,0,2,-3.28%,3.28%,0,0,201,18,4,HNF,CHI,LGO,LGO,,1
+Jocko Jones,295,738,Seik Golden,251,132,RGO,394,B3,1,0,0,2,-2.78%,2.78%,0,0,201,18,4,HNF,CHI,RGO,RGO,,1
+Jimjon Jonjim,272,721,Seik Golden,251,132,PO,411,B3,2,0,0,2,-2.07%,2.07%,0,0,201,18,4,HNF,CHI,PO,PO,,1
+Hingle McCringleberry,257,420,Filet-Mignon Jackson,320,250,FO,170,T4,0,0,0,2,-1.53%,1.53%,0,0,202,18,4,CHI,HNF,FO,FO,,1
+Pickle Rick,150,469,Naoki Tentacles,216,299,FO,170,T1,0,0,0,0,-2.51%,2.51%,0,0,203,19,4,NAN,RGE,FO,FO,,1
+Owen Thirlwell,156,299,Naoki Tentacles,216,275,3B,24,T1,1,0,0,0,7.86%,-7.86%,0,0,203,19,4,NAN,RGE,3B,3B,,1
+Ryosuke Takahashi,36,450,Naoki Tentacles,216,800,K,350,T1,1,3,0,0,-6.88%,6.88%,0,0,203,19,4,NAN,RGE,K,K,,1
+Takumi Fujiwara,91,888,Naoki Tentacles,216,21,BB,133,T1,2,3,0,0,1.65%,-1.65%,0,0,203,19,4,NAN,RGE,BB,BB,,1
+Meerkat Timmons,147,555,Naoki Tentacles,216,741,FO,186,T1,2,5,0,0,-6.57%,6.57%,0,0,203,19,4,NAN,RGE,FO,FO,,1
+Jeff Steelflex,268,719,Pickle Rick,150,880,BB,161,B1,0,0,0,0,2.76%,-2.76%,0,0,204,19,4,RGE,NAN,BB,BB,,1
+Harry Peritestes,117,238,Pickle Rick,150,669,DP,431,B1,0,1,0,0,-7.41%,7.41%,0,0,204,19,4,RGE,NAN,RGO,RGO,,1
+Jared Sabor VII,149,3,Pickle Rick,150,816,FO,187,B1,2,0,0,0,-1.79%,1.79%,0,0,204,19,4,RGE,NAN,FO,FO,,1
+Rickey Tucker,163,596,Naoki Tentacles,216,311,K,285,T2,0,0,0,0,-2.72%,2.72%,0,0,205,19,4,NAN,RGE,K,K,,1
+Donnie Draper,138,891,Naoki Tentacles,216,650,FO,241,T2,1,0,0,0,-2.40%,2.40%,0,0,205,19,4,NAN,RGE,FO,FO,,1
+Rueben Salazar,416,246,Naoki Tentacles,216,411,FO,165,T2,2,0,0,0,-1.99%,1.99%,0,0,205,19,4,NAN,RGE,FO,FO,,1
+Ronarudo Washi IIIIII,167,241,Pickle Rick,150,225,HR,16,B2,0,0,0,0,13.33%,-13.33%,1,1,206,19,4,RGE,NAN,HR,HR,,1
+Markese Rolle,2503,486,Pickle Rick,150,70,RGO,416,B2,0,0,1,0,-2.00%,2.00%,0,0,206,19,4,RGE,NAN,RGO,RGO,,1
+Olivia Hyde,175,330,Pickle Rick,150,68,FO,262,B2,1,0,1,0,-1.83%,1.83%,0,0,206,19,4,RGE,NAN,FO,FO,,1
+dednuts,448,71,Pickle Rick,150,860,FO,211,B2,2,0,1,0,-1.56%,1.56%,0,0,206,19,4,RGE,NAN,FO,FO,,1
+Ichigo Kurosaki,351,327,Naoki Tentacles,216,520,FO,193,T3,0,0,1,0,-3.32%,3.32%,0,0,207,19,4,NAN,RGE,FO,FO,,1
+Pickle Rick,150,316,Naoki Tentacles,216,11,K,305,T3,1,0,1,0,-2.85%,2.85%,0,0,207,19,4,NAN,RGE,K,K,,1
+Owen Thirlwell,156,316,Naoki Tentacles,216,780,LGO,464,T3,2,0,1,0,-2.26%,2.26%,0,0,207,19,4,NAN,RGE,LGO,LGO,,1
+Triscutt Mesmer,39,950,Pickle Rick,150,999,2B,49,B3,0,0,1,0,5.21%,-5.21%,0,0,208,19,4,RGE,NAN,2B,2B,,1
+Naoki Tentacles,216,420,Pickle Rick,150,780,K,360,B3,0,2,1,0,-3.47%,3.47%,0,0,208,19,4,RGE,NAN,K,K,,1
+Jeff Steelflex,268,,Pickle Rick,150,,Auto K,,B3,1,2,1,0,-3.05%,3.05%,0,0,208,19,4,RGE,NAN,Auto K,Auto K,,9
+Harry Peritestes,117,258,Pickle Rick,150,780,LGO,478,B3,2,2,1,0,-4.15%,4.15%,0,0,208,19,4,RGE,NAN,LGO,LGO,,1
+Ryosuke Takahashi,36,543,Naoki Tentacles,216,693,BB,150,T4,0,0,1,0,4.68%,-4.68%,0,1,209,19,4,NAN,RGE,BB,BB,,1
+Takumi Fujiwara,91,944,Naoki Tentacles,216,5,2B,61,T4,0,1,1,0,19.96%,-19.96%,0,0,209,19,4,NAN,RGE,2B,2B,,1
+Meerkat Timmons,147,,Naoki Tentacles,216,,Auto K,,T4,0,6,1,0,-9.47%,9.47%,0,0,209,19,4,NAN,RGE,Auto K,Auto K,,9
+Rickey Tucker,163,979,Naoki Tentacles,216,122,Sac,143,T4,1,6,1,0,0.59%,-0.59%,1,0,209,19,4,NAN,RGE,FO,FO,,1
+Donnie Draper,138,500,Naoki Tentacles,216,888,PO,388,T4,2,2,1,1,-7.21%,7.21%,0,0,209,19,4,NAN,RGE,PO,PO,,1
+Jared Sabor VII,149,905,Pickle Rick,150,404,LGO,499,B4,0,0,1,1,-3.43%,3.43%,0,0,210,19,4,RGE,NAN,LGO,LGO,,1
+Ronarudo Washi IIIIII,167,12,Pickle Rick,150,123,BB,111,B4,1,0,1,1,2.66%,-2.66%,0,1,210,19,4,RGE,NAN,BB,BB,,1
+Markese Rolle,2503,56,Pickle Rick,150,355,K,299,B4,1,1,1,1,-3.18%,3.18%,0,0,210,19,4,RGE,NAN,K,K,,1
+Olivia Hyde,175,890,Pickle Rick,150,898,HR,8,B4,2,1,1,1,30.47%,-30.47%,2,1,210,19,4,RGE,NAN,HR,HR,,1
+dednuts,448,229,Pickle Rick,150,333,1B,104,B4,2,0,3,1,0.80%,-0.80%,0,0,210,19,4,RGE,NAN,1B,1B,,1
+Triscutt Mesmer,39,900,Pickle Rick,150,215,K,315,B4,2,1,3,1,-1.66%,1.66%,0,0,210,19,4,RGE,NAN,K,K,,1
+Rueben Salazar,416,74,Naoki Tentacles,216,420,K,346,T5,0,0,3,1,-3.57%,3.57%,0,0,211,19,4,NAN,RGE,K,K,,1
+Ichigo Kurosaki,351,111,Naoki Tentacles,216,611,LGO,500,T5,1,0,3,1,-2.82%,2.82%,0,0,211,19,4,NAN,RGE,LGO,LGO,,1
+Pickle Rick,150,440,Naoki Tentacles,216,232,FO,208,T5,2,0,3,1,-1.93%,1.93%,0,0,211,19,4,NAN,RGE,FO,FO,,1
+Naoki Tentacles,216,777,Pickle Rick,150,919,BB,142,B5,0,0,3,1,0.61%,-0.61%,0,0,212,19,4,RGE,NAN,BB,BB,,1
+Jeff Steelflex,268,,Pickle Rick,150,,Auto K,,B5,0,1,3,1,-0.73%,0.73%,0,0,212,19,4,RGE,NAN,Auto K,Auto K,,9
+Harry Peritestes,117,687,Pickle Rick,150,125,DP,438,B5,1,1,3,1,-1.70%,1.70%,0,0,212,19,4,RGE,NAN,RGO,RGO,,1
+Owen Thirlwell,156,801,Naoki Tentacles,216,711,1B,90,T6,0,0,3,1,6.61%,-6.61%,0,0,213,19,4,NAN,RGE,1B,1B,,1
+Ryosuke Takahashi,36,511,Naoki Tentacles,216,3,DP,492,T6,0,1,3,1,-13.30%,13.30%,0,0,213,19,4,NAN,RGE,LGO,LGO,,1
+Takumi Fujiwara,91,844,Naoki Tentacles,216,879,2B,35,T6,2,0,3,1,3.49%,-3.49%,0,0,213,19,4,NAN,RGE,2B,2B,,1
+Meerkat Timmons,147,720,Naoki Tentacles,216,211,LGO,491,T6,2,2,3,1,-5.16%,5.16%,0,0,213,19,4,NAN,RGE,LGO,LGO,,1
+Nicholas Verducci,70,222,Hans Ali,197,123,1B,99,T1,0,0,0,0,2.91%,-2.91%,0,0,214,20,4,ORI,YOK,1B,1B,,1
+Karl Jernigan,439,708,Hans Ali,197,1,K,293,T1,0,1,0,0,-2.99%,2.99%,0,0,214,20,4,ORI,YOK,K,K,,1
+Daniel Dove,66,592,Hans Ali,197,356,FO,236,T1,1,1,0,0,-2.63%,2.63%,0,0,214,20,4,ORI,YOK,FO,FO,,1
+Nicholas Verducci,70,333,Hans Ali,197,789,CS,456,T1,2,1,0,0,-3.74%,3.74%,0,0,214,20,4,ORI,YOK,CS 2B,CS 2B,,4
+Koyomi Araragi,293,333,Charles Magnus,220,420,1B,87,B1,0,0,0,0,2.76%,-2.76%,0,0,215,20,4,YOK,ORI,1B,1B,,1
+Demetrios Ooga,180,69,Charles Magnus,220,999,1B,70,B1,0,1,0,0,5.20%,-5.20%,0,0,215,20,4,YOK,ORI,1B,1B,,1
+Henry Crowell,184,478,Charles Magnus,220,999,DP,479,B1,0,4,0,0,-9.36%,9.36%,0,0,215,20,4,YOK,ORI,LGO,LGO,,1
+Lloyd Gross,135,269,Charles Magnus,220,999,FO,270,B1,2,3,0,0,-5.04%,5.04%,0,0,215,20,4,YOK,ORI,FO,FO,,1
+Josh Gordon,409,116,Hans Ali,197,123,HR,7,T2,0,0,0,0,12.97%,-12.97%,1,1,216,20,4,ORI,YOK,HR,HR,,1
+Michael Ikenberry,63,123,Hans Ali,197,69,1B,54,T2,0,0,0,1,2.40%,-2.40%,0,0,216,20,4,ORI,YOK,1B,1B,,1
+Michael Ikenberry,63,900,Hans Ali,197,69,SB,169,T2,0,1,0,1,3.18%,-3.18%,0,0,216,20,4,ORI,YOK,Steal 2B,Steal 2B,,4
+Luap Renraw,118,666,Hans Ali,197,69,RGO,403,T2,0,2,0,1,-0.54%,0.54%,0,0,216,20,4,ORI,YOK,RGO,RGO,,1
+Takahiro Hirasawa,419,972,Hans Ali,197,345,PO,373,T2,1,3,0,1,-6.39%,6.39%,0,0,216,20,4,ORI,YOK,PO,PO,,1
+Charles Magnus,220,499,Hans Ali,197,69,RGO,430,T2,2,3,0,1,-4.63%,4.63%,0,0,216,20,4,ORI,YOK,RGO,RGO,,1
+Jack Meloy,145,977,Charles Magnus,220,777,FO,200,B2,0,0,0,1,-3.11%,3.11%,0,0,217,20,4,YOK,ORI,FO,FO,,1
+Tommy Oldman,143,777,Charles Magnus,220,277,LGO,500,B2,1,0,0,1,-2.69%,2.69%,0,0,217,20,4,YOK,ORI,LGO,LGO,,1
+Hans Ali,197,,Charles Magnus,220,,Auto BB,,B2,2,0,0,1,2.56%,-2.56%,0,0,217,20,4,YOK,ORI,Auto BB,Auto BB,,10
+Niko Banks,430,777,Charles Magnus,220,100,K,323,B2,2,1,0,1,-4.69%,4.69%,0,0,217,20,4,YOK,ORI,K,K,,1
+Becky McBadbat,277,133,Hans Ali,197,655,LGO,478,T3,0,0,0,1,-2.37%,2.37%,0,0,218,20,4,ORI,YOK,LGO,LGO,,1
+Nicholas Verducci,70,321,Hans Ali,197,233,1B,88,T3,1,0,0,1,2.04%,-2.04%,0,0,218,20,4,ORI,YOK,1B,1B,,1
+Karl Jernigan,439,871,Hans Ali,197,344,DP,473,T3,1,1,0,1,-5.89%,5.89%,0,0,218,20,4,ORI,YOK,LGO,LGO,,1
+Jake Wilson,454,454,Charles Magnus,220,555,1B,101,B3,0,0,0,1,4.12%,-4.12%,0,0,219,20,4,YOK,ORI,1B,1B,,1
+Koyomi Araragi,293,888,Charles Magnus,220,614,FO,274,B3,0,1,0,1,-4.39%,4.39%,0,0,219,20,4,YOK,ORI,FO,FO,,1
+Demetrios Ooga,180,714,Charles Magnus,220,345,K,369,B3,1,1,0,1,-3.75%,3.75%,0,0,219,20,4,YOK,ORI,K,K,,1
+Henry Crowell,184,347,Charles Magnus,220,999,K,348,B3,2,1,0,1,-5.25%,5.25%,0,0,219,20,4,YOK,ORI,K,K,,1
+Daniel Dove,66,722,Hans Ali,197,1,K,279,T4,0,0,0,1,-2.44%,2.44%,0,0,220,20,4,ORI,YOK,K,K,,1
+Josh Gordon,409,365,Hans Ali,197,243,1B,122,T4,1,0,0,1,1.93%,-1.93%,0,0,220,20,4,ORI,YOK,1B,1B,,1
+Michael Ikenberry,63,555,Hans Ali,197,334,FO,221,T4,1,1,0,1,-2.21%,2.21%,0,0,220,20,4,ORI,YOK,FO,FO,,1
+Luap Renraw,118,123,Hans Ali,197,788,K,335,T4,2,1,0,1,-3.78%,3.78%,0,0,220,20,4,ORI,YOK,K,K,,1
+Lloyd Gross,135,69,Charles Magnus,220,99,HR,30,B4,0,0,0,1,20.94%,-20.94%,1,1,221,20,4,YOK,ORI,HR,HR,,1
+Jack Meloy,145,912,Charles Magnus,220,247,K,335,B4,0,0,1,1,-3.43%,3.43%,0,0,221,20,4,YOK,ORI,K,K,,1

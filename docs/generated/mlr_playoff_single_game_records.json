@@ -362,15 +362,15 @@
         ]
       },
       "WPA": {
-        "record": 0.8047,
+        "record": 0.8657,
         "holders": [
           {
-            "id": 137,
-            "season": "S4",
-            "session": "DS",
-            "team": "KCR",
+            "id": 2524,
+            "season": "S9",
+            "session": "WC",
+            "team": "CHC",
             "location": "Home",
-            "opponent": "SEA"
+            "opponent": "PHI"
           }
         ]
       }
@@ -702,15 +702,15 @@
         ]
       },
       "WPA": {
-        "record": 1.1120999999999999,
+        "record": 1.5675999999999999,
         "holders": [
           {
-            "id": 127,
-            "season": "S4",
+            "id": 265,
+            "season": "S7",
             "session": "CS",
-            "team": "KCR",
-            "location": "Away",
-            "opponent": "NYY"
+            "team": "MIN",
+            "location": "Home",
+            "opponent": "TOR"
           }
         ]
       }
@@ -1075,11 +1075,11 @@
         ]
       },
       "WPA": {
-        "record": 0.8882,
+        "record": 0.9168000000000002,
         "holders": [
           {
-            "team": "KCR",
-            "season": "S4",
+            "team": "OAK",
+            "season": "S8",
             "session": "DS",
             "location": "Home",
             "opponent": "SEA"
@@ -1471,14 +1471,14 @@
         ]
       },
       "WPA": {
-        "record": 1.1120999999999999,
+        "record": 1.5675999999999999,
         "holders": [
           {
-            "team": "KCR",
-            "season": "S4",
+            "team": "MIN",
+            "season": "S7",
             "session": "CS",
-            "location": "Away",
-            "opponent": "NYY"
+            "location": "Home",
+            "opponent": "TOR"
           }
         ]
       }
@@ -1766,12 +1766,12 @@
         ]
       },
       "WPA": {
-        "record": 1.2396,
+        "record": 1.3336000000000003,
         "holders": [
           {
             "away": "SEA",
-            "home": "KCR",
-            "season": "S4",
+            "home": "OAK",
+            "season": "S8",
             "session": "DS"
           }
         ]
@@ -2069,12 +2069,12 @@
         ]
       },
       "WPA": {
-        "record": 1.6413999999999997,
+        "record": 2.6351999999999998,
         "holders": [
           {
-            "away": "KCR",
-            "home": "NYY",
-            "season": "S4",
+            "away": "TOR",
+            "home": "MIN",
+            "season": "S7",
             "session": "CS"
           }
         ]

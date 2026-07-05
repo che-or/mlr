@@ -340,16 +340,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 507,
-        "most_recent": {
-          "id": 10,
-          "season": "S1",
-          "session": 8,
-          "team": "SM",
-          "location": "Home",
-          "opponent": "SCO"
-        }
+        "record": 0.6558999999999999,
+        "holders": [
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 1,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "BRB"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -742,16 +743,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 125,
-        "most_recent": {
-          "id": 32,
-          "season": "S1",
-          "session": 8,
-          "team": "SCO",
-          "location": "Away",
-          "opponent": "SM"
-        }
+        "record": 1.0647,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 5,
+            "team": "SWZ",
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
       }
     }
   },
@@ -1122,15 +1124,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 54,
-        "most_recent": {
-          "team": "SCO",
-          "season": "S1",
-          "session": 8,
-          "location": "Away",
-          "opponent": "SM"
-        }
+        "record": 0.7219,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -1538,15 +1541,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 54,
-        "most_recent": {
-          "team": "SCO",
-          "season": "S1",
-          "session": 8,
-          "location": "Away",
-          "opponent": "SM"
-        }
+        "record": 0.9897,
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
       }
     }
   },
@@ -1826,14 +1830,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 27,
-        "most_recent": {
-          "away": "SCO",
-          "home": "SM",
-          "season": "S1",
-          "session": 8
-        }
+        "record": 0.9437999999999999,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "BRB",
+            "season": "S1",
+            "session": 5
+          }
+        ]
       }
     },
     "pitcher": {
@@ -2109,14 +2114,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 27,
-        "most_recent": {
-          "away": "SCO",
-          "home": "SM",
-          "season": "S1",
-          "session": 8
-        }
+        "record": 1.4793999999999998,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
       }
     }
   }

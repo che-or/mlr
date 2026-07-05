@@ -455,16 +455,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 365,
-        "most_recent": {
-          "id": 63,
-          "season": "S1",
-          "session": 4,
-          "team": "ORI",
-          "location": "Away",
-          "opponent": "YOK"
-        }
+        "record": 0.7071999999999999,
+        "holders": [
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 1,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "HNF"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -881,16 +882,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 54,
-        "most_recent": {
-          "id": 197,
-          "season": "S1",
-          "session": 4,
-          "team": "YOK",
-          "location": "Home",
-          "opponent": "ORI"
-        }
+        "record": 0.7896999999999998,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
       }
     }
   },
@@ -1246,15 +1248,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 40,
-        "most_recent": {
-          "team": "ORI",
-          "season": "S1",
-          "session": 4,
-          "location": "Away",
-          "opponent": "YOK"
-        }
+        "record": 0.7549999999999999,
+        "holders": [
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -1640,15 +1643,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 40,
-        "most_recent": {
-          "team": "ORI",
-          "season": "S1",
-          "session": 4,
-          "location": "Away",
-          "opponent": "YOK"
-        }
+        "record": 0.7896999999999998,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
       }
     }
   },
@@ -1951,14 +1955,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 20,
-        "most_recent": {
-          "away": "ORI",
-          "home": "YOK",
-          "season": "S1",
-          "session": 4
-        }
+        "record": 1.01,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "CHI",
+            "season": "S1",
+            "session": 1
+          }
+        ]
       }
     },
     "pitcher": {
@@ -2258,14 +2263,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 20,
-        "most_recent": {
-          "away": "ORI",
-          "home": "YOK",
-          "season": "S1",
-          "session": 4
-        }
+        "record": 1.0794,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
       }
     }
   }

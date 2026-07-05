@@ -1,157 +1,157 @@
 Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,PA Type
-King Raj,2715,256,Ferda Bois,270,862,PO,394,T1,0,0,0,0,,,0,0,1,1,1,KGB,POS,PO,PO,,1
-Jimmy Payne,2780,555,Ferda Bois,270,862,K,307,T1,1,0,0,0,,,0,0,1,1,1,KGB,POS,K,K,,1
-cocl,487,862,Ferda Bois,270,117,K,255,T1,2,0,0,0,,,0,0,1,1,1,KGB,POS,K,K,,1
-Sean Carrcrash,1709,724,Vader Page,2657,101,PO,377,B1,0,0,0,0,,,0,0,2,1,1,POS,KGB,PO,PO,,1
-Kenny Powers,2627,848,Vader Page,2657,817,2B,31,B1,1,0,0,0,,,0,0,2,1,1,POS,KGB,2B,2B,,1
-Princess Peach,2606,639,Vader Page,2657,569,1B,70,B1,1,2,0,0,,,0,0,2,1,1,POS,KGB,1B,1B,,1
-Princess Peach,2606,750,Vader Page,2657,3,SB,253,B1,1,5,0,0,,,0,0,2,1,1,POS,KGB,Steal 2B,Steal 2B,,5
-Jerome Peterson,2641,287,Vader Page,2657,670,RGO,383,B1,1,6,0,0,,,0,0,2,1,1,POS,KGB,RGO,RGO,,2
-Axkoa Griffin,2848,111,Vader Page,2657,901,FO,210,B1,2,6,0,0,,,0,0,2,1,1,POS,KGB,FO,FO,,1
-Smokey Zygowski,2945,71,Ferda Bois,270,538,LGO,467,T2,0,0,0,0,,,0,0,3,1,1,KGB,POS,LGO,LGO,,1
-Vader Page,2657,830,Ferda Bois,270,392,RGO,438,T2,1,0,0,0,,,0,0,3,1,1,KGB,POS,RGO,RGO,,1
-Antony Joy,2949,743,Ferda Bois,270,682,2B,61,T2,2,0,0,0,,,0,0,3,1,1,KGB,POS,2B,2B,,1
-Dill Doe,2735,682,Ferda Bois,270,48,K,366,T2,2,2,0,0,,,0,0,3,1,1,KGB,POS,K,K,,1
-Dutch Boggs,2625,712,Vader Page,2657,801,1B,89,B2,0,0,0,0,,,0,0,4,1,1,POS,KGB,1B,1B,,1
-Dutch Boggs,2625,901,Vader Page,2657,501,CS,400,B2,0,1,0,0,,,0,0,4,1,1,POS,KGB,CS 2B,CS 2B,,4
-Fatts Richard,2508,69,Vader Page,2657,102,2B,33,B2,1,0,0,0,,,0,0,4,1,1,POS,KGB,2B,2B,,1
-Mack Quackerson,2834,688,Vader Page,2657,216,LGO,472,B2,1,2,0,0,,,0,0,4,1,1,POS,KGB,LGO,LGO,,1
-Jihmih Tyranus,2873,549,Vader Page,2657,301,FO,248,B2,2,2,0,0,,,0,0,4,1,1,POS,KGB,FO,FO,,1
-C. T. Bailiff,2877,4,Ferda Bois,270,222,FO,218,T3,0,0,0,0,,,0,0,5,1,1,KGB,POS,FO,FO,,1
-Willie Gardner,2856,322,Ferda Bois,270,873,RGO,449,T3,1,0,0,0,,,0,0,5,1,1,KGB,POS,RGO,RGO,,1
-King Raj,2715,873,Ferda Bois,270,915,2B,42,T3,2,0,0,0,,,0,1,5,1,1,KGB,POS,2B,2B,,1
-Jimmy Payne,2780,222,Ferda Bois,270,117,1B,105,T3,2,2,0,0,,,1,0,5,1,1,KGB,POS,1B,1B,,1
-cocl,487,312,Ferda Bois,270,678,K,366,T3,2,1,0,1,,,0,0,5,1,1,KGB,POS,K,K,,1
-Sean Carrcrash,1709,1,Vader Page,2657,602,RGO,399,B3,0,0,0,1,,,0,0,6,1,1,POS,KGB,RGO,RGO,,1
-Kenny Powers,2627,355,Vader Page,2657,899,LGO,456,B3,1,0,0,1,,,0,0,6,1,1,POS,KGB,LGO,LGO,,1
-Princess Peach,2606,399,Vader Page,2657,1,RGO,398,B3,2,0,0,1,,,0,0,6,1,1,POS,KGB,RGO,RGO,,1
-Smokey Zygowski,2945,140,Bart Bishop,2900,825,K,315,T4,0,0,0,1,,,0,0,7,1,1,KGB,POS,K,K,,1
-Vader Page,2657,918,Bart Bishop,2900,998,1B,80,T4,1,0,0,1,,,0,0,7,1,1,KGB,POS,1B,1B,,1
-Antony Joy,2949,361,Bart Bishop,2900,846,DP,485,T4,1,1,0,1,,,0,0,7,1,1,KGB,POS,LGO,LGO,,1
-Jerome Peterson,2641,199,Vader Page,2657,220,HR,21,B4,0,0,0,1,,,1,1,8,1,1,POS,KGB,HR,HR,,1
-Axkoa Griffin,2848,91,Vader Page,2657,838,FO,253,B4,0,0,1,1,,,0,0,8,1,1,POS,KGB,FO,FO,,1
-Dutch Boggs,2625,360,Vader Page,2657,477,1B,117,B4,1,0,1,1,,,0,1,8,1,1,POS,KGB,1B,1B,,1
-Dutch Boggs,2625,601,Vader Page,2657,899,SB,298,B4,1,1,1,1,,,0,0,8,1,1,POS,KGB,Steal 2B,Steal 2B,,4
-Fatts Richard,2508,220,Vader Page,2657,500,FO,280,B4,1,2,1,1,,,0,0,8,1,1,POS,KGB,FO,FO,,1
-Mack Quackerson,2834,165,Vader Page,2657,99,1B,66,B4,2,2,1,1,,,1,1,8,1,1,POS,KGB,1B,1B,,1
-Mack Quackerson,2834,420,Vader Page,2657,452,SB,32,B4,2,1,2,1,,,0,0,8,1,1,POS,KGB,Steal 2B,Steal 2B,,4
-Jihmih Tyranus,2873,553,Vader Page,2657,702,BB,149,B4,2,2,2,1,,,0,1,8,1,1,POS,KGB,BB,BB,,1
-Tucker Doubt,567,573,Vader Page,2657,619,2B,46,B4,2,4,2,1,,,2,0,8,1,1,POS,KGB,2B,1B,,1
-Kenny Powers,2627,272,Emerson,703,950,PO,322,B4,2,2,4,1,,,0,0,8,1,1,POS,KGB,PO,PO,,1
-Dill Doe,2735,1,Bart Bishop,2900,220,FO,219,T5,0,0,4,1,,,0,0,9,1,1,KGB,POS,FO,FO,,1
-C. T. Bailiff,2877,420,Bart Bishop,2900,507,1B,87,T5,1,0,4,1,,,0,0,9,1,1,KGB,POS,1B,1B,,1
-Willie Gardner,2856,236,Bart Bishop,2900,601,PO,365,T5,1,1,4,1,,,0,0,9,1,1,KGB,POS,PO,PO,,1
-King Raj,2715,369,Bart Bishop,2900,444,1B,75,T5,2,1,4,1,,,0,0,9,1,1,KGB,POS,1B,1B,,1
-Jimmy Payne,2780,12,Bart Bishop,2900,859,BB,153,T5,2,5,4,1,,,0,0,9,1,1,KGB,POS,BB,BB,,1
-Seymour Asses,2642,250,Tuck,163,823,RGO,427,T5,2,7,4,1,,,0,0,9,1,1,KGB,POS,RGO,RGO,,1
-Princess Peach,2606,171,Emerson,703,629,LGO,458,B5,0,0,4,1,,,0,0,10,1,1,POS,KGB,LGO,LGO,,1
-Jerome Peterson,2641,506,Emerson,703,666,FO,160,B5,1,0,4,1,,,0,0,10,1,1,POS,KGB,FO,FO,,1
-Axkoa Griffin,2848,123,Emerson,703,327,FO,204,B5,2,0,4,1,,,0,0,10,1,1,POS,KGB,FO,FO,,1
-Smokey Zygowski,2945,69,Tuck,163,375,K,306,T6,0,0,4,1,,,0,0,11,1,1,KGB,POS,K,K,,1
-Emerson,703,69,Tuck,163,1,2B,68,T6,1,0,4,1,,,0,0,11,1,1,KGB,POS,2B,2B,,1
-Toastman,2663,569,Tuck,163,376,FO,193,T6,1,2,4,1,,,0,0,11,1,1,KGB,POS,FO,FO,,1
-Dill Doe,2735,2,Tuck,163,569,RGO,433,T6,2,2,4,1,,,0,0,11,1,1,KGB,POS,RGO,RGO,,1
-Salsa Steve,2835,827,Hannibal Bligh,1724,702,1B,125,T1,0,0,0,0,,,0,0,12,2,1,NNL,BIR,1B,1B,,1
-Karl Havoc,2911,249,Hannibal Bligh,1724,973,K,276,T1,0,1,0,0,,,0,0,12,2,1,NNL,BIR,K,K,,1
-Kilometers Straw,2624,321,Hannibal Bligh,1724,522,K,201,T1,1,1,0,0,,,0,0,12,2,1,NNL,BIR,K,K,,1
-Raja Ayun,2248,399,Hannibal Bligh,1724,635,FO,236,T1,2,1,0,0,,,0,0,12,2,1,NNL,BIR,FO,FO,,1
-LaCarpetron Dukemarriot,775,448,Robbie Tightpants,2584,847,PO,399,B1,0,0,0,0,,,0,0,13,2,1,BIR,NNL,PO,PO,,1
-Francesco Hardgust,2691,888,Robbie Tightpants,2584,174,FO,286,B1,1,0,0,0,,,0,0,13,2,1,BIR,NNL,FO,FO,,1
-John McDonald Jr.,2853,210,Robbie Tightpants,2584,201,HR,9,B1,2,0,0,0,,,1,1,13,2,1,BIR,NNL,HR,HR,,1
-Laars Nootbaar jr,2730,299,Robbie Tightpants,2584,186,BB,113,B1,2,0,1,0,,,0,1,13,2,1,BIR,NNL,BB,BB,,1
-Kenny Kawaguchi,783,23,Robbie Tightpants,2584,93,2B,70,B1,2,1,1,0,,,1,0,13,2,1,BIR,NNL,2B,2B,,1
-Rocky Li,2585,520,Robbie Tightpants,2584,330,FO,190,B1,2,2,2,0,,,0,0,13,2,1,BIR,NNL,FO,FO,,1
-Mark Spoon,2377,133,Hannibal Bligh,1724,923,FO,210,T2,0,0,2,0,,,0,0,14,2,1,NNL,BIR,FO,FO,,1
-Trevor Rosé,1725,804,Hannibal Bligh,1724,401,RGO,403,T2,1,0,2,0,,,0,0,14,2,1,NNL,BIR,RGO,RGO,,1
-Corbin Christmas Carol,2827,111,Hannibal Bligh,1724,123,HR,12,T2,2,0,2,0,,,1,1,14,2,1,NNL,BIR,HR,HR,,1
-Enrique Rosales,2734,619,Hannibal Bligh,1724,333,PO,286,T2,2,0,2,1,,,0,0,14,2,1,NNL,BIR,PO,PO,,1
-Hitgood McChunky,2893,129,Robbie Tightpants,2584,534,LGO,405,B2,0,0,2,1,,,0,0,15,2,1,BIR,NNL,LGO,LGO,,1
-Demetrios Ooga,180,320,Robbie Tightpants,2584,202,1B,118,B2,1,0,2,1,,,0,0,15,2,1,BIR,NNL,1B,1B,,1
-Teddy Bigstick,2722,182,Robbie Tightpants,2584,350,BB,168,B2,1,1,2,1,,,0,0,15,2,1,BIR,NNL,BB,FO,,1
-LaCarpetron Dukemarriot,775,944,Robbie Tightpants,2584,350,PO,406,B2,1,4,2,1,,,0,0,15,2,1,BIR,NNL,PO,PO,,1
-Francesco Hardgust,2691,650,Robbie Tightpants,2584,2,PO,352,B2,2,4,2,1,,,0,0,15,2,1,BIR,NNL,PO,PO,,1
-Superbone Threefinger,413,502,Hannibal Bligh,1724,811,PO,309,T3,0,0,2,1,,,0,0,16,2,1,NNL,BIR,PO,PO,,1
-Salsa Steve,2835,734,Hannibal Bligh,1724,286,LGO,448,T3,1,0,2,1,,,0,0,16,2,1,NNL,BIR,LGO,LGO,,1
-Karl Havoc,2911,559,Hannibal Bligh,1724,999,LGO,440,T3,2,0,2,1,,,0,0,16,2,1,NNL,BIR,LGO,LGO,,1
-John McDonald Jr.,2853,678,Robbie Tightpants,2584,650,3B,28,B3,0,0,2,1,,,0,0,17,2,1,BIR,NNL,3B,3B,,1
-Laars Nootbaar jr,2730,625,Justin Time,2886,121,LO,496,B3,0,3,2,1,,,0,0,17,2,1,BIR,NNL,LO,LGO,,1
-Kenny Kawaguchi,783,755,Justin Time,2886,483,FO,272,B3,2,0,2,1,,,0,0,17,2,1,BIR,NNL,FO,K,,1
-Kilometers Straw,2624,743,Hannibal Bligh,1724,487,K,256,T4,0,0,2,1,,,0,0,18,2,1,NNL,BIR,K,K,,1
-Raja Ayun,2248,838,Hannibal Bligh,1724,623,FO,215,T4,1,0,2,1,,,0,0,18,2,1,NNL,BIR,FO,FO,,1
-Mark Spoon,2377,103,Hannibal Bligh,1724,504,RGO,401,T4,2,0,2,1,,,0,0,18,2,1,NNL,BIR,RGO,RGO,,1
-Lee Luda,2720,840,Justin Time,2886,269,RGO,429,B4,0,0,2,1,,,0,0,19,2,1,BIR,NNL,RGO,RGO,,1
-Hitgood McChunky,2893,556,Justin Time,2886,798,K,242,B4,1,0,2,1,,,0,0,19,2,1,BIR,NNL,K,K,,1
-Demetrios Ooga,180,418,Justin Time,2886,153,FO,265,B4,2,0,2,1,,,0,0,19,2,1,BIR,NNL,FO,FO,,1
-Trevor Rosé,1725,950,Hannibal Bligh,1724,211,K,261,T5,0,0,2,1,,,0,0,20,2,1,NNL,BIR,K,K,,1
-Corbin Christmas Carol,2827,480,Hannibal Bligh,1724,211,K,269,T5,1,0,2,1,,,0,0,20,2,1,NNL,BIR,K,K,,1
-Enrique Rosales,2734,42,Hannibal Bligh,1724,1000,2B,42,T5,2,0,2,1,,,0,0,20,2,1,NNL,BIR,2B,2B,,1
-Superbone Threefinger,413,228,Hannibal Bligh,1724,711,LGO,483,T5,2,2,2,1,,,0,0,20,2,1,NNL,BIR,LGO,LGO,,1
-Teddy Bigstick,2722,510,Justin Time,2886,648,BB,138,B5,0,0,2,1,,,0,1,21,2,1,BIR,NNL,BB,BB,,1
-LaCarpetron Dukemarriot,775,1000,Justin Time,2886,202,FO,202,B5,0,1,2,1,,,0,0,21,2,1,BIR,NNL,FO,FO,,1
-Francesco Hardgust,2691,827,Justin Time,2886,812,HR,15,B5,1,1,2,1,,,2,1,21,2,1,BIR,NNL,HR,HR,,1
-John McDonald Jr.,2853,2,Justin Time,2886,587,RGO,415,B5,1,0,4,1,,,0,0,21,2,1,BIR,NNL,RGO,RGO,,1
-Laars Nootbaar jr,2730,453,Justin Time,2886,348,1B,105,B5,2,0,4,1,,,0,1,21,2,1,BIR,NNL,1B,1B,,1
-Keyo,331,715,Justin Time,2886,765,SB,50,B5,2,1,4,1,,,0,0,21,2,1,BIR,NNL,Steal 2B,Steal 2B,,4
-Kenny Kawaguchi,783,955,Justin Time,2886,967,HR,12,B5,2,2,4,1,,,2,1,21,2,1,BIR,NNL,HR,HR,,1
-Lee Luda,2720,962,Justin Time,2886,967,HR,5,B5,2,0,6,1,,,1,1,21,2,1,BIR,NNL,HR,HR,,1
-Hitgood McChunky,2893,429,Saul Pewald,2708,326,BB,103,B5,2,0,7,1,,,0,0,21,2,1,BIR,NNL,BB,BB,,1
-Mîke Ock,2882,69,Saul Pewald,2708,243,FO,174,B5,2,1,7,1,,,0,0,21,2,1,BIR,NNL,FO,FO,,1
-Salsa Steve,2835,545,Hannibal Bligh,1724,455,1B,90,T6,0,0,7,1,,,0,0,22,2,1,NNL,BIR,1B,1B,,1
-Karl Havoc,2911,167,Hannibal Bligh,1724,812,DP,355,T6,0,1,7,1,,,0,0,22,2,1,NNL,BIR,RGO,RGO,,1
-Kilometers Straw,2624,911,Hannibal Bligh,1724,324,LGO,413,T6,2,0,7,1,,,0,0,22,2,1,NNL,BIR,LGO,LGO,,1
-Sean Carrcrash,1709,69,Brick Bruiser,516,144,1B,75,T1,0,0,0,0,,,0,0,23,3,2,POS,BIR,1B,1B,,1
-Sean Carrcrash,1709,595,Brick Bruiser,516,145,CS,450,T1,0,1,0,0,,,0,0,23,3,2,POS,BIR,CS 2B,CS 2B,,4
-Kenny Powers,2627,676,Brick Bruiser,516,146,LGO,470,T1,1,0,0,0,,,0,0,23,3,2,POS,BIR,LGO,LGO,,1
-Princess Peach,2606,666,Brick Bruiser,516,701,2B,35,T1,2,0,0,0,,,0,0,23,3,2,POS,BIR,2B,2B,,1
-Jerome Peterson,2641,821,Brick Bruiser,516,630,K,191,T1,2,2,0,0,,,0,0,23,3,2,POS,BIR,K,K,,1
-LaCarpetron Dukemarriot,775,626,Hans Freii,2622,900,FO,274,B1,0,0,0,0,,,0,0,24,3,2,BIR,POS,FO,FO,,1
-Francesco Hardgust,2691,750,Hans Freii,2622,900,BB,150,B1,1,0,0,0,,,0,0,24,3,2,BIR,POS,BB,BB,,1
-John McDonald Jr.,2853,412,Hans Freii,2622,100,K,312,B1,1,1,0,0,,,0,0,24,3,2,BIR,POS,K,K,,1
-Tueballs Wunbatt,2946,499,Hans Freii,2622,412,1B,87,B1,2,1,0,0,,,0,0,24,3,2,BIR,POS,1B,1B,,1
-Kenny Kawaguchi,783,55,Hans Freii,2622,212,BB,157,B1,2,5,0,0,,,0,0,24,3,2,BIR,POS,BB,BB,,1
-Lee Luda,2720,353,Hans Freii,2622,550,FO,197,B1,2,7,0,0,,,0,0,24,3,2,BIR,POS,FO,FO,,1
-Basil,2785,763,Brick Bruiser,516,875,1B,112,T2,0,0,0,0,,,0,0,25,3,2,POS,BIR,1B,1B,,1
-Dutch Boggs,2625,642,Brick Bruiser,516,22,PO,380,T2,0,1,0,0,,,0,0,25,3,2,POS,BIR,PO,PO,,1
-Jihmih Tyranus,2873,312,Brick Bruiser,516,823,DP,489,T2,1,1,0,0,,,0,0,25,3,2,POS,BIR,LGO,LGO,,1
-Demetrios Ooga,180,114,Hans Freii,2622,175,2B,61,B2,0,0,0,0,,,0,1,26,3,2,BIR,POS,2B,1B,,1
-Hitgood McChunky,2893,387,Bart Bishop,2900,4,RGO,383,B2,0,2,0,0,,,0,0,26,3,2,BIR,POS,RGO,RGO,,1
-Teddy Bigstick,2722,796,Bart Bishop,2900,560,Sac,236,B2,1,3,0,0,,,1,0,26,3,2,BIR,POS,FO,FO,,2
-LaCarpetron Dukemarriot,775,560,Bart Bishop,2900,579,3B,19,B2,2,0,1,0,,,0,0,26,3,2,BIR,POS,3B,3B,,1
-Francesco Hardgust,2691,818,Bart Bishop,2900,501,K,317,B2,2,3,1,0,,,0,0,26,3,2,BIR,POS,K,K,,1
-Tucker Doubt,567,314,Brick Bruiser,516,256,1B,58,T3,0,0,1,0,,,0,0,27,3,2,POS,BIR,1B,1B,,1
-Fatts Richard,2508,175,Brick Bruiser,516,395,FO,220,T3,0,1,1,0,,,0,0,27,3,2,POS,BIR,FO,FO,,1
-Sean Carrcrash,1709,500,Brick Bruiser,516,54,DP,446,T3,1,1,1,0,,,0,0,27,3,2,POS,BIR,RGO,RGO,,1
-John McDonald Jr.,2853,432,Bart Bishop,2900,250,FO,182,B3,0,0,1,0,,,0,0,28,3,2,BIR,POS,FO,FO,,1
-Tueballs Wunbatt,2946,828,Bart Bishop,2900,799,3B,29,B3,1,0,1,0,,,0,1,28,3,2,BIR,POS,3B,HR,,1
-Kenny Kawaguchi,783,622,Bart Bishop,2900,911,Sac,289,B3,1,3,1,0,,,1,0,28,3,2,BIR,POS,FO,K,,2
-Lee Luda,2720,325,Bart Bishop,2900,442,1B,117,B3,2,0,2,0,,,0,0,28,3,2,BIR,POS,1B,1B,,1
-Lee Luda,2720,900,Johnmaine Chupri,2849,671,SB,229,B3,2,1,2,0,,,0,0,28,3,2,BIR,POS,Steal 2B,Steal 2B,,4
-Demetrios Ooga,180,641,Johnmaine Chupri,2849,792,BB,151,B3,2,2,2,0,,,0,0,28,3,2,BIR,POS,BB,BB,,1
-Hitgood McChunky,2893,865,Johnmaine Chupri,2849,732,BB,133,B3,2,4,2,0,,,0,0,28,3,2,BIR,POS,BB,FO,,1
-Teddy Bigstick,2722,342,Johnmaine Chupri,2849,852,LGO,490,B3,2,7,2,0,,,0,0,28,3,2,BIR,POS,LGO,LGO,,1
-Kenny Powers,2627,840,Brick Bruiser,516,741,1B,99,T4,0,0,2,0,,,0,0,29,3,2,POS,BIR,1B,1B,,1
-Princess Peach,2606,567,Brick Bruiser,516,973,PO,406,T4,0,1,2,0,,,0,0,29,3,2,POS,BIR,PO,PO,,1
-Kenny Powers,2627,125,Brick Bruiser,516,581,CS,456,T4,1,1,2,0,,,0,0,29,3,2,POS,BIR,CS 2B,CS 2B,,4
-Jerome Peterson,2641,210,Brick Bruiser,516,85,BB,125,T4,2,0,2,0,,,0,0,29,3,2,POS,BIR,BB,BB,,1
-Basil,2785,500,Brick Bruiser,516,227,K,273,T4,2,1,2,0,,,0,0,29,3,2,POS,BIR,K,K,,1
-LaCarpetron Dukemarriot,775,840,Johnmaine Chupri,2849,2,FO,162,B4,0,0,2,0,,,0,0,30,3,2,BIR,POS,FO,FO,,1
-Francesco Hardgust,2691,613,Johnmaine Chupri,2849,354,FO,259,B4,1,0,2,0,,,0,0,30,3,2,BIR,POS,FO,FO,,1
-John McDonald Jr.,2853,259,Johnmaine Chupri,2849,99,BB,160,B4,2,0,2,0,,,0,0,30,3,2,BIR,POS,BB,BB,,1
-Tueballs Wunbatt,2946,746,Johnmaine Chupri,2849,647,1B,99,B4,2,1,2,0,,,0,0,30,3,2,BIR,POS,1B,1B,,1
-Kenny Kawaguchi,783,988,Johnmaine Chupri,2849,254,FO,266,B4,2,5,2,0,,,0,0,30,3,2,BIR,POS,FO,FO,,1
-Dutch Boggs,2625,342,Brick Bruiser,516,628,K,286,T5,0,0,2,0,,,0,0,31,3,2,POS,BIR,K,K,,1
-Axkoa Griffin,2848,519,Brick Bruiser,516,722,FO,203,T5,1,0,2,0,,,0,0,31,3,2,POS,BIR,FO,FO,,1
-Tucker Doubt,567,227,Brick Bruiser,516,163,1B,64,T5,2,0,2,0,,,0,0,31,3,2,POS,BIR,1B,1B,,1
-Fatts Richard,2508,164,Brick Bruiser,516,521,PO,357,T5,2,1,2,0,,,0,0,31,3,2,POS,BIR,PO,PO,,1
-Lee Luda,2720,492,Tuck,163,392,1B,100,B5,0,0,2,0,,,0,1,32,3,2,BIR,POS,1B,1B,,1
-Demetrios Ooga,180,590,Tuck,163,276,K,314,B5,0,1,2,0,,,0,0,32,3,2,BIR,POS,K,K,,1
-Hitgood McChunky,2893,633,Tuck,163,698,2B,65,B5,1,1,2,0,,,0,0,32,3,2,BIR,POS,2B,2B,,1
-Teddy Bigstick,2722,698,Tuck,163,476,Sac,222,B5,1,6,2,0,,,1,0,32,3,2,BIR,POS,FO,FO,,2
-LaCarpetron Dukemarriot,775,626,Tuck,163,895,FO,269,B5,2,2,3,0,,,0,0,32,3,2,BIR,POS,FO,FO,,1
-Sean Carrcrash,1709,671,Brick Bruiser,516,663,HR,8,T6,0,0,3,0,,,1,1,33,3,2,POS,BIR,HR,HR,,1
-Kenny Powers,2627,665,Brick Bruiser,516,250,PO,415,T6,0,0,3,1,,,0,0,33,3,2,POS,BIR,PO,PO,,1
-Princess Peach,2606,525,Brick Bruiser,516,567,2B,42,T6,1,0,3,1,,,0,1,33,3,2,POS,BIR,2B,2B,,1
-Jerome Peterson,2641,841,Brick Bruiser,516,733,1B,108,T6,1,2,3,1,,,0,0,33,3,2,POS,BIR,1B,1B,,1
-Mack Quackerson,2834,789,Francesco Hardgust,2691,612,BB,177,T6,1,5,3,1,,,0,0,33,3,2,POS,BIR,BB,BB,,1
-Dutch Boggs,2625,380,Francesco Hardgust,2691,221,BB,159,T6,1,7,3,1,,,1,0,33,3,2,POS,BIR,BB,BB,,1
-Axkoa Griffin,2848,829,Hannibal Bligh,1724,234,DP,405,T6,1,7,3,2,,,0,0,33,3,2,POS,BIR,RGO,RGO,,1
+King Raj,2715,256,Ferda Bois,270,862,PO,394,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,KGB,POS,PO,PO,,1
+Jimmy Payne,2780,555,Ferda Bois,270,862,K,307,T1,1,0,0,0,-2.18%,2.18%,0,0,1,1,1,KGB,POS,K,K,,1
+cocl,487,862,Ferda Bois,270,117,K,255,T1,2,0,0,0,-1.76%,1.76%,0,0,1,1,1,KGB,POS,K,K,,1
+Sean Carrcrash,1709,724,Vader Page,2657,101,PO,377,B1,0,0,0,0,-2.48%,2.48%,0,0,2,1,1,POS,KGB,PO,PO,,1
+Kenny Powers,2627,848,Vader Page,2657,817,2B,31,B1,1,0,0,0,4.73%,-4.73%,0,0,2,1,1,POS,KGB,2B,2B,,1
+Princess Peach,2606,639,Vader Page,2657,569,1B,70,B1,1,2,0,0,5.13%,-5.13%,0,0,2,1,1,POS,KGB,1B,1B,,1
+Princess Peach,2606,750,Vader Page,2657,3,SB,253,B1,1,5,0,0,2.13%,-2.13%,0,0,2,1,1,POS,KGB,Steal 2B,Steal 2B,,5
+Jerome Peterson,2641,287,Vader Page,2657,670,RGO,383,B1,1,6,0,0,-8.33%,8.33%,0,0,2,1,1,POS,KGB,RGO,RGO,,2
+Axkoa Griffin,2848,111,Vader Page,2657,901,FO,210,B1,2,6,0,0,-7.62%,7.62%,0,0,2,1,1,POS,KGB,FO,FO,,1
+Smokey Zygowski,2945,71,Ferda Bois,270,538,LGO,467,T2,0,0,0,0,-2.72%,2.72%,0,0,3,1,1,KGB,POS,LGO,LGO,,1
+Vader Page,2657,830,Ferda Bois,270,392,RGO,438,T2,1,0,0,0,-2.40%,2.40%,0,0,3,1,1,KGB,POS,RGO,RGO,,1
+Antony Joy,2949,743,Ferda Bois,270,682,2B,61,T2,2,0,0,0,3.36%,-3.36%,0,0,3,1,1,KGB,POS,2B,2B,,1
+Dill Doe,2735,682,Ferda Bois,270,48,K,366,T2,2,2,0,0,-5.35%,5.35%,0,0,3,1,1,KGB,POS,K,K,,1
+Dutch Boggs,2625,712,Vader Page,2657,801,1B,89,B2,0,0,0,0,2.94%,-2.94%,0,0,4,1,1,POS,KGB,1B,1B,,1
+Dutch Boggs,2625,901,Vader Page,2657,501,CS,400,B2,0,1,0,0,-5.66%,5.66%,0,0,4,1,1,POS,KGB,CS 2B,CS 2B,,4
+Fatts Richard,2508,69,Vader Page,2657,102,2B,33,B2,1,0,0,0,5.06%,-5.06%,0,0,4,1,1,POS,KGB,2B,2B,,1
+Mack Quackerson,2834,688,Vader Page,2657,216,LGO,472,B2,1,2,0,0,-4.04%,4.04%,0,0,4,1,1,POS,KGB,LGO,LGO,,1
+Jihmih Tyranus,2873,549,Vader Page,2657,301,FO,248,B2,2,2,0,0,-5.43%,5.43%,0,0,4,1,1,POS,KGB,FO,FO,,1
+C. T. Bailiff,2877,4,Ferda Bois,270,222,FO,218,T3,0,0,0,0,-3.03%,3.03%,0,0,5,1,1,KGB,POS,FO,FO,,1
+Willie Gardner,2856,322,Ferda Bois,270,873,RGO,449,T3,1,0,0,0,-2.74%,2.74%,0,0,5,1,1,KGB,POS,RGO,RGO,,1
+King Raj,2715,873,Ferda Bois,270,915,2B,42,T3,2,0,0,0,3.70%,-3.70%,0,1,5,1,1,KGB,POS,2B,2B,,1
+Jimmy Payne,2780,222,Ferda Bois,270,117,1B,105,T3,2,2,0,0,14.32%,-14.32%,1,0,5,1,1,KGB,POS,1B,1B,,1
+cocl,487,312,Ferda Bois,270,678,K,366,T3,2,1,0,1,-3.57%,3.57%,0,0,5,1,1,KGB,POS,K,K,,1
+Sean Carrcrash,1709,1,Vader Page,2657,602,RGO,399,B3,0,0,0,1,-3.58%,3.58%,0,0,6,1,1,POS,KGB,RGO,RGO,,1
+Kenny Powers,2627,355,Vader Page,2657,899,LGO,456,B3,1,0,0,1,-3.10%,3.10%,0,0,6,1,1,POS,KGB,LGO,LGO,,1
+Princess Peach,2606,399,Vader Page,2657,1,RGO,398,B3,2,0,0,1,-2.59%,2.59%,0,0,6,1,1,POS,KGB,RGO,RGO,,1
+Smokey Zygowski,2945,140,Bart Bishop,2900,825,K,315,T4,0,0,0,1,-2.44%,2.44%,0,0,7,1,1,KGB,POS,K,K,,1
+Vader Page,2657,918,Bart Bishop,2900,998,1B,80,T4,1,0,0,1,1.93%,-1.93%,0,0,7,1,1,KGB,POS,1B,1B,,1
+Antony Joy,2949,361,Bart Bishop,2900,846,DP,485,T4,1,1,0,1,-5.99%,5.99%,0,0,7,1,1,KGB,POS,LGO,LGO,,1
+Jerome Peterson,2641,199,Vader Page,2657,220,HR,21,B4,0,0,0,1,20.94%,-20.94%,1,1,8,1,1,POS,KGB,HR,HR,,1
+Axkoa Griffin,2848,91,Vader Page,2657,838,FO,253,B4,0,0,1,1,-3.43%,3.43%,0,0,8,1,1,POS,KGB,FO,FO,,1
+Dutch Boggs,2625,360,Vader Page,2657,477,1B,117,B4,1,0,1,1,2.66%,-2.66%,0,1,8,1,1,POS,KGB,1B,1B,,1
+Dutch Boggs,2625,601,Vader Page,2657,899,SB,298,B4,1,1,1,1,3.71%,-3.71%,0,0,8,1,1,POS,KGB,Steal 2B,Steal 2B,,4
+Fatts Richard,2508,220,Vader Page,2657,500,FO,280,B4,1,2,1,1,-5.00%,5.00%,0,0,8,1,1,POS,KGB,FO,FO,,1
+Mack Quackerson,2834,165,Vader Page,2657,99,1B,66,B4,2,2,1,1,18.65%,-18.65%,1,1,8,1,1,POS,KGB,1B,1B,,1
+Mack Quackerson,2834,420,Vader Page,2657,452,SB,32,B4,2,1,2,1,1.11%,-1.11%,0,0,8,1,1,POS,KGB,Steal 2B,Steal 2B,,4
+Jihmih Tyranus,2873,553,Vader Page,2657,702,BB,149,B4,2,2,2,1,0.93%,-0.93%,0,1,8,1,1,POS,KGB,BB,BB,,1
+Tucker Doubt,567,573,Vader Page,2657,619,2B,46,B4,2,4,2,1,15.24%,-15.24%,2,0,8,1,1,POS,KGB,2B,1B,,1
+Kenny Powers,2627,272,Emerson,703,950,PO,322,B4,2,2,4,1,-1.23%,1.23%,0,0,8,1,1,POS,KGB,PO,PO,,1
+Dill Doe,2735,1,Bart Bishop,2900,220,FO,219,T5,0,0,4,1,-2.30%,2.30%,0,0,9,1,1,KGB,POS,FO,FO,,1
+C. T. Bailiff,2877,420,Bart Bishop,2900,507,1B,87,T5,1,0,4,1,2.76%,-2.76%,0,0,9,1,1,KGB,POS,1B,1B,,1
+Willie Gardner,2856,236,Bart Bishop,2900,601,PO,365,T5,1,1,4,1,-2.79%,2.79%,0,0,9,1,1,KGB,POS,PO,PO,,1
+King Raj,2715,369,Bart Bishop,2900,444,1B,75,T5,2,1,4,1,3.31%,-3.31%,0,0,9,1,1,KGB,POS,1B,1B,,1
+Jimmy Payne,2780,12,Bart Bishop,2900,859,BB,153,T5,2,5,4,1,5.27%,-5.27%,0,0,9,1,1,KGB,POS,BB,BB,,1
+Seymour Asses,2642,250,Tuck,163,823,RGO,427,T5,2,7,4,1,-11.20%,11.20%,0,0,9,1,1,KGB,POS,RGO,RGO,,1
+Princess Peach,2606,171,Emerson,703,629,LGO,458,B5,0,0,4,1,-0.30%,0.30%,0,0,10,1,1,POS,KGB,LGO,LGO,,1
+Jerome Peterson,2641,506,Emerson,703,666,FO,160,B5,1,0,4,1,-0.31%,0.31%,0,0,10,1,1,POS,KGB,FO,FO,,1
+Axkoa Griffin,2848,123,Emerson,703,327,FO,204,B5,2,0,4,1,-0.22%,0.22%,0,0,10,1,1,POS,KGB,FO,FO,,1
+Smokey Zygowski,2945,69,Tuck,163,375,K,306,T6,0,0,4,1,-1.94%,1.94%,0,0,11,1,1,KGB,POS,K,K,,1
+Emerson,703,69,Tuck,163,1,2B,68,T6,1,0,4,1,3.14%,-3.14%,0,0,11,1,1,KGB,POS,2B,2B,,1
+Toastman,2663,569,Tuck,163,376,FO,193,T6,1,2,4,1,-3.35%,3.35%,0,0,11,1,1,KGB,POS,FO,FO,,1
+Dill Doe,2735,2,Tuck,163,569,RGO,433,T6,2,2,4,1,-1.61%,1.61%,0,0,11,1,1,KGB,POS,RGO,RGO,,1
+Salsa Steve,2835,827,Hannibal Bligh,1724,702,1B,125,T1,0,0,0,0,2.91%,-2.91%,0,0,12,2,1,NNL,BIR,1B,1B,,1
+Karl Havoc,2911,249,Hannibal Bligh,1724,973,K,276,T1,0,1,0,0,-2.99%,2.99%,0,0,12,2,1,NNL,BIR,K,K,,1
+Kilometers Straw,2624,321,Hannibal Bligh,1724,522,K,201,T1,1,1,0,0,-2.63%,2.63%,0,0,12,2,1,NNL,BIR,K,K,,1
+Raja Ayun,2248,399,Hannibal Bligh,1724,635,FO,236,T1,2,1,0,0,-3.74%,3.74%,0,0,12,2,1,NNL,BIR,FO,FO,,1
+LaCarpetron Dukemarriot,775,448,Robbie Tightpants,2584,847,PO,399,B1,0,0,0,0,-2.48%,2.48%,0,0,13,2,1,BIR,NNL,PO,PO,,1
+Francesco Hardgust,2691,888,Robbie Tightpants,2584,174,FO,286,B1,1,0,0,0,-2.17%,2.17%,0,0,13,2,1,BIR,NNL,FO,FO,,1
+John McDonald Jr.,2853,210,Robbie Tightpants,2584,201,HR,9,B1,2,0,0,0,12.67%,-12.67%,1,1,13,2,1,BIR,NNL,HR,HR,,1
+Laars Nootbaar jr,2730,299,Robbie Tightpants,2584,186,BB,113,B1,2,0,1,0,1.69%,-1.69%,0,1,13,2,1,BIR,NNL,BB,BB,,1
+Kenny Kawaguchi,783,23,Robbie Tightpants,2584,93,2B,70,B1,2,1,1,0,10.52%,-10.52%,1,0,13,2,1,BIR,NNL,2B,2B,,1
+Rocky Li,2585,520,Robbie Tightpants,2584,330,FO,190,B1,2,2,2,0,-2.84%,2.84%,0,0,13,2,1,BIR,NNL,FO,FO,,1
+Mark Spoon,2377,133,Hannibal Bligh,1724,923,FO,210,T2,0,0,2,0,-2.72%,2.72%,0,0,14,2,1,NNL,BIR,FO,FO,,1
+Trevor Rosé,1725,804,Hannibal Bligh,1724,401,RGO,403,T2,1,0,2,0,-2.27%,2.27%,0,0,14,2,1,NNL,BIR,RGO,RGO,,1
+Corbin Christmas Carol,2827,111,Hannibal Bligh,1724,123,HR,12,T2,2,0,2,0,10.34%,-10.34%,1,1,14,2,1,NNL,BIR,HR,HR,,1
+Enrique Rosales,2734,619,Hannibal Bligh,1724,333,PO,286,T2,2,0,2,1,-1.96%,1.96%,0,0,14,2,1,NNL,BIR,PO,PO,,1
+Hitgood McChunky,2893,129,Robbie Tightpants,2584,534,LGO,405,B2,0,0,2,1,-2.00%,2.00%,0,0,15,2,1,BIR,NNL,LGO,LGO,,1
+Demetrios Ooga,180,320,Robbie Tightpants,2584,202,1B,118,B2,1,0,2,1,1.78%,-1.78%,0,0,15,2,1,BIR,NNL,1B,1B,,1
+Teddy Bigstick,2722,182,Robbie Tightpants,2584,350,BB,168,B2,1,1,2,1,2.93%,-2.93%,0,0,15,2,1,BIR,NNL,BB,FO,,1
+LaCarpetron Dukemarriot,775,944,Robbie Tightpants,2584,350,PO,406,B2,1,4,2,1,-2.84%,2.84%,0,0,15,2,1,BIR,NNL,PO,PO,,1
+Francesco Hardgust,2691,650,Robbie Tightpants,2584,2,PO,352,B2,2,4,2,1,-5.26%,5.26%,0,0,15,2,1,BIR,NNL,PO,PO,,1
+Superbone Threefinger,413,502,Hannibal Bligh,1724,811,PO,309,T3,0,0,2,1,-3.32%,3.32%,0,0,16,2,1,NNL,BIR,PO,PO,,1
+Salsa Steve,2835,734,Hannibal Bligh,1724,286,LGO,448,T3,1,0,2,1,-2.85%,2.85%,0,0,16,2,1,NNL,BIR,LGO,LGO,,1
+Karl Havoc,2911,559,Hannibal Bligh,1724,999,LGO,440,T3,2,0,2,1,-2.26%,2.26%,0,0,16,2,1,NNL,BIR,LGO,LGO,,1
+John McDonald Jr.,2853,678,Robbie Tightpants,2584,650,3B,28,B3,0,0,2,1,8.60%,-8.60%,0,0,17,2,1,BIR,NNL,3B,3B,,1
+Laars Nootbaar jr,2730,625,Justin Time,2886,121,LO,496,B3,0,3,2,1,-12.44%,12.44%,0,0,17,2,1,BIR,NNL,LO,LGO,,1
+Kenny Kawaguchi,783,755,Justin Time,2886,483,FO,272,B3,2,0,2,1,-1.62%,1.62%,0,0,17,2,1,BIR,NNL,FO,K,,1
+Kilometers Straw,2624,743,Hannibal Bligh,1724,487,K,256,T4,0,0,2,1,-3.96%,3.96%,0,0,18,2,1,NNL,BIR,K,K,,1
+Raja Ayun,2248,838,Hannibal Bligh,1724,623,FO,215,T4,1,0,2,1,-3.37%,3.37%,0,0,18,2,1,NNL,BIR,FO,FO,,1
+Mark Spoon,2377,103,Hannibal Bligh,1724,504,RGO,401,T4,2,0,2,1,-2.78%,2.78%,0,0,18,2,1,NNL,BIR,RGO,RGO,,1
+Lee Luda,2720,840,Justin Time,2886,269,RGO,429,B4,0,0,2,1,-1.87%,1.87%,0,0,19,2,1,BIR,NNL,RGO,RGO,,1
+Hitgood McChunky,2893,556,Justin Time,2886,798,K,242,B4,1,0,2,1,-1.74%,1.74%,0,0,19,2,1,BIR,NNL,K,K,,1
+Demetrios Ooga,180,418,Justin Time,2886,153,FO,265,B4,2,0,2,1,-1.49%,1.49%,0,0,19,2,1,BIR,NNL,FO,FO,,1
+Trevor Rosé,1725,950,Hannibal Bligh,1724,211,K,261,T5,0,0,2,1,-4.98%,4.98%,0,0,20,2,1,NNL,BIR,K,K,,1
+Corbin Christmas Carol,2827,480,Hannibal Bligh,1724,211,K,269,T5,1,0,2,1,-4.32%,4.32%,0,0,20,2,1,NNL,BIR,K,K,,1
+Enrique Rosales,2734,42,Hannibal Bligh,1724,1000,2B,42,T5,2,0,2,1,6.10%,-6.10%,0,0,20,2,1,NNL,BIR,2B,2B,,1
+Superbone Threefinger,413,228,Hannibal Bligh,1724,711,LGO,483,T5,2,2,2,1,-9.71%,9.71%,0,0,20,2,1,NNL,BIR,LGO,LGO,,1
+Teddy Bigstick,2722,510,Justin Time,2886,648,BB,138,B5,0,0,2,1,1.23%,-1.23%,0,1,21,2,1,BIR,NNL,BB,BB,,1
+LaCarpetron Dukemarriot,775,1000,Justin Time,2886,202,FO,202,B5,0,1,2,1,-1.46%,1.46%,0,0,21,2,1,BIR,NNL,FO,FO,,1
+Francesco Hardgust,2691,827,Justin Time,2886,812,HR,15,B5,1,1,2,1,11.05%,-11.05%,2,1,21,2,1,BIR,NNL,HR,HR,,1
+John McDonald Jr.,2853,2,Justin Time,2886,587,RGO,415,B5,1,0,4,1,-0.31%,0.31%,0,0,21,2,1,BIR,NNL,RGO,RGO,,1
+Laars Nootbaar jr,2730,453,Justin Time,2886,348,1B,105,B5,2,0,4,1,0.22%,-0.22%,0,1,21,2,1,BIR,NNL,1B,1B,,1
+Keyo,331,715,Justin Time,2886,765,SB,50,B5,2,1,4,1,0.23%,-0.23%,0,0,21,2,1,BIR,NNL,Steal 2B,Steal 2B,,4
+Kenny Kawaguchi,783,955,Justin Time,2886,967,HR,12,B5,2,2,4,1,2.45%,-2.45%,2,1,21,2,1,BIR,NNL,HR,HR,,1
+Lee Luda,2720,962,Justin Time,2886,967,HR,5,B5,2,0,6,1,0.38%,-0.38%,1,1,21,2,1,BIR,NNL,HR,HR,,1
+Hitgood McChunky,2893,429,Saul Pewald,2708,326,BB,103,B5,2,0,7,1,0.06%,-0.06%,0,0,21,2,1,BIR,NNL,BB,BB,,1
+Mîke Ock,2882,69,Saul Pewald,2708,243,FO,174,B5,2,1,7,1,-0.07%,0.07%,0,0,21,2,1,BIR,NNL,FO,FO,,1
+Salsa Steve,2835,545,Hannibal Bligh,1724,455,1B,90,T6,0,0,7,1,0.36%,-0.36%,0,0,22,2,1,NNL,BIR,1B,1B,,1
+Karl Havoc,2911,167,Hannibal Bligh,1724,812,DP,355,T6,0,1,7,1,-0.61%,0.61%,0,0,22,2,1,NNL,BIR,RGO,RGO,,1
+Kilometers Straw,2624,911,Hannibal Bligh,1724,324,LGO,413,T6,2,0,7,1,-0.02%,0.02%,0,0,22,2,1,NNL,BIR,LGO,LGO,,1
+Sean Carrcrash,1709,69,Brick Bruiser,516,144,1B,75,T1,0,0,0,0,2.91%,-2.91%,0,0,23,3,2,POS,BIR,1B,1B,,1
+Sean Carrcrash,1709,595,Brick Bruiser,516,145,CS,450,T1,0,1,0,0,-5.42%,5.42%,0,0,23,3,2,POS,BIR,CS 2B,CS 2B,,4
+Kenny Powers,2627,676,Brick Bruiser,516,146,LGO,470,T1,1,0,0,0,-2.18%,2.18%,0,0,23,3,2,POS,BIR,LGO,LGO,,1
+Princess Peach,2606,666,Brick Bruiser,516,701,2B,35,T1,2,0,0,0,3.05%,-3.05%,0,0,23,3,2,POS,BIR,2B,2B,,1
+Jerome Peterson,2641,821,Brick Bruiser,516,630,K,191,T1,2,2,0,0,-4.81%,4.81%,0,0,23,3,2,POS,BIR,K,K,,1
+LaCarpetron Dukemarriot,775,626,Hans Freii,2622,900,FO,274,B1,0,0,0,0,-2.48%,2.48%,0,0,24,3,2,BIR,POS,FO,FO,,1
+Francesco Hardgust,2691,750,Hans Freii,2622,900,BB,150,B1,1,0,0,0,2.28%,-2.28%,0,0,24,3,2,BIR,POS,BB,BB,,1
+John McDonald Jr.,2853,412,Hans Freii,2622,100,K,312,B1,1,1,0,0,-2.55%,2.55%,0,0,24,3,2,BIR,POS,K,K,,1
+Tueballs Wunbatt,2946,499,Hans Freii,2622,412,1B,87,B1,2,1,0,0,2.82%,-2.82%,0,0,24,3,2,BIR,POS,1B,1B,,1
+Kenny Kawaguchi,783,55,Hans Freii,2622,212,BB,157,B1,2,5,0,0,2.84%,-2.84%,0,0,24,3,2,BIR,POS,BB,BB,,1
+Lee Luda,2720,353,Hans Freii,2622,550,FO,197,B1,2,7,0,0,-9.35%,9.35%,0,0,24,3,2,BIR,POS,FO,FO,,1
+Basil,2785,763,Brick Bruiser,516,875,1B,112,T2,0,0,0,0,3.09%,-3.09%,0,0,25,3,2,POS,BIR,1B,1B,,1
+Dutch Boggs,2625,642,Brick Bruiser,516,22,PO,380,T2,0,1,0,0,-3.24%,3.24%,0,0,25,3,2,POS,BIR,PO,PO,,1
+Jihmih Tyranus,2873,312,Brick Bruiser,516,823,DP,489,T2,1,1,0,0,-6.96%,6.96%,0,0,25,3,2,POS,BIR,LGO,LGO,,1
+Demetrios Ooga,180,114,Hans Freii,2622,175,2B,61,B2,0,0,0,0,6.77%,-6.77%,0,1,26,3,2,BIR,POS,2B,1B,,1
+Hitgood McChunky,2893,387,Bart Bishop,2900,4,RGO,383,B2,0,2,0,0,-0.69%,0.69%,0,0,26,3,2,BIR,POS,RGO,RGO,,1
+Teddy Bigstick,2722,796,Bart Bishop,2900,560,Sac,236,B2,1,3,0,0,3.42%,-3.42%,1,0,26,3,2,BIR,POS,FO,FO,,2
+LaCarpetron Dukemarriot,775,560,Bart Bishop,2900,579,3B,19,B2,2,0,1,0,2.69%,-2.69%,0,0,26,3,2,BIR,POS,3B,3B,,1
+Francesco Hardgust,2691,818,Bart Bishop,2900,501,K,317,B2,2,3,1,0,-4.25%,4.25%,0,0,26,3,2,BIR,POS,K,K,,1
+Tucker Doubt,567,314,Brick Bruiser,516,256,1B,58,T3,0,0,1,0,3.96%,-3.96%,0,0,27,3,2,POS,BIR,1B,1B,,1
+Fatts Richard,2508,175,Brick Bruiser,516,395,FO,220,T3,0,1,1,0,-4.01%,4.01%,0,0,27,3,2,POS,BIR,FO,FO,,1
+Sean Carrcrash,1709,500,Brick Bruiser,516,54,DP,446,T3,1,1,1,0,-8.38%,8.38%,0,0,27,3,2,POS,BIR,RGO,RGO,,1
+John McDonald Jr.,2853,432,Bart Bishop,2900,250,FO,182,B3,0,0,1,0,-2.04%,2.04%,0,0,28,3,2,BIR,POS,FO,FO,,1
+Tueballs Wunbatt,2946,828,Bart Bishop,2900,799,3B,29,B3,1,0,1,0,6.50%,-6.50%,0,1,28,3,2,BIR,POS,3B,HR,,1
+Kenny Kawaguchi,783,622,Bart Bishop,2900,911,Sac,289,B3,1,3,1,0,3.38%,-3.38%,1,0,28,3,2,BIR,POS,FO,K,,2
+Lee Luda,2720,325,Bart Bishop,2900,442,1B,117,B3,2,0,2,0,0.98%,-0.98%,0,0,28,3,2,BIR,POS,1B,1B,,1
+Lee Luda,2720,900,Johnmaine Chupri,2849,671,SB,229,B3,2,1,2,0,0.77%,-0.77%,0,0,28,3,2,BIR,POS,Steal 2B,Steal 2B,,4
+Demetrios Ooga,180,641,Johnmaine Chupri,2849,792,BB,151,B3,2,2,2,0,0.66%,-0.66%,0,0,28,3,2,BIR,POS,BB,BB,,1
+Hitgood McChunky,2893,865,Johnmaine Chupri,2849,732,BB,133,B3,2,4,2,0,1.64%,-1.64%,0,0,28,3,2,BIR,POS,BB,FO,,1
+Teddy Bigstick,2722,342,Johnmaine Chupri,2849,852,LGO,490,B3,2,7,2,0,-5.10%,5.10%,0,0,28,3,2,BIR,POS,LGO,LGO,,1
+Kenny Powers,2627,840,Brick Bruiser,516,741,1B,99,T4,0,0,2,0,4.27%,-4.27%,0,0,29,3,2,POS,BIR,1B,1B,,1
+Princess Peach,2606,567,Brick Bruiser,516,973,PO,406,T4,0,1,2,0,-3.95%,3.95%,0,0,29,3,2,POS,BIR,PO,PO,,1
+Kenny Powers,2627,125,Brick Bruiser,516,581,CS,456,T4,1,1,2,0,-6.19%,6.19%,0,0,29,3,2,POS,BIR,CS 2B,CS 2B,,4
+Jerome Peterson,2641,210,Brick Bruiser,516,85,BB,125,T4,2,0,2,0,2.58%,-2.58%,0,0,29,3,2,POS,BIR,BB,BB,,1
+Basil,2785,500,Brick Bruiser,516,227,K,273,T4,2,1,2,0,-4.47%,4.47%,0,0,29,3,2,POS,BIR,K,K,,1
+LaCarpetron Dukemarriot,775,840,Johnmaine Chupri,2849,2,FO,162,B4,0,0,2,0,-1.07%,1.07%,0,0,30,3,2,BIR,POS,FO,FO,,1
+Francesco Hardgust,2691,613,Johnmaine Chupri,2849,354,FO,259,B4,1,0,2,0,-0.97%,0.97%,0,0,30,3,2,BIR,POS,FO,FO,,1
+John McDonald Jr.,2853,259,Johnmaine Chupri,2849,99,BB,160,B4,2,0,2,0,0.80%,-0.80%,0,0,30,3,2,BIR,POS,BB,BB,,1
+Tueballs Wunbatt,2946,746,Johnmaine Chupri,2849,647,1B,99,B4,2,1,2,0,1.36%,-1.36%,0,0,30,3,2,BIR,POS,1B,1B,,1
+Kenny Kawaguchi,783,988,Johnmaine Chupri,2849,254,FO,266,B4,2,5,2,0,-3.02%,3.02%,0,0,30,3,2,BIR,POS,FO,FO,,1
+Dutch Boggs,2625,342,Brick Bruiser,516,628,K,286,T5,0,0,2,0,-3.57%,3.57%,0,0,31,3,2,POS,BIR,K,K,,1
+Axkoa Griffin,2848,519,Brick Bruiser,516,722,FO,203,T5,1,0,2,0,-2.82%,2.82%,0,0,31,3,2,POS,BIR,FO,FO,,1
+Tucker Doubt,567,227,Brick Bruiser,516,163,1B,64,T5,2,0,2,0,2.91%,-2.91%,0,0,31,3,2,POS,BIR,1B,1B,,1
+Fatts Richard,2508,164,Brick Bruiser,516,521,PO,357,T5,2,1,2,0,-4.84%,4.84%,0,0,31,3,2,POS,BIR,PO,PO,,1
+Lee Luda,2720,492,Tuck,163,392,1B,100,B5,0,0,2,0,0.61%,-0.61%,0,1,32,3,2,BIR,POS,1B,1B,,1
+Demetrios Ooga,180,590,Tuck,163,276,K,314,B5,0,1,2,0,-0.73%,0.73%,0,0,32,3,2,BIR,POS,K,K,,1
+Hitgood McChunky,2893,633,Tuck,163,698,2B,65,B5,1,1,2,0,2.33%,-2.33%,0,0,32,3,2,BIR,POS,2B,2B,,1
+Teddy Bigstick,2722,698,Tuck,163,476,Sac,222,B5,1,6,2,0,1.24%,-1.24%,1,0,32,3,2,BIR,POS,FO,FO,,2
+LaCarpetron Dukemarriot,775,626,Tuck,163,895,FO,269,B5,2,2,3,0,-0.67%,0.67%,0,0,32,3,2,BIR,POS,FO,FO,,1
+Sean Carrcrash,1709,671,Brick Bruiser,516,663,HR,8,T6,0,0,3,0,4.60%,-4.60%,1,1,33,3,2,POS,BIR,HR,HR,,1
+Kenny Powers,2627,665,Brick Bruiser,516,250,PO,415,T6,0,0,3,1,-3.81%,3.81%,0,0,33,3,2,POS,BIR,PO,PO,,1
+Princess Peach,2606,525,Brick Bruiser,516,567,2B,42,T6,1,0,3,1,7.24%,-7.24%,0,1,33,3,2,POS,BIR,2B,2B,,1
+Jerome Peterson,2641,841,Brick Bruiser,516,733,1B,108,T6,1,2,3,1,9.01%,-9.01%,0,0,33,3,2,POS,BIR,1B,1B,,1
+Mack Quackerson,2834,789,Francesco Hardgust,2691,612,BB,177,T6,1,5,3,1,10.81%,-10.81%,0,0,33,3,2,POS,BIR,BB,BB,,1
+Dutch Boggs,2625,380,Francesco Hardgust,2691,221,BB,159,T6,1,7,3,1,15.14%,-15.14%,1,0,33,3,2,POS,BIR,BB,BB,,1
+Axkoa Griffin,2848,829,Hannibal Bligh,1724,234,DP,405,T6,1,7,3,2,-46.75%,46.75%,0,0,33,3,2,POS,BIR,RGO,RGO,,1

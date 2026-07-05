@@ -722,15 +722,15 @@
         ]
       },
       "WPA": {
-        "record": 0.9546999999999999,
+        "record": 1.2220999999999997,
         "holders": [
           {
-            "id": 2474,
-            "season": "S9",
-            "session": 4,
-            "team": "ARR",
-            "location": "Away",
-            "opponent": "GOP"
+            "id": 2478,
+            "season": "S6",
+            "session": 11,
+            "team": "BAC",
+            "location": "Home",
+            "opponent": "CWJ"
           }
         ]
       }
@@ -1419,14 +1419,14 @@
         ]
       },
       "WPA": {
-        "record": 1.2482999999999993,
+        "record": 1.3306,
         "holders": [
           {
-            "team": "WRM",
-            "season": "S11",
-            "session": 5,
-            "location": "Away",
-            "opponent": "PRP"
+            "team": "BAC",
+            "season": "S6",
+            "session": 11,
+            "location": "Home",
+            "opponent": "CWJ"
           }
         ]
       }
@@ -1756,13 +1756,13 @@
         ]
       },
       "WPA": {
-        "record": 1.867,
+        "record": 2.0952,
         "holders": [
           {
-            "away": "LIM",
-            "home": "TTT",
-            "season": "S6",
-            "session": 13
+            "away": "LAN",
+            "home": "CIN",
+            "season": "S3",
+            "session": 8
           }
         ]
       }
@@ -2089,13 +2089,13 @@
         ]
       },
       "WPA": {
-        "record": 1.9965999999999988,
+        "record": 2.1612,
         "holders": [
           {
-            "away": "WRM",
-            "home": "PRP",
-            "season": "S11",
-            "session": 5
+            "away": "CWJ",
+            "home": "BAC",
+            "season": "S6",
+            "session": 11
           }
         ]
       }

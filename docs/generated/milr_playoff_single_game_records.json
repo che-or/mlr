@@ -701,15 +701,15 @@
         ]
       },
       "WPA": {
-        "record": 0.6176,
+        "record": 0.7329,
         "holders": [
           {
-            "id": 622,
-            "season": "S5",
-            "session": "DS",
-            "team": "MVM",
-            "location": "Home",
-            "opponent": "SAR"
+            "id": 108,
+            "season": "S7",
+            "session": "WC",
+            "team": "KNX",
+            "location": "Away",
+            "opponent": "PBA"
           }
         ]
       }
@@ -1075,14 +1075,14 @@
         ]
       },
       "WPA": {
-        "record": 0.7771,
+        "record": 1.1107000000000002,
         "holders": [
           {
-            "team": "SEO",
-            "season": "S10",
+            "team": "LAN",
+            "season": "S3",
             "session": "PC",
-            "location": "Home",
-            "opponent": "CRN"
+            "location": "Away",
+            "opponent": "CIN"
           }
         ]
       }
@@ -1743,12 +1743,12 @@
         ]
       },
       "WPA": {
-        "record": 1.0541999999999998,
+        "record": 1.7214,
         "holders": [
           {
-            "away": "CRN",
-            "home": "SEO",
-            "season": "S10",
+            "away": "LAN",
+            "home": "CIN",
+            "season": "S3",
             "session": "PC"
           }
         ]

@@ -716,15 +716,15 @@
         ]
       },
       "WPA": {
-        "record": 1.8242,
+        "record": 1.8717000000000001,
         "holders": [
           {
-            "id": 353,
-            "season": "S3",
-            "session": 10,
-            "team": "STL",
-            "location": "Home",
-            "opponent": "LAD"
+            "id": 3,
+            "season": "S7",
+            "session": 5,
+            "team": "KCR",
+            "location": "Away",
+            "opponent": "MIN"
           }
         ]
       }
@@ -1529,14 +1529,14 @@
         ]
       },
       "WPA": {
-        "record": 2.1198,
+        "record": 1.8615,
         "holders": [
           {
-            "team": "NYY",
-            "season": "S3",
-            "session": 12,
+            "team": "CIN",
+            "season": "S7",
+            "session": 2,
             "location": "Home",
-            "opponent": "FLA"
+            "opponent": "SFG"
           }
         ]
       }
@@ -2085,13 +2085,13 @@
         ]
       },
       "WPA": {
-        "record": 3.7401,
+        "record": 3.223,
         "holders": [
           {
-            "away": "FLA",
-            "home": "NYY",
-            "season": "S3",
-            "session": 12
+            "away": "SFG",
+            "home": "CIN",
+            "season": "S7",
+            "session": 2
           }
         ]
       }

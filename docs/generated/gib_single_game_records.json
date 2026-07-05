@@ -303,16 +303,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 1725,
-        "most_recent": {
-          "id": 10,
-          "season": "S3",
-          "session": 12,
-          "team": "GIB",
-          "location": "Home",
-          "opponent": "ORL"
-        }
+        "record": 0.7900999999999999,
+        "holders": [
+          {
+            "id": 776,
+            "season": "S2",
+            "session": 3,
+            "team": "WOO",
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -690,16 +691,17 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 341,
-        "most_recent": {
-          "id": 45,
-          "season": "S3",
-          "session": 12,
-          "team": "GIB",
-          "location": "Home",
-          "opponent": "ORL"
-        }
+        "record": 0.8232999999999999,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S3",
+            "session": 3,
+            "team": "WBK",
+            "location": "Home",
+            "opponent": "ORL"
+          }
+        ]
       }
     }
   },
@@ -1070,15 +1072,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 180,
-        "most_recent": {
-          "team": "GIB",
-          "season": "S3",
-          "session": 12,
-          "location": "Home",
-          "opponent": "ORL"
-        }
+        "record": 0.912,
+        "holders": [
+          {
+            "team": "GIB",
+            "season": "S2",
+            "session": 8,
+            "location": "Home",
+            "opponent": "FUB"
+          }
+        ]
       }
     },
     "pitcher": {
@@ -1487,15 +1490,16 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 180,
-        "most_recent": {
-          "team": "GIB",
-          "season": "S3",
-          "session": 12,
-          "location": "Home",
-          "opponent": "ORL"
-        }
+        "record": 1.0581,
+        "holders": [
+          {
+            "team": "SYC",
+            "season": "S2",
+            "session": 3,
+            "location": "Away",
+            "opponent": "WBK"
+          }
+        ]
       }
     }
   },
@@ -1786,14 +1790,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 90,
-        "most_recent": {
-          "away": "ORL",
-          "home": "GIB",
-          "season": "S3",
-          "session": 12
-        }
+        "record": 1.3239,
+        "holders": [
+          {
+            "away": "FUB",
+            "home": "GIB",
+            "season": "S2",
+            "session": 8
+          }
+        ]
       }
     },
     "pitcher": {
@@ -2087,14 +2092,15 @@
         ]
       },
       "WPA": {
-        "record": 0.0,
-        "tie_count": 90,
-        "most_recent": {
-          "away": "ORL",
-          "home": "GIB",
-          "season": "S3",
-          "session": 12
-        }
+        "record": 1.6163,
+        "holders": [
+          {
+            "away": "SYC",
+            "home": "WBK",
+            "season": "S2",
+            "session": 3
+          }
+        ]
       }
     }
   }

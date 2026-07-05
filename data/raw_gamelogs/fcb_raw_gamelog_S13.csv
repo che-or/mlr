@@ -1,1 +1,12 @@
 Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Munki Oshu,2568,250,Mikko LePico,3375,596,K,346,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,SLG,DPU,K,K,K,,,,,1
+Googly Moogly,3396,495,Mikko LePico,3375,332,BB,163,T1,1,0,0,0,2.43%,-2.43%,0,0,1,1,1,SLG,DPU,BB,BB,BB,,,,,1
+Lefty Cobb,3392,750,Mikko LePico,3375,212,DP,462,T1,1,1,0,0,-6.37%,6.37%,0,0,1,1,1,SLG,DPU,RGO,RGO,DP,,,,,1
+Bloop McNutt,3393,827,Yang Min-Ki,3411,1,BB,174,B1,0,0,0,0,2.76%,-2.76%,0,0,2,1,1,DPU,SLG,BB,BB,BB,,,,,1
+Cola Spritz,3372,500,Chance Mercury,3403,953,LGO,453,T1,0,0,0,0,-2.51%,2.51%,0,0,3,2,1,PSU,KSU,LGO,LGO,LGO,,,,,1
+Socks Maybe,3381,234,Allidois Nguyen,3414,888,K,346,T1,0,0,0,0,-2.51%,2.51%,0,0,4,3,1,CAL,UMN,K,K,K,,,,,1
+Chooch Suzuka,3435,745,Allidois Nguyen,3414,888,BB,143,T1,1,0,0,0,2.43%,-2.43%,0,0,4,3,1,CAL,UMN,BB,BB,BB,,,,,1
+Chooch Suzuka,3435,545,Allidois Nguyen,3414,299,SB,246,T1,1,1,0,0,2.22%,-2.22%,0,0,4,3,1,CAL,UMN,STEAL 2B,STEAL 2B,SB,,,,,4
+Benny Schwa,3388,999,Allidois Nguyen,3414,67,1B,68,T1,1,2,0,0,5.22%,-5.22%,0,0,4,3,1,CAL,UMN,1B,1B,1B,,,,,1
+Jahnder Franco,3387,420,Allidois Nguyen,3414,777,K,357,T1,1,5,0,0,-7.24%,7.24%,0,0,4,3,1,CAL,UMN,K,K,K,,,,,1
+Heliotrope Selenifuge Jr.,3401,736,Allidois Nguyen,3414,333,K,403,T1,2,5,0,0,-6.57%,6.57%,0,0,4,3,1,CAL,UMN,K,K,RGO,,,,,1
