@@ -20,6 +20,9 @@ The web application provides several pages to explore the data:
 - **Leaderboards (`#/leaderboards`):** Provides all-time and single-season leaderboards for a wide variety of statistical categories.
 - **Awards (`#/awards`):** A page to view season-by-season award winners.
 - **Hall of Fame (`#/hof`):** View the members of the Hall of Fame.
+- **Draft History (`#/draft`):** Season-by-season draft picks for MLR.
+- **Single-Game Records (`#/single-game-records`):** All-time single-game record holders for batting and pitching stats for all leagues.
+- **Streaks (`#/streaks`):** MLR all-time and active streak records for hitting, on-base, scoreless innings, and more.
 - **Player Comparison (`#/compare`):** Compare up to 4 players.
 - **Glossary (`#/glossary`):** A reference for advanced stats and terminology used in the application.
 
@@ -57,11 +60,16 @@ Since the web application is built with static files (HTML, CSS, JS), it can be 
 - **`scripts/calculate_re_matrix.py`**: Calculate the Run Expectancy Matrix for a season.
 - **`scripts/create_subrows.py`**: Creates combined season stats for players that played for multiple teams in a single season.
 - **`scripts/determine_pitcher_decisions.py`**: Determines W, L, SV, BS, HLD, GS, GF, CG, and SHO for each game.
-- **`scripts/download_gamelogs.py`**: Donwloads gamelogs from Google Sheets
+- **`scripts/download_gamelogs.py`**: Downloads gamelogs from Google Sheets.
+- **`scripts/generate_draft_history.py`**: Fetches MLR Draft History from Google Sheets and writes `docs/data/draft_history.json`.
+- **`scripts/generate_playoff_brackets.py`**: Generates the playoff bracket data used on the team stats page.
 - **`scripts/generate_web_data.py`**: Generates the JSON statistic content the site uses. This script runs automatically every night to keep the site up to date.
 - **`scripts/get_hitting_stats.py`**: Calculates hitting stats.
 - **`scripts/get_pitching_stats.py`**: Calculates pitching stats.
 - **`scripts/get_player_names.py`**: Creates a list of players and their basic player info.
+- **`scripts/get_single_game_achievements.py`**: Finds single-game achievements (no-hitters, cycles, triangles, multi-HR games).
+- **`scripts/get_single_game_stats.py`**: Calculates single-game and single-season record stats for batting and pitching.
+- **`scripts/get_streak_records.py`**: Calculates all-time and active streak records for hitting, on-base, scoreless innings, and more.
 - **`scripts/load_gamelogs.py`**: Loads gamelogs
 - **`scripts/runner_attribution.py`**: Adds Manfred runners and trailing runner stolen bases to the gamelogs for easier stat calculations
 - **`scripts/simulate_inning.py`**: Simulates a gamelog inning.
@@ -74,6 +82,7 @@ The site requires maintenance, mostly at the beginning of seasons.
 
 - **`data/gamelog_links.csv`** needs to be updated for the new seaons. Make sure to updated the 'Active' column for newly inactive seasons. It's not required, but it is good practice to move the source of gamelogs and player types for completed seasons to an archive.
 - **`docs/data/awards.json`** needs to be updated to include the previous season's awards, all-stars, and Hall of Famers.
+- **`docs/data/draft_history.json`** needs to be updated with the season's draft picks by running `scripts/generate_draft_history.py`.
 - **`docs/data/*_divisions`** needs to be updated with season division structure
 - **`docs/data/*_team_history`** needs to be updated with the season's teams, abbreviation, and logo
 - **`docs/img/*`** needs to be updated with any new logos as `.svg.` files.
