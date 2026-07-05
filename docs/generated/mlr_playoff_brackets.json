@@ -1,0 +1,1321 @@
+{
+  "S1": {
+    "format": "championship",
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "OAK"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "PHI"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 1,
+            "home": "PHI",
+            "away": "OAK",
+            "home_score": 3,
+            "away_score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "S2": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "BOS",
+          "TEX",
+          "TOR",
+          "TB"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "PIT",
+          "SFG",
+          "STL",
+          "PHI"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "BOS",
+            "away": "TB",
+            "home_score": 1,
+            "away_score": 4,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "TEX",
+            "away": "TOR",
+            "home_score": 2,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "PIT",
+            "away": "PHI",
+            "home_score": 1,
+            "away_score": 2,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "SFG",
+            "away": "STL",
+            "home_score": 4,
+            "away_score": 0,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 6,
+            "home": "TOR",
+            "away": "TB",
+            "home_score": 3,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "SFG",
+            "away": "PHI",
+            "home_score": 3,
+            "away_score": 4,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "TOR",
+            "away": "PHI",
+            "home_score": 2,
+            "away_score": 3
+          }
+        ]
+      }
+    ]
+  },
+  "S3": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "KCR",
+          "TEX",
+          "NYY",
+          "LAA"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "COL",
+          "MTL",
+          "STL",
+          "SFG"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 1,
+            "home": "KCR",
+            "away": "LAA",
+            "home_score": 3,
+            "away_score": 4,
+            "league": "AL"
+          },
+          {
+            "game_id": 2,
+            "home": "TEX",
+            "away": "NYY",
+            "home_score": 7,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 3,
+            "home": "COL",
+            "away": "SFG",
+            "home_score": 3,
+            "away_score": 2,
+            "league": "NL"
+          },
+          {
+            "game_id": 4,
+            "home": "MTL",
+            "away": "STL",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 5,
+            "home": "TEX",
+            "away": "LAA",
+            "home_score": 0,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 6,
+            "home": "COL",
+            "away": "MTL",
+            "home_score": 2,
+            "away_score": 5,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "MTL",
+            "away": "LAA",
+            "home_score": 0,
+            "away_score": 3
+          }
+        ]
+      }
+    ]
+  },
+  "S4": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "NYY",
+          "KCR",
+          "SEA",
+          "CLE",
+          "BAL",
+          "BOS"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "SFG",
+          "CHC",
+          "MIA",
+          "LAD",
+          "CIN",
+          "NYM"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "CLE",
+            "away": "BAL",
+            "home_score": 4,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "SEA",
+            "away": "BOS",
+            "home_score": 8,
+            "away_score": 7,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "LAD",
+            "away": "CIN",
+            "home_score": 5,
+            "away_score": 4,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "MIA",
+            "away": "NYM",
+            "home_score": 6,
+            "away_score": 12,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 6,
+            "home": "NYY",
+            "away": "BAL",
+            "home_score": 2,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "KCR",
+            "away": "SEA",
+            "home_score": 8,
+            "away_score": 7,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "SFG",
+            "away": "NYM",
+            "home_score": 0,
+            "away_score": 11,
+            "league": "NL"
+          },
+          {
+            "game_id": 7,
+            "home": "CHC",
+            "away": "LAD",
+            "home_score": 0,
+            "away_score": 3,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "NYY",
+            "away": "KCR",
+            "home_score": 0,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 9,
+            "home": "LAD",
+            "away": "NYM",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "KCR",
+            "away": "LAD",
+            "home_score": 4,
+            "away_score": 11
+          }
+        ]
+      }
+    ]
+  },
+  "S5": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "HOU",
+          "KCR",
+          "NYY",
+          "OAK",
+          "LAA",
+          "MIN"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "PIT",
+          "MTL",
+          "ARI",
+          "NYM",
+          "COL",
+          "SDP"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "OAK",
+            "away": "LAA",
+            "home_score": 6,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 3,
+            "home": "NYY",
+            "away": "MIN",
+            "home_score": 13,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "NYM",
+            "away": "COL",
+            "home_score": 2,
+            "away_score": 3,
+            "league": "NL"
+          },
+          {
+            "game_id": 4,
+            "home": "ARI",
+            "away": "SDP",
+            "home_score": 2,
+            "away_score": 9,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "HOU",
+            "away": "OAK",
+            "home_score": 0,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "KCR",
+            "away": "NYY",
+            "home_score": 2,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "PIT",
+            "away": "SDP",
+            "home_score": 0,
+            "away_score": 1,
+            "league": "NL"
+          },
+          {
+            "game_id": 6,
+            "home": "MTL",
+            "away": "COL",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 9,
+            "home": "KCR",
+            "away": "OAK",
+            "home_score": 2,
+            "away_score": 11,
+            "league": "AL"
+          },
+          {
+            "game_id": 10,
+            "home": "MTL",
+            "away": "SDP",
+            "home_score": 3,
+            "away_score": 7,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "OAK",
+            "away": "SDP",
+            "home_score": 2,
+            "away_score": 4
+          }
+        ]
+      }
+    ]
+  },
+  "S6": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "BAL",
+          "DET",
+          "SEA",
+          "OAK",
+          "MIN",
+          "CWS"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "PHI",
+          "COL",
+          "STL",
+          "LAD",
+          "SDP",
+          "ATL"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "OAK",
+            "away": "MIN",
+            "home_score": 5,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "SEA",
+            "away": "CWS",
+            "home_score": 0,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "LAD",
+            "away": "SDP",
+            "home_score": 1,
+            "away_score": 7,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "STL",
+            "away": "ATL",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "BAL",
+            "away": "CWS",
+            "home_score": 1,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "DET",
+            "away": "MIN",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "PHI",
+            "away": "SDP",
+            "home_score": 1,
+            "away_score": 7,
+            "league": "NL"
+          },
+          {
+            "game_id": 6,
+            "home": "COL",
+            "away": "STL",
+            "home_score": 2,
+            "away_score": 6,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "DET",
+            "away": "CWS",
+            "home_score": 2,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 9,
+            "home": "STL",
+            "away": "SDP",
+            "home_score": 6,
+            "away_score": 5,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "STL",
+            "away": "CWS",
+            "home_score": 6,
+            "away_score": 5
+          }
+        ]
+      }
+    ]
+  },
+  "S7": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "MIN",
+          "TOR",
+          "TEX",
+          "CWS",
+          "TBR",
+          "KCR"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "STL",
+          "NYM",
+          "SDP",
+          "CHC",
+          "PHI",
+          "SFG"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "CWS",
+            "away": "TBR",
+            "home_score": 5,
+            "away_score": 11,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "TEX",
+            "away": "KCR",
+            "home_score": 3,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "CHC",
+            "away": "PHI",
+            "home_score": 4,
+            "away_score": 1,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "SDP",
+            "away": "SFG",
+            "home_score": 1,
+            "away_score": 9,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "MIN",
+            "away": "KCR",
+            "home_score": 6,
+            "away_score": 4,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "TOR",
+            "away": "TBR",
+            "home_score": 6,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "STL",
+            "away": "SFG",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "NL"
+          },
+          {
+            "game_id": 6,
+            "home": "NYM",
+            "away": "CHC",
+            "home_score": 5,
+            "away_score": 4,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "MIN",
+            "away": "TOR",
+            "home_score": 2,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 9,
+            "home": "STL",
+            "away": "NYM",
+            "home_score": 3,
+            "away_score": 5,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "NYM",
+            "away": "MIN",
+            "home_score": 2,
+            "away_score": 4
+          }
+        ]
+      }
+    ]
+  },
+  "S8": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "OAK",
+          "DET",
+          "TOR",
+          "HOU",
+          "KCR",
+          "SEA"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "LAD",
+          "MIA",
+          "CHC",
+          "MTL",
+          "ARI",
+          "SDP"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "HOU",
+            "away": "KCR",
+            "home_score": 2,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "TOR",
+            "away": "SEA",
+            "home_score": 1,
+            "away_score": 2,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "MTL",
+            "away": "ARI",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "CHC",
+            "away": "SDP",
+            "home_score": 3,
+            "away_score": 6,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "OAK",
+            "away": "SEA",
+            "home_score": 10,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "DET",
+            "away": "KCR",
+            "home_score": 3,
+            "away_score": 6,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "LAD",
+            "away": "SDP",
+            "home_score": 8,
+            "away_score": 3,
+            "league": "NL"
+          },
+          {
+            "game_id": 6,
+            "home": "MIA",
+            "away": "MTL",
+            "home_score": 2,
+            "away_score": 1,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "OAK",
+            "away": "KCR",
+            "home_score": 11,
+            "away_score": 7,
+            "league": "AL"
+          },
+          {
+            "game_id": 9,
+            "home": "LAD",
+            "away": "MIA",
+            "home_score": 5,
+            "away_score": 1,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "OAK",
+            "away": "LAD",
+            "home_score": 8,
+            "away_score": 9
+          }
+        ]
+      }
+    ]
+  },
+  "S9": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "BAL",
+          "MIN",
+          "TEX",
+          "BOS",
+          "CLE",
+          "KCR"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "COL",
+          "MTL",
+          "CIN",
+          "CHC",
+          "PHI",
+          "MIL"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "BOS",
+            "away": "CLE",
+            "home_score": 0,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "TEX",
+            "away": "KCR",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "CHC",
+            "away": "PHI",
+            "home_score": 7,
+            "away_score": 6,
+            "league": "NL"
+          },
+          {
+            "game_id": 2,
+            "home": "CIN",
+            "away": "MIL",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "BAL",
+            "away": "CLE",
+            "home_score": 9,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "MIN",
+            "away": "TEX",
+            "home_score": 5,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "COL",
+            "away": "CHC",
+            "home_score": 9,
+            "away_score": 2,
+            "league": "NL"
+          },
+          {
+            "game_id": 6,
+            "home": "MTL",
+            "away": "CIN",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "BAL",
+            "away": "MIN",
+            "home_score": 3,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 9,
+            "home": "COL",
+            "away": "MTL",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "BAL",
+            "away": "COL",
+            "home_score": 1,
+            "away_score": 0
+          }
+        ]
+      }
+    ]
+  },
+  "S10": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "CWS",
+          "TBR",
+          "OAK",
+          "BAL",
+          "MIN",
+          "BOS"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "SFG",
+          "MIL",
+          "PHI",
+          "STL",
+          "ATL",
+          "MIA"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 241,
+            "home": "BAL",
+            "away": "MIN",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 242,
+            "home": "OAK",
+            "away": "BOS",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 243,
+            "home": "PHI",
+            "away": "MIA",
+            "home_score": 6,
+            "away_score": 1,
+            "league": "NL"
+          },
+          {
+            "game_id": 244,
+            "home": "STL",
+            "away": "ATL",
+            "home_score": 1,
+            "away_score": 3,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 245,
+            "home": "CWS",
+            "away": "BAL",
+            "home_score": 4,
+            "away_score": 5,
+            "league": "AL"
+          },
+          {
+            "game_id": 246,
+            "home": "TBR",
+            "away": "OAK",
+            "home_score": 10,
+            "away_score": 2,
+            "league": "AL"
+          },
+          {
+            "game_id": 247,
+            "home": "MIL",
+            "away": "PHI",
+            "home_score": 0,
+            "away_score": 6,
+            "league": "NL"
+          },
+          {
+            "game_id": 248,
+            "home": "SFG",
+            "away": "ATL",
+            "home_score": 3,
+            "away_score": 5,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 250,
+            "home": "TBR",
+            "away": "BAL",
+            "home_score": 4,
+            "away_score": 1,
+            "league": "AL"
+          },
+          {
+            "game_id": 249,
+            "home": "PHI",
+            "away": "ATL",
+            "home_score": 5,
+            "away_score": 0,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 251,
+            "home": "PHI",
+            "away": "TBR",
+            "home_score": 3,
+            "away_score": 5
+          }
+        ]
+      }
+    ]
+  },
+  "S11": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "TBR",
+          "DET",
+          "OAK",
+          "BOS",
+          "KCR",
+          "NYY"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "PHI",
+          "STL",
+          "SFG",
+          "MIL",
+          "COL",
+          "FLA"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 241,
+            "home": "BOS",
+            "away": "KCR",
+            "home_score": 8,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 243,
+            "home": "OAK",
+            "away": "NYY",
+            "home_score": 0,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 242,
+            "home": "MIL",
+            "away": "COL",
+            "home_score": 6,
+            "away_score": 2,
+            "league": "NL"
+          },
+          {
+            "game_id": 244,
+            "home": "SFG",
+            "away": "FLA",
+            "home_score": 9,
+            "away_score": 5,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 245,
+            "home": "DET",
+            "away": "BOS",
+            "home_score": 3,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 246,
+            "home": "TBR",
+            "away": "NYY",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 247,
+            "home": "STL",
+            "away": "SFG",
+            "home_score": 9,
+            "away_score": 4,
+            "league": "NL"
+          },
+          {
+            "game_id": 248,
+            "home": "PHI",
+            "away": "MIL",
+            "home_score": 3,
+            "away_score": 1,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 249,
+            "home": "TBR",
+            "away": "DET",
+            "home_score": 6,
+            "away_score": 12,
+            "league": "AL"
+          },
+          {
+            "game_id": 250,
+            "home": "PHI",
+            "away": "STL",
+            "home_score": 6,
+            "away_score": 4,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 251,
+            "home": "PHI",
+            "away": "DET",
+            "home_score": 2,
+            "away_score": 6
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,597 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,PA Type
+Dominus Nominus,278,198,Mark Spoon,2377,633,LGO,435,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,PHI,CHC,LGO,LGO,,1
+Joe Pidgeon,301,841,Mark Spoon,2377,636,FO,205,T1,1,0,0,0,-2.18%,2.18%,0,0,1,1,1,PHI,CHC,FO,FO,,1
+Cass Standing,2493,404,Mark Spoon,2377,256,BB,148,T1,2,0,0,0,1.98%,-1.98%,0,0,1,1,1,PHI,CHC,BB,BB,,1
+Conor Sexton,289,918,Mark Spoon,2377,413,LGO,495,T1,2,1,0,0,-3.74%,3.74%,0,0,1,1,1,PHI,CHC,LGO,LGO,,1
+Iosef Mere,2530,936,petra sabor,149,533,PO,403,B1,0,0,0,0,-2.48%,2.48%,0,0,2,1,1,CHC,PHI,PO,PO,,1
+Erin Pickles,68,702,petra sabor,149,832,BB,130,B1,1,0,0,0,2.28%,-2.28%,0,1,2,1,1,CHC,PHI,BB,BB,,1
+Terry Gaskins,2349,375,petra sabor,149,740,PO,365,B1,1,1,0,0,-2.55%,2.55%,0,0,2,1,1,CHC,PHI,PO,PO,,1
+Doc Dockgoose,1801,534,petra sabor,149,472,2B,62,B1,2,1,0,0,13.34%,-13.34%,1,1,2,1,1,CHC,PHI,2B,2B,,1
+Frederick Thunderpants,2371,777,petra sabor,149,683,1B,94,B1,2,2,1,0,9.16%,-9.16%,1,0,2,1,1,CHC,PHI,1B,1B,,1
+WoodCutter Jones,2524,924,petra sabor,149,109,FO,185,B1,2,1,2,0,-2.36%,2.36%,0,0,2,1,1,CHC,PHI,FO,FO,,1
+Obama But White,2372,201,Mark Spoon,2377,387,FO,186,T2,0,0,2,0,-2.72%,2.72%,0,0,3,1,1,PHI,CHC,FO,FO,,1
+Skye McDowell,264,1,Mark Spoon,2377,413,RGO,412,T2,1,0,2,0,-2.27%,2.27%,0,0,3,1,1,PHI,CHC,RGO,RGO,,1
+Chody,650,100,Mark Spoon,2377,522,RGO,422,T2,2,0,2,0,-1.66%,1.66%,0,0,3,1,1,PHI,CHC,RGO,RGO,,1
+John Johnson Jr.,91,609,petra sabor,149,303,K,306,B2,0,0,2,0,-1.42%,1.42%,0,0,4,1,1,CHC,PHI,K,K,,1
+Michael Ikenberry,63,598,petra sabor,149,617,HR,19,B2,1,0,2,0,7.60%,-7.60%,1,1,4,1,1,CHC,PHI,HR,HR,,1
+Good Doggo,522,288,petra sabor,149,202,1B,86,B2,1,0,3,0,0.91%,-0.91%,0,0,4,1,1,CHC,PHI,1B,1B,,1
+Iosef Mere,2530,789,petra sabor,149,880,1B,91,B2,1,1,3,0,1.39%,-1.39%,0,0,4,1,1,CHC,PHI,1B,1B,,1
+Erin Pickles,68,404,petra sabor,149,33,PO,371,B2,1,4,3,0,-1.46%,1.46%,0,0,4,1,1,CHC,PHI,PO,PO,,1
+Terry Gaskins,2349,611,petra sabor,149,323,K,288,B2,2,4,3,0,-2.42%,2.42%,0,0,4,1,1,CHC,PHI,K,K,,1
+Miguel Snow,290,609,Mark Spoon,2377,801,FO,192,T3,0,0,3,0,-2.28%,2.28%,0,0,5,1,1,PHI,CHC,FO,FO,,1
+Jeff Dingerhitter,298,971,Mark Spoon,2377,166,FO,195,T3,1,0,3,0,-1.87%,1.87%,0,0,5,1,1,PHI,CHC,FO,K,,1
+Dominus Nominus,278,923,Mark Spoon,2377,719,FO,204,T3,2,0,3,0,-1.22%,1.22%,0,0,5,1,1,PHI,CHC,FO,FO,,1
+Doc Dockgoose,1801,14,petra sabor,149,13,HR,1,B3,0,0,3,0,4.28%,-4.28%,1,1,6,1,1,CHC,PHI,HR,HR,,1
+Frederick Thunderpants,2371,777,petra sabor,149,500,K,277,B3,0,0,4,0,-0.45%,0.45%,0,0,6,1,1,CHC,PHI,K,K,,1
+WoodCutter Jones,2524,176,petra sabor,149,930,FO,246,B3,1,0,4,0,-0.44%,0.44%,0,0,6,1,1,CHC,PHI,FO,FO,,1
+John Johnson Jr.,91,619,petra sabor,149,495,BB,124,B3,2,0,4,0,0.38%,-0.38%,0,0,6,1,1,CHC,PHI,BB,BB,,1
+Michael Ikenberry,63,23,petra sabor,149,599,PO,424,B3,2,1,4,0,-0.79%,0.79%,0,0,6,1,1,CHC,PHI,PO,PO,,1
+Joe Pidgeon,301,555,Mark Spoon,2377,814,FO,259,T4,0,0,4,0,-1.55%,1.55%,0,0,7,1,1,PHI,CHC,FO,FO,,1
+Cass Standing,2493,418,Mark Spoon,2377,817,RGO,399,T4,1,0,4,0,-1.16%,1.16%,0,0,7,1,1,PHI,CHC,RGO,RGO,,1
+Conor Sexton,289,418,Mark Spoon,2377,58,RGO,360,T4,2,0,4,0,-0.66%,0.66%,0,0,7,1,1,PHI,CHC,RGO,RGO,,1
+Good Doggo,522,371,petra sabor,149,655,K,284,B4,0,0,4,0,-0.28%,0.28%,0,0,8,1,1,CHC,PHI,K,K,,1
+Iosef Mere,2530,201,petra sabor,149,776,PO,425,B4,1,0,4,0,-0.30%,0.30%,0,0,8,1,1,CHC,PHI,PO,PO,,1
+Erin Pickles,68,543,petra sabor,149,878,PO,335,B4,2,0,4,0,-0.22%,0.22%,0,0,8,1,1,CHC,PHI,PO,PO,,1
+Obama But White,2372,69,Mark Spoon,2377,351,K,282,T5,0,0,4,0,-1.34%,1.34%,0,0,9,1,1,PHI,CHC,K,K,,1
+Skye McDowell,264,698,Mark Spoon,2377,940,FO,242,T5,1,0,4,0,-0.92%,0.92%,0,0,9,1,1,PHI,CHC,FO,FO,,1
+Chody,650,75,Mark Spoon,2377,143,1B,68,T5,2,0,4,0,0.85%,-0.85%,0,1,9,1,1,PHI,CHC,1B,1B,,1
+Miguel Snow,290,478,Mark Spoon,2377,544,2B,66,T5,2,1,4,0,3.26%,-3.26%,1,0,9,1,1,PHI,CHC,2B,2B,,1
+Jeff Dingerhitter,298,683,Mark Spoon,2377,192,LGO,491,T5,2,2,4,1,-2.91%,2.91%,0,0,9,1,1,PHI,CHC,LGO,LGO,,1
+Terry Gaskins,2349,67,petra sabor,149,500,PO,433,B5,0,0,4,1,-0.30%,0.30%,0,0,10,1,1,CHC,PHI,PO,PO,,1
+Doc Dockgoose,1801,616,petra sabor,149,300,PO,316,B5,1,0,4,1,-0.31%,0.31%,0,0,10,1,1,CHC,PHI,PO,PO,,1
+Frederick Thunderpants,2371,473,petra sabor,149,201,K,272,B5,2,0,4,1,-0.22%,0.22%,0,0,10,1,1,CHC,PHI,K,K,,1
+Dominus Nominus,278,369,Mark Spoon,2377,282,1B,87,T6,0,0,4,1,3.48%,-3.48%,0,0,11,1,1,PHI,CHC,1B,1B,,1
+Joe Pidgeon,301,482,Mark Spoon,2377,33,DP,449,T6,0,1,4,1,-6.70%,6.70%,0,0,11,1,1,PHI,CHC,LGO,LGO,,1
+Cass Standing,2493,738,Mark Spoon,2377,633,1B,105,T6,2,0,4,1,1.10%,-1.10%,0,0,11,1,1,PHI,CHC,1B,1B,,1
+Conor Sexton,289,499,Nikola Tefla,719,150,K,349,T6,2,1,4,1,-1.64%,1.64%,0,0,11,1,1,PHI,CHC,K,K,,1
+Bobby Corwen,2503,316,Judge Reinhold,708,927,RGO,389,T1,0,0,0,0,-2.51%,2.51%,0,0,12,2,1,SFG,SDP,RGO,RGO,,1
+Willow Briansdóttir,48,632,Judge Reinhold,708,491,1B,141,T1,1,0,0,0,2.43%,-2.43%,0,1,12,2,1,SFG,SDP,1B,1B,,1
+Big Smoke Anderson,1839,705,Judge Reinhold,708,828,1B,123,T1,1,1,0,0,4.11%,-4.11%,0,1,12,2,1,SFG,SDP,1B,1B,,1
+Roidy Magoo,2354,877,Judge Reinhold,708,937,2B,60,T1,1,4,0,0,15.68%,-15.68%,1,1,12,2,1,SFG,SDP,2B,2B,,1
+Haachama,1705,,Judge Reinhold,708,,IBB,,T1,1,6,0,1,1.76%,-1.76%,0,1,12,2,1,SFG,SDP,IBB,IBB,,8
+Snoop E. Dogg,22,146,Judge Reinhold,708,156,HR,10,T1,1,7,0,1,18.87%,-18.87%,4,1,12,2,1,SFG,SDP,HR,HR,,1
+Christina Olsen,2528,287,Arm N. Hammer,326,639,PO,352,T1,1,0,0,5,-0.62%,0.62%,0,0,12,2,1,SFG,SDP,PO,PO,,1
+Malcolm Fish,2455,740,Arm N. Hammer,326,206,LGO,466,T1,2,0,0,5,-0.31%,0.31%,0,0,12,2,1,SFG,SDP,LGO,LGO,,1
+Drew Savage,329,611,Barney Turbo,28,611,HR,0,B1,0,0,0,5,5.47%,-5.47%,1,1,13,2,1,SDP,SFG,HR,HR,,1
+Claire E. Nêtte,672,240,Barney Turbo,28,711,LGO,471,B1,0,0,1,5,-1.95%,1.95%,0,0,13,2,1,SDP,SFG,LGO,LGO,,1
+Bradle Beamen,203,760,Barney Turbo,28,522,K,238,B1,1,0,1,5,-1.57%,1.57%,0,0,13,2,1,SDP,SFG,K,K,,1
+Caleb Aiken,324,499,Barney Turbo,28,523,2B,24,B1,2,0,1,5,2.08%,-2.08%,0,0,13,2,1,SDP,SFG,2B,2B,,1
+Jeremy Carolina,728,967,Barney Turbo,28,222,FO,255,B1,2,2,1,5,-3.19%,3.19%,0,0,13,2,1,SDP,SFG,FO,FO,,1
+Skippy Gustafsson,1773,201,Arm N. Hammer,326,111,1B,90,T2,0,0,1,5,0.68%,-0.68%,0,0,14,2,1,SFG,SDP,1B,1B,,1
+Skippy Gustafsson,1773,826,Arm N. Hammer,326,843,SB,17,T2,0,1,1,5,1.39%,-1.39%,0,0,14,2,1,SFG,SDP,Steal 2B,Steal 2B,,4
+Bobby Corwen,2503,531,Arm N. Hammer,326,15,LGO,484,T2,0,2,1,5,-1.44%,1.44%,0,0,14,2,1,SFG,SDP,LGO,LGO,,1
+Willow Briansdóttir,48,620,Arm N. Hammer,326,444,FO,176,T2,1,2,1,5,-1.04%,1.04%,0,0,14,2,1,SFG,SDP,FO,FO,,1
+Big Smoke Anderson,1839,294,Arm N. Hammer,326,799,LGO,495,T2,2,2,1,5,-1.86%,1.86%,0,0,14,2,1,SFG,SDP,LGO,LGO,,1
+Grover Grimes,2558,262,Barney Turbo,28,189,2B,73,B2,0,0,1,5,5.03%,-5.03%,0,0,15,2,1,SDP,SFG,2B,2B,,1
+Jolene Juniper,343,320,Barney Turbo,28,571,FO,251,B2,0,2,1,5,-3.62%,3.62%,0,0,15,2,1,SDP,SFG,FO,FO,,1
+Primal Cookie,779,956,Barney Turbo,28,601,PO,355,B2,1,2,1,5,-3.04%,3.04%,0,0,15,2,1,SDP,SFG,PO,PO,,1
+Q Kimbrel,20,301,Barney Turbo,28,880,RGO,421,B2,2,2,1,5,-2.89%,2.89%,0,0,15,2,1,SDP,SFG,RGO,RGO,,1
+Roidy Magoo,2354,550,Arm N. Hammer,326,646,1B,96,T3,0,0,1,5,0.74%,-0.74%,0,1,16,2,1,SFG,SDP,1B,1B,,1
+Roidy Magoo,2354,450,Arm N. Hammer,326,290,SB,160,T3,0,1,1,5,1.09%,-1.09%,0,0,16,2,1,SFG,SDP,Steal 2B,Steal 2B,,4
+Haachama,1705,327,Arm N. Hammer,326,271,2B,56,T3,0,2,1,5,2.90%,-2.90%,1,1,16,2,1,SFG,SDP,2B,2B,,1
+Snoop E. Dogg,22,942,Arm N. Hammer,326,605,PO,337,T3,0,2,1,6,-0.56%,0.56%,0,0,16,2,1,SFG,SDP,PO,PO,,1
+Christina Olsen,2528,615,Arm N. Hammer,326,606,HR,9,T3,1,2,1,6,3.17%,-3.17%,2,1,16,2,1,SFG,SDP,HR,HR,,1
+Malcolm Fish,2455,212,Mike Fruitstand,772,263,2B,51,T3,1,0,1,8,0.17%,-0.17%,0,0,16,2,1,SFG,SDP,2B,2B,,1
+Skippy Gustafsson,1773,930,Mike Fruitstand,772,115,BB,185,T3,1,2,1,8,0.09%,-0.09%,0,0,16,2,1,SFG,SDP,BB,BB,,1
+Bobby Corwen,2503,747,Mike Fruitstand,772,478,K,269,T3,1,4,1,8,-0.41%,0.41%,0,0,16,2,1,SFG,SDP,K,K,,1
+Willow Briansdóttir,48,720,Mike Fruitstand,772,877,BB,157,T3,2,4,1,8,0.53%,-0.53%,0,0,16,2,1,SFG,SDP,BB,BB,,1
+Big Smoke Anderson,1839,975,Mike Fruitstand,772,657,PO,318,T3,2,7,1,8,-0.69%,0.69%,0,0,16,2,1,SFG,SDP,PO,PO,,1
+Drew Savage,329,323,Barney Turbo,28,794,LGO,471,B3,0,0,1,8,-0.56%,0.56%,0,0,17,2,1,SDP,SFG,LGO,LGO,,1
+Claire E. Nêtte,672,820,Barney Turbo,28,707,1B,113,B3,1,0,1,8,0.60%,-0.60%,0,0,17,2,1,SDP,SFG,1B,1B,,1
+Bradle Beamen,203,588,Barney Turbo,28,27,DP,439,B3,1,1,1,8,-1.19%,1.19%,0,0,17,2,1,SDP,SFG,LGO,LGO,,1
+Roidy Magoo,2354,200,Mike Fruitstand,772,889,PO,311,T4,0,0,1,8,-0.12%,0.12%,0,0,18,2,1,SFG,SDP,PO,PO,,1
+Haachama,1705,222,Mike Fruitstand,772,144,1B,78,T4,1,0,1,8,0.10%,-0.10%,0,0,18,2,1,SFG,SDP,1B,1B,,1
+Haachama,1705,327,Mike Fruitstand,772,448,SB,121,T4,1,1,1,8,0.11%,-0.11%,0,0,18,2,1,SFG,SDP,Steal 2B,Steal 2B,,4
+Snoop E. Dogg,22,580,Mike Fruitstand,772,900,PO,320,T4,1,2,1,8,-0.17%,0.17%,0,0,18,2,1,SFG,SDP,PO,PO,,1
+Christina Olsen,2528,318,Mike Fruitstand,772,865,LGO,453,T4,2,2,1,8,-0.21%,0.21%,0,0,18,2,1,SFG,SDP,LGO,LGO,,1
+Caleb Aiken,324,832,Barney Turbo,28,499,PO,333,B4,0,0,1,8,-0.42%,0.42%,0,0,19,2,1,SDP,SFG,PO,PO,,1
+Jeremy Carolina,728,358,Barney Turbo,28,242,1B,116,B4,1,0,1,8,0.41%,-0.41%,0,0,19,2,1,SDP,SFG,1B,1B,,1
+Grover Grimes,2558,637,Barney Turbo,28,171,DP,466,B4,1,1,1,8,-0.84%,0.84%,0,0,19,2,1,SDP,SFG,LGO,LGO,,1
+Malcolm Fish,2455,397,Mike Fruitstand,772,810,RGO,413,T5,0,0,1,8,-0.06%,0.06%,0,0,20,2,1,SFG,SDP,RGO,LGO,,1
+Skippy Gustafsson,1773,19,Mike Fruitstand,772,619,RGO,400,T5,1,0,1,8,-0.04%,0.04%,0,0,20,2,1,SFG,SDP,RGO,RGO,,1
+Bobby Corwen,2503,203,Mike Fruitstand,772,454,FO,251,T5,2,0,1,8,-0.04%,0.04%,0,0,20,2,1,SFG,SDP,FO,FO,,1
+Jolene Juniper,343,880,Fido Dido,1962,607,K,273,B5,0,0,1,8,-0.21%,0.21%,0,0,21,2,1,SDP,SFG,K,K,,1
+Primal Cookie,779,811,Fido Dido,1962,154,PO,343,B5,1,0,1,8,-0.17%,0.17%,0,0,21,2,1,SDP,SFG,PO,PO,,1
+Q Kimbrel,20,327,Fido Dido,1962,237,1B,90,B5,2,0,1,8,0.09%,-0.09%,0,0,21,2,1,SDP,SFG,1B,1B,,1
+Drew Savage,329,933,Fido Dido,1962,716,FO,217,B5,2,1,1,8,-0.16%,0.16%,0,0,21,2,1,SDP,SFG,FO,FO,,1
+Willow Briansdóttir,48,910,Mike Fruitstand,772,241,RGO,331,T6,0,0,1,8,0.00%,0.00%,0,0,22,2,1,SFG,SDP,RGO,RGO,,1
+Big Smoke Anderson,1839,969,Mike Fruitstand,772,457,LGO,488,T6,1,0,1,8,-0.01%,0.01%,0,0,22,2,1,SFG,SDP,LGO,LGO,,1
+Roidy Magoo,2354,666,Mike Fruitstand,772,564,1B,102,T6,2,0,1,8,0.02%,-0.02%,0,1,22,2,1,SFG,SDP,1B,1B,,1
+Haachama,1705,911,Mike Fruitstand,772,877,2B,34,T6,2,1,1,8,0.05%,-0.05%,1,0,22,2,1,SFG,SDP,2B,2B,,1
+Snoop E. Dogg,22,558,Mike Fruitstand,772,911,RGO,353,T6,2,2,1,9,0.01%,-0.01%,0,0,22,2,1,SFG,SDP,RGO,RGO,,1
+Claire E. Nêtte,672,50,Fido Dido,1962,395,PO,345,B6,0,0,1,9,-0.04%,0.04%,0,0,23,2,1,SDP,SFG,PO,PO,,1
+Bradle Beamen,203,177,Fido Dido,1962,279,1B,102,B6,1,0,1,9,0.05%,-0.05%,0,0,23,2,1,SDP,SFG,1B,1B,,1
+Caleb Aiken,324,209,Fido Dido,1962,767,DP,442,B6,1,1,1,9,-0.07%,0.07%,0,0,23,2,1,SDP,SFG,LGO,LGO,,1
+Makesiondon Kelkboom,327,225,im sleve,1786,17,FO,208,T1,0,0,0,0,-2.51%,2.51%,0,0,24,3,1,TBR,CWS,FO,FO,,1
+Burg McTurdberg,2262,844,im sleve,1786,893,1B,49,T1,1,0,0,0,2.43%,-2.43%,0,0,24,3,1,TBR,CWS,1B,1B,,1
+Pang Winn,713,92,im sleve,1786,524,DP,432,T1,1,1,0,0,-6.37%,6.37%,0,0,24,3,1,TBR,CWS,LGO,LGO,,1
+Miguel Camino,1715,842,Ferda Bois,270,531,K,311,B1,0,0,0,0,-2.48%,2.48%,0,0,25,3,1,CWS,TBR,K,K,,1
+Luke Skywalker,2251,133,Ferda Bois,270,686,RGO,447,B1,1,0,0,0,-2.17%,2.17%,0,0,25,3,1,CWS,TBR,RGO,RGO,,1
+Fizzbear Doormat,563,69,Ferda Bois,270,549,LGO,480,B1,2,0,0,0,-1.79%,1.79%,0,0,25,3,1,CWS,TBR,LGO,LGO,,1
+Perry Platypus,2332,555,im sleve,1786,287,K,268,T2,0,0,0,0,-2.72%,2.72%,0,0,26,3,1,TBR,CWS,K,K,,1
+Guidooooo,1830,360,im sleve,1786,477,1B,117,T2,1,0,0,0,2.57%,-2.57%,0,0,26,3,1,TBR,CWS,1B,1B,,1
+Guidooooo,1830,225,im sleve,1786,584,CS,359,T2,1,1,0,0,-4.97%,4.97%,0,0,26,3,1,TBR,CWS,CS 2B,CS 2B,,4
+Phillip Mahooters,2253,777,im sleve,1786,211,LGO,434,T2,2,0,0,0,-1.99%,1.99%,0,0,26,3,1,TBR,CWS,LGO,LGO,,1
+Nota Nam III,2467,220,Ferda Bois,270,946,K,274,B2,0,0,0,0,-2.72%,2.72%,0,0,27,3,1,CWS,TBR,K,K,,1
+Garfield Chubbs,2230,158,Ferda Bois,270,447,K,289,B2,1,0,0,0,-2.38%,2.38%,0,0,27,3,1,CWS,TBR,K,K,,1
+Egirl Jimenez,183,140,Ferda Bois,270,778,K,362,B2,2,0,0,0,-2.03%,2.03%,0,0,27,3,1,CWS,TBR,K,K,,1
+Dermot Mulveiny,1763,827,im sleve,1786,977,BB,150,T3,0,0,0,0,3.31%,-3.31%,0,1,28,3,1,TBR,CWS,BB,FO,,1
+Dermot Mulveiny,1763,351,im sleve,1786,643,SB,292,T3,0,1,0,0,4.40%,-4.40%,0,0,28,3,1,TBR,CWS,Steal 2B,Steal 2B,,4
+Mike Litoris,2252,666,im sleve,1786,591,1B,75,T3,0,2,0,0,8.05%,-8.05%,0,0,28,3,1,TBR,CWS,1B,1B,,1
+Helen Hywater,2552,385,im sleve,1786,277,1B,108,T3,0,5,0,0,6.26%,-6.26%,1,0,28,3,1,TBR,CWS,1B,1B,,1
+Makesiondon Kelkboom,327,450,JZ,788,209,FO,241,T3,0,4,0,1,-3.98%,3.98%,0,0,28,3,1,TBR,CWS,FO,K,,1
+Burg McTurdberg,2262,644,JZ,788,763,1B,119,T3,1,4,0,1,7.40%,-7.40%,0,0,28,3,1,TBR,CWS,1B,1B,,1
+Pang Winn,713,424,JZ,788,772,PO,348,T3,1,7,0,1,-7.78%,7.78%,0,0,28,3,1,TBR,CWS,PO,PO,,1
+Perry Platypus,2332,424,JZ,788,189,K,235,T3,2,7,0,1,-8.98%,8.98%,0,0,28,3,1,TBR,CWS,K,K,,1
+Hannah Outlaw,178,424,Ferda Bois,270,216,FO,208,B3,0,0,0,1,-3.58%,3.58%,0,0,29,3,1,CWS,TBR,FO,FO,,1
+Bob Robb,90,803,Ferda Bois,270,154,K,351,B3,1,0,0,1,-3.10%,3.10%,0,0,29,3,1,CWS,TBR,K,K,,1
+Red Fox,784,111,Ferda Bois,270,24,1B,87,B3,2,0,0,1,2.66%,-2.66%,0,0,29,3,1,CWS,TBR,1B,1B,,1
+Miguel Camino,1715,323,Ferda Bois,270,614,K,291,B3,2,1,0,1,-5.25%,5.25%,0,0,29,3,1,CWS,TBR,K,K,,1
+Guidooooo,1830,914,JZ,788,853,2B,61,T4,0,0,0,1,6.17%,-6.17%,0,1,30,3,1,TBR,CWS,2B,2B,,1
+Phillip Mahooters,2253,300,JZ,788,395,1B,95,T4,0,2,0,1,6.08%,-6.08%,0,1,30,3,1,TBR,CWS,1B,1B,,1
+Dermot Mulveiny,1763,178,JZ,788,875,K,303,T4,0,5,0,1,-5.08%,5.08%,0,0,30,3,1,TBR,CWS,K,K,,2
+Phillip Mahooters,2253,450,JZ,788,553,SB,103,T4,1,5,0,1,1.81%,-1.81%,0,0,30,3,1,TBR,CWS,Steal 2B,Steal 2B,,5
+Mike Litoris,2252,330,JZ,788,469,1B,139,T4,1,6,0,1,7.63%,-7.63%,1,1,30,3,1,TBR,CWS,1B,1B,,2
+Helen Hywater,2552,670,JZ,788,948,PO,278,T4,1,5,0,2,-4.11%,4.11%,0,0,30,3,1,TBR,CWS,PO,PO,,1
+Makesiondon Kelkboom,327,212,JZ,788,201,HR,11,T4,2,5,0,2,15.23%,-15.23%,3,1,30,3,1,TBR,CWS,HR,HR,,1
+Burg McTurdberg,2262,17,JZ,788,651,PO,366,T4,2,0,0,5,-0.24%,0.24%,0,0,30,3,1,TBR,CWS,PO,PO,,1
+Luke Skywalker,2251,33,Ferda Bois,270,389,K,356,B4,0,0,0,5,-1.24%,1.24%,0,0,31,3,1,CWS,TBR,K,K,,1
+Richard Northstar,275,405,Ferda Bois,270,927,LGO,478,B4,1,0,0,5,-0.82%,0.82%,0,0,31,3,1,CWS,TBR,LGO,LGO,,1
+Nota Nam III,2467,827,Ferda Bois,270,927,1B,100,B4,2,0,0,5,0.70%,-0.70%,0,0,31,3,1,CWS,TBR,1B,1B,,1
+Garfield Chubbs,2230,520,Ferda Bois,270,927,PO,407,B4,2,1,0,5,-1.17%,1.17%,0,0,31,3,1,CWS,TBR,PO,RGO,,1
+Pang Winn,713,623,JZ,788,907,PO,284,T5,0,0,0,5,-0.18%,0.18%,0,0,32,3,1,TBR,CWS,PO,PO,,1
+Perry Platypus,2332,1000,JZ,788,997,HR,3,T5,1,0,0,5,1.16%,-1.16%,1,1,32,3,1,TBR,CWS,HR,HR,,1
+Guidooooo,1830,605,Hudson Hildebrandt,284,566,HR,39,T5,1,0,0,6,0.54%,-0.54%,1,1,32,3,1,TBR,CWS,HR,HR,,1
+Dick Sledge,2367,921,Hudson Hildebrandt,284,50,BB,129,T5,1,0,0,7,-0.05%,0.05%,0,0,32,3,1,TBR,CWS,BB,BB,,1
+Dermot Mulveiny,1763,205,Hudson Hildebrandt,284,902,K,303,T5,1,1,0,7,0.00%,0.00%,0,0,32,3,1,TBR,CWS,K,K,,1
+Mike Litoris,2252,671,Hudson Hildebrandt,284,10,K,339,T5,2,1,0,7,-0.03%,0.03%,0,0,32,3,1,TBR,CWS,K,K,,1
+Egirl Jimenez,183,55,Ferda Bois,270,33,3B,22,B5,0,0,0,7,0.46%,-0.46%,0,1,33,3,1,CWS,TBR,3B,3B,,1
+Hannah Outlaw,178,384,Ferda Bois,270,499,1B,115,B5,0,3,0,7,0.91%,-0.91%,1,1,33,3,1,CWS,TBR,1B,1B,,2
+Bob Robb,90,401,Ferda Bois,270,371,3B,30,B5,0,1,1,7,3.12%,-3.12%,1,1,33,3,1,CWS,TBR,3B,3B,,1
+Red Fox,784,199,Ferda Bois,270,920,Sac,279,B5,0,3,2,7,-1.64%,1.64%,1,0,33,3,1,CWS,TBR,FO,FO,,2
+Miguel Camino,1715,399,Mazy Loron,2345,896,LGO,497,B5,1,0,3,7,-1.16%,1.16%,0,0,33,3,1,CWS,TBR,LGO,LGO,,1
+Luke Skywalker,2251,533,Mazy Loron,2345,399,BB,134,B5,2,0,3,7,1.04%,-1.04%,0,1,33,3,1,CWS,TBR,BB,BB,,1
+Richard Northstar,275,408,Mazy Loron,2345,399,HR,9,B5,2,1,3,7,7.43%,-7.43%,2,1,33,3,1,CWS,TBR,HR,HR,,1
+Nota Nam III,2467,676,Mazy Loron,2345,399,K,277,B5,2,0,5,7,-2.42%,2.42%,0,0,33,3,1,CWS,TBR,K,K,,1
+Helen Hywater,2552,580,Hudson Hildebrandt,284,563,HR,17,T6,0,0,5,7,4.55%,-4.55%,1,1,34,3,1,TBR,CWS,HR,HR,,1
+Makesiondon Kelkboom,327,91,Hudson Hildebrandt,284,232,BB,141,T6,0,0,5,8,0.29%,-0.29%,0,1,34,3,1,TBR,CWS,BB,BB,,1
+Bonesy McSkellington,1733,567,Hudson Hildebrandt,284,455,BB,112,T6,0,1,5,8,0.68%,-0.68%,0,1,34,3,1,TBR,CWS,BB,BB,,1
+Pang Winn,713,841,Hudson Hildebrandt,284,554,K,287,T6,0,4,5,8,-0.55%,0.55%,0,0,34,3,1,TBR,CWS,K,K,,1
+Perry Platypus,2332,313,Hudson Hildebrandt,284,682,K,369,T6,1,4,5,8,-0.53%,0.53%,0,0,34,3,1,TBR,CWS,K,K,,1
+Guidooooo,1830,136,Hudson Hildebrandt,284,172,HR,36,T6,2,4,5,8,3.52%,-3.52%,3,1,34,3,1,TBR,CWS,HR,HR,,1
+Dick Sledge,2367,585,Hudson Hildebrandt,284,12,RGO,427,T6,2,0,5,11,-0.04%,0.04%,0,0,34,3,1,TBR,CWS,RGO,RGO,,1
+Damien Anderson,153,469,Mazy Loron,2345,605,BB,136,B6,0,0,5,11,0.51%,-0.51%,0,0,35,3,1,CWS,TBR,BB,BB,,1
+Egirl Jimenez,183,595,Mazy Loron,2345,819,FO,224,B6,0,1,5,11,-0.55%,0.55%,0,0,35,3,1,CWS,TBR,FO,FO,,1
+Hannah Outlaw,178,240,Mazy Loron,2345,633,PO,393,B6,1,1,5,11,-0.28%,0.28%,0,0,35,3,1,CWS,TBR,PO,PO,,1
+Bob Robb,90,914,Mazy Loron,2345,188,K,274,B6,2,1,5,11,-0.08%,0.08%,0,0,35,3,1,CWS,TBR,K,K,,1
+Pudge,1772,743,BOOG,2648,153,LGO,410,T1,0,0,0,0,-2.51%,2.51%,0,0,36,4,1,KCR,TEX,LGO,LGO,,1
+Rob Patterson,140,891,BOOG,2648,384,LGO,493,T1,1,0,0,0,-2.18%,2.18%,0,0,36,4,1,KCR,TEX,LGO,LGO,,1
+Hayden McCloud,129,829,BOOG,2648,306,LGO,477,T1,2,0,0,0,-1.76%,1.76%,0,0,36,4,1,KCR,TEX,LGO,LGO,,1
+Gang Weed,1732,209,Mongy Whumpus,130,610,RGO,401,B1,0,0,0,0,-2.48%,2.48%,0,0,37,4,1,TEX,KCR,RGO,RGO,,1
+Sablo Panchez,638,844,Mongy Whumpus,130,463,PO,381,B1,1,0,0,0,-2.17%,2.17%,0,0,37,4,1,TEX,KCR,PO,PO,,1
+Buck Maverick,2334,555,Mongy Whumpus,130,11,LGO,456,B1,2,0,0,0,-1.79%,1.79%,0,0,37,4,1,TEX,KCR,LGO,LGO,,1
+Indy Sayne,151,662,BOOG,2648,53,PO,391,T2,0,0,0,0,-2.72%,2.72%,0,0,38,4,1,KCR,TEX,PO,PO,,1
+Doc Otis,2256,511,BOOG,2648,815,K,304,T2,1,0,0,0,-2.40%,2.40%,0,0,38,4,1,KCR,TEX,K,K,,1
+Egor Kucherov,2342,288,BOOG,2648,325,2B,37,T2,2,0,0,0,3.36%,-3.36%,0,0,38,4,1,KCR,TEX,2B,2B,,1
+Davoin Shower-Handel,1949,16,BOOG,2648,497,LGO,481,T2,2,2,0,0,-5.35%,5.35%,0,0,38,4,1,KCR,TEX,LGO,LGO,,1
+Ioe Torrent,1844,848,Mongy Whumpus,130,795,2B,53,B2,0,0,0,0,6.77%,-6.77%,0,0,39,4,1,TEX,KCR,2B,2B,,1
+Kenny Powers,2627,157,Mongy Whumpus,130,639,LGO,482,B2,0,2,0,0,-4.43%,4.43%,0,0,39,4,1,TEX,KCR,LGO,LGO,,1
+Jimmy Pop,2634,919,Mongy Whumpus,130,732,FO,187,B2,1,2,0,0,-4.04%,4.04%,0,0,39,4,1,TEX,KCR,FO,FO,,1
+Old Hoss Radbourne,2362,367,Mongy Whumpus,130,618,FO,251,B2,2,2,0,0,-5.43%,5.43%,0,0,39,4,1,TEX,KCR,FO,FO,,1
+Mattie Christewson,2598,673,BOOG,2648,543,BB,130,T3,0,0,0,0,3.31%,-3.31%,0,1,40,4,1,KCR,TEX,BB,BB,,1
+Connor Morgan,362,211,BOOG,2648,187,2B,24,T3,0,1,0,0,15.06%,-15.06%,0,1,40,4,1,KCR,TEX,2B,2B,,1
+Pudge,1772,420,BOOG,2648,529,1B,109,T3,0,6,0,0,8.77%,-8.77%,1,1,40,4,1,KCR,TEX,1B,1B,,2
+Rob Patterson,140,271,BOOG,2648,8,Sac,263,T3,0,5,0,1,-0.70%,0.70%,1,0,40,4,1,KCR,TEX,FO,FO,,2
+Hayden McCloud,129,772,BOOG,2648,162,PO,390,T3,1,1,0,2,-1.63%,1.63%,0,0,40,4,1,KCR,TEX,PO,PO,,1
+Indy Sayne,151,69,BOOG,2648,24,2B,45,T3,2,1,0,2,9.46%,-9.46%,1,0,40,4,1,KCR,TEX,2B,2B,,1
+Doc Otis,2256,350,Kurt Anger,716,789,RGO,439,T3,2,2,0,3,-2.21%,2.21%,0,0,40,4,1,KCR,TEX,RGO,RGO,,1
+Ryan Hamilton,2479,285,Mongy Whumpus,130,371,1B,86,B3,0,0,0,3,3.68%,-3.68%,0,1,41,4,1,TEX,KCR,1B,1B,,1
+thel,623,403,Mongy Whumpus,130,132,K,271,B3,0,1,0,3,-3.51%,3.51%,0,0,41,4,1,TEX,KCR,K,K,,1
+Ryan Hamilton,2479,550,Mongy Whumpus,130,480,SB,70,B3,1,1,0,3,2.15%,-2.15%,0,0,41,4,1,TEX,KCR,Steal 2B,Steal 2B,,4
+Gang Weed,1732,936,Mongy Whumpus,130,177,FO,241,B3,1,2,0,3,-4.33%,4.33%,0,0,41,4,1,TEX,KCR,FO,FO,,1
+Sablo Panchez,638,765,Mongy Whumpus,130,845,1B,80,B3,2,2,0,3,8.57%,-8.57%,1,1,41,4,1,TEX,KCR,1B,1B,,1
+Buck Maverick,2334,628,Mongy Whumpus,130,718,1B,90,B3,2,1,1,3,4.16%,-4.16%,0,0,41,4,1,TEX,KCR,1B,1B,,1
+Ioe Torrent,1844,999,Mongy Whumpus,130,902,1B,97,B3,2,5,1,3,12.98%,-12.98%,1,0,41,4,1,TEX,KCR,1B,1B,,1
+Kenny Powers,2627,448,Mongy Whumpus,130,588,BB,140,B3,2,5,2,3,4.12%,-4.12%,0,0,41,4,1,TEX,KCR,BB,BB,,1
+Jimmy Pop,2634,55,Mongy Whumpus,130,643,RGO,412,B3,2,7,2,3,-13.71%,13.71%,0,0,41,4,1,TEX,KCR,RGO,RGO,,1
+Egor Kucherov,2342,12,Kurt Anger,716,927,1B,85,T4,0,0,2,3,2.58%,-2.58%,0,0,42,4,1,KCR,TEX,1B,1B,,1
+Davoin Shower-Handel,1949,132,Kurt Anger,716,856,K,276,T4,0,1,2,3,-3.09%,3.09%,0,0,42,4,1,KCR,TEX,K,K,,1
+Mattie Christewson,2598,592,Kurt Anger,716,500,1B,92,T4,1,1,2,3,3.67%,-3.67%,0,0,42,4,1,KCR,TEX,1B,1B,,1
+Connor Morgan,362,723,Kurt Anger,716,137,DP,414,T4,1,4,2,3,-9.66%,9.66%,0,0,42,4,1,KCR,TEX,RGO,RGO,,1
+Old Hoss Radbourne,2362,500,Mongy Whumpus,130,609,1B,109,B4,0,0,2,3,4.73%,-4.73%,0,1,43,4,1,TEX,KCR,1B,1B,,1
+Old Hoss Radbourne,2362,1000,Mongy Whumpus,130,280,SB,280,B4,0,1,2,3,6.53%,-6.53%,0,0,43,4,1,TEX,KCR,Steal 2B,Steal 2B,,4
+Ryan Hamilton,2479,561,Mongy Whumpus,130,205,PO,356,B4,0,2,2,3,-7.22%,7.22%,0,0,43,4,1,TEX,KCR,PO,PO,,1
+thel,623,776,Mongy Whumpus,130,428,PO,348,B4,1,2,2,3,-6.64%,6.64%,0,0,43,4,1,TEX,KCR,PO,PO,,1
+Gang Weed,1732,991,Mongy Whumpus,130,877,1B,114,B4,2,2,2,3,19.59%,-19.59%,1,0,43,4,1,TEX,KCR,1B,1B,,1
+Gang Weed,1732,480,Mongy Whumpus,130,222,SB,258,B4,2,1,3,3,1.89%,-1.89%,0,0,43,4,1,TEX,KCR,Steal 2B,Steal 2B,,4
+Sablo Panchez,638,327,Dogwood Maple,2220,701,PO,374,B4,2,2,3,3,-7.41%,7.41%,0,0,43,4,1,TEX,KCR,PO,PO,,1
+Pudge,1772,835,Kurt Anger,716,267,LGO,432,T5,0,0,3,3,-4.31%,4.31%,0,0,44,4,1,KCR,TEX,LGO,LGO,,1
+Rob Patterson,140,776,Kurt Anger,716,732,3B,44,T5,1,0,3,3,15.04%,-15.04%,0,1,44,4,1,KCR,TEX,3B,3B,,1
+Hayden McCloud,129,444,Kurt Anger,716,900,RGO,456,T5,1,3,3,3,-12.98%,12.98%,0,0,44,4,1,KCR,TEX,RGO,RGO,,2
+Indy Sayne,151,42,Kurt Anger,716,37,HR,5,T5,2,3,3,3,34.93%,-34.93%,2,1,44,4,1,KCR,TEX,HR,HR,,1
+Doc Otis,2256,500,Caleb Bolden,2477,133,PO,367,T5,2,0,3,5,-1.13%,1.13%,0,0,44,4,1,KCR,TEX,PO,PO,,1
+Buck Maverick,2334,981,Dogwood Maple,2220,109,1B,128,B5,0,0,3,5,6.11%,-6.11%,0,0,45,4,1,TEX,KCR,1B,BB,,1
+Buck Maverick,2334,580,Dogwood Maple,2220,811,SB,231,B5,0,1,3,5,5.35%,-5.35%,0,0,45,4,1,TEX,KCR,Steal 2B,Steal 2B,,4
+Ioe Torrent,1844,401,Dogwood Maple,2220,299,1B,102,B5,0,2,3,5,9.30%,-9.30%,0,0,45,4,1,TEX,KCR,1B,1B,,1
+Kenny Powers,2627,378,Dogwood Maple,2220,1,PO,377,B5,0,5,3,5,-7.51%,7.51%,0,0,45,4,1,TEX,KCR,PO,PO,,1
+Seymour Asses,2642,619,Dogwood Maple,2220,499,BB,120,B5,1,5,3,5,9.01%,-9.01%,0,0,45,4,1,TEX,KCR,BB,BB,,1
+Old Hoss Radbourne,2362,203,Syd Kidd,3,904,PO,299,B5,1,7,3,5,-14.27%,14.27%,0,0,45,4,1,TEX,KCR,PO,PO,,1
+Ryan Hamilton,2479,960,Syd Kidd,3,639,PO,321,B5,2,7,3,5,-18.13%,18.13%,0,0,45,4,1,TEX,KCR,PO,PO,,1
+Egor Kucherov,2342,900,Caleb Bolden,2477,772,1B,128,T6,0,0,3,5,0.67%,-0.67%,0,0,46,4,1,KCR,TEX,1B,1B,,1
+Davoin Shower-Handel,1949,341,Caleb Bolden,2477,944,DP,397,T6,0,1,3,5,-2.29%,2.29%,0,0,46,4,1,KCR,TEX,RGO,RGO,,1
+Mattie Christewson,2598,723,Caleb Bolden,2477,861,BB,138,T6,2,0,3,5,0.66%,-0.66%,0,0,46,4,1,KCR,TEX,BB,BB,,1
+Connor Morgan,362,384,Caleb Bolden,2477,462,1B,78,T6,2,1,3,5,0.88%,-0.88%,0,0,46,4,1,KCR,TEX,1B,1B,,1
+Pudge,1772,104,Caleb Bolden,2477,499,RGO,395,T6,2,5,3,5,-2.23%,2.23%,0,0,46,4,1,KCR,TEX,RGO,RGO,,1
+thel,623,414,Syd Kidd,3,76,RGO,338,B6,0,0,3,5,-4.76%,4.76%,0,0,47,4,1,TEX,KCR,RGO,RGO,,1
+Gang Weed,1732,1,Syd Kidd,3,412,LGO,411,B6,1,0,3,5,-3.71%,3.71%,0,0,47,4,1,TEX,KCR,LGO,LGO,,1
+Sablo Panchez,638,616,Syd Kidd,3,257,RGO,359,B6,2,0,3,5,-2.16%,2.16%,0,0,47,4,1,TEX,KCR,RGO,RGO,,1
+Bobby Corwen,2503,721,Aaron Burr,646,372,K,349,T1,0,0,0,0,-2.51%,2.51%,0,0,48,5,2,SFG,STL,K,K,,1
+Skippy Gustafsson,1773,119,Aaron Burr,646,842,K,277,T1,1,0,0,0,-2.18%,2.18%,0,0,48,5,2,SFG,STL,K,K,,1
+Christina Olsen,2528,600,Aaron Burr,646,306,K,294,T1,2,0,0,0,-1.76%,1.76%,0,0,48,5,2,SFG,STL,K,K,,1
+Stan Mann,357,234,Nate Duke,2457,909,K,325,B1,0,0,0,0,-2.48%,2.48%,0,0,49,5,2,STL,SFG,K,K,,1
+Monty Johnson,557,638,Nate Duke,2457,655,HR,17,B1,1,0,0,0,12.30%,-12.30%,1,1,49,5,2,STL,SFG,HR,HR,,1
+Cybeast Falzar,2344,45,Nate Duke,2457,800,FO,245,B1,1,0,1,0,-1.80%,1.80%,0,0,49,5,2,STL,SFG,FO,FO,,1
+Patrick Doyle,205,269,Nate Duke,2457,571,K,302,B1,2,0,1,0,-1.44%,1.44%,0,0,49,5,2,STL,SFG,K,K,,1
+Malcolm Fish,2455,571,Aaron Burr,646,188,K,383,T2,0,0,1,0,-2.95%,2.95%,0,0,50,5,2,SFG,STL,K,K,,1
+Simba Martinez,1792,808,Aaron Burr,646,2,FO,194,T2,1,0,1,0,-2.51%,2.51%,0,0,50,5,2,SFG,STL,FO,FO,,1
+Jeffrey LaVert,189,350,Aaron Burr,646,406,2B,56,T2,2,0,1,0,3.45%,-3.45%,0,0,50,5,2,SFG,STL,2B,2B,,1
+Big Smoke Anderson,1839,514,Aaron Burr,646,901,K,387,T2,2,2,1,0,-5.41%,5.41%,0,0,50,5,2,SFG,STL,K,K,,1
+Haywood Jablome,17,950,Nate Duke,2457,311,K,361,B2,0,0,1,0,-2.00%,2.00%,0,0,51,5,2,STL,SFG,K,PO,,1
+Carlos,132,128,Nate Duke,2457,812,K,316,B2,1,0,1,0,-1.83%,1.83%,0,0,51,5,2,STL,SFG,K,K,,1
+Goldie Jones,360,215,Nate Duke,2457,909,K,306,B2,2,0,1,0,-1.56%,1.56%,0,0,51,5,2,STL,SFG,K,K,,1
+Roidy Magoo,2354,747,Aaron Burr,646,379,K,368,T3,0,0,1,0,-3.32%,3.32%,0,0,52,5,2,SFG,STL,K,K,,1
+Snoop E. Dogg,22,701,Aaron Burr,646,450,K,251,T3,1,0,1,0,-2.85%,2.85%,0,0,52,5,2,SFG,STL,K,K,,1
+Bobby Corwen,2503,39,Aaron Burr,646,108,1B,69,T3,2,0,1,0,2.68%,-2.68%,0,0,52,5,2,SFG,STL,1B,1B,,1
+Skippy Gustafsson,1773,399,Aaron Burr,646,922,LGO,477,T3,2,1,1,0,-4.94%,4.94%,0,0,52,5,2,SFG,STL,LGO,LGO,,1
+Waffles O'Laughlin,2347,691,Nate Duke,2457,206,LGO,485,B3,0,0,1,0,-2.04%,2.04%,0,0,53,5,2,STL,SFG,LGO,LGO,,1
+Jumbo Dick,79,420,Nate Duke,2457,101,K,319,B3,1,0,1,0,-1.80%,1.80%,0,0,53,5,2,STL,SFG,K,K,,1
+Stan Mann,357,865,Nate Duke,2457,745,1B,120,B3,2,0,1,0,1.54%,-1.54%,0,0,53,5,2,STL,SFG,1B,1B,,1
+Monty Johnson,557,209,Nate Duke,2457,547,K,338,B3,2,1,1,0,-3.16%,3.16%,0,0,53,5,2,STL,SFG,K,K,,1
+Christina Olsen,2528,213,Aaron Burr,646,209,HR,4,T4,0,0,1,0,18.07%,-18.07%,1,1,54,5,2,SFG,STL,HR,HR,,1
+Malcolm Fish,2455,444,Aaron Burr,646,312,BB,132,T4,0,0,1,1,3.68%,-3.68%,0,0,54,5,2,SFG,STL,BB,BB,,1
+Simba Martinez,1792,747,Aaron Burr,646,444,K,303,T4,0,1,1,1,-4.07%,4.07%,0,0,54,5,2,SFG,STL,K,K,,1
+Jeffrey LaVert,189,450,Aaron Burr,646,146,K,304,T4,1,1,1,1,-3.50%,3.50%,0,0,54,5,2,SFG,STL,K,K,,1
+Big Smoke Anderson,1839,305,Aaron Burr,646,891,PO,414,T4,2,1,1,1,-5.63%,5.63%,0,0,54,5,2,SFG,STL,PO,PO,,1
+Cybeast Falzar,2344,945,Nate Duke,2457,257,K,312,B4,0,0,1,1,-3.43%,3.43%,0,0,55,5,2,STL,SFG,K,K,,1
+Patrick Doyle,205,395,Nate Duke,2457,819,PO,424,B4,1,0,1,1,-3.17%,3.17%,0,0,55,5,2,STL,SFG,PO,PO,,1
+Haywood Jablome,17,933,Nate Duke,2457,600,K,333,B4,2,0,1,1,-2.87%,2.87%,0,0,55,5,2,STL,SFG,K,K,,1
+Roidy Magoo,2354,1,Aaron Burr,646,557,RGO,444,T5,0,0,1,1,-4.31%,4.31%,0,0,56,5,2,SFG,STL,RGO,RGO,,1
+Snoop E. Dogg,22,811,Aaron Burr,646,88,K,277,T5,1,0,1,1,-3.90%,3.90%,0,0,56,5,2,SFG,STL,K,K,,1
+Bobby Corwen,2503,13,Aaron Burr,646,707,K,306,T5,2,0,1,1,-3.51%,3.51%,0,0,56,5,2,SFG,STL,K,K,,1
+Carlos,132,450,Nate Duke,2457,585,BB,135,B5,0,0,1,1,3.33%,-3.33%,0,1,57,5,2,STL,SFG,BB,BB,,1
+Goldie Jones,360,101,Nate Duke,2457,150,2B,49,B5,0,1,1,1,19.52%,-19.52%,0,0,57,5,2,STL,SFG,2B,2B,,1
+Waffles O'Laughlin,2347,199,Nate Duke,2457,506,K,307,B5,0,6,1,1,-8.21%,8.21%,0,0,57,5,2,STL,SFG,K,K,,2
+Jumbo Dick,79,,Nate Duke,2457,,IBB,,B5,1,6,1,1,1.04%,-1.04%,0,0,57,5,2,STL,SFG,IBB,IBB,,8
+Stan Mann,357,201,Barney Turbo,28,420,Sac,219,B5,1,7,1,1,8.34%,-8.34%,1,0,57,5,2,STL,SFG,FO,FO,,1
+Monty Johnson,557,844,Barney Turbo,28,519,K,325,B5,2,4,2,1,-3.61%,3.61%,0,0,57,5,2,STL,SFG,K,K,,1
+Skippy Gustafsson,1773,649,Aaron Burr,646,197,RGO,452,T6,0,0,2,1,-6.73%,6.73%,0,0,58,5,2,SFG,STL,RGO,RGO,,1
+Christina Olsen,2528,755,Aaron Burr,646,2,K,247,T6,1,0,2,1,-6.00%,6.00%,0,0,58,5,2,SFG,STL,K,K,,1
+Malcolm Fish,2455,2,Aaron Burr,646,920,1B,82,T6,2,0,2,1,5.75%,-5.75%,0,1,58,5,2,SFG,STL,1B,1B,,1
+Simba Martinez,1792,737,Aaron Burr,646,707,HR,30,T6,2,1,2,1,67.88%,-67.88%,2,1,58,5,2,SFG,STL,HR,HR,,1
+Jeffrey LaVert,189,369,Aaron Burr,646,406,2B,37,T6,2,0,2,3,2.47%,-2.47%,0,0,58,5,2,SFG,STL,2B,2B,,1
+Big Smoke Anderson,1839,223,Aaron Burr,646,909,K,314,T6,2,2,2,3,-3.97%,3.97%,0,0,58,5,2,SFG,STL,K,K,,1
+Cybeast Falzar,2344,,Barney Turbo,28,,BB,,B6,0,0,2,3,8.33%,-8.33%,0,1,59,5,2,STL,SFG,BB,BB,,1
+Patrick Doyle,205,456,Barney Turbo,28,611,BB,155,B6,0,1,2,3,13.56%,-13.56%,0,1,59,5,2,STL,SFG,BB,FO,,1
+Haywood Jablome,17,988,Barney Turbo,28,845,BB,143,B6,0,4,2,3,27.80%,-27.80%,0,0,59,5,2,STL,SFG,BB,BB,,1
+Carlos,132,777,Barney Turbo,28,911,BB,134,B6,0,7,2,3,22.43%,-22.43%,1,0,59,5,2,STL,SFG,BB,BB,,2
+Goldie Jones,360,313,Fido Dido,1962,404,1B,91,B6,0,7,3,3,5.14%,-5.14%,1,0,59,5,2,STL,SFG,1B,1B,,2
+Iosef Mere,2530,814,Chuck McCluster,296,387,RGO,427,T1,0,0,0,0,-2.51%,2.51%,0,0,60,6,2,CHC,NYM,RGO,RGO,,1
+Erin Pickles,68,141,Chuck McCluster,296,788,K,353,T1,1,0,0,0,-2.18%,2.18%,0,0,60,6,2,CHC,NYM,K,K,,1
+Doc Dockgoose,1801,313,Chuck McCluster,296,196,1B,117,T1,2,0,0,0,1.98%,-1.98%,0,0,60,6,2,CHC,NYM,1B,1B,,1
+Frederick Thunderpants,2371,111,Chuck McCluster,296,842,K,269,T1,2,1,0,0,-3.74%,3.74%,0,0,60,6,2,CHC,NYM,K,K,,1
+Munki Oshu,2568,649,Nikola Tefla,719,591,1B,58,B1,0,0,0,0,2.76%,-2.76%,0,1,61,6,2,NYM,CHC,1B,1B,,1
+Kris Krampus,683,94,Nikola Tefla,719,439,PO,345,B1,0,1,0,0,-2.96%,2.96%,0,0,61,6,2,NYM,CHC,PO,PO,,1
+Robbie Tightpants,2584,750,Nikola Tefla,719,744,3B,6,B1,1,1,0,0,16.37%,-16.37%,1,1,61,6,2,NYM,CHC,3B,3B,,1
+Wallace Grommet,492,192,Nikola Tefla,719,888,Sac,304,B1,1,3,1,0,2.34%,-2.34%,1,0,61,6,2,NYM,CHC,FO,K,,2
+Todd Bonzalez II,169,220,Nikola Tefla,719,900,K,320,B1,2,0,2,0,-1.12%,1.12%,0,0,61,6,2,NYM,CHC,K,K,,1
+WoodCutter Jones,2524,185,Chuck McCluster,296,207,2B,22,T2,0,0,2,0,7.01%,-7.01%,0,1,62,6,2,CHC,NYM,2B,3B,,1
+Michael Ikenberry,63,22,Chuck McCluster,296,588,RGO,434,T2,0,2,2,0,-1.99%,1.99%,0,0,62,6,2,CHC,NYM,RGO,RGO,,1
+Corey Scooter,1717,932,Chuck McCluster,296,187,Sac,255,T2,1,3,2,0,0.33%,-0.33%,1,0,62,6,2,CHC,NYM,FO,FO,,1
+Isaac Saffron,377,701,Chuck McCluster,296,277,RGO,424,T2,2,0,2,1,-1.96%,1.96%,0,0,62,6,2,CHC,NYM,RGO,RGO,,1
+Tara Dactyl,252,202,Nikola Tefla,719,751,RGO,451,B2,0,0,2,1,-2.00%,2.00%,0,0,63,6,2,NYM,CHC,RGO,RGO,,1
+Baron Harold Willingsby,765,304,Nikola Tefla,719,59,FO,245,B2,1,0,2,1,-1.83%,1.83%,0,0,63,6,2,NYM,CHC,FO,FO,,1
+Poop McGee,596,722,Nikola Tefla,719,848,BB,126,B2,2,0,2,1,1.60%,-1.60%,0,1,63,6,2,NYM,CHC,BB,BB,,1
+Mike Hampton,782,103,Nikola Tefla,719,250,BB,147,B2,2,1,2,1,2.10%,-2.10%,0,1,63,6,2,NYM,CHC,BB,BB,,1
+Munki Oshu,2568,449,Nikola Tefla,719,422,2B,27,B2,2,4,2,1,16.83%,-16.83%,2,1,63,6,2,NYM,CHC,2B,2B,,1
+Kris Krampus,683,149,Bob Dobby,1736,43,1B,106,B2,2,2,4,1,4.77%,-4.77%,1,0,63,6,2,NYM,CHC,1B,1B,,1
+Robbie Tightpants,2584,444,Bob Dobby,1736,543,1B,99,B2,2,1,5,1,0.76%,-0.76%,0,0,63,6,2,NYM,CHC,1B,1B,,1
+Wallace Grommet,492,175,Bob Dobby,1736,519,PO,344,B2,2,5,5,1,-1.76%,1.76%,0,0,63,6,2,NYM,CHC,PO,PO,,1
+Terry Gaskins,2349,723,Chuck McCluster,296,16,K,293,T3,0,0,5,1,-1.61%,1.61%,0,0,64,6,2,CHC,NYM,K,K,,1
+Iosef Mere,2530,22,Chuck McCluster,296,561,LGO,461,T3,1,0,5,1,-1.33%,1.33%,0,0,64,6,2,CHC,NYM,LGO,LGO,,1
+Erin Pickles,68,555,Chuck McCluster,296,291,FO,264,T3,2,0,5,1,-0.88%,0.88%,0,0,64,6,2,CHC,NYM,FO,FO,,1
+Todd Bonzalez II,169,270,Bob Dobby,1736,817,RGO,453,B3,0,0,5,1,-0.45%,0.45%,0,0,65,6,2,NYM,CHC,RGO,RGO,,1
+Tara Dactyl,252,377,Bob Dobby,1736,533,BB,156,B3,1,0,5,1,0.38%,-0.38%,0,0,65,6,2,NYM,CHC,BB,BB,,1
+Baron Harold Willingsby,765,1,Chris Orosz,219,587,DP,414,B3,1,1,5,1,-1.23%,1.23%,0,0,65,6,2,NYM,CHC,RGO,RGO,,1
+Doc Dockgoose,1801,896,Chuck McCluster,296,702,FO,194,T4,0,0,5,1,-1.55%,1.55%,0,0,66,6,2,CHC,NYM,FO,FO,,1
+Frederick Thunderpants,2371,567,Chuck McCluster,296,741,FO,174,T4,1,0,5,1,-1.16%,1.16%,0,0,66,6,2,CHC,NYM,FO,FO,,1
+WoodCutter Jones,2524,158,Chuck McCluster,296,977,BB,181,T4,2,0,5,1,1.04%,-1.04%,0,0,66,6,2,CHC,NYM,BB,FO,,1
+Michael Ikenberry,63,450,Chuck McCluster,296,640,FO,190,T4,2,1,5,1,-1.70%,1.70%,0,0,66,6,2,CHC,NYM,FO,FO,,1
+Poop McGee,596,222,Chris Orosz,219,555,RGO,333,B4,0,0,5,1,-0.28%,0.28%,0,0,67,6,2,NYM,CHC,RGO,RGO,,1
+Mike Hampton,782,487,Chris Orosz,219,142,PO,345,B4,1,0,5,1,-0.30%,0.30%,0,0,67,6,2,NYM,CHC,PO,PO,,1
+Munki Oshu,2568,832,Chris Orosz,219,341,LGO,491,B4,2,0,5,1,-0.22%,0.22%,0,0,67,6,2,NYM,CHC,LGO,LGO,,1
+Corey Scooter,1717,176,Chuck McCluster,296,81,1B,95,T5,0,0,5,1,2.20%,-2.20%,0,1,68,6,2,CHC,NYM,1B,1B,,1
+Isaac Saffron,377,804,Chuck McCluster,296,988,BB,184,T5,0,1,5,1,4.98%,-4.98%,0,1,68,6,2,CHC,NYM,BB,BB,,1
+Terry Gaskins,2349,721,Chuck McCluster,296,488,FO,233,T5,0,4,5,1,-3.25%,3.25%,0,0,68,6,2,CHC,NYM,FO,FO,,1
+Iosef Mere,2530,181,Chuck McCluster,296,488,K,307,T5,1,4,5,1,-3.52%,3.52%,0,0,68,6,2,CHC,NYM,K,K,,1
+Erin Pickles,68,808,Chuck McCluster,296,861,1B,53,T5,2,4,5,1,4.46%,-4.46%,1,1,68,6,2,CHC,NYM,1B,1B,,1
+John Johnson Jr.,91,492,John Smith,2275,541,2B,49,T5,2,5,5,2,14.90%,-14.90%,2,0,68,6,2,CHC,NYM,2B,3B,,1
+Frederick Thunderpants,2371,617,John Smith,2275,260,K,357,T5,2,2,5,4,-9.71%,9.71%,0,0,68,6,2,CHC,NYM,K,K,,1
+Kris Krampus,683,519,Chris Orosz,219,603,1B,84,B5,0,0,5,4,1.23%,-1.23%,0,0,69,6,2,NYM,CHC,1B,1B,,1
+Kris Krampus,683,100,Mark Spoon,2377,420,CS,320,B5,0,1,5,4,-2.60%,2.60%,0,0,69,6,2,NYM,CHC,CS 2B,CS 2B,,4
+Robbie Tightpants,2584,210,Mark Spoon,2377,471,K,261,B5,1,0,5,4,-1.30%,1.30%,0,0,69,6,2,NYM,CHC,K,K,,1
+Wallace Grommet,492,222,Mark Spoon,2377,468,FO,246,B5,2,0,5,4,-1.14%,1.14%,0,0,69,6,2,NYM,CHC,FO,FO,,1
+WoodCutter Jones,2524,350,John Smith,2275,725,PO,375,T6,0,0,5,4,-6.73%,6.73%,0,0,70,6,2,CHC,NYM,PO,PO,,1
+Michael Ikenberry,63,166,John Smith,2275,844,K,322,T6,1,0,5,4,-6.00%,6.00%,0,0,70,6,2,CHC,NYM,K,K,,1
+Corey Scooter,1717,74,John Smith,2275,27,2B,47,T6,2,0,5,4,8.68%,-8.68%,0,0,70,6,2,CHC,NYM,2B,2B,,1
+Isaac Saffron,377,800,John Smith,2275,396,RGO,404,T6,2,2,5,4,-13.81%,13.81%,0,0,70,6,2,CHC,NYM,RGO,RGO,,1
+Pudge,1772,585,Mecha Vulfzilla,265,451,BB,134,T1,0,0,0,0,2.91%,-2.91%,0,1,71,7,2,KCR,MIN,BB,BB,,1
+Rob Patterson,140,51,Mecha Vulfzilla,265,27,3B,24,T1,0,1,0,0,17.19%,-17.19%,1,1,71,7,2,KCR,MIN,3B,3B,,1
+Indy Sayne,151,783,Mecha Vulfzilla,265,791,HR,8,T1,0,3,0,1,9.72%,-9.72%,2,1,71,7,2,KCR,MIN,HR,HR,,2
+Davoin Shower-Handel,1949,16,Harry McPotterson,1703,926,1B,90,T1,0,0,0,3,1.50%,-1.50%,0,0,71,7,2,KCR,MIN,1B,1B,,1
+Egor Kucherov,2342,676,Harry McPotterson,1703,231,DP,445,T1,0,1,0,3,-3.85%,3.85%,0,0,71,7,2,KCR,MIN,LGO,LGO,,1
+Doc Otis,2256,737,Harry McPotterson,1703,603,BB,134,T1,2,0,0,3,1.15%,-1.15%,0,0,71,7,2,KCR,MIN,BB,BB,,1
+Sneky Snek,2638,869,Harry McPotterson,1703,360,LGO,491,T1,2,1,0,3,-2.06%,2.06%,0,0,71,7,2,KCR,MIN,LGO,LGO,,1
+Arthur Vandelay,518,215,Dogwood Maple,2220,319,1B,104,B1,0,0,0,3,3.01%,-3.01%,0,1,72,7,2,MIN,KCR,1B,1B,,1
+Leashy Hittem,2545,19,Dogwood Maple,2220,9,3B,10,B1,0,1,0,3,16.08%,-16.08%,1,1,72,7,2,MIN,KCR,3B,HR,,1
+Francis X. Clampazzo,485,199,Dogwood Maple,2220,871,PO,328,B1,0,3,1,3,-4.69%,4.69%,0,0,72,7,2,MIN,KCR,PO,K,,2
+Zephraim Donkus,582,766,Dogwood Maple,2220,519,Sac,247,B1,1,3,1,3,1.08%,-1.08%,1,0,72,7,2,MIN,KCR,FO,FO,,2
+Ping Pong,530,252,Dogwood Maple,2220,321,2B,69,B1,2,0,2,3,3.53%,-3.53%,0,0,72,7,2,MIN,KCR,2B,2B,,1
+Heechul Kim,671,811,Dogwood Maple,2220,541,K,270,B1,2,2,2,3,-5.41%,5.41%,0,0,72,7,2,MIN,KCR,K,K,,1
+Connor Morgan,362,495,Harry McPotterson,1703,490,HR,5,T2,0,0,2,3,10.98%,-10.98%,1,1,73,7,2,KCR,MIN,HR,HR,,1
+Wonder Francoh,2242,758,Harry McPotterson,1703,267,LGO,491,T2,0,0,2,4,-1.70%,1.70%,0,0,73,7,2,KCR,MIN,LGO,LGO,,1
+Pudge,1772,629,Harry McPotterson,1703,90,LGO,461,T2,1,0,2,4,-1.52%,1.52%,0,0,73,7,2,KCR,MIN,LGO,LGO,,1
+Rob Patterson,140,741,Harry McPotterson,1703,90,PO,349,T2,2,0,2,4,-1.37%,1.37%,0,0,73,7,2,KCR,MIN,PO,PO,,1
+Queen Pierre,1771,215,Dogwood Maple,2220,601,PO,386,B2,0,0,2,4,-2.94%,2.94%,0,0,74,7,2,MIN,KCR,PO,PO,,1
+Joey Wheeler,662,215,Dogwood Maple,2220,771,PO,444,B2,1,0,2,4,-2.53%,2.53%,0,0,74,7,2,MIN,KCR,PO,PO,,1
+Harry McPotterson,1703,420,Dogwood Maple,2220,501,1B,81,B2,2,0,2,4,2.19%,-2.19%,0,1,74,7,2,MIN,KCR,1B,1B,,1
+Arthur Vandelay,518,644,Dogwood Maple,2220,629,3B,15,B2,2,1,2,4,13.89%,-13.89%,1,0,74,7,2,MIN,KCR,3B,HR,,1
+Leashy Hittem,2545,19,Dogwood Maple,2220,222,FO,203,B2,2,3,3,4,-6.17%,6.17%,0,0,74,7,2,MIN,KCR,FO,FO,,1
+Indy Sayne,151,542,Harry McPotterson,1703,90,LGO,452,T3,0,0,3,4,-2.37%,2.37%,0,0,75,7,2,KCR,MIN,LGO,LGO,,1
+Davoin Shower-Handel,1949,256,Harry McPotterson,1703,858,RGO,398,T3,1,0,3,4,-2.03%,2.03%,0,0,75,7,2,KCR,MIN,RGO,RGO,,1
+Egor Kucherov,2342,13,Harry McPotterson,1703,555,LGO,458,T3,2,0,3,4,-1.82%,1.82%,0,0,75,7,2,KCR,MIN,LGO,LGO,,1
+Francis X. Clampazzo,485,288,Dogwood Maple,2220,212,1B,76,B3,0,0,3,4,4.12%,-4.12%,0,1,76,7,2,MIN,KCR,1B,1B,,1
+Zephraim Donkus,582,27,Dogwood Maple,2220,912,1B,115,B3,0,1,3,4,7.27%,-7.27%,0,0,76,7,2,MIN,KCR,1B,1B,,1
+Ping Pong,530,592,Mongy Whumpus,130,984,DP,392,B3,0,4,3,4,-13.61%,13.61%,0,0,76,7,2,MIN,KCR,LGO,LGO,,1
+Heechul Kim,671,320,Mongy Whumpus,130,256,1B,64,B3,2,3,3,4,15.51%,-15.51%,1,0,76,7,2,MIN,KCR,1B,2B,,1
+Queen Pierre,1771,623,Mongy Whumpus,130,903,K,280,B3,2,1,4,4,-4.64%,4.64%,0,0,76,7,2,MIN,KCR,K,K,,1
+Doc Otis,2256,555,Harry McPotterson,1703,703,BB,148,T4,0,0,4,4,3.68%,-3.68%,0,0,77,7,2,KCR,MIN,BB,BB,,1
+Sneky Snek,2638,340,Harry McPotterson,1703,989,PO,351,T4,0,1,4,4,-4.07%,4.07%,0,0,77,7,2,KCR,MIN,PO,PO,,1
+Connor Morgan,362,616,Harry McPotterson,1703,800,FO,184,T4,1,1,4,4,-3.50%,3.50%,0,0,77,7,2,KCR,MIN,FO,FO,,1
+Wonder Francoh,2242,741,Harry McPotterson,1703,145,RGO,404,T4,2,1,4,4,-5.63%,5.63%,0,0,77,7,2,KCR,MIN,RGO,RGO,,1
+Joey Wheeler,662,911,Mongy Whumpus,130,131,FO,220,B4,0,0,4,4,-3.43%,3.43%,0,0,78,7,2,MIN,KCR,FO,FO,,1
+Harry McPotterson,1703,145,Mongy Whumpus,130,51,BB,94,B4,1,0,4,4,2.66%,-2.66%,0,1,78,7,2,MIN,KCR,BB,1B,,1
+Arthur Vandelay,518,745,Mongy Whumpus,130,902,BB,157,B4,1,1,4,4,4.93%,-4.93%,0,1,78,7,2,MIN,KCR,BB,BB,,1
+Leashy Hittem,2545,400,Mongy Whumpus,130,146,FO,254,B4,1,4,4,4,-4.67%,4.67%,0,0,78,7,2,MIN,KCR,FO,FO,,1
+Francis X. Clampazzo,485,689,Mongy Whumpus,130,701,3B,12,B4,2,4,4,4,28.39%,-28.39%,2,0,78,7,2,MIN,KCR,3B,HR,,1
+Zephraim Donkus,582,500,Nicholas Fouss,1776,210,K,290,B4,2,3,6,4,-2.22%,2.22%,0,0,78,7,2,MIN,KCR,K,K,,1
+Pudge,1772,261,Harry McPotterson,1703,850,LGO,411,T5,0,0,6,4,-3.57%,3.57%,0,0,79,7,2,KCR,MIN,LGO,LGO,,1
+Rob Patterson,140,561,Harry McPotterson,1703,11,LGO,450,T5,1,0,6,4,-2.82%,2.82%,0,0,79,7,2,KCR,MIN,LGO,LGO,,1
+Indy Sayne,151,99,Harry McPotterson,1703,405,K,306,T5,2,0,6,4,-1.93%,1.93%,0,0,79,7,2,KCR,MIN,K,K,,1
+Ping Pong,530,54,Nicholas Fouss,1776,873,FO,181,B5,0,0,6,4,-0.67%,0.67%,0,0,80,7,2,MIN,KCR,FO,FO,,1
+Heechul Kim,671,101,Nicholas Fouss,1776,421,K,320,B5,1,0,6,4,-0.64%,0.64%,0,0,80,7,2,MIN,KCR,K,K,,1
+Queen Pierre,1771,626,Nicholas Fouss,1776,610,2B,16,B5,2,0,6,4,0.97%,-0.97%,0,0,80,7,2,MIN,KCR,2B,3B,,1
+Joey Wheeler,662,305,Nicholas Fouss,1776,928,K,377,B5,2,2,6,4,-1.48%,1.48%,0,0,80,7,2,MIN,KCR,K,K,,1
+Davoin Shower-Handel,1949,735,Harry McPotterson,1703,613,1B,122,T6,0,0,6,4,6.61%,-6.61%,0,0,81,7,2,KCR,MIN,1B,1B,,1
+Egor Kucherov,2342,888,Harry McPotterson,1703,144,FO,256,T6,0,1,6,4,-5.14%,5.14%,0,0,81,7,2,KCR,MIN,FO,FO,,1
+Davoin Shower-Handel,1949,736,Harry McPotterson,1703,1,SB,265,T6,1,1,6,4,1.96%,-1.96%,0,0,81,7,2,KCR,MIN,Steal 2B,Steal 2B,,4
+Doc Otis,2256,565,Harry McPotterson,1703,189,RGO,376,T6,1,2,6,4,-6.50%,6.50%,0,0,81,7,2,KCR,MIN,RGO,RGO,,1
+Sneky Snek,2638,670,Harry McPotterson,1703,478,FO,192,T6,2,3,6,4,-5.29%,5.29%,0,0,81,7,2,KCR,MIN,FO,FO,,1
+Ross Ewage,1764,709,Ryan Gastings,394,388,RGO,321,T1,0,0,0,0,-2.51%,2.51%,0,0,82,8,2,TBR,TOR,RGO,RGO,,1
+Makesiondon Kelkboom,327,529,Ryan Gastings,394,560,2B,31,T1,1,0,0,0,4.65%,-4.65%,0,0,82,8,2,TBR,TOR,2B,2B,,1
+Burg McTurdBerg,2262,4,Ryan Gastings,394,231,FO,227,T1,1,2,0,0,-3.78%,3.78%,0,0,82,8,2,TBR,TOR,FO,FO,,1
+Dick Sledge,2367,671,Ryan Gastings,394,177,LGO,494,T1,2,2,0,0,-4.81%,4.81%,0,0,82,8,2,TBR,TOR,LGO,LGO,,1
+Freddie Confinedman,2499,798,Holden Summers,10,1,FO,203,B1,0,0,0,0,-2.48%,2.48%,0,0,83,8,2,TOR,TBR,FO,FO,,1
+Scherbie Fully-Loaded,679,888,Holden Summers,10,290,PO,402,B1,1,0,0,0,-2.17%,2.17%,0,0,83,8,2,TOR,TBR,PO,PO,,1
+Sven Jorgenson,405,970,Holden Summers,10,135,BB,165,B1,2,0,0,0,1.90%,-1.90%,0,0,83,8,2,TOR,TBR,BB,BB,,1
+Troy Pressing,2282,223,Holden Summers,10,737,LGO,486,B1,2,1,0,0,-3.69%,3.69%,0,0,83,8,2,TOR,TBR,LGO,LGO,,1
+Guidooooo,1830,493,Ryan Gastings,394,440,2B,53,T2,0,0,0,0,6.81%,-6.81%,0,1,84,8,2,TBR,TOR,2B,2B,,1
+Phillip Mahooters,2253,75,Ryan Gastings,394,500,LGO,425,T2,0,2,0,0,-4.42%,4.42%,0,0,84,8,2,TBR,TOR,LGO,LGO,,1
+Pang Winn,713,802,Ryan Gastings,394,892,1B,90,T2,1,2,0,0,5.42%,-5.42%,0,1,84,8,2,TBR,TOR,1B,1B,,1
+Pang Winn,713,800,Ryan Gastings,394,599,SB,201,T2,1,5,0,0,2.54%,-2.54%,0,0,84,8,2,TBR,TOR,Steal 2B,Steal 2B,,5
+Mike Litoris,2252,71,Ryan Gastings,394,170,1B,99,T2,1,6,0,0,8.96%,-8.96%,1,1,84,8,2,TBR,TOR,1B,1B,,1
+Bonesy McSkellington,1733,866,Ryan Gastings,394,900,2B,34,T2,1,5,0,1,11.00%,-11.00%,1,0,84,8,2,TBR,TOR,2B,2B,,1
+Ross Ewage,1764,499,Ryan Gastings,394,100,RGO,399,T2,1,6,0,2,1.27%,-1.27%,1,0,84,8,2,TBR,TOR,RGO,RGO,,1
+Makesiondon Kelkboom,327,59,Ryan Gastings,394,388,PO,329,T2,2,3,0,3,-2.49%,2.49%,0,0,84,8,2,TBR,TOR,PO,PO,,1
+Jack Jackie Jackson,354,99,Holden Summers,10,969,BB,130,B2,0,0,0,3,3.29%,-3.29%,0,0,85,8,2,TOR,TBR,BB,BB,,1
+Robbie,1745,669,Holden Summers,10,835,FO,166,B2,0,1,0,3,-3.27%,3.27%,0,0,85,8,2,TOR,TBR,FO,FO,,1
+Graham Grams,400,327,Holden Summers,10,700,PO,373,B2,1,1,0,3,-2.57%,2.57%,0,0,85,8,2,TOR,TBR,PO,PO,,1
+Mylo Grams,396,136,Holden Summers,10,665,LGO,471,B2,2,1,0,3,-3.49%,3.49%,0,0,85,8,2,TOR,TBR,LGO,LGO,,1
+Burg McTurdBerg,2262,619,Ryan Gastings,394,781,1B,162,T3,0,0,0,3,1.05%,-1.05%,0,1,86,8,2,TBR,TOR,1B,BB,,1
+Dick Sledge,2367,808,Ryan Gastings,394,782,HR,26,T3,0,1,0,3,8.37%,-8.37%,2,1,86,8,2,TBR,TOR,HR,HR,,1
+Guidooooo,1830,544,Ryan Gastings,394,330,K,214,T3,0,0,0,5,-0.42%,0.42%,0,0,86,8,2,TBR,TOR,K,K,,1
+Phillip Mahooters,2253,780,Ryan Gastings,394,800,3B,20,T3,1,0,0,5,1.48%,-1.48%,0,0,86,8,2,TBR,TOR,3B,3B,,1
+Pang Winn,713,154,S.A.R. Dinka,395,803,PO,351,T3,1,3,0,5,-1.36%,1.36%,0,0,86,8,2,TBR,TOR,PO,PO,,1
+Mike Litoris,2252,550,S.A.R. Dinka,395,78,LGO,472,T3,2,3,0,5,-0.92%,0.92%,0,0,86,8,2,TBR,TOR,LGO,LGO,,1
+Rod Kimball,2597,313,Holden Summers,10,285,2B,28,B3,0,0,0,5,3.69%,-3.69%,0,1,87,8,2,TOR,TBR,2B,2B,,1
+Freddie Confinedman,2499,492,Holden Summers,10,421,1B,71,B3,0,2,0,5,4.63%,-4.63%,0,0,87,8,2,TOR,TBR,1B,1B,,1
+Scherbie Fully-Loaded,679,777,Holden Summers,10,537,Sac,240,B3,0,5,0,5,-3.52%,3.52%,1,0,87,8,2,TOR,TBR,FO,FO,,1
+Sven Jorgenson,405,765,Holden Summers,10,101,K,336,B3,1,1,1,5,-2.13%,2.13%,0,0,87,8,2,TOR,TBR,K,K,,1
+Troy Pressing,2282,766,Holden Summers,10,287,LGO,479,B3,2,1,1,5,-2.69%,2.69%,0,0,87,8,2,TOR,TBR,LGO,LGO,,1
+Bonesy McSkellington,1733,454,S.A.R. Dinka,395,404,2B,50,T4,0,0,1,5,1.46%,-1.46%,0,0,88,8,2,TBR,TOR,2B,2B,,1
+Ross Ewage,1764,465,S.A.R. Dinka,395,611,BB,146,T4,0,2,1,5,0.15%,-0.15%,0,0,88,8,2,TBR,TOR,BB,BB,,1
+Makesiondon Kelkboom,327,965,S.A.R. Dinka,395,395,PO,430,T4,0,4,1,5,-1.01%,1.01%,0,0,88,8,2,TBR,TOR,PO,PO,,1
+Burg McTurdBerg,2262,300,S.A.R. Dinka,395,739,DP,439,T4,1,4,1,5,-2.16%,2.16%,0,0,88,8,2,TBR,TOR,RGO,RGO,,1
+Jack Jackie Jackson,354,5,Holden Summers,10,1000,HR,5,B4,0,0,1,5,6.07%,-6.07%,1,1,89,8,2,TOR,TBR,HR,HR,,1
+Robbie,1745,105,Holden Summers,10,228,BB,123,B4,0,0,2,5,3.96%,-3.96%,0,1,89,8,2,TOR,TBR,BB,BB,,1
+Graham Grams,400,646,Holden Summers,10,880,FO,234,B4,0,1,2,5,-3.57%,3.57%,0,0,89,8,2,TOR,TBR,FO,FO,,1
+Mylo Grams,396,576,Holden Summers,10,570,HR,6,B4,1,1,2,5,19.48%,-19.48%,2,1,89,8,2,TOR,TBR,HR,HR,,1
+Rod Kimball,2597,55,Jameson Poe,310,252,FO,197,B4,1,0,4,5,-3.91%,3.91%,0,0,89,8,2,TOR,TBR,FO,FO,,1
+Freddie Confinedman,2499,662,Jameson Poe,310,60,PO,398,B4,2,0,4,5,-3.24%,3.24%,0,0,89,8,2,TOR,TBR,PO,PO,,1
+Dick Sledge,2367,601,S.A.R. Dinka,395,392,K,209,T5,0,0,4,5,-2.29%,2.29%,0,0,90,8,2,TBR,TOR,K,K,,1
+Guidooooo,1830,530,S.A.R. Dinka,395,671,BB,141,T5,1,0,4,5,1.81%,-1.81%,0,0,90,8,2,TBR,TOR,BB,BB,,1
+Phillip Mahooters,2253,250,S.A.R. Dinka,395,609,PO,359,T5,1,1,4,5,-2.02%,2.02%,0,0,90,8,2,TBR,TOR,PO,PO,,1
+Pang Winn,713,250,S.A.R. Dinka,395,30,K,220,T5,2,1,4,5,-3.78%,3.78%,0,0,90,8,2,TBR,TOR,K,K,,1
+Scherbie Fully-Loaded,679,999,Jameson Poe,310,967,3B,32,B5,0,0,4,5,23.44%,-23.44%,0,1,91,8,2,TOR,TBR,3B,3B,,1
+Sven Jorgenson,405,424,Jameson Poe,310,413,HR,11,B5,0,3,4,5,29.22%,-29.22%,2,1,91,8,2,TOR,TBR,HR,HR,,2
+Troy Pressing,2282,333,Ferda Bois,270,555,FO,222,B5,0,0,6,5,-1.37%,1.37%,0,0,91,8,2,TOR,TBR,FO,FO,,1
+Jack Jackie Jackson,354,3,Ferda Bois,270,922,1B,81,B5,1,0,6,5,1.14%,-1.14%,0,0,91,8,2,TOR,TBR,1B,1B,,1
+Robbie,1745,720,Ferda Bois,270,78,K,358,B5,1,1,6,5,-1.38%,1.38%,0,0,91,8,2,TOR,TBR,K,K,,1
+Graham Grams,400,327,Ferda Bois,270,887,RGO,440,B5,2,1,6,5,-2.20%,2.20%,0,0,91,8,2,TOR,TBR,RGO,RGO,,1
+Mike Litoris,2252,378,S.A.R. Dinka,395,91,K,287,T6,0,0,6,5,-6.73%,6.73%,0,0,92,8,2,TBR,TOR,K,K,,1
+Bonesy McSkellington,1733,237,S.A.R. Dinka,395,509,K,272,T6,1,0,6,5,-6.00%,6.00%,0,0,92,8,2,TBR,TOR,K,K,,1
+Ross Ewage,1764,172,S.A.R. Dinka,395,5,BB,167,T6,2,0,6,5,5.75%,-5.75%,0,0,92,8,2,TBR,TOR,BB,FO,,1
+Makesiondon Kelkboom,327,885,S.A.R. Dinka,395,345,LGO,460,T6,2,1,6,5,-10.88%,10.88%,0,0,92,8,2,TBR,TOR,LGO,RGO,,1
+Munki Oshu,2568,420,Icna Comit,198,4,RGO,416,T1,0,0,0,0,-2.51%,2.51%,0,0,93,9,3,NYM,STL,RGO,RGO,,1
+Kris Krampus,683,333,Icna Comit,198,4,PO,329,T1,1,0,0,0,-2.18%,2.18%,0,0,93,9,3,NYM,STL,PO,PO,,1
+Robbie Tightpants,2584,747,Icna Comit,198,420,PO,327,T1,2,0,0,0,-1.76%,1.76%,0,0,93,9,3,NYM,STL,PO,PO,,1
+Monty Johnson,557,641,Hero Brine,1942,355,K,286,B1,0,0,0,0,-2.48%,2.48%,0,0,94,9,3,STL,NYM,K,K,,1
+Waffles O'Laughlin,2347,845,Hero Brine,1942,111,K,266,B1,1,0,0,0,-2.17%,2.17%,0,0,94,9,3,STL,NYM,K,K,,1
+Cybeast Falzar,2344,257,Hero Brine,1942,772,LGO,485,B1,2,0,0,0,-1.79%,1.79%,0,0,94,9,3,STL,NYM,LGO,LGO,,1
+Wallace Grommet,492,21,Icna Comit,198,90,2B,69,T2,0,0,0,0,6.81%,-6.81%,0,1,95,9,3,NYM,STL,2B,1B,,1
+Todd Bonzalez II,169,696,Icna Comit,198,812,1B,116,T2,0,2,0,0,6.84%,-6.84%,0,1,95,9,3,NYM,STL,1B,BB,,1
+Tara Dactyl,252,569,Icna Comit,198,420,1B,149,T2,0,5,0,0,6.47%,-6.47%,1,0,95,9,3,NYM,STL,1B,BB,,1
+Baron Harold Willingsby,765,780,Icna Comit,198,232,DP,452,T2,0,4,0,1,-8.50%,8.50%,0,0,95,9,3,NYM,STL,LGO,LGO,,1
+Poop McGee,596,900,Icna Comit,198,4,1B,104,T2,2,3,0,1,10.38%,-10.38%,1,0,95,9,3,NYM,STL,1B,BB,,1
+Mike Hampton,782,4,Icna Comit,198,690,K,314,T2,2,1,0,2,-2.64%,2.64%,0,0,95,9,3,NYM,STL,K,K,,1
+Stan Mann,357,1,Hero Brine,1942,123,BB,122,B2,0,0,0,2,3.60%,-3.60%,0,1,96,9,3,STL,NYM,BB,BB,,1
+Carlos,132,455,Hero Brine,1942,859,K,404,B2,0,1,0,2,-3.56%,3.56%,0,0,96,9,3,STL,NYM,K,K,,1
+Goldie Jones,360,323,Hero Brine,1942,420,BB,97,B2,1,1,0,2,5.26%,-5.26%,0,1,96,9,3,STL,NYM,BB,BB,,1
+Hannibal Bligh,1724,189,Hero Brine,1942,956,FO,233,B2,1,4,0,2,-4.88%,4.88%,0,0,96,9,3,STL,NYM,FO,K,,1
+Mike Oxlong,230,171,Hero Brine,1942,202,HR,31,B2,2,4,0,2,35.55%,-35.55%,3,1,96,9,3,STL,NYM,HR,HR,,1
+Don Bon,2570,780,Hero Brine,1942,555,K,225,B2,2,0,3,2,-1.56%,1.56%,0,0,96,9,3,STL,NYM,K,K,,1
+Munki Oshu,2568,569,Icna Comit,198,866,PO,297,T3,0,0,3,2,-3.32%,3.32%,0,0,97,9,3,NYM,STL,PO,PO,,1
+Kris Krampus,683,222,Icna Comit,198,611,RGO,389,T3,1,0,3,2,-2.85%,2.85%,0,0,97,9,3,NYM,STL,RGO,RGO,,1
+Robbie Tightpants,2584,921,Icna Comit,198,231,K,310,T3,2,0,3,2,-2.26%,2.26%,0,0,97,9,3,NYM,STL,K,K,,1
+Monty Johnson,557,242,Hero Brine,1942,33,FO,209,B3,0,0,3,2,-2.04%,2.04%,0,0,98,9,3,STL,NYM,FO,FO,,1
+Waffles O'Laughlin,2347,401,Hero Brine,1942,171,FO,230,B3,1,0,3,2,-1.80%,1.80%,0,0,98,9,3,STL,NYM,FO,FO,,1
+Cybeast Falzar,2344,106,Hero Brine,1942,808,K,298,B3,2,0,3,2,-1.62%,1.62%,0,0,98,9,3,STL,NYM,K,K,,1
+Wallace Grommet,492,4,Icna Comit,198,310,K,306,T4,0,0,3,2,-3.96%,3.96%,0,0,99,9,3,NYM,STL,K,K,,1
+Todd Bonzalez II,169,520,Icna Comit,198,500,HR,20,T4,1,0,3,2,18.45%,-18.45%,1,1,99,9,3,NYM,STL,HR,HR,,1
+Tara Dactyl,252,4,Icna Comit,198,420,RGO,416,T4,1,0,3,3,-3.19%,3.19%,0,0,99,9,3,NYM,STL,RGO,RGO,,1
+Baron Harold Willingsby,765,889,Icna Comit,198,23,BB,134,T4,2,0,3,3,2.88%,-2.88%,0,0,99,9,3,NYM,STL,BB,BB,,1
+Poop McGee,596,4,Icna Comit,198,733,K,271,T4,2,1,3,3,-5.63%,5.63%,0,0,99,9,3,NYM,STL,K,K,,1
+Stan Mann,357,1,Hero Brine,1942,951,2B,50,B4,0,0,3,3,8.90%,-8.90%,0,0,100,9,3,STL,NYM,2B,1B,,1
+Carlos,132,812,Hero Brine,1942,222,K,410,B4,0,2,3,3,-5.96%,5.96%,0,0,100,9,3,STL,NYM,K,K,,1
+Goldie Jones,360,878,Hero Brine,1942,535,K,343,B4,1,2,3,3,-5.00%,5.00%,0,0,100,9,3,STL,NYM,K,K,,1
+Hannibal Bligh,1724,101,Hero Brine,1942,536,RGO,435,B4,2,2,3,3,-7.41%,7.41%,0,0,100,9,3,STL,NYM,RGO,RGO,,1
+Mike Hampton,782,316,Icna Comit,198,121,FO,195,T5,0,0,3,3,-4.31%,4.31%,0,0,101,9,3,NYM,STL,FO,FO,,1
+Munki Oshu,2568,4,Icna Comit,198,420,RGO,416,T5,1,0,3,3,-3.90%,3.90%,0,0,101,9,3,NYM,STL,RGO,RGO,,1
+Kris Krampus,683,111,Icna Comit,198,550,LGO,439,T5,2,0,3,3,-3.51%,3.51%,0,0,101,9,3,NYM,STL,LGO,LGO,,1
+Mike Oxlong,230,508,Hero Brine,1942,358,FO,150,B5,0,0,3,3,-4.12%,4.12%,0,0,102,9,3,STL,NYM,FO,FO,,1
+Don Bon,2570,888,J.E. Wilkins,235,681,FO,207,B5,1,0,3,3,-3.89%,3.89%,0,0,102,9,3,STL,NYM,FO,FO,,1
+Monty Johnson,557,299,J.E. Wilkins,235,456,BB,157,B5,2,0,3,3,3.18%,-3.18%,0,0,102,9,3,STL,NYM,BB,BB,,1
+Waffles O'Laughlin,2347,193,J.E. Wilkins,235,587,RGO,394,B5,2,1,3,3,-6.86%,6.86%,0,0,102,9,3,STL,NYM,RGO,RGO,,1
+Robbie Tightpants,2584,920,Icna Comit,198,879,2B,41,T6,0,0,3,3,13.43%,-13.43%,0,1,103,9,3,NYM,STL,2B,2B,,1
+Wallace Grommet,492,900,Icna Comit,198,530,RGO,370,T6,0,2,3,3,1.55%,-1.55%,0,0,103,9,3,NYM,STL,RGO,RGO,,1
+Todd Bonzalez II,169,69,Icna Comit,198,890,Sac,179,T6,1,3,3,3,13.82%,-13.82%,1,0,103,9,3,NYM,STL,FO,FO,,2
+Tara Dactyl,252,420,Icna Comit,198,420,HR,0,T6,2,0,3,4,11.30%,-11.30%,1,1,103,9,3,NYM,STL,HR,HR,,1
+Baron Harold Willingsby,765,323,Ayden Davis,696,872,RGO,451,T6,2,0,3,5,-0.69%,0.69%,0,0,103,9,3,NYM,STL,RGO,RGO,,1
+Cybeast Falzar,2344,915,Chuck McCluster,296,814,1B,101,B6,0,0,3,5,8.22%,-8.22%,0,0,104,9,3,STL,NYM,1B,1B,,1
+Stan Mann,357,675,Chuck McCluster,296,814,BB,139,B6,0,1,3,5,12.50%,-12.50%,0,0,104,9,3,STL,NYM,BB,BB,,1
+Carlos,132,418,Chuck McCluster,296,992,K,426,B6,0,4,3,5,-8.34%,8.34%,0,0,104,9,3,STL,NYM,K,PO,,1
+Goldie Jones,360,174,Chuck McCluster,296,810,K,364,B6,1,4,3,5,-8.91%,8.91%,0,0,104,9,3,STL,NYM,K,K,,1
+Hannibal Bligh,1724,324,Chuck McCluster,296,691,K,367,B6,2,4,3,5,-14.10%,14.10%,0,0,104,9,3,STL,NYM,K,K,,1
+Jack Jackie Jackson,354,20,Mecha Vulfzilla,265,277,RGO,257,T1,0,0,0,0,-2.51%,2.51%,0,0,105,10,3,TOR,MIN,RGO,RGO,,1
+Captain Harry C Legs,480,350,Mecha Vulfzilla,265,878,LGO,472,T1,1,0,0,0,-2.18%,2.18%,0,0,105,10,3,TOR,MIN,LGO,LGO,,1
+Sven Jorgenson,405,690,Mecha Vulfzilla,265,277,LGO,413,T1,2,0,0,0,-1.76%,1.76%,0,0,105,10,3,TOR,MIN,LGO,LGO,,1
+Arthur Vandelay,518,887,Randy Pole,714,45,BB,158,B1,0,0,0,0,2.76%,-2.76%,0,0,106,10,3,MIN,TOR,BB,BB,,1
+Arthur Vandelay,518,800,Randy Pole,714,272,CS,472,B1,0,1,0,0,-5.24%,5.24%,0,0,106,10,3,MIN,TOR,CS 2B,CS 2B,,4
+Leashy Hittem,2545,684,Randy Pole,714,483,K,201,B1,1,0,0,0,-2.17%,2.17%,0,0,106,10,3,MIN,TOR,K,FO,,1
+Francis X. Clampazzo,485,103,Randy Pole,714,68,2B,35,B1,2,0,0,0,3.13%,-3.13%,0,0,106,10,3,MIN,TOR,2B,2B,,1
+Zephraim Donkus,582,398,Randy Pole,714,797,PO,399,B1,2,2,0,0,-4.92%,4.92%,0,0,106,10,3,MIN,TOR,PO,PO,,1
+Robbie,1745,901,Mecha Vulfzilla,265,599,K,302,T2,0,0,0,0,-2.72%,2.72%,0,0,107,10,3,TOR,MIN,K,K,,1
+Troy Pressing,2282,602,Mecha Vulfzilla,265,837,FO,235,T2,1,0,0,0,-2.40%,2.40%,0,0,107,10,3,TOR,MIN,FO,FO,,1
+Mongster Mash,344,222,Mecha Vulfzilla,265,721,LGO,499,T2,2,0,0,0,-1.99%,1.99%,0,0,107,10,3,TOR,MIN,LGO,LGO,,1
+King Kruul,2229,211,Randy Pole,714,857,K,354,B2,0,0,0,0,-2.72%,2.72%,0,0,108,10,3,MIN,TOR,K,K,,1
+toronto mans,2587,145,Randy Pole,714,145,HR,0,B2,1,0,0,0,14.05%,-14.05%,1,1,108,10,3,MIN,TOR,HR,HR,,1
+Queen Pierre,1771,701,Randy Pole,714,368,K,333,B2,1,0,1,0,-1.83%,1.83%,0,0,108,10,3,MIN,TOR,K,K,,1
+Joey Wheeler,662,840,Randy Pole,714,256,K,416,B2,2,0,1,0,-1.56%,1.56%,0,0,108,10,3,MIN,TOR,K,K,,1
+Mylo Grams,396,85,Mecha Vulfzilla,265,816,K,269,T3,0,0,1,0,-3.32%,3.32%,0,0,109,10,3,TOR,MIN,K,K,,1
+Graham Grams,400,219,Mecha Vulfzilla,265,844,RGO,375,T3,1,0,1,0,-2.85%,2.85%,0,0,109,10,3,TOR,MIN,RGO,RGO,,1
+Scherbie Fully-Loaded,679,666,Mecha Vulfzilla,265,671,HR,5,T3,2,0,1,0,15.47%,-15.47%,1,1,109,10,3,TOR,MIN,HR,HR,,1
+Jack Jackie Jackson,354,640,Mecha Vulfzilla,265,828,K,188,T3,2,0,1,1,-2.31%,2.31%,0,0,109,10,3,TOR,MIN,K,FO,,1
+Mecha Vulfzilla,265,7,Randy Pole,714,898,BB,109,B3,0,0,1,1,3.09%,-3.09%,0,0,110,10,3,MIN,TOR,BB,BB,,1
+Arthur Vandelay,518,645,Randy Pole,714,992,PO,347,B3,0,1,1,1,-3.46%,3.46%,0,0,110,10,3,MIN,TOR,PO,K,,1
+Leashy Hittem,2545,69,Randy Pole,714,658,PO,411,B3,1,1,1,1,-3.10%,3.10%,0,0,110,10,3,MIN,TOR,PO,PO,,1
+Francis X. Clampazzo,485,984,Randy Pole,714,277,K,293,B3,2,1,1,1,-4.64%,4.64%,0,0,110,10,3,MIN,TOR,K,K,,1
+Captain Harry C Legs,480,350,Mecha Vulfzilla,265,161,FO,189,T4,0,0,1,1,-3.58%,3.58%,0,0,111,10,3,TOR,MIN,FO,FO,,1
+Sven Jorgenson,405,642,Mecha Vulfzilla,265,371,K,271,T4,1,0,1,1,-3.19%,3.19%,0,0,111,10,3,TOR,MIN,K,K,,1
+Robbie,1745,111,Mecha Vulfzilla,265,731,RGO,380,T4,2,0,1,1,-2.75%,2.75%,0,0,111,10,3,TOR,MIN,RGO,RGO,,1
+Zephraim Donkus,582,179,Randy Pole,714,32,FO,147,B4,0,0,1,1,-3.43%,3.43%,0,0,112,10,3,MIN,TOR,FO,BB,,1
+King Kruul,2229,502,Randy Pole,714,985,LGO,483,B4,1,0,1,1,-3.17%,3.17%,0,0,112,10,3,MIN,TOR,LGO,LGO,,1
+toronto mans,2587,341,Randy Pole,714,965,PO,376,B4,2,0,1,1,-2.87%,2.87%,0,0,112,10,3,MIN,TOR,PO,PO,,1
+Troy Pressing,2282,266,Mecha Vulfzilla,265,451,FO,185,T5,0,0,1,1,-4.31%,4.31%,0,0,113,10,3,TOR,MIN,FO,FO,,1
+Mongster Mash,344,420,Mecha Vulfzilla,265,591,BB,171,T5,1,0,1,1,3.47%,-3.47%,0,0,113,10,3,TOR,MIN,BB,BB,,1
+Mylo Grams,396,743,Mecha Vulfzilla,265,271,DP,472,T5,1,1,1,1,-10.88%,10.88%,0,0,113,10,3,TOR,MIN,LGO,LGO,,1
+Queen Pierre,1771,4,Randy Pole,714,736,K,268,B5,0,0,1,1,-4.12%,4.12%,0,0,114,10,3,MIN,TOR,K,K,,1
+Joey Wheeler,662,23,Randy Pole,714,139,BB,116,B5,1,0,1,1,2.78%,-2.78%,0,0,114,10,3,MIN,TOR,BB,BB,,1
+Mecha Vulfzilla,265,316,Randy Pole,714,457,FO,141,B5,1,1,1,1,-3.49%,3.49%,0,0,114,10,3,MIN,TOR,FO,BB,,1
+Arthur Vandelay,518,1,Randy Pole,714,520,LGO,481,B5,2,1,1,1,-6.86%,6.86%,0,0,114,10,3,MIN,TOR,LGO,LGO,,1
+Graham Grams,400,13,Mecha Vulfzilla,265,457,LGO,444,T6,0,0,1,1,-5.44%,5.44%,0,0,115,10,3,TOR,MIN,LGO,LGO,,1
+Scherbie Fully-Loaded,679,111,Mecha Vulfzilla,265,321,FO,210,T6,1,0,1,1,-5.08%,5.08%,0,0,115,10,3,TOR,MIN,FO,FO,,1
+Jack Jackie Jackson,354,479,Mecha Vulfzilla,265,241,RGO,238,T6,2,0,1,1,-4.91%,4.91%,0,0,115,10,3,TOR,MIN,RGO,RGO,,1
+Leashy Hittem,2545,25,Randy Pole,714,752,K,273,B6,0,0,1,1,-5.27%,5.27%,0,0,116,10,3,MIN,TOR,K,K,,1
+Francis X. Clampazzo,485,1,Randy Pole,714,479,LGO,478,B6,1,0,1,1,-5.09%,5.09%,0,0,116,10,3,MIN,TOR,LGO,LGO,,1
+Zephraim Donkus,582,987,Randy Pole,714,679,K,308,B6,2,0,1,1,-18.50%,18.50%,0,0,116,10,3,MIN,TOR,K,K,,1
+Captain Harry C Legs,480,575,Mecha Vulfzilla,265,833,K,258,T7,0,2,1,1,-9.04%,9.04%,0,0,117,10,3,TOR,MIN,K,K,,1
+Sven Jorgenson,405,430,Mecha Vulfzilla,265,219,FO,211,T7,1,2,1,1,-7.31%,7.31%,0,0,117,10,3,TOR,MIN,FO,FO,,1
+Robbie,1745,750,Mecha Vulfzilla,265,874,BB,124,T7,2,2,1,1,1.38%,-1.38%,0,0,117,10,3,TOR,MIN,BB,BB,,1
+Troy Pressing,2282,377,Mecha Vulfzilla,265,516,BB,139,T7,2,4,1,1,4.57%,-4.57%,0,0,117,10,3,TOR,MIN,BB,BB,,1
+Mongster Mash,344,500,Mecha Vulfzilla,265,188,RGO,312,T7,2,7,1,1,-31.20%,31.20%,0,0,117,10,3,TOR,MIN,RGO,RGO,,1
+King Kruul,2229,392,Randy Pole,714,912,LGO,480,B7,0,2,1,1,-8.43%,8.43%,0,0,118,10,3,MIN,TOR,LGO,LGO,,1
+Homer Nocker,606,420,Randy Pole,714,810,PO,390,B7,1,2,1,1,-6.92%,6.92%,0,0,118,10,3,MIN,TOR,PO,PO,,1
+Queen Pierre,1771,714,Randy Pole,714,490,FO,224,B7,2,2,1,1,-42.55%,42.55%,0,0,118,10,3,MIN,TOR,FO,FO,,1
+Mylo Grams,396,323,Mecha Vulfzilla,265,681,RGO,358,T8,0,6,1,1,-10.49%,10.49%,0,0,119,10,3,TOR,MIN,RGO,RGO,,2
+Graham Grams,400,,Mecha Vulfzilla,265,,IBB,,T8,1,6,1,1,1.29%,-1.29%,0,0,119,10,3,TOR,MIN,IBB,IBB,,8
+Scherbie Fully-Loaded,679,999,Mecha Vulfzilla,265,714,K,285,T8,1,7,1,1,-17.50%,17.50%,0,0,119,10,3,TOR,MIN,K,K,,1
+Jack Jackie Jackson,354,333,Mecha Vulfzilla,265,761,LGO,428,T8,2,7,1,1,-45.22%,45.22%,0,0,119,10,3,TOR,MIN,LGO,LGO,,1
+Joey Wheeler,662,133,Randy Pole,714,30,BB,103,B8,0,6,1,1,2.63%,-2.63%,0,0,120,10,3,MIN,TOR,BB,BB,,2
+Mecha Vulfzilla,265,869,Randy Pole,714,16,Sac,147,B8,0,7,1,1,5.14%,-5.14%,1,0,120,10,3,MIN,TOR,FO,BB,,2
+Arthur Vandelay,518,17,J.E. Wilkins,235,913,1B,104,T1,0,0,0,0,2.91%,-2.91%,0,0,121,11,4,MIN,NYM,1B,1B,,1
+Leashy Hittem,2545,720,J.E. Wilkins,235,549,BB,171,T1,0,1,0,0,5.56%,-5.56%,0,0,121,11,4,MIN,NYM,BB,BB,,1
+Francis X. Clampazzo,485,901,J.E. Wilkins,235,389,DP,488,T1,0,4,0,0,-10.00%,10.00%,0,0,121,11,4,MIN,NYM,LGO,LGO,,1
+Zephraim Donkus,582,29,J.E. Wilkins,235,762,FO,267,T1,2,3,0,0,-4.92%,4.92%,0,0,121,11,4,MIN,NYM,FO,FO,,1
+Munki Oshu,2568,444,Salazar Santiago,1828,727,PO,283,B1,0,0,0,0,-2.48%,2.48%,0,0,122,11,4,NYM,MIN,PO,PO,,1
+Kris Krampus,683,333,Salazar Santiago,1828,601,K,268,B1,1,0,0,0,-2.17%,2.17%,0,0,122,11,4,NYM,MIN,K,K,,1
+Robbie Tightpants,2584,727,Salazar Santiago,1828,194,LGO,467,B1,2,0,0,0,-1.79%,1.79%,0,0,122,11,4,NYM,MIN,LGO,LGO,,1
+King Kruul,2229,118,J.E. Wilkins,235,154,2B,36,T2,0,0,0,0,6.81%,-6.81%,0,0,123,11,4,MIN,NYM,2B,3B,,1
+Queen Pierre,1771,1000,J.E. Wilkins,235,314,K,314,T2,0,2,0,0,-4.42%,4.42%,0,0,123,11,4,MIN,NYM,K,K,,1
+Ping Pong,530,736,J.E. Wilkins,235,167,LGO,431,T2,1,2,0,0,-4.15%,4.15%,0,0,123,11,4,MIN,NYM,LGO,LGO,,1
+Homer Nocker,606,677,J.E. Wilkins,235,868,FO,191,T2,2,2,0,0,-5.35%,5.35%,0,0,123,11,4,MIN,NYM,FO,FO,,1
+Wallace Grommet,492,491,Salazar Santiago,1828,888,RGO,397,B2,0,0,0,0,-2.72%,2.72%,0,0,124,11,4,NYM,MIN,RGO,RGO,,1
+Todd Bonzalez II,169,840,Salazar Santiago,1828,311,LGO,471,B2,1,0,0,0,-2.38%,2.38%,0,0,124,11,4,NYM,MIN,LGO,LGO,,1
+Tara Dactyl,252,240,Salazar Santiago,1828,250,HR,10,B2,2,0,0,0,14.60%,-14.60%,1,1,124,11,4,NYM,MIN,HR,HR,,1
+Baron Harold Willingsby,765,688,Salazar Santiago,1828,713,3B,25,B2,2,0,1,0,2.69%,-2.69%,0,0,124,11,4,NYM,MIN,3B,3B,,1
+Poop McGee,596,312,Salazar Santiago,1828,90,K,222,B2,2,3,1,0,-4.25%,4.25%,0,0,124,11,4,NYM,MIN,K,K,,1
+Joey Wheeler,662,766,J.E. Wilkins,235,487,K,279,T3,0,0,1,0,-3.32%,3.32%,0,0,125,11,4,MIN,NYM,K,K,,1
+Arthur Vandelay,518,1000,J.E. Wilkins,235,165,BB,165,T3,1,0,1,0,3.27%,-3.27%,0,1,125,11,4,MIN,NYM,BB,BB,,1
+Arthur Vandelay,518,746,J.E. Wilkins,235,873,SB,127,T3,1,1,1,0,2.97%,-2.97%,0,0,125,11,4,MIN,NYM,Steal 2B,Steal 2B,,4
+Leashy Hittem,2545,562,J.E. Wilkins,235,607,2B,45,T3,1,2,1,0,14.70%,-14.70%,1,0,125,11,4,MIN,NYM,2B,2B,,1
+Francis X. Clampazzo,485,332,J.E. Wilkins,235,825,LGO,493,T3,1,2,1,1,-4.62%,4.62%,0,0,125,11,4,MIN,NYM,LGO,LGO,,1
+Zephraim Donkus,582,321,J.E. Wilkins,235,101,FO,220,T3,2,2,1,1,-6.01%,6.01%,0,0,125,11,4,MIN,NYM,FO,FO,,1
+Mike Hampton,782,291,Salazar Santiago,1828,911,RGO,380,B3,0,0,1,1,-3.07%,3.07%,0,0,126,11,4,NYM,MIN,RGO,RGO,,1
+Munki Oshu,2568,444,Salazar Santiago,1828,150,PO,294,B3,1,0,1,1,-2.77%,2.77%,0,0,126,11,4,NYM,MIN,PO,PO,,1
+Kris Krampus,683,333,Salazar Santiago,1828,777,LGO,444,B3,2,0,1,1,-2.27%,2.27%,0,0,126,11,4,NYM,MIN,LGO,LGO,,1
+King Kruul,2229,321,J.E. Wilkins,235,207,BB,114,T4,0,0,1,1,3.68%,-3.68%,0,0,127,11,4,MIN,NYM,BB,BB,,1
+Queen Pierre,1771,714,J.E. Wilkins,235,578,1B,136,T4,0,1,1,1,6.99%,-6.99%,0,0,127,11,4,MIN,NYM,1B,BB,,1
+Ping Pong,530,139,J.E. Wilkins,235,785,DP,354,T4,0,4,1,1,-12.92%,12.92%,0,0,127,11,4,MIN,NYM,RGO,RGO,,1
+Homer Nocker,606,420,Hero Brine,1942,643,K,223,T4,2,3,1,1,-7.27%,7.27%,0,0,127,11,4,MIN,NYM,K,K,,1
+Robbie Tightpants,2584,485,Salazar Santiago,1828,827,RGO,342,B4,0,0,1,1,-3.43%,3.43%,0,0,128,11,4,NYM,MIN,RGO,RGO,,1
+Wallace Grommet,492,1,Salazar Santiago,1828,654,RGO,347,B4,1,0,1,1,-3.17%,3.17%,0,0,128,11,4,NYM,MIN,RGO,RGO,,1
+Todd Bonzalez II,169,827,Salazar Santiago,1828,725,1B,102,B4,2,0,1,1,2.65%,-2.65%,0,0,128,11,4,NYM,MIN,1B,1B,,1
+Tara Dactyl,252,827,Salazar Santiago,1828,499,PO,328,B4,2,1,1,1,-5.52%,5.52%,0,0,128,11,4,NYM,MIN,PO,PO,,1
+Joey Wheeler,662,799,Hero Brine,1942,225,K,426,T5,0,0,1,1,-4.31%,4.31%,0,0,129,11,4,MIN,NYM,K,K,,1
+Arthur Vandelay,518,477,Hero Brine,1942,511,2B,34,T5,1,0,1,1,7.97%,-7.97%,0,1,129,11,4,MIN,NYM,2B,2B,,1
+Leashy Hittem,2545,620,Hero Brine,1942,378,K,242,T5,1,2,1,1,-6.34%,6.34%,0,0,129,11,4,MIN,NYM,K,K,,1
+Francis X. Clampazzo,485,4,Hero Brine,1942,47,2B,43,T5,2,2,1,1,24.20%,-24.20%,1,0,129,11,4,MIN,NYM,2B,2B,,1
+Zephraim Donkus,582,610,John Smith,2275,27,PO,417,T5,2,2,1,2,-4.80%,4.80%,0,0,129,11,4,MIN,NYM,PO,PO,,1
+Baron Harold Willingsby,765,292,Salazar Santiago,1828,550,FO,258,B5,0,0,1,2,-5.77%,5.77%,0,0,130,11,4,NYM,MIN,FO,FO,,1
+Poop McGee,596,375,Salazar Santiago,1828,802,LGO,427,B5,1,0,1,2,-5.16%,5.16%,0,0,130,11,4,NYM,MIN,LGO,LGO,,1
+Mike Hampton,782,621,Salazar Santiago,1828,54,LGO,433,B5,2,0,1,2,-4.45%,4.45%,0,0,130,11,4,NYM,MIN,LGO,LGO,,1
+King Kruul,2229,882,John Smith,2275,100,FO,218,T6,0,0,1,2,-1.71%,1.71%,0,0,131,11,4,MIN,NYM,FO,FO,,1
+Queen Pierre,1771,714,John Smith,2275,858,BB,144,T6,1,0,1,2,1.31%,-1.31%,0,0,131,11,4,MIN,NYM,BB,BB,,1
+Queen Pierre,1771,546,John Smith,2275,882,CS,336,T6,1,1,1,2,-2.93%,2.93%,0,0,131,11,4,MIN,NYM,CS 2B,CS 2B,,4
+Ping Pong,530,832,John Smith,2275,122,RGO,290,T6,2,0,1,2,-1.50%,1.50%,0,0,131,11,4,MIN,NYM,RGO,RGO,,1
+Munki Oshu,2568,149,Salazar Santiago,1828,811,RGO,338,B6,0,0,1,2,-8.33%,8.33%,0,0,132,11,4,NYM,MIN,RGO,RGO,,1
+Kris Krampus,683,338,Salazar Santiago,1828,118,FO,220,B6,1,0,1,2,-7.59%,7.59%,0,0,132,11,4,NYM,MIN,FO,FO,,1
+Robbie Tightpants,2584,181,Salazar Santiago,1828,272,1B,91,B6,2,0,1,2,7.10%,-7.10%,0,1,132,11,4,NYM,MIN,1B,1B,,1
+Wallace Grommet,492,350,Salazar Santiago,1828,318,2B,32,B6,2,1,1,2,48.94%,-48.94%,1,0,132,11,4,NYM,MIN,2B,2B,,1
+Todd Bonzalez II,169,800,Salazar Santiago,1828,590,FO,210,B6,2,2,2,2,-26.25%,26.25%,0,0,132,11,4,NYM,MIN,FO,FO,,1
+Homer Nocker,606,114,Chuck McCluster,296,604,LGO,490,T7,0,2,2,2,-9.04%,9.04%,0,0,133,11,4,MIN,NYM,LGO,LGO,,1
+Joey Wheeler,662,850,Chuck McCluster,296,811,2B,39,T7,1,2,2,2,29.28%,-29.28%,1,1,133,11,4,MIN,NYM,2B,2B,,1
+Arthur Vandelay,518,767,Chuck McCluster,296,97,K,330,T7,1,2,2,3,-2.40%,2.40%,0,0,133,11,4,MIN,NYM,K,PO,,1
+Leashy Hittem,2545,522,Chuck McCluster,296,503,2B,19,T7,2,2,2,3,9.96%,-9.96%,1,0,133,11,4,MIN,NYM,2B,2B,,1
+Francis X. Clampazzo,485,769,Chuck McCluster,296,317,RGO,452,T7,2,2,2,4,-14.59%,14.59%,0,0,133,11,4,MIN,NYM,RGO,RGO,,1
+Tara Dactyl,252,901,Salazar Santiago,1828,402,LGO,499,B7,0,2,2,4,-8.10%,8.10%,0,0,134,11,4,NYM,MIN,LGO,LGO,,1
+Baron Harold Willingsby,765,252,Salazar Santiago,1828,488,FO,236,B7,1,2,2,4,-8.48%,8.48%,0,0,134,11,4,NYM,MIN,FO,FO,,1
+Poop McGee,596,284,Salazar Santiago,1828,722,LGO,438,B7,2,2,2,4,-6.82%,6.82%,0,0,134,11,4,NYM,MIN,LGO,LGO,,1

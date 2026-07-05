@@ -1,0 +1,171 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Superbone Threefinger,413,555,Sean Carrcrash,1709,345,FO,210,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,1,IDR,WRM,FO,FO,,,,,,1
+PickYrSpot n'Swing,3085,375,Sean Carrcrash,1709,922,RGO,453,T1,1,0,0,0,-2.18%,2.18%,0,0,1,1,1,IDR,WRM,RGO,RGO,,,,,,1
+Pope Coswi,2327,341,Sean Carrcrash,1709,480,BB,139,T1,2,0,0,0,1.98%,-1.98%,0,0,1,1,1,IDR,WRM,BB,1B,,,,,,1
+Hakuna Moncada,2501,864,Sean Carrcrash,1709,640,FO,224,T1,2,1,0,0,-3.74%,3.74%,0,0,1,1,1,IDR,WRM,FO,FO,,,,,,1
+Doc Otis,2256,712,Ferdinand Fritzwilliam,3143,645,1B,67,B1,0,0,0,0,2.76%,-2.76%,0,0,2,1,1,WRM,IDR,1B,1B,,,,,,1
+Doc Otis,2256,650,Ferdinand Fritzwilliam,3143,512,SB,138,B1,0,1,0,0,3.57%,-3.57%,0,0,2,1,1,WRM,IDR,STEAL 2B,STEAL 2B,SB,,,,,4
+Philip Berkenshire,3137,50,Ferdinand Fritzwilliam,3143,802,K,248,B1,0,2,0,0,-4.08%,4.08%,0,0,2,1,1,WRM,IDR,K,K,,,,,,1
+Saul Pewald,2708,920,Ferdinand Fritzwilliam,3143,806,BB,114,B1,1,2,0,0,1.44%,-1.44%,0,0,2,1,1,WRM,IDR,BB,BB,,,,,,1
+Justin Time,2886,11,Ferdinand Fritzwilliam,3143,905,1B,106,B1,1,4,0,0,7.61%,-7.61%,0,0,2,1,1,WRM,IDR,1B,1B,,,,,,1
+Archie 'Clumsy' Sybil,3093,645,Ferdinand Fritzwilliam,3143,999,PO,354,B1,1,7,0,0,-8.39%,8.39%,0,0,2,1,1,WRM,IDR,PO,PO,,,,,,1
+King Kruul,2229,167,Ferdinand Fritzwilliam,3143,462,K,295,B1,2,7,0,0,-9.35%,9.35%,0,0,2,1,1,WRM,IDR,K,K,,,,,,1
+Leland K. Cleveland,2679,333,Sean Carrcrash,1709,450,BB,117,T2,0,0,0,0,3.09%,-3.09%,0,1,3,1,1,IDR,WRM,BB,BB,,,,,,1
+Leland K. Cleveland,2679,336,Sean Carrcrash,1709,268,SB,68,T2,0,1,0,0,3.72%,-3.72%,0,0,3,1,1,IDR,WRM,STEAL 2B,STEAL 2B,SB,,,,,4
+Bubson Dugnutt,3097,974,Sean Carrcrash,1709,181,FO,207,T2,0,2,0,0,-4.42%,4.42%,0,0,3,1,1,IDR,WRM,FO,FO,,,,,,1
+Tubby Wubby,2853,706,Sean Carrcrash,1709,366,K,340,T2,1,2,0,0,-4.15%,4.15%,0,0,3,1,1,IDR,WRM,K,K,,,,,,1
+Kenny Powers,2627,112,Sean Carrcrash,1709,169,1B,57,T2,2,2,0,0,12.32%,-12.32%,1,0,3,1,1,IDR,WRM,1B,1B,,,1709,,,1
+Skork Hooker,786,727,Sean Carrcrash,1709,563,FO,164,T2,2,1,0,1,-3.57%,3.57%,0,0,3,1,1,IDR,WRM,FO,FO,,,,,,1
+William T. Striker,2867,477,Ferdinand Fritzwilliam,3143,190,PO,287,B2,0,0,0,1,-3.11%,3.11%,0,0,4,1,1,WRM,IDR,PO,PO,,,,,,1
+Tony Pizza,2844,264,Ferdinand Fritzwilliam,3143,961,PO,303,B2,1,0,0,1,-2.69%,2.69%,0,0,4,1,1,WRM,IDR,PO,PO,,,,,,1
+Butch Sterling,2992,606,Ferdinand Fritzwilliam,3143,499,1B,107,B2,2,0,0,1,2.56%,-2.56%,0,0,4,1,1,WRM,IDR,1B,1B,,,,,,1
+Doc Otis,2256,575,Ferdinand Fritzwilliam,3143,462,BB,113,B2,2,1,0,1,3.49%,-3.49%,0,0,4,1,1,WRM,IDR,BB,BB,,,,,,1
+Philip Berkenshire,3137,264,Ferdinand Fritzwilliam,3143,107,FO,157,B2,2,4,0,1,-8.18%,8.18%,0,0,4,1,1,WRM,IDR,FO,FO,,,,,,1
+Superbone Threefinger,413,677,Sean Carrcrash,1709,727,1B,50,T3,0,0,0,1,2.54%,-2.54%,0,0,5,1,1,IDR,WRM,1B,2B,,,,,,1
+Superbone Threefinger,413,301,Sean Carrcrash,1709,269,SB,32,T3,0,1,0,1,3.39%,-3.39%,0,0,5,1,1,IDR,WRM,STEAL 2B,STEAL 2B,SB,,,,,4
+PickYrSpot n'Swing,3085,1,Sean Carrcrash,1709,914,1B,87,T3,0,2,0,1,6.31%,-6.31%,0,0,5,1,1,IDR,WRM,1B,1B,,,,,,1
+Pope Coswi,2327,457,Sean Carrcrash,1709,55,PO,402,T3,0,5,0,1,-5.43%,5.43%,0,0,5,1,1,IDR,WRM,PO,PO,,,,,,2
+Hakuna Moncada,2501,983,Hans Zahn,2915,702,K,281,T3,1,5,0,1,-6.71%,6.71%,0,0,5,1,1,IDR,WRM,K,K,,,,,,1
+Leland K. Cleveland,2679,799,Hans Zahn,2915,678,BB,121,T3,2,5,0,1,2.66%,-2.66%,0,0,5,1,1,IDR,WRM,BB,BB,,,,,,1
+Bubson Dugnutt,3097,142,Hans Zahn,2915,420,K,278,T3,2,7,0,1,-8.98%,8.98%,0,0,5,1,1,IDR,WRM,K,K,,,,,,1
+Saul Pewald,2708,240,Ferdinand Fritzwilliam,3143,749,LGO,491,B3,0,0,0,1,-3.58%,3.58%,0,0,6,1,1,WRM,IDR,LGO,LGO,,,,,,1
+Justin Time,2886,837,Ferdinand Fritzwilliam,3143,210,PO,373,B3,1,0,0,1,-3.10%,3.10%,0,0,6,1,1,WRM,IDR,PO,PO,,,,,,1
+Archie 'Clumsy' Sybil,3093,645,Ferdinand Fritzwilliam,3143,30,PO,385,B3,2,0,0,1,-2.59%,2.59%,0,0,6,1,1,WRM,IDR,PO,PO,,,,,,1
+Tubby Wubby,2853,678,Hans Zahn,2915,106,RGO,428,T4,0,0,0,1,-2.44%,2.44%,0,0,7,1,1,IDR,WRM,RGO,RGO,,,,,,1
+Kenny Powers,2627,616,Hans Zahn,2915,823,FO,207,T4,1,0,0,1,-2.13%,2.13%,0,0,7,1,1,IDR,WRM,FO,FO,,,,,,1
+Skork Hooker,786,823,Hans Zahn,2915,208,PO,385,T4,2,0,0,1,-1.93%,1.93%,0,0,7,1,1,IDR,WRM,PO,PO,,,,,,1
+King Kruul,2229,96,Ferdinand Fritzwilliam,3143,490,PO,394,B4,0,0,0,1,-4.38%,4.38%,0,0,8,1,1,WRM,IDR,PO,PO,,,,,,1
+William T. Striker,2867,477,Ferdinand Fritzwilliam,3143,611,BB,134,B4,1,0,0,1,4.07%,-4.07%,0,0,8,1,1,WRM,IDR,BB,BB,,,,,,1
+Tony Pizza,2844,13,Ferdinand Fritzwilliam,3143,87,1B,74,B4,1,1,0,1,6.67%,-6.67%,0,0,8,1,1,WRM,IDR,1B,1B,,,,,,1
+Butch Sterling,2992,20,Ferdinand Fritzwilliam,3143,200,FO,180,B4,1,4,0,1,-6.13%,6.13%,0,0,8,1,1,WRM,IDR,FO,FO,,,,,,1
+Doc Otis,2256,555,Ferdinand Fritzwilliam,3143,821,K,266,B4,2,4,0,1,-11.76%,11.76%,0,0,8,1,1,WRM,IDR,K,K,,,,,,1
+Elijah Walker,3107,485,Hans Zahn,2915,180,K,305,T5,0,0,0,1,-2.29%,2.29%,0,0,9,1,1,IDR,WRM,K,K,,,,,,1
+PickYrSpot n'Swing,3085,501,Hans Zahn,2915,101,PO,400,T5,1,0,0,1,-2.08%,2.08%,0,0,9,1,1,IDR,WRM,PO,PO,,,,,,1
+Pope Coswi,2327,341,Hans Zahn,2915,808,LGO,467,T5,2,0,0,1,-1.91%,1.91%,0,0,9,1,1,IDR,WRM,LGO,LGO,,,,,,1
+Philip Berkenshire,3137,670,Elijah Walker,3107,365,K,305,B5,0,0,0,1,-5.77%,5.77%,0,0,10,1,1,WRM,IDR,K,K,,,,,,1
+Saul Pewald,2708,247,Elijah Walker,3107,443,FO,196,B5,1,0,0,1,-5.16%,5.16%,0,0,10,1,1,WRM,IDR,FO,FO,,,,,,1
+Justin Time,2886,117,Elijah Walker,3107,122,HR,5,B5,2,0,0,1,31.36%,-31.36%,1,1,10,1,1,WRM,IDR,HR,HR,,,,,3107,1
+Archie 'Clumsy' Sybil,3093,555,Elijah Walker,3107,816,FO,261,B5,2,0,1,1,-3.68%,3.68%,0,0,10,1,1,WRM,IDR,FO,FO,,,,,,1
+Hakuna Moncada,2501,492,Hans Zahn,2915,231,K,261,T6,0,0,1,1,-5.44%,5.44%,0,0,11,1,1,IDR,WRM,K,K,,,,,,1
+Leland K. Cleveland,2679,205,Hans Zahn,2915,521,K,316,T6,1,0,1,1,-5.08%,5.08%,0,0,11,1,1,IDR,WRM,K,K,,,,,,1
+Bubson Dugnutt,3097,643,Hans Zahn,2915,18,PO,375,T6,2,0,1,1,-4.91%,4.91%,0,0,11,1,1,IDR,WRM,PO,PO,,,,,,1
+King Kruul,2229,453,Elijah Walker,3107,907,RGO,454,B6,0,0,1,1,-5.27%,5.27%,0,0,12,1,1,WRM,IDR,RGO,RGO,,,,,,1
+William T. Striker,2867,673,Elijah Walker,3107,288,PO,385,B6,1,0,1,1,-5.09%,5.09%,0,0,12,1,1,WRM,IDR,PO,PO,,,,,,1
+Tony Pizza,2844,765,Elijah Walker,3107,525,FO,240,B6,2,0,1,1,-5.07%,5.07%,0,0,12,1,1,WRM,IDR,FO,FO,,,,,,1
+Tubby Wubby,2853,744,Hans Zahn,2915,357,PO,387,T7,0,0,1,1,-5.44%,5.44%,0,0,13,1,1,IDR,WRM,PO,PO,,,,,,1
+Kenny Powers,2627,437,Hans Zahn,2915,888,RGO,451,T7,1,0,1,1,-5.08%,5.08%,0,0,13,1,1,IDR,WRM,RGO,RGO,,,,,,1
+Skork Hooker,786,650,Hans Zahn,2915,686,2B,36,T7,2,0,1,1,7.60%,-7.60%,0,0,13,1,1,IDR,WRM,2B,2B,,,,,,1
+Elijah Walker,3107,200,Eijun Sawamura,2782,550,K,350,T7,2,2,1,1,-12.51%,12.51%,0,0,13,1,1,IDR,WRM,K,K,,,,,,1
+Butch Sterling,2992,222,Elijah Walker,3107,265,2B,43,B7,0,0,1,1,12.74%,-12.74%,0,1,14,1,1,WRM,IDR,2B,2B,,,,,,1
+Doc Otis,2256,500,Sleve McDichael,3126,273,BUNT Sac,227,B7,0,2,1,1,3.84%,-3.84%,0,0,14,1,1,WRM,IDR,BUNT Sac,BUNT Sac,BUNT Sac,,,,,3
+Philip Berkenshire,3137,250,Sleve McDichael,3126,273,3B,23,B7,1,3,1,1,17.95%,-17.95%,1,0,14,1,1,WRM,IDR,3B,3B,,3107,,,,2
+Flame-Test Fleming,3144,16,Alic Alphaball,3189,306,K,290,T1,0,0,0,0,-2.51%,2.51%,0,0,15,2,1,DOG,SHH,K,K,,,,,,1
+Cormac Karona,3108,650,Alic Alphaball,3189,899,K,249,T1,1,0,0,0,-2.18%,2.18%,0,0,15,2,1,DOG,SHH,K,K,,,,,,1
+Rich Driver,2671,470,Alic Alphaball,3189,962,LGO,492,T1,2,0,0,0,-1.76%,1.76%,0,0,15,2,1,DOG,SHH,LGO,LGO,,,,,,1
+Cole Slaw,3040,370,NOT Paulie Wag,583,71,K,299,B1,0,0,0,0,-2.48%,2.48%,0,0,16,2,1,SHH,DOG,K,K,,,,,,1
+Lincoln Pickett,2870,69,NOT Paulie Wag,583,424,K,355,B1,1,0,0,0,-2.17%,2.17%,0,0,16,2,1,SHH,DOG,K,K,,,,,,1
+Wallace Grommet,492,801,NOT Paulie Wag,583,546,FO,255,B1,2,0,0,0,-1.79%,1.79%,0,0,16,2,1,SHH,DOG,FO,FO,,,,,,1
+Uncle Crush,3072,621,Alic Alphaball,3189,180,PO,441,T2,0,0,0,0,-2.72%,2.72%,0,0,17,2,1,DOG,SHH,PO,PO,,,,,,1
+Bucky Sabre,3124,555,Alic Alphaball,3189,923,K,368,T2,1,0,0,0,-2.40%,2.40%,0,0,17,2,1,DOG,SHH,K,K,,,,,,1
+Ahab Ceeley,3172,485,Alic Alphaball,3189,623,BB,138,T2,2,0,0,0,2.15%,-2.15%,0,0,17,2,1,DOG,SHH,BB,BB,,,,,,1
+Ellis Nash,3128,86,Alic Alphaball,3189,756,K,330,T2,2,1,0,0,-4.14%,4.14%,0,0,17,2,1,DOG,SHH,K,K,,,,,,1
+Sir Walks-A-Littlw,3180,779,NOT Paulie Wag,583,100,K,321,B2,0,0,0,0,-2.72%,2.72%,0,0,18,2,1,SHH,DOG,K,K,,,,,,1
+Copernicus Hel,3016,915,NOT Paulie Wag,583,740,FO,175,B2,1,0,0,0,-2.38%,2.38%,0,0,18,2,1,SHH,DOG,FO,FO,,,,,,1
+Brody Page,3135,955,NOT Paulie Wag,583,435,LGO,480,B2,2,0,0,0,-2.03%,2.03%,0,0,18,2,1,SHH,DOG,LGO,LGO,,,,,,1
+Domino Calzone,3118,267,Alic Alphaball,3189,4,K,263,T3,0,0,0,0,-3.03%,3.03%,0,0,19,2,1,DOG,SHH,K,K,,,,,,1
+Marquis de Leek,3102,888,Alic Alphaball,3189,520,K,368,T3,1,0,0,0,-2.74%,2.74%,0,0,19,2,1,DOG,SHH,K,K,,,,,,1
+Flame-Test Fleming,3144,350,Alic Alphaball,3189,666,K,316,T3,2,0,0,0,-2.31%,2.31%,0,0,19,2,1,DOG,SHH,K,K,,,,,,1
+Dominus Nominus,278,1,NOT Paulie Wag,583,435,LGO,434,B3,0,0,0,0,-3.07%,3.07%,0,0,20,2,1,SHH,DOG,LGO,LGO,,,,,,1
+Dingers McGee,2482,1,NOT Paulie Wag,583,404,K,403,B3,1,0,0,0,-2.77%,2.77%,0,0,20,2,1,SHH,DOG,K,K,,,,,,1
+Harry McPotterson,1703,277,NOT Paulie Wag,583,35,K,242,B3,2,0,0,0,-2.27%,2.27%,0,0,20,2,1,SHH,DOG,K,K,,,,,,1
+Cormac Karona,3108,489,Alic Alphaball,3189,666,FO,177,T4,0,0,0,0,-3.58%,3.58%,0,0,21,2,1,DOG,SHH,FO,FO,,,,,,1
+Rich Driver,2671,650,Alic Alphaball,3189,320,K,330,T4,1,0,0,0,-3.19%,3.19%,0,0,21,2,1,DOG,SHH,K,K,,,,,,1
+Uncle Crush,3072,991,Alic Alphaball,3189,275,K,284,T4,2,0,0,0,-2.75%,2.75%,0,0,21,2,1,DOG,SHH,K,K,,,,,,1
+Cole Slaw,3040,340,NOT Paulie Wag,583,193,BB,147,B4,0,0,0,0,3.11%,-3.11%,0,0,22,2,1,SHH,DOG,BB,BB,,,,,,1
+Lincoln Pickett,2870,738,NOT Paulie Wag,583,300,RGO,438,B4,0,1,0,0,-9.71%,9.71%,0,0,22,2,1,SHH,DOG,RGO,RGO,,,,,,1
+Wallace Grommet,492,543,NOT Paulie Wag,583,558,3B,15,B4,2,0,0,0,4.56%,-4.56%,0,0,22,2,1,SHH,DOG,3B,3B,,,,,,1
+Sir Walks-A-Littlw,3180,686,NOT Paulie Wag,583,415,FO,271,B4,2,3,0,0,-7.43%,7.43%,0,0,22,2,1,SHH,DOG,FO,FO,,,,,,1
+Bucky Sabre,3124,889,Alic Alphaball,3189,1000,BB,111,T5,0,0,0,0,4.12%,-4.12%,0,1,23,2,1,DOG,SHH,BB,BB,,,,,,1
+Ahab Ceeley,3172,479,Alic Alphaball,3189,715,K,236,T5,0,1,0,0,-4.96%,4.96%,0,0,23,2,1,DOG,SHH,K,K,,,,,,1
+Ellis Nash,3128,586,Alic Alphaball,3189,223,K,363,T5,1,1,0,0,-4.01%,4.01%,0,0,23,2,1,DOG,SHH,K,K,,,,,,1
+Domino Calzone,3118,302,Alic Alphaball,3189,298,HR,4,T5,2,1,0,0,37.53%,-37.53%,2,1,23,2,1,DOG,SHH,HR,HR,,,,3189,3189,1
+Marquis de Leek,3102,314,Alic Alphaball,3189,416,BB,102,T5,2,0,0,2,0.96%,-0.96%,0,1,23,2,1,DOG,SHH,BB,BB,,,,,,1
+Flame-Test Fleming,3144,600,Alic Alphaball,3189,587,HR,13,T5,2,1,0,2,11.59%,-11.59%,2,1,23,2,1,DOG,SHH,HR,HR,,,,3189,3189,1
+Cormac Karona,3108,425,Baberaham Lincoln,3004,670,K,245,T5,2,0,0,4,-0.30%,0.30%,0,0,23,2,1,DOG,SHH,K,K,,,,,,1
+Copernicus Hel,3016,915,NOT Paulie Wag,583,275,PO,360,B5,0,0,0,4,-1.65%,1.65%,0,0,24,2,1,SHH,DOG,PO,PO,,,,,,1
+Brody Page,3135,444,NOT Paulie Wag,583,514,1B,70,B5,1,0,0,4,1.86%,-1.86%,0,1,24,2,1,SHH,DOG,1B,1B,,,,,,1
+Dominus Nominus,278,804,NOT Paulie Wag,583,161,PO,357,B5,1,1,0,4,-1.98%,1.98%,0,0,24,2,1,SHH,DOG,PO,PO,,,,,,1
+Dingers McGee,2482,823,NOT Paulie Wag,583,810,HR,13,B5,2,1,0,4,7.43%,-7.43%,2,1,24,2,1,SHH,DOG,HR,HR,,,,583,583,1
+Harry McPotterson,1703,167,NOT Paulie Wag,583,13,BB,154,B5,2,0,2,4,3.78%,-3.78%,0,0,24,2,1,SHH,DOG,BB,BB,,,,,,1
+Cole Slaw,3040,709,NOT Paulie Wag,583,617,1B,92,B5,2,1,2,4,6.16%,-6.16%,0,0,24,2,1,SHH,DOG,1B,1B,,,,,,1
+Goaty McGoatFace,2878,646,Moby Dick,1719,500,BB,146,B5,2,5,2,4,5.77%,-5.77%,0,0,24,2,1,SHH,DOG,BB,FO,,,,,,1
+Wallace Grommet,492,875,Moby Dick,1719,480,PO,395,B5,2,7,2,4,-18.13%,18.13%,0,0,24,2,1,SHH,DOG,PO,PO,,,,,,1
+Rich Driver,2671,262,Baberaham Lincoln,3004,202,2B,60,T6,0,0,2,4,2.10%,-2.10%,0,1,25,2,1,DOG,SHH,2B,2B,,,,,,1
+Uncle Crush,3072,950,Baberaham Lincoln,3004,150,FO,200,T6,0,2,2,4,-1.40%,1.40%,0,0,25,2,1,DOG,SHH,FO,FO,,,,,,1
+Bucky Sabre,3124,500,Baberaham Lincoln,3004,36,LGO,464,T6,1,2,2,4,-1.19%,1.19%,0,0,25,2,1,DOG,SHH,LGO,LGO,,,,,,1
+Ahab Ceeley,3172,14,Baberaham Lincoln,3004,90,2B,76,T6,2,2,2,4,4.79%,-4.79%,1,1,25,2,1,DOG,SHH,2B,2B,,,3004,,,1
+Ellis Nash,3128,86,Baberaham Lincoln,3004,166,1B,80,T6,2,2,2,5,2.24%,-2.24%,1,1,25,2,1,DOG,SHH,1B,1B,,,3004,,,1
+Domino Calzone,3118,865,Baberaham Lincoln,3004,800,2B,65,T6,2,1,2,6,1.05%,-1.05%,1,0,25,2,1,DOG,SHH,2B,2B,,,,3004,,1
+Marquis de Leek,3102,556,Baberaham Lincoln,3004,101,RGO,455,T6,2,2,2,7,-0.19%,0.19%,0,0,25,2,1,DOG,SHH,RGO,RGO,,,,,,1
+Sir Walks-A-Littlw,3180,666,Moby Dick,1719,450,FO,216,B6,0,0,2,7,-0.56%,0.56%,0,0,26,2,1,SHH,DOG,FO,FO,,,,,,1
+Copernicus Hel,3016,750,Moby Dick,1719,700,2B,50,B6,1,0,2,7,0.65%,-0.65%,0,1,26,2,1,SHH,DOG,2B,2B,,,,,,1
+Brody Page,3135,525,Moby Dick,1719,800,K,275,B6,1,2,2,7,-0.76%,0.76%,0,0,26,2,1,SHH,DOG,K,K,,,,,,1
+Dominus Nominus,278,123,Moby Dick,1719,38,1B,85,B6,2,2,2,7,0.43%,-0.43%,1,0,26,2,1,SHH,DOG,1B,1B,,,1719,,,1
+Dingers McGee,2482,123,Moby Dick,1719,50,1B,73,B6,2,1,3,7,1.40%,-1.40%,0,0,26,2,1,SHH,DOG,1B,1B,,,,,,1
+Ross Ewage,1764,381,Moby Dick,1719,80,PO,301,B6,2,5,3,7,-2.08%,2.08%,0,0,26,2,1,SHH,DOG,PO,PO,,,,,,1
+Bucky Sabre,3124,888,Brandon Rice III,2951,942,2B,54,T1,0,0,0,0,6.33%,-6.33%,0,0,27,3,2,DOG,WRM,2B,2B,,,,,,1
+Cormac Karona,3108,15,Brandon Rice III,2951,891,BB,124,T1,0,2,0,0,2.14%,-2.14%,0,0,27,3,2,DOG,WRM,BB,BB,,,,,,1
+Ahab Ceeley,3172,86,Brandon Rice III,2951,623,LGO,463,T1,0,4,0,0,-10.00%,10.00%,0,0,27,3,2,DOG,WRM,LGO,LGO,,,,,,1
+Uncle Crush,3072,297,Brandon Rice III,2951,520,K,223,T1,2,3,0,0,-4.92%,4.92%,0,0,27,3,2,DOG,WRM,K,K,,,,,,1
+Doc Otis,2256,323,Ellis Nash,3128,211,1B,112,B1,0,0,0,0,2.76%,-2.76%,0,1,28,3,2,WRM,DOG,1B,1B,,,,,,1
+Doc Otis,2256,211,Ellis Nash,3128,211,SB,0,B1,0,1,0,0,3.57%,-3.57%,0,0,28,3,2,WRM,DOG,STEAL 2B,STEAL 2B,SB,,,,,4
+Philip Berkenshire,3137,211,Ellis Nash,3128,961,K,250,B1,0,2,0,0,-4.08%,4.08%,0,0,28,3,2,WRM,DOG,K,K,,,,,,1
+Saul Pewald,2708,420,Ellis Nash,3128,461,2B,41,B1,1,2,0,0,11.27%,-11.27%,1,1,28,3,2,WRM,DOG,2B,2B,,,3128,,,1
+Justin Time,2886,1,Ellis Nash,3128,86,1B,85,B1,1,2,1,0,3.88%,-3.88%,0,0,28,3,2,WRM,DOG,1B,1B,,,,,,1
+Archie 'Clumsy' Sybil,3093,1,Ellis Nash,3128,86,1B,85,B1,1,5,1,0,6.38%,-6.38%,1,0,28,3,2,WRM,DOG,1B,1B,,3128,,,,2
+King Kruul,2229,255,Ellis Nash,3128,711,LGO,456,B1,1,4,2,0,-6.39%,6.39%,0,0,28,3,2,WRM,DOG,LGO,LGO,,,,,,1
+Flame-Test Fleming,3144,225,Brandon Rice III,2951,577,PO,352,T2,0,0,2,0,-2.72%,2.72%,0,0,29,3,2,DOG,WRM,PO,PO,,,,,,1
+Domino Calzone,3118,862,Brandon Rice III,2951,225,PO,363,T2,1,0,2,0,-2.27%,2.27%,0,0,29,3,2,DOG,WRM,PO,PO,,,,,,1
+Rich Driver,2671,100,Brandon Rice III,2951,687,PO,413,T2,2,0,2,0,-1.66%,1.66%,0,0,29,3,2,DOG,WRM,PO,PO,,,,,,1
+William T. Striker,2867,255,Ellis Nash,3128,586,RGO,331,B2,0,0,2,0,-1.42%,1.42%,0,0,30,3,2,WRM,DOG,RGO,RGO,,,,,,1
+Tony Pizza,2844,891,Ellis Nash,3128,961,1B,70,B2,1,0,2,0,1.25%,-1.25%,0,1,30,3,2,WRM,DOG,1B,1B,,,,,,1
+Butch Sterling,2992,55,Ellis Nash,3128,86,3B,31,B2,1,1,2,0,10.13%,-10.13%,1,1,30,3,2,WRM,DOG,3B,3B,,,,3128,,1
+Doc Otis,2256,155,Ellis Nash,3128,711,LGO,444,B2,1,3,3,0,-3.08%,3.08%,0,0,30,3,2,WRM,DOG,LGO,LGO,,,,,,2
+Philip Berkenshire,3137,586,Ellis Nash,3128,461,BB,125,B2,2,3,3,0,0.58%,-0.58%,0,1,30,3,2,WRM,DOG,BB,BB,,,,,,1
+Saul Pewald,2708,461,Ellis Nash,3128,586,BB,125,B2,2,5,3,0,0.36%,-0.36%,0,1,30,3,2,WRM,DOG,BB,BB,,,,,,1
+Justin Time,2886,961,Ellis Nash,3128,836,1B,125,B2,2,7,3,0,6.88%,-6.88%,2,0,30,3,2,WRM,DOG,1B,1B,,3128,3128,,,1
+Archie 'Clumsy' Sybil,3093,666,NOT Paulie Wag,583,728,1B,62,B2,2,5,5,0,1.95%,-1.95%,1,0,30,3,2,WRM,DOG,1B,1B,,3128,,,,1
+King Kruul,2229,999,NOT Paulie Wag,583,625,K,374,B2,2,5,6,0,-0.32%,0.32%,0,0,30,3,2,WRM,DOG,K,K,,,,,,1
+Harry Peritestes,117,290,Brandon Rice III,2951,32,K,258,T3,0,0,6,0,-0.80%,0.80%,0,0,31,3,2,DOG,WRM,K,K,,,,,,1
+Hippo Jars,2902,836,Brandon Rice III,2951,940,1B,104,T3,1,0,6,0,1.04%,-1.04%,0,0,31,3,2,DOG,WRM,1B,1B,,,,,,1
+Bucky Sabre,3124,888,Brandon Rice III,2951,590,K,298,T3,1,1,6,0,-1.14%,1.14%,0,0,31,3,2,DOG,WRM,K,K,,,,,,1
+Cormac Karona,3108,176,Brandon Rice III,2951,331,BB,155,T3,2,1,6,0,0.94%,-0.94%,0,0,31,3,2,DOG,WRM,BB,BB,,,,,,1
+Ahab Ceeley,3172,208,Brandon Rice III,2951,812,PO,396,T3,2,4,6,0,-1.66%,1.66%,0,0,31,3,2,DOG,WRM,PO,PO,,,,,,1
+William T. Striker,2867,959,NOT Paulie Wag,583,598,PO,361,B3,0,0,6,0,-0.17%,0.17%,0,0,32,3,2,WRM,DOG,PO,PO,,,,,,1
+Tony Pizza,2844,3,NOT Paulie Wag,583,39,2B,36,B3,1,0,6,0,0.09%,-0.09%,0,1,32,3,2,WRM,DOG,2B,2B,,,,,,1
+Butch Sterling,2992,222,NOT Paulie Wag,583,463,K,241,B3,1,2,6,0,-0.17%,0.17%,0,0,32,3,2,WRM,DOG,K,K,,,,,,1
+Doc Otis,2256,26,NOT Paulie Wag,583,12,3B,14,B3,2,2,6,0,0.82%,-0.82%,1,1,32,3,2,WRM,DOG,3B,3B,,,583,,,1
+Philip Berkenshire,3137,645,NOT Paulie Wag,583,555,1B,90,B3,2,3,7,0,0.53%,-0.53%,1,0,32,3,2,WRM,DOG,1B,1B,,583,,,,1
+Saul Pewald,2708,420,NOT Paulie Wag,583,952,LGO,468,B3,2,1,8,0,-0.09%,0.09%,0,0,32,3,2,WRM,DOG,LGO,LGO,,,,,,1
+Uncle Crush,3072,69,Brandon Rice III,2951,188,BB,119,T4,0,0,8,0,0.19%,-0.19%,0,0,33,3,2,DOG,WRM,BB,BB,,,,,,1
+Flame-Test Fleming,3144,933,Brandon Rice III,2951,569,PO,364,T4,0,1,8,0,-0.27%,0.27%,0,0,33,3,2,DOG,WRM,PO,PO,,,,,,1
+Domino Calzone,3118,469,Brandon Rice III,2951,730,PO,261,T4,1,1,8,0,-0.13%,0.13%,0,0,33,3,2,DOG,WRM,PO,PO,,,,,,1
+Rich Driver,2671,550,Eijun Sawamura,2782,115,RGO,435,T4,2,1,8,0,-0.12%,0.12%,0,0,33,3,2,DOG,WRM,RGO,RGO,,,,,,1
+Sean Carrcrash,1709,707,NOT Paulie Wag,583,555,BB,152,B4,0,0,8,0,0.00%,0.00%,0,1,34,3,2,WRM,DOG,BB,BB,,,,,,1
+Hans Zahn,2915,414,NOT Paulie Wag,583,481,1B,67,B4,0,1,8,0,0.16%,-0.16%,0,0,34,3,2,WRM,DOG,1B,1B,,,,,,1
+Smokey Zygowski,2945,69,Andre Pope,3035,545,LGO,476,B4,0,4,8,0,-0.06%,0.06%,0,0,34,3,2,WRM,DOG,LGO,LGO,,,,,,1
+William T. Striker,2867,387,Andre Pope,3035,322,1B,65,B4,2,3,8,0,0.02%,-0.02%,1,0,34,3,2,WRM,DOG,1B,2B,,583,,,,1
+Tony Pizza,2844,555,Andre Pope,3035,112,LGO,443,B4,2,1,9,0,-0.05%,0.05%,0,0,34,3,2,WRM,DOG,LGO,LGO,,,,,,1
+Harry Peritestes,117,350,Eijun Sawamura,2782,110,FO,240,T5,0,0,9,0,-0.06%,0.06%,0,0,35,3,2,DOG,WRM,FO,FO,,,,,,1
+Hippo Jars,2902,467,Eijun Sawamura,2782,667,FO,200,T5,1,0,9,0,-0.07%,0.07%,0,0,35,3,2,DOG,WRM,FO,FO,,,,,,1
+Bucky Sabre,3124,50,Eijun Sawamura,2782,326,FO,276,T5,2,0,9,0,-0.01%,0.01%,0,0,35,3,2,DOG,WRM,FO,FO,,,,,,1
+Butch Sterling,2992,910,Andre Pope,3035,244,K,334,B5,0,0,9,0,0.00%,0.00%,0,0,36,3,2,WRM,DOG,K,K,,,,,,1
+Doc Otis,2256,344,Andre Pope,3035,577,FO,233,B5,1,0,9,0,-0.01%,0.01%,0,0,36,3,2,WRM,DOG,FO,FO,,,,,,1
+Philip Berkenshire,3137,832,Andre Pope,3035,756,1B,76,B5,2,0,9,0,0.00%,0.00%,0,0,36,3,2,WRM,DOG,1B,1B,,,,,,1
+Saul Pewald,2708,420,Andre Pope,3035,590,FO,170,B5,2,1,9,0,0.00%,0.00%,0,0,36,3,2,WRM,DOG,FO,FO,,,,,,1
+Cormac Karona,3108,521,Eijun Sawamura,2782,550,HR,29,T6,0,0,9,0,0.03%,-0.03%,1,1,37,3,2,DOG,WRM,HR,HR,,,,,2782,1
+Ahab Ceeley,3172,680,Corbin Christmas Carol,2827,816,BB,136,T6,0,0,9,1,0.08%,-0.08%,0,1,37,3,2,DOG,WRM,BB,BB,,,,,,1
+Uncle Crush,3072,823,Corbin Christmas Carol,2827,816,HR,7,T6,0,1,9,1,0.14%,-0.14%,2,1,37,3,2,DOG,WRM,HR,HR,,,,2827,2827,1
+Flame-Test Fleming,3144,333,Corbin Christmas Carol,2827,620,K,287,T6,0,0,9,3,-0.16%,0.16%,0,0,37,3,2,DOG,WRM,K,K,,,,,,1
+Domino Calzone,3118,951,Corbin Christmas Carol,2827,420,LGO,469,T6,1,0,9,3,-0.09%,0.09%,0,0,37,3,2,DOG,WRM,LGO,LGO,,,,,,1
+Rich Driver,2671,740,Corbin Christmas Carol,2827,69,K,329,T6,2,0,9,3,-0.02%,0.02%,0,0,37,3,2,DOG,WRM,K,K,,,,,,1

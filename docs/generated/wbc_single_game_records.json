@@ -1,0 +1,2129 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 262,
+            "season": "S1",
+            "session": 3,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 2,
+            "season": "S1",
+            "session": 3,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 702,
+            "season": "S1",
+            "session": 7,
+            "team": "VC",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "BB": {
+        "record": 2,
+        "tie_count": 13,
+        "most_recent": {
+          "id": 488,
+          "season": "S1",
+          "session": 6,
+          "team": "SM",
+          "location": "Home",
+          "opponent": "BH"
+        }
+      },
+      "CS": {
+        "record": 1,
+        "tie_count": 12,
+        "most_recent": {
+          "id": 132,
+          "season": "S1",
+          "session": 7,
+          "team": "GRE",
+          "location": "Away",
+          "opponent": "SCO"
+        }
+      },
+      "FO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 703,
+            "season": "S1",
+            "session": 6,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "GRE"
+          },
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 5,
+            "team": "SM",
+            "location": "Away",
+            "opponent": "JMC"
+          },
+          {
+            "id": 488,
+            "season": "S1",
+            "session": 4,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "GRE"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 1,
+        "tie_count": 50,
+        "most_recent": {
+          "id": 59,
+          "season": "S1",
+          "session": 8,
+          "team": "SCO",
+          "location": "Away",
+          "opponent": "SM"
+        }
+      },
+      "H": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 180,
+            "season": "S1",
+            "session": 2,
+            "team": "SWZ",
+            "location": "Away",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "HR": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 73,
+            "season": "S1",
+            "session": 6,
+            "team": "SWZ",
+            "location": "Away",
+            "opponent": "VC"
+          },
+          {
+            "id": 419,
+            "season": "S1",
+            "session": 3,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 1,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "BRB"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "tie_count": 10,
+        "most_recent": {
+          "id": 357,
+          "season": "S1",
+          "session": 6,
+          "team": "BRB",
+          "location": "Away",
+          "opponent": "SCO"
+        }
+      },
+      "LGO": {
+        "record": 2,
+        "tie_count": 14,
+        "most_recent": {
+          "id": 131,
+          "season": "S1",
+          "session": 8,
+          "team": "SM",
+          "location": "Home",
+          "opponent": "SCO"
+        }
+      },
+      "PA": {
+        "record": 4,
+        "tie_count": 33,
+        "most_recent": {
+          "id": 488,
+          "season": "S1",
+          "session": 6,
+          "team": "SM",
+          "location": "Home",
+          "opponent": "BH"
+        }
+      },
+      "PO": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 703,
+            "season": "S1",
+            "session": 3,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "id": 583,
+            "season": "S1",
+            "session": 1,
+            "team": "SM",
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "id": 2,
+            "season": "S1",
+            "session": 1,
+            "team": "BRB",
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "R": {
+        "record": 2,
+        "tie_count": 20,
+        "most_recent": {
+          "id": 131,
+          "season": "S1",
+          "session": 7,
+          "team": "SM",
+          "location": "Home",
+          "opponent": "VC"
+        }
+      },
+      "RBI": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 131,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "id": 262,
+            "season": "S1",
+            "session": 3,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 1,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "BRB"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 3.890695186996539,
+        "holders": [
+          {
+            "id": 131,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 270,
+            "season": "S1",
+            "session": 5,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "SO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 488,
+            "season": "S1",
+            "session": 1,
+            "team": "SM",
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "TB": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 73,
+            "season": "S1",
+            "session": 6,
+            "team": "SWZ",
+            "location": "Away",
+            "opponent": "VC"
+          },
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 1,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "BRB"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.4018058957711196,
+        "holders": [
+          {
+            "id": 131,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.6558999999999999,
+        "holders": [
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 1,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "BRB"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 529,
+            "season": "S1",
+            "session": 2,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 258,
+            "season": "S1",
+            "session": 7,
+            "team": "VC",
+            "location": "Away",
+            "opponent": "SM"
+          },
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "id": 32,
+            "season": "S1",
+            "session": 4,
+            "team": "SCO",
+            "location": "Away",
+            "opponent": "VC"
+          },
+          {
+            "id": 258,
+            "season": "S1",
+            "session": 4,
+            "team": "VC",
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 46,
+            "season": "S1",
+            "session": 6,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "id": 149,
+            "season": "S1",
+            "session": 3,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "id": 478,
+            "season": "S1",
+            "session": 1,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 258,
+            "season": "S1",
+            "session": 7,
+            "team": "VC",
+            "location": "Away",
+            "opponent": "SM"
+          },
+          {
+            "id": 149,
+            "season": "S1",
+            "session": 5,
+            "team": "BRB",
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 5,
+            "team": "SWZ",
+            "location": "Home",
+            "opponent": "SCO"
+          },
+          {
+            "id": 331,
+            "season": "S1",
+            "session": 3,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 8,
+        "most_recent": {
+          "id": 275,
+          "season": "S1",
+          "session": 8,
+          "team": "SM",
+          "location": "Home",
+          "opponent": "SCO"
+        }
+      },
+      "BB": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 477,
+            "season": "S1",
+            "session": 5,
+            "team": "GRE",
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "id": 46,
+            "season": "S1",
+            "session": 2,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "BF": {
+        "record": 21,
+        "holders": [
+          {
+            "id": 32,
+            "season": "S1",
+            "session": 2,
+            "team": "SCO",
+            "location": "Home",
+            "opponent": "SWZ"
+          },
+          {
+            "id": 478,
+            "season": "S1",
+            "session": 1,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 46,
+            "season": "S1",
+            "session": 6,
+            "team": "BRB",
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "id": 195,
+            "season": "S1",
+            "session": 4,
+            "team": "GRE",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "DP": {
+        "record": 2,
+        "tie_count": 10,
+        "most_recent": {
+          "id": 258,
+          "season": "S1",
+          "session": 7,
+          "team": "VC",
+          "location": "Away",
+          "opponent": "SM"
+        }
+      },
+      "ER": {
+        "record": 7,
+        "holders": [
+          {
+            "id": 529,
+            "season": "S1",
+            "session": 2,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "FO": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 195,
+            "season": "S1",
+            "session": 6,
+            "team": "GRE",
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "H": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 108,
+            "season": "S1",
+            "session": 4,
+            "team": "GRE",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 646,
+            "season": "S1",
+            "session": 1,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 529,
+            "season": "S1",
+            "session": 2,
+            "team": "JMC",
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "IP": {
+        "record": "6.0",
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 5,
+            "team": "SWZ",
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 478,
+            "season": "S1",
+            "session": 1,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -3.13353115727003,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 258,
+            "season": "S1",
+            "session": 7,
+            "team": "VC",
+            "location": "Away",
+            "opponent": "SM"
+          },
+          {
+            "id": 149,
+            "season": "S1",
+            "session": 5,
+            "team": "BRB",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 32,
+            "season": "S1",
+            "session": 7,
+            "team": "SCO",
+            "location": "Home",
+            "opponent": "GRE"
+          },
+          {
+            "id": 331,
+            "season": "S1",
+            "session": 5,
+            "team": "BH",
+            "location": "Home",
+            "opponent": "GRE"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.38795402170589655,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SM",
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.0647,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 5,
+            "team": "SWZ",
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "JMC"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "BRB"
+          },
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "BRB"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "VC",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "SM"
+          },
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "BB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "GRE"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "BRB"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "GRE"
+          }
+        ]
+      },
+      "FO": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "GRE"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "H": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "VC",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "BRB"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "PA": {
+        "record": 35,
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "PO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "R": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 6.8664688427299705,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "VC",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "TB": {
+        "record": 30,
+        "holders": [
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.8225015730352976,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7219,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "VC",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "BRB"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          },
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SM"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 14,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "BH"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "GRE"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          },
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "BRB"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "BH"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 8,
+        "most_recent": {
+          "team": "SM",
+          "season": "S1",
+          "session": 8,
+          "location": "Home",
+          "opponent": "SCO"
+        }
+      },
+      "BB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "BH"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "BF": {
+        "record": 35,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "BH"
+          }
+        ]
+      },
+      "ER": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "FO": {
+        "record": 11,
+        "holders": [
+          {
+            "team": "GRE",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "H": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "BRB",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "SWZ"
+          },
+          {
+            "team": "JMC",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SM"
+          }
+        ]
+      },
+      "IP": {
+        "record": "8.0",
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "GRE"
+          }
+        ]
+      },
+      "PO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -3.13353115727003,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "VC"
+          },
+          {
+            "team": "VC",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "SCO"
+          },
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "GRE"
+          },
+          {
+            "team": "BH",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "GRE"
+          },
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          },
+          {
+            "team": "SCO",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "SWZ"
+          }
+        ]
+      },
+      "SO": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "VC"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.41179161152578203,
+        "holders": [
+          {
+            "team": "SM",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "JMC"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.9897,
+        "holders": [
+          {
+            "team": "SWZ",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "SCO"
+          }
+        ]
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "JMC",
+            "home": "SM",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "3B": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "BRB",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "SM",
+            "season": "S1",
+            "session": 7
+          },
+          {
+            "away": "BRB",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "BH",
+            "home": "GRE",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "BRB",
+            "home": "VC",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "GRE",
+            "home": "BH",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "BRB",
+            "home": "SCO",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "GRE",
+            "home": "SM",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "FO": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "JMC",
+            "home": "GRE",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "H": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "BRB",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "LGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "VC",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "JMC",
+            "home": "SM",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "PA": {
+        "record": 64,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "PO": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "BH",
+            "home": "GRE",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "R": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "BH",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "RBI": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "BH",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "RE24": {
+        "record": 7.732937685459941,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "BH",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "RGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "SO": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "BRB",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "TB": {
+        "record": 44,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "BRB",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.006794014856198,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "BH",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.9437999999999999,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "BRB",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "JMC",
+            "home": "SM",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 27,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "VC",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "3B": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "BRB",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "BH",
+            "home": "SM",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 8,
+        "most_recent": {
+          "away": "SCO",
+          "home": "SM",
+          "season": "S1",
+          "session": 8
+        }
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "GRE",
+            "home": "BH",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "BF": {
+        "record": 64,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "BRB",
+            "home": "SCO",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "GRE",
+            "home": "SM",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "DP": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "ER": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "BH",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "FO": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "JMC",
+            "home": "GRE",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "H": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "VC",
+            "home": "BRB",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "IBB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "IP": {
+        "record": "15.2",
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "LGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "VC",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "JMC",
+            "home": "SM",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "PO": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "BH",
+            "home": "GRE",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RE24": {
+        "record": -5.221607769085514,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "JMC",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "RGO": {
+        "record": 11,
+        "holders": [
+          {
+            "away": "SWZ",
+            "home": "SCO",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "SB": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "SO": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "BRB",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7161231324536748,
+        "holders": [
+          {
+            "away": "SM",
+            "home": "JMC",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.4793999999999998,
+        "holders": [
+          {
+            "away": "SCO",
+            "home": "SWZ",
+            "season": "S1",
+            "session": 5
+          }
+        ]
+      }
+    }
+  }
+}

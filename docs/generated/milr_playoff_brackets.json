@@ -1,0 +1,834 @@
+{
+  "S3": {
+    "format": "4-team",
+    "seeds": [
+      "CIN",
+      "LAN",
+      "FTP",
+      "BER"
+    ],
+    "rounds": [
+      {
+        "name": "Semifinals",
+        "matchups": [
+          {
+            "game_id": 1,
+            "home": "CIN",
+            "away": "BER",
+            "home_score": 8,
+            "away_score": 1
+          },
+          {
+            "game_id": 2,
+            "home": "LAN",
+            "away": "FTP",
+            "home_score": 13,
+            "away_score": 1
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "CIN",
+            "away": "LAN",
+            "home_score": 7,
+            "away_score": 14
+          }
+        ]
+      }
+    ]
+  },
+  "S4": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "A": {
+        "label": "Group A",
+        "seeds": [
+          "PGS",
+          "DDD",
+          "PDB",
+          "PGA"
+        ]
+      },
+      "B": {
+        "label": "Group B",
+        "seeds": [
+          "EEE",
+          "VFQ",
+          "CCS",
+          "LMN"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 1,
+            "home": "PGS",
+            "away": "PGA",
+            "home_score": 0,
+            "away_score": 4,
+            "league": "A"
+          },
+          {
+            "game_id": 2,
+            "home": "DDD",
+            "away": "PDB",
+            "home_score": 6,
+            "away_score": 5,
+            "league": "A"
+          },
+          {
+            "game_id": 3,
+            "home": "EEE",
+            "away": "LMN",
+            "home_score": 6,
+            "away_score": 7,
+            "league": "B"
+          },
+          {
+            "game_id": 4,
+            "home": "VFQ",
+            "away": "CCS",
+            "home_score": 6,
+            "away_score": 1,
+            "league": "B"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 5,
+            "home": "DDD",
+            "away": "PGA",
+            "home_score": 10,
+            "away_score": 1,
+            "league": "A"
+          },
+          {
+            "game_id": 6,
+            "home": "VFQ",
+            "away": "LMN",
+            "home_score": 4,
+            "away_score": 7,
+            "league": "B"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "DDD",
+            "away": "LMN",
+            "home_score": 1,
+            "away_score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "S5": {
+    "format": "4-per-league",
+    "reseeded": false,
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "WWC",
+          "KRB",
+          "ISO",
+          "WSH"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "MVM",
+          "TAC",
+          "LMN",
+          "SAR"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "MVM",
+            "away": "SAR",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "IL"
+          },
+          {
+            "game_id": 4,
+            "home": "TAC",
+            "away": "LMN",
+            "home_score": 2,
+            "away_score": 5,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "WWC",
+            "away": "WSH",
+            "home_score": 6,
+            "away_score": 2,
+            "league": "PCL"
+          },
+          {
+            "game_id": 2,
+            "home": "KRB",
+            "away": "ISO",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 5,
+            "home": "MVM",
+            "away": "LMN",
+            "home_score": 3,
+            "away_score": 4,
+            "league": "IL"
+          },
+          {
+            "game_id": 6,
+            "home": "WWC",
+            "away": "KRB",
+            "home_score": 5,
+            "away_score": 1,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "WWC",
+            "away": "LMN",
+            "home_score": 0,
+            "away_score": 8
+          }
+        ]
+      }
+    ]
+  },
+  "S6": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "CBC",
+          "BAC",
+          "SAR",
+          "SAS",
+          "SGP",
+          "WWC"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "PHB",
+          "FRG",
+          "TTT",
+          "POR",
+          "CIM",
+          "HEL"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "TTT",
+            "away": "HEL",
+            "home_score": 4,
+            "away_score": 2,
+            "league": "IL"
+          },
+          {
+            "game_id": 4,
+            "home": "POR",
+            "away": "CIM",
+            "home_score": 6,
+            "away_score": 8,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "WWC",
+            "away": "SAR",
+            "home_score": 7,
+            "away_score": 0,
+            "league": "PCL"
+          },
+          {
+            "game_id": 2,
+            "home": "SAS",
+            "away": "SGP",
+            "home_score": 3,
+            "away_score": 2,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 7,
+            "home": "PHB",
+            "away": "CIM",
+            "home_score": 3,
+            "away_score": 1,
+            "league": "IL"
+          },
+          {
+            "game_id": 8,
+            "home": "FRG",
+            "away": "TTT",
+            "home_score": 1,
+            "away_score": 6,
+            "league": "IL"
+          },
+          {
+            "game_id": 5,
+            "home": "CBC",
+            "away": "WWC",
+            "home_score": 3,
+            "away_score": 2,
+            "league": "PCL"
+          },
+          {
+            "game_id": 6,
+            "home": "BAC",
+            "away": "SAS",
+            "home_score": 2,
+            "away_score": 3,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "PHB",
+            "away": "TTT",
+            "home_score": 3,
+            "away_score": 4,
+            "league": "IL"
+          },
+          {
+            "game_id": 9,
+            "home": "CBC",
+            "away": "SAS",
+            "home_score": 6,
+            "away_score": 3,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "CBC",
+            "away": "TTT",
+            "home_score": 2,
+            "away_score": 1
+          }
+        ]
+      }
+    ]
+  },
+  "S7": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "TBL",
+          "SCG",
+          "STK",
+          "BBC",
+          "SSC",
+          "BAC"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "SSJ",
+          "WSW",
+          "FAP",
+          "PBA",
+          "KNX",
+          "BBB"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "FAP",
+            "away": "BBB",
+            "home_score": 7,
+            "away_score": 4,
+            "league": "IL"
+          },
+          {
+            "game_id": 4,
+            "home": "PBA",
+            "away": "KNX",
+            "home_score": 0,
+            "away_score": 1,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "STK",
+            "away": "BAC",
+            "home_score": 6,
+            "away_score": 1,
+            "league": "PCL"
+          },
+          {
+            "game_id": 2,
+            "home": "BBC",
+            "away": "SSC",
+            "home_score": 2,
+            "away_score": 8,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 6,
+            "home": "WSW",
+            "away": "FAP",
+            "home_score": 2,
+            "away_score": 3,
+            "league": "IL"
+          },
+          {
+            "game_id": 7,
+            "home": "SSJ",
+            "away": "KNX",
+            "home_score": 3,
+            "away_score": 0,
+            "league": "IL"
+          },
+          {
+            "game_id": 5,
+            "home": "SCG",
+            "away": "STK",
+            "home_score": 7,
+            "away_score": 6,
+            "league": "PCL"
+          },
+          {
+            "game_id": 8,
+            "home": "TBL",
+            "away": "SSC",
+            "home_score": 3,
+            "away_score": 7,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 10,
+            "home": "SSJ",
+            "away": "FAP",
+            "home_score": 2,
+            "away_score": 1,
+            "league": "IL"
+          },
+          {
+            "game_id": 9,
+            "home": "SCG",
+            "away": "SSC",
+            "home_score": 1,
+            "away_score": 3,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "SSJ",
+            "away": "SSC",
+            "home_score": 4,
+            "away_score": 5
+          }
+        ]
+      }
+    ]
+  },
+  "S8A": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "BAG",
+          "CCD"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "LAC",
+          "BIS"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "BIS",
+            "away": "LAC",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "CCD",
+            "away": "BAG",
+            "home_score": 0,
+            "away_score": 1,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "BIS",
+            "away": "BAG",
+            "home_score": 4,
+            "away_score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "S8B": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "SCU",
+          "MOB"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "CC",
+          "NUT"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "CC",
+            "away": "NUT",
+            "home_score": 4,
+            "away_score": 6,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "SCU",
+            "away": "MOB",
+            "home_score": 13,
+            "away_score": 1,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "SCU",
+            "away": "NUT",
+            "home_score": 12,
+            "away_score": 11
+          }
+        ]
+      }
+    ]
+  },
+  "S9": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "POS",
+          "KGB"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "BIR",
+          "NNL"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "BIR",
+            "away": "NNL",
+            "home_score": 7,
+            "away_score": 1,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "POS",
+            "away": "KGB",
+            "home_score": 4,
+            "away_score": 1,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "BIR",
+            "away": "POS",
+            "home_score": 3,
+            "away_score": 2
+          }
+        ]
+      }
+    ]
+  },
+  "S10": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "KIR",
+          "CRN"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "ACK",
+          "SEO"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "ACK",
+            "away": "SEO",
+            "home_score": 1,
+            "away_score": 4,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "KIR",
+            "away": "CRN",
+            "home_score": 2,
+            "away_score": 5,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "SEO",
+            "away": "CRN",
+            "home_score": 5,
+            "away_score": 4
+          }
+        ]
+      }
+    ]
+  },
+  "S11": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "WRM",
+          "IDR"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "SHH",
+          "DOG"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "SHH",
+            "away": "DOG",
+            "home_score": 3,
+            "away_score": 7,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "WRM",
+            "away": "IDR",
+            "home_score": 2,
+            "away_score": 1,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "WRM",
+            "away": "DOG",
+            "home_score": 9,
+            "away_score": 3
+          }
+        ]
+      }
+    ]
+  },
+  "S12": {
+    "format": "2-per-league",
+    "leagues": {
+      "PCL": {
+        "label": "Pacific Coast<br>League",
+        "seeds": [
+          "SCR",
+          "SEF"
+        ]
+      },
+      "IL": {
+        "label": "International<br>League",
+        "seeds": [
+          "PQD",
+          "DDD"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "PQD",
+            "away": "DDD",
+            "home_score": 3,
+            "away_score": 2,
+            "league": "IL"
+          },
+          {
+            "game_id": 1,
+            "home": "SCR",
+            "away": "SEF",
+            "home_score": 2,
+            "away_score": 7,
+            "league": "PCL"
+          }
+        ]
+      },
+      {
+        "name": "Styrofoam Cup",
+        "matchups": [
+          {
+            "game_id": 3,
+            "home": "PQD",
+            "away": "SEF",
+            "home_score": 3,
+            "away_score": 4
+          }
+        ]
+      }
+    ]
+  }
+}

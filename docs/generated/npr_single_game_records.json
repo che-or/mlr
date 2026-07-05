@@ -1,0 +1,2278 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 91,
+            "season": "S1",
+            "session": 4,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "RGE"
+          },
+          {
+            "id": 259,
+            "season": "S1",
+            "session": 2,
+            "team": "HKU",
+            "location": "Home",
+            "opponent": "YOK"
+          },
+          {
+            "id": 70,
+            "season": "S1",
+            "session": 2,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "NAN"
+          },
+          {
+            "id": 134,
+            "season": "S1",
+            "session": 2,
+            "team": "HSH",
+            "location": "Away",
+            "opponent": "HIR"
+          },
+          {
+            "id": 36,
+            "season": "S1",
+            "session": 1,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 156,
+          "season": "S1",
+          "session": 4,
+          "team": "NAN",
+          "location": "Away",
+          "opponent": "RGE"
+        }
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 268,
+            "season": "S1",
+            "session": 4,
+            "team": "RGE",
+            "location": "Home",
+            "opponent": "NAN"
+          },
+          {
+            "id": 198,
+            "season": "S1",
+            "session": 3,
+            "team": "CHI",
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "id": 3326,
+            "season": "S1",
+            "session": 3,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "HKU"
+          }
+        ]
+      },
+      "BB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 278,
+            "season": "S1",
+            "session": 4,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "HSH"
+          },
+          {
+            "id": 293,
+            "season": "S1",
+            "session": 3,
+            "team": "YOK",
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "id": 156,
+            "season": "S1",
+            "session": 2,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "id": 149,
+            "season": "S1",
+            "session": 2,
+            "team": "RGE",
+            "location": "Away",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 70,
+            "season": "S1",
+            "session": 4,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "FO": {
+        "record": 3,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 13,
+          "season": "S1",
+          "session": 3,
+          "team": "HNF",
+          "location": "Away",
+          "opponent": "RGE"
+        }
+      },
+      "GIDP": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 117,
+            "season": "S1",
+            "session": 4,
+            "team": "RGE",
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "H": {
+        "record": 3,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 289,
+          "season": "S1",
+          "session": 4,
+          "team": "CHU",
+          "location": "Away",
+          "opponent": "HSH"
+        }
+      },
+      "HR": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 80,
+            "season": "S1",
+            "session": 3,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 319,
+            "season": "S1",
+            "session": 1,
+            "team": "HKU",
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 226,
+            "season": "S1",
+            "session": 3,
+            "team": "CHI",
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 226,
+            "season": "S1",
+            "session": 1,
+            "team": "CHI",
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "PA": {
+        "record": 4,
+        "tie_count": 20,
+        "most_recent": {
+          "id": 80,
+          "season": "S1",
+          "session": 4,
+          "team": "CHU",
+          "location": "Away",
+          "opponent": "HSH"
+        }
+      },
+      "PO": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 409,
+            "season": "S1",
+            "session": 3,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "R": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 409,
+            "season": "S1",
+            "session": 2,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 80,
+            "season": "S1",
+            "session": 3,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 167,
+            "season": "S1",
+            "session": 2,
+            "team": "RGE",
+            "location": "Away",
+            "opponent": "CHI"
+          },
+          {
+            "id": 257,
+            "season": "S1",
+            "session": 1,
+            "team": "CHI",
+            "location": "Home",
+            "opponent": "NAN"
+          },
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 1,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "HNF"
+          },
+          {
+            "id": 319,
+            "season": "S1",
+            "session": 1,
+            "team": "HKU",
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 3.6687453526163205,
+        "holders": [
+          {
+            "id": 257,
+            "season": "S1",
+            "session": 2,
+            "team": "CHI",
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 116,
+            "season": "S1",
+            "session": 1,
+            "team": "HIR",
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 4,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 71,
+            "season": "S1",
+            "session": 3,
+            "team": "CHI",
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "id": 146,
+            "season": "S1",
+            "session": 1,
+            "team": "HNF",
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "id": 265,
+            "season": "S1",
+            "session": 1,
+            "team": "HIR",
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "SO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 445,
+            "season": "S1",
+            "session": 3,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 265,
+            "season": "S1",
+            "session": 3,
+            "team": "HIR",
+            "location": "Away",
+            "opponent": "NAN"
+          },
+          {
+            "id": 416,
+            "season": "S1",
+            "session": 3,
+            "team": "NAN",
+            "location": "Home",
+            "opponent": "HIR"
+          },
+          {
+            "id": 104,
+            "season": "S1",
+            "session": 2,
+            "team": "CHI",
+            "location": "Home",
+            "opponent": "RGE"
+          },
+          {
+            "id": 76,
+            "season": "S1",
+            "session": 1,
+            "team": "HSH",
+            "location": "Away",
+            "opponent": "YOK"
+          }
+        ]
+      },
+      "TB": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 80,
+            "season": "S1",
+            "session": 3,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "id": 319,
+            "season": "S1",
+            "session": 1,
+            "team": "HKU",
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.37950879235572293,
+        "holders": [
+          {
+            "id": 257,
+            "season": "S1",
+            "session": 2,
+            "team": "CHI",
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7071999999999999,
+        "holders": [
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 1,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "HNF"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 2,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 13,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "id": 3328,
+            "season": "S1",
+            "session": 3,
+            "team": "HIR",
+            "location": "Away",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 216,
+          "season": "S1",
+          "session": 4,
+          "team": "RGE",
+          "location": "Home",
+          "opponent": "NAN"
+        }
+      },
+      "400+ Pitches": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 8,
+        "most_recent": {
+          "id": 220,
+          "season": "S1",
+          "session": 4,
+          "team": "ORI",
+          "location": "Away",
+          "opponent": "YOK"
+        }
+      },
+      "BB": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 375,
+            "season": "S1",
+            "session": 1,
+            "team": "YOK",
+            "location": "Home",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "BF": {
+        "record": 30,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 3,
+            "team": "NAN",
+            "location": "Home",
+            "opponent": "HIR"
+          },
+          {
+            "id": 344,
+            "season": "S1",
+            "session": 3,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 197,
+            "season": "S1",
+            "session": 4,
+            "team": "YOK",
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "id": 20,
+            "season": "S1",
+            "session": 4,
+            "team": "CHU",
+            "location": "Away",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "DP": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 4,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "RGE"
+          },
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "id": 320,
+            "season": "S1",
+            "session": 3,
+            "team": "HNF",
+            "location": "Away",
+            "opponent": "RGE"
+          },
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 3,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "HKU"
+          },
+          {
+            "id": 344,
+            "season": "S1",
+            "session": 1,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "HNF"
+          }
+        ]
+      },
+      "ER": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 2,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 3,
+            "team": "NAN",
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "H": {
+        "record": 11,
+        "holders": [
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 2,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "id": 252,
+            "season": "S1",
+            "session": 2,
+            "team": "HNF",
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "HR": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 344,
+            "season": "S1",
+            "session": 3,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "CHI"
+          },
+          {
+            "id": 20,
+            "season": "S1",
+            "session": 2,
+            "team": "CHU",
+            "location": "Home",
+            "opponent": "HNF"
+          },
+          {
+            "id": 252,
+            "season": "S1",
+            "session": 2,
+            "team": "HNF",
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 344,
+            "season": "S1",
+            "session": 3,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "id": 150,
+            "season": "S1",
+            "session": 3,
+            "team": "NAN",
+            "location": "Home",
+            "opponent": "HIR"
+          },
+          {
+            "id": 3328,
+            "season": "S1",
+            "session": 3,
+            "team": "HIR",
+            "location": "Away",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 5,
+        "holders": [
+          {
+            "id": 371,
+            "season": "S1",
+            "session": 1,
+            "team": "NAN",
+            "location": "Away",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "PO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 251,
+            "season": "S1",
+            "session": 3,
+            "team": "CHI",
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -4.019138755980862,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 197,
+            "season": "S1",
+            "session": 4,
+            "team": "YOK",
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "id": 344,
+            "season": "S1",
+            "session": 3,
+            "team": "ORI",
+            "location": "Home",
+            "opponent": "CHI"
+          },
+          {
+            "id": 220,
+            "season": "S1",
+            "session": 1,
+            "team": "ORI",
+            "location": "Away",
+            "opponent": "HNF"
+          },
+          {
+            "id": 33,
+            "season": "S1",
+            "session": 1,
+            "team": "CHU",
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "SO": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 1,
+            "team": "HSH",
+            "location": "Away",
+            "opponent": "YOK"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.539803313250088,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7896999999999998,
+        "holders": [
+          {
+            "id": 127,
+            "season": "S1",
+            "session": 4,
+            "team": "HSH",
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "team": "NAN",
+          "season": "S1",
+          "session": 4,
+          "location": "Away",
+          "opponent": "RGE"
+        }
+      },
+      "Auto K": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "HNF"
+          }
+        ]
+      },
+      "BB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "YOK"
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "RGE",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "NAN"
+          },
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "HSH"
+          },
+          {
+            "team": "RGE",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "HNF"
+          },
+          {
+            "team": "HKU",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HSH"
+          },
+          {
+            "team": "HNF",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "H": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "YOK"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "HKU"
+          },
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "PA": {
+        "record": 30,
+        "holders": [
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "HSH"
+          },
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "NAN"
+          },
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "PO": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "CHI"
+          },
+          {
+            "team": "HKU",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "RGE"
+          }
+        ]
+      },
+      "R": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 6.045454545454546,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "YOK"
+          },
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "team": "HNF",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "SO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "TB": {
+        "record": 23,
+        "holders": [
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "HNF"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.7182537683922726,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7549999999999999,
+        "holders": [
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "NAN"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "NAN"
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "team": "RGE",
+          "season": "S1",
+          "session": 4,
+          "location": "Home",
+          "opponent": "NAN"
+        }
+      },
+      "400+ Pitches": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 8,
+        "most_recent": {
+          "team": "ORI",
+          "season": "S1",
+          "session": 4,
+          "location": "Away",
+          "opponent": "YOK"
+        }
+      },
+      "BB": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "BF": {
+        "record": 30,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "HIR"
+          },
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "CHI"
+          },
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HSH"
+          },
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "HSH"
+          }
+        ]
+      },
+      "DP": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "RGE"
+          },
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "team": "HNF",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "RGE"
+          },
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "HKU"
+          },
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "HNF"
+          }
+        ]
+      },
+      "ER": {
+        "record": 9,
+        "holders": [
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "ORI"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "H": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "HR": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          },
+          {
+            "team": "HIR",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "NAN"
+          },
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 5,
+        "holders": [
+          {
+            "team": "HKU",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "YOK"
+          },
+          {
+            "team": "NAN",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "CHI"
+          }
+        ]
+      },
+      "PO": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "CHI",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "ORI"
+          },
+          {
+            "team": "RGE",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "HKU"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -4.019138755980862,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "YOK",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "ORI"
+          },
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "CHI"
+          },
+          {
+            "team": "ORI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "HNF"
+          },
+          {
+            "team": "CHU",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HIR"
+          }
+        ]
+      },
+      "SO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "YOK"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.539803313250088,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7896999999999998,
+        "holders": [
+          {
+            "team": "HSH",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "CHU"
+          }
+        ]
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "NAN",
+          "home": "RGE",
+          "season": "S1",
+          "session": 4
+        }
+      },
+      "Auto K": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "RGE",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "NAN",
+            "home": "CHI",
+            "season": "S1",
+            "session": 1
+          },
+          {
+            "away": "ORI",
+            "home": "HNF",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "HNF",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "YOK",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "FO": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "RGE",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "HKU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "H": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "HNF",
+            "home": "CHU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "HNF",
+            "home": "CHU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "LGO": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "YOK",
+            "home": "HKU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "PA": {
+        "record": 57,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "R": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RBI": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RE24": {
+        "record": 9.5,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RGO": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "HIR",
+            "home": "CHU",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "YOK",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "ORI",
+            "home": "HNF",
+            "season": "S1",
+            "session": 1
+          },
+          {
+            "away": "HIR",
+            "home": "CHU",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "TB": {
+        "record": 40,
+        "holders": [
+          {
+            "away": "HNF",
+            "home": "CHU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.177416627693636,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.01,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "CHI",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 8,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 23,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "NAN",
+          "home": "RGE",
+          "season": "S1",
+          "session": 4
+        }
+      },
+      "400+ Pitches": {
+        "record": 13,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHU",
+            "home": "YOK",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "HNF",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "BF": {
+        "record": 57,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "CS": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "YOK",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "RGE",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "HKU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "ER": {
+        "record": 16,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "FO": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "H": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "NAN",
+            "home": "ORI",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "HNF",
+            "home": "CHU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "HNF",
+            "home": "CHU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "IP": {
+        "record": "14.0",
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "LGO": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "YOK",
+            "home": "HKU",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "RE24": {
+        "record": -6.371610845295056,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "RGO": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "HIR",
+            "home": "CHU",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "ORI",
+            "home": "YOK",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "CHI",
+            "home": "ORI",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "ORI",
+            "home": "HNF",
+            "season": "S1",
+            "session": 1
+          },
+          {
+            "away": "HIR",
+            "home": "CHU",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SO": {
+        "record": 18,
+        "holders": [
+          {
+            "away": "HIR",
+            "home": "NAN",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.8899583868915091,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.0794,
+        "holders": [
+          {
+            "away": "CHU",
+            "home": "HSH",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      }
+    }
+  }
+}
