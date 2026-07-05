@@ -14503,8 +14503,8 @@
     "Last Team":"DET",
     "Last Session":16,
     "Batting Type":"S",
-    "Pitching Type":0,
-    "Pitching Type (Main)":0,
+    "Pitching Type":"0",
+    "Pitching Type (Main)":"0",
     "Handedness":"Right",
     "Position":"3B",
     "Display Season":"S4",
@@ -34591,7 +34591,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0,
+    "Avg Diff":0.0,
     "ERA-":null
   },
   {
@@ -67316,7 +67316,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0,
+    "Avg Diff":0.0,
     "ERA-":null
   },
   {
@@ -71566,7 +71566,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0,
+    "Avg Diff":0.0,
     "ERA-":null
   },
   {
@@ -117211,7 +117211,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0,
+    "Avg Diff":0.0,
     "ERA-":null
   },
   {
@@ -124266,7 +124266,7 @@
     "GB\/FB":0.0,
     "W-L%":0.0,
     "SV%":0.0,
-    "Avg Diff":0,
+    "Avg Diff":0.0,
     "ERA-":null
   },
   {
