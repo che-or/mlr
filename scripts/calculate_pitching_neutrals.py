@@ -37,7 +37,9 @@ def _calculate_pitching_neutrals(df, league, against = False):
                             else:
                                 print(f'RE Matrix not found. {season}')
         
-                        re = re_matrix[(re_matrix['Outs'] == inning_results['total_outs']) & (re_matrix['OBC'] == inning_results['responsible_obc'])]['RE'].iloc[0] # get appropriate RE
+                        # if this base-out state hasn't occurred yet this season, it won't be in the RE matrix; treat its RE as 0
+                        re_match = re_matrix[(re_matrix['Outs'] == inning_results['total_outs']) & (re_matrix['OBC'] == inning_results['responsible_obc'])]['RE']
+                        re = re_match.iloc[0] if not re_match.empty else 0 # get appropriate RE
                         runs_allowed += re # add RE to runs allowed
 
                 # create a row for the output dataframe
@@ -84,7 +86,9 @@ def _calculate_league_pitching_neutrals(df, league):
                     else:
                         print(f'RE Matrix not found. {season}')
     
-                re = re_matrix[(re_matrix['Outs'] == inning_results['total_outs']) & (re_matrix['OBC'] == inning_results['responsible_obc'])]['RE'].iloc[0] # get appropriate RE
+                # if this base-out state hasn't occurred yet this season, it won't be in the RE matrix; treat its RE as 0
+                re_match = re_matrix[(re_matrix['Outs'] == inning_results['total_outs']) & (re_matrix['OBC'] == inning_results['responsible_obc'])]['RE']
+                re = re_match.iloc[0] if not re_match.empty else 0 # get appropriate RE
                 runs_allowed += re # add RE to runs allowed
     
         # create a row for the output dataframe

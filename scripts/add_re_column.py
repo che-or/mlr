@@ -47,13 +47,17 @@ def _add_re_column(gamelog_df, league):
                         runners_before_play[2] = 'inherited'
                         
                     play_outcome = _simulate_runners(runners_before_play, outs, result, diff, season, pa_type, current_hitter_id)
-    
+
                     # calculate RE24 for the play based on starting state, ending state, and runs scored
-                    re_before = re_matrix[(re_matrix['Outs'] == outs) & (re_matrix['OBC'] == obc)]['RE'].iloc[0]
+                    # if a base-out state hasn't occurred yet this season, it won't be in the RE matrix; treat its RE as 0
+                    re_before_match = re_matrix[(re_matrix['Outs'] == outs) & (re_matrix['OBC'] == obc)]['RE']
+                    re_before = re_before_match.iloc[0] if not re_before_match.empty else 0
+
                     if outs + play_outcome['outs'] == 3:
                         re_after = 0
                     else:
-                        re_after = re_matrix[(re_matrix['Outs'] == outs + play_outcome['outs']) & (re_matrix['OBC'] == play_outcome['obc'])]['RE'].iloc[0]
+                        re_after_match = re_matrix[(re_matrix['Outs'] == outs + play_outcome['outs']) & (re_matrix['OBC'] == play_outcome['obc'])]['RE']
+                        re_after = re_after_match.iloc[0] if not re_after_match.empty else 0
         
                     play_re24 = re_after - re_before + len(play_outcome['runs'])
                 
