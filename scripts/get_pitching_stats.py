@@ -94,7 +94,7 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants, against = False):
     pitching_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
     pitching_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
 
-    pitching_stats = pd.DataFrame()
+    pitching_stats = pd.DataFrame(index = pitching_stats_exact.index)
 
     # Pitching stats that can be directly counted from exact result and/or old result
     pitching_stats['HR'] = pitching_stats_exact.get('HR', 0)

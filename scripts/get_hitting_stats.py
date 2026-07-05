@@ -85,7 +85,7 @@ def _hitting_stats_table(df, against = False):
     hitting_stats_exact_risp = pd.pivot_table(df_risp, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
     hitting_stats_old_risp = pd.pivot_table(df_risp, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
 
-    hitting_stats = pd.DataFrame()
+    hitting_stats = pd.DataFrame(index = hitting_stats_exact.index)
 
     # Hitting stats that can be directly counted from exact result and/or old result
     hitting_stats['HR'] = hitting_stats_exact.get('HR', 0)
