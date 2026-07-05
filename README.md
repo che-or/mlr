@@ -48,9 +48,9 @@ The web application provides several pages to explore the data:
 
 Since the web application is built with static files (HTML, CSS, JS), it can be easily hosted on GitHub Pages.
 
-1.  Push the entire project repository to GitHub.
-2.  In your repository's settings, go to the "Pages" section.
-3.  Configure the source to deploy from the `/docs` folder on your main branch.
+Deployment is automated via `.github/workflows/deploy-pages.yml`: any push to `main` that changes files under `docs/` (including the nightly automated data update) triggers a GitHub Actions build/deploy of the `docs/` folder. It can also be run manually from the Actions tab ("Deploy Pages" → "Run workflow").
+
+In the repository's settings, under the "Pages" section, the source must be set to "GitHub Actions" (not "Deploy from a branch").
 
 ## Scripts Overview
 - **`scripts/add_re_column.py`**: Adds a Run Expectancy to the gamelogs based on a season's RE Matrix.
