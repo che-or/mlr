@@ -38,15 +38,9 @@ jobs:
         commit_message: "Automated update of web data"
         file_pattern: docs/**/*.json
 
-  deploy:
+  upload:
     needs: build
     runs-on: ubuntu-latest
-    concurrency:
-      group: "pages"
-      cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -56,5 +50,16 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
+
+  deploy:
+    needs: upload
+    runs-on: ubuntu-latest
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
