@@ -58,14 +58,14 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 37,
+        "tie_count": 38,
         "most_recent": {
-          "id": 3210,
-          "season": "S12",
-          "session": 5,
-          "team": "SYR",
-          "location": "Home",
-          "opponent": "LSU"
+          "id": 3435,
+          "season": "S13",
+          "session": 1,
+          "team": "CAL",
+          "location": "Away",
+          "opponent": "UMN"
         }
       },
       "CS": {
