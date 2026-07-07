@@ -3,7 +3,7 @@ name: Update Web Data
 
 on:
   schedule:
-    - cron:  '0 6 * * *' # Runs every day at midnight CT (6:00 UTC).
+    - cron:  '21 6 * * *' # Runs every day around midnight CT (6:21 UTC). Off-the-hour to avoid GitHub's cron congestion at round hours.
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 permissions:
