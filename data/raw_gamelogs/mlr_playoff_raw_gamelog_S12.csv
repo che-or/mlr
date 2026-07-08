@@ -1,0 +1,15 @@
+Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
+Abel Greene,2802,12,Ethan Stooks,3168,638,PO,374,T1,0,0,0,0,-2.51%,2.51%,0,0,2864,241,17,SFG,CHC,PO,PO,K,,,,,1
+Salsa Steve,2835,50,Eli Sasak,607,455,PO,405,T1,0,0,0,0,-2.51%,2.51%,0,0,2865,242,17,OAK,CWS,PO,PO,RGO,,,,,1
+Teddy Bigstick,2722,821,Eli Sasak,607,909,1B,88,T1,1,0,0,0,2.43%,-2.43%,0,0,2865,242,17,OAK,CWS,1B,1B,1B,,,,,1
+Camden Yardsy,3227,490,Eli Sasak,607,987,LO,497,T1,1,1,0,0,-6.37%,6.37%,0,0,2865,242,17,OAK,CWS,LGO,LGO,DP,,,,,1
+Biff Sexy Hotbod,2668,890,Mark Schihne,2544,575,PO,315,B1,0,0,0,0,-2.48%,2.48%,0,0,2866,242,17,CWS,OAK,PO,PO,K,,,,,1
+Jed I. Knight,3051,701,Just A. Girl,2888,591,1B,110,T1,0,0,0,0,2.91%,-2.91%,0,0,2867,243,17,ATL,FLA,1B,1B,1B,,,,,1
+Jed I. Knight,3051,790,Just A. Girl,2888,332,CS,458,T1,0,1,0,0,-5.42%,5.42%,0,0,2867,243,17,ATL,FLA,CS 2B,CS 2B,CS,,,,,4
+Tleyber Alfredo Cruz Fernandez III,2942,943,Just A. Girl,2888,689,K,254,T1,1,0,0,0,-2.18%,2.18%,0,0,2867,243,17,ATL,FLA,K,PO,FO,,,,,1
+Ola Gjeilo,119,792,Just A. Girl,2888,43,FO,251,T1,2,0,0,0,-1.76%,1.76%,0,0,2867,243,17,ATL,FLA,FO,FO,FO,,,,,1
+Anthony Esposito III,2950,630,Rocco Rudnikov,114,978,K,348,B1,0,0,0,0,-2.48%,2.48%,0,0,2868,243,17,FLA,ATL,K,K,K,,,,,1
+Arthur Vandelay,518,979,Alex Lancer,2678,715,K,264,T1,0,0,0,0,-2.51%,2.51%,0,0,2869,244,17,MIN,TBR,K,K,FO,,,,,1
+Homer Nocker,606,430,Alex Lancer,2678,428,HR,2,T1,1,0,0,0,11.75%,-11.75%,1,1,2869,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
+Corbin Christmas Carol,2827,602,Alex Lancer,2678,615,HR,13,T1,1,0,0,1,10.74%,-10.74%,1,1,2869,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
+Ping Pong,530,591,Buck Futter,3269,946,RGO,355,T1,1,0,0,2,-1.46%,1.46%,0,0,2869,244,17,MIN,TBR,RGO,RGO,K,,,,,1
