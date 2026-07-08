@@ -798,6 +798,13 @@
         "record": 3,
         "holders": [
           {
+            "team": "UMN",
+            "season": "S13",
+            "session": 1,
+            "location": "Home",
+            "opponent": "CAL"
+          },
+          {
             "team": "SYR",
             "season": "S12",
             "session": 2,
@@ -1170,6 +1177,13 @@
       "DP": {
         "record": 3,
         "holders": [
+          {
+            "team": "CAL",
+            "season": "S13",
+            "session": 1,
+            "location": "Away",
+            "opponent": "UMN"
+          },
           {
             "team": "OWL",
             "season": "S12",
