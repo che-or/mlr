@@ -669,6 +669,14 @@
         "record": 10,
         "holders": [
           {
+            "id": 3405,
+            "season": "S13",
+            "session": 1,
+            "team": "PSU",
+            "location": "Away",
+            "opponent": "KSU"
+          },
+          {
             "id": 3159,
             "season": "S11",
             "session": 2,
