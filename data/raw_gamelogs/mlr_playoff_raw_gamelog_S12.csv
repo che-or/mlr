@@ -1,15 +1,64 @@
 Hitter,Hitter ID,Swing,Pitcher,Pitcher ID,Pitch,Old Result,Diff,Inning,Outs,OBC,Home Score,Away Score,Batter WPA,Pitcher WPA,RBI,Run,Inning ID,Game ID,Session,Batter Team,Pitcher Team,Exact Result,Result at Neutral,Result All Neutral,Pitcher Responsible for Runner on 3rd Who Scored,Pitcher Responsible for Runner on 2nd Who Scored,Pitcher Responsible for Runner on 1st Who Scored,Pitcher Responsible for Batter Who Scored,PA Type
 Abel Greene,2802,12,Ethan Stooks,3168,638,PO,374,T1,0,0,0,0,-2.51%,2.51%,0,0,2864,241,17,SFG,CHC,PO,PO,K,,,,,1
-Salsa Steve,2835,50,Eli Sasak,607,455,PO,405,T1,0,0,0,0,-2.51%,2.51%,0,0,2865,242,17,OAK,CWS,PO,PO,RGO,,,,,1
-Teddy Bigstick,2722,821,Eli Sasak,607,909,1B,88,T1,1,0,0,0,2.43%,-2.43%,0,0,2865,242,17,OAK,CWS,1B,1B,1B,,,,,1
-Camden Yardsy,3227,490,Eli Sasak,607,987,LO,497,T1,1,1,0,0,-6.37%,6.37%,0,0,2865,242,17,OAK,CWS,LGO,LGO,DP,,,,,1
-Biff Sexy Hotbod,2668,890,Mark Schihne,2544,575,PO,315,B1,0,0,0,0,-2.48%,2.48%,0,0,2866,242,17,CWS,OAK,PO,PO,K,,,,,1
-Jed I. Knight,3051,701,Just A. Girl,2888,591,1B,110,T1,0,0,0,0,2.91%,-2.91%,0,0,2867,243,17,ATL,FLA,1B,1B,1B,,,,,1
-Jed I. Knight,3051,790,Just A. Girl,2888,332,CS,458,T1,0,1,0,0,-5.42%,5.42%,0,0,2867,243,17,ATL,FLA,CS 2B,CS 2B,CS,,,,,4
-Tleyber Alfredo Cruz Fernandez III,2942,943,Just A. Girl,2888,689,K,254,T1,1,0,0,0,-2.18%,2.18%,0,0,2867,243,17,ATL,FLA,K,PO,FO,,,,,1
-Ola Gjeilo,119,792,Just A. Girl,2888,43,FO,251,T1,2,0,0,0,-1.76%,1.76%,0,0,2867,243,17,ATL,FLA,FO,FO,FO,,,,,1
-Anthony Esposito III,2950,630,Rocco Rudnikov,114,978,K,348,B1,0,0,0,0,-2.48%,2.48%,0,0,2868,243,17,FLA,ATL,K,K,K,,,,,1
-Arthur Vandelay,518,979,Alex Lancer,2678,715,K,264,T1,0,0,0,0,-2.51%,2.51%,0,0,2869,244,17,MIN,TBR,K,K,FO,,,,,1
-Homer Nocker,606,430,Alex Lancer,2678,428,HR,2,T1,1,0,0,0,11.75%,-11.75%,1,1,2869,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
-Corbin Christmas Carol,2827,602,Alex Lancer,2678,615,HR,13,T1,1,0,0,1,10.74%,-10.74%,1,1,2869,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
-Ping Pong,530,591,Buck Futter,3269,946,RGO,355,T1,1,0,0,2,-1.46%,1.46%,0,0,2869,244,17,MIN,TBR,RGO,RGO,K,,,,,1
+Hess Nahstee,443,560,Ethan Stooks,3168,759,FO,199,T1,1,0,0,0,-2.18%,2.18%,0,0,2864,241,17,SFG,CHC,FO,FO,FO,,,,,1
+Holly Kühnhackl,54,277,Ethan Stooks,3168,165,1B,112,T1,2,0,0,0,1.98%,-1.98%,0,0,2864,241,17,SFG,CHC,1B,1B,1B,,,,,1
+Ronnie Pickering,2660,160,Ethan Stooks,3168,932,K,228,T1,2,1,0,0,-3.74%,3.74%,0,0,2864,241,17,SFG,CHC,K,K,FO,,,,,1
+Erin Pickles,68,616,Lefty Louis,166,641,HR,25,B1,0,0,0,0,11.79%,-11.79%,1,1,2865,241,17,CHC,SFG,HR,HR,3B,,,,166,1
+Corey Scooter,1717,273,Lefty Louis,166,811,LGO,462,B1,0,0,1,0,-1.97%,1.97%,0,0,2865,241,17,CHC,SFG,LGO,LGO,LGO,,,,,1
+Good Doggo,522,3,Lefty Louis,166,584,PO,419,B1,1,0,1,0,-1.80%,1.80%,0,0,2865,241,17,CHC,SFG,PO,PO,RGO,,,,,1
+Dirk Nurple,3099,475,Lefty Louis,166,541,1B,66,B1,2,0,1,0,1.69%,-1.69%,0,0,2865,241,17,CHC,SFG,1B,1B,1B,,,,,1
+Gal Soso,3223,197,Lefty Louis,166,372,FO,175,B1,2,1,1,0,-3.13%,3.13%,0,0,2865,241,17,CHC,SFG,FO,FO,BB,,,,,1
+Kuuma Kivi,2397,333,Ethan Stooks,3168,533,FO,200,T2,0,0,1,0,-2.95%,2.95%,0,0,2866,241,17,SFG,CHC,FO,FO,FO,,,,,1
+Salsa Steve,2835,50,Eli Sasak,607,455,PO,405,T1,0,0,0,0,-2.51%,2.51%,0,0,2867,242,17,OAK,CWS,PO,PO,RGO,,,,,1
+Teddy Bigstick,2722,821,Eli Sasak,607,909,1B,88,T1,1,0,0,0,2.43%,-2.43%,0,0,2867,242,17,OAK,CWS,1B,1B,1B,,,,,1
+Camden Yardsy,3227,490,Eli Sasak,607,987,LO,497,T1,1,1,0,0,-6.37%,6.37%,0,0,2867,242,17,OAK,CWS,LGO,LGO,DP,,,,,1
+Biff Sexy Hotbod,2668,890,Mark Schihne,2544,575,PO,315,B1,0,0,0,0,-2.48%,2.48%,0,0,2868,242,17,CWS,OAK,PO,PO,K,,,,,1
+Cornbread House,3000,777,Mark Schihne,2544,757,HR,20,B1,1,0,0,0,12.30%,-12.30%,1,1,2868,242,17,CWS,OAK,HR,HR,HR,,,,2544,1
+Hannah Outlaw,178,847,Mark Schihne,2544,768,1B,79,B1,1,0,1,0,1.59%,-1.59%,0,0,2868,242,17,CWS,OAK,1B,1B,1B,,,,,1
+Giles Sweeney,2573,810,Mark Schihne,2544,348,DP,462,B1,1,1,1,0,-4.83%,4.83%,0,0,2868,242,17,CWS,OAK,LGO,LGO,DP,,,,,1
+Stu PunDous,2487,802,Eli Sasak,607,725,1B,77,T2,0,0,1,0,3.46%,-3.46%,0,0,2869,242,17,OAK,CWS,1B,1B,1B,,,,,1
+Stu PunDous,2487,360,Eli Sasak,607,724,CS,364,T2,0,1,1,0,-6.41%,6.41%,0,0,2869,242,17,OAK,CWS,CS 2B,CS 2B,CS,,,,,4
+Big Woop,3013,619,Eli Sasak,607,156,RGO,463,T2,1,0,1,0,-2.51%,2.51%,0,0,2869,242,17,OAK,CWS,RGO,RGO,LGO,,,,,1
+Pistachio Disguisey,2710,571,Eli Sasak,607,352,K,219,T2,2,0,1,0,-1.96%,1.96%,0,0,2869,242,17,OAK,CWS,K,K,FO,,,,,1
+3PieceMcNuggets,3121,333,Mark Schihne,2544,144,FO,189,B2,0,0,1,0,-2.00%,2.00%,0,0,2870,242,17,CWS,OAK,FO,FO,FO,,,,,1
+Xavier Lopez,196,602,Mark Schihne,2544,556,2B,46,B2,1,0,1,0,3.71%,-3.71%,0,1,2870,242,17,CWS,OAK,2B,2B,2B,,,,,1
+Howie Feltersnatch,230,15,Mark Schihne,2544,909,1B,106,B2,1,2,1,0,3.75%,-3.75%,0,0,2870,242,17,CWS,OAK,1B,1B,1B,,,,,1
+Howie Feltersnatch,230,777,Mark Schihne,2544,358,CS,419,B2,1,5,1,0,-6.60%,6.60%,0,0,2870,242,17,CWS,OAK,CS 2B,CS 2B,CS,,,,,5
+Matty Eight,3138,999,Mark Schihne,2544,56,2B,57,B2,2,3,1,0,10.18%,-10.18%,1,0,2870,242,17,CWS,OAK,2B,2B,2B,2544,,,,1
+Ding L. Barry,3311,279,Michael Last-Name,2820,892,PO,387,B2,2,2,2,0,-2.88%,2.88%,0,0,2870,242,17,CWS,OAK,PO,PO,PO,,,,,1
+Glep Glop Griestalhauser,3182,315,Eli Sasak,607,632,K,317,T3,0,0,2,0,-2.94%,2.94%,0,0,2871,242,17,OAK,CWS,K,K,K,,,,,1
+Archie 'Clumsy' Sybil,3093,543,Eli Sasak,607,145,PO,398,T3,1,0,2,0,-2.36%,2.36%,0,0,2871,242,17,OAK,CWS,PO,PO,PO,,,,,1
+Jed I. Knight,3051,701,Just A. Girl,2888,591,1B,110,T1,0,0,0,0,2.91%,-2.91%,0,0,2872,243,17,ATL,FLA,1B,1B,1B,,,,,1
+Jed I. Knight,3051,790,Just A. Girl,2888,332,CS,458,T1,0,1,0,0,-5.42%,5.42%,0,0,2872,243,17,ATL,FLA,CS 2B,CS 2B,CS,,,,,4
+Tleyber Alfredo Cruz Fernandez III,2942,943,Just A. Girl,2888,689,K,254,T1,1,0,0,0,-2.18%,2.18%,0,0,2872,243,17,ATL,FLA,K,PO,FO,,,,,1
+Ola Gjeilo,119,792,Just A. Girl,2888,43,FO,251,T1,2,0,0,0,-1.76%,1.76%,0,0,2872,243,17,ATL,FLA,FO,FO,FO,,,,,1
+Anthony Esposito III,2950,630,Rocco Rudnikov,114,978,K,348,B1,0,0,0,0,-2.48%,2.48%,0,0,2873,243,17,FLA,ATL,K,K,K,,,,,1
+Casper Greenwell,2825,197,Rocco Rudnikov,114,79,1B,118,B1,1,0,0,0,2.28%,-2.28%,0,0,2873,243,17,FLA,ATL,1B,1B,1B,,,,,1
+Jodie Baller,3247,207,Rocco Rudnikov,114,587,PO,380,B1,1,1,0,0,-2.55%,2.55%,0,0,2873,243,17,FLA,ATL,PO,PO,PO,,,,,1
+Mikey Thomas,3304,722,Rocco Rudnikov,114,316,LGO,406,B1,2,1,0,0,-3.69%,3.69%,0,0,2873,243,17,FLA,ATL,LGO,LGO,RGO,,,,,1
+Weehaddababy Itzaboi,3254,666,Just A. Girl,2888,888,FO,222,T2,0,0,0,0,-2.72%,2.72%,0,0,2874,243,17,ATL,FLA,FO,FO,FO,,,,,1
+TheGreatBambi,3056,688,Just A. Girl,2888,437,FO,251,T2,1,0,0,0,-2.40%,2.40%,0,0,2874,243,17,ATL,FLA,FO,FO,FO,,,,,1
+Tex Wolffe,2486,188,Just A. Girl,2888,514,PO,326,T2,2,0,0,0,-1.99%,1.99%,0,0,2874,243,17,ATL,FLA,PO,PO,K,,,,,1
+Vernon St. Backstop,3156,834,Rocco Rudnikov,114,734,BB,100,B2,0,0,0,0,2.94%,-2.94%,0,0,2875,243,17,FLA,ATL,BB,BB,1B,,,,,1
+Lane Drew,190,599,Rocco Rudnikov,114,466,1B,133,B2,0,1,0,0,5.47%,-5.47%,0,0,2875,243,17,FLA,ATL,1B,1B,1B,,,,,1
+Arthur Vandelay,518,979,Alex Lancer,2678,715,K,264,T1,0,0,0,0,-2.51%,2.51%,0,0,2876,244,17,MIN,TBR,K,K,FO,,,,,1
+Homer Nocker,606,430,Alex Lancer,2678,428,HR,2,T1,1,0,0,0,11.75%,-11.75%,1,1,2876,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
+Corbin Christmas Carol,2827,602,Alex Lancer,2678,615,HR,13,T1,1,0,0,1,10.74%,-10.74%,1,1,2876,244,17,MIN,TBR,HR,HR,HR,,,,2678,1
+Ping Pong,530,591,Buck Futter,3269,946,RGO,355,T1,1,0,0,2,-1.46%,1.46%,0,0,2876,244,17,MIN,TBR,RGO,RGO,K,,,,,1
+Jiggs Kingman,3249,246,Buck Futter,3269,669,RGO,423,T1,2,0,0,2,-1.24%,1.24%,0,0,2876,244,17,MIN,TBR,RGO,RGO,RGO,,,,,1
+Sleve McDichael,3126,726,Smokey Zygowski,2945,531,FO,195,B1,0,0,0,2,-2.74%,2.74%,0,0,2877,244,17,TBR,MIN,FO,FO,FO,,,,,1
+Skye McDowell,264,493,Smokey Zygowski,2945,961,LGO,468,B1,1,0,0,2,-2.20%,2.20%,0,0,2877,244,17,TBR,MIN,LGO,LGO,LGO,,,,,1
+Demetrios Ooga,180,790,Smokey Zygowski,2945,449,K,341,B1,2,0,0,2,-1.72%,1.72%,0,0,2877,244,17,TBR,MIN,K,K,K,,,,,1
+King Kruul,2229,720,Buck Futter,3269,56,K,336,T2,0,0,0,2,-1.70%,1.70%,0,0,2878,244,17,MIN,TBR,K,K,K,,,,,1
+Lou Zrectum,3094,450,Buck Futter,3269,888,RGO,438,T2,1,0,0,2,-1.52%,1.52%,0,0,2878,244,17,MIN,TBR,RGO,RGO,RGO,,,,,1
+New Age Ms Frizzle,2545,284,Buck Futter,3269,195,1B,89,T2,2,0,0,2,1.27%,-1.27%,0,0,2878,244,17,MIN,TBR,1B,1B,1B,,,,,1
+Harry McPotterson,1703,225,Buck Futter,3269,5,K,220,T2,2,1,0,2,-2.64%,2.64%,0,0,2878,244,17,MIN,TBR,K,K,FO,,,,,1
+Makesiondon Kelkboom,327,213,Smokey Zygowski,2945,146,1B,67,B2,0,0,0,2,3.60%,-3.60%,0,1,2879,244,17,TBR,MIN,1B,1B,1B,,,,,1
+Dermot Mulveiny,1763,980,Smokey Zygowski,2945,158,FO,178,B2,0,1,0,2,-3.56%,3.56%,0,0,2879,244,17,TBR,MIN,FO,FO,FO,,,,,1
+Ross Ewage,1764,293,Smokey Zygowski,2945,301,HR,8,B2,1,1,0,2,23.71%,-23.71%,2,1,2879,244,17,TBR,MIN,HR,HR,HR,,,2945,2945,1
+Holden Summers,10,62,Smokey Zygowski,2945,34,2B,28,B2,1,0,2,2,5.06%,-5.06%,0,0,2879,244,17,TBR,MIN,2B,2B,3B,,,,,1
+Primero Ultimo,2889,714,Smokey Zygowski,2945,424,K,290,B2,1,2,2,2,-4.04%,4.04%,0,0,2879,244,17,TBR,MIN,K,K,K,,,,,1
+Ovaltine,2542,711,Smokey Zygowski,2945,212,LGO,499,B2,2,2,2,2,-5.43%,5.43%,0,0,2879,244,17,TBR,MIN,LGO,LGO,LGO,,,,,1
+Arthur Vandelay,518,675,Buck Futter,3269,613,1B,62,T3,0,0,2,2,3.31%,-3.31%,0,0,2880,244,17,MIN,TBR,1B,1B,2B,,,,,1
+Homer Nocker,606,13,Buck Futter,3269,445,DP,432,T3,0,1,2,2,-9.08%,9.08%,0,0,2880,244,17,MIN,TBR,RGO,RGO,DP,,,,,1
+Corbin Christmas Carol,2827,99,Buck Futter,3269,788,PO,311,T3,2,0,2,2,-2.31%,2.31%,0,0,2880,244,17,MIN,TBR,PO,PO,K,,,,,1

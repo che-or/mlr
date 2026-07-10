@@ -6,6 +6,8 @@ export const COUNTING_STATS = [
     'G', 'H', '1B', '2B', '3B', 'HR', 'BB', 'IBB', 'SO', 'SB', 'CS',
     'FO', 'PO', 'RGO', 'LGO', 'LO', 'GO', 'SF', 'SH', 'AB', 'TB',
     'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
+    // Stolen base / caught stealing breakdown (hitting-only)
+    'SB 2B', 'SB 3B', 'SB Home', 'CS 2B', 'CS 3B', 'CS Home',
     // Hitting-only
     'PA', 'R', 'RBI', 'Auto K', 'GIDP', 'GITP', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
     // Pitching-only
@@ -67,6 +69,12 @@ export const STAT_DESCRIPTIONS = {
     'RBI': 'Runs Batted In',
     'SB': 'Stolen Bases',
     'CS': 'Caught Stealing',
+    'SB 2B': 'Stolen Bases (2nd)',
+    'SB 3B': 'Stolen Bases (3rd)',
+    'SB Home': 'Stolen Bases (Home)',
+    'CS 2B': 'Caught Stealing (2nd)',
+    'CS 3B': 'Caught Stealing (3rd)',
+    'CS Home': 'Caught Stealing (Home)',
     'BB': 'Walks (Bases on Balls)',
     'IBB': 'Intentional Walks',
     'SO': 'Strikeouts',
@@ -140,7 +148,7 @@ export const STAT_DESCRIPTIONS = {
 
 // Stats that appear in leaderboards but not in the player stats tables
 export const LEADERBOARD_ONLY_STATS = {
-    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'BARISP'],
+    hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'BARISP', 'SB 2B', 'SB 3B', 'SB Home', 'CS 2B', 'CS 3B', 'CS Home'],
     pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'DP', 'TP', 'SV%', 'BS', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches'],
 };
 

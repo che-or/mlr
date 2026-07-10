@@ -30,6 +30,7 @@ def get_aggregated_hitting_stats(hitting_stats, aggregation_level):
     cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO',
             'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
             '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'H_RISP', 'AB_RISP',
+            'SB 2B', 'SB 3B', 'SB Home', 'CS 2B', 'CS 3B', 'CS Home',
             'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF']
     sets = ['G_list'] # set columns
@@ -111,9 +112,17 @@ def _hitting_stats_table(df, against = False):
     
     hitting_stats['GIDP'] = hitting_stats_old.get(('RGO','DP'), 0) + hitting_stats_old.get(('LGO','DP'), 0) + hitting_stats_exact.get('BUNT DP', 0)
     hitting_stats['GITP'] = hitting_stats_old.get(('LGO', 'TP'), 0)
-    
-    hitting_stats['SB'] = hitting_stats_exact.get('STEAL 2B', 0) + hitting_stats_exact.get('STEAL 3B', 0) + hitting_stats_exact.get('STEAL HOME', 0) + hitting_stats_exact.get('MSTEAL 3B', 0) + hitting_stats_exact.get('MSTEAL HOME', 0)
-    hitting_stats['CS'] = hitting_stats_exact.get('CS 2B', 0) + hitting_stats_exact.get('CS 3B', 0) + hitting_stats_exact.get('CS HOME', 0) + hitting_stats_exact.get('CMS 3B', 0) + hitting_stats_exact.get('CMS HOME', 0)
+
+    hitting_stats['SB 2B'] = hitting_stats_exact.get('STEAL 2B', 0)
+    hitting_stats['SB 3B'] = hitting_stats_exact.get('STEAL 3B', 0) + hitting_stats_exact.get('MSTEAL 3B', 0)
+    hitting_stats['SB Home'] = hitting_stats_exact.get('STEAL HOME', 0) + hitting_stats_exact.get('MSTEAL HOME', 0)
+
+    hitting_stats['CS 2B'] = hitting_stats_exact.get('CS 2B', 0)
+    hitting_stats['CS 3B'] = hitting_stats_exact.get('CS 3B', 0) + hitting_stats_exact.get('CMS 3B', 0)
+    hitting_stats['CS Home'] = hitting_stats_exact.get('CS HOME', 0) + hitting_stats_exact.get('CMS HOME', 0)
+
+    hitting_stats['SB'] = hitting_stats['SB 2B'] + hitting_stats['SB 3B'] + hitting_stats['SB Home']
+    hitting_stats['CS'] = hitting_stats['CS 2B'] + hitting_stats['CS 3B'] + hitting_stats['CS Home']
 
     # Home runs of each type
     hitting_stats['1RHR'] = hitting_stats_obc.get(('HR', 0), 0)
