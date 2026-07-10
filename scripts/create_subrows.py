@@ -22,6 +22,7 @@ def create_hitting_subrows(hitting_stats):
     cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'FO', 'SO', 'Auto K', 'PO', 'RGO', 'LGO', 'LO',
             'SF', 'SH', 'GO', 'GIDP', 'GITP', 'SB', 'CS', 'H', 'PA', 'AB', 'TB', 'G', 'R', 'RBI',
             '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'H_RISP', 'AB_RISP',
+            'SB 2B', 'SB 3B', 'SB Home', 'CS 2B', 'CS 3B', 'CS Home',
             'Total Diff', 'Total Plays', 'RE24', 'WPA', 'WAR', '0 Diffs', '500 Diffs',
             'nH', 'nTB', 'nBB', 'nFO', 'nSH', 'nPA', 'nAB', 'nSF', 'count']
 
