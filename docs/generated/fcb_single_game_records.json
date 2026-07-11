@@ -70,14 +70,14 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 69,
+        "tie_count": 71,
         "most_recent": {
-          "id": 3219,
-          "season": "S12",
-          "session": 5,
-          "team": "UOM",
+          "id": 3390,
+          "season": "S13",
+          "session": 2,
+          "team": "PSU",
           "location": "Away",
-          "opponent": "OWL"
+          "opponent": "UMN"
         }
       },
       "FO": {
@@ -244,14 +244,14 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 42,
+        "tie_count": 43,
         "most_recent": {
-          "id": 3219,
-          "season": "S12",
-          "session": 6,
-          "team": "UOM",
+          "id": 3444,
+          "season": "S13",
+          "session": 2,
+          "team": "PSU",
           "location": "Away",
-          "opponent": "WKU"
+          "opponent": "UMN"
         }
       },
       "SB": {
