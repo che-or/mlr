@@ -58,14 +58,14 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 40,
+        "tie_count": 41,
         "most_recent": {
-          "id": 3435,
+          "id": 3379,
           "season": "S13",
-          "session": 1,
-          "team": "CAL",
+          "session": 2,
+          "team": "SLG",
           "location": "Away",
-          "opponent": "UMN"
+          "opponent": "CAL"
         }
       },
       "CS": {
