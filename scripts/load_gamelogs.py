@@ -25,34 +25,41 @@ def _load_gamelogs(current_season, league, all_seasons = True):
     gamelog_df = pd.DataFrame()
     for season in seasons_range:
         gamelog = gamelog_dir / f'{league}_raw_gamelog_S{season}.csv'
-    
+
         try:
             season_df = pd.read_csv(gamelog)
             season_df['Season'] = season
             season_df['Display Season'] = f'S{season}'
             season_df['Game ID'] = season * 1000 + season_df['Game ID']
             season_df['Inning ID'] = season * 10000 + season_df['Inning ID']
-    
-            gamelog_df = pd.concat([gamelog_df, season_df], ignore_index = True)
-        except:
-            try: # this block is necessary for dealing with MiLR seasons 8A and 8B
-                gamelogA = gamelog_dir / f'{league}_raw_gamelog_S{season}A.csv'
+        except FileNotFoundError:
+            # this block is necessary for dealing with MiLR seasons 8A and 8B
+            gamelogA = gamelog_dir / f'{league}_raw_gamelog_S{season}A.csv'
+            gamelogB = gamelog_dir / f'{league}_raw_gamelog_S{season}B.csv'
+            if not (gamelogA.exists() and gamelogB.exists()):
+                continue # no data for this season yet (not played/downloaded)
+
+            try:
                 season_dfA = pd.read_csv(gamelogA)
                 season_dfA['Season'] = season + 0.1
                 season_dfA['Display Season'] = f'S{season}A'
                 season_dfA['Game ID'] = season * 1000 + season_dfA['Game ID']
                 season_dfA['Inning ID'] = season * 10000 + season_dfA['Inning ID']
 
-                gamelogB = gamelog_dir / f'{league}_raw_gamelog_S{season}B.csv'
                 season_dfB = pd.read_csv(gamelogB)
                 season_dfB['Season'] = season + 0.2
                 season_dfB['Display Season'] = f'S{season}B'
                 season_dfB['Game ID'] = season * 1000 + season_dfB['Game ID'] + 500
                 season_dfB['Inning ID'] = season * 10000 + season_dfB['Inning ID'] + 5000
+            except Exception as e:
+                raise RuntimeError(f'Failed to parse gamelog for {league} S{season}A/B: {e}') from e
 
-                gamelog_df = pd.concat([gamelog_df, season_dfA, season_dfB], ignore_index = True)
-            except:
-                continue
+            gamelog_df = pd.concat([gamelog_df, season_dfA, season_dfB], ignore_index = True)
+            continue
+        except Exception as e:
+            raise RuntimeError(f'Failed to parse gamelog for {league} S{season} ({gamelog}): {e}') from e
+
+        gamelog_df = pd.concat([gamelog_df, season_df], ignore_index = True)
 
     # convert result columns to all caps
     cols = ['Old Result', 'Exact Result', 'Result at Neutral', 'Result All Neutral']
@@ -123,25 +130,32 @@ def _load_player_types(current_season, league, all_seasons = True):
     players_df = pd.DataFrame()
     for season in seasons_range:
         players = players_dir / f'{league}_raw_player_type_S{season}.csv'
-    
+
         try:
             season_df = pd.read_csv(players)
-            season_df['Season'] = season
-    
-            players_df = pd.concat([players_df, season_df], ignore_index = True)
-        except:
-            try: # this block is necessary for dealing with MiLR seasons 8A and 8B
-                playersA = players_dir / f'{league}_raw_player_type_S{season}A.csv'
+        except FileNotFoundError:
+            # this block is necessary for dealing with MiLR seasons 8A and 8B
+            playersA = players_dir / f'{league}_raw_player_type_S{season}A.csv'
+            playersB = players_dir / f'{league}_raw_player_type_S{season}B.csv'
+            if not (playersA.exists() and playersB.exists()):
+                continue # no data for this season yet (not played/downloaded)
+
+            try:
                 season_dfA = pd.read_csv(playersA)
                 season_dfA['Season'] = season + 0.1
-    
-                playersB = players_dir / f'{league}_raw_player_type_S{season}B.csv'
+
                 season_dfB = pd.read_csv(playersB)
                 season_dfB['Season'] = season + 0.2
-    
-                players_df = pd.concat([players_df, season_dfA, season_dfB], ignore_index = True)
-            except:
-                continue
+            except Exception as e:
+                raise RuntimeError(f'Failed to parse player types for {league} S{season}A/B: {e}') from e
+
+            players_df = pd.concat([players_df, season_dfA, season_dfB], ignore_index = True)
+            continue
+        except Exception as e:
+            raise RuntimeError(f'Failed to parse player types for {league} S{season} ({players}): {e}') from e
+
+        season_df['Season'] = season
+        players_df = pd.concat([players_df, season_df], ignore_index = True)
 
     players_df['Pitching Type'] = players_df['Pitching Type'] + players_df['Pitching Bonus'].radd('-').fillna('')
     players_df = players_df.rename(columns = {'Primary Position': 'Position', 'Player ID': 'ID'})

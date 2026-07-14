@@ -1,23 +1,59 @@
+import time
 import pandas as pd
 import requests
 from calculate_re_matrix import _calculate_re_matrix
 from calculate_fip_constant import _calculate_fip_constant
+
+def _fetch_csv(url, description, attempts = 3, backoff_seconds = 5):
+    '''
+    Function for fetching a CSV export from Google Sheets, with validation and retries.
+    Google occasionally serves an HTML error/login page instead of the CSV (e.g. transient
+    rate limiting), and that HTML would otherwise get written to disk as if it were valid
+    data and silently misparsed downstream. Raises RuntimeError if no attempt succeeds.
+        url - URL to fetch
+        description - human-readable label for error messages (e.g. "FCB S13 gamelog")
+        attempts - number of attempts before giving up
+        backoff_seconds - delay between attempts
+    '''
+
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            r = requests.get(url, timeout = 30)
+            r.raise_for_status()
+            content = r.content
+            stripped = content.lstrip()
+            if len(stripped) == 0:
+                raise RuntimeError(f'Empty response body for {description}')
+            if stripped[:1] in (b'<', b'{'):
+                raise RuntimeError(f'Response for {description} does not look like CSV '
+                                    f'(starts with {stripped[:30]!r}) - likely an HTML error/login page')
+            return content
+        except (requests.RequestException, RuntimeError) as e:
+            last_error = e
+            print(f'  Attempt {attempt}/{attempts} failed for {description}: {e}')
+            if attempt < attempts:
+                time.sleep(backoff_seconds)
+
+    raise RuntimeError(f'Failed to download {description} after {attempts} attempts: {last_error}')
+
 
 def _download_data(row):
     '''
     Function for downloading a gamelog from Google Sheets.
         row - dataframe row containing league and url info
     '''
-    
+
     print(f'Downloading data for {row['League']} S{row['Season']}...')
     for item in ['gamelog', 'player_type']:
         doc_id = row[f'{item}_doc_id']
         gid = row[f'{item}_gid']
 
         url = f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}'
-        r = requests.get(url)
+        description = f'{row['League']} S{row['Season']} {item}'
+        content = _fetch_csv(url, description)
         with open (rf'../data/raw_{item}s/{row['League'].lower()}_raw_{item}_S{row['Season']}.csv', 'wb') as f:
-            f.write(r.content)
+            f.write(content)
 
 
 def _download_gamelogs():
@@ -77,7 +113,7 @@ def _download_gamelogs():
     gid = 0
 
     url = f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}'
-    r = requests.get(url)
+    content = _fetch_csv(url, 'pitcher decision adjustments')
     with open (rf'../data/pitcher_decision_adjustments.csv', 'wb') as f:
-        f.write(r.content)
+        f.write(content)
  

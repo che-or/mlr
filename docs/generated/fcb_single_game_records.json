@@ -268,14 +268,14 @@
       },
       "SO": {
         "record": 3,
-        "tie_count": 20,
+        "tie_count": 21,
         "most_recent": {
-          "id": 3257,
-          "season": "S12",
-          "session": 6,
-          "team": "LSU",
+          "id": 3430,
+          "season": "S13",
+          "session": 2,
+          "team": "CAL",
           "location": "Home",
-          "opponent": "OWL"
+          "opponent": "SLG"
         }
       },
       "TB": {
