@@ -1,4 +1,5 @@
 import json
+import sys
 import pandas as pd
 import ast
 from pathlib import Path
@@ -53,7 +54,8 @@ def main():
     
     all_fbb_seasons = pd.read_csv(r'../data/gamelog_links.csv')
     active_leagues = [l.lower() for l in all_fbb_seasons[all_fbb_seasons['Active']]['League'].unique()]
-    
+    failed_leagues = []
+
     for league in all_fbb_seasons['League'].unique():
         print(f'----- Processing {league} -----')
         league = league.lower()
@@ -135,7 +137,17 @@ def main():
         gamelog_df = _load_gamelogs(season, league, all_seasons)
 
         if gamelog_df.empty:
-            print(f'No gamelog data for {league} S{season} yet, skipping.')
+            if league in active_leagues:
+                # The download/parse steps now raise loudly on real failures (bad downloads,
+                # corrupt CSVs), so a genuinely empty result here should only happen when a
+                # newly-active season hasn't had any games logged yet. Flag it anyway in case
+                # that assumption is wrong, rather than silently treating it as normal.
+                print(f'WARNING: active league {league} S{season} loaded zero gamelog rows. '
+                      f'Expected: brand-new season with no games logged yet. '
+                      f'Unexpected: a download/data issue masking real games - flagging for review.')
+                failed_leagues.append(f'{league} S{season} (zero gamelog rows)')
+            else:
+                print(f'No gamelog data for {league} S{season} yet, skipping.')
             continue
 
         gamelog_df = _add_re_column(gamelog_df, league)
@@ -426,6 +438,11 @@ def main():
     generate_brackets('mlr')
     generate_brackets('milr')
     print('Playoff brackets generated.')
+
+    if failed_leagues:
+        print(f'\nFAILED: {len(failed_leagues)} active league(s) produced no gamelog data: '
+              f'{", ".join(failed_leagues)}')
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()
