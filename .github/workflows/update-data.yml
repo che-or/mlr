@@ -30,9 +30,12 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run Python script to generate web data
+      id: generate
       run: cd scripts && python generate_web_data.py
+      continue-on-error: true
 
     - name: Commit and push if there are changes
+      if: always()
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Automated update of web data"
@@ -45,3 +48,9 @@ jobs:
           data/re_matrices/*.csv
           data/fip_constants.csv
           data/pitcher_decision_adjustments.csv
+
+    - name: Fail job if data generation failed
+      if: steps.generate.outcome == 'failure'
+      run: |
+        echo "generate_web_data.py failed - see the 'Run Python script to generate web data' step above for details. Raw/intermediate data from this run was still committed for debugging." >&2
+        exit 1
