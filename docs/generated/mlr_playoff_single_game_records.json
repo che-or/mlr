@@ -151,14 +151,14 @@
       },
       "HR": {
         "record": 2,
-        "tie_count": 10,
+        "tie_count": 11,
         "most_recent": {
-          "id": 355,
-          "season": "S11",
-          "session": "CS",
-          "team": "DET",
-          "location": "Away",
-          "opponent": "TBR"
+          "id": 3000,
+          "season": "S12",
+          "session": "PC",
+          "team": "CWS",
+          "location": "Home",
+          "opponent": "OAK"
         }
       },
       "IBB": {
