@@ -49,7 +49,7 @@ Jack Drake,3438,18,Chance Mercury,3403,302,K,284,T1,2,0,0,0,-1.76%,1.76%,0,0,13,
 Nathan Explosion,3432,589,Tanya Degurechaff,3405,610,HR,21,B1,0,0,0,0,11.79%,-11.79%,1,1,14,2,1,KSU,PSU,HR,HR,HR,,,,3405,1
 George Hankinson,3426,482,Tanya Degurechaff,3405,202,K,280,B1,0,0,1,0,-1.97%,1.97%,0,0,14,2,1,KSU,PSU,K,K,FO,,,,,1
 Tank Sharksy,3395,317,Tanya Degurechaff,3405,821,LGO,496,B1,1,0,1,0,-1.80%,1.80%,0,0,14,2,1,KSU,PSU,LGO,LGO,LGO,,,,,1
-Mynameis Alan,3383,415,Tanya Degurechaff,3405,45,K,370,B1,2,0,1,0,-1.44%,1.44%,0,0,14,2,1,KSU,PSU,K,K,K,,,,,1
+Alan,3383,415,Tanya Degurechaff,3405,45,K,370,B1,2,0,1,0,-1.44%,1.44%,0,0,14,2,1,KSU,PSU,K,K,K,,,,,1
 Matilda No-Balls,3420,738,Chance Mercury,3403,292,RGO,446,T2,0,0,1,0,-2.95%,2.95%,0,0,15,2,1,PSU,KSU,RGO,RGO,RGO,,,,,1
 Bobby Witt Jr Jr,3413,999,Chance Mercury,3403,505,LGO,494,T2,1,0,1,0,-2.51%,2.51%,0,0,15,2,1,PSU,KSU,LGO,LGO,LGO,,,,,1
 Chris Walker ,3400,560,Chance Mercury,3403,899,K,339,T2,2,0,1,0,-1.96%,1.96%,0,0,15,2,1,PSU,KSU,K,K,K,,,,,1
@@ -70,7 +70,7 @@ Matilda No-Balls,3420,500,Chance Mercury,3403,273,K,227,T4,0,0,1,1,-3.58%,3.58%,
 Bobby Witt Jr Jr,3413,11,Chance Mercury,3403,712,K,299,T4,1,0,1,1,-3.19%,3.19%,0,0,19,2,1,PSU,KSU,K,K,K,,,,,1
 Chris Walker ,3400,715,Chance Mercury,3403,112,PO,397,T4,2,0,1,1,-2.75%,2.75%,0,0,19,2,1,PSU,KSU,PO,PO,PO,,,,,1
 Tank Sharksy,3395,653,Tanya Degurechaff,3405,317,K,336,B4,0,0,1,1,-3.43%,3.43%,0,0,20,2,1,KSU,PSU,K,K,K,,,,,1
-Mynameis Alan,3383,415,Tanya Degurechaff,3405,469,2B,54,B4,1,0,1,1,6.37%,-6.37%,0,0,20,2,1,KSU,PSU,2B,2B,2B,,,,,1
+Alan,3383,415,Tanya Degurechaff,3405,469,2B,54,B4,1,0,1,1,6.37%,-6.37%,0,0,20,2,1,KSU,PSU,2B,2B,2B,,,,,1
 Mordecai Davis,3409,610,Tanya Degurechaff,3405,303,K,307,B4,1,2,1,1,-5.00%,5.00%,0,0,20,2,1,KSU,PSU,K,K,K,,,,,1
 Jeter Ups,29,609,Tanya Degurechaff,3405,69,RGO,460,B4,2,2,1,1,-7.41%,7.41%,0,0,20,2,1,KSU,PSU,RGO,RGO,LGO,,,,,1
 Kasper Milquetoast,3433,500,Tomba,3220,316,FO,184,T5,0,0,1,1,-4.31%,4.31%,0,0,21,2,1,PSU,KSU,FO,FO,FO,,,,,1
@@ -98,27 +98,27 @@ Chooch Suzuka,3435,545,Allidois Nguyen,3414,299,SB,246,T1,1,1,0,0,2.22%,-2.22%,0
 Benny Schwa,3388,999,Allidois Nguyen,3414,67,1B,68,T1,1,2,0,0,5.22%,-5.22%,0,0,25,3,1,CAL,UMN,1B,1B,1B,,,,,1
 Jahnder Franco,3387,420,Allidois Nguyen,3414,777,K,357,T1,1,5,0,0,-7.24%,7.24%,0,0,25,3,1,CAL,UMN,K,K,K,,,,,1
 Heliotrope Selenifuge Jr.,3401,736,Allidois Nguyen,3414,333,K,403,T1,2,5,0,0,-6.57%,6.57%,0,0,25,3,1,CAL,UMN,K,K,RGO,,,,,1
-Curtis Dingleberry,3436,727,Kenji Matsumoto ,3378,1,K,274,B1,0,0,0,0,-2.48%,2.48%,0,0,26,3,1,UMN,CAL,K,K,FO,,,,,1
-Trevor Paultis,3416,347,Kenji Matsumoto ,3378,628,K,281,B1,1,0,0,0,-2.17%,2.17%,0,0,26,3,1,UMN,CAL,K,K,FO,,,,,1
-Doughboy Stubbs,3439,560,Kenji Matsumoto ,3378,29,LGO,469,B1,2,0,0,0,-1.79%,1.79%,0,0,26,3,1,UMN,CAL,LGO,LGO,LGO,,,,,1
+Curtis Dingleberry,3436,727,Kenji Matsumoto,3378,1,K,274,B1,0,0,0,0,-2.48%,2.48%,0,0,26,3,1,UMN,CAL,K,K,FO,,,,,1
+Trevor Paultis,3416,347,Kenji Matsumoto,3378,628,K,281,B1,1,0,0,0,-2.17%,2.17%,0,0,26,3,1,UMN,CAL,K,K,FO,,,,,1
+Doughboy Stubbs,3439,560,Kenji Matsumoto,3378,29,LGO,469,B1,2,0,0,0,-1.79%,1.79%,0,0,26,3,1,UMN,CAL,LGO,LGO,LGO,,,,,1
 Craig Jarvis,3443,777,Allidois Nguyen,3414,33,K,256,T2,0,0,0,0,-2.72%,2.72%,0,0,27,3,1,CAL,UMN,K,K,FO,,,,,1
 DeJah Muissy,3386,354,Allidois Nguyen,3414,777,RGO,423,T2,1,0,0,0,-2.40%,2.40%,0,0,27,3,1,CAL,UMN,RGO,RGO,RGO,,,,,1
 Scoochie Virtue,3404,524,Allidois Nguyen,3414,888,K,364,T2,2,0,0,0,-1.99%,1.99%,0,0,27,3,1,CAL,UMN,K,K,K,,,,,1
-Kyle Schwarbombs,3398,318,Kenji Matsumoto ,3378,800,LGO,482,B2,0,0,0,0,-2.72%,2.72%,0,0,28,3,1,UMN,CAL,LGO,LGO,LGO,,,,,1
-Vyncent Wyattoss III,3397,19,Kenji Matsumoto ,3378,937,1B,82,B2,1,0,0,0,2.47%,-2.47%,0,0,28,3,1,UMN,CAL,1B,1B,1B,,,,,1
-Rodney Turnpike,3429,197,Kenji Matsumoto ,3378,676,DP,479,B2,1,1,0,0,-6.88%,6.88%,0,0,28,3,1,UMN,CAL,LGO,LGO,DP,,,,,1
+Kyle Schwarbombs,3398,318,Kenji Matsumoto,3378,800,LGO,482,B2,0,0,0,0,-2.72%,2.72%,0,0,28,3,1,UMN,CAL,LGO,LGO,LGO,,,,,1
+Vyncent Wyattoss III,3397,19,Kenji Matsumoto,3378,937,1B,82,B2,1,0,0,0,2.47%,-2.47%,0,0,28,3,1,UMN,CAL,1B,1B,1B,,,,,1
+Rodney Turnpike,3429,197,Kenji Matsumoto,3378,676,DP,479,B2,1,1,0,0,-6.88%,6.88%,0,0,28,3,1,UMN,CAL,LGO,LGO,DP,,,,,1
 Scooter Funkypants,3423,67,Allidois Nguyen,3414,555,LGO,488,T3,0,0,0,0,-3.03%,3.03%,0,0,29,3,1,CAL,UMN,LGO,LGO,LGO,,,,,1
 Socks Maybe,3381,900,Allidois Nguyen,3414,333,RGO,433,T3,1,0,0,0,-2.74%,2.74%,0,0,29,3,1,CAL,UMN,RGO,RGO,RGO,,,,,1
 Chooch Suzuka,3435,444,Allidois Nguyen,3414,555,BB,111,T3,2,0,0,0,2.50%,-2.50%,0,0,29,3,1,CAL,UMN,BB,BB,1B,,,,,1
 Benny Schwa,3388,333,Allidois Nguyen,3414,222,1B,111,T3,2,1,0,0,3.25%,-3.25%,0,0,29,3,1,CAL,UMN,1B,1B,1B,,,,,1
 Jahnder Franco,3387,812,Allidois Nguyen,3414,222,PO,410,T3,2,5,0,0,-8.06%,8.06%,0,0,29,3,1,CAL,UMN,PO,PO,RGO,,,,,1
-Bo Diggs,3422,66,Kenji Matsumoto ,3378,289,FO,223,B3,0,0,0,0,-3.07%,3.07%,0,0,30,3,1,UMN,CAL,FO,FO,FO,,,,,1
-Harry Palms,3376,680,Kenji Matsumoto ,3378,801,BB,121,B3,1,0,0,0,2.70%,-2.70%,0,0,30,3,1,UMN,CAL,BB,BB,1B,,,,,1
-Tyler Helman,2794,237,Kenji Matsumoto ,3378,659,DP,422,B3,1,1,0,0,-7.74%,7.74%,0,0,30,3,1,UMN,CAL,RGO,RGO,DP,,,,,1
+Bo Diggs,3422,66,Kenji Matsumoto,3378,289,FO,223,B3,0,0,0,0,-3.07%,3.07%,0,0,30,3,1,UMN,CAL,FO,FO,FO,,,,,1
+Harry Palms,3376,680,Kenji Matsumoto,3378,801,BB,121,B3,1,0,0,0,2.70%,-2.70%,0,0,30,3,1,UMN,CAL,BB,BB,1B,,,,,1
+Tyler Helman,2794,237,Kenji Matsumoto,3378,659,DP,422,B3,1,1,0,0,-7.74%,7.74%,0,0,30,3,1,UMN,CAL,RGO,RGO,DP,,,,,1
 Heliotrope Selenifuge Jr.,3401,1000,Allidois Nguyen,3414,222,FO,222,T4,0,0,0,0,-3.58%,3.58%,0,0,31,3,1,CAL,UMN,FO,FO,FO,,,,,1
 Krbmeister,3430,311,Allidois Nguyen,3414,555,FO,244,T4,1,0,0,0,-3.19%,3.19%,0,0,31,3,1,CAL,UMN,FO,FO,FO,,,,,1
 DeJah Muissy,3386,803,Allidois Nguyen,3414,567,K,236,T4,2,0,0,0,-2.75%,2.75%,0,0,31,3,1,CAL,UMN,K,K,FO,,,,,1
-Curtis Dingleberry,3436,444,Kenji Matsumoto ,3378,427,HR,17,B4,0,0,0,0,18.66%,-18.66%,1,1,32,3,1,UMN,CAL,HR,HR,HR,,,,3378,1
+Curtis Dingleberry,3436,444,Kenji Matsumoto,3378,427,HR,17,B4,0,0,0,0,18.66%,-18.66%,1,1,32,3,1,UMN,CAL,HR,HR,HR,,,,3378,1
 Trevor Paultis,3416,154,Naz Reid,3391,615,LGO,461,B4,0,0,1,0,-1.87%,1.87%,0,0,32,3,1,UMN,CAL,LGO,LGO,LGO,,,,,1
 Doughboy Stubbs,3439,495,Naz Reid,3391,767,K,272,B4,1,0,1,0,-1.74%,1.74%,0,0,32,3,1,UMN,CAL,K,K,FO,,,,,1
 Kyle Schwarbombs,3398,777,Naz Reid,3391,850,2B,73,B4,2,0,1,0,2.65%,-2.65%,0,0,32,3,1,UMN,CAL,2B,2B,1B,,,,,1
@@ -187,7 +187,7 @@ Bea Friday,3445,456,Gracie Cwej-Mlodzianowski,3380,202,PO,254,B1,0,2,1,0,-3.03%,
 Jeter Ups,29,175,Gracie Cwej-Mlodzianowski,3380,321,BB,146,B1,1,2,1,0,1.02%,-1.02%,0,1,49,5,2,KSU,DPU,BB,BB,BB,,,,,1
 Gene Okerlund,3407,384,Gracie Cwej-Mlodzianowski,3380,301,1B,83,B1,1,4,1,0,6.09%,-6.09%,0,0,49,5,2,KSU,DPU,1B,1B,1B,,,,,1
 Grady Brooks,3437,676,Gracie Cwej-Mlodzianowski,3380,412,Sac,264,B1,1,7,1,0,0.59%,-0.59%,1,0,49,5,2,KSU,DPU,FO,FO,Sac,3380,,,,1
-Mynameis Alan,3383,777,Gracie Cwej-Mlodzianowski,3380,676,1B,101,B1,2,4,2,0,7.44%,-7.44%,1,0,49,5,2,KSU,DPU,1B,1B,1B,,3380,,,1
+Alan,3383,777,Gracie Cwej-Mlodzianowski,3380,676,1B,101,B1,2,4,2,0,7.44%,-7.44%,1,0,49,5,2,KSU,DPU,1B,1B,1B,,3380,,,1
 Nathan Explosion,3432,276,Gracie Cwej-Mlodzianowski,3380,101,FO,175,B1,2,5,3,0,-2.76%,2.76%,0,0,49,5,2,KSU,DPU,FO,FO,BB,,,,,1
 John Cally,3385,418,Tomba,3220,222,FO,196,T2,0,0,3,0,-2.30%,2.30%,0,0,50,5,2,DPU,KSU,FO,FO,FO,,,,,1
 Chester Naff,3424,777,Tomba,3220,251,LGO,474,T2,1,0,3,0,-1.79%,1.79%,0,0,50,5,2,DPU,KSU,LGO,LGO,LGO,,,,,1
@@ -199,7 +199,7 @@ Bea Friday,3445,342,Gracie Cwej-Mlodzianowski,3380,336,HR,6,B2,1,4,3,0,8.19%,-8.
 Jeter Ups,29,980,Gracie Cwej-Mlodzianowski,3380,255,K,275,B2,1,0,6,0,-0.21%,0.21%,0,0,51,5,2,KSU,DPU,K,K,FO,,,,,1
 Gene Okerlund,3407,812,Gracie Cwej-Mlodzianowski,3380,721,1B,91,B2,2,0,6,0,0.13%,-0.13%,0,0,51,5,2,KSU,DPU,1B,1B,1B,,,,,1
 Grady Brooks,3437,232,Gracie Cwej-Mlodzianowski,3380,130,1B,102,B2,2,1,6,0,0.06%,-0.06%,0,0,51,5,2,KSU,DPU,1B,1B,1B,,,,,1
-Mynameis Alan,3383,55,Gracie Cwej-Mlodzianowski,3380,500,LGO,445,B2,2,5,6,0,-0.32%,0.32%,0,0,51,5,2,KSU,DPU,LGO,LGO,RGO,,,,,1
+Alan,3383,55,Gracie Cwej-Mlodzianowski,3380,500,LGO,445,B2,2,5,6,0,-0.32%,0.32%,0,0,51,5,2,KSU,DPU,LGO,LGO,RGO,,,,,1
 Tobé Bryant,3389,426,Tomba,3220,637,FO,211,T3,0,0,6,0,-0.80%,0.80%,0,0,52,5,2,DPU,KSU,FO,FO,FO,,,,,1
 Steak Dynasty ,3406,966,Tomba,3220,567,PO,399,T3,1,0,6,0,-0.61%,0.61%,0,0,52,5,2,DPU,KSU,PO,PO,PO,,,,,1
 Demetri Sokenzie,3442,746,Tomba,3220,48,K,302,T3,2,0,6,0,-0.21%,0.21%,0,0,52,5,2,DPU,KSU,K,K,K,,,,,1
@@ -222,53 +222,58 @@ Steak Dynasty ,3406,906,Tomba,3220,884,3B,22,T5,1,3,6,0,1.69%,-1.69%,1,0,56,5,2,
 Demetri Sokenzie,3442,639,Chance Mercury,3403,953,K,314,T5,1,3,6,1,-1.28%,1.28%,0,0,56,5,2,DPU,KSU,K,K,K,,,,,2
 Lilcranberry,3419,467,Chance Mercury,3403,323,BB,144,T5,2,3,6,1,0.83%,-0.83%,0,0,56,5,2,DPU,KSU,BB,BB,BB,,,,,1
 Kent Manfred,3431,708,Chance Mercury,3403,151,RGO,443,T5,2,5,6,1,-1.63%,1.63%,0,0,56,5,2,DPU,KSU,RGO,RGO,RGO,,,,,1
-Mynameis Alan,3383,825,Mikko LePico,3375,1,FO,176,B5,0,0,6,1,-0.05%,0.05%,0,0,57,5,2,KSU,DPU,FO,FO,BB,,,,,1
+Alan,3383,825,Mikko LePico,3375,1,FO,176,B5,0,0,6,1,-0.05%,0.05%,0,0,57,5,2,KSU,DPU,FO,FO,BB,,,,,1
 Nathan Explosion,3432,132,Mikko LePico,3375,909,K,223,B5,1,0,6,1,-0.06%,0.06%,0,0,57,5,2,KSU,DPU,K,K,FO,,,,,1
-Rabs Roland,3444,606,Ethan Lee,3410,212,RGO,394,T1,0,0,0,0,-2.51%,2.51%,0,0,58,6,2,PSU,UMN,RGO,RGO,PO,,,,,1
-Fermin Rype,3449,691,Ethan Lee,3410,317,PO,374,T1,1,0,0,0,-2.18%,2.18%,0,0,58,6,2,PSU,UMN,PO,PO,K,,,,,1
-Triple T,3394,250,Ethan Lee,3410,28,K,222,T1,2,0,0,0,-1.76%,1.76%,0,0,58,6,2,PSU,UMN,K,K,FO,,,,,1
-Jeff Newman,2931,420,Taylor Swift,3427,828,PO,408,B1,0,0,0,0,-2.48%,2.48%,0,0,59,6,2,UMN,PSU,PO,PO,RGO,,,,,1
-Harry Palms,3376,470,Taylor Swift,3427,989,LGO,481,B1,1,0,0,0,-2.17%,2.17%,0,0,59,6,2,UMN,PSU,LGO,LGO,LGO,,,,,1
-Orwell Kensington ,3408,227,Taylor Swift,3427,522,K,295,B1,2,0,0,0,-1.79%,1.79%,0,0,59,6,2,UMN,PSU,K,K,K,,,,,1
-Arlon Gemini,3390,902,Ethan Lee,3410,792,1B,110,T2,0,0,0,0,3.09%,-3.09%,0,0,60,6,2,PSU,UMN,1B,1B,1B,,,,,1
-Arlon Gemini,3390,420,Ethan Lee,3410,799,CS,379,T2,0,1,0,0,-5.81%,5.81%,0,0,60,6,2,PSU,UMN,CS 2B,CS 2B,CS,,,,,4
-Chris Walker ,3400,815,Ethan Lee,3410,110,K,295,T2,1,0,0,0,-2.40%,2.40%,0,0,60,6,2,PSU,UMN,K,K,K,,,,,1
-Jack Drake,3438,620,Ethan Lee,3410,933,K,313,T2,2,0,0,0,-1.99%,1.99%,0,0,60,6,2,PSU,UMN,K,K,K,,,,,1
-Tyler Helman,2794,192,Taylor Swift,3427,881,K,311,B2,0,0,0,0,-2.72%,2.72%,0,0,61,6,2,UMN,PSU,K,K,K,,,,,1
-Bo Diggs,3422,660,Taylor Swift,3427,512,BB,148,B2,1,0,0,0,2.47%,-2.47%,0,0,61,6,2,UMN,PSU,BB,BB,BB,,,,,1
-Vyncent Wyattoss III,3397,200,Taylor Swift,3427,778,DP,422,B2,1,1,0,0,-6.88%,6.88%,0,0,61,6,2,UMN,PSU,RGO,RGO,DP,,,,,1
-Matilda No-Balls,3420,739,Ethan Lee,3410,411,PO,328,T3,0,0,0,0,-3.03%,3.03%,0,0,62,6,2,PSU,UMN,PO,PO,K,,,,,1
-Cucamonga Seattle,3377,211,Ethan Lee,3410,87,1B,124,T3,1,0,0,0,2.77%,-2.77%,0,0,62,6,2,PSU,UMN,1B,1B,1B,,,,,1
-Kasper Milquetoast,3433,789,Ethan Lee,3410,607,FO,182,T3,1,1,0,0,-3.01%,3.01%,0,0,62,6,2,PSU,UMN,FO,FO,FO,,,,,1
-Rabs Roland,3444,272,Ethan Lee,3410,878,RGO,394,T3,2,1,0,0,-4.81%,4.81%,0,0,62,6,2,PSU,UMN,RGO,RGO,PO,,,,,1
-Trevor Paultis,3416,457,Taylor Swift,3427,460,HR,3,B3,0,0,0,0,15.42%,-15.42%,1,1,63,6,2,UMN,PSU,HR,HR,HR,,,,3427,1
-Curtis Dingleberry,3436,720,Taylor Swift,3427,690,2B,30,B3,0,0,1,0,5.21%,-5.21%,0,0,63,6,2,UMN,PSU,2B,2B,2B,,,,,1
-Rodney Turnpike,3429,987,Taylor Swift,3427,690,K,297,B3,0,2,1,0,-3.47%,3.47%,0,0,63,6,2,UMN,PSU,K,K,K,,,,,1
-Jeff Newman,2931,198,Taylor Swift,3427,13,FO,185,B3,1,2,1,0,-3.05%,3.05%,0,0,63,6,2,UMN,PSU,FO,FO,FO,,,,,1
-Harry Palms,3376,645,Taylor Swift,3427,915,K,270,B3,2,2,1,0,-4.15%,4.15%,0,0,63,6,2,UMN,PSU,K,K,FO,,,,,1
-Fermin Rype,3449,194,Ethan Lee,3410,512,PO,318,T4,0,0,1,0,-3.96%,3.96%,0,0,64,6,2,PSU,UMN,PO,PO,K,,,,,1
-Triple T,3394,250,Ethan Lee,3410,828,RGO,422,T4,1,0,1,0,-3.37%,3.37%,0,0,64,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
-Arlon Gemini,3390,665,Ethan Lee,3410,622,2B,43,T4,2,0,1,0,4.74%,-4.74%,0,0,64,6,2,PSU,UMN,2B,2B,2B,,,,,1
-Chris Walker ,3400,850,Ethan Lee,3410,424,RGO,426,T4,2,2,1,0,-7.52%,7.52%,0,0,64,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
-Orwell Kensington ,3408,446,Taylor Swift,3427,859,RGO,413,B4,0,0,1,0,-1.87%,1.87%,0,0,65,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
-Tyler Helman,2794,134,Taylor Swift,3427,185,2B,51,B4,1,0,1,0,3.64%,-3.64%,0,1,65,6,2,UMN,PSU,2B,2B,2B,,,,,1
-Bo Diggs,3422,444,Taylor Swift,3427,636,FO,192,B4,1,2,1,0,-2.73%,2.73%,0,0,65,6,2,UMN,PSU,FO,FO,FO,,,,,1
-Vyncent Wyattoss III,3397,525,Taylor Swift,3427,417,1B,108,B4,2,2,1,0,9.62%,-9.62%,1,0,65,6,2,UMN,PSU,1B,1B,1B,,3427,,,1
-Trevor Paultis,3416,675,Taylor Swift,3427,89,RGO,414,B4,2,1,2,0,-1.66%,1.66%,0,0,65,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
-Jack Drake,3438,100,Carter Kendall,3382,635,LGO,465,T5,0,0,2,0,-3.57%,3.57%,0,0,66,6,2,PSU,UMN,LGO,LGO,LGO,,,,,1
-Matilda No-Balls,3420,730,Carter Kendall,3382,739,HR,9,T5,1,0,2,0,10.69%,-10.69%,1,1,66,6,2,PSU,UMN,HR,HR,HR,,,,3382,1
-Cucamonga Seattle,3377,218,Carter Kendall,3382,104,1B,114,T5,1,0,2,1,4.87%,-4.87%,0,0,66,6,2,PSU,UMN,1B,1B,1B,,,,,1
-Kasper Milquetoast,3433,599,Carter Kendall,3382,512,1B,87,T5,1,1,2,1,7.65%,-7.65%,0,0,66,6,2,PSU,UMN,1B,1B,1B,,,,,1
-Rabs Roland,3444,808,Carter Kendall,3382,125,K,317,T5,1,4,2,1,-7.28%,7.28%,0,0,66,6,2,PSU,UMN,K,K,K,,,,,1
-Fermin Rype,3449,986,Carter Kendall,3382,808,FO,178,T5,2,4,2,1,-13.17%,13.17%,0,0,66,6,2,PSU,UMN,FO,FO,FO,,,,,1
-Curtis Dingleberry,3436,690,Taylor Swift,3427,705,HR,15,B5,0,0,2,1,7.51%,-7.51%,1,1,67,6,2,UMN,PSU,HR,HR,HR,,,,3427,1
-Rodney Turnpike,3429,715,Taylor Swift,3427,758,2B,43,B5,0,0,3,1,1.61%,-1.61%,0,0,67,6,2,UMN,PSU,2B,2B,2B,,,,,1
-Jeff Newman,2931,541,Taylor Swift,3427,909,K,368,B5,0,2,3,1,-1.02%,1.02%,0,0,67,6,2,UMN,PSU,K,K,K,,,,,1
-Harry Palms,3376,380,Taylor Swift,3427,310,1B,70,B5,1,2,3,1,1.20%,-1.20%,0,0,67,6,2,UMN,PSU,1B,1B,1B,,,,,1
-Orwell Kensington ,3408,712,Taylor Swift,3427,310,PO,402,B5,1,5,3,1,-1.85%,1.85%,0,0,67,6,2,UMN,PSU,PO,PO,DP,,,,,2
-Tyler Helman,2794,870,Taylor Swift,3427,17,BB,147,B5,2,5,3,1,0.65%,-0.65%,0,0,67,6,2,UMN,PSU,BB,BB,BB,,,,,1
-Bo Diggs,3422,689,Taylor Swift,3427,333,K,356,B5,2,7,3,1,-2.41%,2.41%,0,0,67,6,2,UMN,PSU,K,K,K,,,,,1
-Triple T,3394,147,Carter Kendall,3382,308,FO,161,T6,0,0,3,1,-3.81%,3.81%,0,0,68,6,2,PSU,UMN,FO,FO,BB,,,,,1
-Arlon Gemini,3390,825,Carter Kendall,3382,839,3B,14,T6,1,0,3,1,7.76%,-7.76%,0,0,68,6,2,PSU,UMN,3B,3B,HR,,,,,1
-Chris Walker ,3400,351,Carter Kendall,3382,14,K,337,T6,1,3,3,1,-7.02%,7.02%,0,0,68,6,2,PSU,UMN,K,K,K,,,,,1
-Jack Drake,3438,643,Carter Kendall,3382,222,RGO,421,T6,2,3,3,1,-5.29%,5.29%,0,0,68,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
+Mordecai Davis,3409,552,Mikko LePico,3375,345,FO,207,B5,2,0,6,1,-0.04%,0.04%,0,0,57,5,2,KSU,DPU,FO,FO,FO,,,,,1
+BeefCake Willy ,3412,212,Chance Mercury,3403,501,K,289,T6,0,0,6,1,-0.40%,0.40%,0,0,58,5,2,DPU,KSU,K,K,K,,,,,1
+John Cally,3385,773,Chance Mercury,3403,757,HR,16,T6,1,0,6,1,0.44%,-0.44%,1,1,58,5,2,DPU,KSU,HR,HR,HR,,,,3403,1
+Chester Naff,3424,157,Chance Mercury,3403,899,FO,258,T6,1,0,6,2,-0.54%,0.54%,0,0,58,5,2,DPU,KSU,FO,FO,FO,,,,,1
+Nora Selbmar ,3399,787,Chance Mercury,3403,303,LGO,484,T6,2,0,6,2,-0.18%,0.18%,0,0,58,5,2,DPU,KSU,LGO,LGO,LGO,,,,,1
+Rabs Roland,3444,606,Ethan Lee,3410,212,RGO,394,T1,0,0,0,0,-2.51%,2.51%,0,0,59,6,2,PSU,UMN,RGO,RGO,PO,,,,,1
+Fermin Rype,3449,691,Ethan Lee,3410,317,PO,374,T1,1,0,0,0,-2.18%,2.18%,0,0,59,6,2,PSU,UMN,PO,PO,K,,,,,1
+Triple T,3394,250,Ethan Lee,3410,28,K,222,T1,2,0,0,0,-1.76%,1.76%,0,0,59,6,2,PSU,UMN,K,K,FO,,,,,1
+Jeff Newman,2931,420,Taylor Swift,3427,828,PO,408,B1,0,0,0,0,-2.48%,2.48%,0,0,60,6,2,UMN,PSU,PO,PO,RGO,,,,,1
+Harry Palms,3376,470,Taylor Swift,3427,989,LGO,481,B1,1,0,0,0,-2.17%,2.17%,0,0,60,6,2,UMN,PSU,LGO,LGO,LGO,,,,,1
+Orwell Kensington ,3408,227,Taylor Swift,3427,522,K,295,B1,2,0,0,0,-1.79%,1.79%,0,0,60,6,2,UMN,PSU,K,K,K,,,,,1
+Arlon Gemini,3390,902,Ethan Lee,3410,792,1B,110,T2,0,0,0,0,3.09%,-3.09%,0,0,61,6,2,PSU,UMN,1B,1B,1B,,,,,1
+Arlon Gemini,3390,420,Ethan Lee,3410,799,CS,379,T2,0,1,0,0,-5.81%,5.81%,0,0,61,6,2,PSU,UMN,CS 2B,CS 2B,CS,,,,,4
+Chris Walker ,3400,815,Ethan Lee,3410,110,K,295,T2,1,0,0,0,-2.40%,2.40%,0,0,61,6,2,PSU,UMN,K,K,K,,,,,1
+Jack Drake,3438,620,Ethan Lee,3410,933,K,313,T2,2,0,0,0,-1.99%,1.99%,0,0,61,6,2,PSU,UMN,K,K,K,,,,,1
+Tyler Helman,2794,192,Taylor Swift,3427,881,K,311,B2,0,0,0,0,-2.72%,2.72%,0,0,62,6,2,UMN,PSU,K,K,K,,,,,1
+Bo Diggs,3422,660,Taylor Swift,3427,512,BB,148,B2,1,0,0,0,2.47%,-2.47%,0,0,62,6,2,UMN,PSU,BB,BB,BB,,,,,1
+Vyncent Wyattoss III,3397,200,Taylor Swift,3427,778,DP,422,B2,1,1,0,0,-6.88%,6.88%,0,0,62,6,2,UMN,PSU,RGO,RGO,DP,,,,,1
+Matilda No-Balls,3420,739,Ethan Lee,3410,411,PO,328,T3,0,0,0,0,-3.03%,3.03%,0,0,63,6,2,PSU,UMN,PO,PO,K,,,,,1
+Cucamonga Seattle,3377,211,Ethan Lee,3410,87,1B,124,T3,1,0,0,0,2.77%,-2.77%,0,0,63,6,2,PSU,UMN,1B,1B,1B,,,,,1
+Kasper Milquetoast,3433,789,Ethan Lee,3410,607,FO,182,T3,1,1,0,0,-3.01%,3.01%,0,0,63,6,2,PSU,UMN,FO,FO,FO,,,,,1
+Rabs Roland,3444,272,Ethan Lee,3410,878,RGO,394,T3,2,1,0,0,-4.81%,4.81%,0,0,63,6,2,PSU,UMN,RGO,RGO,PO,,,,,1
+Trevor Paultis,3416,457,Taylor Swift,3427,460,HR,3,B3,0,0,0,0,15.42%,-15.42%,1,1,64,6,2,UMN,PSU,HR,HR,HR,,,,3427,1
+Curtis Dingleberry,3436,720,Taylor Swift,3427,690,2B,30,B3,0,0,1,0,5.21%,-5.21%,0,0,64,6,2,UMN,PSU,2B,2B,2B,,,,,1
+Rodney Turnpike,3429,987,Taylor Swift,3427,690,K,297,B3,0,2,1,0,-3.47%,3.47%,0,0,64,6,2,UMN,PSU,K,K,K,,,,,1
+Jeff Newman,2931,198,Taylor Swift,3427,13,FO,185,B3,1,2,1,0,-3.05%,3.05%,0,0,64,6,2,UMN,PSU,FO,FO,FO,,,,,1
+Harry Palms,3376,645,Taylor Swift,3427,915,K,270,B3,2,2,1,0,-4.15%,4.15%,0,0,64,6,2,UMN,PSU,K,K,FO,,,,,1
+Fermin Rype,3449,194,Ethan Lee,3410,512,PO,318,T4,0,0,1,0,-3.96%,3.96%,0,0,65,6,2,PSU,UMN,PO,PO,K,,,,,1
+Triple T,3394,250,Ethan Lee,3410,828,RGO,422,T4,1,0,1,0,-3.37%,3.37%,0,0,65,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
+Arlon Gemini,3390,665,Ethan Lee,3410,622,2B,43,T4,2,0,1,0,4.74%,-4.74%,0,0,65,6,2,PSU,UMN,2B,2B,2B,,,,,1
+Chris Walker ,3400,850,Ethan Lee,3410,424,RGO,426,T4,2,2,1,0,-7.52%,7.52%,0,0,65,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
+Orwell Kensington ,3408,446,Taylor Swift,3427,859,RGO,413,B4,0,0,1,0,-1.87%,1.87%,0,0,66,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
+Tyler Helman,2794,134,Taylor Swift,3427,185,2B,51,B4,1,0,1,0,3.64%,-3.64%,0,1,66,6,2,UMN,PSU,2B,2B,2B,,,,,1
+Bo Diggs,3422,444,Taylor Swift,3427,636,FO,192,B4,1,2,1,0,-2.73%,2.73%,0,0,66,6,2,UMN,PSU,FO,FO,FO,,,,,1
+Vyncent Wyattoss III,3397,525,Taylor Swift,3427,417,1B,108,B4,2,2,1,0,9.62%,-9.62%,1,0,66,6,2,UMN,PSU,1B,1B,1B,,3427,,,1
+Trevor Paultis,3416,675,Taylor Swift,3427,89,RGO,414,B4,2,1,2,0,-1.66%,1.66%,0,0,66,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
+Jack Drake,3438,100,Carter Kendall,3382,635,LGO,465,T5,0,0,2,0,-3.57%,3.57%,0,0,67,6,2,PSU,UMN,LGO,LGO,LGO,,,,,1
+Matilda No-Balls,3420,730,Carter Kendall,3382,739,HR,9,T5,1,0,2,0,10.69%,-10.69%,1,1,67,6,2,PSU,UMN,HR,HR,HR,,,,3382,1
+Cucamonga Seattle,3377,218,Carter Kendall,3382,104,1B,114,T5,1,0,2,1,4.87%,-4.87%,0,0,67,6,2,PSU,UMN,1B,1B,1B,,,,,1
+Kasper Milquetoast,3433,599,Carter Kendall,3382,512,1B,87,T5,1,1,2,1,7.65%,-7.65%,0,0,67,6,2,PSU,UMN,1B,1B,1B,,,,,1
+Rabs Roland,3444,808,Carter Kendall,3382,125,K,317,T5,1,4,2,1,-7.28%,7.28%,0,0,67,6,2,PSU,UMN,K,K,K,,,,,1
+Fermin Rype,3449,986,Carter Kendall,3382,808,FO,178,T5,2,4,2,1,-13.17%,13.17%,0,0,67,6,2,PSU,UMN,FO,FO,FO,,,,,1
+Curtis Dingleberry,3436,690,Taylor Swift,3427,705,HR,15,B5,0,0,2,1,7.51%,-7.51%,1,1,68,6,2,UMN,PSU,HR,HR,HR,,,,3427,1
+Rodney Turnpike,3429,715,Taylor Swift,3427,758,2B,43,B5,0,0,3,1,1.61%,-1.61%,0,0,68,6,2,UMN,PSU,2B,2B,2B,,,,,1
+Jeff Newman,2931,541,Taylor Swift,3427,909,K,368,B5,0,2,3,1,-1.02%,1.02%,0,0,68,6,2,UMN,PSU,K,K,K,,,,,1
+Harry Palms,3376,380,Taylor Swift,3427,310,1B,70,B5,1,2,3,1,1.20%,-1.20%,0,0,68,6,2,UMN,PSU,1B,1B,1B,,,,,1
+Orwell Kensington ,3408,712,Taylor Swift,3427,310,PO,402,B5,1,5,3,1,-1.85%,1.85%,0,0,68,6,2,UMN,PSU,PO,PO,DP,,,,,2
+Tyler Helman,2794,870,Taylor Swift,3427,17,BB,147,B5,2,5,3,1,0.65%,-0.65%,0,0,68,6,2,UMN,PSU,BB,BB,BB,,,,,1
+Bo Diggs,3422,689,Taylor Swift,3427,333,K,356,B5,2,7,3,1,-2.41%,2.41%,0,0,68,6,2,UMN,PSU,K,K,K,,,,,1
+Triple T,3394,147,Carter Kendall,3382,308,FO,161,T6,0,0,3,1,-3.81%,3.81%,0,0,69,6,2,PSU,UMN,FO,FO,BB,,,,,1
+Arlon Gemini,3390,825,Carter Kendall,3382,839,3B,14,T6,1,0,3,1,7.76%,-7.76%,0,0,69,6,2,PSU,UMN,3B,3B,HR,,,,,1
+Chris Walker ,3400,351,Carter Kendall,3382,14,K,337,T6,1,3,3,1,-7.02%,7.02%,0,0,69,6,2,PSU,UMN,K,K,K,,,,,1
+Jack Drake,3438,643,Carter Kendall,3382,222,RGO,421,T6,2,3,3,1,-5.29%,5.29%,0,0,69,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1

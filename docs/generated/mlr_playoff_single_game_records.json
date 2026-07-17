@@ -57,7 +57,7 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 46,
+        "tie_count": 49,
         "most_recent": {
           "id": 264,
           "season": "S12",
@@ -196,60 +196,28 @@
       },
       "PA": {
         "record": 5,
-        "holders": [
-          {
-            "id": 2848,
-            "season": "S10",
-            "session": "DS",
-            "team": "CWS",
-            "location": "Home",
-            "opponent": "BAL"
-          },
-          {
-            "id": 2990,
-            "season": "S10",
-            "session": "DS",
-            "team": "CWS",
-            "location": "Home",
-            "opponent": "BAL"
-          },
-          {
-            "id": 65,
-            "season": "S9",
-            "session": "WC",
-            "team": "PHI",
-            "location": "Away",
-            "opponent": "CHC"
-          },
-          {
-            "id": 1729,
-            "season": "S9",
-            "session": "WC",
-            "team": "PHI",
-            "location": "Away",
-            "opponent": "CHC"
-          },
-          {
-            "id": 2715,
-            "season": "S9",
-            "session": "WC",
-            "team": "PHI",
-            "location": "Away",
-            "opponent": "CHC"
-          }
-        ]
-      },
-      "PO": {
-        "record": 2,
-        "tie_count": 43,
+        "tie_count": 6,
         "most_recent": {
-          "id": 3311,
+          "id": 518,
           "season": "S12",
           "session": "PC",
-          "team": "CWS",
-          "location": "Home",
-          "opponent": "OAK"
+          "team": "MIN",
+          "location": "Away",
+          "opponent": "TBR"
         }
+      },
+      "PO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 518,
+            "season": "S12",
+            "session": "PC",
+            "team": "MIN",
+            "location": "Away",
+            "opponent": "TBR"
+          }
+        ]
       },
       "R": {
         "record": 3,
@@ -266,6 +234,14 @@
       "RBI": {
         "record": 5,
         "holders": [
+          {
+            "id": 1703,
+            "season": "S12",
+            "session": "PC",
+            "team": "MIN",
+            "location": "Away",
+            "opponent": "TBR"
+          },
           {
             "id": 3034,
             "season": "S10",
@@ -779,6 +755,13 @@
         "record": 7,
         "holders": [
           {
+            "team": "TBR",
+            "season": "S12",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "MIN"
+          },
+          {
             "team": "PHI",
             "season": "S10",
             "session": "DS",
@@ -1180,6 +1163,13 @@
         "record": 7,
         "holders": [
           {
+            "team": "MIN",
+            "season": "S12",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "TBR"
+          },
+          {
             "team": "MIL",
             "season": "S10",
             "session": "DS",
@@ -1544,24 +1534,12 @@
         ]
       },
       "BB": {
-        "record": 10,
+        "record": 13,
         "holders": [
           {
-            "away": "PHI",
-            "home": "CHC",
-            "season": "S9",
-            "session": "WC"
-          },
-          {
-            "away": "ATL",
-            "home": "STL",
-            "season": "S6",
-            "session": "WC"
-          },
-          {
-            "away": "LAD",
-            "home": "KCR",
-            "season": "S4",
+            "away": "MIN",
+            "home": "TBR",
+            "season": "S12",
             "session": "PC"
           }
         ]
@@ -1858,24 +1836,12 @@
         ]
       },
       "BB": {
-        "record": 10,
+        "record": 13,
         "holders": [
           {
-            "away": "PHI",
-            "home": "CHC",
-            "season": "S9",
-            "session": "WC"
-          },
-          {
-            "away": "ATL",
-            "home": "STL",
-            "season": "S6",
-            "session": "WC"
-          },
-          {
-            "away": "LAD",
-            "home": "KCR",
-            "season": "S4",
+            "away": "MIN",
+            "home": "TBR",
+            "season": "S12",
             "session": "PC"
           }
         ]
