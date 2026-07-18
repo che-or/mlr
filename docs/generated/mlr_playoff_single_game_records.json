@@ -56,16 +56,17 @@
         }
       },
       "BB": {
-        "record": 2,
-        "tie_count": 49,
-        "most_recent": {
-          "id": 264,
-          "season": "S12",
-          "session": "PC",
-          "team": "TBR",
-          "location": "Home",
-          "opponent": "MIN"
-        }
+        "record": 3,
+        "holders": [
+          {
+            "id": 264,
+            "season": "S12",
+            "session": "PC",
+            "team": "TBR",
+            "location": "Home",
+            "opponent": "MIN"
+          }
+        ]
       },
       "CS": {
         "record": 2,
@@ -196,14 +197,14 @@
       },
       "PA": {
         "record": 5,
-        "tie_count": 6,
+        "tie_count": 15,
         "most_recent": {
-          "id": 518,
+          "id": 180,
           "season": "S12",
           "session": "PC",
-          "team": "MIN",
-          "location": "Away",
-          "opponent": "TBR"
+          "team": "TBR",
+          "location": "Home",
+          "opponent": "MIN"
         }
       },
       "PO": {
@@ -261,13 +262,13 @@
         ]
       },
       "RE24": {
-        "record": 4.280645161290323,
+        "record": 5.984472049689441,
         "holders": [
           {
-            "id": 138,
-            "season": "S5",
-            "session": "WC",
-            "team": "NYY",
+            "id": 1764,
+            "season": "S12",
+            "session": "PC",
+            "team": "TBR",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -325,13 +326,13 @@
         ]
       },
       "WAR": {
-        "record": 0.4386266636854233,
+        "record": 0.6169761564556421,
         "holders": [
           {
-            "id": 138,
-            "season": "S5",
-            "session": "WC",
-            "team": "NYY",
+            "id": 1764,
+            "season": "S12",
+            "session": "PC",
+            "team": "TBR",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -752,42 +753,21 @@
         ]
       },
       "BB": {
-        "record": 7,
+        "record": 9,
         "holders": [
+          {
+            "team": "MIN",
+            "season": "S12",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "TBR"
+          },
           {
             "team": "TBR",
             "season": "S12",
             "session": "PC",
             "location": "Home",
             "opponent": "MIN"
-          },
-          {
-            "team": "PHI",
-            "season": "S10",
-            "session": "DS",
-            "location": "Away",
-            "opponent": "MIL"
-          },
-          {
-            "team": "OAK",
-            "season": "S10",
-            "session": "DS",
-            "location": "Away",
-            "opponent": "TBR"
-          },
-          {
-            "team": "PHI",
-            "season": "S9",
-            "session": "WC",
-            "location": "Away",
-            "opponent": "CHC"
-          },
-          {
-            "team": "TEX",
-            "season": "S5",
-            "session": "WC",
-            "location": "Away",
-            "opponent": "OAK"
           }
         ]
       },
@@ -917,14 +897,14 @@
         ]
       },
       "PA": {
-        "record": 42,
+        "record": 43,
         "holders": [
           {
-            "team": "PHI",
-            "season": "S9",
-            "session": "WC",
+            "team": "MIN",
+            "season": "S12",
+            "session": "PC",
             "location": "Away",
-            "opponent": "CHC"
+            "opponent": "TBR"
           }
         ]
       },
@@ -941,26 +921,26 @@
         ]
       },
       "R": {
-        "record": 13,
+        "record": 14,
         "holders": [
           {
-            "team": "NYY",
-            "season": "S5",
-            "session": "WC",
-            "location": "Home",
-            "opponent": "MIN"
+            "team": "MIN",
+            "season": "S12",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "TBR"
           }
         ]
       },
       "RBI": {
-        "record": 13,
+        "record": 14,
         "holders": [
           {
-            "team": "NYY",
-            "season": "S5",
-            "session": "WC",
-            "location": "Home",
-            "opponent": "MIN"
+            "team": "MIN",
+            "season": "S12",
+            "session": "PC",
+            "location": "Away",
+            "opponent": "TBR"
           }
         ]
       },
@@ -1087,6 +1067,13 @@
         "record": 17,
         "holders": [
           {
+            "team": "TBR",
+            "season": "S12",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "MIN"
+          },
+          {
             "team": "CWS",
             "season": "S10",
             "session": "DS",
@@ -1160,7 +1147,7 @@
         ]
       },
       "BB": {
-        "record": 7,
+        "record": 9,
         "holders": [
           {
             "team": "MIN",
@@ -1170,44 +1157,23 @@
             "opponent": "TBR"
           },
           {
-            "team": "MIL",
-            "season": "S10",
-            "session": "DS",
-            "location": "Home",
-            "opponent": "PHI"
-          },
-          {
             "team": "TBR",
-            "season": "S10",
-            "session": "DS",
+            "season": "S12",
+            "session": "PC",
             "location": "Home",
-            "opponent": "OAK"
-          },
-          {
-            "team": "CHC",
-            "season": "S9",
-            "session": "WC",
-            "location": "Home",
-            "opponent": "PHI"
-          },
-          {
-            "team": "OAK",
-            "season": "S5",
-            "session": "WC",
-            "location": "Home",
-            "opponent": "TEX"
+            "opponent": "MIN"
           }
         ]
       },
       "BF": {
-        "record": 42,
+        "record": 43,
         "holders": [
           {
-            "team": "CHC",
-            "season": "S9",
-            "session": "WC",
+            "team": "TBR",
+            "season": "S12",
+            "session": "PC",
             "location": "Home",
-            "opponent": "PHI"
+            "opponent": "MIN"
           }
         ]
       },
@@ -1243,14 +1209,14 @@
         ]
       },
       "ER": {
-        "record": 13,
+        "record": 14,
         "holders": [
           {
-            "team": "MIN",
-            "season": "S5",
-            "session": "WC",
-            "location": "Away",
-            "opponent": "NYY"
+            "team": "TBR",
+            "season": "S12",
+            "session": "PC",
+            "location": "Home",
+            "opponent": "MIN"
           }
         ]
       },
@@ -1534,7 +1500,7 @@
         ]
       },
       "BB": {
-        "record": 13,
+        "record": 18,
         "holders": [
           {
             "away": "MIN",
@@ -1634,13 +1600,13 @@
         ]
       },
       "PA": {
-        "record": 73,
+        "record": 83,
         "holders": [
           {
-            "away": "PHI",
-            "home": "CHC",
-            "season": "S9",
-            "session": "WC"
+            "away": "MIN",
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
@@ -1656,24 +1622,24 @@
         ]
       },
       "R": {
-        "record": 19,
+        "record": 20,
         "holders": [
           {
             "away": "MIN",
-            "home": "NYY",
-            "season": "S5",
-            "session": "WC"
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
       "RBI": {
-        "record": 19,
+        "record": 20,
         "holders": [
           {
             "away": "MIN",
-            "home": "NYY",
-            "season": "S5",
-            "session": "WC"
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
@@ -1768,13 +1734,13 @@
         ]
       },
       "300+ Pitches": {
-        "record": 31,
+        "record": 32,
         "holders": [
           {
-            "away": "PHI",
-            "home": "CHC",
-            "season": "S9",
-            "session": "WC"
+            "away": "MIN",
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
@@ -1836,7 +1802,7 @@
         ]
       },
       "BB": {
-        "record": 13,
+        "record": 18,
         "holders": [
           {
             "away": "MIN",
@@ -1847,13 +1813,13 @@
         ]
       },
       "BF": {
-        "record": 73,
+        "record": 83,
         "holders": [
           {
-            "away": "PHI",
-            "home": "CHC",
-            "season": "S9",
-            "session": "WC"
+            "away": "MIN",
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
@@ -1892,13 +1858,13 @@
         ]
       },
       "ER": {
-        "record": 19,
+        "record": 20,
         "holders": [
           {
             "away": "MIN",
-            "home": "NYY",
-            "season": "S5",
-            "session": "WC"
+            "home": "TBR",
+            "season": "S12",
+            "session": "PC"
           }
         ]
       },
