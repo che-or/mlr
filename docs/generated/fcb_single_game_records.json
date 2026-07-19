@@ -70,14 +70,14 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 71,
+        "tie_count": 73,
         "most_recent": {
-          "id": 3390,
+          "id": 3435,
           "season": "S13",
-          "session": 2,
-          "team": "PSU",
+          "session": 3,
+          "team": "CAL",
           "location": "Away",
-          "opponent": "UMN"
+          "opponent": "PSU"
         }
       },
       "FO": {
