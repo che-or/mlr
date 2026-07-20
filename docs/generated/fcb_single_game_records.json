@@ -70,9 +70,9 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 73,
+        "tie_count": 74,
         "most_recent": {
-          "id": 3435,
+          "id": 3381,
           "season": "S13",
           "session": 3,
           "team": "CAL",
@@ -468,6 +468,14 @@
       "CS": {
         "record": 2,
         "holders": [
+          {
+            "id": 2935,
+            "season": "S13",
+            "session": 3,
+            "team": "PSU",
+            "location": "Home",
+            "opponent": "CAL"
+          },
           {
             "id": 3098,
             "season": "S11",
