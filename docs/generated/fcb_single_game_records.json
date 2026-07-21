@@ -1594,38 +1594,13 @@
       },
       "LGO": {
         "record": 9,
-        "holders": [
-          {
-            "away": "WKU",
-            "home": "SYR",
-            "season": "S12",
-            "session": 4
-          },
-          {
-            "away": "BSU",
-            "home": "CSU",
-            "season": "S11",
-            "session": 5
-          },
-          {
-            "away": "TXS",
-            "home": "NWU",
-            "season": "S10",
-            "session": 1
-          },
-          {
-            "away": "WSU",
-            "home": "TOL",
-            "season": "S9",
-            "session": 2
-          },
-          {
-            "away": "HVD",
-            "home": "TEN",
-            "season": "S9",
-            "session": 1
-          }
-        ]
+        "tie_count": 6,
+        "most_recent": {
+          "away": "KSU",
+          "home": "SLG",
+          "season": "S13",
+          "session": 3
+        }
       },
       "PA": {
         "record": 87,
@@ -1965,38 +1940,13 @@
       },
       "LGO": {
         "record": 9,
-        "holders": [
-          {
-            "away": "WKU",
-            "home": "SYR",
-            "season": "S12",
-            "session": 4
-          },
-          {
-            "away": "BSU",
-            "home": "CSU",
-            "season": "S11",
-            "session": 5
-          },
-          {
-            "away": "TXS",
-            "home": "NWU",
-            "season": "S10",
-            "session": 1
-          },
-          {
-            "away": "WSU",
-            "home": "TOL",
-            "season": "S9",
-            "session": 2
-          },
-          {
-            "away": "HVD",
-            "home": "TEN",
-            "season": "S9",
-            "session": 1
-          }
-        ]
+        "tie_count": 6,
+        "most_recent": {
+          "away": "KSU",
+          "home": "SLG",
+          "season": "S13",
+          "session": 3
+        }
       },
       "PO": {
         "record": 19,
