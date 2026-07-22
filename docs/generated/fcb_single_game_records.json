@@ -244,14 +244,14 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 43,
+        "tie_count": 44,
         "most_recent": {
-          "id": 3444,
+          "id": 3432,
           "season": "S13",
-          "session": 2,
-          "team": "PSU",
+          "session": 3,
+          "team": "KSU",
           "location": "Away",
-          "opponent": "UMN"
+          "opponent": "SLG"
         }
       },
       "SB": {
@@ -1593,14 +1593,15 @@
         ]
       },
       "LGO": {
-        "record": 9,
-        "tie_count": 6,
-        "most_recent": {
-          "away": "KSU",
-          "home": "SLG",
-          "season": "S13",
-          "session": 3
-        }
+        "record": 11,
+        "holders": [
+          {
+            "away": "KSU",
+            "home": "SLG",
+            "season": "S13",
+            "session": 3
+          }
+        ]
       },
       "PA": {
         "record": 87,
@@ -1939,14 +1940,15 @@
         ]
       },
       "LGO": {
-        "record": 9,
-        "tie_count": 6,
-        "most_recent": {
-          "away": "KSU",
-          "home": "SLG",
-          "season": "S13",
-          "session": 3
-        }
+        "record": 11,
+        "holders": [
+          {
+            "away": "KSU",
+            "home": "SLG",
+            "season": "S13",
+            "session": 3
+          }
+        ]
       },
       "PO": {
         "record": 19,
