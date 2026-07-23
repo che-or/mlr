@@ -1593,7 +1593,7 @@
         ]
       },
       "LGO": {
-        "record": 11,
+        "record": 12,
         "holders": [
           {
             "away": "KSU",
@@ -1781,6 +1781,12 @@
         "record": 16,
         "holders": [
           {
+            "away": "KSU",
+            "home": "SLG",
+            "season": "S13",
+            "session": 3
+          },
+          {
             "away": "LSU",
             "home": "WKU",
             "season": "S12",
@@ -1940,7 +1946,7 @@
         ]
       },
       "LGO": {
-        "record": 11,
+        "record": 12,
         "holders": [
           {
             "away": "KSU",
