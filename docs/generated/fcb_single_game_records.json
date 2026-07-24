@@ -405,14 +405,14 @@
       },
       "Auto BB": {
         "record": 1,
-        "tie_count": 21,
+        "tie_count": 22,
         "most_recent": {
-          "id": 3243,
-          "season": "S12",
+          "id": 3028,
+          "season": "S13",
           "session": 3,
-          "team": "FUR",
+          "team": "SLG",
           "location": "Home",
-          "opponent": "SYR"
+          "opponent": "KSU"
         }
       },
       "BB": {
