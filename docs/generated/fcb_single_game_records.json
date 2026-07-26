@@ -206,14 +206,14 @@
       },
       "R": {
         "record": 3,
-        "tie_count": 6,
+        "tie_count": 7,
         "most_recent": {
-          "id": 3215,
-          "season": "S12",
-          "session": 6,
-          "team": "SYR",
+          "id": 3408,
+          "season": "S13",
+          "session": 3,
+          "team": "UMN",
           "location": "Away",
-          "opponent": "FUR"
+          "opponent": "DPU"
         }
       },
       "RBI": {

@@ -262,7 +262,7 @@
         ]
       },
       "RE24": {
-        "record": 4.556101792943898,
+        "record": 4.636568740399385,
         "holders": [
           {
             "id": 2827,
@@ -326,7 +326,7 @@
         ]
       },
       "WAR": {
-        "record": 0.48115618308496644,
+        "record": 0.4863047520204939,
         "holders": [
           {
             "id": 2827,
@@ -945,14 +945,14 @@
         ]
       },
       "RE24": {
-        "record": 9.729323308270676,
+        "record": 9.873684210526315,
         "holders": [
           {
-            "team": "NYY",
-            "season": "S5",
-            "session": "WC",
-            "location": "Home",
-            "opponent": "MIN"
+            "team": "MIN",
+            "season": "S12",
+            "session": "CS",
+            "location": "Away",
+            "opponent": "TBR"
           }
         ]
       },
@@ -1026,7 +1026,7 @@
         ]
       },
       "WAR": {
-        "record": 1.1816003945037212,
+        "record": 1.1821401716854076,
         "holders": [
           {
             "team": "MIN",
@@ -1699,7 +1699,7 @@
         ]
       },
       "WAR": {
-        "record": 1.5478731867330962,
+        "record": 1.550691616582482,
         "holders": [
           {
             "away": "MIN",
