@@ -262,15 +262,15 @@
         ]
       },
       "RE24": {
-        "record": 4.636568740399385,
+        "record": 4.280645161290323,
         "holders": [
           {
-            "id": 2827,
-            "season": "S12",
-            "session": "CS",
-            "team": "MIN",
-            "location": "Away",
-            "opponent": "TBR"
+            "id": 138,
+            "season": "S5",
+            "session": "WC",
+            "team": "NYY",
+            "location": "Home",
+            "opponent": "MIN"
           }
         ]
       },
@@ -326,15 +326,15 @@
         ]
       },
       "WAR": {
-        "record": 0.4863047520204939,
+        "record": 0.4386266636854233,
         "holders": [
           {
-            "id": 2827,
-            "season": "S12",
-            "session": "CS",
-            "team": "MIN",
-            "location": "Away",
-            "opponent": "TBR"
+            "id": 138,
+            "season": "S5",
+            "session": "WC",
+            "team": "NYY",
+            "location": "Home",
+            "opponent": "MIN"
           }
         ]
       },
@@ -945,7 +945,7 @@
         ]
       },
       "RE24": {
-        "record": 9.873684210526315,
+        "record": 10.0,
         "holders": [
           {
             "team": "MIN",
@@ -1026,7 +1026,7 @@
         ]
       },
       "WAR": {
-        "record": 1.1821401716854076,
+        "record": 1.1744612794612792,
         "holders": [
           {
             "team": "MIN",
@@ -1644,13 +1644,13 @@
         ]
       },
       "RE24": {
-        "record": 11.80451127819549,
+        "record": 12.0,
         "holders": [
           {
             "away": "MIN",
-            "home": "NYY",
-            "season": "S5",
-            "session": "WC"
+            "home": "TBR",
+            "season": "S12",
+            "session": "CS"
           }
         ]
       },
@@ -1699,7 +1699,7 @@
         ]
       },
       "WAR": {
-        "record": 1.550691616582482,
+        "record": 1.5367508417508415,
         "holders": [
           {
             "away": "MIN",
