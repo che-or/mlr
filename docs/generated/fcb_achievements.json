@@ -210,6 +210,18 @@
   "cycles": [],
   "triangles": [
     {
+      "id": 3408,
+      "team": "UMN",
+      "opponent": "DPU",
+      "location": "Away",
+      "season": "S13",
+      "session": 3,
+      "h": 3,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
+    {
       "id": 3256,
       "team": "FUR",
       "opponent": "SYR",
