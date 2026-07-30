@@ -70,12 +70,12 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 75,
+        "tie_count": 76,
         "most_recent": {
-          "id": 3381,
+          "id": 3462,
           "season": "S13",
-          "session": 3,
-          "team": "CAL",
+          "session": 4,
+          "team": "DPU",
           "location": "Away",
           "opponent": "PSU"
         }
