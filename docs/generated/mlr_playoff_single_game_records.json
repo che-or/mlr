@@ -61,7 +61,7 @@
           {
             "id": 264,
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "team": "TBR",
             "location": "Home",
             "opponent": "MIN"
@@ -156,7 +156,7 @@
         "most_recent": {
           "id": 3000,
           "season": "S12",
-          "session": "CS",
+          "session": "DS",
           "team": "CWS",
           "location": "Home",
           "opponent": "OAK"
@@ -201,7 +201,7 @@
         "most_recent": {
           "id": 180,
           "season": "S12",
-          "session": "CS",
+          "session": "DS",
           "team": "TBR",
           "location": "Home",
           "opponent": "MIN"
@@ -213,7 +213,7 @@
           {
             "id": 518,
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "team": "MIN",
             "location": "Away",
             "opponent": "TBR"
@@ -238,7 +238,7 @@
           {
             "id": 1703,
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "team": "MIN",
             "location": "Away",
             "opponent": "TBR"
@@ -758,14 +758,14 @@
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           },
           {
             "team": "TBR",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -902,7 +902,7 @@
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           }
@@ -926,7 +926,7 @@
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           }
@@ -938,19 +938,19 @@
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           }
         ]
       },
       "RE24": {
-        "record": 10.04040404040404,
+        "record": 10.222222222222223,
         "holders": [
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           }
@@ -1026,12 +1026,12 @@
         ]
       },
       "WAR": {
-        "record": 1.196148013803874,
+        "record": 1.2374829144620811,
         "holders": [
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           }
@@ -1069,7 +1069,7 @@
           {
             "team": "TBR",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Home",
             "opponent": "MIN"
           },
@@ -1152,14 +1152,14 @@
           {
             "team": "MIN",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Away",
             "opponent": "TBR"
           },
           {
             "team": "TBR",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -1171,7 +1171,7 @@
           {
             "team": "TBR",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -1214,7 +1214,7 @@
           {
             "team": "TBR",
             "season": "S12",
-            "session": "CS",
+            "session": "DS",
             "location": "Home",
             "opponent": "MIN"
           }
@@ -1506,7 +1506,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1606,7 +1606,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1628,7 +1628,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1639,18 +1639,18 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
       "RE24": {
-        "record": 12.08080808080808,
+        "record": 12.444444444444445,
         "holders": [
           {
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1699,13 +1699,13 @@
         ]
       },
       "WAR": {
-        "record": 1.5788931711126224,
+        "record": 1.6599476410934741,
         "holders": [
           {
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1740,7 +1740,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1808,7 +1808,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1819,7 +1819,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
@@ -1864,7 +1864,7 @@
             "away": "MIN",
             "home": "TBR",
             "season": "S12",
-            "session": "CS"
+            "session": "DS"
           }
         ]
       },
