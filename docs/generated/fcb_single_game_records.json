@@ -58,14 +58,14 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 41,
+        "tie_count": 42,
         "most_recent": {
-          "id": 3379,
+          "id": 3388,
           "season": "S13",
-          "session": 2,
-          "team": "SLG",
-          "location": "Away",
-          "opponent": "CAL"
+          "session": 4,
+          "team": "CAL",
+          "location": "Home",
+          "opponent": "KSU"
         }
       },
       "CS": {
@@ -244,13 +244,13 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 44,
+        "tie_count": 45,
         "most_recent": {
-          "id": 3432,
+          "id": 3397,
           "season": "S13",
-          "session": 3,
-          "team": "KSU",
-          "location": "Away",
+          "session": 4,
+          "team": "UMN",
+          "location": "Home",
           "opponent": "SLG"
         }
       },
