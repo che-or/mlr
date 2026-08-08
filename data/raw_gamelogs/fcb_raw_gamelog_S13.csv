@@ -3,7 +3,7 @@ Munki Oshu,2568,250,Mikko LePico,3375,596,K,346,T1,0,0,0,0,-2.51%,2.51%,0,0,1,1,
 Googly Moogly,3396,495,Mikko LePico,3375,332,BB,163,T1,1,0,0,0,2.43%,-2.43%,0,0,1,1,1,SLG,DPU,BB,BB,BB,,,,,1
 Lefty Cobb,3392,750,Mikko LePico,3375,212,DP,462,T1,1,1,0,0,-6.37%,6.37%,0,0,1,1,1,SLG,DPU,RGO,RGO,DP,,,,,1
 Bloop McNutt,3393,827,Yang Min-Ki,3411,1,BB,174,B1,0,0,0,0,2.76%,-2.76%,0,0,2,1,1,DPU,SLG,BB,BB,BB,,,,,1
-Steak Dynasty ,3406,344,Yang Min-Ki,3411,683,DP,339,B1,0,1,0,0,-7.41%,7.41%,0,0,2,1,1,DPU,SLG,RGO,RGO,K,,,,,1
+Steak Dynasty,3406,344,Yang Min-Ki,3411,683,DP,339,B1,0,1,0,0,-7.41%,7.41%,0,0,2,1,1,DPU,SLG,RGO,RGO,K,,,,,1
 Tobé Bryant,3389,420,Yang Min-Ki,3411,712,RGO,292,B1,2,0,0,0,-1.79%,1.79%,0,0,2,1,1,DPU,SLG,RGO,RGO,K,,,,,1
 Marcelo Soares,3402,175,Mikko LePico,3375,75,BB,100,T2,0,0,0,0,3.09%,-3.09%,0,1,3,1,1,SLG,DPU,BB,BB,1B,,,,,1
 Fausto Herrera ,3428,25,Mikko LePico,3375,44,HR,19,T2,0,1,0,0,20.86%,-20.86%,2,1,3,1,1,SLG,DPU,HR,HR,HR,,,3375,3375,1
@@ -22,7 +22,7 @@ John Cally,3385,127,Yang Min-Ki,3411,110,HR,17,B3,0,0,0,4,6.81%,-6.81%,1,1,6,1,1
 BeefCake Willy ,3412,557,Yang Min-Ki,3411,431,BB,126,B3,0,0,1,4,3.68%,-3.68%,0,1,6,1,1,DPU,SLG,BB,BB,1B,,,,,1
 Lilcranberry,3419,991,Yang Min-Ki,3411,327,PO,336,B3,0,1,1,4,-3.51%,3.51%,0,0,6,1,1,DPU,SLG,PO,PO,K,,,,,1
 Bloop McNutt,3393,567,Yang Min-Ki,3411,614,2B,47,B3,1,1,1,4,10.91%,-10.91%,0,1,6,1,1,DPU,SLG,2B,2B,2B,,,,,1
-Steak Dynasty ,3406,804,Yang Min-Ki,3411,491,PO,313,B3,1,6,1,4,-9.10%,9.10%,0,0,6,1,1,DPU,SLG,PO,PO,K,,,,,2
+Steak Dynasty,3406,804,Yang Min-Ki,3411,491,PO,313,B3,1,6,1,4,-9.10%,9.10%,0,0,6,1,1,DPU,SLG,PO,PO,K,,,,,2
 Tobé Bryant,3389,782,Yang Min-Ki,3411,762,HR,20,B3,2,6,1,4,32.32%,-32.32%,3,1,6,1,1,DPU,SLG,HR,HR,HR,3411,3411,,3411,1
 Chester Naff,3424,356,Yang Min-Ki,3411,810,LGO,454,B3,2,0,4,4,-2.27%,2.27%,0,0,6,1,1,DPU,SLG,LGO,LGO,LGO,,,,,1
 Fausto Herrera ,3428,333,Gracie Cwej-Mlodzianowski,3380,999,K,334,T4,0,0,4,4,-3.58%,3.58%,0,0,7,1,1,SLG,DPU,K,K,K,,,,,1
@@ -41,7 +41,7 @@ Bloop McNutt,3393,3,Dan Candoit,3028,352,PO,349,B5,2,0,4,4,-3.68%,3.68%,0,0,10,1
 Lefty Cobb,3392,280,Gracie Cwej-Mlodzianowski,3380,81,FO,199,T6,0,0,4,4,-5.44%,5.44%,0,0,11,1,1,SLG,DPU,FO,FO,FO,,,,,1
 Marcelo Soares,3402,181,Gracie Cwej-Mlodzianowski,3380,817,PO,364,T6,1,0,4,4,-5.08%,5.08%,0,0,11,1,1,SLG,DPU,PO,PO,K,,,,,1
 Fausto Herrera ,3428,125,Gracie Cwej-Mlodzianowski,3380,685,RGO,440,T6,2,0,4,4,-4.91%,4.91%,0,0,11,1,1,SLG,DPU,RGO,RGO,RGO,,,,,1
-Steak Dynasty ,3406,772,Dan Candoit,3028,17,K,245,B6,0,0,4,4,-5.27%,5.27%,0,0,12,1,1,DPU,SLG,K,K,FO,,,,,1
+Steak Dynasty,3406,772,Dan Candoit,3028,17,K,245,B6,0,0,4,4,-5.27%,5.27%,0,0,12,1,1,DPU,SLG,K,K,FO,,,,,1
 Tobé Bryant,3389,268,Dan Candoit,3028,245,HR,23,B6,1,0,4,4,39.80%,-39.80%,1,1,12,1,1,DPU,SLG,HR,HR,HR,,,,3028,1
 Cola Spritz,3372,500,Chance Mercury,3403,953,LGO,453,T1,0,0,0,0,-2.51%,2.51%,0,0,13,2,1,PSU,KSU,LGO,LGO,LGO,,,,,1
 Triple T,3394,900,Chance Mercury,3403,117,FO,217,T1,1,0,0,0,-2.18%,2.18%,0,0,13,2,1,PSU,KSU,FO,FO,FO,,,,,1
@@ -201,7 +201,7 @@ Gene Okerlund,3407,812,Gracie Cwej-Mlodzianowski,3380,721,1B,91,B2,2,0,6,0,0.13%
 Grady Brooks,3437,232,Gracie Cwej-Mlodzianowski,3380,130,1B,102,B2,2,1,6,0,0.06%,-0.06%,0,0,51,5,2,KSU,DPU,1B,1B,1B,,,,,1
 Alan,3383,55,Gracie Cwej-Mlodzianowski,3380,500,LGO,445,B2,2,5,6,0,-0.32%,0.32%,0,0,51,5,2,KSU,DPU,LGO,LGO,RGO,,,,,1
 Tobé Bryant,3389,426,Tomba,3220,637,FO,211,T3,0,0,6,0,-0.80%,0.80%,0,0,52,5,2,DPU,KSU,FO,FO,FO,,,,,1
-Steak Dynasty ,3406,966,Tomba,3220,567,PO,399,T3,1,0,6,0,-0.61%,0.61%,0,0,52,5,2,DPU,KSU,PO,PO,PO,,,,,1
+Steak Dynasty,3406,966,Tomba,3220,567,PO,399,T3,1,0,6,0,-0.61%,0.61%,0,0,52,5,2,DPU,KSU,PO,PO,PO,,,,,1
 Demetri Sokenzie,3442,746,Tomba,3220,48,K,302,T3,2,0,6,0,-0.21%,0.21%,0,0,52,5,2,DPU,KSU,K,K,K,,,,,1
 Nathan Explosion,3432,2,Mikko LePico,3375,404,PO,402,B3,0,0,6,0,-0.17%,0.17%,0,0,53,5,2,KSU,DPU,PO,PO,RGO,,,,,1
 Mordecai Davis,3409,998,Mikko LePico,3375,188,FO,190,B3,1,0,6,0,-0.09%,0.09%,0,0,53,5,2,KSU,DPU,FO,FO,FO,,,,,1
@@ -218,7 +218,7 @@ Gene Okerlund,3407,703,Mikko LePico,3375,401,K,302,B4,1,4,6,0,-0.05%,0.05%,0,0,5
 Grady Brooks,3437,113,Mikko LePico,3375,789,K,324,B4,2,4,6,0,-0.20%,0.20%,0,0,55,5,2,KSU,DPU,K,K,K,,,,,1
 Nora Selbmar ,3399,487,Tomba,3220,455,2B,32,T5,0,0,6,0,0.91%,-0.91%,0,1,56,5,2,DPU,KSU,2B,2B,2B,,,,,1
 Tobé Bryant,3389,536,Tomba,3220,162,RGO,374,T5,0,2,6,0,-0.92%,0.92%,0,0,56,5,2,DPU,KSU,RGO,RGO,K,,,,,1
-Steak Dynasty ,3406,906,Tomba,3220,884,3B,22,T5,1,3,6,0,1.69%,-1.69%,1,0,56,5,2,DPU,KSU,3B,3B,HR,3220,,,,2
+Steak Dynasty,3406,906,Tomba,3220,884,3B,22,T5,1,3,6,0,1.69%,-1.69%,1,0,56,5,2,DPU,KSU,3B,3B,HR,3220,,,,2
 Demetri Sokenzie,3442,639,Chance Mercury,3403,953,K,314,T5,1,3,6,1,-1.28%,1.28%,0,0,56,5,2,DPU,KSU,K,K,K,,,,,2
 Lilcranberry,3419,467,Chance Mercury,3403,323,BB,144,T5,2,3,6,1,0.83%,-0.83%,0,0,56,5,2,DPU,KSU,BB,BB,BB,,,,,1
 Kent Manfred,3431,708,Chance Mercury,3403,151,RGO,443,T5,2,5,6,1,-1.63%,1.63%,0,0,56,5,2,DPU,KSU,RGO,RGO,RGO,,,,,1
@@ -234,7 +234,7 @@ Fermin Rype,3449,691,Ethan Lee,3410,317,PO,374,T1,1,0,0,0,-2.18%,2.18%,0,0,59,6,
 Triple T,3394,250,Ethan Lee,3410,28,K,222,T1,2,0,0,0,-1.76%,1.76%,0,0,59,6,2,PSU,UMN,K,K,FO,,,,,1
 Jeff Newman,2931,420,Taylor Swift,3427,828,PO,408,B1,0,0,0,0,-2.48%,2.48%,0,0,60,6,2,UMN,PSU,PO,PO,RGO,,,,,1
 Harry Palms,3376,470,Taylor Swift,3427,989,LGO,481,B1,1,0,0,0,-2.17%,2.17%,0,0,60,6,2,UMN,PSU,LGO,LGO,LGO,,,,,1
-Orwell Kensington ,3408,227,Taylor Swift,3427,522,K,295,B1,2,0,0,0,-1.79%,1.79%,0,0,60,6,2,UMN,PSU,K,K,K,,,,,1
+Orwell Kensington,3408,227,Taylor Swift,3427,522,K,295,B1,2,0,0,0,-1.79%,1.79%,0,0,60,6,2,UMN,PSU,K,K,K,,,,,1
 Arlon Gemini,3390,902,Ethan Lee,3410,792,1B,110,T2,0,0,0,0,3.09%,-3.09%,0,0,61,6,2,PSU,UMN,1B,1B,1B,,,,,1
 Arlon Gemini,3390,420,Ethan Lee,3410,799,CS,379,T2,0,1,0,0,-5.81%,5.81%,0,0,61,6,2,PSU,UMN,CS 2B,CS 2B,CS,,,,,4
 Chris Walker ,3400,815,Ethan Lee,3410,110,K,295,T2,1,0,0,0,-2.40%,2.40%,0,0,61,6,2,PSU,UMN,K,K,K,,,,,1
@@ -255,7 +255,7 @@ Fermin Rype,3449,194,Ethan Lee,3410,512,PO,318,T4,0,0,1,0,-3.96%,3.96%,0,0,65,6,
 Triple T,3394,250,Ethan Lee,3410,828,RGO,422,T4,1,0,1,0,-3.37%,3.37%,0,0,65,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
 Arlon Gemini,3390,665,Ethan Lee,3410,622,2B,43,T4,2,0,1,0,4.74%,-4.74%,0,0,65,6,2,PSU,UMN,2B,2B,2B,,,,,1
 Chris Walker ,3400,850,Ethan Lee,3410,424,RGO,426,T4,2,2,1,0,-7.52%,7.52%,0,0,65,6,2,PSU,UMN,RGO,RGO,RGO,,,,,1
-Orwell Kensington ,3408,446,Taylor Swift,3427,859,RGO,413,B4,0,0,1,0,-1.87%,1.87%,0,0,66,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
+Orwell Kensington,3408,446,Taylor Swift,3427,859,RGO,413,B4,0,0,1,0,-1.87%,1.87%,0,0,66,6,2,UMN,PSU,RGO,RGO,RGO,,,,,1
 Tyler Helman,2794,134,Taylor Swift,3427,185,2B,51,B4,1,0,1,0,3.64%,-3.64%,0,1,66,6,2,UMN,PSU,2B,2B,2B,,,,,1
 Bo Diggs,3422,444,Taylor Swift,3427,636,FO,192,B4,1,2,1,0,-2.73%,2.73%,0,0,66,6,2,UMN,PSU,FO,FO,FO,,,,,1
 Vyncent Wyattoss III,3397,525,Taylor Swift,3427,417,1B,108,B4,2,2,1,0,9.62%,-9.62%,1,0,66,6,2,UMN,PSU,1B,1B,1B,,3427,,,1
@@ -270,7 +270,7 @@ Curtis Dingleberry,3436,690,Taylor Swift,3427,705,HR,15,B5,0,0,2,1,7.51%,-7.51%,
 Rodney Turnpike,3429,715,Taylor Swift,3427,758,2B,43,B5,0,0,3,1,1.61%,-1.61%,0,0,68,6,2,UMN,PSU,2B,2B,2B,,,,,1
 Jeff Newman,2931,541,Taylor Swift,3427,909,K,368,B5,0,2,3,1,-1.02%,1.02%,0,0,68,6,2,UMN,PSU,K,K,K,,,,,1
 Harry Palms,3376,380,Taylor Swift,3427,310,1B,70,B5,1,2,3,1,1.20%,-1.20%,0,0,68,6,2,UMN,PSU,1B,1B,1B,,,,,1
-Orwell Kensington ,3408,712,Taylor Swift,3427,310,PO,402,B5,1,5,3,1,-1.85%,1.85%,0,0,68,6,2,UMN,PSU,PO,PO,DP,,,,,2
+Orwell Kensington,3408,712,Taylor Swift,3427,310,PO,402,B5,1,5,3,1,-1.85%,1.85%,0,0,68,6,2,UMN,PSU,PO,PO,DP,,,,,2
 Tyler Helman,2794,870,Taylor Swift,3427,17,BB,147,B5,2,5,3,1,0.65%,-0.65%,0,0,68,6,2,UMN,PSU,BB,BB,BB,,,,,1
 Bo Diggs,3422,689,Taylor Swift,3427,333,K,356,B5,2,7,3,1,-2.41%,2.41%,0,0,68,6,2,UMN,PSU,K,K,K,,,,,1
 Triple T,3394,147,Carter Kendall,3382,308,FO,161,T6,0,0,3,1,-3.81%,3.81%,0,0,69,6,2,PSU,UMN,FO,FO,BB,,,,,1
@@ -280,7 +280,7 @@ Jack Drake,3438,643,Carter Kendall,3382,222,RGO,421,T6,2,3,3,1,-5.29%,5.29%,0,0,
 Doughboy Stubbs,3439,248,Cleveland Brown Jr.,3446,369,1B,121,T1,0,0,0,0,2.91%,-2.91%,0,1,70,7,3,UMN,DPU,1B,1B,1B,,,,,1
 Doughboy Stubbs,3439,322,Cleveland Brown Jr.,3446,243,SB,79,T1,0,1,0,0,3.42%,-3.42%,0,0,70,7,3,UMN,DPU,STEAL 2B,STEAL 2B,SB,,,,,4
 Curtis Dingleberry,3436,420,Cleveland Brown Jr.,3446,333,1B,87,T1,0,2,0,0,6.14%,-6.14%,0,1,70,7,3,UMN,DPU,1B,1B,1B,,,,,1
-Orwell Kensington ,3408,563,Cleveland Brown Jr.,3446,500,2B,63,T1,0,5,0,0,12.04%,-12.04%,1,1,70,7,3,UMN,DPU,2B,2B,2B,3446,,,,1
+Orwell Kensington,3408,563,Cleveland Brown Jr.,3446,500,2B,63,T1,0,5,0,0,12.04%,-12.04%,1,1,70,7,3,UMN,DPU,2B,2B,2B,3446,,,,1
 Kyle Schwarbombs,3398,444,Cleveland Brown Jr.,3446,500,2B,56,T1,0,6,0,1,8.67%,-8.67%,2,0,70,7,3,UMN,DPU,2B,2B,2B,3446,3446,,,2
 Jeff Newman,2931,872,Cleveland Brown Jr.,3446,500,PO,372,T1,0,2,0,3,-2.23%,2.23%,0,0,70,7,3,UMN,DPU,PO,PO,K,,,,,1
 Harry Palms,3376,385,Cleveland Brown Jr.,3446,769,PO,384,T1,1,2,0,3,-1.77%,1.77%,0,0,70,7,3,UMN,DPU,PO,PO,PO,,,,,1
@@ -296,7 +296,7 @@ Curtis Dingleberry,3436,200,Cleveland Brown Jr.,3446,935,PO,265,T2,2,0,0,3,-0.89
 Nora Selbmar ,3399,353,Allidois Nguyen,3414,833,LGO,480,B2,0,0,0,3,-2.53%,2.53%,0,0,73,7,3,DPU,UMN,LGO,LGO,LGO,,,,,1
 Chester Naff,3424,321,Allidois Nguyen,3414,777,RGO,456,B2,1,0,0,3,-2.03%,2.03%,0,0,73,7,3,DPU,UMN,RGO,RGO,LGO,,,,,1
 Kent Manfred,3431,111,Allidois Nguyen,3414,555,RGO,444,B2,2,0,0,3,-1.48%,1.48%,0,0,73,7,3,DPU,UMN,RGO,RGO,RGO,,,,,1
-Orwell Kensington ,3408,416,Cleveland Brown Jr.,3446,105,PO,311,T3,0,0,0,3,-1.14%,1.14%,0,0,74,7,3,UMN,DPU,PO,PO,K,,,,,1
+Orwell Kensington,3408,416,Cleveland Brown Jr.,3446,105,PO,311,T3,0,0,0,3,-1.14%,1.14%,0,0,74,7,3,UMN,DPU,PO,PO,K,,,,,1
 Kyle Schwarbombs,3398,318,Cleveland Brown Jr.,3446,740,LGO,422,T3,1,0,0,3,-1.03%,1.03%,0,0,74,7,3,UMN,DPU,LGO,LGO,RGO,,,,,1
 Jeff Newman,2931,773,Cleveland Brown Jr.,3446,745,3B,28,T3,2,0,0,3,1.69%,-1.69%,0,1,74,7,3,UMN,DPU,3B,3B,3B,,,,,1
 Harry Palms,3376,280,Cleveland Brown Jr.,3446,345,1B,65,T3,2,3,0,3,5.48%,-5.48%,1,0,74,7,3,UMN,DPU,1B,1B,1B,3446,,,,1
@@ -316,7 +316,7 @@ Kent Manfred,3431,999,Allidois Nguyen,3414,67,1B,68,B4,1,1,3,4,6.67%,-6.67%,0,0,
 John Cally,3385,430,Allidois Nguyen,3414,67,PO,363,B4,1,4,3,4,-6.13%,6.13%,0,0,77,7,3,DPU,UMN,PO,PO,K,,,,,1
 Tobé Bryant,3389,420,Allidois Nguyen,3414,833,LGO,413,B4,2,4,3,4,-11.76%,11.76%,0,0,77,7,3,DPU,UMN,LGO,LGO,RGO,,,,,1
 Curtis Dingleberry,3436,999,Demetri Sokenzie,3442,796,FO,203,T5,0,0,3,4,-2.29%,2.29%,0,0,78,7,3,UMN,DPU,FO,FO,FO,,,,,1
-Orwell Kensington ,3408,437,Demetri Sokenzie,3442,391,3B,46,T5,1,0,3,4,7.97%,-7.97%,0,1,78,7,3,UMN,DPU,3B,3B,2B,,,,,1
+Orwell Kensington,3408,437,Demetri Sokenzie,3442,391,3B,46,T5,1,0,3,4,7.97%,-7.97%,0,1,78,7,3,UMN,DPU,3B,3B,2B,,,,,1
 Kyle Schwarbombs,3398,777,Demetri Sokenzie,3442,57,PO,280,T5,1,3,3,4,-7.11%,7.11%,0,0,78,7,3,UMN,DPU,PO,PO,Sac,,,,,2
 Jeff Newman,2931,426,Demetri Sokenzie,3442,499,2B,73,T5,2,3,3,4,12.76%,-12.76%,1,0,78,7,3,UMN,DPU,2B,2B,1B,3442,,,,1
 Harry Palms,3376,613,Demetri Sokenzie,3442,748,BB,135,T5,2,2,3,5,0.82%,-0.82%,0,0,78,7,3,UMN,DPU,BB,BB,1B,,,,,1
@@ -330,7 +330,7 @@ Tyler Helman,2794,926,Demetri Sokenzie,3442,999,2B,73,T6,0,0,3,5,2.10%,-2.10%,0,
 Rodney Turnpike,3429,156,Demetri Sokenzie,3442,600,LGO,444,T6,0,2,3,5,-1.40%,1.40%,0,0,80,7,3,UMN,DPU,LGO,LGO,RGO,,,,,1
 Doughboy Stubbs,3439,333,Demetri Sokenzie,3442,267,1B,66,T6,1,2,3,5,1.37%,-1.37%,0,1,80,7,3,UMN,DPU,1B,1B,1B,,,,,1
 Curtis Dingleberry,3436,670,Demetri Sokenzie,3442,625,2B,45,T6,1,5,3,5,3.88%,-3.88%,1,1,80,7,3,UMN,DPU,2B,2B,2B,3442,,,,1
-Orwell Kensington ,3408,146,Demetri Sokenzie,3442,147,HR,1,T6,1,6,3,6,2.05%,-2.05%,3,1,80,7,3,UMN,DPU,HR,HR,HR,3442,3442,,3442,2
+Orwell Kensington,3408,146,Demetri Sokenzie,3442,147,HR,1,T6,1,6,3,6,2.05%,-2.05%,3,1,80,7,3,UMN,DPU,HR,HR,HR,3442,3442,,3442,2
 Kyle Schwarbombs,3398,666,Demetri Sokenzie,3442,100,LGO,434,T6,1,0,3,9,-0.04%,0.04%,0,0,80,7,3,UMN,DPU,LGO,LGO,RGO,,,,,1
 Jeff Newman,2931,973,Demetri Sokenzie,3442,854,BB,119,T6,2,0,3,9,0.00%,0.00%,0,0,80,7,3,UMN,DPU,BB,BB,1B,,,,,1
 Harry Palms,3376,555,Demetri Sokenzie,3442,791,K,236,T6,2,1,3,9,-0.04%,0.04%,0,0,80,7,3,UMN,DPU,K,K,FO,,,,,1
@@ -502,7 +502,7 @@ Ada Rutabaga,3457,75,Scooter Funkypants,3423,40,2B,35,T6,1,0,9,5,1.26%,-1.26%,0,
 Hawaiian Hammah,3461,455,Scooter Funkypants,3423,347,1B,108,T6,1,2,9,5,3.01%,-3.01%,0,0,116,10,4,KSU,CAL,1B,1B,1B,,,,,1
 Alan,3383,666,Scooter Funkypants,3423,959,K,293,T6,1,5,9,5,-3.18%,3.18%,0,0,116,10,4,KSU,CAL,K,K,K,,,,,1
 Mikey Moreau,3418,255,Scooter Funkypants,3423,1,K,254,T6,2,5,9,5,-1.81%,1.81%,0,0,116,10,4,KSU,CAL,K,K,FO,,,,,1
-Steak Dynasty ,3406,299,Taylor Swift,3427,71,FO,228,T1,0,0,0,0,-2.51%,2.51%,0,0,117,11,4,DPU,PSU,FO,FO,FO,,,,,1
+Steak Dynasty,3406,299,Taylor Swift,3427,71,FO,228,T1,0,0,0,0,-2.51%,2.51%,0,0,117,11,4,DPU,PSU,FO,FO,FO,,,,,1
 BeefCake Willy ,3412,347,Taylor Swift,3427,381,2B,34,T1,1,0,0,0,4.65%,-4.65%,0,0,117,11,4,DPU,PSU,2B,2B,2B,,,,,1
 Gracie Cwej-Mlodzianowski,3380,480,Taylor Swift,3427,161,K,319,T1,1,2,0,0,-3.78%,3.78%,0,0,117,11,4,DPU,PSU,K,K,K,,,,,1
 Malsted,3456,174,Taylor Swift,3427,969,FO,205,T1,2,2,0,0,-4.81%,4.81%,0,0,117,11,4,DPU,PSU,FO,FO,FO,,,,,1
@@ -517,7 +517,7 @@ Tobé Bryant,3389,621,Taylor Swift,3427,556,2B,65,T2,1,0,0,0,5.11%,-5.11%,0,1,11
 Lilcranberry,3419,419,Taylor Swift,3427,420,HR,1,T2,1,2,0,0,19.86%,-19.86%,2,1,119,11,4,DPU,PSU,HR,HR,HR,,3427,,3427,1
 Larry Lighthouse,3452,311,Taylor Swift,3427,111,FO,200,T2,1,0,0,2,-1.52%,1.52%,0,0,119,11,4,DPU,PSU,FO,FO,FO,,,,,1
 Bloop McNutt,3393,976,Taylor Swift,3427,899,1B,77,T2,2,0,0,2,1.27%,-1.27%,0,0,119,11,4,DPU,PSU,1B,1B,1B,,,,,1
-Steak Dynasty ,3406,6,Taylor Swift,3427,920,1B,86,T2,2,1,0,2,1.75%,-1.75%,0,0,119,11,4,DPU,PSU,1B,1B,1B,,,,,1
+Steak Dynasty,3406,6,Taylor Swift,3427,920,1B,86,T2,2,1,0,2,1.75%,-1.75%,0,0,119,11,4,DPU,PSU,1B,1B,1B,,,,,1
 BeefCake Willy ,3412,512,Taylor Swift,3427,210,K,302,T2,2,5,0,2,-4.39%,4.39%,0,0,119,11,4,DPU,PSU,K,K,K,,,,,1
 Jack Drake,3438,333,Cleveland Brown Jr.,3446,837,LGO,496,B2,0,0,0,2,-2.94%,2.94%,0,0,120,11,4,PSU,DPU,LGO,LGO,LGO,,,,,1
 Rabs Roland,3444,222,Cleveland Brown Jr.,3446,104,BB,118,B2,1,0,0,2,2.98%,-2.98%,0,1,120,11,4,PSU,DPU,BB,BB,1B,,,,,1
@@ -538,7 +538,7 @@ Bloop McNutt,3393,660,Dwayne Swanson,2935,478,FO,182,T4,2,0,1,3,-1.26%,1.26%,0,0
 Jack Drake,3438,250,Demetri Sokenzie,3442,894,K,356,B4,0,0,1,3,-3.76%,3.76%,0,0,124,11,4,PSU,DPU,K,K,K,,,,,1
 Rabs Roland,3444,401,Demetri Sokenzie,3442,894,LGO,493,B4,1,0,1,3,-3.09%,3.09%,0,0,124,11,4,PSU,DPU,LGO,LGO,LGO,,,,,1
 Fermin Rype,3449,389,Demetri Sokenzie,3442,894,LGO,495,B4,2,0,1,3,-2.26%,2.26%,0,0,124,11,4,PSU,DPU,LGO,LGO,LGO,,,,,1
-Steak Dynasty ,3406,364,Arlon Gemini,3390,388,3B,24,T5,0,0,1,3,5.38%,-5.38%,0,1,125,11,4,DPU,PSU,3B,3B,HR,,,,,1
+Steak Dynasty,3406,364,Arlon Gemini,3390,388,3B,24,T5,0,0,1,3,5.38%,-5.38%,0,1,125,11,4,DPU,PSU,3B,3B,HR,,,,,1
 BeefCake Willy ,3412,55,Arlon Gemini,3390,117,1B,62,T5,0,3,1,3,2.32%,-2.32%,1,0,125,11,4,DPU,PSU,1B,1B,2B,3390,,,,2
 Gracie Cwej-Mlodzianowski,3380,645,Arlon Gemini,3390,163,DP,482,T5,0,1,1,4,-2.15%,2.15%,0,0,125,11,4,DPU,PSU,LGO,LGO,DP,,,,,1
 Malsted,3456,555,Arlon Gemini,3390,696,BB,141,T5,2,0,1,4,0.68%,-0.68%,0,1,125,11,4,DPU,PSU,BB,BB,BB,,,,,1
@@ -550,7 +550,7 @@ Cola Spritz,3372,799,Mikko LePico,3375,2,K,203,B5,1,0,1,5,-1.16%,1.16%,0,0,126,1
 Andre Anderson,3325,230,Mikko LePico,3375,903,RGO,327,B5,2,0,1,5,-0.63%,0.63%,0,0,126,11,4,PSU,DPU,RGO,RGO,K,,,,,1
 Larry Lighthouse,3452,432,Matilda No-Balls,3420,3,RGO,429,T6,0,0,1,5,-0.18%,0.18%,0,0,127,11,4,DPU,PSU,RGO,RGO,RGO,,,,,1
 Bloop McNutt,3393,503,Matilda No-Balls,3420,500,HR,3,T6,1,0,1,5,1.03%,-1.03%,1,1,127,11,4,DPU,PSU,HR,HR,HR,,,,3420,1
-Steak Dynasty ,3406,444,Matilda No-Balls,3420,398,2B,46,T6,1,0,1,6,0.18%,-0.18%,0,0,127,11,4,DPU,PSU,2B,2B,2B,,,,,1
+Steak Dynasty,3406,444,Matilda No-Balls,3420,398,2B,46,T6,1,0,1,6,0.18%,-0.18%,0,0,127,11,4,DPU,PSU,2B,2B,2B,,,,,1
 BeefCake Willy ,3412,148,Matilda No-Balls,3420,622,LGO,474,T6,1,2,1,6,-0.12%,0.12%,0,0,127,11,4,DPU,PSU,LGO,LGO,LGO,,,,,1
 Gracie Cwej-Mlodzianowski,3380,9,Matilda No-Balls,3420,148,BB,139,T6,2,2,1,6,-0.04%,0.04%,0,0,127,11,4,DPU,PSU,BB,BB,BB,,,,,1
 Malsted,3456,555,Matilda No-Balls,3420,727,FO,172,T6,2,4,1,6,-0.15%,0.15%,0,0,127,11,4,DPU,PSU,FO,FO,BB,,,,,1
@@ -566,7 +566,7 @@ Knight Newton,3448,950,Ethan Lee,3410,612,PO,338,T1,1,4,0,0,-3.93%,3.93%,0,0,129
 Fausto Herrera ,3428,999,Ethan Lee,3410,727,K,272,T1,2,4,0,0,-6.55%,6.55%,0,0,129,12,4,SLG,UMN,K,K,FO,,,,,1
 Vyncent Wyattoss III,3397,250,Evil Larry,3450,24,K,226,B1,0,0,0,0,-2.48%,2.48%,0,0,130,12,4,UMN,SLG,K,K,FO,,,,,1
 Shawn Michaels,3455,328,Evil Larry,3450,414,1B,86,B1,1,0,0,0,2.28%,-2.28%,0,1,130,12,4,UMN,SLG,1B,1B,1B,,,,,1
-Orwell Kensington ,3408,237,Evil Larry,3450,293,2B,56,B1,1,1,0,0,9.71%,-9.71%,0,0,130,12,4,UMN,SLG,2B,2B,2B,,,,,1
+Orwell Kensington,3408,237,Evil Larry,3450,293,2B,56,B1,1,1,0,0,9.71%,-9.71%,0,0,130,12,4,UMN,SLG,2B,2B,2B,,,,,1
 Strawhatespeon,3460,447,Evil Larry,3450,614,Sac,167,B1,1,6,0,0,1.08%,-1.08%,1,0,130,12,4,UMN,SLG,FO,FO,BB,3450,,,,2
 Bo Diggs,3422,689,Evil Larry,3450,842,FO,153,B1,2,2,1,0,-4.01%,4.01%,0,0,130,12,4,UMN,SLG,FO,FO,BB,,,,,1
 KC Martinez,3379,493,Ethan Lee,3410,317,FO,176,T2,0,0,1,0,-2.95%,2.95%,0,0,131,12,4,SLG,UMN,FO,FO,BB,,,,,1
@@ -583,7 +583,7 @@ Kim Wexler,2606,369,Ethan Lee,3410,485,1B,116,T3,2,1,1,0,3.93%,-3.93%,0,0,133,12
 Knight Newton,3448,999,Ethan Lee,3410,176,FO,177,T3,2,5,1,0,-8.87%,8.87%,0,0,133,12,4,SLG,UMN,FO,FO,BB,,,,,1
 Vyncent Wyattoss III,3397,75,Evil Larry,3450,473,RGO,398,B3,0,0,1,0,-2.04%,2.04%,0,0,134,12,4,UMN,SLG,RGO,RGO,PO,,,,,1
 Shawn Michaels,3455,99,Evil Larry,3450,7,BB,92,B3,1,0,1,0,1.65%,-1.65%,0,1,134,12,4,UMN,SLG,BB,BB,1B,,,,,1
-Orwell Kensington ,3408,388,Evil Larry,3450,643,K,255,B3,1,1,1,0,-1.91%,1.91%,0,0,134,12,4,UMN,SLG,K,K,FO,,,,,1
+Orwell Kensington,3408,388,Evil Larry,3450,643,K,255,B3,1,1,1,0,-1.91%,1.91%,0,0,134,12,4,UMN,SLG,K,K,FO,,,,,1
 Strawhatespeon,3460,210,Evil Larry,3450,245,3B,35,B3,2,1,1,0,11.77%,-11.77%,1,0,134,12,4,UMN,SLG,3B,3B,2B,,,3450,,1
 Bo Diggs,3422,698,Evil Larry,3450,200,LGO,498,B3,2,3,2,0,-2.68%,2.68%,0,0,134,12,4,UMN,SLG,LGO,LGO,LGO,,,,,1
 Fausto Herrera ,3428,550,Ethan Lee,3410,588,2B,38,T4,0,0,2,0,8.55%,-8.55%,0,0,135,12,4,SLG,UMN,2B,2B,2B,,,,,1
@@ -599,7 +599,7 @@ Munki Oshu,2568,129,Carter Kendall,3382,318,FO,189,T5,0,1,3,0,-3.23%,3.23%,0,0,1
 Maram Bowl,3458,814,Carter Kendall,3382,375,DP,439,T5,1,1,3,0,-5.41%,5.41%,0,0,137,12,4,SLG,UMN,RGO,RGO,DP,,,,,1
 Vyncent Wyattoss III,3397,415,Bartholomew Simpson,3454,3,RGO,412,B5,0,0,3,0,-0.30%,0.30%,0,0,138,12,4,UMN,SLG,RGO,RGO,RGO,,,,,1
 Shawn Michaels,3455,971,Bartholomew Simpson,3454,412,RGO,441,B5,1,0,3,0,-0.31%,0.31%,0,0,138,12,4,UMN,SLG,RGO,RGO,RGO,,,,,1
-Orwell Kensington ,3408,76,Bartholomew Simpson,3454,3,1B,73,B5,2,0,3,0,0.22%,-0.22%,0,0,138,12,4,UMN,SLG,1B,1B,1B,,,,,1
+Orwell Kensington,3408,76,Bartholomew Simpson,3454,3,1B,73,B5,2,0,3,0,0.22%,-0.22%,0,0,138,12,4,UMN,SLG,1B,1B,1B,,,,,1
 Curtis Dingleberry,3436,420,Bartholomew Simpson,3454,369,1B,51,B5,2,1,3,0,0.37%,-0.37%,0,0,138,12,4,UMN,SLG,1B,1B,2B,,,,,1
 Bo Diggs,3422,453,Bartholomew Simpson,3454,12,RGO,441,B5,2,5,3,0,-0.81%,0.81%,0,0,138,12,4,UMN,SLG,RGO,RGO,RGO,,,,,1
 Kim Wexler,2606,626,Carter Kendall,3382,626,HR,0,T6,0,0,3,0,4.60%,-4.60%,1,1,139,12,4,SLG,UMN,HR,HR,HR,,,,3382,1

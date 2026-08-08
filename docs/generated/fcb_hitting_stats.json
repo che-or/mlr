@@ -77474,7 +77474,7 @@
     "Handedness":"Left",
     "Position":"SS",
     "Display Season":"S13",
-    "Name":"Steak Dynasty ",
+    "Name":"Steak Dynasty",
     "OPS+":207.2390020587
   },
   {
@@ -77622,7 +77622,7 @@
     "Handedness":"Right",
     "Position":"2B",
     "Display Season":"S13",
-    "Name":"Orwell Kensington ",
+    "Name":"Orwell Kensington",
     "OPS+":257.5733803715
   },
   {
@@ -79615,7 +79615,7 @@
     "is_sub_row":false,
     "Last Team":"CAL",
     "Last Session":4,
-    "Batting Type":"S",
+    "Batting Type":"XB",
     "Pitching Type":null,
     "Handedness":"Right",
     "Position":"SS",
