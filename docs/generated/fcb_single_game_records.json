@@ -1968,13 +1968,19 @@
         ]
       },
       "RE24": {
-        "record": -6.04,
+        "record": -5.746031746031745,
         "holders": [
           {
-            "away": "CAL",
-            "home": "UMN",
-            "season": "S13",
-            "session": 1
+            "away": "PUR",
+            "home": "UCL",
+            "season": "S8",
+            "session": 3
+          },
+          {
+            "away": "MCH",
+            "home": "PAN",
+            "season": "S8",
+            "session": 2
           }
         ]
       },
