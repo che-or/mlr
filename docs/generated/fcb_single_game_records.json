@@ -244,14 +244,14 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 46,
+        "tie_count": 47,
         "most_recent": {
-          "id": 3397,
+          "id": 2591,
           "season": "S13",
-          "session": 4,
-          "team": "UMN",
+          "session": 5,
+          "team": "KSU",
           "location": "Home",
-          "opponent": "SLG"
+          "opponent": "UMN"
         }
       },
       "SB": {
@@ -1968,19 +1968,13 @@
         ]
       },
       "RE24": {
-        "record": -5.746031746031745,
+        "record": -6.076023391812865,
         "holders": [
           {
-            "away": "PUR",
-            "home": "UCL",
-            "season": "S8",
-            "session": 3
-          },
-          {
-            "away": "MCH",
-            "home": "PAN",
-            "season": "S8",
-            "session": 2
+            "away": "CAL",
+            "home": "UMN",
+            "season": "S13",
+            "session": 1
           }
         ]
       },
