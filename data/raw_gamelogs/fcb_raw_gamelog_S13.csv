@@ -649,55 +649,78 @@ Chester Naff,3424,698,Benny Schwa,3388,774,1B,76,B4,1,0,1,0,1.59%,-1.59%,0,1,148
 Lilcranberry,3419,262,Benny Schwa,3388,596,K,334,B4,1,1,1,0,-1.79%,1.79%,0,0,148,13,5,DPU,CAL,K,K,K,,,,,1
 Nora Selbmar ,3399,331,Benny Schwa,3388,269,2B,62,B4,2,1,1,0,11.43%,-11.43%,1,1,148,13,5,DPU,CAL,2B,2B,2B,,,3388,,1
 Larry Lighthouse,3452,898,Benny Schwa,3388,1000,1B,102,B4,2,2,2,0,5.60%,-5.60%,1,0,148,13,5,DPU,CAL,1B,1B,1B,,3388,,,1
-Strawhatespeon,3460,393,Chance Mercury,3403,688,K,295,T1,0,0,0,0,-2.51%,2.51%,0,0,149,14,5,UMN,KSU,K,K,K,,,,,1
-Shawn Michaels,3455,301,Chance Mercury,3403,101,FO,200,T1,1,0,0,0,-2.18%,2.18%,0,0,149,14,5,UMN,KSU,FO,FO,FO,,,,,1
-Willie Ruth,3464,789,Chance Mercury,3403,555,K,234,T1,2,0,0,0,-1.76%,1.76%,0,0,149,14,5,UMN,KSU,K,K,FO,,,,,1
-Mordecai Davis,3409,444,Allidois Nguyen,3414,688,FO,244,B1,0,0,0,0,-2.48%,2.48%,0,0,150,14,5,KSU,UMN,FO,FO,FO,,,,,1
-Hunter D. Parker,2591,400,Allidois Nguyen,3414,101,RGO,299,B1,1,0,0,0,-2.17%,2.17%,0,0,150,14,5,KSU,UMN,RGO,RGO,K,,,,,1
-Ada Rutabaga,3457,555,Allidois Nguyen,3414,55,LGO,500,B1,2,0,0,0,-1.79%,1.79%,0,0,150,14,5,KSU,UMN,LGO,LGO,LGO,,,,,1
-Rodney Turnpike,3429,23,Chance Mercury,3403,55,2B,32,T2,0,0,0,0,6.81%,-6.81%,0,1,151,14,5,UMN,KSU,2B,2B,2B,,,,,1
-Harry Palms,3376,330,Chance Mercury,3403,302,HR,28,T2,0,2,0,0,17.14%,-17.14%,2,1,151,14,5,UMN,KSU,HR,HR,3B,,3403,,3403,1
-Curtis Dingleberry,3436,460,Chance Mercury,3403,777,K,317,T2,0,0,0,2,-1.70%,1.70%,0,0,151,14,5,UMN,KSU,K,K,K,,,,,1
-Vyncent Wyattoss III,3397,400,Chance Mercury,3403,199,FO,201,T2,1,0,0,2,-1.52%,1.52%,0,0,151,14,5,UMN,KSU,FO,FO,FO,,,,,1
-Tyler Helman,2794,330,Chance Mercury,3403,555,FO,225,T2,2,0,0,2,-1.37%,1.37%,0,0,151,14,5,UMN,KSU,FO,FO,FO,,,,,1
-Hawaiian Hammah,3461,724,Allidois Nguyen,3414,523,FO,201,B2,0,0,0,2,-2.94%,2.94%,0,0,152,14,5,KSU,UMN,FO,FO,FO,,,,,1
-Nathan Explosion,3432,210,Allidois Nguyen,3414,830,RGO,380,B2,1,0,0,2,-2.53%,2.53%,0,0,152,14,5,KSU,UMN,RGO,RGO,PO,,,,,1
-Bea Friday,3445,2,Allidois Nguyen,3414,960,HR,42,B2,2,0,0,2,12.04%,-12.04%,1,1,152,14,5,KSU,UMN,HR,HR,2B,,,,3414,1
-Jeter Ups,29,401,Allidois Nguyen,3414,900,LGO,499,B2,2,0,1,2,-2.13%,2.13%,0,0,152,14,5,KSU,UMN,LGO,LGO,LGO,,,,,1
-Bo Diggs,3422,444,Chance Mercury,3403,953,LGO,491,T3,0,0,1,2,-2.37%,2.37%,0,0,153,14,5,UMN,KSU,LGO,LGO,LGO,,,,,1
-Jeff Newman,2931,481,Chance Mercury,3403,501,3B,20,T3,1,0,1,2,7.86%,-7.86%,0,1,153,14,5,UMN,KSU,3B,3B,HR,,,,,1
-Shawn Michaels,3455,222,Chance Mercury,3403,55,BB,167,T3,1,3,1,2,1.32%,-1.32%,0,1,153,14,5,UMN,KSU,BB,BB,BB,,,,,2
-Willie Ruth,3464,321,Chance Mercury,3403,223,1B,98,T3,1,5,1,2,7.29%,-7.29%,1,1,153,14,5,UMN,KSU,1B,1B,1B,3403,,,,1
-Rodney Turnpike,3429,733,Chance Mercury,3403,799,1B,66,T3,1,4,1,3,4.80%,-4.80%,0,1,153,14,5,UMN,KSU,1B,1B,1B,,,,,1
-Harry Palms,3376,620,Chance Mercury,3403,798,Sac,178,T3,1,7,1,3,1.13%,-1.13%,1,0,153,14,5,UMN,KSU,FO,FO,Sac,3403,,,,1
-Curtis Dingleberry,3436,300,Chance Mercury,3403,297,HR,3,T3,2,4,1,4,11.45%,-11.45%,3,1,153,14,5,UMN,KSU,HR,HR,HR,,3403,3403,3403,1
-Vyncent Wyattoss III,3397,101,Tomba,3220,83,3B,18,T3,2,0,1,7,0.35%,-0.35%,0,0,153,14,5,UMN,KSU,3B,3B,HR,,,,,1
-Tyler Helman,2794,1,Tomba,3220,648,PO,353,T3,2,3,1,7,-0.59%,0.59%,0,0,153,14,5,UMN,KSU,PO,PO,K,,,,,1
-Alan,3383,325,Allidois Nguyen,3414,569,FO,244,B3,0,0,1,7,-0.86%,0.86%,0,0,154,14,5,KSU,UMN,FO,FO,FO,,,,,1
-Gene Okerlund,3407,112,Allidois Nguyen,3414,180,1B,68,B3,1,0,1,7,0.95%,-0.95%,0,0,154,14,5,KSU,UMN,1B,1B,1B,,,,,1
-Mordecai Davis,3409,365,Allidois Nguyen,3414,670,K,305,B3,1,1,1,7,-1.01%,1.01%,0,0,154,14,5,KSU,UMN,K,K,K,,,,,1
-Hunter D. Parker,2591,657,Allidois Nguyen,3414,365,RGO,292,B3,2,1,1,7,-0.99%,0.99%,0,0,154,14,5,KSU,UMN,RGO,RGO,K,,,,,1
-Donut Mahoney,3465,863,Yang Min-Ki,3411,975,1B,112,T1,0,0,0,0,2.91%,-2.91%,0,0,155,15,5,PSU,SLG,1B,1B,1B,,,,,1
-Andre Anderson,3325,737,Yang Min-Ki,3411,18,DP,281,T1,0,1,0,0,-7.60%,7.60%,0,0,155,15,5,PSU,SLG,RGO,RGO,FO,,,,,1
-Bobby Witt Jr Jr,3413,70,Yang Min-Ki,3411,315,K,245,T1,2,0,0,0,-1.76%,1.76%,0,0,155,15,5,PSU,SLG,K,K,FO,,,,,1
-Kim Wexler,2606,446,Tanya Degurechaff,3405,210,FO,236,B1,0,0,0,0,-2.48%,2.48%,0,0,156,15,5,SLG,PSU,FO,FO,FO,,,,,1
-Munki Oshu,2568,41,Tanya Degurechaff,3405,312,K,271,B1,1,0,0,0,-2.17%,2.17%,0,0,156,15,5,SLG,PSU,K,K,FO,,,,,1
-Maram Bowl,3458,435,Tanya Degurechaff,3405,891,LGO,456,B1,2,0,0,0,-1.79%,1.79%,0,0,156,15,5,SLG,PSU,LGO,LGO,LGO,,,,,1
-Mariam Bear,3453,602,Yang Min-Ki,3411,712,BB,110,T2,0,0,0,0,3.09%,-3.09%,0,0,157,15,5,PSU,SLG,BB,BB,1B,,,,,1
-Matilda No-Balls,3420,420,Yang Min-Ki,3411,781,DP,361,T2,0,1,0,0,-8.21%,8.21%,0,0,157,15,5,PSU,SLG,RGO,RGO,K,,,,,1
-Fermin Rype,3449,294,Yang Min-Ki,3411,449,FO,155,T2,2,0,0,0,-1.99%,1.99%,0,0,157,15,5,PSU,SLG,FO,FO,BB,,,,,1
-Mack “The Knife” Darin,3434,442,Tanya Degurechaff,3405,190,K,252,B2,0,0,0,0,-2.72%,2.72%,0,0,158,15,5,SLG,PSU,K,K,FO,,,,,1
-Felipe Coyne,3374,437,Tanya Degurechaff,3405,401,3B,36,B2,1,0,0,0,8.80%,-8.80%,0,1,158,15,5,SLG,PSU,3B,3B,2B,,,,,1
-Googly Moogly,3396,711,Tanya Degurechaff,3405,400,K,311,B2,1,3,0,0,-7.70%,7.70%,0,0,158,15,5,SLG,PSU,K,K,K,,,,,2
-Marcelo Soares,3402,313,Tanya Degurechaff,3405,201,BB,112,B2,2,3,0,0,1.88%,-1.88%,0,1,158,15,5,SLG,PSU,BB,BB,1B,,,,,1
-Fausto Herrera ,3428,150,Tanya Degurechaff,3405,1000,BB,150,B2,2,5,0,0,2.82%,-2.82%,0,0,158,15,5,SLG,PSU,BB,BB,BB,,,,,1
-Harto Thekhards,3415,584,Tanya Degurechaff,3405,666,1B,82,B2,2,7,0,0,20.20%,-20.20%,2,0,158,15,5,SLG,PSU,1B,1B,1B,3405,3405,,,1
-Kim Wexler,2606,345,Tanya Degurechaff,3405,790,RGO,445,B2,2,5,2,0,-3.79%,3.79%,0,0,158,15,5,SLG,PSU,RGO,RGO,RGO,,,,,1
-Cola Spritz,3372,115,Yang Min-Ki,3411,294,FO,179,T3,0,0,2,0,-2.94%,2.94%,0,0,159,15,5,PSU,SLG,FO,FO,FO,,,,,1
-Chris Walker ,3400,550,Yang Min-Ki,3411,7,LGO,457,T3,1,0,2,0,-2.36%,2.36%,0,0,159,15,5,PSU,SLG,LGO,LGO,LGO,,,,,1
-Cucamonga Seattle,3377,969,Yang Min-Ki,3411,611,RGO,358,T3,2,0,2,0,-1.83%,1.83%,0,0,159,15,5,PSU,SLG,RGO,RGO,K,,,,,1
-Munki Oshu,2568,500,Tanya Degurechaff,3405,690,FO,190,B3,0,0,2,0,-1.22%,1.22%,0,0,160,15,5,SLG,PSU,FO,FO,FO,,,,,1
-Maram Bowl,3458,390,Tanya Degurechaff,3405,795,PO,405,B3,1,0,2,0,-1.19%,1.19%,0,0,160,15,5,SLG,PSU,PO,PO,RGO,,,,,1
-Mack “The Knife” Darin,3434,482,Tanya Degurechaff,3405,490,HR,8,B3,2,0,2,0,7.64%,-7.64%,1,1,160,15,5,SLG,PSU,HR,HR,HR,,,,3405,1
-Felipe Coyne,3374,618,Tanya Degurechaff,3405,490,BB,128,B3,2,0,3,0,0.61%,-0.61%,0,0,160,15,5,SLG,PSU,BB,BB,1B,,,,,1
-Googly Moogly,3396,490,Tanya Degurechaff,3405,910,RGO,420,B3,2,1,3,0,-1.26%,1.26%,0,0,160,15,5,SLG,PSU,RGO,RGO,RGO,,,,,1
+Gracie Cwej-Mlodzianowski,3380,762,Benny Schwa,3388,969,FO,207,B4,2,1,3,0,-0.98%,0.98%,0,0,148,13,5,DPU,CAL,FO,FO,FO,,,,,1
+Jahnder Franco,3387,420,Mikko LePico,3375,333,2B,87,T5,0,0,3,0,5.87%,-5.87%,0,1,149,13,5,CAL,DPU,2B,2B,1B,,,,,1
+Scooter Funkypants,3423,947,Mikko LePico,3375,651,PO,296,T5,0,2,3,0,-4.11%,4.11%,0,0,149,13,5,CAL,DPU,PO,PO,K,,,,,1
+Chip Allen,3459,24,Mikko LePico,3375,59,2B,35,T5,1,2,3,0,8.33%,-8.33%,1,1,149,13,5,CAL,DPU,2B,2B,2B,,3375,,,1
+Fred Fredericks,3441,925,Mikko LePico,3375,924,HR,1,T5,1,2,3,1,27.71%,-27.71%,2,1,149,13,5,CAL,DPU,HR,HR,HR,,3375,,3375,1
+Scoochie Virtue,3404,971,Mikko LePico,3375,711,FO,260,T5,1,0,3,3,-3.90%,3.90%,0,0,149,13,5,CAL,DPU,FO,FO,FO,,,,,1
+Chooch Suzuka,3435,911,Mikko LePico,3375,850,2B,61,T5,2,0,3,3,5.53%,-5.53%,0,0,149,13,5,CAL,DPU,2B,2B,2B,,,,,1
+Strawhatespeon,3460,393,Chance Mercury,3403,688,K,295,T1,0,0,0,0,-2.51%,2.51%,0,0,150,14,5,UMN,KSU,K,K,K,,,,,1
+Shawn Michaels,3455,301,Chance Mercury,3403,101,FO,200,T1,1,0,0,0,-2.18%,2.18%,0,0,150,14,5,UMN,KSU,FO,FO,FO,,,,,1
+Willie Ruth,3464,789,Chance Mercury,3403,555,K,234,T1,2,0,0,0,-1.76%,1.76%,0,0,150,14,5,UMN,KSU,K,K,FO,,,,,1
+Mordecai Davis,3409,444,Allidois Nguyen,3414,688,FO,244,B1,0,0,0,0,-2.48%,2.48%,0,0,151,14,5,KSU,UMN,FO,FO,FO,,,,,1
+Hunter D. Parker,2591,400,Allidois Nguyen,3414,101,RGO,299,B1,1,0,0,0,-2.17%,2.17%,0,0,151,14,5,KSU,UMN,RGO,RGO,K,,,,,1
+Ada Rutabaga,3457,555,Allidois Nguyen,3414,55,LGO,500,B1,2,0,0,0,-1.79%,1.79%,0,0,151,14,5,KSU,UMN,LGO,LGO,LGO,,,,,1
+Rodney Turnpike,3429,23,Chance Mercury,3403,55,2B,32,T2,0,0,0,0,6.81%,-6.81%,0,1,152,14,5,UMN,KSU,2B,2B,2B,,,,,1
+Harry Palms,3376,330,Chance Mercury,3403,302,HR,28,T2,0,2,0,0,17.14%,-17.14%,2,1,152,14,5,UMN,KSU,HR,HR,3B,,3403,,3403,1
+Curtis Dingleberry,3436,460,Chance Mercury,3403,777,K,317,T2,0,0,0,2,-1.70%,1.70%,0,0,152,14,5,UMN,KSU,K,K,K,,,,,1
+Vyncent Wyattoss III,3397,400,Chance Mercury,3403,199,FO,201,T2,1,0,0,2,-1.52%,1.52%,0,0,152,14,5,UMN,KSU,FO,FO,FO,,,,,1
+Tyler Helman,2794,330,Chance Mercury,3403,555,FO,225,T2,2,0,0,2,-1.37%,1.37%,0,0,152,14,5,UMN,KSU,FO,FO,FO,,,,,1
+Hawaiian Hammah,3461,724,Allidois Nguyen,3414,523,FO,201,B2,0,0,0,2,-2.94%,2.94%,0,0,153,14,5,KSU,UMN,FO,FO,FO,,,,,1
+Nathan Explosion,3432,210,Allidois Nguyen,3414,830,RGO,380,B2,1,0,0,2,-2.53%,2.53%,0,0,153,14,5,KSU,UMN,RGO,RGO,PO,,,,,1
+Bea Friday,3445,2,Allidois Nguyen,3414,960,HR,42,B2,2,0,0,2,12.04%,-12.04%,1,1,153,14,5,KSU,UMN,HR,HR,2B,,,,3414,1
+Jeter Ups,29,401,Allidois Nguyen,3414,900,LGO,499,B2,2,0,1,2,-2.13%,2.13%,0,0,153,14,5,KSU,UMN,LGO,LGO,LGO,,,,,1
+Bo Diggs,3422,444,Chance Mercury,3403,953,LGO,491,T3,0,0,1,2,-2.37%,2.37%,0,0,154,14,5,UMN,KSU,LGO,LGO,LGO,,,,,1
+Jeff Newman,2931,481,Chance Mercury,3403,501,3B,20,T3,1,0,1,2,7.86%,-7.86%,0,1,154,14,5,UMN,KSU,3B,3B,HR,,,,,1
+Shawn Michaels,3455,222,Chance Mercury,3403,55,BB,167,T3,1,3,1,2,1.32%,-1.32%,0,1,154,14,5,UMN,KSU,BB,BB,BB,,,,,2
+Willie Ruth,3464,321,Chance Mercury,3403,223,1B,98,T3,1,5,1,2,7.29%,-7.29%,1,1,154,14,5,UMN,KSU,1B,1B,1B,3403,,,,1
+Rodney Turnpike,3429,733,Chance Mercury,3403,799,1B,66,T3,1,4,1,3,4.80%,-4.80%,0,1,154,14,5,UMN,KSU,1B,1B,1B,,,,,1
+Harry Palms,3376,620,Chance Mercury,3403,798,Sac,178,T3,1,7,1,3,1.13%,-1.13%,1,0,154,14,5,UMN,KSU,FO,FO,Sac,3403,,,,1
+Curtis Dingleberry,3436,300,Chance Mercury,3403,297,HR,3,T3,2,4,1,4,11.45%,-11.45%,3,1,154,14,5,UMN,KSU,HR,HR,HR,,3403,3403,3403,1
+Vyncent Wyattoss III,3397,101,Tomba,3220,83,3B,18,T3,2,0,1,7,0.35%,-0.35%,0,0,154,14,5,UMN,KSU,3B,3B,HR,,,,,1
+Tyler Helman,2794,1,Tomba,3220,648,PO,353,T3,2,3,1,7,-0.59%,0.59%,0,0,154,14,5,UMN,KSU,PO,PO,K,,,,,1
+Alan,3383,325,Allidois Nguyen,3414,569,FO,244,B3,0,0,1,7,-0.86%,0.86%,0,0,155,14,5,KSU,UMN,FO,FO,FO,,,,,1
+Gene Okerlund,3407,112,Allidois Nguyen,3414,180,1B,68,B3,1,0,1,7,0.95%,-0.95%,0,0,155,14,5,KSU,UMN,1B,1B,1B,,,,,1
+Mordecai Davis,3409,365,Allidois Nguyen,3414,670,K,305,B3,1,1,1,7,-1.01%,1.01%,0,0,155,14,5,KSU,UMN,K,K,K,,,,,1
+Hunter D. Parker,2591,657,Allidois Nguyen,3414,365,RGO,292,B3,2,1,1,7,-0.99%,0.99%,0,0,155,14,5,KSU,UMN,RGO,RGO,K,,,,,1
+Bo Diggs,3422,262,Tomba,3220,800,RGO,462,T4,0,0,1,7,-0.19%,0.19%,0,0,156,14,5,UMN,KSU,RGO,RGO,LGO,,,,,1
+Jeff Newman,2931,193,Tomba,3220,390,FO,197,T4,1,0,1,7,-0.17%,0.17%,0,0,156,14,5,UMN,KSU,FO,FO,FO,,,,,1
+Shawn Michaels,3455,183,Tomba,3220,48,BB,135,T4,2,0,1,7,0.15%,-0.15%,0,0,156,14,5,UMN,KSU,BB,BB,1B,,,,,1
+Willie Ruth,3464,667,Tomba,3220,107,RGO,440,T4,2,1,1,7,-0.29%,0.29%,0,0,156,14,5,UMN,KSU,RGO,RGO,RGO,,,,,1
+Ada Rutabaga,3457,450,Allidois Nguyen,3414,292,BB,158,B4,0,0,1,7,1.10%,-1.10%,0,0,157,14,5,KSU,UMN,BB,BB,BB,,,,,1
+Hawaiian Hammah,3461,808,Allidois Nguyen,3414,345,DP,463,B4,0,1,1,7,-2.29%,2.29%,0,0,157,14,5,KSU,UMN,LGO,LGO,DP,,,,,1
+Nathan Explosion,3432,911,Allidois Nguyen,3414,865,2B,46,B4,2,0,1,7,0.48%,-0.48%,0,1,157,14,5,KSU,UMN,2B,2B,2B,,,,,1
+Bea Friday,3445,212,Allidois Nguyen,3414,166,HR,46,B4,2,2,1,7,3.23%,-3.23%,2,1,157,14,5,KSU,UMN,HR,HR,2B,,3414,,3414,1
+Jeter Ups,29,212,Allidois Nguyen,3414,798,RGO,414,B4,2,0,3,7,-0.89%,0.89%,0,0,157,14,5,KSU,UMN,RGO,RGO,RGO,,,,,1
+Rodney Turnpike,3429,212,Tomba,3220,211,HR,1,T5,0,0,3,7,2.05%,-2.05%,1,1,158,14,5,UMN,KSU,HR,HR,HR,,,,3220,1
+Harry Palms,3376,513,Tomba,3220,125,K,388,T5,0,0,3,8,-0.18%,0.18%,0,0,158,14,5,UMN,KSU,K,K,PO,,,,,1
+Donut Mahoney,3465,863,Yang Min-Ki,3411,975,1B,112,T1,0,0,0,0,2.91%,-2.91%,0,0,159,15,5,PSU,SLG,1B,1B,1B,,,,,1
+Andre Anderson,3325,737,Yang Min-Ki,3411,18,DP,281,T1,0,1,0,0,-7.60%,7.60%,0,0,159,15,5,PSU,SLG,RGO,RGO,FO,,,,,1
+Bobby Witt Jr Jr,3413,70,Yang Min-Ki,3411,315,K,245,T1,2,0,0,0,-1.76%,1.76%,0,0,159,15,5,PSU,SLG,K,K,FO,,,,,1
+Kim Wexler,2606,446,Tanya Degurechaff,3405,210,FO,236,B1,0,0,0,0,-2.48%,2.48%,0,0,160,15,5,SLG,PSU,FO,FO,FO,,,,,1
+Munki Oshu,2568,41,Tanya Degurechaff,3405,312,K,271,B1,1,0,0,0,-2.17%,2.17%,0,0,160,15,5,SLG,PSU,K,K,FO,,,,,1
+Maram Bowl,3458,435,Tanya Degurechaff,3405,891,LGO,456,B1,2,0,0,0,-1.79%,1.79%,0,0,160,15,5,SLG,PSU,LGO,LGO,LGO,,,,,1
+Mariam Bear,3453,602,Yang Min-Ki,3411,712,BB,110,T2,0,0,0,0,3.09%,-3.09%,0,0,161,15,5,PSU,SLG,BB,BB,1B,,,,,1
+Matilda No-Balls,3420,420,Yang Min-Ki,3411,781,DP,361,T2,0,1,0,0,-8.21%,8.21%,0,0,161,15,5,PSU,SLG,RGO,RGO,K,,,,,1
+Fermin Rype,3449,294,Yang Min-Ki,3411,449,FO,155,T2,2,0,0,0,-1.99%,1.99%,0,0,161,15,5,PSU,SLG,FO,FO,BB,,,,,1
+Mack “The Knife” Darin,3434,442,Tanya Degurechaff,3405,190,K,252,B2,0,0,0,0,-2.72%,2.72%,0,0,162,15,5,SLG,PSU,K,K,FO,,,,,1
+Felipe Coyne,3374,437,Tanya Degurechaff,3405,401,3B,36,B2,1,0,0,0,8.80%,-8.80%,0,1,162,15,5,SLG,PSU,3B,3B,2B,,,,,1
+Googly Moogly,3396,711,Tanya Degurechaff,3405,400,K,311,B2,1,3,0,0,-7.70%,7.70%,0,0,162,15,5,SLG,PSU,K,K,K,,,,,2
+Marcelo Soares,3402,313,Tanya Degurechaff,3405,201,BB,112,B2,2,3,0,0,1.88%,-1.88%,0,1,162,15,5,SLG,PSU,BB,BB,1B,,,,,1
+Fausto Herrera ,3428,150,Tanya Degurechaff,3405,1000,BB,150,B2,2,5,0,0,2.82%,-2.82%,0,0,162,15,5,SLG,PSU,BB,BB,BB,,,,,1
+Harto Thekhards,3415,584,Tanya Degurechaff,3405,666,1B,82,B2,2,7,0,0,20.20%,-20.20%,2,0,162,15,5,SLG,PSU,1B,1B,1B,3405,3405,,,1
+Kim Wexler,2606,345,Tanya Degurechaff,3405,790,RGO,445,B2,2,5,2,0,-3.79%,3.79%,0,0,162,15,5,SLG,PSU,RGO,RGO,RGO,,,,,1
+Cola Spritz,3372,115,Yang Min-Ki,3411,294,FO,179,T3,0,0,2,0,-2.94%,2.94%,0,0,163,15,5,PSU,SLG,FO,FO,FO,,,,,1
+Chris Walker ,3400,550,Yang Min-Ki,3411,7,LGO,457,T3,1,0,2,0,-2.36%,2.36%,0,0,163,15,5,PSU,SLG,LGO,LGO,LGO,,,,,1
+Cucamonga Seattle,3377,969,Yang Min-Ki,3411,611,RGO,358,T3,2,0,2,0,-1.83%,1.83%,0,0,163,15,5,PSU,SLG,RGO,RGO,K,,,,,1
+Munki Oshu,2568,500,Tanya Degurechaff,3405,690,FO,190,B3,0,0,2,0,-1.22%,1.22%,0,0,164,15,5,SLG,PSU,FO,FO,FO,,,,,1
+Maram Bowl,3458,390,Tanya Degurechaff,3405,795,PO,405,B3,1,0,2,0,-1.19%,1.19%,0,0,164,15,5,SLG,PSU,PO,PO,RGO,,,,,1
+Mack “The Knife” Darin,3434,482,Tanya Degurechaff,3405,490,HR,8,B3,2,0,2,0,7.64%,-7.64%,1,1,164,15,5,SLG,PSU,HR,HR,HR,,,,3405,1
+Felipe Coyne,3374,618,Tanya Degurechaff,3405,490,BB,128,B3,2,0,3,0,0.61%,-0.61%,0,0,164,15,5,SLG,PSU,BB,BB,1B,,,,,1
+Googly Moogly,3396,490,Tanya Degurechaff,3405,910,RGO,420,B3,2,1,3,0,-1.26%,1.26%,0,0,164,15,5,SLG,PSU,RGO,RGO,RGO,,,,,1
+Donut Mahoney,3465,990,Yang Min-Ki,3411,723,K,267,T4,0,0,3,0,-2.34%,2.34%,0,0,165,15,5,PSU,SLG,K,K,FO,,,,,1
+Andre Anderson,3325,949,Yang Min-Ki,3411,945,HR,4,T4,1,0,3,0,7.16%,-7.16%,1,1,165,15,5,PSU,SLG,HR,HR,HR,,,,3411,1
+Bobby Witt Jr Jr,3413,233,Yang Min-Ki,3411,381,BB,148,T4,1,0,3,1,3.54%,-3.54%,0,0,165,15,5,PSU,SLG,BB,BB,BB,,,,,1
+Mariam Bear,3453,488,Yang Min-Ki,3411,381,BB,107,T4,1,1,3,1,6.42%,-6.42%,0,0,165,15,5,PSU,SLG,BB,BB,1B,,,,,1
+Matilda No-Balls,3420,363,Yang Min-Ki,3411,649,PO,286,T4,1,4,3,1,-5.72%,5.72%,0,0,165,15,5,PSU,SLG,PO,PO,K,,,,,1

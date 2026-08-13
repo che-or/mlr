@@ -58,14 +58,14 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 42,
+        "tie_count": 44,
         "most_recent": {
-          "id": 3388,
+          "id": 3453,
           "season": "S13",
-          "session": 4,
-          "team": "CAL",
-          "location": "Home",
-          "opponent": "KSU"
+          "session": 5,
+          "team": "PSU",
+          "location": "Away",
+          "opponent": "SLG"
         }
       },
       "CS": {
@@ -206,14 +206,14 @@
       },
       "R": {
         "record": 3,
-        "tie_count": 7,
+        "tie_count": 8,
         "most_recent": {
-          "id": 3408,
+          "id": 3429,
           "season": "S13",
-          "session": 3,
+          "session": 5,
           "team": "UMN",
           "location": "Away",
-          "opponent": "DPU"
+          "opponent": "KSU"
         }
       },
       "RBI": {
@@ -1339,21 +1339,14 @@
         ]
       },
       "RE24": {
-        "record": -3.8730158730158726,
+        "record": -3.9661016949152543,
         "holders": [
           {
-            "team": "MCH",
-            "season": "S8",
-            "session": 3,
-            "location": "Home",
-            "opponent": "MSU"
-          },
-          {
-            "team": "PUR",
-            "season": "S8",
+            "team": "UMN",
+            "season": "S13",
             "session": 1,
-            "location": "Away",
-            "opponent": "HRW"
+            "location": "Home",
+            "opponent": "CAL"
           }
         ]
       },
@@ -1968,7 +1961,7 @@
         ]
       },
       "RE24": {
-        "record": -6.076023391812865,
+        "record": -6.271186440677966,
         "holders": [
           {
             "away": "CAL",
@@ -2024,13 +2017,13 @@
         ]
       },
       "WAR": {
-        "record": 0.7828282028392893,
+        "record": 0.7935551374051728,
         "holders": [
           {
-            "away": "MCH",
-            "home": "PAN",
-            "season": "S8",
-            "session": 2
+            "away": "CAL",
+            "home": "UMN",
+            "season": "S13",
+            "session": 1
           }
         ]
       },
