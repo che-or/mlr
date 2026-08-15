@@ -70,14 +70,14 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 77,
+        "tie_count": 78,
         "most_recent": {
-          "id": 3462,
+          "id": 3459,
           "season": "S13",
-          "session": 4,
-          "team": "DPU",
+          "session": 5,
+          "team": "CAL",
           "location": "Away",
-          "opponent": "PSU"
+          "opponent": "DPU"
         }
       },
       "FO": {
@@ -205,20 +205,37 @@
         }
       },
       "R": {
-        "record": 3,
-        "tie_count": 8,
-        "most_recent": {
-          "id": 3429,
-          "season": "S13",
-          "session": 5,
-          "team": "UMN",
-          "location": "Away",
-          "opponent": "KSU"
-        }
+        "record": 4,
+        "holders": [
+          {
+            "id": 3429,
+            "season": "S13",
+            "session": 5,
+            "team": "UMN",
+            "location": "Away",
+            "opponent": "KSU"
+          }
+        ]
       },
       "RBI": {
         "record": 5,
         "holders": [
+          {
+            "id": 3376,
+            "season": "S13",
+            "session": 5,
+            "team": "UMN",
+            "location": "Away",
+            "opponent": "KSU"
+          },
+          {
+            "id": 3436,
+            "season": "S13",
+            "session": 5,
+            "team": "UMN",
+            "location": "Away",
+            "opponent": "KSU"
+          },
           {
             "id": 3107,
             "season": "S11",
@@ -244,7 +261,7 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 48,
+        "tie_count": 49,
         "most_recent": {
           "id": 2591,
           "season": "S13",
@@ -268,14 +285,14 @@
       },
       "SO": {
         "record": 3,
-        "tie_count": 21,
+        "tie_count": 22,
         "most_recent": {
-          "id": 3430,
+          "id": 3419,
           "season": "S13",
-          "session": 2,
-          "team": "CAL",
+          "session": 5,
+          "team": "DPU",
           "location": "Home",
-          "opponent": "SLG"
+          "opponent": "CAL"
         }
       },
       "TB": {
@@ -921,66 +938,38 @@
         ]
       },
       "R": {
-        "record": 11,
+        "record": 14,
         "holders": [
           {
-            "team": "OWL",
-            "season": "S12",
-            "session": 6,
+            "team": "UMN",
+            "season": "S13",
+            "session": 5,
             "location": "Away",
-            "opponent": "LSU"
-          },
-          {
-            "team": "BSU",
-            "season": "S11",
-            "session": 1,
-            "location": "Away",
-            "opponent": "UWU"
-          },
-          {
-            "team": "UNC",
-            "season": "S5",
-            "session": 6,
-            "location": "Away",
-            "opponent": "NCS"
+            "opponent": "KSU"
           }
         ]
       },
       "RBI": {
-        "record": 11,
+        "record": 14,
         "holders": [
           {
-            "team": "OWL",
-            "season": "S12",
-            "session": 6,
+            "team": "UMN",
+            "season": "S13",
+            "session": 5,
             "location": "Away",
-            "opponent": "LSU"
-          },
-          {
-            "team": "BSU",
-            "season": "S11",
-            "session": 1,
-            "location": "Away",
-            "opponent": "UWU"
-          },
-          {
-            "team": "UNC",
-            "season": "S5",
-            "session": 6,
-            "location": "Away",
-            "opponent": "NCS"
+            "opponent": "KSU"
           }
         ]
       },
       "RE24": {
-        "record": 7.729613733905579,
+        "record": 9.913513513513513,
         "holders": [
           {
-            "team": "BSU",
-            "season": "S11",
-            "session": 1,
+            "team": "UMN",
+            "season": "S13",
+            "session": 5,
             "location": "Away",
-            "opponent": "UWU"
+            "opponent": "KSU"
           }
         ]
       },
@@ -1040,14 +1029,14 @@
         ]
       },
       "WAR": {
-        "record": 0.9710761979090315,
+        "record": 1.1481777982747738,
         "holders": [
           {
-            "team": "UNC",
-            "season": "S5",
-            "session": 6,
+            "team": "UMN",
+            "season": "S13",
+            "session": 5,
             "location": "Away",
-            "opponent": "NCS"
+            "opponent": "KSU"
           }
         ]
       },
@@ -1223,28 +1212,14 @@
         ]
       },
       "ER": {
-        "record": 11,
+        "record": 14,
         "holders": [
           {
-            "team": "LSU",
-            "season": "S12",
-            "session": 6,
+            "team": "KSU",
+            "season": "S13",
+            "session": 5,
             "location": "Home",
-            "opponent": "OWL"
-          },
-          {
-            "team": "UWU",
-            "season": "S11",
-            "session": 1,
-            "location": "Home",
-            "opponent": "BSU"
-          },
-          {
-            "team": "NCS",
-            "season": "S5",
-            "session": 6,
-            "location": "Home",
-            "opponent": "UNC"
+            "opponent": "UMN"
           }
         ]
       },
@@ -1339,7 +1314,7 @@
         ]
       },
       "RE24": {
-        "record": -4.011049723756906,
+        "record": -4.0864864864864865,
         "holders": [
           {
             "team": "UMN",
@@ -1641,13 +1616,13 @@
         ]
       },
       "RE24": {
-        "record": 8.459227467811159,
+        "record": 9.508108108108107,
         "holders": [
           {
-            "away": "BSU",
-            "home": "UWU",
-            "season": "S11",
-            "session": 1
+            "away": "UMN",
+            "home": "KSU",
+            "season": "S13",
+            "session": 5
           }
         ]
       },
@@ -1708,13 +1683,13 @@
         ]
       },
       "WAR": {
-        "record": 1.0577555540799717,
+        "record": 1.1972523702619036,
         "holders": [
           {
-            "away": "BSU",
-            "home": "UWU",
-            "season": "S11",
-            "session": 1
+            "away": "UMN",
+            "home": "KSU",
+            "season": "S13",
+            "session": 5
           }
         ]
       },
@@ -1961,7 +1936,7 @@
         ]
       },
       "RE24": {
-        "record": -6.353591160220994,
+        "record": -6.491891891891893,
         "holders": [
           {
             "away": "CAL",
@@ -2017,7 +1992,7 @@
         ]
       },
       "WAR": {
-        "record": 0.7898609042458998,
+        "record": 0.7911077891991233,
         "holders": [
           {
             "away": "CAL",
