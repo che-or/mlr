@@ -796,17 +796,46 @@ Shawn Michaels,3455,901,Bartholomew Simpson,3454,211,K,310,T2,1,0,0,2,-1.52%,1.5
 Orwell Kensington,3408,829,Bartholomew Simpson,3454,722,1B,107,T2,2,0,0,2,1.27%,-1.27%,0,0,180,16,6,UMN,SLG,1B,1B,1B,,,,,1
 Kyle Schwarbombs,3398,777,Bartholomew Simpson,3454,612,FO,165,T2,2,1,0,2,-2.64%,2.64%,0,0,180,16,6,UMN,SLG,FO,FO,BB,,,,,1
 Ariel Yu,3466,287,Ethan Lee,3410,615,PO,328,B2,0,0,0,2,-2.94%,2.94%,0,0,181,16,6,SLG,UMN,PO,PO,K,,,,,1
-Munki Oshu,2568,803,Ethan Lee,3410,888,1B,85,B2,1,0,0,2,2.98%,-2.98%,0,0,181,16,6,SLG,UMN,1B,1B,1B,,,,,1
+Munki Oshu,2568,803,Ethan Lee,3410,888,1B,85,B2,1,0,0,2,2.98%,-2.98%,0,1,181,16,6,SLG,UMN,1B,1B,1B,,,,,1
 Lefty Cobb,3392,447,Ethan Lee,3410,626,FO,179,B2,1,1,0,2,-3.32%,3.32%,0,0,181,16,6,SLG,UMN,FO,FO,FO,,,,,1
-Bloop McNutt,3393,903,Benny Schwa,3388,295,RGO,392,T1,0,0,0,0,-2.51%,2.51%,0,0,182,17,6,DPU,CAL,RGO,RGO,PO,,,,,1
-BeefCake Willy ,3412,65,Benny Schwa,3388,11,2B,54,T1,1,0,0,0,4.65%,-4.65%,0,0,182,17,6,DPU,CAL,2B,2B,2B,,,,,1
-Nora Selbmar ,3399,587,Benny Schwa,3388,69,LGO,482,T1,1,2,0,0,-3.78%,3.78%,0,0,182,17,6,DPU,CAL,LGO,LGO,LGO,,,,,1
-Tobé Bryant,3389,672,Benny Schwa,3388,857,FO,185,T1,2,2,0,0,-4.81%,4.81%,0,0,182,17,6,DPU,CAL,FO,FO,FO,,,,,1
-Chip Allen,3459,420,Demetri Sokenzie,3442,666,K,246,B1,0,0,0,0,-2.48%,2.48%,0,0,183,17,6,CAL,DPU,K,K,FO,,,,,1
-Arlon Gemini,3390,101,Tomba,3220,525,RGO,424,T1,0,0,0,0,-2.51%,2.51%,0,0,184,18,6,PSU,KSU,RGO,RGO,RGO,,,,,1
-Rabs Roland,3444,148,Tomba,3220,405,K,257,T1,1,0,0,0,-2.18%,2.18%,0,0,184,18,6,PSU,KSU,K,K,FO,,,,,1
-Mariam Bear,3453,188,Tomba,3220,624,PO,436,T1,2,0,0,0,-1.76%,1.76%,0,0,184,18,6,PSU,KSU,PO,PO,RGO,,,,,1
-Loki,3384,544,Dwayne Swanson,2935,525,HR,19,B1,0,0,0,0,11.79%,-11.79%,1,1,185,18,6,KSU,PSU,HR,HR,HR,,,,2935,1
-Ada Rutabaga,3457,407,Dwayne Swanson,2935,477,1B,70,B1,0,0,1,0,2.23%,-2.23%,0,0,185,18,6,KSU,PSU,1B,1B,1B,,,,,1
-Tank Sharksy,3395,666,Dwayne Swanson,2935,500,FO,166,B1,0,1,1,0,-2.61%,2.61%,0,0,185,18,6,KSU,PSU,FO,FO,BB,,,,,1
-Hawaiian Hammah,3461,206,Dwayne Swanson,2935,665,DP,459,B1,1,1,1,0,-4.83%,4.83%,0,0,185,18,6,KSU,PSU,RGO,RGO,DP,,,,,1
+Marcelo Soares,3402,950,Ethan Lee,3410,955,HR,5,B2,2,1,0,2,24.65%,-24.65%,2,1,181,16,6,SLG,UMN,HR,HR,HR,,,3410,3410,1
+KC Martinez,3379,808,Ethan Lee,3410,411,RGO,397,B2,2,0,2,2,-2.03%,2.03%,0,0,181,16,6,SLG,UMN,RGO,RGO,PO,,,,,1
+Willie Ruth,3464,996,Bartholomew Simpson,3454,532,LGO,464,T3,0,0,2,2,-3.03%,3.03%,0,0,182,16,6,UMN,SLG,LGO,LGO,LGO,,,,,1
+Rodney Turnpike,3429,442,Bartholomew Simpson,3454,412,2B,30,T3,1,0,2,2,5.58%,-5.58%,0,0,182,16,6,UMN,SLG,2B,2B,2B,,,,,1
+Harry Palms,3376,913,Bartholomew Simpson,3454,616,K,297,T3,1,2,2,2,-4.62%,4.62%,0,0,182,16,6,UMN,SLG,K,K,K,,,,,1
+Curtis Dingleberry,3436,820,Bartholomew Simpson,3454,232,RGO,412,T3,2,2,2,2,-6.01%,6.01%,0,0,182,16,6,UMN,SLG,RGO,RGO,RGO,,,,,1
+Mack “The Knife” Darin,3434,585,Ethan Lee,3410,1,LGO,416,B3,0,0,2,2,-3.07%,3.07%,0,0,183,16,6,SLG,UMN,LGO,LGO,RGO,,,,,1
+Knight Newton,3448,827,Ethan Lee,3410,133,K,306,B3,1,0,2,2,-2.77%,2.77%,0,0,183,16,6,SLG,UMN,K,K,K,,,,,1
+Maram Bowl,3458,555,Ethan Lee,3410,414,BB,141,B3,2,0,2,2,2.37%,-2.37%,0,0,183,16,6,SLG,UMN,BB,BB,BB,,,,,1
+Worm Lennox,3421,140,Ethan Lee,3410,717,RGO,423,B3,2,1,2,2,-4.64%,4.64%,0,0,183,16,6,SLG,UMN,RGO,RGO,RGO,,,,,1
+Vyncent Wyattoss III,3397,651,Bartholomew Simpson,3454,142,LGO,491,T4,0,0,2,2,-3.58%,3.58%,0,0,184,16,6,UMN,SLG,LGO,LGO,LGO,,,,,1
+Trevor Paultis,3416,237,Bartholomew Simpson,3454,711,LGO,474,T4,1,0,2,2,-3.19%,3.19%,0,0,184,16,6,UMN,SLG,LGO,LGO,LGO,,,,,1
+Shawn Michaels,3455,87,Bartholomew Simpson,3454,549,LGO,462,T4,2,0,2,2,-2.75%,2.75%,0,0,184,16,6,UMN,SLG,LGO,LGO,LGO,,,,,1
+Bloop McNutt,3393,903,Benny Schwa,3388,295,RGO,392,T1,0,0,0,0,-2.51%,2.51%,0,0,185,17,6,DPU,CAL,RGO,RGO,PO,,,,,1
+BeefCake Willy ,3412,65,Benny Schwa,3388,11,2B,54,T1,1,0,0,0,4.65%,-4.65%,0,0,185,17,6,DPU,CAL,2B,2B,2B,,,,,1
+Nora Selbmar ,3399,587,Benny Schwa,3388,69,LGO,482,T1,1,2,0,0,-3.78%,3.78%,0,0,185,17,6,DPU,CAL,LGO,LGO,LGO,,,,,1
+Tobé Bryant,3389,672,Benny Schwa,3388,857,FO,185,T1,2,2,0,0,-4.81%,4.81%,0,0,185,17,6,DPU,CAL,FO,FO,FO,,,,,1
+Chip Allen,3459,420,Demetri Sokenzie,3442,666,K,246,B1,0,0,0,0,-2.48%,2.48%,0,0,186,17,6,CAL,DPU,K,K,FO,,,,,1
+Krbmeister,3430,101,Demetri Sokenzie,3442,894,FO,207,B1,1,0,0,0,-2.17%,2.17%,0,0,186,17,6,CAL,DPU,FO,FO,FO,,,,,1
+Fred Fredericks,3441,925,Demetri Sokenzie,3442,543,PO,382,B1,2,0,0,0,-1.79%,1.79%,0,0,186,17,6,CAL,DPU,PO,PO,PO,,,,,1
+Chester Naff,3424,27,Benny Schwa,3388,615,RGO,412,T2,0,0,0,0,-2.72%,2.72%,0,0,187,17,6,DPU,CAL,RGO,RGO,RGO,,,,,1
+Harold Marquez,3462,726,Benny Schwa,3388,121,PO,395,T2,1,0,0,0,-2.40%,2.40%,0,0,187,17,6,DPU,CAL,PO,PO,PO,,,,,1
+Gracie Cwej-Mlodzianowski,3380,940,Benny Schwa,3388,567,PO,373,T2,2,0,0,0,-1.99%,1.99%,0,0,187,17,6,DPU,CAL,PO,PO,K,,,,,1
+Scoochie Virtue,3404,584,Demetri Sokenzie,3442,321,FO,263,B2,0,0,0,0,-2.72%,2.72%,0,0,188,17,6,CAL,DPU,FO,FO,FO,,,,,1
+Socks Maybe,3381,957,Demetri Sokenzie,3442,721,FO,236,B2,1,0,0,0,-2.38%,2.38%,0,0,188,17,6,CAL,DPU,FO,FO,FO,,,,,1
+Heliotrope Selenifuge Jr.,3401,789,Demetri Sokenzie,3442,160,K,371,B2,2,0,0,0,-2.03%,2.03%,0,0,188,17,6,CAL,DPU,K,K,K,,,,,1
+Steak Dynasty,3406,6,Benny Schwa,3388,434,RGO,428,T3,0,0,0,0,-3.03%,3.03%,0,0,189,17,6,DPU,CAL,RGO,RGO,RGO,,,,,1
+John Cally,3385,747,Benny Schwa,3388,238,LGO,491,T3,1,0,0,0,-2.74%,2.74%,0,0,189,17,6,DPU,CAL,LGO,LGO,LGO,,,,,1
+Bloop McNutt,3393,455,Benny Schwa,3388,420,2B,35,T3,2,0,0,0,3.70%,-3.70%,0,0,189,17,6,DPU,CAL,2B,2B,2B,,,,,1
+BeefCake Willy ,3412,877,Benny Schwa,3388,11,FO,134,T3,2,2,0,0,-6.01%,6.01%,0,0,189,17,6,DPU,CAL,FO,FO,1B,,,,,1
+Chooch Suzuka,3435,500,Mikko LePico,3375,222,K,278,B3,0,0,0,0,-3.07%,3.07%,0,0,190,17,6,CAL,DPU,K,K,FO,,,,,1
+Arlon Gemini,3390,101,Tomba,3220,525,RGO,424,T1,0,0,0,0,-2.51%,2.51%,0,0,191,18,6,PSU,KSU,RGO,RGO,RGO,,,,,1
+Rabs Roland,3444,148,Tomba,3220,405,K,257,T1,1,0,0,0,-2.18%,2.18%,0,0,191,18,6,PSU,KSU,K,K,FO,,,,,1
+Mariam Bear,3453,188,Tomba,3220,624,PO,436,T1,2,0,0,0,-1.76%,1.76%,0,0,191,18,6,PSU,KSU,PO,PO,RGO,,,,,1
+Loki,3384,544,Dwayne Swanson,2935,525,HR,19,B1,0,0,0,0,11.79%,-11.79%,1,1,192,18,6,KSU,PSU,HR,HR,HR,,,,2935,1
+Ada Rutabaga,3457,407,Dwayne Swanson,2935,477,1B,70,B1,0,0,1,0,2.23%,-2.23%,0,0,192,18,6,KSU,PSU,1B,1B,1B,,,,,1
+Tank Sharksy,3395,666,Dwayne Swanson,2935,500,FO,166,B1,0,1,1,0,-2.61%,2.61%,0,0,192,18,6,KSU,PSU,FO,FO,BB,,,,,1
+Hawaiian Hammah,3461,206,Dwayne Swanson,2935,665,DP,459,B1,1,1,1,0,-4.83%,4.83%,0,0,192,18,6,KSU,PSU,RGO,RGO,DP,,,,,1
+Donut Mahoney,3465,365,Tomba,3220,153,FO,212,T2,0,0,1,0,-2.95%,2.95%,0,0,193,18,6,PSU,KSU,FO,FO,FO,,,,,1
+Andre Anderson,3325,872,Tomba,3220,211,RGO,339,T2,1,0,1,0,-2.51%,2.51%,0,0,193,18,6,PSU,KSU,RGO,RGO,K,,,,,1
+Jack Drake,3438,777,Tomba,3220,666,1B,111,T2,2,0,1,0,2.24%,-2.24%,0,0,193,18,6,PSU,KSU,1B,1B,1B,,,,,1

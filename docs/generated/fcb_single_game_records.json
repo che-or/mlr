@@ -962,7 +962,7 @@
         ]
       },
       "RE24": {
-        "record": 10.06060606060606,
+        "record": 10.155339805825243,
         "holders": [
           {
             "team": "UMN",
@@ -1029,7 +1029,7 @@
         ]
       },
       "WAR": {
-        "record": 1.1769146101428334,
+        "record": 1.181221048603383,
         "holders": [
           {
             "team": "UMN",
@@ -1314,14 +1314,21 @@
         ]
       },
       "RE24": {
-        "record": -3.9393939393939394,
+        "record": -3.8730158730158726,
         "holders": [
           {
-            "team": "UMN",
-            "season": "S13",
-            "session": 1,
+            "team": "MCH",
+            "season": "S8",
+            "session": 3,
             "location": "Home",
-            "opponent": "CAL"
+            "opponent": "MSU"
+          },
+          {
+            "team": "PUR",
+            "season": "S8",
+            "session": 1,
+            "location": "Away",
+            "opponent": "HRW"
           }
         ]
       },
@@ -1616,7 +1623,7 @@
         ]
       },
       "RE24": {
-        "record": 9.121212121212121,
+        "record": 9.310679611650485,
         "holders": [
           {
             "away": "UMN",
@@ -1683,7 +1690,7 @@
         ]
       },
       "WAR": {
-        "record": 1.2001322475741099,
+        "record": 1.2103690186859244,
         "holders": [
           {
             "away": "UMN",
@@ -1936,7 +1943,7 @@
         ]
       },
       "RE24": {
-        "record": -6.222222222222222,
+        "record": -6.048543689320389,
         "holders": [
           {
             "away": "CAL",
@@ -1992,13 +1999,13 @@
         ]
       },
       "WAR": {
-        "record": 0.7909555710886143,
+        "record": 0.7828282028392893,
         "holders": [
           {
-            "away": "CAL",
-            "home": "UMN",
-            "season": "S13",
-            "session": 1
+            "away": "MCH",
+            "home": "PAN",
+            "season": "S8",
+            "session": 2
           }
         ]
       },
