@@ -70,14 +70,14 @@
       },
       "CS": {
         "record": 1,
-        "tie_count": 78,
+        "tie_count": 79,
         "most_recent": {
-          "id": 3459,
+          "id": 3462,
           "season": "S13",
-          "session": 5,
-          "team": "CAL",
+          "session": 6,
+          "team": "DPU",
           "location": "Away",
-          "opponent": "DPU"
+          "opponent": "CAL"
         }
       },
       "FO": {
@@ -962,7 +962,7 @@
         ]
       },
       "RE24": {
-        "record": 10.189573459715639,
+        "record": 10.267281105990785,
         "holders": [
           {
             "team": "UMN",
@@ -1029,7 +1029,7 @@
         ]
       },
       "WAR": {
-        "record": 1.181236130288717,
+        "record": 1.186003522026498,
         "holders": [
           {
             "team": "UMN",
@@ -1623,7 +1623,7 @@
         ]
       },
       "RE24": {
-        "record": 9.37914691943128,
+        "record": 9.534562211981568,
         "holders": [
           {
             "away": "UMN",
@@ -1690,7 +1690,7 @@
         ]
       },
       "WAR": {
-        "record": 1.2114703569349003,
+        "record": 1.221949057604378,
         "holders": [
           {
             "away": "UMN",
@@ -1943,7 +1943,7 @@
         ]
       },
       "RE24": {
-        "record": -5.985781990521327,
+        "record": -5.84331797235023,
         "holders": [
           {
             "away": "CAL",
