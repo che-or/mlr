@@ -58,12 +58,12 @@
       },
       "BB": {
         "record": 2,
-        "tie_count": 44,
+        "tie_count": 45,
         "most_recent": {
-          "id": 3453,
+          "id": 3376,
           "season": "S13",
-          "session": 5,
-          "team": "PSU",
+          "session": 6,
+          "team": "UMN",
           "location": "Away",
           "opponent": "SLG"
         }
@@ -221,6 +221,14 @@
         "record": 5,
         "holders": [
           {
+            "id": 3464,
+            "season": "S13",
+            "session": 6,
+            "team": "UMN",
+            "location": "Away",
+            "opponent": "SLG"
+          },
+          {
             "id": 3376,
             "season": "S13",
             "session": 5,
@@ -261,14 +269,14 @@
       },
       "RGO": {
         "record": 2,
-        "tie_count": 49,
+        "tie_count": 51,
         "most_recent": {
-          "id": 2591,
+          "id": 3390,
           "season": "S13",
-          "session": 5,
-          "team": "KSU",
-          "location": "Home",
-          "opponent": "UMN"
+          "session": 6,
+          "team": "PSU",
+          "location": "Away",
+          "opponent": "KSU"
         }
       },
       "SB": {
@@ -962,7 +970,7 @@
         ]
       },
       "RE24": {
-        "record": 10.267281105990785,
+        "record": 10.303571428571427,
         "holders": [
           {
             "team": "UMN",
@@ -1029,7 +1037,7 @@
         ]
       },
       "WAR": {
-        "record": 1.186003522026498,
+        "record": 1.1849552823522347,
         "holders": [
           {
             "team": "UMN",
@@ -1623,7 +1631,7 @@
         ]
       },
       "RE24": {
-        "record": 9.534562211981568,
+        "record": 9.607142857142856,
         "holders": [
           {
             "away": "UMN",
@@ -1690,7 +1698,7 @@
         ]
       },
       "WAR": {
-        "record": 1.221949057604378,
+        "record": 1.221322578006012,
         "holders": [
           {
             "away": "UMN",
@@ -1943,7 +1951,7 @@
         ]
       },
       "RE24": {
-        "record": -5.84331797235023,
+        "record": -5.776785714285714,
         "holders": [
           {
             "away": "CAL",
