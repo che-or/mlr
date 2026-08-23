@@ -144,5 +144,19 @@
       { "name": "League Championship", "session": 3 },
       { "name": "Paper Cup", "session": 4 }
     ]
+  },
+  "S12": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": { "label": "American League", "seeds": ["SEA", "DET", "TBR", "CWS", "OAK", "MIN"] },
+      "NL": { "label": "National League", "seeds": ["MIL", "ARI", "FLA", "CHC", "SFG", "ATL"] }
+    },
+    "rounds": [
+      { "name": "Wild Card", "session": 1 },
+      { "name": "Divisional", "session": 2 },
+      { "name": "League Championship", "session": 3 },
+      { "name": "Paper Cup", "session": 4 }
+    ]
   }
 }
