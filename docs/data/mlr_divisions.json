@@ -26,10 +26,17 @@
     "NL Central" : ["CHC", "CIN", "MIL", "PIT", "STL"],
     "NL East" : ["ATL", "MIA", "MTL", "NYM", "PHI"]
   },
-  "S5": "S4",
-  "S6": "S4",
-  "S7": "S4",
-  "S8": "S4",
+  "S5": {
+    "AL West": ["HOU", "LAA", "OAK", "SEA", "TEX"],
+    "AL Central": ["CLE", "CWS", "DET", "KCR", "MIN"],
+    "AL East" : ["BAL", "BOS", "NYY", "TBR", "TOR"],
+    "NL West" : ["ARI", "COL", "LAD", "SDP", "SFG"],
+    "NL Central" : ["CHC", "CIN", "MIL", "PIT", "STL"],
+    "NL East" : ["ATL", "MIA", "MTL", "NYM", "PHI"]
+  },
+  "S6": "S5",
+  "S7": "S5",
+  "S8": "S5",
   "S9": {
     "AL West": ["ANA", "HOU", "OAK", "SEA", "TEX"],
     "AL Central": ["CLE", "CWS", "DET", "KCR", "MIN"],
