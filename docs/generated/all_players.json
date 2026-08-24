@@ -16,9 +16,9 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Rub A. Chikin",
+      "Bart Harley Jarvis",
       "Vinny Vedecci",
-      "Bart Harley Jarvis"
+      "Rub A. Chikin"
     ]
   },
   {
@@ -40,9 +40,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Chip Otle",
+      "Tim Spooneybarger",
       "Pete Wheeler",
-      "Tim Spooneybarger"
+      "Chip Otle"
     ]
   },
   {
@@ -217,9 +217,9 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
+      "Faye Valentine",
       "Faye Suzuki",
-      "Spike Suzuki",
-      "Faye Valentine"
+      "Spike Suzuki"
     ]
   },
   {
@@ -283,7 +283,7 @@
   {
     "ID":29,
     "Name":"Jeter Ups",
-    "Batting Type":"BP",
+    "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
@@ -311,13 +311,13 @@
   },
   {
     "ID":32,
-    "Name":"Larry Longshot",
+    "Name":"Larold",
     "Batting Type":"EN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"CF",
     "Former Names":[
-      "Larold",
+      "Larry Longshot",
       "Sammy Slingshot"
     ]
   },
@@ -329,8 +329,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Jessie Vance",
-      "Oscar Vegas"
+      "Oscar Vegas",
+      "Jessie Vance"
     ]
   },
   {
@@ -341,9 +341,9 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Simba Simba",
+      "Idon Treemember",
       "Dixon Something",
-      "Idon Treemember"
+      "Simba Simba"
     ]
   },
   {
@@ -364,8 +364,8 @@
     "Position":"2B",
     "Former Names":[
       "Weather Report",
-      "Jose Canyousico",
-      "Ryosuke Takahashi"
+      "Ryosuke Takahashi",
+      "Jose Canyousico"
     ]
   },
   {
@@ -390,15 +390,15 @@
   },
   {
     "ID":39,
-    "Name":"Commie Ohtani",
+    "Name":"Whitt Bass",
     "Batting Type":"P",
     "Pitching Type":"NH-H",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
+      "Commie Ohtani",
       "Franz Joseph Hyman Jr",
-      "Triscutt Mesmer",
-      "Whitt Bass"
+      "Triscutt Mesmer"
     ]
   },
   {
@@ -537,8 +537,8 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Katia W\u00f6lfe",
-      "Markus W\u00f6lfe"
+      "Markus W\u00f6lfe",
+      "Katia W\u00f6lfe"
     ]
   },
   {
@@ -585,16 +585,16 @@
     "ID":59,
     "Name":"La+ Darknesss",
     "Batting Type":"P",
-    "Pitching Type":"NT-H",
+    "Pitching Type":"TT-S",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "May Marigold",
-      "Raven Branwen",
       "Nora Valkyrie",
+      "May Marigold",
+      "Nick Tit",
       "Velvet Scarlatina",
-      "Nick Tits",
-      "Nick Tit"
+      "Raven Branwen",
+      "Nick Tits"
     ]
   },
   {
@@ -647,9 +647,9 @@
   {
     "ID":65,
     "Name":"Dakota Carolina Montana",
-    "Batting Type":"BC",
+    "Batting Type":"EN",
     "Pitching Type":"POS",
-    "Handedness":"Right",
+    "Handedness":"Left",
     "Position":"1B",
     "Former Names":""
   },
@@ -678,7 +678,7 @@
   {
     "ID":68,
     "Name":"Erin Pickles",
-    "Batting Type":"WC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
@@ -701,8 +701,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Nicholas Verduci",
-      "Nicholas Verducci"
+      "Nicholas Verducci",
+      "Nicholas Verduci"
     ]
   },
   {
@@ -840,8 +840,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Boi Lover",
-      "Meatwad"
+      "Meatwad",
+      "Boi Lover"
     ]
   },
   {
@@ -907,7 +907,7 @@
   {
     "ID":91,
     "Name":"John Johnson Jr.",
-    "Batting Type":"TT",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"3B",
@@ -932,8 +932,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Mackin Tosh",
-      "Master Cashier"
+      "Master Cashier",
+      "Mackin Tosh"
     ]
   },
   {
@@ -1070,17 +1070,18 @@
   },
   {
     "ID":108,
-    "Name":"Phillip J Fry",
+    "Name":"Derek Bon Gio Vanni",
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Chavo Delocho",
-      "Spiro Agnew",
-      "Iwastold Theredbecake",
+      "Wilbur Wood",
+      "Phillip J Fry",
       "Sam Wood",
-      "Wilbur Wood"
+      "Spiro Agnew",
+      "Chavo Delocho",
+      "Iwastold Theredbecake"
     ]
   },
   {
@@ -1091,8 +1092,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Derek Bongiovanni",
-      "Waulie Pag"
+      "Waulie Pag",
+      "Derek Bongiovanni"
     ]
   },
   {
@@ -1165,8 +1166,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Mattress Cadaire",
-      "Mattress Soprano"
+      "Mattress Soprano",
+      "Mattress Cadaire"
     ]
   },
   {
@@ -1243,9 +1244,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "John Cheenah",
+      "James Annino",
       "Duke Nukem",
-      "James Annino"
+      "John Cheenah"
     ]
   },
   {
@@ -1274,11 +1275,11 @@
     "Handedness":"Right",
     "Position":"RF",
     "Former Names":[
-      "Buster McNutt",
       "Baron Butzenkatzen-Butzenkatzen",
-      "Zander Ackley",
+      "Zack Andersen",
       "Petey Biennel",
-      "Zack Andersen"
+      "Zander Ackley",
+      "Buster McNutt"
     ]
   },
   {
@@ -1342,17 +1343,17 @@
     "Position":"P",
     "Former Names":[
       "Yoshigahara Ryutai",
-      "Ryutai Yoshigahara",
-      "Garren Smudge"
+      "Garren Smudge",
+      "Ryutai Yoshigahara"
     ]
   },
   {
     "ID":134,
     "Name":"Dart Ragusa",
     "Batting Type":"MH",
-    "Pitching Type":"POS",
+    "Pitching Type":"EG-S",
     "Handedness":"Right",
-    "Position":"1B",
+    "Position":"PH",
     "Former Names":[
       "Dort Rogoso"
     ]
@@ -1365,8 +1366,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "lloyd",
-      "Zachary Awayys"
+      "Zachary Awayys",
+      "lloyd"
     ]
   },
   {
@@ -1496,16 +1497,16 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "petra sabor",
+      "Jork von Bork",
       "Alyx Sabor",
+      "Daniel Collins",
+      "Petra Sabor",
+      "Carl \"The Ace\" Kennedy",
+      "petra sabor",
       "Jared Sabor VII",
       "petra",
-      "Daniel Collins",
-      "perta rose sabor",
       "Azathoth",
-      "Carl \"The Ace\" Kennedy",
-      "Jork von Bork",
-      "Petra Sabor"
+      "perta rose sabor"
     ]
   },
   {
@@ -1516,8 +1517,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Pickle Rick",
-      "Connor XVX"
+      "Connor XVX",
+      "Pickle Rick"
     ]
   },
   {
@@ -1537,11 +1538,11 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Francis James Wellington IV",
-      "Coleman Waters",
+      "Francis J Wellington IV",
       "Kris Jaxon",
       "Maverick Jaxon Gambler",
-      "Francis J Wellington IV"
+      "Coleman Waters",
+      "Francis James Wellington IV"
     ]
   },
   {
@@ -1686,8 +1687,8 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Ronald Eagle Sr.",
-      "Ronarudo Washi IIIIII"
+      "Ronarudo Washi IIIIII",
+      "Ronald Eagle Sr."
     ]
   },
   {
@@ -1762,8 +1763,8 @@
     "Position":"P",
     "Former Names":[
       "Brigham Young",
-      "Olivia Hyde",
-      "Jasmine"
+      "Jasmine",
+      "Olivia Hyde"
     ]
   },
   {
@@ -1789,7 +1790,7 @@
   {
     "ID":178,
     "Name":"Hannah Outlaw",
-    "Batting Type":"BN",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"CF",
@@ -1873,9 +1874,9 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "I.B.O. Bust",
       "Ian Brandon Owen Bust",
-      "Ian Brendan Owen Bust"
+      "Ian Brendan Owen Bust",
+      "I.B.O. Bust"
     ]
   },
   {
@@ -1902,15 +1903,15 @@
   {
     "ID":189,
     "Name":"Jeffrey LaVert",
-    "Batting Type":"1B",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"FP-H",
     "Handedness":"Left",
-    "Position":"3B",
+    "Position":"P",
     "Former Names":[
-      "Haruto Tanaka",
       "Future Trunks",
+      "Jack Kanoff",
       "Roy Holiday",
-      "Jack Kanoff"
+      "Haruto Tanaka"
     ]
   },
   {
@@ -1952,9 +1953,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
+      "Jo\u00e3o Cortez",
       "Lemon Ade",
-      "Lemon Juiced",
-      "Jo\u00e3o Cortez"
+      "Lemon Juiced"
     ]
   },
   {
@@ -1978,7 +1979,7 @@
   {
     "ID":196,
     "Name":"Xavier Lopez",
-    "Batting Type":"XB",
+    "Batting Type":"TT",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"RF",
@@ -2004,8 +2005,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "icna comit",
-      "Icna Comit"
+      "Icna Comit",
+      "icna comit"
     ]
   },
   {
@@ -2175,9 +2176,9 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Petetholomew Jones",
       "Pete Jones",
-      "Naoki Tentacles"
+      "Naoki Tentacles",
+      "Petetholomew Jones"
     ]
   },
   {
@@ -2197,14 +2198,14 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Thomas Beowulf",
-      "Thomas BEOWULF"
+      "Thomas BEOWULF",
+      "Thomas Beowulf"
     ]
   },
   {
     "ID":219,
     "Name":"Chris Orosz",
-    "Batting Type":"SM",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"C",
@@ -2314,8 +2315,8 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Matt Verdin",
-      "Mike Oxlong"
+      "Mike Oxlong",
+      "Matt Verdin"
     ]
   },
   {
@@ -2339,13 +2340,13 @@
   {
     "ID":233,
     "Name":"Johnny Dickshot",
-    "Batting Type":"BP",
+    "Batting Type":"WC",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
     "Former Names":[
-      "Jenny Vagshot",
-      "Yolanda Martinez"
+      "Yolanda Martinez",
+      "Jenny Vagshot"
     ]
   },
   {
@@ -2524,8 +2525,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Dean O`Saur",
       "Tara E. Doug",
+      "Dean O`Saur",
       "Oscar Vinegrette"
     ]
   },
@@ -2564,8 +2565,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Tyrone Jennings lll",
       "Tyrone Jennings",
+      "Tyrone Jennings lll",
       "Tyrone Jennings III"
     ]
   },
@@ -2630,8 +2631,8 @@
     "Position":"PH",
     "Former Names":[
       "Clubber Lang",
-      "Dimebag Jammin",
-      "Apollo Creed"
+      "Apollo Creed",
+      "Dimebag Jammin"
     ]
   },
   {
@@ -2655,21 +2656,21 @@
   {
     "ID":265,
     "Name":"Grand Slamdalf",
-    "Batting Type":"SF",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"EG-H",
     "Handedness":"Right",
-    "Position":"3B",
+    "Position":"P",
     "Former Names":[
-      "Mr. Miyagi",
+      "Mecha Vulfzilla",
+      "Rex Kwondo",
+      "Waxon Waxoff",
+      "Wavy Gravy",
+      "Mecha Godzilla",
+      "Wavy Gravy VIII",
       "Jeffy Jefferson",
       "Rich Mahogany",
-      "Waxon Waxoff",
-      "Rex Kwondo",
-      "Horsey Surprise",
-      "Wavy Gravy VIII",
-      "Mecha Godzilla",
-      "Wavy Gravy",
-      "Mecha Vulfzilla"
+      "Mr. Miyagi",
+      "Horsey Surprise"
     ]
   },
   {
@@ -2712,8 +2713,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Guadalupe Greerson",
-      "Joe Runzer"
+      "Joe Runzer",
+      "Guadalupe Greerson"
     ]
   },
   {
@@ -2724,9 +2725,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
+      "Mason Miller",
       "Liam Abercrombie",
-      "Goey Jallo",
-      "Mason Miller"
+      "Goey Jallo"
     ]
   },
   {
@@ -2735,7 +2736,7 @@
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"2B",
+    "Position":"C",
     "Former Names":[
       "Aleister Xekutioner"
     ]
@@ -2780,8 +2781,8 @@
     "Position":"P",
     "Former Names":[
       "Bastille Metalfall",
-      "Richard Humongous",
-      "Benzonatate Dupixent"
+      "Benzonatate Dupixent",
+      "Richard Humongous"
     ]
   },
   {
@@ -2801,14 +2802,14 @@
     "Handedness":"Left",
     "Position":"LF",
     "Former Names":[
-      "Matty Lynn",
-      "becky mcbadbat"
+      "becky mcbadbat",
+      "Matty Lynn"
     ]
   },
   {
     "ID":278,
     "Name":"Dominus Nominus",
-    "Batting Type":"1B",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"LF",
@@ -2840,8 +2841,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "J.A. Bird",
       "Cy Hadd Jr.",
+      "J.A. Bird",
       "Bluebird Abernathy"
     ]
   },
@@ -2891,8 +2892,8 @@
     "Handedness":"Right",
     "Position":"SS",
     "Former Names":[
-      "Tasker Morris",
-      "KC Bats"
+      "KC Bats",
+      "Tasker Morris"
     ]
   },
   {
@@ -2912,8 +2913,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Akiyoshi Yamamoto",
-      "Left Hook Larry"
+      "Left Hook Larry",
+      "Akiyoshi Yamamoto"
     ]
   },
   {
@@ -2936,8 +2937,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Samuel-Edward Verne-Emmanuel Newman-Costanza",
-      "S-E V-E Newman-Costanza"
+      "S-E V-E Newman-Costanza",
+      "Samuel-Edward Verne-Emmanuel Newman-Costanza"
     ]
   },
   {
@@ -2958,8 +2959,8 @@
     "Position":"C",
     "Former Names":[
       "Charlie Bae",
-      "Koyomi Araragi",
-      "Charlie Bae Jr."
+      "Charlie Bae Jr.",
+      "Koyomi Araragi"
     ]
   },
   {
@@ -3264,8 +3265,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "John John Jr.",
-      "Chaz Gorbachuck"
+      "Chaz Gorbachuck",
+      "John John Jr."
     ]
   },
   {
@@ -3312,11 +3313,11 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Rekt Kiddo",
       "Keyo",
+      "Rekt Kiddo",
+      "Bill O'Brien",
       "Rekt Contract",
-      "Rekt Keyo",
-      "Bill O'Brien"
+      "Rekt Keyo"
     ]
   },
   {
@@ -3354,10 +3355,10 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Chris Yukine",
-      "Taiki Shuttle",
+      "Solf J. Kimblee",
       "Yukino Bijin",
-      "Solf J. Kimblee"
+      "Chris Yukine",
+      "Taiki Shuttle"
     ]
   },
   {
@@ -3390,7 +3391,7 @@
   {
     "ID":339,
     "Name":"Isaac Snowbender",
-    "Batting Type":"HK",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"C",
@@ -3422,8 +3423,8 @@
     "Handedness":"Left",
     "Position":"LF",
     "Former Names":[
-      "River Ride",
-      "Obama habubger"
+      "Obama habubger",
+      "River Ride"
     ]
   },
   {
@@ -3445,9 +3446,9 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Cookie Mongster",
+      "Maximus Pow",
       "Emma Twatson",
-      "Maximus Pow"
+      "Cookie Mongster"
     ]
   },
   {
@@ -3559,9 +3560,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Catboy Frank",
       "Chuck Tingle",
-      "Alvin and the Chipmunks The Squeakquel"
+      "Alvin and the Chipmunks The Squeakquel",
+      "Catboy Frank"
     ]
   },
   {
@@ -3590,8 +3591,8 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Aaron IceCream",
-      "Aaron Icecream"
+      "Aaron Icecream",
+      "Aaron IceCream"
     ]
   },
   {
@@ -3627,12 +3628,14 @@
   },
   {
     "ID":362,
-    "Name":"Connor Morgan",
+    "Name":"Big Vol",
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"3B",
-    "Former Names":""
+    "Former Names":[
+      "Connor Morgan"
+    ]
   },
   {
     "ID":363,
@@ -3775,8 +3778,8 @@
     "ID":378,
     "Name":"Carly Bae",
     "Batting Type":"P",
-    "Pitching Type":"EG-H",
-    "Handedness":"Right",
+    "Pitching Type":"TT-H",
+    "Handedness":"Left",
     "Position":"P",
     "Former Names":[
       "dad",
@@ -3906,9 +3909,9 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Jasper Waxe",
       "Amelia Black",
       "Mirror Castle",
+      "Jasper Waxe",
       "Maxelia Gray"
     ]
   },
@@ -4014,12 +4017,13 @@
   },
   {
     "ID":402,
-    "Name":"Amelia",
+    "Name":"amelia baseball",
     "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
+      "Amelia",
       "June Berg",
       "Maddy Berg"
     ]
@@ -4119,10 +4123,10 @@
   {
     "ID":413,
     "Name":"Superbone Threefinger",
-    "Batting Type":"XB",
-    "Pitching Type":"POS",
-    "Handedness":"Right",
-    "Position":"2B",
+    "Batting Type":"P",
+    "Pitching Type":"TD-S",
+    "Handedness":"Left",
+    "Position":"P",
     "Former Names":""
   },
   {
@@ -4722,7 +4726,7 @@
     "Batting Type":"BP",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"2B",
+    "Position":"C",
     "Former Names":""
   },
   {
@@ -4792,24 +4796,25 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
+      "dick richards",
       "Dick Richards",
-      "cocl octopus",
-      "dick richards"
+      "cocl octopus"
     ]
   },
   {
     "ID":488,
-    "Name":"Juni ''XOXO'' Panda RX-78-69",
-    "Batting Type":"HK",
+    "Name":"Juni xGOD - \"SELL THE TEAM ARTE\" - Panda",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "AA --xXx-- Main Event Juni Panda --xXx--",
-      "Major Catfish",
-      "Juni Juni Panda",
       "Juni Panda",
-      "Juniped Catfish"
+      "Juniped Catfish",
+      "AA --xXx-- Main Event Juni Panda --xXx--",
+      "Juni ''XOXO'' Panda RX-78-69",
+      "Major Catfish",
+      "Juni Juni Panda"
     ]
   },
   {
@@ -4824,10 +4829,10 @@
   {
     "ID":490,
     "Name":"Zelk Antilles",
-    "Batting Type":"P",
-    "Pitching Type":"BF-H",
-    "Handedness":"Left",
-    "Position":"P",
+    "Batting Type":"EN",
+    "Pitching Type":"POS",
+    "Handedness":"Right",
+    "Position":"3B",
     "Former Names":[
       "Wedge Antilles"
     ]
@@ -5038,12 +5043,13 @@
   },
   {
     "ID":516,
-    "Name":"Brick Bruiser",
-    "Batting Type":"TT",
+    "Name":"Brick Bravely",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
+      "Brick Bruiser",
       "Blackbean Burrito"
     ]
   },
@@ -5064,8 +5070,8 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Zaphod Beeblebrox",
-      "Vinnie Vidi Vici"
+      "Vinnie Vidi Vici",
+      "Zaphod Beeblebrox"
     ]
   },
   {
@@ -5098,7 +5104,7 @@
   {
     "ID":522,
     "Name":"Good Doggo",
-    "Batting Type":"TT",
+    "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
@@ -5130,8 +5136,8 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Cam'ron West",
-      "Cam'ron"
+      "Cam'ron",
+      "Cam'ron West"
     ]
   },
   {
@@ -5154,18 +5160,19 @@
   },
   {
     "ID":529,
-    "Name":"Big Telemachus",
+    "Name":"Wheeler Walker Jr II",
     "Batting Type":"BC",
-    "Pitching Type":"POS",
+    "Pitching Type":"BS-H",
     "Handedness":"Right",
-    "Position":"2B",
+    "Position":"PH",
     "Former Names":[
       "Nipsey Slip",
-      "Kyle Mullins",
+      "Wheeler Walker Jr.",
       "Holden Beers",
+      "Big Telemachus",
+      "Kyle Mullins",
       "Psycopathic Goblin",
-      "Wheeler",
-      "Wheeler Walker Jr."
+      "Wheeler"
     ]
   },
   {
@@ -5483,7 +5490,7 @@
   {
     "ID":567,
     "Name":"Tucker Doubt",
-    "Batting Type":"BP",
+    "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"LF",
@@ -5581,9 +5588,9 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
+      "Zephraim Donkus",
       "Richard Donkus IV",
-      "Wee Laddy Donkus",
-      "Zephraim Donkus"
+      "Wee Laddy Donkus"
     ]
   },
   {
@@ -5594,12 +5601,12 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Help Im Being Repressed",
-      "Paulie Wag",
       "Paul E. Wag",
-      "Berek Dongiovanni",
+      "Paulie Wag",
+      "Help Im Being Repressed",
+      "NOT Paulie Wag",
       "Roland Kholin",
-      "NOT Paulie Wag"
+      "Berek Dongiovanni"
     ]
   },
   {
@@ -5718,7 +5725,7 @@
     "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"RF",
+    "Position":"1B",
     "Former Names":""
   },
   {
@@ -5738,8 +5745,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Opegonna Scootbya",
-      "Johnny Hendrivederci"
+      "Johnny Hendrivederci",
+      "Opegonna Scootbya"
     ]
   },
   {
@@ -5795,7 +5802,7 @@
     "ID":607,
     "Name":"Eli Sasak",
     "Batting Type":"P",
-    "Pitching Type":"TT-H",
+    "Pitching Type":"NH-S",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":""
@@ -5875,8 +5882,8 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Christian King",
-      "Christian Bevan"
+      "Christian Bevan",
+      "Christian King"
     ]
   },
   {
@@ -5994,7 +6001,7 @@
   {
     "ID":638,
     "Name":"Sablo Panchez",
-    "Batting Type":"SM",
+    "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
@@ -6005,7 +6012,7 @@
   {
     "ID":639,
     "Name":"Bingo Hammersmith",
-    "Batting Type":"BC",
+    "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
@@ -6111,10 +6118,10 @@
   {
     "ID":651,
     "Name":"Rusty Nails",
-    "Batting Type":"TT",
-    "Pitching Type":"POS",
+    "Batting Type":"SM",
+    "Pitching Type":"WC-S",
     "Handedness":"Left",
-    "Position":"CF",
+    "Position":"PH",
     "Former Names":[
       "jeffie dokkie daddy",
       "se\u00f1or rustus of house vervulf",
@@ -6214,8 +6221,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Nico Bico",
-      "Oni R1"
+      "Oni R1",
+      "Nico Bico"
     ]
   },
   {
@@ -6291,10 +6298,10 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Claire E. N\u00eatte",
-      "Clara Knet",
       "Clay Renett",
-      "Clarinet Clarinet"
+      "Clarinet Clarinet",
+      "Claire E. N\u00eatte",
+      "Clara Knet"
     ]
   },
   {
@@ -6471,9 +6478,9 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Shirley Sir",
+      "Greg Digger",
       "Sir Shirley",
-      "Greg Digger"
+      "Shirley Sir"
     ]
   },
   {
@@ -7045,8 +7052,8 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Dottie Hooligan",
-      "Otter Hooligan"
+      "Otter Hooligan",
+      "Dottie Hooligan"
     ]
   },
   {
@@ -7095,9 +7102,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "LeCarpetron Dukemarriot",
+      "Duke Marriot",
       "Longrod Von Hugendong",
-      "Duke Marriot"
+      "LeCarpetron Dukemarriot"
     ]
   },
   {
@@ -7109,10 +7116,10 @@
     "Position":"LF",
     "Former Names":[
       "Renoe McRenoeface",
-      "Reno \"El Greco\" McRenoface",
-      "Anakin Kendrick",
       "Woolloomooloo AndTylerToo",
-      "Rey Revanchist"
+      "Rey Revanchist",
+      "Reno \"El Greco\" McRenoface",
+      "Anakin Kendrick"
     ]
   },
   {
@@ -7197,16 +7204,16 @@
   {
     "ID":786,
     "Name":"Mason Troy Adams",
-    "Batting Type":"P",
-    "Pitching Type":"FP-H",
+    "Batting Type":"SF",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"P",
+    "Position":"C",
     "Former Names":[
-      "Hunter Scott CCCXXVII",
       "Sunter Hcott",
+      "Skork Hooker",
       "Hunter Scott",
       "New Player",
-      "Skork Hooker"
+      "Hunter Scott CCCXXVII"
     ]
   },
   {
@@ -7221,10 +7228,10 @@
   {
     "ID":788,
     "Name":"Jericho Styles",
-    "Batting Type":"P",
-    "Pitching Type":"WC-S",
+    "Batting Type":"1B",
+    "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"P",
+    "Position":"3B",
     "Former Names":[
       "JZ"
     ]
@@ -7455,12 +7462,12 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Alex Curvingsonworth",
-      "Sarah Curvingsworth",
       "sarah",
       "Marie Antoinette",
-      "Haachama",
-      "Usada Pekora"
+      "Alex Curvingsonworth",
+      "Sarah Curvingsworth",
+      "Usada Pekora",
+      "Haachama"
     ]
   },
   {
@@ -7571,7 +7578,7 @@
   {
     "ID":1717,
     "Name":"Corey Scooter",
-    "Batting Type":"BC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"1B",
@@ -7616,8 +7623,8 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Zack Mouse",
-      "Zack Markel"
+      "Zack Markel",
+      "Zack Mouse"
     ]
   },
   {
@@ -7741,9 +7748,9 @@
     "ID":1734,
     "Name":"Streetlamp LeMoose",
     "Batting Type":"EN",
-    "Pitching Type":"POS",
+    "Pitching Type":"TD-S",
     "Handedness":"Left",
-    "Position":"2B",
+    "Position":"PH",
     "Former Names":""
   },
   {
@@ -7875,8 +7882,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Roe Jogan",
-      "Bobby Sweetness"
+      "Bobby Sweetness",
+      "Roe Jogan"
     ]
   },
   {
@@ -8073,8 +8080,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Pierre to the Throne",
-      "Pierre Bryant"
+      "Pierre Bryant",
+      "Pierre to the Throne"
     ]
   },
   {
@@ -8085,10 +8092,10 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Adrian Pudge Young-Walker III",
-      "Pudge",
+      "Johnny \"Pudge\" Walker",
       "Adrian \"Pudge\" Young",
-      "Johnny \"Pudge\" Walker"
+      "Pudge",
+      "Adrian Pudge Young-Walker III"
     ]
   },
   {
@@ -8126,14 +8133,14 @@
     "Batting Type":"SM",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"C",
+    "Position":"2B",
     "Former Names":""
   },
   {
     "ID":1777,
     "Name":"Alexander West",
     "Batting Type":"P",
-    "Pitching Type":"SF-H",
+    "Pitching Type":"WC-S",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":""
@@ -8348,11 +8355,11 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Spider Tack",
-      "All Starlin",
-      "Alternative Site",
+      "AllStar Lin",
       "Alternate Site",
-      "AllStar Lin"
+      "All Starlin",
+      "Spider Tack",
+      "Alternative Site"
     ]
   },
   {
@@ -8370,13 +8377,13 @@
     "ID":1801,
     "Name":"Doc Dockgoose",
     "Batting Type":"P",
-    "Pitching Type":"TD-H",
+    "Pitching Type":"BF-H",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Doc McBiggins",
+      "Freddy Quicksilver",
       "Doc Quacksilver",
-      "Freddy Quicksilver"
+      "Doc McBiggins"
     ]
   },
   {
@@ -8486,7 +8493,7 @@
     "Name":"Freddie Eggman Huff",
     "Batting Type":"WC",
     "Pitching Type":"POS",
-    "Handedness":"Right",
+    "Handedness":"Left",
     "Position":"C",
     "Former Names":[
       "Freddie Huff"
@@ -8651,8 +8658,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Klubhaus Kanser",
-      "Guido Ligiorno"
+      "Guido Ligiorno",
+      "Klubhaus Kanser"
     ]
   },
   {
@@ -8694,8 +8701,8 @@
     "Handedness":"Right",
     "Position":"CF",
     "Former Names":[
-      "Cooper McBurney",
-      "Smoke Anderson"
+      "Smoke Anderson",
+      "Cooper McBurney"
     ]
   },
   {
@@ -9675,8 +9682,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Herrerra O'Doubles",
-      "Herrera O'Doubles"
+      "Herrera O'Doubles",
+      "Herrerra O'Doubles"
     ]
   },
   {
@@ -10640,8 +10647,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "J. Samson Jr.",
-      "Peter R. Otagonist"
+      "Peter R. Otagonist",
+      "J. Samson Jr."
     ]
   },
   {
@@ -10980,9 +10987,9 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Turk Turkelton",
       "Ferdinand von Aegir",
-      "Nickey Hallaway"
+      "Nickey Hallaway",
+      "Turk Turkelton"
     ]
   },
   {
@@ -11063,12 +11070,14 @@
   },
   {
     "ID":2242,
-    "Name":"Wonder Francoh",
+    "Name":"Caminero Jr.",
     "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"1B",
-    "Former Names":""
+    "Former Names":[
+      "Wonder Francoh"
+    ]
   },
   {
     "ID":2243,
@@ -11183,9 +11192,9 @@
     "ID":2256,
     "Name":"Doc Otis",
     "Batting Type":"WC",
-    "Pitching Type":"SF-B",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"PH",
+    "Position":"2B",
     "Former Names":""
   },
   {
@@ -11389,13 +11398,14 @@
   },
   {
     "ID":2329,
-    "Name":"Tencer Sporkelson",
+    "Name":"Tyburnsays Morecleveland",
     "Batting Type":"P",
     "Pitching Type":"BS-H",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Fauxtani"
+      "Fauxtani",
+      "Tencer Sporkelson"
     ]
   },
   {
@@ -11751,7 +11761,7 @@
   {
     "ID":2371,
     "Name":"Frederick Thunderpants",
-    "Batting Type":"TT",
+    "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"LF",
@@ -11808,7 +11818,7 @@
     "ID":2377,
     "Name":"Mark Spoon",
     "Batting Type":"P",
-    "Pitching Type":"EG-B",
+    "Pitching Type":"EG-H",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":""
@@ -11901,7 +11911,7 @@
   {
     "ID":2389,
     "Name":"Gerald McCoy",
-    "Batting Type":"WC",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -12036,8 +12046,8 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Harry Beaver",
-      "Seamore Asscrack"
+      "Seamore Asscrack",
+      "Harry Beaver"
     ]
   },
   {
@@ -12306,8 +12316,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Sir Roderick Musclestache",
-      "Doctor Otter Brown"
+      "Doctor Otter Brown",
+      "Sir Roderick Musclestache"
     ]
   },
   {
@@ -12348,8 +12358,8 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Freddie Confinedman",
-      "M'reddie Confinedman"
+      "M'reddie Confinedman",
+      "Freddie Confinedman"
     ]
   },
   {
@@ -12364,7 +12374,7 @@
   {
     "ID":2501,
     "Name":"Hakuna Moncada",
-    "Batting Type":"HK",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"3B",
@@ -12387,8 +12397,8 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Lambo Rice",
-      "Markese Rolle"
+      "Markese Rolle",
+      "Lambo Rice"
     ]
   },
   {
@@ -12558,10 +12568,10 @@
   {
     "ID":2524,
     "Name":"WoodCutter Jones",
-    "Batting Type":"TT",
-    "Pitching Type":"POS",
+    "Batting Type":"BN",
+    "Pitching Type":"NH-H",
     "Handedness":"Left",
-    "Position":"3B",
+    "Position":"PH",
     "Former Names":""
   },
   {
@@ -12673,8 +12683,8 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Ovaltine Jenkins",
-      "Ovaltine Jenkins II"
+      "Ovaltine Jenkins II",
+      "Ovaltine Jenkins"
     ]
   },
   {
@@ -12704,8 +12714,8 @@
     "Position":"RF",
     "Former Names":[
       "Onionhead ditwit",
-      "Onionhead LEASHY Dirtwit",
-      "Leashy Hittem"
+      "Leashy Hittem",
+      "Onionhead LEASHY Dirtwit"
     ]
   },
   {
@@ -12799,8 +12809,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Noooot",
-      "Nooooot"
+      "Nooooot",
+      "Noooot"
     ]
   },
   {
@@ -13034,9 +13044,9 @@
     "ID":2584,
     "Name":"Robbie Tightpants",
     "Batting Type":"BC",
-    "Pitching Type":"FP-B",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"PH",
+    "Position":"1B",
     "Former Names":""
   },
   {
@@ -13078,7 +13088,7 @@
   {
     "ID":2589,
     "Name":"Lil Lilith Lillian",
-    "Batting Type":"XB",
+    "Batting Type":"BP",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
@@ -13122,8 +13132,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Walter Ulysses",
-      "Jake Crouton"
+      "Jake Crouton",
+      "Walter Ulysses"
     ]
   },
   {
@@ -13206,9 +13216,9 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "peaches",
+      "Princess Peach",
       "Peachy Keen",
-      "Princess Peach"
+      "peaches"
     ]
   },
   {
@@ -13241,7 +13251,7 @@
   {
     "ID":2611,
     "Name":"CJ Ayer",
-    "Batting Type":"SM",
+    "Batting Type":"S",
     "Pitching Type":"EG-H",
     "Handedness":"Right",
     "Position":"PH",
@@ -13513,8 +13523,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Mr. Plow",
-      "Larry Fishmang"
+      "Larry Fishmang",
+      "Mr. Plow"
     ]
   },
   {
@@ -13895,12 +13905,14 @@
   },
   {
     "ID":2691,
-    "Name":"Francesco Hardgust",
+    "Name":"Frankie Gusts",
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
-    "Former Names":""
+    "Former Names":[
+      "Francesco Hardgust"
+    ]
   },
   {
     "ID":2692,
@@ -13987,19 +13999,20 @@
   },
   {
     "ID":2702,
-    "Name":"Jose Alduvet",
-    "Batting Type":"HK",
-    "Pitching Type":"TD-S",
+    "Name":"Passed Ball Siakam",
+    "Batting Type":"S",
+    "Pitching Type":"BF-H",
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Cat Atrophy",
-      "Isiah Minor-Kerfuffle",
       "Adam Autovino",
+      "Cat Atrophy",
       "Jamie Voyeur",
       "Tomathius Neillson",
+      "Isiah Minor-Kerfuffle",
+      "Evan LOMgoria",
       "Tequila Mockingbird",
-      "Evan LOMgoria"
+      "Jose Alduvet"
     ]
   },
   {
@@ -14058,13 +14071,13 @@
   },
   {
     "ID":2710,
-    "Name":"Pistachio Disguisey",
+    "Name":"Sterling Turlington",
     "Batting Type":"HK",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Sterling Turlington"
+      "Pistachio Disguisey"
     ]
   },
   {
@@ -14160,7 +14173,7 @@
   {
     "ID":2722,
     "Name":"Teddy Bigstick",
-    "Batting Type":"BN",
+    "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"3B",
@@ -14233,9 +14246,9 @@
     "ID":2730,
     "Name":"Laars Nootbaar jr",
     "Batting Type":"MH",
-    "Pitching Type":"NH-S",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"PH",
+    "Position":"2B",
     "Former Names":""
   },
   {
@@ -14594,8 +14607,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Paulie Whippet",
-      "Paulie Smash"
+      "Paulie Smash",
+      "Paulie Whippet"
     ]
   },
   {
@@ -14702,7 +14715,7 @@
   {
     "ID":2789,
     "Name":"Roosevelt Sandoval",
-    "Batting Type":"XB",
+    "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
@@ -14755,15 +14768,16 @@
   },
   {
     "ID":2795,
-    "Name":"Sue Cabliatte",
+    "Name":"Einhardt Lenoire",
     "Batting Type":"P",
     "Pitching Type":"FP-S",
-    "Handedness":"Left",
+    "Handedness":"Right",
     "Position":"P",
     "Former Names":[
       "International Signing Bonus Pool Space",
-      "Idys Scott",
-      "Leigh Dell Leedle Lee-Daughly"
+      "Sue Cabliatte",
+      "Leigh Dell Leedle Lee-Daughly",
+      "Idys Scott"
     ]
   },
   {
@@ -14805,10 +14819,10 @@
   {
     "ID":2800,
     "Name":"Buzz Carlton",
-    "Batting Type":"BC",
-    "Pitching Type":"POS",
+    "Batting Type":"SM",
+    "Pitching Type":"EG-S",
     "Handedness":"Left",
-    "Position":"RF",
+    "Position":"PH",
     "Former Names":""
   },
   {
@@ -14913,10 +14927,10 @@
   {
     "ID":2815,
     "Name":"Jamal Jackson",
-    "Batting Type":"S",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"TT-H",
     "Handedness":"Left",
-    "Position":"CF",
+    "Position":"P",
     "Former Names":""
   },
   {
@@ -15004,9 +15018,9 @@
     "ID":2826,
     "Name":"Friday",
     "Batting Type":"XB",
-    "Pitching Type":"POS",
+    "Pitching Type":"TT-B",
     "Handedness":"Left",
-    "Position":"1B",
+    "Position":"PH",
     "Former Names":[
       "Friday Phd",
       "fridayphd"
@@ -15163,7 +15177,7 @@
   {
     "ID":2847,
     "Name":"Jorbel Boykins",
-    "Batting Type":"BC",
+    "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -15217,7 +15231,7 @@
   {
     "ID":2853,
     "Name":"Tubby Wubby",
-    "Batting Type":"WC",
+    "Batting Type":"TT",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"C",
@@ -15347,7 +15361,7 @@
   {
     "ID":2869,
     "Name":"Charlie Buntman",
-    "Batting Type":"BP",
+    "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"C",
@@ -15358,7 +15372,7 @@
   {
     "ID":2870,
     "Name":"Lincoln Pickett",
-    "Batting Type":"BC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -15402,13 +15416,14 @@
   },
   {
     "ID":2875,
-    "Name":"Velma Dingkerly",
-    "Batting Type":"SM",
-    "Pitching Type":"WC-S",
+    "Name":"Jab Jabich",
+    "Batting Type":"SF",
+    "Pitching Type":"EG-S",
     "Handedness":"Right",
     "Position":"PH",
     "Former Names":[
       "Leopold Pollersbeck",
+      "Velma Dingkerly",
       "Leo Pollersbeck"
     ]
   },
@@ -15462,7 +15477,7 @@
   {
     "ID":2882,
     "Name":"M\u00eeke Ock",
-    "Batting Type":"TT",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"RF",
@@ -15498,10 +15513,10 @@
   {
     "ID":2887,
     "Name":"Jimothy Jhompson",
-    "Batting Type":"P",
-    "Pitching Type":"NT-B",
+    "Batting Type":"TT",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"P",
+    "Position":"3B",
     "Former Names":""
   },
   {
@@ -15528,7 +15543,7 @@
     "ID":2890,
     "Name":"Pablo The Hip Kawasaki",
     "Batting Type":"P",
-    "Pitching Type":"BF-H",
+    "Pitching Type":"TT-H",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":""
@@ -15589,7 +15604,7 @@
   },
   {
     "ID":2897,
-    "Name":"Dr. Chocochoco Choo Choo",
+    "Name":"Nana Choc",
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Left",
@@ -15597,6 +15612,7 @@
     "Former Names":[
       "XxBlaise Bailey Finnegan IIIxX",
       "Choc Banana",
+      "Dr. Chocochoco Choo Choo",
       "Choc Tuah"
     ]
   },
@@ -15711,9 +15727,9 @@
   {
     "ID":2911,
     "Name":"Karl Havoc",
-    "Batting Type":"BC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
-    "Handedness":"Right",
+    "Handedness":"Left",
     "Position":"LF",
     "Former Names":""
   },
@@ -15732,7 +15748,7 @@
     "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"LF",
+    "Position":"3B",
     "Former Names":[
       "Skarch McGooter"
     ]
@@ -15740,10 +15756,10 @@
   {
     "ID":2915,
     "Name":"Hans Zahn",
-    "Batting Type":"P",
-    "Pitching Type":"BF-B",
+    "Batting Type":"SM",
+    "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"P",
+    "Position":"2B",
     "Former Names":""
   },
   {
@@ -15897,7 +15913,7 @@
   {
     "ID":2942,
     "Name":"Tleyber Alfredo Cruz Fernandez III",
-    "Batting Type":"SF",
+    "Batting Type":"BP",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
@@ -16060,7 +16076,7 @@
   {
     "ID":2959,
     "Name":"Kries Von Kriestalhauser",
-    "Batting Type":"BN",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"CF",
@@ -16079,7 +16095,7 @@
     "ID":2962,
     "Name":"Carlos Narvaez Jr.",
     "Batting Type":"P",
-    "Pitching Type":"TT-S",
+    "Pitching Type":"TT-B",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":""
@@ -16109,7 +16125,7 @@
     "Name":"Randall Peppers",
     "Batting Type":"TT",
     "Pitching Type":"POS",
-    "Handedness":"Left",
+    "Handedness":"Right",
     "Position":"3B",
     "Former Names":""
   },
@@ -16143,7 +16159,7 @@
   {
     "ID":2970,
     "Name":"John Baseball",
-    "Batting Type":"WC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
@@ -16197,10 +16213,10 @@
   {
     "ID":2976,
     "Name":"Junior Antonius",
-    "Batting Type":"BC",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"TT-H",
     "Handedness":"Right",
-    "Position":"RF",
+    "Position":"P",
     "Former Names":""
   },
   {
@@ -16362,14 +16378,15 @@
   },
   {
     "ID":2998,
-    "Name":"Dr. Slime",
-    "Batting Type":"P",
-    "Pitching Type":"WC-S",
+    "Name":"Big Bad Evil Slime",
+    "Batting Type":"SM",
+    "Pitching Type":"EG-S",
     "Handedness":"Left",
-    "Position":"P",
+    "Position":"PH",
     "Former Names":[
-      "Makoto Date",
-      "Keita Matsukawa"
+      "Keita Matsukawa",
+      "Dr. Slime",
+      "Makoto Date"
     ]
   },
   {
@@ -16419,12 +16436,13 @@
   },
   {
     "ID":3004,
-    "Name":"Otto von Pitchmark",
+    "Name":"Otto Von Eirsmark",
     "Batting Type":"P",
     "Pitching Type":"EN-S",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
+      "Otto von Pitchmark",
       "Baberaham Lincoln"
     ]
   },
@@ -16487,7 +16505,7 @@
   {
     "ID":3012,
     "Name":"Erling De La Cruz",
-    "Batting Type":"BC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
@@ -16495,13 +16513,13 @@
   },
   {
     "ID":3013,
-    "Name":"Big Woop",
+    "Name":"Total Dial",
     "Batting Type":"SM",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Total Dial"
+      "Big Woop"
     ]
   },
   {
@@ -16615,8 +16633,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Dan Von DOOM",
-      "Dan Van Damme"
+      "Dan Van Damme",
+      "Dan Von DOOM"
     ]
   },
   {
@@ -16640,7 +16658,7 @@
   {
     "ID":3032,
     "Name":"Sid Hugo V",
-    "Batting Type":"BC",
+    "Batting Type":"1B",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"SS",
@@ -16914,10 +16932,10 @@
   {
     "ID":3072,
     "Name":"Uncle Crush",
-    "Batting Type":"P",
-    "Pitching Type":"FP-S",
+    "Batting Type":"SM",
+    "Pitching Type":"TT-S",
     "Handedness":"Right",
-    "Position":"P",
+    "Position":"PH",
     "Former Names":""
   },
   {
@@ -17040,7 +17058,7 @@
   {
     "ID":3088,
     "Name":"Brad Hatley",
-    "Batting Type":"WC",
+    "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"C",
@@ -17085,7 +17103,7 @@
   {
     "ID":3094,
     "Name":"Lou Zrectum",
-    "Batting Type":"WC",
+    "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"CF",
@@ -17112,7 +17130,7 @@
   {
     "ID":3097,
     "Name":"Bubson Dugnutt",
-    "Batting Type":"BC",
+    "Batting Type":"TT",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -17129,12 +17147,14 @@
   },
   {
     "ID":3099,
-    "Name":"Dirk Nurple",
-    "Batting Type":"BC",
+    "Name":"Ivy Nurple",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"3B",
-    "Former Names":""
+    "Former Names":[
+      "Dirk Nurple"
+    ]
   },
   {
     "ID":3101,
@@ -17177,7 +17197,7 @@
   {
     "ID":3105,
     "Name":"Jacob Thomas",
-    "Batting Type":"WC",
+    "Batting Type":"MH",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"C",
@@ -17186,7 +17206,7 @@
   {
     "ID":3106,
     "Name":"Tomothy Toledo",
-    "Batting Type":"BN",
+    "Batting Type":"1B",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -17204,7 +17224,7 @@
   {
     "ID":3108,
     "Name":"Cormac Karona",
-    "Batting Type":"TT",
+    "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"CF",
@@ -17230,12 +17250,14 @@
   },
   {
     "ID":3111,
-    "Name":"Deacon Bowles",
+    "Name":"Anita Takeshita",
     "Batting Type":"WC",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"C",
-    "Former Names":""
+    "Former Names":[
+      "Deacon Bowles"
+    ]
   },
   {
     "ID":3112,
@@ -17258,10 +17280,10 @@
   {
     "ID":3115,
     "Name":"Tom E. Jahns",
-    "Batting Type":"TT",
+    "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"1B",
+    "Position":"3B",
     "Former Names":[
       "Castilla Sanders"
     ]
@@ -17278,7 +17300,7 @@
   {
     "ID":3117,
     "Name":"Benny Barslinger",
-    "Batting Type":"XB",
+    "Batting Type":"EN",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
@@ -17290,14 +17312,14 @@
     "Batting Type":"XB",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"2B",
+    "Position":"C",
     "Former Names":""
   },
   {
     "ID":3119,
     "Name":"Daniel Harrison",
     "Batting Type":"P",
-    "Pitching Type":"EN-S",
+    "Pitching Type":"EN-B",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":""
@@ -17341,7 +17363,7 @@
   {
     "ID":3124,
     "Name":"Bucky Sabre",
-    "Batting Type":"WC",
+    "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
@@ -17368,20 +17390,22 @@
   {
     "ID":3127,
     "Name":"Tater Tots",
-    "Batting Type":"WC",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"BB-H",
     "Handedness":"Right",
-    "Position":"RF",
+    "Position":"P",
     "Former Names":""
   },
   {
     "ID":3128,
-    "Name":"Ellis Nash",
+    "Name":"Jean-Paul Georges-et-Ringeaux",
     "Batting Type":"P",
     "Pitching Type":"EG-H",
     "Handedness":"Left",
     "Position":"P",
-    "Former Names":""
+    "Former Names":[
+      "Ellis Nash"
+    ]
   },
   {
     "ID":3129,
@@ -17442,7 +17466,7 @@
   {
     "ID":3135,
     "Name":"Brody Page",
-    "Batting Type":"WC",
+    "Batting Type":"EN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"1B",
@@ -17615,7 +17639,7 @@
   {
     "ID":3155,
     "Name":"Sam Stayman",
-    "Batting Type":"WC",
+    "Batting Type":"TT",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
@@ -17641,13 +17665,14 @@
   },
   {
     "ID":3158,
-    "Name":"Estrogen+ Gorgonzola",
-    "Batting Type":"S",
-    "Pitching Type":"SF-H",
+    "Name":"Astrid Gorgonzola",
+    "Batting Type":"BP",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"PH",
+    "Position":"C",
     "Former Names":[
-      "Bucky Gorgonzola"
+      "Bucky Gorgonzola",
+      "Estrogen+ Gorgonzola"
     ]
   },
   {
@@ -17726,7 +17751,7 @@
     "ID":3168,
     "Name":"Ethan Stooks",
     "Batting Type":"P",
-    "Pitching Type":"BF-H",
+    "Pitching Type":"EG-H",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":""
@@ -17772,19 +17797,19 @@
   {
     "ID":3174,
     "Name":"Snape Tooth",
-    "Batting Type":"P",
-    "Pitching Type":"EG-H",
+    "Batting Type":"BN",
+    "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"P",
+    "Position":"3B",
     "Former Names":""
   },
   {
     "ID":3175,
     "Name":"Gellybelly",
-    "Batting Type":"P",
-    "Pitching Type":"NH-H",
-    "Handedness":"Left",
-    "Position":"P",
+    "Batting Type":"BP",
+    "Pitching Type":"POS",
+    "Handedness":"Right",
+    "Position":"RF",
     "Former Names":""
   },
   {
@@ -17798,12 +17823,14 @@
   },
   {
     "ID":3180,
-    "Name":"Sir Walks-A-Littlw",
+    "Name":"Walks",
     "Batting Type":"WC",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
-    "Former Names":""
+    "Former Names":[
+      "Sir Walks-A-Littlw"
+    ]
   },
   {
     "ID":3181,
@@ -17919,7 +17946,7 @@
     "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"3B",
+    "Position":"C",
     "Former Names":""
   },
   {
@@ -17935,9 +17962,9 @@
     "ID":3206,
     "Name":"Hiram Birnbaum",
     "Batting Type":"XB",
-    "Pitching Type":"POS",
+    "Pitching Type":"WC-S",
     "Handedness":"Right",
-    "Position":"LF",
+    "Position":"PH",
     "Former Names":""
   },
   {
@@ -17951,12 +17978,14 @@
   },
   {
     "ID":3208,
-    "Name":"Kendrick Lamar",
+    "Name":"Lillian Fields",
     "Batting Type":"S",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"RF",
-    "Former Names":""
+    "Position":"SS",
+    "Former Names":[
+      "Kendrick Lamar"
+    ]
   },
   {
     "ID":3210,
@@ -17970,10 +17999,10 @@
   {
     "ID":3213,
     "Name":"Henry McCade",
-    "Batting Type":"BC",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"TD-B",
     "Handedness":"Right",
-    "Position":"1B",
+    "Position":"P",
     "Former Names":""
   },
   {
@@ -18034,7 +18063,7 @@
     "ID":3220,
     "Name":"Tomba",
     "Batting Type":"P",
-    "Pitching Type":"NH-H",
+    "Pitching Type":"TD-H",
     "Handedness":"Left",
     "Position":"P",
     "Former Names":""
@@ -18051,16 +18080,16 @@
   {
     "ID":3222,
     "Name":"Steven Scola",
-    "Batting Type":"XB",
+    "Batting Type":"BC",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"RF",
+    "Position":"LF",
     "Former Names":""
   },
   {
     "ID":3223,
     "Name":"Gal Soso",
-    "Batting Type":"BC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"2B",
@@ -18098,10 +18127,10 @@
   {
     "ID":3227,
     "Name":"Camden Yardsy",
-    "Batting Type":"WC",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Left",
-    "Position":"CF",
+    "Position":"C",
     "Former Names":""
   },
   {
@@ -18153,7 +18182,7 @@
     "ID":3233,
     "Name":"Booby Cancun",
     "Batting Type":"P",
-    "Pitching Type":"BS-H",
+    "Pitching Type":"TT-H",
     "Handedness":"Right",
     "Position":"P",
     "Former Names":""
@@ -18367,12 +18396,14 @@
   },
   {
     "ID":3258,
-    "Name":"Soy Okey",
+    "Name":"Hyzer Flip",
     "Batting Type":"WC",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"C",
-    "Former Names":""
+    "Former Names":[
+      "Soy Okey"
+    ]
   },
   {
     "ID":3259,
@@ -18784,10 +18815,10 @@
   {
     "ID":3309,
     "Name":"Roxy Hurricane",
-    "Batting Type":"BC",
-    "Pitching Type":"POS",
+    "Batting Type":"P",
+    "Pitching Type":"TD-S",
     "Handedness":"Left",
-    "Position":"CF",
+    "Position":"P",
     "Former Names":""
   },
   {
@@ -18801,17 +18832,19 @@
   },
   {
     "ID":3311,
-    "Name":"Ding L. Barry",
-    "Batting Type":"XB",
-    "Pitching Type":"POS",
-    "Handedness":"Right",
-    "Position":"CF",
-    "Former Names":""
+    "Name":"Mu Snuckle",
+    "Batting Type":"P",
+    "Pitching Type":"TD-S",
+    "Handedness":"Left",
+    "Position":"P",
+    "Former Names":[
+      "Ding L. Barry"
+    ]
   },
   {
     "ID":3312,
     "Name":"Fat Lever",
-    "Batting Type":"BN",
+    "Batting Type":"SF",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
@@ -18856,10 +18889,19 @@
   {
     "ID":3318,
     "Name":"Geese On Demand",
-    "Batting Type":"EN",
+    "Batting Type":"BN",
     "Pitching Type":"POS",
     "Handedness":"Right",
-    "Position":"3B",
+    "Position":"LF",
+    "Former Names":""
+  },
+  {
+    "ID":3319,
+    "Name":"EvoJanus",
+    "Batting Type":"BP",
+    "Pitching Type":"POS",
+    "Handedness":"Right",
+    "Position":"C",
     "Former Names":""
   },
   {
@@ -19543,21 +19585,25 @@
   },
   {
     "ID":3399,
-    "Name":"Nora Selbmar ",
+    "Name":"Nora Selbmar",
     "Batting Type":"1B",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"SS",
-    "Former Names":""
+    "Former Names":[
+      "Nora Selbmar "
+    ]
   },
   {
     "ID":3400,
-    "Name":"Chris Walker ",
+    "Name":"Chris Walker",
     "Batting Type":"BP",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"RF",
-    "Former Names":""
+    "Former Names":[
+      "Chris Walker "
+    ]
   },
   {
     "ID":3401,
@@ -19660,12 +19706,14 @@
   },
   {
     "ID":3412,
-    "Name":"BeefCake Willy ",
+    "Name":"BeefCake Willy",
     "Batting Type":"BP",
     "Pitching Type":"POS",
     "Handedness":"Right",
     "Position":"CF",
-    "Former Names":""
+    "Former Names":[
+      "BeefCake Willy "
+    ]
   },
   {
     "ID":3413,
@@ -19806,12 +19854,14 @@
   },
   {
     "ID":3428,
-    "Name":"Fausto Herrera ",
+    "Name":"Fausto Herrera",
     "Batting Type":"WC",
     "Pitching Type":"POS",
     "Handedness":"Left",
     "Position":"2B",
-    "Former Names":""
+    "Former Names":[
+      "Fausto Herrera "
+    ]
   },
   {
     "ID":3429,

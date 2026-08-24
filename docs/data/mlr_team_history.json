@@ -69,8 +69,7 @@
         {"name":"St. Louis Cardinals","abbr":"STL","start":2,"end":9999,"logo_dark":"./img/mlr_logos/STL.svg","logo_light":"./img/mlr_logos/STL_light.svg"}],
     "TBR": [
         {"name":"Tampa Bay Devil Rays","abbr":"TB","start":2,"end":2,"logo_dark":"./img/mlr_logos/TBD.svg","logo_light":"./img/mlr_logos/TBD.svg"},
-        {"name":"Tampa Bay Devil Rays","abbr":"TBD","start":3,"end":3,"logo_dark":"./img/mlr_logos/TBD.svg","logo_light":"./img/mlr_logos/TBD.svg"},
-        {"name":"Tampa Bay Devil Rays","abbr":"TBR","start":4,"end":4,"logo_dark":"./img/mlr_logos/TBD.svg","logo_light":"./img/mlr_logos/TBD.svg"},
+        {"name":"Tampa Bay Devil Rays","abbr":"TBD","start":3,"end":4,"logo_dark":"./img/mlr_logos/TBD.svg","logo_light":"./img/mlr_logos/TBD.svg"},
         {"name":"Tampa Bay Rays","abbr":"TBR","start":5,"end":10,"logo_dark":"./img/mlr_logos/TBR.svg","logo_light":"./img/mlr_logos/TBR_light.svg"},
         {"name":"Tampa Bay Devil Rays","abbr":"TBR","start":11,"end":9999,"logo_dark":"./img/mlr_logos/TBD.svg","logo_light":"./img/mlr_logos/TBD.svg"}],
     "TEX": [

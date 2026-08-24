@@ -21,7 +21,7 @@
   "S4": {
     "AL West": ["HOU", "LAA", "OAK", "SEA", "TEX"],
     "AL Central": ["CLE", "CWS", "DET", "KCR", "MIN"],
-    "AL East" : ["BAL", "BOS", "NYY", "TBR", "TOR"],
+    "AL East" : ["BAL", "BOS", "NYY", "TBD", "TOR"],
     "NL West" : ["ARI", "COL", "LAD", "SDP", "SFG"],
     "NL Central" : ["CHC", "CIN", "MIL", "PIT", "STL"],
     "NL East" : ["ATL", "MIA", "MTL", "NYM", "PHI"]
