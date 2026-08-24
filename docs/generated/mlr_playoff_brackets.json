@@ -1317,5 +1317,142 @@
         ]
       }
     ]
+  },
+  "S12": {
+    "format": "6-per-league",
+    "reseeded": true,
+    "leagues": {
+      "AL": {
+        "label": "American League",
+        "seeds": [
+          "SEA",
+          "DET",
+          "TBR",
+          "CWS",
+          "OAK",
+          "MIN"
+        ]
+      },
+      "NL": {
+        "label": "National League",
+        "seeds": [
+          "MIL",
+          "ARI",
+          "FLA",
+          "CHC",
+          "SFG",
+          "ATL"
+        ]
+      }
+    },
+    "rounds": [
+      {
+        "name": "Wild Card",
+        "matchups": [
+          {
+            "game_id": 2,
+            "home": "CWS",
+            "away": "OAK",
+            "home_score": 4,
+            "away_score": 3,
+            "league": "AL"
+          },
+          {
+            "game_id": 4,
+            "home": "TBR",
+            "away": "MIN",
+            "home_score": 6,
+            "away_score": 14,
+            "league": "AL"
+          },
+          {
+            "game_id": 1,
+            "home": "CHC",
+            "away": "SFG",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "NL"
+          },
+          {
+            "game_id": 3,
+            "home": "FLA",
+            "away": "ATL",
+            "home_score": 3,
+            "away_score": 0,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Divisional",
+        "matchups": [
+          {
+            "game_id": 6,
+            "home": "DET",
+            "away": "CWS",
+            "home_score": 2,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 8,
+            "home": "SEA",
+            "away": "MIN",
+            "home_score": 0,
+            "away_score": 2,
+            "league": "AL"
+          },
+          {
+            "game_id": 5,
+            "home": "ARI",
+            "away": "FLA",
+            "home_score": 2,
+            "away_score": 4,
+            "league": "NL"
+          },
+          {
+            "game_id": 7,
+            "home": "MIL",
+            "away": "CHC",
+            "home_score": 1,
+            "away_score": 4,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "League Championship",
+        "matchups": [
+          {
+            "game_id": 9,
+            "home": "DET",
+            "away": "MIN",
+            "home_score": 1,
+            "away_score": 0,
+            "league": "AL"
+          },
+          {
+            "game_id": 10,
+            "home": "FLA",
+            "away": "CHC",
+            "home_score": 3,
+            "away_score": 4,
+            "league": "NL"
+          }
+        ]
+      },
+      {
+        "name": "Paper Cup",
+        "matchups": [
+          {
+            "game_id": 11,
+            "home": "DET",
+            "away": "CHC",
+            "home_score": 2,
+            "away_score": 1
+          }
+        ]
+      }
+    ]
   }
 }

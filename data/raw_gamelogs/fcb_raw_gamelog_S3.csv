@@ -33,7 +33,7 @@ Walnuts Labonte,261,222,Richard Saks,321,857,K,365,B1,1,4,0,1,-6.13%,6.13%,0,0,7
 Odin Luka,9,833,Richard Saks,321,821,HR,12,B1,2,4,0,1,47.23%,-47.23%,3,1,7,2,1,TCU,TOL,HR,HR,,1
 Chaz McDunnough,121,154,Richard Saks,321,63,1B,91,B1,2,0,3,1,0.80%,-0.80%,0,0,7,2,1,TCU,TOL,1B,1B,,1
 Dread Scott,3344,348,Richard Saks,321,987,K,361,B1,2,1,3,1,-1.66%,1.66%,0,0,7,2,1,TCU,TOL,K,K,,1
-Hookie McCrash,3345,,Charles Magnus,220,999,FO,235,T2,0,0,3,1,-3.57%,3.57%,0,0,8,2,1,TOL,TCU,FO,FO,,1
+Hookie McCrash,3345,234,Charles Magnus,220,999,FO,235,T2,0,0,3,1,-3.57%,3.57%,0,0,8,2,1,TOL,TCU,FO,FO,,1
 Boof Boog,437,119,Charles Magnus,220,149,2B,30,T2,1,0,3,1,6.68%,-6.68%,0,0,8,2,1,TOL,TCU,2B,2B,,1
 Jerry Jingles,146,,Charles Magnus,220,,Auto BB,,T2,1,2,3,1,5.10%,-5.10%,0,0,8,2,1,TOL,TCU,Auto BB,Auto BB,,10
 Benji Bjorn,427,885,Charles Magnus,220,679,FO,206,T2,1,4,3,1,-6.72%,6.72%,0,0,8,2,1,TOL,TCU,FO,FO,,1
@@ -63,7 +63,7 @@ Xander Macander,424,509,Valeria Lisova,183,314,1B,95,B2,1,0,1,0,1.14%,-1.14%,0,1
 Henry Crowell,184,784,Valeria Lisova,183,710,2B,74,B2,1,1,1,0,5.22%,-5.22%,0,0,14,3,1,NEB,RIC,2B,2B,,1
 Buttfart McPoopus,77,777,Valeria Lisova,183,473,LGO,250,B2,1,6,1,0,2.46%,-2.46%,1,0,14,3,1,NEB,RIC,LGO,LGO,,1
 Mattress Cadaire,116,751,Valeria Lisova,183,490,FO,261,B2,2,5,2,0,-1.76%,1.76%,0,0,14,3,1,NEB,RIC,FO,FO,,1
-Vorinclex Pabst,3349,,Todd Bonzalez,60,244,RGO,443,T3,0,0,2,0,-3.81%,3.81%,0,0,15,3,1,RIC,NEB,RGO,RGO,,1
+Vorinclex Pabst,3349,687,Todd Bonzalez,60,244,RGO,443,T3,0,0,2,0,-3.81%,3.81%,0,0,15,3,1,RIC,NEB,RGO,RGO,,1
 Rooty Duffer,3346,835,Todd Bonzalez,60,915,1B,80,T3,1,0,2,0,5.28%,-5.28%,0,1,15,3,1,RIC,NEB,1B,1B,,1
 Eric Leeder,29,54,Todd Bonzalez,60,807,FO,247,T3,1,1,2,0,-4.77%,4.77%,0,0,15,3,1,RIC,NEB,FO,FO,,1
 Andrew Nova,191,502,Todd Bonzalez,60,500,HR,2,T3,2,1,2,0,34.38%,-34.38%,2,1,15,3,1,RIC,NEB,HR,HR,,1
@@ -107,7 +107,7 @@ Kris Jaxon,152,895,Nori Aru,131,910,HR,15,T2,1,1,1,0,43.85%,-43.85%,2,1,25,5,1,V
 Marty McSlugger,3327,,Nori Aru,131,,Auto K,,T2,1,0,1,2,-2.08%,2.08%,0,0,25,5,1,VT,WSU,Auto K,Auto K,,9
 Dirtbag Darrell,262,693,Nori Aru,131,,1B,106,T2,2,0,1,2,1.87%,-1.87%,0,0,25,5,1,VT,WSU,1B,1B,,1
 Heinrich Frosch,343,318,Nori Aru,131,693,K,375,T2,2,1,1,2,-3.78%,3.78%,0,0,25,5,1,VT,WSU,K,K,,1
-Gordan Freemon,455,,Seik Golden,251,407,HR,13,B2,0,0,1,2,28.44%,-28.44%,1,1,26,5,1,WSU,VT,HR,HR,,1
+Gordan Freemon,455,420,Seik Golden,251,407,HR,13,B2,0,0,1,2,28.44%,-28.44%,1,1,26,5,1,WSU,VT,HR,HR,,1
 Reimer Gonzalez,13,147,Seik Golden,251,850,PO,297,B2,0,0,2,2,-4.12%,4.12%,0,0,26,5,1,WSU,VT,PO,PO,,1
 Isaac Snowbender,339,555,Seik Golden,251,333,PO,222,B2,1,0,2,2,-3.89%,3.89%,0,0,26,5,1,WSU,VT,PO,PO,,1
 Luap Renraw,118,3,Seik Golden,251,623,RGO,380,B2,2,0,2,2,-3.68%,3.68%,0,0,26,5,1,WSU,VT,RGO,RGO,,1
@@ -215,7 +215,7 @@ Niko Banks,430,,T.J. Valencia,451,,Auto K,,T1,1,0,0,0,-3.19%,3.19%,0,0,51,10,2,R
 Andrew Nova,191,654,T.J. Valencia,451,472,FO,182,T1,2,0,0,0,-2.75%,2.75%,0,0,51,10,2,RIC,CSUF,FO,FO,,1
 Ozzie Baez,228,101,Raymond Jarvis,3363,723,RGO,378,B1,0,0,0,0,-3.43%,3.43%,0,0,52,10,2,CSUF,RIC,RGO,RGO,,1
 Dednuts,448,,Raymond Jarvis,3363,,Auto BB,,B1,1,0,0,0,2.66%,-2.66%,0,0,52,10,2,CSUF,RIC,Auto BB,Auto BB,,10
-AJ McMann,433,,Raymond Jarvis,3363,931,FO,187,B1,1,1,0,0,-3.18%,3.18%,0,0,52,10,2,CSUF,RIC,FO,FO,,1
+AJ McMann,433,774,Raymond Jarvis,3363,931,FO,157,B1,1,1,0,0,-3.18%,3.18%,0,0,52,10,2,CSUF,RIC,FO,FO,,1
 Ryan Vauhn,442,450,Valeria Lisova,183,575,BB,125,B1,2,1,0,0,3.44%,-3.44%,0,0,52,10,2,CSUF,RIC,BB,BB,,1
 Carlos Brownson,132,754,Valeria Lisova,183,430,K,324,B1,2,4,0,0,-8.96%,8.96%,0,0,52,10,2,CSUF,RIC,K,K,,1
 Tommy Testudo,208,583,T.J. Valencia,451,888,K,305,T2,0,0,0,0,-4.31%,4.31%,0,0,53,10,2,RIC,CSUF,K,K,,1
@@ -228,5 +228,5 @@ Emile B. Beezbowl,3341,222,Valeria Lisova,183,250,2B,28,B2,2,2,0,0,25.64%,-25.64
 Ozzie Baez,228,224,Valeria Lisova,183,375,BB,151,B2,2,2,1,0,0.59%,-0.59%,0,0,54,10,2,CSUF,RIC,BB,BB,,1
 Dednuts,448,342,Valeria Lisova,183,625,FO,283,B2,2,4,1,0,-3.61%,3.61%,0,0,54,10,2,CSUF,RIC,FO,FO,,1
 Eric Leeder,29,234,T.J. Valencia,451,700,LGO,466,T3,0,0,1,0,-6.73%,6.73%,0,0,55,10,2,RIC,CSUF,LGO,LGO,,1
-Vorinclex Pabst,3349,,T.J. Valencia,451,200,K,376,T3,1,0,1,0,-6.00%,6.00%,0,0,55,10,2,RIC,CSUF,K,K,,1
+Vorinclex Pabst,3349,576,T.J. Valencia,451,200,K,376,T3,1,0,1,0,-6.00%,6.00%,0,0,55,10,2,RIC,CSUF,K,K,,1
 Shelinkel Johnson,3358,,T.J. Valencia,451,,Auto K,,T3,2,0,1,0,-5.13%,5.13%,0,0,55,10,2,RIC,CSUF,Auto K,Auto K,,9

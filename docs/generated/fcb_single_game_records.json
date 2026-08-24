@@ -970,7 +970,7 @@
         ]
       },
       "RE24": {
-        "record": 10.303571428571427,
+        "record": 10.352422907488986,
         "holders": [
           {
             "team": "UMN",
@@ -1037,7 +1037,7 @@
         ]
       },
       "WAR": {
-        "record": 1.1849552823522347,
+        "record": 1.1878232451284376,
         "holders": [
           {
             "team": "UMN",
@@ -1631,7 +1631,7 @@
         ]
       },
       "RE24": {
-        "record": 9.607142857142856,
+        "record": 9.704845814977974,
         "holders": [
           {
             "away": "UMN",
@@ -1698,7 +1698,7 @@
         ]
       },
       "WAR": {
-        "record": 1.221322578006012,
+        "record": 1.2276924760233057,
         "holders": [
           {
             "away": "UMN",
@@ -1951,13 +1951,19 @@
         ]
       },
       "RE24": {
-        "record": -5.776785714285714,
+        "record": -5.746031746031745,
         "holders": [
           {
-            "away": "CAL",
-            "home": "UMN",
-            "season": "S13",
-            "session": 1
+            "away": "PUR",
+            "home": "UCL",
+            "season": "S8",
+            "session": 3
+          },
+          {
+            "away": "MCH",
+            "home": "PAN",
+            "season": "S8",
+            "session": 2
           }
         ]
       },

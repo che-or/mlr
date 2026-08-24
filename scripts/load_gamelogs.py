@@ -28,6 +28,13 @@ def _load_gamelogs(current_season, league, all_seasons = True):
 
         try:
             season_df = pd.read_csv(gamelog)
+            if season_df.empty:
+                # file exists (e.g. a new active season whose sheet has been created but has
+                # no games logged yet) but has no rows, so all columns default to object dtype.
+                # Concatenating that in would silently poison numeric columns (Run, Diff, etc.)
+                # to object dtype for every season, breaking downstream arithmetic. Skip it -
+                # there's no data to contribute anyway.
+                continue
             season_df['Season'] = season
             season_df['Display Season'] = f'S{season}'
             season_df['Game ID'] = season * 1000 + season_df['Game ID']
