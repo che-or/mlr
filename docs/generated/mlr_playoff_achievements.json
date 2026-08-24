@@ -1,17 +1,28 @@
 {
   "no_hitters": [
     {
-      "combined": false,
+      "combined": true,
       "team": "PHI",
       "opponent": "MIL",
       "location": "Away",
       "season": "S10",
       "session": "DS",
       "perfect": false,
-      "bb": 2,
-      "id": 127,
-      "so": 6,
-      "ip": "6.0"
+      "bb": 4,
+      "pitchers": [
+        {
+          "id": 127,
+          "ip": "6.0",
+          "so": 6,
+          "bb": 2
+        },
+        {
+          "id": 127,
+          "ip": "6.0",
+          "so": 6,
+          "bb": 2
+        }
+      ]
     }
   ],
   "cycles": [
@@ -26,9 +37,33 @@
       "2b": 1,
       "3b": 1,
       "hr": 1
+    },
+    {
+      "id": 2715,
+      "team": "PHI",
+      "opponent": "CHC",
+      "location": "Away",
+      "season": "S9",
+      "session": "WC",
+      "h": 4,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
     }
   ],
   "triangles": [
+    {
+      "id": 2715,
+      "team": "PHI",
+      "opponent": "CHC",
+      "location": "Away",
+      "season": "S9",
+      "session": "WC",
+      "h": 4,
+      "2b": 1,
+      "3b": 1,
+      "hr": 1
+    },
     {
       "id": 2715,
       "team": "PHI",

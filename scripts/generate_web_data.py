@@ -62,10 +62,12 @@ def main():
         hitting_stats_cache_ex = False
         pitching_stats_cache_ex = False
     
+        last_row = all_fbb_seasons[all_fbb_seasons['League'].str.lower() == league].iloc[-1]
         try:
-            season = int(all_fbb_seasons[all_fbb_seasons['League'].str.lower() == league]['Season'].iloc[-1])
+            season = int(last_row['Season'])
         except:
-            season = int(all_fbb_seasons[all_fbb_seasons['League'].str.lower() == league]['Season'].iloc[-1][:-1])
+            season = int(last_row['Season'][:-1])
+        season_active = bool(last_row['Active'])
     
         p_hs = Path(f'../docs/generated/{league}_hitting_stats.json')
         p_ps = Path(f'../docs/generated/{league}_pitching_stats.json')
@@ -412,7 +414,8 @@ def main():
                 streak_gamelog = sg_gamelog
             streak_recs = get_streak_records(streak_gamelog, hitting_game,
                                              hitting_team_game_stats=hitting_team,
-                                             cache_path=p_sr_cache)
+                                             cache_path=p_sr_cache,
+                                             season_active=season_active)
             p_streaks = Path('../docs/generated/mlr_streak_records.json')
             with open(p_streaks, 'w') as f:
                 json.dump(streak_recs, f, indent=2)

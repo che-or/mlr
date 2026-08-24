@@ -1490,7 +1490,8 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
 # Public API
 # ---------------------------------------------------------------------------
 
-def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=None, cache_path=None):
+def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=None, cache_path=None,
+                        season_active=True):
     """
     Compute all streak records, optionally using/updating a JSON cache.
 
@@ -1509,9 +1510,14 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
     Each value: {'all_time': {entries, tie_at_boundary}, 'active': {entries, tie_at_boundary}}.
     Active entries are limited to players/teams who appeared in the most recent season.
     The current in-progress session is included only if the streak was already extended there.
+
+    season_active - whether the most recent season still has games left to be logged
+    (i.e. its "Active" flag in gamelog_links.csv). When False, the most recent session
+    is treated as final rather than in-progress: no session is exempted from breaking a
+    streak, and pitcher decisions are computed for that session too.
     """
     cur_season = gamelog_df['Season'].max()
-    cur_session = gamelog_df[gamelog_df['Season'] == cur_season]['Session'].max()
+    cur_session = gamelog_df[gamelog_df['Season'] == cur_season]['Session'].max() if season_active else None
 
     cache = _load_streak_cache(cache_path)
     use_cache = (cache is not None and cache.get('cached_through_season') == cur_season - 1)
