@@ -1,0 +1,42 @@
+{
+    "_readme": [
+        "Hand-maintained manual overrides for team logos. NOT touched by the Python generation pipeline — edit directly.",
+        "",
+        "player_season: overrides which franchise's logo represents a player for a given MLR season, for season/award-scoped",
+        "  displays (awards page: major awards, Silver Sluggers, All-Star team, etc). Fixes cases where a player played for",
+        "  multiple teams in a season (e.g. an All-Star selected while on their first team, later traded).",
+        "  Keyed by player ID (string) -> season (e.g. 'S12') -> either:",
+        "    - a plain franchise key string, applied to every award shown for that player+season, OR",
+        "    - an object of award-key -> franchise key, with an optional \"default\" key used when no award-specific",
+        "      key matches. Award keys match docs/data/awards.json's award codes (MVP, CYA, ROTY, RPOTY, GMOTY, BT,",
+        "      ERAT, PCMVP, HRD, AS, SS).",
+        "  Example: '3025': 'SEA' (whole season). '1234': { 'AS': 'SEA', 'default': 'HOU' } (All-Star shows SEA,",
+        "  everything else that season shows HOU).",
+        "",
+        "player_default: overrides the logo shown on a player's own page header, independent of their stat history.",
+        "  Fixes cases like a player who's shown representing a team they never had a stat row for (e.g. a GM credit",
+        "  for a team they never played for). Keyed by player ID (string) -> either:",
+        "    - { league, franchise, season }, matching the arguments to getLogoPair() in docs/js/utils.js, OR",
+        "    - { image, light? }, a direct logo image path (relative to docs/, e.g. './img/mlr_logos/Foo.png') for a",
+        "      one-off logo with no real team behind it. 'light' is optional (falls back to 'image' in light mode).",
+        "  Examples: '1824': { 'league': 'mlr', 'franchise': 'TEX', 'season': 'S9' }.",
+        "            '2866': { 'image': './img/mlr_logos/Homestar.png' }"
+    ],
+    "player_season": {
+        "10": { "S1": { "GMOTY": "MIN (S1-2)" } },
+        "3367": { "S1": { "GMOTY": "WSH (S1-2)" } },
+        "65": {
+            "S3": { "AS": "HOU" },
+            "S4": { "AS": "COL" }
+        },
+        "1953": { "S2": { "AS": "MIL" } },
+        "84": { "S2": { "AS": "WSH (S1-2)" } },
+        "194": { "S3": { "AS": "NYM" } },
+        "2780": { "S9": { "AS": "LAD" } },
+        "2738": { "S11": { "AS": "ARI" } }
+    },
+    "player_default": {
+        "3367": { "league": "mlr", "franchise": "WSH (S1-2)", "season": "S1" },
+        "2866": { "image": "./img/mlr_logos/Homestar.png" }
+    }
+}
