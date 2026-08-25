@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats } from '../data.js';
-import { getSeasonSort, getMlrLogoPair, recordFranchiseKey, makeLogoImg } from '../utils.js';
+import { getSeasonSort, getMlrLogoPair, getMlrTeamAbbr, recordFranchiseKey, makeLogoImg, getSeasonLogoOverride } from '../utils.js';
 
 
 export async function renderAwards() {
@@ -115,11 +115,11 @@ function renderMajorAwards(la, metadata, season) {
             const ids = la[key];
             let inner;
             if (key === 'GMOTY' && ids.length > 1) {
-                const logo = logoForPlayer(ids[0], season);
+                const logo = logoForPlayer(ids[0], season, key);
                 inner = `<div class="award-winner-item">${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${ids.map(id => playerLink(id)).join(' &amp; ')}</div>`;
             } else {
                 inner = ids.map(id => {
-                    const logo = logoForPlayer(id, season);
+                    const logo = logoForPlayer(id, season, key);
                     return `<div class="award-winner-item">${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}</div>`;
                 }).join('');
             }
@@ -142,7 +142,7 @@ function renderSilverSluggers(la, metadata, season, lgName) {
         const ids = Array.isArray(ss[pos]) ? ss[pos] : [ss[pos]];
         if (pos === 'OF' && ids.length > 1) {
             return ids.map(id => {
-                const logo = logoForPlayer(id, season);
+                const logo = logoForPlayer(id, season, 'SS');
                 return `<div class="award-winner-item-pos">
                     <span class="award-position-label">${pos}</span>
                     <div class="award-player-info-pos"><div class="award-player-item-pos">
@@ -153,7 +153,7 @@ function renderSilverSluggers(la, metadata, season, lgName) {
         return `<div class="award-winner-item-pos">
             <span class="award-position-label">${pos}</span>
             <div class="award-player-info-pos">${ids.map(id => {
-                const logo = logoForPlayer(id, season);
+                const logo = logoForPlayer(id, season, 'SS');
                 return `<div class="award-player-item-pos">${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}</div>`;
             }).join('')}</div></div>`;
     }).join('');
@@ -178,7 +178,7 @@ function renderAllStarTeam(la, metadata, season, lgName) {
     // ── GM section ──────────────────────────────────────────────────────────
     let gmHtml = '';
     if (as.GM?.length) {
-        const infos = as.GM.map(id => ({ id, ...playerSeasonInfo(id, season) }));
+        const infos = as.GM.map(id => ({ id, ...playerSeasonInfo(id, season, 'AS') }));
         const firstLogo = infos[0]?.logo;
         const allSameLogo = infos.every(p => p.logo?.dark === firstLogo?.dark);
         let gmInner;
@@ -203,7 +203,7 @@ function renderAllStarTeam(la, metadata, season, lgName) {
         if (!as[pos]) return '';
         const ids = Array.isArray(as[pos]) ? as[pos] : [as[pos]];
         return ids.map(id => {
-            const logo = logoForPlayer(id, season);
+            const logo = logoForPlayer(id, season, 'AS');
             return `<div class="award-winner-item">
                 <span class="award-position-label">${pos}</span>
                 ${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}
@@ -218,7 +218,7 @@ function renderAllStarTeam(la, metadata, season, lgName) {
             <h5>Pitchers</h5>
             <div class="as-player-list">
                 ${as.P.map(id => {
-                    const logo = logoForPlayer(id, season);
+                    const logo = logoForPlayer(id, season, 'AS');
                     return `<div class="award-winner-item">
                         ${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}
                     </div>`;
@@ -231,7 +231,7 @@ function renderAllStarTeam(la, metadata, season, lgName) {
     let reservesHtml = '';
     if (as.R?.length) {
         const reserves = as.R.map(id => {
-            const { logo, teamAbbr } = playerSeasonInfo(id, season);
+            const { logo, teamAbbr } = playerSeasonInfo(id, season, 'AS');
             const player = state.allPlayers.find(p => p.ID === id);
             return { id, logo, teamAbbr, name: player?.Name || `#${id}` };
         });
@@ -278,7 +278,7 @@ function renderLeagueWideAward(key, ids, metadata, season) {
     return `<div class="awards-sub-section" style="margin-top:20px">
         <h4 class="awards-section-title">${name}</h4>
         <div class="award-winners-list">${ids.map(id => {
-            const logo = logoForPlayer(id, season);
+            const logo = logoForPlayer(id, season, key);
             return `<div class="award-winner-item">${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}</div>`;
         }).join('')}</div>
     </div>`;
@@ -368,22 +368,46 @@ function playerLink(id) {
 
 // Returns logo and team abbreviation for a player in a given season.
 // Uses recordFranchiseKey to avoid the multi-franchise same-abbreviation bug.
-function playerSeasonInfo(id, season) {
+// `awardKey` (e.g. "AS", "SS", "MVP") lets docs/data/logo_overrides.json
+// override the represented team per-award, for players who changed teams
+// mid-season (e.g. an All-Star picked while on their first team).
+function playerSeasonInfo(id, season, awardKey) {
+    // Checked first and independent of stat rows: some award winners (e.g. a
+    // GM who never played) have no MLR stat history at all to fall back on.
+    const override = getSeasonLogoOverride(id, season, awardKey);
+    if (override) {
+        return {
+            logo: getMlrLogoPair(override, season),
+            teamAbbr: getMlrTeamAbbr(override, season),
+        };
+    }
+
     const hitting  = state.stats['mlr_hitting']  || [];
     const pitching = state.stats['mlr_pitching'] || [];
     const all = [...hitting, ...pitching];
-    const stat = all.find(s => s.ID === id && s['Display Season'] === season && !s.is_sub_row)
+    // A two-way player has separate hitting and pitching rows for the same
+    // season; when they differ (e.g. traded mid-season during their pitching
+    // stint but not their hitting one), prefer whichever stint ran later.
+    const stat = all.filter(s => s.ID === id && s['Display Season'] === season && !s.is_sub_row)
+                    .sort((a, b) => (b['Last Session'] || 0) - (a['Last Session'] || 0))[0]
               || all.filter(s => s.ID === id && !s.is_sub_row)
-                    .sort((a, b) => getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']))[0];
+                    .sort((a, b) =>
+                        getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']) ||
+                        (b['Last Session'] || 0) - (a['Last Session'] || 0))[0];
     if (!stat) return { logo: null, teamAbbr: '' };
+
+    // Derive teamAbbr from the same resolved franchise as the logo (rather than
+    // a separate check on stat.Team) so sorting always matches what's displayed —
+    // stat.Team can be "3TM", "4TM", etc. for players with more than two stops.
+    const franchiseKey = recordFranchiseKey(stat);
     return {
-        logo: getMlrLogoPair(recordFranchiseKey(stat), stat['Display Season']),
-        teamAbbr: stat.Team !== '2TM' ? (stat.Team || '') : (stat['Last Team'] || ''),
+        logo: getMlrLogoPair(franchiseKey, stat['Display Season']),
+        teamAbbr: getMlrTeamAbbr(franchiseKey, stat['Display Season']),
     };
 }
 
-function logoForPlayer(id, season) {
-    return playerSeasonInfo(id, season).logo;
+function logoForPlayer(id, season, awardKey) {
+    return playerSeasonInfo(id, season, awardKey).logo;
 }
 
 function wirePlayerLinks(container) {

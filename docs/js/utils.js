@@ -39,6 +39,28 @@ export function recordFranchiseKey(r) {
     return (r.Franchise && !/^\d+TM$/.test(r.Franchise)) ? r.Franchise : (r['Last Team'] || r.Team);
 }
 
+// ── Manual logo overrides ────────────────────────────────────────────────────
+// From docs/data/logo_overrides.json (hand-maintained; not touched by the
+// Python pipeline). See that file's "_readme" for the schema.
+
+// Returns an override franchise key for a player's MLR logo in a given season,
+// for season/award-scoped displays (awards page). `awardKey` is the award code
+// shown on the awards page (e.g. "AS", "SS", "MVP"); pass null/undefined when
+// there's no specific award context. Returns null if no override applies.
+export function getSeasonLogoOverride(playerId, season, awardKey) {
+    const entry = state.logoOverrides.player_season?.[playerId];
+    const value = entry?.[season];
+    if (value == null) return null;
+    if (typeof value === 'string') return value;
+    return (awardKey && value[awardKey]) || value.default || null;
+}
+
+// Returns a full override { league, franchise, season } for a player's
+// default (player-page header) logo, or null if none applies.
+export function getPlayerDefaultLogoOverride(playerId) {
+    return state.logoOverrides.player_default?.[playerId] || null;
+}
+
 // ── Season helpers ───────────────────────────────────────────────────────────
 
 // Convert display season string to a sortable number.

@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats, searchPlayers, getPlayerById } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg } from '../utils.js';
+import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg, getLogoPair, getPlayerDefaultLogoOverride } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER, COUNTING_STATS } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
 import { computeLeagueLeaders } from '../leaders.js';
@@ -248,6 +248,15 @@ function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
 
 
 function resolvePlayerLogo(playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
+    const override = getPlayerDefaultLogoOverride(playerId);
+    if (override) {
+        // Either a direct image path (for a logo with no real team behind it),
+        // or a { league, franchise, season } triple resolved like any other logo.
+        if (override.image) return { dark: override.image, light: override.light || override.image };
+        const pair = getLogoPair(override.league, override.franchise, override.season);
+        if (pair) return pair;
+    }
+
     const lastSeason = rows => (rows || [])
         .filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S'))
         .sort((a, b) => getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']))[0];

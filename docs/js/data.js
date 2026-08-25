@@ -45,6 +45,7 @@ export async function loadCoreData() {
         glossary,
         typeDefinitions,
         awards,
+        logoOverrides,
         mlrTeamHistory,
         milrTeamHistory,
         fcbTeamHistory,
@@ -64,6 +65,7 @@ export async function loadCoreData() {
         fetch(`${ROOT}/glossary.json`).then(r => r.json()),
         fetch(`${DATA}/type_definitions.json`).then(r => r.json()),
         fetch(`${DATA}/awards.json`).then(r => r.json()),
+        fetch(`${DATA}/logo_overrides.json`).then(r => r.json()),
         fetch(`${DATA}/mlr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/milr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/fcb_team_history.json`).then(r => r.json()),
@@ -84,6 +86,7 @@ export async function loadCoreData() {
     state.glossary = glossary;
     state.typeDefinitions = typeDefinitions;
     state.awards = awards;
+    state.logoOverrides = logoOverrides;
     state.teamHistory.mlr = mlrTeamHistory;
     state.teamHistory.milr = milrTeamHistory;
     state.teamHistory.fcb = fcbTeamHistory;
