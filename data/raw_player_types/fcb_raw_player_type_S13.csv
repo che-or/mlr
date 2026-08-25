@@ -1,0 +1,101 @@
+Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Position
+29,Jeter Ups,BP,BS,B,Right,SS
+2568,Munki Oshu,1B,BF,S,Right,2B
+2591,Hunter D. Parker,MH,NH,S,Right,C
+2606,Kim Wexler,SM,TD,B,Right,2B
+2794,Tyler Helman,EN,NH,B,Left,SS
+2931,Jeff Newman,S,BS,H,Left,2B
+2935,Dwayne Swanson,WC,TT,H,Left,P
+3028,Dan Candoit,WC,WC,S,Right,P
+3220,Tomba,P,NH,H,Left,P
+3325,Andre Anderson,MH,TT,S,Left,2B
+3372,Cola Spritz,MH,,,Left,LF
+3374,Felipe Coyne,S,SF,S,Right,SS
+3375,Mikko LePico,SM,EG,S,Right,P
+3376,Harry Palms,TT,BF,H,Left,CF
+3377,Cucamonga Seattle,SF,NH,S,Right,CF
+3378,Kenji Matsumoto,P,BS,H,Left,P
+3379,KC Martinez,XB,WC,S,Left,1B
+3380,Gracie Cwej-Mlodzianowski,WC,TD,S,Left,CF
+3381,Socks Maybe,BC,TD,B,Left,CF
+3382,Carter Kendall,P,NH,S,Right,P
+3383,Alan,BC,,,Right,SS
+3384,Loki,XB,,,Left,SS
+3385,John Cally,XB,,,Right,LF
+3386,DeJah Muissy,EN,,,Right,SS
+3387,Jahnder Franco,XB,BS,B,Left,2B
+3388,Benny Schwa,BC,FP,H,Right,P
+3389,Tobé Bryant,MH,,,Right,C
+3390,Arlon Gemini,WC,NH,H,Right,SS
+3391,Naz Reid,,EG,H,Left,P
+3392,Lefty Cobb,BP,,,Left,1B
+3393,Bloop McNutt,BC,TD,B,Right,1B
+3394,Triple T,XB,,,Right,LF
+3395,Tank Sharksy,XB,,,Right,SS
+3396,Googly Moogly,BC,,,Left,SS
+3397,Vyncent Wyattoss III,EN,,,Right,CF
+3398,Kyle Schwarbombs,MH,,,Right,SS
+3399,Nora Selbmar,1B,,,Left,SS
+3400,Chris Walker,BP,BB,B,Right,RF
+3401,Heliotrope Selenifuge Jr.,SM,,,Right,C
+3402,Marcelo Soares,HK,BS,B,Right,SS
+3403,Chance Mercury,,BS,B,Right,P
+3404,Scoochie Virtue,SM,,,Right,CF
+3405,Tanya Degurechaff,MH,TT,H,Right,P
+3406,Steak Dynasty,XB,SF,B,Left,SS
+3407,Gene Okerlund,BP,,,Right,1B
+3408,Orwell Kensington,XB,,,Right,2B
+3409,Mordecai Davis,WC,BF,B,Right,2B
+3410,Ethan Lee,,BF,S,Left,P
+3411,Yang Min-Ki,,EG,H,Right,P
+3412,BeefCake Willy,BP,TD,H,Right,CF
+3413,Bobby Witt Jr Jr,XB,BB,H,Left,2B
+3414,Allidois Nguyen,,BF,S,Right,P
+3415,Harto Thekhards,WC,TD,H,Left,3B
+3416,Trevor Paultis,XB,TD,B,Right,RF
+3417,Amelia Hart,HK,WC,S,Left,P
+3418,Mikey Moreau,WC,,,Right,3B
+3419,Lilcranberry,WC,BS,B,Right,1B
+3420,Matilda No-Balls,XB,BS,H,Right,C
+3421,Worm Lennox,S,EG,B,Right,3B
+3422,Bo Diggs,S,BB,H,Left,LF
+3423,Scooter Funkypants,SF,EG,B,Right,SS
+3424,Chester Naff,WC,EG,B,Right,3B
+3426,George Hankinson,1B,,,Right,2B
+3427,Taylor Swift,,BS,S,Right,P
+3428,Fausto Herrera,WC,BS,H,Left,2B
+3429,Rodney Turnpike,WC,,,Right,2B
+3430,Krbmeister,WC,WC,S,Left,LF
+3431,Kent Manfred,BP,BS,H,Left,2B
+3432,Nathan Explosion,XB,,,Right,LF
+3433,Kasper Milquetoast,WC,WC,B,Left,C
+3434,Mack “The Knife” Darin,MH,BS,B,Right,1B
+3435,Chooch Suzuka,WC,EG,H,Right,2B
+3436,Curtis Dingleberry,SF,WC,S,Right,SS
+3437,Grady Brooks,1B,,,Right,3B
+3438,Jack Drake,WC,,,Right,3B
+3439,Doughboy Stubbs,BC,EG,S,Right,SS
+3441,Fred Fredericks,XB,,,Right,SS
+3442,Demetri Sokenzie,S,TT,S,Right,P
+3443,Craig Jarvis,BC,NH,H,Right,SS
+3444,Rabs Roland,HK,,,Left,2B
+3445,Bea Friday,MH,NH,H,Left,SS
+3446,Cleveland Brown Jr.,HK,WC,S,Left,P
+3448,Knight Newton,1B,,,Left,2B
+3449,Fermin Rype,XB,,,Right,C
+3450,Evil Larry,,EN,S,Right,P
+3451,Goose McGuire,BN,,,Right,2B
+3452,Larry Lighthouse,BC,FP,S,Right,3B
+3453,Mariam Bear,TT,,,Right,2B
+3454,Bartholomew Simpson,BP,BS,H,Right,P
+3455,Shawn Michaels,WC,,,Right,RF
+3456,Malsted,S,EN,B,Left,CF
+3457,Ada Rutabaga,SM,,,Left,3B
+3458,Maram Bowl,BC,,,Left,CF
+3459,Chip Allen,WC,TD,B,Right,LF
+3460,Strawhatespeon,EN,BB,B,Left,3B
+3461,Hawaiian Hammah,BN,,,Right,RF
+3462,Harold Marquez,XB,,,Left,CF
+3464,Willie Ruth,XB,BS,B,Left,SS
+3465,Donut Mahoney,BP,,,Right,3B
+3466,Ariel Yu,XB,,,Right,2B
