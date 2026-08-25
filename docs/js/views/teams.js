@@ -522,9 +522,11 @@ function createTeamRosterTable(title, stats, isPitching, totals) {
                 return;
             }
             let val = r[stat];
-            if (!isPitching && stat === 'BA'  && (r.AB || 0) === 0) val = null;
-            if (isPitching  && stat === 'ERA' && (r.IP || 0) === 0) val = null;
-            if (isPitching  && stat === 'W-L%' && (r.W || 0) + (r.L || 0) === 0) val = null;
+            if (val !== 'Inf.') {
+                if (!isPitching && stat === 'BA'  && (r.AB || 0) === 0) val = null;
+                if (isPitching  && stat === 'ERA' && (r.IP || 0) === 0) val = null;
+                if (isPitching  && stat === 'W-L%' && (r.W || 0) + (r.L || 0) === 0) val = null;
+            }
             html += `<td>${formatStat(stat, val)}</td>`;
         });
         html += '</tr>';
