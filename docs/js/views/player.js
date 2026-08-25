@@ -627,6 +627,10 @@ function buildCell(col, r, isPitching, isCareer, isFranchise, groupName, league,
 }
 
 function suppressRateStat(col, val, r, isPitching, isOpponent) {
+    // "Inf." (e.g. runs allowed in 0.0 IP) is a meaningful value distinct from the
+    // zero-denominator/zero-numerator case below, which really is undefined - don't blank it.
+    if (val === 'Inf.') return val;
+
     const ip  = r.IP  || 0, ab  = r.AB  || 0, pa  = r.PA  || 0;
     const bb  = r.BB  || 0, bf  = r.BF  || 0;
     const w   = r.W   || 0, l   = r.L   || 0, opp = r.OPP || 0;

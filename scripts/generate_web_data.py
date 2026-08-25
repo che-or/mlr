@@ -1,5 +1,6 @@
 import json
 import sys
+import numpy as np
 import pandas as pd
 import ast
 from pathlib import Path
@@ -42,7 +43,39 @@ def _drop_unused_columns(df):
     df = df.drop(columns = cols, errors = 'ignore') # ignoring errors effectively creates 'drop column if exists'
 
     return df
-    
+
+
+# Rate stats whose denominator can be legitimately 0 while the numerator isn't (e.g. a
+# reliever charged with inherited runs in 0.0 IP, or a strikeout with zero walks). Their
+# value is math.inf, distinct from the 0/0 NaN case (no meaningful value at all). Both
+# collapse to JSON null via to_json(), so replace inf with a string sentinel here that
+# survives the round-trip - the frontend's formatStat() already passes non-numeric values
+# through unchanged, so it renders as "Inf." with no JS changes needed.
+INF_PRONE_STATS = ['ERA', 'ERA-', 'WHIP', 'FIP', 'H6', 'HR6', 'BB6', 'SO6', 'SO/BB', 'GB/FB']
+
+def _replace_inf_with_sentinel(df):
+    '''
+    Function for replacing +/-inf in rate stat columns with a JSON-safe "Inf." string,
+    so it can be distinguished from a true undefined (0/0 = NaN) value on the frontend.
+    '''
+    cols = [c for c in INF_PRONE_STATS if c in df.columns]
+    if cols:
+        df[cols] = df[cols].replace([np.inf, -np.inf], 'Inf.')
+
+    return df
+
+
+def _finalize_stats_df(df):
+    '''
+    Function for preparing a hitting/pitching stats dataframe for to_json(): drops columns
+    unused by MLR Reference and replaces inf with a JSON-safe sentinel (see
+    _replace_inf_with_sentinel).
+    '''
+    df = _drop_unused_columns(df)
+    df = _replace_inf_with_sentinel(df)
+
+    return df
+
 
 def main():
     _download_gamelogs()
@@ -183,64 +216,64 @@ def main():
     
         print('Calculating team hitting stats...')
         team_hitting_stats = get_aggregated_hitting_stats(hitting_stats, 'full-team')
-        team_hitting_stats = _drop_unused_columns(team_hitting_stats)
+        team_hitting_stats = _finalize_stats_df(team_hitting_stats)
         team_hitting_stats.to_json(p_ths, orient = 'records', indent = 2)
     
         print('Calculating team pitching stats...')
         team_pitching_stats = get_aggregated_pitching_stats(pitching_stats, 'full-team')
-        team_pitching_stats = _drop_unused_columns(team_pitching_stats)
+        team_pitching_stats = _finalize_stats_df(team_pitching_stats)
         team_pitching_stats.to_json(p_tps, orient = 'records', indent = 2)
     
         if league in ['mlr', 'mlr_playoff', 'milr', 'milr_playoff', 'fcb', 'gib']:
             print('Calculating career hitting stats...')
             career_hitting_stats = get_aggregated_hitting_stats(hitting_stats, 'career')
-            career_hitting_stats = _drop_unused_columns(career_hitting_stats)
+            career_hitting_stats = _finalize_stats_df(career_hitting_stats)
             career_hitting_stats.to_json(p_chs, orient = 'records', indent = 2)
     
             print('Calculating career pitching stats...')
             career_pitching_stats = get_aggregated_pitching_stats(pitching_stats, 'career')
-            career_pitching_stats = _drop_unused_columns(career_pitching_stats)
+            career_pitching_stats = _finalize_stats_df(career_pitching_stats)
             career_pitching_stats.to_json(p_cps, orient = 'records', indent = 2)
     
             if league in ['mlr', 'mlr_playoff']:
                 print('Calculating hitting stats by team...')
                 hitting_stats_by_team = get_aggregated_hitting_stats(hitting_stats, 'team')
-                hitting_stats_by_team = _drop_unused_columns(hitting_stats_by_team)
+                hitting_stats_by_team = _finalize_stats_df(hitting_stats_by_team)
                 hitting_stats_by_team.to_json(p_hst, orient = 'records', indent = 2)
     
                 print('Calculating pitching stats by team...')
                 pitching_stats_by_team = get_aggregated_pitching_stats(pitching_stats, 'team')
-                pitching_stats_by_team = _drop_unused_columns(pitching_stats_by_team)
+                pitching_stats_by_team = _finalize_stats_df(pitching_stats_by_team)
                 pitching_stats_by_team.to_json(p_pst, orient = 'records', indent = 2)
     
                 print('Calculating hitting stats by type...')
                 hitting_stats_by_type = get_aggregated_hitting_stats(hitting_stats, 'type')
-                hitting_stats_by_type = _drop_unused_columns(hitting_stats_by_type)
+                hitting_stats_by_type = _finalize_stats_df(hitting_stats_by_type)
                 hitting_stats_by_type.to_json(p_hsty, orient = 'records', indent = 2)
     
                 print('Calculating pitching stats by type...')
                 pitching_stats_by_type = get_aggregated_pitching_stats(pitching_stats, 'type')
-                pitching_stats_by_type = _drop_unused_columns(pitching_stats_by_type)
+                pitching_stats_by_type = _finalize_stats_df(pitching_stats_by_type)
                 pitching_stats_by_type.to_json(p_psty, orient = 'records', indent = 2)
     
                 print('Calculating hitting stats by team/type...')
                 hitting_stats_by_team_type = get_aggregated_hitting_stats(hitting_stats, 'team-type')
-                hitting_stats_by_team_type = _drop_unused_columns(hitting_stats_by_team_type)
+                hitting_stats_by_team_type = _finalize_stats_df(hitting_stats_by_team_type)
                 hitting_stats_by_team_type.to_json(p_hstty, orient = 'records', indent = 2)
     
                 print('Calculating pitching stats by team/type...')
                 pitching_stats_by_team_type = get_aggregated_pitching_stats(pitching_stats, 'team-type')
-                pitching_stats_by_team_type = _drop_unused_columns(pitching_stats_by_team_type)
+                pitching_stats_by_team_type = _finalize_stats_df(pitching_stats_by_team_type)
                 pitching_stats_by_team_type.to_json(p_pstty, orient = 'records', indent = 2)
 
                 print('Calculating franchise history hitting stats...')
                 franchise_hitting_stats = get_aggregated_hitting_stats(hitting_stats, 'full-franchise')
-                franchise_hitting_stats = _drop_unused_columns(franchise_hitting_stats)
+                franchise_hitting_stats = _finalize_stats_df(franchise_hitting_stats)
                 franchise_hitting_stats.to_json(p_fhs, orient = 'records', indent = 2)
 
                 print('Calculating franchise history pitching stats...')
                 franchise_pitching_stats = get_aggregated_pitching_stats(pitching_stats, 'full-franchise')
-                franchise_pitching_stats = _drop_unused_columns(franchise_pitching_stats)
+                franchise_pitching_stats = _finalize_stats_df(franchise_pitching_stats)
                 franchise_pitching_stats.to_json(p_fps, orient = 'records', indent = 2)
 
         if league in ['mlr', 'mlr_playoff']:
@@ -314,6 +347,7 @@ def main():
 
             pitching_vs_team = get_aggregated_pitching_stats(against_pitching_stats, 'team')
             pitching_vs_team = pitching_vs_team[STANDARD_PITCHING_VS_TEAM_COLS]
+            pitching_vs_team = _replace_inf_with_sentinel(pitching_vs_team)
             pitching_vs_team.to_json(p_pvt, orient = 'records', indent = 2)
 
         print('Computing single-game records...')
@@ -423,11 +457,11 @@ def main():
 
         # subrows are added after all aggregations so that things aren't counted twice
         hitting_stats = create_hitting_subrows(hitting_stats)
-        hitting_stats = _drop_unused_columns(hitting_stats)
+        hitting_stats = _finalize_stats_df(hitting_stats)
         hitting_stats.to_json(p_hs, orient = 'records', indent = 2)
 
         pitching_stats = create_pitching_subrows(pitching_stats)
-        pitching_stats = _drop_unused_columns(pitching_stats)
+        pitching_stats = _finalize_stats_df(pitching_stats)
         pitching_stats.to_json(p_ps, orient = 'records', indent = 2)
         
         print('Processing complete.')
