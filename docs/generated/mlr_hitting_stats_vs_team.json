@@ -2522,7 +2522,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":6,
@@ -31847,7 +31847,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":408.0933324779
   },
   {
     "ID":74,
@@ -32047,7 +32047,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":76,
@@ -42472,7 +42472,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":99,
@@ -44122,7 +44122,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":103,
@@ -48197,7 +48197,7 @@
     "OBP":0.5,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":48.1576378721
   },
   {
     "ID":111,
@@ -48222,7 +48222,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":112,
@@ -81822,7 +81822,7 @@
     "OBP":0.5,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":397.9148429752
   },
   {
     "ID":181,
@@ -108322,7 +108322,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":591.9746358347
   },
   {
     "ID":247,
@@ -111772,7 +111772,7 @@
     "OBP":0.5,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":397.9148429752
   },
   {
     "ID":256,
@@ -120097,7 +120097,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":272,
@@ -124422,7 +124422,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":285,
@@ -124447,7 +124447,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":285,
@@ -139122,7 +139122,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":315,
@@ -162022,7 +162022,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":377.4324774767
   },
   {
     "ID":371,
@@ -186447,7 +186447,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":437,
@@ -197847,7 +197847,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":397.9148429752
   },
   {
     "ID":491,
@@ -214597,7 +214597,7 @@
     "OBP":0.3333333333,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-1.2282414186
   },
   {
     "ID":560,
@@ -251172,7 +251172,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":716,
@@ -251197,7 +251197,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":716,
@@ -251322,7 +251322,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":716,
@@ -251622,7 +251622,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":719,
@@ -254172,7 +254172,7 @@
     "OBP":0.5,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":47.950617284
   },
   {
     "ID":727,
@@ -275322,7 +275322,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":1721,
@@ -283022,7 +283022,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":58.773812718
   },
   {
     "ID":1752,
@@ -296922,7 +296922,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":1809,
@@ -367472,7 +367472,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":408.0933324779
   },
   {
     "ID":2350,
@@ -377147,7 +377147,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2452,
@@ -393847,7 +393847,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2539,
@@ -399897,7 +399897,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2573,
@@ -405797,7 +405797,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2606,
@@ -412397,7 +412397,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2642,
@@ -439272,7 +439272,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2780,
@@ -446797,7 +446797,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2825,
@@ -475522,7 +475522,7 @@
     "OBP":0.5,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":47.5307154902
   },
   {
     "ID":2947,
@@ -481272,7 +481272,7 @@
     "OBP":1.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":372.4010585762
   },
   {
     "ID":2968,
@@ -483072,7 +483072,7 @@
     "OBP":0.6666666667,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":99.0196078431
   },
   {
     "ID":2974,
@@ -485147,7 +485147,7 @@
     "OBP":0.0,
     "SLG":null,
     "OPS":null,
-    "OPS+":null
+    "OPS+":-100.0
   },
   {
     "ID":2987,

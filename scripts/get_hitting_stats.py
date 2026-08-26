@@ -280,7 +280,12 @@ def _weighted_average(df, col, weight):
     w = df[weight]
     d = df[col]
 
-    return (d * w).sum() / w.sum() if w.sum() != 0 else np.nan
+    # col is a season-wide constant (identical for every row being aggregated here), so when
+    # the weight sums to 0 (e.g. a team's total IP is 0 for this grouping), fall back to the
+    # plain mean rather than NaN - it recovers the same constant instead of poisoning
+    # downstream formulas like FIP (numerator/IP + FIP Constant) or ERA- (nERA/lgnERA), which
+    # would otherwise collapse an Inf value (0 IP with nonzero numerator) into NaN.
+    return (d * w).sum() / w.sum() if w.sum() != 0 else d.mean()
 
 
 def _weighted_league_neutrals(df, cols):

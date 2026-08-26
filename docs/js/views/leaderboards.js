@@ -8,7 +8,7 @@ import {
 } from '../constants.js';
 import {
     LOWER_IS_BETTER, LOWER_IS_BETTER_BATTING, LOWER_IS_BETTER_PITCHING, CAN_BE_NEGATIVE,
-    getAlltimeMin, getSeasonMin, filterCareer, filterSeasonRows,
+    getAlltimeMin, getSeasonMin, filterCareer, filterSeasonRows, sortableValue,
 } from '../leaders.js';
 
 function updateSeasonDefaults(league) {
@@ -217,12 +217,12 @@ async function renderLeaderboard() {
         const atQualInfo = getAllTimeQualInfo(stat, isHitting, isCounting, league);
         if (!isTeam && careerData.length) {
             const atRows = filterCareer(careerData, stat, isHitting, isCounting, selTeam, selType, minAtt, minDec, atQualInfo?.default);
-            atRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+            atRows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
             cards.push({ label: 'All-Time', type: 'all-time', data: atRows, qualInfo: atQualInfo });
         }
         if (isTeam && franchiseData?.length) {
             const atRows = filterFranchiseRows(franchiseData, stat, isCounting);
-            atRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+            atRows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
             cards.push({ label: 'All-Time', type: 'all-time', isTeamMode: true, isFranchise: true, league, data: atRows });
         }
 
@@ -246,7 +246,7 @@ async function renderLeaderboard() {
             const ssRows = isTeam
                 ? filterTeamSeasonRows(seasonData, null, stat, isCounting)
                 : filterSeasonRows(seasonData, null, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
-            ssRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+            ssRows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
             cards.push({ label: 'Single Season', type: 'single-season', isTeamMode: isTeam, league, data: ssRows, qualLabel: '' });
         }
 
@@ -254,7 +254,7 @@ async function renderLeaderboard() {
             const rows = isTeam
                 ? filterTeamSeasonRows(seasonData, ds, stat, isCounting)
                 : filterSeasonRows(seasonData, ds, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
-            rows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+            rows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
             const games = seasonGames[ds] || 0;
             const qualLabel = isTeam ? '' : buildSeasonQualLabel(stat, isHitting, isCounting, minPA, minOuts, minAtt, minDec, minOpp, games);
             cards.push({ label: `Season ${ds.slice(1)}`, type: 'season', isTeamMode: isTeam, league, data: rows, qualLabel });
@@ -321,7 +321,7 @@ async function renderLeaderboard() {
                 const newQual = parseFloat(e.target.value);
                 if (isNaN(newQual) || newQual < 0) return;
                 const newRows = filterCareer(careerData, stat, isHitting, isCounting, selTeam, selType, minAtt, minDec, newQual);
-                newRows.sort((a, b) => direction * ((a[stat] ?? (direction === 1 ? Infinity : -Infinity)) - (b[stat] ?? (direction === 1 ? Infinity : -Infinity))));
+                newRows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
                 atCardEl.querySelector('.card-table-wrap').innerHTML = buildTableHTML(newRows, stat, topN, false, false);
                 wirePlayerLinks(atCardEl);
             });

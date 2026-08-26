@@ -3447,7 +3447,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":144.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":114,
@@ -7197,7 +7197,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":128.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":233,
@@ -21372,7 +21372,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":102.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":1976,
@@ -25701,7 +25701,7 @@
     "Position":"P",
     "ERA":null,
     "WHIP":"Inf.",
-    "FIP":null,
+    "FIP":"Inf.",
     "H6":null,
     "HR6":null,
     "BB6":"Inf.",
@@ -25722,7 +25722,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":null,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2275,
@@ -27126,7 +27126,7 @@
     "Position":"C",
     "ERA":"Inf.",
     "WHIP":"Inf.",
-    "FIP":null,
+    "FIP":"Inf.",
     "H6":"Inf.",
     "HR6":"Inf.",
     "BB6":"Inf.",
@@ -27147,7 +27147,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":62.4,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2477,
@@ -38622,7 +38622,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":131.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":3294,
