@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats, loadTeamStats, loadPlayoffBrackets } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
+import { formatStat, parseSortValue, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
          getMilrTeamName, getMilrLogoPair, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS } from '../constants.js';
@@ -577,8 +577,8 @@ function makeTablesClickable(container) {
                     arrow.innerHTML = next === 'asc' ? ' &uarr;' : ' &darr;';
                     th.appendChild(arrow);
                     rows.sort((a, b) => {
-                        const av = parseFloat(a.cells[colIdx]?.textContent) || (next === 'asc' ? Infinity : -Infinity);
-                        const bv = parseFloat(b.cells[colIdx]?.textContent) || (next === 'asc' ? Infinity : -Infinity);
+                        const av = parseSortValue(a.cells[colIdx]?.textContent, next);
+                        const bv = parseSortValue(b.cells[colIdx]?.textContent, next);
                         return next === 'asc' ? av - bv : bv - av;
                     });
                 }

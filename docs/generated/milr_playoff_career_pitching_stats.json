@@ -5322,7 +5322,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":67.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":802,
@@ -9222,7 +9222,7 @@
     "W-L%":0.0,
     "SV%":null,
     "Avg Diff":46.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2657,

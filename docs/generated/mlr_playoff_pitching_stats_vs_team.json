@@ -672,7 +672,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":1,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":39,
@@ -807,7 +807,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":1,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":58,
@@ -1698,7 +1698,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":1,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":127,
@@ -3129,7 +3129,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":3,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":219,
@@ -3858,7 +3858,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":3,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":265,
@@ -7125,7 +7125,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":3,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":745,
@@ -7989,7 +7989,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":4,
-    "ERA-":null
+    "ERA-":1272.6702550092
   },
   {
     "ID":1724,
@@ -8880,7 +8880,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":1,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":1963,
@@ -9339,7 +9339,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":4,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2248,
@@ -10365,7 +10365,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":1,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2588,
@@ -11931,7 +11931,7 @@
     "Auto BB":0,
     "SO":0,
     "BF":2,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":2890,

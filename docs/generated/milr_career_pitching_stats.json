@@ -5397,7 +5397,7 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":113.0,
-    "ERA-":null
+    "ERA-":"Inf."
   },
   {
     "ID":147,
@@ -49776,7 +49776,7 @@
     "Position":"P",
     "ERA":null,
     "WHIP":"Inf.",
-    "FIP":null,
+    "FIP":"Inf.",
     "H6":null,
     "HR6":null,
     "BB6":"Inf.",
@@ -49797,6 +49797,6 @@
     "W-L%":null,
     "SV%":null,
     "Avg Diff":null,
-    "ERA-":null
+    "ERA-":"Inf."
   }
 ]

@@ -32,6 +32,17 @@ export function formatStat(stat, value) {
     return Math.round(value);
 }
 
+// Parses a rendered table cell's text back into a value usable in a numeric sort comparator.
+// "Inf." is a real (extreme) value, not a missing one, so it always sorts as +Infinity —
+// unlike a blank cell ('-'), which sorts toward whichever end of the list is "last" for the
+// current direction, regardless of that direction, so missing values stay out of the way.
+export function parseSortValue(text, direction) {
+    const t = (text ?? '').trim();
+    if (t === 'Inf.') return Infinity;
+    const v = parseFloat(t);
+    return isNaN(v) ? (direction === 'asc' ? Infinity : -Infinity) : v;
+}
+
 // ── Franchise key from a stats record ────────────────────────────────────────
 // The Franchise field in stats records IS the franchise key.
 // Multi-team rows have Franchise = "2TM", "3TM", etc. — fall back to Last Team.

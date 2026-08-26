@@ -331,7 +331,14 @@ function buildCompareTable(ids, rows, season, league, type) {
             const dir = statDirection(stat, type);
             let bestIndices = new Set();
             if (dir !== 0) {
-                const nums  = raw.map(v => (v != null && !isNaN(parseFloat(v))) ? parseFloat(v) : null);
+                // "Inf." is a real (extreme) value, not a missing one - e.g. an infinite SO/BB
+                // (zero walks) is genuinely the best possible ratio and should be able to win.
+                const nums  = raw.map(v => {
+                    if (v == null) return null;
+                    if (v === 'Inf.') return Infinity;
+                    const n = parseFloat(v);
+                    return isNaN(n) ? null : n;
+                });
                 const valid = nums.filter(v => v !== null);
                 if (valid.length >= 2) {
                     const best      = dir === 1 ? Math.max(...valid) : Math.min(...valid);

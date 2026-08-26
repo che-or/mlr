@@ -37,6 +37,16 @@ export function getSeasonMin(key, league) {
     return SEASON_DEFAULTS[key]?.[league] ?? SEASON_DEFAULTS[key].mlr;
 }
 
+// Converts a raw stat value (number, null/undefined, or the "Inf." sentinel) into a value
+// usable in a numeric sort comparator. "Inf." is a real (extreme) value, not a missing one,
+// so it always sorts as +Infinity — unlike null/undefined, which sorts toward whichever end
+// of the list is "last" for the given direction (+1 = ascending, -1 = descending), so missing
+// values stay out of the way regardless of sort direction.
+export function sortableValue(v, direction) {
+    if (v === 'Inf.') return Infinity;
+    return v ?? (direction === 1 ? Infinity : -Infinity);
+}
+
 // direction: true = lower value is better for this stat in this batting/pitching context
 export function lowerIsBetter(stat, isHitting) {
     return LOWER_IS_BETTER.has(stat)

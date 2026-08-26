@@ -1,6 +1,6 @@
 import { state } from '../state.js';
 import { loadStats, searchPlayers, getPlayerById } from '../data.js';
-import { formatStat, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg, getLogoPair, getPlayerDefaultLogoOverride } from '../utils.js';
+import { formatStat, parseSortValue, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg, getLogoPair, getPlayerDefaultLogoOverride } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER, COUNTING_STATS } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
 import { computeLeagueLeaders } from '../leaders.js';
@@ -1015,8 +1015,8 @@ function makeTableSortable(table, opts = {}) {
                     const at = a.cells[colIdx]?.textContent.replace(/[↑↓]/,'').trim() || '-';
                     const bt = b.cells[colIdx]?.textContent.replace(/[↑↓]/,'').trim() || '-';
                     if (isTeamCol) return next === 'asc' ? at.localeCompare(bt) : bt.localeCompare(at);
-                    const av = isIP ? parseIPStr(at) : (at === '-' ? (next === 'asc' ? Infinity : -Infinity) : parseFloat(at));
-                    const bv = isIP ? parseIPStr(bt) : (bt === '-' ? (next === 'asc' ? Infinity : -Infinity) : parseFloat(bt));
+                    const av = isIP ? parseIPStr(at) : parseSortValue(at, next);
+                    const bv = isIP ? parseIPStr(bt) : parseSortValue(bt, next);
                     return next === 'asc' ? av - bv : bv - av;
                 });
             }
