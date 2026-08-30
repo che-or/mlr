@@ -104,6 +104,12 @@ function hasAwards(sa) {
 
 const MAJOR_AWARD_ROWS = [['MVP', 'CYA'], ['ROTY', 'RPOTY'], ['BT', 'ERAT'], ['GMOTY']];
 
+// GMOTY was renamed in honor of Hannibal Bligh starting S12.
+function getAwardName(key, season, metadata) {
+    if (key === 'GMOTY' && getSeasonSort(season) >= 12) return 'Hannibal Bligh GM of the Year';
+    return metadata[key] || key;
+}
+
 function renderMajorAwards(la, metadata, season) {
     // Only render if at least one award in this group has winners
     const hasAny = MAJOR_AWARD_ROWS.flat().some(key => la[key]?.length);
@@ -123,7 +129,7 @@ function renderMajorAwards(la, metadata, season) {
                     return `<div class="award-winner-item">${logo ? makeLogoImg(logo.dark, logo.light, 'award-team-logo') : ''}${playerLink(id)}</div>`;
                 }).join('');
             }
-            return `<div class="award-category"><h4>${metadata[key] || key}</h4><div class="award-winners-list">${inner}</div></div>`;
+            return `<div class="award-category"><h4>${getAwardName(key, season, metadata)}</h4><div class="award-winners-list">${inner}</div></div>`;
         }).join('');
         if (rowHtml) html += `<div class="awards-major-row">${rowHtml}</div>`;
     }
@@ -474,12 +480,13 @@ export function getPlayerAwards(playerId) {
     for (const awardId of order) {
         if (!collected[awardId]) continue;
         const wins = collected[awardId];
-        const name = metadata[awardId] || awardId;
         if (awardId === 'HOF') {
+            const name = metadata[awardId] || awardId;
             displayList.push({ text: name, cls: 'award-hof' });
         } else if (wins.length) {
             const count = wins.length;
             wins.sort((a, b) => getSeasonSort(a.season) - getSeasonSort(b.season));
+            const name = getAwardName(awardId, wins[wins.length - 1]?.season, metadata);
             const lastLeague = wins[wins.length - 1]?.league?.toLowerCase() || null;
             displayList.push({ text: count > 1 ? `${count}x ${name}` : name, cls: `award-${awardId.toLowerCase()}`, seasons: wins.map(w => w.season), league: lastLeague });
         }
