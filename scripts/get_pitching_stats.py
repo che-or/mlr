@@ -276,6 +276,9 @@ def _apply_pitcher_decision_adjustments(pitching_stats, league, against = False)
         pitching_stats['L'] += pitching_stats['+L']
         pitching_stats = pitching_stats.drop(columns = ['+W', '+L'])
 
+        # recalculate W-L% since W and L may have changed (rate stats were calculated before adjustments)
+        pitching_stats['W-L%'] = pitching_stats['W'] / (pitching_stats['W'] + pitching_stats['L'])
+
     return pitching_stats
 
 
