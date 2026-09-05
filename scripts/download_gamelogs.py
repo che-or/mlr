@@ -126,4 +126,14 @@ def _download_gamelogs():
     content = _fetch_csv(url, 'game-played adjustments')
     with open (rf'../data/game_played_adjustments.csv', 'wb') as f:
         f.write(content)
+
+    # Download runs-scored adjustments (pinch / ghost runners who scored but were not
+    # credited the run, or were credited to the wrong player, in the gamelog)
+    doc_id = '1hyr3ITHxRkJy7mmM8ae7gLrWxA6J0eZUx0Qud7sreWI'
+    gid = 1703418784
+
+    url = f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}'
+    content = _fetch_csv(url, 'runs-scored adjustments')
+    with open (rf'../data/runs_scored_adjustments.csv', 'wb') as f:
+        f.write(content)
  

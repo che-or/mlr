@@ -12,6 +12,7 @@ from get_hitting_stats import get_hitting_stats, get_aggregated_hitting_stats
 from get_pitching_stats import get_pitching_stats, get_aggregated_pitching_stats
 from create_subrows import create_hitting_subrows, create_pitching_subrows
 from game_played_adjustments import apply_hitting_game_adjustments
+from runs_scored_adjustments import apply_hitting_run_adjustments
 from get_player_names import get_player_names
 from update_glossary_re_matrix import update_glossary_re_matrix
 from generate_playoff_brackets import generate_brackets
@@ -214,6 +215,7 @@ def main():
         # Applied after the cache write so the frequently-updated adjustments sheet is
         # re-layered fresh every run rather than baked into the cache.
         hitting_stats = apply_hitting_game_adjustments(hitting_stats, league)
+        hitting_stats = apply_hitting_run_adjustments(hitting_stats, league)
 
         print('Calculating pitching stats...')
         pitching_stats = get_pitching_stats(gamelog_df, players_df, league)
@@ -346,6 +348,7 @@ def main():
                 against_hitting_stats.to_csv(p_hvtcache, index = False)
 
             against_hitting_stats = apply_hitting_game_adjustments(against_hitting_stats, league, against = True)
+            against_hitting_stats = apply_hitting_run_adjustments(against_hitting_stats, league, against = True)
 
             if pitching_vs_team_cache_ex:
                 print('Concatenating cached vs-team pitching stats...')
