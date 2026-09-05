@@ -48,6 +48,8 @@ jobs:
           data/re_matrices/*.csv
           data/fip_constants.csv
           data/pitcher_decision_adjustments.csv
+          data/game_played_adjustments.csv
+          data/runs_scored_adjustments.csv
 
     - name: Fail job if data generation failed
       if: steps.generate.outcome == 'failure'

@@ -60,7 +60,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 76,,MiLR,8A,4,24,MMM,Pinch hit for in B1
 77,,MiLR,4,3,19,PGS,Pinch hit for in B1
 77,,MiLR,4,10,75,PGS,Pinch hit for in T2
-77,,MLR,3,5,56,COL,"Fielding Replacement, Run Scored"
+194,,MiLR,4,7,50,DBV,"Pinch Runner, Run Scored"
 79,,MLR,3,12,139,COL,Pinch hit for in T2
 79,,MLR,4,15,217,MTL,Pinch hit for in B3
 79,,MLR,5,12,176,STL,Pinch hit for in B1
@@ -173,7 +173,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 191,,MLR,11,8,111,COL,Pinch hit for in T2
 192,,MLR,5,7,99,MIA,Fielding Replacement
 193,,MLR,4,12,166,NYY,Fielding Replacement
-194,,MiLR,4,7,50,DBV,"Pinch Runner, Run Scored"
+77,,MLR,3,5,56,COL,"Fielding Replacement, Run Scored"
 194,,MLR,4,6,86,MIA,Fielding Replacement
 196,,MLR,3,15,175,MIA,Fielding Replacement
 197,,MiLR,4,9,71,LMN,Fielding Replacement
