@@ -68,6 +68,12 @@ def _load_gamelogs(current_season, league, all_seasons = True):
 
         gamelog_df = pd.concat([gamelog_df, season_df], ignore_index = True)
 
+    # nothing loaded (e.g. all_seasons=False for an active season with no games logged yet):
+    # bail before _runner_attribution / the franchise merge, which assume real columns.
+    # generate_web_data.py handles an empty return.
+    if gamelog_df.empty:
+        return gamelog_df
+
     # convert result columns to all caps
     cols = ['Old Result', 'Exact Result', 'Result at Neutral', 'Result All Neutral']
     for col in cols:

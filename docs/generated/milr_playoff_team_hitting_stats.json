@@ -463,7 +463,7 @@
     "500 Diffs":0,
     "Batting Type":null,
     "Pitching Type":null,
-    "Handedness":"Right",
+    "Handedness":null,
     "Position":null,
     "BA":0.36,
     "BARISP":0.3636363636,

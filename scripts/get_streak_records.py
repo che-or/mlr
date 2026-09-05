@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from get_single_game_stats import _ip_to_display
 from determine_pitcher_decisions import get_game_level_decisions
+from game_played_adjustments import game_played_appearance_rows
 
 
 HIT_RESULTS   = frozenset(['1B', 'BUNT 1B', '2B', '3B', 'HR'])
@@ -283,7 +284,22 @@ def _build_player_game_appearances(gamelog_df, hitting_game_stats):
     )
     pitcher_apps = pitch_raw[cols]
 
-    combined = pd.concat([batter_apps, pitcher_apps], ignore_index=True)
+    # Manually-tracked games the player played without a plate appearance or steal attempt
+    # (e.g. defensive replacement). These count toward consecutive games played but are not
+    # added to hitting_game_stats, so they never affect hitting / on-base / HR streaks.
+    adj_apps = game_played_appearance_rows(
+        'mlr', hitting_game_stats['Season'].unique(), team_franchise=team_franchise
+    )[cols]
+    # Guard against a bad sheet row inventing a team-game: keep only rows whose
+    # (Season, Session, Franchise) is a real team-game in hitting_game_stats.
+    real_team_games = set(map(tuple, hitting_game_stats[['Season', 'Session', 'Franchise']]
+                             .drop_duplicates().to_numpy()))
+    adj_apps = adj_apps[[
+        (s, sess, fr) in real_team_games
+        for s, sess, fr in zip(adj_apps['Season'], adj_apps['Session'], adj_apps['Franchise'])
+    ]]
+
+    combined = pd.concat([batter_apps, pitcher_apps, adj_apps], ignore_index=True)
     combined = combined.drop_duplicates(subset=['ID', 'Season', 'Session'])
     return combined
 

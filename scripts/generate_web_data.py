@@ -11,6 +11,7 @@ from add_war_columns import _add_war_columns
 from get_hitting_stats import get_hitting_stats, get_aggregated_hitting_stats
 from get_pitching_stats import get_pitching_stats, get_aggregated_pitching_stats
 from create_subrows import create_hitting_subrows, create_pitching_subrows
+from game_played_adjustments import apply_hitting_game_adjustments
 from get_player_names import get_player_names
 from update_glossary_re_matrix import update_glossary_re_matrix
 from generate_playoff_brackets import generate_brackets
@@ -161,10 +162,10 @@ def main():
                         continue
     
         all_seasons = True # default option. Calculate stats for all seasons
-        
+
         if hitting_stats_cache_ex and pitching_stats_cache_ex:
             all_seasons = False # if cached files already exist, use them
-            
+
         if all_seasons:
             print('Loading gamelogs...')
         else:
@@ -172,7 +173,13 @@ def main():
         gamelog_df = _load_gamelogs(season, league, all_seasons)
 
         if gamelog_df.empty:
-            if league in active_leagues:
+            if league in active_leagues and p_hs.exists() and p_ps.exists():
+                # Active season with no games logged yet (offseason gap) and a prior run
+                # already produced this league's output. Nothing new to compute - leave
+                # the existing files in place rather than doing a pointless full recompute
+                # every night until the season starts.
+                print(f'{league} S{season} has no games logged yet; keeping existing generated files.')
+            elif league in active_leagues:
                 # The download/parse steps now raise loudly on real failures (bad downloads,
                 # corrupt CSVs), so a genuinely empty result here should only happen when a
                 # newly-active season hasn't had any games logged yet. Flag it anyway in case
@@ -203,7 +210,11 @@ def main():
         if league in active_leagues:
             print('Caching hitting stats...')
             hitting_stats.to_csv(p_hscache, index = False)
-    
+
+        # Applied after the cache write so the frequently-updated adjustments sheet is
+        # re-layered fresh every run rather than baked into the cache.
+        hitting_stats = apply_hitting_game_adjustments(hitting_stats, league)
+
         print('Calculating pitching stats...')
         pitching_stats = get_pitching_stats(gamelog_df, players_df, league)
     
@@ -333,6 +344,8 @@ def main():
             if league in active_leagues:
                 print('Caching vs-team hitting stats...')
                 against_hitting_stats.to_csv(p_hvtcache, index = False)
+
+            against_hitting_stats = apply_hitting_game_adjustments(against_hitting_stats, league, against = True)
 
             if pitching_vs_team_cache_ex:
                 print('Concatenating cached vs-team pitching stats...')
