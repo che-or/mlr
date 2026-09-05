@@ -1,5 +1,49 @@
 # MLR Reference Changelog
 
+### 2.4 - September 5, 2026
+- Update draft history with IDs of players with newly assigned IDs
+- Add "Enthusiasts" to S9 MiLR Montclair team name
+- Fix W-L% to recalculate after pitcher decision adjustments are applied
+- Add games played adjustments. Players are now credited with a game played if they play in the field or pinch run, even if they don't record a plate appearance or stolen base attempt. Players are not credited with a game played if they:
+    - Are pinch hit for in T1
+    - Are pinch hit for in their first plate appearance AND are the DH
+    - Enter the game as a pinch hitter, and are pinch hit for
+    - Were scheduled to pinch hit, but the game ended before their PA
+    - These games played are recorded in a player's batting stats. A player is *not* currently credited with a batting game played if they do not have any plate appearnaces or stolen base attempts *and* appear as a pitcher, even if the pitcher spot is in the lineup or the player also plays another position.
+- Add run scored adjustments. Handles the case of a pinch runner that doesn't steal a base scoring a run, or a fielding replacement scoring as a ghost runner.
+
+#### 2.3.6 - August 29, 2026
+- Add S13 draft results
+- Start MLR S13
+- Start MiLR S13
+- Change GM of the Year to Hannibal Bligh GM of the Year starting with S12
+
+#### 2.3.5 - August 25, 2026
+- Make infinite values display as "Inf." rather than the same as other indeterminate forms (e.g. 0/0)
+
+#### 2.3.4 - August 24, 2026
+- Fix S5-10 TBR bug associated with changing S4 to TBD
+- Fix logos for all-stars who were traded between the All-Star Break and the end of the season
+- End FCB S13
+
+#### 2.3.3 - August 23, 2026
+- Add MLR S12 Playoff brackets
+- Add S12 awards
+- Change S4 Devil Rays abbreviation from TBR to TBD
+- Fix bug where streaks aren't broken in the last game of the season
+
+#### 2.3.2 - July 9, 2026
+- Add SB 2B, SB 3B, SB Home
+- Add CS 2B, CS 3B, CS Home
+
+#### 2.3.1 - July 7, 2026
+- End MLR S12
+- Start MLR S12 Playoffs
+
+### 2.3 - July 5, 2026
+- Added WPA for seasons where it was missing
+- Recalculated WPA for some seasons to be in line with current WPA calculations
+
 #### 2.2.1 - July 4, 2026
 - Fix incorrect MiLR S5 and S6 team records
 - Add caching for vs team stats

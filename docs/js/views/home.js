@@ -47,7 +47,6 @@ export async function renderHome() {
             <p>Potential future features:</p>
             <ul>
                 <li>Jersey numbers</li>
-                <li>Player stats against each team</li>
                 <li>Milestone tracking</li>
             </ul>
             <br>
