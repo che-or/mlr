@@ -368215,10 +368215,10 @@
     "is_sub_row":false,
     "Last Team":"ARI",
     "Last Session":6,
-    "Batting Type":null,
+    "Batting Type":"BP",
     "Pitching Type":null,
-    "Handedness":null,
-    "Position":null,
+    "Handedness":"Right",
+    "Position":"C",
     "Display Season":"S8",
     "Name":"Daniel Randall",
     "OPS+":-41.2479161705

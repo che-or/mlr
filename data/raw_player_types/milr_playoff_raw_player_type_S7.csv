@@ -87,6 +87,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1801,Doc Dockgoose,BN,BS,H,Left,RF
 1826,Jimmy Haase,XB,,,Right,1B
 1830,Guidooooo,HK,TT,H,Left,CF
+1832,Videl Valor,BN,EG,H,Left,1B
 1838,Brian Taylor,WC,TD,S,Left,SS
 1946,Hornet Hives,BP,BS,S,Left,SS
 1956,Sasquatch,HK,BS,H,Left,CF
@@ -155,5 +156,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2649,Who,SM,,,Left,1B
 2650,Dante Robinson,S,,,Left,CF
 2653,Tole Do,BC,,,Right,LF
+2655,Rubba,XB,,,Right,3B
 2656,Dru N.K.,WC,BS,H,Right,1B
 2658,Daniel Randall,BP,,,Right,C

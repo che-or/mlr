@@ -5,6 +5,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 34,Dixon Uraz,WC,,,Left,RF
 37,Artanis Jones,P,BS,H,Left,P
 39,Commie Ohtani,P,NH,H,Right,P
+48,Willow Briansdóttir,BC,,,Right,2B
 65,Dakota Carolina Montana,BN,,,Right,1B
 103,Mason Spurs,P,EG,S,Left,P
 127,Blaise Bailey Finnegan III,P,EN,S,Right,P
@@ -54,6 +55,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1733,Bonesy McSkellington,WC,,,Left,CF
 1763,Dermot Mulveiny,BP,,,Right,2B
 1764,Ross Ewage,BC,,,Right,1B
+1773,Skippy Gustafsson,BC,,,Left,1B
 1786,im sleve,P,BF,H,Right,P
 1792,Simba,BC,,,Left,C
 1834,Bob Kelso,P,NT,H,Right,P

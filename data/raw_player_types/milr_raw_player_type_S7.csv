@@ -263,6 +263,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1736,Bob Dobby,WC,WC,S,Right,P
 1737,Slappy McBatty,BN,BF,B,Right,2B
 1738,Leroy Hawk,BN,,,Left,CF
+1743,Cagney O’verpaid,P,BS,B,Left,P
 1745,Robbie,BP,BB,B,Left,1B
 1748,Sweet Bobby Dangles Jr,XB,EG,S,Left,3B
 1756,Speedy Claxton,S,,,Right,2B
@@ -450,7 +451,9 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2593,Jake Crouton,WC,TD,S,Right,CF
 2594,Hunter West,BC,WC,S,Right,1B
 2597,Rod Kimball,BC,,,Right,RF
+2598,Mattie Christewson,S,,,Left,2B
 2601,Tobias Fünke,XB,BS,S,Right,LF
+2602,Chad Dongers,HK,,,Right,1B
 2604,Teddie Teeman,BP,,,Left,1B
 2606,Peachy Keen,BC,FP,B,Right,SS
 2607,Brit Kennedy,HK,TD,H,Right,SS

@@ -451,7 +451,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2651,Mick McMick,BP,,,Right,2B
 2656,Dru N.K.,WC,BS,H,Right,PH
 2657,Vader Page,P,BF,H,Right,P
-2658,Daniel Randall,,,,,
+2658,Daniel Randall,BP,,,Right,C
 2659,Kevin James,P,TT,H,Right,P
 2660,Ronnie Pickering,XB,,,Right,1B
 2661,Stevey Swinger,S,,,Right,2B
@@ -501,6 +501,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2729,Nobes Savage,WC,,,Right,2B
 2730,Laars Nootbaar jr,MH,,,Left,1B
 2732,Satoshi Okamoto,BP,,,Right,SS
+2733,Deebo Rodriguez,BP,,,Right,CF
 2734,Enrique Rosales,XB,,,Right,3B
 2735,Dill Doe,P,BS,B,Left,P
 2736,James Jameson CDXX,S,,,Left,3B

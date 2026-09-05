@@ -42,6 +42,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 80,Steel Pipe Simpson,BP,FP,S,Left,1B
 90,Bob Robb,S,EG,H,Left,RF
 91,John Johnson Jr.,S,BF,H,Right,3B
+92,Dick Woolridge,P,BS,B,Right,P
 93,Mackin Tosh,XB,,,Right,LF
 97,Buck Armstrong,BP,,,Right,1B
 99,Tyler Phoenix,SM,,,Right,1B
@@ -49,8 +50,10 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 103,Mason Spurs,BC,NT,S,Left,SS
 104,Morris Deratt,BN,,,Left,LF
 106,Sevag Vapor,BC,,,Right,CF
+107,Otis Nixon Sr.,MH,,,Left,RF
 108,Chavo Delocho,BC,BS,S,Left,C
 109,Derek Bongiovanni,BP,FP,B,Right,P
+111,Thomas Beowulf Jr.,P,BS,B,Left,P
 112,Willoughby Hoose,BC,TT,H,Left,P
 113,Kevin Arianna,HK,TD,S,Left,C
 114,Rocco Rudnikov,HK,BF,B,Right,C
@@ -93,6 +96,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 176,Fernando Cruz,BP,BF,B,Right,LF
 178,Hannah Outlaw,BN,,,Left,CF
 180,Demetrios Ooga,BC,FP,S,Left,C
+183,Egirl Jimenez,BC,,,Left,RF
 184,Henry Crowell,WC,EN,S,Right,C
 186,IBO Bust,1B,,,Right,2B
 187,Alex Peters,SM,,,Right,SS
@@ -225,6 +229,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 488,Juni Panda,SF,TT,H,Left,1B
 490,Zelk Antilles,XB,BF,S,Right,3B
 492,Wallace Grommet,TT,,,Right,2B
+497,Theodora DiBiaserunner,EN,,,Right,C
 500,Orlando Champagne,BP,BS,H,Right,3B
 501,Fuzzy Spit,XB,,,Right,3B
 502,Johnnie Twofingers,1B,TT,H,Right,3B
@@ -460,6 +465,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2232,Jerry Stocker,MH,,,Left,LF
 2234,Henri Deschenes,XB,WC,H,Right,P
 2236,Sticky Mickey Mantle,BP,BS,B,Right,SS
+2239,John-Rhys Ealy,WC,,,Right,3B
 2240,ModeratoSevere PlaquePsoriasis,XB,,,Right,SS
 2241,Johnny Omar,WC,BS,B,Right,2B
 2242,Wonder Francoh,XB,,,Right,1B
@@ -502,6 +508,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2349,Terry Gaskins,XB,TT,H,Left,C
 2350,Bad Mulligan,1B,NH,B,Left,C
 2351,Owen Doar,WC,,,Right,2B
+2352,Warren Peace,XB,,,Right,2B
 2353,Theo Rodder,BC,,,Right,1B
 2354,Roidy Magoo,BC,BB,B,Right,RF
 2356,Tristan Philip-guide,WC,,,Left,1B

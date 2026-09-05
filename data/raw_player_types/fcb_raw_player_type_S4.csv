@@ -39,6 +39,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 505,Poopio Cartez,XB,,,Left,RF
 506,Kanye East,XB,,,Right,1B
 507,Talladega Knight,BP,,,Right,3B
+508,Otis Falconer,XB,,,Left,1B
 509,R.K. Maroon,1B,,,Right,3B
 510,Ray Dingerz,1B,,,Right,LF
 511,Miles Huh,XB,,,Right,SS
@@ -59,6 +60,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 529,Wheeler Walker Jr.,XB,EG,S,Right,2B
 530,Ping Pong,MH,,,Left,1B
 531,Devaunte Rider,S,,,Right,SS
+532,Thelonius Jarts,WC,,,Left,C
 533,Dr. Tuna Altuna,S,FP,S,Right,CF
 534,Roger Over,WC,,,Right,RF
 535,Donkey Kong,BC,BS,B,Left,P
@@ -114,9 +116,11 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 595,Dudenstein Candyman,XB,,,Right,3B
 596,Poop McGee,XB,BS,H,Left,3B
 597,Charpasm Chim,XB,SF,H,Left,RF
+598,Herb Ferguson,SF,,,Left,RF
 599,P'quilla Porgsby,XB,,,Right,LF
 600,Johnny Hendrix,SM,BS,B,Right,P
 602,Duke Silver,WC,,,Right,C
+603,Broc Lee,BC,,,Left,LF
 604,Callie Braden,MH,BS,H,Left,P
 605,Sini Alexander,1B,WC,H,Right,P
 606,Homer Nocker,1B,EG,S,Right,C

@@ -12,6 +12,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 169,Todd Bonzalez II,BN,,,Left,1B
 186,IBO Bust,1B,,,Right,2B
 187,Alex Peters,SM,,,Right,SS
+197,Hans Ali,MH,NH,S,Right,C
 203,Bradle Beamen,XB,TT,H,Right,C
 207,J.J. Guemes,1B,TT,H,Right,PH
 226,Phil Coulson,1B,,,Left,3B
@@ -95,6 +96,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1771,Pierre Bryant,BC,,,Left,CF
 1785,Elmo Seabreeze,WC,SF,S,Right,3B
 1787,Jeremy Nakamoto,BC,,,Right,2B
+1794,Truck Month,1B,NT,S,Right,RF
 1808,Cap Keeler,XB,WC,S,Right,3B
 1815,Hubert Farnsworth,XB,,,Right,3B
 1818,Tabasco Greensauce,WC,SF,B,Right,P

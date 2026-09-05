@@ -31,6 +31,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 186,IBO Bust,1B,,,Right,2B
 193,Limon Cristo,1B,TD,H,Right,PH
 196,Big Nutty,WC,WC,B,Right,P
+205,Patrick Doyle,BP,TT,S,Right,C
 207,J.J. Guemes,1B,TT,H,Right,3B
 227,Cal Lidous,SM,NH,H,Right,P
 238,Ben Bramly,XB,EN,B,Right,PH
@@ -85,10 +86,12 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 595,Dudenstein Candyman,XB,,,Right,3B
 629,J.J. Romero,BN,,,Right,2B
 631,Oswald Thatendswald,TT,,,Left,2B
+639,Bingo Hammersmith,WC,,,Left,SS
 649,Nelson Van Halen,XB,,,Right,RF
 651,Rusty Nails,XB,EG,S,Left,CF
 654,Cole Schmole,BC,,,Right,3B
 660,Carlos Keller,1B,,,Right,1B
+663,Nico Bico,TT,TD,S,Left,SS
 675,Speedo Meter,S,TD,B,Right,SS
 680,Dooper McPooperscooper,1B,,,Left,CF
 681,Billy McBeans,BP,,,Right,SS

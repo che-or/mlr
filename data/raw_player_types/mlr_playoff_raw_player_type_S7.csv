@@ -11,6 +11,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 79,Jumbo Dick,BP,,,Left,1B
 90,Bob Robb,S,,,Left,RF
 91,John Johnson Jr.,TT,,,Right,3B
+116,Mattress,BC,,,Right,3B
 129,Hayden McCloud,XB,,,Left,C
 130,Mongy Whumpus,P,TD,H,Left,P
 132,Carlos,TT,,,Left,C
@@ -115,6 +116,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1942,Hero Brine,P,TT,H,Right,P
 1949,Davoin Shower-Handel,BC,,,Left,CF
 1962,Fido Dido,P,EN,B,Right,P
+2213,Sir Patrick Harvard,XB,,,Right,1B
 2220,Dogwood Maple,P,WC,H,Right,P
 2229,King Kruul,TT,,,Left,RF
 2230,Garfield Chubbs,BP,,,Right,3B

@@ -403,6 +403,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2109,Cody Omega,BN,,,Right,3B
 2113,Norwood McKenzie,BP,BS,B,Left,P
 2114,Daz Reference,BP,,,Right,LF
+2115,Deezy White,BC,,,Left,SS
 2116,Dill Pickle,BN,,,Right,RF
 2119,Drew Cruz,BP,,,Left,RF
 2120,Eddie Collins,BC,,,Left,2B
@@ -485,4 +486,14 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2271,Ricky Steele,BN,BB,B,Right,P
 2272,Sonny Scheim,BN,,,Right,1B
 2273,Noah Koufax,BN,BB,B,Right,P
+2465,Shotgun McGee,BN,,,Right,LF
 3295,Cy Hadd,BP,BS,B,Right,P
+3492,Vincent Adultman,BN,,,Right,2B
+3493,Yoren Snow,BN,,,Right,P
+3494,"Clive ""Pudge"" Peters",BN,,,Right,2B
+3495,Brandon Moore,BN,,,Right,P
+3496,Herman Hernandez,BN,,,Right,DH
+3497,AJ Fuckmeister,BN,,,Right,LF
+3498,Lucas Bradstreet,BN,,,Right,DH
+3499,Andrew Ross,BN,,,Right,3B
+3500,Jimmy John,BN,,,Right,SS
