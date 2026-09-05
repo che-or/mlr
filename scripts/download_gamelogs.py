@@ -116,4 +116,14 @@ def _download_gamelogs():
     content = _fetch_csv(url, 'pitcher decision adjustments')
     with open (rf'../data/pitcher_decision_adjustments.csv', 'wb') as f:
         f.write(content)
+
+    # Download game-played adjustments (games missing from the gamelogs because the player
+    # had no plate appearance or steal attempt, e.g. a defensive replacement)
+    doc_id = '1hyr3ITHxRkJy7mmM8ae7gLrWxA6J0eZUx0Qud7sreWI'
+    gid = 0
+
+    url = f'https://docs.google.com/spreadsheets/d/{doc_id}/export?format=csv&gid={gid}'
+    content = _fetch_csv(url, 'game-played adjustments')
+    with open (rf'../data/game_played_adjustments.csv', 'wb') as f:
+        f.write(content)
  
