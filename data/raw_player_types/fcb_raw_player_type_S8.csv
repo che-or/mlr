@@ -54,6 +54,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2708,Saul Pewald,WC,,,Right,1B
 2709,Batslap McGriff,1B,,,Right,3B
 2710,Sterling Turlington,HK,,,Right,CF
+2711,Arobius Ezzeliante,XB,,,Right,SS
 2712,Neddy Edgewise,BC,,,Left,C
 2713,Derry Murbles,XB,,,Right,3B
 2714,Aro Skreka,P,NH,S,Left,P
@@ -96,6 +97,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2752,Henry Thibodeau,XB,,,Right,C
 2754,Jacques François,1B,,,Right,2B
 2755,Timotheus Fortuin,P,FP,S,Left,P
+2756,Barker Bubbs,TT,,,Left,1B
 2757,Bloque Chain,P,TT,H,Right,P
 2759,Bubba Nimbus,1B,,,Right,RF
 2760,Shorty McDougall,WC,,,Left,SS
@@ -114,6 +116,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2776,Paulie Whippet,XB,,,Right,3B
 2777,Grassfed Cottonwood,XB,,,Left,1B
 2778,Elvis Carmichael,XB,,,Right,2B
+2779,George Pops O'Neill,XB,,,Right,3B
 2780,Jimmy Payne,BC,,,Right,LF
 2781,Max Potato,WC,,,Right,3B
 2782,Eijun Sawamura,P,BS,H,Left,P
@@ -141,5 +144,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2805,Calvin Ball,BC,1B,S,Left,CF
 2806,Warp Darkmatter,BP,,,Right,C
 2808,Connor Derksen,BC,BF,S,Right,3B
+2809,Joey Tribbiani,BC,,,Right,SS
 2810,Sonar McDeuceski II,P,TT,H,Right,P
 2811,Jeb Barnes,TT,,,Right,1B

@@ -20,6 +20,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 37,Artanis Jones,P,BS,H,Left,P
 39,Franz Joseph Hyman Jr,BC,,,Right,2B
 41,Thaddeus Gomorrah,BC,,,Right,C
+42,Viking Fishbird,1B,,,Right,2B
 46,Jackson Sanchez,P,TD,H,Right,P
 48,Willow Briansdóttir,BC,,,Right,2B
 55,Rick McLightning,BN,,,Right,RF
@@ -197,6 +198,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 492,Wallace Grommet,BC,,,Right,2B
 501,Fuzzy Spit,XB,,,Right,3B
 502,Johnnie Twofingers,BN,,,Right,3B
+510,Ray Dingerz,1B,,,Right,LF
 516,Blackbean Burrito,MH,,,Right,C
 518,Arthur Vandelay,SF,,,Left,C
 522,Good Doggo,TT,,,Right,2B
@@ -401,6 +403,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2329,Tencer Sporkelson,1B,,,Left,3B
 2332,Perry Platypus,HK,,,Right,SS
 2334,Buck Maverick,XB,,,Left,3B
+2335,MELTZ Slander,BC,,,Right,SS
 2337,Corn Barn,MH,,,Right,LF
 2340,Guthlac son of Romund,WC,,,Left,C
 2341,Clem N. Tine,XB,,,Right,C

@@ -320,6 +320,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 622,Delta Airlines,1B,WC,B,Left,CF
 623,Thelonius Junk,SF,NH,H,Left,PH
 629,J.J. Romero,BN,,,Right,2B
+638,Sablo Panchez,SM,,,Right,SS
 639,Bingo Hammersmith,WC,,,Left,SS
 640,Caleb Craven,BC,1B,S,Right,2B
 644,Rhys Wilson,EN,TD,H,Left,C
@@ -433,6 +434,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 1723,William Lloyd Garrison,XB,,,Right,1B
 1724,Hannibal Bligh,BN,EG,B,Right,3B
 1725,Trevor Rose,BN,TT,H,Right,SS
+1726,Ryan Hinds,BC,,,Right,3B
 1728,Scott Medge,TT,,,Right,3B
 1729,Cali Guerensk,EN,NH,B,Right,3B
 1732,Gang Weed,BC,,,Left,3B

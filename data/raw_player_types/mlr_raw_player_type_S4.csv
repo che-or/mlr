@@ -7,6 +7,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 6,Xavier Quinn Jr.,BP,,,Right,C
 7,Tony McGooch,S,,,Right,2B
 10,Emmett Michael,1B,,,Left,SS
+11,James Garfield,BC,,,Left,SS
 12,Lucifer Putts,SM,,,Left,SS
 13,Reimer Gonzalez,WC,,,Right,SS
 14,A.Z. Chapman,TT,,,Right,LF
@@ -285,6 +286,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 330,Donked McToad,MH,,,Right,3B
 331,Keyo,BN,NH,S,Right,PH
 332,Dixie Normos,S,,,Right,LF
+333,Benjamin Baeurkemper,WC,,,Left,CF
 334,Dwayne Stevenson,XB,,,Right,CF
 335,Taiki Shuttle,WC,,,Left,CF
 336,Darth Vader,1B,FP,S,Right,P
@@ -328,6 +330,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 381,Cue Anon,1B,,,Right,3B
 382,Fuzzy Dunlop,1B,,,Left,3B
 383,Spitz McGregor III,HK,,,Right,3B
+385,Storm Johnson,BC,,,Right,SS
 386,Babatunde Oladotun,BP,,,Right,1B
 388,Doug Quail,MH,,,Right,RF
 389,Peter Peckershine,BC,,,Right,RF
@@ -348,6 +351,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 406,Catfish O'Acid,BC,,,Right,SS
 408,Cole Martinez,S,,,Right,SS
 409,Josh Gordon,S,,,Left,CF
+410,Victor Justice,BN,,,Left,CF
 411,Rabbi Chase,BN,BB,B,Right,PH
 413,Superbone Threefinger,1B,EG,B,Right,P
 414,Barney Summers,1B,,,Left,C
@@ -391,7 +395,9 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 500,Orlando Champagne,BP,,,Right,3B
 501,Fuzzy Spit,XB,,,Right,3B
 502,Johnnie Twofingers,XB,,,Right,3B
+505,Poopio Cartez,XB,,,Left,RF
 510,Ray Dingerz,1B,,,Right,LF
+511,Miles Huh,XB,,,Right,SS
 513,Slacker JonnyHustle,BP,,,Right,SS
 514,Red Lobsterologist,EN,,,Right,2B
 515,Elwood Blues,BP,,,Right,C

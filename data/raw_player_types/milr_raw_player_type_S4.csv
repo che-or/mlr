@@ -24,6 +24,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 35,Jeffrey Nolan,BP,,,Right,RF
 36,Jericho Caulfield,WC,FP,H,Right,PH
 37,Artanis Jones,SM,BS,H,Left,P
+38,Dane Konrad,BC,BS,B,Left,P
 39,Whitt Bass,1B,NT,S,Right,P
 41,Thaddeus Gomorrah,BC,BB,B,Right,C
 42,Viking Fishbird,1B,NH,S,Right,P
@@ -69,6 +70,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 99,Tyler Phoenix,SM,,,Right,1B
 100,Merodach Baladan,1B,,,Right,2B
 101,Casey Nine,BC,,,Left,3B
+102,Doc JaAm,1B,,,Right,3B
 103,Mason Spurs,BC,,,Left,SS
 104,Morris Deratt,BN,,,Left,LF
 105,Mike Oxlittle,BN,,,Right,CF
@@ -500,6 +502,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 754,Ferdinand C. Bull,WC,WC,S,Left,P
 755,Goose Bonk,S,,,Right,3B
 756,Jayson Kincaid,BP,,,Right,LF
+757,Michael Hunt,BP,,,Right,CF
 758,Warren Andrews,HK,EG,H,Right,P
 759,Jrue Pierce,XB,,,Right,3B
 761,Balow Average,BN,,,Right,2B

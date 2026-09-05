@@ -2302,12 +2302,12 @@
     "all_time": {
       "entries": [
         {
-          "record": 34,
+          "record": 33,
           "id": 2350,
           "season_start": "S8",
           "session_start": 13,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 13
         },
         {
           "record": 28,
@@ -4592,28 +4592,28 @@
     "all_time": {
       "entries": [
         {
-          "record": 144,
+          "record": 143,
           "team": "MIN",
           "season_start": "S4",
           "session_start": 1,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
-          "record": 128,
+          "record": 127,
           "team": "OAK",
           "season_start": "S5",
           "session_start": 1,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
-          "record": 95,
+          "record": 94,
           "team": "CLE",
           "season_start": "S7",
           "session_start": 2,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
           "record": 78,
@@ -4632,36 +4632,36 @@
           "session_end": 10
         },
         {
-          "record": 73,
+          "record": 72,
           "team": "BAL",
           "season_start": "S8",
           "session_start": 8,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
-          "record": 67,
+          "record": 66,
           "team": "MIL",
           "season_start": "S8",
           "session_start": 14,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
-          "record": 67,
+          "record": 66,
           "team": "PHI",
           "season_start": "S8",
           "session_start": 14,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
-          "record": 66,
+          "record": 65,
           "team": "TBR",
           "season_start": "S8",
           "session_start": 15,
           "season_end": "S12",
-          "session_end": 16
+          "session_end": 15
         },
         {
           "record": 61,

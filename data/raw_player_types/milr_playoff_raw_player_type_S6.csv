@@ -60,6 +60,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 522,Good Doggo,XB,EG,S,Right,2B
 529,Kyle Mullins,SF,BS,B,Left,2B
 530,Ping Pong,MH,,,Left,1B
+553,Alexander Hamilton II,1B,BS,H,Left,SS
 562,Rotticus Scott,BC,BF,B,Left,SS
 570,Deku Matsui,BC,BS,H,Right,C
 596,Poop McGee,XB,BS,H,Left,3B
@@ -116,6 +117,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2253,Phillip Mahooters,BC,BB,B,Right,1B
 2258,Sid Houn,HK,TD,S,Right,P
 2262,Burg McTurdBerg,SF,,,Right,2B
+2274,Macho Man,S,,,Right,SS
 2275,John Smith,MH,TT,S,Left,LF
 2281,Edge Rocks,WC,NT,B,Right,3B
 2329,Tencer Sporkelson,TT,BS,B,Left,3B

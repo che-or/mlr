@@ -1076,7 +1076,7 @@
         "name": "Wild Card",
         "matchups": [
           {
-            "game_id": 241,
+            "game_id": 1,
             "home": "BAL",
             "away": "MIN",
             "home_score": 4,
@@ -1084,7 +1084,7 @@
             "league": "AL"
           },
           {
-            "game_id": 242,
+            "game_id": 2,
             "home": "OAK",
             "away": "BOS",
             "home_score": 1,
@@ -1092,7 +1092,7 @@
             "league": "AL"
           },
           {
-            "game_id": 243,
+            "game_id": 3,
             "home": "PHI",
             "away": "MIA",
             "home_score": 6,
@@ -1100,7 +1100,7 @@
             "league": "NL"
           },
           {
-            "game_id": 244,
+            "game_id": 4,
             "home": "STL",
             "away": "ATL",
             "home_score": 1,
@@ -1113,7 +1113,7 @@
         "name": "Divisional",
         "matchups": [
           {
-            "game_id": 245,
+            "game_id": 5,
             "home": "CWS",
             "away": "BAL",
             "home_score": 4,
@@ -1121,7 +1121,7 @@
             "league": "AL"
           },
           {
-            "game_id": 246,
+            "game_id": 6,
             "home": "TBR",
             "away": "OAK",
             "home_score": 10,
@@ -1129,7 +1129,7 @@
             "league": "AL"
           },
           {
-            "game_id": 247,
+            "game_id": 7,
             "home": "MIL",
             "away": "PHI",
             "home_score": 0,
@@ -1137,7 +1137,7 @@
             "league": "NL"
           },
           {
-            "game_id": 248,
+            "game_id": 8,
             "home": "SFG",
             "away": "ATL",
             "home_score": 3,
@@ -1150,7 +1150,7 @@
         "name": "League Championship",
         "matchups": [
           {
-            "game_id": 250,
+            "game_id": 10,
             "home": "TBR",
             "away": "BAL",
             "home_score": 4,
@@ -1158,7 +1158,7 @@
             "league": "AL"
           },
           {
-            "game_id": 249,
+            "game_id": 9,
             "home": "PHI",
             "away": "ATL",
             "home_score": 5,
@@ -1171,7 +1171,7 @@
         "name": "Paper Cup",
         "matchups": [
           {
-            "game_id": 251,
+            "game_id": 11,
             "home": "PHI",
             "away": "TBR",
             "home_score": 3,
@@ -1213,7 +1213,7 @@
         "name": "Wild Card",
         "matchups": [
           {
-            "game_id": 241,
+            "game_id": 1,
             "home": "BOS",
             "away": "KCR",
             "home_score": 8,
@@ -1221,7 +1221,7 @@
             "league": "AL"
           },
           {
-            "game_id": 243,
+            "game_id": 3,
             "home": "OAK",
             "away": "NYY",
             "home_score": 0,
@@ -1229,7 +1229,7 @@
             "league": "AL"
           },
           {
-            "game_id": 242,
+            "game_id": 2,
             "home": "MIL",
             "away": "COL",
             "home_score": 6,
@@ -1237,7 +1237,7 @@
             "league": "NL"
           },
           {
-            "game_id": 244,
+            "game_id": 4,
             "home": "SFG",
             "away": "FLA",
             "home_score": 9,
@@ -1250,7 +1250,7 @@
         "name": "Divisional",
         "matchups": [
           {
-            "game_id": 245,
+            "game_id": 5,
             "home": "DET",
             "away": "BOS",
             "home_score": 3,
@@ -1258,7 +1258,7 @@
             "league": "AL"
           },
           {
-            "game_id": 246,
+            "game_id": 6,
             "home": "TBR",
             "away": "NYY",
             "home_score": 4,
@@ -1266,7 +1266,7 @@
             "league": "AL"
           },
           {
-            "game_id": 247,
+            "game_id": 7,
             "home": "STL",
             "away": "SFG",
             "home_score": 9,
@@ -1274,7 +1274,7 @@
             "league": "NL"
           },
           {
-            "game_id": 248,
+            "game_id": 8,
             "home": "PHI",
             "away": "MIL",
             "home_score": 3,
@@ -1287,7 +1287,7 @@
         "name": "League Championship",
         "matchups": [
           {
-            "game_id": 249,
+            "game_id": 9,
             "home": "TBR",
             "away": "DET",
             "home_score": 6,
@@ -1295,7 +1295,7 @@
             "league": "AL"
           },
           {
-            "game_id": 250,
+            "game_id": 10,
             "home": "PHI",
             "away": "STL",
             "home_score": 6,
@@ -1308,7 +1308,7 @@
         "name": "Paper Cup",
         "matchups": [
           {
-            "game_id": 251,
+            "game_id": 11,
             "home": "PHI",
             "away": "DET",
             "home_score": 2,

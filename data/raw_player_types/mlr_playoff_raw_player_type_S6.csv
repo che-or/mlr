@@ -16,6 +16,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 93,Mackin Tosh,XB,,,Right,LF
 99,Tyler Phoenix,SM,,,Right,1B
 100,Merodach Baladan,1B,,,Right,2B
+103,Mason Spurs,BC,,,Left,SS
 104,Morris Deratt,BN,,,Left,LF
 106,Sevag Vapor,BC,,,Right,CF
 135,Lloyd Gross,BC,,,Left,SS
@@ -50,6 +51,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 336,Darth Vader,P,FP,S,Right,P
 337,Andrew Peters,P,BS,H,Left,P
 340,Picov Andropov,XB,,,Left,C
+350,Lightning Balls,BC,,,Right,RF
 355,Chuck Tingle,P,NT,H,Left,P
 357,Stan Mann,1B,,,Right,1B
 360,Goldie Jones,WC,,,Right,2B
@@ -147,6 +149,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2258,Sid Houn,P,TD,S,Right,P
 2327,Pope Coswi,BC,,,Right,2B
 2332,Perry Platypus,1B,,,Left,SS
+2335,MELTZ Slander,BC,,,Right,SS
 2341,Noah Clemens,XB,,,Right,C
 2344,Cybeast Falzar,1B,,,Right,SS
 2362,Old Hoss Radbourne,BC,,,Left,CF

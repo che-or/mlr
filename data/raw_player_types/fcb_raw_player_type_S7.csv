@@ -12,6 +12,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2503,Bobby Corwen,1B,,,Left,RF
 2504,Peter Hoomanawanui,XB,,,Right,2B
 2505,Zenzizenzizenzic Xystarch,P,TD,B,Left,P
+2506,Jack Monaco,BC,,,Right,3B
 2507,Hank Braun,S,,,Left,LF
 2508,Fatts Richard,WC,,,Right,2B
 2509,Chicano Bradley,P,TD,B,Right,P
@@ -71,6 +72,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2571,Brady Sizemore,XB,,,Right,2B
 2572,Chet Slamburger,MH,,,Right,C
 2573,Giles Sweeney,MH,,,Right,1B
+2575,Paul Kia Sorrento,TT,,,Right,1B
 2576,"Hiram ""3 Eggs"" Delacroix",XB,,,Right,SS
 2577,Joe DiBango,BP,,,Left,C
 2578,Levi Walker,BC,,,Right,3B
@@ -89,15 +91,19 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2592,Marcel Medellin,WC,,,Right,RF
 2593,Jake Crouton,WC,,,Right,CF
 2594,Hunter West,BC,,,Right,1B
+2596,Butter Cozy,S,,,Right,CF
 2597,Rod Kimball,BC,,,Right,RF
-2598,Mattie Christewson,s,,,Left,2B
+2598,Mattie Christewson,S,,,Left,2B
 2599,Pete Parking,XB,,,Right,LF
+2600,Ben Swoetman,BP,,,Right,3B
 2601,Tobias Fünke,XB,,,Right,LF
 2602,Chad Dongers,HK,,,Right,1B
 2603,Ross Reddick,MH,,,Right,C
 2604,Teddie Teeman,BP,,,Left,1B
+2605,Milk Choco,MH,,,Left,3B
 2606,Peachy Keen,BC,,,Right,SS
 2607,Brit Kennedy,HK,,,Right,SS
+2608,Kennith Omega,BC,,,Right,C
 2609,Rabe Booth,WC,,,Left,C
 2610,Jay Delahunt,XB,,,Right,2B
 2611,CJ Ayer,P,WC,S,Right,P
@@ -107,6 +113,8 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2617,Joe Kasey,BP,,,Left,C
 2618,Ricky Robert,XB,,,Right,SS
 2619,Barry Mays,BP,,,Left,LF
+2620,Mustard Martin,HK,,,Left,C
 2621,Mike Truk,P,BS,H,Right,P
 2622,Hans Freii,EN,,,Left,LF
+2623,cristiano,S,,,Right,C
 2624,Kilometers Straw,S,,,Right,CF
