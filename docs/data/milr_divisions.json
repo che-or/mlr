@@ -234,5 +234,21 @@
             "SDV",
             "WWC"
         ]
+    },
+    "S13": {
+        "Pacific Coast League": [
+            "DUM",
+            "LOO",
+            "MMS",
+            "RHP",
+            "SPD"
+        ],
+        "International League": [
+            "BLU",
+            "CYI",
+            "GGS",
+            "HCM",
+            "OBO"
+        ]
     }
 }
