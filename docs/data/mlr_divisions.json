@@ -54,5 +54,6 @@
     "NL Central" : ["CHC", "CIN", "MIL", "PIT", "STL"],
     "NL East" : ["ATL", "FLA", "MTL", "NYM", "PHI"]
   },
-  "S12": "S11"
+  "S12": "S11",
+  "S13": "S11"
 }

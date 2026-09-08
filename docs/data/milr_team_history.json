@@ -178,5 +178,17 @@
         "SDV": {"name": "Stardew Valley Junimos", "logo_dark": "img/milr_logos/S12SDV.png", "logo_light": "img/milr_logos/S12SDV.png"},
         "SEF": {"name": "Stink Enjoyers Fanclub", "logo_dark": "img/milr_logos/S12SEF.png", "logo_light": "img/milr_logos/S12SEF.png"},
         "WWC": {"name": "Williamsport Woodcocks", "logo_dark": "img/milr_logos/S12WWC.png", "logo_light": "img/milr_logos/S12WWC.png"}
+    },
+    "S13": {
+        "BLU": {"name": "Brissie Blue Heelers", "logo_dark": "img/milr_logos/S13BLU.png", "logo_light": "img/milr_logos/S13BLU.png"},
+        "CYI": {"name": "Cyrodiil Imperials", "logo_dark": "img/milr_logos/S13CYI.png", "logo_light": "img/milr_logos/S13CYI.png"},
+        "DUM": {"name": "Nuketown Test Dummies", "logo_dark": "img/milr_logos/S13DUM.png", "logo_light": "img/milr_logos/S13DUM.png"},
+        "GGS": {"name": "Mt. Olympus Greek Gods", "logo_dark": "img/milr_logos/S13GGS.png", "logo_light": "img/milr_logos/S13GGS.png"},
+        "HCM": {"name": "Harlan Coal Miners", "logo_dark": "img/milr_logos/S13HCM.png", "logo_light": "img/milr_logos/S13HCM.png"},
+        "LOO": {"name": "St. Loonatics", "logo_dark": "img/milr_logos/S13LOO.png", "logo_light": "img/milr_logos/S13LOO.png"},
+        "MMS": {"name": "Melbourne Mantis Shrimps", "logo_dark": "img/milr_logos/S13MMS.png", "logo_light": "img/milr_logos/S13MMS.png"},
+        "OBO": {"name": "Orlando Bloomin' Oranges", "logo_dark": "img/milr_logos/S13OBO.png", "logo_light": "img/milr_logos/S13OBO.png"},
+        "RHP": {"name": "Transylvania Antici...pations", "logo_dark": "img/milr_logos/S13RHP.png", "logo_light": "img/milr_logos/S13RHP.png"},
+        "SPD": {"name": "Idaho Spud Thumpers", "logo_dark": "img/milr_logos/S13SPD.png", "logo_light": "img/milr_logos/S13SPD.png"}
     }
 }
