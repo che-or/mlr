@@ -688,18 +688,18 @@
         },
         {
           "record": 30,
+          "id": 1781,
+          "season_start": "S11",
+          "session_start": 16,
+          "season_end": "S13",
+          "session_end": 1
+        },
+        {
+          "record": 30,
           "id": 719,
           "season_start": "S5",
           "session_start": 16,
           "season_end": "S6",
-          "session_end": 16
-        },
-        {
-          "record": 29,
-          "id": 1781,
-          "season_start": "S11",
-          "session_start": 16,
-          "season_end": "S12",
           "session_end": 16
         },
         {
