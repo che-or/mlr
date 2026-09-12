@@ -703,12 +703,12 @@
           "session_end": 16
         },
         {
-          "record": 28,
+          "record": 29,
           "id": 1709,
           "season_start": "S11",
           "session_start": 14,
-          "season_end": "S12",
-          "session_end": 16
+          "season_end": "S13",
+          "session_end": 1
         },
         {
           "record": 28,
@@ -1997,12 +1997,12 @@
           "session_end": 7
         },
         {
-          "record": 136,
+          "record": 137,
           "id": 2397,
           "season_start": "S8",
           "session_start": 8,
-          "season_end": "S12",
-          "session_end": 16
+          "season_end": "S13",
+          "session_end": 1
         },
         {
           "record": 132,
