@@ -343,7 +343,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2922,Randy Mann,BAL,WC,,,Left,2B,SS,1B,/u/Zytabyte,zyta,53,1,6,,
 2931,Jeff Newman,,S,BS,H,Left,2B,SS,3B,/u/Luminosityfan,lumosityfan,53,1,6,1,HCM
 2932,Seth Kablamo,CIN,HK,,,Right,CF,RF,LF,/u/catfishhugo,sethkablamo,33,1,10,,
-2935,Dwayne Swanson,,WC,TT,H,Left,P,,,/u/HeavyG2,robjg2,53,1,3,1,OBO
+2935,Dwayne Swanson,,WC,TT,H,Left,P,,,/u/HeavyG2,robjg2,53,1,3,1,
 2942,Tleyber Alfredo Cruz Fernandez III,ATL,BP,EG,H,Left,SS,CF,3B,/u/spiderrrpigg,tonyeatworld,33,1,7,1,HCM
 2943,Mo Bonzalez,DET,BN,,,Right,2B,SS,,/u/irishfan117,irishfan117,53,1,6,,
 2944,Bobert Hideyoshi,SEA,XB,BS,H,Left,C,3B,LF,/u/TorchedPineapple,torchedpineapple,53,1,4,,
@@ -497,7 +497,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3256,Angry Lizard,BOS,BN,BS,S,Left,CF,LF,C,/u/MLR_NoReddit_User,McGriddy10,33,1,10,,
 3257,Joseph Randome,BAL,1B,EN,S,Left,2B,RF,LF,/u/Fr3shman43v3r,nickwise,23,1,6,,
 3258,Hyzer Flip,MIN,WC,TD,H,Right,C,1B,CF,/u/YoSoyOkey,soyokey,53,1,4,,
-3260,Ruby McCade,,EN,TD,B,Right,SS,2B,,/u/MLR_NoReddit_User,Turtlemallow98,53,1,7,1,
+3260,Ruby McCade,,EN,TD,B,Right,SS,2B,,/u/MLR_NoReddit_User,Turtlemallow98,53,1,7,1,DUM
 3261,Chilidog Clayton,ATL,XB,BB,H,Right,3B,LF,,/u/prwill,Willsappington,53,1,8,,
 3263,Hard Candy,MIL,XB,BS,H,Right,P,,,/u/is-it-what-now,cruzich,43,1,3,,
 3265,Robert Sitkowski,CWS,XB,EG,S,Right,SS,CF,,/u/gronkky,gronk6680,53,1,7,,
@@ -530,7 +530,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3379,KC Martinez,LAD,XB,WC,S,Left,1B,3B,,/u/MLR_NoReddit_User,_pandar_,53,1,5,1,HCM
 3380,Gracie Cwej-Mlodzianowski,COL,WC,TD,S,Left,CF,RF,,/u/kayjayrunaway,middaydreamin,53,1,10,1,HCM
 3381,Socks Maybe,HOU,BC,TD,B,Left,CF,RF,,/u/butterscotch_mlp,rorydawn,53,1,10,1,MMS
-3382,Carter Kendall,CLE,P,NH,S,Right,P,,,/u/JoeyFG55,joeyfg,53,1,3,1,DUM
+3382,Carter Kendall,CLE,EN,NH,S,Right,P,,,/u/JoeyFG55,joeyfg,53,1,3,1,DUM
 3383,Alan,TEX,BC,,,Right,SS,2B,,/u/MLR_NoReddit_User,aalaan__,53,1,7,,
 3384,Loki,NYY,XB,,,Left,SS,CF,,/u/MLR_NoReddit_User,l0wkeyloki,53,1,7,1,
 3385,John Cally,ATL,XB,,,Right,LF,1B,,/u/psyduckmc,swishduck,53,1,9,,
@@ -547,11 +547,11 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3396,Googly Moogly,PIT,BC,,,Left,SS,CF,,/u/Rocktrout331490,rocktrout331490,53,1,7,,
 3397,Vyncent Wyattoss III,TBR,EN,,,Right,CF,LF,,/u/MLR_NoReddit_User,breezer,53,1,10,,
 3398,Kyle Schwarbombs,,MH,,,Right,SS,2B,,/u/TheRealChad_318,realchad318,53,1,7,,
-3399,Nora Selbmar,MIL,1B,,,Left,SS,CF,,/u/ramblesthecow,.rambles,53,1,7,1,
+3399,Nora Selbmar,MIL,1B,,,Left,SS,CF,,/u/ramblesthecow,.rambles,53,1,7,1,OBO
 3400,Chris Walker,,BP,BB,B,Right,RF,CF,,/u/kawlaw4,xxdark_123,53,1,11,,
 3401,Heliotrope Selenifuge Jr.,DET,SM,1B,H,Right,C,1B,,/u/j4yb1rdreddit,J4yb1rd,53,1,4,1,GGS
 3402,Marcelo Soares,CHC,HK,BS,B,Right,SS,2B,,/u/MLR_NoReddit_User,Leperte,53,1,7,1,HCM
-3403,Chance Mercury,TEX,,BS,B,Right,P,,,/u/SadPandaFace00,sadpandaface,53,1,3,1,DUM
+3403,Chance Mercury,TEX,BN,BS,B,Right,P,,,/u/SadPandaFace00,sadpandaface,53,1,3,1,DUM
 3404,Scoochie Virtue,TOR,SM,,,Right,CF,RF,,/u/TheScoochie11,thescoochie,53,1,10,1,
 3405,Tanya Degurechaff,BAL,MH,TT,H,Right,P,,,/u/MLR_NoReddit_User,darthjcaedus,53,1,3,1,OBO
 3406,Steak Dynasty,ARI,XB,SF,B,Left,SS,2B,,/u/MinatureMan,_.mini._,53,1,7,1,BLU
@@ -593,7 +593,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3442,Beatrice D. Goldn'witch,BOS,S,TT,S,Right,P,,,/u/MLR_NoReddit_User,niji,53,1,3,1,BLU
 3443,Craig Jarvis,,BC,NH,H,Right,SS,CF,,/u/MLR_NoReddit_User,doomguyscousin,53,1,7,,
 3444,Rabs Roland,TEX,HK,,,Left,2B,RF,,/u/MLR_NoReddit_User,xxrabscuttlexx,53,1,6,1,GGS
-3445,Bea Friday,MIL,MH,NH,H,Left,SS,CF,,/u/MLR_NoReddit_User,aevumaevimaevum,53,1,7,1,
+3445,Bea Friday,MIL,MH,NH,H,Left,SS,CF,,/u/MLR_NoReddit_User,aevumaevimaevum,53,1,7,1,OBO
 3446,Cleveland Brown Jr.,,HK,WC,S,Left,P,,,/u/MLR_NoReddit_User,raaav,53,1,3,1,MMS
 3447,SilverDrip,,BP,BS,H,Right,C,1B,,/u/MLR_NoReddit_User,donaldpedersen72,53,1,4,,
 3448,Knight Newton,TEX,1B,TD,H,Left,2B,1B,,/u/Omango07,knihovnik2,53,1,6,1,GGS
