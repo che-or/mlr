@@ -5,7 +5,8 @@ export const state = {
     playerMap: new Map(),  // lowercase name -> [playerIds], built from allPlayers for search
     glossary: {},          // from glossary.json
     typeDefinitions: {},   // from data/type_definitions.json: { batting: {code: name}, pitching: {code: name} }
-    awards: {},            // from data/awards.json
+    awards: {},            // from data/mlr_awards.json
+    milrAwards: {},        // from data/milr_awards.json: { S3: {GM: [...], AS: [...]}, ... }
     logoOverrides: {},     // from data/logo_overrides.json: { player_season: {...}, player_default: {...} }
     teamHistory: {
         mlr: {},           // franchise-based: { FRANCHISE_KEY: [{name, abbr, start, end, logo_dark, logo_light}] }

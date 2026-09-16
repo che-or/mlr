@@ -275,7 +275,7 @@ async function runCompare(container) {
                 state.currentPlayerId = id;
                 import('./player.js').then(m => {
                     m.displayPlayerPage(id);
-                    window.location.hash = '#/stats';
+                    window.location.hash = `#/stats?id=${id}`;
                 });
             });
         });
@@ -302,7 +302,7 @@ function buildCompareTable(ids, rows, season, league, type) {
 
     const headerCells = players.map((p, i) => {
         if (!p) return `<th>Player ${i + 1}</th>`;
-        return `<th><a href="#/stats" class="compare-player-link" data-id="${ids[i]}">${p.Name}</a></th>`;
+        return `<th><a href="#/stats?id=${ids[i]}" class="compare-player-link" data-id="${ids[i]}">${p.Name}</a></th>`;
     }).join('');
 
     const leagueLabel  = league.replace(/_/g, ' ').toUpperCase();

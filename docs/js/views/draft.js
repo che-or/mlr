@@ -61,7 +61,7 @@ export async function renderDraftHistory() {
             if (typeof pick.id === 'number') {
                 const player = state.allPlayers.find(p => p.ID === pick.id);
                 const name = player ? player.Name : `#${pick.id}`;
-                nameHtml = `<a href="#/stats" class="player-link draft-pick-name" data-player-id="${pick.id}">${name}</a>`;
+                nameHtml = `<a href="#/stats?id=${pick.id}" class="player-link draft-pick-name" data-player-id="${pick.id}">${name}</a>`;
             } else {
                 nameHtml = `<span class="draft-pick-name">${pick.id}</span>`;
             }
@@ -88,7 +88,7 @@ export async function renderDraftHistory() {
             const id = parseInt(el.dataset.playerId);
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });

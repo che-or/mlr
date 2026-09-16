@@ -45,6 +45,7 @@ export async function loadCoreData() {
         glossary,
         typeDefinitions,
         awards,
+        milrAwards,
         logoOverrides,
         mlrTeamHistory,
         milrTeamHistory,
@@ -64,7 +65,8 @@ export async function loadCoreData() {
         fetch(`${GENERATED}/all_players.json`).then(r => r.json()),
         fetch(`${ROOT}/glossary.json`).then(r => r.json()),
         fetch(`${DATA}/type_definitions.json`).then(r => r.json()),
-        fetch(`${DATA}/awards.json`).then(r => r.json()),
+        fetch(`${DATA}/mlr_awards.json`).then(r => r.json()),
+        fetch(`${DATA}/milr_awards.json`).then(r => r.json()),
         fetch(`${DATA}/logo_overrides.json`).then(r => r.json()),
         fetch(`${DATA}/mlr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/milr_team_history.json`).then(r => r.json()),
@@ -86,6 +88,7 @@ export async function loadCoreData() {
     state.glossary = glossary;
     state.typeDefinitions = typeDefinitions;
     state.awards = awards;
+    state.milrAwards = milrAwards;
     state.logoOverrides = logoOverrides;
     state.teamHistory.mlr = mlrTeamHistory;
     state.teamHistory.milr = milrTeamHistory;

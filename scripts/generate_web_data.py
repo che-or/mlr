@@ -464,6 +464,7 @@ def main():
                 streak_gamelog = sg_gamelog
             streak_recs = get_streak_records(streak_gamelog, hitting_game,
                                              hitting_team_game_stats=hitting_team,
+                                             pitching_game_stats=pitching_game,
                                              cache_path=p_sr_cache,
                                              season_active=season_active)
             p_streaks = Path('../docs/generated/mlr_streak_records.json')

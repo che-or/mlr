@@ -1,15 +1,32 @@
 import { state } from '../state.js';
 import { loadStats } from '../data.js';
-import { getSeasonSort, getMlrLogoPair, getMlrTeamAbbr, recordFranchiseKey, makeLogoImg, getSeasonLogoOverride } from '../utils.js';
+import { getSeasonSort, getMlrLogoPair, getMlrTeamAbbr, getMilrLogoPair, recordFranchiseKey, makeLogoImg, getSeasonLogoOverride } from '../utils.js';
+import { LEAGUE_LABELS } from '../constants.js';
+
+// Site leagues with awards data, for the MLR/MiLR selector on this page.
+const AWARDS_LEAGUES = ['mlr', 'milr'];
 
 
 export async function renderAwards() {
+    const urlParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
+    const league = urlParams.get('league') === 'milr' ? 'milr' : 'mlr';
+
     // Load hitting and pitching stats for logos — lazy, cached after first load
     try {
-        await Promise.all([loadStats('mlr', 'hitting'), loadStats('mlr', 'pitching')]);
+        await Promise.all(
+            league === 'milr'
+                ? [loadStats('milr', 'hitting'), loadStats('milr', 'pitching')]
+                : [loadStats('mlr', 'hitting'), loadStats('mlr', 'pitching')]
+        );
     } catch (_) {}
 
     const container = document.getElementById('awards-view');
+
+    if (league === 'milr') {
+        renderMilrAwardsPage(container, state.milrAwards, urlParams);
+        return;
+    }
+
     const awardsData = state.awards;
     const metadata = awardsData._metadata || {};
 
@@ -17,9 +34,8 @@ export async function renderAwards() {
         .filter(k => k.startsWith('S') && hasAwards(awardsData[k]))
         .sort((a, b) => getSeasonSort(b) - getSeasonSort(a));
 
-    const urlParams = new URLSearchParams(window.location.hash.split('?')[1] || '');
     let selected = seasons.includes(urlParams.get('season')) ? urlParams.get('season') : (seasons[0] || null);
-    const initialLeague = urlParams.get('league') === 'nl' ? 'nl' : 'al';
+    const initialConf = urlParams.get('conf') === 'nl' ? 'nl' : 'al';
 
     const idx = seasons.indexOf(selected);
     const prev = idx < seasons.length - 1 ? seasons[idx + 1] : null;
@@ -27,6 +43,9 @@ export async function renderAwards() {
 
     let html = `<div class="awards-header team-stats-header">
         <h2 class="section-title">Awards —
+            <select id="awards-league-select" class="title-season-select">
+                ${AWARDS_LEAGUES.map(k => `<option value="${k}" ${k === league ? 'selected' : ''}>${LEAGUE_LABELS[k]}</option>`).join('')}
+            </select>
             <select id="awards-season-select" class="title-season-select">
                 ${seasons.map(s => `<option value="${s}" ${s === selected ? 'selected' : ''}>${s.replace('S', 'Season ')}</option>`).join('')}
             </select>
@@ -44,10 +63,10 @@ export async function renderAwards() {
 
     html += `<div class="awards-container">
         <div class="league-toggle-buttons">
-            <button class="league-toggle-button${initialLeague === 'al' ? ' active' : ''}" data-league="al">American League</button>
-            <button class="league-toggle-button${initialLeague === 'nl' ? ' active' : ''}" data-league="nl">National League</button>
+            <button class="league-toggle-button${initialConf === 'al' ? ' active' : ''}" data-conf="al">American League</button>
+            <button class="league-toggle-button${initialConf === 'nl' ? ' active' : ''}" data-conf="nl">National League</button>
         </div>
-        <div class="leagues-wrapper show-${initialLeague}">`;
+        <div class="leagues-wrapper show-${initialConf}">`;
 
     for (const lg of ['AL', 'NL']) {
         const lgName = lg === 'AL' ? 'American League' : 'National League';
@@ -66,6 +85,12 @@ export async function renderAwards() {
     html += '</div></div>';
     container.innerHTML = html;
 
+    // League dropdown (MLR/MiLR)
+    container.querySelector('#awards-league-select').addEventListener('change', e => {
+        const newLeague = e.target.value;
+        window.location.hash = newLeague === 'milr' ? `#/awards?season=${selected}&league=milr` : `#/awards?season=${selected}`;
+    });
+
     // Season dropdown
     container.querySelector('#awards-season-select').addEventListener('change', e => {
         window.location.hash = `#/awards?season=${e.target.value}`;
@@ -76,15 +101,122 @@ export async function renderAwards() {
         btn.addEventListener('click', () => {
             container.querySelectorAll('.league-toggle-button').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            const lg = btn.dataset.league;
+            const conf = btn.dataset.conf;
             const wrapper = container.querySelector('.leagues-wrapper');
-            wrapper.classList.toggle('show-al', lg === 'al');
-            wrapper.classList.toggle('show-nl', lg === 'nl');
+            wrapper.classList.toggle('show-al', conf === 'al');
+            wrapper.classList.toggle('show-nl', conf === 'nl');
         });
     });
 
     // Player links
     wirePlayerLinks(container);
+}
+
+// ── MiLR All-Stars ───────────────────────────────────────────────────────────
+
+function hasMilrAwards(entry) {
+    return !!(entry?.AS && (entry.AS.GM?.length || entry.AS.R?.length));
+}
+
+function renderMilrAwardsPage(container, milrAwardsData, urlParams) {
+    const seasons = Object.keys(milrAwardsData)
+        .filter(k => k.startsWith('S') && hasMilrAwards(milrAwardsData[k]))
+        .sort((a, b) => getSeasonSort(b) - getSeasonSort(a));
+
+    let selected = seasons.includes(urlParams.get('season')) ? urlParams.get('season') : (seasons[0] || null);
+    const idx = seasons.indexOf(selected);
+    const prev = idx < seasons.length - 1 ? seasons[idx + 1] : null;
+    const next = idx > 0 ? seasons[idx - 1] : null;
+
+    let html = `<div class="awards-header team-stats-header">
+        <h2 class="section-title">Awards —
+            <select id="awards-league-select" class="title-season-select">
+                ${AWARDS_LEAGUES.map(k => `<option value="${k}" ${k === 'milr' ? 'selected' : ''}>${LEAGUE_LABELS[k]}</option>`).join('')}
+            </select>
+            <select id="awards-season-select" class="title-season-select">
+                ${seasons.map(s => `<option value="${s}" ${s === selected ? 'selected' : ''}>${s.replace('S', 'Season ')}</option>`).join('')}
+            </select>
+        </h2>
+        <div class="season-nav-buttons">
+            ${prev ? `<a href="#/awards?season=${prev}&league=milr" class="season-nav-button">&lt; Prev Season</a>` : ''}
+            ${next ? `<a href="#/awards?season=${next}&league=milr" class="season-nav-button">Next Season &gt;</a>` : ''}
+        </div>
+    </div>`;
+
+    if (!selected) { container.innerHTML = html + '<p>No MiLR All-Star data available.</p>'; return; }
+
+    html += `<div class="awards-container">${renderMilrAllStars(milrAwardsData[selected], selected)}</div>`;
+    container.innerHTML = html;
+
+    container.querySelector('#awards-league-select').addEventListener('change', e => {
+        const newLeague = e.target.value;
+        window.location.hash = newLeague === 'milr' ? `#/awards?season=${selected}&league=milr` : `#/awards?season=${selected}`;
+    });
+    container.querySelector('#awards-season-select').addEventListener('change', e => {
+        window.location.hash = `#/awards?season=${e.target.value}&league=milr`;
+    });
+
+    wirePlayerLinks(container);
+}
+
+// Shared by both the GM and All-Star sections below: sorts by team abbreviation
+// then name, and splits into up to 4 columns filled top-to-bottom then
+// left-to-right (same approach as the Reserves section's 2-column split).
+function renderMilrPlayerGrid(ids, season) {
+    if (!ids.length) return '';
+    const players = ids.map(id => {
+        const { logo, teamAbbr } = playerSeasonInfo(id, season, 'AS', 'milr');
+        const player = state.allPlayers.find(p => p.ID === id);
+        return { id, logo, teamAbbr, name: player?.Name || `#${id}` };
+    });
+    players.sort((a, b) => a.teamAbbr.localeCompare(b.teamAbbr) || a.name.localeCompare(b.name));
+
+    const chunkSize = Math.ceil(players.length / 4);
+    const cols = [];
+    for (let i = 0; i < 4; i++) {
+        const chunk = players.slice(i * chunkSize, (i + 1) * chunkSize);
+        if (chunk.length) cols.push(chunk);
+    }
+    const renderMilrCol = col => col.map(p => `<div class="award-winner-item">
+        ${p.logo ? makeLogoImg(p.logo.dark, p.logo.light, 'award-team-logo') : ''}${playerLink(p.id)}
+    </div>`).join('');
+
+    return `<div class="milr-as-grid">
+        ${cols.map(col => `<div class="milr-as-col">${renderMilrCol(col)}</div>`).join('')}
+    </div>`;
+}
+
+function renderMilrAllStars(entry, season) {
+    if (!entry?.AS) return '';
+    const gmIds = entry.AS.GM || [];
+    const asIds = entry.AS.R || [];
+    if (!gmIds.length && !asIds.length) return '';
+
+    let gmHtml = '';
+    if (gmIds.length) {
+        gmHtml = `<div class="as-section as-gms">
+            <h5>General Manager${gmIds.length > 1 ? 's' : ''}</h5>
+            ${renderMilrPlayerGrid(gmIds, season)}
+        </div>`;
+    }
+
+    let gridHtml = '';
+    if (asIds.length) {
+        gridHtml = `<div class="as-section as-milr-list">
+            <h5>All-Stars</h5>
+            ${renderMilrPlayerGrid(asIds, season)}
+        </div>`;
+    }
+
+    return `<h4 class="awards-sub-title">MiLR All-Star Team</h4>
+        <div class="awards-sub-section">
+            <div class="award-category">
+                <div class="all-star-team">
+                    ${gmHtml}
+                    ${gridHtml}
+                </div>
+            </div>
+        </div>`;
 }
 
 function hasAwards(sa) {
@@ -369,7 +501,7 @@ function renderHofCard(id, hitting, pitching, isActive) {
 function playerLink(id) {
     const player = state.allPlayers.find(p => p.ID === id);
     const name = player ? player.Name : `#${id}`;
-    return `<a href="#/stats" class="player-link" data-player-id="${id}">${name}</a>`;
+    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${name}</a>`;
 }
 
 // Returns logo and team abbreviation for a player in a given season.
@@ -377,7 +509,26 @@ function playerLink(id) {
 // `awardKey` (e.g. "AS", "SS", "MVP") lets docs/data/logo_overrides.json
 // override the represented team per-award, for players who changed teams
 // mid-season (e.g. an All-Star picked while on their first team).
-function playerSeasonInfo(id, season, awardKey) {
+// `league` ('mlr' or 'milr') selects which league's stats/team helpers to use.
+// MiLR has no franchise-key indirection (a stat row's own team IS the display
+// abbreviation) and no logo-override support (docs/data/logo_overrides.json
+// is MLR-only), so the milr branch skips both of those MLR-specific steps.
+function playerSeasonInfo(id, season, awardKey, league = 'mlr') {
+    if (league === 'milr') {
+        const hitting  = state.stats['milr_hitting']  || [];
+        const pitching = state.stats['milr_pitching'] || [];
+        const all = [...hitting, ...pitching];
+        const stat = all.filter(s => s.ID === id && s['Display Season'] === season && !s.is_sub_row)
+                        .sort((a, b) => (b['Last Session'] || 0) - (a['Last Session'] || 0))[0]
+                  || all.filter(s => s.ID === id && !s.is_sub_row)
+                        .sort((a, b) =>
+                            getSeasonSort(b['Display Season']) - getSeasonSort(a['Display Season']) ||
+                            (b['Last Session'] || 0) - (a['Last Session'] || 0))[0];
+        if (!stat) return { logo: null, teamAbbr: '' };
+        const teamAbbr = recordFranchiseKey(stat);
+        return { logo: getMilrLogoPair(teamAbbr, stat['Display Season']), teamAbbr };
+    }
+
     // Checked first and independent of stat rows: some award winners (e.g. a
     // GM who never played) have no MLR stat history at all to fall back on.
     const override = getSeasonLogoOverride(id, season, awardKey);
@@ -424,7 +575,7 @@ function wirePlayerLinks(container) {
             // Import lazily to avoid circular dep at module parse time
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });
@@ -437,11 +588,13 @@ export function getPlayerAwards(playerId) {
     const metadata = awardsData._metadata || {};
     const collected = {};
 
-    const add = (key, season, league) => {
+    // `conf` is AL/NL (MLR-only); `siteLeague` is which site league ('mlr'/'milr')
+    // the award is from, so a player's badge link can carry both independently.
+    const add = (key, season, conf, siteLeague = 'mlr') => {
         if (!collected[key]) collected[key] = [];
         if (season) {
-            if (!collected[key].some(a => a.season === season && a.league === league)) {
-                collected[key].push({ season, league });
+            if (!collected[key].some(a => a.season === season && a.conf === conf)) {
+                collected[key].push({ season, conf, siteLeague });
             }
         }
     };
@@ -475,7 +628,16 @@ export function getPlayerAwards(playerId) {
         }
     }
 
-    const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP', 'HRD'];
+    // MiLR All-Stars live in their own file/state slot, shaped like MLR's own
+    // AS object (GM + a flat roster, here under "R" since there are no
+    // positions to label). GM picks are intentionally not badged, matching
+    // how MLR's own AS.GM is skipped above.
+    const milrAwardsData = state.milrAwards || {};
+    for (const seasonKey in milrAwardsData) {
+        if (milrAwardsData[seasonKey].AS?.R?.includes(playerId)) add('MILRAS', seasonKey, null, 'milr');
+    }
+
+    const order = ['HOF', 'MVP', 'CYA', 'ROTY', 'RPOTY', 'SS', 'AS', 'BT', 'ERAT', 'GMOTY', 'PCMVP', 'HRD', 'MILRAS'];
     const displayList = [];
     for (const awardId of order) {
         if (!collected[awardId]) continue;
@@ -487,8 +649,9 @@ export function getPlayerAwards(playerId) {
             const count = wins.length;
             wins.sort((a, b) => getSeasonSort(a.season) - getSeasonSort(b.season));
             const name = getAwardName(awardId, wins[wins.length - 1]?.season, metadata);
-            const lastLeague = wins[wins.length - 1]?.league?.toLowerCase() || null;
-            displayList.push({ text: count > 1 ? `${count}x ${name}` : name, cls: `award-${awardId.toLowerCase()}`, seasons: wins.map(w => w.season), league: lastLeague });
+            const lastConf = wins[wins.length - 1]?.conf?.toLowerCase() || null;
+            const lastSiteLeague = wins[wins.length - 1]?.siteLeague || 'mlr';
+            displayList.push({ text: count > 1 ? `${count}x ${name}` : name, cls: `award-${awardId.toLowerCase()}`, seasons: wins.map(w => w.season), conf: lastConf, siteLeague: lastSiteLeague });
         }
     }
     return displayList;

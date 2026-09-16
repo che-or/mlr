@@ -243,9 +243,22 @@ async function renderLeaderboard() {
 
         // ── Single Season card (only shown when there are multiple seasons) ─
         if (displaySeasons.length > 1) {
-            const ssRows = isTeam
+            // The per-season qualifier above is prorated to games played so far, which
+            // correctly handles a past season that ended up genuinely short (a bye week,
+            // a lockout-shortened season) - but a season that has BARELY STARTED prorates
+            // down to almost nothing, letting a couple of PAs on a hot streak look like an
+            // all-time single-season leader next to full seasons. Gate the cross-season
+            // card on a season having played at least half as many games as the fullest
+            // season on record, so a season that's under half done doesn't show up here yet
+            // (its per-season "Season N" card still shows its in-progress leaders as normal).
+            const refGames = Math.max(0, ...Object.values(seasonGames));
+            const eligibleSeasons = new Set(
+                displaySeasons.filter(ds => refGames === 0 || (seasonGames[ds] || 0) >= 0.5 * refGames)
+            );
+            const ssRows = (isTeam
                 ? filterTeamSeasonRows(seasonData, null, stat, isCounting)
-                : filterSeasonRows(seasonData, null, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames);
+                : filterSeasonRows(seasonData, null, stat, isHitting, isCounting, selTeam, selType, minPA, minOuts, minAtt, minDec, minOpp, seasonGames)
+            ).filter(r => eligibleSeasons.has(r['Display Season']));
             ssRows.sort((a, b) => direction * (sortableValue(a[stat], direction) - sortableValue(b[stat], direction)));
             cards.push({ label: 'Single Season', type: 'single-season', isTeamMode: isTeam, league, data: ssRows, qualLabel: '' });
         }
@@ -553,7 +566,7 @@ function wirePlayerLinks(container) {
             const id = parseInt(el.dataset.playerId);
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });
