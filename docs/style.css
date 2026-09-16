@@ -1485,6 +1485,33 @@ input:checked + .slider:before {
     }
 }
 
+/* MiLR All-Star grid — flat list, up to 4 columns, filled top-to-bottom then
+   left-to-right (pre-split in JS, same approach as .as-reserves-list/-col). */
+.milr-as-grid {
+    display: block;
+}
+@media (min-width: 768px) {
+    .milr-as-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+.milr-as-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.milr-as-col + .milr-as-col {
+    margin-top: 8px;
+}
+@media (min-width: 768px) {
+    .milr-as-col + .milr-as-col {
+        margin-top: 0;
+    }
+}
+
 .awards-sub-section {
     background-color: var(--primary-color);
     padding: 15px;

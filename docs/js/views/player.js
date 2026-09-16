@@ -217,7 +217,10 @@ function buildHeader(player, playerId, mlrH, mlrP, fcbH, nprH, wbcH, milrH) {
                 html += `<a href="#/hof"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else if (award.seasons?.length) {
                 const last = award.seasons[award.seasons.length - 1];
-                const lgParam = award.league ? `&league=${award.league}` : '';
+                const params = [];
+                if (award.siteLeague && award.siteLeague !== 'mlr') params.push(`league=${award.siteLeague}`);
+                if (award.conf) params.push(`conf=${award.conf}`);
+                const lgParam = params.length ? '&' + params.join('&') : '';
                 html += `<a href="#/awards?season=${last}${lgParam}"><div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div></a>`;
             } else {
                 html += `<div class="award-box ${award.cls}"${seasonTitle}>${award.text}</div>`;

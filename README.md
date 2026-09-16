@@ -81,7 +81,8 @@ In the repository's settings, under the "Pages" section, the source must be set 
 The site requires maintenance, mostly at the beginning of seasons.
 
 - **`data/gamelog_links.csv`** needs to be updated for the new seaons. Make sure to updated the 'Active' column for newly inactive seasons. It's not required, but it is good practice to move the source of gamelogs and player types for completed seasons to an archive.
-- **`docs/data/awards.json`** needs to be updated to include the previous season's awards, all-stars, and Hall of Famers.
+- **`docs/data/mlr_awards.json`** needs to be updated to include the previous season's MLR awards, all-stars, and Hall of Famers.
+- **`docs/data/milr_awards.json`** needs to be updated with the season's MiLR All-Star/GM picks.
 - **`docs/data/draft_history.json`** needs to be updated with the season's draft picks by running `scripts/generate_draft_history.py`.
 - **`docs/data/*_divisions`** needs to be updated with season division structure
 - **`docs/data/*_team_history`** needs to be updated with the season's teams, abbreviation, and logo
