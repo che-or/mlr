@@ -594,7 +594,7 @@ function wirePlayerLinks(container, league) {
             const id = parseInt(el.dataset.playerId);
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });

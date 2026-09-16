@@ -59,6 +59,11 @@ export function initPlayerSearch() {
         suggestions.style.display = 'none';
         state.currentPlayerId = parseInt(item.dataset.id);
         displayPlayerPage(state.currentPlayerId);
+        // Already on #/stats (the search box only lives on this view), so just sync the
+        // permalink in place rather than assigning location.hash - that would push a new
+        // history entry and (if it happened to be a no-op, e.g. re-selecting the same
+        // player) could fail to re-render.
+        history.replaceState(null, '', `#/stats?id=${state.currentPlayerId}`);
     });
 
     document.addEventListener('click', e => {

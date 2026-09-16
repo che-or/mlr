@@ -1506,8 +1506,8 @@ def _pitcher_game_streak(pitcher_app_df, condition_fn, active_ids=None, cur_seas
 # Public API
 # ---------------------------------------------------------------------------
 
-def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=None, cache_path=None,
-                        season_active=True):
+def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=None,
+                        pitching_game_stats=None, cache_path=None, season_active=True):
     """
     Compute all streak records, optionally using/updating a JSON cache.
 
@@ -1524,8 +1524,17 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
       team_win_streak, team_loss_streak  (only when hitting_team_game_stats is provided)
 
     Each value: {'all_time': {entries, tie_at_boundary}, 'active': {entries, tie_at_boundary}}.
-    Active entries are limited to players/teams who appeared in the most recent season.
-    The current in-progress session is included only if the streak was already extended there.
+    Active entries are limited to players/teams who appeared in the most recent completed
+    session (falling back to last season's roster while the current season hasn't completed
+    a session yet). The current in-progress session is included only if the streak was
+    already extended there.
+
+    hitting_game_stats and hitting_team_game_stats must always carry full history (every
+    season, not just the current one) - the active-roster determination reads them
+    unrestricted regardless of the cache fast path below. pitching_game_stats should too,
+    for the same reason on the pitching side; if omitted, active pitcher IDs fall back to
+    deriving them from gamelog_df, which is only correct when gamelog_df itself has full
+    history (i.e. outside the fast path).
 
     season_active - whether the most recent season still has games left to be logged
     (i.e. its "Active" flag in gamelog_links.csv). When False, the most recent session
@@ -1559,13 +1568,26 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
         hgs_use = hitting_game_stats
         gl_use  = gamelog_df
 
-    # Active player/team ID computation
-    hgs_excl = hgs_use[~((hgs_use['Season'] == cur_season) & (hgs_use['Session'] == cur_session))]
+    # Active player/team ID computation. Deliberately reads hitting_game_stats (and
+    # pitching_game_stats, when given) unrestricted rather than hgs_use/gl_use: those are
+    # narrowed to cur_season alone under the cache fast path above, so a brand-new season
+    # that hasn't completed a session yet would otherwise have no prior season to fall
+    # back to and would wrongly resolve to an empty active roster.
     gl_excl  = gl_use[~((gl_use['Season'] == cur_season) & (gl_use['Session'] == cur_session))]
-    max_season_active = hgs_excl['Season'].max() if not hgs_excl.empty else cur_season
-    active_batter_ids = set(hgs_excl[hgs_excl['Season'] == max_season_active]['ID'].unique())
-    pa_recent = gl_excl[(gl_excl['Season'] == max_season_active) & (~gl_excl['PA Type'].isin(_NON_PA_TYPES))]
-    active_pitcher_ids = set(int(p) for p in pa_recent['Pitcher ID'].dropna().unique())
+    hgs_full_excl = hitting_game_stats[
+        ~((hitting_game_stats['Season'] == cur_season) & (hitting_game_stats['Session'] == cur_session))
+    ]
+    max_season_active = hgs_full_excl['Season'].max() if not hgs_full_excl.empty else cur_season
+    active_batter_ids = set(hgs_full_excl[hgs_full_excl['Season'] == max_season_active]['ID'].unique())
+    if pitching_game_stats is not None:
+        pgs_full_excl = pitching_game_stats[
+            ~((pitching_game_stats['Season'] == cur_season) & (pitching_game_stats['Session'] == cur_session))
+        ]
+        active_pitcher_ids = set(int(p) for p in
+            pgs_full_excl[pgs_full_excl['Season'] == max_season_active]['ID'].dropna().unique())
+    else:
+        pa_recent = gl_excl[(gl_excl['Season'] == max_season_active) & (~gl_excl['PA Type'].isin(_NON_PA_TYPES))]
+        active_pitcher_ids = set(int(p) for p in pa_recent['Pitcher ID'].dropna().unique())
 
     pa_df    = _prep_pa_df(gl_use)
     steal_df = _prep_steal_df(gl_use)
@@ -1711,8 +1733,14 @@ def get_streak_records(gamelog_df, hitting_game_stats, hitting_team_game_stats=N
         else:
             htgs_use = hitting_team_game_stats
         htgs_excl = htgs_use[~((htgs_use['Season'] == cur_season) & (htgs_use['Session'] == cur_session))]
-        max_team_season = htgs_excl['Season'].max() if not htgs_excl.empty else None
-        active_teams = (set(htgs_excl[htgs_excl['Season'] == max_team_season]['Team'].unique())
+        # Active-team roster, like active_batter_ids above, is derived from the full
+        # (unrestricted) hitting_team_game_stats so a brand-new season with no completed
+        # session yet falls back to last season's teams instead of an empty set.
+        htgs_full_excl = hitting_team_game_stats[
+            ~((hitting_team_game_stats['Season'] == cur_season) & (hitting_team_game_stats['Session'] == cur_session))
+        ]
+        max_team_season = htgs_full_excl['Season'].max() if not htgs_full_excl.empty else None
+        active_teams = (set(htgs_full_excl[htgs_full_excl['Season'] == max_team_season]['Team'].unique())
                         if max_team_season is not None else set())
         team_wl_df = _build_team_wl_df(htgs_excl)
         result['team_win_streak'] = _team_game_streak(

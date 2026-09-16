@@ -369,7 +369,7 @@ function renderHofCard(id, hitting, pitching, isActive) {
 function playerLink(id) {
     const player = state.allPlayers.find(p => p.ID === id);
     const name = player ? player.Name : `#${id}`;
-    return `<a href="#/stats" class="player-link" data-player-id="${id}">${name}</a>`;
+    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${name}</a>`;
 }
 
 // Returns logo and team abbreviation for a player in a given season.
@@ -424,7 +424,7 @@ function wirePlayerLinks(container) {
             // Import lazily to avoid circular dep at module parse time
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });

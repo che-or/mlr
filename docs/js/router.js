@@ -70,9 +70,14 @@ export function updateView() {
         return;
     }
 
-    if (hash === '#/stats') {
+    if (hash.startsWith('#/stats')) {
         show('stats', 'stats');
-        if (state.currentPlayerId) {
+        const url = new URL('http://x/' + hash.slice(1));
+        const idParam = url.searchParams.get('id');
+        const requestedId = idParam !== null ? parseInt(idParam) : NaN;
+        if (!isNaN(requestedId)) {
+            displayPlayerPage(requestedId);
+        } else if (state.currentPlayerId) {
             displayPlayerPage(state.currentPlayerId);
         } else {
             el('stats-content-display').innerHTML = '<p>Search for a player to see their stats.</p>';

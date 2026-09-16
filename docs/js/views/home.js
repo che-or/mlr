@@ -129,7 +129,7 @@ function renderFeatured() {
             const id = parseInt(el.dataset.playerId);
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });
@@ -140,7 +140,7 @@ function renderFeatured() {
         const id = allIds[Math.floor(Math.random() * allIds.length)];
         import('./player.js').then(m => {
             m.displayPlayerPage(id);
-            window.location.hash = '#/stats';
+            window.location.hash = `#/stats?id=${id}`;
         });
     });
 }
@@ -215,7 +215,7 @@ function renderPlayerCard(p) {
     return `
         <div class="featured-item">
             <h4>Featured Player</h4>
-            <a href="#/stats" class="player-link" data-player-id="${p.id}">
+            <a href="#/stats?id=${p.id}" class="player-link" data-player-id="${p.id}">
                 ${p.logo ? makeLogoImg(p.logo.dark, p.logo.light, 'team-list-logo', `${p.name} team logo`) : ''}
                 <p>${p.name}</p>
                 <p class="featured-player-season-range">${p.range}</p>

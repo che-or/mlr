@@ -44,7 +44,7 @@ function logoHtml(franchise, season) {
 function playerLink(id) {
     const player = state.allPlayers.find(p => p.ID === id);
     const name = player ? player.Name : `#${id}`;
-    return `<a href="#/stats" class="player-link" data-player-id="${id}">${name}</a>`;
+    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${name}</a>`;
 }
 
 function periodStr(e) {
@@ -172,7 +172,7 @@ function wirePlayerLinks(container) {
             const id = parseInt(el.dataset.playerId);
             import('./player.js').then(m => {
                 m.displayPlayerPage(id);
-                window.location.hash = '#/stats';
+                window.location.hash = `#/stats?id=${id}`;
             });
         });
     });
