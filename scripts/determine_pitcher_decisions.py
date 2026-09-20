@@ -9,21 +9,24 @@ def _get_pitcher_df(game_df):
         game_df - dataframe of a gamelog of an individual game
 
     Output:
-        df - dataframe containing pitcher information. Columns are player ID, the number of outs the player recorded, and whether the player is elgible for the win
+        df - dataframe containing pitcher information. Columns are player ID, the number of outs the player recorded, the number of earned runs the player allowed, and whether the player is elgible for the win
     '''
     
     pitchers = game_df['Pitcher ID'].unique() # get all pitchers for the game
 
-    df = pd.DataFrame(columns = ['ID', 'Outs', 'WinElg'])
+    df = pd.DataFrame(columns = ['ID', 'Outs', 'ER', 'WinElg'])
 
     for pitcher in pitchers: # loop through each pitcher
         pitcher_df = game_df[game_df['Pitcher ID'] == pitcher] # get only the plays for the current pitcher
 
         # determine how many outs the pitcher got
-        outs = (len(pitcher_df[pitcher_df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])]) 
-                + 2 * len(pitcher_df[pitcher_df['Exact Result'].str.upper() == 'BUNT DP']) 
-                + len(pitcher_df[pitcher_df['Old Result'].str.upper().isin(['DP', 'LO'])]) 
+        outs = (len(pitcher_df[pitcher_df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])])
+                + 2 * len(pitcher_df[pitcher_df['Exact Result'].str.upper() == 'BUNT DP'])
+                + len(pitcher_df[pitcher_df['Old Result'].str.upper().isin(['DP', 'LO'])])
                 + 2 * len(pitcher_df[pitcher_df['Old Result'].str.upper() == 'TP']))
+
+        # determine how many earned runs the pitcher allowed
+        er = pitcher_df['Run'].sum()
 
         if pitcher == pitchers[0]:
             if outs < 10 and len(pitchers) > 1: # starter is only elgible for the win if they pitch 3.1+ innings
@@ -35,7 +38,7 @@ def _get_pitcher_df(game_df):
         else:
             win_elgibility = True
 
-        pitcher_row = pd.DataFrame([{'ID': pitcher, 'Outs': outs, 'WinElg': win_elgibility}])
+        pitcher_row = pd.DataFrame([{'ID': pitcher, 'Outs': outs, 'ER': er, 'WinElg': win_elgibility}])
         df = pd.concat([df, pitcher_row], ignore_index = True)
 
     return df
@@ -341,7 +344,7 @@ def _wls(df, active_season, active_session):
         wls - dataframe of pitcher decisions
     '''
     
-    wls = pd.DataFrame(columns = ['Season', 'Game ID', 'W', 'L', 'SV', 'HLDH', 'HLDA', 'BSH', 'BSA', 'GSH', 'GSA', 'GFH', 'GFA', 'CGH', 'CGA', 'SHOH', 'SHOA', 'WinTeam', 'LossTeam', 'HomeTeam', 'AwayTeam'])
+    wls = pd.DataFrame(columns = ['Season', 'Game ID', 'W', 'L', 'SV', 'HLDH', 'HLDA', 'BSH', 'BSA', 'GSH', 'GSA', 'GFH', 'GFA', 'CGH', 'CGA', 'SHOH', 'SHOA', 'QSH', 'QSA', 'WinTeam', 'LossTeam', 'HomeTeam', 'AwayTeam'])
 
     for game in df['Game ID'].unique(): # iterate through each game
         game_df = df[df['Game ID'] == game]
@@ -354,6 +357,15 @@ def _wls(df, active_season, active_session):
         # determine starting pitchers
         gs_home = home_pitcher_df['ID'].iloc[0]
         gs_away = away_pitcher_df['ID'].iloc[0]
+
+        # determine quality starts. A quality start is awarded to a starting pitcher whose
+        # final line shows 4+ innings pitched (12+ outs) and 2 or fewer earned runs allowed,
+        # regardless of the path they took to get there.
+        starter_home = home_pitcher_df.iloc[0]
+        qs_home = starter_home['ID'] if starter_home['Outs'] >= 12 and starter_home['ER'] <= 2 else None
+
+        starter_away = away_pitcher_df.iloc[0]
+        qs_away = starter_away['ID'] if starter_away['Outs'] >= 12 and starter_away['ER'] <= 2 else None
 
         # determine finishing pitchers
         gf_home = home_pitcher_df[home_pitcher_df['ID'].notna()]['ID'].iloc[-1]
@@ -413,7 +425,7 @@ def _wls(df, active_season, active_session):
             win_team = None
             loss_team = None
 
-        wls_row = pd.DataFrame([{'Season': game_df['Season'].iloc[0], 'Game ID': game, 'W': win, 'L': loss, 'SV': save, 'HLDH': holds_home, 'HLDA': holds_away, 'BSH': blown_saves_home, 'BSA': blown_saves_away, 'GSH': gs_home, 'GSA': gs_away, 'GFH': gf_home, 'GFA': gf_away, 'CGH': cg_home, 'CGA': cg_away, 'SHOH': sho_home, 'SHOA': sho_away, 'WinTeam': win_team, 'LossTeam': loss_team, 'HomeTeam': game_df['Pitcher Team'].iloc[0], 'AwayTeam': game_df['Batter Team'].iloc[0]}])
+        wls_row = pd.DataFrame([{'Season': game_df['Season'].iloc[0], 'Game ID': game, 'W': win, 'L': loss, 'SV': save, 'HLDH': holds_home, 'HLDA': holds_away, 'BSH': blown_saves_home, 'BSA': blown_saves_away, 'GSH': gs_home, 'GSA': gs_away, 'GFH': gf_home, 'GFA': gf_away, 'CGH': cg_home, 'CGA': cg_away, 'SHOH': sho_home, 'SHOA': sho_away, 'QSH': qs_home, 'QSA': qs_away, 'WinTeam': win_team, 'LossTeam': loss_team, 'HomeTeam': game_df['Pitcher Team'].iloc[0], 'AwayTeam': game_df['Batter Team'].iloc[0]}])
         wls = pd.concat([wls, wls_row], ignore_index = True)
 
     return wls
@@ -509,8 +521,14 @@ def get_pitcher_decisions(df, league, against = False):
     sho_away = pd.pivot_table(decisions, index = ['SHOA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
     sho_away = sho_away.rename(columns = {'SHOA': 'ID', away_team_col: 'Team', 0: 'SHO_Away'})
 
+    qs_home = pd.pivot_table(decisions, index = ['QSH', 'Season', home_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    qs_home = qs_home.rename(columns = {'QSH': 'ID', home_team_col: 'Team', 0: 'QS_Home'})
+
+    qs_away = pd.pivot_table(decisions, index = ['QSA', 'Season', away_team_col], aggfunc = 'size', fill_value = 0).reset_index()
+    qs_away = qs_away.rename(columns = {'QSA': 'ID', away_team_col: 'Team', 0: 'QS_Away'})
+
     # merge dataframes
-    dfs = [wins, losses, saves, holds_home, holds_away, bs_home, bs_away, gs_home, gs_away, gf_home, gf_away, cg_home, cg_away, sho_home, sho_away]
+    dfs = [wins, losses, saves, holds_home, holds_away, bs_home, bs_away, gs_home, gs_away, gf_home, gf_away, cg_home, cg_away, sho_home, sho_away, qs_home, qs_away]
     player_decisions = reduce(lambda l, r: pd.merge(l, r, on = ['ID', 'Season', 'Team'], how = 'outer'), dfs).fillna(0)
     
     player_decisions['HLD'] = player_decisions['Holds_Home'] + player_decisions['Holds_Away']
@@ -519,8 +537,9 @@ def get_pitcher_decisions(df, league, against = False):
     player_decisions['GF'] = player_decisions['GF_Home'] + player_decisions['GF_Away']
     player_decisions['CG'] = player_decisions['CG_Home'] + player_decisions['CG_Away']
     player_decisions['SHO'] = player_decisions['SHO_Home'] + player_decisions['SHO_Away']
-    
-    player_decisions = player_decisions.drop(columns = ['Holds_Home', 'Holds_Away', 'BS_Home', 'BS_Away', 'GS_Home', 'GS_Away', 'GF_Home', 'GF_Away', 'CG_Home', 'CG_Away', 'SHO_Home', 'SHO_Away'])
+    player_decisions['QS'] = player_decisions['QS_Home'] + player_decisions['QS_Away']
+
+    player_decisions = player_decisions.drop(columns = ['Holds_Home', 'Holds_Away', 'BS_Home', 'BS_Away', 'GS_Home', 'GS_Away', 'GF_Home', 'GF_Away', 'CG_Home', 'CG_Away', 'SHO_Home', 'SHO_Away', 'QS_Home', 'QS_Away'])
     player_decisions = player_decisions.rename(columns = {'Wins': 'W', 'Losses': 'L', 'Saves': 'SV'})
     
     player_decisions['OPP'] = player_decisions['SV'] + player_decisions['BS']

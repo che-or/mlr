@@ -47,6 +47,7 @@
     "GF":7.0,
     "CG":4.0,
     "SHO":2.0,
+    "QS":3.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -75,7 +76,7 @@
     "W-L%":0.7142857143,
     "SV%":null,
     "Avg Diff":253.3384615385,
-    "ERA-":59.163990245
+    "ERA-":59.1249633018
   },
   {
     "Season":1,
@@ -123,8 +124,9 @@
     "BS":1.0,
     "GS":6.0,
     "GF":6.0,
-    "CG":1.0,
+    "CG":0.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -153,7 +155,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":255.3461538462,
-    "ERA-":85.9532162518
+    "ERA-":86.2970821482
   },
   {
     "Season":1,
@@ -203,6 +205,7 @@
     "GF":5.0,
     "CG":2.0,
     "SHO":1.0,
+    "QS":2.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -231,7 +234,7 @@
     "W-L%":0.2,
     "SV%":null,
     "Avg Diff":236.8791208791,
-    "ERA-":69.786327937
+    "ERA-":69.7402940734
   },
   {
     "Season":1,
@@ -281,6 +284,7 @@
     "GF":5.0,
     "CG":1.0,
     "SHO":1.0,
+    "QS":1.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -309,7 +313,7 @@
     "W-L%":0.2,
     "SV%":null,
     "Avg Diff":230.1182795699,
-    "ERA-":186.0689840673
+    "ERA-":185.9462454955
   },
   {
     "Season":1,
@@ -359,6 +363,7 @@
     "GF":7.0,
     "CG":2.0,
     "SHO":0.0,
+    "QS":2.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -387,7 +392,7 @@
     "W-L%":0.7142857143,
     "SV%":1.0,
     "Avg Diff":245.0,
-    "ERA-":127.8347664735
+    "ERA-":127.7504415295
   },
   {
     "Season":1,
@@ -437,6 +442,7 @@
     "GF":6.0,
     "CG":0.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -465,7 +471,7 @@
     "W-L%":0.5,
     "SV%":0.0,
     "Avg Diff":257.8155339806,
-    "ERA-":92.4911743055
+    "ERA-":92.4301634138
   },
   {
     "Season":2,
@@ -515,6 +521,7 @@
     "GF":8.0,
     "CG":2.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -593,6 +600,7 @@
     "GF":10.0,
     "CG":1.0,
     "SHO":1.0,
+    "QS":1.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -671,6 +679,7 @@
     "GF":8.0,
     "CG":1.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":2.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -749,6 +758,7 @@
     "GF":8.0,
     "CG":2.0,
     "SHO":0.0,
+    "QS":1.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -827,6 +837,7 @@
     "GF":10.0,
     "CG":3.0,
     "SHO":1.0,
+    "QS":4.0,
     "OPP":2.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -905,6 +916,7 @@
     "GF":9.0,
     "CG":4.0,
     "SHO":1.0,
+    "QS":3.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -983,6 +995,7 @@
     "GF":8.0,
     "CG":0.0,
     "SHO":0.0,
+    "QS":1.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1061,6 +1074,7 @@
     "GF":9.0,
     "CG":2.0,
     "SHO":1.0,
+    "QS":2.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1139,6 +1153,7 @@
     "GF":8.0,
     "CG":2.0,
     "SHO":1.0,
+    "QS":2.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1217,6 +1232,7 @@
     "GF":10.0,
     "CG":4.0,
     "SHO":3.0,
+    "QS":4.0,
     "OPP":2.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1295,6 +1311,7 @@
     "GF":8.0,
     "CG":0.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1373,6 +1390,7 @@
     "GF":10.0,
     "CG":6.0,
     "SHO":1.0,
+    "QS":4.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1451,6 +1469,7 @@
     "GF":11.0,
     "CG":2.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":1.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1529,6 +1548,7 @@
     "GF":9.0,
     "CG":4.0,
     "SHO":1.0,
+    "QS":2.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1607,6 +1627,7 @@
     "GF":9.0,
     "CG":3.0,
     "SHO":0.0,
+    "QS":1.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,
@@ -1685,6 +1706,7 @@
     "GF":9.0,
     "CG":2.0,
     "SHO":0.0,
+    "QS":0.0,
     "OPP":0.0,
     "Batting Type":null,
     "Pitching Type":null,

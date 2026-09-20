@@ -44,7 +44,7 @@ def get_aggregated_pitching_stats(pitching_stats, aggregation_level):
     cols = ['HR', '3B', '2B', '1B', 'BB', 'IBB', 'Auto BB', 'FO', 'SO', 'PO', 'RGO', 'LGO', 'LO',
             'SF', 'SH', 'GO', 'DP', 'TP', 'SB', 'CS', 'H', 'IP', 'BF', 'AB', 'TB', 'G', 'ER', 
             'Total Diff', 'Total Plays', 'RE24', 'WAR', 'WPA', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches', 
-            'W', 'L', 'SV', 'HLD', 'BS', 'GS', 'GF', 'CG', 'SHO', 'OPP', 'nER', 'nIP']
+            'W', 'L', 'SV', 'HLD', 'BS', 'GS', 'GF', 'CG', 'SHO', 'QS', 'OPP', 'nER', 'nIP']
     sets = ['G_list'] # set columns
 
     if aggregation_level == 'team': # aggregate by player and team
@@ -164,7 +164,7 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants, against = False):
     pitching_stats['lgnIP'] = pitching_stats.groupby('Season')['nIP'].transform('sum')
     pitching_stats['lgnERA'] = pitching_stats['lgnER'] / pitching_stats['lgnIP'] * 6
 
-    cols_to_fill = ['W', 'L', 'SV', 'HLD', 'BS', 'OPP', 'GS', 'GF', 'CG', 'SHO']
+    cols_to_fill = ['W', 'L', 'SV', 'HLD', 'BS', 'OPP', 'GS', 'GF', 'CG', 'SHO', 'QS']
     pitching_stats[cols_to_fill] = pitching_stats[cols_to_fill].fillna(0)
 
     pitching_stats = _calculate_pitching_rate_stats(pitching_stats)
