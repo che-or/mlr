@@ -12,7 +12,7 @@ export const COUNTING_STATS = [
     'PA', 'R', 'RBI', 'Auto K', 'GIDP', 'GITP', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+',
     // Pitching-only
     'IP', 'ER', 'BF', 'Auto BB', 'W', 'L', 'SV', 'HLD', 'BS',
-    'GS', 'GF', 'CG', 'SHO', 'OPP', 'DP', 'TP',
+    'GS', 'GF', 'CG', 'SHO', 'QS', 'OPP', 'DP', 'TP',
     '300+ Pitches', '400+ Pitches',
 ];
 
@@ -111,6 +111,7 @@ export const STAT_DESCRIPTIONS = {
     'GF': 'Games Finished',
     'CG': 'Complete Games',
     'SHO': 'Shutouts',
+    'QS': 'Quality Starts',
     'SV': 'Saves',
     'HLD': 'Holds',
     'BS': 'Blown Saves',
@@ -149,7 +150,7 @@ export const STAT_DESCRIPTIONS = {
 // Stats that appear in leaderboards but not in the player stats tables
 export const LEADERBOARD_ONLY_STATS = {
     hitting: ['1B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'GITP', '0 Diffs', '500 Diffs', '1RHR', '2RHR', '3RHR', '4RHR', 'TB+', 'BARISP', 'SB 2B', 'SB 3B', 'SB Home', 'CS 2B', 'CS 3B', 'CS Home'],
-    pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'DP', 'TP', 'SV%', 'BS', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches'],
+    pitching: ['1B', '2B', '3B', 'RGO', 'LGO', 'GO', 'FO', 'PO', 'LO', 'DP', 'TP', 'SV%', 'BS', 'QS', '0 Diffs', '500 Diffs', '300+ Pitches', '400+ Pitches'],
 };
 
 
