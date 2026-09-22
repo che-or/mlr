@@ -74,19 +74,31 @@ def _hitting_stats_table(df, against = False):
     franchise_col = 'Pitcher Franchise' if against else 'Batter Franchise'
     cols = ['Hitter ID', 'Season', 'Display Season', team_col, franchise_col]
 
-    hitting_stats_exact = pd.pivot_table(df, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
-    hitting_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
-    hitting_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
-    hitting_stats_obc = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'OBC'], aggfunc = 'size', fill_value = 0)
-    hitting_stats_patype = pd.pivot_table(df, index = cols, columns = 'PA Type', aggfunc = 'size', fill_value = 0)
+    # PA Type 31 (LLR only - batter reached on an error that should have been an out) must not be
+    # credited with the specific out type it would have been, so it's excluded from the exact-result
+    # pivots that feed FO/PO/RGO/LGO/GO/GIDP/GITP. It's added back into PA/AB explicitly below.
+    df_real_outs = df[df['PA Type'] != 31]
+    full_index = df.groupby(cols).size().index
+
+    hitting_stats_exact = pd.pivot_table(df_real_outs, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    hitting_stats_old = pd.pivot_table(df_real_outs, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    hitting_stats_neutral = pd.pivot_table(df_real_outs, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    hitting_stats_obc = pd.pivot_table(df_real_outs, index = cols, columns = ['Exact Result', 'OBC'], aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    hitting_stats_patype = pd.pivot_table(df, index = cols, columns = 'PA Type', aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
 
     # Plays with a runner in scoring position (runner on 2nd and/or 3rd), used for H_RISP/AB_RISP
     risp_obc = [2, 3, 4, 5, 6, 7]
-    df_risp = df[df['OBC'].isin(risp_obc)]
-    hitting_stats_exact_risp = pd.pivot_table(df_risp, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
-    hitting_stats_old_risp = pd.pivot_table(df_risp, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
+    risp_index = df[df['OBC'].isin(risp_obc)].groupby(cols).size().index # includes PA 31 rows, unlike df_real_outs
+    df_risp = df_real_outs[df_real_outs['OBC'].isin(risp_obc)]
+    hitting_stats_exact_risp = pd.pivot_table(df_risp, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0).reindex(risp_index, fill_value = 0)
+    hitting_stats_old_risp = pd.pivot_table(df_risp, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0).reindex(risp_index, fill_value = 0)
 
-    hitting_stats = pd.DataFrame(index = hitting_stats_exact.index)
+    # PA Type 31 rows excluded above still need to be added back into PA/AB (batter is charged an AB,
+    # just not a hit or the specific out type) - LLR only, no effect on any other league.
+    pa31_pa = df[df['PA Type'] == 31].groupby(cols).size().reindex(full_index, fill_value = 0)
+    pa31_pa_risp = df[(df['PA Type'] == 31) & (df['OBC'].isin(risp_obc))].groupby(cols).size().reindex(risp_index, fill_value = 0)
+
+    hitting_stats = pd.DataFrame(index = full_index)
 
     # Hitting stats that can be directly counted from exact result and/or old result
     hitting_stats['HR'] = hitting_stats_exact.get('HR', 0)
@@ -141,7 +153,8 @@ def _hitting_stats_table(df, against = False):
 
     pa_risp = (h_risp + bb_risp + hitting_stats_exact_risp.get('FO', 0) + so_risp + hitting_stats_exact_risp.get('PO', 0)
                + hitting_stats_exact_risp.get('RGO', 0) + hitting_stats_exact_risp.get('LGO', 0) + sh_risp
-               + hitting_stats_exact_risp.get('BUNT GO', 0) + hitting_stats_exact_risp.get('BUNT DP', 0))
+               + hitting_stats_exact_risp.get('BUNT GO', 0) + hitting_stats_exact_risp.get('BUNT DP', 0)
+               + pa31_pa_risp)
 
     hitting_stats['H_RISP'] = h_risp
     hitting_stats['AB_RISP'] = pa_risp - (bb_risp + sf_risp + sh_risp)
@@ -150,7 +163,7 @@ def _hitting_stats_table(df, against = False):
 
     # Hitting stats calculated from raw counts
     hitting_stats['H'] = hitting_stats['1B'] + hitting_stats['2B'] + hitting_stats['3B'] + hitting_stats['HR']
-    hitting_stats['PA'] = hitting_stats['H'] + hitting_stats['BB'] + hitting_stats['FO'] + hitting_stats['SO'] + hitting_stats['PO'] + hitting_stats['RGO'] + hitting_stats['LGO'] + hitting_stats['LO'] + hitting_stats['SH'] + hitting_stats_exact.get('BUNT GO', 0) + hitting_stats_exact.get('BUNT DP', 0)
+    hitting_stats['PA'] = hitting_stats['H'] + hitting_stats['BB'] + hitting_stats['FO'] + hitting_stats['SO'] + hitting_stats['PO'] + hitting_stats['RGO'] + hitting_stats['LGO'] + hitting_stats['LO'] + hitting_stats['SH'] + hitting_stats_exact.get('BUNT GO', 0) + hitting_stats_exact.get('BUNT DP', 0) + pa31_pa
     hitting_stats['AB'] = hitting_stats['PA'] - (hitting_stats['BB'] + hitting_stats['SF'] + hitting_stats['SH'])
     hitting_stats['TB'] = hitting_stats['1B'] + 2 * hitting_stats['2B'] + 3 * hitting_stats['3B'] + 4 * hitting_stats['HR']
     hitting_stats['TB+'] = hitting_stats['TB'] + hitting_stats_exact.get('BB', 0) + hitting_stats['SB'] - hitting_stats_patype.get(15, 0)

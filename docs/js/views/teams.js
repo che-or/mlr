@@ -16,6 +16,7 @@ const TEAM_LEAGUES = [
     { key: 'eco',   label: 'ECO'   },
     { key: 'npr',   label: 'NPR'   },
     { key: 'wbc',   label: 'WBC'   },
+    { key: 'llr',   label: 'LLR'   },
 ];
 
 export async function displayTeamList(season, league = 'mlr') {

@@ -177,4 +177,5 @@ export const LEAGUE_LABELS = {
     eco: 'ECO',
     npr: 'NPR',
     wbc: 'WBC',
+    llr: 'LLR',
 };

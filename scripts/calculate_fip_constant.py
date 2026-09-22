@@ -15,13 +15,19 @@ def _calculate_fip_constant(gamelog_df):
     league_bb = len(df[df['Exact Result'].str.upper().isin(['BB', 'IBB', 'AUTO BB'])]) # total season walks
     league_so = len(df[df['Exact Result'].str.upper().isin(['K', 'BUNT K', 'AUTO K'])]) # total season strikeouts
 
+    # PA Type 31 (LLR only - batter reached on an error that should have been an out) and PA Type 33
+    # (caught stealing via error) never record a real out despite the Exact Result string matching
+    # an out type below - exclude them from the league IP total. No effect on any other league.
+    real_out_df = df[~df['PA Type'].isin([31, 33])]
+
     # total season innings pitched
-    league_ip = (len(df[df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])]) 
-                 + 2 * len(df[df['Exact Result'].str.upper() == 'BUNT DP']) 
-                 + len(df[df['Old Result'].str.upper().isin(['DP', 'LO'])]) 
-                 + 2 * len(df[df['Old Result'].str.upper() == 'TP'])) / 3
-                 
-    league_er = sum(df['Run']) # total season earned runs
+    league_ip = (len(real_out_df[real_out_df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])])
+                 + 2 * len(real_out_df[real_out_df['Exact Result'].str.upper() == 'BUNT DP'])
+                 + len(real_out_df[real_out_df['Old Result'].str.upper().isin(['DP', 'LO'])])
+                 + 2 * len(real_out_df[real_out_df['Old Result'].str.upper() == 'TP'])) / 3
+
+    er_col = 'Earned Run' if 'Earned Run' in df.columns else 'Run' # LLR provides a real earned/unearned distinction; other leagues treat every run as earned
+    league_er = sum(df[er_col]) # total season earned runs
 
     league_era = league_er / league_ip * 6 # league ERA
 

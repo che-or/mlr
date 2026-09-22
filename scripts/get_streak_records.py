@@ -12,7 +12,7 @@ SB_RESULTS    = frozenset(['STEAL 2B', 'STEAL 3B', 'STEAL HOME', 'MSTEAL 3B', 'M
 CS_RESULTS    = frozenset(['CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME'])
 K_RESULTS     = frozenset(['K', 'AUTO K', 'BUNT K'])
 
-_STEAL_PA_TYPES = frozenset([4, 5, 6, 15])
+_STEAL_PA_TYPES = frozenset([4, 5, 6, 15, 33]) # 33 = caught stealing via error (LLR only), functionally the same class of event as 4/5/6
 
 
 def _inning_sort_key(inning_str):
@@ -221,7 +221,9 @@ def _serialize_frs(franchise_schedule):
 
 # PA types that are NOT real plate appearances (steals, Manfred runners, trailing multisteals).
 # Everything else (1=regular, 2=variant, 3=bunt, 8=IBB, 9=AUTO K, 10=AUTO BB) counts as a real PA.
-_NON_PA_TYPES = frozenset([0, 4, 5, 6, 15])
+# 32 (LLR only - standalone error event with no batter) and 33 (LLR only - caught stealing via
+# error, same class as the 4/5/6 steal-attempt types) are excluded for the same reasons.
+_NON_PA_TYPES = frozenset([0, 4, 5, 6, 15, 32, 33])
 
 
 def _prep_pa_df(gamelog_df):
@@ -671,7 +673,9 @@ def get_scoreless_innings_streak(gamelog_df, active_ids=None, cur_season=None, c
                 or bool((inning_df['Run'] > 0).any())
             )
             inning_outs = sum(
-                _pa_outs(_s(row['Exact Result']), _s(row['Old Result']))
+                # PA Type 31 (LLR only - batter reached on an error that should have been an out)
+                # never records a real out, even though its Exact Result string matches an out type.
+                (_pa_outs(_s(row['Exact Result']), _s(row['Old Result'])) if row['PA Type'] != 31 else 0)
                 for _, row in inning_df.iterrows()
             ) + cs_outs_map.get((pid, inning_id), 0)
 

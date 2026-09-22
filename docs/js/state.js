@@ -16,6 +16,7 @@ export const state = {
         npr: {},
         wbc: {},
         gib: {},
+        llr: {},
     },
     divisions: {
         mlr: {},           // { S1: { AL: { East: [...], ... }, NL: {...} } } or string ref to another season
@@ -25,6 +26,7 @@ export const state = {
         npr: {},
         wbc: {},
         gib: {},
+        llr: {},
     },
 
     // Lazy-loaded stats — populated on demand, keyed by "<league>_<type>"

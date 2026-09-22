@@ -19,14 +19,19 @@ def _get_pitcher_df(game_df):
     for pitcher in pitchers: # loop through each pitcher
         pitcher_df = game_df[game_df['Pitcher ID'] == pitcher] # get only the plays for the current pitcher
 
-        # determine how many outs the pitcher got
-        outs = (len(pitcher_df[pitcher_df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])])
-                + 2 * len(pitcher_df[pitcher_df['Exact Result'].str.upper() == 'BUNT DP'])
-                + len(pitcher_df[pitcher_df['Old Result'].str.upper().isin(['DP', 'LO'])])
-                + 2 * len(pitcher_df[pitcher_df['Old Result'].str.upper() == 'TP']))
+        # determine how many outs the pitcher got. PA Type 31 (batter reached on an error that should
+        # have been an out) and PA Type 33 (caught stealing via error) are LLR-only PA types where no
+        # real out was recorded despite the Exact Result string matching an out type below - exclude
+        # them from the out count. No effect on any other league, since neither PA type exists elsewhere.
+        real_out_df = pitcher_df[~pitcher_df['PA Type'].isin([31, 33])]
+        outs = (len(real_out_df[real_out_df['Exact Result'].str.upper().isin(['FO', 'K', 'PO', 'RGO', 'LGO', 'AUTO K', 'BUNT SAC', 'BUNT K', 'BUNT GO', 'CS 2B', 'CS 3B', 'CS HOME', 'CMS 3B', 'CMS HOME', 'BUNT GO'])])
+                + 2 * len(real_out_df[real_out_df['Exact Result'].str.upper() == 'BUNT DP'])
+                + len(real_out_df[real_out_df['Old Result'].str.upper().isin(['DP', 'LO'])])
+                + 2 * len(real_out_df[real_out_df['Old Result'].str.upper() == 'TP']))
 
         # determine how many earned runs the pitcher allowed
-        er = pitcher_df['Run'].sum()
+        er_col = 'Earned Run' if 'Earned Run' in pitcher_df.columns else 'Run' # LLR provides a real earned/unearned distinction; other leagues treat every run as earned
+        er = pitcher_df[er_col].sum()
 
         if pitcher == pitchers[0]:
             if outs < 10 and len(pitchers) > 1: # starter is only elgible for the win if they pitch 3.1+ innings

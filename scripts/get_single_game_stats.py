@@ -22,12 +22,18 @@ def _hitting_pivot_stats(df, cols):
     Returns a DataFrame indexed by cols with all BATTER_STATS columns
     plus the intermediate '1B' column.
     '''
-    by_exact = pd.pivot_table(df, index=cols, columns='Exact Result',
-                              aggfunc='size', fill_value=0)
-    by_old = pd.pivot_table(df, index=cols, columns=['Exact Result', 'Old Result'],
-                            aggfunc='size', fill_value=0)
+    # PA Type 31 (LLR only - batter reached on an error that should have been an out) must not be
+    # credited with the specific out type it would have been; excluded here and added back into PA
+    # explicitly below.
+    df_real_outs = df[df['PA Type'] != 31]
+    full_index = df.groupby(cols).size().index
 
-    s = pd.DataFrame(index=by_exact.index)
+    by_exact = pd.pivot_table(df_real_outs, index=cols, columns='Exact Result',
+                              aggfunc='size', fill_value=0).reindex(full_index, fill_value=0)
+    by_old = pd.pivot_table(df_real_outs, index=cols, columns=['Exact Result', 'Old Result'],
+                            aggfunc='size', fill_value=0).reindex(full_index, fill_value=0)
+
+    s = pd.DataFrame(index=full_index)
 
     s['HR'] = by_exact.get('HR', 0)
     s['3B'] = by_exact.get('3B', 0)
@@ -64,8 +70,12 @@ def _hitting_pivot_stats(df, cols):
     sh = by_exact.get('BUNT SAC', 0)
     bunt_go = by_exact.get('BUNT GO', 0)
     bunt_dp = by_exact.get('BUNT DP', 0)
+
+    # PA Type 31 rows excluded above still count as a plate appearance (batter charged an AB, just
+    # not a hit or the specific out type) - LLR only, no effect on any other league.
+    pa31_pa = df[df['PA Type'] == 31].groupby(cols).size().reindex(full_index, fill_value=0)
     s['PA'] = (s['H'] + s['BB'] + s['FO'] + s['SO'] + s['PO'] + s['RGO']
-               + s['LGO'] + lo + sh + bunt_go + bunt_dp)
+               + s['LGO'] + lo + sh + bunt_go + bunt_dp + pa31_pa)
 
     s['R'] = df.groupby(cols)['Run'].sum()
     s['RBI'] = df.groupby(cols)['RBI'].sum()
@@ -81,12 +91,19 @@ def _pitching_pivot_stats(df, cols):
     Core pitching stat computation given a groupby key (cols).
     Returns a DataFrame indexed by cols with all PITCHER_STATS columns.
     '''
-    by_exact = pd.pivot_table(df, index=cols, columns='Exact Result',
-                              aggfunc='size', fill_value=0)
-    by_old = pd.pivot_table(df, index=cols, columns=['Exact Result', 'Old Result'],
-                            aggfunc='size', fill_value=0)
+    # PA Type 31 (LLR only - batter reached on an error that should have been an out) must not be
+    # credited with the specific out type it would have been; excluded here and added back into BF
+    # explicitly below. PA Type 33 (caught stealing via error) is deliberately NOT excluded here -
+    # it should still be credited as a CS; only its contribution to IP is removed further down.
+    df_real_outs = df[df['PA Type'] != 31]
+    full_index = df.groupby(cols).size().index
 
-    s = pd.DataFrame(index=by_exact.index)
+    by_exact = pd.pivot_table(df_real_outs, index=cols, columns='Exact Result',
+                              aggfunc='size', fill_value=0).reindex(full_index, fill_value=0)
+    by_old = pd.pivot_table(df_real_outs, index=cols, columns=['Exact Result', 'Old Result'],
+                            aggfunc='size', fill_value=0).reindex(full_index, fill_value=0)
+
+    s = pd.DataFrame(index=full_index)
 
     s['HR'] = by_exact.get('HR', 0)
     s['3B'] = by_exact.get('3B', 0)
@@ -123,14 +140,22 @@ def _pitching_pivot_stats(df, cols):
                + by_exact.get('CMS HOME', 0))
 
     s['H'] = s['1B'] + s['2B'] + s['3B'] + s['HR']
+
+    # PA Type 31 rows excluded above still count as a batter faced. PA Type 33 (caught stealing via
+    # error) stays in s['CS'] above but must not count as 1/3 IP - LLR only, no effect elsewhere.
+    pa31_bf = df[df['PA Type'] == 31].groupby(cols).size().reindex(full_index, fill_value=0)
+    pa33_cs_outs = df[df['PA Type'] == 33].groupby(cols).size().reindex(full_index, fill_value=0)
+    cs_for_ip = s['CS'] - pa33_cs_outs
+
     s['BF'] = (s['H'] + s['BB'] + s['FO'] + s['SO'] + s['PO'] + s['RGO']
-               + s['LGO'] + lo + sh + bunt_go + bunt_dp)
+               + s['LGO'] + lo + sh + bunt_go + bunt_dp + pa31_bf)
 
     s['IP'] = (s['FO'] + s['SO'] + s['PO'] + s['RGO'] + s['LGO']
                + 2 * lo + s['DP'] + 2 * tp + sh
-               + bunt_go + 2 * bunt_dp + s['CS']) / 3
+               + bunt_go + 2 * bunt_dp + cs_for_ip) / 3
 
-    s['ER'] = df.groupby(cols)['Run'].sum()
+    er_col = 'Earned Run' if 'Earned Run' in df.columns else 'Run' # LLR provides a real earned/unearned distinction; other leagues treat every run as earned
+    s['ER'] = df.groupby(cols)[er_col].sum()
     s['RE24'] = df.groupby(cols)['RE24'].sum()
     s['WAR'] = df.groupby(cols)['Pitcher WAR'].sum()
     s['WPA'] = df.groupby(cols)['Pitcher WPA'].sum()

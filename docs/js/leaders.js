@@ -28,9 +28,9 @@ export function getAlltimeMin(key, league) {
 
 // Per-season qualifier defaults keyed by league (pre-fills the user-adjustable inputs on Leaderboards)
 export const SEASON_DEFAULTS = {
-    dec: { mlr: 3, milr: 3, fcb: 3, mlr_playoff: 2, milr_playoff: 2, gib: 3, eco: 2, npr: 3, wbc: 3 },
-    sv:  { mlr: 3, milr: 3, fcb: 1, mlr_playoff: 1, milr_playoff: 1, gib: 1, eco: 1, npr: 1, wbc: 2 },
-    att: { mlr: 5, milr: 5, fcb: 3, mlr_playoff: 3, milr_playoff: 3, gib: 3, eco: 1, npr: 1, wbc: 1 },
+    dec: { mlr: 3, milr: 3, fcb: 3, mlr_playoff: 2, milr_playoff: 2, gib: 3, eco: 2, npr: 3, wbc: 3, llr: 3 },
+    sv:  { mlr: 3, milr: 3, fcb: 1, mlr_playoff: 1, milr_playoff: 1, gib: 1, eco: 1, npr: 1, wbc: 2, llr: 1 },
+    att: { mlr: 5, milr: 5, fcb: 3, mlr_playoff: 3, milr_playoff: 3, gib: 3, eco: 1, npr: 1, wbc: 1, llr: 1 },
 };
 
 export function getSeasonMin(key, league) {

@@ -31,6 +31,7 @@ const SGR_LEAGUES = [
     { key: 'eco',  label: 'ECO'  },
     { key: 'npr',  label: 'NPR'  },
     { key: 'wbc',  label: 'WBC'  },
+    { key: 'llr',  label: 'LLR'  },
 ];
 
 function logoHtml(franchise, season) {

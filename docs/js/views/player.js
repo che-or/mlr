@@ -34,6 +34,7 @@ const TOGGLE_LEAGUES = [
     { key: 'eco',   label: 'ECO',  storageKey: 'ecoStatsVisible'  },
     { key: 'npr',   label: 'NPR',  storageKey: 'nprStatsVisible'  },
     { key: 'wbc',   label: 'WBC',  storageKey: 'wbcStatsVisible'  },
+    { key: 'llr',   label: 'LLR',  storageKey: 'llrStatsVisible'  },
 ];
 
 // ── Search ────────────────────────────────────────────────────────────────────
