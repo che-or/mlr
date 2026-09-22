@@ -33,8 +33,8 @@ const TOGGLE_LEAGUES = [
     { key: 'gib',   label: 'GIB',  storageKey: 'gibStatsVisible'  },
     { key: 'eco',   label: 'ECO',  storageKey: 'ecoStatsVisible'  },
     { key: 'npr',   label: 'NPR',  storageKey: 'nprStatsVisible'  },
-    { key: 'wbc',   label: 'WBC',  storageKey: 'wbcStatsVisible'  },
     { key: 'llr',   label: 'LLR',  storageKey: 'llrStatsVisible'  },
+    { key: 'wbc',   label: 'WBC',  storageKey: 'wbcStatsVisible'  },
 ];
 
 // ── Search ────────────────────────────────────────────────────────────────────

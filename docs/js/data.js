@@ -52,17 +52,17 @@ export async function loadCoreData() {
         fcbTeamHistory,
         ecoTeamHistory,
         nprTeamHistory,
+        llrTeamHistory,
         wbcTeamHistory,
         gibTeamHistory,
-        llrTeamHistory,
         mlrDivisions,
         milrDivisions,
         fcbDivisions,
         ecoDivisions,
         nprDivisions,
+        llrDivisions,
         wbcDivisions,
         gibDivisions,
-        llrDivisions,
     ] = await Promise.all([
         fetch(`${GENERATED}/all_players.json`).then(r => r.json()),
         fetch(`${ROOT}/glossary.json`).then(r => r.json()),
@@ -75,17 +75,17 @@ export async function loadCoreData() {
         fetch(`${DATA}/fcb_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/eco_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/npr_team_history.json`).then(r => r.json()),
+        fetch(`${DATA}/llr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/wbc_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/gib_team_history.json`).then(r => r.json()),
-        fetch(`${DATA}/llr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/mlr_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/milr_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/fcb_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/eco_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/npr_divisions.json`).then(r => r.json()),
+        fetch(`${DATA}/llr_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/wbc_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/gib_divisions.json`).then(r => r.json()),
-        fetch(`${DATA}/llr_divisions.json`).then(r => r.json()),
     ]);
 
     state.allPlayers = allPlayers;
@@ -99,17 +99,17 @@ export async function loadCoreData() {
     state.teamHistory.fcb = fcbTeamHistory;
     state.teamHistory.eco = ecoTeamHistory;
     state.teamHistory.npr = nprTeamHistory;
+    state.teamHistory.llr = llrTeamHistory;
     state.teamHistory.wbc = wbcTeamHistory;
     state.teamHistory.gib = gibTeamHistory;
-    state.teamHistory.llr = llrTeamHistory;
     state.divisions.mlr = mlrDivisions;
     state.divisions.milr = milrDivisions;
     state.divisions.fcb = fcbDivisions;
     state.divisions.eco = ecoDivisions;
     state.divisions.npr = nprDivisions;
+    state.divisions.llr = llrDivisions;
     state.divisions.wbc = wbcDivisions;
     state.divisions.gib = gibDivisions;
-    state.divisions.llr = llrDivisions;
 
     buildPlayerMap();
     buildSeasonsWithStats();

@@ -148,7 +148,7 @@ def main():
     
         # check for generated files for inactive leagues
         elif p_hs.exists() and p_ps.exists() and p_ths.exists() and p_tps.exists():
-            if league in ['eco', 'npr', 'wbc', 'llr']:
+            if league in ['eco', 'npr', 'llr', 'wbc']:
                 if p_sgr.exists() and p_ach.exists():
                     print('All files already generated.')
                     continue

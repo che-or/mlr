@@ -100,145 +100,149 @@ Missile 'Missy' Launcher,3317,810,Copernicus Hel,3016,893,1B,83,B5,0,0,1,2,0.061
 Chip Allen,3459,293,Copernicus Hel,3016,613,K,320,B5,0,1,1,2,-0.0657,0.0657,0,0,22,2,1,GGS,CYI,K,K,K,,,,,1
 Harto Thekhards,3415,57,Copernicus Hel,3016,902,BB,155,B5,1,1,1,2,0.0813,-0.0813,0,0,22,2,1,GGS,CYI,BB,BB,BB,,,,,1
 Rabs Roland,3444,316,Copernicus Hel,3016,799,DP,483,B5,1,4,1,2,-0.2307,0.2307,0,0,22,2,1,GGS,CYI,LGO,LGO,DP,,,,,1
-Jeff Newman,2931,913,Camden Yardsy,3227,115,FO,202,T1,0,0,0,0,-0.0251,0.0251,0,0,23,3,1,HCM,DUM,FO,FO,FO,,,,,1
-Chooch Suzuka,3435,900,Camden Yardsy,3227,116,FO,216,T1,1,0,0,0,-0.0218,0.0218,0,0,23,3,1,HCM,DUM,FO,FO,FO,,,,,1
-Willie Ruth,3464,428,Camden Yardsy,3227,275,FO,153,T1,2,0,0,0,-0.0176,0.0176,0,0,23,3,1,HCM,DUM,FO,FO,BB,,,,,1
-Archie 'Clumsy' Sybil,3093,725,Tleyber Alfredo Cruz Fernandez III,2942,901,BB,176,B1,0,0,0,0,0.0276,-0.0276,0,0,24,3,1,DUM,HCM,BB,BB,BB,,,,,1
-Curtis Dingleberry,3436,637,Tleyber Alfredo Cruz Fernandez III,2942,231,DP,406,B1,0,1,0,0,-0.0741,0.0741,0,0,24,3,1,DUM,HCM,RGO,RGO,DP,,,,,1
-Bubson Dugnutt,3097,567,Tleyber Alfredo Cruz Fernandez III,2942,120,LGO,447,B1,2,0,0,0,-0.0179,0.0179,0,0,24,3,1,DUM,HCM,LGO,LGO,RGO,,,,,1
-Marcelo Soares,3402,428,Camden Yardsy,3227,558,1B,130,T2,0,0,0,0,0.0309,-0.0309,0,0,25,3,1,HCM,DUM,1B,BB,1B,,,,,1
-Dirtbag Darrell,262,830,Camden Yardsy,3227,287,DP,457,T2,0,1,0,0,-0.0821,0.0821,0,0,25,3,1,HCM,DUM,RGO,RGO,DP,,,,,1
-Mordecai Davis,3409,767,Camden Yardsy,3227,400,PO,367,T2,2,0,0,0,-0.0199,0.0199,0,0,25,3,1,HCM,DUM,PO,PO,K,,,,,1
-Karl Havoc,2911,311,Tleyber Alfredo Cruz Fernandez III,2942,120,FO,191,B2,0,0,0,0,-0.0272,0.0272,0,0,26,3,1,DUM,HCM,FO,FO,FO,,,,,1
-Matty Jay,3025,420,Tleyber Alfredo Cruz Fernandez III,2942,457,3B,37,B2,1,0,0,0,0.088,-0.088,0,1,26,3,1,DUM,HCM,3B,2B,2B,,,,,1
-Tyburnsays Morecleveland,2329,67,Tleyber Alfredo Cruz Fernandez III,2942,699,RGO,368,B2,1,3,0,0,-0.077,0.077,0,0,26,3,1,DUM,HCM,RGO,RGO,K,,,,,2
-Amelia Hart,3417,69,Tleyber Alfredo Cruz Fernandez III,2942,67,HR,2,B2,2,3,0,0,0.2224,-0.2224,2,1,26,3,1,DUM,HCM,HR,HR,HR,2942,,,2942,1
-Carter Kendall,3382,666,Tleyber Alfredo Cruz Fernandez III,2942,669,HR,3,B2,2,0,2,0,0.0804,-0.0804,1,1,26,3,1,DUM,HCM,HR,HR,HR,,,,2942,1
-Jihmih Tyranus,2873,901,Tleyber Alfredo Cruz Fernandez III,2942,987,1B,86,B2,2,0,3,0,0.0075,-0.0075,0,0,26,3,1,DUM,HCM,1B,1B,1B,,,,,1
-Archie 'Clumsy' Sybil,3093,333,Tleyber Alfredo Cruz Fernandez III,2942,221,1B,112,B2,2,1,3,0,0.0142,-0.0142,0,0,26,3,1,DUM,HCM,1B,1B,1B,,,,,1
-Curtis Dingleberry,3436,500,Tleyber Alfredo Cruz Fernandez III,2942,221,PO,279,B2,2,5,3,0,-0.0286,0.0286,0,0,26,3,1,DUM,HCM,PO,PO,FO,,,,,1
-Lee Luda,2720,544,Camden Yardsy,3227,333,FO,211,T3,0,0,3,0,-0.0228,0.0228,0,0,27,3,1,HCM,DUM,FO,FO,FO,,,,,1
-Gracie Cwej-Mlodzianowski,3380,420,Camden Yardsy,3227,912,LGO,492,T3,1,0,3,0,-0.0187,0.0187,0,0,27,3,1,HCM,DUM,LGO,LGO,LGO,,,,,1
-Cared Jarrabis,3030,289,Camden Yardsy,3227,37,K,252,T3,2,0,3,0,-0.0122,0.0122,0,0,27,3,1,HCM,DUM,K,K,FO,,,,,1
-Bubson Dugnutt,3097,535,Tleyber Alfredo Cruz Fernandez III,2942,703,FO,168,B3,0,0,3,0,-0.0081,0.0081,0,0,28,3,1,DUM,HCM,FO,FO,BB,,,,,1
-Karl Havoc,2911,455,Tleyber Alfredo Cruz Fernandez III,2942,57,RGO,398,B3,1,0,3,0,-0.0068,0.0068,0,0,28,3,1,DUM,HCM,RGO,RGO,PO,,,,,1
-Matty Jay,3025,748,Tleyber Alfredo Cruz Fernandez III,2942,305,LGO,443,B3,2,0,3,0,-0.0065,0.0065,0,0,28,3,1,DUM,HCM,LGO,LGO,RGO,,,,,1
-Jeff Newman,2931,609,Camden Yardsy,3227,606,HR,3,T4,0,0,3,0,0.0804,-0.0804,1,1,29,3,1,HCM,DUM,HR,HR,HR,,,,3227,1
-Chooch Suzuka,3435,609,Camden Yardsy,3227,13,PO,404,T4,0,0,3,1,-0.0322,0.0322,0,0,29,3,1,HCM,DUM,PO,PO,RGO,,,,,1
-Willie Ruth,3464,227,Camden Yardsy,3227,599,PO,372,T4,1,0,3,1,-0.0265,0.0265,0,0,29,3,1,HCM,DUM,PO,PO,K,,,,,1
-Marcelo Soares,3402,276,Camden Yardsy,3227,555,K,279,T4,2,0,3,1,-0.0189,0.0189,0,0,29,3,1,HCM,DUM,K,K,FO,,,,,1
-Tyburnsays Morecleveland,2329,500,Tleyber Alfredo Cruz Fernandez III,2942,814,RGO,314,B4,0,0,3,1,-0.0107,0.0107,0,0,30,3,1,DUM,HCM,RGO,RGO,K,,,,,1
-Amelia Hart,3417,360,Tleyber Alfredo Cruz Fernandez III,2942,814,LGO,454,B4,1,0,3,1,-0.0097,0.0097,0,0,30,3,1,DUM,HCM,LGO,LGO,LGO,,,,,1
-Carter Kendall,3382,641,Tleyber Alfredo Cruz Fernandez III,2942,571,2B,70,B4,2,0,3,1,0.015,-0.015,0,0,30,3,1,DUM,HCM,2B,2B,1B,,,,,1
-Jihmih Tyranus,2873,333,Kordz Sonata,3167,721,PO,388,B4,2,2,3,1,-0.0236,0.0236,0,0,30,3,1,DUM,HCM,PO,PO,PO,,,,,1
-Dirtbag Darrell,262,790,Camden Yardsy,3227,327,RGO,463,T5,0,0,3,1,-0.0357,0.0357,0,0,31,3,1,HCM,DUM,RGO,RGO,LGO,,,,,1
-Mordecai Davis,3409,699,Camden Yardsy,3227,133,RGO,434,T5,1,0,3,1,-0.0282,0.0282,0,0,31,3,1,HCM,DUM,RGO,RGO,RGO,,,,,1
-Lee Luda,2720,134,Camden Yardsy,3227,998,1B,136,T5,2,0,3,1,0.0291,-0.0291,0,0,31,3,1,HCM,DUM,1B,1B,1B,,,,,1
-Gracie Cwej-Mlodzianowski,3380,729,Camden Yardsy,3227,327,PO,402,T5,2,1,3,1,-0.0484,0.0484,0,0,31,3,1,HCM,DUM,PO,PO,RGO,,,,,1
-Archie 'Clumsy' Sybil,3093,420,Kordz Sonata,3167,658,FO,238,B5,0,0,3,1,-0.0067,0.0067,0,0,32,3,1,DUM,HCM,FO,FO,FO,,,,,1
-Curtis Dingleberry,3436,757,Kordz Sonata,3167,55,K,298,B5,1,0,3,1,-0.0064,0.0064,0,0,32,3,1,DUM,HCM,K,K,K,,,,,1
-Bubson Dugnutt,3097,448,Kordz Sonata,3167,277,FO,171,B5,2,0,3,1,-0.0051,0.0051,0,0,32,3,1,DUM,HCM,FO,FO,BB,,,,,1
-Cared Jarrabis,3030,88,Camden Yardsy,3227,763,PO,325,T6,0,0,3,1,-0.0381,0.0381,0,0,33,3,1,HCM,DUM,PO,PO,K,,,,,1
-John Baseball,2970,279,Camden Yardsy,3227,444,BB,165,T6,1,0,3,1,0.0528,-0.0528,0,0,33,3,1,HCM,DUM,BB,BB,BB,,,,,1
-Foul Ball Felix,3321,100,Camden Yardsy,3227,880,K,220,T6,1,1,3,1,-0.0477,0.0477,0,0,33,3,1,HCM,DUM,K,K,FO,,,,,1
-Larry Lighthouse,3452,385,Camden Yardsy,3227,923,LGO,462,T6,2,1,3,1,-0.0506,0.0506,0,0,33,3,1,HCM,DUM,LGO,LGO,LGO,,,,,1
-Justin Time,2886,528,Mr Peggable,259,48,LGO,480,T1,0,0,0,0,-0.0251,0.0251,0,0,34,4,1,BLU,OBO,LGO,LGO,LGO,,,,,1
-Bartholomew Simpson,3454,666,Mr Peggable,259,921,K,255,T1,1,0,0,0,-0.0218,0.0218,0,0,34,4,1,BLU,OBO,K,K,FO,,,,,1
-Pablo The Hip Kawasaki,2890,333,Mr Peggable,259,611,K,278,T1,2,0,0,0,-0.0176,0.0176,0,0,34,4,1,BLU,OBO,K,K,FO,,,,,1
-Sablo Panchez,638,714,Alph Overdale,3255,311,PO,403,B1,0,0,0,0,-0.0248,0.0248,0,0,35,4,1,OBO,BLU,PO,PO,RGO,,,,,1
-Divorced Dad,3504,250,Alph Overdale,3255,454,FO,204,B1,1,0,0,0,-0.0217,0.0217,0,0,35,4,1,OBO,BLU,FO,FO,FO,,,,,1
-Big Bad Evil Slime,2998,210,Alph Overdale,3255,561,K,351,B1,2,0,0,0,-0.0179,0.0179,0,0,35,4,1,OBO,BLU,K,PO,K,,,,,1
-Wheeler Walker Jr II,529,934,Mr Peggable,259,89,BB,155,T2,0,0,0,0,0.0309,-0.0309,0,0,36,4,1,BLU,OBO,BB,BB,BB,,,,,1
-Wheeler Walker Jr II,529,327,Mr Peggable,259,364,SB,37,T2,0,1,0,0,0.0372,-0.0372,0,0,36,4,1,BLU,OBO,STEAL 2B,STEAL 2B,SB,,,,,4
-Beatrice D. Goldn'witch,3442,678,Mr Peggable,259,247,LGO,431,T2,0,2,0,0,-0.0442,0.0442,0,0,36,4,1,BLU,OBO,LGO,LGO,RGO,,,,,1
-Bucky Sabre,3124,12,Mr Peggable,259,566,LGO,446,T2,1,2,0,0,-0.0415,0.0415,0,0,36,4,1,BLU,OBO,LGO,LGO,RGO,,,,,1
-Saul Pewald,2708,390,Mr Peggable,259,791,RGO,401,T2,2,2,0,0,-0.0535,0.0535,0,0,36,4,1,BLU,OBO,RGO,RGO,RGO,,,,,1
-Laars Nootbaar jr,2730,199,Alph Overdale,3255,311,BB,112,B2,0,0,0,0,0.0294,-0.0294,0,0,37,4,1,OBO,BLU,BB,BB,1B,,,,,1
-Laars Nootbaar jr,2730,450,Alph Overdale,3255,22,CS,428,B2,0,1,0,0,-0.0566,0.0566,0,0,37,4,1,OBO,BLU,CS 2B,CS 2B,CS,,,,,4
-Lillian Fields,3208,337,Alph Overdale,3255,199,BB,138,B2,1,0,0,0,0.0247,-0.0247,0,0,37,4,1,OBO,BLU,BB,BB,BB,,,,,1
-Charles Charles,3468,237,Alph Overdale,3255,327,1B,90,B2,1,1,0,0,0.0406,-0.0406,0,0,37,4,1,OBO,BLU,1B,1B,1B,,,,,1
-Mack 'The Knife' Darin,3434,433,Alph Overdale,3255,962,DP,471,B2,1,4,0,0,-0.1094,0.1094,0,0,37,4,1,OBO,BLU,LGO,LGO,DP,,,,,1
-Scooter Buskie,3140,151,Mr Peggable,259,757,RGO,394,T3,0,0,0,0,-0.0303,0.0303,0,0,38,4,1,BLU,OBO,RGO,RGO,PO,,,,,1
-Steak Dynasty,3406,561,Mr Peggable,259,641,2B,80,T3,1,0,0,0,0.0558,-0.0558,0,1,38,4,1,BLU,OBO,2B,2B,1B,,,,,1
-Justin Time,2886,836,Mr Peggable,259,998,BB,162,T3,1,2,0,0,0.0194,-0.0194,0,1,38,4,1,BLU,OBO,BB,BB,BB,,,,,1
-Bartholomew Simpson,3454,420,Mr Peggable,259,223,FO,197,T3,1,4,0,0,-0.0465,0.0465,0,0,38,4,1,BLU,OBO,FO,FO,FO,,,,,1
-Pablo The Hip Kawasaki,2890,333,Mr Peggable,259,368,2B,35,T3,2,4,0,0,0.2575,-0.2575,2,1,38,4,1,BLU,OBO,2B,2B,2B,,259,259,,1
-Wheeler Walker Jr II,529,723,Mr Peggable,259,610,1B,113,T3,2,2,0,2,0.0833,-0.0833,1,0,38,4,1,BLU,OBO,1B,1B,1B,,259,,,1
-Wheeler Walker Jr II,529,1,Mr Peggable,259,911,SB,90,T3,2,1,0,3,0.0035,-0.0035,0,0,38,4,1,BLU,OBO,STEAL 2B,STEAL 2B,SB,,,,,4
-Beatrice D. Goldn'witch,3442,678,Mr Peggable,259,860,FO,182,T3,2,2,0,3,-0.0221,0.0221,0,0,38,4,1,BLU,OBO,FO,FO,FO,,,,,1
-Arlon Gemini,3390,240,Alph Overdale,3255,42,FO,198,B3,0,0,0,3,-0.027,0.027,0,0,39,4,1,OBO,BLU,FO,FO,FO,,,,,1
-Bea Friday,3445,212,Alph Overdale,3255,695,LGO,483,B3,1,0,0,3,-0.0215,0.0215,0,0,39,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
-Sablo Panchez,638,627,Alph Overdale,3255,135,LGO,492,B3,2,0,0,3,-0.0142,0.0142,0,0,39,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
-Bucky Sabre,3124,948,Mr Peggable,259,858,1B,90,T4,0,0,0,3,0.0092,-0.0092,0,1,40,4,1,BLU,OBO,1B,1B,1B,,,,,1
-Saul Pewald,2708,372,Tanya Degurechaff,3405,249,BB,123,T4,0,1,0,3,0.0183,-0.0183,0,1,40,4,1,BLU,OBO,BB,BB,1B,,,,,1
-Scooter Buskie,3140,727,Tanya Degurechaff,3405,101,K,374,T4,0,4,0,3,-0.0187,0.0187,0,0,40,4,1,BLU,OBO,K,K,K,,,,,1
-Steak Dynasty,3406,640,Tanya Degurechaff,3405,575,2B,65,T4,1,4,0,3,0.0643,-0.0643,1,0,40,4,1,BLU,OBO,2B,2B,1B,,259,,,1
-George Hankinson,3426,348,Tanya Degurechaff,3405,901,LGO,447,T4,1,6,0,4,0.0049,-0.0049,1,0,40,4,1,BLU,OBO,LGO,LGO,RGO,3405,,,,1
-Tom E. Jahns,3115,888,Tanya Degurechaff,3405,999,BB,111,T4,2,2,0,5,0.0009,-0.0009,0,0,40,4,1,BLU,OBO,BB,BB,1B,,,,,1
-Pablo The Hip Kawasaki,2890,333,Tanya Degurechaff,3405,999,K,334,T4,2,4,0,5,-0.0078,0.0078,0,0,40,4,1,BLU,OBO,K,K,K,,,,,1
-Divorced Dad,3504,674,Alph Overdale,3255,997,K,323,B4,0,0,0,5,-0.0124,0.0124,0,0,41,4,1,OBO,BLU,K,K,K,,,,,1
-Big Bad Evil Slime,2998,412,Alph Overdale,3255,540,BB,128,B4,1,0,0,5,0.013,-0.013,0,0,41,4,1,OBO,BLU,BB,BB,1B,,,,,1
-Big Bad Evil Slime,2998,1,Alph Overdale,3255,206,SB,205,B4,1,1,0,5,0.0082,-0.0082,0,0,41,4,1,OBO,BLU,STEAL 2B,STEAL 2B,SB,,,,,4
-Laars Nootbaar jr,2730,520,Alph Overdale,3255,828,PO,308,B4,1,2,0,5,-0.0192,0.0192,0,0,41,4,1,OBO,BLU,PO,PO,K,,,,,1
-Lillian Fields,3208,601,Alph Overdale,3255,327,FO,274,B4,2,2,0,5,-0.0149,0.0149,0,0,41,4,1,OBO,BLU,FO,FO,FO,,,,,1
-Larry Longshot,32,741,Tanya Degurechaff,3405,499,K,242,T5,0,0,0,5,-0.0018,0.0018,0,0,42,4,1,BLU,OBO,K,K,FO,,,,,1
-Beatrice D. Goldn'witch,3442,333,Tanya Degurechaff,3405,235,BB,98,T5,1,0,0,5,0.0011,-0.0011,0,0,42,4,1,BLU,OBO,BB,BB,1B,,,,,1
-TWs Frozen Head,2868,69,Tanya Degurechaff,3405,891,FO,178,T5,1,1,0,5,-0.0013,0.0013,0,0,42,4,1,BLU,OBO,FO,FO,FO,,,,,1
-Saul Pewald,2708,808,Tanya Degurechaff,3405,920,BB,112,T5,2,1,0,5,0.0018,-0.0018,0,0,42,4,1,BLU,OBO,BB,BB,1B,,,,,1
-Toky Oto,2773,213,Tanya Degurechaff,3405,69,BB,144,T5,2,4,0,5,0.0019,-0.0019,0,0,42,4,1,BLU,OBO,BB,BB,BB,,,,,1
-Steak Dynasty,3406,444,Tanya Degurechaff,3405,720,K,276,T5,2,7,0,5,-0.0067,0.0067,0,0,42,4,1,BLU,OBO,K,K,FO,,,,,1
-Charles Charles,3468,701,Frankie Gusts,2691,297,RGO,404,B5,0,0,0,5,-0.0091,0.0091,0,0,43,4,1,OBO,BLU,RGO,RGO,RGO,,,,,1
-Mack 'The Knife' Darin,3434,837,Frankie Gusts,2691,372,LGO,465,B5,1,0,0,5,-0.0062,0.0062,0,0,43,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
-Arlon Gemini,3390,185,Frankie Gusts,2691,701,LGO,484,B5,2,0,0,5,-0.0028,0.0028,0,0,43,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
-George Hankinson,3426,457,Tanya Degurechaff,3405,690,K,233,T6,0,0,0,5,-0.0008,0.0008,0,0,44,4,1,BLU,OBO,K,K,FO,,,,,1
-Tom E. Jahns,3115,251,Tanya Degurechaff,3405,976,K,275,T6,1,0,0,5,-0.0007,0.0007,0,0,44,4,1,BLU,OBO,K,K,FO,,,,,1
-Pablo The Hip Kawasaki,2890,666,Tanya Degurechaff,3405,148,LGO,482,T6,2,0,0,5,-0.0006,0.0006,0,0,44,4,1,BLU,OBO,LGO,LGO,LGO,,,,,1
-Bea Friday,3445,456,Frankie Gusts,2691,327,BB,129,B6,0,0,0,5,0.0105,-0.0105,0,0,45,4,1,OBO,BLU,BB,BB,1B,,,,,1
-Sablo Panchez,638,1,Frankie Gusts,2691,779,FO,222,B6,0,1,0,5,-0.0103,0.0103,0,0,45,4,1,OBO,BLU,FO,FO,FO,,,,,1
-Divorced Dad,3504,900,Frankie Gusts,2691,69,FO,169,B6,1,1,0,5,-0.0067,0.0067,0,0,45,4,1,OBO,BLU,FO,FO,BB,,,,,1
-Big Bad Evil Slime,2998,716,Frankie Gusts,2691,258,LGO,458,B6,2,1,0,5,-0.0027,0.0027,0,0,45,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
-Bloop Squibber,3393,666,Barney Turbo,28,731,1B,65,T1,0,0,0,0,0.0291,-0.0291,0,0,46,5,1,SPD,RHP,1B,1B,1B,,,,,1
-Homer Nocker,606,421,Barney Turbo,28,843,DP,422,T1,0,1,0,0,-0.076,0.076,0,0,46,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
-Friday,2826,612,Barney Turbo,28,4,RGO,392,T1,2,0,0,0,-0.0176,0.0176,0,0,46,5,1,SPD,RHP,RGO,RGO,PO,,,,,1
-Brent Chillwater,2689,11,Sean Carrcrash,1709,24,HR,13,B1,0,0,0,0,0.1179,-0.1179,1,1,47,5,1,RHP,SPD,HR,HR,HR,,,,1709,1
-Superbone Threefinger,413,23,Sean Carrcrash,1709,279,K,256,B1,0,0,1,0,-0.0197,0.0197,0,0,47,5,1,RHP,SPD,K,K,FO,,,,,1
-Charlie Buntman,2869,521,Sean Carrcrash,1709,707,FO,186,B1,1,0,1,0,-0.018,0.018,0,0,47,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Cucamonga Seattle,3377,419,Sean Carrcrash,1709,467,1B,48,B1,2,0,1,0,0.0169,-0.0169,0,0,47,5,1,RHP,SPD,1B,1B,2B,,,,,1
-La+ Darknesss,59,87,Sean Carrcrash,1709,370,K,283,B1,2,1,1,0,-0.0313,0.0313,0,0,47,5,1,RHP,SPD,K,K,FO,,,,,1
-Matilda No-Balls,3420,832,Barney Turbo,28,733,1B,99,T2,0,0,1,0,0.0346,-0.0346,0,0,48,5,1,SPD,RHP,1B,1B,1B,,,,,1
-Matilda No-Balls,3420,911,Barney Turbo,28,901,SB,10,T2,0,1,1,0,0.0414,-0.0414,0,0,48,5,1,SPD,RHP,STEAL 2B,STEAL 2B,SB,,,,,4
-Jacob Thomas,3105,325,Barney Turbo,28,855,LGO,470,T2,0,2,1,0,-0.0512,0.0512,0,0,48,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1
-Noah Diamond,2673,327,Barney Turbo,28,628,K,301,T2,1,2,1,0,-0.0449,0.0449,0,0,48,5,1,SPD,RHP,K,K,K,,,,,1
-Trevor Paultis,3416,444,Barney Turbo,28,800,PO,356,T2,2,2,1,0,-0.0541,0.0541,0,0,48,5,1,SPD,RHP,PO,PO,K,,,,,1
-Dutch Boggs,2625,11,Sean Carrcrash,1709,850,BB,161,B2,0,0,1,0,0.0202,-0.0202,0,0,49,5,1,RHP,SPD,BB,BB,BB,,,,,1
-Dutch Boggs,2625,490,Sean Carrcrash,1709,11,CS,479,B2,0,1,1,0,-0.0402,0.0402,0,0,49,5,1,RHP,SPD,CS 2B,CS 2B,CS,,,,,4
-Randall Peppers,2965,198,Sean Carrcrash,1709,390,FO,192,B2,1,0,1,0,-0.0183,0.0183,0,0,49,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Kandii Khayne,3503,543,Sean Carrcrash,1709,99,RGO,444,B2,2,0,1,0,-0.0156,0.0156,0,0,49,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
-Kries Von Kriestalhauser,2959,788,Barney Turbo,28,236,LGO,448,T3,0,0,1,0,-0.0332,0.0332,0,0,50,5,1,SPD,RHP,LGO,LGO,RGO,,,,,1
-Teddy Bigstick,2722,630,Barney Turbo,28,428,FO,202,T3,1,0,1,0,-0.0285,0.0285,0,0,50,5,1,SPD,RHP,FO,FO,FO,,,,,1
-Bloop Squibber,3393,69,Barney Turbo,28,123,2B,54,T3,2,0,1,0,0.0391,-0.0391,0,0,50,5,1,SPD,RHP,2B,2B,2B,,,,,1
-Homer Nocker,606,13,Barney Turbo,28,623,RGO,390,T3,2,2,1,0,-0.0617,0.0617,0,0,50,5,1,SPD,RHP,RGO,RGO,PO,,,,,1
-Trevor Rosé,1725,67,Sean Carrcrash,1709,799,K,268,B3,0,0,1,0,-0.0204,0.0204,0,0,51,5,1,RHP,SPD,K,K,FO,,,,,1
-Brent Chillwater,2689,11,Sean Carrcrash,1709,220,FO,209,B3,1,0,1,0,-0.018,0.018,0,0,51,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Superbone Threefinger,413,141,Sean Carrcrash,1709,552,RGO,411,B3,2,0,1,0,-0.0162,0.0162,0,0,51,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
-Friday,2826,831,Barney Turbo,28,966,BB,135,T4,0,0,1,0,0.0468,-0.0468,0,0,52,5,1,SPD,RHP,BB,BB,1B,,,,,1
-Matilda No-Balls,3420,666,Barney Turbo,28,563,1B,103,T4,0,1,1,0,0.0838,-0.0838,0,0,52,5,1,SPD,RHP,1B,1B,1B,,,,,1
-Jacob Thomas,3105,248,Barney Turbo,28,833,DP,415,T4,0,4,1,0,-0.1564,0.1564,0,0,52,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
-Noah Diamond,2673,433,Barney Turbo,28,929,LGO,496,T4,2,3,1,0,-0.0753,0.0753,0,0,52,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1
-Charlie Buntman,2869,1,Sean Carrcrash,1709,758,K,243,B4,0,0,1,0,-0.0187,0.0187,0,0,53,5,1,RHP,SPD,K,FO,FO,,,,,1
-Cucamonga Seattle,3377,353,Sean Carrcrash,1709,609,K,256,B4,1,0,1,0,-0.0174,0.0174,0,0,53,5,1,RHP,SPD,K,K,FO,,,,,1
-La+ Darknesss,59,587,Sean Carrcrash,1709,808,FO,221,B4,2,0,1,0,-0.0149,0.0149,0,0,53,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Trevor Paultis,3416,620,Barney Turbo,28,860,K,240,T5,0,0,1,0,-0.0498,0.0498,0,0,54,5,1,SPD,RHP,K,K,FO,,,,,1
-Kries Von Kriestalhauser,2959,723,Barney Turbo,28,627,1B,96,T5,1,0,1,0,0.0487,-0.0487,0,0,54,5,1,SPD,RHP,1B,1B,1B,,,,,1
-Teddy Bigstick,2722,2,Barney Turbo,28,125,BB,123,T5,1,1,1,0,0.0765,-0.0765,0,0,54,5,1,SPD,RHP,BB,BB,1B,,,,,1
-Bloop Squibber,3393,964,Barney Turbo,28,503,DP,461,T5,1,4,1,0,-0.2045,0.2045,0,0,54,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
-Dutch Boggs,2625,577,Sean Carrcrash,1709,354,FO,223,B5,0,0,1,0,-0.0137,0.0137,0,0,55,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Randall Peppers,2965,711,Sean Carrcrash,1709,664,2B,47,B5,1,0,1,0,0.0253,-0.0253,0,0,55,5,1,RHP,SPD,2B,2B,2B,,,,,1
-Kandii Khayne,3503,96,Sean Carrcrash,1709,244,BB,148,B5,1,2,1,0,0.0032,-0.0032,0,0,55,5,1,RHP,SPD,BB,BB,BB,,,,,1
-Trevor Rosé,1725,2,Sean Carrcrash,1709,211,FO,209,B5,1,4,1,0,-0.0168,0.0168,0,0,55,5,1,RHP,SPD,FO,FO,FO,,,,,1
-Brent Chillwater,2689,865,Sean Carrcrash,1709,307,RGO,442,B5,2,4,1,0,-0.0361,0.0361,0,0,55,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
-Homer Nocker,606,421,Alt Site,1799,200,FO,221,T6,0,0,1,0,-0.0673,0.0673,0,0,56,5,1,SPD,RHP,FO,FO,FO,,,,,1
-Friday,2826,672,Alt Site,1799,789,BB,117,T6,1,0,1,0,0.0649,-0.0649,0,0,56,5,1,SPD,RHP,BB,1B,1B,,,,,1
-Friday,2826,500,Alt Site,1799,654,SB,154,T6,1,1,1,0,0.0655,-0.0655,0,0,56,5,1,SPD,RHP,STEAL 2B,STEAL 2B,SB,,,,,4
-Matilda No-Balls,3420,399,Alt Site,1799,117,PO,282,T6,1,2,1,0,-0.1036,0.1036,0,0,56,5,1,SPD,RHP,PO,PO,FO,,,,,1
-Jerome S. Monroe,2792,275,Alt Site,1799,738,LGO,463,T6,2,2,1,0,-0.1381,0.1381,0,0,56,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1
+Ant man,3229,844,Mack Quackerson,2834,52,FO,208,T6,0,0,1,2,-0.0171,0.0171,0,0,23,2,1,CYI,GGS,FO,FO,FO,,,,,1
+Sid Hugo V,3032,101,Mack Quackerson,2834,780,K,321,T6,1,0,1,2,-0.0162,0.0162,0,0,23,2,1,CYI,GGS,K,K,K,,,,,1
+Joel Justice,2738,911,Mack Quackerson,2834,369,RGO,458,T6,2,0,1,2,-0.015,0.015,0,0,23,2,1,CYI,GGS,RGO,RGO,LGO,,,,,1
+Krbmeister,3430,740,Flame-Test Fleming,3144,471,FO,269,B6,0,0,1,2,-0.0833,0.0833,0,0,24,2,1,GGS,CYI,FO,FO,FO,,,,,1
+Jeff Newman,2931,913,Camden Yardsy,3227,115,FO,202,T1,0,0,0,0,-0.0251,0.0251,0,0,25,3,1,HCM,DUM,FO,FO,FO,,,,,1
+Chooch Suzuka,3435,900,Camden Yardsy,3227,116,FO,216,T1,1,0,0,0,-0.0218,0.0218,0,0,25,3,1,HCM,DUM,FO,FO,FO,,,,,1
+Willie Ruth,3464,428,Camden Yardsy,3227,275,FO,153,T1,2,0,0,0,-0.0176,0.0176,0,0,25,3,1,HCM,DUM,FO,FO,BB,,,,,1
+Archie 'Clumsy' Sybil,3093,725,Tleyber Alfredo Cruz Fernandez III,2942,901,BB,176,B1,0,0,0,0,0.0276,-0.0276,0,0,26,3,1,DUM,HCM,BB,BB,BB,,,,,1
+Curtis Dingleberry,3436,637,Tleyber Alfredo Cruz Fernandez III,2942,231,DP,406,B1,0,1,0,0,-0.0741,0.0741,0,0,26,3,1,DUM,HCM,RGO,RGO,DP,,,,,1
+Bubson Dugnutt,3097,567,Tleyber Alfredo Cruz Fernandez III,2942,120,LGO,447,B1,2,0,0,0,-0.0179,0.0179,0,0,26,3,1,DUM,HCM,LGO,LGO,RGO,,,,,1
+Marcelo Soares,3402,428,Camden Yardsy,3227,558,1B,130,T2,0,0,0,0,0.0309,-0.0309,0,0,27,3,1,HCM,DUM,1B,BB,1B,,,,,1
+Dirtbag Darrell,262,830,Camden Yardsy,3227,287,DP,457,T2,0,1,0,0,-0.0821,0.0821,0,0,27,3,1,HCM,DUM,RGO,RGO,DP,,,,,1
+Mordecai Davis,3409,767,Camden Yardsy,3227,400,PO,367,T2,2,0,0,0,-0.0199,0.0199,0,0,27,3,1,HCM,DUM,PO,PO,K,,,,,1
+Karl Havoc,2911,311,Tleyber Alfredo Cruz Fernandez III,2942,120,FO,191,B2,0,0,0,0,-0.0272,0.0272,0,0,28,3,1,DUM,HCM,FO,FO,FO,,,,,1
+Matty Jay,3025,420,Tleyber Alfredo Cruz Fernandez III,2942,457,3B,37,B2,1,0,0,0,0.088,-0.088,0,1,28,3,1,DUM,HCM,3B,2B,2B,,,,,1
+Tyburnsays Morecleveland,2329,67,Tleyber Alfredo Cruz Fernandez III,2942,699,RGO,368,B2,1,3,0,0,-0.077,0.077,0,0,28,3,1,DUM,HCM,RGO,RGO,K,,,,,2
+Amelia Hart,3417,69,Tleyber Alfredo Cruz Fernandez III,2942,67,HR,2,B2,2,3,0,0,0.2224,-0.2224,2,1,28,3,1,DUM,HCM,HR,HR,HR,2942,,,2942,1
+Carter Kendall,3382,666,Tleyber Alfredo Cruz Fernandez III,2942,669,HR,3,B2,2,0,2,0,0.0804,-0.0804,1,1,28,3,1,DUM,HCM,HR,HR,HR,,,,2942,1
+Jihmih Tyranus,2873,901,Tleyber Alfredo Cruz Fernandez III,2942,987,1B,86,B2,2,0,3,0,0.0075,-0.0075,0,0,28,3,1,DUM,HCM,1B,1B,1B,,,,,1
+Archie 'Clumsy' Sybil,3093,333,Tleyber Alfredo Cruz Fernandez III,2942,221,1B,112,B2,2,1,3,0,0.0142,-0.0142,0,0,28,3,1,DUM,HCM,1B,1B,1B,,,,,1
+Curtis Dingleberry,3436,500,Tleyber Alfredo Cruz Fernandez III,2942,221,PO,279,B2,2,5,3,0,-0.0286,0.0286,0,0,28,3,1,DUM,HCM,PO,PO,FO,,,,,1
+Lee Luda,2720,544,Camden Yardsy,3227,333,FO,211,T3,0,0,3,0,-0.0228,0.0228,0,0,29,3,1,HCM,DUM,FO,FO,FO,,,,,1
+Gracie Cwej-Mlodzianowski,3380,420,Camden Yardsy,3227,912,LGO,492,T3,1,0,3,0,-0.0187,0.0187,0,0,29,3,1,HCM,DUM,LGO,LGO,LGO,,,,,1
+Cared Jarrabis,3030,289,Camden Yardsy,3227,37,K,252,T3,2,0,3,0,-0.0122,0.0122,0,0,29,3,1,HCM,DUM,K,K,FO,,,,,1
+Bubson Dugnutt,3097,535,Tleyber Alfredo Cruz Fernandez III,2942,703,FO,168,B3,0,0,3,0,-0.0081,0.0081,0,0,30,3,1,DUM,HCM,FO,FO,BB,,,,,1
+Karl Havoc,2911,455,Tleyber Alfredo Cruz Fernandez III,2942,57,RGO,398,B3,1,0,3,0,-0.0068,0.0068,0,0,30,3,1,DUM,HCM,RGO,RGO,PO,,,,,1
+Matty Jay,3025,748,Tleyber Alfredo Cruz Fernandez III,2942,305,LGO,443,B3,2,0,3,0,-0.0065,0.0065,0,0,30,3,1,DUM,HCM,LGO,LGO,RGO,,,,,1
+Jeff Newman,2931,609,Camden Yardsy,3227,606,HR,3,T4,0,0,3,0,0.0804,-0.0804,1,1,31,3,1,HCM,DUM,HR,HR,HR,,,,3227,1
+Chooch Suzuka,3435,609,Camden Yardsy,3227,13,PO,404,T4,0,0,3,1,-0.0322,0.0322,0,0,31,3,1,HCM,DUM,PO,PO,RGO,,,,,1
+Willie Ruth,3464,227,Camden Yardsy,3227,599,PO,372,T4,1,0,3,1,-0.0265,0.0265,0,0,31,3,1,HCM,DUM,PO,PO,K,,,,,1
+Marcelo Soares,3402,276,Camden Yardsy,3227,555,K,279,T4,2,0,3,1,-0.0189,0.0189,0,0,31,3,1,HCM,DUM,K,K,FO,,,,,1
+Tyburnsays Morecleveland,2329,500,Tleyber Alfredo Cruz Fernandez III,2942,814,RGO,314,B4,0,0,3,1,-0.0107,0.0107,0,0,32,3,1,DUM,HCM,RGO,RGO,K,,,,,1
+Amelia Hart,3417,360,Tleyber Alfredo Cruz Fernandez III,2942,814,LGO,454,B4,1,0,3,1,-0.0097,0.0097,0,0,32,3,1,DUM,HCM,LGO,LGO,LGO,,,,,1
+Carter Kendall,3382,641,Tleyber Alfredo Cruz Fernandez III,2942,571,2B,70,B4,2,0,3,1,0.015,-0.015,0,0,32,3,1,DUM,HCM,2B,2B,1B,,,,,1
+Jihmih Tyranus,2873,333,Kordz Sonata,3167,721,PO,388,B4,2,2,3,1,-0.0236,0.0236,0,0,32,3,1,DUM,HCM,PO,PO,PO,,,,,1
+Dirtbag Darrell,262,790,Camden Yardsy,3227,327,RGO,463,T5,0,0,3,1,-0.0357,0.0357,0,0,33,3,1,HCM,DUM,RGO,RGO,LGO,,,,,1
+Mordecai Davis,3409,699,Camden Yardsy,3227,133,RGO,434,T5,1,0,3,1,-0.0282,0.0282,0,0,33,3,1,HCM,DUM,RGO,RGO,RGO,,,,,1
+Lee Luda,2720,134,Camden Yardsy,3227,998,1B,136,T5,2,0,3,1,0.0291,-0.0291,0,0,33,3,1,HCM,DUM,1B,1B,1B,,,,,1
+Gracie Cwej-Mlodzianowski,3380,729,Camden Yardsy,3227,327,PO,402,T5,2,1,3,1,-0.0484,0.0484,0,0,33,3,1,HCM,DUM,PO,PO,RGO,,,,,1
+Archie 'Clumsy' Sybil,3093,420,Kordz Sonata,3167,658,FO,238,B5,0,0,3,1,-0.0067,0.0067,0,0,34,3,1,DUM,HCM,FO,FO,FO,,,,,1
+Curtis Dingleberry,3436,757,Kordz Sonata,3167,55,K,298,B5,1,0,3,1,-0.0064,0.0064,0,0,34,3,1,DUM,HCM,K,K,K,,,,,1
+Bubson Dugnutt,3097,448,Kordz Sonata,3167,277,FO,171,B5,2,0,3,1,-0.0051,0.0051,0,0,34,3,1,DUM,HCM,FO,FO,BB,,,,,1
+Cared Jarrabis,3030,88,Camden Yardsy,3227,763,PO,325,T6,0,0,3,1,-0.0381,0.0381,0,0,35,3,1,HCM,DUM,PO,PO,K,,,,,1
+John Baseball,2970,279,Camden Yardsy,3227,444,BB,165,T6,1,0,3,1,0.0528,-0.0528,0,0,35,3,1,HCM,DUM,BB,BB,BB,,,,,1
+Foul Ball Felix,3321,100,Camden Yardsy,3227,880,K,220,T6,1,1,3,1,-0.0477,0.0477,0,0,35,3,1,HCM,DUM,K,K,FO,,,,,1
+Larry Lighthouse,3452,385,Camden Yardsy,3227,923,LGO,462,T6,2,1,3,1,-0.0506,0.0506,0,0,35,3,1,HCM,DUM,LGO,LGO,LGO,,,,,1
+Justin Time,2886,528,Mr Peggable,259,48,LGO,480,T1,0,0,0,0,-0.0251,0.0251,0,0,36,4,1,BLU,OBO,LGO,LGO,LGO,,,,,1
+Bartholomew Simpson,3454,666,Mr Peggable,259,921,K,255,T1,1,0,0,0,-0.0218,0.0218,0,0,36,4,1,BLU,OBO,K,K,FO,,,,,1
+Pablo The Hip Kawasaki,2890,333,Mr Peggable,259,611,K,278,T1,2,0,0,0,-0.0176,0.0176,0,0,36,4,1,BLU,OBO,K,K,FO,,,,,1
+Sablo Panchez,638,714,Alph Overdale,3255,311,PO,403,B1,0,0,0,0,-0.0248,0.0248,0,0,37,4,1,OBO,BLU,PO,PO,RGO,,,,,1
+Divorced Dad,3504,250,Alph Overdale,3255,454,FO,204,B1,1,0,0,0,-0.0217,0.0217,0,0,37,4,1,OBO,BLU,FO,FO,FO,,,,,1
+Big Bad Evil Slime,2998,210,Alph Overdale,3255,561,K,351,B1,2,0,0,0,-0.0179,0.0179,0,0,37,4,1,OBO,BLU,K,PO,K,,,,,1
+Wheeler Walker Jr II,529,934,Mr Peggable,259,89,BB,155,T2,0,0,0,0,0.0309,-0.0309,0,0,38,4,1,BLU,OBO,BB,BB,BB,,,,,1
+Wheeler Walker Jr II,529,327,Mr Peggable,259,364,SB,37,T2,0,1,0,0,0.0372,-0.0372,0,0,38,4,1,BLU,OBO,STEAL 2B,STEAL 2B,SB,,,,,4
+Beatrice D. Goldn'witch,3442,678,Mr Peggable,259,247,LGO,431,T2,0,2,0,0,-0.0442,0.0442,0,0,38,4,1,BLU,OBO,LGO,LGO,RGO,,,,,1
+Bucky Sabre,3124,12,Mr Peggable,259,566,LGO,446,T2,1,2,0,0,-0.0415,0.0415,0,0,38,4,1,BLU,OBO,LGO,LGO,RGO,,,,,1
+Saul Pewald,2708,390,Mr Peggable,259,791,RGO,401,T2,2,2,0,0,-0.0535,0.0535,0,0,38,4,1,BLU,OBO,RGO,RGO,RGO,,,,,1
+Laars Nootbaar jr,2730,199,Alph Overdale,3255,311,BB,112,B2,0,0,0,0,0.0294,-0.0294,0,0,39,4,1,OBO,BLU,BB,BB,1B,,,,,1
+Laars Nootbaar jr,2730,450,Alph Overdale,3255,22,CS,428,B2,0,1,0,0,-0.0566,0.0566,0,0,39,4,1,OBO,BLU,CS 2B,CS 2B,CS,,,,,4
+Lillian Fields,3208,337,Alph Overdale,3255,199,BB,138,B2,1,0,0,0,0.0247,-0.0247,0,0,39,4,1,OBO,BLU,BB,BB,BB,,,,,1
+Charles Charles,3468,237,Alph Overdale,3255,327,1B,90,B2,1,1,0,0,0.0406,-0.0406,0,0,39,4,1,OBO,BLU,1B,1B,1B,,,,,1
+Mack 'The Knife' Darin,3434,433,Alph Overdale,3255,962,DP,471,B2,1,4,0,0,-0.1094,0.1094,0,0,39,4,1,OBO,BLU,LGO,LGO,DP,,,,,1
+Scooter Buskie,3140,151,Mr Peggable,259,757,RGO,394,T3,0,0,0,0,-0.0303,0.0303,0,0,40,4,1,BLU,OBO,RGO,RGO,PO,,,,,1
+Steak Dynasty,3406,561,Mr Peggable,259,641,2B,80,T3,1,0,0,0,0.0558,-0.0558,0,1,40,4,1,BLU,OBO,2B,2B,1B,,,,,1
+Justin Time,2886,836,Mr Peggable,259,998,BB,162,T3,1,2,0,0,0.0194,-0.0194,0,1,40,4,1,BLU,OBO,BB,BB,BB,,,,,1
+Bartholomew Simpson,3454,420,Mr Peggable,259,223,FO,197,T3,1,4,0,0,-0.0465,0.0465,0,0,40,4,1,BLU,OBO,FO,FO,FO,,,,,1
+Pablo The Hip Kawasaki,2890,333,Mr Peggable,259,368,2B,35,T3,2,4,0,0,0.2575,-0.2575,2,1,40,4,1,BLU,OBO,2B,2B,2B,,259,259,,1
+Wheeler Walker Jr II,529,723,Mr Peggable,259,610,1B,113,T3,2,2,0,2,0.0833,-0.0833,1,0,40,4,1,BLU,OBO,1B,1B,1B,,259,,,1
+Wheeler Walker Jr II,529,1,Mr Peggable,259,911,SB,90,T3,2,1,0,3,0.0035,-0.0035,0,0,40,4,1,BLU,OBO,STEAL 2B,STEAL 2B,SB,,,,,4
+Beatrice D. Goldn'witch,3442,678,Mr Peggable,259,860,FO,182,T3,2,2,0,3,-0.0221,0.0221,0,0,40,4,1,BLU,OBO,FO,FO,FO,,,,,1
+Arlon Gemini,3390,240,Alph Overdale,3255,42,FO,198,B3,0,0,0,3,-0.027,0.027,0,0,41,4,1,OBO,BLU,FO,FO,FO,,,,,1
+Bea Friday,3445,212,Alph Overdale,3255,695,LGO,483,B3,1,0,0,3,-0.0215,0.0215,0,0,41,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
+Sablo Panchez,638,627,Alph Overdale,3255,135,LGO,492,B3,2,0,0,3,-0.0142,0.0142,0,0,41,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
+Bucky Sabre,3124,948,Mr Peggable,259,858,1B,90,T4,0,0,0,3,0.0092,-0.0092,0,1,42,4,1,BLU,OBO,1B,1B,1B,,,,,1
+Saul Pewald,2708,372,Tanya Degurechaff,3405,249,BB,123,T4,0,1,0,3,0.0183,-0.0183,0,1,42,4,1,BLU,OBO,BB,BB,1B,,,,,1
+Scooter Buskie,3140,727,Tanya Degurechaff,3405,101,K,374,T4,0,4,0,3,-0.0187,0.0187,0,0,42,4,1,BLU,OBO,K,K,K,,,,,1
+Steak Dynasty,3406,640,Tanya Degurechaff,3405,575,2B,65,T4,1,4,0,3,0.0643,-0.0643,1,0,42,4,1,BLU,OBO,2B,2B,1B,,259,,,1
+George Hankinson,3426,348,Tanya Degurechaff,3405,901,LGO,447,T4,1,6,0,4,0.0049,-0.0049,1,0,42,4,1,BLU,OBO,LGO,LGO,RGO,3405,,,,1
+Tom E. Jahns,3115,888,Tanya Degurechaff,3405,999,BB,111,T4,2,2,0,5,0.0009,-0.0009,0,0,42,4,1,BLU,OBO,BB,BB,1B,,,,,1
+Pablo The Hip Kawasaki,2890,333,Tanya Degurechaff,3405,999,K,334,T4,2,4,0,5,-0.0078,0.0078,0,0,42,4,1,BLU,OBO,K,K,K,,,,,1
+Divorced Dad,3504,674,Alph Overdale,3255,997,K,323,B4,0,0,0,5,-0.0124,0.0124,0,0,43,4,1,OBO,BLU,K,K,K,,,,,1
+Big Bad Evil Slime,2998,412,Alph Overdale,3255,540,BB,128,B4,1,0,0,5,0.013,-0.013,0,0,43,4,1,OBO,BLU,BB,BB,1B,,,,,1
+Big Bad Evil Slime,2998,1,Alph Overdale,3255,206,SB,205,B4,1,1,0,5,0.0082,-0.0082,0,0,43,4,1,OBO,BLU,STEAL 2B,STEAL 2B,SB,,,,,4
+Laars Nootbaar jr,2730,520,Alph Overdale,3255,828,PO,308,B4,1,2,0,5,-0.0192,0.0192,0,0,43,4,1,OBO,BLU,PO,PO,K,,,,,1
+Lillian Fields,3208,601,Alph Overdale,3255,327,FO,274,B4,2,2,0,5,-0.0149,0.0149,0,0,43,4,1,OBO,BLU,FO,FO,FO,,,,,1
+Larry Longshot,32,741,Tanya Degurechaff,3405,499,K,242,T5,0,0,0,5,-0.0018,0.0018,0,0,44,4,1,BLU,OBO,K,K,FO,,,,,1
+Beatrice D. Goldn'witch,3442,333,Tanya Degurechaff,3405,235,BB,98,T5,1,0,0,5,0.0011,-0.0011,0,0,44,4,1,BLU,OBO,BB,BB,1B,,,,,1
+TWs Frozen Head,2868,69,Tanya Degurechaff,3405,891,FO,178,T5,1,1,0,5,-0.0013,0.0013,0,0,44,4,1,BLU,OBO,FO,FO,FO,,,,,1
+Saul Pewald,2708,808,Tanya Degurechaff,3405,920,BB,112,T5,2,1,0,5,0.0018,-0.0018,0,0,44,4,1,BLU,OBO,BB,BB,1B,,,,,1
+Toky Oto,2773,213,Tanya Degurechaff,3405,69,BB,144,T5,2,4,0,5,0.0019,-0.0019,0,0,44,4,1,BLU,OBO,BB,BB,BB,,,,,1
+Steak Dynasty,3406,444,Tanya Degurechaff,3405,720,K,276,T5,2,7,0,5,-0.0067,0.0067,0,0,44,4,1,BLU,OBO,K,K,FO,,,,,1
+Charles Charles,3468,701,Frankie Gusts,2691,297,RGO,404,B5,0,0,0,5,-0.0091,0.0091,0,0,45,4,1,OBO,BLU,RGO,RGO,RGO,,,,,1
+Mack 'The Knife' Darin,3434,837,Frankie Gusts,2691,372,LGO,465,B5,1,0,0,5,-0.0062,0.0062,0,0,45,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
+Arlon Gemini,3390,185,Frankie Gusts,2691,701,LGO,484,B5,2,0,0,5,-0.0028,0.0028,0,0,45,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
+George Hankinson,3426,457,Tanya Degurechaff,3405,690,K,233,T6,0,0,0,5,-0.0008,0.0008,0,0,46,4,1,BLU,OBO,K,K,FO,,,,,1
+Tom E. Jahns,3115,251,Tanya Degurechaff,3405,976,K,275,T6,1,0,0,5,-0.0007,0.0007,0,0,46,4,1,BLU,OBO,K,K,FO,,,,,1
+Pablo The Hip Kawasaki,2890,666,Tanya Degurechaff,3405,148,LGO,482,T6,2,0,0,5,-0.0006,0.0006,0,0,46,4,1,BLU,OBO,LGO,LGO,LGO,,,,,1
+Bea Friday,3445,456,Frankie Gusts,2691,327,BB,129,B6,0,0,0,5,0.0105,-0.0105,0,0,47,4,1,OBO,BLU,BB,BB,1B,,,,,1
+Sablo Panchez,638,1,Frankie Gusts,2691,779,FO,222,B6,0,1,0,5,-0.0103,0.0103,0,0,47,4,1,OBO,BLU,FO,FO,FO,,,,,1
+Divorced Dad,3504,900,Frankie Gusts,2691,69,FO,169,B6,1,1,0,5,-0.0067,0.0067,0,0,47,4,1,OBO,BLU,FO,FO,BB,,,,,1
+Big Bad Evil Slime,2998,716,Frankie Gusts,2691,258,LGO,458,B6,2,1,0,5,-0.0027,0.0027,0,0,47,4,1,OBO,BLU,LGO,LGO,LGO,,,,,1
+Bloop Squibber,3393,666,Barney Turbo,28,731,1B,65,T1,0,0,0,0,0.0291,-0.0291,0,0,48,5,1,SPD,RHP,1B,1B,1B,,,,,1
+Homer Nocker,606,421,Barney Turbo,28,843,DP,422,T1,0,1,0,0,-0.076,0.076,0,0,48,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
+Friday,2826,612,Barney Turbo,28,4,RGO,392,T1,2,0,0,0,-0.0176,0.0176,0,0,48,5,1,SPD,RHP,RGO,RGO,PO,,,,,1
+Brent Chillwater,2689,11,Sean Carrcrash,1709,24,HR,13,B1,0,0,0,0,0.1179,-0.1179,1,1,49,5,1,RHP,SPD,HR,HR,HR,,,,1709,1
+Superbone Threefinger,413,23,Sean Carrcrash,1709,279,K,256,B1,0,0,1,0,-0.0197,0.0197,0,0,49,5,1,RHP,SPD,K,K,FO,,,,,1
+Charlie Buntman,2869,521,Sean Carrcrash,1709,707,FO,186,B1,1,0,1,0,-0.018,0.018,0,0,49,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Cucamonga Seattle,3377,419,Sean Carrcrash,1709,467,1B,48,B1,2,0,1,0,0.0169,-0.0169,0,0,49,5,1,RHP,SPD,1B,1B,2B,,,,,1
+La+ Darknesss,59,87,Sean Carrcrash,1709,370,K,283,B1,2,1,1,0,-0.0313,0.0313,0,0,49,5,1,RHP,SPD,K,K,FO,,,,,1
+Matilda No-Balls,3420,832,Barney Turbo,28,733,1B,99,T2,0,0,1,0,0.0346,-0.0346,0,0,50,5,1,SPD,RHP,1B,1B,1B,,,,,1
+Matilda No-Balls,3420,911,Barney Turbo,28,901,SB,10,T2,0,1,1,0,0.0414,-0.0414,0,0,50,5,1,SPD,RHP,STEAL 2B,STEAL 2B,SB,,,,,4
+Jacob Thomas,3105,325,Barney Turbo,28,855,LGO,470,T2,0,2,1,0,-0.0512,0.0512,0,0,50,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1
+Noah Diamond,2673,327,Barney Turbo,28,628,K,301,T2,1,2,1,0,-0.0449,0.0449,0,0,50,5,1,SPD,RHP,K,K,K,,,,,1
+Trevor Paultis,3416,444,Barney Turbo,28,800,PO,356,T2,2,2,1,0,-0.0541,0.0541,0,0,50,5,1,SPD,RHP,PO,PO,K,,,,,1
+Dutch Boggs,2625,11,Sean Carrcrash,1709,850,BB,161,B2,0,0,1,0,0.0202,-0.0202,0,0,51,5,1,RHP,SPD,BB,BB,BB,,,,,1
+Dutch Boggs,2625,490,Sean Carrcrash,1709,11,CS,479,B2,0,1,1,0,-0.0402,0.0402,0,0,51,5,1,RHP,SPD,CS 2B,CS 2B,CS,,,,,4
+Randall Peppers,2965,198,Sean Carrcrash,1709,390,FO,192,B2,1,0,1,0,-0.0183,0.0183,0,0,51,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Kandii Khayne,3503,543,Sean Carrcrash,1709,99,RGO,444,B2,2,0,1,0,-0.0156,0.0156,0,0,51,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
+Kries Von Kriestalhauser,2959,788,Barney Turbo,28,236,LGO,448,T3,0,0,1,0,-0.0332,0.0332,0,0,52,5,1,SPD,RHP,LGO,LGO,RGO,,,,,1
+Teddy Bigstick,2722,630,Barney Turbo,28,428,FO,202,T3,1,0,1,0,-0.0285,0.0285,0,0,52,5,1,SPD,RHP,FO,FO,FO,,,,,1
+Bloop Squibber,3393,69,Barney Turbo,28,123,2B,54,T3,2,0,1,0,0.0391,-0.0391,0,0,52,5,1,SPD,RHP,2B,2B,2B,,,,,1
+Homer Nocker,606,13,Barney Turbo,28,623,RGO,390,T3,2,2,1,0,-0.0617,0.0617,0,0,52,5,1,SPD,RHP,RGO,RGO,PO,,,,,1
+Trevor Rosé,1725,67,Sean Carrcrash,1709,799,K,268,B3,0,0,1,0,-0.0204,0.0204,0,0,53,5,1,RHP,SPD,K,K,FO,,,,,1
+Brent Chillwater,2689,11,Sean Carrcrash,1709,220,FO,209,B3,1,0,1,0,-0.018,0.018,0,0,53,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Superbone Threefinger,413,141,Sean Carrcrash,1709,552,RGO,411,B3,2,0,1,0,-0.0162,0.0162,0,0,53,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
+Friday,2826,831,Barney Turbo,28,966,BB,135,T4,0,0,1,0,0.0468,-0.0468,0,0,54,5,1,SPD,RHP,BB,BB,1B,,,,,1
+Matilda No-Balls,3420,666,Barney Turbo,28,563,1B,103,T4,0,1,1,0,0.0838,-0.0838,0,0,54,5,1,SPD,RHP,1B,1B,1B,,,,,1
+Jacob Thomas,3105,248,Barney Turbo,28,833,DP,415,T4,0,4,1,0,-0.1564,0.1564,0,0,54,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
+Noah Diamond,2673,433,Barney Turbo,28,929,LGO,496,T4,2,3,1,0,-0.0753,0.0753,0,0,54,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1
+Charlie Buntman,2869,1,Sean Carrcrash,1709,758,K,243,B4,0,0,1,0,-0.0187,0.0187,0,0,55,5,1,RHP,SPD,K,FO,FO,,,,,1
+Cucamonga Seattle,3377,353,Sean Carrcrash,1709,609,K,256,B4,1,0,1,0,-0.0174,0.0174,0,0,55,5,1,RHP,SPD,K,K,FO,,,,,1
+La+ Darknesss,59,587,Sean Carrcrash,1709,808,FO,221,B4,2,0,1,0,-0.0149,0.0149,0,0,55,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Trevor Paultis,3416,620,Barney Turbo,28,860,K,240,T5,0,0,1,0,-0.0498,0.0498,0,0,56,5,1,SPD,RHP,K,K,FO,,,,,1
+Kries Von Kriestalhauser,2959,723,Barney Turbo,28,627,1B,96,T5,1,0,1,0,0.0487,-0.0487,0,0,56,5,1,SPD,RHP,1B,1B,1B,,,,,1
+Teddy Bigstick,2722,2,Barney Turbo,28,125,BB,123,T5,1,1,1,0,0.0765,-0.0765,0,0,56,5,1,SPD,RHP,BB,BB,1B,,,,,1
+Bloop Squibber,3393,964,Barney Turbo,28,503,DP,461,T5,1,4,1,0,-0.2045,0.2045,0,0,56,5,1,SPD,RHP,LGO,LGO,DP,,,,,1
+Dutch Boggs,2625,577,Sean Carrcrash,1709,354,FO,223,B5,0,0,1,0,-0.0137,0.0137,0,0,57,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Randall Peppers,2965,711,Sean Carrcrash,1709,664,2B,47,B5,1,0,1,0,0.0253,-0.0253,0,0,57,5,1,RHP,SPD,2B,2B,2B,,,,,1
+Kandii Khayne,3503,96,Sean Carrcrash,1709,244,BB,148,B5,1,2,1,0,0.0032,-0.0032,0,0,57,5,1,RHP,SPD,BB,BB,BB,,,,,1
+Trevor Rosé,1725,2,Sean Carrcrash,1709,211,FO,209,B5,1,4,1,0,-0.0168,0.0168,0,0,57,5,1,RHP,SPD,FO,FO,FO,,,,,1
+Brent Chillwater,2689,865,Sean Carrcrash,1709,307,RGO,442,B5,2,4,1,0,-0.0361,0.0361,0,0,57,5,1,RHP,SPD,RGO,RGO,RGO,,,,,1
+Homer Nocker,606,421,Alt Site,1799,200,FO,221,T6,0,0,1,0,-0.0673,0.0673,0,0,58,5,1,SPD,RHP,FO,FO,FO,,,,,1
+Friday,2826,672,Alt Site,1799,789,BB,117,T6,1,0,1,0,0.0649,-0.0649,0,0,58,5,1,SPD,RHP,BB,1B,1B,,,,,1
+Friday,2826,500,Alt Site,1799,654,SB,154,T6,1,1,1,0,0.0655,-0.0655,0,0,58,5,1,SPD,RHP,STEAL 2B,STEAL 2B,SB,,,,,4
+Matilda No-Balls,3420,399,Alt Site,1799,117,PO,282,T6,1,2,1,0,-0.1036,0.1036,0,0,58,5,1,SPD,RHP,PO,PO,FO,,,,,1
+Jerome S. Monroe,2792,275,Alt Site,1799,738,LGO,463,T6,2,2,1,0,-0.1381,0.1381,0,0,58,5,1,SPD,RHP,LGO,LGO,LGO,,,,,1

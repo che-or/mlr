@@ -14,9 +14,9 @@ export const state = {
         fcb: {},           // season-based with logo info: { S3: { ABB: { name, logo_dark, logo_light } } }
         eco: {},           // season-based: { S1: { CC: "CC", ... } }
         npr: {},
+        llr: {},
         wbc: {},
         gib: {},
-        llr: {},
     },
     divisions: {
         mlr: {},           // { S1: { AL: { East: [...], ... }, NL: {...} } } or string ref to another season
@@ -24,9 +24,9 @@ export const state = {
         fcb: {},
         eco: {},
         npr: {},
+        llr: {},
         wbc: {},
         gib: {},
-        llr: {},
     },
 
     // Lazy-loaded stats — populated on demand, keyed by "<league>_<type>"
