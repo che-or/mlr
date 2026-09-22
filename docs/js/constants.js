@@ -176,5 +176,6 @@ export const LEAGUE_LABELS = {
     gib: 'GIB',
     eco: 'ECO',
     npr: 'NPR',
+    llr: 'LLR',
     wbc: 'WBC',
 };

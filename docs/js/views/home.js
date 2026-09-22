@@ -29,7 +29,7 @@ export async function renderHome() {
     container.innerHTML = `
         <div class="welcome-container">
             <h2 class="section-title">Welcome to MLR Reference!</h2>
-            <p>MLR Reference is your guide to stats for Major League Redditball (MLR) and associated fake baseball leagues. MLR Reference also has stats for Minor League Redditball (MiLR), Fake College Baseball (FCB), the original GIB Side League (GIB), Exhibition Co-op League (ECO), Nippon Professional Redditball (NPR), and the World Baseball Classic (WBC). Postseason stats are available for MLR and MiLR.</p>
+            <p>MLR Reference is your guide to stats for Major League Redditball (MLR) and associated fake baseball leagues. MLR Reference also has stats for Minor League Redditball (MiLR), Fake College Baseball (FCB), the original GIB Side League (GIB), Exhibition Co-op League (ECO), Nippon Professional Redditball (NPR), Little League Redditball (LLR), and the World Baseball Classic (WBC). Postseason stats are available for MLR and MiLR.</p>
             <p>Here you can find:</p>
             <ul>
                 <li><a href="#/stats"><strong>Player Stats:</strong></a> Detailed batting and pitching statistics for every player in MLR history. Players can be searched by name (including former names) or player ID.</li>

@@ -52,6 +52,7 @@ export async function loadCoreData() {
         fcbTeamHistory,
         ecoTeamHistory,
         nprTeamHistory,
+        llrTeamHistory,
         wbcTeamHistory,
         gibTeamHistory,
         mlrDivisions,
@@ -59,6 +60,7 @@ export async function loadCoreData() {
         fcbDivisions,
         ecoDivisions,
         nprDivisions,
+        llrDivisions,
         wbcDivisions,
         gibDivisions,
     ] = await Promise.all([
@@ -73,6 +75,7 @@ export async function loadCoreData() {
         fetch(`${DATA}/fcb_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/eco_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/npr_team_history.json`).then(r => r.json()),
+        fetch(`${DATA}/llr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/wbc_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/gib_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/mlr_divisions.json`).then(r => r.json()),
@@ -80,6 +83,7 @@ export async function loadCoreData() {
         fetch(`${DATA}/fcb_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/eco_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/npr_divisions.json`).then(r => r.json()),
+        fetch(`${DATA}/llr_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/wbc_divisions.json`).then(r => r.json()),
         fetch(`${DATA}/gib_divisions.json`).then(r => r.json()),
     ]);
@@ -95,6 +99,7 @@ export async function loadCoreData() {
     state.teamHistory.fcb = fcbTeamHistory;
     state.teamHistory.eco = ecoTeamHistory;
     state.teamHistory.npr = nprTeamHistory;
+    state.teamHistory.llr = llrTeamHistory;
     state.teamHistory.wbc = wbcTeamHistory;
     state.teamHistory.gib = gibTeamHistory;
     state.divisions.mlr = mlrDivisions;
@@ -102,6 +107,7 @@ export async function loadCoreData() {
     state.divisions.fcb = fcbDivisions;
     state.divisions.eco = ecoDivisions;
     state.divisions.npr = nprDivisions;
+    state.divisions.llr = llrDivisions;
     state.divisions.wbc = wbcDivisions;
     state.divisions.gib = gibDivisions;
 

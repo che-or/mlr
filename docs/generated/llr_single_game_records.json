@@ -1,0 +1,2329 @@
+{
+  "player": {
+    "batter": {
+      "2B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 190,
+            "season": "S1",
+            "session": 10,
+            "team": "JPN",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 124,
+            "season": "S1",
+            "session": 5,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "CAL"
+          },
+          {
+            "id": 84,
+            "season": "S1",
+            "session": 3,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "id": 213,
+            "season": "S1",
+            "session": 1,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "3B": {
+        "record": 1,
+        "tie_count": 29,
+        "most_recent": {
+          "id": 63,
+          "season": "S1",
+          "session": 9,
+          "team": "NY",
+          "location": "Home",
+          "opponent": "SYD"
+        }
+      },
+      "Auto K": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 190,
+            "season": "S1",
+            "session": 7,
+            "team": "JPN",
+            "location": "Home",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "BB": {
+        "record": 2,
+        "tie_count": 9,
+        "most_recent": {
+          "id": 124,
+          "season": "S1",
+          "session": 10,
+          "team": "HI",
+          "location": "Home",
+          "opponent": "JPN"
+        }
+      },
+      "CS": {
+        "record": 1,
+        "tie_count": 13,
+        "most_recent": {
+          "id": 207,
+          "season": "S1",
+          "session": 9,
+          "team": "WAS",
+          "location": "Away",
+          "opponent": "HI"
+        }
+      },
+      "FO": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 351,
+            "season": "S1",
+            "session": 8,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          },
+          {
+            "id": 131,
+            "season": "S1",
+            "session": 7,
+            "team": "SYD",
+            "location": "Away",
+            "opponent": "VEN"
+          },
+          {
+            "id": 420,
+            "season": "S1",
+            "session": 6,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "WAS"
+          },
+          {
+            "id": 331,
+            "season": "S1",
+            "session": 6,
+            "team": "SYD",
+            "location": "Away",
+            "opponent": "JPN"
+          },
+          {
+            "id": 73,
+            "season": "S1",
+            "session": 4,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 419,
+            "season": "S1",
+            "session": 10,
+            "team": "JPN",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 145,
+            "season": "S1",
+            "session": 7,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 5,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "id": 268,
+            "season": "S1",
+            "session": 3,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "H": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 386,
+            "season": "S1",
+            "session": 8,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          },
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 7,
+            "team": "SYD",
+            "location": "Away",
+            "opponent": "VEN"
+          },
+          {
+            "id": 63,
+            "season": "S1",
+            "session": 4,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "JPN"
+          },
+          {
+            "id": 1952,
+            "season": "S1",
+            "session": 4,
+            "team": "JPN",
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 3,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "HR": {
+        "record": 2,
+        "tie_count": 11,
+        "most_recent": {
+          "id": 163,
+          "season": "S1",
+          "session": 10,
+          "team": "WAS",
+          "location": "Home",
+          "opponent": "GCA"
+        }
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 80,
+            "season": "S1",
+            "session": 5,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "id": 197,
+            "season": "S1",
+            "session": 2,
+            "team": "HI",
+            "location": "Away",
+            "opponent": "JPN"
+          },
+          {
+            "id": 71,
+            "season": "S1",
+            "session": 2,
+            "team": "SYD",
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "id": 249,
+            "season": "S1",
+            "session": 1,
+            "team": "GCA",
+            "location": "Away",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 2,
+        "tie_count": 15,
+        "most_recent": {
+          "id": 272,
+          "season": "S1",
+          "session": 9,
+          "team": "SYD",
+          "location": "Away",
+          "opponent": "NY"
+        }
+      },
+      "PA": {
+        "record": 4,
+        "tie_count": 23,
+        "most_recent": {
+          "id": 645,
+          "season": "S1",
+          "session": 9,
+          "team": "GCA",
+          "location": "Away",
+          "opponent": "JPN"
+        }
+      },
+      "PO": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 117,
+            "season": "S1",
+            "session": 7,
+            "team": "SYD",
+            "location": "Away",
+            "opponent": "VEN"
+          },
+          {
+            "id": 176,
+            "season": "S1",
+            "session": 4,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          },
+          {
+            "id": 198,
+            "season": "S1",
+            "session": 3,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "SYD"
+          },
+          {
+            "id": 213,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "R": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 1,
+            "season": "S1",
+            "session": 9,
+            "team": "GCA",
+            "location": "Away",
+            "opponent": "JPN"
+          },
+          {
+            "id": 145,
+            "season": "S1",
+            "session": 6,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "WAS"
+          },
+          {
+            "id": 392,
+            "season": "S1",
+            "session": 4,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "VEN"
+          },
+          {
+            "id": 3472,
+            "season": "S1",
+            "session": 4,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 7,
+        "holders": [
+          {
+            "id": 57,
+            "season": "S1",
+            "session": 5,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 4.778802681198271,
+        "holders": [
+          {
+            "id": 392,
+            "season": "S1",
+            "session": 4,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 358,
+            "season": "S1",
+            "session": 4,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 124,
+            "season": "S1",
+            "session": 7,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "id": 84,
+            "season": "S1",
+            "session": 2,
+            "team": "HI",
+            "location": "Away",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "SO": {
+        "record": 3,
+        "tie_count": 6,
+        "most_recent": {
+          "id": 278,
+          "season": "S1",
+          "session": 9,
+          "team": "GCA",
+          "location": "Away",
+          "opponent": "JPN"
+        }
+      },
+      "TB": {
+        "record": 8,
+        "tie_count": 11,
+        "most_recent": {
+          "id": 163,
+          "season": "S1",
+          "session": 10,
+          "team": "WAS",
+          "location": "Home",
+          "opponent": "GCA"
+        }
+      },
+      "WAR": {
+        "record": 0.4886705099903068,
+        "holders": [
+          {
+            "id": 392,
+            "season": "S1",
+            "session": 4,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.4866,
+        "holders": [
+          {
+            "id": 46,
+            "season": "S1",
+            "session": 5,
+            "team": "GCA",
+            "location": "Home",
+            "opponent": "SYD"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 180,
+            "season": "S1",
+            "session": 10,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 14,
+        "holders": [
+          {
+            "id": 390,
+            "season": "S1",
+            "session": 9,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 342,
+            "season": "S1",
+            "session": 9,
+            "team": "SYD",
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "id": 298,
+            "season": "S1",
+            "session": 8,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "id": 250,
+            "season": "S1",
+            "session": 7,
+            "team": "VEN",
+            "location": "Home",
+            "opponent": "SYD"
+          },
+          {
+            "id": 371,
+            "season": "S1",
+            "session": 6,
+            "team": "VEN",
+            "location": "Home",
+            "opponent": "GCA"
+          },
+          {
+            "id": 247,
+            "season": "S1",
+            "session": 3,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 211,
+            "season": "S1",
+            "session": 7,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 10,
+        "most_recent": {
+          "id": 363,
+          "season": "S1",
+          "session": 8,
+          "team": "GCA",
+          "location": "Home",
+          "opponent": "SYD"
+        }
+      },
+      "BB": {
+        "record": 4,
+        "tie_count": 8,
+        "most_recent": {
+          "id": 2,
+          "season": "S1",
+          "session": 10,
+          "team": "JPN",
+          "location": "Away",
+          "opponent": "HI"
+        }
+      },
+      "BF": {
+        "record": 29,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 6,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 249,
+            "season": "S1",
+            "session": 2,
+            "team": "GCA",
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "DP": {
+        "record": 3,
+        "holders": [
+          {
+            "id": 180,
+            "season": "S1",
+            "session": 7,
+            "team": "HI",
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "id": 198,
+            "season": "S1",
+            "session": 5,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "JPN"
+          },
+          {
+            "id": 207,
+            "season": "S1",
+            "session": 5,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "id": 357,
+            "season": "S1",
+            "session": 3,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "id": 189,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "ER": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 6,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "id": 133,
+            "season": "S1",
+            "session": 4,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 6,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "H": {
+        "record": 10,
+        "holders": [
+          {
+            "id": 133,
+            "season": "S1",
+            "session": 4,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 163,
+            "season": "S1",
+            "session": 6,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "id": 247,
+            "season": "S1",
+            "session": 5,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "id": 416,
+            "season": "S1",
+            "session": 2,
+            "team": "JPN",
+            "location": "Home",
+            "opponent": "HI"
+          },
+          {
+            "id": 189,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          },
+          {
+            "id": 371,
+            "season": "S1",
+            "session": 1,
+            "team": "VEN",
+            "location": "Home",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 2,
+            "team": "SYD",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 6,
+        "holders": [
+          {
+            "id": 247,
+            "season": "S1",
+            "session": 8,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "id": 357,
+            "season": "S1",
+            "session": 3,
+            "team": "CAL",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "id": 275,
+            "season": "S1",
+            "session": 2,
+            "team": "SYD",
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -3.8513513513513513,
+        "holders": [
+          {
+            "id": 326,
+            "season": "S1",
+            "session": 9,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 211,
+            "season": "S1",
+            "session": 4,
+            "team": "WAS",
+            "location": "Home",
+            "opponent": "SYD"
+          },
+          {
+            "id": 189,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 8,
+        "holders": [
+          {
+            "id": 133,
+            "season": "S1",
+            "session": 4,
+            "team": "VEN",
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "id": 262,
+            "season": "S1",
+            "session": 8,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "id": 420,
+            "season": "S1",
+            "session": 7,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 247,
+            "season": "S1",
+            "session": 5,
+            "team": "NY",
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "SO": {
+        "record": 9,
+        "holders": [
+          {
+            "id": 190,
+            "season": "S1",
+            "session": 9,
+            "team": "JPN",
+            "location": "Home",
+            "opponent": "GCA"
+          },
+          {
+            "id": 2,
+            "season": "S1",
+            "session": 3,
+            "team": "JPN",
+            "location": "Away",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.49650943288169735,
+        "holders": [
+          {
+            "id": 326,
+            "season": "S1",
+            "session": 9,
+            "team": "WAS",
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "id": 189,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.7170000000000001,
+        "holders": [
+          {
+            "id": 189,
+            "season": "S1",
+            "session": 2,
+            "team": "NY",
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      }
+    }
+  },
+  "team": {
+    "batter": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 10,
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "CAL"
+          },
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "team": "NY",
+          "season": "S1",
+          "session": 9,
+          "location": "Home",
+          "opponent": "SYD"
+        }
+      },
+      "Auto K": {
+        "record": 3,
+        "holders": [
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "GCA"
+          },
+          {
+            "team": "VEN",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "GCA"
+          },
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "BB": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 8,
+            "location": "Away",
+            "opponent": "GCA"
+          },
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "WAS"
+          },
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "H": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "VEN"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 6,
+            "location": "Away",
+            "opponent": "WAS"
+          },
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "JPN"
+          },
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "team": "GCA",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 8,
+            "location": "Away",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "PA": {
+        "record": 32,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 3,
+            "location": "Away",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "R": {
+        "record": 13,
+        "holders": [
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "RBI": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "RE24": {
+        "record": 9.79054054054054,
+        "holders": [
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 8,
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "CAL"
+          },
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "NY"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "SO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "TB": {
+        "record": 30,
+        "holders": [
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 1.0591280575436108,
+        "holders": [
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 4,
+            "location": "Home",
+            "opponent": "VEN"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.5981000000000001,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "JPN"
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 10,
+            "location": "Home",
+            "opponent": "JPN"
+          },
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 15,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 1,
+            "location": "Away",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "3B": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "team": "SYD",
+          "season": "S1",
+          "session": 9,
+          "location": "Away",
+          "opponent": "NY"
+        }
+      },
+      "400+ Pitches": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 10,
+        "most_recent": {
+          "team": "GCA",
+          "season": "S1",
+          "session": 8,
+          "location": "Home",
+          "opponent": "SYD"
+        }
+      },
+      "BB": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "BF": {
+        "record": 32,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "GCA",
+            "season": "S1",
+            "session": 8,
+            "location": "Home",
+            "opponent": "SYD"
+          },
+          {
+            "team": "GCA",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "DP": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "ER": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "HI",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "FO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "SYD"
+          }
+        ]
+      },
+      "H": {
+        "record": 12,
+        "holders": [
+          {
+            "team": "VEN",
+            "season": "S1",
+            "session": 7,
+            "location": "Home",
+            "opponent": "SYD"
+          },
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "HR": {
+        "record": 6,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 6,
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "team": "GCA",
+            "season": "S1",
+            "session": 3,
+            "location": "Home",
+            "opponent": "JPN"
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "HI"
+          },
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          },
+          {
+            "team": "VEN",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "GCA"
+          }
+        ]
+      },
+      "IP": {
+        "record": "7.0",
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          },
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NY"
+          },
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "LGO": {
+        "record": 7,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 8,
+            "location": "Home",
+            "opponent": "WAS"
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "team": "SYD",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "NY"
+          }
+        ]
+      },
+      "RE24": {
+        "record": -4.068742655699177,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          },
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "RGO": {
+        "record": 8,
+        "holders": [
+          {
+            "team": "VEN",
+            "season": "S1",
+            "session": 4,
+            "location": "Away",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 8,
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 7,
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "team": "CAL",
+            "season": "S1",
+            "session": 5,
+            "location": "Away",
+            "opponent": "HI"
+          },
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 5,
+            "location": "Home",
+            "opponent": "WAS"
+          },
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "SO": {
+        "record": 10,
+        "holders": [
+          {
+            "team": "JPN",
+            "season": "S1",
+            "session": 2,
+            "location": "Home",
+            "opponent": "HI"
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.5424603671744282,
+        "holders": [
+          {
+            "team": "WAS",
+            "season": "S1",
+            "session": 1,
+            "location": "Home",
+            "opponent": "CAL"
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.9510000000000001,
+        "holders": [
+          {
+            "team": "NY",
+            "season": "S1",
+            "session": 2,
+            "location": "Away",
+            "opponent": "SYD"
+          }
+        ]
+      }
+    }
+  },
+  "combined": {
+    "batter": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "JPN",
+            "home": "HI",
+            "season": "S1",
+            "session": 10
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SYD",
+            "home": "NY",
+            "season": "S1",
+            "session": 9
+          },
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 8
+          }
+        ]
+      },
+      "Auto K": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "GCA",
+            "home": "JPN",
+            "season": "S1",
+            "session": 7
+          },
+          {
+            "away": "GCA",
+            "home": "VEN",
+            "season": "S1",
+            "session": 6
+          }
+        ]
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "GCA",
+            "home": "JPN",
+            "season": "S1",
+            "session": 7
+          },
+          {
+            "away": "WAS",
+            "home": "HI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "SYD",
+            "home": "GCA",
+            "season": "S1",
+            "session": 8
+          },
+          {
+            "away": "CAL",
+            "home": "GCA",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "FO": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          }
+        ]
+      },
+      "GIDP": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "H": {
+        "record": 21,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "JPN",
+            "home": "GCA",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "HI",
+            "home": "JPN",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "GCA",
+            "home": "VEN",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 8
+          }
+        ]
+      },
+      "PA": {
+        "record": 60,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "VEN",
+            "home": "SYD",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "R": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "VEN",
+            "home": "CAL",
+            "season": "S1",
+            "session": 4
+          },
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "RBI": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "RE24": {
+        "record": 7.9391891891891895,
+        "holders": [
+          {
+            "away": "VEN",
+            "home": "CAL",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "RGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "SYD",
+          "home": "NY",
+          "season": "S1",
+          "session": 9
+        }
+      },
+      "SO": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "TB": {
+        "record": 41,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.9675083519526333,
+        "holders": [
+          {
+            "away": "VEN",
+            "home": "CAL",
+            "season": "S1",
+            "session": 4
+          }
+        ]
+      },
+      "WPA": {
+        "record": 0.6962,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "JPN",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      }
+    },
+    "pitcher": {
+      "2B": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "JPN",
+            "home": "HI",
+            "season": "S1",
+            "session": 10
+          }
+        ]
+      },
+      "300+ Pitches": {
+        "record": 29,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "3B": {
+        "record": 3,
+        "holders": [
+          {
+            "away": "SYD",
+            "home": "NY",
+            "season": "S1",
+            "session": 9
+          },
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 8
+          }
+        ]
+      },
+      "400+ Pitches": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "CAL",
+            "home": "WAS",
+            "season": "S1",
+            "session": 7
+          },
+          {
+            "away": "NY",
+            "home": "CAL",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "Auto BB": {
+        "record": 1,
+        "tie_count": 10,
+        "most_recent": {
+          "away": "SYD",
+          "home": "GCA",
+          "season": "S1",
+          "session": 8
+        }
+      },
+      "BB": {
+        "record": 9,
+        "holders": [
+          {
+            "away": "GCA",
+            "home": "JPN",
+            "season": "S1",
+            "session": 7
+          },
+          {
+            "away": "WAS",
+            "home": "HI",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "BF": {
+        "record": 60,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "CS": {
+        "record": 2,
+        "holders": [
+          {
+            "away": "SYD",
+            "home": "GCA",
+            "season": "S1",
+            "session": 8
+          },
+          {
+            "away": "CAL",
+            "home": "GCA",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "DP": {
+        "record": 6,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "ER": {
+        "record": 15,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "FO": {
+        "record": 19,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          }
+        ]
+      },
+      "H": {
+        "record": 21,
+        "holders": [
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "HR": {
+        "record": 7,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "WAS",
+            "season": "S1",
+            "session": 6
+          },
+          {
+            "away": "JPN",
+            "home": "GCA",
+            "season": "S1",
+            "session": 3
+          }
+        ]
+      },
+      "IBB": {
+        "record": 1,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "HI",
+            "home": "JPN",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          },
+          {
+            "away": "GCA",
+            "home": "VEN",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "IP": {
+        "record": "14.0",
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "LGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 8
+          }
+        ]
+      },
+      "PO": {
+        "record": 4,
+        "holders": [
+          {
+            "away": "VEN",
+            "home": "SYD",
+            "season": "S1",
+            "session": 3
+          },
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RE24": {
+        "record": -7.137485311398355,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "RGO": {
+        "record": 12,
+        "holders": [
+          {
+            "away": "WAS",
+            "home": "NY",
+            "season": "S1",
+            "session": 5
+          },
+          {
+            "away": "HI",
+            "home": "NY",
+            "season": "S1",
+            "session": 1
+          }
+        ]
+      },
+      "SB": {
+        "record": 2,
+        "tie_count": 6,
+        "most_recent": {
+          "away": "SYD",
+          "home": "NY",
+          "season": "S1",
+          "session": 9
+        }
+      },
+      "SO": {
+        "record": 14,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "WAR": {
+        "record": 0.9607089304909082,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      },
+      "WPA": {
+        "record": 1.402,
+        "holders": [
+          {
+            "away": "NY",
+            "home": "SYD",
+            "season": "S1",
+            "session": 2
+          }
+        ]
+      }
+    }
+  }
+}

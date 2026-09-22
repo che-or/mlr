@@ -22,7 +22,41 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
     runs_this_play = []
     runners_after_play = [None, None, None]
     outs_this_play = 0
-    
+
+#-----LLR FIELDING ERROR LOGIC-----
+    # PA Type 31: batter reached on an error that should have been an out (Exact Result shows the
+    # out type it should have been). Batter is safe; no out recorded; every existing runner advances
+    # exactly one base (same runner movement as a single, but with zero outs).
+    if pa_type == 31:
+        if runners_before_play[2]:
+            runs_this_play.append(runners_before_play[2]) # runner on third scores
+        runners_after_play = [current_hitter_id, runners_before_play[0], runners_before_play[1]] # batter to first, first to second, second to third
+        outs_this_play = 0
+
+    # PA Type 32: standalone error event (no batter on this row) attached to the preceding play -
+    # every runner already on base advances one additional base.
+    if pa_type == 32:
+        if runners_before_play[2]:
+            runs_this_play.append(runners_before_play[2]) # runner on third scores
+        runners_after_play = [None, runners_before_play[0], runners_before_play[1]] # first to second, second to third, no new runner at first
+        outs_this_play = 0
+
+    # PA Type 33: caught stealing via error - the runner attempting the steal is actually safe (still
+    # credited as a caught stealing for counting-stat purposes elsewhere), and no out is recorded here.
+    # Only the stealing runner moves; everyone else holds.
+    if pa_type == 33:
+        if 'HOME' in result.upper():
+            if runners_before_play[2]:
+                runs_this_play.append(runners_before_play[2]) # runner steals home safely
+            runners_after_play = [runners_before_play[0], runners_before_play[1], None]
+        elif '3B' in result.upper():
+            runners_after_play = [runners_before_play[0], None, runners_before_play[1]] # runner safe at third
+        elif '2B' in result.upper():
+            runners_after_play = [None, runners_before_play[0], runners_before_play[2]] # runner safe at second
+        else:
+            runners_after_play = runners_before_play
+        outs_this_play = 0
+
 #-----HIT LOGIC-----
     # Home Runs
     if result == 'HR':
@@ -98,7 +132,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
     
 #-----OUT LOGIC-----
     # Flyouts (including sacrifice flies)
-    if result == 'FO':
+    if result == 'FO' and pa_type != 31:
         outs_this_play = 1 # one out recorded
         if current_outs < 2: # inning continues 
             if runners_before_play[2]: # sacrifice fly logic
@@ -110,7 +144,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
             runners_after_play = [None, None, None] # bases are cleared
     
     # Strikeouts (including bunt and auto strikeouts) & Popouts
-    if result.upper() in ['K', 'AUTO K', 'BUNT K', 'PO']:
+    if result.upper() in ['K', 'AUTO K', 'BUNT K', 'PO'] and pa_type != 31:
         outs_this_play = 1 # one out recorded
         if current_outs < 2: # inning continues
             runners_after_play = runners_before_play # runners stay
@@ -118,7 +152,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
             runners_after_play = [None, None, None] # bases are cleared
     
     # Right Groundouts
-    if result == 'RGO':
+    if result == 'RGO' and pa_type != 31:
         # 2-out logic
         if current_outs == 2:
             outs_this_play = 1 # one out recorded
@@ -201,7 +235,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
                 runners_after_play = [None, None, None] # bases remain empty
      
     # Left Groundouts
-    if result == 'LGO':
+    if result == 'LGO' and pa_type != 31:
         # 2-out logic
         if current_outs == 2:
             outs_this_play = 1 # one out recorded
@@ -332,7 +366,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
             runners_after_play = 'Invalid Result' # cannot steal second without runner on first and empty second
     
     # Caught Stealing 2B
-    if result == 'CS 2B':
+    if result == 'CS 2B' and pa_type != 33:
         if runners_before_play[0] and not runners_before_play[1]: # stealing second requires runner on first and empty second
             outs_this_play = 1 # one out recorded
             if current_outs < 2: # inning continues
@@ -350,7 +384,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
             runners_after_play = 'Invalid Result' # cannot steal third without runner on second and empty third
             
     # Caught Stealing 3B            
-    if result == 'CS 3B':
+    if result == 'CS 3B' and pa_type != 33:
         if runners_before_play[1] and not runners_before_play[2]: # stealing third requires runner on second and empty third
             outs_this_play = 1 # one out recorded
             if current_outs < 2: # inning continues
@@ -369,7 +403,7 @@ def _simulate_runners(runners_before_play, current_outs, result, diff, season, p
             runners_after_play = 'Invalid Result' # cannot steal home without runner on third
             
     # Caught Stealing Home        
-    if result.upper() == 'CS HOME':
+    if result.upper() == 'CS HOME' and pa_type != 33:
         if runners_before_play[2]: # stealing home requires runner on third
             outs_this_play = 1 # one out recorded
             if current_outs < 2: # inning continues

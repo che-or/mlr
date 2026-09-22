@@ -70,7 +70,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "BABIP = (Hits \u00e2\u02c6\u2019 Home Runs) / (At Bats \u00e2\u02c6\u2019 Strikeouts \u00e2\u02c6\u2019 Home Runs + Sacrifice Flies)"
+            "value": "BABIP = (Hits \u2212 Home Runs) / (At Bats \u2212 Strikeouts \u2212 Home Runs + Sacrifice Flies)"
           }
         ]
       }
@@ -86,7 +86,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "BB6 = (Walks \u00c3\u2014 6) / Innings Pitched"
+            "value": "BB6 = (Walks \u00d7 6) / Innings Pitched"
           }
         ]
       }
@@ -127,7 +127,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "ERA = (Earned Runs \u00c3\u2014 6) / Innings Pitched"
+            "value": "ERA = (Earned Runs \u00d7 6) / Innings Pitched"
           }
         ]
       }
@@ -169,7 +169,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "ERA- = 100 \u00c3\u2014 (Player's Park-Neutral ERA / League's Park-Neutral ERA)"
+            "value": "ERA- = 100 \u00d7 (Player's Park-Neutral ERA / League's Park-Neutral ERA)"
           },
           {
             "type": "html",
@@ -221,7 +221,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "FIP = ((13 \u00c3\u2014 HR) + (3 \u00c3\u2014 BB) \u00e2\u02c6\u2019 (2 \u00c3\u2014 K)) / IP + FIP Constant"
+            "value": "FIP = ((13 \u00d7 HR) + (3 \u00d7 BB) \u2212 (2 \u00d7 K)) / IP + FIP Constant"
           },
           {
             "type": "html",
@@ -233,7 +233,7 @@
           },
           {
             "type": "equation",
-            "value": "FIP Constant = League ERA \u00e2\u02c6\u2019 ((13 \u00c3\u2014 League HR) + (3 \u00c3\u2014 League BB) \u00e2\u02c6\u2019 (2 \u00c3\u2014 League K)) / League IP"
+            "value": "FIP Constant = League ERA \u2212 ((13 \u00d7 League HR) + (3 \u00d7 League BB) \u2212 (2 \u00d7 League K)) / League IP"
           },
           {
             "type": "text",
@@ -285,7 +285,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "H6 = (Hits \u00c3\u2014 6) / Innings Pitched"
+            "value": "H6 = (Hits \u00d7 6) / Innings Pitched"
           }
         ]
       }
@@ -316,7 +316,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "HR6 = (Home Runs \u00c3\u2014 6) / Innings Pitched"
+            "value": "HR6 = (Home Runs \u00d7 6) / Innings Pitched"
           }
         ]
       }
@@ -332,7 +332,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "ISO = Slugging Percentage \u00e2\u02c6\u2019 Batting Average"
+            "value": "ISO = Slugging Percentage \u2212 Batting Average"
           }
         ]
       }
@@ -418,7 +418,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "OPS+ = 100 \u00c3\u2014 ((Player's Park-Neutral OBP / League's Park-Neutral OBP) + (Player's Park-Neutral SLG / League's Park-Neutral SLG) \u00e2\u02c6\u2019 1)"
+            "value": "OPS+ = 100 \u00d7 ((Player's Park-Neutral OBP / League's Park-Neutral OBP) + (Player's Park-Neutral SLG / League's Park-Neutral SLG) \u2212 1)"
           },
           {
             "type": "text",
@@ -470,11 +470,11 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "RE24 = (Run Expectancy After Play) \u00e2\u02c6\u2019 (Run Expectancy Before Play) + (Runs Scored on Play)"
+            "value": "RE24 = (Run Expectancy After Play) \u2212 (Run Expectancy Before Play) + (Runs Scored on Play)"
           },
           {
             "type": "html",
-            "value": "<ol><li><strong>Run Expectancy (RE) Matrix:</strong> First, a Run Expectancy Matrix is calculated for each season. This matrix contains the average number of runs that will score from every possible base-out state until the end of the inning. There are 24 possible states (8 base states \u00c3\u2014 3 out states). Because the matrix is calculated empirically from all innings in a season, it can change over the course of the season. A player's RE24 may change without recording a new plate appearance.</li><li><strong>Before and After States:</strong> For every plate appearance in the season, the base-out state before and after the play is recorded.</li><li><strong>Applying the Formula:</strong> The RE values for the before and after states are looked up in the matrix and the formula above is applied. Any runs that score directly on the play are also added.</li><li><strong>Aggregation:</strong> A player's seasonal RE24 is the sum of the RE24 values from all of their plate appearances (or stolen base attempts).</li></ol>"
+            "value": "<ol><li><strong>Run Expectancy (RE) Matrix:</strong> First, a Run Expectancy Matrix is calculated for each season. This matrix contains the average number of runs that will score from every possible base-out state until the end of the inning. There are 24 possible states (8 base states \u00d7 3 out states). Because the matrix is calculated empirically from all innings in a season, it can change over the course of the season. A player's RE24 may change without recording a new plate appearance.</li><li><strong>Before and After States:</strong> For every plate appearance in the season, the base-out state before and after the play is recorded.</li><li><strong>Applying the Formula:</strong> The RE values for the before and after states are looked up in the matrix and the formula above is applied. Any runs that score directly on the play are also added.</li><li><strong>Aggregation:</strong> A player's seasonal RE24 is the sum of the RE24 values from all of their plate appearances (or stolen base attempts).</li></ol>"
           }
         ]
       },
@@ -483,7 +483,7 @@
         "blocks": [
           {
             "type": "html",
-            "value": "<table class='stats-table re-matrix'><thead><tr><th>Outs</th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th></tr></thead><tbody><tr><td><strong>0</strong></td><td>0.521</td><td>1.056</td><td>1.889</td><td>0.000</td><td>1.111</td><td>1.000</td><td>3.333</td><td>1.000</td></tr><tr><td><strong>1</strong></td><td>0.255</td><td>0.444</td><td>1.357</td><td>1.000</td><td>0.600</td><td>2.333</td><td>1.333</td><td>3.333</td></tr><tr><td><strong>2</strong></td><td>0.152</td><td>0.233</td><td>0.167</td><td>0.200</td><td>0.125</td><td>0.200</td><td>1.000</td><td>0.000</td></tr></tbody></table>"
+            "value": "<table class='stats-table re-matrix'><thead><tr><th>Outs</th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"none\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th><th><svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\"><polygon points=\"12,2 17,7 12,12 7,7\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"5,9 10,14 5,19 0,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/><polygon points=\"19,9 24,14 19,19 14,14\" fill=\"#D7DADC\" stroke=\"#D7DADC\" stroke-width=\"1.5\"/></svg></th></tr></thead><tbody><tr><td><strong>0</strong></td><td>0.545</td><td>1.150</td><td>1.818</td><td>0.000</td><td>1.333</td><td>1.000</td><td>2.750</td><td>1.500</td></tr><tr><td><strong>1</strong></td><td>0.261</td><td>0.433</td><td>1.267</td><td>1.000</td><td>0.500</td><td>2.333</td><td>1.100</td><td>2.333</td></tr><tr><td><strong>2</strong></td><td>0.158</td><td>0.212</td><td>0.143</td><td>0.429</td><td>0.083</td><td>0.167</td><td>0.750</td><td>0.000</td></tr></tbody></table>"
           }
         ]
       }
@@ -547,7 +547,7 @@
         "blocks": [
           {
             "type": "equation",
-            "value": "SO6 = (Strikeouts \u00c3\u2014 6) / Innings Pitched"
+            "value": "SO6 = (Strikeouts \u00d7 6) / Innings Pitched"
           }
         ]
       }
@@ -627,7 +627,7 @@
       {
         "title": "Case 1: Starting Pitcher Earns the Win",
         "conditions": [
-          "Pitches at least 3\u00e2\u2026\u201c innings.",
+          "Pitches at least 3\u2153 innings.",
           "Their team has the lead when they exit.",
           "That lead is never given up for the rest of the game."
         ]
@@ -635,7 +635,7 @@
       {
         "title": "Case 2: Reliever Earns the Win (Starter Doesn't Qualify)",
         "conditions": [
-          "The starting pitcher pitches fewer than 3\u00e2\u2026\u201c innings.",
+          "The starting pitcher pitches fewer than 3\u2153 innings.",
           "The team has the lead when the starter exits and never gives it up.",
           "The win is awarded to the first relief pitcher to record at least one out."
         ]
@@ -668,7 +668,7 @@
   },
   "WAR": {
     "name": "Wins Above Replacement",
-    "details": "Wins Above Replacement (WAR or cheWAR) is a comprehensive statistic that attempts to consolidate a player's total contribution into a single number. It represents how many more wins a player is worth than a replacement-level player \u00e2\u20ac\u201d a hypothetical, readily-available player who could be substituted at minimal cost. Unlike traditional WAR models (FanGraphs, Baseball Reference), cheWAR is not context-neutral. It is based directly on RE24, meaning it reflects the context of each play. While traditional WAR asks 'Who is the best player?', cheWAR asks 'Who is the most valuable?' MLR does not have a fielding component, so a player's value lies solely in how well they produce or prevent runs.",
+    "details": "Wins Above Replacement (WAR or cheWAR) is a comprehensive statistic that attempts to consolidate a player's total contribution into a single number. It represents how many more wins a player is worth than a replacement-level player \u2014 a hypothetical, readily-available player who could be substituted at minimal cost. Unlike traditional WAR models (FanGraphs, Baseball Reference), cheWAR is not context-neutral. It is based directly on RE24, meaning it reflects the context of each play. While traditional WAR asks 'Who is the best player?', cheWAR asks 'Who is the most valuable?' MLR does not have a fielding component, so a player's value lies solely in how well they produce or prevent runs.",
     "sections": [
       {
         "title": "Interpretation",
@@ -701,7 +701,7 @@
           },
           {
             "type": "html",
-            "value": "<ol><li><strong>Total WAR Pool:</strong> The total WAR available for all players in a season is <strong>(Number of Regular Season Games) \u00c3\u2014 0.41</strong>. For recent seasons (16 sessions \u00c3\u2014 15 games = 240 games), this is <strong>98.4 WAR</strong> \u00e2\u20ac\u201d calibrated to match MLB's ~1,000 WAR available per full season.</li><li><strong>Hitter/Pitcher Split:</strong> The total WAR pool is split evenly, with 50% allocated to hitters and 50% to pitchers.</li><li><strong>Runs Per Win (RPW):</strong> A standard value of <strong>10 Runs Per Win</strong> is used \u00e2\u20ac\u201d every 10 runs above replacement equals 1 WAR.</li><li><strong>Runs Above Replacement (RAR):</strong> A player's Runs Above Average (RAA) is their RE24 for the season. A replacement-level run value is then calculated based on the total WAR pool and total playing time (Plate Appearances and Batters Faced) in the league.<div class=\"equation\" style=\"margin:6px 0\">RAR = RE24 + (Replacement Value per PA/BF \u00c3\u2014 Player's PA/BF)</div></li></ol>"
+            "value": "<ol><li><strong>Total WAR Pool:</strong> The total WAR available for all players in a season is <strong>(Number of Regular Season Games) \u00d7 0.41</strong>. For recent seasons (16 sessions \u00d7 15 games = 240 games), this is <strong>98.4 WAR</strong> \u2014 calibrated to match MLB's ~1,000 WAR available per full season.</li><li><strong>Hitter/Pitcher Split:</strong> The total WAR pool is split evenly, with 50% allocated to hitters and 50% to pitchers.</li><li><strong>Runs Per Win (RPW):</strong> A standard value of <strong>10 Runs Per Win</strong> is used \u2014 every 10 runs above replacement equals 1 WAR.</li><li><strong>Runs Above Replacement (RAR):</strong> A player's Runs Above Average (RAA) is their RE24 for the season. A replacement-level run value is then calculated based on the total WAR pool and total playing time (Plate Appearances and Batters Faced) in the league.<div class=\"equation\" style=\"margin:6px 0\">RAR = RE24 + (Replacement Value per PA/BF \u00d7 Player's PA/BF)</div></li></ol>"
           },
           {
             "type": "html",

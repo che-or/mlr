@@ -1,0 +1,12 @@
+{
+    "S1": {
+        "CAL": {"name": "Santa Margarita, California", "logo_dark": "img/llr_logos/CAL.svg", "logo_light": "img/llr_logos/CAL.svg"},
+        "GCA": {"name": "Gold Coast, Australia", "logo_dark": "img/llr_logos/GCA.svg", "logo_light": "img/llr_logos/GCA.svg"},
+        "HI": {"name": "Honolulu, Hawaii", "logo_dark": "img/llr_logos/HI.svg", "logo_light": "img/llr_logos/HI.svg"},
+        "JPN": {"name": "Tokyo, Japan", "logo_dark": "img/llr_logos/JPN.svg", "logo_light": "img/llr_logos/JPN.svg"},
+        "NY": {"name": "Staten Island, New York", "logo_dark": "img/llr_logos/NY.svg", "logo_light": "img/llr_logos/NY.svg"},
+        "SYD": {"name": "Sydney, Australia", "logo_dark": "img/llr_logos/SYD.svg", "logo_light": "img/llr_logos/SYD.svg"},
+        "VEN": {"name": "Maracaibo, Venezuela", "logo_dark": "img/llr_logos/VEN.svg", "logo_light": "img/llr_logos/VEN.svg"},
+        "WAS": {"name": "Walla Walla, Washington", "logo_dark": "img/llr_logos/WAS.svg", "logo_light": "img/llr_logos/WAS.svg"}
+    }
+}

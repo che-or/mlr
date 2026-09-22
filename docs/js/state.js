@@ -14,6 +14,7 @@ export const state = {
         fcb: {},           // season-based with logo info: { S3: { ABB: { name, logo_dark, logo_light } } }
         eco: {},           // season-based: { S1: { CC: "CC", ... } }
         npr: {},
+        llr: {},
         wbc: {},
         gib: {},
     },
@@ -23,6 +24,7 @@ export const state = {
         fcb: {},
         eco: {},
         npr: {},
+        llr: {},
         wbc: {},
         gib: {},
     },

@@ -90,11 +90,19 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants, against = False):
     franchise_col = 'Batter Franchise' if against else 'Pitcher Franchise'
     cols = ['Pitcher ID', 'Season', 'Display Season', team_col, franchise_col]
 
-    pitching_stats_exact = pd.pivot_table(df, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0)
-    pitching_stats_old = pd.pivot_table(df, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0)
-    pitching_stats_neutral = pd.pivot_table(df, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0)
+    # PA Type 31 (LLR only - batter reached on an error that should have been an out) must not be
+    # credited with the specific out type it would have been, so it's excluded from the exact-result
+    # pivots that feed FO/PO/RGO/LGO/GO/DP/TP/IP. It's added back into BF/AB explicitly below. PA
+    # Type 33 (caught stealing via error) is deliberately NOT excluded here - it should still be
+    # credited as a CS; only its contribution to the IP formula is removed further down.
+    df_real_outs = df[df['PA Type'] != 31]
+    full_index = df.groupby(cols).size().index
 
-    pitching_stats = pd.DataFrame(index = pitching_stats_exact.index)
+    pitching_stats_exact = pd.pivot_table(df_real_outs, index = cols, columns = 'Exact Result', aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    pitching_stats_old = pd.pivot_table(df_real_outs, index = cols, columns = ['Exact Result', 'Old Result'], aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+    pitching_stats_neutral = pd.pivot_table(df_real_outs, index = cols, columns = 'Result at Neutral', aggfunc = 'size', fill_value = 0).reindex(full_index, fill_value = 0)
+
+    pitching_stats = pd.DataFrame(index = full_index)
 
     # Pitching stats that can be directly counted from exact result and/or old result
     pitching_stats['HR'] = pitching_stats_exact.get('HR', 0)
@@ -124,17 +132,25 @@ def _pitching_stats_table(df, wls, neutrals, fip_constants, against = False):
     pitching_stats['SB'] = pitching_stats_exact.get('STEAL 2B', 0) + pitching_stats_exact.get('STEAL 3B', 0) + pitching_stats_exact.get('STEAL HOME', 0) + pitching_stats_exact.get('MSTEAL 3B', 0) +pitching_stats_exact.get('MSTEAL HOME', 0)
     pitching_stats['CS'] = pitching_stats_exact.get('CS 2B', 0) + pitching_stats_exact.get('CS 3B', 0) + pitching_stats_exact.get('CS HOME', 0) + pitching_stats_exact.get('CMS 3B', 0) + pitching_stats_exact.get('CMS HOME', 0)
 
+    # PA Type 31 rows don't get credited with the specific out type, but the pitcher still faced the
+    # batter (BF), and PA Type 33 (caught stealing via error) shouldn't count as 1/3 IP even though it
+    # is still credited as a CS above - both LLR-only, no effect on any other league.
+    pa31_bf = df[df['PA Type'] == 31].groupby(cols).size().reindex(full_index, fill_value = 0)
+    pa33_cs_outs = df[df['PA Type'] == 33].groupby(cols).size().reindex(full_index, fill_value = 0)
+    cs_for_ip = pitching_stats['CS'] - pa33_cs_outs
+
     # Pitching stats calculated from raw counts
     pitching_stats['H'] = pitching_stats['1B'] + pitching_stats['2B'] + pitching_stats['3B'] + pitching_stats['HR']
-    pitching_stats['IP'] = (pitching_stats['FO'] + pitching_stats['SO'] + pitching_stats['PO'] + pitching_stats['RGO'] + pitching_stats['LGO'] + 2 * pitching_stats['LO'] + pitching_stats['DP'] + 2 * pitching_stats['TP'] + pitching_stats['SH'] + pitching_stats_exact.get('BUNT GO', 0) + 2 * pitching_stats_exact.get('BUNT DP', 0) + pitching_stats['CS']) / 3
-    pitching_stats['BF'] = pitching_stats['H'] + pitching_stats['BB'] + pitching_stats['FO'] + pitching_stats['SO'] + pitching_stats['PO'] + pitching_stats['RGO'] + pitching_stats['LGO'] + pitching_stats['LO'] + pitching_stats['SH'] + pitching_stats_exact.get('BUNT GO', 0) + pitching_stats_exact.get('BUNT DP', 0)
+    pitching_stats['IP'] = (pitching_stats['FO'] + pitching_stats['SO'] + pitching_stats['PO'] + pitching_stats['RGO'] + pitching_stats['LGO'] + 2 * pitching_stats['LO'] + pitching_stats['DP'] + 2 * pitching_stats['TP'] + pitching_stats['SH'] + pitching_stats_exact.get('BUNT GO', 0) + 2 * pitching_stats_exact.get('BUNT DP', 0) + cs_for_ip) / 3
+    pitching_stats['BF'] = pitching_stats['H'] + pitching_stats['BB'] + pitching_stats['FO'] + pitching_stats['SO'] + pitching_stats['PO'] + pitching_stats['RGO'] + pitching_stats['LGO'] + pitching_stats['LO'] + pitching_stats['SH'] + pitching_stats_exact.get('BUNT GO', 0) + pitching_stats_exact.get('BUNT DP', 0) + pa31_bf
     pitching_stats['AB'] = pitching_stats['BF'] - (pitching_stats['BB'] + pitching_stats['SF'] + pitching_stats['SH'])
     pitching_stats['TB'] = pitching_stats['1B'] + 2 * pitching_stats['2B'] + 3 * pitching_stats['3B'] + 4 * pitching_stats['HR']
 
     # Stats that need to be taken from other columns
     pitching_stats['G_list'] = df.groupby(cols)['Game ID'].apply(lambda x: set(x))
     pitching_stats['G'] = pitching_stats['G_list'].apply(lambda x: len(x))
-    pitching_stats['ER'] = df.groupby(cols)['Run'].sum()
+    er_col = 'Earned Run' if 'Earned Run' in df.columns else 'Run' # LLR provides a real earned/unearned distinction; other leagues treat every run as earned
+    pitching_stats['ER'] = df.groupby(cols)[er_col].sum()
     pitching_stats['Total Diff'] = df.groupby(cols)['Diff'].sum()
     pitching_stats['Total Plays'] = df.groupby(cols)['Diff'].count()
     pitching_stats['RE24'] = df.groupby(cols)['RE24'].sum()
