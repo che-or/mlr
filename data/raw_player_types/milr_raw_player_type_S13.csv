@@ -129,7 +129,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 638,Sablo Panchez,TEX,S,,,Right,SS,CF,3B,/u/KurtVonnebeergut,alcoholympics,53,1,7,1,OBO
 639,Bingo Hammersmith,MIL,SF,,,Left,SS,CF,RF,/u/Weighthewedge,vinylsneverdie,53,1,7,,
 646,Aaron Burr,CWS,EN,TT,H,Right,P,,,/u/VirginiaTeamsIGuess,bigger.al,53,1,3,,
-647,Walter Yeller Weller,PIT,SM,NH,S,Left,CF,LF,RF,/u/Saxsquatch,the_saxsquatch,13,1,10,1,OBO
+647,Walter Yeller Weller,PIT,SM,NH,S,Left,PH,,,/u/Saxsquatch,the_saxsquatch,13,1,1,1,OBO
 649,Nelson Van Halen,BAL,HK,TT,B,Right,CF,LF,1B,/u/radpoolparty,igobyt,53,1,10,,
 651,Rusty Nails,ARI,SM,WC,S,Left,PH,,,/u/howiejriii,chickenjoeofsheboygan,13,1,1,1,MMS
 662,Joey Wheeler,MIN,TT,BS,B,Right,2B,SS,3B,/u/hartman_,gosling3,53,1,6,,
@@ -166,7 +166,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 1776,Nicholas Fouss,KCR,SM,BS,H,Left,2B,SS,CF,/u/supereggfish,superfish1205,33,1,6,1,LOO
 1777,Alexander West,ARI,P,WC,S,Right,P,,,/u/DemBonez665,dembonez665,53,1,3,,
 1781,BEANS Leschnewski,NYY,BP,NT,B,Right,CF,LF,RF,/u/vrtxzenith,laserdarts,53,1,10,,
-1786,im sleve,PHI,WC,BF,H,Right,P,,,/u/entenduintransit,megal0,53,1,3,,
+1786,im sleve,STL,WC,BF,H,Right,P,,,/u/entenduintransit,megal0,53,1,3,,
 1797,Mike Unt,DET,SF,,,Right,3B,2B,CF,/u/andy_q8,andy_q8,53,1,8,,
 1799,Alt Site,SDP,BN,EG,B,Left,RF,CF,SS,/u/cjd024,captwildfir3,53,1,11,1,RHP
 1801,Doc Dockgoose,CHC,BN,BF,H,Right,P,,,/u/Dontweezthejuice,docdockgoose,53,1,3,,
@@ -280,7 +280,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2772,Creatør Slander,ATL,BN,,,Right,3B,LF,CF,/u/creatxrcreator,creatorslander,53,1,8,,
 2773,Toky Oto,BOS,BN,NT,B,Right,LF,RF,CF,/u/Innerstander,vo1tage,53,1,9,1,BLU
 2782,Eijun Sawamura,MIN,TT,BS,H,Left,P,,,/u/Silveryo9717,silveryo,53,1,3,,
-2785,Basil,TBR,BP,TD,H,Left,C,1B,3B,/u/Baxlor12,basilthespice,53,1,4,,
+2785,Basil,TBR,BP,TD,H,Left,C,1B,3B,/u/Baxlor12,basilthespice,33,1,4,,
 2787,Buster Worthington,SEA,BC,,,Right,C,3B,CF,/u/lawnicus18,lawnicus18,53,1,4,,
 2789,Roosevelt Sandoval,FLA,BC,BF,H,Right,2B,RF,SS,/u/booga_booga_booga_,booga_booga_booga_,53,1,6,,
 2792,Jerome S. Monroe,SEA,1B,TD,H,Right,P,,,/u/crabface5,crabface5,53,1,3,1,SPD
@@ -357,7 +357,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2962,Carlos Narvaez Jr.,DET,S,TT,B,Left,P,,,/u/AmokSpain,m_ksp__n_,53,1,3,,
 2963,Vartan Ichabod Cassidy,BAL,BP,,,Right,C,3B,RF,/u/Blackcobra29,Vic8713,53,1,4,,
 2965,Randall Peppers,MTL,TT,EN,S,Right,3B,LF,1B,/u/hnard,Hnard,23,1,8,1,RHP
-2969,Crystal Claire,SFG,S,,,Right,2B,1B,3B,/u/Choice-Ad-5227,Callte,53,1,6,,
+2969,Crystal Claire,SFG,S,,,Right,2B,1B,3B,/u/Choice-Ad-5227,Callte,53,2,6,,
 2970,John Baseball,MIL,BN,EN,H,Right,SS,3B,CF,/u/Red_Herring_XOR,red_herring_xor,53,1,7,1,HCM
 2976,Junior Antonius,NYM,BC,TT,H,Right,P,,,/u/Junior-Hobobot,,53,1,3,,
 2983,Liru Wolf,SFG,BN,BS,S,Right,3B,SS,LF,/u/CapLiru,.liru.,33,1,8,1,LOO
@@ -436,7 +436,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3137,Philip Berkenshire,MIN,EN,BS,H,Right,P,,,/u/Hawk506,MrTorin,53,1,3,,
 3138,Matty Eight,CWS,XB,,,Left,C,1B,,/u/matt872000,petermatt,53,1,4,,
 3139,Juan Manuel Navarrete,MIL,BC,,,Right,2B,1B,3B,/u/hubwub,hubwub,53,1,6,,
-3140,Scooter Buskie,ANA,BP,,,Right,3B,LF,SS,/u/JITB718,JD109,53,1,8,1,BLU
+3140,Scooter Buskie,ANA,BP,EG,B,Right,3B,LF,SS,/u/JITB718,JD109,53,1,8,1,BLU
 3141,Slammin Sammy Sofa,KCR,BP,,,Right,2B,RF,LF,/u/Used-Goose5065,Rj11_90,53,1,6,,
 3142,Ken the Kid,,XB,WC,H,Left,1B,LF,,/u/ChaosMonkey1716,ChaosMonkey,53,1,5,,
 3143,Ferdinand Fritzwilliam,CLE,WC,WC,S,Right,CF,RF,LF,/u/SpeedyTechie,speedytechie,53,1,10,,
@@ -621,5 +621,5 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3470,Max Muncy,COL,SM,BS,S,Right,P,,,/u/MLR_NoReddit_User,roundrockeater,53,1,3,1,RHP
 3471,Lil Broski,MIL,TT,WC,H,Left,P,,,/u/LilBroski1,itsmebroski,53,1,3,1,MMS
 3503,Kandii Khayne,PHI,WC,TD,S,Left,C,3B,,/u/PeppermintRage,peppermintrage,53,1,4,1,RHP
-3504,Divorced Dad,,S,,,Left,LF,RF,,/u/Ed_Vilon,ed_vilon,53,1,9,1,OBO
+3504,Divorced Dad,PHI,S,,,Left,LF,RF,,/u/Ed_Vilon,ed_vilon,53,1,9,1,OBO
 3505,Theo Kim,,1B,EG,H,Right,2B,SS,,/u/lemonoppy,lemonoppy,53,1,6,1,MMS
