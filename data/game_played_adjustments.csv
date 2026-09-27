@@ -1,17 +1,17 @@
 ID,Name,League,Season,Session,Game ID,Team,Notes
 2054,,ECO,1,5,18,MHM,Pinch hit for in B2
-123,,ECO,1,6,21,MHM,Schism ended game before PA
 359,,ECO,1,6,21,MB,Schism ended game before PA
 2006,,ECO,1,6,21,MB,Schism ended game before PA
 2061,,ECO,1,6,21,MB,Pinch hit for in B1
 2196,,ECO,1,6,21,MB,Schism ended game before PA
+123,,ECO,1,6,21,MHM,Schism ended game before PA
 2203,,ECO,1,6,21,MHM,Schism ended game before PA
 3473,Jacob Peterson III,FCB,3,1,3,NEB,Pinch hit for in B2
 146,,FCB,3,2,8,TOL,Game called before PA
 508,Otis Falconer,FCB,4,2,7,NU,Pinch hit for in B1
 598,Herb Ferguson,FCB,4,2,9,CLM,Pinch hit for in B2
-514,,FCB,4,2,11,WSU,Replaced in T2
 603,Broc Lee,FCB,4,2,11,GT,Pinch hit for in T2
+514,,FCB,4,2,11,WSU,Replaced in T2
 650,,FCB,4,2,11,WSU,Fielding Replacement
 651,,FCB,4,2,11,WSU,Pinch hit for in B3
 532,Thelonius Jarts,FCB,4,2,12,WWU,Pinch hit for in B2
@@ -22,13 +22,13 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 1697,,FCB,5,2,7,SLC,Fielding Replacement
 1769,,FCB,5,2,7,SLC,Fielding Replacement
 1731,,FCB,5,3,9,CCU,Fielding Replacement
-3475,Ray Saha,FCB,5,4,16,UNC,Pinch hit for in T3
 3476,Alux Hubbus,FCB,5,4,16,NCS,Pinch hit for in B2
-1769,,FCB,5,5,20,SLC,Pinch hit for in B2
+3475,Ray Saha,FCB,5,4,16,UNC,Pinch hit for in T3
 3335,,FCB,5,5,20,GT,Pinch hit for in T2
+1769,,FCB,5,5,20,SLC,Pinch hit for in B2
 1708,,FCB,5,6,21,SLC,Pinch hit for in T3
-1715,,FCB,5,6,23,UNC,Fielding Replacement
 1805,,FCB,5,6,23,NCS,Pinch hit for in B3
+1715,,FCB,5,6,23,UNC,Fielding Replacement
 2326,Caleb Fugate,FCB,6,1,2,GEO,Pinch hit for in B1
 2331,Ra Ja,FCB,6,1,2,GT,Pinch hit for in T3
 2361,,FCB,6,2,4,OSU,Pinch hit for in B2
@@ -56,11 +56,11 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2779,George Pops O'Neill,FCB,8,4,14,TEN,Pinch hit for in B2
 2790,,FCB,8,4,16,UCL,Pinch hit for in B2
 2809,Joey Tribbiani,FCB,8,4,16,UCL,Pinch hit for in B1
+2927,Lou Mud Food McGillicuddy,FCB,9,2,4,TEN,Pinch hit for in T2
 2832,Ace of Spada,FCB,9,2,4,UCC,Pinch hit for in B1
 2860,Willard Makepeace,FCB,9,2,4,UCC,Pinch hit for in B1
 2876,Flam Paradiddle,FCB,9,2,4,UCC,Pinch hit for in B1
 2918,Cookie Bretts,FCB,9,2,4,UCC,Pinch hit for in B2
-2927,Lou Mud Food McGillicuddy,FCB,9,2,4,TEN,Pinch hit for in T2
 2837,Marco Maryland,FCB,9,2,5,TOL,Pinch hit for in B1
 2907,Bradford Miller,FCB,9,2,5,WSU,Pinch hit for in T2
 2859,,FCB,9,3,7,WSU,Pinch hit for in B3
@@ -80,8 +80,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 3443,,FCB,13,4,10,CAL,Pinch hit for in B1
 3463,Dylan Woods,FCB,13,4,10,CAL,Pinch hit for in B1
 3433,,FCB,13,6,18,PSU,Pinch hit for in T2
-298,,GIB,1,3,7,WBK,Fielding Replacement
 786,,GIB,1,3,7,GIB,Fielding Replacement
+298,,GIB,1,3,7,WBK,Fielding Replacement
 638,,GIB,2,2,6,NOL,Pinch hit for in T2
 258,,GIB,2,7,27,ORL,Fielding Replacement
 1793,,GIB,3,4,14,GIB,Fielding Replacement
@@ -121,8 +121,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 29,,MiLR,4,5,33,N69,Replaced in T2
 205,,MiLR,4,5,33,N69,Pinch hit for in B1
 208,,MiLR,4,5,35,CEL,Pinch hit for in B2
-102,,MiLR,4,5,37,FWG,Pinch hit for in T2
 315,,MiLR,4,5,37,CCS,Pinch hit for in B3
+102,,MiLR,4,5,37,FWG,Pinch hit for in T2
 293,,MiLR,4,5,40,LMN,Fielding Replacement
 230,,MiLR,4,6,43,N69,Pinch hit for in T2
 214,,MiLR,4,6,45,LDN,Pinch hit for in T2
@@ -156,8 +156,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 1700,,MiLR,5,3,34,NUL,Fielding Replacement
 638,,MiLR,5,3,36,MVM,Pinch hit for in B2
 354,,MiLR,5,4,37,KRB,Pinch hit for in B1
-714,,MiLR,5,4,42,RKT,Fielding Replacement
 1762,,MiLR,5,4,42,GTY,Pinch hit for in B2
+714,,MiLR,5,4,42,RKT,Fielding Replacement
 1812,,MiLR,5,4,45,TAI,Pinch hit for in T2
 170,,MiLR,5,5,60,POR,Pinch hit for in B2
 781,,MiLR,5,6,61,ISO,Pinch hit for in T2
@@ -165,8 +165,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 391,,MiLR,5,8,94,NUL,Pinch hit for in T3
 103,,MiLR,5,8,95,KTY,Pinch hit for in B3
 344,,MiLR,5,9,98,RKT,Fielding Replacement
-1954,,MiLR,5,9,99,GTY,Pinch hit for in T2
 2244,,MiLR,5,9,99,CHI,Pinch hit for in B1
+1954,,MiLR,5,9,99,GTY,Pinch hit for in T2
 189,,MiLR,5,9,101,SPR,Pinch hit for in T2
 367,,MiLR,5,9,106,MVM,Pinch hit for in T3
 216,,MiLR,5,10,113,GTY,Fielding Replacement
@@ -235,9 +235,9 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2232,,MiLR,6,10,135,SUP,Pinch hit for in T3
 547,,MiLR,6,10,137,PHB,Pinch hit for in B1
 762,,MiLR,6,10,138,TTT,Pinch hit for in B2
+2239,John-Rhys Ealy,MiLR,6,11,141,BAC,Pinch hit for in B2
 257,,MiLR,6,11,141,CWJ,Pinch hit for in T2
 1692,,MiLR,6,11,141,CWJ,Fielding Replacement
-2239,John-Rhys Ealy,MiLR,6,11,141,BAC,Pinch hit for in B2
 125,,MiLR,6,11,143,SGP,Pinch hit for in T2
 724,,MiLR,6,11,150,PBA,Pinch hit for in B1
 663,,MiLR,6,12,155,JEF,Pinch hit for in B1
@@ -254,8 +254,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 417,,MiLR,6,14,192,TAK,Pinch hit for in B3
 724,,MiLR,6,14,193,PBA,Pinch hit for in T2
 1841,,MiLR,6,14,193,SUP,Pinch hit for in B1
-183,,MiLR,6,14,195,SLT,Fielding Replacement
 2274,,MiLR,6,14,195,FRG,Pinch hit for in B2
+183,,MiLR,6,14,195,SLT,Fielding Replacement
 2240,Dog Nipples,MiLR,7,1,1,SCG,Pinch hit for in T3
 2602,Chad Dongers,MiLR,7,1,3,FAP,Pinch hit for in B2
 2621,,MiLR,7,1,4,WSW,Pinch hit for in T2
@@ -269,8 +269,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 42,,MiLR,7,4,32,MMA,Pinch hit for in B1
 20,,MiLR,7,5,34,BBB,Pinch hit for in B2
 1719,,MiLR,7,5,35,TRI,Pinch hit for in T2
-241,,MiLR,7,5,38,SSJ,Pinch hit for in B2
 2626,,MiLR,7,5,38,MMA,Fielding Replacement
+241,,MiLR,7,5,38,SSJ,Pinch hit for in B2
 1946,,MiLR,7,6,46,WSW,Pinch hit for in B2
 2207,,MiLR,7,6,46,WSW,Pinch hit for in B1
 606,,MiLR,7,6,47,FAP,Fielding Replacement
@@ -280,9 +280,9 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2215,,MiLR,7,7,50,STK,Pinch hit for in T2
 2335,,MiLR,7,7,54,FAP,Pinch hit for in T2
 2640,,MiLR,7,8,60,SSC,Pinch hit for in T3
+2570,,MiLR,7,8,63,SCG,Pinch hit for in T2
 1946,,MiLR,7,8,63,WSW,Pinch hit for in B2
 2554,,MiLR,7,8,63,WSW,Pinch hit for in B2
-2570,,MiLR,7,8,63,SCG,Pinch hit for in T2
 401,,MiLR,7,8,64,CPR,Pinch hit for in B1
 697,,MiLR,7,8,64,CPR,Pinch hit for in B2
 257,,MiLR,7,9,68,BBB,Pinch hit for in T2
@@ -323,8 +323,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 3061,,MiLR,10,13,63,ZAH,Pinch hit for in B1
 2840,,MiLR,11,1,1,LAX,Fielding Replacement
 2350,,MiLR,11,1,6,HOT,Fielding Replacement
-2735,,MiLR,11,1,6,LOB,Fielding Replacement
 2882,,MiLR,11,1,6,HOT,"Fielding Replacement, Replaced in T5"
+2735,,MiLR,11,1,6,LOB,Fielding Replacement
 3095,Tommy Tripleton,MiLR,11,2,10,ROY,Pinch hit for in T3
 131,,MiLR,11,5,26,LAX,Pinch hit for in T3
 149,,MiLR,11,6,36,PRP,Pinch hit for in B2
@@ -382,8 +382,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2499,,MiLR_Playoff,8B,1,2,NUT,Fielding Replacement
 3477,Achme Ineye,MLR,1,3,13,DET,Pinch hit for in B1
 3281,,MLR,1,3,14,ARI,Fielding Replacement
-429,,MLR,1,4,22,OAK,Pinch hit for in T2
 3277,,MLR,1,4,22,MIN,Pinch hit for in B1
+429,,MLR,1,4,22,OAK,Pinch hit for in T2
 3292,,MLR,1,6,34,HOU,Pinch hit for in B3
 2032,,MLR,1,7,38,HOU,Pinch hit for in B2
 105,,MLR,2,1,5,SFG,Pinch hit for in B2
@@ -446,8 +446,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 300,,MLR,3,6,71,PHI,Fielding Replacement
 230,,MLR,3,7,77,MTL,Pinch hit for in T3
 443,,MLR,3,7,78,PIT,Pinch hit for in B2
-35,,MLR,3,7,82,BOS,Pinch hit for in B2
 435,,MLR,3,7,82,ARI,Pinch hit for in T3
+35,,MLR,3,7,82,BOS,Pinch hit for in B2
 465,,MLR,3,8,88,TOR,Pinch hit for in B2
 16,,MLR,3,8,93,ARI,Fielding Replacement
 362,,MLR,3,8,94,STL,Pinch hit for in T2
@@ -480,8 +480,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 167,,MLR,4,1,13,COL,Pinch hit for in B2
 350,,MLR,4,1,14,SFG,Pinch hit for in B2
 179,,MLR,4,1,15,LAD,Pinch hit for in B1
-510,,MLR,4,2,16,NYY,Pinch hit for in T2
 700,,MLR,4,2,16,DET,Fielding Replacement
+510,,MLR,4,2,16,NYY,Pinch hit for in T2
 98,,MLR,4,2,18,BOS,Pinch hit for in B3
 333,Benjamin Baeurkemper,MLR,4,2,20,SDP,Pinch hit for in B1
 505,Poopio Cartez,MLR,4,2,20,SDP,Pinch hit for in B2
@@ -509,8 +509,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 390,,MLR,4,5,70,MTL,Fielding Replacement
 531,,MLR,4,5,70,MTL,Fielding Replacement
 146,,MLR,4,5,71,NYM,Fielding Replacement
-47,,MLR,4,5,73,CIN,Pinch hit for in B1
 511,,MLR,4,5,73,CHC,Fielding Replacement
+47,,MLR,4,5,73,CIN,Pinch hit for in B1
 564,,MLR,4,6,76,CWS,"Pinch Runner, Run Scored"
 686,,MLR,4,6,79,TBD,Pinch hit for in T3
 194,,MLR,4,6,86,MIA,Fielding Replacement
@@ -531,8 +531,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 735,,MLR,4,10,141,CLE,Pinch hit for in T2
 498,,MLR,4,10,142,MIN,Fielding Replacement
 11,,MLR,4,10,143,TEX,Pinch hit for in T2
-296,,MLR,4,10,145,PHI,Pinch hit for in T3
 697,,MLR,4,10,145,MTL,Fielding Replacement
+296,,MLR,4,10,145,PHI,Pinch hit for in T3
 184,,MLR,4,10,146,MIA,Fielding Replacement
 32,,MLR,4,11,151,BAL,Fielding Replacement
 553,,MLR,4,11,151,NYY,Fielding Replacement
@@ -540,13 +540,13 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 159,,MLR,4,11,162,CIN,Pinch hit for in B1
 193,,MLR,4,12,166,NYY,Fielding Replacement
 663,,MLR,4,13,184,BAL,Pinch hit for in T3
-113,,MLR,4,13,186,MIN,Pinch hit for in T2
 631,,MLR,4,13,186,CLE,Pinch hit for in B2
+113,,MLR,4,13,186,MIN,Pinch hit for in T2
 479,,MLR,4,13,189,SFG,Pinch hit for in T3
 68,,MLR,4,13,193,CHC,Pinch hit for in B2
 244,,MLR,4,13,193,CIN,Pinch hit for in T3
-248,,MLR,4,13,194,NYM,Fielding Replacement
 316,,MLR,4,13,194,MIL,Pinch hit for in B2
+248,,MLR,4,13,194,NYM,Fielding Replacement
 410,Victor Justice,MLR,4,14,197,TOR,Pinch hit for in B2
 16,,MLR,4,14,198,MIN,Fielding Replacement
 631,,MLR,4,14,199,CLE,Pinch hit for in B2
@@ -555,8 +555,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 523,,MLR,4,14,207,SFG,Pinch hit for in B2
 202,,MLR,4,14,208,MIL,Fielding Replacement
 178,,MLR,4,14,209,LAD,Fielding Replacement
-79,,MLR,4,15,217,MTL,Pinch hit for in B3
 218,,MLR,4,15,217,ATL,Fielding Replacement
+79,,MLR,4,15,217,MTL,Pinch hit for in B3
 187,,MLR,4,15,218,MIL,Fielding Replacement
 577,,MLR,4,15,218,PHI,Fielding Replacement
 410,,MLR,4,16,227,TOR,Pinch hit for in B1
@@ -572,17 +572,17 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 185,,MLR,5,2,23,OAK,Fielding Replacement
 644,,MLR,5,2,25,MTL,Pinch hit for in B2
 1762,,MLR,5,2,27,ATL,Pinch hit for in T2
-334,,MLR,5,3,40,NYM,Fielding Replacement
 644,,MLR,5,3,40,MTL,Fielding Replacement
+334,,MLR,5,3,40,NYM,Fielding Replacement
 155,,MLR,5,3,42,CHC,Pinch hit for in T2
-170,,MLR,5,3,45,LAD,Fielding Replacement
 1812,,MLR,5,3,45,ARI,Fielding Replacement
+170,,MLR,5,3,45,LAD,Fielding Replacement
 1959,,MLR,5,4,53,ARI,Pinch hit for in B1
 746,,MLR,5,4,56,SDP,Pinch hit for in B2
 1817,,MLR,5,4,58,ATL,Fielding Replacement
 620,,MLR,5,5,70,COL,Pinch hit for in T2
-1755,,MLR,5,5,73,PIT,Fielding Replacement
 1815,,MLR,5,5,73,MIL,Fielding Replacement
+1755,,MLR,5,5,73,PIT,Fielding Replacement
 244,,MLR,5,5,74,STL,Pinch hit for in B3
 213,,MLR,5,6,76,BAL,Fielding Replacement
 2244,,MLR,5,6,80,CWS,Pinch hit for in T2
@@ -594,8 +594,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 63,,MLR,5,7,99,CHC,Fielding Replacement
 192,,MLR,5,7,99,MIA,Fielding Replacement
 273,,MLR,5,7,100,ARI,Pinch hit for in B2
-244,,MLR,5,7,103,STL,Fielding Replacement
 307,,MLR,5,7,103,PIT,Fielding Replacement
+244,,MLR,5,7,103,STL,Fielding Replacement
 204,,MLR,5,7,105,LAD,Fielding Replacement
 314,,MLR,5,8,108,PIT,Pinch hit for in T3
 357,,MLR,5,8,109,STL,Pinch hit for in T2
@@ -650,8 +650,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 144,,MLR,6,5,70,CLE,Pinch hit for in B2
 2357,,MLR,6,5,73,CIN,Pinch hit for in B1
 255,,MLR,6,6,87,ARI,"Fielding Replacement, Pinch hit for in B6"
-401,,MLR,6,6,87,MTL,Pinch hit for in T2
 2464,,MLR,6,6,87,ARI,Pinch hit for in B2
+401,,MLR,6,6,87,MTL,Pinch hit for in T2
 2333,,MLR,6,6,89,ATL,Pinch hit for in B1
 324,,MLR,6,6,90,SDP,Fielding Replacement
 774,,MLR,6,6,90,SDP,Fielding Replacement
@@ -741,8 +741,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2229,,MLR,7,14,197,MIN,Pinch hit for in T2
 186,,MLR,7,14,199,ATL,Pinch hit for in B3
 2240,,MLR,7,14,200,CLE,Pinch hit for in B2
-516,,MLR,7,14,201,MIL,Pinch Runner
 2606,,MLR,7,14,201,ARI,Fielding Replacement
+516,,MLR,7,14,201,MIL,Pinch Runner
 184,,MLR,7,15,217,MIA,Pinch hit for in B2
 2455,,MLR,7,15,218,SFG,Pinch hit for in B2
 582,,MLR,7,16,226,MIN,Fielding Replacement
@@ -751,26 +751,26 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2649,,MLR,7,16,231,ARI,Pinch Runner
 640,,MLR,7,16,234,MTL,Pinch hit for in B2
 2337,,MLR,7,16,234,MTL,Pinch hit for in B2
-264,,MLR,7,16,240,PHI,Pinch hit for in B1
 2626,,MLR,7,16,240,NYM,Pinch hit for in T2
+264,,MLR,7,16,240,PHI,Pinch hit for in B1
 357,,MLR,8,1,4,STL,Pinch hit for in B1
 2733,Deebo Rodriguez,MLR,8,2,21,LAD,Pinch hit for in T2
 2746,,MLR,8,2,23,MIN,Pinch hit for in B2
-2342,,MLR,8,2,25,KCR,Fielding Replacement
 2379,,MLR,8,2,25,CLE,Pinch hit for in T3
+2342,,MLR,8,2,25,KCR,Fielding Replacement
 623,,MLR,8,3,31,ATL,Pinch hit for in T2
 2799,,MLR,8,3,31,PHI,Pinch hit for in B2
 2713,,MLR,8,3,36,DET,Fielding Replacement
-596,,MLR,8,3,39,NYM,Pinch hit for in T2
 740,,MLR,8,3,39,MTL,Replaced in T2
+596,,MLR,8,3,39,NYM,Pinch hit for in T2
 170,,MLR,8,3,45,LAD,Pinch hit for in B3
 41,,MLR,8,4,48,CIN,Pinch hit for in T3
 329,,MLR,8,4,54,SDP,Pinch hit for in B2
 204,,MLR,8,5,61,LAD,Pinch hit for in T2
 2742,,MLR,8,5,66,TBR,Pinch hit for in T3
 203,,MLR,8,5,67,SDP,Pinch hit for in T2
-2662,,MLR,8,5,68,SEA,Pinch hit for in T2
 2740,,MLR,8,5,68,DET,Pinch hit for in B2
+2662,,MLR,8,5,68,SEA,Pinch hit for in T2
 557,,MLR,8,5,74,STL,Fielding Replacement
 24,,MLR,8,6,78,BOS,Fielding Replacement
 411,,MLR,8,6,79,CLE,Pinch hit for in T2
@@ -792,8 +792,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 607,,MLR,8,11,155,DET,Pinch hit for in B2
 2230,,MLR,8,11,163,CIN,Fielding Replacement
 1839,,MLR,8,11,165,SFG,Pinch hit for in T2
-378,,MLR,8,12,166,CWS,Pinch hit for in B1
 1825,,MLR,8,12,166,BOS,Pinch hit for in T2
+378,,MLR,8,12,166,CWS,Pinch hit for in B1
 2236,,MLR,8,12,167,TBR,Pinch hit for in T2
 20,,MLR,8,12,171,CLE,Pinch hit for in B2
 2486,,MLR,8,12,176,ATL,Pinch hit for in B2
@@ -860,8 +860,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2683,,MLR,10,2,28,NYM,"Pinch Runner, Run Scored"
 3042,,MLR,10,2,29,NYY,Pinch hit for in T2
 2960,,MLR,10,3,34,DET,Fielding Replacement
-170,,MLR,10,3,36,LAD,Pinch hit for in B3
 620,,MLR,10,3,36,COL,Pinch hit for in T3
+170,,MLR,10,3,36,LAD,Pinch hit for in B3
 2833,,MLR,10,3,42,STL,Fielding Replacement
 2910,,MLR,10,3,44,SFG,Pinch hit for in B1
 2546,,MLR,10,4,50,HOU,Pinch hit for in B2
@@ -955,8 +955,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2681,,MLR,12,6,84,MTL,Pinch hit for in B2
 2846,,MLR,12,9,132,COL,Pinch hit for in T2
 480,,MLR,12,9,135,TOR,Pinch hit for in B2
-2754,,MLR,12,10,136,LAD,Pinch hit for in T2
 2842,,MLR,12,10,136,ARI,Pinch hit for in B2
+2754,,MLR,12,10,136,LAD,Pinch hit for in T2
 3021,,MLR,12,10,137,ATL,Pinch hit for in B2
 2634,,MLR,12,10,142,TEX,Pinch hit for in T3
 3126,,MLR,12,10,149,TBR,Pinch hit for in B1
@@ -971,8 +971,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 295,,MLR,12,12,178,LAD,Pinch hit for in T2
 703,,MLR,12,13,187,MTL,Pinch hit for in T2
 3217,,MLR,12,13,195,ANA,Pinch hit for in T3
-3172,,MLR,12,14,196,CWS,Replaced in B2
 3191,,MLR,12,14,196,ANA,Pinch hit for in B2
+3172,,MLR,12,14,196,CWS,Replaced in B2
 2754,,MLR,12,14,203,LAD,Pinch hit for in B2
 402,,MLR,12,14,207,SDP,Pinch hit for in B2
 2689,,MLR,12,14,208,SEA,Fielding Replacement
@@ -982,18 +982,20 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2874,,MLR,12,15,220,HOU,Pinch hit for in T2
 3306,,MLR,12,16,232,PIT,Pinch hit for in T2
 1788,,MLR,12,16,233,NYY,Pinch hit for in B2
+255,,MLR,13,1,7,BAL,Pinch hit for in T3
+220,,MLR,13,1,12,PHI,Pinch hit for in B1
 453,,MLR_Playoff,2,2,6,TB,Fielding Replacement
 142,,MLR_Playoff,3,1,1,KCR,Pinch hit for in B2
 155,,MLR_Playoff,3,3,7,LAA,Pinch hit for in T2
 1772,,MLR_Playoff,5,2,8,KCR,Pinch hit for in B1
 774,,MLR_Playoff,5,4,11,SDP,Fielding Replacement
 35,,MLR_Playoff,6,1,3,MIN,Pinch hit for in T2
+2335,,MLR_Playoff,6,2,5,PHI,Pinch hit for in B1
 161,,MLR_Playoff,6,2,5,SDP,Fielding Replacement
 779,,MLR_Playoff,6,2,5,SDP,Fielding Replacement
-2335,,MLR_Playoff,6,2,5,PHI,Pinch hit for in B1
 350,,MLR_Playoff,6,2,6,STL,Pinch hit for in T3
-381,,MLR_Playoff,6,3,9,STL,Pinch hit for in B1
 728,,MLR_Playoff,6,3,9,SDP,Fielding Replacement
+381,,MLR_Playoff,6,3,9,STL,Pinch hit for in B1
 103,,MLR_Playoff,6,3,10,DET,Pinch hit for in B1
 116,,MLR_Playoff,7,1,3,TBR,Fielding Replacement
 2213,,MLR_Playoff,7,3,9,STL,Pinch hit for in B2
