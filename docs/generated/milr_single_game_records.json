@@ -198,14 +198,14 @@
       },
       "LGO": {
         "record": 3,
-        "tie_count": 16,
+        "tie_count": 17,
         "most_recent": {
-          "id": 2947,
-          "season": "S11",
-          "session": 8,
-          "team": "OKT",
-          "location": "Away",
-          "opponent": "POS"
+          "id": 3109,
+          "season": "S13",
+          "session": 2,
+          "team": "DUM",
+          "location": "Home",
+          "opponent": "LOO"
         }
       },
       "PA": {
