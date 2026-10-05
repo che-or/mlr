@@ -67,7 +67,7 @@ Owen Uridge,2058,44,William Hatchet,2008,338,K,294,T3,1,0,1,0,-2.85%,2.85%,0,0,1
 Charlie Yeager,283,,William Hatchet,2008,,Auto K,,T3,2,0,1,0,-2.26%,2.26%,0,0,14,2,1,GCG,MB,Auto K,Auto K,,9
 Pip Squires,2060,433,Owen Uridge,2058,22,RGO,411,B3,0,0,1,0,-2.04%,2.04%,0,0,15,2,1,MB,GCG,RGO,RGO,,1
 Angel Leon,234,539,Owen Uridge,2058,,HR,10,B3,1,0,1,0,11.07%,-11.07%,1,1,15,2,1,MB,GCG,HR,HR,,1
-Pablo Sanchez,120,111,Owen Uridge,2058,442,PO,331,B3,1,0,2,0,-1.19%,1.19%,0,0,15,2,1,MB,GCG,PO,PO,,1
+Pablo Sanchez,2163,111,Owen Uridge,2058,442,PO,331,B3,1,0,2,0,-1.19%,1.19%,0,0,15,2,1,MB,GCG,PO,PO,,1
 Shiny Tenson,2124,818,Owen Uridge,2058,809,HR,9,B3,2,0,2,0,7.64%,-7.64%,1,1,15,2,1,MB,GCG,HR,HR,,1
 JP Panik,267,120,Tommy Foxconn,253,550,LGO,430,B3,2,0,3,0,-0.65%,0.65%,0,0,15,2,1,MB,GCG,LGO,LGO,,1
 Casey Nine,101,,William Hatchet,2008,,Auto K,,T4,0,0,3,0,-2.34%,2.34%,0,0,16,2,1,GCG,MB,Auto K,Auto K,,9
@@ -850,17 +850,17 @@ Jackson Takegi,302,804,Gare Doctor,307,855,1B,51,B2,2,0,0,2,2.19%,-2.19%,0,0,200
 A. Jones,2196,362,Gare Doctor,307,227,1B,135,B2,2,1,0,2,3.76%,-3.76%,0,0,200,20,6,GCG,SS,1B,1B,,1
 Dom Stakes,384,802,Gare Doctor,307,560,FO,242,B2,2,5,0,2,-7.87%,7.87%,0,0,200,20,6,GCG,SS,FO,FO,,1
 Darth Vader,336,415,A. Jones,2196,690,K,275,T3,0,0,0,2,-1.72%,1.72%,0,0,201,20,6,SS,GCG,K,K,,1
-Kolko V. Knight,2161,694,Pablo Sanchez,120,820,BB,126,T1,0,0,0,0,2.91%,-2.91%,0,0,202,21,6,MHM,MB,BB,BB,,1
-Julio Cesar,53,421,Pablo Sanchez,120,940,DP,481,T1,0,1,0,0,-7.60%,7.60%,0,0,202,21,6,MHM,MB,LGO,LGO,,1
-Steve Hofbardozzi Jr. Jr.,2040,421,Pablo Sanchez,120,601,FO,180,T1,2,0,0,0,-1.76%,1.76%,0,0,202,21,6,MHM,MB,FO,FO,,1
+Kolko V. Knight,2161,694,Pablo Sanchez,2163,820,BB,126,T1,0,0,0,0,2.91%,-2.91%,0,0,202,21,6,MHM,MB,BB,BB,,1
+Julio Cesar,53,421,Pablo Sanchez,2163,940,DP,481,T1,0,1,0,0,-7.60%,7.60%,0,0,202,21,6,MHM,MB,LGO,LGO,,1
+Steve Hofbardozzi Jr. Jr.,2040,421,Pablo Sanchez,2163,601,FO,180,T1,2,0,0,0,-1.76%,1.76%,0,0,202,21,6,MHM,MB,FO,FO,,1
 Charlie Scott,10,267,Levi Pyram,237,515,FO,248,B1,0,0,0,0,-2.48%,2.48%,0,0,203,21,6,MB,MHM,FO,FO,,1
 Lefty Louis,166,69,Levi Pyram,237,917,BB,152,B1,1,0,0,0,2.28%,-2.28%,0,0,203,21,6,MB,MHM,BB,BB,,1
 JP Panik,267,790,Levi Pyram,237,728,2B,62,B1,1,1,0,0,9.71%,-9.71%,0,0,203,21,6,MB,MHM,2B,2B,,1
 Levins,2112,,Levi Pyram,237,,Auto K,,B1,1,6,0,0,-8.33%,8.33%,0,0,203,21,6,MB,MHM,Auto K,Auto K,,9
 Ronald Swanson,2176,128,Levi Pyram,237,448,K,320,B1,2,6,0,0,-7.62%,7.62%,0,0,203,21,6,MB,MHM,K,K,,1
-Joey McCarty,390,,Pablo Sanchez,120,,Auto K,,T2,0,0,0,0,-2.72%,2.72%,0,0,204,21,6,MHM,MB,Auto K,Auto K,,9
-Donnie Lindsanity,2052,697,Pablo Sanchez,120,903,FO,206,T2,1,0,0,0,-2.40%,2.40%,0,0,204,21,6,MHM,MB,FO,FO,,1
-Ziggy Ceder,56,12,Pablo Sanchez,120,5,HR,7,T2,2,0,0,0,13.80%,-13.80%,1,1,204,21,6,MHM,MB,HR,HR,,1
+Joey McCarty,390,,Pablo Sanchez,2163,,Auto K,,T2,0,0,0,0,-2.72%,2.72%,0,0,204,21,6,MHM,MB,Auto K,Auto K,,9
+Donnie Lindsanity,2052,697,Pablo Sanchez,2163,903,FO,206,T2,1,0,0,0,-2.40%,2.40%,0,0,204,21,6,MHM,MB,FO,FO,,1
+Ziggy Ceder,56,12,Pablo Sanchez,2163,5,HR,7,T2,2,0,0,0,13.80%,-13.80%,1,1,204,21,6,MHM,MB,HR,HR,,1
 Jesse Kilgannon,87,1,Sylvester Cinnamon,322,48,2B,47,T1,0,0,0,0,6.33%,-6.33%,0,0,205,22,6,NHR,NOZ,2B,2B,,1
 Aych Imtiyaz,170,420,Sylvester Cinnamon,322,229,BB,191,T1,0,2,0,0,2.14%,-2.14%,0,0,205,22,6,NHR,NOZ,BB,BB,,1
 Robin Reynolds,371,529,Sylvester Cinnamon,322,639,1B,110,T1,0,4,0,0,9.34%,-9.34%,0,0,205,22,6,NHR,NOZ,1B,1B,,1

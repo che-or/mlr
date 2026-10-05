@@ -96,7 +96,7 @@ A.J. Preller,319,512,Jared Sabor VII,149,517,HR,5,B5,2,0,7,0,0.07%,-0.07%,1,1,22
 KC Bats,287,69,Jared Sabor VII,149,391,K,322,B5,2,0,8,0,0.00%,0.00%,0,0,22,2,1,HKU,RGE,K,K,,1
 Triscutt Mesmer,39,88,Logan Anderson,236,45,2B,43,T6,0,0,8,0,0.09%,-0.09%,0,0,23,2,1,RGE,HKU,2B,2B,,1
 Naoki Tentacles,216,747,Logan Anderson,236,851,1B,104,T6,0,2,8,0,0.26%,-0.26%,0,0,23,2,1,RGE,HKU,1B,1B,,1
-Jeff Steelflex,268,,Logan Anderson,236,273,Sac,227,T6,0,5,8,0,-0.29%,0.29%,0,0,23,2,1,RGE,HKU,FO,FO,,1
+Jeff Steelflex,268,500,Logan Anderson,236,273,Sac,227,T6,0,5,8,0,-0.29%,0.29%,0,0,23,2,1,RGE,HKU,FO,FO,,1
 Harry Peritestes,117,687,Logan Anderson,236,617,1B,70,T6,1,1,8,1,0.23%,-0.23%,0,0,23,2,1,RGE,HKU,1B,1B,,1
 Jared Sabor VII,149,420,Logan Anderson,236,711,K,291,T6,1,4,8,1,-0.27%,0.27%,0,0,23,2,1,RGE,HKU,K,K,,1
 Ronarudo Washi IIIIII,167,292,Logan Anderson,236,69,FO,223,T6,2,4,8,1,-0.07%,0.07%,0,0,23,2,1,RGE,HKU,FO,FO,,1
@@ -314,7 +314,7 @@ Jack Elliot,76,878,Alex Brown,444,920,2B,42,T1,2,3,0,0,11.68%,-11.68%,1,1,72,7,2
 Dart Ragusa,134,800,Alex Brown,444,824,2B,24,T1,2,2,0,1,10.59%,-10.59%,1,1,72,7,2,HSH,HIR,2B,2B,,1
 Homer Pimpson,144,748,Alex Brown,444,789,2B,41,T1,2,2,0,2,8.44%,-8.44%,1,0,72,7,2,HSH,HIR,2B,2B,,1
 Rintaro Okabe,290,14,Alex Brown,444,305,K,291,T1,2,2,0,3,-2.62%,2.62%,0,0,72,7,2,HSH,HIR,K,K,,1
-AJ McMann,433,,Zander Ackley,127,431,LGO,495,B1,0,0,0,3,-2.35%,2.35%,0,0,73,7,2,HIR,HSH,LGO,LGO,,1
+AJ McMann,433,926,Zander Ackley,127,431,LGO,495,B1,0,0,0,3,-2.35%,2.35%,0,0,73,7,2,HIR,HSH,LGO,LGO,,1
 Dirtbag Darrell,262,633,Zander Ackley,127,432,FO,201,B1,1,0,0,3,-1.98%,1.98%,0,0,73,7,2,HIR,HSH,FO,FO,,1
 Rich Mahogany,265,808,Zander Ackley,127,114,K,306,B1,2,0,0,3,-1.42%,1.42%,0,0,73,7,2,HIR,HSH,K,K,,1
 Yoshigahara Ryutai,133,310,Alex Brown,444,721,K,411,T2,0,0,0,3,-1.19%,1.19%,0,0,74,7,2,HSH,HIR,K,K,,1
@@ -330,7 +330,7 @@ Jack Elliot,76,2,Alex Brown,444,751,FO,251,T3,1,1,0,3,-0.98%,0.98%,0,0,76,7,2,HS
 Dart Ragusa,134,950,Alex Brown,444,566,K,384,T3,2,1,0,3,-1.86%,1.86%,0,0,76,7,2,HSH,HIR,K,K,,1
 Gottlieb Giannopoulos,89,676,Zander Ackley,127,252,RGO,424,B3,0,0,0,3,-2.70%,2.70%,0,0,77,7,2,HIR,HSH,RGO,RGO,,1
 Alex Brown,444,805,Zander Ackley,127,407,K,398,B3,1,0,0,3,-2.15%,2.15%,0,0,77,7,2,HIR,HSH,K,K,,1
-AJ McMann,433,,Zander Ackley,127,531,LGO,470,B3,2,0,0,3,-1.42%,1.42%,0,0,77,7,2,HIR,HSH,LGO,LGO,,1
+AJ McMann,433,1,Zander Ackley,127,531,LGO,470,B3,2,0,0,3,-1.42%,1.42%,0,0,77,7,2,HIR,HSH,LGO,LGO,,1
 Homer Pimpson,144,213,Alex Brown,444,777,PO,436,T4,0,0,0,3,-0.98%,0.98%,0,0,78,7,2,HSH,HIR,PO,PO,,1
 Rintaro Okabe,290,878,Alex Brown,444,462,K,416,T4,1,0,0,3,-0.83%,0.83%,0,0,78,7,2,HSH,HIR,K,K,,1
 Yoshigahara Ryutai,133,281,Alex Brown,444,902,K,379,T4,2,0,0,3,-0.82%,0.82%,0,0,78,7,2,HSH,HIR,K,K,,1
@@ -349,7 +349,7 @@ Dart Ragusa,134,500,Alex Brown,444,473,2B,27,T6,2,0,0,3,0.49%,-0.49%,0,0,82,7,2,
 Homer Pimpson,144,689,Alex Brown,444,212,LGO,477,T6,2,2,0,3,-0.82%,0.82%,0,0,82,7,2,HSH,HIR,LGO,LGO,,1
 Gottlieb Giannopoulos,89,277,Zander Ackley,127,455,BB,178,B6,0,0,0,3,4.46%,-4.46%,0,1,83,7,2,HIR,HSH,BB,BB,,1
 Alex Brown,444,224,Zander Ackley,127,839,K,385,B6,0,1,0,3,-3.81%,3.81%,0,0,83,7,2,HIR,HSH,K,K,,1
-AJ McMann,433,,Zander Ackley,127,316,HR,14,B6,1,1,0,3,8.92%,-8.92%,2,1,83,7,2,HIR,HSH,HR,HR,,1
+AJ McMann,433,302,Zander Ackley,127,316,HR,14,B6,1,1,0,3,8.92%,-8.92%,2,1,83,7,2,HIR,HSH,HR,HR,,1
 Dirtbag Darrell,262,903,Zander Ackley,127,101,FO,198,B6,1,0,2,3,-7.59%,7.59%,0,0,83,7,2,HIR,HSH,FO,FO,,1
 Rich Mahogany,265,767,Zander Ackley,127,527,FO,240,B6,2,0,2,3,-6.82%,6.82%,0,0,83,7,2,HIR,HSH,FO,FO,,1
 Jocko Jones,295,742,Alvin Lockheart,20,738,HR,4,T1,0,0,0,0,11.33%,-11.33%,1,1,84,8,2,HNF,CHU,HR,HR,,1
@@ -721,7 +721,7 @@ Jocko Jones,295,42,Naoki Tentacles,216,711,K,331,T1,0,0,0,0,-2.51%,2.51%,0,0,167
 Ian Brendan Owen Bust,186,243,Naoki Tentacles,216,389,BB,146,T1,1,0,0,0,2.43%,-2.43%,0,0,167,15,3,HNF,RGE,BB,BB,,1
 Jimjon Jonjim,272,153,Naoki Tentacles,216,404,FO,251,T1,1,1,0,0,-2.63%,2.63%,0,0,167,15,3,HNF,RGE,FO,FO,,1
 Jerry Jingles,146,800,Naoki Tentacles,216,989,FO,189,T1,2,1,0,0,-3.74%,3.74%,0,0,167,15,3,HNF,RGE,FO,FO,,1
-Jeff Steelflex,268,,Filet-Mignon Jackson,320,789,K,339,B1,0,0,0,0,-2.48%,2.48%,0,0,168,15,3,RGE,HNF,K,K,,1
+Jeff Steelflex,268,450,Filet-Mignon Jackson,320,789,K,339,B1,0,0,0,0,-2.48%,2.48%,0,0,168,15,3,RGE,HNF,K,K,,1
 Harry Peritestes,117,438,Filet-Mignon Jackson,320,567,BB,129,B1,1,0,0,0,2.28%,-2.28%,0,1,168,15,3,RGE,HNF,BB,BB,,1
 Jared Sabor VII,149,84,Filet-Mignon Jackson,320,879,FO,205,B1,1,1,0,0,-2.55%,2.55%,0,0,168,15,3,RGE,HNF,FO,FO,,1
 Ronarudo Washi IIIIII,167,12,Filet-Mignon Jackson,320,58,2B,46,B1,2,1,0,0,13.34%,-13.34%,1,1,168,15,3,RGE,HNF,2B,2B,,1
@@ -754,7 +754,7 @@ Oscar Vinegrette,252,350,Naoki Tentacles,216,804,LGO,454,T5,0,0,2,2,-4.31%,4.31%
 Filet-Mignon Jackson,320,89,Naoki Tentacles,216,498,PO,409,T5,1,0,2,2,-3.90%,3.90%,0,0,175,15,3,HNF,RGE,PO,PO,,1
 Jocko Jones,295,142,Naoki Tentacles,216,876,FO,266,T5,2,0,2,2,-3.51%,3.51%,0,0,175,15,3,HNF,RGE,FO,FO,,1
 Naoki Tentacles,216,451,Filet-Mignon Jackson,320,452,HR,1,B5,0,0,2,2,24.22%,-24.22%,1,1,176,15,3,RGE,HNF,HR,HR,,1
-Jeff Steelflex,268,,Filet-Mignon Jackson,320,323,BB,127,B5,0,0,3,2,1.23%,-1.23%,0,0,176,15,3,RGE,HNF,BB,BB,,1
+Jeff Steelflex,268,450,Filet-Mignon Jackson,320,323,BB,127,B5,0,0,3,2,1.23%,-1.23%,0,0,176,15,3,RGE,HNF,BB,BB,,1
 Harry Peritestes,117,618,Filet-Mignon Jackson,320,137,DP,481,B5,0,1,3,2,-3.90%,3.90%,0,0,176,15,3,RGE,HNF,LGO,LGO,,1
 Jared Sabor VII,149,777,Filet-Mignon Jackson,320,358,RGO,419,B5,2,0,3,2,-1.14%,1.14%,0,0,176,15,3,RGE,HNF,RGO,RGO,,1
 Ian Brendan Owen Bust,186,237,Naoki Tentacles,216,645,RGO,408,T6,0,0,3,2,-6.73%,6.73%,0,0,177,15,3,HNF,RGE,RGO,RGO,,1

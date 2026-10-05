@@ -22,7 +22,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 107,Otis Nixon Sr.,BP,,,Left,RF
 112,Willoughby Hoose,BP,BS,B,Left,P
 115,BB Bambino Jr.,BC,,,Right,C
-120,Pablo Sanchez,BN,BB,B,Right,P
 122,Riles McGiles,BC,,,Right,LF
 125,Triston Uzumaki,BC,,,Right,RF
 133,Garren Smudge,BN,,,Left,C
@@ -135,6 +134,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2143,Jason Girth,BP,,,Right,LF
 2147,Sal Shark,BN,BB,B,Right,P
 2151,Jay Bedia,BP,BS,B,Left,P
+2163,Pablo Sanchez,BN,BB,B,Right,P
 2166,Lemmy Fraser,BN,,,Right,C
 2184,Villar Porn,BN,,,Right,1B
 2186,Lefty Schweez,BC,,,Left,1B

@@ -1107,7 +1107,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Haywood Jablome",
-    "OPS+":154.9367425845
+    "OPS+":154.9454020326
   },
   {
     "ID":20,
@@ -1921,7 +1921,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Larold",
-    "OPS+":134.6139763733
+    "OPS+":134.6254369558
   },
   {
     "ID":32,
@@ -3549,7 +3549,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Michael Ikenberry",
-    "OPS+":301.2396064278
+    "OPS+":301.2565468517
   },
   {
     "ID":65,
@@ -3697,7 +3697,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Daniel Dove",
-    "OPS+":132.7159209205
+    "OPS+":132.7272145364
   },
   {
     "ID":68,
@@ -4437,7 +4437,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"John Johnson Jr.",
-    "OPS+":232.3258710826
+    "OPS+":232.3459271019
   },
   {
     "ID":91,
@@ -4807,7 +4807,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Merodach Baladan",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":104,
@@ -4955,7 +4955,7 @@
     "Position":"LF",
     "Display Season":"S7",
     "Name":"Morris Deratt",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":105,
@@ -5266,8 +5266,8 @@
     "SO":0,
     "Auto K":0,
     "PO":1,
-    "RGO":1,
-    "LGO":1,
+    "RGO":0,
+    "LGO":2,
     "LO":0,
     "SF":0,
     "SH":0,
@@ -5313,7 +5313,7 @@
     "GB%":0.6666666667,
     "FB%":0.0,
     "GB\/FB":"Inf.",
-    "Avg Diff":400.0,
+    "Avg Diff":452.0,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -5399,7 +5399,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Derek Bongiovanni",
-    "OPS+":154.9367425845
+    "OPS+":154.9454020326
   },
   {
     "ID":112,
@@ -5769,7 +5769,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"Mattress",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":117,
@@ -6201,7 +6201,7 @@
     "GB%":1.0,
     "FB%":0.0,
     "GB\/FB":"Inf.",
-    "Avg Diff":429.3333333333,
+    "Avg Diff":391.5,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -7619,7 +7619,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"petra sabor",
-    "OPS+":570.8469951631
+    "OPS+":570.8876521805
   },
   {
     "ID":149,
@@ -8359,7 +8359,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Rickey Tucker",
-    "OPS+":301.2396064278
+    "OPS+":301.2565468517
   },
   {
     "ID":163,
@@ -8433,7 +8433,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Rickey Tucker",
-    "OPS+":100.6198032139
+    "OPS+":100.6282734259
   },
   {
     "ID":163,
@@ -9765,7 +9765,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"IBO Bust",
-    "OPS+":204.9512533081
+    "OPS+":204.95972352
   },
   {
     "ID":187,
@@ -10431,7 +10431,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Patrick Doyle",
-    "OPS+":301.2396064278
+    "OPS+":301.2565468517
   },
   {
     "ID":207,
@@ -11023,7 +11023,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Cal",
-    "OPS+":598.1477627615
+    "OPS+":598.1816436093
   },
   {
     "ID":230,
@@ -11985,7 +11985,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"S. Jay Cutler",
-    "OPS+":397.5279595476
+    "OPS+":397.5533701834
   },
   {
     "ID":258,
@@ -13095,7 +13095,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Ferda Bois",
-    "OPS+":134.6139763733
+    "OPS+":134.6254369558
   },
   {
     "ID":273,
@@ -14649,7 +14649,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Jeff Dingerhitter",
-    "OPS+":22.2401463713
+    "OPS+":22.243032854
   },
   {
     "ID":298,
@@ -14723,7 +14723,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Jeff Dingerhitter",
-    "OPS+":28.024401384
+    "OPS+":28.0287800205
   },
   {
     "ID":298,
@@ -15122,7 +15122,7 @@
     "PA":3,
     "AB":2,
     "TB":1,
-    "G":1,
+    "G":2,
     "R":1,
     "RBI":0,
     "1RHR":0,
@@ -15759,7 +15759,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Caleb Aiken",
-    "OPS+":429.6240772542
+    "OPS+":429.652311294
   },
   {
     "ID":325,
@@ -17609,7 +17609,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"Robin Reynolds",
-    "OPS+":58.7201230343
+    "OPS+":58.7258252249
   },
   {
     "ID":377,
@@ -19163,7 +19163,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Superbone Threefinger",
-    "OPS+":12.5579604059
+    "OPS+":12.5617433154
   },
   {
     "ID":413,
@@ -19237,7 +19237,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Superbone Threefinger",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":413,
@@ -19311,7 +19311,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Superbone Threefinger",
-    "OPS+":-15.5026412667
+    "OPS+":-15.499797145
   },
   {
     "ID":413,
@@ -19681,7 +19681,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Joe Random",
-    "OPS+":204.9512533081
+    "OPS+":204.95972352
   },
   {
     "ID":416,
@@ -20495,7 +20495,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Zoey Dalin",
-    "OPS+":26.9246264434
+    "OPS+":26.9289083357
   },
   {
     "ID":478,
@@ -23381,7 +23381,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Cal Otter",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":547,
@@ -25379,7 +25379,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Paulie Wag",
-    "OPS+":134.6139763733
+    "OPS+":134.6254369558
   },
   {
     "ID":584,
@@ -25811,7 +25811,7 @@
     "GB%":0.0,
     "FB%":1.0,
     "GB\/FB":0.0,
-    "Avg Diff":233.0,
+    "Avg Diff":216.0,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -25959,7 +25959,7 @@
     "GB%":0.0,
     "FB%":0.0,
     "GB\/FB":null,
-    "Avg Diff":190.5,
+    "Avg Diff":241.6666666667,
     "Team":"FAP",
     "Franchise":"FAP",
     "is_sub_row":false,
@@ -25971,7 +25971,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Homer Nocker",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":606,
@@ -26267,7 +26267,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Francis Swagger",
-    "OPS+":184.0849632892
+    "OPS+":184.0934335012
   },
   {
     "ID":610,
@@ -27229,7 +27229,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Nelson Van Halen",
-    "OPS+":237.0473710147
+    "OPS+":237.0586646306
   },
   {
     "ID":650,
@@ -27673,7 +27673,7 @@
     "Position":"LF",
     "Display Season":"S7",
     "Name":"Rusty Nails",
-    "OPS+":249.0738813807
+    "OPS+":249.0908218047
   },
   {
     "ID":654,
@@ -28117,7 +28117,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Bench Warmer",
-    "OPS+":132.7159209205
+    "OPS+":132.7272145364
   },
   {
     "ID":669,
@@ -28549,7 +28549,7 @@
     "GB%":null,
     "FB%":null,
     "GB\/FB":null,
-    "Avg Diff":363.0,
+    "Avg Diff":325.0,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -29375,7 +29375,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Emerson",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":703,
@@ -29671,7 +29671,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Pang Winn",
-    "OPS+":226.1441218836
+    "OPS+":226.1577937319
   },
   {
     "ID":716,
@@ -30399,7 +30399,7 @@
     "GB%":1.0,
     "FB%":0.0,
     "GB\/FB":"Inf.",
-    "Avg Diff":267.5,
+    "Avg Diff":304.6666666667,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -30411,7 +30411,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Scrub Magooch",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":730,
@@ -30781,7 +30781,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"WILL THE THRILL",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":756,
@@ -31299,7 +31299,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Dottie",
-    "OPS+":43.8840087904
+    "OPS+":43.8874881162
   },
   {
     "ID":770,
@@ -31373,7 +31373,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"Dottie",
-    "OPS+":69.4727132337
+    "OPS+":69.478443525
   },
   {
     "ID":770,
@@ -31743,7 +31743,7 @@
     "Position":"DH",
     "Display Season":"S7",
     "Name":"Anakin Kendrick",
-    "OPS+":983.3011752405
+    "OPS+":983.3689369361
   },
   {
     "ID":778,
@@ -31817,7 +31817,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Tyler Pylon",
-    "OPS+":237.0473710147
+    "OPS+":237.0586646306
   },
   {
     "ID":779,
@@ -33297,7 +33297,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Haachama",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":1706,
@@ -33519,7 +33519,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Ferret McGivins",
-    "OPS+":434.3692158861
+    "OPS+":434.3978673423
   },
   {
     "ID":1709,
@@ -33816,6 +33816,80 @@
     "Display Season":"S6",
     "Name":"Corey Scooter",
     "OPS+":-100.0
+  },
+  {
+    "ID":1718,
+    "Season":6.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"BAC",
+    "Franchise":"BAC",
+    "is_sub_row":false,
+    "Last Team":"BAC",
+    "Last Session":2,
+    "Batting Type":"1B",
+    "Pitching Type":"WC-H",
+    "Handedness":"Left",
+    "Position":"PH",
+    "Display Season":"S6",
+    "Name":"Beeg Yoshi",
+    "OPS+":null
   },
   {
     "ID":1719,
@@ -34260,6 +34334,80 @@
     "Display Season":"S8A",
     "Name":"Hannibal Bligh",
     "OPS+":573.7208565018
+  },
+  {
+    "ID":1724,
+    "Season":9.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"BIR",
+    "Franchise":"BIR",
+    "is_sub_row":false,
+    "Last Team":"BIR",
+    "Last Session":2,
+    "Batting Type":"BN",
+    "Pitching Type":"EG-H",
+    "Handedness":"Right",
+    "Position":"3B",
+    "Display Season":"S9",
+    "Name":"Hannibal Bligh",
+    "OPS+":null
   },
   {
     "ID":1725,
@@ -34851,7 +34999,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Bonesy McSkellington",
-    "OPS+":378.2702889236
+    "OPS+":378.2940055171
   },
   {
     "ID":1733,
@@ -35443,7 +35591,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Che Or",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":1763,
@@ -35591,7 +35739,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Dermot Mulveiny",
-    "OPS+":344.5655518222
+    "OPS+":344.588139054
   },
   {
     "ID":1764,
@@ -36704,6 +36852,80 @@
     "OPS+":98.4048573164
   },
   {
+    "ID":1799,
+    "Season":12.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"SEF",
+    "Franchise":"SEF",
+    "is_sub_row":false,
+    "Last Team":"SEF",
+    "Last Session":2,
+    "Batting Type":"BN",
+    "Pitching Type":"EG-B",
+    "Handedness":"Left",
+    "Position":"RF",
+    "Display Season":"S12",
+    "Name":"Alt Site",
+    "OPS+":null
+  },
+  {
     "ID":1801,
     "Season":6.0,
     "HR":0,
@@ -36849,7 +37071,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Doc Dockgoose",
-    "OPS+":204.9512533081
+    "OPS+":204.95972352
   },
   {
     "ID":1808,
@@ -37355,7 +37577,7 @@
     "GB%":null,
     "FB%":null,
     "GB\/FB":null,
-    "Avg Diff":62.0,
+    "Avg Diff":211.3333333333,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -37367,7 +37589,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Jimmy Haase",
-    "OPS+":132.7159209205
+    "OPS+":132.7272145364
   },
   {
     "ID":1830,
@@ -37396,7 +37618,7 @@
     "PA":6,
     "AB":5,
     "TB":3,
-    "G":2,
+    "G":3,
     "R":1,
     "RBI":0,
     "1RHR":0,
@@ -37593,6 +37815,80 @@
   },
   {
     "ID":1838,
+    "Season":5.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"LMN",
+    "Franchise":"LMN",
+    "is_sub_row":false,
+    "Last Team":"LMN",
+    "Last Session":2,
+    "Batting Type":"SM",
+    "Pitching Type":"TD-H",
+    "Handedness":"Left",
+    "Position":"P",
+    "Display Season":"S5",
+    "Name":"Brian Taylor",
+    "OPS+":null
+  },
+  {
+    "ID":1838,
     "Season":7.0,
     "HR":2,
     "3B":0,
@@ -37663,7 +37959,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Brian Taylor",
-    "OPS+":550.2369362173
+    "OPS+":550.2711913564
   },
   {
     "ID":1838,
@@ -37914,7 +38210,7 @@
     "PA":5,
     "AB":4,
     "TB":3,
-    "G":2,
+    "G":3,
     "R":1,
     "RBI":1,
     "1RHR":0,
@@ -38329,7 +38625,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Hornet Hives",
-    "OPS+":132.7159209205
+    "OPS+":132.7272145364
   },
   {
     "ID":1947,
@@ -38995,7 +39291,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Dogwood Maple",
-    "OPS+":249.0738813807
+    "OPS+":249.0908218047
   },
   {
     "ID":2224,
@@ -40327,7 +40623,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Phillip Mahooters",
-    "OPS+":249.0738813807
+    "OPS+":249.0908218047
   },
   {
     "ID":2253,
@@ -40919,7 +41215,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Sid Houn",
-    "OPS+":134.6139763733
+    "OPS+":134.6254369558
   },
   {
     "ID":2258,
@@ -41511,7 +41807,7 @@
     "Position":"PH",
     "Display Season":"S7",
     "Name":"John Smith",
-    "OPS+":199.7552395128
+    "OPS+":199.7724303865
   },
   {
     "ID":2276,
@@ -41522,16 +41818,16 @@
     "1B":0,
     "BB":0,
     "IBB":0,
-    "FO":1,
+    "FO":0,
     "SO":0,
     "Auto K":0,
     "PO":0,
-    "RGO":1,
+    "RGO":2,
     "LGO":0,
     "LO":0,
     "SF":0,
     "SH":0,
-    "GO":1,
+    "GO":2,
     "GIDP":0,
     "GITP":0,
     "SB":0,
@@ -41570,10 +41866,10 @@
     "HR%":0.0,
     "K%":0.0,
     "BB%":0.0,
-    "GB%":0.5,
-    "FB%":0.5,
-    "GB\/FB":1.0,
-    "Avg Diff":437.0,
+    "GB%":1.0,
+    "FB%":0.0,
+    "GB\/FB":"Inf.",
+    "Avg Diff":434.0,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -41807,7 +42103,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"Edge Rocks",
-    "OPS+":493.8163126673
+    "OPS+":493.8501935152
   },
   {
     "ID":2285,
@@ -42103,7 +42399,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"Tencer Sporkelson",
-    "OPS+":68.5236855073
+    "OPS+":68.5293323153
   },
   {
     "ID":2329,
@@ -42325,7 +42621,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Perry Platypus",
-    "OPS+":56.1488614838
+    "OPS+":56.1586641368
   },
   {
     "ID":2356,
@@ -42399,7 +42695,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Tristan Philip-guide",
-    "OPS+":152.785528261
+    "OPS+":152.793998473
   },
   {
     "ID":2367,
@@ -42695,7 +42991,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Frederick Thunderpants",
-    "OPS+":264.8965026524
+    "OPS+":264.9194238173
   },
   {
     "ID":2372,
@@ -42843,7 +43139,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Mark Spoon",
-    "OPS+":49.4689990625
+    "OPS+":49.4718224665
   },
   {
     "ID":2377,
@@ -42991,7 +43287,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Mark Spoon",
-    "OPS+":151.9888455827
+    "OPS+":151.9944923906
   },
   {
     "ID":2377,
@@ -43287,7 +43583,7 @@
     "Position":"LF",
     "Display Season":"S7",
     "Name":"Anthony Burland",
-    "OPS+":116.6602350481
+    "OPS+":116.6737873872
   },
   {
     "ID":2381,
@@ -43349,7 +43645,7 @@
     "GB%":0.0,
     "FB%":1.0,
     "GB\/FB":0.0,
-    "Avg Diff":null,
+    "Avg Diff":314.5,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -43509,7 +43805,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Gerald McCoy",
-    "OPS+":70.4502231848
+    "OPS+":70.4560394648
   },
   {
     "ID":2389,
@@ -43941,7 +44237,7 @@
     "GB%":0.0,
     "FB%":0.0,
     "GB\/FB":null,
-    "Avg Diff":266.6666666667,
+    "Avg Diff":289.5,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -44027,7 +44323,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Nate Duke",
-    "OPS+":429.6240772542
+    "OPS+":429.652311294
   },
   {
     "ID":2472,
@@ -44694,6 +44990,80 @@
     "Display Season":"S6",
     "Name":"Stu PunDous",
     "OPS+":-100.0
+  },
+  {
+    "ID":2487,
+    "Season":7.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"TBL",
+    "Franchise":"TBL",
+    "is_sub_row":false,
+    "Last Team":"TBL",
+    "Last Session":2,
+    "Batting Type":"BC",
+    "Pitching Type":"TD-S",
+    "Handedness":"Right",
+    "Position":"RF",
+    "Display Season":"S7",
+    "Name":"Stu PunDous",
+    "OPS+":null
   },
   {
     "ID":2487,
@@ -45877,7 +46247,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Chicano Bradley",
-    "OPS+":694.4361158812
+    "OPS+":694.478466941
   },
   {
     "ID":2509,
@@ -46161,7 +46531,7 @@
     "GB%":1.0,
     "FB%":0.0,
     "GB\/FB":"Inf.",
-    "Avg Diff":83.0,
+    "Avg Diff":243.5,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -46173,7 +46543,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Rollie Dingers",
-    "OPS+":152.785528261
+    "OPS+":152.793998473
   },
   {
     "ID":2524,
@@ -46247,7 +46617,7 @@
     "Position":"3B",
     "Display Season":"S7",
     "Name":"WoodCutter Jones",
-    "OPS+":195.7986042665
+    "OPS+":195.8128248748
   },
   {
     "ID":2530,
@@ -46321,7 +46691,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Iosef Mere",
-    "OPS+":26.9246264434
+    "OPS+":26.9289083357
   },
   {
     "ID":2537,
@@ -46395,7 +46765,7 @@
     "Position":"RF",
     "Display Season":"S7",
     "Name":"Brayden Ennis",
-    "OPS+":429.6240772542
+    "OPS+":429.652311294
   },
   {
     "ID":2539,
@@ -46469,7 +46839,7 @@
     "Position":"2B",
     "Display Season":"S7",
     "Name":"Bill Stokes",
-    "OPS+":314.889990227
+    "OPS+":314.9035425661
   },
   {
     "ID":2542,
@@ -46605,7 +46975,7 @@
     "GB%":0.5,
     "FB%":0.5,
     "GB\/FB":1.0,
-    "Avg Diff":330.3333333333,
+    "Avg Diff":370.25,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -47283,7 +47653,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Giles Sweeney",
-    "OPS+":170.8252938101
+    "OPS+":170.842234234
   },
   {
     "ID":2573,
@@ -47431,7 +47801,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Joe DiBango",
-    "OPS+":150.3595667124
+    "OPS+":150.3724123895
   },
   {
     "ID":2585,
@@ -47715,7 +48085,7 @@
     "GB%":null,
     "FB%":null,
     "GB\/FB":null,
-    "Avg Diff":183.0,
+    "Avg Diff":144.5,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -47727,7 +48097,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"Helmut Dreyer",
-    "OPS+":297.2180579406
+    "OPS+":297.2392334705
   },
   {
     "ID":2588,
@@ -48085,7 +48455,7 @@
     "GB%":0.0,
     "FB%":1.0,
     "GB\/FB":0.0,
-    "Avg Diff":230.0,
+    "Avg Diff":275.0,
     "Team":"PBA",
     "Franchise":"PBA",
     "is_sub_row":false,
@@ -48159,7 +48529,7 @@
     "GB%":null,
     "FB%":null,
     "GB\/FB":null,
-    "Avg Diff":316.0,
+    "Avg Diff":314.5,
     "Team":"KNX",
     "Franchise":"KNX",
     "is_sub_row":false,
@@ -48245,7 +48615,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Peachy Keen",
-    "OPS+":56.4093175822
+    "OPS+":56.4169579705
   },
   {
     "ID":2606,
@@ -48467,7 +48837,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"CJ Ayer",
-    "OPS+":217.7744463525
+    "OPS+":217.7913867764
   },
   {
     "ID":2611,
@@ -48541,7 +48911,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"CJ Ayer",
-    "OPS+":261.1003917468
+    "OPS+":261.1229789787
   },
   {
     "ID":2611,
@@ -48615,7 +48985,7 @@
     "Position":"P",
     "Display Season":"S7",
     "Name":"CJ Ayer",
-    "OPS+":152.785528261
+    "OPS+":152.793998473
   },
   {
     "ID":2611,
@@ -48837,7 +49207,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Kilometers Straw",
-    "OPS+":183.2136201497
+    "OPS+":183.23066701
   },
   {
     "ID":2624,
@@ -49651,7 +50021,7 @@
     "Position":"SS",
     "Display Season":"S7",
     "Name":"Pablo Sanchez IV",
-    "OPS+":77.3455084033
+    "OPS+":77.3519312418
   },
   {
     "ID":2641,
@@ -50021,7 +50391,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Larry Fishmang",
-    "OPS+":219.5286638446
+    "OPS+":219.54406423
   },
   {
     "ID":2646,
@@ -50243,7 +50613,7 @@
     "Position":"CF",
     "Display Season":"S7",
     "Name":"Dante Robinson",
-    "OPS+":441.6505876202
+    "OPS+":441.6844684681
   },
   {
     "ID":2653,
@@ -50391,7 +50761,7 @@
     "Position":"LF",
     "Display Season":"S7",
     "Name":"Tole Do",
-    "OPS+":161.0238790149
+    "OPS+":161.0341329012
   },
   {
     "ID":2653,
@@ -50465,7 +50835,7 @@
     "Position":"LF",
     "Display Season":"S7",
     "Name":"Tole Do",
-    "OPS+":185.1367167437
+    "OPS+":185.1495624209
   },
   {
     "ID":2655,
@@ -50613,7 +50983,7 @@
     "Position":"1B",
     "Display Season":"S7",
     "Name":"Dru N.K.",
-    "OPS+":163.9602564011
+    "OPS+":163.9709611321
   },
   {
     "ID":2657,
@@ -50761,7 +51131,7 @@
     "Position":"C",
     "Display Season":"S7",
     "Name":"Daniel Randall",
-    "OPS+":441.6505876202
+    "OPS+":441.6844684681
   },
   {
     "ID":2659,
@@ -52689,6 +53059,80 @@
   },
   {
     "ID":2722,
+    "Season":8.2,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"SCU",
+    "Franchise":"SCU",
+    "is_sub_row":false,
+    "Last Team":"SCU",
+    "Last Session":2,
+    "Batting Type":"BC",
+    "Pitching Type":"TD-S",
+    "Handedness":"Right",
+    "Position":"2B",
+    "Display Season":"S8B",
+    "Name":"Teddy Bigstick",
+    "OPS+":null
+  },
+  {
+    "ID":2722,
     "Season":9.0,
     "HR":0,
     "3B":0,
@@ -54092,6 +54536,80 @@
     "Display Season":"S9",
     "Name":"Basil",
     "OPS+":114.0143393192
+  },
+  {
+    "ID":2785,
+    "Season":10.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"CRN",
+    "Franchise":"CRN",
+    "is_sub_row":false,
+    "Last Team":"CRN",
+    "Last Session":2,
+    "Batting Type":"BC",
+    "Pitching Type":"NH-H",
+    "Handedness":"Left",
+    "Position":"C",
+    "Display Season":"S10",
+    "Name":"Basil",
+    "OPS+":null
   },
   {
     "ID":2789,
@@ -58238,6 +58756,80 @@
     "OPS+":-40.0793650794
   },
   {
+    "ID":3004,
+    "Season":10.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"ACK",
+    "Franchise":"ACK",
+    "is_sub_row":false,
+    "Last Team":"ACK",
+    "Last Session":1,
+    "Batting Type":"MH",
+    "Pitching Type":"NH-S",
+    "Handedness":"Right",
+    "Position":"P",
+    "Display Season":"S10",
+    "Name":"Baberaham Lincoln",
+    "OPS+":null
+  },
+  {
     "ID":3016,
     "Season":11.0,
     "HR":0,
@@ -59790,6 +60382,80 @@
     "Display Season":"S11",
     "Name":"Bucky Sabre",
     "OPS+":66.3572933123
+  },
+  {
+    "ID":3126,
+    "Season":11.0,
+    "HR":0,
+    "3B":0,
+    "2B":0,
+    "1B":0,
+    "BB":0,
+    "IBB":0,
+    "FO":0,
+    "SO":0,
+    "Auto K":0,
+    "PO":0,
+    "RGO":0,
+    "LGO":0,
+    "LO":0,
+    "SF":0,
+    "SH":0,
+    "GO":0,
+    "GIDP":0,
+    "GITP":0,
+    "SB":0,
+    "CS":0,
+    "H":0,
+    "PA":0,
+    "AB":0,
+    "TB":0,
+    "G":1,
+    "R":0,
+    "RBI":0,
+    "1RHR":0,
+    "2RHR":0,
+    "3RHR":0,
+    "4RHR":0,
+    "TB+":0,
+    "SB 2B":0,
+    "SB 3B":0,
+    "SB Home":0,
+    "CS 2B":0,
+    "CS 3B":0,
+    "CS Home":0,
+    "RE24":0.0,
+    "WPA":0,
+    "WAR":0.0,
+    "0 Diffs":0,
+    "500 Diffs":0,
+    "BA":null,
+    "BARISP":null,
+    "OBP":null,
+    "SLG":null,
+    "OPS":null,
+    "ISO":null,
+    "BABIP":null,
+    "SB%":null,
+    "HR%":null,
+    "K%":null,
+    "BB%":null,
+    "GB%":null,
+    "FB%":null,
+    "GB\/FB":null,
+    "Avg Diff":null,
+    "Team":"IDR",
+    "Franchise":"IDR",
+    "is_sub_row":false,
+    "Last Team":"IDR",
+    "Last Session":1,
+    "Batting Type":"BC",
+    "Pitching Type":"NH-S",
+    "Handedness":"Left",
+    "Position":"2B",
+    "Display Season":"S11",
+    "Name":"Sleve McDichael",
+    "OPS+":null
   },
   {
     "ID":3128,
