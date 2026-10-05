@@ -73,7 +73,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 112,Willoughby Hoose,BP,BS,B,Left,P
 113,Kevin Arianna,BP,POS,,Right,C
 115,B.B. Bambino Jr.,BC,,,Right,1B
-120,Pablo Sanchez,BC,BB,B,Left,P
 122,Riles McGiles,BC,,,Right,3B
 123,Stephen Seconds,BN,,,Left,LF
 124,Duke Nukem,BP,,,Left,CF
@@ -380,6 +379,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2083,Jim Boeheim,BP,,,Right,RF
 2084,Fernando Trouble,BC,,,Right,3B
 2085,Filthy Frank,BP,,,Left,1B
+2086,Pablo Sanchez,BN,,,Right,SS
 2087,Ravittsu Suramubāto,BN,,,Right,C
 2088,Martin Barnar,BP,,,Right,3B
 2089,Valentino Rollin,BP,,,Left,1B
@@ -443,6 +443,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2160,Kent F. Corey III,BC,BF,B,Left,P
 2161,Kolko V. Knight,BN,,,Right,C
 2162,Lee De Leon,BP,,,Left,C
+2163,Pablo Sanchez,BC,BB,B,Left,P
 2166,Lemmy Fraser,BN,,,Right,C
 2167,Methuselah Saltalamacchia,BC,,,Right,C
 2168,Mike T. Thumb,BP,,,Right,RF

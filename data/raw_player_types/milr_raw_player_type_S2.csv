@@ -5,7 +5,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 33,Oscar Vegas,BC,,,Left,CF
 88,"Joshua ""Junior"" Roth",BN,,,Right,CF
 89,Gottlieb Giannopoulos,BC,,,Right,RF
-120,Pablo Sanchez,BC,BB,B,Left,P
 149,Daniel Collins,BN,BS,B,Left,P
 163,Rickey Tucker,BN,,,Right,1B
 166,Lefty Louis,BP,,,Left,1B
@@ -33,11 +32,12 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 2032,Chester Facto,BC,,,Right,SS
 2061,Jazzy Jeff,BN,,,Right,CF
 2065,Sonny Streaker,BC,BF,B,Right,P
-2069,Kawabunga Joe,BN,BB,B,Right,3B
 2075,Nick Scrivanich,BC,BS,B,Right,P
 2084,Fernando Trouble,BC,,,Right,3B
+2086,Pablo Sanchez,BN,,,Right,SS
 2108,Chris Keebler,BN,,,Right,RF
 2138,Golly McOxbig,BC,,,Right,3B
+2158,Kawabunga Joe,BC,BF,B,Right,P
 2171,Ox Bullhorn,BC,,,Right,2B
 2181,Peter R. Otagonist,BN,,,Right,C
 2183,Tom Brazy,BN,,,Right,RF

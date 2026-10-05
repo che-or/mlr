@@ -342,11 +342,11 @@ Shiny Tenson,2124,279,Big Tuna,2091,747,DP,468,B5,0,1,0,4,-5.61%,5.61%,0,0,84,7,
 Victor Justice,410,463,Big Tuna,2091,312,BB,151,B5,2,0,0,4,1.04%,-1.04%,0,0,84,7,2,MIN,DET,BB,BB,,1
 Jack Marnette,213,178,Big Tuna,2091,92,1B,86,B5,2,1,0,4,2.14%,-2.14%,0,0,84,7,2,MIN,DET,1B,1B,,1
 C.W. Mitzel,2127,312,Big Tuna,2091,758,LGO,446,B5,2,5,0,4,-3.81%,3.81%,0,0,84,7,2,MIN,DET,LGO,LGO,,1
-King Fielder,222,828,Pablo Sanchez,120,24,FO,196,T6,0,0,0,4,-0.18%,0.18%,0,0,85,7,2,DET,MIN,FO,FO,,1
-Valentino Rollin,2089,977,Pablo Sanchez,120,24,3B,47,T6,1,0,0,4,0.66%,-0.66%,0,1,85,7,2,DET,MIN,3B,3B,,1
-Otis Nixon Sr.,107,24,Pablo Sanchez,120,224,Sac,200,T6,1,3,0,4,0.30%,-0.30%,1,0,85,7,2,DET,MIN,FO,FO,,1
-Mason Spurs,103,776,Pablo Sanchez,120,499,FO,277,T6,2,0,0,5,-0.06%,0.06%,0,0,85,7,2,DET,MIN,FO,FO,,1
-Pablo Sanchez,120,24,Big Tuna,2091,856,FO,168,B6,0,0,0,5,-0.56%,0.56%,0,0,86,7,2,MIN,DET,FO,FO,,1
+King Fielder,222,828,Pablo Sanchez,2163,24,FO,196,T6,0,0,0,4,-0.18%,0.18%,0,0,85,7,2,DET,MIN,FO,FO,,1
+Valentino Rollin,2089,977,Pablo Sanchez,2163,24,3B,47,T6,1,0,0,4,0.66%,-0.66%,0,1,85,7,2,DET,MIN,3B,3B,,1
+Otis Nixon Sr.,107,24,Pablo Sanchez,2163,224,Sac,200,T6,1,3,0,4,0.30%,-0.30%,1,0,85,7,2,DET,MIN,FO,FO,,1
+Mason Spurs,103,776,Pablo Sanchez,2163,499,FO,277,T6,2,0,0,5,-0.06%,0.06%,0,0,85,7,2,DET,MIN,FO,FO,,1
+Pablo Sanchez,2163,24,Big Tuna,2091,856,FO,168,B6,0,0,0,5,-0.56%,0.56%,0,0,86,7,2,MIN,DET,FO,FO,,1
 Dark Bobman,359,930,Big Tuna,2091,422,LGO,492,B6,1,0,0,5,-0.27%,0.27%,0,0,86,7,2,MIN,DET,LGO,LGO,,1
 Twinkie Power,2128,45,Big Tuna,2091,705,K,340,B6,2,0,0,5,-0.09%,0.09%,0,0,86,7,2,MIN,DET,K,K,,1
 Gene Hennig,2040,667,Syd Kidd,3,743,1B,76,T1,0,0,0,0,2.91%,-2.91%,0,1,87,8,2,WAS,ARI,1B,1B,,1
@@ -643,7 +643,7 @@ Merodach Baladan,100,517,Hudson Quin,58,725,FO,208,B3,2,0,3,2,-1.62%,1.62%,0,0,1
 Hudson Quin,58,666,Big Tuna,2091,865,FO,199,T4,0,0,3,2,-3.96%,3.96%,0,0,155,13,3,NYM,DET,FO,FO,,1
 Mongster Mash,344,900,Big Tuna,2091,420,LGO,480,T4,1,0,3,2,-3.37%,3.37%,0,0,155,13,3,NYM,DET,LGO,LGO,,1
 Pip Squires,2060,322,Big Tuna,2091,69,FO,253,T4,2,0,3,2,-2.78%,2.78%,0,0,155,13,3,NYM,DET,FO,FO,,1
-Mason Spurs,103,,Hudson Quin,58,12,K,,B4,0,0,3,2,-1.87%,1.87%,0,0,156,13,3,DET,NYM,K,K,,1
+Mason Spurs,103,712,Hudson Quin,58,12,K,300,B4,0,0,3,2,-1.87%,1.87%,0,0,156,13,3,DET,NYM,K,K,,1
 Sevag Vapor,106,333,Hudson Quin,58,967,K,366,B4,1,0,3,2,-1.74%,1.74%,0,0,156,13,3,DET,NYM,K,K,,1
 Lightning Balls,350,677,Hudson Quin,58,713,2B,36,B4,2,0,3,2,2.65%,-2.65%,0,1,156,13,3,DET,NYM,2B,2B,,1
 Big Tuna,2091,212,Hudson Quin,58,317,1B,105,B4,2,2,3,2,9.62%,-9.62%,1,0,156,13,3,DET,NYM,1B,1B,,1
@@ -655,7 +655,7 @@ Casey Nine,101,87,Hudson Quin,58,502,LGO,415,B5,0,0,4,2,-0.67%,0.67%,0,0,158,13,
 King Fielder,222,839,Hudson Quin,58,910,1B,71,B5,1,0,4,2,0.55%,-0.55%,0,1,158,13,3,DET,NYM,1B,1B,,1
 Morris Deratt,104,383,Hudson Quin,58,223,BB,160,B5,1,1,4,2,0.86%,-0.86%,0,1,158,13,3,DET,NYM,BB,BB,,1
 Merodach Baladan,100,111,Hudson Quin,58,138,3B,27,B5,1,4,4,2,4.94%,-4.94%,2,1,158,13,3,DET,NYM,3B,3B,,1
-Mason Spurs,103,,Hudson Quin,58,742,LGO,,B5,1,3,6,2,-0.48%,0.48%,0,0,158,13,3,DET,NYM,LGO,LGO,,2
+Mason Spurs,103,317,Hudson Quin,58,742,LGO,425,B5,1,3,6,2,-0.48%,0.48%,0,0,158,13,3,DET,NYM,LGO,LGO,,2
 Sevag Vapor,106,433,Hudson Quin,58,512,1B,79,B5,2,3,6,2,0.73%,-0.73%,1,0,158,13,3,DET,NYM,1B,1B,,1
 Lightning Balls,350,313,Hudson Quin,58,230,1B,83,B5,2,1,7,2,0.11%,-0.11%,0,0,158,13,3,DET,NYM,1B,1B,,1
 Big Tuna,2091,720,Hudson Quin,58,979,FO,259,B5,2,5,7,2,-0.18%,0.18%,0,0,158,13,3,DET,NYM,FO,FO,,1
@@ -701,9 +701,9 @@ Sonny Streaker,2065,117,Einhorn,74,442,K,325,T5,1,0,4,2,-2.82%,2.82%,0,0,168,14,
 C.W. Mitzel,2127,873,Einhorn,74,50,BB,177,T5,2,0,4,2,2.91%,-2.91%,0,0,168,14,3,MIN,ARI,BB,BB,,1
 Mike Cal,2126,890,Einhorn,74,813,1B,77,T5,2,1,4,2,5.26%,-5.26%,0,0,168,14,3,MIN,ARI,1B,1B,,1
 Victor Justice,410,714,Einhorn,74,389,K,325,T5,2,5,4,2,-10.10%,10.10%,0,0,168,14,3,MIN,ARI,K,K,,1
-Tsar Zaar,274,12,Pablo Sanchez,120,449,LGO,437,B5,0,0,4,2,-0.67%,0.67%,0,0,169,14,3,ARI,MIN,LGO,LGO,,1
-Brent Royal,2078,212,Pablo Sanchez,120,817,K,395,B5,1,0,4,2,-0.64%,0.64%,0,0,169,14,3,ARI,MIN,K,K,,1
-I.M. Organic,2132,,Pablo Sanchez,120,,Auto K,,B5,2,0,4,2,-0.51%,0.51%,0,0,169,14,3,ARI,MIN,Auto K,Auto K,,9
+Tsar Zaar,274,12,Pablo Sanchez,2163,449,LGO,437,B5,0,0,4,2,-0.67%,0.67%,0,0,169,14,3,ARI,MIN,LGO,LGO,,1
+Brent Royal,2078,212,Pablo Sanchez,2163,817,K,395,B5,1,0,4,2,-0.64%,0.64%,0,0,169,14,3,ARI,MIN,K,K,,1
+I.M. Organic,2132,,Pablo Sanchez,2163,,Auto K,,B5,2,0,4,2,-0.51%,0.51%,0,0,169,14,3,ARI,MIN,Auto K,Auto K,,9
 Tater Tits,4,320,Syd Kidd,3,666,K,346,T6,0,0,4,2,-3.81%,3.81%,0,0,170,14,3,MIN,ARI,K,K,,1
 Jack Marnette,213,418,Syd Kidd,3,185,FO,233,T6,1,0,4,2,-2.88%,2.88%,0,0,170,14,3,MIN,ARI,FO,FO,,1
 Shiny Tenson,2124,919,Syd Kidd,3,399,LGO,480,T6,2,0,4,2,-1.67%,1.67%,0,0,170,14,3,MIN,ARI,LGO,LGO,,1
@@ -963,7 +963,7 @@ Ross Fire,47,88,Big Tuna,2091,66,2B,22,B1,0,0,0,1,7.04%,-7.04%,0,0,230,20,4,PHI,
 Jay Lupp,3278,428,Big Tuna,2091,977,LGO,451,B1,0,2,0,1,-4.86%,4.86%,0,0,230,20,4,PHI,DET,LGO,LGO,,1
 Conrad Love,300,673,Big Tuna,2091,102,LGO,429,B1,1,2,0,1,-3.80%,3.80%,0,0,230,20,4,PHI,DET,LGO,LGO,,1
 Hunter Tuzero,346,425,Big Tuna,2091,797,K,372,B1,2,2,0,1,-5.41%,5.41%,0,0,230,20,4,PHI,DET,K,K,,1
-Mason Spurs,103,,Oliver Yu,286,76,1B,,T2,0,0,0,1,2.40%,-2.40%,0,0,231,20,4,DET,PHI,1B,1B,,1
+Mason Spurs,103,214,Oliver Yu,286,76,1B,138,T2,0,0,0,1,2.40%,-2.40%,0,0,231,20,4,DET,PHI,1B,1B,,1
 Sevag Vapor,106,833,Oliver Yu,286,468,DP,365,T2,0,1,0,1,-6.69%,6.69%,0,0,231,20,4,DET,PHI,LGO,LGO,,1
 Merodach Baladan,100,307,Oliver Yu,286,10,K,297,T2,2,0,0,1,-1.69%,1.69%,0,0,231,20,4,DET,PHI,K,K,,1
 Rory Nipponsteer,1992,151,Big Tuna,2091,314,FO,163,B2,0,0,0,1,-3.11%,3.11%,0,0,232,20,4,PHI,DET,FO,FO,,1
@@ -1079,25 +1079,25 @@ Caleb VanVacter,2103,1000,Hudson Quin,58,112,1B,112,T4,0,0,0,1,2.58%,-2.58%,0,0,
 Graham Othrie,2139,703,Hudson Quin,58,314,K,389,T4,0,1,0,1,-3.09%,3.09%,0,0,259,22,4,OAK,MIN,K,K,,1
 Rick Gymnast,3283,701,Hudson Quin,58,668,2B,33,T4,1,1,0,1,9.49%,-9.49%,0,0,259,22,4,OAK,MIN,2B,2B,,1
 Sal Shark,2147,,Hudson Quin,58,,IBB,,T4,1,6,0,1,0.99%,-0.99%,0,0,259,22,4,OAK,MIN,IBB,IBB,,8
-Boaty McBoatface,2095,24,Pablo Sanchez,120,400,PO,376,T4,1,7,0,1,-7.67%,7.67%,0,0,259,22,4,OAK,MIN,PO,PO,,1
-Max Wasson,273,860,Pablo Sanchez,120,373,LGO,487,T4,2,7,0,1,-8.80%,8.80%,0,0,259,22,4,OAK,MIN,LGO,LGO,,1
+Boaty McBoatface,2095,24,Pablo Sanchez,2163,400,PO,376,T4,1,7,0,1,-7.67%,7.67%,0,0,259,22,4,OAK,MIN,PO,PO,,1
+Max Wasson,273,860,Pablo Sanchez,2163,373,LGO,487,T4,2,7,0,1,-8.80%,8.80%,0,0,259,22,4,OAK,MIN,LGO,LGO,,1
 Twinkie Power,2128,720,Sal Shark,2147,900,BB,180,B4,0,0,0,1,4.73%,-4.73%,0,0,260,22,4,MIN,OAK,BB,BB,,1
 "Jake ""JP"" Panik",267,100,Sal Shark,2147,425,K,325,B4,0,1,0,1,-5.04%,5.04%,0,0,260,22,4,MIN,OAK,K,K,,1
 Mike Cal,2126,50,Sal Shark,2147,307,FO,257,B4,1,1,0,1,-4.31%,4.31%,0,0,260,22,4,MIN,OAK,FO,FO,,1
 Twinkie Power,2128,307,Sal Shark,2147,95,CS,212,B4,2,1,0,1,-6.91%,6.91%,0,0,260,22,4,MIN,OAK,CS 2B,CS 2B,,4
-Art Zyz,1982,280,Pablo Sanchez,120,451,BB,171,T5,0,0,0,1,2.08%,-2.08%,0,0,261,22,4,OAK,MIN,BB,BB,,1
-Bobson Dugnutt,2096,,Pablo Sanchez,120,,Auto K,,T5,0,1,0,1,-2.56%,2.56%,0,0,261,22,4,OAK,MIN,Auto K,Auto K,,9
-Blue Moon Barthelemy,2025,222,Pablo Sanchez,120,606,PO,384,T5,1,1,0,1,-2.02%,2.02%,0,0,261,22,4,OAK,MIN,PO,PO,,1
-Caleb VanVacter,2103,975,Pablo Sanchez,120,666,K,309,T5,2,1,0,1,-3.78%,3.78%,0,0,261,22,4,OAK,MIN,K,K,,1
+Art Zyz,1982,280,Pablo Sanchez,2163,451,BB,171,T5,0,0,0,1,2.08%,-2.08%,0,0,261,22,4,OAK,MIN,BB,BB,,1
+Bobson Dugnutt,2096,,Pablo Sanchez,2163,,Auto K,,T5,0,1,0,1,-2.56%,2.56%,0,0,261,22,4,OAK,MIN,Auto K,Auto K,,9
+Blue Moon Barthelemy,2025,222,Pablo Sanchez,2163,606,PO,384,T5,1,1,0,1,-2.02%,2.02%,0,0,261,22,4,OAK,MIN,PO,PO,,1
+Caleb VanVacter,2103,975,Pablo Sanchez,2163,666,K,309,T5,2,1,0,1,-3.78%,3.78%,0,0,261,22,4,OAK,MIN,K,K,,1
 C.W. Mitzel,2127,789,Sal Shark,2147,60,FO,271,B5,0,0,0,1,-5.77%,5.77%,0,0,262,22,4,MIN,OAK,FO,FO,,1
 Tater Tits,4,900,Sal Shark,2147,675,FO,225,B5,1,0,0,1,-5.16%,5.16%,0,0,262,22,4,MIN,OAK,FO,FO,,1
 Shiny Tenson,2124,799,Sal Shark,2147,740,1B,59,B5,2,0,0,1,4.75%,-4.75%,0,0,262,22,4,MIN,OAK,1B,1B,,1
 Shiny Tenson,2124,786,Sal Shark,2147,277,CS,491,B5,2,1,0,1,-9.20%,9.20%,0,0,262,22,4,MIN,OAK,CS 2B,CS 2B,,4
-Graham Othrie,2139,33,Pablo Sanchez,120,888,BB,145,T6,0,0,0,1,1.49%,-1.49%,0,1,263,22,4,OAK,MIN,BB,BB,,1
-Rick Gymnast,3283,148,Pablo Sanchez,120,412,FO,264,T6,0,1,0,1,-1.89%,1.89%,0,0,263,22,4,OAK,MIN,FO,FO,,1
-Sal Shark,2147,645,Pablo Sanchez,120,649,HR,4,T6,1,1,0,1,14.17%,-14.17%,2,1,263,22,4,OAK,MIN,HR,HR,,1
-Boaty McBoatface,2095,220,Pablo Sanchez,120,1,FO,219,T6,1,0,0,3,-0.37%,0.37%,0,0,263,22,4,OAK,MIN,FO,FO,,1
-Max Wasson,273,385,Pablo Sanchez,120,2,LGO,383,T6,2,0,0,3,-0.33%,0.33%,0,0,263,22,4,OAK,MIN,LGO,LGO,,1
+Graham Othrie,2139,33,Pablo Sanchez,2163,888,BB,145,T6,0,0,0,1,1.49%,-1.49%,0,1,263,22,4,OAK,MIN,BB,BB,,1
+Rick Gymnast,3283,148,Pablo Sanchez,2163,412,FO,264,T6,0,1,0,1,-1.89%,1.89%,0,0,263,22,4,OAK,MIN,FO,FO,,1
+Sal Shark,2147,645,Pablo Sanchez,2163,649,HR,4,T6,1,1,0,1,14.17%,-14.17%,2,1,263,22,4,OAK,MIN,HR,HR,,1
+Boaty McBoatface,2095,220,Pablo Sanchez,2163,1,FO,219,T6,1,0,0,3,-0.37%,0.37%,0,0,263,22,4,OAK,MIN,FO,FO,,1
+Max Wasson,273,385,Pablo Sanchez,2163,2,LGO,383,T6,2,0,0,3,-0.33%,0.33%,0,0,263,22,4,OAK,MIN,LGO,LGO,,1
 Jack Marnette,213,170,Sal Shark,2147,1,BB,169,B6,0,0,0,3,4.46%,-4.46%,0,1,264,22,4,MIN,OAK,BB,BB,,1
 Victor Justice,410,818,Sal Shark,2147,220,PO,402,B6,0,1,0,3,-3.81%,3.81%,0,0,264,22,4,MIN,OAK,PO,PO,,1
 Dark Bobman,359,800,Sal Shark,2147,645,BB,155,B6,1,1,0,3,8.40%,-8.40%,0,1,264,22,4,MIN,OAK,BB,BB,,1
@@ -1728,8 +1728,8 @@ Jack Marnette,213,129,Whitt Bass,39,567,LGO,438,T6,2,0,0,2,-0.69%,0.69%,0,0,409,
 Jimbo Fishy,1984,20,Tim Burr,2129,645,LGO,375,B6,0,0,0,2,-4.76%,4.76%,0,0,410,34,6,HOU,MIN,LGO,LGO,,1
 Triston Uzumaki,125,42,Tim Burr,2129,43,HR,1,B6,1,0,0,2,8.54%,-8.54%,1,1,410,34,6,HOU,MIN,HR,HR,,1
 Jay Money,241,325,Tim Burr,2129,236,1B,89,B6,1,0,1,2,7.39%,-7.39%,0,0,410,34,6,HOU,MIN,1B,1B,,1
-Buck Cheeks,457,946,Pablo Sanchez,120,567,K,379,B6,1,1,1,2,-7.88%,7.88%,0,0,410,34,6,HOU,MIN,K,K,,1
-Jasper Orbit,1983,450,Pablo Sanchez,120,1,LGO,449,B6,2,1,1,2,-13.92%,13.92%,0,0,410,34,6,HOU,MIN,LGO,LGO,,1
+Buck Cheeks,457,946,Pablo Sanchez,2163,567,K,379,B6,1,1,1,2,-7.88%,7.88%,0,0,410,34,6,HOU,MIN,K,K,,1
+Jasper Orbit,1983,450,Pablo Sanchez,2163,1,LGO,449,B6,2,1,1,2,-13.92%,13.92%,0,0,410,34,6,HOU,MIN,LGO,LGO,,1
 Chocolate Smegma,2107,398,Sal Shark,2147,413,HR,15,T1,0,0,0,0,11.33%,-11.33%,1,1,411,35,6,NYM,OAK,HR,HR,,1
 Mongster Mash,344,410,Sal Shark,2147,940,LGO,470,T1,0,0,0,1,-2.09%,2.09%,0,0,411,35,6,NYM,OAK,LGO,LGO,,1
 James Maso,2063,982,Sal Shark,2147,880,1B,102,T1,1,0,0,1,2.17%,-2.17%,0,0,411,35,6,NYM,OAK,1B,1B,,1

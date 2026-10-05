@@ -150,7 +150,7 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 270,Mason Miller,P,BS,B,Right,P
 271,Assassin Xekutioner,XB,,,Left,C
 272,Queue Jay,WC,,,Left,1B
-273,Max Wasson,BN,POS,,Right,SS
+273,Max Wasson,P,BB,B,Right,P
 275,Richard Northstar,P,TT,S,Left,P
 278,Dominus Nominus,1B,,,Right,LF
 282,Jayson Burdwell,P,WC,B,Left,P
@@ -330,7 +330,6 @@ Player ID,Name,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary Posi
 729,Scrub Magooch,P,FP,H,Left,P
 730,Kyle Bellinger,BC,,,Left,C
 734,Kevin Harrison,S,,,Left,3B
-738,Johññy Coppolella,BC,,,Right,SS
 739,Jeter O'Cola,BC,,,Right,SS
 740,Bartholomew J. Bottomtext,SM,,,Left,CF
 743,Festus Ezeli,1B,,,Right,2B

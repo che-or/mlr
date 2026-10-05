@@ -965,7 +965,7 @@ Caleb Aiken,324,758,Logan Anderson,236,664,1B,94,B3,0,0,0,6,1.27%,-1.27%,0,0,231
 C.J. Yantzi,323,800,Logan Anderson,236,141,K,341,B3,0,1,0,6,-1.18%,1.18%,0,0,231,21,2,SDP,MIL,K,K,,1
 Dwayne Stevenson,334,302,Logan Anderson,236,134,FO,168,B3,1,1,0,6,-1.01%,1.01%,0,0,231,21,2,SDP,MIL,FO,FO,,1
 A.J. Preller,319,432,Logan Anderson,236,757,RGO,325,B3,2,1,0,6,-0.99%,0.99%,0,0,231,21,2,SDP,MIL,RGO,RGO,,1
-Coco Watanabe,204,0,Filet-Mignon Jackson,320,577,RGO,423,T4,0,0,0,6,-0.19%,0.19%,0,0,232,21,2,MIL,SDP,RGO,RGO,,1
+Coco Watanabe,204,1000,Filet-Mignon Jackson,320,577,RGO,423,T4,0,0,0,6,-0.19%,0.19%,0,0,232,21,2,MIL,SDP,RGO,RGO,,1
 Ryan Vauhn,442,805,Filet-Mignon Jackson,320,648,BB,157,T4,1,0,0,6,0.11%,-0.11%,0,1,232,21,2,MIL,SDP,BB,BB,,1
 J.J. Guemes,207,493,Filet-Mignon Jackson,320,525,2B,32,T4,1,1,0,6,0.28%,-0.28%,0,1,232,21,2,MIL,SDP,2B,2B,,1
 Arata Hightower,31,723,Filet-Mignon Jackson,320,255,LGO,468,T4,1,6,0,6,0.66%,-0.66%,1,0,232,21,2,MIL,SDP,LGO,LGO,,1
@@ -8573,7 +8573,7 @@ Bo-Horse Jackman,168,69,Fish Fingers,182,107,2B,38,B2,0,0,0,0,6.77%,-6.77%,0,0,2
 Jasmine,175,339,Fish Fingers,182,249,1B,90,B2,0,2,0,0,7.13%,-7.13%,0,0,2015,175,15,LAD,MIA,1B,1B,,1
 Clifton Outlaw,178,866,Fish Fingers,182,510,K,356,B2,0,5,0,0,-6.25%,6.25%,0,0,2015,175,15,LAD,MIA,K,K,,1
 Jasmine,175,100,Fish Fingers,182,299,SB,199,B2,1,5,0,0,2.36%,-2.36%,0,0,2015,175,15,LAD,MIA,Steal 2B,Steal 2B,,5
-Todd Bonzalez,60,625,Fish Fingers,182,299,K,326,B2,1,6,0,0,-8.82%,8.82%,0,0,2015,175,15,LAD,MIA,K,K,,1
+Todd Bonzalez II,169,625,Fish Fingers,182,299,K,326,B2,1,6,0,0,-8.82%,8.82%,0,0,2015,175,15,LAD,MIA,K,K,,1
 Federal Credit Union Boi,173,100,Fish Fingers,182,986,BB,114,B2,2,6,0,0,1.89%,-1.89%,0,0,2015,175,15,LAD,MIA,BB,BB,,1
 Clipper Charge,171,420,Fish Fingers,182,50,PO,370,B2,2,7,0,0,-10.21%,10.21%,0,0,2015,175,15,LAD,MIA,PO,PO,,1
 Lane Drew,190,,Geno Scaramucci,165,,Auto K,,T3,0,0,0,0,-3.03%,3.03%,0,0,2016,175,15,MIA,LAD,Auto K,Auto K,,9
@@ -8589,7 +8589,7 @@ Demetrios Ooga,180,292,Geno Scaramucci,165,750,LGO,458,T4,2,0,0,0,-2.75%,2.75%,0
 Jasmine,175,896,Fish Fingers,182,764,BB,132,B4,0,0,0,0,3.11%,-3.11%,0,1,2019,175,15,LAD,MIA,BB,BB,,1
 Jasmine,175,500,Fish Fingers,182,342,SB,158,B4,0,1,0,0,5.79%,-5.79%,0,0,2019,175,15,LAD,MIA,Steal 2B,Steal 2B,,4
 Clifton Outlaw,178,408,Fish Fingers,182,342,2B,66,B4,0,2,0,0,14.53%,-14.53%,1,0,2019,175,15,LAD,MIA,2B,2B,,1
-Todd Bonzalez,60,500,Fish Fingers,182,31,LGO,469,B4,0,2,1,0,-3.00%,3.00%,0,0,2019,175,15,LAD,MIA,LGO,LGO,,1
+Todd Bonzalez II,169,500,Fish Fingers,182,31,LGO,469,B4,0,2,1,0,-3.00%,3.00%,0,0,2019,175,15,LAD,MIA,LGO,LGO,,1
 Federal Credit Union Boi,173,611,Fish Fingers,182,239,PO,372,B4,1,2,1,0,-2.73%,2.73%,0,0,2019,175,15,LAD,MIA,PO,PO,,1
 Clipper Charge,171,672,Fish Fingers,182,83,RGO,411,B4,2,2,1,0,-4.14%,4.14%,0,0,2019,175,15,LAD,MIA,RGO,RGO,,1
 Giminy Schlimjim,188,39,Geno Scaramucci,165,100,1B,61,T5,0,0,1,0,5.72%,-5.72%,0,0,2020,175,15,MIA,LAD,1B,2B,,1
@@ -8607,7 +8607,7 @@ Alex Peters,187,420,Geno Scaramucci,165,6,RGO,414,T6,2,0,1,1,-4.91%,4.91%,0,0,20
 Bo-Horse Jackman,168,972,Fish Fingers,182,946,2B,26,B6,0,0,1,1,12.74%,-12.74%,0,1,2023,175,15,LAD,MIA,2B,2B,,1
 Jasmine,175,379,Fish Fingers,182,861,LGO,482,B6,0,2,1,1,-8.43%,8.43%,0,0,2023,175,15,LAD,MIA,LGO,LGO,,1
 Clifton Outlaw,178,489,Fish Fingers,182,331,BB,158,B6,1,2,1,1,-0.84%,0.84%,0,0,2023,175,15,LAD,MIA,BB,BB,,1
-Todd Bonzalez,60,250,Fish Fingers,182,376,1B,126,B6,1,4,1,1,14.10%,-14.10%,0,0,2023,175,15,LAD,MIA,1B,BB,,1
+Todd Bonzalez II,169,250,Fish Fingers,182,376,1B,126,B6,1,4,1,1,14.10%,-14.10%,0,0,2023,175,15,LAD,MIA,1B,BB,,1
 Federal Credit Union Boi,173,69,Fish Fingers,182,897,Sac,172,B6,1,7,1,1,16.96%,-16.96%,1,0,2023,175,15,LAD,MIA,FO,FO,,1
 Tre Nichols,370,420,Joel Embiid,285,24,LGO,396,T1,0,0,0,0,-2.51%,2.51%,0,0,2024,176,15,STL,PHI,LGO,LGO,,1
 Aaron Icecream,358,460,Joel Embiid,285,860,RGO,400,T1,1,0,0,0,-2.18%,2.18%,0,0,2024,176,15,STL,PHI,RGO,RGO,,1
