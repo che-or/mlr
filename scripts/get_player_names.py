@@ -11,7 +11,7 @@ def get_player_names():
     '''
     df = pd.DataFrame()
     # priority order for names of equal season
-    order = ['mlr', 'mlr_playoff', 'milr', 'milr_playoff', 'fcb', 'gib', 'wbc', 'npr', 'eco']
+    order = ['mlr', 'mlr_playoff', 'milr', 'milr_playoff', 'fcb', 'gib', 'wbc', 'eco', 'npr', 'llr']
     
     for league in order:
         season = 9999 # value that will never be reached
