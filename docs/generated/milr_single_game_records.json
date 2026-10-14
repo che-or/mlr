@@ -117,14 +117,14 @@
       },
       "GIDP": {
         "record": 2,
-        "tie_count": 52,
+        "tie_count": 53,
         "most_recent": {
-          "id": 3042,
-          "season": "S12",
-          "session": 14,
-          "team": "CCS",
+          "id": 3469,
+          "season": "S13",
+          "session": 3,
+          "team": "MMS",
           "location": "Away",
-          "opponent": "SDV"
+          "opponent": "RHP"
         }
       },
       "H": {
