@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats, searchPlayers, getPlayerById } from '../data.js';
+import { loadStats, searchPlayers, getPlayerById, displayName } from '../data.js';
 import { formatStat, parseSortValue, getSeasonSort, getFranchiseKey, getMlrLogo, getMlrLogoPair, getMilrTeamName, getMilrLogoPair, getFcbTeamName, getHistoricalLogoPair, setStickyColumnOffsets, recordFranchiseKey, makeLogoImg, getLogoPair, getPlayerDefaultLogoOverride } from '../utils.js';
 import { STAT_DEFINITIONS, STAT_DESCRIPTIONS, VS_TEAM_STAT_DEFINITIONS, LEAGUES_WITH_CAREER, COUNTING_STATS } from '../constants.js';
 import { getPlayerAwards } from './awards.js';
@@ -75,10 +75,12 @@ export function initPlayerSearch() {
 function showSuggestions(players, container) {
     if (!players.length) { container.style.display = 'none'; return; }
     const nameCounts = {};
-    players.forEach(p => { nameCounts[p.Name] = (nameCounts[p.Name] || 0) + 1; });
+    const nameOf = p => displayName(p.ID);
+    players.forEach(p => { nameCounts[nameOf(p)] = (nameCounts[nameOf(p)] || 0) + 1; });
     container.innerHTML = players.map(p => {
-        const label = nameCounts[p.Name] > 1 ? `${p.Name} (#${p.ID})` : p.Name;
-        return `<div class="suggestion-item" data-id="${p.ID}" data-name="${p.Name}">${label}</div>`;
+        const name = nameOf(p);
+        const label = nameCounts[name] > 1 ? `${name} (#${p.ID})` : name;
+        return `<div class="suggestion-item" data-id="${p.ID}" data-name="${name}">${label}</div>`;
     }).join('');
     container.style.display = 'block';
 }

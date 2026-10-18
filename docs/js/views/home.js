@@ -1,6 +1,6 @@
 import { state } from '../state.js';
-import { loadStats } from '../data.js';
-import { seededRandom, getMlrLogoPair, getMlrTeamName, getSeasonSort, recordFranchiseKey, makeLogoImg } from '../utils.js';
+import { loadStats, displayName, isBanned, setHideBanned } from '../data.js';
+import { seededRandom, getMlrLogoPair, getMlrTeamName, getSeasonSort, recordFranchiseKey, makeLogoImg, bindThemeSwitch } from '../utils.js';
 
 export async function renderHome() {
     const container = document.getElementById('home-view');
@@ -59,6 +59,25 @@ export async function renderHome() {
             </div>
             <br>
 
+            <h3 class="section-title">Settings</h3>
+            <div class="settings-list">
+                <label class="option-toggle">
+                    <span class="option-toggle-switch">
+                        <input type="checkbox" id="light-mode-input">
+                        <span class="option-toggle-slider"></span>
+                    </span>
+                    <span>Light mode</span>
+                </label>
+                <label class="option-toggle">
+                    <span class="option-toggle-switch">
+                        <input type="checkbox" id="hide-banned-input"${state.hideBanned ? ' checked' : ''}>
+                        <span class="option-toggle-slider"></span>
+                    </span>
+                    <span>Hide banned players</span>
+                </label>
+            </div>
+            <br>
+
             <h3 class="section-title">Frequently Asked Questions</h3>
             <p>Why is my WAR different than it appears in the roster sheet?</p>
             <p><i>Like any good baseball statistics site, MLR Reference has its own WAR formula. MLR Reference WAR (also known as "cheWAR") is calculated using RE24. More information about WAR calculation can be found in the glossary.</i></p>
@@ -72,6 +91,13 @@ export async function renderHome() {
             <p>Why is my runs scored count different than it appears in the roster sheet?</p>
             <p><i>Differing runs scored count is likely due to being a ghost runner that scored. The roster sheet does not credit ghost runners with runs scored, while MLR Reference does.</i></p>
         </div>`;
+
+    bindThemeSwitch(document.getElementById('light-mode-input'));
+    document.getElementById('hide-banned-input')?.addEventListener('change', e => {
+        setHideBanned(e.target.checked);
+        // Other views re-render on navigation; only the featured cards are on this page
+        if (state.stats['mlr_hitting'] && state.stats['mlr_pitching']) renderFeatured();
+    });
 
     try {
         await Promise.all([
@@ -100,7 +126,8 @@ function renderFeatured() {
     const idSet = new Set();
     hitting.filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S')).forEach(r => idSet.add(r.ID));
     pitching.filter(r => !r.is_sub_row && r['Display Season']?.startsWith('S')).forEach(r => idSet.add(r.ID));
-    const ids = [...idSet];
+    // Banned players are never featured, whether or not hide-banned mode is on
+    const ids = [...idSet].filter(id => !isBanned(id));
 
     let i1 = Math.floor(random() * ids.length);
     let i2 = Math.floor(random() * ids.length);
@@ -136,7 +163,7 @@ function renderFeatured() {
 
     // Random player button
     document.getElementById('random-player-button')?.addEventListener('click', () => {
-        const allIds = state.allPlayers.map(p => p.ID);
+        const allIds = state.allPlayers.map(p => p.ID).filter(id => !isBanned(id));
         const id = allIds[Math.floor(Math.random() * allIds.length)];
         import('./player.js').then(m => {
             m.displayPlayerPage(id);
@@ -166,7 +193,7 @@ function buildFeaturedPlayer(id, hitting, pitching) {
     const ds   = latest['Display Season'];
     const fk   = recordFranchiseKey(latest);
     const logo = fk ? getMlrLogoPair(fk, ds) : null;
-    const name = latest.Name || `#${id}`;
+    const name = displayName(id, latest.Name);
 
     return { id, name, logo, range };
 }

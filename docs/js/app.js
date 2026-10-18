@@ -1,4 +1,4 @@
-import { loadCoreData } from './data.js';
+import { loadCoreData, loadHideBanned } from './data.js';
 import { updateView } from './router.js';
 import { initTheme } from './utils.js';
 import { initPlayerSearch, displayPlayerPage } from './views/player.js';
@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const app    = document.getElementById('app');
 
     initTheme(document.getElementById('theme-switch-input'));
+    loadHideBanned();
 
     try {
         await loadCoreData();

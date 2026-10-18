@@ -1,6 +1,6 @@
 import { state } from '../state.js';
-import { loadStats } from '../data.js';
-import { getSeasonSort, getMlrLogoPair, getMlrTeamAbbr, getMilrLogoPair, recordFranchiseKey, makeLogoImg, getSeasonLogoOverride } from '../utils.js';
+import { loadStats, displayName } from '../data.js';
+import { getSeasonSort, getMlrLogoPair, getMlrTeamAbbr, getMilrLogoPair, recordFranchiseKey, makeLogoImg, getSeasonLogoOverride, playerLink } from '../utils.js';
 import { LEAGUE_LABELS } from '../constants.js';
 
 // Site leagues with awards data, for the MLR/MiLR selector on this page.
@@ -166,8 +166,7 @@ function renderMilrPlayerGrid(ids, season) {
     if (!ids.length) return '';
     const players = ids.map(id => {
         const { logo, teamAbbr } = playerSeasonInfo(id, season, 'AS', 'milr');
-        const player = state.allPlayers.find(p => p.ID === id);
-        return { id, logo, teamAbbr, name: player?.Name || `#${id}` };
+        return { id, logo, teamAbbr, name: displayName(id) };
     });
     players.sort((a, b) => a.teamAbbr.localeCompare(b.teamAbbr) || a.name.localeCompare(b.name));
 
@@ -370,8 +369,7 @@ function renderAllStarTeam(la, metadata, season, lgName) {
     if (as.R?.length) {
         const reserves = as.R.map(id => {
             const { logo, teamAbbr } = playerSeasonInfo(id, season, 'AS');
-            const player = state.allPlayers.find(p => p.ID === id);
-            return { id, logo, teamAbbr, name: player?.Name || `#${id}` };
+            return { id, logo, teamAbbr, name: displayName(id) };
         });
         reserves.sort((a, b) =>
             a.teamAbbr.localeCompare(b.teamAbbr) || a.name.localeCompare(b.name)
@@ -455,9 +453,7 @@ export async function renderHof() {
 
     // Sort alphabetically by name
     const sortedIds = [...hofIds].sort((a, b) => {
-        const na = state.allPlayers.find(p => p.ID === a)?.Name || '';
-        const nb = state.allPlayers.find(p => p.ID === b)?.Name || '';
-        return na.localeCompare(nb);
+        return displayName(a).localeCompare(displayName(b));
     });
 
     container.innerHTML = `
@@ -471,8 +467,7 @@ export async function renderHof() {
 }
 
 function renderHofCard(id, hitting, pitching, isActive) {
-    const player = state.allPlayers.find(p => p.ID === id);
-    const name = player ? player.Name : `Player #${id}`;
+    const name = displayName(id);
 
     // Check hitting then pitching for most recent MLR record
     const allRecords = [
@@ -497,12 +492,6 @@ function renderHofCard(id, hitting, pitching, isActive) {
 }
 
 // ── Shared helpers ────────────────────────────────────────────────────────────
-
-function playerLink(id) {
-    const player = state.allPlayers.find(p => p.ID === id);
-    const name = player ? player.Name : `#${id}`;
-    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${name}</a>`;
-}
 
 // Returns logo and team abbreviation for a player in a given season.
 // Uses recordFranchiseKey to avoid the multi-franchise same-abbreviation bug.

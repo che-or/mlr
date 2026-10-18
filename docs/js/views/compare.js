@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats, getPlayerById, searchPlayers } from '../data.js';
+import { loadStats, getPlayerById, searchPlayers, displayName } from '../data.js';
 import { formatStat } from '../utils.js';
 import { STAT_DESCRIPTIONS, STAT_DEFINITIONS, LEAGUES_WITH_CAREER } from '../constants.js';
 
@@ -139,7 +139,7 @@ function renderSlots(container) {
 
     for (let i = 0; i < slotCount; i++) {
         const player   = slotIds[i] ? getPlayerById(slotIds[i]) : null;
-        const inputVal = player ? player.Name : '';
+        const inputVal = player ? displayName(player.ID) : '';
 
         const slot = document.createElement('div');
         slot.className = 'compare-slot';
@@ -197,10 +197,12 @@ function wireSlot(slotEl, idx, container) {
 function showSlotSuggestions(players, suggs, idx) {
     if (!players.length) { suggs.style.display = 'none'; return; }
     const counts = {};
-    players.forEach(p => { counts[p.Name] = (counts[p.Name] || 0) + 1; });
+    const nameOf = p => displayName(p.ID);
+    players.forEach(p => { counts[nameOf(p)] = (counts[nameOf(p)] || 0) + 1; });
     suggs.innerHTML = players.map(p => {
-        const label = counts[p.Name] > 1 ? `${p.Name} (#${p.ID})` : p.Name;
-        return `<div class="suggestion-item" data-id="${p.ID}" data-name="${p.Name}">${label}</div>`;
+        const name = nameOf(p);
+        const label = counts[name] > 1 ? `${name} (#${p.ID})` : name;
+        return `<div class="suggestion-item" data-id="${p.ID}" data-name="${name}">${label}</div>`;
     }).join('');
     suggs.style.display = 'block';
 
@@ -302,7 +304,7 @@ function buildCompareTable(ids, rows, season, league, type) {
 
     const headerCells = players.map((p, i) => {
         if (!p) return `<th>Player ${i + 1}</th>`;
-        return `<th><a href="#/stats?id=${ids[i]}" class="compare-player-link" data-id="${ids[i]}">${p.Name}</a></th>`;
+        return `<th><a href="#/stats?id=${ids[i]}" class="compare-player-link" data-id="${ids[i]}">${displayName(p.ID)}</a></th>`;
     }).join('');
 
     const leagueLabel  = league.replace(/_/g, ' ').toUpperCase();
