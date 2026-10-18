@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats, loadTeamStats, loadPlayoffBrackets } from '../data.js';
+import { loadStats, loadTeamStats, loadPlayoffBrackets, displayName } from '../data.js';
 import { formatStat, parseSortValue, getSeasonSort, getFranchiseKey, getMlrTeamEntry, getMlrLogo, getMlrTeamName,
          getMilrTeamName, getMilrLogoPair, getFcbTeamName, getFcbLogo, getHistoricalTeamName, getHistoricalLogoPair,
          getDivisionsForSeason, getMlrLogoPair, getFcbLogoPair, makeLogoImg } from '../utils.js';
@@ -511,7 +511,7 @@ function createTeamRosterTable(title, stats, isPitching, totals) {
     });
     html += '</tr></thead><tbody>';
 
-    const currentName = id => state.allPlayers.find(p => p.ID === id)?.Name || `#${id}`;
+    const currentName = id => displayName(id);
     const sortKey = isPitching ? 'IP' : 'PA';
     stats.slice().sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0)).forEach(r => {
         html += `<tr><td class="sticky-col col-0"><span class="player-link" data-player-id="${r.ID}" style="cursor:pointer;text-decoration:underline">${currentName(r.ID)}</span></td>`;

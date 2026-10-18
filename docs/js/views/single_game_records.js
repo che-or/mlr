@@ -1,5 +1,5 @@
 import { loadSingleGameRecords, loadAchievements } from '../data.js';
-import { formatStat, getMlrTeamName, getMlrTeamAbbr, getTeamName, getLogoPair } from '../utils.js';
+import { formatStat, getMlrTeamName, getMlrTeamAbbr, getTeamName, getLogoPair, playerLink } from '../utils.js';
 import { state } from '../state.js';
 import { LEAGUES_WITH_PLAYOFFS, LEAGUE_LABELS } from '../constants.js';
 
@@ -41,12 +41,6 @@ function logoHtml(franchise, season) {
     const src = (isLight && pair.light) ? pair.light : pair.dark;
     const lightAttr = pair.light ? ` data-logo-light="${pair.light}"` : '';
     return `<img src="${src}" data-logo-dark="${pair.dark}"${lightAttr} class="draft-pick-logo" alt="${franchise}" style="vertical-align:middle;margin-right:3px"> `;
-}
-
-function playerLink(id) {
-    const player = state.allPlayers.find(p => p.ID === id);
-    const name = player ? player.Name : `#${id}`;
-    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${name}</a>`;
 }
 
 function teamLink(franchise, season) {

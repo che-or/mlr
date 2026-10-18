@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadDraftHistory } from '../data.js';
+import { loadDraftHistory, displayName } from '../data.js';
 import { getFranchiseKey, getMlrLogoPair, makeLogoImg } from '../utils.js';
 
 export async function renderDraftHistory() {
@@ -59,8 +59,7 @@ export async function renderDraftHistory() {
 
             let nameHtml;
             if (typeof pick.id === 'number') {
-                const player = state.allPlayers.find(p => p.ID === pick.id);
-                const name = player ? player.Name : `#${pick.id}`;
+                const name = displayName(pick.id);
                 nameHtml = `<a href="#/stats?id=${pick.id}" class="player-link draft-pick-name" data-player-id="${pick.id}">${name}</a>`;
             } else {
                 nameHtml = `<span class="draft-pick-name">${pick.id}</span>`;

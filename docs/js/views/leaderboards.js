@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats } from '../data.js';
+import { loadStats, displayName } from '../data.js';
 import { formatStat, getSeasonSort, getTeamName, getMlrFranchiseLabel } from '../utils.js';
 import { wireTeamLinks } from './player.js';
 import {
@@ -423,7 +423,7 @@ function buildTableHTML(data, stat, topN, showTeam, showSeason) {
         const rank     = i + 1;
         const dispRank = (i > 0 && r[stat] === lastVal) ? lastRank : rank;
         lastVal = r[stat]; lastRank = dispRank;
-        const name = state.allPlayers.find(p => p.ID === r.ID)?.Name || r.Name || `#${r.ID}`;
+        const name = displayName(r.ID, r.Name);
         html += `<tr>
             <td>${dispRank}</td>
             <td class="player-name-cell" data-player-id="${r.ID}" style="cursor:pointer;text-decoration:underline">${name}</td>

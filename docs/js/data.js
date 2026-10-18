@@ -47,6 +47,7 @@ export async function loadCoreData() {
         awards,
         milrAwards,
         logoOverrides,
+        bannedPlayers,
         mlrTeamHistory,
         milrTeamHistory,
         fcbTeamHistory,
@@ -70,6 +71,7 @@ export async function loadCoreData() {
         fetch(`${DATA}/mlr_awards.json`).then(r => r.json()),
         fetch(`${DATA}/milr_awards.json`).then(r => r.json()),
         fetch(`${DATA}/logo_overrides.json`).then(r => r.json()),
+        fetch(`${DATA}/banned_players.json`).then(r => r.json()),
         fetch(`${DATA}/mlr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/milr_team_history.json`).then(r => r.json()),
         fetch(`${DATA}/fcb_team_history.json`).then(r => r.json()),
@@ -94,6 +96,7 @@ export async function loadCoreData() {
     state.awards = awards;
     state.milrAwards = milrAwards;
     state.logoOverrides = logoOverrides;
+    state.bannedIds = new Set(bannedPlayers);
     state.teamHistory.mlr = mlrTeamHistory;
     state.teamHistory.milr = milrTeamHistory;
     state.teamHistory.fcb = fcbTeamHistory;
@@ -250,13 +253,48 @@ export function getPlayerById(id) {
     return state.allPlayers.find(p => p.ID === id) || null;
 }
 
-// Search player map — returns array of matching player objects
+// ── Banned players ───────────────────────────────────────────────────────────
+
+export function isBanned(id) {
+    return state.bannedIds.has(id);
+}
+
+// True when this player's name should be masked (mode active and player banned)
+export function isHidden(id) {
+    return state.hideBanned && state.bannedIds.has(id);
+}
+
+// Name to show for a player anywhere except their own player page.
+// fallbackName is used when the ID isn't in allPlayers (e.g. a raw stats-row Name).
+export function displayName(id, fallbackName) {
+    if (isHidden(id)) return `#${id}`;
+    return getPlayerById(id)?.Name || fallbackName || `#${id}`;
+}
+
+export function loadHideBanned() {
+    try {
+        state.hideBanned = localStorage.getItem('hideBanned') === 'true';
+    } catch (_) {
+        state.hideBanned = false;
+    }
+}
+
+export function setHideBanned(value) {
+    state.hideBanned = !!value;
+    try {
+        localStorage.setItem('hideBanned', state.hideBanned ? 'true' : 'false');
+    } catch (_) { /* storage unavailable; mode lasts for this page load only */ }
+}
+
+// Search player map — returns array of matching player objects.
+// In hide-banned mode, banned players are excluded from name matches
+// (they can still be found by typing their full ID).
 export function searchPlayers(query) {
     if (!query) return [];
     const q = query.toLowerCase();
     const matchedIds = new Set();
     for (const [name, ids] of state.playerMap) {
-        if (name.includes(q)) ids.forEach(id => matchedIds.add(id));
+        if (name.includes(q)) ids.forEach(id => { if (!isHidden(id)) matchedIds.add(id); });
     }
     return [...matchedIds].map(id => getPlayerById(id)).filter(Boolean);
 }

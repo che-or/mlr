@@ -1,4 +1,5 @@
 import { state } from './state.js';
+import { displayName } from './data.js';
 
 // ── Number formatting ────────────────────────────────────────────────────────
 
@@ -304,24 +305,40 @@ export function refreshLogos() {
     });
 }
 
+// ── Player links ─────────────────────────────────────────────────────────────
+
+// Link to a player's page. The name is masked as #ID in hide-banned mode.
+export function playerLink(id) {
+    return `<a href="#/stats?id=${id}" class="player-link" data-player-id="${id}">${displayName(id)}</a>`;
+}
+
 // ── Theme ────────────────────────────────────────────────────────────────────
 
-export function initTheme(switchInput) {
-    const saved = localStorage.getItem('theme');
-    if (saved === 'light') {
-        document.documentElement.classList.add('light-mode');
-        switchInput.checked = true;
-    }
-    switchInput.addEventListener('change', () => {
-        if (switchInput.checked) {
-            document.documentElement.classList.add('light-mode');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.classList.remove('light-mode');
-            localStorage.setItem('theme', 'dark');
-        }
-        refreshLogos();
+// Every light/dark checkbox on the page (header + home page Settings) is
+// registered here so they stay in sync when any one of them changes.
+const themeSwitches = new Set();
+
+function applyTheme(isLight) {
+    document.documentElement.classList.toggle('light-mode', isLight);
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    themeSwitches.forEach(input => {
+        if (input.isConnected) input.checked = isLight;
+        else themeSwitches.delete(input); // home page re-rendered; drop the stale switch
     });
+    refreshLogos();
+}
+
+export function bindThemeSwitch(switchInput) {
+    switchInput.checked = document.documentElement.classList.contains('light-mode');
+    switchInput.addEventListener('change', () => applyTheme(switchInput.checked));
+    themeSwitches.add(switchInput);
+}
+
+export function initTheme(switchInput) {
+    if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.add('light-mode');
+    }
+    bindThemeSwitch(switchInput);
 }
 
 // ── Sticky column offsets (mobile table scrolling) ───────────────────────────
