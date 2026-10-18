@@ -18,10 +18,10 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Rub A. Chikin",
-      "Vinny Vedecci",
       "Lil' Chikin",
-      "Bart Harley Jarvis"
+      "Rub A. Chikin",
+      "Bart Harley Jarvis",
+      "Vinny Vedecci"
     ]
   },
   {
@@ -43,9 +43,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
+      "Tim Spooneybarger",
       "Chip Otle",
-      "Pete Wheeler",
-      "Tim Spooneybarger"
+      "Pete Wheeler"
     ]
   },
   {
@@ -101,8 +101,8 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Charlie Scott",
-      "Emmett Michael"
+      "Emmett Michael",
+      "Charlie Scott"
     ]
   },
   {
@@ -200,10 +200,10 @@
     "Handedness":"Right",
     "Position":"CF",
     "Former Names":[
-      "Lil' Q",
       "Quint Kimbrel",
-      "Q Kimbrell",
-      "Alvin Lockheart"
+      "Alvin Lockheart",
+      "Lil' Q",
+      "Q Kimbrell"
     ]
   },
   {
@@ -223,10 +223,10 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Kenny Kawaguchi",
       "Faye Suzuki",
-      "Faye Valentine",
-      "Spike Suzuki"
+      "Kenny Kawaguchi",
+      "Spike Suzuki",
+      "Faye Valentine"
     ]
   },
   {
@@ -324,8 +324,8 @@
     "Handedness":"Right",
     "Position":"CF",
     "Former Names":[
-      "Sammy Slingshot",
-      "Larold"
+      "Larold",
+      "Sammy Slingshot"
     ]
   },
   {
@@ -336,8 +336,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Oscar Vegas",
-      "Jessie Vance"
+      "Jessie Vance",
+      "Oscar Vegas"
     ]
   },
   {
@@ -349,8 +349,8 @@
     "Position":"RF",
     "Former Names":[
       "Simba Simba",
-      "Idon Treemember",
-      "Dixon Something"
+      "Dixon Something",
+      "Idon Treemember"
     ]
   },
   {
@@ -370,10 +370,10 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Jose Canyousico",
-      "Weather Report",
       "Ryosuke Takahashi",
-      "Young Money"
+      "Weather Report",
+      "Young Money",
+      "Jose Canyousico"
     ]
   },
   {
@@ -404,9 +404,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Commie Ohtani",
+      "Franz Joseph Hyman Jr",
       "Triscutt Mesmer",
-      "Franz Joseph Hyman Jr"
+      "Commie Ohtani"
     ]
   },
   {
@@ -545,8 +545,8 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Katia W\u00f6lfe",
-      "Markus W\u00f6lfe"
+      "Markus W\u00f6lfe",
+      "Katia W\u00f6lfe"
     ]
   },
   {
@@ -599,12 +599,12 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Raven Branwen",
-      "Nick Tit",
-      "May Marigold",
-      "Nick Tits",
+      "Nora Valkyrie",
       "Velvet Scarlatina",
-      "Nora Valkyrie"
+      "Nick Tit",
+      "Raven Branwen",
+      "Nick Tits",
+      "May Marigold"
     ]
   },
   {
@@ -746,8 +746,8 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Jack Alpha Sr. Jr.",
-      "Jack Wallalpha"
+      "Jack Wallalpha",
+      "Jack Alpha Sr. Jr."
     ]
   },
   {
@@ -827,8 +827,8 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Paul Walker",
-      "Dick McScrotington IV"
+      "Dick McScrotington IV",
+      "Paul Walker"
     ]
   },
   {
@@ -907,8 +907,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Gottlieb Giannopoulos",
-      "Gottlieb Giannopoulos Jr."
+      "Gottlieb Giannopoulos Jr.",
+      "Gottlieb Giannopoulos"
     ]
   },
   {
@@ -950,8 +950,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Master Cashier",
-      "Mackin Tosh"
+      "Mackin Tosh",
+      "Master Cashier"
     ]
   },
   {
@@ -1094,12 +1094,12 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
+      "Wilbur Wood",
       "Phillip J Fry",
-      "Iwastold Theredbecake",
+      "Chavo Delocho",
       "Sam Wood",
       "Spiro Agnew",
-      "Chavo Delocho",
-      "Wilbur Wood"
+      "Iwastold Theredbecake"
     ]
   },
   {
@@ -1110,8 +1110,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Waulie Pag",
-      "Derek Bongiovanni"
+      "Derek Bongiovanni",
+      "Waulie Pag"
     ]
   },
   {
@@ -1161,8 +1161,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Hugh Jass",
       "Marky DuBois",
+      "Hugh Jass",
       "Roccrates Rudnikov"
     ]
   },
@@ -1187,8 +1187,8 @@
     "Position":"P",
     "Former Names":[
       "Sir Mattress Cadaire",
-      "Mattress Cadaire",
-      "Mattress Soprano"
+      "Mattress Soprano",
+      "Mattress Cadaire"
     ]
   },
   {
@@ -1200,8 +1200,8 @@
     "Position":"PH",
     "Former Names":[
       "Dan Glesack",
-      "Barry McCockiner",
-      "Sammy Capicola"
+      "Sammy Capicola",
+      "Barry McCockiner"
     ]
   },
   {
@@ -1266,9 +1266,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "John Cheenah",
+      "Duke Nukem",
       "James Annino",
-      "Duke Nukem"
+      "John Cheenah"
     ]
   },
   {
@@ -1297,12 +1297,12 @@
     "Handedness":"Right",
     "Position":"RF",
     "Former Names":[
+      "Buster McNutt",
+      "Baron Butzenkatzen-Butzenkatzen",
       "Zander Ackley",
       "Zack Andersen",
-      "Zaxton Andrews",
-      "Baron Butzenkatzen-Butzenkatzen",
       "Petey Biennel",
-      "Buster McNutt"
+      "Zaxton Andrews"
     ]
   },
   {
@@ -1356,9 +1356,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
+      "Carlos The great",
       "Carlos Brownson",
-      "Carlos Brownstein",
-      "Carlos The great"
+      "Carlos Brownstein"
     ]
   },
   {
@@ -1369,10 +1369,10 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Yoshigahara Ryutai",
       "Jocinda Smith",
       "Ryutai Yoshigahara",
-      "Garren Smudge"
+      "Garren Smudge",
+      "Yoshigahara Ryutai"
     ]
   },
   {
@@ -1383,8 +1383,8 @@
     "Handedness":"Right",
     "Position":"PH",
     "Former Names":[
-      "Dort Rogoso",
-      "Jax Ragusa"
+      "Jax Ragusa",
+      "Dort Rogoso"
     ]
   },
   {
@@ -1395,8 +1395,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Zachary Awayys",
       "lloyd",
+      "Zachary Awayys",
       "Finger Lakes"
     ]
   },
@@ -1527,17 +1527,17 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Jared Sabor VII",
-      "Petra Sabor",
-      "perta rose sabor",
       "schrodinger manageer",
-      "Carl \"The Ace\" Kennedy",
+      "petra sabor",
+      "perta rose sabor",
+      "Petra Sabor",
       "Jork von Bork",
       "Daniel Collins",
       "Azathoth",
-      "petra sabor",
-      "Alyx Sabor",
-      "petra"
+      "petra",
+      "Jared Sabor VII",
+      "Carl \"The Ace\" Kennedy",
+      "Alyx Sabor"
     ]
   },
   {
@@ -1569,11 +1569,11 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Maverick Jaxon Gambler",
       "Coleman Waters",
-      "Kris Jaxon",
-      "Willy Mays Hays",
       "Francis J Wellington IV",
+      "Willy Mays Hays",
+      "Kris Jaxon",
+      "Maverick Jaxon Gambler",
       "Francis James Wellington IV"
     ]
   },
@@ -1585,8 +1585,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Luke Milton",
-      "Dallas Hamilton"
+      "Dallas Hamilton",
+      "Luke Milton"
     ]
   },
   {
@@ -1796,8 +1796,8 @@
     "Position":"P",
     "Former Names":[
       "Brigham Young",
-      "Olivia Hyde",
-      "Jasmine"
+      "Jasmine",
+      "Olivia Hyde"
     ]
   },
   {
@@ -1808,8 +1808,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Paul Calderwood",
-      "Ethan Sonnett"
+      "Ethan Sonnett",
+      "Paul Calderwood"
     ]
   },
   {
@@ -1879,8 +1879,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Egirl Jimenez",
       "Valeria Lisova",
+      "Egirl Jimenez",
       "Yuki Kyukon"
     ]
   },
@@ -1910,9 +1910,9 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Ian Brandon Owen Bust",
       "I.B.O. Bust",
-      "Ian Brendan Owen Bust"
+      "Ian Brendan Owen Bust",
+      "Ian Brandon Owen Bust"
     ]
   },
   {
@@ -1944,10 +1944,10 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Haruto Tanaka",
-      "Roy Holiday",
+      "Jack Kanoff",
       "Future Trunks",
-      "Jack Kanoff"
+      "Haruto Tanaka",
+      "Roy Holiday"
     ]
   },
   {
@@ -1969,9 +1969,9 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
+      "BEST Nova",
       "Andrew Supernova",
-      "Andrew Nova",
-      "BEST Nova"
+      "Andrew Nova"
     ]
   },
   {
@@ -1991,9 +1991,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Lemon Juiced",
       "Lemon Ade",
       "Jonny Cortez",
+      "Lemon Juiced",
       "Jo\u00e3o Cortez"
     ]
   },
@@ -2172,8 +2172,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Bart Hill Cartman",
-      "Morello D. Luffy"
+      "Morello D. Luffy",
+      "Bart Hill Cartman"
     ]
   },
   {
@@ -2222,10 +2222,10 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Petetholomew Jones",
       "Pete Jones",
+      "Naoki Tentacles",
       "Petey Jones",
-      "Naoki Tentacles"
+      "Petetholomew Jones"
     ]
   },
   {
@@ -2245,8 +2245,8 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Thomas Beowulf",
-      "Thomas BEOWULF"
+      "Thomas BEOWULF",
+      "Thomas Beowulf"
     ]
   },
   {
@@ -2574,10 +2574,10 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Oscar Vinegrette",
       "Bill D. Ahouse",
-      "Dean O`Saur",
-      "Tara E. Doug"
+      "Tara E. Doug",
+      "Oscar Vinegrette",
+      "Dean O`Saur"
     ]
   },
   {
@@ -2615,9 +2615,9 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Tyrone Jennings lll",
       "Tyrone Jennings III",
       "Tyrone Jennings",
+      "Tyrone Jennings lll",
       "Bob Jennings III"
     ]
   },
@@ -2650,9 +2650,9 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
+      "Earth, Wind & Fire",
       "Layzer Gunn",
-      "Josuke Higashkita",
-      "Earth, Wind & Fire"
+      "Josuke Higashkita"
     ]
   },
   {
@@ -2683,10 +2683,10 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Apollo Creed",
       "Bob Kazamakis",
       "Clubber Lang",
-      "Dimebag Jammin"
+      "Dimebag Jammin",
+      "Apollo Creed"
     ]
   },
   {
@@ -2717,17 +2717,17 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Mecha Godzilla",
-      "Mr. Miyagi",
-      "Rex Kwondo",
-      "Johnny Tsunami",
       "Wavy Gravy",
-      "Mecha Vulfzilla",
-      "Waxon Waxoff",
+      "Johnny Tsunami",
+      "Horsey Surprise",
+      "Mecha Godzilla",
       "Jeffy Jefferson",
-      "Wavy Gravy VIII",
+      "Mecha Vulfzilla",
+      "Rex Kwondo",
       "Rich Mahogany",
-      "Horsey Surprise"
+      "Wavy Gravy VIII",
+      "Waxon Waxoff",
+      "Mr. Miyagi"
     ]
   },
   {
@@ -2758,8 +2758,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Jefferson Saelflex",
-      "Jeff Steelflex"
+      "Jeff Steelflex",
+      "Jefferson Saelflex"
     ]
   },
   {
@@ -2770,9 +2770,9 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Joe Runzer",
+      "Richie Gilboy",
       "Guadalupe Greerson",
-      "Richie Gilboy"
+      "Joe Runzer"
     ]
   },
   {
@@ -2783,9 +2783,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Liam Abercrombie",
       "Goey Jallo",
-      "Mason Miller"
+      "Mason Miller",
+      "Liam Abercrombie"
     ]
   },
   {
@@ -2807,8 +2807,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Quaddy J",
-      "Jimjon Jonjim"
+      "Jimjon Jonjim",
+      "Quaddy J"
     ]
   },
   {
@@ -2839,10 +2839,10 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Benzonatate Dupixent",
       "Richard Humongous",
-      "Bastille Metalfall",
-      "Kyle Lyles"
+      "Benzonatate Dupixent",
+      "Kyle Lyles",
+      "Bastille Metalfall"
     ]
   },
   {
@@ -2862,9 +2862,9 @@
     "Handedness":"Left",
     "Position":"LF",
     "Former Names":[
+      "Matty Lynn",
       "becky mcbadbat",
-      "Rebecca McDonald's",
-      "Matty Lynn"
+      "Rebecca McDonald's"
     ]
   },
   {
@@ -2904,9 +2904,9 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
+      "J.A. Bird",
       "Cy Hadd Jr.",
-      "Bluebird Abernathy",
-      "J.A. Bird"
+      "Bluebird Abernathy"
     ]
   },
   {
@@ -2955,8 +2955,8 @@
     "Handedness":"Right",
     "Position":"SS",
     "Former Names":[
-      "Tasker Morris",
-      "KC Bats"
+      "KC Bats",
+      "Tasker Morris"
     ]
   },
   {
@@ -2976,8 +2976,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Akiyoshi Yamamoto",
-      "Left Hook Larry"
+      "Left Hook Larry",
+      "Akiyoshi Yamamoto"
     ]
   },
   {
@@ -2988,8 +2988,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Miguel Snow",
-      "Rintaro Okabe"
+      "Rintaro Okabe",
+      "Miguel Snow"
     ]
   },
   {
@@ -3000,8 +3000,8 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Samuel-Edward Verne-Emmanuel Newman-Costanza",
-      "S-E V-E Newman-Costanza"
+      "S-E V-E Newman-Costanza",
+      "Samuel-Edward Verne-Emmanuel Newman-Costanza"
     ]
   },
   {
@@ -3021,9 +3021,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Charlie Bae",
+      "Charlie Bae Jr.",
       "Koyomi Araragi",
-      "Charlie Bae Jr."
+      "Charlie Bae"
     ]
   },
   {
@@ -3072,8 +3072,8 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Jeff Moneymaker",
-      "Jeff Hithitter"
+      "Jeff Hithitter",
+      "Jeff Moneymaker"
     ]
   },
   {
@@ -3331,8 +3331,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "John John Jr.",
-      "Chaz Gorbachuck"
+      "Chaz Gorbachuck",
+      "John John Jr."
     ]
   },
   {
@@ -3380,10 +3380,10 @@
     "Position":"P",
     "Former Names":[
       "Rekt Contract",
-      "Rekt Keyo",
       "Keyo",
-      "Rekt Kiddo",
-      "Bill O'Brien"
+      "Bill O'Brien",
+      "Rekt Keyo",
+      "Rekt Kiddo"
     ]
   },
   {
@@ -3421,10 +3421,10 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Chris Yukine",
-      "Taiki Shuttle",
+      "Yukino Bijin",
       "Solf J. Kimblee",
-      "Yukino Bijin"
+      "Chris Yukine",
+      "Taiki Shuttle"
     ]
   },
   {
@@ -3489,8 +3489,8 @@
     "Handedness":"Left",
     "Position":"LF",
     "Former Names":[
-      "Obama habubger",
-      "River Ride"
+      "River Ride",
+      "Obama habubger"
     ]
   },
   {
@@ -3512,10 +3512,10 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Cookie Mongster",
       "Emma Twatson",
+      "Maximus Pow",
       "Josh Marino",
-      "Maximus Pow"
+      "Cookie Mongster"
     ]
   },
   {
@@ -3598,8 +3598,8 @@
     "Position":"P",
     "Former Names":[
       "Filib Al'Anhar JR.",
-      "Filib Al'anhar JR.",
-      "Filib Al'Anahar Jr."
+      "Filib Al'Anahar Jr.",
+      "Filib Al'anhar JR."
     ]
   },
   {
@@ -3630,9 +3630,9 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
+      "Alvin and the Chipmunks The Squeakquel",
       "Catboy Frank",
-      "Chuck Tingle",
-      "Alvin and the Chipmunks The Squeakquel"
+      "Chuck Tingle"
     ]
   },
   {
@@ -3663,9 +3663,9 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Aaron Icecream",
       "Aaron IceCream",
-      "Aaron Gelato"
+      "Aaron Gelato",
+      "Aaron Icecream"
     ]
   },
   {
@@ -3696,8 +3696,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Matthaios Himynamis",
-      "Matt Himynamis Jr"
+      "Matt Himynamis Jr",
+      "Matthaios Himynamis"
     ]
   },
   {
@@ -3860,8 +3860,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Haroldo MacKenzie",
-      "dad"
+      "dad",
+      "Haroldo MacKenzie"
     ]
   },
   {
@@ -3872,8 +3872,8 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "Gimpy \"Schlemp\" Schlempteen the 32nd",
-      "Gimino Schlimojima"
+      "Gimino Schlimojima",
+      "Gimpy \"Schlemp\" Schlempteen the 32nd"
     ]
   },
   {
@@ -3989,10 +3989,10 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Amelia Black",
-      "Jasper Waxe",
       "Maxelia Gray",
-      "Mirror Castle"
+      "Amelia Black",
+      "Mirror Castle",
+      "Jasper Waxe"
     ]
   },
   {
@@ -4107,8 +4107,8 @@
     "Position":"2B",
     "Former Names":[
       "Amelia",
-      "June Berg",
-      "Maddy Berg"
+      "Maddy Berg",
+      "June Berg"
     ]
   },
   {
@@ -4864,8 +4864,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Francois Onime",
-      "Francis X. Clampazzo"
+      "Francis X. Clampazzo",
+      "Francois Onime"
     ]
   },
   {
@@ -4886,8 +4886,8 @@
     "Position":"CF",
     "Former Names":[
       "Dick Richards",
-      "dick richards",
-      "cocl octopus"
+      "cocl octopus",
+      "dick richards"
     ]
   },
   {
@@ -4898,12 +4898,12 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Juniped Catfish",
       "Major Catfish",
-      "Juni ''XOXO'' Panda RX-78-69",
-      "Juni Panda",
+      "AA --xXx-- Main Event Juni Panda --xXx--",
+      "Juniped Catfish",
       "Juni Juni Panda",
-      "AA --xXx-- Main Event Juni Panda --xXx--"
+      "Juni ''XOXO'' Panda RX-78-69",
+      "Juni Panda"
     ]
   },
   {
@@ -5147,8 +5147,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Blackbean Burrito",
-      "Brick Bruiser"
+      "Brick Bruiser",
+      "Blackbean Burrito"
     ]
   },
   {
@@ -5234,8 +5234,8 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Cam'ron",
-      "Cam'ron West"
+      "Cam'ron West",
+      "Cam'ron"
     ]
   },
   {
@@ -5264,13 +5264,13 @@
     "Handedness":"Right",
     "Position":"PH",
     "Former Names":[
-      "Kyle Mullins",
-      "Holden Beers",
-      "Wheeler",
-      "Wheeler Walker Jr.",
       "Nipsey Slip",
+      "Wheeler Walker Jr.",
       "Big Telemachus",
-      "Psycopathic Goblin"
+      "Psycopathic Goblin",
+      "Wheeler",
+      "Holden Beers",
+      "Kyle Mullins"
     ]
   },
   {
@@ -5382,9 +5382,9 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
+      "Deep's Victim",
       "cocloctopus ikenmouseman",
-      "Dookie Stane",
-      "Deep's Victim"
+      "Dookie Stane"
     ]
   },
   {
@@ -5603,8 +5603,8 @@
     "Handedness":"Left",
     "Position":"LF",
     "Former Names":[
-      "Cy Doubt",
-      "Cary Doubt"
+      "Cary Doubt",
+      "Cy Doubt"
     ]
   },
   {
@@ -5697,8 +5697,8 @@
     "Position":"RF",
     "Former Names":[
       "Richard Donkus IV",
-      "Wee Laddy Donkus",
-      "Zephraim Donkus"
+      "Zephraim Donkus",
+      "Wee Laddy Donkus"
     ]
   },
   {
@@ -5709,12 +5709,12 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Roland Kholin",
-      "NOT Paulie Wag",
-      "Paulie Wag",
       "Berek Dongiovanni",
-      "Help Im Being Repressed",
-      "Paul E. Wag"
+      "Roland Kholin",
+      "Paulie Wag",
+      "Paul E. Wag",
+      "NOT Paulie Wag",
+      "Help Im Being Repressed"
     ]
   },
   {
@@ -5862,8 +5862,8 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Johnny Hendrivederci",
-      "Opegonna Scootbya"
+      "Opegonna Scootbya",
+      "Johnny Hendrivederci"
     ]
   },
   {
@@ -6232,8 +6232,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Chody McCarty",
-      "Chody Chody"
+      "Chody Chody",
+      "Chody McCarty"
     ]
   },
   {
@@ -6244,9 +6244,9 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "ViktRon Swanson",
       "jeffie dokkie daddy",
-      "se\u00f1or rustus of house vervulf"
+      "se\u00f1or rustus of house vervulf",
+      "ViktRon Swanson"
     ]
   },
   {
@@ -6284,9 +6284,9 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
+      "Phuc N Twat",
       "Finn Twatenson",
-      "Theophylaktos Twatklava",
-      "Phuc N Twat"
+      "Theophylaktos Twatklava"
     ]
   },
   {
@@ -6419,9 +6419,9 @@
     "Handedness":"Left",
     "Position":"1B",
     "Former Names":[
-      "Clarinet Clarinet",
       "Clay Renett",
       "Clara Knet",
+      "Clarinet Clarinet",
       "Claire E. N\u00eatte"
     ]
   },
@@ -6767,9 +6767,9 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Ark Ansas",
+      "Kurt Anger",
       "Hummingbird Saltalamacchia",
-      "Kurt Anger"
+      "Ark Ansas"
     ]
   },
   {
@@ -6927,8 +6927,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Kevin Harrison",
-      "Ross Jackson"
+      "Ross Jackson",
+      "Kevin Harrison"
     ]
   },
   {
@@ -7176,8 +7176,8 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Otter Hooligan",
-      "Dottie Hooligan"
+      "Dottie Hooligan",
+      "Otter Hooligan"
     ]
   },
   {
@@ -7226,9 +7226,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Duke Marriot",
       "LeCarpetron Dukemarriot",
-      "Longrod Von Hugendong"
+      "Longrod Von Hugendong",
+      "Duke Marriot"
     ]
   },
   {
@@ -7239,11 +7239,11 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Woolloomooloo AndTylerToo",
-      "Rey Revanchist",
-      "Anakin Kendrick",
       "Reno \"El Greco\" McRenoface",
-      "Renoe McRenoeface"
+      "Rey Revanchist",
+      "Renoe McRenoeface",
+      "Anakin Kendrick",
+      "Woolloomooloo AndTylerToo"
     ]
   },
   {
@@ -7312,8 +7312,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Pete Wheeler",
-      "Dmitri Petrovich"
+      "Dmitri Petrovich",
+      "Pete Wheeler"
     ]
   },
   {
@@ -7333,11 +7333,11 @@
     "Handedness":"Left",
     "Position":"C",
     "Former Names":[
-      "New Player",
-      "Hunter Scott",
-      "Sunter Hcott",
       "Skork Hooker",
-      "Hunter Scott CCCXXVII"
+      "New Player",
+      "Hunter Scott CCCXXVII",
+      "Sunter Hcott",
+      "Hunter Scott"
     ]
   },
   {
@@ -7471,8 +7471,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Cash Considerations",
-      "Tristan Leung"
+      "Tristan Leung",
+      "Cash Considerations"
     ]
   },
   {
@@ -7586,12 +7586,12 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Haachama",
-      "sarah",
-      "Sarah Curvingsworth",
-      "Usada Pekora",
       "Marie Antoinette",
-      "Alex Curvingsonworth"
+      "Alex Curvingsonworth",
+      "Usada Pekora",
+      "Haachama",
+      "Sarah Curvingsworth",
+      "sarah"
     ]
   },
   {
@@ -8006,8 +8006,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Bobby Sweetness",
-      "Roe Jogan"
+      "Roe Jogan",
+      "Bobby Sweetness"
     ]
   },
   {
@@ -8216,10 +8216,10 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
+      "Pudge",
       "Johnny \"Pudge\" Walker",
-      "Adrian Pudge Young-Walker III",
       "Adrian \"Pudge\" Young",
-      "Pudge"
+      "Adrian Pudge Young-Walker III"
     ]
   },
   {
@@ -8409,8 +8409,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Dixon Cider",
-      "Simba Martinez"
+      "Simba Martinez",
+      "Dixon Cider"
     ]
   },
   {
@@ -8479,10 +8479,10 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
+      "Alternate Site",
+      "Alternative Site",
       "AllStar Lin",
       "All Starlin",
-      "Alternative Site",
-      "Alternate Site",
       "Spider Tack"
     ]
   },
@@ -8505,9 +8505,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Freddy Quicksilver",
       "Doc McBiggins",
-      "Doc Quacksilver"
+      "Doc Quacksilver",
+      "Freddy Quicksilver"
     ]
   },
   {
@@ -9040,8 +9040,8 @@
     "Position":"P",
     "Former Names":[
       "Fido Dido",
-      "Basethony Balltano",
-      "Declan Decanter"
+      "Declan Decanter",
+      "Basethony Balltano"
     ]
   },
   {
@@ -9807,8 +9807,8 @@
     "Handedness":"Left",
     "Position":"CF",
     "Former Names":[
-      "Herrera O'Doubles",
-      "Herrerra O'Doubles"
+      "Herrerra O'Doubles",
+      "Herrera O'Doubles"
     ]
   },
   {
@@ -10806,8 +10806,8 @@
     "Handedness":"Right",
     "Position":"C",
     "Former Names":[
-      "Peter R. Otagonist",
-      "J. Samson Jr."
+      "J. Samson Jr.",
+      "Peter R. Otagonist"
     ]
   },
   {
@@ -11058,8 +11058,8 @@
     "Handedness":"Right",
     "Position":"1B",
     "Former Names":[
-      "Max Jarquavius Jr.",
-      "Maddie Williams"
+      "Maddie Williams",
+      "Max Jarquavius Jr."
     ]
   },
   {
@@ -11146,9 +11146,9 @@
     "Handedness":"Right",
     "Position":"LF",
     "Former Names":[
-      "Ferdinand von Aegir",
       "Nickey Hallaway",
-      "Turk Turkelton"
+      "Turk Turkelton",
+      "Ferdinand von Aegir"
     ]
   },
   {
@@ -11217,8 +11217,8 @@
     "Handedness":"Right",
     "Position":"SS",
     "Former Names":[
-      "ModeratoSevere PlaquePsoriasis",
-      "Dog Nipples"
+      "Dog Nipples",
+      "ModeratoSevere PlaquePsoriasis"
     ]
   },
   {
@@ -11575,8 +11575,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Fauxtani",
-      "Tencer Sporkelson"
+      "Tencer Sporkelson",
+      "Fauxtani"
     ]
   },
   {
@@ -12226,8 +12226,8 @@
     "Handedness":"Left",
     "Position":"2B",
     "Former Names":[
-      "Seamore Asscrack",
-      "Harry Beaver"
+      "Harry Beaver",
+      "Seamore Asscrack"
     ]
   },
   {
@@ -12339,8 +12339,8 @@
     "Handedness":"Right",
     "Position":"3B",
     "Former Names":[
-      "Brock Dusty",
-      "Marcel Oakland"
+      "Marcel Oakland",
+      "Brock Dusty"
     ]
   },
   {
@@ -12903,8 +12903,8 @@
     "Handedness":"Left",
     "Position":"RF",
     "Former Names":[
-      "Onionhead LEASHY Dirtwit",
       "Leashy Hittem",
+      "Onionhead LEASHY Dirtwit",
       "Onionhead ditwit"
     ]
   },
@@ -13292,8 +13292,8 @@
     "Handedness":"Left",
     "Position":"SS",
     "Former Names":[
-      "Jordan Hass",
-      "J Jordan Jordanson"
+      "J Jordan Jordanson",
+      "Jordan Hass"
     ]
   },
   {
@@ -13331,8 +13331,8 @@
     "Handedness":"Left",
     "Position":"P",
     "Former Names":[
-      "Walter Ulysses",
-      "Jake Crouton"
+      "Jake Crouton",
+      "Walter Ulysses"
     ]
   },
   {
@@ -13442,8 +13442,8 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Peachy Keen",
       "peaches",
+      "Peachy Keen",
       "Princess Peach"
     ]
   },
@@ -14053,8 +14053,8 @@
     "Handedness":"Right",
     "Position":"2B",
     "Former Names":[
-      "Kiwi Cleveland, Esq.",
-      "Leland K. Cleveland"
+      "Leland K. Cleveland",
+      "Kiwi Cleveland, Esq."
     ]
   },
   {
@@ -14258,14 +14258,14 @@
     "Handedness":"Left",
     "Position":"PH",
     "Former Names":[
-      "Cat Atrophy",
       "Evan LOMgoria",
-      "Jamie Voyeur",
+      "Tomathius Neillson",
       "Isiah Minor-Kerfuffle",
+      "Tequila Mockingbird",
+      "Cat Atrophy",
       "Jose Alduvet",
       "Adam Autovino",
-      "Tomathius Neillson",
-      "Tequila Mockingbird"
+      "Jamie Voyeur"
     ]
   },
   {
@@ -14878,8 +14878,8 @@
     "Handedness":"Left",
     "Position":"3B",
     "Former Names":[
-      "Paulie Whippet",
-      "Paulie Smash"
+      "Paulie Smash",
+      "Paulie Whippet"
     ]
   },
   {
@@ -15054,9 +15054,9 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Leigh Dell Leedle Lee-Daughly",
-      "Sue Cabliatte",
       "International Signing Bonus Pool Space",
+      "Sue Cabliatte",
+      "Leigh Dell Leedle Lee-Daughly",
       "Idys Scott"
     ]
   },
@@ -15747,9 +15747,9 @@
     "Handedness":"Right",
     "Position":"PH",
     "Former Names":[
-      "Leo Pollersbeck",
+      "Leopold Pollersbeck",
       "Velma Dingkerly",
-      "Leopold Pollersbeck"
+      "Leo Pollersbeck"
     ]
   },
   {
@@ -15954,9 +15954,9 @@
     "Position":"C",
     "Former Names":[
       "XxBlaise Bailey Finnegan IIIxX",
-      "Dr. Chocochoco Choo Choo",
+      "Choc Tuah",
       "Choc Banana",
-      "Choc Tuah"
+      "Dr. Chocochoco Choo Choo"
     ]
   },
   {
@@ -16812,8 +16812,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Baberaham Lincoln",
-      "Otto von Pitchmark"
+      "Otto von Pitchmark",
+      "Baberaham Lincoln"
     ]
   },
   {
@@ -17003,8 +17003,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Dan Von DOOM",
-      "Dan Van Damme"
+      "Dan Van Damme",
+      "Dan Von DOOM"
     ]
   },
   {
@@ -18836,8 +18836,8 @@
     "Handedness":"Right",
     "Position":"P",
     "Former Names":[
-      "Michael Thomas",
-      "Aladdin Sane"
+      "Aladdin Sane",
+      "Michael Thomas"
     ]
   },
   {
