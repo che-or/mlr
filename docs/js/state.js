@@ -10,6 +10,7 @@ export const state = {
     logoOverrides: {},     // from data/logo_overrides.json: { player_season: {...}, player_default: {...} }
     bannedIds: new Set(),  // from data/banned_players.json: array of player IDs
     hideBanned: false,     // "hide banned players" mode; persisted in localStorage ('hideBanned')
+    useMlrLogos: true,     // "use MLR logos" mode (default on); persisted in localStorage ('useMlrLogos')
     teamHistory: {
         mlr: {},           // franchise-based: { FRANCHISE_KEY: [{name, abbr, start, end, logo_dark, logo_light}] }
         milr: {},          // season-based: { S3: { BAY: "Bayside ...", ... } }
