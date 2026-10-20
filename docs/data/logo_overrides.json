@@ -17,10 +17,16 @@
         "  Fixes cases like a player who's shown representing a team they never had a stat row for (e.g. a GM credit",
         "  for a team they never played for). Keyed by player ID (string) -> either:",
         "    - { league, franchise, season }, matching the arguments to getLogoPair() in docs/js/utils.js, OR",
-        "    - { image, light? }, a direct logo image path (relative to docs/, e.g. './img/mlr_logos/Foo.png') for a",
+        "    - { image, light? }, a direct logo image path (relative to docs/, e.g. './img/mlb_logos/Foo.png') for a",
         "      one-off logo with no real team behind it. 'light' is optional (falls back to 'image' in light mode).",
         "  Examples: '1824': { 'league': 'mlr', 'franchise': 'TEX', 'season': 'S9' }.",
-        "            '2866': { 'image': './img/mlr_logos/Homestar.png' }"
+        "            '2866': { 'image': './img/mlb_logos/Homestar.png' }",
+        "",
+        "Mode-specific variants: any player_season value or player_default entry may instead be { 'mlr': <value>, 'mlb': <value> },",
+        "  where each is a value of the forms above. 'mlr' applies when \"Use MLR logos\" is on, 'mlb' when it is off; if only one",
+        "  is given it is used in both modes. Entries without these keys apply to both modes (franchise keys still resolve to",
+        "  that mode's logo for the era automatically).",
+        "  Example: '2866': { 'mlb': { 'image': './img/mlb_logos/Homestar.png' }, 'mlr': { 'image': './img/mlr_logos/Foo.png' } }"
     ],
     "player_season": {
         "10": { "S1": { "GMOTY": "MIN (S1-2)" } },
@@ -37,6 +43,6 @@
     },
     "player_default": {
         "3367": { "league": "mlr", "franchise": "WSH (S1-2)", "season": "S1" },
-        "2866": { "image": "./img/mlr_logos/Homestar.png" }
+        "2866": { "image": "./img/mlb_logos/Homestar.png" }
     }
 }

@@ -61,7 +61,7 @@ export function recordFranchiseKey(r) {
 // there's no specific award context. Returns null if no override applies.
 export function getSeasonLogoOverride(playerId, season, awardKey) {
     const entry = state.logoOverrides.player_season?.[playerId];
-    const value = entry?.[season];
+    let value = pickLogoMode(entry?.[season]);
     if (value == null) return null;
     if (typeof value === 'string') return value;
     return (awardKey && value[awardKey]) || value.default || null;
@@ -70,7 +70,16 @@ export function getSeasonLogoOverride(playerId, season, awardKey) {
 // Returns a full override { league, franchise, season } for a player's
 // default (player-page header) logo, or null if none applies.
 export function getPlayerDefaultLogoOverride(playerId) {
-    return state.logoOverrides.player_default?.[playerId] || null;
+    return pickLogoMode(state.logoOverrides.player_default?.[playerId]) || null;
+}
+
+// Overrides may carry mode-specific variants: { mlr: <value>, mlb: <value> }.
+// Picks the variant for the current logo mode (falling back to the other one
+// if only one is given); values without "mlr"/"mlb" keys apply to both modes.
+function pickLogoMode(value) {
+    if (value == null || typeof value !== 'object' || !('mlr' in value || 'mlb' in value)) return value;
+    const [preferred, other] = state.useMlrLogos ? ['mlr', 'mlb'] : ['mlb', 'mlr'];
+    return value[preferred] ?? value[other] ?? null;
 }
 
 // ── Season helpers ───────────────────────────────────────────────────────────
@@ -112,8 +121,17 @@ export function getMlrTeamEntry(franchiseKey, displaySeason) {
 export function getMlrLogo(franchiseKey, displaySeason) {
     const entry = getMlrTeamEntry(franchiseKey, displaySeason);
     if (!entry) return null;
-    const isLight = document.documentElement.classList.contains('light-mode');
-    return isLight ? entry.logo_light : entry.logo_dark;
+    const pair = pickEraLogos(entry);
+    return document.documentElement.classList.contains('light-mode') ? pair.light : pair.dark;
+}
+
+// Era logo pair for the current mode: MLR logos if enabled and the era has
+// them, otherwise the MLB logos.
+function pickEraLogos(entry) {
+    if (state.useMlrLogos && entry.mlr_logo_dark) {
+        return { dark: entry.mlr_logo_dark, light: entry.mlr_logo_light || entry.mlr_logo_dark };
+    }
+    return { dark: entry.logo_dark, light: entry.logo_light };
 }
 
 // Returns the full team name for an MLR franchise+season.
@@ -255,7 +273,7 @@ export function seededRandom(seed) {
 export function getMlrLogoPair(franchiseKey, displaySeason) {
     const entry = getMlrTeamEntry(franchiseKey, displaySeason);
     if (!entry) return null;
-    return { dark: entry.logo_dark, light: entry.logo_light };
+    return pickEraLogos(entry);
 }
 
 export function getFcbLogoPair(abbr, displaySeason) {

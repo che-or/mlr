@@ -279,6 +279,21 @@ export function loadHideBanned() {
     }
 }
 
+export function loadUseMlrLogos() {
+    try {
+        state.useMlrLogos = localStorage.getItem('useMlrLogos') !== 'false';
+    } catch (_) {
+        state.useMlrLogos = true;
+    }
+}
+
+export function setUseMlrLogos(value) {
+    state.useMlrLogos = !!value;
+    try {
+        localStorage.setItem('useMlrLogos', state.useMlrLogos ? 'true' : 'false');
+    } catch (_) { /* storage unavailable; mode lasts for this page load only */ }
+}
+
 export function setHideBanned(value) {
     state.hideBanned = !!value;
     try {

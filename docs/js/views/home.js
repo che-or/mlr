@@ -1,5 +1,5 @@
 import { state } from '../state.js';
-import { loadStats, displayName, isBanned, setHideBanned } from '../data.js';
+import { loadStats, displayName, isBanned, setHideBanned, setUseMlrLogos } from '../data.js';
 import { seededRandom, getMlrLogoPair, getMlrTeamName, getSeasonSort, recordFranchiseKey, makeLogoImg, bindThemeSwitch } from '../utils.js';
 
 export async function renderHome() {
@@ -75,6 +75,13 @@ export async function renderHome() {
                     </span>
                     <span>Hide banned players</span>
                 </label>
+                <label class="option-toggle">
+                    <span class="option-toggle-switch">
+                        <input type="checkbox" id="use-mlr-logos-input"${state.useMlrLogos ? ' checked' : ''}>
+                        <span class="option-toggle-slider"></span>
+                    </span>
+                    <span>Use MLR logos</span>
+                </label>
             </div>
             <br>
 
@@ -95,6 +102,12 @@ export async function renderHome() {
     bindThemeSwitch(document.getElementById('light-mode-input'));
     document.getElementById('hide-banned-input')?.addEventListener('change', e => {
         setHideBanned(e.target.checked);
+        // Other views re-render on navigation; only the featured cards are on this page
+        if (state.stats['mlr_hitting'] && state.stats['mlr_pitching']) renderFeatured();
+    });
+
+    document.getElementById('use-mlr-logos-input')?.addEventListener('change', e => {
+        setUseMlrLogos(e.target.checked);
         // Other views re-render on navigation; only the featured cards are on this page
         if (state.stats['mlr_hitting'] && state.stats['mlr_pitching']) renderFeatured();
     });

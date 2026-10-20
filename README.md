@@ -86,4 +86,4 @@ The site requires maintenance, mostly at the beginning of seasons.
 - **`docs/data/draft_history.json`** needs to be updated with the season's draft picks by running `scripts/generate_draft_history.py`.
 - **`docs/data/*_divisions`** needs to be updated with season division structure
 - **`docs/data/*_team_history`** needs to be updated with the season's teams, abbreviation, and logo
-- **`docs/img/*`** needs to be updated with any new logos as `.svg.` files.
+- **`docs/img/*`** needs to be updated with any new logos as `.svg.` files. MLR league logos live in `docs/img/mlb_logos/` (real-life MLB) and `docs/img/mlr_logos/` (MLR's own, versioned `ABBR<N>`); `mlr_team_history.json` eras carry `logo_*` (MLB) and optional `mlr_logo_*` fields.
