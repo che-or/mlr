@@ -1,48 +1,48 @@
 {
     "ANA": [
-        {"name":"Cleveland Indians","abbr":"CLE","logo_dark":"./img/mlb_logos/CL1.svg","logo_light":"./img/mlb_logos/CL1.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlr_logos/CLE1.svg","mlr_logo_light":"./img/mlr_logos/CLE1.svg"},
-        {"name":"Los Angeles Angels","abbr":"LAA","logo_dark":"./img/mlb_logos/LAA.svg","logo_light":"./img/mlb_logos/LAA.svg","start":6,"end":8,"mlr_logo_dark":"./img/mlr_logos/LAA1.svg","mlr_logo_light":"./img/mlr_logos/LAA1.svg"},
-        {"name":"Anaheim Angels","abbr":"ANA","logo_dark":"./img/mlb_logos/ANA.svg","logo_light":"./img/mlb_logos/ANA.svg","start":9,"end":9999,"mlr_logo_dark":"./img/mlr_logos/ANA1.svg","mlr_logo_light":"./img/mlr_logos/ANA1.svg"}],
+        {"name":"Cleveland Indians","abbr":"CLE","logo_dark":"./img/mlb_logos/CL1.svg","logo_light":"./img/mlb_logos/CL1.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlb_logos/CL1.svg","mlr_logo_light":"./img/mlb_logos/CL1.svg"},
+        {"name":"Los Angeles Angels","abbr":"LAA","logo_dark":"./img/mlb_logos/LAA.svg","logo_light":"./img/mlb_logos/LAA.svg","start":6,"end":8,"mlr_logo_dark":"./img/mlb_logos/LAA.svg","mlr_logo_light":"./img/mlb_logos/LAA.svg"},
+        {"name":"Anaheim Angels","abbr":"ANA","logo_dark":"./img/mlb_logos/ANA.svg","logo_light":"./img/mlb_logos/ANA.svg","start":9,"end":9999,"mlr_logo_dark":"./img/mlb_logos/ANA.svg","mlr_logo_light":"./img/mlb_logos/ANA.svg"}],
     "ARI": [
         {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI(2023).svg","logo_light":"./img/mlb_logos/ARI(2023).svg","start":1,"end":5,"mlr_logo_dark":"./img/mlr_logos/ARI1.svg","mlr_logo_light":"./img/mlr_logos/ARI1.svg"},
-        {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI(2023).svg","logo_light":"./img/mlb_logos/ARI(2023).svg","start":6,"end":9,"mlr_logo_dark":"./img/mlr_logos/ARI2.svg","mlr_logo_light":"./img/mlr_logos/ARI2.svg"},
-        {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI.svg","logo_light":"./img/mlb_logos/ARI.svg","start":10,"end":10,"mlr_logo_dark":"./img/mlr_logos/ARI2.svg","mlr_logo_light":"./img/mlr_logos/ARI2.svg"},
+        {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI(2023).svg","logo_light":"./img/mlb_logos/ARI(2023).svg","start":6,"end":9,"mlr_logo_dark":"./img/mlb_logos/ARI(2023).svg","mlr_logo_light":"./img/mlb_logos/ARI(2023).svg"},
+        {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI.svg","logo_light":"./img/mlb_logos/ARI.svg","start":10,"end":10,"mlr_logo_dark":"./img/mlb_logos/ARI(2023).svg","mlr_logo_light":"./img/mlb_logos/ARI(2023).svg"},
         {"name":"Arizona Diamondbacks","abbr":"ARI","logo_dark":"./img/mlb_logos/ARI.svg","logo_light":"./img/mlb_logos/ARI.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/ARI3.svg","mlr_logo_light":"./img/mlr_logos/ARI3.svg"}],
     "ATL": [
         {"name":"Atlanta Braves","abbr":"ATL","logo_dark":"./img/mlb_logos/ATL.svg","logo_light":"./img/mlb_logos/ATL_light.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlr_logos/ATL1.svg","mlr_logo_light":"./img/mlr_logos/ATL1.svg"},
-        {"name":"Montreal Expos","abbr":"MTL","logo_dark":"./img/mlb_logos/MTL.svg","logo_light":"./img/mlb_logos/MTL.svg","start":2,"end":3,"mlr_logo_dark":"./img/mlr_logos/MTL1.svg","mlr_logo_light":"./img/mlr_logos/MTL1.svg"},
+        {"name":"Montreal Expos","abbr":"MTL","logo_dark":"./img/mlb_logos/MTL.svg","logo_light":"./img/mlb_logos/MTL.svg","start":2,"end":3,"mlr_logo_dark":"./img/mlb_logos/MTL.svg","mlr_logo_light":"./img/mlb_logos/MTL.svg"},
         {"name":"Atlanta Braves","abbr":"ATL","logo_dark":"./img/mlb_logos/ATL.svg","logo_light":"./img/mlb_logos/ATL_light.svg","start":4,"end":10,"mlr_logo_dark":"./img/mlr_logos/ATL1.svg","mlr_logo_light":"./img/mlr_logos/ATL1.svg"},
         {"name":"Atlanta Braves","abbr":"ATL","logo_dark":"./img/mlb_logos/ATL.svg","logo_light":"./img/mlb_logos/ATL_light.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/ATL2.svg","mlr_logo_light":"./img/mlr_logos/ATL2.svg"}],
     "BAL": [
-        {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlr_logos/BAL1.svg","mlr_logo_light":"./img/mlr_logos/BAL1.svg"},
+        {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlb_logos/BAL.svg","mlr_logo_light":"./img/mlb_logos/BAL.svg"},
         {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":6,"end":12,"mlr_logo_dark":"./img/mlr_logos/BAL2.svg","mlr_logo_light":"./img/mlr_logos/BAL2.svg"},
         {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":13,"end":9999,"mlr_logo_dark":"./img/mlr_logos/BAL3.png","mlr_logo_light":"./img/mlr_logos/BAL3.png"}],
     "BOS": [
-        {"name":"Boston Red Sox","abbr":"BOS","logo_dark":"./img/mlb_logos/BOS.svg","logo_light":"./img/mlb_logos/BOS.svg","start":2,"end":10,"mlr_logo_dark":"./img/mlr_logos/BOS1.svg","mlr_logo_light":"./img/mlr_logos/BOS1.svg"},
+        {"name":"Boston Red Sox","abbr":"BOS","logo_dark":"./img/mlb_logos/BOS.svg","logo_light":"./img/mlb_logos/BOS.svg","start":2,"end":10,"mlr_logo_dark":"./img/mlb_logos/BOS.svg","mlr_logo_light":"./img/mlb_logos/BOS.svg"},
         {"name":"Boston Red Sox","abbr":"BOS","logo_dark":"./img/mlb_logos/BOS.svg","logo_light":"./img/mlb_logos/BOS.svg","start":11,"end":11,"mlr_logo_dark":"./img/mlr_logos/BOS2.svg","mlr_logo_light":"./img/mlr_logos/BOS2.svg"},
         {"name":"Boston Red Sox","abbr":"BOS","logo_dark":"./img/mlb_logos/BOS.svg","logo_light":"./img/mlb_logos/BOS.svg","start":12,"end":9999,"mlr_logo_dark":"./img/mlr_logos/BOS3.svg","mlr_logo_light":"./img/mlr_logos/BOS3.svg"}],
     "CHC": [
-        {"name":"Chicago Cubs","abbr":"CHC","logo_dark":"./img/mlb_logos/CHC.svg","logo_light":"./img/mlb_logos/CHC.svg","start":3,"end":9999,"mlr_logo_dark":"./img/mlr_logos/CHC1.svg","mlr_logo_light":"./img/mlr_logos/CHC1.svg"}],
+        {"name":"Chicago Cubs","abbr":"CHC","logo_dark":"./img/mlb_logos/CHC.svg","logo_light":"./img/mlb_logos/CHC.svg","start":3,"end":9999,"mlr_logo_dark":"./img/mlb_logos/CHC.svg","mlr_logo_light":"./img/mlb_logos/CHC.svg"}],
     "CIN": [
-        {"name":"Cleveland Indians","abbr":"CLE","logo_dark":"./img/mlb_logos/CL1.svg","logo_light":"./img/mlb_logos/CL1.svg","start":2,"end":3,"mlr_logo_dark":"./img/mlr_logos/CLE1.svg","mlr_logo_light":"./img/mlr_logos/CLE1.svg"},
+        {"name":"Cleveland Indians","abbr":"CLE","logo_dark":"./img/mlb_logos/CL1.svg","logo_light":"./img/mlb_logos/CL1.svg","start":2,"end":3,"mlr_logo_dark":"./img/mlb_logos/CL1.svg","mlr_logo_light":"./img/mlb_logos/CL1.svg"},
         {"name":"Cincinnati Reds","abbr":"CIN","logo_dark":"./img/mlb_logos/CIN.svg","logo_light":"./img/mlb_logos/CIN_light.svg","start":4,"end":9999,"mlr_logo_dark":"./img/mlr_logos/CIN1.svg","mlr_logo_light":"./img/mlr_logos/CIN1.svg"}],
     "CLE": [
-        {"name":"Texas Rangers","abbr":"TEX","logo_dark":"./img/mlb_logos/TEX.svg","logo_light":"./img/mlb_logos/TEX_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlr_logos/TEX1.svg","mlr_logo_light":"./img/mlr_logos/TEX1.svg"},
+        {"name":"Texas Rangers","abbr":"TEX","logo_dark":"./img/mlb_logos/TEX.svg","logo_light":"./img/mlb_logos/TEX_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlb_logos/TEX_light.svg","mlr_logo_light":"./img/mlb_logos/TEX_light.svg"},
         {"name":"Cleveland Guardians","abbr":"CLE","logo_dark":"./img/mlb_logos/CLE.svg","logo_light":"./img/mlb_logos/CLE.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/CLE2.png","mlr_logo_light":"./img/mlr_logos/CLE2.png"}],
     "COL": [
-        {"name":"Colorado Rockies","abbr":"COL","logo_dark":"./img/mlb_logos/COL.svg","logo_light":"./img/mlb_logos/COL_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlr_logos/COL1.svg","mlr_logo_light":"./img/mlr_logos/COL1.svg"},
+        {"name":"Colorado Rockies","abbr":"COL","logo_dark":"./img/mlb_logos/COL.svg","logo_light":"./img/mlb_logos/COL_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlb_logos/COL.svg","mlr_logo_light":"./img/mlb_logos/COL.svg"},
         {"name":"Colorado Rockies","abbr":"COL","logo_dark":"./img/mlb_logos/COL.svg","logo_light":"./img/mlb_logos/COL_light.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/COL2.png","mlr_logo_light":"./img/mlr_logos/COL2.png"}],
     "CWS": [
         {"name":"Chicago White Sox","abbr":"CWS","logo_dark":"./img/mlb_logos/CWS.svg","logo_light":"./img/mlb_logos/CWS_light.svg","start":4,"end":11,"mlr_logo_dark":"./img/mlr_logos/CWS1.svg","mlr_logo_light":"./img/mlr_logos/CWS1.svg"},
         {"name":"Chicago White Sox","abbr":"CWS","logo_dark":"./img/mlb_logos/CWS.svg","logo_light":"./img/mlb_logos/CWS_light.svg","start":12,"end":9999,"mlr_logo_dark":"./img/mlr_logos/CWS2.png","mlr_logo_light":"./img/mlr_logos/CWS2.png"}],
     "DET": [
-        {"name":"Detroit Tigers","abbr":"DET","logo_dark":"./img/mlb_logos/DET.svg","logo_light":"./img/mlb_logos/DET_light.svg","start":1,"end":11,"mlr_logo_dark":"./img/mlr_logos/DET1.svg","mlr_logo_light":"./img/mlr_logos/DET1.svg"},
+        {"name":"Detroit Tigers","abbr":"DET","logo_dark":"./img/mlb_logos/DET.svg","logo_light":"./img/mlb_logos/DET_light.svg","start":1,"end":11,"mlr_logo_dark":"./img/mlb_logos/DET_light.svg","mlr_logo_light":"./img/mlb_logos/DET_light.svg"},
         {"name":"Detroit Tigers","abbr":"DET","logo_dark":"./img/mlb_logos/DET.svg","logo_light":"./img/mlb_logos/DET_light.svg","start":12,"end":9999,"mlr_logo_dark":"./img/mlr_logos/DET2.png","mlr_logo_light":"./img/mlr_logos/DET2.png"}],
     "FLA": [
         {"name":"Miami Marlins","abbr":"MIA","logo_dark":"./img/mlb_logos/MIA.svg","logo_light":"./img/mlb_logos/MIA.svg","start":3,"end":10,"mlr_logo_dark":"./img/mlr_logos/MIA1.png","mlr_logo_light":"./img/mlr_logos/MIA1.png"},
         {"name":"Florida Marlins","abbr":"FLA","logo_dark":"./img/mlb_logos/FLA.svg","logo_light":"./img/mlb_logos/FLA.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/FLA1.svg","mlr_logo_light":"./img/mlr_logos/FLA1.svg"}],
     "HOU": [
-        {"name":"Houston Astros","abbr":"HOU","logo_dark":"./img/mlb_logos/HOU.svg","logo_light":"./img/mlb_logos/HOU.svg","start":1,"end":3,"mlr_logo_dark":"./img/mlr_logos/HOU1.svg","mlr_logo_light":"./img/mlr_logos/HOU1.svg"},
+        {"name":"Houston Astros","abbr":"HOU","logo_dark":"./img/mlb_logos/HOU.svg","logo_light":"./img/mlb_logos/HOU.svg","start":1,"end":3,"mlr_logo_dark":"./img/mlb_logos/HOU.svg","mlr_logo_light":"./img/mlb_logos/HOU.svg"},
         {"name":"Houston Colt .45s","abbr":"HOU","logo_dark":"./img/mlb_logos/HOU(1962).svg","logo_light":"./img/mlb_logos/HOU(1962).svg","start":4,"end":10,"mlr_logo_dark":"./img/mlr_logos/HOU2.png","mlr_logo_light":"./img/mlr_logos/HOU2.png"},
         {"name":"Houston Astros","abbr":"HOU","logo_dark":"./img/mlb_logos/HOU.svg","logo_light":"./img/mlb_logos/HOU.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/HOU3.png","mlr_logo_light":"./img/mlr_logos/HOU3.png"}],
     "KCR": [
@@ -50,12 +50,12 @@
         {"name":"Kansas City Royals","abbr":"KCR","logo_dark":"./img/mlb_logos/KCR.svg","logo_light":"./img/mlb_logos/KCR_light.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/KCR2.png","mlr_logo_light":"./img/mlr_logos/KCR2.png"}],
     "LAD": [
         {"name":"Los Angeles Dodgers","abbr":"LAD","logo_dark":"./img/mlb_logos/LAD.svg","logo_light":"./img/mlb_logos/LAD_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlr_logos/LAD1.svg","mlr_logo_light":"./img/mlr_logos/LAD1.svg"},
-        {"name":"Los Angeles Dodgers","abbr":"LAD","logo_dark":"./img/mlb_logos/LAD.svg","logo_light":"./img/mlb_logos/LAD_light.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/LAD2.svg","mlr_logo_light":"./img/mlr_logos/LAD2.svg"}],
+        {"name":"Los Angeles Dodgers","abbr":"LAD","logo_dark":"./img/mlb_logos/LAD.svg","logo_light":"./img/mlb_logos/LAD_light.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlb_logos/LAD_light.svg","mlr_logo_light":"./img/mlb_logos/LAD_light.svg"}],
     "MIL": [
         {"name":"New York Mets","abbr":"NYM","logo_dark":"./img/mlb_logos/NYM.svg","logo_light":"./img/mlb_logos/NYM.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlr_logos/NYM1.svg","mlr_logo_light":"./img/mlr_logos/NYM1.svg"},
         {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL(2019).svg","logo_light":"./img/mlb_logos/MIL(2019).svg","start":2,"end":4,"mlr_logo_dark":"./img/mlr_logos/MIL1.svg","mlr_logo_light":"./img/mlr_logos/MIL1.svg"},
         {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":5,"end":5,"mlr_logo_dark":"./img/mlr_logos/MIL1.svg","mlr_logo_light":"./img/mlr_logos/MIL1.svg"},
-        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/MIL2.svg","mlr_logo_light":"./img/mlr_logos/MIL2.svg"}],
+        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlb_logos/MIL.svg","mlr_logo_light":"./img/mlb_logos/MIL.svg"}],
     "MIN": [
         {"name":"Minnesota Twins","abbr":"MIN","logo_dark":"./img/mlb_logos/MIN(2022).svg","logo_light":"./img/mlb_logos/MIN(2022)_light.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlr_logos/MIN1.svg","mlr_logo_light":"./img/mlr_logos/MIN1.svg"},
         {"name":"Minnesota Twins","abbr":"MIN","logo_dark":"./img/mlb_logos/MIN(2022).svg","logo_light":"./img/mlb_logos/MIN(2022)_light.svg","start":6,"end":7,"mlr_logo_dark":"./img/mlr_logos/MIN2.png","mlr_logo_light":"./img/mlr_logos/MIN2.png"},
@@ -64,7 +64,7 @@
     "MIN (S1-2)": [
         {"name":"Minnesota Twins","abbr":"MIN","logo_dark":"./img/mlb_logos/MIN(1987).svg","logo_light":"./img/mlb_logos/MIN(1987).svg","start":1,"end":2,"mlr_logo_dark":"./img/mlr_logos/MIN1.svg","mlr_logo_light":"./img/mlr_logos/MIN1.svg"}],
     "MTL": [
-        {"name":"Montreal Expos","abbr":"MTL","logo_dark":"./img/mlb_logos/MTL.svg","logo_light":"./img/mlb_logos/MTL.svg","start":4,"end":9999,"mlr_logo_dark":"./img/mlr_logos/MTL1.svg","mlr_logo_light":"./img/mlr_logos/MTL1.svg"}],
+        {"name":"Montreal Expos","abbr":"MTL","logo_dark":"./img/mlb_logos/MTL.svg","logo_light":"./img/mlb_logos/MTL.svg","start":4,"end":9999,"mlr_logo_dark":"./img/mlb_logos/MTL.svg","mlr_logo_light":"./img/mlb_logos/MTL.svg"}],
     "NYM": [
         {"name":"New York Mets","abbr":"NYM","logo_dark":"./img/mlb_logos/NYM.svg","logo_light":"./img/mlb_logos/NYM.svg","start":3,"end":12,"mlr_logo_dark":"./img/mlr_logos/NYM1.svg","mlr_logo_light":"./img/mlr_logos/NYM1.svg"},
         {"name":"New York Mets","abbr":"NYM","logo_dark":"./img/mlb_logos/NYM.svg","logo_light":"./img/mlb_logos/NYM.svg","start":13,"end":9999,"mlr_logo_dark":"./img/mlr_logos/NYM2.png","mlr_logo_light":"./img/mlr_logos/NYM2.png"}],
@@ -74,26 +74,26 @@
     "OAK": [
         {"name":"Oakland Athletics","abbr":"OAK","logo_dark":"./img/mlb_logos/OAK.svg","logo_light":"./img/mlb_logos/OAK_light.svg","start":1,"end":9999,"mlr_logo_dark":"./img/mlr_logos/OAK1.png","mlr_logo_light":"./img/mlr_logos/OAK1.png"}],
     "PHI": [
-        {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlr_logos/PHI1.svg","mlr_logo_light":"./img/mlr_logos/PHI1.svg"},
+        {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlb_logos/PHI_light.svg","mlr_logo_light":"./img/mlb_logos/PHI_light.svg"},
         {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlr_logos/PHI2.png","mlr_logo_light":"./img/mlr_logos/PHI2.png"},
-        {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":6,"end":7,"mlr_logo_dark":"./img/mlr_logos/PHI1.svg","mlr_logo_light":"./img/mlr_logos/PHI1.svg"},
+        {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":6,"end":7,"mlr_logo_dark":"./img/mlb_logos/PHI_light.svg","mlr_logo_light":"./img/mlb_logos/PHI_light.svg"},
         {"name":"Philadelphia Phillies","abbr":"PHI","logo_dark":"./img/mlb_logos/PHI.svg","logo_light":"./img/mlb_logos/PHI_light.svg","start":8,"end":9999,"mlr_logo_dark":"./img/mlr_logos/PHI3.svg","mlr_logo_light":"./img/mlr_logos/PHI3.svg"}],
     "PIT": [
-        {"name":"Pittsburgh Pirates","abbr":"PIT","logo_dark":"./img/mlb_logos/PIT.svg","logo_light":"./img/mlb_logos/PIT.svg","start":1,"end":9999,"mlr_logo_dark":"./img/mlr_logos/PIT1.svg","mlr_logo_light":"./img/mlr_logos/PIT1.svg"}],
+        {"name":"Pittsburgh Pirates","abbr":"PIT","logo_dark":"./img/mlb_logos/PIT.svg","logo_light":"./img/mlb_logos/PIT.svg","start":1,"end":9999,"mlr_logo_dark":"./img/mlb_logos/PIT.svg","mlr_logo_light":"./img/mlb_logos/PIT.svg"}],
     "SDP": [
         {"name":"San Diego Padres","abbr":"SDP","logo_dark":"./img/mlb_logos/SDP(2019).svg","logo_light":"./img/mlb_logos/SDP(2019)_light.svg","start":2,"end":4,"mlr_logo_dark":"./img/mlr_logos/SDP1.svg","mlr_logo_light":"./img/mlr_logos/SDP1.svg"},
         {"name":"San Diego Padres","abbr":"SDP","logo_dark":"./img/mlb_logos/SDP.svg","logo_light":"./img/mlb_logos/SDP.svg","start":5,"end":9,"mlr_logo_dark":"./img/mlr_logos/SDP1.svg","mlr_logo_light":"./img/mlr_logos/SDP1.svg"},
         {"name":"San Diego Padres","abbr":"SDP","logo_dark":"./img/mlb_logos/SDP.svg","logo_light":"./img/mlb_logos/SDP.svg","start":10,"end":9999,"mlr_logo_dark":"./img/mlr_logos/SDP2.png","mlr_logo_light":"./img/mlr_logos/SDP2.png"}],
     "SEA": [
-        {"name":"Seattle Mariners","abbr":"SEA","logo_dark":"./img/mlb_logos/SEA.svg","logo_light":"./img/mlb_logos/SEA.svg","start":4,"end":10,"mlr_logo_dark":"./img/mlr_logos/SEA1.svg","mlr_logo_light":"./img/mlr_logos/SEA1.svg"},
+        {"name":"Seattle Mariners","abbr":"SEA","logo_dark":"./img/mlb_logos/SEA.svg","logo_light":"./img/mlb_logos/SEA.svg","start":4,"end":10,"mlr_logo_dark":"./img/mlb_logos/SEA.svg","mlr_logo_light":"./img/mlb_logos/SEA.svg"},
         {"name":"Seattle Mariners","abbr":"SEA","logo_dark":"./img/mlb_logos/SEA.svg","logo_light":"./img/mlb_logos/SEA.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/SEA2.svg","mlr_logo_light":"./img/mlr_logos/SEA2.svg"}],
     "SEA (S2)": [
-        {"name":"Seattle Mariners","abbr":"SEA","logo_dark":"./img/mlb_logos/SEA(1977).svg","logo_light":"./img/mlb_logos/SEA(1977)_light.svg","start":2,"end":2,"mlr_logo_dark":"./img/mlr_logos/SEA1.svg","mlr_logo_light":"./img/mlr_logos/SEA1.svg"}],
+        {"name":"Seattle Mariners","abbr":"SEA","logo_dark":"./img/mlb_logos/SEA(1977).svg","logo_light":"./img/mlb_logos/SEA(1977)_light.svg","start":2,"end":2,"mlr_logo_dark":"./img/mlb_logos/SEA.svg","mlr_logo_light":"./img/mlb_logos/SEA.svg"}],
     "SFG": [
-        {"name":"San Francisco Giants","abbr":"SFG","logo_dark":"./img/mlb_logos/SFG.svg","logo_light":"./img/mlb_logos/SFG.svg","start":2,"end":9999,"mlr_logo_dark":"./img/mlr_logos/SFG1.svg","mlr_logo_light":"./img/mlr_logos/SFG1.svg"}],
+        {"name":"San Francisco Giants","abbr":"SFG","logo_dark":"./img/mlb_logos/SFG.svg","logo_light":"./img/mlb_logos/SFG.svg","start":2,"end":9999,"mlr_logo_dark":"./img/mlb_logos/SFG.svg","mlr_logo_light":"./img/mlb_logos/SFG.svg"}],
     "STL": [
         {"name":"St. Louis Cardinals","abbr":"STL","logo_dark":"./img/mlb_logos/STL.svg","logo_light":"./img/mlb_logos/STL_light.svg","start":2,"end":5,"mlr_logo_dark":"./img/mlr_logos/STL1.svg","mlr_logo_light":"./img/mlr_logos/STL1.svg"},
-        {"name":"St. Louis Cardinals","abbr":"STL","logo_dark":"./img/mlb_logos/STL.svg","logo_light":"./img/mlb_logos/STL_light.svg","start":6,"end":10,"mlr_logo_dark":"./img/mlr_logos/STL2.svg","mlr_logo_light":"./img/mlr_logos/STL2.svg"},
+        {"name":"St. Louis Cardinals","abbr":"STL","logo_dark":"./img/mlb_logos/STL.svg","logo_light":"./img/mlb_logos/STL_light.svg","start":6,"end":10,"mlr_logo_dark":"./img/mlb_logos/STL_light.svg","mlr_logo_light":"./img/mlb_logos/STL_light.svg"},
         {"name":"St. Louis Cardinals","abbr":"STL","logo_dark":"./img/mlb_logos/STL.svg","logo_light":"./img/mlb_logos/STL_light.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/STL3.svg","mlr_logo_light":"./img/mlr_logos/STL3.svg"}],
     "TBR": [
         {"name":"Tampa Bay Devil Rays","abbr":"TB","logo_dark":"./img/mlb_logos/TBD.svg","logo_light":"./img/mlb_logos/TBD.svg","start":2,"end":2,"mlr_logo_dark":"./img/mlr_logos/TBD1.svg","mlr_logo_light":"./img/mlr_logos/TBD1.svg"},
@@ -102,14 +102,14 @@
         {"name":"Tampa Bay Rays","abbr":"TBR","logo_dark":"./img/mlb_logos/TBR.svg","logo_light":"./img/mlb_logos/TBR_light.svg","start":7,"end":10,"mlr_logo_dark":"./img/mlr_logos/TBR2.svg","mlr_logo_light":"./img/mlr_logos/TBR2.svg"},
         {"name":"Tampa Bay Devil Rays","abbr":"TBR","logo_dark":"./img/mlb_logos/TBD.svg","logo_light":"./img/mlb_logos/TBD.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/TBR3.png","mlr_logo_light":"./img/mlr_logos/TBR3.png"}],
     "TEX": [
-        {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":1,"end":2,"mlr_logo_dark":"./img/mlr_logos/BAL1.svg","mlr_logo_light":"./img/mlr_logos/BAL1.svg"},
-        {"name":"Los Angeles Angels","abbr":"LAA","logo_dark":"./img/mlb_logos/LAA.svg","logo_light":"./img/mlb_logos/LAA.svg","start":3,"end":5,"mlr_logo_dark":"./img/mlr_logos/LAA1.svg","mlr_logo_light":"./img/mlr_logos/LAA1.svg"},
-        {"name":"Texas Rangers","abbr":"TEX","logo_dark":"./img/mlb_logos/TEX.svg","logo_light":"./img/mlb_logos/TEX_light.svg","start":6,"end":10,"mlr_logo_dark":"./img/mlr_logos/TEX1.svg","mlr_logo_light":"./img/mlr_logos/TEX1.svg"},
+        {"name":"Baltimore Orioles","abbr":"BAL","logo_dark":"./img/mlb_logos/BAL.svg","logo_light":"./img/mlb_logos/BAL.svg","start":1,"end":2,"mlr_logo_dark":"./img/mlb_logos/BAL.svg","mlr_logo_light":"./img/mlb_logos/BAL.svg"},
+        {"name":"Los Angeles Angels","abbr":"LAA","logo_dark":"./img/mlb_logos/LAA.svg","logo_light":"./img/mlb_logos/LAA.svg","start":3,"end":5,"mlr_logo_dark":"./img/mlb_logos/LAA.svg","mlr_logo_light":"./img/mlb_logos/LAA.svg"},
+        {"name":"Texas Rangers","abbr":"TEX","logo_dark":"./img/mlb_logos/TEX.svg","logo_light":"./img/mlb_logos/TEX_light.svg","start":6,"end":10,"mlr_logo_dark":"./img/mlb_logos/TEX_light.svg","mlr_logo_light":"./img/mlb_logos/TEX_light.svg"},
         {"name":"Texas Rangers","abbr":"TEX","logo_dark":"./img/mlb_logos/TEX.svg","logo_light":"./img/mlb_logos/TEX_light.svg","start":11,"end":9999,"mlr_logo_dark":"./img/mlr_logos/TEX2.png","mlr_logo_light":"./img/mlr_logos/TEX2.png"}],
     "TOR": [
-        {"name":"Toronto Blue Jays","abbr":"TOR","logo_dark":"./img/mlb_logos/TOR.svg","logo_light":"./img/mlb_logos/TOR.svg","start":1,"end":5,"mlr_logo_dark":"./img/mlr_logos/TOR1.svg","mlr_logo_light":"./img/mlr_logos/TOR1.svg"},
+        {"name":"Toronto Blue Jays","abbr":"TOR","logo_dark":"./img/mlb_logos/TOR.svg","logo_light":"./img/mlb_logos/TOR.svg","start":1,"end":5,"mlr_logo_dark":"./img/mlb_logos/TOR.svg","mlr_logo_light":"./img/mlb_logos/TOR.svg"},
         {"name":"Toronto Blue Jays","abbr":"TOR","logo_dark":"./img/mlb_logos/TOR.svg","logo_light":"./img/mlb_logos/TOR.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlr_logos/TOR2.svg","mlr_logo_light":"./img/mlr_logos/TOR2.svg"}],
     "WSH (S1-2)": [
-        {"name":"Washington Nationals","abbr":"WAS","logo_dark":"./img/mlb_logos/WSH.svg","logo_light":"./img/mlb_logos/WSH_light.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlr_logos/WAS1.svg","mlr_logo_light":"./img/mlr_logos/WAS1.svg"},
-        {"name":"Washington Nationals","abbr":"WSH","logo_dark":"./img/mlb_logos/WSH.svg","logo_light":"./img/mlb_logos/WSH_light.svg","start":2,"end":2,"mlr_logo_dark":"./img/mlr_logos/WAS1.svg","mlr_logo_light":"./img/mlr_logos/WAS1.svg"}]
+        {"name":"Washington Nationals","abbr":"WAS","logo_dark":"./img/mlb_logos/WSH.svg","logo_light":"./img/mlb_logos/WSH_light.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlb_logos/WSH_light.svg","mlr_logo_light":"./img/mlb_logos/WSH_light.svg"},
+        {"name":"Washington Nationals","abbr":"WSH","logo_dark":"./img/mlb_logos/WSH.svg","logo_light":"./img/mlb_logos/WSH_light.svg","start":2,"end":2,"mlr_logo_dark":"./img/mlb_logos/WSH_light.svg","mlr_logo_light":"./img/mlb_logos/WSH_light.svg"}]
 }
