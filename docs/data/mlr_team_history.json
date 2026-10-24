@@ -53,8 +53,8 @@
         {"name":"Los Angeles Dodgers","abbr":"LAD","logo_dark":"./img/mlb_logos/LAD.svg","logo_light":"./img/mlb_logos/LAD_light.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlb_logos/LAD_light.svg","mlr_logo_light":"./img/mlb_logos/LAD_light.svg"}],
     "MIL": [
         {"name":"New York Mets","abbr":"NYM","logo_dark":"./img/mlb_logos/NYM.svg","logo_light":"./img/mlb_logos/NYM.svg","start":1,"end":1,"mlr_logo_dark":"./img/mlr_logos/NYM1.svg","mlr_logo_light":"./img/mlr_logos/NYM1.svg"},
-        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL(2019).svg","logo_light":"./img/mlb_logos/MIL(2019).svg","start":2,"end":4,"mlr_logo_dark":"./img/mlr_logos/MIL1.svg","mlr_logo_light":"./img/mlr_logos/MIL1.svg"},
-        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":5,"end":5,"mlr_logo_dark":"./img/mlr_logos/MIL1.svg","mlr_logo_light":"./img/mlr_logos/MIL1.svg"},
+        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL(2019).svg","logo_light":"./img/mlb_logos/MIL(2019).svg","start":2,"end":4,"mlr_logo_dark":"./img/mlb_logos/MIL(2019).svg","mlr_logo_light":"./img/mlb_logos/MIL(2019).svg"},
+        {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":5,"end":5,"mlr_logo_dark":"./img/mlb_logos/MIL(2019).svg","mlr_logo_light":"./img/mlb_logos/MIL(2019).svg"},
         {"name":"Milwaukee Brewers","abbr":"MIL","logo_dark":"./img/mlb_logos/MIL.svg","logo_light":"./img/mlb_logos/MIL.svg","start":6,"end":9999,"mlr_logo_dark":"./img/mlb_logos/MIL.svg","mlr_logo_light":"./img/mlb_logos/MIL.svg"}],
     "MIN": [
         {"name":"Minnesota Twins","abbr":"MIN","logo_dark":"./img/mlb_logos/MIN(2022).svg","logo_light":"./img/mlb_logos/MIN(2022)_light.svg","start":4,"end":5,"mlr_logo_dark":"./img/mlr_logos/MIN1.svg","mlr_logo_light":"./img/mlr_logos/MIN1.svg"},
