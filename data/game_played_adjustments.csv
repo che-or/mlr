@@ -267,6 +267,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 1844,,GIB,3,9,33,WBK,Fielding Replacement
 1723,,GIB,3,9,33,WBK,Pitcher
 675,,GIB,3,10,34,WOO,Pitcher
+134,,GIB,3,10,34,SYC,Pitcher
 134,,GIB,3,11,35,SYC,Pitcher
 45,,GIB,3,11,36,GIB,Pitcher
 2229,,GIB,3,11,36,VIP,Pinch hit for in T2
@@ -1504,3 +1505,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 3227,,MiLR,13,3,12,DUM,Pitcher
 3308,,MLR,13,3,43,SDP,Fielding Replacement
 2728,,FCB,8,1,3,MSU,Pinch hit for in B2
+651,,GIB,2,1,1,FUB,Pinch hit for in T3
+2133,,ECO,1,4,13,MB,Pinch hit for in B2
+265,,GIB,2,3,11,SYC,"Pitcher, Run Scored"
