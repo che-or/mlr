@@ -298,7 +298,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 3328,,MiLR,3,1,1,BER,Pitcher
 61,,MiLR,3,2,6,CCF,Pitcher
 352,,MiLR,3,2,8,FTP,Pitcher
-293,,MiLR,3,3,9,FTP,Fielding Replacement
 240,,MiLR,3,4,16,CCF,Pinch hit for in B1
 64,,MiLR,3,5,18,CCF,Pinch hit for in T3
 230,,MiLR,3,5,18,CCF,Pinch hit for in T2
@@ -308,6 +307,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 170,,MiLR,3,8,30,CCF,Pinch hit for in B1
 278,,MiLR,3,8,31,TZS,Pitcher
 424,,MiLR,3,10,37,LAN,Pinch hit for in T3
+189,,MiLR,3,10,38,BAY,"Pitcher, Also LF"
 135,,MiLR,3,11,42,TZS,Pitcher
 132,,MiLR,3,12,47,TZS,Pitcher
 127,,MiLR,3,12,47,TZS,Pitcher
@@ -329,6 +329,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 344,,MiLR,4,4,27,HON,Pitcher
 339,,MiLR,4,4,30,CCS,Fielding Replacement
 145,,MiLR,4,4,31,MBX,Pinch hit for in B1
+133,,MiLR,4,4,31,MBX,"Pitcher, Also C"
 18,,MiLR,4,5,33,N69,Replaced in T2
 29,,MiLR,4,5,33,N69,Replaced in T2
 205,,MiLR,4,5,33,N69,Pinch hit for in B1
@@ -1508,3 +1509,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 651,,GIB,2,1,1,FUB,Pinch hit for in T3
 2133,,ECO,1,4,13,MB,Pinch hit for in B2
 265,,GIB,2,3,11,SYC,"Pitcher, Run Scored"
+492,,MiLR,4,6,46,EEE,"Pitcher, Also SS"
+290,,MiLR,4,7,49,PDB,DH removed due to losing DH before first plate appearance
+559,,MiLR,4,9,68,CEL,DH removed due to losing DH before first plate appearance
