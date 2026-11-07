@@ -88,14 +88,14 @@
       },
       "H": {
         "record": 4,
-        "tie_count": 44,
+        "tie_count": 45,
         "most_recent": {
-          "id": 3068,
+          "id": 3420,
           "season": "S13",
-          "session": 4,
-          "team": "SEA",
-          "location": "Away",
-          "opponent": "FLA"
+          "session": 5,
+          "team": "SDP",
+          "location": "Home",
+          "opponent": "KCR"
         }
       },
       "HR": {

@@ -3,7 +3,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 5,Y.E. Wally,TBR,XB,WC,H,Right,CF,RF,LF,/u/whywebuildthewall,y.e.wally,53,1,10,,
 10,Holden Summers,TBR,BC,BS,H,Left,2B,RF,C,/u/SemiCharmedMike,semicharmedmike,53,1,6,,
 14,Baba Ganoosh,,TT,,,Right,LF,RF,3B,/u/AZAthleticsfan,,53,1,9,,
-28,Barney Turbo,,HK,TD,H,Right,P,,,/u/AlienAbortionMachine,aam,53,5,3,1,RHP
+28,Barney Turbo,,HK,TD,H,Right,SS,CF,,/u/AlienAbortionMachine,aam,53,1,7,1,RHP
 29,Jeter Ups,TEX,XB,BS,B,Right,SS,3B,,/u/Epipen101,pizzatoes,53,1,7,,
 32,Larry Longshot,KCR,EN,EN,B,Right,CF,RF,LF,/u/TrickyTroy2,larold,43,1,10,1,BLU
 34,Dixon Uraz,BOS,WC,EG,H,Left,RF,CF,LF,/u/club_toasty,club_toasty,43,1,11,,
@@ -79,6 +79,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 308,Moose McCracken,PIT,BC,,,Right,C,3B,RF,/u/KitandCanoodle,honorsystem,23,1,4,,
 309,Emer Bock,PIT,BN,,,Left,1B,LF,RF,/u/gitisbaggz,marjoriemynxpitrecorder,53,9,5,,
 327,Makesiondon Kelkboom,TBR,WC,,,Right,C,1B,3B,/u/Tenny1917,tenny1917,53,1,4,,
+331,Keyo,,BC,NH,S,Right,CF,LF,,/u/Ashbymtg,keyo,53,1,10,,
 337,Andrew Peters,TOR,BN,BS,H,Left,P,,,/u/GoodMorningWood,goodmorningwood,53,1,3,,
 339,Isaac Snowbender,CIN,MH,1B,S,Left,C,3B,LF,/u/mvh1015,mvh1015,23,1,4,,
 344,Mongster Mash,TOR,1B,NT,H,Left,3B,SS,CF,/u/mongster03_,mongster_03,33,1,8,,
