@@ -643,7 +643,7 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 1792,,MiLR,11,1,1,LAX,Pitcher
 2350,,MiLR,11,1,6,HOT,Fielding Replacement
 2882,,MiLR,11,1,6,HOT,"Fielding Replacement, Replaced in T5"
-2735,,MiLR,11,1,6,LOB,Fielding Replacement
+2735,,MiLR,11,1,6,LOB,"Pinch Runner, Run Scored"
 3095,Tommy Tripleton,MiLR,11,2,10,ROY,Pinch hit for in T3
 117,,MiLR,11,5,26,DOG,Pitcher
 2902,,MiLR,11,5,26,DOG,Pitcher
@@ -679,7 +679,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 3161,,MiLR,12,1,4,SAL,Pitcher
 3235,,MiLR,12,2,8,SAL,Pitcher
 127,,MiLR,12,2,9,DDD,Pitcher
-651,,MiLR,12,2,9,SEF,Pitcher
 776,,MiLR,12,3,12,DDD,Pitcher
 2827,,MiLR,12,3,14,SAL,Pitcher
 3235,,MiLR,12,3,14,SAL,Pitcher
@@ -1517,3 +1516,4 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2466,,MiLR,6,7,94,TAK,"Pitcher, Also LF"
 212,,MiLR,7,1,1,SCG,Pitcher
 502,,MiLR,7,1,6,BAC,Pitcher
+2870,,MiLR,11,6,31,SHH,DH removed due to losing DH before first plate appearance

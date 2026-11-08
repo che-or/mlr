@@ -15,14 +15,14 @@
       },
       "3B": {
         "record": 2,
-        "tie_count": 27,
+        "tie_count": 28,
         "most_recent": {
-          "id": 3234,
-          "season": "S12",
-          "session": 9,
-          "team": "DDD",
+          "id": 3435,
+          "season": "S13",
+          "session": 5,
+          "team": "HCM",
           "location": "Away",
-          "opponent": "WWC"
+          "opponent": "MMS"
         }
       },
       "Auto K": {
