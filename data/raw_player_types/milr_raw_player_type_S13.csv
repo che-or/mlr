@@ -3,9 +3,9 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 5,Y.E. Wally,TBR,XB,WC,H,Right,CF,RF,LF,/u/whywebuildthewall,y.e.wally,53,1,10,,
 10,Holden Summers,TBR,BC,BS,H,Left,2B,RF,C,/u/SemiCharmedMike,semicharmedmike,53,1,6,,
 14,Baba Ganoosh,,TT,,,Right,LF,RF,3B,/u/AZAthleticsfan,,53,1,9,,
-28,Barney Turbo,,HK,TD,H,Right,SS,CF,,/u/AlienAbortionMachine,aam,53,1,7,1,RHP
+28,Barney Turbo,SFG,HK,TD,H,Right,SS,CF,,/u/AlienAbortionMachine,aam,53,1,7,1,RHP
 29,Jeter Ups,TEX,XB,BS,B,Right,SS,3B,,/u/Epipen101,pizzatoes,53,1,7,,
-32,Larry Longshot,KCR,EN,EN,B,Right,CF,RF,LF,/u/TrickyTroy2,larold,43,1,10,1,BLU
+32,Larry Longshot,ANA,EN,EN,B,Right,CF,RF,LF,/u/TrickyTroy2,larold,53,1,10,1,BLU
 34,Dixon Uraz,BOS,WC,EG,H,Left,RF,CF,LF,/u/club_toasty,club_toasty,43,1,11,,
 37,Artanis Jones,FLA,SM,BS,H,Left,P,,,/u/AdmiralJones42,admiraljones,53,1,3,,
 39,Whitt Bass,COL,BC,NH,H,Right,P,,,/u/kickthepony,kickthepony,53,1,3,,
@@ -56,7 +56,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 204,Coco Watanabe,LAD,1B,BB,S,Right,C,3B,1B,/u/jorleeduf,jorleeduf,53,1,4,,
 219,Chris Orosz,CHC,MH,EG,B,Left,C,3B,CF,/u/Aenir01,aenir07,53,1,4,,
 220,Charles Magnus,PHI,S,BS,S,Right,RF,CF,C,/u/CharlemagneOfTheUSA,cassiopeia__,53,1,11,,
-226,Phil Coulson,PHI,SF,,,Left,3B,2B,LF,/u/PHICOU10,philc14,53,1,8,,
+226,Phil Coulson,,SF,,,Left,3B,2B,LF,/u/PHICOU10,philc14,53,1,8,,
 230,Howie Feltersnatch,CWS,XB,,,Right,3B,2B,C,/u/Vauntice,gasbreads,53,1,8,,
 233,Johnny Dickshot,LAD,WC,TD,H,Right,SS,3B,RF,/u/NumberOneDork,numberonedork,53,1,7,,
 238,Ben Bramly,NYM,SF,EN,B,Right,C,3B,RF,/u/bzb113,bennys,53,1,4,,
@@ -69,7 +69,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 265,Grand Slamdalf,CIN,SF,EG,H,Right,P,,,/u/Vulfzilla,vulfzilla,53,1,3,,
 268,Jefferson Steelflex,COL,XB,EN,B,Left,CF,LF,1B,/u/cardinalidae,yokotuna,53,1,10,,
 275,Richard Northstar,CWS,WC,FP,S,Left,P,,,/u/StrategyGameventures,nectarofambrosia,53,1,3,,
-278,Dominus Nominus,,MH,BS,B,Right,LF,1B,C,/u/steelermade28,bucmade28,53,1,9,,
+278,Dominus Nominus,KCR,MH,BS,B,Right,LF,1B,C,/u/steelermade28,bucmade28,53,1,9,,
 287,Dongmen Ximen,PHI,BC,TD,B,Right,SS,CF,1B,/u/kc3551,kc3551,53,1,7,,
 290,Miguel Snow Jr,LAD,XB,BF,S,Right,P,,,/u/biigdog,madno6,53,1,3,,
 295,Jocko Jones,LAD,BN,,,Right,2B,RF,CF,/u/Dodger_Rej3ct,1ashen_1,53,1,6,,
@@ -78,7 +78,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 308,Moose McCracken,PIT,BC,,,Right,C,3B,RF,/u/KitandCanoodle,honorsystem,23,1,4,,
 309,Emer Bock,PIT,BN,,,Left,1B,LF,RF,/u/gitisbaggz,marjoriemynxpitrecorder,53,9,5,,
 327,Makesiondon Kelkboom,TBR,WC,,,Right,C,1B,3B,/u/Tenny1917,tenny1917,53,1,4,,
-331,Keyo,,BC,NH,S,Right,CF,LF,,/u/Ashbymtg,keyo,53,1,10,,
+331,Keyo,SDP,BC,NH,S,Right,CF,LF,,/u/Ashbymtg,keyo,53,1,10,,
 337,Andrew Peters,TOR,BN,BS,H,Left,P,,,/u/GoodMorningWood,goodmorningwood,53,1,3,,
 339,Isaac Snowbender,CIN,MH,1B,S,Left,C,3B,LF,/u/mvh1015,mvh1015,23,1,4,,
 344,Mongster Mash,TOR,1B,NT,H,Left,3B,SS,CF,/u/mongster03_,mongster_03,33,1,8,,
@@ -94,7 +94,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 392,Haydn Werfer,TEX,S,WC,S,Left,P,,,/u/XemyrLexasey,xemyrlebeau,53,1,3,,
 394,Ryan Gastings,TOR,SM,EG,B,Left,P,,,/u/roothockey,aspence,53,1,3,,
 395,S.A.R. Dinka,TOR,1B,WC,H,Right,P,,,/u/sardinka,sardinka,53,1,3,,
-400,Graham Grams,TOR,BC,WC,S,Left,2B,RF,SS,/u/roleplayinggrandma1,roleplayinggrandma,33,1,6,,
+400,Graham Grams,TOR,BC,WC,S,Left,2B,RF,SS,/u/roleplayinggrandma1,roleplayinggrandma,53,1,6,,
 402,amelia baseball,MTL,SF,,,Right,2B,RF,CF,/u/maddydotcom,ameliadotweb,53,1,6,,
 405,Sven Jorgenson,TOR,BC,,,Right,3B,2B,SS,/u/LetsHaveAwkwardSex,ausbosstheonlysonofdonzimmer,53,1,8,,
 413,Superbone Threefinger,CLE,XB,TD,S,Left,P,,,/u/23baseball3,superbone,53,1,3,1,RHP
@@ -155,7 +155,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 1717,Corey Scooter,CHC,BN,WC,H,Left,1B,3B,CF,/u/mrwalrus99,butteryknees,53,1,5,1,DUM
 1719,Moby Dick,HOU,1B,WC,H,Left,C,1B,CF,/u/Scratched_Nalgene,macdog213,53,1,4,,
 1724,Hannibal Bligh,TBR,BN,EG,H,Right,PH,,,/u/ArmadilloPenguin,armadillopenguin,53,9,1,,
-1725,Trevor Rosé,CLE,SF,TT,H,Right,SS,2B,3B,/u/Trexxy2,trexxy2,11,1,7,1,RHP
+1725,Trevor Rosé,CLE,SF,TT,H,Right,PH,,,/u/Trexxy2,trexxy2,11,1,1,1,RHP
 1733,Bonesy McSkellington,OAK,BP,NT,S,Left,CF,RF,C,/u/tweezletorp,bonesymcskellington,53,1,10,1,
 1734,Streetlamp LeMoose,ATL,EN,TD,S,Left,PH,,,/u/nickjohnson92,streetlamplemoose,43,2,1,,
 1745,Robbie,TOR,BP,BB,B,Left,1B,LF,RF,/u/IndianGiraffe,robgod_,53,1,5,,
@@ -243,7 +243,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2640,Anthony Barkevious IV,ANA,EN,TD,H,Right,3B,LF,CF,/u/PopeGordon,popegordon,53,1,8,,
 2641,Jerome Peterson,MTL,MH,NH,H,Left,1B,LF,2B,/u/rhezz12,rhezz,33,1,5,1,GGS
 2642,Raffy Benitez,,WC,BS,S,Right,RF,1B,CF,/u/The_Hoff34,benthethrill_7,53,1,11,,
-2646,I'm Backhoe,,WC,WC,H,Right,LF,1B,,/u/LaurenceFishburns,billyin4c,53,1,9,,
+2646,I'm Backhoe,PHI,WC,WC,H,Right,LF,1B,,/u/LaurenceFishburns,billyin4c,53,1,9,,
 2651,Mack MacMack,ATL,BN,,,Left,SS,2B,3B,/u/iHateLiams,sense_n,53,1,7,,
 2657,Vader Page,SEA,BC,NT,S,Right,P,,,/u/VishyVCA,imvishy,53,1,3,1,GGS
 2659,Kevin James,NYM,BC,TT,H,Right,CF,LF,RF,/u/Swarm140,swarm4,33,1,10,,
@@ -262,7 +262,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2696,Captain Trash,FLA,BN,TT,H,Left,RF,1B,C,/u/KingIsMe123,biggersean,53,1,11,,
 2702,Passed Ball Siakam,CWS,S,BF,H,Left,PH,,,/u/Pota_Tomas,pota_tomas,13,1,1,,
 2706,Cameron Trinidad,,WC,,,Right,1B,LF,2B,/u/MyAmazingNam,hawk3373,53,1,5,,
-2708,Saul Pewald,CLE,SM,EG,B,Right,PH,,,/u/mnomz,mikenom,23,1,1,1,BLU
+2708,Saul Pewald,CLE,SM,EG,B,Right,1B,LF,RF,/u/mnomz,mikenom,23,1,5,1,BLU
 2710,Sterling Turlington,OAK,HK,EG,B,Right,2B,1B,C,/u/sethurax,sethurax,53,1,6,1,GGS
 2720,Lee Luda,MIL,SF,BS,H,Left,P,,,/u/eWeapons,.aerolite,23,1,3,1,HCM
 2722,Teddy Bigstick,OAK,S,EN,S,Right,3B,2B,RF,/u/Roosevelt_Coronary,eccentric54,23,1,8,1,SPD
@@ -287,7 +287,6 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 2789,Roosevelt Sandoval,FLA,BC,BF,H,Right,2B,RF,SS,/u/booga_booga_booga_,booga_booga_booga_,53,1,6,,
 2792,Jerome S. Monroe,SEA,1B,TD,H,Right,P,,,/u/crabface5,crabface5,53,1,3,1,SPD
 2794,Tyler Helman,,EN,NH,B,Left,SS,2B,,/u/MLR_NoReddit_User,chefcurry9457,53,1,7,,
-2795,Einhardt Lenoire,MTL,SF,FP,S,Right,P,,,/u/pincindleton,radcow,53,1,3,,
 2800,Buzz Carlton,STL,SM,EG,S,Left,PH,,,/u/Shuichi_1,shuichi1,23,1,1,,
 2802,Abel Greene,SFG,WC,,,Left,SS,2B,RF,/u/Kohanky,kohanky,53,1,7,,
 2804,Billy TheKid,NYM,WC,EG,S,Right,2B,RF,1B,/u/Billythekid1701,billythekid1701,53,1,6,1,LOO
@@ -430,7 +429,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3119,Daniel Harrison,STL,TT,EN,B,Left,P,,,/u/Narkov24,tealshark24,53,1,3,,
 3124,Bucky Sabre,CIN,SF,WC,H,Right,2B,SS,C,/u/onahalladay,eyeveewhy,53,1,6,1,BLU
 3126,Sleve McDichael,TBR,BC,NH,S,Left,C,3B,CF,/u/MrSpud8,mrspud8,53,1,4,,
-3127,Tater Tots,KCR,WC,BB,H,Right,P,,,/u/Candid-Claim-5591,Webby1121,33,1,3,1,CYI
+3127,Tater Tots,KCR,WC,BB,H,Right,LF,1B,,/u/Candid-Claim-5591,Webby1121,33,1,9,1,CYI
 3128,Jean-Paul Georges-et-Ringeaux,MTL,SM,EG,H,Left,P,,,/u/SabreYT,theonlysabre,33,1,3,1,CYI
 3132,Richard Nixon,HOU,1B,,,Right,1B,LF,SS,/u/MarzanoAndMeatballs,drunkennixonstyle,53,1,5,,
 3135,Brody Page,ARI,EN,,,Right,1B,LF,RF,/u/taengumiho,taengumiho,53,1,5,,
@@ -527,7 +526,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3375,Mikko LePico,BAL,SM,EG,S,Right,P,,,/u/MLR_NoReddit_User,lightlurker_,53,1,3,1,GGS
 3376,Harry Palms,LAD,TT,BF,H,Left,CF,LF,,/u/Dry-Director530,turner13_,53,1,10,,
 3377,Cucamonga Seattle,MIN,SF,NH,S,Right,CF,LF,,/u/MLR_NoReddit_User,cyrith,53,1,10,1,RHP
-3378,Kenji Matsumoto,TOR,P,BS,H,Left,P,,,/u/OptimisticGiantsGuy,doctorfunk415,53,1,3,,
+3378,Kenji Matsumoto,TOR,P,BS,H,Left,P,,,/u/OptimisticGiantsGuy,doctorfunk415,33,1,3,,
 3379,KC Martinez,LAD,XB,WC,S,Left,1B,3B,,/u/MLR_NoReddit_User,_pandar_,53,1,5,1,HCM
 3380,Gracie Cwej-Mlodzianowski,COL,WC,TD,S,Left,CF,RF,,/u/kayjayrunaway,middaydreamin,53,1,10,1,HCM
 3381,Socks Maybe,HOU,BC,TD,B,Left,CF,RF,,/u/butterscotch_mlp,rorydawn,53,1,10,1,MMS
@@ -539,7 +538,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3387,Jah Muis,DET,XB,BS,B,Left,2B,1B,,/u/MLR_NoReddit_User,jah427,53,1,6,,
 3388,Benny Schwa,OAK,BC,FP,H,Right,P,,,/u/MLR_NoReddit_User,barelyaudibleben,53,1,3,1,GGS
 3389,Tobé Bryant,ARI,MH,,,Right,C,3B,,/u/MLR_NoReddit_User,t0ny0815,53,1,4,,
-3390,Arlon Gemini,PHI,WC,NH,H,Right,SS,2B,,/u/Arlondiluthel,arlondiluthel,53,1,7,1,OBO
+3390,Arlon Gemini,PHI,WC,NH,H,Right,SS,2B,,/u/Arlondiluthel,arlondiluthel,33,1,7,1,OBO
 3391,Naz Reid,LAD,,EG,H,Left,P,,,/u/MLR_NoReddit_User,jumboballoon901,53,1,3,,
 3392,Lefty Cobb,ATL,BP,,,Left,1B,LF,,/u/Ragincajun202,bran16devi,53,1,5,1,HCM
 3393,Bloop Squibber,TOR,BC,TD,B,Right,1B,3B,,/u/boman70,bowen_arr0w,53,1,5,1,SPD
@@ -606,7 +605,7 @@ Player ID,Name,Team,Batting Type,Pitching Type,Pitching Bonus,Handedness,Primary
 3454,Bartholomew Simpson,ANA,BP,BS,H,Right,P,,,/u/MLR_NoReddit_User,tubbytim69,53,1,3,1,BLU
 3455,Shawn Michaels,,WC,,,Right,RF,CF,,/u/ProfBananas16,bananajk,53,4,11,,
 3456,Malsted,CWS,S,EN,B,Left,CF,LF,,/u/MLR_NoReddit_User,Malsted,53,1,10,,
-3457,Ada Rutabaga,CLE,SM,,,Left,3B,LF,,/u/MLR_NoReddit_User,ark__47,53,1,8,,
+3457,Ada Rutabaga,TEX,SM,,,Left,3B,LF,,/u/MLR_NoReddit_User,adarutabaga,53,1,8,,
 3458,Maram Bowl,,BC,,,Left,CF,RF,,/u/Vapik78,Vapik78,53,1,10,,
 3459,Chip Allen,,WC,TD,B,Right,LF,1B,,/u/Arcturusnfshp,Arcturusnfshp,53,1,9,1,GGS
 3460,Strawhatespeon,,EN,BB,B,Left,3B,SS,,/u/MLR_NoReddit_User,Strawhatespeon,53,1,8,,
