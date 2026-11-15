@@ -916,7 +916,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 228,,MLR,4,4,53,ATL,Pinch hit for in T3
 713,,MLR,4,4,54,SEA,Pitcher
 214,,MLR,4,4,57,MTL,Fielding Replacement
-234,,MLR,4,4,57,NYM,Pitcher
 35,,MLR,4,4,58,ARI,Pinch hit for in B2
 164,,MLR,4,4,59,LAD,Pitcher
 165,,MLR,4,4,59,LAD,Pitcher
@@ -1529,3 +1528,8 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 452,,MLR,3,3,31,BOS,Pinch hit for in T3
 251,,MLR,3,4,48,NYY,Pitcher
 305,,MLR,3,6,68,PIT,Pitcher
+24,,MLR,3,10,109,BOS,Pinch hit for in B1
+312,,MLR,3,15,174,PIT,Pinch hit for in B2
+214,,MLR,3,16,190,MIL,Pinch hit for in B3
+225,,MLR,4,3,39,ATL,Fielding Replacement
+230,,MLR,4,3,39,ATL,DH removed due to losing DH before first plate appearance
