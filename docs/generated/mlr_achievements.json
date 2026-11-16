@@ -1,6 +1,30 @@
 {
   "no_hitters": [
     {
+      "combined": true,
+      "team": "TEX",
+      "opponent": "OAK",
+      "location": "Away",
+      "season": "S13",
+      "session": 5,
+      "perfect": false,
+      "bb": 1,
+      "pitchers": [
+        {
+          "id": 392,
+          "ip": "0.1",
+          "so": 0,
+          "bb": 0
+        },
+        {
+          "id": 3411,
+          "ip": "5.2",
+          "so": 0,
+          "bb": 1
+        }
+      ]
+    },
+    {
       "combined": false,
       "team": "ANA",
       "opponent": "PIT",
