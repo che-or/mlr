@@ -51,14 +51,14 @@
       },
       "CS": {
         "record": 2,
-        "tie_count": 22,
+        "tie_count": 23,
         "most_recent": {
-          "id": 2889,
-          "season": "S12",
-          "session": 9,
-          "team": "TBR",
+          "id": 32,
+          "season": "S13",
+          "session": 6,
+          "team": "ANA",
           "location": "Away",
-          "opponent": "SEA"
+          "opponent": "NYM"
         }
       },
       "FO": {
