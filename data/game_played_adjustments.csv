@@ -1082,7 +1082,6 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 2262,,MLR,6,2,21,TBR,Pinch hit for in B1
 271,,MLR,6,2,30,OAK,Pinch hit for in B2
 683,,MLR,6,3,31,NYM,Pinch hit for in B3
-159,,MLR,6,3,33,CIN,Fielding Replacement
 223,,MLR,6,3,34,COL,Pinch hit for in T3
 144,,MLR,6,3,41,CLE,Pinch hit for in T2
 271,,MLR,6,3,42,OAK,Pinch hit for in B1
@@ -1541,3 +1540,4 @@ ID,Name,League,Season,Session,Game ID,Team,Notes
 205,,MLR,5,12,176,STL,DH removed due to losing DH before first plate appearance
 651,,MLR,5,14,210,ARI,"Pitcher, Run Scored"
 1955,,MLR,5,14,210,SDP,"Fielding Replacement, Run Scored"
+777,,MLR,6,5,63,ARI,"Pitcher, Run Scored"
